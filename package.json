@@ -11,7 +11,15 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.3.3",
+    "@astrojs/node": "^7.0.1",
+    "@astrojs/react": "^3.0.7",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
     "astro": "^4.0.6",
+    "astro-i18next": "^1.0.0-beta.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.5.0",
     "typescript": "^5.3.3"
   }
 }

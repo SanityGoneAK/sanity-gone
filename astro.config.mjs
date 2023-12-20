@@ -1,4 +1,31 @@
 import { defineConfig } from 'astro/config';
+import react from "@astrojs/react";
+import astroI18next from "astro-i18next";
+
+import node from "@astrojs/node";
 
 // https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  output: 'server',
+  integrations: [react(), astroI18next()],
+  adapter: node({
+    mode: "standalone"
+  }),
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: (id) => {
+            // force .json imports into their own chunks
+            // so that they aren't inadvertently redownloaded
+            if (id.endsWith(".json")) {
+              const { base } = path.parse(id);
+              return base;
+            }
+            return;
+          },
+        },
+      },
+    },
+  },
+});
