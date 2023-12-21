@@ -7,6 +7,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "lint": "eslint",
     "update-game-data": "git submodule update --init --recursive --remote && sucrase-node ./scripts/all.js",
     "import:operators": "sucrase-node ./scripts/import-operators.js",
     "import:branches": "sucrase-node ./scripts/import-branches.js"

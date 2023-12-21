@@ -141,10 +141,16 @@ export async function createBranchesJson(dataDir) {
     );
 }
 
+/**
+ * @param {array} branches - Current list of Sub Classes
+ */
 function removeExcludedBranches(branches) {
     return branches.filter((name) => !EXCLUDED_BRANCHES.has(name));
 }
 
+/**
+ * @param {array} branches - Current list of Sub Classes
+ */
 function getLocalizedName(branches) {
     return branches.map((branch) => {
         return [
@@ -159,6 +165,9 @@ function getLocalizedName(branches) {
     });
 }
 
+/**
+ * @param {array} branches - Current list of Sub Classes
+ */
 function getLocalizedTraitsAndClass(branches) {
     return branches.map(([branchId, branch]) => {
         return [
@@ -172,6 +181,10 @@ function getLocalizedTraitsAndClass(branches) {
     });
 }
 
+/**
+ * @param {string} branchId - Single id of a branch
+ * @param {string} value - Defines which value it should grab from the JSON files
+ */
 function getLocalesForBranchName(branchId, value) {
     return Object.keys(BRANCH_LOCALES).reduce((locales, locale) => {
         // Use overrides until they are outdated
@@ -193,6 +206,10 @@ function getLocalesForBranchName(branchId, value) {
     }, {});
 }
 
+/**
+ * @param {string} branchId - Single id of a branch
+ * @param {string} target - Defines which value it should return from the locales
+ */
 function getLocalesForBranchTraits(branchId, target) {
     return Object.keys(CHARACTER_LOCALES).reduce((locales, locale) => {
         let firstOp = Object.values(CHARACTER_LOCALES[locale]).find(

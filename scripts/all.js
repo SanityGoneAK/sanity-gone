@@ -3,7 +3,7 @@ import path from "path";
 
 import { createOperatorsJson } from "./import-operators.js";
 import { createBranchesJson } from "./import-branches.js";
-// import { createItemsJson } from "./create-items-json.js";
+import { createItemsJson } from "./import-items.js";
 // import { createMapsJson } from "./create-maps-json.js";
 // import { createEnemiesJson } from "./create-enemies-json.js";
 
@@ -12,9 +12,9 @@ const dataDir = path.join(__dirname, "../data");
 (async () => {
   await fs.mkdir(dataDir, { recursive: true });
   await Promise.all([
-    // createOperatorsJson(dataDir),
+    createOperatorsJson(dataDir),
     createBranchesJson(dataDir),
-    // createItemsJson(dataDir),
+    createItemsJson(dataDir),
     // createMapsJson(dataDir),
     // createEnemiesJson(dataDir),
   ]);
