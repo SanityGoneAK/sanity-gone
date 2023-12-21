@@ -212,6 +212,7 @@ function getLocalesForBranchName(branchId, value) {
  */
 function getLocalesForBranchTraits(branchId, target) {
     return Object.keys(CHARACTER_LOCALES).reduce((locales, locale) => {
+        let fallback = false;
         let firstOp = Object.values(CHARACTER_LOCALES[locale]).find(
             (op) =>
                 op.subProfessionId === branchId &&
@@ -225,6 +226,7 @@ function getLocalesForBranchTraits(branchId, target) {
                     op.subProfessionId === branchId &&
                     (op.rarity != "TIER_1" || op.rarity != "TIER_2")
             );
+            fallback = true
         }
 
         let description = firstOp.description;
@@ -235,16 +237,17 @@ function getLocalesForBranchTraits(branchId, target) {
             description = TRAIT_OVERRIDES[branchId];
         }
 
-        if (branchId in CN_TRAIT_TLS && locale != "zh_CN") {
+        if (branchId in CN_TRAIT_TLS && locale != "zh_CN" && fallback) {
             description = CN_TRAIT_TLS[branchId][locale];
-        } else if (description in jetTraitTranslations.full) {
+        } else if (description in jetTraitTranslations.full && fallback) {
             description = fixJetSkillDescriptionTags(
                 jetTraitTranslations.full[description].en
             );
-        } else {
+        } else if (fallback){
             console.warn(
                 "No trait translation found for subProfessionId:",
-                branchId
+                branchId,
+                locale,
             );
         }
         

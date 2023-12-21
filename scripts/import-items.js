@@ -13,6 +13,33 @@ const ITEM_LOCALES = {
     ko_KR: krItems,
 };
 
+const UNOFFICIAL_ITEM_NAME_TRANSLATIONS = {
+    31073: {
+        zh_CN: "褐素纤维",
+        en_US: "Brown Fiber",
+        ja_JP: "茶色繊維",
+        ko_KR: "갈색 섬유",
+    },
+    31074: {
+        zh_CN: "固化纤维板",
+        en_US: "Cured Fiberboard",
+        ja_JP: "硬化ファイバーボード",
+        ko_KR: "경화 섬유보드",
+    },
+    31083: {
+        zh_CN: "环烃聚质",
+        en_US: "Cycloalkane Polymer",
+        ja_JP: "シクロアルカンポリマー",
+        ko_KR: "졸로알케인 고분자",
+    },
+    31084: {
+        zh_CN: "环烃预制体",
+        en_US: "Cycloalkane Prefab",
+        ja_JP: "シクロアルカンプリファブ",
+        ko_KR: "졸로알케인 프리팹",
+    },
+};
+
 /**
  * @param {string} itemId
  * @returns {boolean} whether to include this `itemId` in `items.json` or not
@@ -41,11 +68,7 @@ function isItemWeCareAbout(itemId) {
 export async function createItemsJson(dataDir) {
     console.log(`Creating ${path.join(dataDir, "items.json")}...`);
 
-    const transformations = [
-        filterItems,
-        getLocalizedName,
-        toEntries,
-    ];
+    const transformations = [filterItems, getLocalizedName, toEntries];
 
     const items = transformations.reduce((acc, transformation) => {
         return transformation(acc);
@@ -64,23 +87,33 @@ function filterItems(items) {
 function getLocalizedName(items) {
     return items.map((itemId) => {
         const name = Object.keys(ITEM_LOCALES).reduce((locales, locale) => {
+            if(itemId in UNOFFICIAL_ITEM_NAME_TRANSLATIONS){
+                locales[locale] = UNOFFICIAL_ITEM_NAME_TRANSLATIONS[itemId][locale]
+            }
+
             if (ITEM_LOCALES[locale][itemId]) {
                 locales[locale] = ITEM_LOCALES[locale][itemId].name ?? "";
                 return locales;
             }
 
-            console.warn("No translation available for item ID: " + itemId);
+            if(!locales[locale]){
+                console.warn(
+                    "No translation available for item ID: " + itemId,
+                    locale
+                );
+            }
+            return locales;
         }, {});
 
         return {
             itemId,
             name,
-        }
+        };
     });
 }
 
 function toEntries(items) {
-    return items.map(({itemId, name}) => {
+    return items.map(({ itemId, name }) => {
         const item = ITEM_LOCALES.zh_CN[itemId];
 
         return [
@@ -89,8 +122,8 @@ function toEntries(items) {
                 itemId,
                 name,
                 iconId: item.iconId,
-                rarity: parseInt(item.rarity.replace('TIER_', '')),
-            }
-        ]
-    })
+                rarity: parseInt(item.rarity.replace("TIER_", "")),
+            },
+        ];
+    });
 }

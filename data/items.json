@@ -8,7 +8,7 @@
       "ko_KR": "기초작전기록"
     },
     "iconId": "sprite_exp_card_t1",
-    "rarity": "TIER_2"
+    "rarity": 2
   },
   "2002": {
     "itemId": "2002",
@@ -19,7 +19,7 @@
       "ko_KR": "초급작전기록"
     },
     "iconId": "sprite_exp_card_t2",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "2003": {
     "itemId": "2003",
@@ -30,7 +30,7 @@
       "ko_KR": "중급작전기록"
     },
     "iconId": "sprite_exp_card_t3",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "2004": {
     "itemId": "2004",
@@ -41,7 +41,7 @@
       "ko_KR": "고급작전기록"
     },
     "iconId": "sprite_exp_card_t4",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "3211": {
     "itemId": "3211",
@@ -52,7 +52,7 @@
       "ko_KR": "뱅가드 칩"
     },
     "iconId": "MTL_ASC_PIO1",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "3212": {
     "itemId": "3212",
@@ -63,7 +63,7 @@
       "ko_KR": "뱅가드 칩셋"
     },
     "iconId": "MTL_ASC_PIO2",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "3213": {
     "itemId": "3213",
@@ -74,7 +74,7 @@
       "ko_KR": "뱅가드 듀얼 칩"
     },
     "iconId": "MTL_ASC_PIO3",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "3221": {
     "itemId": "3221",
@@ -85,7 +85,7 @@
       "ko_KR": "가드 칩"
     },
     "iconId": "MTL_ASC_GRD1",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "3222": {
     "itemId": "3222",
@@ -96,7 +96,7 @@
       "ko_KR": "가드 칩셋"
     },
     "iconId": "MTL_ASC_GRD2",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "3223": {
     "itemId": "3223",
@@ -107,7 +107,7 @@
       "ko_KR": "가드 듀얼 칩"
     },
     "iconId": "MTL_ASC_GRD3",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "3231": {
     "itemId": "3231",
@@ -118,7 +118,7 @@
       "ko_KR": "디펜더 칩"
     },
     "iconId": "MTL_ASC_TNK1",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "3232": {
     "itemId": "3232",
@@ -129,7 +129,7 @@
       "ko_KR": "디펜더 칩셋"
     },
     "iconId": "MTL_ASC_TNK2",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "3233": {
     "itemId": "3233",
@@ -140,7 +140,7 @@
       "ko_KR": "디펜더 듀얼 칩"
     },
     "iconId": "MTL_ASC_TNK3",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "3241": {
     "itemId": "3241",
@@ -151,7 +151,7 @@
       "ko_KR": "스나이퍼 칩"
     },
     "iconId": "MTL_ASC_SNP1",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "3242": {
     "itemId": "3242",
@@ -162,7 +162,7 @@
       "ko_KR": "스나이퍼 칩셋"
     },
     "iconId": "MTL_ASC_SNP2",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "3243": {
     "itemId": "3243",
@@ -173,7 +173,7 @@
       "ko_KR": "스나이퍼 듀얼 칩"
     },
     "iconId": "MTL_ASC_SNP3",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "3251": {
     "itemId": "3251",
@@ -184,7 +184,7 @@
       "ko_KR": "캐스터 칩"
     },
     "iconId": "MTL_ASC_CST1",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "3252": {
     "itemId": "3252",
@@ -195,7 +195,7 @@
       "ko_KR": "캐스터 칩셋"
     },
     "iconId": "MTL_ASC_CST2",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "3253": {
     "itemId": "3253",
@@ -206,7 +206,7 @@
       "ko_KR": "캐스터 듀얼 칩"
     },
     "iconId": "MTL_ASC_CST3",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "3261": {
     "itemId": "3261",
@@ -217,7 +217,7 @@
       "ko_KR": "메딕 칩"
     },
     "iconId": "MTL_ASC_MED1",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "3262": {
     "itemId": "3262",
@@ -228,7 +228,7 @@
       "ko_KR": "메딕 칩셋"
     },
     "iconId": "MTL_ASC_MED2",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "3263": {
     "itemId": "3263",
@@ -239,7 +239,7 @@
       "ko_KR": "메딕 듀얼 칩"
     },
     "iconId": "MTL_ASC_MED3",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "3271": {
     "itemId": "3271",
@@ -250,7 +250,7 @@
       "ko_KR": "서포터 칩"
     },
     "iconId": "MTL_ASC_SUP1",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "3272": {
     "itemId": "3272",
@@ -261,7 +261,7 @@
       "ko_KR": "서포터 칩셋"
     },
     "iconId": "MTL_ASC_SUP2",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "3273": {
     "itemId": "3273",
@@ -272,7 +272,7 @@
       "ko_KR": "서포터 듀얼 칩"
     },
     "iconId": "MTL_ASC_SUP3",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "3281": {
     "itemId": "3281",
@@ -283,7 +283,7 @@
       "ko_KR": "스페셜리스트 칩"
     },
     "iconId": "MTL_ASC_SPC1",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "3282": {
     "itemId": "3282",
@@ -294,7 +294,7 @@
       "ko_KR": "스페셜리스트 칩셋"
     },
     "iconId": "MTL_ASC_SPC2",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "3283": {
     "itemId": "3283",
@@ -305,7 +305,7 @@
       "ko_KR": "스페셜리스트 듀얼 칩"
     },
     "iconId": "MTL_ASC_SPC3",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "3301": {
     "itemId": "3301",
@@ -316,7 +316,7 @@
       "ko_KR": "스킬개론 제1권"
     },
     "iconId": "MTL_SKILL1",
-    "rarity": "TIER_2"
+    "rarity": 2
   },
   "3302": {
     "itemId": "3302",
@@ -327,7 +327,7 @@
       "ko_KR": "스킬개론 제2권"
     },
     "iconId": "MTL_SKILL2",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "3303": {
     "itemId": "3303",
@@ -338,7 +338,7 @@
       "ko_KR": "스킬개론 제3권"
     },
     "iconId": "MTL_SKILL3",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "4001": {
     "itemId": "4001",
@@ -349,7 +349,7 @@
       "ko_KR": "용문폐"
     },
     "iconId": "GOLD",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "30011": {
     "itemId": "30011",
@@ -360,7 +360,7 @@
       "ko_KR": "원암"
     },
     "iconId": "MTL_SL_G1",
-    "rarity": "TIER_1"
+    "rarity": 1
   },
   "30012": {
     "itemId": "30012",
@@ -371,7 +371,7 @@
       "ko_KR": "원암 큐브"
     },
     "iconId": "MTL_SL_G2",
-    "rarity": "TIER_2"
+    "rarity": 2
   },
   "30013": {
     "itemId": "30013",
@@ -382,7 +382,7 @@
       "ko_KR": "원암 큐브 번들"
     },
     "iconId": "MTL_SL_G3",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "30014": {
     "itemId": "30014",
@@ -393,7 +393,7 @@
       "ko_KR": "정제 원암"
     },
     "iconId": "MTL_SL_G4",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "30021": {
     "itemId": "30021",
@@ -404,7 +404,7 @@
       "ko_KR": "대체당"
     },
     "iconId": "MTL_SL_STRG1",
-    "rarity": "TIER_1"
+    "rarity": 1
   },
   "30022": {
     "itemId": "30022",
@@ -415,7 +415,7 @@
       "ko_KR": "포도당"
     },
     "iconId": "MTL_SL_STRG2",
-    "rarity": "TIER_2"
+    "rarity": 2
   },
   "30023": {
     "itemId": "30023",
@@ -426,7 +426,7 @@
       "ko_KR": "포도당 번들"
     },
     "iconId": "MTL_SL_STRG3",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "30024": {
     "itemId": "30024",
@@ -437,7 +437,7 @@
       "ko_KR": "포도당 팩"
     },
     "iconId": "MTL_SL_STRG4",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "30031": {
     "itemId": "30031",
@@ -448,7 +448,7 @@
       "ko_KR": "에스테르 원료"
     },
     "iconId": "MTL_SL_RUSH1",
-    "rarity": "TIER_1"
+    "rarity": 1
   },
   "30032": {
     "itemId": "30032",
@@ -459,7 +459,7 @@
       "ko_KR": "폴리에스테르"
     },
     "iconId": "MTL_SL_RUSH2",
-    "rarity": "TIER_2"
+    "rarity": 2
   },
   "30033": {
     "itemId": "30033",
@@ -470,7 +470,7 @@
       "ko_KR": "폴리에스테르 번들"
     },
     "iconId": "MTL_SL_RUSH3",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "30034": {
     "itemId": "30034",
@@ -481,7 +481,7 @@
       "ko_KR": "폴리에스테르 팩"
     },
     "iconId": "MTL_SL_RUSH4",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "30041": {
     "itemId": "30041",
@@ -492,7 +492,7 @@
       "ko_KR": "이철 조각"
     },
     "iconId": "MTL_SL_IRON1",
-    "rarity": "TIER_1"
+    "rarity": 1
   },
   "30042": {
     "itemId": "30042",
@@ -503,7 +503,7 @@
       "ko_KR": "이철"
     },
     "iconId": "MTL_SL_IRON2",
-    "rarity": "TIER_2"
+    "rarity": 2
   },
   "30043": {
     "itemId": "30043",
@@ -514,7 +514,7 @@
       "ko_KR": "이철 번들"
     },
     "iconId": "MTL_SL_IRON3",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "30044": {
     "itemId": "30044",
@@ -525,7 +525,7 @@
       "ko_KR": "이철 팩"
     },
     "iconId": "MTL_SL_IRON4",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "30051": {
     "itemId": "30051",
@@ -536,7 +536,7 @@
       "ko_KR": "디케톤"
     },
     "iconId": "MTL_SL_KETONE1",
-    "rarity": "TIER_1"
+    "rarity": 1
   },
   "30052": {
     "itemId": "30052",
@@ -547,7 +547,7 @@
       "ko_KR": "아케톤 응집체"
     },
     "iconId": "MTL_SL_KETONE2",
-    "rarity": "TIER_2"
+    "rarity": 2
   },
   "30053": {
     "itemId": "30053",
@@ -558,7 +558,7 @@
       "ko_KR": "아케톤 응집체 번들"
     },
     "iconId": "MTL_SL_KETONE3",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "30054": {
     "itemId": "30054",
@@ -569,7 +569,7 @@
       "ko_KR": "아케톤 팩"
     },
     "iconId": "MTL_SL_KETONE4",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "30061": {
     "itemId": "30061",
@@ -580,7 +580,7 @@
       "ko_KR": "파손된 장치"
     },
     "iconId": "MTL_SL_BOSS1",
-    "rarity": "TIER_1"
+    "rarity": 1
   },
   "30062": {
     "itemId": "30062",
@@ -591,7 +591,7 @@
       "ko_KR": "장치"
     },
     "iconId": "MTL_SL_BOSS2",
-    "rarity": "TIER_2"
+    "rarity": 2
   },
   "30063": {
     "itemId": "30063",
@@ -602,7 +602,7 @@
       "ko_KR": "리뉴얼 장치"
     },
     "iconId": "MTL_SL_BOSS3",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "30064": {
     "itemId": "30064",
@@ -613,7 +613,7 @@
       "ko_KR": "개량 장치"
     },
     "iconId": "MTL_SL_BOSS4",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "30073": {
     "itemId": "30073",
@@ -624,7 +624,7 @@
       "ko_KR": "로식 콜"
     },
     "iconId": "MTL_SL_ALCOHOL1",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "30074": {
     "itemId": "30074",
@@ -635,7 +635,7 @@
       "ko_KR": "화이트 호스 콜"
     },
     "iconId": "MTL_SL_ALCOHOL2",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "30083": {
     "itemId": "30083",
@@ -646,7 +646,7 @@
       "ko_KR": "망간 광석"
     },
     "iconId": "MTL_SL_MANGANESE1",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "30084": {
     "itemId": "30084",
@@ -657,7 +657,7 @@
       "ko_KR": "망간 중합체"
     },
     "iconId": "MTL_SL_MANGANESE2",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "30093": {
     "itemId": "30093",
@@ -668,7 +668,7 @@
       "ko_KR": "연마석"
     },
     "iconId": "MTL_SL_PG1",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "30094": {
     "itemId": "30094",
@@ -679,7 +679,7 @@
       "ko_KR": "고급연마석"
     },
     "iconId": "MTL_SL_PG2",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "30103": {
     "itemId": "30103",
@@ -690,7 +690,7 @@
       "ko_KR": "RMA70-12"
     },
     "iconId": "MTL_SL_RMA7012",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "30104": {
     "itemId": "30104",
@@ -701,7 +701,7 @@
       "ko_KR": "RMA70-24"
     },
     "iconId": "MTL_SL_RMA7024",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "30115": {
     "itemId": "30115",
@@ -712,7 +712,7 @@
       "ko_KR": "중합제"
     },
     "iconId": "MTL_SL_PP",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "30125": {
     "itemId": "30125",
@@ -723,7 +723,7 @@
       "ko_KR": "바이폴라 나노플레이크 칩"
     },
     "iconId": "MTL_SL_BN",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "30135": {
     "itemId": "30135",
@@ -734,7 +734,7 @@
       "ko_KR": "D32강"
     },
     "iconId": "MTL_SL_DS",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "30145": {
     "itemId": "30145",
@@ -745,7 +745,7 @@
       "ko_KR": "결정 전자 장치"
     },
     "iconId": "MTL_SL_OEU",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "30155": {
     "itemId": "30155",
@@ -756,7 +756,7 @@
       "ko_KR": "핵결정체 소결물"
     },
     "iconId": "MTL_SL_SHJ",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "31013": {
     "itemId": "31013",
@@ -767,7 +767,7 @@
       "ko_KR": "젤"
     },
     "iconId": "MTL_SL_PGEL3",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "31014": {
     "itemId": "31014",
@@ -778,7 +778,7 @@
       "ko_KR": "중합젤"
     },
     "iconId": "MTL_SL_PGEL4",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "31023": {
     "itemId": "31023",
@@ -789,7 +789,7 @@
       "ko_KR": "열합금"
     },
     "iconId": "MTL_SL_IAM3",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "31024": {
     "itemId": "31024",
@@ -800,7 +800,7 @@
       "ko_KR": "열합금 팩"
     },
     "iconId": "MTL_SL_IAM4",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "31033": {
     "itemId": "31033",
@@ -811,7 +811,7 @@
       "ko_KR": "결정 부품"
     },
     "iconId": "MTL_SL_OC3",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "31034": {
     "itemId": "31034",
@@ -822,7 +822,7 @@
       "ko_KR": "결정 회로"
     },
     "iconId": "MTL_SL_OC4",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "31043": {
     "itemId": "31043",
@@ -833,7 +833,7 @@
       "ko_KR": "반합성 용제"
     },
     "iconId": "MTL_SL_SS",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "31044": {
     "itemId": "31044",
@@ -844,7 +844,7 @@
       "ko_KR": "정제된 용제"
     },
     "iconId": "MTL_SL_RS",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "31053": {
     "itemId": "31053",
@@ -855,7 +855,7 @@
       "ko_KR": "중합 절삭유"
     },
     "iconId": "MTL_SL_CCF",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "31054": {
     "itemId": "31054",
@@ -866,7 +866,7 @@
       "ko_KR": "절삭유 원액"
     },
     "iconId": "MTL_SL_PLCF",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "31063": {
     "itemId": "31063",
@@ -877,7 +877,7 @@
       "ko_KR": "합성 소금 번들"
     },
     "iconId": "MTL_SL_ZY",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "31064": {
     "itemId": "31064",
@@ -888,39 +888,51 @@
       "ko_KR": "합성 소금 팩"
     },
     "iconId": "MTL_SL_ZYK",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "31073": {
     "itemId": "31073",
     "name": {
-      "zh_CN": "褐素纤维"
+      "zh_CN": "褐素纤维",
+      "en_US": "Brown Fiber",
+      "ja_JP": "茶色繊維",
+      "ko_KR": "갈색 섬유"
     },
     "iconId": "MTL_SL_XW",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "31074": {
     "itemId": "31074",
     "name": {
-      "zh_CN": "固化纤维板"
+      "zh_CN": "固化纤维板",
+      "en_US": "Cured Fiberboard",
+      "ja_JP": "硬化ファイバーボード",
+      "ko_KR": "경화 섬유보드"
     },
     "iconId": "MTL_SL_XWB",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "31083": {
     "itemId": "31083",
     "name": {
-      "zh_CN": "环烃聚质"
+      "zh_CN": "环烃聚质",
+      "en_US": "Cycloalkane Polymer",
+      "ja_JP": "シクロアルカンポリマー",
+      "ko_KR": "졸로알케인 고분자"
     },
     "iconId": "MTL_SL_HT",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "31084": {
     "itemId": "31084",
     "name": {
-      "zh_CN": "环烃预制体"
+      "zh_CN": "环烃预制体",
+      "en_US": "Cycloalkane Prefab",
+      "ja_JP": "シクロアルカンプリファブ",
+      "ko_KR": "졸로알케인 프리팹"
     },
     "iconId": "MTL_SL_HTT",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "32001": {
     "itemId": "32001",
@@ -931,7 +943,7 @@
       "ko_KR": "칩 첨가제"
     },
     "iconId": "MTL_ASC_DI",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "mod_unlock_token": {
     "itemId": "mod_unlock_token",
@@ -942,7 +954,7 @@
       "ko_KR": "모듈 데이터 칩"
     },
     "iconId": "mod_unlock_token",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "mod_update_token_2": {
     "itemId": "mod_update_token_2",
@@ -953,7 +965,7 @@
       "ko_KR": "데이터 리더기"
     },
     "iconId": "mod_update_token_2",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "mod_update_token_1": {
     "itemId": "mod_update_token_1",
@@ -964,7 +976,7 @@
       "ko_KR": "데이터 메모리"
     },
     "iconId": "mod_update_token_1",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_123_fang": {
     "itemId": "class_p_char_123_fang",
@@ -975,7 +987,7 @@
       "ko_KR": "팽의 커널 증표"
     },
     "iconId": "class_p_char_123_fang",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_240_wyvern": {
     "itemId": "class_p_char_240_wyvern",
@@ -986,7 +998,7 @@
       "ko_KR": "바닐라의 커널 증표"
     },
     "iconId": "class_p_char_240_wyvern",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_192_falco": {
     "itemId": "class_p_char_192_falco",
@@ -997,7 +1009,7 @@
       "ko_KR": "플룸의 커널 증표"
     },
     "iconId": "class_p_char_192_falco",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_208_melan": {
     "itemId": "class_p_char_208_melan",
@@ -1008,7 +1020,7 @@
       "ko_KR": "멜란사의 커널 증표"
     },
     "iconId": "class_p_char_208_melan",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_209_ardign": {
     "itemId": "class_p_char_209_ardign",
@@ -1019,7 +1031,7 @@
       "ko_KR": "카디건의 커널 증표"
     },
     "iconId": "class_p_char_209_ardign",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_122_beagle": {
     "itemId": "class_p_char_122_beagle",
@@ -1030,7 +1042,7 @@
       "ko_KR": "비글의 커널 증표"
     },
     "iconId": "class_p_char_122_beagle",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_124_kroos": {
     "itemId": "class_p_char_124_kroos",
@@ -1041,7 +1053,7 @@
       "ko_KR": "크루스의 커널 증표"
     },
     "iconId": "class_p_char_124_kroos",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_121_lava": {
     "itemId": "class_p_char_121_lava",
@@ -1052,7 +1064,7 @@
       "ko_KR": "라바의 커널 증표"
     },
     "iconId": "class_p_char_121_lava",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_120_hibisc": {
     "itemId": "class_p_char_120_hibisc",
@@ -1063,7 +1075,7 @@
       "ko_KR": "히비스커스의 커널 증표"
     },
     "iconId": "class_p_char_120_hibisc",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_212_ansel": {
     "itemId": "class_p_char_212_ansel",
@@ -1074,7 +1086,7 @@
       "ko_KR": "안셀의 커널 증표"
     },
     "iconId": "class_p_char_212_ansel",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_210_stward": {
     "itemId": "class_p_char_210_stward",
@@ -1085,7 +1097,7 @@
       "ko_KR": "스튜어드의 커널 증표"
     },
     "iconId": "class_p_char_210_stward",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_278_orchid": {
     "itemId": "class_p_char_278_orchid",
@@ -1096,7 +1108,7 @@
       "ko_KR": "오키드의 커널 증표"
     },
     "iconId": "class_p_char_278_orchid",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_282_catap": {
     "itemId": "class_p_char_282_catap",
@@ -1107,7 +1119,7 @@
       "ko_KR": "캐터펄트의 커널 증표"
     },
     "iconId": "class_p_char_282_catap",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_283_midn": {
     "itemId": "class_p_char_283_midn",
@@ -1118,7 +1130,7 @@
       "ko_KR": "미드나이트의 커널 증표"
     },
     "iconId": "class_p_char_283_midn",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_284_spot": {
     "itemId": "class_p_char_284_spot",
@@ -1129,7 +1141,7 @@
       "ko_KR": "스팟의 커널 증표"
     },
     "iconId": "class_p_char_284_spot",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_281_popka": {
     "itemId": "class_p_char_281_popka",
@@ -1140,7 +1152,7 @@
       "ko_KR": "포푸카의 커널 증표"
     },
     "iconId": "class_p_char_281_popka",
-    "rarity": "TIER_3"
+    "rarity": 3
   },
   "class_p_char_141_nights": {
     "itemId": "class_p_char_141_nights",
@@ -1151,7 +1163,7 @@
       "ko_KR": "헤이즈의 커널 증표"
     },
     "iconId": "class_p_char_141_nights",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_109_fmout": {
     "itemId": "class_p_char_109_fmout",
@@ -1162,7 +1174,7 @@
       "ko_KR": "기타노의 커널 증표"
     },
     "iconId": "class_p_char_109_fmout",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_235_jesica": {
     "itemId": "class_p_char_235_jesica",
@@ -1173,7 +1185,7 @@
       "ko_KR": "제시카의 커널 증표"
     },
     "iconId": "class_p_char_235_jesica",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_126_shotst": {
     "itemId": "class_p_char_126_shotst",
@@ -1184,7 +1196,7 @@
       "ko_KR": "메테오의 커널 증표"
     },
     "iconId": "class_p_char_126_shotst",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_118_yuki": {
     "itemId": "class_p_char_118_yuki",
@@ -1195,7 +1207,7 @@
       "ko_KR": "시라유키의 커널 증표"
     },
     "iconId": "class_p_char_118_yuki",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_149_scave": {
     "itemId": "class_p_char_149_scave",
@@ -1206,7 +1218,7 @@
       "ko_KR": "스캐빈저의 커널 증표"
     },
     "iconId": "class_p_char_149_scave",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_290_vigna": {
     "itemId": "class_p_char_290_vigna",
@@ -1217,7 +1229,7 @@
       "ko_KR": "비그나의 커널 증표"
     },
     "iconId": "class_p_char_290_vigna",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_130_doberm": {
     "itemId": "class_p_char_130_doberm",
@@ -1228,7 +1240,7 @@
       "ko_KR": "도베르만의 커널 증표"
     },
     "iconId": "class_p_char_130_doberm",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_289_gyuki": {
     "itemId": "class_p_char_289_gyuki",
@@ -1239,7 +1251,7 @@
       "ko_KR": "마토이마루의 커널 증표"
     },
     "iconId": "class_p_char_289_gyuki",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_193_frostl": {
     "itemId": "class_p_char_193_frostl",
@@ -1250,7 +1262,7 @@
       "ko_KR": "프로스트리프의 커널 증표"
     },
     "iconId": "class_p_char_193_frostl",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_185_frncat": {
     "itemId": "class_p_char_185_frncat",
@@ -1261,7 +1273,7 @@
       "ko_KR": "무스의 커널 증표"
     },
     "iconId": "class_p_char_185_frncat",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_237_gravel": {
     "itemId": "class_p_char_237_gravel",
@@ -1272,7 +1284,7 @@
       "ko_KR": "그라벨의 커널 증표"
     },
     "iconId": "class_p_char_237_gravel",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_236_rope": {
     "itemId": "class_p_char_236_rope",
@@ -1283,7 +1295,7 @@
       "ko_KR": "로프의 커널 증표"
     },
     "iconId": "class_p_char_236_rope",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_117_myrrh": {
     "itemId": "class_p_char_117_myrrh",
@@ -1294,7 +1306,7 @@
       "ko_KR": "미르의 커널 증표"
     },
     "iconId": "class_p_char_117_myrrh",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_181_flower": {
     "itemId": "class_p_char_181_flower",
@@ -1305,7 +1317,7 @@
       "ko_KR": "퍼퓨머의 커널 증표"
     },
     "iconId": "class_p_char_181_flower",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_199_yak": {
     "itemId": "class_p_char_199_yak",
@@ -1316,7 +1328,7 @@
       "ko_KR": "마터호른의 커널 증표"
     },
     "iconId": "class_p_char_199_yak",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_150_snakek": {
     "itemId": "class_p_char_150_snakek",
@@ -1327,7 +1339,7 @@
       "ko_KR": "쿠오라의 커널 증표"
     },
     "iconId": "class_p_char_150_snakek",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_196_sunbr": {
     "itemId": "class_p_char_196_sunbr",
@@ -1338,7 +1350,7 @@
       "ko_KR": "굼의 커널 증표"
     },
     "iconId": "class_p_char_196_sunbr",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_110_deepcl": {
     "itemId": "class_p_char_110_deepcl",
@@ -1349,7 +1361,7 @@
       "ko_KR": "딥컬러의 커널 증표"
     },
     "iconId": "class_p_char_110_deepcl",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_183_skgoat": {
     "itemId": "class_p_char_183_skgoat",
@@ -1360,7 +1372,7 @@
       "ko_KR": "어스스피릿의 커널 증표"
     },
     "iconId": "class_p_char_183_skgoat",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_277_sqrrel": {
     "itemId": "class_p_char_277_sqrrel",
@@ -1371,7 +1383,7 @@
       "ko_KR": "쇼의 커널 증표"
     },
     "iconId": "class_p_char_277_sqrrel",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_137_brownb": {
     "itemId": "class_p_char_137_brownb",
@@ -1382,7 +1394,7 @@
       "ko_KR": "비헌터의 커널 증표"
     },
     "iconId": "class_p_char_137_brownb",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_253_greyy": {
     "itemId": "class_p_char_253_greyy",
@@ -1393,7 +1405,7 @@
       "ko_KR": "그레이의 커널 증표"
     },
     "iconId": "class_p_char_253_greyy",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_298_susuro": {
     "itemId": "class_p_char_298_susuro",
@@ -1404,7 +1416,7 @@
       "ko_KR": "수수로의 커널 증표"
     },
     "iconId": "class_p_char_298_susuro",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_151_myrtle": {
     "itemId": "class_p_char_151_myrtle",
@@ -1415,7 +1427,7 @@
       "ko_KR": "머틀의 커널 증표"
     },
     "iconId": "class_p_char_151_myrtle",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_190_clour": {
     "itemId": "class_p_char_190_clour",
@@ -1426,7 +1438,7 @@
       "ko_KR": "버메일의 커널 증표"
     },
     "iconId": "class_p_char_190_clour",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_133_mm": {
     "itemId": "class_p_char_133_mm",
@@ -1437,7 +1449,7 @@
       "ko_KR": "메이의 커널 증표"
     },
     "iconId": "class_p_char_133_mm",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_302_glaze": {
     "itemId": "class_p_char_302_glaze",
@@ -1448,7 +1460,7 @@
       "ko_KR": "엠브리엘의 커널 증표"
     },
     "iconId": "class_p_char_302_glaze",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_337_utage": {
     "itemId": "class_p_char_337_utage",
@@ -1459,7 +1471,7 @@
       "ko_KR": "우타게의 커널 증표"
     },
     "iconId": "class_p_char_337_utage",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_301_cutter": {
     "itemId": "class_p_char_301_cutter",
@@ -1470,7 +1482,7 @@
       "ko_KR": "커터의 커널 증표"
     },
     "iconId": "class_p_char_301_cutter",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_258_podego": {
     "itemId": "class_p_char_258_podego",
@@ -1481,7 +1493,7 @@
       "ko_KR": "포덴코의 커널 증표"
     },
     "iconId": "class_p_char_258_podego",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_328_cammou": {
     "itemId": "class_p_char_328_cammou",
@@ -1492,7 +1504,7 @@
       "ko_KR": "클릭의 커널 증표"
     },
     "iconId": "class_p_char_328_cammou",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_272_strong": {
     "itemId": "class_p_char_272_strong",
@@ -1503,7 +1515,7 @@
       "ko_KR": "제이의 커널 증표"
     },
     "iconId": "class_p_char_272_strong",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_366_acdrop": {
     "itemId": "class_p_char_366_acdrop",
@@ -1514,7 +1526,7 @@
       "ko_KR": "애시드드롭의 커널 증표"
     },
     "iconId": "class_p_char_366_acdrop",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_271_spikes": {
     "itemId": "class_p_char_271_spikes",
@@ -1525,7 +1537,7 @@
       "ko_KR": "아렌의 커널 증표"
     },
     "iconId": "class_p_char_271_spikes",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_381_bubble": {
     "itemId": "class_p_char_381_bubble",
@@ -1536,7 +1548,7 @@
       "ko_KR": "버블의 커널 증표"
     },
     "iconId": "class_p_char_381_bubble",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_347_jaksel": {
     "itemId": "class_p_char_347_jaksel",
@@ -1547,7 +1559,7 @@
       "ko_KR": "재키의 커널 증표"
     },
     "iconId": "class_p_char_347_jaksel",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_440_pinecn": {
     "itemId": "class_p_char_440_pinecn",
@@ -1558,7 +1570,7 @@
       "ko_KR": "파인콘의 커널 증표"
     },
     "iconId": "class_p_char_440_pinecn",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_452_bstalk": {
     "itemId": "class_p_char_452_bstalk",
@@ -1569,7 +1581,7 @@
       "ko_KR": "빈스토크의 커널 증표"
     },
     "iconId": "class_p_char_452_bstalk",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_469_indigo": {
     "itemId": "class_p_char_469_indigo",
@@ -1580,7 +1592,7 @@
       "ko_KR": "인디고의 커널 증표"
     },
     "iconId": "class_p_char_469_indigo",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_484_robrta": {
     "itemId": "class_p_char_484_robrta",
@@ -1591,7 +1603,7 @@
       "ko_KR": "로베르타의 커널 증표"
     },
     "iconId": "class_p_char_484_robrta",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_4041_chnut": {
     "itemId": "class_p_char_4041_chnut",
@@ -1602,7 +1614,7 @@
       "ko_KR": "체스트넛의 커널 증표"
     },
     "iconId": "class_p_char_4041_chnut",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_4062_totter": {
     "itemId": "class_p_char_4062_totter",
@@ -1613,7 +1625,7 @@
       "ko_KR": "토터의 커널 증표"
     },
     "iconId": "class_p_char_4062_totter",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_491_humus": {
     "itemId": "class_p_char_491_humus",
@@ -1624,7 +1636,7 @@
       "ko_KR": "휴머스의 커널 증표"
     },
     "iconId": "class_p_char_491_humus",
-    "rarity": "TIER_4"
+    "rarity": 4
   },
   "class_p_char_128_plosis": {
     "itemId": "class_p_char_128_plosis",
@@ -1635,7 +1647,7 @@
       "ko_KR": "프틸롭시스의 커널 증표"
     },
     "iconId": "class_p_char_128_plosis",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_115_headbr": {
     "itemId": "class_p_char_115_headbr",
@@ -1646,7 +1658,7 @@
       "ko_KR": "지마의 커널 증표"
     },
     "iconId": "class_p_char_115_headbr",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_102_texas": {
     "itemId": "class_p_char_102_texas",
@@ -1657,7 +1669,7 @@
       "ko_KR": "텍사스의 커널 증표"
     },
     "iconId": "class_p_char_102_texas",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_106_franka": {
     "itemId": "class_p_char_106_franka",
@@ -1668,7 +1680,7 @@
       "ko_KR": "프란카의 커널 증표"
     },
     "iconId": "class_p_char_106_franka",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_140_whitew": {
     "itemId": "class_p_char_140_whitew",
@@ -1679,7 +1691,7 @@
       "ko_KR": "라플란드의 커널 증표"
     },
     "iconId": "class_p_char_140_whitew",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_143_ghost": {
     "itemId": "class_p_char_143_ghost",
@@ -1690,7 +1702,7 @@
       "ko_KR": "스펙터의 커널 증표"
     },
     "iconId": "class_p_char_143_ghost",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_129_bluep": {
     "itemId": "class_p_char_129_bluep",
@@ -1701,7 +1713,7 @@
       "ko_KR": "블루포이즌의 커널 증표"
     },
     "iconId": "class_p_char_129_bluep",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_204_platnm": {
     "itemId": "class_p_char_204_platnm",
@@ -1712,7 +1724,7 @@
       "ko_KR": "플래티넘의 커널 증표"
     },
     "iconId": "class_p_char_204_platnm",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_219_meteo": {
     "itemId": "class_p_char_219_meteo",
@@ -1723,7 +1735,7 @@
       "ko_KR": "메테오라이트의 커널 증표"
     },
     "iconId": "class_p_char_219_meteo",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_166_skfire": {
     "itemId": "class_p_char_166_skfire",
@@ -1734,7 +1746,7 @@
       "ko_KR": "스카이파이어의 커널 증표"
     },
     "iconId": "class_p_char_166_skfire",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_242_otter": {
     "itemId": "class_p_char_242_otter",
@@ -1745,7 +1757,7 @@
       "ko_KR": "메이어의 커널 증표"
     },
     "iconId": "class_p_char_242_otter",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_108_silent": {
     "itemId": "class_p_char_108_silent",
@@ -1756,7 +1768,7 @@
       "ko_KR": "사일런스의 커널 증표"
     },
     "iconId": "class_p_char_108_silent",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_171_bldsk": {
     "itemId": "class_p_char_171_bldsk",
@@ -1767,7 +1779,7 @@
       "ko_KR": "와파린의 커널 증표"
     },
     "iconId": "class_p_char_171_bldsk",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_148_nearl": {
     "itemId": "class_p_char_148_nearl",
@@ -1778,7 +1790,7 @@
       "ko_KR": "니어의 커널 증표"
     },
     "iconId": "class_p_char_148_nearl",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_144_red": {
     "itemId": "class_p_char_144_red",
@@ -1789,7 +1801,7 @@
       "ko_KR": "레드의 커널 증표"
     },
     "iconId": "class_p_char_144_red",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_107_liskam": {
     "itemId": "class_p_char_107_liskam",
@@ -1800,7 +1812,7 @@
       "ko_KR": "리스캄의 커널 증표"
     },
     "iconId": "class_p_char_107_liskam",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_201_moeshd": {
     "itemId": "class_p_char_201_moeshd",
@@ -1811,7 +1823,7 @@
       "ko_KR": "크루아상의 커널 증표"
     },
     "iconId": "class_p_char_201_moeshd",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_145_prove": {
     "itemId": "class_p_char_145_prove",
@@ -1822,7 +1834,7 @@
       "ko_KR": "프로방스의 커널 증표"
     },
     "iconId": "class_p_char_145_prove",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_158_milu": {
     "itemId": "class_p_char_158_milu",
@@ -1833,7 +1845,7 @@
       "ko_KR": "파이어워치의 커널 증표"
     },
     "iconId": "class_p_char_158_milu",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_173_slchan": {
     "itemId": "class_p_char_173_slchan",
@@ -1844,7 +1856,7 @@
       "ko_KR": "클리프하트의 커널 증표"
     },
     "iconId": "class_p_char_173_slchan",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_174_slbell": {
     "itemId": "class_p_char_174_slbell",
@@ -1855,7 +1867,7 @@
       "ko_KR": "프라마닉스의 커널 증표"
     },
     "iconId": "class_p_char_174_slbell",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_195_glassb": {
     "itemId": "class_p_char_195_glassb",
@@ -1866,7 +1878,7 @@
       "ko_KR": "이스티나의 커널 증표"
     },
     "iconId": "class_p_char_195_glassb",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_101_sora": {
     "itemId": "class_p_char_101_sora",
@@ -1877,7 +1889,7 @@
       "ko_KR": "소라의 커널 증표"
     },
     "iconId": "class_p_char_101_sora",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_215_mantic": {
     "itemId": "class_p_char_215_mantic",
@@ -1888,7 +1900,7 @@
       "ko_KR": "맨티코어의 커널 증표"
     },
     "iconId": "class_p_char_215_mantic",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_241_panda": {
     "itemId": "class_p_char_241_panda",
@@ -1899,7 +1911,7 @@
       "ko_KR": "에프이터의 커널 증표"
     },
     "iconId": "class_p_char_241_panda",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_164_nightm": {
     "itemId": "class_p_char_164_nightm",
@@ -1910,7 +1922,7 @@
       "ko_KR": "나이트메어의 커널 증표"
     },
     "iconId": "class_p_char_164_nightm",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_308_swire": {
     "itemId": "class_p_char_308_swire",
@@ -1921,7 +1933,7 @@
       "ko_KR": "스와이어의 커널 증표"
     },
     "iconId": "class_p_char_308_swire",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_326_glacus": {
     "itemId": "class_p_char_326_glacus",
@@ -1932,7 +1944,7 @@
       "ko_KR": "글라우쿠스의 커널 증표"
     },
     "iconId": "class_p_char_326_glacus",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_274_astesi": {
     "itemId": "class_p_char_274_astesi",
@@ -1943,7 +1955,7 @@
       "ko_KR": "아스테시아의 커널 증표"
     },
     "iconId": "class_p_char_274_astesi",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_279_excu": {
     "itemId": "class_p_char_279_excu",
@@ -1954,7 +1966,7 @@
       "ko_KR": "이그제큐터의 커널 증표"
     },
     "iconId": "class_p_char_279_excu",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_243_waaifu": {
     "itemId": "class_p_char_243_waaifu",
@@ -1965,7 +1977,7 @@
       "ko_KR": "와이후의 커널 증표"
     },
     "iconId": "class_p_char_243_waaifu",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_261_sddrag": {
     "itemId": "class_p_char_261_sddrag",
@@ -1976,7 +1988,7 @@
       "ko_KR": "리드의 커널 증표"
     },
     "iconId": "class_p_char_261_sddrag",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_356_broca": {
     "itemId": "class_p_char_356_broca",
@@ -1987,7 +1999,7 @@
       "ko_KR": "브로카의 커널 증표"
     },
     "iconId": "class_p_char_356_broca",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_367_swllow": {
     "itemId": "class_p_char_367_swllow",
@@ -1998,7 +2010,7 @@
       "ko_KR": "그레이스롯의 커널 증표"
     },
     "iconId": "class_p_char_367_swllow",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_226_hmau": {
     "itemId": "class_p_char_226_hmau",
@@ -2009,7 +2021,7 @@
       "ko_KR": "훔의 커널 증표"
     },
     "iconId": "class_p_char_226_hmau",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_306_leizi": {
     "itemId": "class_p_char_306_leizi",
@@ -2020,7 +2032,7 @@
       "ko_KR": "레이즈의 커널 증표"
     },
     "iconId": "class_p_char_306_leizi",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_379_sesa": {
     "itemId": "class_p_char_379_sesa",
@@ -2031,7 +2043,7 @@
       "ko_KR": "세사의 커널 증표"
     },
     "iconId": "class_p_char_379_sesa",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_254_vodfox": {
     "itemId": "class_p_char_254_vodfox",
@@ -2042,7 +2054,7 @@
       "ko_KR": "샤마르의 커널 증표"
     },
     "iconId": "class_p_char_254_vodfox",
-    "rarity": "TIER_5"
+    "rarity": 5
   },
   "class_p_char_103_angel": {
     "itemId": "class_p_char_103_angel",
@@ -2053,7 +2065,7 @@
       "ko_KR": "엑시아의 커널 증표"
     },
     "iconId": "class_p_char_103_angel",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_112_siege": {
     "itemId": "class_p_char_112_siege",
@@ -2064,7 +2076,7 @@
       "ko_KR": "시즈의 커널 증표"
     },
     "iconId": "class_p_char_112_siege",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_134_ifrit": {
     "itemId": "class_p_char_134_ifrit",
@@ -2075,7 +2087,7 @@
       "ko_KR": "이프리트의 커널 증표"
     },
     "iconId": "class_p_char_134_ifrit",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_180_amgoat": {
     "itemId": "class_p_char_180_amgoat",
@@ -2086,7 +2098,7 @@
       "ko_KR": "에이야퍄들라의 커널 증표"
     },
     "iconId": "class_p_char_180_amgoat",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_291_aglina": {
     "itemId": "class_p_char_291_aglina",
@@ -2097,7 +2109,7 @@
       "ko_KR": "안젤리나의 커널 증표"
     },
     "iconId": "class_p_char_291_aglina",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_147_shining": {
     "itemId": "class_p_char_147_shining",
@@ -2108,7 +2120,7 @@
       "ko_KR": "샤이닝의 커널 증표"
     },
     "iconId": "class_p_char_147_shining",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_179_cgbird": {
     "itemId": "class_p_char_179_cgbird",
@@ -2119,7 +2131,7 @@
       "ko_KR": "나이팅게일의 커널 증표"
     },
     "iconId": "class_p_char_179_cgbird",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_136_hsguma": {
     "itemId": "class_p_char_136_hsguma",
@@ -2130,7 +2142,7 @@
       "ko_KR": "호시구마의 커널 증표"
     },
     "iconId": "class_p_char_136_hsguma",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_202_demkni": {
     "itemId": "class_p_char_202_demkni",
@@ -2141,7 +2153,7 @@
       "ko_KR": "사리아의 커널 증표"
     },
     "iconId": "class_p_char_202_demkni",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_172_svrash": {
     "itemId": "class_p_char_172_svrash",
@@ -2152,7 +2164,7 @@
       "ko_KR": "실버애쉬의 커널 증표"
     },
     "iconId": "class_p_char_172_svrash",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_263_skadi": {
     "itemId": "class_p_char_263_skadi",
@@ -2163,7 +2175,7 @@
       "ko_KR": "스카디의 커널 증표"
     },
     "iconId": "class_p_char_263_skadi",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_010_chen": {
     "itemId": "class_p_char_010_chen",
@@ -2174,7 +2186,7 @@
       "ko_KR": "첸의 커널 증표"
     },
     "iconId": "class_p_char_010_chen",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_340_shwaz": {
     "itemId": "class_p_char_340_shwaz",
@@ -2185,7 +2197,7 @@
       "ko_KR": "슈바르츠의 커널 증표"
     },
     "iconId": "class_p_char_340_shwaz",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_188_helage": {
     "itemId": "class_p_char_188_helage",
@@ -2196,7 +2208,7 @@
       "ko_KR": "헬라그의 커널 증표"
     },
     "iconId": "class_p_char_188_helage",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_248_mgllan": {
     "itemId": "class_p_char_248_mgllan",
@@ -2207,7 +2219,7 @@
       "ko_KR": "마젤란의 커널 증표"
     },
     "iconId": "class_p_char_248_mgllan",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_213_mostma": {
     "itemId": "class_p_char_213_mostma",
@@ -2218,7 +2230,7 @@
       "ko_KR": "모스티마의 커널 증표"
     },
     "iconId": "class_p_char_213_mostma",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_017_huang": {
     "itemId": "class_p_char_017_huang",
@@ -2229,7 +2241,7 @@
       "ko_KR": "블레이즈의 커널 증표"
     },
     "iconId": "class_p_char_017_huang",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_225_haak": {
     "itemId": "class_p_char_225_haak",
@@ -2240,7 +2252,7 @@
       "ko_KR": "아의 커널 증표"
     },
     "iconId": "class_p_char_225_haak",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_2013_cerber": {
     "itemId": "class_p_char_2013_cerber",
@@ -2251,7 +2263,7 @@
       "ko_KR": "케오베의 커널 증표"
     },
     "iconId": "class_p_char_2013_cerber",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_222_bpipe": {
     "itemId": "class_p_char_222_bpipe",
@@ -2262,7 +2274,7 @@
       "ko_KR": "백파이프의 커널 증표"
     },
     "iconId": "class_p_char_222_bpipe",
-    "rarity": "TIER_6"
+    "rarity": 6
   },
   "class_p_char_250_phatom": {
     "itemId": "class_p_char_250_phatom",
@@ -2273,6 +2285,6 @@
       "ko_KR": "팬텀의 커널 증표"
     },
     "iconId": "class_p_char_250_phatom",
-    "rarity": "TIER_6"
+    "rarity": 6
   }
 }

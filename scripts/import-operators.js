@@ -11,6 +11,7 @@ import enCharacterPatchTable from "./ArknightsGameData_YoStar/en_US/gamedata/exc
 import jpCharacterPatchTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/char_patch_table.json" assert { type: "json" };
 import krCharacterPatchTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/char_patch_table.json" assert { type: "json" };
 
+import rangeTable from "./ArknightsGameData/zh_CN/gamedata/excel/range_table.json" assert { type: "json" };
 
 // import {
 //     getReleaseOrderAndLimitedLookup,
@@ -34,12 +35,11 @@ const NAME_OVERRIDES = {
 };
 
 const CHARACTER_LOCALES = {
-    'zh_CN': { ...cnCharacterTable, ...cnPatchChars },
-    'en_US': { ...enCharacterTable, ...enPatchChars },
-    'ja_JP': { ...jpCharacterTable, ...jpPatchChars },
-    'ko_KR': { ...krCharacterTable, ...krPatchChars },
-}
-
+    zh_CN: { ...cnCharacterTable, ...cnPatchChars },
+    en_US: { ...enCharacterTable, ...enPatchChars },
+    ja_JP: { ...jpCharacterTable, ...jpPatchChars },
+    ko_KR: { ...krCharacterTable, ...krPatchChars },
+};
 
 /**
  * Creates `{dataDir}/operators.json`, Sanity;Gone's "gigafile" containing
@@ -69,11 +69,12 @@ export async function createOperatorsJson(dataDir) {
     // ]);
 
     const summonIdToOperatorId = {};
-    const denormalizedCharacters = Object.entries(CHARACTER_LOCALES['zh_CN']);
+    const denormalizedCharacters = Object.entries(CHARACTER_LOCALES["zh_CN"]);
 
     const transformations = [
         filterPlaceableObjects,
         localizeCharacterDetails,
+        // addPhases
         // addSkills
         // addTalents
         // addVoices
@@ -103,7 +104,7 @@ function filterPlaceableObjects(characters) {
             character.profession !== "TRAP" &&
             !charId.startsWith("trap_") &&
             !character.isNotObtainable
-    )
+    );
 }
 
 function localizeCharacterDetails(characters) {
@@ -112,16 +113,21 @@ function localizeCharacterDetails(characters) {
             charId,
             {
                 ...character,
-                name: getLocalesForValue(charId, 'name'),
-                description: getLocalesForValue(charId, 'description'),
-                tagList: getLocalesForValue(charId, 'tagList'),
-                itemUsage: getLocalesForValue(charId, 'itemUsage'),
-                itemDesc: getLocalesForValue(charId, 'itemDesc'),
-                itemObtainApproach: getLocalesForValue(charId, 'itemObtainApproach'),
-                serverLocales: Object.keys(CHARACTER_LOCALES).filter(locale => CHARACTER_LOCALES[locale][charId]),
-            }
-        ]
-    })
+                name: getLocalesForValue(charId, "name"),
+                description: getLocalesForValue(charId, "description"),
+                tagList: getLocalesForValue(charId, "tagList"),
+                itemUsage: getLocalesForValue(charId, "itemUsage"),
+                itemDesc: getLocalesForValue(charId, "itemDesc"),
+                itemObtainApproach: getLocalesForValue(
+                    charId,
+                    "itemObtainApproach"
+                ),
+                serverLocales: Object.keys(CHARACTER_LOCALES).filter(
+                    (locale) => CHARACTER_LOCALES[locale][charId]
+                ),
+            },
+        ];
+    });
 }
 
 function aggregateSummons(characters, summonIdToOperatorId) {
@@ -131,31 +137,52 @@ function aggregateSummons(characters, summonIdToOperatorId) {
             .forEach((skill) => {
                 summonIdToOperatorId[skill.overrideTokenKey] = charId;
             });
-    })
+    });
 
-    return characters
+    return characters;
 }
 
 function getLocalesForValue(charId, value) {
     return Object.keys(CHARACTER_LOCALES).reduce((locales, locale) => {
         if (CHARACTER_LOCALES[locale][charId]) {
-            locales[locale] = CHARACTER_LOCALES[locale][charId][value] ?? '';
+            locales[locale] = CHARACTER_LOCALES[locale][charId][value] ?? "";
         }
 
-        if (value == 'name' && !CHARACTER_LOCALES[locale][charId]) {
-            locales[locale] = CHARACTER_LOCALES.zh_CN[charId].appellation
+        if (value == "name" && !CHARACTER_LOCALES[locale][charId]) {
+            locales[locale] = CHARACTER_LOCALES.zh_CN[charId].appellation;
         }
 
-        if (value == 'name' && charId == 'char_1001_amiya2') {
-            locales[locale] = CHARACTER_LOCALES[locale][charId][value] + ' (Guard)'
+        if (value == "name" && charId == "char_1001_amiya2") {
+            locales[locale] =
+                CHARACTER_LOCALES[locale][charId][value] + " (Guard)";
         }
 
-        if (value == 'name' && charId == 'char_4055_bgsnow' && locale == 'en_US') {
-            locales[locale] = 'Pozёmka'
+        if (
+            value == "name" &&
+            charId == "char_4055_bgsnow" &&
+            locale == "en_US"
+        ) {
+            locales[locale] = "Pozёmka";
         }
 
         return locales;
     }, {});
+}
+
+function addPhases(characters) {
+    return characters.map(([charId, character]) => {
+        const phases = character.phases.map((phase) => ({
+            ...phase,
+            range: phase.rangeId ? rangeTable[phase.rangeId] : null,
+        }));
+
+        return [
+            charId,
+            {
+                ...character,
+            },
+        ];
+    });
 }
 
 // createOperatorsJson(path.join(__dirname, "../data"))
