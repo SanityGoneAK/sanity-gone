@@ -1,3 +1,3 @@
 # Sanity;Gone
 
-New an Improved Sanity Gone website.
+New and Improved Sanity Gone website.
