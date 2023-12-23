@@ -76,7 +76,7 @@
       "zh_CN": "技能发动期间阻挡数变为0",
       "en_US": "Cannot block enemies during the skill duration",
       "ja_JP": "スキル発動中、ブロック数が0になる",
-      "ko_KR": "스킬 시전 시간 동안 저지 가능 수가 0으로 변경"
+      "ko_KR": "스킬 지속 시간 동안 저지 가능 수가 0으로 변경"
     }
   },
   "centurion": {
@@ -254,9 +254,9 @@
     },
     "trait": {
       "zh_CN": "无法被友方角色治疗，攻击造成<span class=\"keyword\">群体伤害</span>，每攻击到一个敌人回复自身<span class=\"keyword\">50</span>生命，最大生效数等于阻挡数",
-      "en_US": "Cannot be healed by allies; Attacks deal <span class=\"keyword\">AoE damage</span>; Recovers <span class=\"keyword\">50</span> HP for every enemy hit during attacks, up to Block count",
+      "en_US": "Cannot be healed by allies; Attacks deal <span class=\"keyword\">AOE Damage</span>; Recovers <span class=\"keyword\">50</span> HP for every enemy hit during attacks, up to Block count",
       "ja_JP": "味方の治療対象にならない<br>攻撃は<span class=\"keyword\">範囲物理ダメージ</span>を与え、敵を1体攻撃する度自身のHPを<span class=\"keyword\">50</span>回復（攻撃毎の最大回復回数はブロック数と同じ）",
-      "ko_KR": "아군의 치료를 받을 수 없으며, 공격 시 <span class=\"keyword\">광역 대미지</span>를 입히고, 적 1명 적중할 때마다 자신의 HP가 <span class=\"keyword\">50</span>만큼 회복, 최대 효과 수는 저지 가능 수와 동일"
+      "ko_KR": "아군의 치료를 받을 수 없으며, 공격 시 <span class=\"keyword\">광역 대미지</span>를 입히고, 적 1명 적중할 때마다 자신의 HP가 <span class=\"keyword\">50</span> 회복, 최대 적용 수는 저지 가능 수와 동일"
     }
   },
   "librator": {
@@ -616,7 +616,7 @@
       "zh_CN": "通常时<span class=\"keyword\">不攻击</span>且防御力和法术抗性大幅度<span class=\"keyword\">提升</span>，技能开启时攻击造成<span class=\"keyword\">群体法术伤害</span>",
       "en_US": "Normally <span class=\"keyword\">does not attack</span>, but has <span class=\"keyword\">+200%</span> DEF and <span class=\"keyword\">+20</span> RES; When skill is active, attacks deal <span class=\"keyword\">AoE Arts damage</span>",
       "ja_JP": "通常時<span class=\"keyword\">攻撃しない</span>、防御力と術耐性大幅<span class=\"keyword\">上昇</span><br>スキル発動中、通常攻撃が攻撃範囲内の敵全員に<span class=\"keyword\">範囲術ダメージ</span>を与える",
-      "ko_KR": "평소에 <span class=\"keyword\">공격하지 않으며</span> 방어력과 머법 저항이 대폭 <span class=\"keyword\">상승</span>, 스킬 발동 시 공격 범위 내 모든 적에게 <span class=\"keyword\">광역 마법 대미지</span>를 입힌다"
+      "ko_KR": "평소에 <span class=\"keyword\">공격하지 않으며</span> 방어력과 마법 저항이 대폭 <span class=\"keyword\">상승</span>, 스킬 발동 시 공격 범위 내 모든 적에게 <span class=\"keyword\">광역 마법 대미지</span>를 입힌다"
     }
   },
   "mystic": {
@@ -755,7 +755,7 @@
     "trait": {
       "zh_CN": "恢复友方单位生命，并回复相当于攻击力50%的<span class=\"elemental-damage\">元素损伤</span>（可以回复未受伤友方单位的<span class=\"elemental-damage\">元素损伤</span>）",
       "en_US": "Restores the HP of allies<br>Recovers <span class=\"elemental-damage\">Elemental damage</span> equal to <span class=\"keyword\">50%</span> of Attack Power<br>(Can heal <span class=\"elemental-damage\">Elemental damage</span> of unhurt units)",
-      "ja_JP": "味方のHPを回復し、同時に対象に蓄積された<span class=\"elemental-damage\">元素ダメージ</span>を自身の攻撃力の50％の値分治療する（HP最大の味方も<span class=\"elemental-damage\">元素ダメージ</span>の治療対象となる）",
+      "ja_JP": "味方のHPを回復し、同時に対象に蓄積された<span class=\"elemental-damage\">元素損傷</span>を自身の攻撃力の50％の値分治療する（HP最大の味方も<span class=\"elemental-damage\">元素損傷</span>の治療対象となる）",
       "ko_KR": "아군 유닛의 HP 회복, 동시에 공격력의 50%에 해당하는 <span class=\"elemental-damage\">원소 피해</span> 회복 (부상이 없는 아군 유닛의 <span class=\"elemental-damage\">원소 피해</span>도 회복 가능)"
     }
   },

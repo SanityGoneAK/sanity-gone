@@ -1,4 +1,4 @@
-import cnCharacterTable from "../ArknightsGameData/zh_CN/gamedata/excel/character_table.json";
+import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json";
 
 const alterNameRegex = /(\S+)\s+the\s+/i;
 

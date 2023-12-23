@@ -1,7 +1,7 @@
 import { load } from "cheerio";
 
 import axios from "./axios";
-import { charSkins as cnCharSkins } from "ArknightsGameData/zh_CN/gamedata/excel/skin_table.json";
+import { charSkins as cnCharSkins } from "./ArknightsGameData/zh_CN/gamedata/excel/skin_table.json";
 
 const PRTS_BASE_URL = "https://prts.wiki";
 const PRTS_OPERATOR_LIST_URL = `${PRTS_BASE_URL}/w/%E5%B9%B2%E5%91%98%E4%B8%8A%E7%BA%BF%E6%97%B6%E9%97%B4%E4%B8%80%E8%A7%88`;
@@ -88,6 +88,7 @@ export async function getSkinObtainSourceAndCosts() {
                     cnOriginalObtainSources.forEach((cnOriginalObtainSource) => {
                         switch (cnOriginalObtainSource) {
                             case "机密圣所":
+                            case "危机合约":
                                 allObtainSources.add(SkinSource.ContingencyContractStore);
                                 break;
                             case "采购中心":
@@ -143,7 +144,7 @@ export async function getSkinObtainSourceAndCosts() {
                     // (e.g. when event skins can later be obtained via the CC store)
                     const contingencyContractCostTh = $(el)
                         .find(
-                            'th:contains("获取时限") img[alt^="图标 合约赏金"], th:contains("复刻时限") img[alt^="图标 合约赏金"]'
+                            'th:contains("获取时限") img[alt^="图标 合约赏金"], th:contains("复刻时限") img[alt^="图标 合约赏金"], th:contains("获取时限") img[alt^="图标 晶体合约赏金"]'
                         )
                         .last()
                         .closest("th");
