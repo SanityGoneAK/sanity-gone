@@ -6,9 +6,9 @@ export interface Props {
 }
 
 const { title, previousLocation, previousLocationLink } = Astro.props;
-//
-// import DiscordLogo from "../components/icons/DiscordLogo.astro";
-// import TwitterLogo from "../components/icons/TwitterLogo.astro";
+
+import DiscordLogo from "../components/icons/DiscordLogo.astro";
+import TwitterLogo from "../components/icons/TwitterLogo.astro";
 // import SanityGoneLogo from "../components/SanityGoneLogo/SanityGoneLogo.astro";
 // import NavigationLink from "../components/NavigationLink/NavigationLink.astro";
 // import SearchBar from "../components/SearchBar";
@@ -58,6 +58,7 @@ const sidebarLinks = [
         <slot name="head" />
     </head>
     <body>
+        
         <style is:global>
             html {
                 font-family: "Source Sans Pro", sans-serif;
