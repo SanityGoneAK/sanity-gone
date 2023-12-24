@@ -1,10 +1,10 @@
-import type { InterpolatedValue } from "./description-parser";
+import type { InterpolatedValue } from "../utils/description-parser";
 import type { Range } from "./gamedata-types";
-import type { RiicSkill } from "../scripts/aggregate-riic-data";
-import type { CharacterStatValues } from "./utils/character-stats";
+import type { RiicSkill } from "../../scripts/aggregate-riic-data";
+import type { CharacterStatValues } from "../utils/character-stats";
 
-export type { SkinSource, SkinCostTokenType } from "../scripts/scrape-prts";
-export type { RiicSkill } from "../scripts/aggregate-riic-data";
+export type { SkinSource, SkinCostTokenType } from "../../scripts/scrape-prts";
+export type { RiicSkill } from "../../scripts/aggregate-riic-data";
 
 // This file contains the output types of our gamedata scripts - the game data after it's been
 // processed by the scripts. These types do NOT fully conform to raw gamedata.
@@ -356,21 +356,25 @@ export type SearchResult =
   | BranchSearchResult;
 
 interface OperatorSearchResult {
+  objectID: string;
   type: "operator";
   charId: string;
   name: string;
   class: string;
   subclass: string;
   rarity: number;
+  hasGuide: boolean;
 }
 
 interface ClassSearchResult {
+  objectID: string;
   type: "class";
   name: string;
   class: string;
 }
 
 interface BranchSearchResult {
+  objectID: string;
   type: "branch";
   name: string;
   class: string;

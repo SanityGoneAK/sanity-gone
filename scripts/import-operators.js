@@ -116,7 +116,8 @@ export async function createOperatorsJson(dataDir) {
         addModules,
         addRiicSkills,
         addAlterInformation,
-        addReleaseOrderAndLimited
+        addReleaseOrderAndLimited,
+        sortByRarityAndRelease,
     ];
 
     const characters = transformations.reduce((acc, transformation) => {
@@ -399,7 +400,7 @@ function addSkills(characters, { jetSkillTranslations }) {
                                     return;
                                 }
 
-                                if(skillTL && !SKILL_LOCALES[locale][skillId] && locale == "en_US"){
+                                if (skillTL && !SKILL_LOCALES[locale][skillId] && locale == "en_US") {
                                     baseSkillLevelObject.name[locale] = skillTL.name;
                                     baseSkillLevelObject.description[locale] = skillTL.desc[levelIndex];
                                     return;
@@ -523,6 +524,14 @@ function convertRarityIndex(characters) {
             }
         ]
     })
+}
+
+function sortByRarityAndRelease(characters) {
+    return characters.sort(([_, charA], [__, charB]) => {
+        return (
+            charB.rarity - charA.rarity || charB.releaseOrder - charA.releaseOrder
+        );
+    });
 }
 
 
