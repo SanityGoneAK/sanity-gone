@@ -1,13 +1,14 @@
 import { defineConfig } from 'astro/config';
 import react from "@astrojs/react";
 import astroI18next from "astro-i18next";
-
 import node from "@astrojs/node";
+
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
-  integrations: [react(), astroI18next()],
+  integrations: [react(), astroI18next(), tailwind()],
   adapter: node({
     mode: "standalone"
   }),
@@ -15,17 +16,19 @@ export default defineConfig({
     build: {
       rollupOptions: {
         output: {
-          manualChunks: (id) => {
+          manualChunks: id => {
             // force .json imports into their own chunks
             // so that they aren't inadvertently redownloaded
             if (id.endsWith(".json")) {
-              const { base } = path.parse(id);
+              const {
+                base
+              } = path.parse(id);
               return base;
             }
             return;
-          },
-        },
-      },
-    },
-  },
+          }
+        }
+      }
+    }
+  }
 });

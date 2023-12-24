@@ -1,0 +1,67 @@
+---
+export interface Props {
+    title: string;
+    previousLocation?: string;
+    previousLocationLink?: string;
+}
+
+const { title, previousLocation, previousLocationLink } = Astro.props;
+//
+// import DiscordLogo from "../components/icons/DiscordLogo.astro";
+// import TwitterLogo from "../components/icons/TwitterLogo.astro";
+// import SanityGoneLogo from "../components/SanityGoneLogo/SanityGoneLogo.astro";
+// import NavigationLink from "../components/NavigationLink/NavigationLink.astro";
+// import SearchBar from "../components/SearchBar";
+
+const sidebarLinks = [
+    {
+        href: "/",
+        name: "Home",
+    },
+    {
+        href: "/operators",
+        name: "Operators",
+    },
+    // {
+    //   href: "/dps",
+    //   name: "DPS Calculator",
+    // },
+    // {
+    //   href: "/maps",
+    //   name: "Maps",
+    // },
+];
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="generator" content={Astro.generator} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin=""
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>{title}</title>
+        <slot name="head" />
+    </head>
+    <body>
+        <style is:global>
+            html {
+                font-family: "Source Sans Pro", sans-serif;
+            }
+        </style>
+    </body>
+</html>
