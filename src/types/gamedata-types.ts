@@ -5,43 +5,43 @@ import type { InterpolatedValue } from "./description-parser";
 // Typings post-transformation can be found in output-types.ts.
 
 export interface SharedProperties {
-  name: string;
-  description: string;
-  appellation: string;
-  profession: string;
-  tokenKey: string | null;
-  subProfessionId: string;
-  rarity: number;
-  isNotObtainable: boolean;
-  trait: {
-    candidates: {
-      blackboard: InterpolatedValue[];
-    }[];
-  } | null;
+	name: string;
+	description: string;
+	appellation: string;
+	profession: string;
+	tokenKey: string | null;
+	subProfessionId: string;
+	rarity: number;
+	isNotObtainable: boolean;
+	trait: {
+		candidates: {
+			blackboard: InterpolatedValue[];
+		}[];
+	} | null;
 }
 
 /**
  * The raw game-data version of a single character.
  */
 export interface Character extends SharedProperties {
-  phases: {
-    rangeId: string | null;
-    [otherProperties: string]: unknown;
-  }[];
-  talents:
-  | {
-    candidates: {
-      rangeId: string | null;
-      name: string;
-      description: string;
-    }[];
-  }[]
-  | null;
-  skills: {
-    skillId: string | null;
-    rangeId: string | null;
-    overrideTokenKey: string | null;
-  }[];
+	phases: {
+		rangeId: string | null;
+		[otherProperties: string]: unknown;
+	}[];
+	talents:
+		| {
+				candidates: {
+					rangeId: string | null;
+					name: string;
+					description: string;
+				}[];
+		  }[]
+		| null;
+	skills: {
+		skillId: string | null;
+		rangeId: string | null;
+		overrideTokenKey: string | null;
+	}[];
 }
 
 /**
@@ -49,12 +49,12 @@ export interface Character extends SharedProperties {
  * Each range is represented by a unique "range ID".
  */
 export interface Range {
-  id: string;
-  direction: number;
-  grids: {
-    row: number;
-    col: number;
-  }[];
+	id: string;
+	direction: number;
+	grids: {
+		row: number;
+		col: number;
+	}[];
 }
 
 /**
@@ -63,35 +63,35 @@ export interface Range {
  * Yes, it is a giant mess.
  */
 export interface BattleEquip {
-  phases: {
-    equipLevel: number;
-    parts: {
-      target: string;
-      addOrOverrideTalentDataBundle: {
-        candidates:
-        | {
-          displayRangeId: boolean;
-          upgradeDescription: string | null;
-          talentIndex: number;
-          requiredPotentialRank: number;
-          rangeId: string | null;
-          blackboard: InterpolatedValue[];
-        }[]
-        | null;
-      };
-      overrideTraitDataBundle: {
-        candidates:
-        | {
-          additionalDescription: string | null;
-          requiredPotentialRank: number;
-          blackboard: InterpolatedValue[];
-          overrideDescripton: string | null; // not a typo
-        }[]
-        | null;
-      };
-      [otherProperties: string]: unknown;
-    }[];
-    attributeBlackboard: InterpolatedValue[];
-    tokenAttributeBlackboard: InterpolatedValue[];
-  }[];
+	phases: {
+		equipLevel: number;
+		parts: {
+			target: string;
+			addOrOverrideTalentDataBundle: {
+				candidates:
+					| {
+							displayRangeId: boolean;
+							upgradeDescription: string | null;
+							talentIndex: number;
+							requiredPotentialRank: number;
+							rangeId: string | null;
+							blackboard: InterpolatedValue[];
+					  }[]
+					| null;
+			};
+			overrideTraitDataBundle: {
+				candidates:
+					| {
+							additionalDescription: string | null;
+							requiredPotentialRank: number;
+							blackboard: InterpolatedValue[];
+							overrideDescripton: string | null; // not a typo
+					  }[]
+					| null;
+			};
+			[otherProperties: string]: unknown;
+		}[];
+		attributeBlackboard: InterpolatedValue[];
+		tokenAttributeBlackboard: InterpolatedValue[];
+	}[];
 }

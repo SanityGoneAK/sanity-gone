@@ -7,37 +7,37 @@ import { items as jpItems } from "./ArknightsGameData_YoStar/ja_JP/gamedata/exce
 import { items as krItems } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/item_table.json";
 
 const ITEM_LOCALES = {
-    zh_CN: cnItems,
-    en_US: enItems,
-    ja_JP: jpItems,
-    ko_KR: krItems,
+	zh_CN: cnItems,
+	en_US: enItems,
+	ja_JP: jpItems,
+	ko_KR: krItems,
 };
 
 const UNOFFICIAL_ITEM_NAME_TRANSLATIONS = {
-    31073: {
-        zh_CN: "褐素纤维",
-        en_US: "Brown Fiber",
-        ja_JP: "茶色繊維",
-        ko_KR: "갈색 섬유",
-    },
-    31074: {
-        zh_CN: "固化纤维板",
-        en_US: "Cured Fiberboard",
-        ja_JP: "硬化ファイバーボード",
-        ko_KR: "경화 섬유보드",
-    },
-    31083: {
-        zh_CN: "环烃聚质",
-        en_US: "Cycloalkane Polymer",
-        ja_JP: "シクロアルカンポリマー",
-        ko_KR: "졸로알케인 고분자",
-    },
-    31084: {
-        zh_CN: "环烃预制体",
-        en_US: "Cycloalkane Prefab",
-        ja_JP: "シクロアルカンプリファブ",
-        ko_KR: "졸로알케인 프리팹",
-    },
+	31073: {
+		zh_CN: "褐素纤维",
+		en_US: "Brown Fiber",
+		ja_JP: "茶色繊維",
+		ko_KR: "갈색 섬유",
+	},
+	31074: {
+		zh_CN: "固化纤维板",
+		en_US: "Cured Fiberboard",
+		ja_JP: "硬化ファイバーボード",
+		ko_KR: "경화 섬유보드",
+	},
+	31083: {
+		zh_CN: "环烃聚质",
+		en_US: "Cycloalkane Polymer",
+		ja_JP: "シクロアルカンポリマー",
+		ko_KR: "졸로알케인 고분자",
+	},
+	31084: {
+		zh_CN: "环烃预制体",
+		en_US: "Cycloalkane Prefab",
+		ja_JP: "シクロアルカンプリファブ",
+		ko_KR: "졸로알케인 프리팹",
+	},
 };
 
 /**
@@ -45,14 +45,14 @@ const UNOFFICIAL_ITEM_NAME_TRANSLATIONS = {
  * @returns {boolean} whether to include this `itemId` in `items.json` or not
  */
 function isItemWeCareAbout(itemId) {
-    const entry = cnItems[itemId];
-    return (
-        itemId === "4001" || // LMD
-        (entry.classifyType === "MATERIAL" &&
-            !itemId.startsWith("p_char_") && // character-specific potential tokens
-            !itemId.startsWith("tier") && // generic potential tokens
-            !itemId.startsWith("voucher_full_")) // vouchers for event welfare ops like Flamebringer
-    );
+	const entry = cnItems[itemId];
+	return (
+		itemId === "4001" || // LMD
+		(entry.classifyType === "MATERIAL" &&
+			!itemId.startsWith("p_char_") && // character-specific potential tokens
+			!itemId.startsWith("tier") && // generic potential tokens
+			!itemId.startsWith("voucher_full_")) // vouchers for event welfare ops like Flamebringer
+	);
 }
 
 /**
@@ -66,64 +66,65 @@ function isItemWeCareAbout(itemId) {
  * @param {string} dataDir - output directory
  */
 export async function createItemsJson(dataDir) {
-    console.log(`Creating ${path.join(dataDir, "items.json")}...`);
+	console.log(`Creating ${path.join(dataDir, "items.json")}...`);
 
-    const transformations = [filterItems, getLocalizedName, toEntries];
+	const transformations = [filterItems, getLocalizedName, toEntries];
 
-    const items = transformations.reduce((acc, transformation) => {
-        return transformation(acc);
-    }, Object.keys(ITEM_LOCALES.zh_CN));
+	const items = transformations.reduce((acc, transformation) => {
+		return transformation(acc);
+	}, Object.keys(ITEM_LOCALES.zh_CN));
 
-    await fs.writeFile(
-        path.join(dataDir, "items.json"),
-        JSON.stringify(Object.fromEntries(items), null, 2)
-    );
+	await fs.writeFile(
+		path.join(dataDir, "items.json"),
+		JSON.stringify(Object.fromEntries(items), null, 2)
+	);
 }
 
 function filterItems(items) {
-    return items.filter((itemId) => isItemWeCareAbout(itemId));
+	return items.filter((itemId) => isItemWeCareAbout(itemId));
 }
 
 function getLocalizedName(items) {
-    return items.map((itemId) => {
-        const name = Object.keys(ITEM_LOCALES).reduce((locales, locale) => {
-            if(itemId in UNOFFICIAL_ITEM_NAME_TRANSLATIONS){
-                locales[locale] = UNOFFICIAL_ITEM_NAME_TRANSLATIONS[itemId][locale]
-            }
+	return items.map((itemId) => {
+		const name = Object.keys(ITEM_LOCALES).reduce((locales, locale) => {
+			if (itemId in UNOFFICIAL_ITEM_NAME_TRANSLATIONS) {
+				locales[locale] =
+					UNOFFICIAL_ITEM_NAME_TRANSLATIONS[itemId][locale];
+			}
 
-            if (ITEM_LOCALES[locale][itemId]) {
-                locales[locale] = ITEM_LOCALES[locale][itemId].name ?? "";
-                return locales;
-            }
+			if (ITEM_LOCALES[locale][itemId]) {
+				locales[locale] = ITEM_LOCALES[locale][itemId].name ?? "";
+				return locales;
+			}
 
-            if(!locales[locale]){
-                console.warn(
-                    "No translation available for item ID: " + itemId,
-                    locale
-                );
-            }
-            return locales;
-        }, {});
+			if (!locales[locale]) {
+				console.warn(
+					"No translation available for item ID: " + itemId,
+					locale
+				);
+			}
+			return locales;
+		}, {});
 
-        return {
-            itemId,
-            name,
-        };
-    });
+		return {
+			itemId,
+			name,
+		};
+	});
 }
 
 function toEntries(items) {
-    return items.map(({ itemId, name }) => {
-        const item = ITEM_LOCALES.zh_CN[itemId];
+	return items.map(({ itemId, name }) => {
+		const item = ITEM_LOCALES.zh_CN[itemId];
 
-        return [
-            itemId,
-            {
-                itemId,
-                name,
-                iconId: item.iconId,
-                rarity: parseInt(item.rarity.replace("TIER_", "")),
-            },
-        ];
-    });
+		return [
+			itemId,
+			{
+				itemId,
+				name,
+				iconId: item.iconId,
+				rarity: parseInt(item.rarity.replace("TIER_", "")),
+			},
+		];
+	});
 }

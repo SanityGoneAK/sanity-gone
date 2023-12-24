@@ -1,40 +1,40 @@
 {
-  "name": "sanity-gone-v2",
-  "version": "0.2.0",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "lint": "eslint",
-    "update-game-data": "git submodule update --init --recursive --remote && sucrase-node ./scripts/all.js",
-    "import:operators": "sucrase-node ./scripts/import-operators.js",
-    "import:branches": "sucrase-node ./scripts/import-branches.js"
-  },
-  "dependencies": {
-    "@astrojs/check": "^0.3.3",
-    "@astrojs/node": "^7.0.1",
-    "@astrojs/react": "^3.0.7",
-    "@astrojs/tailwind": "^5.0.4",
-    "@types/react": "^18.2.45",
-    "@types/react-dom": "^18.2.18",
-    "algoliasearch": "^4.22.0",
-    "astro": "^4.0.6",
-    "astro-i18next": "^1.0.0-beta.21",
-    "axios": "^1.6.2",
-    "dotenv": "^16.3.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-i18next": "^13.5.0",
-    "tailwindcss": "^3.4.0",
-    "typescript": "^5.3.3",
-    "xregexp": "^5.1.1"
-  },
-  "devDependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "sucrase": "^3.34.0",
-    "ts-node": "^10.9.2",
-    "vite": "^5.0.10"
-  }
+	"name": "sanity-gone-v2",
+	"version": "0.2.0",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"lint": "prettier --write .",
+		"update-game-data": "git submodule update --init --recursive --remote && sucrase-node ./scripts/all.js",
+		"import:operators": "sucrase-node ./scripts/import-operators.js",
+		"import:branches": "sucrase-node ./scripts/import-branches.js"
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.3.3",
+		"@astrojs/node": "^7.0.1",
+		"@astrojs/react": "^3.0.7",
+		"@astrojs/tailwind": "^5.0.4",
+		"@types/react": "^18.2.45",
+		"@types/react-dom": "^18.2.18",
+		"algoliasearch": "^4.22.0",
+		"astro": "^4.0.6",
+		"astro-i18next": "^1.0.0-beta.21",
+		"axios": "^1.6.2",
+		"dotenv": "^16.3.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-i18next": "^13.5.0",
+		"tailwindcss": "^3.4.0",
+		"typescript": "^5.3.3",
+		"xregexp": "^5.1.1"
+	},
+	"devDependencies": {
+		"cheerio": "^1.0.0-rc.12",
+		"sucrase": "^3.34.0",
+		"ts-node": "^10.9.2",
+		"vite": "^5.0.10"
+	}
 }
