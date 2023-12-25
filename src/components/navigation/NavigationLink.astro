@@ -1,0 +1,41 @@
+---
+export interface Props {
+	active: boolean;
+	href: string;
+	name: string;
+}
+const { active, href, name } = Astro.props;
+---
+
+<a href={href} class:list={['block', {'border-r-2 border-neutral-100':active}]}>
+	<p
+		class:list={[
+			"h-16 pl-6 flex items-center text-neutral-300 text-base leading-6",
+			{ "hover:bg-neutral-600": !active },
+			{ "bg-neutral-500": active },
+		]}
+	>
+		<svg
+			width="16"
+			height="16"
+			viewBox="0 0 16 16"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			class="mr-6"
+		>
+			<rect
+				class={active ? "stroke-neutral-100" : "stroke-neutral-300"}
+				x="1"
+				y="1"
+				width="14"
+				height="14"
+				stroke="#E8E8F2"
+				stroke-width="2"></rect>
+		</svg>
+		<span
+			class={active
+				? "text-neutral-100 font-semibold"
+				: "text-neutral-300"}>{name}</span
+		>
+	</p>
+</a>

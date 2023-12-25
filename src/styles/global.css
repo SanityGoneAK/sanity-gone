@@ -1,0 +1,99 @@
+html {
+	overflow-y: scroll;
+	scrollbar-width: auto;
+	scrollbar-color: rgba(255, 255, 255, 0.8) transparent;
+}
+
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+*::-webkit-scrollbar {
+	width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	background-clip: content-box;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+*::-webkit-scrollbar-thumb:active {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+:root {
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+img {
+	object-fit: contain;
+}
