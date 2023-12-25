@@ -10,7 +10,7 @@ const { active, href, name } = Astro.props;
 <a href={href} class:list={['block', {'border-r-2 border-neutral-100':active}]}>
 	<p
 		class:list={[
-			"h-16 pl-6 flex items-center text-neutral-300 text-base leading-6",
+			"h-16 pl-3 sm:pl-6 flex items-center text-neutral-300 text-base leading-6",
 			{ "hover:bg-neutral-600": !active },
 			{ "bg-neutral-500": active },
 		]}
@@ -21,7 +21,7 @@ const { active, href, name } = Astro.props;
 			viewBox="0 0 16 16"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
-			class="mr-6"
+			class="mr-3 sm:mr-6"
 		>
 			<rect
 				class={active ? "stroke-neutral-100" : "stroke-neutral-300"}

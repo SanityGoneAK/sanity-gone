@@ -9,8 +9,9 @@ const { title, previousLocation, previousLocationLink } = Astro.props;
 
 import DiscordLogo from "../components/icons/DiscordLogo.astro";
 import TwitterLogo from "../components/icons/TwitterLogo.astro";
-import SanityGoneLogo from "../components/SanityGoneLogo.astro";
+import SanityGoneLogo from "../components/SanityGoneLogo.tsx";
 import NavigationLink from "../components/navigation/NavigationLink.astro";
+import Sidebar from "../components/navigation/Sidebar";
 // import SearchBar from "../components/SearchBar";
 
 import "../styles/global.css";
@@ -60,60 +61,61 @@ const sidebarLinks = [
 		<slot name="head" />
 	</head>
 	<body class="bg-neutral-700">
-		<div class="sm:flex">
-			<div
-				class="w-full sm:w-[228px] flex flex-none flex-col bg-neutral-700 h-dvh shadow-3xl absolute sm:relative"
-			>
-				<div
-					class="w-full sm:w-[228px] px-3 sm:px-0 h-16 flex items-center justify-between sm:justify-center bg-neutral-600 border-b border-r border-neutral-500 border-solid"
-				>
-					<SanityGoneLogo hasIcon={true} />
-
-                    <svg class="sm:hidden" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.5446 2.73404C16.7723 2.73404 17 2.53457 17 2.25532V0.978723C17 0.739362 16.7723 0.5 16.5446 0.5H0.455357C0.189732 0.5 0 0.739362 0 0.978723V2.25532C0 2.53457 0.189732 2.73404 0.455357 2.73404H16.5446ZM16.5446 9.11702C16.7723 9.11702 17 8.91755 17 8.6383V7.3617C17 7.12234 16.7723 6.88298 16.5446 6.88298H0.455357C0.189732 6.88298 0 7.12234 0 7.3617V8.6383C0 8.91755 0.189732 9.11702 0.455357 9.11702H16.5446ZM16.5446 15.5C16.7723 15.5 17 15.3005 17 15.0213V13.7447C17 13.5053 16.7723 13.266 16.5446 13.266H0.455357C0.189732 13.266 0 13.5053 0 13.7447V15.0213C0 15.3005 0.189732 15.5 0.455357 15.5H16.5446Z" fill="#E3E1EF"/>
-                    </svg>                        
-				</div>
-				<nav class="flex-grow">
-					{
-						sidebarLinks.map(({ href, name }) => (
-							<NavigationLink
-								href={href}
-								name={name}
-								active={
-									href === "/"
-										? Astro.url.pathname === "/"
-										: Astro.url.pathname.startsWith(href)
-								}
-							/>
-						))
-					}
-				</nav>
-				<footer class="px-6 mb-6 text-sm">
-					<div class="flex gap-4 justify-center">
-						<DiscordLogo />
-						<TwitterLogo />
-					</div>
-					<hr class="text-neutral-500 my-6" />
-					<p class="mb-6 text-neutral-300">
-						Sanity;Gone is a community resource for Arknights
-						players, providing guides, reviews, and detailed
-						information about the game.
-					</p>
-					<nav
-						class="flex justify-between items-center text-neutral-200"
+		<div class="sm:flex flex-row h-full isolate">
+			<Sidebar client:visible>
+				<div class="flex flex-col h-full">
+					<div
+						class="sm:hidden py-4 flex justify-center items-center"
 					>
-						<a class="hover:text-neutral-100" href="#">Disclaimer</a
-						>
-						<a class="hover:text-neutral-100" href="#">About</a>
-						<a class="hover:text-neutral-100" href="#">Contact</a>
+						SearchBar
+					</div>
+					<nav class="flex-grow">
+						{
+							sidebarLinks.map(({ href, name }) => (
+								<NavigationLink
+									href={href}
+									name={name}
+									active={
+										href === "/"
+											? Astro.url.pathname === "/"
+											: Astro.url.pathname.startsWith(
+													href
+												)
+									}
+								/>
+							))
+						}
 					</nav>
-				</footer>
-			</div>
-			<div class="flex-1 flex flex-col">
-				<div
-					class="h-16 bg-neutral-600 shadow-3xl border-b border-neutral-500 border-solid"
-				>
+					<footer class="px-6 mb-6 text-sm">
+						<div class="flex gap-4 justify-center">
+							<DiscordLogo />
+							<TwitterLogo />
+						</div>
+						<hr class="text-neutral-500 my-6" />
+						<p class="mb-6 text-neutral-300">
+							Sanity;Gone is a community resource for Arknights
+							players, providing guides, reviews, and detailed
+							information about the game.
+						</p>
+						<nav
+							class="flex justify-between items-center text-neutral-200"
+						>
+							<a class="hover:text-neutral-100" href="#"
+								>Disclaimer</a
+							>
+							<a class="hover:text-neutral-100" href="#">About</a>
+							<a class="hover:text-neutral-100" href="#"
+								>Contact</a
+							>
+						</nav>
+					</footer>
+				</div>
+			</Sidebar>
 
+			<div class="flex-1 flex flex-col ">
+				<div
+					class="hidden sm:block h-16 bg-neutral-600 shadow-3xl border-b border-neutral-500 border-solid"
+				>
 				</div>
 				<main class="flex-grow p-6">
 					<slot />
