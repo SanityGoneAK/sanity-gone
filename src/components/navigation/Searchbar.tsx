@@ -9,6 +9,7 @@ import {
     useSearchBox,
     type UseSearchBoxProps,
 } from "react-instantsearch";
+import type { BaseHit } from 'instantsearch.js';
 import { slugify, subclassSlugify } from "../../utils/strings.ts";
 import algoliasearch from "algoliasearch/lite";
 import type {
@@ -62,7 +63,7 @@ const CustomSearchInput: React.FC<{ placeholder: string,  inputRef: React.RefObj
 };
 
 const CustomHits: React.FC<{ onSelected?: () => void }> = ({ onSelected }) => {
-    const { hits, results, sendEvent } = useHits();
+    const { hits, results, sendEvent } = useHits<BaseHit & SearchResult>();
 
     let operatorResults: OperatorSearchResult[] = [];
     let classResults: (ClassSearchResult | BranchSearchResult)[] = [];
