@@ -273,7 +273,7 @@ function addTalents(characters, { jetTalentTranslations }) {
 								try {
 									const talentTL =
 										jetTalentTranslations[charId][
-											talentIndex
+										talentIndex
 										][phaseIndex];
 									baseCandidateObject.name[locale] =
 										talentTL.name;
@@ -485,7 +485,7 @@ function addSkills(characters, { jetSkillTranslations }) {
 }
 
 function filterSummons(characters) {
-	return characters.filter((character) => character.profession !== "TOKEN");
+	return characters.filter(([charId, character]) => character.profession !== "TOKEN");
 }
 
 function addSummons(characters, { summonIdToOperatorId }) {
@@ -541,7 +541,7 @@ function addReleaseOrderAndLimited(
 			{
 				...character,
 				...releaseOrderAndLimitedLookup[
-					CHARACTER_LOCALES.zh_CN[charId]
+				CHARACTER_LOCALES.zh_CN[charId]
 				],
 			},
 		];

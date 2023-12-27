@@ -5,7 +5,7 @@ import useMediaQuery from '../../utils/media-query';
 import { clsx as cx } from 'clsx';
 
 
-const Sidebar: React.FC = ({ children }) => {
+const Sidebar: React.FC<React.PropsWithChildren> = ({ children }) => {
     const [open, setOpen] = useState(true);
     const isMobile = useMediaQuery('(max-width: 640px)')
 

@@ -1,5 +1,4 @@
 html {
-	overflow-y: scroll;
 	scrollbar-width: auto;
 	scrollbar-color: rgba(255, 255, 255, 0.8) transparent;
 }
@@ -28,6 +27,10 @@ input::-webkit-inner-spin-button {
 
 input[type="number"] {
 	-moz-appearance: textfield;
+}
+
+.search-input[type="search"]::-webkit-search-cancel-button {
+	display: none;
 }
 
 *::-webkit-scrollbar {

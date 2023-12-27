@@ -9,14 +9,13 @@ const { title, previousLocation, previousLocationLink } = Astro.props;
 
 import DiscordLogo from "../components/icons/DiscordLogo.astro";
 import TwitterLogo from "../components/icons/TwitterLogo.astro";
-import SanityGoneLogo from "../components/SanityGoneLogo.tsx";
 import NavigationLink from "../components/navigation/NavigationLink.astro";
 import Sidebar from "../components/navigation/Sidebar";
-// import SearchBar from "../components/SearchBar";
+import SearchBar from "../components/navigation/SearchBar";
 
 import "../styles/global.css";
 
-const sidebarLinks = [
+const sidebarLinks: {href: string, name:string}[] = [
 	{
 		href: "/",
 		name: "Home",
@@ -67,7 +66,7 @@ const sidebarLinks = [
 					<div
 						class="sm:hidden py-4 flex justify-center items-center"
 					>
-						SearchBar
+						<SearchBar client:visible/>
 					</div>
 					<nav class="flex-grow">
 						{
@@ -116,6 +115,7 @@ const sidebarLinks = [
 				<div
 					class="hidden sm:block h-16 bg-neutral-600 shadow-3xl border-b border-neutral-500 border-solid"
 				>
+					<SearchBar client:visible/>
 				</div>
 				<main class="flex-grow p-6">
 					<slot />

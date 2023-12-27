@@ -355,29 +355,29 @@ export type SearchResult =
 	| ClassSearchResult
 	| BranchSearchResult;
 
-interface OperatorSearchResult {
+export interface OperatorSearchResult {
 	objectID: string;
 	type: "operator";
 	charId: string;
-	name: string;
+	name: LocalizedString;
 	class: string;
-	subclass: string;
+	subclass: LocalizedString;
 	rarity: number;
 	hasGuide: boolean;
 }
 
-interface ClassSearchResult {
+export interface ClassSearchResult {
 	objectID: string;
 	type: "class";
 	name: string;
 	class: string;
 }
 
-interface BranchSearchResult {
+export interface BranchSearchResult {
 	objectID: string;
 	type: "branch";
-	name: string;
-	class: string;
+	name: LocalizedString;
+	class: LocalizedString;
 	subProfession: string;
 }
 
