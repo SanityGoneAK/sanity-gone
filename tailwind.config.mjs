@@ -32,15 +32,17 @@ export default {
 				DEFAULT: '#A7E855',
 			},
 			neutral: {
-				100: '#E8E8F2',
-				200: '#87879B',
-				300: '#484858',
-				400: '#363643',
-				500: '#24242E',
-				600: '#191920',
-				700: '#14141B',
-				800: '#101014',
-				900: '#050507',
+				50: '#E8E8F2', // white
+				100: '#B8B8C0', // grite? light light gray? grayBrighterer?
+				200: '#87879B', // gray
+				300: '#686879', // gridtone? idk
+				400: '#484858', // midtoneBrighterer
+				500: '#363643', // midtoneBrighter
+				600: '#24242E', // midtone
+				700: '#191920', // midtoneDarker
+				800: '#14141B', // darktone
+				900: '#101014', // black
+				950: '#050507', // blackest
 			}
 		},
 		extend: {

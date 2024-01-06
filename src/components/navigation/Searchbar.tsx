@@ -53,7 +53,7 @@ const CustomSearchInput: React.FC<{ placeholder: string,  inputRef: React.RefObj
             ref={inputRef}
             placeholder={placeholder ?? "Search"}
             aria-label="Search operators and guides"
-            className="search-input bg-[transparent] outline-0 w-full h-full text-neutral-100 placeholder:text-neutral-300 placeholder:leading-4"
+            className="search-input bg-[transparent] outline-0 w-full h-full text-neutral-100 focus-visible:outline-none placeholder:text-neutral-200 placeholder:leading-4"
             onChange={(event) => {
                 setQuery(event.currentTarget.value);
             }}
