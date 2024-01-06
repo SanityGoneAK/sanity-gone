@@ -1,4 +1,4 @@
-const professionLookup: Record<string, string> = {
+export const professionLookup: Record<string, string> = {
 	Vanguard: "PIONEER",
 	Guard: "WARRIOR",
 	Specialist: "SPECIAL",

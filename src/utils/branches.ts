@@ -2,7 +2,7 @@ import branches from "../../data/branches.json";
 
 const subProfessionLookup: Record<string, string> = Object.fromEntries(
 	Object.keys(branches).map((branch) => {
-		return [branch, branches[branch as keyof typeof branches].branchName];
+		return [branch, branches[branch as keyof typeof branches].branchName.en_US];
 	})
 );
 const reverseSubProfessionLookup = Object.fromEntries(

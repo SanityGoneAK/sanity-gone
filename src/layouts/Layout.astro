@@ -111,13 +111,13 @@ const sidebarLinks: {href: string, name:string}[] = [
 				</div>
 			</Sidebar>
 
-			<div class="flex-1 flex flex-col ">
+			<div class="flex-1 flex flex-col sm:ml-[228px]">
 				<div
-					class="hidden sm:block h-16 bg-neutral-600 shadow-3xl border-b border-neutral-500 border-solid"
+					class="hidden sm:flex sm:fixed w-full min-h-16 bg-neutral-600 shadow-3xl border-b border-neutral-500 border-solid items-center"
 				>
 					<SearchBar client:visible/>
 				</div>
-				<main class="flex-grow p-6">
+				<main class="p-6 mt-16">
 					<slot />
 				</main>
 			</div>
