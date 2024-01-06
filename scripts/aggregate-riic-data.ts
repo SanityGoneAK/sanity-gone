@@ -8,7 +8,7 @@ import krBuildingData from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/buil
 import { fetchJetroyzRiicTranslations } from "./fetch-jetroyz-translations";
 
 import type * as GameDataTypes from "../src/types/gamedata-types";
-import { LocalizedString } from "../src/types/output-types";
+import type { LocalizedString } from "../src/types/output-types";
 
 export interface RiicSkill {
 	stages: Array<{

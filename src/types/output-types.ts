@@ -102,14 +102,14 @@ interface CharacterPhase {
  */
 export interface TalentPhase {
 	unlockCondition: {
-		phase: number;
+		phase: string;
 		level: number;
 	};
 	requiredPotentialRank: number;
 	prefabKey: unknown; // unused
 	/** Can be `null` for e.g. summon talents. */
-	name: string | null;
-	description: string | null;
+	name: LocalizedString | null;
+	description: LocalizedString | null;
 	// this object only has rangeId,
 	// but we'll expect that the range has been denormalized ahead of time
 	range: Range | null;
@@ -169,18 +169,26 @@ export interface PotentialRanks {
 			attributeModifiers: {
 				attributeType: number;
 				value: number;
+				[otherProperties: string]: unknown;
 			}[];
+			[otherProperties: string]: unknown;
 		};
 	} | null;
-	type: number;
+	type: string;
 	description: string;
 	equivalentCost: unknown; // unused
 }
 
+// export enum SkillType {
+// 	"Passive" = 0,
+// 	"Manual Trigger",
+// 	"Auto Trigger",
+// }
+
 export enum SkillType {
-	"Passive" = 0,
-	"Manual Trigger",
-	"Auto Trigger",
+	"PASSIVE" = 0,
+	"MANUAL",
+	"AUTO",
 }
 
 export enum SkillSpType {
@@ -194,10 +202,11 @@ export enum SkillSpType {
  * Represents a skill's information at a specific skill level.
  */
 interface SkillLevel {
-	name: string;
-	description: string | null;
+	name: LocalizedString;
+	description: LocalizedString | null;
 	// SkillLevelObject only has rangeId (of type string) in the game data,
 	// but we expect it to be denormalized into a RangeObject before being passed to <SkillInfo />
+	rangeId: string | null;
 	range: Range | null;
 	skillType: SkillType;
 	spData: {
@@ -222,7 +231,7 @@ export interface CharacterTableSkill {
 	skillId: string | null;
 	levelUpCostCond: MasteryUpgrade[];
 	unlockCond: {
-		phase: number;
+		phase: string;
 		level: number;
 	};
 	[otherProperties: string]: unknown;
@@ -241,7 +250,7 @@ export interface SkillTableSkill {
 
 export interface MasteryUpgrade {
 	unlockCond: {
-		phase: number;
+		phase: string;
 		level: number;
 	};
 	lvlUpTime: number;
@@ -251,7 +260,7 @@ export interface MasteryUpgrade {
 
 export interface SkillLevelUpgrade {
 	unlockCond: {
-		phase: number;
+		phase: string;
 		level: number;
 	};
 	/** Can be null for e.g. summon skills. */
@@ -272,7 +281,7 @@ export interface Module {
 	moduleId: string;
 	/** e.g. "CHA-X", "CHA-Y" */
 	moduleIcon: string;
-	moduleName: string;
+	moduleName: LocalizedString;
 	phases: ModulePhase;
 }
 
@@ -287,10 +296,10 @@ type ModulePhase = Array<{
  * Represents an operator module at a specific module level *and* operator potential.
  */
 export interface ModulePhaseCandidate {
-	traitEffect: string | null;
+	traitEffect: LocalizedString | null;
 	/** Either `"update"` or `"override"`. */
 	traitEffectType: string;
-	talentEffect: string | null;
+	talentEffect: LocalizedString | null;
 	talentIndex: number;
 	displayRange: boolean;
 	range: Range | null;
@@ -312,7 +321,7 @@ interface Voice {
 }
 
 interface BaseOperatorSkin {
-	name: string;
+	name: LocalizedString;
 	skinId: string;
 	illustId: string;
 	avatarId: string;

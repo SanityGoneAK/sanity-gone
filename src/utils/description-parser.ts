@@ -4,6 +4,7 @@ import type MatchRecursiveValueNameMatch from "xregexp";
 export interface InterpolatedValue {
 	key: string;
 	value: number;
+	[otherProperties: string]: unknown;
 }
 
 const descriptionTagLeftDelim = "<(?:@ba\\.|\\$|@cc\\.)[^>]+>";
