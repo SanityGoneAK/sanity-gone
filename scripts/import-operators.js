@@ -540,9 +540,7 @@ function addReleaseOrderAndLimited(
 			charId,
 			{
 				...character,
-				...releaseOrderAndLimitedLookup[
-				CHARACTER_LOCALES.zh_CN[charId]
-				],
+				...releaseOrderAndLimitedLookup[CHARACTER_LOCALES.zh_CN[charId].name],
 			},
 		];
 	});

@@ -11,7 +11,7 @@ const Sidebar: React.FC<React.PropsWithChildren> = ({ children }) => {
 
 
     return (
-        <Collapsible.Root open={isMobile ? open : true} onOpenChange={setOpen} className={cx('w-full sm:w-[228px] flex flex-none flex-col bg-neutral-700 shadow-3xl sm:relative', { 'absolute h-dvh': open })}>
+        <Collapsible.Root open={isMobile ? open : true} onOpenChange={setOpen} className={cx('w-full sm:w-[228px] flex flex-none flex-col bg-neutral-700 shadow-3xl sm:fixed', { 'absolute h-dvh': open })}>
             <div
                 className="w-full sm:w-[228px] px-3 sm:px-0 h-16 flex items-center justify-between sm:justify-center bg-neutral-600 border-b border-r border-neutral-500 border-solid"
             >
