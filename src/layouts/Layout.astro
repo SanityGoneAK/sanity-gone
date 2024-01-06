@@ -66,7 +66,7 @@ const sidebarLinks: {href: string, name:string}[] = [
 					<div
 						class="sm:hidden py-4 flex justify-center items-center"
 					>
-						<SearchBar client:visible/>
+						<SearchBar placeholder="Search" client:visible/>
 					</div>
 					<nav class="flex-grow">
 						{
@@ -113,9 +113,9 @@ const sidebarLinks: {href: string, name:string}[] = [
 
 			<div class="flex-1 flex flex-col sm:ml-[228px]">
 				<div
-					class="hidden sm:flex sm:fixed w-full min-h-16 bg-neutral-600 shadow-3xl border-b border-neutral-500 border-solid items-center"
+					class="hidden sm:flex sm:fixed w-full min-h-16 bg-neutral-600 shadow-3xl border-b border-neutral-500 border-solid items-center z-50"
 				>
-					<SearchBar client:visible/>
+					<SearchBar placeholder="Search" client:visible/>
 				</div>
 				<main class="p-6 mt-16">
 					<slot />
