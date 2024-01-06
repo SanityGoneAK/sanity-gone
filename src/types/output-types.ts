@@ -210,7 +210,8 @@ interface SkillLevel {
 	range: Range | null;
 	skillType: SkillType;
 	spData: {
-		spType: SkillSpType;
+		// spType: SkillSpType;
+		spType: string | number;
 		spCost: number;
 		initSp: number;
 		levelUpCost: unknown; // unused
@@ -224,6 +225,7 @@ interface SkillLevel {
 	// "gains ATK +140%, reduced attack interval, DEF +80%, ..." with blue text for the interpolated values
 	blackboard: InterpolatedValue[];
 	prefabId: unknown; // unused
+	[otherProperties: string]: unknown;
 }
 
 /** Represents a single object in the `skills` array of a given `character_table.json` entry. */

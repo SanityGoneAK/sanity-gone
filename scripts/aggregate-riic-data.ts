@@ -16,7 +16,7 @@ export interface RiicSkill {
 		name: LocalizedString;
 		description: LocalizedString;
 		skillIcon: string;
-		minElite: number;
+		minElite: string;
 		minLevel: number;
 	}>;
 }

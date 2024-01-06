@@ -1,8 +1,8 @@
-import type { InterpolatedValue } from "./description-parser";
-
 // Any types for the gamedata of Arknights should go here.
 // This file is for UNPROCESSED typings that fully conform with game data.
 // Typings post-transformation can be found in output-types.ts.
+
+import type { InterpolatedValue } from "../utils/description-parser";
 
 export interface SharedProperties {
 	name: string;
