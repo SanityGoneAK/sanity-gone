@@ -110,7 +110,9 @@ export async function createOperatorsJson(dataDir) {
 		convertRarityIndex,
 		addSummons,
 
-		// Todo translate potential ranks
+		// @TODO: Translate potential ranks
+		// @TODO: Convert ricc min elite to number
+		// @TODO: Figure out SpTypes and SkillTypes
 		// All summon data for a specific character must be parsed at this point (e.g. Skills, Phases)
 
 		filterSummons,
