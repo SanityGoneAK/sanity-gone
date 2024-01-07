@@ -7,6 +7,7 @@ import {
 	$filterGuideAvailable,
 	$filterProfession,
 	$filterRarity,
+	type Rarity,
 } from "../../../pages/operators/_store";
 import { classToProfession, professionLookup } from "../../../utils/classes";
 import branches from "../../../../data/branches.json";
@@ -55,6 +56,17 @@ const OperatorFilters = () => {
 			$filterBranch.set(filterBranch.filter((item) => item !== branch));
 		},
 		[filterBranch]
+	);
+	const toggleRarity = useCallback(
+		(rarity: Rarity) => {
+			if (filterRarity.indexOf(rarity) === -1) {
+				$filterRarity.set([...filterRarity, rarity]);
+				return;
+			}
+
+			$filterRarity.set(filterRarity.filter((item) => item !== rarity));
+		},
+		[filterRarity]
 	);
 
 	const clearFilters = useCallback(() => {
@@ -186,7 +198,32 @@ const OperatorFilters = () => {
 								</div>
 							)}
 						</div>
-						<p>Rarity</p>
+						<div>
+							<p>Rarity</p>
+							<div className="mt-2">
+								<div className="p-2 rounded bg-neutral-700 flex items-center justify-center mt-2">
+									{new Array(1, 2, 3, 4, 5, 6).map(
+										(rarity) => {
+											const selected = filterRarity.some(
+												(item) => item === rarity
+											);
+											return (
+												<button
+													onClick={() =>
+														toggleRarity(
+															rarity as Rarity
+														)
+													}
+													className={cx("w-full rounded hover:bg-neutral-500", {'bg-gradient-to-b from-purple-light to-purple text-neutral-800': selected})}
+												>
+													{rarity}
+												</button>
+											);
+										}
+									)}
+								</div>
+							</div>
+						</div>
 						<div className="mt-2">
 							<hr className="text-neutral-600" />
 							<button

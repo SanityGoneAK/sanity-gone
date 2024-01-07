@@ -11,7 +11,7 @@ const OperatorList = () => {
     return <ul className="grid p-0 grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))] list-none gap-x-6 gap-y-4">
     {
         operators.map((op) => {
-            const [charName, alterName] = op.name.en_US.split(/\sthe\s/i);
+            const [charName, alterName] = op.name?.en_US.split(/\sthe\s/i);
 
             return (
                 <li className="w-full h-[280px] rounded relative">

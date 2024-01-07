@@ -44,7 +44,8 @@ export const filterGuideAvailable = atom<boolean | null>(null);
 // Filtering
 export const $filterProfession = atom<string[]>([]);
 export const $filterBranch = atom<Array<keyof typeof branches>>([]);
-export const $filterRarity = atom<Array<1 | 2 | 3 | 4 | 5 | 6>>([]);
+export type Rarity = 1 | 2 | 3 | 4 | 5 | 6;
+export const $filterRarity = atom<Array<Rarity>>([]);
 export const $filterGuideAvailable = atom<boolean | null>(null);
 
 export const $availableBranches = computed($filterProfession, (professions) => {
@@ -53,7 +54,7 @@ export const $availableBranches = computed($filterProfession, (professions) => {
 	});
 });
 
-export const $operators = computed([$filterProfession, $filterBranch], (professions, branches)=>{
+export const $operators = computed([$filterProfession, $filterBranch, $filterRarity], (professions, branches, rarity)=>{
 	let baseOperators = Object.values(operatorsJson) as OutputTypes.Operator[];
 
 	if(professions.length > 0){
@@ -64,6 +65,12 @@ export const $operators = computed([$filterProfession, $filterBranch], (professi
 	if(branches.length > 0){
 		baseOperators = baseOperators.filter(
 			operator => branches.some(branch => branch === operator.subProfessionId)
+		)
+	}
+
+	if(rarity.length > 0){
+		baseOperators = baseOperators.filter(
+			operator => rarity.some(rarityIndex => operator.rarity === rarityIndex)
 		)
 	}
 
