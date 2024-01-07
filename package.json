@@ -11,7 +11,9 @@
 		"lint": "prettier --write .",
 		"update-game-data": "git submodule update --init --recursive --remote && sucrase-node ./scripts/all.js",
 		"import:operators": "sucrase-node ./scripts/import-operators.js",
-		"import:branches": "sucrase-node ./scripts/import-branches.js"
+		"import:branches": "sucrase-node ./scripts/import-branches.js",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.3.3",
@@ -42,8 +44,17 @@
 		"xregexp": "^5.1.1"
 	},
 	"devDependencies": {
+		"@storybook/addon-essentials": "^7.6.7",
+		"@storybook/addon-interactions": "^7.6.7",
+		"@storybook/addon-links": "^7.6.7",
+		"@storybook/addon-onboarding": "^1.0.10",
+		"@storybook/blocks": "^7.6.7",
+		"@storybook/react": "^7.6.7",
+		"@storybook/react-vite": "^7.6.7",
+		"@storybook/test": "^7.6.7",
 		"cheerio": "^1.0.0-rc.12",
 		"prettier": "^3.1.1",
+		"storybook": "^7.6.7",
 		"sucrase": "^3.34.0",
 		"ts-node": "^10.9.2",
 		"vite": "^5.0.10"
