@@ -5,7 +5,7 @@ const OperatorFilterBar = () => {
 		<div>
 			<OperatorFilters />
 		</div>
-	);
+	</div>
 };
 
 export default OperatorFilterBar;
