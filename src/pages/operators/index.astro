@@ -1,11 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import OperatorFilterBar from "../../components/operator/filters/OperatorFilterBar";
-import operatorsJson from "../../../data/operators.json";
-import type * as OutputTypes from "../../types/output-types";
-import { slugify } from "../../utils/strings";
-import { operatorBranchIcon, operatorPortrait } from "../../utils/images";
-const operators = Object.values(operatorsJson) as OutputTypes.Operator[];
+import OperatorList from "../../components/operator/OperatorList";
+
 ---
 
 <Layout title="Operator List">
@@ -15,33 +12,6 @@ const operators = Object.values(operatorsJson) as OutputTypes.Operator[];
             <OperatorFilterBar client:visible/>
         </div>
         
-        <ul class="grid p-0 grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))] list-none gap-x-6 gap-y-4">
-            {
-                operators.map((op) => {
-                    const [charName, alterName] = op.name.en_US.split(/\sthe\s/i);
-
-                    return (
-                        <li class="w-full h-[280px] rounded relative">
-                            <div class="h-full">
-                                <img class="h-full w-full object-cover object-center" alt="" src={operatorPortrait(op.charId)}/>
-                            </div>
-                            <div class="absolute w-full h-full top-0 flex flex-col">
-                                <div class="flex">
-                                    <div class="h-11 w-11 p-1.5 hover:bg-neutral-700 bg-neutral-800/[.66] rounded-br flex items-center justify-center transition-colors ease-in-out	duration-150 will-change-['background-color']">
-                                        <img class="w-full h-ful" src={operatorBranchIcon(op.subProfessionId)} alt="">
-                                    </div>
-                                    <a class="block flex-grow h-11" href={`/operators/${slugify(op.name.en_US ?? '')}`}></a>
-                                </div>
-                                
-                                <div class="bg-gradient-to-b from-[transparent] from-40% via-neutral-950/[0.67] via-[67%] to-[#1c1c1c] to-100% h-full">
-                                    <p>{charName} {alterName && ` the ${alterName}`}</p>
-                                </div>
-                                <div></div>
-                            </div>
-                        </li>
-                    );
-                })
-            }
-        </ul>
+        <OperatorList client:visible/>
     </section>
 </Layout>

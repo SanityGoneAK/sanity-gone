@@ -59,6 +59,7 @@ const OperatorFilters = () => {
 
 	const clearFilters = useCallback(() => {
 		$filterProfession.set([]);
+		$filterBranch.set([]);
 	}, []);
 
 	return (
@@ -196,7 +197,6 @@ const OperatorFilters = () => {
 								Clear Filters
 							</button>
 						</div>
-						{filterBranch}
 					</div>
 					{/* <Popover.Close /> */}
 					<Popover.Arrow className="fill-neutral-950" />

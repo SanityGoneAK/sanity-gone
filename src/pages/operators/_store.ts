@@ -4,6 +4,7 @@ import operatorsJson from "../../../data/operators.json";
 
 import type * as OutputTypes from "../../types/output-types.ts";
 import branches from "../../../data/branches.json";
+import { classToProfession } from "../../utils/classes.ts";
 
 export const operatorIdStore = atom<string>(
 	typeof window !== "undefined" ? (window as any).operatorId : ""
@@ -43,7 +44,7 @@ export const filterGuideAvailable = atom<boolean | null>(null);
 // Filtering
 export const $filterProfession = atom<string[]>([]);
 export const $filterBranch = atom<Array<keyof typeof branches>>([]);
-export const $filterRarity = atom<1 | 2 | 3 | 4 | 5 | 6 | null>(null);
+export const $filterRarity = atom<Array<1 | 2 | 3 | 4 | 5 | 6>>([]);
 export const $filterGuideAvailable = atom<boolean | null>(null);
 
 export const $availableBranches = computed($filterProfession, (professions) => {
@@ -51,3 +52,20 @@ export const $availableBranches = computed($filterProfession, (professions) => {
 		return professions.some((item) => item === branch.class.en_US);
 	});
 });
+
+export const $operators = computed([$filterProfession, $filterBranch], (professions, branches)=>{
+	let baseOperators = Object.values(operatorsJson) as OutputTypes.Operator[];
+
+	if(professions.length > 0){
+		baseOperators = baseOperators.filter(
+			operator => professions.map(profession => classToProfession(profession)).some( profession => profession === operator.profession))
+	}
+
+	if(branches.length > 0){
+		baseOperators = baseOperators.filter(
+			operator => branches.some(branch => branch === operator.subProfessionId)
+		)
+	}
+
+	return baseOperators
+})
