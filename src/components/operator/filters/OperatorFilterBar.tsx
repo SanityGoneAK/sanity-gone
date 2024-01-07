@@ -5,14 +5,7 @@ const OperatorFilterBar = () => {
 		<div>
 			<OperatorFilters />
 		</div>
-		<div>
-			Sort By
-		</div>
-		<div className="flex">
-			View
-			<div>Switch stuff</div>
-		</div>
-	</div>
-}
+	);
+};
 
 export default OperatorFilterBar;
