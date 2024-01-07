@@ -1,8 +1,9 @@
 import React from 'react';
-const OperatorFilters = () => {
+import OperatorFilters from './OperatorFilters';
+const OperatorFilterBar = () => {
 	return <div className="flex gap-6">
 		<div>
-			Gear Icon
+			<OperatorFilters />
 		</div>
 		<div>
 			Sort By
@@ -14,4 +15,4 @@ const OperatorFilters = () => {
 	</div>
 }
 
-export default OperatorFilters;
+export default OperatorFilterBar;

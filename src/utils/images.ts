@@ -1,6 +1,6 @@
 import itemsJson from "../../data/items.json";
 
-const baseURL = "https://raw.githubusercontent.com/Aceship/Arknight-Images/main";
+const baseURL = "https://raw.githubusercontent.com/SanityGoneAK/arknights-images/sanity-gone/assets/";
 
 export const operatorAvatar = (charId: string, elite?: number): string => {
     const basePath = `${baseURL}/avatars/${charId}`;
@@ -29,10 +29,10 @@ export const tokenImage = (id: string): string => `${baseURL}/avatars/${id}.png`
 
 
 export const operatorClassIcon = (operatorClass: string): string =>
-    `${baseURL}/classes/class_${operatorClass}.png`;
+    `${baseURL}/arts/icon_profession_${operatorClass.toLocaleLowerCase()}_large.webp`;
 
 export const operatorBranchIcon = (subProfessionId: string): string =>
-    `${baseURL}/ui/subclass/sub_${subProfessionId}_icon.png`;
+    `${baseURL}/torappu/dynamicassets/arts/ui/subprofessionicon/sub_${subProfessionId}_icon.webp`;
 
 export const skillIcon = (iconId: string | null, skillId: string): string =>
     `${baseURL}/skills/skill_icon_${iconId ?? skillId}.png`;
