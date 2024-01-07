@@ -1,11 +1,13 @@
-import React from 'react';
-import OperatorFilters from './OperatorFilters';
+import React from "react";
+import OperatorFilters from "./OperatorFilters";
 const OperatorFilterBar = () => {
-	return <div className="flex gap-6">
-		<div>
-			<OperatorFilters />
+	return (
+		<div className="flex gap-6">
+			<div>
+				<OperatorFilters />
+			</div>
 		</div>
-	</div>
+	);
 };
 
 export default OperatorFilterBar;

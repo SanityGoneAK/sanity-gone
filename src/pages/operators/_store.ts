@@ -43,12 +43,11 @@ export const filterGuideAvailable = atom<boolean | null>(null);
 // Filtering
 export const $filterProfession = atom<string[]>([]);
 export const $filterBranch = atom<Array<keyof typeof branches>>([]);
-export const $filterRarity = atom<1 | 2 |3 | 4 | 5 | 6 | null>(null);
-export const $filterGuideAvailable = atom<boolean | null>(null)
-
+export const $filterRarity = atom<1 | 2 | 3 | 4 | 5 | 6 | null>(null);
+export const $filterGuideAvailable = atom<boolean | null>(null);
 
 export const $availableBranches = computed($filterProfession, (professions) => {
 	return Object.entries(branches).filter(([key, branch]) => {
-		return professions.some((item) => item === branch.class.en_US)
+		return professions.some((item) => item === branch.class.en_US);
 	});
-})
+});

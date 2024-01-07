@@ -29,22 +29,33 @@ const OperatorFilters = () => {
 				return;
 			}
 
-            const professionBranches = availableBranches.filter(([key,branch]) => branch.class.en_US === profession)
-            $filterBranch.set(filterBranch.filter((item) => professionBranches.some(([professionBranch]) => item === professionBranch) ));
+			const professionBranches = availableBranches.filter(
+				([key, branch]) => branch.class.en_US === profession
+			);
+			$filterBranch.set(
+				filterBranch.filter((item) =>
+					professionBranches.some(
+						([professionBranch]) => item === professionBranch
+					)
+				)
+			);
 			$filterProfession.set(
 				filterProfession.filter((item) => item !== profession)
 			);
 		},
 		[filterProfession]
 	);
-	const toggleBranch = useCallback((branch: keyof typeof branches) => {
-		if (filterBranch.indexOf(branch) === -1) {
-			$filterBranch.set([...filterBranch, branch]);
-			return;
-		}
+	const toggleBranch = useCallback(
+		(branch: keyof typeof branches) => {
+			if (filterBranch.indexOf(branch) === -1) {
+				$filterBranch.set([...filterBranch, branch]);
+				return;
+			}
 
-		$filterBranch.set(filterBranch.filter((item) => item !== branch));
-	}, [filterBranch]);
+			$filterBranch.set(filterBranch.filter((item) => item !== branch));
+		},
+		[filterBranch]
+	);
 
 	const clearFilters = useCallback(() => {
 		$filterProfession.set([]);
@@ -145,7 +156,8 @@ const OperatorFilters = () => {
 													{
 														"bg-gradient-to-b from-purple-light to-purple text-neutral-800":
 															selected,
-                                                        "text-neutral-50": !selected
+														"text-neutral-50":
+															!selected,
 													}
 												)}
 												onClick={() =>
@@ -155,17 +167,18 @@ const OperatorFilters = () => {
 												}
 											>
 												<img
-                                                    className={cx("size-6 object-contain object-center", {
-                                                        "invert": selected,
-                                                    })}
+													className={cx(
+														"size-6 object-contain object-center",
+														{
+															invert: selected,
+														}
+													)}
 													src={operatorBranchIcon(
 														key
 													)}
 													alt=""
 												/>
-												<p>
-													{branch.branchName.en_US}
-												</p>
+												<p>{branch.branchName.en_US}</p>
 											</button>
 										);
 									})}
@@ -183,7 +196,7 @@ const OperatorFilters = () => {
 								Clear Filters
 							</button>
 						</div>
-                        {filterBranch}
+						{filterBranch}
 					</div>
 					{/* <Popover.Close /> */}
 					<Popover.Arrow className="fill-neutral-950" />
