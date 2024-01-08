@@ -21,9 +21,9 @@ const dataDir = path.join(__dirname, "../data");
 
 	// unfortunately build-search-index depends on branches.json,
 	// so we have to wait to import it until branches.json has been written
-	const { buildSearchIndex } = await import("./build-search-index.js");
-	console.log("Building search index...");
-	await buildSearchIndex(dataDir);
+	// const { buildSearchIndex } = await import("./build-search-index.js");
+	// console.log("Building search index...");
+	// await buildSearchIndex(dataDir);
 
 	console.log("✅ Done.");
 })();

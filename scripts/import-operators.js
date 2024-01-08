@@ -35,6 +35,7 @@ import {
 import { getAlterMapping } from "./get-alters.js";
 import { aggregateRiicData } from "./aggregate-riic-data";
 import { aggregateModuleData } from "./aggregate-module-data";
+import { fetchContentfulGraphQl } from "../src/utils/fetch";
 
 const enPatchChars = enCharacterPatchTable.patchChars;
 const cnPatchChars = cnCharacterPatchTable.patchChars;
@@ -80,6 +81,17 @@ const SKIN_LOCALES = {
  */
 export async function createOperatorsJson(dataDir) {
 	console.log(`Creating ${path.join(dataDir, "operators.json")}...`);
+	const contentfulQuery = `
+	query {
+		operatorAnalysisCollection {
+		items {
+			operator {
+			name
+			slug
+			}
+		}
+		}
+	}`;
 
 	const [
 		jetSkillTranslations,
@@ -87,12 +99,14 @@ export async function createOperatorsJson(dataDir) {
 		skinSourceAndCostLookup,
 		releaseOrderAndLimitedLookup,
 		opToRiicSkillsMap,
+		resultFetchContentfulGraphQl
 	] = await Promise.all([
 		fetchJetroyzSkillTranslations(),
 		fetchJetroyzTalentTranslations(),
 		getSkinObtainSourceAndCosts(),
 		getReleaseOrderAndLimitedLookup(),
 		aggregateRiicData(),
+		fetchContentfulGraphQl(contentfulQuery),
 	]);
 
 	const summonIdToOperatorId = {};
@@ -116,6 +130,7 @@ export async function createOperatorsJson(dataDir) {
 		// All summon data for a specific character must be parsed at this point (e.g. Skills, Phases)
 
 		filterSummons,
+		addHasGuide,
 		addModules,
 		addRiicSkills,
 		addAlterInformation,
@@ -131,6 +146,7 @@ export async function createOperatorsJson(dataDir) {
 			skinSourceAndCostLookup,
 			releaseOrderAndLimitedLookup,
 			opToRiicSkillsMap,
+			resultFetchContentfulGraphQl
 		});
 	}, denormalizedCharacters);
 
@@ -597,6 +613,25 @@ function sortByRarityAndRelease(characters) {
 			charB.rarity - charA.rarity ||
 			charB.releaseOrder - charA.releaseOrder
 		);
+	});
+}
+
+function addHasGuide(characters, { resultFetchContentfulGraphQl }){
+	const {operatorAnalysisCollection} = resultFetchContentfulGraphQl
+	const operatorsWithGuides = Object.fromEntries(
+		operatorAnalysisCollection.items.map((item) => [
+			item.operator.name,
+			item.operator.slug,
+		])
+	);
+	return characters.map(([charId, character]) => {
+		return [
+			charId,
+			{
+				...character,
+				hasGuide: !!operatorsWithGuides[character.name.en_US],
+			},
+		];
 	});
 }
 
