@@ -14,15 +14,14 @@ const Sidebar: React.FC<React.PropsWithChildren> = ({ children }) => {
 			onOpenChange={setOpen}
 			className={cx(
 				"w-full sm:w-[228px] flex flex-none flex-col bg-neutral-700 shadow-3xl sm:fixed",
-				{ "absolute h-dvh": open }
+				{ "fixed h-dvh z-50": isMobile ? open : true }
 			)}
 		>
 			<div className="w-full sm:w-[228px] px-3 sm:px-0 h-16 flex items-center justify-between sm:justify-center bg-neutral-600 border-b border-r border-neutral-500 border-solid">
 				<SanityGoneLogo hasIcon={true} />
 				<Collapsible.Trigger asChild>
-					<button>
+					<button className="sm:hidden">
 						<svg
-							className="sm:hidden"
 							width="17"
 							height="16"
 							viewBox="0 0 17 16"
