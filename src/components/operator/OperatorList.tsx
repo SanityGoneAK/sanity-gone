@@ -15,7 +15,7 @@ const OperatorList = () => {
             const [charName, alterName] = op.name?.en_US.split(/\sthe\s/i);
 
             return (
-                <li className="w-full h-[280px] rounded relative">
+                <li key={op.charId} className="w-full h-[280px] rounded relative">
                     <div className="h-full">
                         <img className="h-full w-full object-cover object-center" alt="" src={operatorPortrait(op.charId)}/>
                     </div>

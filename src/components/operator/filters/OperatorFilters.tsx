@@ -190,6 +190,7 @@ const OperatorFilters = () => {
 
 							return (
 								<button
+									key={rarity}
 									onClick={() => toggleRarity(rarity)}
 									className={cx(
 										"w-full font-semibold rounded flex items-center justify-center gap-0.5",
@@ -208,7 +209,7 @@ const OperatorFilters = () => {
 				</div>
 			</div>
 			<div className="flex items-center">
-				<Checkbox id="guides-available"/>
+				<Checkbox id="guides-available" onCheckedChange={(value) => $filterGuideAvailable.set(!!value)} />
 				<label className="ml-2" htmlFor="guides-available">Guides Available</label>
 			</div>
 			<div className="mt-2">

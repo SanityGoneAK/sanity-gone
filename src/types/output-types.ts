@@ -53,6 +53,7 @@ export interface Operator extends Character {
 	/** The corresponding base operator's character ID if this operator is an alter, or `null` if this operator isn't an alter. */
 	baseOperatorId: string | null;
 	riicSkills: RiicSkill[];
+	hasGuide: boolean;
 }
 
 /**
