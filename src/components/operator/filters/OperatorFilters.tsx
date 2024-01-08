@@ -13,6 +13,7 @@ import branches from "../../../../data/branches.json";
 import { operatorBranchIcon, operatorClassIcon } from "../../../utils/images";
 import { cx } from "../../../utils/styles";
 import StarIcon from "../../icons/StarIcon";
+import { Checkbox } from "../../ui/Checkbox";
 
 const OperatorFilters = () => {
 	const filterProfession = useStore($filterProfession);
@@ -205,6 +206,10 @@ const OperatorFilters = () => {
 						})}
 					</div>
 				</div>
+			</div>
+			<div className="flex items-center">
+				<Checkbox id="guides-available"/>
+				<label className="ml-2" htmlFor="guides-available">Guides Available</label>
 			</div>
 			<div className="mt-2">
 				<hr className="text-neutral-600" />
