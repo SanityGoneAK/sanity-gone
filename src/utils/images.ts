@@ -1,7 +1,7 @@
 import itemsJson from "../../data/items.json";
 
 const baseURL =
-	"https://raw.githubusercontent.com/SanityGoneAK/arknights-images/sanity-gone/assets/";
+	"https://penguacestergonenemypresslabdbdare.stinggy.com";
 
 export const operatorAvatar = (charId: string, elite?: number): string => {
 	const basePath = `${baseURL}/avatars/${charId}`;
@@ -50,12 +50,12 @@ export const itemImage = (itemId: string): string =>
 	}.png`;
 
 export const riicSkillIcon = (riicSkillIcon: string): string =>
-	`https://github.com/SanityGoneAK/arknights-images/raw/main/assets/torappu/dynamicassets/arts/building/skills/${riicSkillIcon}.webp`;
+	`${baseURL}/torappu/dynamicassets/arts/building/skills/${riicSkillIcon}.webp`;
 
 export const operatorPortrait = (operatorId: string): string => {
 	const filename =
 		operatorId === "char_1001_amiya2"
 			? "char_1001_amiya2_2"
 			: `${operatorId}_1`;
-	return `https://raw.githubusercontent.com/SanityGoneAK/arknights-images/sanity-gone/assets/arts/charportraits/${filename}.webp`;
+	return `${baseURL}/arts/charportraits/${filename}.webp`;
 };
