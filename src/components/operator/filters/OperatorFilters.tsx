@@ -13,6 +13,7 @@ import { classToProfession, professionLookup } from "../../../utils/classes";
 import branches from "../../../../data/branches.json";
 import { operatorBranchIcon, operatorClassIcon } from "../../../utils/images";
 import { clsx as cx } from "clsx";
+import StarIcon from "../../icons/StarIcon";
 
 const OperatorFilters = () => {
 	const filterProfession = useStore($filterProfession);
@@ -202,21 +203,48 @@ const OperatorFilters = () => {
 							<p>Rarity</p>
 							<div className="mt-2">
 								<div className="p-2 rounded bg-neutral-700 flex items-center justify-center mt-2">
-									{new Array(1, 2, 3, 4, 5, 6).map(
+									{new Array<Rarity>(1, 2, 3, 4, 5, 6).map(
 										(rarity) => {
 											const selected = filterRarity.some(
 												(item) => item === rarity
 											);
+											const rarityStyleVariants = {
+												1: selected
+													? `bg-gradient-to-b from-rarity-1 to-rarity-1-dark text-neutral-800`
+													: `text-rarity-1 hover:bg-neutral-500`,
+												2: selected
+													? `bg-gradient-to-b from-rarity-2 to-rarity-2-dark text-neutral-800`
+													: `text-rarity-2 hover:bg-neutral-500`,
+												3: selected
+													? `bg-gradient-to-b from-rarity-3 to-rarity-3-dark text-neutral-800`
+													: `text-rarity-3 hover:bg-neutral-500`,
+												4: selected
+													? `bg-gradient-to-b from-rarity-4 to-rarity-4-dark text-neutral-800`
+													: `text-rarity-4 hover:bg-neutral-500`,
+												5: selected
+													? `bg-gradient-to-b from-rarity-5 to-rarity-5-dark text-neutral-800`
+													: `text-rarity-5 hover:bg-neutral-500`,
+												6: selected
+													? `bg-gradient-to-b from-rarity-6-dark to-rarity-6 text-neutral-800`
+													: `text-rarity-6 hover:bg-neutral-500`,
+											};
+
 											return (
 												<button
 													onClick={() =>
 														toggleRarity(
-															rarity as Rarity
+															rarity
 														)
 													}
-													className={cx("w-full rounded hover:bg-neutral-500", {'bg-gradient-to-b from-purple-light to-purple text-neutral-800': selected})}
+													className={cx(
+														"w-full font-semibold rounded flex items-center justify-center gap-0.5",
+														rarityStyleVariants[
+															rarity
+														]
+													)}
 												>
 													{rarity}
+													<StarIcon rarity={rarity} selected={selected}/>
 												</button>
 											);
 										}

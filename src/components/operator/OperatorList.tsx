@@ -4,6 +4,7 @@ import operatorsJson from "../../../data/operators.json";
 import type * as OutputTypes from "../../types/output-types";
 import { useStore } from "@nanostores/react";
 import { $operators } from "../../pages/operators/_store";
+import SvgRarityGradientDefs from "./SvgRarityGradientDefs";
 
 const OperatorList = () => {
     const operators = useStore($operators);
@@ -34,6 +35,7 @@ const OperatorList = () => {
             );
         })
     }
+    <SvgRarityGradientDefs />
 </ul>
 }
 
