@@ -2,7 +2,7 @@ import React, { useCallback, useRef, useState } from "react";
 import { Combobox } from "@headlessui/react";
 import SearchIcon from "../icons/SearchIcon.tsx";
 import type { SearchResult } from "../../types/output-types.ts";
-import { clsx as cx } from "clsx";
+import { cx } from "../../utils/styles";
 import {
 	InstantSearch,
 	useHits,

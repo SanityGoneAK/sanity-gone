@@ -12,7 +12,7 @@ import {
 import { classToProfession, professionLookup } from "../../../utils/classes";
 import branches from "../../../../data/branches.json";
 import { operatorBranchIcon, operatorClassIcon } from "../../../utils/images";
-import { clsx as cx } from "clsx";
+import { cx } from "../../../utils/styles";
 import StarIcon from "../../icons/StarIcon";
 
 const OperatorFilters = () => {

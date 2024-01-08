@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as Collapsible from "@radix-ui/react-collapsible";
 import SanityGoneLogo from "../SanityGoneLogo";
 import useMediaQuery from "../../utils/media-query";
-import { clsx as cx } from "clsx";
+import { cx } from "../../utils/styles";
 
 const Sidebar: React.FC<React.PropsWithChildren> = ({ children }) => {
 	const [open, setOpen] = useState(true);
