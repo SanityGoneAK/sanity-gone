@@ -12,18 +12,18 @@ export const operatorAvatar = (charId: string, elite?: number): string => {
 	return `${basePath}.webp`;
 };
 export const operatorSplash = (portraitId: string): string => {
-	return `${baseURL}/characters/${encodeURIComponent(portraitId)}.png`;
+	return `${baseURL}/characters/${encodeURIComponent(portraitId)}.webp`;
 };
 
 export const operatorSplashAvatar = (avatarId: string): string => {
-	return `${baseURL}/avatars/${encodeURIComponent(avatarId)}.png`;
+	return `${baseURL}/avatars/${encodeURIComponent(avatarId)}.webp`;
 };
 
 export const enemyAvatar = (enemyId: string): string => {
-	return `${baseURL}/enemy/${encodeURIComponent(enemyId)}.png`;
+	return `${baseURL}/enemy/${encodeURIComponent(enemyId)}.webp`;
 };
 
-export const summonImage = (id: string): string => `/images/avatars/${id}.png`;
+export const summonImage = (id: string): string => `/images/avatars/${id}.webp`;
 
 export const tokenImage = (id: string): string =>
 	`${baseURL}/torappu/dynamicassets/arts/charavatars/${id}.webp`;
@@ -35,13 +35,13 @@ export const operatorBranchIcon = (subProfessionId: string): string =>
 	`${baseURL}/torappu/dynamicassets/arts/ui/subprofessionicon/sub_${subProfessionId}_icon.webp`;
 
 export const skillIcon = (iconId: string | null, skillId: string): string =>
-	`${baseURL}/skills/skill_icon_${iconId ?? skillId}.png`;
+	`${baseURL}/skills/skill_icon_${iconId ?? skillId}.webp`;
 
 export const moduleImage = (moduleId: string): string =>
-	`${baseURL}/equip/icon/${moduleId}.png`;
+	`${baseURL}/equip/icon/${moduleId}.webp`;
 
 export const moduleTypeImage = (moduleType: string): string =>
-	`${baseURL}/equip/type/${moduleType}.png`;
+	`${baseURL}/equip/type/${moduleType}.webp`;
 
 export const itemImage = (itemId: string): string =>
 	`${baseURL}/items/${
