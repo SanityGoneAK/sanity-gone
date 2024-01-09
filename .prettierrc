@@ -5,5 +5,8 @@
 	"semi": true,
 	"singleQuote": false,
 	"printWidth": 80,
-	"endOfLine": "auto"
+	"endOfLine": "auto",
+	"plugins": [
+		"prettier-plugin-tailwindcss"
+	]
 }
