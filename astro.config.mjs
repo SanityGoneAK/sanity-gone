@@ -8,7 +8,13 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
 	output: "server",
-	integrations: [react(), astroI18next(), tailwind()],
+	integrations: [
+		react(),
+		astroI18next(),
+		tailwind({
+			applyBaseStyles: "false",
+		}),
+	],
 	adapter: node({
 		mode: "standalone",
 	}),

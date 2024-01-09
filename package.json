@@ -64,6 +64,7 @@
 		"storybook": "^7.6.7",
 		"sucrase": "^3.34.0",
 		"ts-node": "^10.9.2",
-		"vite": "^5.0.10"
+		"vite": "^5.0.10",
+		"vite-tsconfig-paths": "^4.2.3"
 	}
 }

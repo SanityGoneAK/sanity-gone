@@ -5,6 +5,11 @@
 		"jsxImportSource": "react",
 		"resolveJsonModule": true,
 		"esModuleInterop": true,
-		"target": "esnext"
+		"target": "esnext",
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["src/*"],
+			"data/*": ["data/*"]
+		}
 	}
 }
