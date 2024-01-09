@@ -1,5 +1,6 @@
 import { useStore } from "@nanostores/react";
 import * as ToggleGroup from "@radix-ui/react-toggle-group";
+
 import {
 	$viewConfig,
 	type ViewConfigValue,
@@ -11,7 +12,7 @@ const OperatorViewSwitch = () => {
 	return (
 		<div style={{ display: "flex", alignItems: "center" }}>
 			<label
-				className="mr-2 text-neutral-200 font-"
+				className="font- mr-2 text-neutral-200"
 				htmlFor="operator-view"
 			>
 				View
@@ -21,11 +22,11 @@ const OperatorViewSwitch = () => {
 				onValueChange={(value: ViewConfigValue) =>
 					$viewConfig.set(value)
 				}
-				className="bg-neutral-800/[0.66] w-20 h-8 flex justify-around rounded-lg overflow-hidden"
+				className="flex h-8 w-20 justify-around overflow-hidden rounded-lg bg-neutral-800/[0.66]"
 				type="single"
 			>
 				<ToggleGroup.Item
-					className="flex justify-center items-center w-full group data-[state=on]:rounded-lg data-[state=on]:bg-gradient-to-b data-[state=on]:from-purple-light data-[state=on]:to-purple"
+					className="group flex w-full items-center justify-center data-[state=on]:rounded-lg data-[state=on]:bg-gradient-to-b data-[state=on]:from-purple-light data-[state=on]:to-purple"
 					value="large"
 				>
 					<svg
@@ -52,7 +53,7 @@ const OperatorViewSwitch = () => {
 				</ToggleGroup.Item>
 				<ToggleGroup.Item
 					value="compact"
-					className="flex justify-center items-center w-full group data-[state=on]:rounded-lg data-[state=on]:bg-gradient-to-b data-[state=on]:from-purple-light data-[state=on]:to-purple"
+					className="group flex w-full items-center justify-center data-[state=on]:rounded-lg data-[state=on]:bg-gradient-to-b data-[state=on]:from-purple-light data-[state=on]:to-purple"
 				>
 					<svg
 						width="20"

@@ -68,7 +68,6 @@ export default {
 				6: {
 					DEFAULT: "#ff9254",
 					dark: "#ede637",
-
 				},
 			},
 		},

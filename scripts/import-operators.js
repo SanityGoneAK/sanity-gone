@@ -99,7 +99,7 @@ export async function createOperatorsJson(dataDir) {
 		skinSourceAndCostLookup,
 		releaseOrderAndLimitedLookup,
 		opToRiicSkillsMap,
-		resultFetchContentfulGraphQl
+		resultFetchContentfulGraphQl,
 	] = await Promise.all([
 		fetchJetroyzSkillTranslations(),
 		fetchJetroyzTalentTranslations(),
@@ -146,7 +146,7 @@ export async function createOperatorsJson(dataDir) {
 			skinSourceAndCostLookup,
 			releaseOrderAndLimitedLookup,
 			opToRiicSkillsMap,
-			resultFetchContentfulGraphQl
+			resultFetchContentfulGraphQl,
 		});
 	}, denormalizedCharacters);
 
@@ -616,8 +616,8 @@ function sortByRarityAndRelease(characters) {
 	});
 }
 
-function addHasGuide(characters, { resultFetchContentfulGraphQl }){
-	const {operatorAnalysisCollection} = resultFetchContentfulGraphQl
+function addHasGuide(characters, { resultFetchContentfulGraphQl }) {
+	const { operatorAnalysisCollection } = resultFetchContentfulGraphQl;
 	const operatorsWithGuides = Object.fromEntries(
 		operatorAnalysisCollection.items.map((item) => [
 			item.operator.name,

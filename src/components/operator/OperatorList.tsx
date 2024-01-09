@@ -1,21 +1,23 @@
+import { useStore } from "@nanostores/react";
+
+import SvgRarityGradientDefs from "./SvgRarityGradientDefs";
+import operatorsJson from "../../../data/operators.json";
+import { $operators, $viewConfig } from "../../pages/operators/_store";
 import {
 	operatorAvatar,
 	operatorBranchIcon,
 	operatorPortrait,
 } from "../../utils/images";
 import { slugify } from "../../utils/strings";
-import operatorsJson from "../../../data/operators.json";
+
 import type * as OutputTypes from "../../types/output-types";
-import { useStore } from "@nanostores/react";
-import { $operators, $viewConfig } from "../../pages/operators/_store";
-import SvgRarityGradientDefs from "./SvgRarityGradientDefs";
 
 const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 	operator,
 }) => {
 	const [charName, alterName] = operator.name?.en_US.split(/\sthe\s/i);
 	return (
-		<li className="w-full h-[280px] rounded relative">
+		<li className="relative h-[280px] w-full rounded">
 			<div className="h-full">
 				<img
 					className="h-full w-full object-cover object-center"
@@ -23,24 +25,24 @@ const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 					src={operatorPortrait(operator.charId)}
 				/>
 			</div>
-			<div className="absolute w-full h-full top-0 flex flex-col">
+			<div className="absolute top-0 flex h-full w-full flex-col">
 				<div className="flex">
-					<div className="h-11 w-11 p-1.5 hover:bg-neutral-700 bg-neutral-800/[.66] rounded-br flex items-center justify-center transition-colors ease-in-out	duration-150 will-change-['background-color']">
+					<div className="flex h-11 w-11 items-center justify-center rounded-br bg-neutral-800/[.66] p-1.5 transition-colors duration-150 ease-in-out	will-change-['background-color'] hover:bg-neutral-700">
 						<img
-							className="w-full h-ful"
+							className="h-ful w-full"
 							src={operatorBranchIcon(operator.subProfessionId)}
 							alt=""
 						/>
 					</div>
 					<a
-						className="block flex-grow h-11"
+						className="block h-11 flex-grow"
 						href={`/operators/${slugify(
 							operator.name.en_US ?? ""
 						)}`}
 					></a>
 				</div>
 
-				<div className="bg-gradient-to-b from-[transparent] from-40% via-neutral-950/[0.67] via-[67%] to-[#1c1c1c] to-100% h-full">
+				<div className="h-full bg-gradient-to-b from-[transparent] from-40% via-neutral-950/[0.67] via-[67%] to-[#1c1c1c] to-100%">
 					<p>
 						{charName} {alterName && ` the ${alterName}`}
 					</p>
@@ -69,7 +71,7 @@ const OperatorList = () => {
 	const viewConfig = useStore($viewConfig);
 
 	return (
-		<ul className="grid p-0 grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))] list-none gap-x-6 gap-y-4">
+		<ul className="grid list-none grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))] gap-x-6 gap-y-4 p-0">
 			{operators.map((op) =>
 				viewConfig === "compact" ? (
 					<OperatorCompactItem key={op.charId} operator={op} />

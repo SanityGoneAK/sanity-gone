@@ -9,7 +9,7 @@ const SanityGoneLogo: React.FC<Props> = ({ hasIcon }) => {
 		<a
 			href="/operators"
 			aria-label="Sanity Gone"
-			className="flex items-center leading-none p-2"
+			className="flex items-center p-2 leading-none"
 		>
 			{hasIcon && (
 				<svg

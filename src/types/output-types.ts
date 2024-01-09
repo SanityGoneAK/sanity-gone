@@ -1,7 +1,7 @@
-import type { InterpolatedValue } from "../utils/description-parser";
 import type { Range } from "./gamedata-types";
 import type { RiicSkill } from "../../scripts/aggregate-riic-data";
 import type { CharacterStatValues } from "../utils/character-stats";
+import type { InterpolatedValue } from "../utils/description-parser";
 
 export type { SkinSource, SkinCostTokenType } from "../../scripts/scrape-prts";
 export type { RiicSkill } from "../../scripts/aggregate-riic-data";

@@ -1,5 +1,6 @@
 import XRegExp from "xregexp";
-import type MatchRecursiveValueNameMatch from "xregexp";
+
+import type { MatchRecursiveValueNameMatch } from "xregexp";
 
 export interface InterpolatedValue {
 	key: string;

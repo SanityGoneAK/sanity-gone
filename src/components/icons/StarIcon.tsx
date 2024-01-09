@@ -1,12 +1,13 @@
 import type React from "react";
+
 import type { Rarity } from "../../pages/operators/_store";
 type Props = React.HTMLAttributes<SVGElement> & {
 	rarity: Rarity;
-    selected?: boolean;
+	selected?: boolean;
 };
 
-const StarIcon: React.FC<Props> = ({rarity, selected = false}) => {
-	const fill = selected ? 'black' : `url(#rarity${rarity})`;
+const StarIcon: React.FC<Props> = ({ rarity, selected = false }) => {
+	const fill = selected ? "black" : `url(#rarity${rarity})`;
 
 	return (
 		<svg
@@ -24,4 +25,4 @@ const StarIcon: React.FC<Props> = ({rarity, selected = false}) => {
 	);
 };
 
-export default StarIcon
+export default StarIcon;

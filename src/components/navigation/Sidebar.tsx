@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+
 import * as Collapsible from "@radix-ui/react-collapsible";
-import SanityGoneLogo from "../SanityGoneLogo";
+
 import useMediaQuery from "../../utils/media-query";
 import { cx } from "../../utils/styles";
+import SanityGoneLogo from "../SanityGoneLogo";
 
 const Sidebar: React.FC<React.PropsWithChildren> = ({ children }) => {
 	const [open, setOpen] = useState(true);
@@ -13,11 +15,11 @@ const Sidebar: React.FC<React.PropsWithChildren> = ({ children }) => {
 			open={isMobile ? open : true}
 			onOpenChange={setOpen}
 			className={cx(
-				"w-full sm:w-[228px] flex flex-none flex-col bg-neutral-700 shadow-3xl sm:fixed",
-				{ "fixed h-dvh z-50": isMobile ? open : true }
+				"flex w-full flex-none flex-col bg-neutral-700 shadow-3xl sm:fixed sm:w-[228px]",
+				{ "fixed z-50 h-dvh": isMobile ? open : true }
 			)}
 		>
-			<div className="w-full sm:w-[228px] px-3 sm:px-0 h-16 flex items-center justify-between sm:justify-center bg-neutral-600 border-b border-r border-neutral-500 border-solid">
+			<div className="flex h-16 w-full items-center justify-between border-b border-r border-solid border-neutral-500 bg-neutral-600 px-3 sm:w-[228px] sm:justify-center sm:px-0">
 				<SanityGoneLogo hasIcon={true} />
 				<Collapsible.Trigger asChild>
 					<button className="sm:hidden">

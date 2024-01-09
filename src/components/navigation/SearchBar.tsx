@@ -1,27 +1,30 @@
 import React, { useCallback, useRef, useState } from "react";
+
 import { Combobox } from "@headlessui/react";
-import SearchIcon from "../icons/SearchIcon.tsx";
-import type { SearchResult } from "../../types/output-types.ts";
-import { cx } from "../../utils/styles";
+import algoliasearch from "algoliasearch/lite";
 import {
 	InstantSearch,
 	useHits,
 	useSearchBox,
 	type UseSearchBoxProps,
 } from "react-instantsearch";
-import type { BaseHit } from "instantsearch.js";
-import { slugify, subclassSlugify } from "../../utils/strings.ts";
-import algoliasearch from "algoliasearch/lite";
-import type {
-	ClassSearchResult,
-	BranchSearchResult,
-	OperatorSearchResult,
-} from "../../types/output-types.ts";
+
 import {
 	operatorAvatar,
 	operatorBranchIcon,
 	operatorClassIcon,
 } from "../../utils/images.ts";
+import { slugify, subclassSlugify } from "../../utils/strings.ts";
+import { cx } from "../../utils/styles";
+import SearchIcon from "../icons/SearchIcon.tsx";
+
+import type {
+	SearchResult,
+	ClassSearchResult,
+	BranchSearchResult,
+	OperatorSearchResult,
+} from "../../types/output-types.ts";
+import type { BaseHit } from "instantsearch.js";
 
 interface Props {
 	placeholder: string;
@@ -58,7 +61,7 @@ const CustomSearchInput: React.FC<{
 			ref={inputRef}
 			placeholder={placeholder ?? "Search"}
 			aria-label="Search operators and guides"
-			className="search-input bg-[transparent] outline-0 w-full h-full text-neutral-100 focus-visible:outline-none placeholder:text-neutral-200 placeholder:leading-4"
+			className="search-input h-full w-full bg-[transparent] text-neutral-100 outline-0 placeholder:leading-4 placeholder:text-neutral-200 focus-visible:outline-none"
 			onChange={(event) => {
 				setQuery(event.currentTarget.value);
 			}}
@@ -69,8 +72,8 @@ const CustomSearchInput: React.FC<{
 const CustomHits: React.FC<{ onSelected?: () => void }> = ({ onSelected }) => {
 	const { hits, results, sendEvent } = useHits<BaseHit & SearchResult>();
 
-	let operatorResults: OperatorSearchResult[] = [];
-	let classResults: (ClassSearchResult | BranchSearchResult)[] = [];
+	const operatorResults: OperatorSearchResult[] = [];
+	const classResults: (ClassSearchResult | BranchSearchResult)[] = [];
 
 	const rarityClasses = {
 		6: "text-orange",
@@ -112,30 +115,30 @@ const CustomHits: React.FC<{ onSelected?: () => void }> = ({ onSelected }) => {
 	return (
 		<Combobox.Options<"div">
 			as="div"
-			className="flex absolute flex-col top-[calc(100%+1px)] w-full left-[-1px] m-0 p-0 bg-neutral-500 rounded-b border border-neutral-400 overflow-hidden"
+			className="absolute left-[-1px] top-[calc(100%+1px)] m-0 flex w-full flex-col overflow-hidden rounded-b border border-neutral-400 bg-neutral-500 p-0"
 		>
 			{operatorResults.length > 0 && (
 				<ul
 					role="group"
 					aria-labelledby="search-results-classes"
-					className="list-none m-0 p-0"
+					className="m-0 list-none p-0"
 				>
 					<li
 						role="presentation"
 						id="search-results-classes"
-						className="h-9 pl-4 flex items-center bg-neutral-500 text-sm leading-[18px] text-neutral-200"
+						className="flex h-9 items-center bg-neutral-500 pl-4 text-sm leading-[18px] text-neutral-200"
 					>
 						Operators
 					</li>
 					{operatorResults.slice(0, 5).map((result) => (
 						<Combobox.Option<"li", SearchResult | null>
-							className="h-16 pl-4 grid hover:[&:not([aria-disabled=true])]:bg-neutral-400 data-[headlessui-state~='active']:bg-neutral-400 aria-disabled:opacity-25 grid-cols-[auto_1fr] grid-rows-[repeat(2,_min-content)] content-center gap-x-4 [&:aria-disabled=true]:opacity-25 [&:not([aria-disabled=true])]:cursor-pointer"
+							className="grid h-16 grid-cols-[auto_1fr] grid-rows-[repeat(2,_min-content)] content-center gap-x-4 pl-4 aria-disabled:opacity-25 data-[headlessui-state~='active']:bg-neutral-400 [&:aria-disabled=true]:opacity-25 [&:not([aria-disabled=true])]:cursor-pointer hover:[&:not([aria-disabled=true])]:bg-neutral-400"
 							key={result.charId}
 							value={result}
 							onClick={() => handleOptionSelected(result)}
 						>
 							<img
-								className="h-10 rounded object-contain row-span-2 bg-neutral-600"
+								className="row-span-2 h-10 rounded bg-neutral-600 object-contain"
 								alt=""
 								src={operatorAvatar(result.charId)}
 								width={40}
@@ -168,18 +171,18 @@ const CustomHits: React.FC<{ onSelected?: () => void }> = ({ onSelected }) => {
 				<ul
 					role="group"
 					aria-labelledby="search-results-classes"
-					className="list-none m-0 p-0"
+					className="m-0 list-none p-0"
 				>
 					<li
 						role="presentation"
 						id="search-results-classes"
-						className="h-9 pl-4 flex items-center bg-neutral-500 text-sm leading-[18px] text-neutral-200"
+						className="flex h-9 items-center bg-neutral-500 pl-4 text-sm leading-[18px] text-neutral-200"
 					>
 						Classes
 					</li>
 					{classResults.slice(0, 3).map((result) => (
 						<Combobox.Option<"li", SearchResult | null>
-							className="h-16 pl-4 grid hover:[&:not([aria-disabled=true])]:bg-neutral-400 data-[headlessui-state~='active']:bg-neutral-400 aria-disabled:opacity-25 grid-cols-[auto_1fr] grid-rows-[repeat(2,_min-content)] content-center gap-x-4 [&:aria-disabled=true]:opacity-25 [&:not([aria-disabled=true])]:cursor-pointer"
+							className="grid h-16 grid-cols-[auto_1fr] grid-rows-[repeat(2,_min-content)] content-center gap-x-4 pl-4 aria-disabled:opacity-25 data-[headlessui-state~='active']:bg-neutral-400 [&:aria-disabled=true]:opacity-25 [&:not([aria-disabled=true])]:cursor-pointer hover:[&:not([aria-disabled=true])]:bg-neutral-400"
 							key={
 								"subProfession" in result
 									? result.subProfession
@@ -189,7 +192,7 @@ const CustomHits: React.FC<{ onSelected?: () => void }> = ({ onSelected }) => {
 							onClick={() => handleOptionSelected(result)}
 						>
 							<img
-								className="h-10 rounded object-contain row-span-2"
+								className="row-span-2 h-10 rounded object-contain"
 								alt=""
 								src={
 									result.type === "class"
@@ -219,7 +222,7 @@ const CustomHits: React.FC<{ onSelected?: () => void }> = ({ onSelected }) => {
 			)}
 			{hits.length === 0 && (
 				<Combobox.Option<"li", SearchResult | null>
-					className="h-9 pl-2 flex items-center bg-neutral-500 text-sm leading-[18px] text-neutral-200"
+					className="flex h-9 items-center bg-neutral-500 pl-2 text-sm leading-[18px] text-neutral-200"
 					value={null}
 				>
 					No results found!
@@ -233,10 +236,10 @@ const SearchBar: React.FC<Props> = ({ placeholder, onSelected }) => {
 	const inputRef = useRef<HTMLInputElement>(null);
 
 	return (
-		<div className="flex items-center h-full w-full px-3 sm:pl-6">
+		<div className="flex h-full w-full items-center px-3 sm:pl-6">
 			<form
 				role="search"
-				className="relative flex flex-row items-center w-[512px] h-9 rounded-[18px] border-neutral-100/[0] bg-neutral-400/[0.33] px-4 border hover:[&:not(:focus-within)]:border-neutral-200/[0.8] focus-within:border-neutral-100/[0.9] focus-within:[&:has(input[data-headlessui-state='open'])]:rounded-b-none"
+				className="relative flex h-9 w-[512px] flex-row items-center rounded-[18px] border border-neutral-100/[0] bg-neutral-400/[0.33] px-4 focus-within:border-neutral-100/[0.9] focus-within:[&:has(input[data-headlessui-state='open'])]:rounded-b-none hover:[&:not(:focus-within)]:border-neutral-200/[0.8]"
 				onClick={() => inputRef.current?.focus()}
 			>
 				<SearchIcon className="mr-4" />

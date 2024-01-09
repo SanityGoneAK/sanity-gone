@@ -1,5 +1,8 @@
 import React, { useCallback, useMemo } from "react";
+
 import { useStore } from "@nanostores/react";
+
+import branches from "../../../../data/branches.json";
 import {
 	$availableBranches,
 	$filterBranch,
@@ -12,7 +15,6 @@ import {
 	toggleRarity,
 } from "../../../pages/operators/_store";
 import { classToProfession, professionLookup } from "../../../utils/classes";
-import branches from "../../../../data/branches.json";
 import { operatorBranchIcon, operatorClassIcon } from "../../../utils/images";
 import { cx } from "../../../utils/styles";
 import StarIcon from "../../icons/StarIcon";
@@ -35,10 +37,10 @@ const OperatorFilters = () => {
 	}, []);
 
 	return (
-		<div className="max-w-[420px] bg-neutral-950 rounded-lg p-4 text-neutral-200 flex flex-col gap-4">
+		<div className="flex max-w-[420px] flex-col gap-4 rounded-lg bg-neutral-950 p-4 text-neutral-200">
 			<div>
 				<p>Class</p>
-				<div className="flex gap-2 bg-neutral-700 p-1 rounded mt-2">
+				<div className="mt-2 flex gap-2 rounded bg-neutral-700 p-1">
 					{professions.map((profession) => {
 						const selected = filterProfession.some(
 							(item) => item === profession
@@ -47,7 +49,7 @@ const OperatorFilters = () => {
 							<button
 								key={profession}
 								className={cx(
-									"hover:bg-neutral-800 p-1 rounded",
+									"rounded p-1 hover:bg-neutral-800",
 									{
 										"bg-gradient-to-b from-purple-light to-purple":
 											selected,
@@ -56,7 +58,7 @@ const OperatorFilters = () => {
 							>
 								<img
 									className={cx("size-8", {
-										"invert mix-blend-multiply ": selected,
+										"mix-blend-multiply invert ": selected,
 										"mix-blend-lighten": !selected,
 									})}
 									alt=""
@@ -73,13 +75,13 @@ const OperatorFilters = () => {
 			<div>
 				<p>Branch</p>
 				{availableBranches.length == 0 ? (
-					<div className="p-2 rounded bg-neutral-900 flex items-center justify-center mt-2">
+					<div className="mt-2 flex items-center justify-center rounded bg-neutral-900 p-2">
 						<p className="leading-5 text-neutral-300">
 							Select a Class
 						</p>
 					</div>
 				) : (
-					<div className="flex flex-wrap gap-2 mt-2">
+					<div className="mt-2 flex flex-wrap gap-2">
 						{availableBranches.map(([key, branch]) => {
 							const selected = filterBranch.some(
 								(item) => item === key
@@ -88,7 +90,7 @@ const OperatorFilters = () => {
 								<button
 									key={key}
 									className={cx(
-										"rounded bg-neutral-700 py-1 px-2 flex items-center gap-1",
+										"flex items-center gap-1 rounded bg-neutral-700 px-2 py-1",
 										{
 											"bg-gradient-to-b from-purple-light to-purple text-neutral-800":
 												selected,
@@ -121,7 +123,7 @@ const OperatorFilters = () => {
 			<div>
 				<p>Rarity</p>
 				<div className="mt-2">
-					<div className="p-2 rounded bg-neutral-700 flex items-center justify-center mt-2">
+					<div className="mt-2 flex items-center justify-center rounded bg-neutral-700 p-2">
 						{new Array<Rarity>(1, 2, 3, 4, 5, 6).map((rarity) => {
 							const selected = filterRarity.some(
 								(item) => item === rarity
@@ -152,7 +154,7 @@ const OperatorFilters = () => {
 									key={rarity}
 									onClick={() => toggleRarity(rarity)}
 									className={cx(
-										"w-full font-semibold rounded flex items-center justify-center gap-0.5",
+										"flex w-full items-center justify-center gap-0.5 rounded font-semibold",
 										rarityStyleVariants[rarity]
 									)}
 								>
@@ -181,7 +183,7 @@ const OperatorFilters = () => {
 			<div className="mt-2">
 				<hr className="text-neutral-600" />
 				<button
-					className="mt-2 hover:bg-neutral-800 px-1 py-2 w-full rounded-sm"
+					className="mt-2 w-full rounded-sm px-1 py-2 hover:bg-neutral-800"
 					type="button"
 					onClick={() => clearFilters()}
 				>

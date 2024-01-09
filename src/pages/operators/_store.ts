@@ -1,10 +1,10 @@
 import { atom, computed, action } from "nanostores";
 
+import branches from "../../../data/branches.json";
 import operatorsJson from "../../../data/operators.json";
+import { classToProfession, professionLookup } from "../../utils/classes.ts";
 
 import type * as OutputTypes from "../../types/output-types.ts";
-import branches from "../../../data/branches.json";
-import { classToProfession, professionLookup } from "../../utils/classes.ts";
 
 export const operatorIdStore = atom<string>(
 	typeof window !== "undefined" ? (window as any).operatorId : ""
