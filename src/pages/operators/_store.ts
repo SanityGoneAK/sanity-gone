@@ -1,4 +1,4 @@
-import { atom, computed } from "nanostores";
+import { atom, computed, action } from "nanostores";
 
 import operatorsJson from "../../../data/operators.json";
 
@@ -54,29 +54,99 @@ export const $availableBranches = computed($filterProfession, (professions) => {
 	});
 });
 
-export const $operators = computed([$filterProfession, $filterBranch, $filterRarity, $filterGuideAvailable], (professions, branches, rarity, guideAvailable)=>{
-	let baseOperators = Object.values(operatorsJson) as OutputTypes.Operator[];
+export const $operators = computed(
+	[$filterProfession, $filterBranch, $filterRarity, $filterGuideAvailable],
+	(professions, branches, rarity, guideAvailable) => {
+		let baseOperators = Object.values(
+			operatorsJson
+		) as OutputTypes.Operator[];
 
-	if(professions.length > 0){
-		baseOperators = baseOperators.filter(
-			operator => professions.map(profession => classToProfession(profession)).some( profession => profession === operator.profession))
+		if (professions.length > 0) {
+			baseOperators = baseOperators.filter((operator) =>
+				professions
+					.map((profession) => classToProfession(profession))
+					.some((profession) => profession === operator.profession)
+			);
+		}
+
+		if (branches.length > 0) {
+			baseOperators = baseOperators.filter((operator) =>
+				branches.some((branch) => branch === operator.subProfessionId)
+			);
+		}
+
+		if (rarity.length > 0) {
+			baseOperators = baseOperators.filter((operator) =>
+				rarity.some((rarityIndex) => operator.rarity === rarityIndex)
+			);
+		}
+
+		if (guideAvailable) {
+			baseOperators = baseOperators.filter(
+				(operator) => operator.hasGuide === true
+			);
+		}
+
+		return baseOperators;
 	}
+);
 
-	if(branches.length > 0){
-		baseOperators = baseOperators.filter(
-			operator => branches.some(branch => branch === operator.subProfessionId)
-		)
+export const toggleProfession = action(
+	$filterProfession,
+	"toggleProfession",
+	(filterProfessionStore, profession: string) => {
+		const filterProfession = filterProfessionStore.get();
+		if (filterProfession.indexOf(profession) === -1) {
+			filterProfessionStore.set([...filterProfession, profession]);
+			return;
+		}
+
+		const professionBranches = $availableBranches
+			.get()
+			.filter(([key, branch]) => branch.class.en_US === profession);
+
+		$filterBranch.set(
+			$filterBranch
+				.get()
+				.filter((item) =>
+					professionBranches.some(
+						([professionBranch]) => item === professionBranch
+					)
+				)
+		);
+
+		filterProfessionStore.set(
+			filterProfession.filter((item) => item !== profession)
+		);
 	}
+);
 
-	if(rarity.length > 0){
-		baseOperators = baseOperators.filter(
-			operator => rarity.some(rarityIndex => operator.rarity === rarityIndex)
-		)
+export const toggleBranch = action(
+	$filterBranch,
+	"toggleBranch",
+	(filterBranchStore, branch: keyof typeof branches) => {
+		if (filterBranchStore.get().indexOf(branch) === -1) {
+			filterBranchStore.set([...filterBranchStore.get(), branch]);
+			return;
+		}
+
+		filterBranchStore.set(
+			filterBranchStore.get().filter((item) => item !== branch)
+		);
 	}
+);
 
-	if(guideAvailable){
-		baseOperators = baseOperators.filter(operator => operator.hasGuide === true)
+export const toggleRarity = action(
+	$filterRarity,
+	"toggleRarity",
+	(filterRarityStore, rarity: Rarity) => {
+		if (filterRarityStore.get().indexOf(rarity) === -1) {
+			filterRarityStore.set([...filterRarityStore.get(), rarity]);
+			return;
+		}
+
+		filterRarityStore.set(
+			filterRarityStore.get().filter((item) => item !== rarity)
+		);
 	}
-
-	return baseOperators
-})
+);

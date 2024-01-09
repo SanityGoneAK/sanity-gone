@@ -6,7 +6,10 @@ import {
 	$filterGuideAvailable,
 	$filterProfession,
 	$filterRarity,
+	toggleProfession,
 	type Rarity,
+	toggleBranch,
+	toggleRarity,
 } from "../../../pages/operators/_store";
 import { classToProfession, professionLookup } from "../../../utils/classes";
 import branches from "../../../../data/branches.json";
@@ -24,55 +27,11 @@ const OperatorFilters = () => {
 
 	const professions = Object.keys(professionLookup);
 
-	const toggleProfession = useCallback(
-		(profession: string) => {
-			if (filterProfession.indexOf(profession) === -1) {
-				$filterProfession.set([...filterProfession, profession]);
-				return;
-			}
-
-			const professionBranches = availableBranches.filter(
-				([key, branch]) => branch.class.en_US === profession
-			);
-			$filterBranch.set(
-				filterBranch.filter((item) =>
-					professionBranches.some(
-						([professionBranch]) => item === professionBranch
-					)
-				)
-			);
-			$filterProfession.set(
-				filterProfession.filter((item) => item !== profession)
-			);
-		},
-		[filterProfession]
-	);
-	const toggleBranch = useCallback(
-		(branch: keyof typeof branches) => {
-			if (filterBranch.indexOf(branch) === -1) {
-				$filterBranch.set([...filterBranch, branch]);
-				return;
-			}
-
-			$filterBranch.set(filterBranch.filter((item) => item !== branch));
-		},
-		[filterBranch]
-	);
-	const toggleRarity = useCallback(
-		(rarity: Rarity) => {
-			if (filterRarity.indexOf(rarity) === -1) {
-				$filterRarity.set([...filterRarity, rarity]);
-				return;
-			}
-
-			$filterRarity.set(filterRarity.filter((item) => item !== rarity));
-		},
-		[filterRarity]
-	);
-
 	const clearFilters = useCallback(() => {
 		$filterProfession.set([]);
 		$filterBranch.set([]);
+		$filterGuideAvailable.set(false);
+		
 	}, []);
 
 	return (
@@ -209,8 +168,15 @@ const OperatorFilters = () => {
 				</div>
 			</div>
 			<div className="flex items-center">
-				<Checkbox id="guides-available" onCheckedChange={(value) => $filterGuideAvailable.set(!!value)} />
-				<label className="ml-2" htmlFor="guides-available">Guides Available</label>
+				<Checkbox
+					id="guides-available"
+					onCheckedChange={(value) =>
+						$filterGuideAvailable.set(!!value)
+					}
+				/>
+				<label className="ml-2" htmlFor="guides-available">
+					Guides Available
+				</label>
 			</div>
 			<div className="mt-2">
 				<hr className="text-neutral-600" />
