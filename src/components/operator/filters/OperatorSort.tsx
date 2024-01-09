@@ -7,7 +7,7 @@ import {
 	DropdownMenuRadioItem,
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
-} from "../../ui/Droddown";
+} from "../../ui/Dropdown";
 import {
 	$isSortEmpty,
 	$sortCategory,
