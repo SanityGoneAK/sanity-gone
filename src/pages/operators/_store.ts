@@ -31,7 +31,7 @@ export type SortCategoryValue =
 	| "Rarity"
 	| "Release Date"
 	| null;
-export const $sortCategory = atom<SortDirectionValue>(null);
+export const $sortCategory = atom<SortCategoryValue>(null);
 export const $isSortEmpty = computed(
 	[$sortCategory, $sortDirection],
 	(category, direction) => category === null && direction === null
@@ -51,8 +51,22 @@ export const $availableBranches = computed($filterProfession, (professions) => {
 });
 
 export const $operators = computed(
-	[$filterProfession, $filterBranch, $filterRarity, $filterGuideAvailable],
-	(professions, branches, rarity, guideAvailable) => {
+	[
+		$filterProfession,
+		$filterBranch,
+		$filterRarity,
+		$filterGuideAvailable,
+		$sortCategory,
+		$sortDirection,
+	],
+	(
+		professions,
+		branches,
+		rarity,
+		guideAvailable,
+		sortCategory,
+		sortDirection
+	) => {
 		let baseOperators = Object.values(
 			operatorsJson
 		) as OutputTypes.Operator[];
@@ -81,6 +95,24 @@ export const $operators = computed(
 			baseOperators = baseOperators.filter(
 				(operator) => operator.hasGuide === true
 			);
+		}
+
+		if (sortCategory && sortDirection) {
+			if(sortCategory === "Alphabetical"){
+				baseOperators.sort((a, b) => a.name?.en_US.localeCompare(b.name?.en_US, 'en'))
+			}
+
+			if(sortCategory === "Rarity"){
+				baseOperators.sort((a, b) => a.rarity - b.rarity)
+			}
+
+			if(sortCategory === "Release Date"){
+				baseOperators.sort((a, b) => a.releaseOrder - b.releaseOrder)
+			}
+
+			if(sortDirection == "DESC"){
+				baseOperators.reverse();
+			}
 		}
 
 		return baseOperators;

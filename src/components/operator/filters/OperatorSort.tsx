@@ -26,7 +26,7 @@ const OperatorSort = () => {
 		const [category, direction] = value.split("_");
 
 		$sortDirection.set(direction as SortDirectionValue);
-		$sortCategory.set(category as SortDirectionValue);
+		$sortCategory.set(category as SortCategoryValue);
 	};
 
 	const clearSorting = () => {
@@ -91,7 +91,7 @@ const OperatorSort = () => {
 			<DropdownMenuContent className="w-36">
 				<DropdownMenuRadioGroup
 					value={
-						isSortEmpty ? `${sortCategory}_${sortDirection}` : ""
+						isSortEmpty ? "" :  `${sortCategory}_${sortDirection}`
 					}
 					onValueChange={setSorting}
 				>
