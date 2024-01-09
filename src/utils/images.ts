@@ -1,16 +1,15 @@
 import itemsJson from "../../data/items.json";
 
-const baseURL =
-	"https://penguacestergonenemypresslabdbdare.stinggy.com";
+const baseURL = "https://penguacestergonenemypresslabdbdare.stinggy.com";
 
 export const operatorAvatar = (charId: string, elite?: number): string => {
-	const basePath = `${baseURL}/avatars/${charId}`;
+	const basePath = `${baseURL}/torappu/dynamicassets/arts/charavatars/${charId}`;
 	if (charId === "char_002_amiya" && elite === 1) {
-		return `${basePath}_1+.png`;
+		return `${basePath}_1+.webp`;
 	} else if (elite === 2) {
-		return `${basePath}_2.png`;
+		return `${basePath}_2.webp`;
 	}
-	return `${basePath}.png`;
+	return `${basePath}.webp`;
 };
 export const operatorSplash = (portraitId: string): string => {
 	return `${baseURL}/characters/${encodeURIComponent(portraitId)}.png`;
@@ -27,7 +26,7 @@ export const enemyAvatar = (enemyId: string): string => {
 export const summonImage = (id: string): string => `/images/avatars/${id}.png`;
 
 export const tokenImage = (id: string): string =>
-	`${baseURL}/avatars/${id}.png`;
+	`${baseURL}/torappu/dynamicassets/arts/charavatars/${id}.webp`;
 
 export const operatorClassIcon = (operatorClass: string): string =>
 	`${baseURL}/arts/icon_profession_${operatorClass.toLocaleLowerCase()}_large.webp`;

@@ -1,6 +1,7 @@
 import React from "react";
 import OperatorFilters from "./OperatorFilters";
 import * as Popover from "@radix-ui/react-popover";
+import OperatorViewSwitch from "./OperatorViewSwitch";
 const OperatorFilterBar = () => {
 	return (
 		<div className="flex gap-6">
@@ -41,6 +42,9 @@ const OperatorFilterBar = () => {
 						</Popover.Content>
 					</Popover.Portal>
 				</Popover.Root>
+			</div>
+			<div>
+				<OperatorViewSwitch />
 			</div>
 		</div>
 	);

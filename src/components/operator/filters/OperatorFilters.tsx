@@ -30,8 +30,8 @@ const OperatorFilters = () => {
 	const clearFilters = useCallback(() => {
 		$filterProfession.set([]);
 		$filterBranch.set([]);
+		$filterRarity.set([]);
 		$filterGuideAvailable.set(false);
-		
 	}, []);
 
 	return (
