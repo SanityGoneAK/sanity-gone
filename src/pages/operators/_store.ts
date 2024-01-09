@@ -24,22 +24,18 @@ export const $viewConfig = atom<ViewConfigValue>("compact");
 
 // Sorting
 export type SortDirectionValue = "ASC" | "DESC" | null;
-export const sortDirection = atom<SortDirectionValue>(null);
+export const $sortDirection = atom<SortDirectionValue>(null);
 
 export type SortCategoryValue =
 	| "Alphabetical"
 	| "Rarity"
 	| "Release Date"
 	| null;
-export const SortCategory = atom<SortDirectionValue>(null);
-
-// Filtering
-export const filterProfession = atom<keyof (typeof professionLookup)[] | null>(
-	null
+export const $sortCategory = atom<SortDirectionValue>(null);
+export const $isSortEmpty = computed(
+	[$sortCategory, $sortDirection],
+	(category, direction) => category === null && direction === null
 );
-export const filterBranch = atom<keyof (typeof branches)[] | null>(null);
-export const filterRarity = atom<1 | 2 | 3 | 4 | 5 | 6 | null>(null);
-export const filterGuideAvailable = atom<boolean | null>(null);
 
 // Filtering
 export const $filterProfession = atom<string[]>([]);

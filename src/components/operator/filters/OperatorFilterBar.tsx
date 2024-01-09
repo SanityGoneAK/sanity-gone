@@ -2,6 +2,7 @@ import React from "react";
 import OperatorFilters from "./OperatorFilters";
 import * as Popover from "@radix-ui/react-popover";
 import OperatorViewSwitch from "./OperatorViewSwitch";
+import OperatorSort from "./OperatorSort";
 const OperatorFilterBar = () => {
 	return (
 		<div className="flex gap-6">
@@ -9,7 +10,7 @@ const OperatorFilterBar = () => {
 				<Popover.Root>
 					<Popover.Trigger asChild>
 						<button
-							className="group w-8 h-8 bg-neutral-800/[0.66] flex items-center justify-center rounded data-[state=open]:bg-gradient-to-b data-[state=open]:from-purple-light data-[state=open]:to-purple"
+							className="group w-8 h-8 bg-neutral-800/[0.66] flex items-center justify-center rounded-lg data-[state=open]:bg-gradient-to-b data-[state=open]:from-purple-light data-[state=open]:to-purple"
 							aria-label="Open Filters"
 						>
 							<svg
@@ -42,6 +43,9 @@ const OperatorFilterBar = () => {
 						</Popover.Content>
 					</Popover.Portal>
 				</Popover.Root>
+			</div>
+			<div>
+				<OperatorSort />
 			</div>
 			<div>
 				<OperatorViewSwitch />
