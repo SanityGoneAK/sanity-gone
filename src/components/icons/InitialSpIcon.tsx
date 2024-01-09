@@ -1,6 +1,4 @@
-type Props = React.SVGAttributes<SVGElement>;
-
-const InitialSpIcon: React.FC<Props> = (props) => {
+const InitialSpIcon: React.FC<React.SVGAttributes<SVGElement>> = (props) => {
 	return (
 		<svg
 			width="12"
@@ -12,7 +10,7 @@ const InitialSpIcon: React.FC<Props> = (props) => {
 		>
 			<path
 				d="M0.285645 13.8571V0.142822L11.7142 6.99997L0.285645 13.8571Z"
-				fill="#E8E8F2"
+				fill="currentColor"
 			/>
 		</svg>
 	);
