@@ -44,9 +44,9 @@ export const moduleTypeImage = (moduleType: string): string =>
 	`${baseURL}/equip/type/${moduleType}.webp`;
 
 export const itemImage = (itemId: string): string =>
-	`${baseURL}/items/${
+	`${baseURL}/torappu/dynamicassets/arts/items/icons/${
 		itemsJson[itemId as keyof typeof itemsJson].iconId
-	}.png`;
+	}.webp`;
 
 export const riicSkillIcon = (riicSkillIcon: string): string =>
 	`${baseURL}/torappu/dynamicassets/arts/building/skills/${riicSkillIcon}.webp`;
