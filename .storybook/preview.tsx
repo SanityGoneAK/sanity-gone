@@ -1,5 +1,7 @@
 import type { Preview } from "@storybook/react";
 
+import SvgRarityGradientDefs from "~/components/operator/SvgRarityGradientDefs";
+
 import "~/styles/base.css";
 
 const preview: Preview = {
@@ -15,3 +17,12 @@ const preview: Preview = {
 };
 
 export default preview;
+
+export const decorators = [
+	(Story) => (
+		<>
+			<Story />
+			<SvgRarityGradientDefs />
+		</>
+	),
+];
