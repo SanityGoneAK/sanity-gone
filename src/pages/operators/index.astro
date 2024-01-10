@@ -7,11 +7,9 @@ import OperatorList from "../../components/operator/OperatorList";
 
 <Layout title="Operator List">
     <section class="max-w-[1280px] mx-auto">
-        <div class="flex justify-between mb-6">
-            <h1 class="text-[32px] font-semibold not-italic leading-8 text-neutral-50">Operators</h1>
+        <div class="w-full">
             <OperatorFilterBar client:visible/>
         </div>
-        
         <OperatorList client:visible/>
     </section>
 </Layout>

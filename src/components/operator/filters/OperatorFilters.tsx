@@ -37,10 +37,10 @@ const OperatorFilters = () => {
 	}, []);
 
 	return (
-		<div className="flex max-w-[420px] flex-col gap-4 rounded-lg bg-neutral-950 p-4 text-neutral-200">
+		<div className="flex w-full flex-col gap-4 rounded-lg text-neutral-200 md:max-w-[420px] md:bg-neutral-950 md:p-4">
 			<div>
 				<p>Class</p>
-				<div className="mt-2 flex gap-2 rounded bg-neutral-700 p-1">
+				<div className="mt-2 flex justify-center gap-2 rounded bg-neutral-800/[0.66] p-1 md:bg-neutral-700">
 					{professions.map((profession) => {
 						const selected = filterProfession.some(
 							(item) => item === profession
@@ -75,7 +75,7 @@ const OperatorFilters = () => {
 			<div>
 				<p>Branch</p>
 				{availableBranches.length == 0 ? (
-					<div className="mt-2 flex items-center justify-center rounded bg-neutral-900 p-2">
+					<div className="mt-2 flex items-center justify-center rounded bg-neutral-800 p-2 md:bg-neutral-900">
 						<p className="leading-5 text-neutral-300">
 							Select a Class
 						</p>
@@ -90,7 +90,7 @@ const OperatorFilters = () => {
 								<button
 									key={key}
 									className={cx(
-										"flex items-center gap-1 rounded bg-neutral-700 px-2 py-1",
+										"flex items-center gap-1 rounded bg-neutral-800/[0.66] px-2 py-1 md:bg-neutral-700",
 										{
 											"bg-gradient-to-b from-purple-light to-purple text-neutral-800":
 												selected,
@@ -123,7 +123,7 @@ const OperatorFilters = () => {
 			<div>
 				<p>Rarity</p>
 				<div className="mt-2">
-					<div className="mt-2 flex items-center justify-center rounded bg-neutral-700 p-2">
+					<div className="mt-2 flex items-center justify-center rounded bg-neutral-800/[0.66] p-2 md:bg-neutral-700">
 						{new Array<Rarity>(1, 2, 3, 4, 5, 6).map((rarity) => {
 							const selected = filterRarity.some(
 								(item) => item === rarity

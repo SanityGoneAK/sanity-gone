@@ -11,6 +11,7 @@ import {
 import { slugify } from "../../utils/strings";
 
 import type * as OutputTypes from "../../types/output-types";
+import useMediaQuery from "~/utils/media-query";
 
 const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 	operator,
@@ -69,11 +70,12 @@ const OperatorCompactItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 const OperatorList = () => {
 	const operators = useStore($operators);
 	const viewConfig = useStore($viewConfig);
+	const isMobile = useMediaQuery("(max-width: 768px)");
 
 	return (
 		<ul className="grid list-none grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))] gap-x-6 gap-y-4 p-0">
 			{operators.map((op) =>
-				viewConfig === "compact" ? (
+				isMobile || viewConfig === "compact" ? (
 					<OperatorCompactItem key={op.charId} operator={op} />
 				) : (
 					<OperatorLargeItem key={op.charId} operator={op} />

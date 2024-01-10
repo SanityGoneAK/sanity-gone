@@ -37,7 +37,7 @@ const OperatorSort = () => {
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
-				<button className="flex justify-between w-36 text-left bg-neutral-800/[0.66] py-2 px-3 text-neutral-200 leading-4 rounded-lg">
+				<button className="flex w-full justify-between rounded-lg bg-neutral-800/[0.66] px-3 py-2 text-left leading-4 text-neutral-200 md:w-36">
 					{isSortEmpty ? (
 						<>
 							<span>Sort By</span>
@@ -88,10 +88,10 @@ const OperatorSort = () => {
 					)}
 				</button>
 			</DropdownMenuTrigger>
-			<DropdownMenuContent className="w-36">
+			<DropdownMenuContent className="w-full md:w-36">
 				<DropdownMenuRadioGroup
 					value={
-						isSortEmpty ? "" :  `${sortCategory}_${sortDirection}`
+						isSortEmpty ? "" : `${sortCategory}_${sortDirection}`
 					}
 					onValueChange={setSorting}
 				>
@@ -147,7 +147,7 @@ const OperatorSort = () => {
 				<DropdownMenuLabel className="-mt-1">
 					<button
 						onClick={clearSorting}
-						className="w-full text-neutral-200 font-normal hover:bg-neutral-600 rounded-md"
+						className="w-full rounded-md font-normal text-neutral-200 hover:bg-neutral-600"
 					>
 						Clear Sort
 					</button>

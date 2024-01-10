@@ -7,7 +7,7 @@ import { cx } from "../../utils/styles";
 import SanityGoneLogo from "../SanityGoneLogo";
 
 const Sidebar: React.FC<React.PropsWithChildren> = ({ children }) => {
-	const [open, setOpen] = useState(true);
+	const [open, setOpen] = useState(false);
 	const isMobile = useMediaQuery("(max-width: 640px)");
 
 	return (
