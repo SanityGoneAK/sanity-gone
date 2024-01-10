@@ -4,9 +4,9 @@ import AttackSpeedIcon from "./AttackSpeedIcon";
 import BlockIcon from "./BlockIcon";
 import DefenseIcon from "./DefenseIcon";
 import DPCostIcon from "./DPCostIcon";
-// import EliteOneIcon from "./EliteOneIcon";
-// import EliteTwoIcon from "./EliteTwoIcon";
-// import EliteZeroIcon from "./EliteZeroIcon";
+import EliteOneIcon from "./EliteOneIcon";
+import EliteTwoIcon from "./EliteTwoIcon";
+import EliteZeroIcon from "./EliteZeroIcon";
 import HealthIcon from "./HealthIcon";
 import HourglassIcon from "./HourglassIcon";
 import InitialSpIcon from "./InitialSpIcon";
@@ -26,9 +26,9 @@ export {
 	BlockIcon,
 	DefenseIcon,
 	DPCostIcon,
-	// EliteZeroIcon,
-	// EliteOneIcon,
-	// EliteTwoIcon,
+	EliteZeroIcon,
+	EliteOneIcon,
+	EliteTwoIcon,
 	PotentialOneIcon,
 	PotentialTwoIcon,
 	PotentialThreeIcon,
