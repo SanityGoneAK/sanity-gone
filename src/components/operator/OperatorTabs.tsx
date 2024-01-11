@@ -41,7 +41,7 @@ const OperatorTabs: React.FC = () => {
 								font-semibold uppercase leading-[23px] text-neutral-400 outline-none
 								last:justify-self-end`,
 								i === selectedIndex
-									? `:after:outline-none after:absolute after:bottom-[-8px] after:left-4 after:right-4 after:h-0
+									? `:after:outline-none text-neutral-50 after:absolute after:bottom-[-8px] after:left-2 after:right-2 after:h-0
 									after:border after:border-neutral-50 after:shadow-[0px_-4px_16px] after:shadow-neutral-50`
 									: ""
 							)}
