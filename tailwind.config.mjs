@@ -52,26 +52,26 @@ export default {
 					DEFAULT: "#E8E8F2",
 					dark: "#D8D8E7",
 				},
-				2: {
-					DEFAULT: "#d3ff77",
-					dark: "#a7e855",
-				},
-				3: {
-					DEFAULT: "#7cd8ff",
-					dark: "#49b3ff",
-				},
-				4: {
-					DEFAULT: "#d1d0ee",
-					dark: "#9d9bf4",
-				},
-				5: {
-					DEFAULT: "#ffe9b0",
-					dark: "#e5c675",
-				},
-				6: {
-					DEFAULT: "#ff9254",
-					dark: "#ede637",
-				},
+				// 2: {
+				// 	DEFAULT: "#d3ff77",
+				// 	dark: "#a7e855",
+				// },
+				// 3: {
+				// 	DEFAULT: "#7cd8ff",
+				// 	dark: "#49b3ff",
+				// },
+				// 4: {
+				// 	DEFAULT: "#d1d0ee",
+				// 	dark: "#9d9bf4",
+				// },
+				// 5: {
+				// 	DEFAULT: "#ffe9b0",
+				// 	dark: "#e5c675",
+				// },
+				// 6: {
+				// 	DEFAULT: "#ff9254",
+				// 	dark: "#ede637",
+				// },
 			},
 		},
 		extend: {

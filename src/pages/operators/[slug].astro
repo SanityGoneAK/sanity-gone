@@ -13,6 +13,7 @@ import { getRelatedCharacter } from "../../utils/related-character";
 import type * as OutputTypes from "../../types/output-types";
 import { operatorAvatar } from "../../utils/images";
 import InterpunctSpacer from "../../components/ui/InterpunctSpacer.astro";
+import OperatorInfo from "../../components/operator/OperatorInfo.astro";
 
 // console.log(Object.entries(operatorsJson)[0]);
 //
@@ -114,6 +115,7 @@ const relatedOperator = getRelatedCharacter(operator);
 				<CharacterSplash client:visible />
 			</section>
 			<section class="flex-1">
+				<OperatorInfo operator={operator} />
 				<OperatorTabs client:visible />
 			</section>
 		</div>

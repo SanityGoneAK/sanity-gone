@@ -1,17 +1,18 @@
 import { useStore } from "@nanostores/react";
 
-import { operatorStore } from "../../pages/operators/_store";
-import { subProfessionIdToBranch } from "../../utils/branches";
-import { operatorBranchIcon } from "../../utils/images";
-import Tooltip from "../Tooltip";
-import TraitInfo from "../TraitInfo";
+import Tooltip from "~/components/ui/Tooltip";
+import { operatorStore } from "~/pages/operators/_store.ts";
+import { subProfessionIdToBranch } from "~/utils/branches.ts";
+import { operatorBranchIcon } from "~/utils/images.ts";
+
+import TraitInfo from "./TraitInfo";
 
 const OperatorBranchAndTrait: React.FC = () => {
 	const operator = useStore(operatorStore);
 	return (
-		<div className={operatorInfoClasses.rarityClassBranchItem}>
+		<div className="grid grid-flow-col items-center gap-x-2">
 			<img
-				className={operatorInfoClasses.classBranchIcon}
+				className="h-4 w-full"
 				src={operatorBranchIcon(operator.subProfessionId)}
 				alt=""
 			/>
@@ -20,7 +21,10 @@ const OperatorBranchAndTrait: React.FC = () => {
 					<TraitInfo subProfessionId={operator.subProfessionId} />
 				}
 			>
-				<span className={classes.hasTooltip}>
+				<span
+					className="relative cursor-help after:absolute after:bottom-0 after:left-0 after:right-0
+							   after:border-b after:border-dashed after:opacity-[33%]"
+				>
 					{subProfessionIdToBranch(operator.subProfessionId)}
 				</span>
 			</Tooltip>

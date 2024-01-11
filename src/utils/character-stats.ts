@@ -1,3 +1,5 @@
+import { toTitleCase } from "./strings";
+
 import type { Range } from "../types/gamedata-types";
 import type * as OutputTypes from "../types/output-types";
 
@@ -306,3 +308,12 @@ export const getMaxTrustStatIncrease = (
 		characterObject.favorKeyFrames.length - 1
 	].data;
 };
+
+export function getMeleeOrRangedOrBoth(
+	position: string,
+	description: string | null
+) {
+	return description?.toLowerCase().includes("can be deployed on ranged")
+		? "Melee or Ranged"
+		: toTitleCase(position);
+}

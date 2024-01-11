@@ -73,18 +73,18 @@ body {
 
 :root {
 	-webkit-font-smoothing: antialiased;
-	--color-rarity-1: theme("colors.rarity.1.DEFAULT");
-	--color-rarity-1-dark: theme("colors.rarity.1.dark");
-	--color-rarity-2: theme("colors.rarity.2.DEFAULT");
-	--color-rarity-2-dark: theme("colors.rarity.2.dark");
-	--color-rarity-3: theme("colors.rarity.3.DEFAULT");
-	--color-rarity-3-dark: theme("colors.rarity.3.dark");
-	--color-rarity-4: theme("colors.rarity.4.DEFAULT");
-	--color-rarity-4-dark: theme("colors.rarity.4.dark");
-	--color-rarity-5: theme("colors.rarity.5.DEFAULT");
-	--color-rarity-5-dark: theme("colors.rarity.5.dark");
-	--color-rarity-6: theme("colors.rarity.6.DEFAULT");
-	--color-rarity-6-dark: theme("colors.rarity.6.dark");
+	--color-rarity-1: theme("colors.neutral.50");
+	--color-rarity-1-dark: theme("colors.neutral.100");
+	--color-rarity-2: theme("colors.green.light");
+	--color-rarity-2-dark: theme("colors.green.DEFAULT");
+	--color-rarity-3: theme("colors.blue.light");
+	--color-rarity-3-dark: theme("colors.blue.DEFAULT");
+	--color-rarity-4: theme("colors.purple.light");
+	--color-rarity-4-dark: theme("colors.purple.DEFAULT");
+	--color-rarity-5: theme("colors.yellow.light");
+	--color-rarity-5-dark: theme("colors.yellow.DEFAULT");
+	--color-rarity-6: theme("colors.orange.light");
+	--color-rarity-6-dark: theme("colors.orange.DEFAULT");
 }
 
 img,

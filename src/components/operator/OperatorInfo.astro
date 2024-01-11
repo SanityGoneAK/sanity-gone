@@ -1,34 +1,33 @@
 ---
 import InterpunctSpacer from "../ui/InterpunctSpacer.astro";
 import StarIcon from "../icons/StarIcon";
-import OperatorBranchAndTrait from "../OperatorBranchAndTrait.tsx";
-import { operatorClassIcon } from "../../utils/images";
-import { professionToClass } from "../../utils/classes";
-import { getMeleeOrRangedOrBoth } from "./helpers";
+import OperatorBranchAndTrait from "./OperatorBranchAndTrait.tsx";
+import { operatorClassIcon } from "~/utils/images";
+import { professionToClass, classToProfession } from "~/utils/classes";
+import { getMeleeOrRangedOrBoth } from "~/utils/character-stats";
+import { cx } from "~/utils/styles";
 
-import * as classes from "./styles.css";
-
-import type * as OutputTypes from "../../output-types";
+import type * as OutputTypes from "~/types/output-types";
 
 interface Props {
 	operator: OutputTypes.Character;
 }
 
 const { operator } = Astro.props;
-const [baseName, alterName] = operator.name.split(/ the /i);
+const [baseName, alterName] = operator.name.en_US.split(/ the /i);
 const operatorClass = professionToClass(operator.profession);
 const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 ---
 
-<div class="grid pt-6 pb-4 px-6 grid-">
-	<h1 class={classes.name}>
+<div class="grid pt-6 pb-4 px-6 grid-rows-[auto_auto] gap-y-2 bg-neutral-600/[.66]">
+	<h1 class="font-serif text-[40px] leading-none font-bold">
 		{baseName}
-		{alterName && <span class={classes.alterName}>The {alterName}</span>}
+		{alterName && <span class="text-neutral-200 font-normal">The {alterName}</span>}
 	</h1>
-	<div class={classes.rarityClassBranch}>
-		<div class={classes.rarityClassBranchItem}>
+	<div class="grid grid-flow-col auto-cols-max gap-x-3 items-center justify-start">
+		<div class="grid grid-flow-col items-center gap-x-2">
 			<span class="visually-hidden">Rarity: {rarity}</span>
-			<span class={classes.rarityStars}>
+			<span class="grid grid-flow-col">
         {
 			Array(rarity)
 				.fill(null)
@@ -37,22 +36,30 @@ const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
       </span>
 			{
 				operator.isLimited && (
-					<span class={classes.limitedText[rarity]}>Limited</span>
+					<span class={cx(`relative inline-block mr-1.5 text-base leading-normal
+					font-black italic bg-gradient-to-b bg-clip-text text-transparent uppercase`, {
+						6: "from-orange to-orange-light",
+						5: "from-yellow to-yellow-light",
+						4: "from-purple to-purple-light",
+						3: "from-blue to-blue-light",
+						2: "from-green to-green-light",
+						1: "bg-neutral-50"
+					}[rarity])}>Limited</span>
 				)
 			}
 		</div>
-		<div class={classes.rarityClassBranchItem}>
+		<div class="grid grid-flow-col items-center gap-x-2">
 			<img
-				class={classes.classBranchIcon}
-				src={operatorClassIcon(operatorClass.toLowerCase())}
+				class="h-4 w-full"
+				src={operatorClassIcon(classToProfession(operatorClass).toLowerCase())}
 				alt=""
 			/>
 			<span>{operatorClass}</span>
 		</div>
 		<OperatorBranchAndTrait client:idle />
 		<InterpunctSpacer />
-		<span class={classes.position}
-		>{getMeleeOrRangedOrBoth(operator.position, operator.description)}</span
+		<span class="text-neutral-200"
+		>{getMeleeOrRangedOrBoth(operator.position, operator.description.en_US)}</span
 		>
 	</div>
 </div>
