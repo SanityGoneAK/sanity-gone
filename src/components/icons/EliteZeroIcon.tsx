@@ -2,9 +2,10 @@ import { cx } from "~/utils/styles";
 
 interface Props extends React.HTMLAttributes<SVGElement> {
 	active?: boolean;
+	white?: boolean;
 }
 
-const EliteZeroIcon: React.FC<Props> = ({ active, ...rest }) => {
+const EliteZeroIcon: React.FC<Props> = ({ active, white, ...rest }) => {
 	return (
 		<svg
 			width="28"
@@ -20,7 +21,8 @@ const EliteZeroIcon: React.FC<Props> = ({ active, ...rest }) => {
 					"fill-[transparent] stroke-neutral-500 transition-[stroke] duration-200",
 					active
 						? "stroke-neutral-50"
-						: "group-hover:stroke-neutral-200"
+						: "group-hover:stroke-neutral-200",
+					white ? "stroke-neutral-50" : ""
 				)}
 			/>
 		</svg>

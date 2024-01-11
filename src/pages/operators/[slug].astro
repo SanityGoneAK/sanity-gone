@@ -1,0 +1,123 @@
+---
+import { slugify } from "../../utils/strings";
+import operatorsJson from "../../../data/operators.json";
+import Layout from "../../layouts/Layout.astro";
+import { operatorIdStore } from "./_store";
+import CharacterSplash from "../../components/operator/CharacterSplash"
+import MaterialRequirements from "../../components/operator/MaterialRequirements";
+import SvgRarityGradientDefs from "../../components/operator/SvgRarityGradientDefs";
+import OperatorTabs from "../../components/operator/OperatorTabs";
+
+import { getRelatedCharacter } from "../../utils/related-character";
+
+import type * as OutputTypes from "../../types/output-types";
+import { operatorAvatar } from "../../utils/images";
+import InterpunctSpacer from "../../components/ui/InterpunctSpacer.astro";
+
+// console.log(Object.entries(operatorsJson)[0]);
+//
+// export function getStaticPaths() {
+// 	return Object.entries(operatorsJson).map(([operatorId, operator]: [string, OutputTypes.Operator]) => {
+// 		console.log(operatorId);
+//
+// 		return {
+// 			params: {
+// 				slug: slugify(operator.name.en_US),
+// 			},
+// 			props: { operatorId },
+// 		};
+// 	});
+// }
+
+const { slug } = Astro.params;
+
+const idLookup = Object.fromEntries(
+	Object.entries(operatorsJson).map(([operatorId, operator]: [string, OutputTypes.Operator]) => {
+		return [slugify(operator.name.en_US), operatorId];
+	}));
+
+const operatorId = idLookup[slug];
+console.log(operatorId);
+
+const operator = operatorsJson[
+	operatorId as keyof typeof operatorsJson
+	] as OutputTypes.Operator;
+operatorIdStore.set(operatorId);
+
+const relatedOperator = getRelatedCharacter(operator);
+---
+
+<script slot="head" define:vars={{ operatorId }}>
+	window.operatorId = operatorId;
+</script>
+
+<Layout title={operator.name.en_US}>
+	<div class="w-full max-w-[1280px] mx-auto flex flex-col">
+		<div class="flex justify-between mb-6">
+			<ul class="p-0 m-0 flex items-center list-none gap-3 flex-grow">
+				<li class="text-base font-normal leading-normal flex-none">
+					<a href="/operators" class="text-blue hover:underline">Operators</a>
+				</li>
+				/
+				<li class="text-base font-bold leading-normal flex-none">{operator.name.en_US}</li>
+				<li class="flex-grow"></li>
+				{
+					relatedOperator && (
+						<li class="flex-none">
+							<a
+								class="flex items-center text-yellow relative mr-3"
+								href={`/operators/${slugify(relatedOperator.name.en_US)}`}
+							>
+								<img
+									class="w-8 h-8 border border-solid border-neutral-200 rounded-[4.5rem] mr-2"
+									src={operatorAvatar(relatedOperator.charId)}
+								/>
+								<span class="border-dashed border-b-[1px] border-neutral-200">{relatedOperator.name.en_US}</span>
+							</a>
+						</li>
+					)
+				}
+			</ul>
+			<!-- TODO: Make this a component? -->
+			<a class="flex justify-center py-2 px-3 items-center gap-2 relative bg-gray rounded-[20px] border-2 border-transparent border-solid"
+			   style="background: linear-gradient(180deg, #14141B 0%, #191920 100%) padding-box, linear-gradient(180deg, #FED874 0%, #FFC397 100%) border-box;"
+			   href="#"
+			><span class="leading-tight text-base text-transparent font-semibold bg-gradient-to-b from-[#FED874] to-orange-light bg-clip-text">Operator Guide</span>
+				<svg
+					width="16"
+					height="16"
+					viewBox="0 0 16 16"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M8 0C8 4.41828 4.41828 8 0 8C4.41828 8 8 11.5817 8 16C8 11.5817 11.5817 8 16 8C11.5817 8 8 4.41828 8 0Z"
+						fill="url(#paint0_linear_4270_17189)"></path>
+					<defs>
+						<linearGradient
+							id="paint0_linear_4270_17189"
+							x1="8"
+							y1="0"
+							x2="8"
+							y2="16"
+							gradientUnits="userSpaceOnUse"
+						>
+							<stop stop-color="#FED874"></stop>
+							<stop offset="1" stop-color="#FFC397"></stop>
+						</linearGradient>
+					</defs>
+				</svg>
+			</a>
+		</div>
+		<div class="flex flex-col xl:flex-row rounded-lg border-neutral-400 border">
+			<section class="flex-1">
+				<CharacterSplash client:visible />
+			</section>
+			<section class="flex-1">
+				<OperatorTabs client:visible />
+			</section>
+		</div>
+
+	</div>
+	<SvgRarityGradientDefs />
+</Layout>

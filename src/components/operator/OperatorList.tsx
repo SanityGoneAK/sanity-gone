@@ -16,7 +16,7 @@ import useMediaQuery from "~/utils/media-query";
 const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 	operator,
 }) => {
-	const [charName, alterName] = operator.name?.en_US.split(/\sthe\s/i);
+	const [charName, alterName] = operator.name?.en_US?.split(/\sthe\s/i);
 	return (
 		<li className="relative h-[280px] w-full rounded">
 			<div className="h-full">

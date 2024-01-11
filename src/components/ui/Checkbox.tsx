@@ -3,7 +3,7 @@ import * as React from "react";
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
 import { cva, type VariantProps } from "class-variance-authority";
 
-import { cx } from "../../utils/styles";
+import { cx } from "~/utils/styles.ts";
 
 const checkboxVariants = cva("size-[10px] rounded-sm bg-gradient-to-b", {
 	variants: {

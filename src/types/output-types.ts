@@ -348,7 +348,7 @@ interface EliteOneOrTwoOperatorSkin extends BaseOperatorSkin {
 }
 
 /** Custom operator skin art. */
-interface SpecialOperatorSkin extends BaseOperatorSkin {
+export interface SpecialOperatorSkin extends BaseOperatorSkin {
 	type: "skin";
 	/** @see `SkinSource` */
 	obtainSources: string[];

@@ -11,12 +11,33 @@ export const operatorAvatar = (charId: string, elite?: number): string => {
 	}
 	return `${basePath}.webp`;
 };
-export const operatorSplash = (portraitId: string): string => {
-	return `${baseURL}/characters/${encodeURIComponent(portraitId)}.webp`;
+export const operatorSplash = (
+	portraitId: string,
+	skinType: string
+): string => {
+	if (skinType === "skin") {
+		return `${baseURL}/skinpack/${encodeURIComponent(portraitId)}.webp`;
+	}
+	return `${baseURL}/chararts/${encodeURIComponent(portraitId)}.webp`;
 };
 
-export const operatorSplashAvatar = (avatarId: string): string => {
-	return `${baseURL}/avatars/${encodeURIComponent(avatarId)}.webp`;
+export const operatorSplashAvatar = (
+	avatarId: string,
+	skinType: string
+): string => {
+	if (skinType === "skin") {
+		return `${baseURL}/torappu/dynamicassets/arts/charavatars/skins/${encodeURIComponent(
+			avatarId
+		)}.webp`;
+	}
+	if (skinType === "elite-one-or-two") {
+		return `${baseURL}/torappu/dynamicassets/arts/charavatars/elite/${encodeURIComponent(
+			avatarId
+		)}.webp`;
+	}
+	return `${baseURL}/torappu/dynamicassets/arts/charavatars/${encodeURIComponent(
+		avatarId
+	)}.webp`;
 };
 
 export const enemyAvatar = (enemyId: string): string => {

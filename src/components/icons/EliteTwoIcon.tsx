@@ -2,9 +2,10 @@ import { cx } from "~/utils/styles";
 
 interface Props extends React.HTMLAttributes<SVGElement> {
 	active?: boolean;
+	white?: boolean;
 }
 
-const EliteTwoIcon: React.FC<Props> = ({ active, ...rest }) => {
+const EliteTwoIcon: React.FC<Props> = ({ active, white, ...rest }) => {
 	return (
 		<svg
 			width="28"
@@ -22,7 +23,8 @@ const EliteTwoIcon: React.FC<Props> = ({ active, ...rest }) => {
 					"fill-neutral-500 transition-[fill] duration-200",
 					active
 						? "fill-[url(#rarity5)]"
-						: "group-hover:fill-neutral-200"
+						: "group-hover:fill-neutral-200",
+					white ? "fill-neutral-50" : ""
 				)}
 			/>
 		</svg>

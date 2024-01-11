@@ -7,6 +7,9 @@ export default {
 			serif: ["Crimson Text", "serif"],
 		},
 		colors: {
+			transparent: {
+				DEFAULT: "transparent"
+			},
 			red: {
 				light: "#FF9B9B",
 				DEFAULT: "#F45C5C",
