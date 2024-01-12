@@ -130,23 +130,23 @@ const OperatorFilters = () => {
 							);
 							const rarityStyleVariants = {
 								1: selected
-									? `bg-gradient-to-b from-rarity-1 to-rarity-1-dark text-neutral-800`
-									: `text-rarity-1 hover:bg-neutral-500`,
+									? `bg-gradient-to-b from-neutral-50 to-neutral-100 text-neutral-800`
+									: `text-neutral-50 hover:bg-neutral-500`,
 								2: selected
-									? `bg-gradient-to-b from-rarity-2 to-rarity-2-dark text-neutral-800`
-									: `text-rarity-2 hover:bg-neutral-500`,
+									? `bg-gradient-to-b from-green-light to-green text-neutral-800`
+									: `text-green-light hover:bg-neutral-500`,
 								3: selected
-									? `bg-gradient-to-b from-rarity-3 to-rarity-3-dark text-neutral-800`
-									: `text-rarity-3 hover:bg-neutral-500`,
+									? `bg-gradient-to-b from-blue-light to-blue text-neutral-800`
+									: `text-blue-light hover:bg-neutral-500`,
 								4: selected
-									? `bg-gradient-to-b from-rarity-4 to-rarity-4-dark text-neutral-800`
-									: `text-rarity-4 hover:bg-neutral-500`,
+									? `bg-gradient-to-b from-purple-light to-purple text-neutral-800`
+									: `text-purple-light hover:bg-neutral-500`,
 								5: selected
-									? `bg-gradient-to-b from-rarity-5 to-rarity-5-dark text-neutral-800`
-									: `text-rarity-5 hover:bg-neutral-500`,
+									? `bg-gradient-to-b from-yellow-light to-yellow text-neutral-800`
+									: `text-yellow-light hover:bg-neutral-500`,
 								6: selected
-									? `bg-gradient-to-b from-rarity-6-dark to-rarity-6 text-neutral-800`
-									: `text-rarity-6 hover:bg-neutral-500`,
+									? `bg-gradient-to-b from-orange-light to-orange text-neutral-800`
+									: `text-orange-light hover:bg-neutral-500`,
 							};
 
 							return (
