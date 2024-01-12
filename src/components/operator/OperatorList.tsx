@@ -12,25 +12,40 @@ import { slugify } from "../../utils/strings";
 
 import type * as OutputTypes from "../../types/output-types";
 import useMediaQuery from "~/utils/media-query";
+import { cx } from "~/utils/styles";
+import StarIcon from "../icons/StarIcon";
+import { professionToClass } from "~/utils/classes";
+import { subProfessionIdToBranch } from "~/utils/branches";
 
 const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 	operator,
 }) => {
 	const [charName, alterName] = operator.name?.en_US?.split(/\sthe\s/i);
+	const rarityText = {
+		1: "text-neutral-50",
+		2: "text-green-light",
+		3: "text-blue-light",
+		4: "text-purple-light",
+		5: "text-yellow-light",
+		6: "text-orange-light",
+	};
+
 	return (
-		<li className="relative h-[280px] w-full rounded">
-			<div className="h-full">
-				<img
-					className="h-full w-full object-cover object-center"
-					alt=""
-					src={operatorPortrait(operator.charId)}
-				/>
+		<li className="relative h-[280px] w-full overflow-hidden rounded">
+			<div className="h-full overflow-hidden bg-neutral-600">
+				<div className="relative w-full">
+					<img
+						className="h-full w-full object-fill object-right-bottom"
+						alt=""
+						src={operatorPortrait(operator.charId)}
+					/>
+				</div>
 			</div>
-			<div className="absolute top-0 flex h-full w-full flex-col">
+			<div className="group absolute top-0 flex h-full w-full flex-col">
 				<div className="flex">
-					<div className="flex h-11 w-11 items-center justify-center rounded-br bg-neutral-800/[.66] p-1.5 transition-colors duration-150 ease-in-out	will-change-['background-color'] hover:bg-neutral-700">
+					<div className="flex h-11 w-11 items-center justify-center rounded-br bg-neutral-800/[.66] p-1.5 transition-colors duration-150 ease-in-out will-change-['background-color'] hover:bg-neutral-700">
 						<img
-							className="h-ful w-full"
+							className="h-full w-full"
 							src={operatorBranchIcon(operator.subProfessionId)}
 							alt=""
 						/>
@@ -43,10 +58,85 @@ const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 					></a>
 				</div>
 
-				<div className="h-full bg-gradient-to-b from-[transparent] from-40% via-neutral-950/[0.67] via-[67%] to-[#1c1c1c] to-100%">
-					<p>
-						{charName} {alterName && ` the ${alterName}`}
-					</p>
+				<div className="flex h-full flex-col justify-end bg-gradient-to-b from-[transparent] from-40% via-neutral-950/[0.67] via-[67%] to-[#1c1c1c] to-100%">
+					<a
+						href={`/operators/${slugify(
+							operator.name.en_US ?? ""
+						)}`}
+						className="flex flex-grow flex-col justify-end p-3"
+					>
+						<h3 className="flex flex-col text-lg font-semibold leading-6 text-neutral-50">
+							{alterName ? (
+								<>
+									{charName}
+									<span className="visually-hidden">
+										&nbsp;the&nbsp;
+									</span>
+									<span className="text-base font-normal">
+										{alterName}
+									</span>
+								</>
+							) : (
+								charName
+							)}
+						</h3>
+						<div className="flex items-center">
+							<div className={cx(rarityText[operator.rarity])}>
+								<span className="visually-hidden">
+									Class:&nbsp;
+								</span>
+								{professionToClass(operator.profession)}
+							</div>
+							<div className="visually-hidden">
+								Subclass:{" "}
+								{subProfessionIdToBranch(
+									operator.subProfessionId
+								)}
+							</div>
+							<span className="visually-hidden">
+								Rarity:&nbsp;
+							</span>
+							<span
+								className={cx(
+									"ml-auto mr-0.5 leading-[21px]",
+									rarityText[operator.rarity]
+								)}
+							>
+								{operator.rarity}
+							</span>{" "}
+							<StarIcon
+								rarity={operator.rarity}
+								aria-hidden="true"
+								aria-label="stars"
+							/>
+						</div>
+					</a>
+
+					<a
+						href={`/operators/${slugify(
+							operator.name.en_US ?? ""
+						)}`}
+						className={cx(
+							"h-1 bg-gradient-to-r text-center brightness-100 filter transition-all duration-75 ease-in-out will-change-[height] group-hover:h-8",
+							{
+								"from-neutral-50 to-neutral-100":
+									operator.rarity == 1,
+								"from-green-light to-green":
+									operator.rarity == 2,
+								"from-blue-light to-blue": operator.rarity == 3,
+								"from-purple-light to-purple":
+									operator.rarity == 4,
+								"from-yellow-light to-yellow":
+									operator.rarity == 5,
+								"from-orange to-orange-light":
+									operator.rarity == 6,
+							}
+						)}
+					>
+						<span className="mt-1 inline-block font-semibold uppercase text-neutral-950">
+							View Operator
+						</span>
+					</a>
 				</div>
 			</div>
 		</li>
@@ -56,13 +146,88 @@ const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 const OperatorCompactItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 	operator,
 }) => {
+	const [charName, alterName] = operator.name?.en_US?.split(/\sthe\s/i);
+	const rarityText = {
+		1: "text-neutral-50",
+		2: "text-green-light",
+		3: "text-blue-light",
+		4: "text-purple-light",
+		5: "text-yellow-light",
+		6: "text-orange-light",
+	};
 	return (
-		<li className="h-40">
-			<img
-				className="h-full w-full object-cover object-center"
-				alt=""
-				src={operatorAvatar(operator.charId)}
-			/>
+		<li className="relative h-36 overflow-hidden rounded sm:h-40">
+			<div className="h-full overflow-hidden bg-neutral-600">
+				<div className="relative h-full w-full">
+					<img
+						className="h-full w-full object-cover object-bottom"
+						alt=""
+						src={operatorAvatar(operator.charId)}
+					/>
+				</div>
+			</div>
+			<div className="group absolute top-0 flex h-full w-full flex-col">
+				<div className="flex">
+					<div className="flex h-10 w-10 items-center justify-center rounded-br bg-neutral-800/[.66] p-1.5 transition-colors duration-150 ease-in-out will-change-['background-color'] hover:bg-neutral-700">
+						<img
+							className="h-full w-full"
+							src={operatorBranchIcon(operator.subProfessionId)}
+							alt=""
+						/>
+					</div>
+					<a
+						className="block h-11 flex-grow"
+						href={`/operators/${slugify(
+							operator.name.en_US ?? ""
+						)}`}
+					></a>
+				</div>
+				<div className="from-zinc-950 from-transparent via-transparent to-transparent group-hover:from-transparent to-100 flex h-full flex-col justify-end bg-gradient-to-b from-30% via-[67%] transition duration-100 ease-in-out group-hover:via-neutral-950/[0.67] group-hover:to-[#1c1c1c]">
+					<a
+						href={`/operators/${slugify(
+							operator.name.en_US ?? ""
+						)}`}
+						className="flex flex-grow flex-col justify-end p-3"
+					>
+						<h3 className="flex flex-col text-lg font-semibold leading-6 text-neutral-50 opacity-0 transition-opacity group-hover:opacity-100">
+							{alterName ? (
+								<>
+									{charName}
+									<span className="visually-hidden">
+										&nbsp;the&nbsp;
+									</span>
+									<span className="text-base font-normal">
+										{alterName}
+									</span>
+								</>
+							) : (
+								charName
+							)}
+						</h3>
+						<div className="visually-hidden">
+							<span className="visually-hidden">
+								Class:&nbsp;
+								{professionToClass(operator.profession)}
+							</span>
+							Subclass:{" "}
+							{subProfessionIdToBranch(operator.subProfessionId)}
+							<span>Rarity:&nbsp;{operator.rarity}</span>
+						</div>
+					</a>
+
+					<div
+						className={cx("h-1 bg-gradient-to-r text-center", {
+							"from-neutral-50 to-neutral-100":
+								operator.rarity == 1,
+							"from-green-light to-green": operator.rarity == 2,
+							"from-blue-light to-blue": operator.rarity == 3,
+							"from-purple-light to-purple": operator.rarity == 4,
+							"from-yellow-light to-yellow": operator.rarity == 5,
+							"from-orange to-orange-light": operator.rarity == 6,
+						})}
+					></div>
+				</div>
+			</div>
 		</li>
 	);
 };
@@ -73,7 +238,14 @@ const OperatorList = () => {
 	const isMobile = useMediaQuery("(max-width: 768px)");
 
 	return (
-		<ul className="grid list-none grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))] gap-x-6 gap-y-4 p-0">
+		<ul
+			className={cx(
+				"grid list-none grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))]",
+				isMobile || viewConfig === "compact"
+					? "gap-4 p-0"
+					: "gap-x-6 gap-y-4 p-0"
+			)}
+		>
 			{operators.map((op) =>
 				isMobile || viewConfig === "compact" ? (
 					<OperatorCompactItem key={op.charId} operator={op} />

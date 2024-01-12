@@ -98,19 +98,21 @@ export const $operators = computed(
 		}
 
 		if (sortCategory && sortDirection) {
-			if(sortCategory === "Alphabetical"){
-				baseOperators.sort((a, b) => a.name?.en_US.localeCompare(b.name?.en_US, 'en'))
+			if (sortCategory === "Alphabetical") {
+				baseOperators.sort(
+					(a, b) => a.name?.en_US.localeCompare(b.name?.en_US, "en")
+				);
 			}
 
-			if(sortCategory === "Rarity"){
-				baseOperators.sort((a, b) => a.rarity - b.rarity)
+			if (sortCategory === "Rarity") {
+				baseOperators.sort((a, b) => a.rarity - b.rarity);
 			}
 
-			if(sortCategory === "Release Date"){
-				baseOperators.sort((a, b) => a.releaseOrder - b.releaseOrder)
+			if (sortCategory === "Release Date") {
+				baseOperators.sort((a, b) => a.releaseOrder - b.releaseOrder);
 			}
 
-			if(sortDirection == "DESC"){
+			if (sortDirection == "DESC") {
 				baseOperators.reverse();
 			}
 		}
