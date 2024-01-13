@@ -10,7 +10,7 @@ export type { RiicSkill } from "../../scripts/aggregate-riic-data";
 // This file contains the output types of our gamedata scripts - the game data after it's been
 // processed by the scripts. These types do NOT fully conform to raw gamedata.
 
-export interface LocalizedString {
+export interface string {
 	zh_CN?: string;
 	en_US?: string;
 	ja_JP?: string;
@@ -22,12 +22,12 @@ export interface LocalizedString {
  */
 export interface Character {
 	charId: string;
-	name: LocalizedString;
+	name: string;
 	// cnName: string;
 	profession: string;
 	subProfessionId: string;
 	position: string;
-	description: LocalizedString | null;
+	description: string | null;
 	phases: CharacterPhase[];
 	rarity: Rarity; // 1-indexed
 	favorKeyFrames: FavorKeyFrame[] | null;
@@ -110,8 +110,8 @@ export interface TalentPhase {
 	requiredPotentialRank: number;
 	prefabKey: unknown; // unused
 	/** Can be `null` for e.g. summon talents. */
-	name: LocalizedString | null;
-	description: LocalizedString | null;
+	name: string | null;
+	description: string | null;
 	// this object only has rangeId,
 	// but we'll expect that the range has been denormalized ahead of time
 	range: Range | null;
@@ -204,8 +204,8 @@ export enum SkillSpType {
  * Represents a skill's information at a specific skill level.
  */
 interface SkillLevel {
-	name: LocalizedString;
-	description: LocalizedString | null;
+	name: string;
+	description: string | null;
 	// SkillLevelObject only has rangeId (of type string) in the game data,
 	// but we expect it to be denormalized into a RangeObject before being passed to <SkillInfo />
 	rangeId: string | null;
@@ -285,7 +285,7 @@ export interface Module {
 	moduleId: string;
 	/** e.g. "CHA-X", "CHA-Y" */
 	moduleIcon: string;
-	moduleName: LocalizedString;
+	moduleName: string;
 	phases: ModulePhase;
 }
 
@@ -300,10 +300,10 @@ type ModulePhase = Array<{
  * Represents an operator module at a specific module level *and* operator potential.
  */
 export interface ModulePhaseCandidate {
-	traitEffect: LocalizedString | null;
+	traitEffect: string;
 	/** Either `"update"` or `"override"`. */
 	traitEffectType: string;
-	talentEffect: LocalizedString | null;
+	talentEffect: string;
 	talentIndex: number;
 	displayRange: boolean;
 	range: Range | null;
@@ -325,7 +325,7 @@ interface Voice {
 }
 
 interface BaseOperatorSkin {
-	name: LocalizedString;
+	name: string;
 	skinId: string;
 	illustId: string;
 	avatarId: string;
@@ -372,9 +372,9 @@ export interface OperatorSearchResult {
 	objectID: string;
 	type: "operator";
 	charId: string;
-	name: LocalizedString;
+	name: string;
 	class: string;
-	subclass: LocalizedString;
+	subclass: string;
 	rarity: number;
 	hasGuide: boolean;
 }
@@ -389,8 +389,8 @@ export interface ClassSearchResult {
 export interface BranchSearchResult {
 	objectID: string;
 	type: "branch";
-	name: LocalizedString;
-	class: LocalizedString;
+	name: string;
+	class: string;
 	subProfession: string;
 }
 

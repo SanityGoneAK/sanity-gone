@@ -1,0 +1,1250 @@
+{
+  "2001": {
+    "itemId": "2001",
+    "name": "入門作戦記録",
+    "iconId": "sprite_exp_card_t1",
+    "rarity": 2
+  },
+  "2002": {
+    "itemId": "2002",
+    "name": "初級作戦記録",
+    "iconId": "sprite_exp_card_t2",
+    "rarity": 3
+  },
+  "2003": {
+    "itemId": "2003",
+    "name": "中級作戦記録",
+    "iconId": "sprite_exp_card_t3",
+    "rarity": 4
+  },
+  "2004": {
+    "itemId": "2004",
+    "name": "上級作戦記録",
+    "iconId": "sprite_exp_card_t4",
+    "rarity": 5
+  },
+  "3211": {
+    "itemId": "3211",
+    "name": "初級先鋒SoC",
+    "iconId": "MTL_ASC_PIO1",
+    "rarity": 3
+  },
+  "3212": {
+    "itemId": "3212",
+    "name": "中級先鋒SoC",
+    "iconId": "MTL_ASC_PIO2",
+    "rarity": 4
+  },
+  "3213": {
+    "itemId": "3213",
+    "name": "上級先鋒SoC",
+    "iconId": "MTL_ASC_PIO3",
+    "rarity": 5
+  },
+  "3221": {
+    "itemId": "3221",
+    "name": "初級前衛SoC",
+    "iconId": "MTL_ASC_GRD1",
+    "rarity": 3
+  },
+  "3222": {
+    "itemId": "3222",
+    "name": "中級前衛SoC",
+    "iconId": "MTL_ASC_GRD2",
+    "rarity": 4
+  },
+  "3223": {
+    "itemId": "3223",
+    "name": "上級前衛SoC",
+    "iconId": "MTL_ASC_GRD3",
+    "rarity": 5
+  },
+  "3231": {
+    "itemId": "3231",
+    "name": "初級重装SoC",
+    "iconId": "MTL_ASC_TNK1",
+    "rarity": 3
+  },
+  "3232": {
+    "itemId": "3232",
+    "name": "中級重装SoC",
+    "iconId": "MTL_ASC_TNK2",
+    "rarity": 4
+  },
+  "3233": {
+    "itemId": "3233",
+    "name": "上級重装SoC",
+    "iconId": "MTL_ASC_TNK3",
+    "rarity": 5
+  },
+  "3241": {
+    "itemId": "3241",
+    "name": "初級狙撃SoC",
+    "iconId": "MTL_ASC_SNP1",
+    "rarity": 3
+  },
+  "3242": {
+    "itemId": "3242",
+    "name": "中級狙撃SoC",
+    "iconId": "MTL_ASC_SNP2",
+    "rarity": 4
+  },
+  "3243": {
+    "itemId": "3243",
+    "name": "上級狙撃SoC",
+    "iconId": "MTL_ASC_SNP3",
+    "rarity": 5
+  },
+  "3251": {
+    "itemId": "3251",
+    "name": "初級術師SoC",
+    "iconId": "MTL_ASC_CST1",
+    "rarity": 3
+  },
+  "3252": {
+    "itemId": "3252",
+    "name": "中級術師SoC",
+    "iconId": "MTL_ASC_CST2",
+    "rarity": 4
+  },
+  "3253": {
+    "itemId": "3253",
+    "name": "上級術師SoC",
+    "iconId": "MTL_ASC_CST3",
+    "rarity": 5
+  },
+  "3261": {
+    "itemId": "3261",
+    "name": "初級医療SoC",
+    "iconId": "MTL_ASC_MED1",
+    "rarity": 3
+  },
+  "3262": {
+    "itemId": "3262",
+    "name": "中級医療SoC",
+    "iconId": "MTL_ASC_MED2",
+    "rarity": 4
+  },
+  "3263": {
+    "itemId": "3263",
+    "name": "上級医療SoC",
+    "iconId": "MTL_ASC_MED3",
+    "rarity": 5
+  },
+  "3271": {
+    "itemId": "3271",
+    "name": "初級補助SoC",
+    "iconId": "MTL_ASC_SUP1",
+    "rarity": 3
+  },
+  "3272": {
+    "itemId": "3272",
+    "name": "中級補助SoC",
+    "iconId": "MTL_ASC_SUP2",
+    "rarity": 4
+  },
+  "3273": {
+    "itemId": "3273",
+    "name": "上級補助SoC",
+    "iconId": "MTL_ASC_SUP3",
+    "rarity": 5
+  },
+  "3281": {
+    "itemId": "3281",
+    "name": "初級特殊SoC",
+    "iconId": "MTL_ASC_SPC1",
+    "rarity": 3
+  },
+  "3282": {
+    "itemId": "3282",
+    "name": "中級特殊SoC",
+    "iconId": "MTL_ASC_SPC2",
+    "rarity": 4
+  },
+  "3283": {
+    "itemId": "3283",
+    "name": "上級特殊SoC",
+    "iconId": "MTL_ASC_SPC3",
+    "rarity": 5
+  },
+  "3301": {
+    "itemId": "3301",
+    "name": "アーツ学Ⅰ",
+    "iconId": "MTL_SKILL1",
+    "rarity": 2
+  },
+  "3302": {
+    "itemId": "3302",
+    "name": "アーツ学Ⅱ",
+    "iconId": "MTL_SKILL2",
+    "rarity": 3
+  },
+  "3303": {
+    "itemId": "3303",
+    "name": "アーツ学Ⅲ",
+    "iconId": "MTL_SKILL3",
+    "rarity": 4
+  },
+  "4001": {
+    "itemId": "4001",
+    "name": "龍門幣",
+    "iconId": "GOLD",
+    "rarity": 4
+  },
+  "30011": {
+    "itemId": "30011",
+    "name": "源岩鉱",
+    "iconId": "MTL_SL_G1",
+    "rarity": 1
+  },
+  "30012": {
+    "itemId": "30012",
+    "name": "初級源岩",
+    "iconId": "MTL_SL_G2",
+    "rarity": 2
+  },
+  "30013": {
+    "itemId": "30013",
+    "name": "中級源岩",
+    "iconId": "MTL_SL_G3",
+    "rarity": 3
+  },
+  "30014": {
+    "itemId": "30014",
+    "name": "上級源岩",
+    "iconId": "MTL_SL_G4",
+    "rarity": 4
+  },
+  "30021": {
+    "itemId": "30021",
+    "name": "ブドウ糖",
+    "iconId": "MTL_SL_STRG1",
+    "rarity": 1
+  },
+  "30022": {
+    "itemId": "30022",
+    "name": "初級糖原",
+    "iconId": "MTL_SL_STRG2",
+    "rarity": 2
+  },
+  "30023": {
+    "itemId": "30023",
+    "name": "中級糖原",
+    "iconId": "MTL_SL_STRG3",
+    "rarity": 3
+  },
+  "30024": {
+    "itemId": "30024",
+    "name": "上級糖原",
+    "iconId": "MTL_SL_STRG4",
+    "rarity": 4
+  },
+  "30031": {
+    "itemId": "30031",
+    "name": "エステル原料",
+    "iconId": "MTL_SL_RUSH1",
+    "rarity": 1
+  },
+  "30032": {
+    "itemId": "30032",
+    "name": "初級エステル",
+    "iconId": "MTL_SL_RUSH2",
+    "rarity": 2
+  },
+  "30033": {
+    "itemId": "30033",
+    "name": "中級エステル",
+    "iconId": "MTL_SL_RUSH3",
+    "rarity": 3
+  },
+  "30034": {
+    "itemId": "30034",
+    "name": "上級エステル",
+    "iconId": "MTL_SL_RUSH4",
+    "rarity": 4
+  },
+  "30041": {
+    "itemId": "30041",
+    "name": "異鉄の欠片",
+    "iconId": "MTL_SL_IRON1",
+    "rarity": 1
+  },
+  "30042": {
+    "itemId": "30042",
+    "name": "初級異鉄",
+    "iconId": "MTL_SL_IRON2",
+    "rarity": 2
+  },
+  "30043": {
+    "itemId": "30043",
+    "name": "中級異鉄",
+    "iconId": "MTL_SL_IRON3",
+    "rarity": 3
+  },
+  "30044": {
+    "itemId": "30044",
+    "name": "上級異鉄",
+    "iconId": "MTL_SL_IRON4",
+    "rarity": 4
+  },
+  "30051": {
+    "itemId": "30051",
+    "name": "アケトン試剤",
+    "iconId": "MTL_SL_KETONE1",
+    "rarity": 1
+  },
+  "30052": {
+    "itemId": "30052",
+    "name": "初級アケトン",
+    "iconId": "MTL_SL_KETONE2",
+    "rarity": 2
+  },
+  "30053": {
+    "itemId": "30053",
+    "name": "中級アケトン",
+    "iconId": "MTL_SL_KETONE3",
+    "rarity": 3
+  },
+  "30054": {
+    "itemId": "30054",
+    "name": "上級アケトン",
+    "iconId": "MTL_SL_KETONE4",
+    "rarity": 4
+  },
+  "30061": {
+    "itemId": "30061",
+    "name": "破損装置",
+    "iconId": "MTL_SL_BOSS1",
+    "rarity": 1
+  },
+  "30062": {
+    "itemId": "30062",
+    "name": "初級装置",
+    "iconId": "MTL_SL_BOSS2",
+    "rarity": 2
+  },
+  "30063": {
+    "itemId": "30063",
+    "name": "中級装置",
+    "iconId": "MTL_SL_BOSS3",
+    "rarity": 3
+  },
+  "30064": {
+    "itemId": "30064",
+    "name": "上級装置",
+    "iconId": "MTL_SL_BOSS4",
+    "rarity": 4
+  },
+  "30073": {
+    "itemId": "30073",
+    "name": "合成コール",
+    "iconId": "MTL_SL_ALCOHOL1",
+    "rarity": 3
+  },
+  "30074": {
+    "itemId": "30074",
+    "name": "上級合成コール",
+    "iconId": "MTL_SL_ALCOHOL2",
+    "rarity": 4
+  },
+  "30083": {
+    "itemId": "30083",
+    "name": "マンガン",
+    "iconId": "MTL_SL_MANGANESE1",
+    "rarity": 3
+  },
+  "30084": {
+    "itemId": "30084",
+    "name": "上級マンガン",
+    "iconId": "MTL_SL_MANGANESE2",
+    "rarity": 4
+  },
+  "30093": {
+    "itemId": "30093",
+    "name": "砥石",
+    "iconId": "MTL_SL_PG1",
+    "rarity": 3
+  },
+  "30094": {
+    "itemId": "30094",
+    "name": "上級砥石",
+    "iconId": "MTL_SL_PG2",
+    "rarity": 4
+  },
+  "30103": {
+    "itemId": "30103",
+    "name": "RMA70-12",
+    "iconId": "MTL_SL_RMA7012",
+    "rarity": 3
+  },
+  "30104": {
+    "itemId": "30104",
+    "name": "RMA70-24",
+    "iconId": "MTL_SL_RMA7024",
+    "rarity": 4
+  },
+  "30115": {
+    "itemId": "30115",
+    "name": "融合剤",
+    "iconId": "MTL_SL_PP",
+    "rarity": 5
+  },
+  "30125": {
+    "itemId": "30125",
+    "name": "ナノフレーク",
+    "iconId": "MTL_SL_BN",
+    "rarity": 5
+  },
+  "30135": {
+    "itemId": "30135",
+    "name": "D32鋼",
+    "iconId": "MTL_SL_DS",
+    "rarity": 5
+  },
+  "30145": {
+    "itemId": "30145",
+    "name": "結晶制御装置",
+    "iconId": "MTL_SL_OEU",
+    "rarity": 5
+  },
+  "30155": {
+    "itemId": "30155",
+    "name": "焼結核凝晶",
+    "iconId": "MTL_SL_SHJ",
+    "rarity": 5
+  },
+  "31013": {
+    "itemId": "31013",
+    "name": "人工ゲル",
+    "iconId": "MTL_SL_PGEL3",
+    "rarity": 3
+  },
+  "31014": {
+    "itemId": "31014",
+    "name": "融合ゲル",
+    "iconId": "MTL_SL_PGEL4",
+    "rarity": 4
+  },
+  "31023": {
+    "itemId": "31023",
+    "name": "熾合金",
+    "iconId": "MTL_SL_IAM3",
+    "rarity": 3
+  },
+  "31024": {
+    "itemId": "31024",
+    "name": "上級熾合金",
+    "iconId": "MTL_SL_IAM4",
+    "rarity": 4
+  },
+  "31033": {
+    "itemId": "31033",
+    "name": "素子結晶",
+    "iconId": "MTL_SL_OC3",
+    "rarity": 3
+  },
+  "31034": {
+    "itemId": "31034",
+    "name": "結晶回路",
+    "iconId": "MTL_SL_OC4",
+    "rarity": 4
+  },
+  "31043": {
+    "itemId": "31043",
+    "name": "半自然溶剤",
+    "iconId": "MTL_SL_SS",
+    "rarity": 3
+  },
+  "31044": {
+    "itemId": "31044",
+    "name": "精錬溶剤",
+    "iconId": "MTL_SL_RS",
+    "rarity": 4
+  },
+  "31053": {
+    "itemId": "31053",
+    "name": "切削液",
+    "iconId": "MTL_SL_CCF",
+    "rarity": 3
+  },
+  "31054": {
+    "itemId": "31054",
+    "name": "上級切削液",
+    "iconId": "MTL_SL_PLCF",
+    "rarity": 4
+  },
+  "31063": {
+    "itemId": "31063",
+    "name": "転化塩",
+    "iconId": "MTL_SL_ZY",
+    "rarity": 3
+  },
+  "31064": {
+    "itemId": "31064",
+    "name": "上級転化塩",
+    "iconId": "MTL_SL_ZYK",
+    "rarity": 4
+  },
+  "31073": {
+    "itemId": "31073",
+    "name": "茶色繊維",
+    "iconId": "MTL_SL_XW",
+    "rarity": 3
+  },
+  "31074": {
+    "itemId": "31074",
+    "name": "硬化ファイバーボード",
+    "iconId": "MTL_SL_XWB",
+    "rarity": 4
+  },
+  "31083": {
+    "itemId": "31083",
+    "name": "シクロアルカンポリマー",
+    "iconId": "MTL_SL_HT",
+    "rarity": 3
+  },
+  "31084": {
+    "itemId": "31084",
+    "name": "シクロアルカンプリファブ",
+    "iconId": "MTL_SL_HTT",
+    "rarity": 4
+  },
+  "32001": {
+    "itemId": "32001",
+    "name": "SoC強化剤",
+    "iconId": "MTL_ASC_DI",
+    "rarity": 4
+  },
+  "mod_unlock_token": {
+    "itemId": "mod_unlock_token",
+    "name": "モジュールデータ",
+    "iconId": "mod_unlock_token",
+    "rarity": 5
+  },
+  "mod_update_token_2": {
+    "itemId": "mod_update_token_2",
+    "name": "データ補完マシン",
+    "iconId": "mod_update_token_2",
+    "rarity": 5
+  },
+  "mod_update_token_1": {
+    "itemId": "mod_update_token_1",
+    "name": "データ補完チップ",
+    "iconId": "mod_update_token_1",
+    "rarity": 4
+  },
+  "class_p_char_123_fang": {
+    "itemId": "class_p_char_123_fang",
+    "name": "フェンの印（中堅）",
+    "iconId": "class_p_char_123_fang",
+    "rarity": 3
+  },
+  "class_p_char_240_wyvern": {
+    "itemId": "class_p_char_240_wyvern",
+    "name": "バニラの印（中堅）",
+    "iconId": "class_p_char_240_wyvern",
+    "rarity": 3
+  },
+  "class_p_char_192_falco": {
+    "itemId": "class_p_char_192_falco",
+    "name": "プリュムの印（中堅）",
+    "iconId": "class_p_char_192_falco",
+    "rarity": 3
+  },
+  "class_p_char_208_melan": {
+    "itemId": "class_p_char_208_melan",
+    "name": "メランサの印（中堅）",
+    "iconId": "class_p_char_208_melan",
+    "rarity": 3
+  },
+  "class_p_char_209_ardign": {
+    "itemId": "class_p_char_209_ardign",
+    "name": "カーディの印（中堅）",
+    "iconId": "class_p_char_209_ardign",
+    "rarity": 3
+  },
+  "class_p_char_122_beagle": {
+    "itemId": "class_p_char_122_beagle",
+    "name": "ビーグルの印（中堅）",
+    "iconId": "class_p_char_122_beagle",
+    "rarity": 3
+  },
+  "class_p_char_124_kroos": {
+    "itemId": "class_p_char_124_kroos",
+    "name": "クルースの印（中堅）",
+    "iconId": "class_p_char_124_kroos",
+    "rarity": 3
+  },
+  "class_p_char_121_lava": {
+    "itemId": "class_p_char_121_lava",
+    "name": "ラヴァの印（中堅）",
+    "iconId": "class_p_char_121_lava",
+    "rarity": 3
+  },
+  "class_p_char_120_hibisc": {
+    "itemId": "class_p_char_120_hibisc",
+    "name": "ハイビスカスの印（中堅）",
+    "iconId": "class_p_char_120_hibisc",
+    "rarity": 3
+  },
+  "class_p_char_212_ansel": {
+    "itemId": "class_p_char_212_ansel",
+    "name": "アンセルの印（中堅）",
+    "iconId": "class_p_char_212_ansel",
+    "rarity": 3
+  },
+  "class_p_char_210_stward": {
+    "itemId": "class_p_char_210_stward",
+    "name": "スチュワードの印（中堅）",
+    "iconId": "class_p_char_210_stward",
+    "rarity": 3
+  },
+  "class_p_char_278_orchid": {
+    "itemId": "class_p_char_278_orchid",
+    "name": "オーキッドの印（中堅）",
+    "iconId": "class_p_char_278_orchid",
+    "rarity": 3
+  },
+  "class_p_char_282_catap": {
+    "itemId": "class_p_char_282_catap",
+    "name": "カタパルトの印（中堅）",
+    "iconId": "class_p_char_282_catap",
+    "rarity": 3
+  },
+  "class_p_char_283_midn": {
+    "itemId": "class_p_char_283_midn",
+    "name": "ミッドナイトの印（中堅）",
+    "iconId": "class_p_char_283_midn",
+    "rarity": 3
+  },
+  "class_p_char_284_spot": {
+    "itemId": "class_p_char_284_spot",
+    "name": "スポットの印（中堅）",
+    "iconId": "class_p_char_284_spot",
+    "rarity": 3
+  },
+  "class_p_char_281_popka": {
+    "itemId": "class_p_char_281_popka",
+    "name": "ポプカルの印（中堅）",
+    "iconId": "class_p_char_281_popka",
+    "rarity": 3
+  },
+  "class_p_char_141_nights": {
+    "itemId": "class_p_char_141_nights",
+    "name": "ヘイズの印（中堅）",
+    "iconId": "class_p_char_141_nights",
+    "rarity": 4
+  },
+  "class_p_char_109_fmout": {
+    "itemId": "class_p_char_109_fmout",
+    "name": "ギターノの印（中堅）",
+    "iconId": "class_p_char_109_fmout",
+    "rarity": 4
+  },
+  "class_p_char_235_jesica": {
+    "itemId": "class_p_char_235_jesica",
+    "name": "ジェシカの印（中堅）",
+    "iconId": "class_p_char_235_jesica",
+    "rarity": 4
+  },
+  "class_p_char_126_shotst": {
+    "itemId": "class_p_char_126_shotst",
+    "name": "メテオの印（中堅）",
+    "iconId": "class_p_char_126_shotst",
+    "rarity": 4
+  },
+  "class_p_char_118_yuki": {
+    "itemId": "class_p_char_118_yuki",
+    "name": "シラユキの印（中堅）",
+    "iconId": "class_p_char_118_yuki",
+    "rarity": 4
+  },
+  "class_p_char_149_scave": {
+    "itemId": "class_p_char_149_scave",
+    "name": "スカベンジャーの印（中堅）",
+    "iconId": "class_p_char_149_scave",
+    "rarity": 4
+  },
+  "class_p_char_290_vigna": {
+    "itemId": "class_p_char_290_vigna",
+    "name": "ヴィグナの印（中堅）",
+    "iconId": "class_p_char_290_vigna",
+    "rarity": 4
+  },
+  "class_p_char_130_doberm": {
+    "itemId": "class_p_char_130_doberm",
+    "name": "ドーベルマンの印（中堅）",
+    "iconId": "class_p_char_130_doberm",
+    "rarity": 4
+  },
+  "class_p_char_289_gyuki": {
+    "itemId": "class_p_char_289_gyuki",
+    "name": "マトイマルの印（中堅）",
+    "iconId": "class_p_char_289_gyuki",
+    "rarity": 4
+  },
+  "class_p_char_193_frostl": {
+    "itemId": "class_p_char_193_frostl",
+    "name": "フロストリーフの印（中堅）",
+    "iconId": "class_p_char_193_frostl",
+    "rarity": 4
+  },
+  "class_p_char_185_frncat": {
+    "itemId": "class_p_char_185_frncat",
+    "name": "ムースの印（中堅）",
+    "iconId": "class_p_char_185_frncat",
+    "rarity": 4
+  },
+  "class_p_char_237_gravel": {
+    "itemId": "class_p_char_237_gravel",
+    "name": "グラベルの印（中堅）",
+    "iconId": "class_p_char_237_gravel",
+    "rarity": 4
+  },
+  "class_p_char_236_rope": {
+    "itemId": "class_p_char_236_rope",
+    "name": "ロープの印（中堅）",
+    "iconId": "class_p_char_236_rope",
+    "rarity": 4
+  },
+  "class_p_char_117_myrrh": {
+    "itemId": "class_p_char_117_myrrh",
+    "name": "ミルラの印（中堅）",
+    "iconId": "class_p_char_117_myrrh",
+    "rarity": 4
+  },
+  "class_p_char_181_flower": {
+    "itemId": "class_p_char_181_flower",
+    "name": "パフューマーの印（中堅）",
+    "iconId": "class_p_char_181_flower",
+    "rarity": 4
+  },
+  "class_p_char_199_yak": {
+    "itemId": "class_p_char_199_yak",
+    "name": "マッターホルンの印（中堅）",
+    "iconId": "class_p_char_199_yak",
+    "rarity": 4
+  },
+  "class_p_char_150_snakek": {
+    "itemId": "class_p_char_150_snakek",
+    "name": "クオーラの印（中堅）",
+    "iconId": "class_p_char_150_snakek",
+    "rarity": 4
+  },
+  "class_p_char_196_sunbr": {
+    "itemId": "class_p_char_196_sunbr",
+    "name": "グムの印（中堅）",
+    "iconId": "class_p_char_196_sunbr",
+    "rarity": 4
+  },
+  "class_p_char_110_deepcl": {
+    "itemId": "class_p_char_110_deepcl",
+    "name": "ディピカの印（中堅）",
+    "iconId": "class_p_char_110_deepcl",
+    "rarity": 4
+  },
+  "class_p_char_183_skgoat": {
+    "itemId": "class_p_char_183_skgoat",
+    "name": "アーススピリットの印（中堅）",
+    "iconId": "class_p_char_183_skgoat",
+    "rarity": 4
+  },
+  "class_p_char_277_sqrrel": {
+    "itemId": "class_p_char_277_sqrrel",
+    "name": "ショウの印（中堅）",
+    "iconId": "class_p_char_277_sqrrel",
+    "rarity": 4
+  },
+  "class_p_char_137_brownb": {
+    "itemId": "class_p_char_137_brownb",
+    "name": "ビーハンターの印（中堅）",
+    "iconId": "class_p_char_137_brownb",
+    "rarity": 4
+  },
+  "class_p_char_253_greyy": {
+    "itemId": "class_p_char_253_greyy",
+    "name": "グレイの印（中堅）",
+    "iconId": "class_p_char_253_greyy",
+    "rarity": 4
+  },
+  "class_p_char_298_susuro": {
+    "itemId": "class_p_char_298_susuro",
+    "name": "ススーロの印（中堅）",
+    "iconId": "class_p_char_298_susuro",
+    "rarity": 4
+  },
+  "class_p_char_151_myrtle": {
+    "itemId": "class_p_char_151_myrtle",
+    "name": "テンニンカの印（中堅）",
+    "iconId": "class_p_char_151_myrtle",
+    "rarity": 4
+  },
+  "class_p_char_190_clour": {
+    "itemId": "class_p_char_190_clour",
+    "name": "ヴァーミルの印（中堅）",
+    "iconId": "class_p_char_190_clour",
+    "rarity": 4
+  },
+  "class_p_char_133_mm": {
+    "itemId": "class_p_char_133_mm",
+    "name": "メイの印（中堅）",
+    "iconId": "class_p_char_133_mm",
+    "rarity": 4
+  },
+  "class_p_char_302_glaze": {
+    "itemId": "class_p_char_302_glaze",
+    "name": "アンブリエルの印（中堅）",
+    "iconId": "class_p_char_302_glaze",
+    "rarity": 4
+  },
+  "class_p_char_337_utage": {
+    "itemId": "class_p_char_337_utage",
+    "name": "ウタゲの印（中堅）",
+    "iconId": "class_p_char_337_utage",
+    "rarity": 4
+  },
+  "class_p_char_301_cutter": {
+    "itemId": "class_p_char_301_cutter",
+    "name": "カッターの印（中堅）",
+    "iconId": "class_p_char_301_cutter",
+    "rarity": 4
+  },
+  "class_p_char_258_podego": {
+    "itemId": "class_p_char_258_podego",
+    "name": "ポデンコの印（中堅）",
+    "iconId": "class_p_char_258_podego",
+    "rarity": 4
+  },
+  "class_p_char_328_cammou": {
+    "itemId": "class_p_char_328_cammou",
+    "name": "カシャの印（中堅）",
+    "iconId": "class_p_char_328_cammou",
+    "rarity": 4
+  },
+  "class_p_char_272_strong": {
+    "itemId": "class_p_char_272_strong",
+    "name": "ジェイの印（中堅）",
+    "iconId": "class_p_char_272_strong",
+    "rarity": 4
+  },
+  "class_p_char_366_acdrop": {
+    "itemId": "class_p_char_366_acdrop",
+    "name": "アシッドドロップの印（中堅）",
+    "iconId": "class_p_char_366_acdrop",
+    "rarity": 4
+  },
+  "class_p_char_271_spikes": {
+    "itemId": "class_p_char_271_spikes",
+    "name": "アレーンの印（中堅）",
+    "iconId": "class_p_char_271_spikes",
+    "rarity": 4
+  },
+  "class_p_char_381_bubble": {
+    "itemId": "class_p_char_381_bubble",
+    "name": "バブルの印（中堅）",
+    "iconId": "class_p_char_381_bubble",
+    "rarity": 4
+  },
+  "class_p_char_347_jaksel": {
+    "itemId": "class_p_char_347_jaksel",
+    "name": "ジャッキーの印（中堅）",
+    "iconId": "class_p_char_347_jaksel",
+    "rarity": 4
+  },
+  "class_p_char_440_pinecn": {
+    "itemId": "class_p_char_440_pinecn",
+    "name": "パインコーンの印（中堅）",
+    "iconId": "class_p_char_440_pinecn",
+    "rarity": 4
+  },
+  "class_p_char_452_bstalk": {
+    "itemId": "class_p_char_452_bstalk",
+    "name": "ビーンストークの印（中堅）",
+    "iconId": "class_p_char_452_bstalk",
+    "rarity": 4
+  },
+  "class_p_char_469_indigo": {
+    "itemId": "class_p_char_469_indigo",
+    "name": "インディゴの印（中堅）",
+    "iconId": "class_p_char_469_indigo",
+    "rarity": 4
+  },
+  "class_p_char_484_robrta": {
+    "itemId": "class_p_char_484_robrta",
+    "name": "ロベルタの印（中堅）",
+    "iconId": "class_p_char_484_robrta",
+    "rarity": 4
+  },
+  "class_p_char_4041_chnut": {
+    "itemId": "class_p_char_4041_chnut",
+    "name": "チェストナットの印（中堅）",
+    "iconId": "class_p_char_4041_chnut",
+    "rarity": 4
+  },
+  "class_p_char_4062_totter": {
+    "itemId": "class_p_char_4062_totter",
+    "name": "トターの印（中堅）",
+    "iconId": "class_p_char_4062_totter",
+    "rarity": 4
+  },
+  "class_p_char_491_humus": {
+    "itemId": "class_p_char_491_humus",
+    "name": "ヒューマスの印（中堅）",
+    "iconId": "class_p_char_491_humus",
+    "rarity": 4
+  },
+  "class_p_char_128_plosis": {
+    "itemId": "class_p_char_128_plosis",
+    "name": "フィリオプシスの印（中堅）",
+    "iconId": "class_p_char_128_plosis",
+    "rarity": 5
+  },
+  "class_p_char_115_headbr": {
+    "itemId": "class_p_char_115_headbr",
+    "name": "ズィマーの印（中堅）",
+    "iconId": "class_p_char_115_headbr",
+    "rarity": 5
+  },
+  "class_p_char_102_texas": {
+    "itemId": "class_p_char_102_texas",
+    "name": "テキサスの印（中堅）",
+    "iconId": "class_p_char_102_texas",
+    "rarity": 5
+  },
+  "class_p_char_106_franka": {
+    "itemId": "class_p_char_106_franka",
+    "name": "フランカの印（中堅）",
+    "iconId": "class_p_char_106_franka",
+    "rarity": 5
+  },
+  "class_p_char_140_whitew": {
+    "itemId": "class_p_char_140_whitew",
+    "name": "ラップランドの印（中堅）",
+    "iconId": "class_p_char_140_whitew",
+    "rarity": 5
+  },
+  "class_p_char_143_ghost": {
+    "itemId": "class_p_char_143_ghost",
+    "name": "スペクターの印（中堅）",
+    "iconId": "class_p_char_143_ghost",
+    "rarity": 5
+  },
+  "class_p_char_129_bluep": {
+    "itemId": "class_p_char_129_bluep",
+    "name": "アズリウスの印（中堅）",
+    "iconId": "class_p_char_129_bluep",
+    "rarity": 5
+  },
+  "class_p_char_204_platnm": {
+    "itemId": "class_p_char_204_platnm",
+    "name": "プラチナの印（中堅）",
+    "iconId": "class_p_char_204_platnm",
+    "rarity": 5
+  },
+  "class_p_char_219_meteo": {
+    "itemId": "class_p_char_219_meteo",
+    "name": "メテオリーテの印（中堅）",
+    "iconId": "class_p_char_219_meteo",
+    "rarity": 5
+  },
+  "class_p_char_166_skfire": {
+    "itemId": "class_p_char_166_skfire",
+    "name": "スカイフレアの印（中堅）",
+    "iconId": "class_p_char_166_skfire",
+    "rarity": 5
+  },
+  "class_p_char_242_otter": {
+    "itemId": "class_p_char_242_otter",
+    "name": "メイヤーの印（中堅）",
+    "iconId": "class_p_char_242_otter",
+    "rarity": 5
+  },
+  "class_p_char_108_silent": {
+    "itemId": "class_p_char_108_silent",
+    "name": "サイレンスの印（中堅）",
+    "iconId": "class_p_char_108_silent",
+    "rarity": 5
+  },
+  "class_p_char_171_bldsk": {
+    "itemId": "class_p_char_171_bldsk",
+    "name": "ワルファリンの印（中堅）",
+    "iconId": "class_p_char_171_bldsk",
+    "rarity": 5
+  },
+  "class_p_char_148_nearl": {
+    "itemId": "class_p_char_148_nearl",
+    "name": "ニアールの印（中堅）",
+    "iconId": "class_p_char_148_nearl",
+    "rarity": 5
+  },
+  "class_p_char_144_red": {
+    "itemId": "class_p_char_144_red",
+    "name": "レッドの印（中堅）",
+    "iconId": "class_p_char_144_red",
+    "rarity": 5
+  },
+  "class_p_char_107_liskam": {
+    "itemId": "class_p_char_107_liskam",
+    "name": "リスカムの印（中堅）",
+    "iconId": "class_p_char_107_liskam",
+    "rarity": 5
+  },
+  "class_p_char_201_moeshd": {
+    "itemId": "class_p_char_201_moeshd",
+    "name": "クロワッサンの印（中堅）",
+    "iconId": "class_p_char_201_moeshd",
+    "rarity": 5
+  },
+  "class_p_char_145_prove": {
+    "itemId": "class_p_char_145_prove",
+    "name": "プロヴァンスの印（中堅）",
+    "iconId": "class_p_char_145_prove",
+    "rarity": 5
+  },
+  "class_p_char_158_milu": {
+    "itemId": "class_p_char_158_milu",
+    "name": "ファイヤーウォッチの印（中堅）",
+    "iconId": "class_p_char_158_milu",
+    "rarity": 5
+  },
+  "class_p_char_173_slchan": {
+    "itemId": "class_p_char_173_slchan",
+    "name": "クリフハートの印（中堅）",
+    "iconId": "class_p_char_173_slchan",
+    "rarity": 5
+  },
+  "class_p_char_174_slbell": {
+    "itemId": "class_p_char_174_slbell",
+    "name": "プラマニクスの印（中堅）",
+    "iconId": "class_p_char_174_slbell",
+    "rarity": 5
+  },
+  "class_p_char_195_glassb": {
+    "itemId": "class_p_char_195_glassb",
+    "name": "イースチナの印（中堅）",
+    "iconId": "class_p_char_195_glassb",
+    "rarity": 5
+  },
+  "class_p_char_101_sora": {
+    "itemId": "class_p_char_101_sora",
+    "name": "ソラの印（中堅）",
+    "iconId": "class_p_char_101_sora",
+    "rarity": 5
+  },
+  "class_p_char_215_mantic": {
+    "itemId": "class_p_char_215_mantic",
+    "name": "マンティコアの印（中堅）",
+    "iconId": "class_p_char_215_mantic",
+    "rarity": 5
+  },
+  "class_p_char_241_panda": {
+    "itemId": "class_p_char_241_panda",
+    "name": "エフイーターの印（中堅）",
+    "iconId": "class_p_char_241_panda",
+    "rarity": 5
+  },
+  "class_p_char_164_nightm": {
+    "itemId": "class_p_char_164_nightm",
+    "name": "ナイトメアの印（中堅）",
+    "iconId": "class_p_char_164_nightm",
+    "rarity": 5
+  },
+  "class_p_char_308_swire": {
+    "itemId": "class_p_char_308_swire",
+    "name": "スワイヤーの印（中堅）",
+    "iconId": "class_p_char_308_swire",
+    "rarity": 5
+  },
+  "class_p_char_326_glacus": {
+    "itemId": "class_p_char_326_glacus",
+    "name": "グラウコスの印（中堅）",
+    "iconId": "class_p_char_326_glacus",
+    "rarity": 5
+  },
+  "class_p_char_274_astesi": {
+    "itemId": "class_p_char_274_astesi",
+    "name": "アステシアの印（中堅）",
+    "iconId": "class_p_char_274_astesi",
+    "rarity": 5
+  },
+  "class_p_char_279_excu": {
+    "itemId": "class_p_char_279_excu",
+    "name": "イグゼキュターの印（中堅）",
+    "iconId": "class_p_char_279_excu",
+    "rarity": 5
+  },
+  "class_p_char_243_waaifu": {
+    "itemId": "class_p_char_243_waaifu",
+    "name": "ワイフーの印（中堅）",
+    "iconId": "class_p_char_243_waaifu",
+    "rarity": 5
+  },
+  "class_p_char_261_sddrag": {
+    "itemId": "class_p_char_261_sddrag",
+    "name": "リードの印（中堅）",
+    "iconId": "class_p_char_261_sddrag",
+    "rarity": 5
+  },
+  "class_p_char_356_broca": {
+    "itemId": "class_p_char_356_broca",
+    "name": "ブローカの印（中堅）",
+    "iconId": "class_p_char_356_broca",
+    "rarity": 5
+  },
+  "class_p_char_367_swllow": {
+    "itemId": "class_p_char_367_swllow",
+    "name": "グレースロートの印（中堅）",
+    "iconId": "class_p_char_367_swllow",
+    "rarity": 5
+  },
+  "class_p_char_226_hmau": {
+    "itemId": "class_p_char_226_hmau",
+    "name": "ウンの印（中堅）",
+    "iconId": "class_p_char_226_hmau",
+    "rarity": 5
+  },
+  "class_p_char_306_leizi": {
+    "itemId": "class_p_char_306_leizi",
+    "name": "レイズの印（中堅）",
+    "iconId": "class_p_char_306_leizi",
+    "rarity": 5
+  },
+  "class_p_char_379_sesa": {
+    "itemId": "class_p_char_379_sesa",
+    "name": "シェーシャの印（中堅）",
+    "iconId": "class_p_char_379_sesa",
+    "rarity": 5
+  },
+  "class_p_char_254_vodfox": {
+    "itemId": "class_p_char_254_vodfox",
+    "name": "シャマレの印（中堅）",
+    "iconId": "class_p_char_254_vodfox",
+    "rarity": 5
+  },
+  "class_p_char_103_angel": {
+    "itemId": "class_p_char_103_angel",
+    "name": "エクシアの印（中堅）",
+    "iconId": "class_p_char_103_angel",
+    "rarity": 6
+  },
+  "class_p_char_112_siege": {
+    "itemId": "class_p_char_112_siege",
+    "name": "シージの印（中堅）",
+    "iconId": "class_p_char_112_siege",
+    "rarity": 6
+  },
+  "class_p_char_134_ifrit": {
+    "itemId": "class_p_char_134_ifrit",
+    "name": "イフリータの印（中堅）",
+    "iconId": "class_p_char_134_ifrit",
+    "rarity": 6
+  },
+  "class_p_char_180_amgoat": {
+    "itemId": "class_p_char_180_amgoat",
+    "name": "エイヤフィヤトラの印（中堅）",
+    "iconId": "class_p_char_180_amgoat",
+    "rarity": 6
+  },
+  "class_p_char_291_aglina": {
+    "itemId": "class_p_char_291_aglina",
+    "name": "アンジェリーナの印（中堅）",
+    "iconId": "class_p_char_291_aglina",
+    "rarity": 6
+  },
+  "class_p_char_147_shining": {
+    "itemId": "class_p_char_147_shining",
+    "name": "シャイニングの印（中堅）",
+    "iconId": "class_p_char_147_shining",
+    "rarity": 6
+  },
+  "class_p_char_179_cgbird": {
+    "itemId": "class_p_char_179_cgbird",
+    "name": "ナイチンゲールの印（中堅）",
+    "iconId": "class_p_char_179_cgbird",
+    "rarity": 6
+  },
+  "class_p_char_136_hsguma": {
+    "itemId": "class_p_char_136_hsguma",
+    "name": "ホシグマの印（中堅）",
+    "iconId": "class_p_char_136_hsguma",
+    "rarity": 6
+  },
+  "class_p_char_202_demkni": {
+    "itemId": "class_p_char_202_demkni",
+    "name": "サリアの印（中堅）",
+    "iconId": "class_p_char_202_demkni",
+    "rarity": 6
+  },
+  "class_p_char_172_svrash": {
+    "itemId": "class_p_char_172_svrash",
+    "name": "シルバーアッシュの印（中堅）",
+    "iconId": "class_p_char_172_svrash",
+    "rarity": 6
+  },
+  "class_p_char_263_skadi": {
+    "itemId": "class_p_char_263_skadi",
+    "name": "スカジの印（中堅）",
+    "iconId": "class_p_char_263_skadi",
+    "rarity": 6
+  },
+  "class_p_char_010_chen": {
+    "itemId": "class_p_char_010_chen",
+    "name": "チェンの印（中堅）",
+    "iconId": "class_p_char_010_chen",
+    "rarity": 6
+  },
+  "class_p_char_340_shwaz": {
+    "itemId": "class_p_char_340_shwaz",
+    "name": "シュヴァルツの印（中堅）",
+    "iconId": "class_p_char_340_shwaz",
+    "rarity": 6
+  },
+  "class_p_char_188_helage": {
+    "itemId": "class_p_char_188_helage",
+    "name": "ヘラグの印（中堅）",
+    "iconId": "class_p_char_188_helage",
+    "rarity": 6
+  },
+  "class_p_char_248_mgllan": {
+    "itemId": "class_p_char_248_mgllan",
+    "name": "マゼランの印（中堅）",
+    "iconId": "class_p_char_248_mgllan",
+    "rarity": 6
+  },
+  "class_p_char_213_mostma": {
+    "itemId": "class_p_char_213_mostma",
+    "name": "モスティマの印（中堅）",
+    "iconId": "class_p_char_213_mostma",
+    "rarity": 6
+  },
+  "class_p_char_017_huang": {
+    "itemId": "class_p_char_017_huang",
+    "name": "ブレイズの印（中堅）",
+    "iconId": "class_p_char_017_huang",
+    "rarity": 6
+  },
+  "class_p_char_225_haak": {
+    "itemId": "class_p_char_225_haak",
+    "name": "アの印（中堅）",
+    "iconId": "class_p_char_225_haak",
+    "rarity": 6
+  },
+  "class_p_char_2013_cerber": {
+    "itemId": "class_p_char_2013_cerber",
+    "name": "ケオベの印（中堅）",
+    "iconId": "class_p_char_2013_cerber",
+    "rarity": 6
+  },
+  "class_p_char_222_bpipe": {
+    "itemId": "class_p_char_222_bpipe",
+    "name": "バグパイプの印（中堅）",
+    "iconId": "class_p_char_222_bpipe",
+    "rarity": 6
+  },
+  "class_p_char_250_phatom": {
+    "itemId": "class_p_char_250_phatom",
+    "name": "ファントムの印（中堅）",
+    "iconId": "class_p_char_250_phatom",
+    "rarity": 6
+  }
+}

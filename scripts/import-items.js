@@ -64,14 +64,15 @@ function isItemWeCareAbout(itemId) {
  * This is basically a highly stripped down version of `item_table.json`.
  *
  * @param {string} dataDir - output directory
+ * @param {"zh_CN" | "en_US" | "ja_JP" | "ko_KR"} locale - output locale
  */
-export async function createItemsJson(dataDir) {
+export async function createItemsJson(dataDir, locale) {
 	console.log(`Creating ${path.join(dataDir, "items.json")}...`);
 
 	const transformations = [filterItems, getLocalizedName, toEntries];
 
 	const items = transformations.reduce((acc, transformation) => {
-		return transformation(acc);
+		return transformation(acc, locale);
 	}, Object.keys(ITEM_LOCALES.zh_CN));
 
 	await fs.writeFile(
@@ -84,27 +85,19 @@ function filterItems(items) {
 	return items.filter((itemId) => isItemWeCareAbout(itemId));
 }
 
-function getLocalizedName(items) {
+function getLocalizedName(items, locale) {
 	return items.map((itemId) => {
-		const name = Object.keys(ITEM_LOCALES).reduce((locales, locale) => {
-			if (itemId in UNOFFICIAL_ITEM_NAME_TRANSLATIONS) {
-				locales[locale] =
-					UNOFFICIAL_ITEM_NAME_TRANSLATIONS[itemId][locale];
-			}
+		let name = "";
 
-			if (ITEM_LOCALES[locale][itemId]) {
-				locales[locale] = ITEM_LOCALES[locale][itemId].name ?? "";
-				return locales;
-			}
+		if (itemId in UNOFFICIAL_ITEM_NAME_TRANSLATIONS) {
+			name = UNOFFICIAL_ITEM_NAME_TRANSLATIONS[itemId][locale];
+		}
 
-			if (!locales[locale]) {
-				console.warn(
-					"No translation available for item ID: " + itemId,
-					locale
-				);
-			}
-			return locales;
-		}, {});
+		if (ITEM_LOCALES[locale][itemId]) {
+			name = ITEM_LOCALES[locale][itemId]
+				? ITEM_LOCALES[locale][itemId].name
+				: ITEM_LOCALES["zh_CN"][itemId];
+		}
 
 		return {
 			itemId,

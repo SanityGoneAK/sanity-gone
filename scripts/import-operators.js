@@ -78,8 +78,9 @@ const SKIN_LOCALES = {
  * - this operator's summons from character_table
  *
  * @param {string} dataDir - output directory
+ * @param {"zh_CN" | "en_US" | "ja_JP" | "ko_KR"} locale - output locale
  */
-export async function createOperatorsJson(dataDir) {
+export async function createOperatorsJson(dataDir, locale) {
 	console.log(`Creating ${path.join(dataDir, "operators.json")}...`);
 	const contentfulQuery = `
 	query {
@@ -105,7 +106,7 @@ export async function createOperatorsJson(dataDir) {
 		fetchJetroyzTalentTranslations(),
 		getSkinObtainSourceAndCosts(),
 		getReleaseOrderAndLimitedLookup(),
-		aggregateRiicData(),
+		aggregateRiicData(locale),
 		fetchContentfulGraphQl(contentfulQuery),
 	]);
 
@@ -139,7 +140,7 @@ export async function createOperatorsJson(dataDir) {
 	];
 
 	const characters = transformations.reduce((acc, transformation) => {
-		return transformation(acc, {
+		return transformation(acc, locale, {
 			summonIdToOperatorId,
 			jetSkillTranslations,
 			jetTalentTranslations,
@@ -166,20 +167,21 @@ function filterPlaceableObjects(characters) {
 	);
 }
 
-function localizeCharacterDetails(characters) {
+function localizeCharacterDetails(characters, locale) {
 	return characters.map(([charId, character]) => {
 		return [
 			charId,
 			{
 				...character,
 				charId,
-				name: getLocalesForValue(charId, "name"),
-				description: getLocalesForValue(charId, "description"),
-				tagList: getLocalesForValue(charId, "tagList"),
-				itemUsage: getLocalesForValue(charId, "itemUsage"),
-				itemDesc: getLocalesForValue(charId, "itemDesc"),
+				name: getLocalesForValue(charId, locale, "name"),
+				description: getLocalesForValue(charId, locale, "description"),
+				tagList: getLocalesForValue(charId, locale, "tagList"),
+				itemUsage: getLocalesForValue(charId, locale, "itemUsage"),
+				itemDesc: getLocalesForValue(charId, locale, "itemDesc"),
 				itemObtainApproach: getLocalesForValue(
 					charId,
+					locale,
 					"itemObtainApproach"
 				),
 				serverLocales: Object.keys(CHARACTER_LOCALES).filter(
@@ -190,7 +192,7 @@ function localizeCharacterDetails(characters) {
 	});
 }
 
-function collectSummonData(characters, { summonIdToOperatorId }) {
+function collectSummonData(characters, _, { summonIdToOperatorId }) {
 	characters.forEach(([charId, character]) => {
 		character.skills
 			.filter((skill) => skill.overrideTokenKey != null)
@@ -207,31 +209,22 @@ function collectSummonData(characters, { summonIdToOperatorId }) {
 	return characters;
 }
 
-function getLocalesForValue(charId, value) {
-	return Object.keys(CHARACTER_LOCALES).reduce((locales, locale) => {
-		if (CHARACTER_LOCALES[locale][charId]) {
-			locales[locale] = CHARACTER_LOCALES[locale][charId][value] ?? "";
-		}
+function getLocalesForValue(charId, locale, value) {
+	if (value == "name" && !CHARACTER_LOCALES[locale][charId]) {
+		return CHARACTER_LOCALES.zh_CN[charId].appellation;
+	}
 
-		if (value == "name" && !CHARACTER_LOCALES[locale][charId]) {
-			locales[locale] = CHARACTER_LOCALES.zh_CN[charId].appellation;
-		}
+	if (value == "name" && charId == "char_1001_amiya2") {
+		return CHARACTER_LOCALES[locale][charId][value] + " (Guard)";
+	}
 
-		if (value == "name" && charId == "char_1001_amiya2") {
-			locales[locale] =
-				CHARACTER_LOCALES[locale][charId][value] + " (Guard)";
-		}
+	if (value == "name" && charId == "char_4055_bgsnow" && locale == "en_US") {
+		return "Pozёmka";
+	}
 
-		if (
-			value == "name" &&
-			charId == "char_4055_bgsnow" &&
-			locale == "en_US"
-		) {
-			locales[locale] = "Pozёmka";
-		}
-
-		return locales;
-	}, {});
+	return CHARACTER_LOCALES[locale][charId]
+		? CHARACTER_LOCALES[locale][charId][value]
+		: CHARACTER_LOCALES.zh_CN[charId][value];
 }
 
 function addPhases(characters) {
@@ -251,7 +244,7 @@ function addPhases(characters) {
 	});
 }
 
-function addTalents(characters, { jetTalentTranslations }) {
+function addTalents(characters, locale, { jetTalentTranslations }) {
 	return characters.map(([charId, character]) => {
 		const talents = (character.talents || []).map((talent, talentIndex) => {
 			const candidates = (talent.candidates || []).map(
@@ -265,52 +258,43 @@ function addTalents(characters, { jetTalentTranslations }) {
 							: null,
 					};
 
-					const translations = Object.keys(CHARACTER_LOCALES).forEach(
-						(locale) => {
-							if (CHARACTER_LOCALES[locale][charId]) {
-								baseCandidateObject.name[locale] =
-									CHARACTER_LOCALES[locale][charId][
-										"talents"
-									][talentIndex]["candidates"][
-										phaseIndex
-									].name;
-								baseCandidateObject.description[locale] =
-									CHARACTER_LOCALES[locale][charId][
-										"talents"
-									][talentIndex]["candidates"][
-										phaseIndex
-									].description;
-								return;
-							}
+					if (CHARACTER_LOCALES[locale][charId]) {
+						baseCandidateObject.name[locale] =
+							CHARACTER_LOCALES[locale][charId]["talents"][
+								talentIndex
+							]["candidates"][phaseIndex].name;
+						baseCandidateObject.description[locale] =
+							CHARACTER_LOCALES[locale][charId]["talents"][
+								talentIndex
+							]["candidates"][phaseIndex].description;
+						return;
+					}
 
-							if (
-								!CHARACTER_LOCALES[locale][charId] &&
-								jetTalentTranslations[charId] &&
-								character.profession !== "TOKEN" &&
-								locale == "en_US"
-							) {
-								try {
-									const talentTL =
-										jetTalentTranslations[charId][
-											talentIndex
-										][phaseIndex];
-									baseCandidateObject.name[locale] =
-										talentTL.name;
-									baseCandidateObject.description[locale] =
-										talentTL.desc;
-									return;
-								} catch {
-									console.warn(
-										`No translation found for: character ${charId}, talent index ${talentIndex}, phase index ${phaseIndex} at local ${locale}`
-									);
-									return;
-								}
-							}
-
+					if (
+						!CHARACTER_LOCALES[locale][charId] &&
+						jetTalentTranslations[charId] &&
+						character.profession !== "TOKEN" &&
+						locale == "en_US"
+					) {
+						try {
+							const talentTL =
+								jetTalentTranslations[charId][talentIndex][
+									phaseIndex
+								];
+							baseCandidateObject.name[locale] = talentTL.name;
+							baseCandidateObject.description[locale] =
+								talentTL.desc;
+							return;
+						} catch {
 							console.warn(
 								`No translation found for: character ${charId}, talent index ${talentIndex}, phase index ${phaseIndex} at local ${locale}`
 							);
+							return;
 						}
+					}
+
+					console.warn(
+						`No translation found for: character ${charId}, talent index ${talentIndex}, phase index ${phaseIndex} at local ${locale}`
 					);
 
 					return baseCandidateObject;
@@ -345,7 +329,7 @@ function addVoices(characters) {
 	});
 }
 
-function addSkins(characters, { skinSourceAndCostLookup }) {
+function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 	return characters.map(([charId, character]) => {
 		const skins = Object.values(SKIN_LOCALES.zh_CN)
 			.filter((skin) => {
@@ -378,23 +362,22 @@ function addSkins(characters, { skinSourceAndCostLookup }) {
 					}
 				}
 				// const enSkin = enSkinTable["charSkins"][cnSkin.skinId];
-				let skinName = Object.keys(SKIN_LOCALES).reduce(
-					(locales, locale) => {
-						if (
-							skinType === "skin" &&
-							SKIN_LOCALES[locale][cnSkin.skinId]
-						) {
-							locales[locale] =
-								SKIN_LOCALES[locale][
-									cnSkin.skinId
-								].displaySkin.skinName;
-						} else {
-							locales[locale] = `Elite ${elite ?? 0}`;
-						}
-						return locales;
-					},
-					{}
-				);
+				let skinName = "";
+
+				if (
+					skinType === "skin" &&
+					SKIN_LOCALES[locale][cnSkin.skinId]
+				) {
+					skinName = SKIN_LOCALES[locale][cnSkin.skinId]
+						? SKIN_LOCALES[locale][cnSkin.skinId].displaySkin
+								.skinName
+						: SKIN_LOCALES.zh_CN[cnSkin.skinId].displaySkin
+								.skinName;
+				}
+
+				if (skinType === "elite-one-or-two") {
+					skinName = `Elite ${elite ?? 0}`;
+				}
 
 				return {
 					type: skinType,
@@ -421,7 +404,7 @@ function addSkins(characters, { skinSourceAndCostLookup }) {
 	});
 }
 
-function addSkills(characters, { jetSkillTranslations }) {
+function addSkills(characters, locale, { jetSkillTranslations }) {
 	return characters.map(([charId, character]) => {
 		const skillData = character.skills
 			.filter((skill) => skill.skillId != null)
@@ -453,35 +436,33 @@ function addSkills(characters, { jetSkillTranslations }) {
 							baseSkillLevelObject.description = {};
 							const skillTL = jetSkillTranslations[skillId];
 
-							Object.keys(SKILL_LOCALES).forEach((locale) => {
-								if (SKILL_LOCALES[locale][skillId]) {
-									baseSkillLevelObject.name[locale] =
-										SKILL_LOCALES[locale][skillId].levels[
-											levelIndex
-										].name;
-									baseSkillLevelObject.description[locale] =
-										SKILL_LOCALES[locale][skillId].levels[
-											levelIndex
-										].description;
-									return;
-								}
+							if (SKILL_LOCALES[locale][skillId]) {
+								baseSkillLevelObject.name[locale] =
+									SKILL_LOCALES[locale][skillId].levels[
+										levelIndex
+									].name;
+								baseSkillLevelObject.description[locale] =
+									SKILL_LOCALES[locale][skillId].levels[
+										levelIndex
+									].description;
+								return;
+							}
 
-								if (
-									skillTL &&
-									!SKILL_LOCALES[locale][skillId] &&
-									locale == "en_US"
-								) {
-									baseSkillLevelObject.name[locale] =
-										skillTL.name;
-									baseSkillLevelObject.description[locale] =
-										skillTL.desc[levelIndex];
-									return;
-								}
+							if (
+								skillTL &&
+								!SKILL_LOCALES[locale][skillId] &&
+								locale == "en_US"
+							) {
+								baseSkillLevelObject.name[locale] =
+									skillTL.name;
+								baseSkillLevelObject.description[locale] =
+									skillTL.desc[levelIndex];
+								return;
+							}
 
-								console.warn(
-									`No translation found for: skill ${skillId}, level index ${levelIndex} at locale ${locale}`
-								);
-							});
+							console.warn(
+								`No translation found for: skill ${skillId}, level index ${levelIndex} at locale ${locale}`
+							);
 						}
 						return baseSkillLevelObject;
 					}
@@ -509,7 +490,7 @@ function filterSummons(characters) {
 	);
 }
 
-function addSummons(characters, { summonIdToOperatorId }) {
+function addSummons(characters, _, { summonIdToOperatorId }) {
 	const denormalizedSummonEntries = characters
 		.filter(([charId, character]) => character.profession === "TOKEN")
 		.map(([charId, summon]) => [
@@ -554,6 +535,7 @@ function addAlterInformation(characters) {
 
 function addReleaseOrderAndLimited(
 	characters,
+	_,
 	{ releaseOrderAndLimitedLookup }
 ) {
 	return characters.map(([charId, character]) => {
@@ -569,7 +551,7 @@ function addReleaseOrderAndLimited(
 	});
 }
 
-function addRiicSkills(characters, { opToRiicSkillsMap }) {
+function addRiicSkills(characters, locale, { opToRiicSkillsMap }) {
 	return characters.map(([charId, character]) => {
 		return [
 			charId,
@@ -581,8 +563,8 @@ function addRiicSkills(characters, { opToRiicSkillsMap }) {
 	});
 }
 
-function addModules(characters) {
-	const operatorModulesLookup = aggregateModuleData();
+function addModules(characters, locale) {
+	const operatorModulesLookup = aggregateModuleData(locale);
 
 	return characters.map(([charId, character]) => {
 		return [
@@ -616,7 +598,7 @@ function sortByRarityAndRelease(characters) {
 	});
 }
 
-function addHasGuide(characters, { resultFetchContentfulGraphQl }) {
+function addHasGuide(characters, _, { resultFetchContentfulGraphQl }) {
 	const { operatorAnalysisCollection } = resultFetchContentfulGraphQl;
 	const operatorsWithGuides = Object.fromEntries(
 		operatorAnalysisCollection.items.map((item) => [
@@ -629,7 +611,7 @@ function addHasGuide(characters, { resultFetchContentfulGraphQl }) {
 			charId,
 			{
 				...character,
-				hasGuide: !!operatorsWithGuides[character.name.en_US],
+				hasGuide: !!operatorsWithGuides[character.name],
 			},
 		];
 	});

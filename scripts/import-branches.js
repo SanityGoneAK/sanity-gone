@@ -2,16 +2,14 @@ import { promises as fs } from "fs";
 import path from "path";
 
 import enUniequipTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/uniequip_table.json";
-import enCharacterTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json";
-
 import krUniequipTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/uniequip_table.json";
-import krCharacterTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json";
-
 import jpUniequipTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/uniequip_table.json";
-import jpCharacterTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json";
-
 import cnUniequipTable from "./ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json";
-import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json";
+
+import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" assert { type: "json" };
+import enCharacterTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json" assert { type: "json" };
+import krCharacterTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json" assert { type: "json" };
+import jpCharacterTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json" assert { type: "json" };
 
 import { professionToClass } from "../src/utils/classes";
 import { descriptionToHtml } from "../src/utils/description-parser";
@@ -121,8 +119,9 @@ const CN_TRAIT_TLS = {
  * Creates `{dataDir}/branches.json`, a map of `subProfessionId` to branch name, trait description, and class.
  *
  * @param {string} dataDir - output directory
+ * @param {"zh_CN" | "en_US" | "ja_JP" | "ko_KR"} locale - output locale
  */
-export async function createBranchesJson(dataDir) {
+export async function createBranchesJson(dataDir, locale) {
 	console.log(`Creating ${path.join(dataDir, "branches.json")}...`);
 
 	const transformations = [
@@ -132,7 +131,7 @@ export async function createBranchesJson(dataDir) {
 	];
 
 	const branches = transformations.reduce((acc, transformation) => {
-		return transformation(acc);
+		return transformation(acc, locale);
 	}, Object.keys(BRANCH_LOCALES.zh_CN));
 
 	await fs.writeFile(
@@ -151,13 +150,14 @@ function removeExcludedBranches(branches) {
 /**
  * @param {array} branches - Current list of Sub Classes
  */
-function getLocalizedName(branches) {
+function getLocalizedName(branches, locale) {
 	return branches.map((branch) => {
 		return [
 			branch,
 			{
 				branchName: getLocalesForBranchName(
 					branch,
+					locale,
 					"subProfessionName"
 				),
 			},
@@ -168,14 +168,14 @@ function getLocalizedName(branches) {
 /**
  * @param {array} branches - Current list of Sub Classes
  */
-function getLocalizedTraitsAndClass(branches) {
+function getLocalizedTraitsAndClass(branches, locale) {
 	return branches.map(([branchId, branch]) => {
 		return [
 			branchId,
 			{
 				...branch,
-				class: getLocalesForBranchTraits(branchId, "class"),
-				trait: getLocalesForBranchTraits(branchId, "trait"),
+				class: getLocalesForBranchTraits(branchId, locale, "class"),
+				trait: getLocalesForBranchTraits(branchId, locale, "trait"),
 			},
 		];
 	});
@@ -185,83 +185,76 @@ function getLocalizedTraitsAndClass(branches) {
  * @param {string} branchId - Single id of a branch
  * @param {string} value - Defines which value it should grab from the JSON files
  */
-function getLocalesForBranchName(branchId, value) {
-	return Object.keys(BRANCH_LOCALES).reduce((locales, locale) => {
-		// Use overrides until they are outdated
-		if (CN_BRANCH_TLS[branchId] && locale != "zh_CN") {
-			locales[locale] = CN_BRANCH_TLS[branchId][locale];
-		}
+function getLocalesForBranchName(branchId, locale, value) {
+	if (BRANCH_NAME_OVERRIDES[branchId] && locale == "en_US") {
+		return BRANCH_NAME_OVERRIDES[branchId];
+	}
 
-		// Always use the official translations
-		if (BRANCH_LOCALES[locale][branchId]) {
-			locales[locale] = BRANCH_LOCALES[locale][branchId][value] ?? "";
-		}
+	if (
+		CN_BRANCH_TLS[branchId] &&
+		!BRANCH_LOCALES[locale][branchId] &&
+		locale != "zh_CN"
+	) {
+		return CN_BRANCH_TLS[branchId][locale];
+	}
 
-		// Only override when we absolutely need to
-		if (BRANCH_NAME_OVERRIDES[branchId] && locale == "en_US") {
-			locales[locale] = BRANCH_NAME_OVERRIDES[branchId];
-		}
-
-		return locales;
-	}, {});
+	return BRANCH_LOCALES[locale][branchId]
+		? BRANCH_LOCALES[locale][branchId][value]
+		: BRANCH_LOCALES["zh_CN"][branchId][value];
 }
 
 /**
  * @param {string} branchId - Single id of a branch
  * @param {string} target - Defines which value it should return from the locales
  */
-function getLocalesForBranchTraits(branchId, target) {
-	return Object.keys(CHARACTER_LOCALES).reduce((locales, locale) => {
-		let fallback = false;
-		let firstOp = Object.values(CHARACTER_LOCALES[locale]).find(
+function getLocalesForBranchTraits(branchId, locale, target) {
+	let fallback = false;
+	let firstOp = Object.values(CHARACTER_LOCALES[locale]).find(
+		(op) =>
+			op.subProfessionId === branchId &&
+			(op.rarity != "TIER_1" || op.rarity != "TIER_2")
+	);
+
+	// If the branch only exists in CN use a CN character
+	if (!firstOp) {
+		firstOp = Object.values(CHARACTER_LOCALES.zh_CN).find(
 			(op) =>
 				op.subProfessionId === branchId &&
 				(op.rarity != "TIER_1" || op.rarity != "TIER_2")
 		);
+		fallback = true;
+	}
 
-		// If the branch only exists in CN use a CN character
-		if (!firstOp) {
-			firstOp = Object.values(CHARACTER_LOCALES.zh_CN).find(
-				(op) =>
-					op.subProfessionId === branchId &&
-					(op.rarity != "TIER_1" || op.rarity != "TIER_2")
-			);
-			fallback = true;
-		}
+	let description = firstOp.description;
+	const trait = firstOp.trait;
+	const className = professionToClass(firstOp.profession);
 
-		let description = firstOp.description;
-		const trait = firstOp.trait;
-		const className = professionToClass(firstOp.profession);
+	if (branchId in TRAIT_OVERRIDES && locale == "en_US") {
+		description = TRAIT_OVERRIDES[branchId];
+	}
 
-		if (branchId in TRAIT_OVERRIDES && locale == "en_US") {
-			description = TRAIT_OVERRIDES[branchId];
-		}
+	if (branchId in CN_TRAIT_TLS && locale != "zh_CN" && fallback) {
+		description = CN_TRAIT_TLS[branchId][locale];
+	} else if (description in jetTraitTranslations.full && fallback) {
+		description = fixJetSkillDescriptionTags(
+			jetTraitTranslations.full[description].en
+		);
+	} else if (fallback) {
+		console.warn(
+			"No trait translation found for subProfessionId:",
+			branchId,
+			locale
+		);
+	}
 
-		if (branchId in CN_TRAIT_TLS && locale != "zh_CN" && fallback) {
-			description = CN_TRAIT_TLS[branchId][locale];
-		} else if (description in jetTraitTranslations.full && fallback) {
-			description = fixJetSkillDescriptionTags(
-				jetTraitTranslations.full[description].en
-			);
-		} else if (fallback) {
-			console.warn(
-				"No trait translation found for subProfessionId:",
-				branchId,
-				locale
-			);
-		}
+	const blackboard = trait
+		? trait.candidates[trait.candidates.length - 1].blackboard
+		: [];
 
-		const blackboard = trait
-			? trait.candidates[trait.candidates.length - 1].blackboard
-			: [];
+	const options = {
+		class: className,
+		trait: descriptionToHtml(description, blackboard),
+	};
 
-		const options = {
-			class: className,
-			trait: descriptionToHtml(description, blackboard),
-		};
-
-		locales[locale] = options[target];
-
-		return locales;
-	}, {});
+	return options[target];
 }

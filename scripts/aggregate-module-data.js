@@ -52,9 +52,10 @@ import { descriptionToHtml } from "../src/utils/description-parser";
  *
  * Returns a mapping of operatorId to an array of that operator's modules.
  *
+ * @param {"zh_CN" | "en_US" | "ja_JP" | "ko_KR"} locale - output locale
  * @returns {{ [operatorId: string]: Module[] }}
  */
-export function aggregateModuleData() {
+export function aggregateModuleData(locale) {
 	/** @type {{ [operatorId: string]: Module[] }} */
 	const moduleData = {};
 
@@ -71,28 +72,20 @@ export function aggregateModuleData() {
 		// - otherwise try to use unofficial TL
 		// - fall back to CN
 
-		const moduleName = Object.keys(UNIEQUIP_LOCALES).reduce(
-			(locales, locale) => {
-				if (UNIEQUIP_LOCALES[locale].equipDict[moduleId]) {
-					locales[locale] =
-						UNIEQUIP_LOCALES[locale].equipDict[
-							moduleId
-						].uniEquipName;
-				}
+		let moduleName = "";
 
-				if (
-					locale == "en_US" &&
-					!UNIEQUIP_LOCALES[locale].equipDict[moduleId] &&
-					moduleId in moduleTranslations &&
-					moduleTranslations[moduleId].moduleName
-				) {
-					locales[locale] = moduleTranslations[moduleId].moduleName;
-				}
+		moduleName = UNIEQUIP_LOCALES[locale].equipDict[moduleId]
+			? UNIEQUIP_LOCALES[locale].equipDict[moduleId].uniEquipName
+			: UNIEQUIP_LOCALES.zh_CN.equipDict[moduleId].uniEquipName;
 
-				return locales;
-			},
-			{}
-		);
+		if (
+			locale == "en_US" &&
+			!UNIEQUIP_LOCALES[locale].equipDict[moduleId] &&
+			moduleId in moduleTranslations &&
+			moduleTranslations[moduleId].moduleName
+		) {
+			moduleName = moduleTranslations[moduleId].moduleName;
+		}
 
 		// Use EN data for module phases if:
 		// - the module is available in EN
@@ -226,57 +219,40 @@ export function aggregateModuleData() {
 						// we can ignore the overrideDescription because it will say
 						// "this unit deals AoE damage".
 						if (curTraitCandidate.additionalDescription) {
+							const moduleLocale =
+								BATTLE_EQUIP_LOCALES[locale][moduleId] ??
+								BATTLE_EQUIP_LOCALES["zh_CN"][moduleId];
+
+							const localizedCandidate =
+								moduleLocale.phases[i].parts[j]
+									.overrideTraitDataBundle.candidates[k];
+
 							candidates[
 								curTraitCandidate.requiredPotentialRank
-							].traitEffect = Object.keys(
-								BATTLE_EQUIP_LOCALES
-							).reduce((locales, locale) => {
-								if (!BATTLE_EQUIP_LOCALES[locale][moduleId]) {
-									console.warn(
-										`CN Only module: ${moduleId} at locale: ${locale}`
-									);
-									return locales;
-								}
-
-								const localizedCandidate =
-									BATTLE_EQUIP_LOCALES[locale][moduleId]
-										.phases[i].parts[j]
-										.overrideTraitDataBundle.candidates[k];
-								locales[locale] = descriptionToHtml(
-									localizedCandidate.additionalDescription,
-									localizedCandidate.blackboard // let's use the localized version, what could go wrong.
-								);
-								return locales;
-							}, {});
+							].traitEffect = descriptionToHtml(
+								localizedCandidate.additionalDescription,
+								localizedCandidate.blackboard
+							);
 
 							// this is a trait UPDATE
 							candidates[
 								curTraitCandidate.requiredPotentialRank
 							].traitEffectType = "update";
 						} else if (curTraitCandidate.overrideDescripton) {
+							const moduleLocale =
+								BATTLE_EQUIP_LOCALES[locale][moduleId] ??
+								BATTLE_EQUIP_LOCALES["zh_CN"][moduleId];
+
+							const localizedCandidate =
+								moduleLocale.phases[i].parts[j]
+									.overrideTraitDataBundle.candidates[k];
 							candidates[
 								curTraitCandidate.requiredPotentialRank
-							].traitEffect = Object.keys(
-								BATTLE_EQUIP_LOCALES
-							).reduce((locales, locale) => {
-								if (!BATTLE_EQUIP_LOCALES[locale][moduleId]) {
-									console.warn(
-										`CN Only module: ${moduleId} at locale: ${locale}`
-									);
-									return locales;
-								}
+							].traitEffect = descriptionToHtml(
+								localizedCandidate.overrideDescripton,
+								localizedCandidate.blackboard
+							);
 
-								const localizedCandidate =
-									BATTLE_EQUIP_LOCALES[locale][moduleId]
-										.phases[i].parts[j]
-										.overrideTraitDataBundle.candidates[k];
-								locales[locale] = descriptionToHtml(
-									localizedCandidate.overrideDescripton,
-									localizedCandidate.blackboard // let's use the localized version, what could go wrong.
-								);
-
-								return locales;
-							}, {});
 							// the trait is being OVERRIDDEN
 							candidates[
 								curTraitCandidate.requiredPotentialRank
@@ -326,47 +302,39 @@ export function aggregateModuleData() {
 						// upgradeDescription is actually a completely new talent
 						// (or upgradeDescription is null...)
 						if (curTalentCandidate.upgradeDescription) {
+							const moduleLocale =
+								BATTLE_EQUIP_LOCALES[locale][moduleId] ??
+								BATTLE_EQUIP_LOCALES["zh_CN"][moduleId];
+
+							const localizedCandidate =
+								moduleLocale.phases[i].parts[j]
+									.addOrOverrideTalentDataBundle.candidates[
+									k
+								];
+
+							// Random korean Typo not sure
+							if (
+								locale == "ko_KR" &&
+								moduleId == "uniequip_002_hamoni" &&
+								j == 1 &&
+								k == 1
+							) {
+								localizedCandidate.upgradeDescription =
+									localizedCandidate.upgradeDescription.includes(
+										"</>"
+									)
+										? localizedCandidate.upgradeDescription
+										: localizedCandidate.upgradeDescription +
+											"</>";
+							}
+
 							candidates[
 								curTalentCandidate.requiredPotentialRank
-							].talentEffect = Object.keys(
-								BATTLE_EQUIP_LOCALES
-							).reduce((locales, locale) => {
-								if (!BATTLE_EQUIP_LOCALES[locale][moduleId]) {
-									console.warn(
-										`CN Only module: ${moduleId} at locale: ${locale}`
-									);
-									return locales;
-								}
+							].talentEffect = descriptionToHtml(
+								localizedCandidate.upgradeDescription,
+								localizedCandidate.blackboard // let's use the localized version, what could go wrong.
+							);
 
-								const localizedCandidate =
-									BATTLE_EQUIP_LOCALES[locale][moduleId]
-										.phases[i].parts[j]
-										.addOrOverrideTalentDataBundle
-										.candidates[k];
-
-								// Random korean Typo not sure
-								if (
-									locale == "ko_KR" &&
-									moduleId == "uniequip_002_hamoni" &&
-									j == 1 &&
-									k == 1
-								) {
-									localizedCandidate.upgradeDescription =
-										localizedCandidate.upgradeDescription.includes(
-											"</>"
-										)
-											? localizedCandidate.upgradeDescription
-											: localizedCandidate.upgradeDescription +
-												"</>";
-								}
-
-								locales[locale] = descriptionToHtml(
-									localizedCandidate.upgradeDescription,
-									localizedCandidate.blackboard // let's use the localized version, what could go wrong.
-								);
-
-								return locales;
-							}, {});
 							candidates[
 								curTalentCandidate.requiredPotentialRank
 							].talentIndex = curTalentCandidate.talentIndex;
@@ -420,13 +388,14 @@ export function aggregateModuleData() {
 						candidates[
 							moduleTranslations[moduleId].phases[j]
 								.requiredPotentialRank
-						]
+						] &&
+						locale == "en_US"
 					) {
 						candidates[
 							moduleTranslations[moduleId].phases[
 								j
 							].requiredPotentialRank
-						].traitEffect["en_US"] =
+						].traitEffect =
 							moduleTranslations[moduleId].phases[j].translations[
 								i
 							].trait;
@@ -434,7 +403,7 @@ export function aggregateModuleData() {
 							moduleTranslations[moduleId].phases[
 								j
 							].requiredPotentialRank
-						].talentEffect["en_US"] =
+						].talentEffect =
 							moduleTranslations[moduleId].phases[j].translations[
 								i
 							].talent;

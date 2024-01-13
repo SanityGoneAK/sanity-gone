@@ -7,17 +7,18 @@ import { createItemsJson } from "./import-items.js";
 // import { createMapsJson } from "./create-maps-json.js";
 // import { createEnemiesJson } from "./create-enemies-json.js";
 
-const dataDir = path.join(__dirname, "../data");
-
 (async () => {
-	await fs.mkdir(dataDir, { recursive: true });
-	await Promise.all([
-		createOperatorsJson(dataDir),
-		createBranchesJson(dataDir),
-		createItemsJson(dataDir),
-		// createMapsJson(dataDir),
-		// createEnemiesJson(dataDir),
-	]);
+	["zh_CN", "en_US", "ja_JP", "ko_KR"].forEach(async (locale) => {
+		const dataDir = path.join(__dirname, "../data/", locale);
+		await fs.mkdir(dataDir, { recursive: true });
+		await Promise.all([
+			createOperatorsJson(dataDir, locale),
+			createBranchesJson(dataDir, locale),
+			createItemsJson(dataDir, locale),
+			// createMapsJson(dataDir),
+			// createEnemiesJson(dataDir),
+		]);
+	});
 
 	// unfortunately build-search-index depends on branches.json,
 	// so we have to wait to import it until branches.json has been written
