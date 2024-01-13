@@ -19,7 +19,6 @@ const languages = Object.entries(allLanguages).map(([key, language]) => {
 		},
 	];
 });
-console.log(stripLangFromUrl(Astro.url), Astro.url.pathname);
 
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 const t = useTranslations(locale as keyof typeof ui);
