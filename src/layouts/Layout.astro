@@ -86,12 +86,12 @@ import "~/styles/base.css";
 			</div>
 			<div
 				id="sidebar"
-				class="hidden grid-in-main sm:grid-in-sidebar group-data-[menu-open=true]/sitewrapper:block sm:block"
+				class="hidden grid-in-main sm:grid-in-sidebar group-data-[menu-open=true]/sitewrapper:block sm:block shadow-3xl"
 			>
 				<Sidebar />
 			</div>
 			<main
-				class="grid-in-main group-data-[menu-open=true]/sitewrapper:hidden group-data-[menu-open=false]/sitewrapper:row-start-2 p-6"
+				class="grid-in-main group-data-[menu-open=true]/sitewrapper:hidden group-data-[menu-open=false]/sitewrapper:row-start-2 p-6 sm:overflow-y-auto"
 			>
 				<slot />
 			</main>
