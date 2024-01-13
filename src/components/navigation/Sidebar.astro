@@ -9,8 +9,6 @@ import { allLanguages, defaultLang } from "~/i18n/languages";
 import { stripLangFromUrl, useTranslations } from "~/i18n/utils";
 import type { ui } from "~/i18n/ui";
 import LanguageSwitcher from "./LanguageSwitcher.tsx";
-import { getLangFromUrl } from "~/i18n/utils";
-import { stripLangFromPath } from "~/i18n/utils";
 
 const languages = Object.entries(allLanguages).map(([key, language]) => {
 	return [
