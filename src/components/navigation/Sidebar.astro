@@ -4,15 +4,22 @@
 import DiscordLogo from "~/components/icons/DiscordLogo.astro";
 import TwitterLogo from "~/components/icons/TwitterLogo.astro";
 import NavigationLink from "~/components/navigation/NavigationLink.astro";
+import { getPathByLocale, getRelativeLocaleUrl } from "astro:i18n";
+import { defaultLang } from "~/i18n/languages";
+import { useTranslations } from "~/i18n/utils";
+import type { ui } from "~/i18n/ui";
+
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
+const t = useTranslations(locale as keyof typeof ui);
 
 const sidebarLinks: { href: string; name: string }[] = [
 	{
-		href: "/",
-		name: "Home",
+		href: getRelativeLocaleUrl(locale, "/"),
+		name: t("nav.home"),
 	},
 	{
-		href: "/operators",
-		name: "Operators",
+		href: getRelativeLocaleUrl(locale, "/operators"),
+		name: t("nav.operators"),
 	},
 	// {
 	//   href: "/dps",

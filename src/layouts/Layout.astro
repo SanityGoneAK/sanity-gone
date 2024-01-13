@@ -3,7 +3,6 @@ export interface Props {
 	title: string;
 	previousLocation?: string;
 	previousLocationLink?: string;
-	locale?: string;
 }
 
 const { title, previousLocation, previousLocationLink } = Astro.props;
@@ -13,35 +12,8 @@ import SanityGoneLogo from "~/components/SanityGoneLogo";
 import Sidebar from "~/components/navigation/Sidebar.astro";
 
 import "~/styles/base.css";
-import { getPathByLocale, getRelativeLocaleUrl } from "astro:i18n";
-import { defaultLang } from "~/i18n/languages";
-import { useTranslations } from "~/i18n/utils";
-import type { ui } from "~/i18n/ui";
-
-const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
-const t = useTranslations(locale as keyof typeof ui);
-
-const sidebarLinks: { href: any; name: any }[] = [
-	{
-		href: getRelativeLocaleUrl(locale, "/"),
-		name: t("nav.home"),
-	},
-	{
-		href: getRelativeLocaleUrl(locale, "/operators"),
-		name: t("nav.operators"),
-	},
-	// {
-	//   href: "/dps",
-	//   name: "DPS Calculator",
-	// },
-	// {
-	//   href: "/maps",
-	//   name: "Maps",
-	// },
-];
 ---
 
-<!doctype html>
 <script>
 	document.addEventListener("DOMContentLoaded", () => {
 		const mobileMenuTrigger = document.getElementById(
@@ -79,66 +51,50 @@ const sidebarLinks: { href: any; name: any }[] = [
 		<slot name="head" />
 	</head>
 	<body class="bg-neutral-800 text-neutral-50">
-		<div class="sm:flex flex-row h-full isolate">
-			<Sidebar client:visible>
-				<div class="flex flex-col h-full">
-					<div
-						class="sm:hidden py-4 flex justify-center items-center"
-					>
-						<SearchBar placeholder="Search" client:visible />
-					</div>
-					<nav class="flex-grow">
-						{
-							sidebarLinks.map(({ href, name }) => (
-								<NavigationLink
-									href={href}
-									name={name}
-									active={
-										href === "/"
-											? Astro.url.pathname === "/"
-											: Astro.url.pathname.startsWith(
-													href
-												)
-									}
-								/>
-							))
-						}
-					</nav>
-					<footer class="px-6 mb-6 text-sm">
-						<div class="flex gap-4 justify-center">
-							<DiscordLogo />
-							<TwitterLogo />
-						</div>
-						<hr class="text-neutral-400 my-6" />
-						<p class="mb-6 text-neutral-200">
-							Sanity;Gone is a community resource for Arknights
-							players, providing guides, reviews, and detailed
-							information about the game.
-						</p>
-						<nav
-							class="flex justify-between items-center text-neutral-100"
-						>
-							<a class="hover:text-neutral-50" href="#"
-								>Disclaimer</a
-							>
-							<a class="hover:text-neutral-50" href="#">About</a>
-							<a class="hover:text-neutral-50" href="#">Contact</a
-							>
-						</nav>
-					</footer>
-				</div>
-			</Sidebar>
-
-			<div class="flex-1 flex flex-col sm:ml-[228px]">
-				<div
-					class="hidden sm:flex sm:fixed w-full min-h-16 bg-neutral-600 shadow-3xl border-b border-neutral-500 border-solid items-center z-50"
+		<div
+			id="site-wrapper"
+			class="h-full group/sitewrapper grid grid-areas-mobile-layout grid-cols-mobile-layout grid-rows-mobile-layout sm:grid-areas-desktop-layout sm:grid-rows-desktop-layout sm:grid-cols-desktop-layout"
+			data-menu-open="false"
+		>
+			<div
+				class="flex justify-between grid-in-logo px-3 border-b border-r border-solid border-neutral-500 bg-neutral-600"
+			>
+				<SanityGoneLogo />
+				<button
+					class="sm:hidden"
+					id="mobile-menu-trigger"
+					aria-expanded="false"
 				>
-					<SearchBar placeholder="Search" client:visible />
-				</div>
-				<main class="p-6 sm:mt-16">
-					<slot />
-				</main>
+					<svg
+						width="17"
+						height="16"
+						viewBox="0 0 17 16"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M16.5446 2.73404C16.7723 2.73404 17 2.53457 17 2.25532V0.978723C17 0.739362 16.7723 0.5 16.5446 0.5H0.455357C0.189732 0.5 0 0.739362 0 0.978723V2.25532C0 2.53457 0.189732 2.73404 0.455357 2.73404H16.5446ZM16.5446 9.11702C16.7723 9.11702 17 8.91755 17 8.6383V7.3617C17 7.12234 16.7723 6.88298 16.5446 6.88298H0.455357C0.189732 6.88298 0 7.12234 0 7.3617V8.6383C0 8.91755 0.189732 9.11702 0.455357 9.11702H16.5446ZM16.5446 15.5C16.7723 15.5 17 15.3005 17 15.0213V13.7447C17 13.5053 16.7723 13.266 16.5446 13.266H0.455357C0.189732 13.266 0 13.5053 0 13.7447V15.0213C0 15.3005 0.189732 15.5 0.455357 15.5H16.5446Z"
+							fill="#E3E1EF"></path>
+					</svg>
+				</button>
 			</div>
+			<div
+				id="searchbar"
+				class="hidden grid-in-search sm:grid-in-topright group-data-[menu-open=true]/sitewrapper:block sm:block border-b border-solid border-neutral-500 sm:bg-neutral-600"
+			>
+				<SearchBar placeholder="Search" client:visible />
+			</div>
+			<div
+				id="sidebar"
+				class="hidden grid-in-main sm:grid-in-sidebar group-data-[menu-open=true]/sitewrapper:block sm:block"
+			>
+				<Sidebar />
+			</div>
+			<main
+				class="grid-in-main group-data-[menu-open=true]/sitewrapper:hidden group-data-[menu-open=false]/sitewrapper:row-start-2 p-6"
+			>
+				<slot />
+			</main>
 		</div>
 	</body>
 </html>
