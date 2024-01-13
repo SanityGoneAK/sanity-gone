@@ -2,21 +2,12 @@ import type { Range } from "./gamedata-types";
 import type { RiicSkill } from "../../scripts/aggregate-riic-data";
 import type { CharacterStatValues } from "../utils/character-stats";
 import type { InterpolatedValue } from "../utils/description-parser";
-import type { Rarity } from "~/pages/[locale]/operators/_store";
 
 export type { SkinSource, SkinCostTokenType } from "../../scripts/scrape-prts";
 export type { RiicSkill } from "../../scripts/aggregate-riic-data";
 
 // This file contains the output types of our gamedata scripts - the game data after it's been
 // processed by the scripts. These types do NOT fully conform to raw gamedata.
-
-export interface string {
-	zh_CN?: string;
-	en_US?: string;
-	ja_JP?: string;
-	ko_KR?: string;
-}
-
 /**
  * Represents a single Arknights character (an operator or summon or something else).
  */
@@ -29,7 +20,7 @@ export interface Character {
 	position: string;
 	description: string | null;
 	phases: CharacterPhase[];
-	rarity: Rarity; // 1-indexed
+	rarity: number; // 1-indexed
 	favorKeyFrames: FavorKeyFrame[] | null;
 	potentialRanks: PotentialRanks[];
 	talents: Talent[];
@@ -39,21 +30,23 @@ export interface Character {
 	[otherProperties: string]: unknown;
 }
 
+export type Rarity = 1 | 2 | 3 | 4 | 5 | 6;
+
 /**
  * Represents a single Arknights operator, which has some extra properties compared to a `Character`.
  */
 export interface Operator extends Character {
 	voices: Voice[];
-	skins: Skin[];
+	// skins: Skin[];
 	isLimited: boolean;
 	releaseOrder: number; // lower value means released earlier
 	summons: Character[];
 	modules: Module[];
-	/** The character ID of this operator's alter, or `null` if it doesn't have one. */
+	// /** The character ID of this operator's alter, or `null` if it doesn't have one. */
 	alterId: string | null;
-	/** The corresponding base operator's character ID if this operator is an alter, or `null` if this operator isn't an alter. */
+	// /** The corresponding base operator's character ID if this operator is an alter, or `null` if this operator isn't an alter. */
 	baseOperatorId: string | null;
-	riicSkills: RiicSkill[];
+	// riicSkills: RiicSkill[];
 	hasGuide: boolean;
 }
 
@@ -117,6 +110,7 @@ export interface TalentPhase {
 	range: Range | null;
 	// this is the same format of interpolation object as is used in SkillInfo
 	blackboard: InterpolatedValue[];
+	[otherProperties: string]: unknown;
 }
 
 /**
@@ -169,7 +163,7 @@ export interface PotentialRanks {
 	buff: {
 		attributes: {
 			attributeModifiers: {
-				attributeType: number;
+				attributeType: string;
 				value: number;
 				[otherProperties: string]: unknown;
 			}[];
@@ -210,7 +204,7 @@ interface SkillLevel {
 	// but we expect it to be denormalized into a RangeObject before being passed to <SkillInfo />
 	rangeId: string | null;
 	range: Range | null;
-	skillType: SkillType;
+	skillType: string;
 	spData: {
 		// spType: SkillSpType;
 		spType: string | number;
@@ -303,7 +297,7 @@ export interface ModulePhaseCandidate {
 	traitEffect: string;
 	/** Either `"update"` or `"override"`. */
 	traitEffectType: string;
-	talentEffect: string;
+	talentEffect: string | null;
 	talentIndex: number;
 	displayRange: boolean;
 	range: Range | null;
@@ -331,8 +325,8 @@ interface BaseOperatorSkin {
 	avatarId: string;
 	portraitId: string;
 	displaySkin: {
-		modelName: string;
-		drawerList: string[];
+		modelName: string | null;
+		drawerList: string[] | null;
 	};
 }
 
@@ -351,11 +345,11 @@ interface EliteOneOrTwoOperatorSkin extends BaseOperatorSkin {
 /** Custom operator skin art. */
 export interface SpecialOperatorSkin extends BaseOperatorSkin {
 	type: "skin";
-	/** @see `SkinSource` */
-	obtainSources: string[];
-	cost: number | null;
-	/** @see `SkinCostTokenType` */
-	tokenType: string | null;
+	// /** @see `SkinSource` */
+	// obtainSources: string[];
+	// cost: number | null;
+	// /** @see `SkinCostTokenType` */
+	// tokenType: string | null;
 }
 
 export type Skin =

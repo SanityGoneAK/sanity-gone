@@ -1,19 +1,19 @@
 ---
-import { slugify } from "../../utils/strings";
-import operatorsJson from "../../../data/operators.json";
-import Layout from "../../layouts/Layout.astro";
+import { slugify } from "~/utils/strings";
+import operatorsJson from "data/en_US/operators.json";
+import Layout from "~/layouts/Layout.astro";
 import { operatorIdStore } from "./_store";
-import CharacterSplash from "../../components/operator/CharacterSplash";
-import MaterialRequirements from "../../components/operator/MaterialRequirements";
-import SvgRarityGradientDefs from "../../components/operator/SvgRarityGradientDefs";
-import OperatorTabs from "../../components/operator/OperatorTabs";
+import CharacterSplash from "~/components/operator/CharacterSplash";
+import MaterialRequirements from "~/components/operator/MaterialRequirements";
+import SvgRarityGradientDefs from "~/components/operator/SvgRarityGradientDefs";
+import OperatorTabs from "~/components/operator/OperatorTabs";
 
-import { getRelatedCharacter } from "../../utils/related-character";
+import { getRelatedCharacter } from "~/utils/related-character";
 
-import type * as OutputTypes from "../../types/output-types";
-import { operatorAvatar } from "../../utils/images";
-import InterpunctSpacer from "../../components/ui/InterpunctSpacer.astro";
-import OperatorInfo from "../../components/operator/OperatorInfo.astro";
+import type * as OutputTypes from "~/types/output-types";
+import { operatorAvatar } from "~/utils/images";
+import InterpunctSpacer from "~/components/ui/InterpunctSpacer.astro";
+import OperatorInfo from "~/components/operator/OperatorInfo.astro";
 
 // console.log(Object.entries(operatorsJson)[0]);
 //
@@ -35,7 +35,7 @@ const { slug } = Astro.params;
 const idLookup = Object.fromEntries(
 	Object.entries(operatorsJson).map(
 		([operatorId, operator]: [string, OutputTypes.Operator]) => {
-			return [slugify(operator.name.en_US), operatorId];
+			return [slugify(operator.name), operatorId];
 		}
 	)
 );
@@ -75,7 +75,7 @@ const relatedOperator = getRelatedCharacter(operator);
 							<a
 								class="flex items-center text-yellow relative mr-3"
 								href={`/operators/${slugify(
-									relatedOperator.name.en_US
+									relatedOperator.name
 								)}`}
 							>
 								<img
@@ -83,7 +83,7 @@ const relatedOperator = getRelatedCharacter(operator);
 									src={operatorAvatar(relatedOperator.charId)}
 								/>
 								<span class="border-dashed border-b-[1px] border-neutral-200">
-									{relatedOperator.name.en_US}
+									{relatedOperator.name}
 								</span>
 							</a>
 						</li>
@@ -139,4 +139,3 @@ const relatedOperator = getRelatedCharacter(operator);
 	</div>
 	<SvgRarityGradientDefs />
 </Layout>
-../../../utils/strings../../../../data/operators.json../../../components/operator/CharacterSplash../../../components/operator/MaterialRequirements../../../components/operator/SvgRarityGradientDefs../../../components/operator/OperatorTabs../../../utils/related-character../../../types/output-types../../../utils/images

@@ -2,6 +2,8 @@
 import Layout from "~/layouts/Layout.astro";
 import OperatorFilterBar from "~/components/operator/filters/OperatorFilterBar";
 import OperatorList from "~/components/operator/OperatorList";
+import operatorsJson from "data/en_US/operators.json";
+console.log(Object.values(operatorsJson).filter((op) => !op.riicSkills));
 ---
 
 <Layout title="Operator List">

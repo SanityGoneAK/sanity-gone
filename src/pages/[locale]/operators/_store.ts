@@ -40,8 +40,7 @@ export const $isSortEmpty = computed(
 // Filtering
 export const $filterProfession = atom<string[]>([]);
 export const $filterBranch = atom<Array<keyof typeof branches>>([]);
-export type Rarity = 1 | 2 | 3 | 4 | 5 | 6;
-export const $filterRarity = atom<Array<Rarity>>([]);
+export const $filterRarity = atom<Array<OutputTypes.Rarity>>([]);
 export const $filterGuideAvailable = atom<boolean>(false);
 
 export const $availableBranches = computed($filterProfession, (professions) => {
