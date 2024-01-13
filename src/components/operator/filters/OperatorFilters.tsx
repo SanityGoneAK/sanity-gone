@@ -113,7 +113,7 @@ const OperatorFilters = () => {
 										src={operatorBranchIcon(key)}
 										alt=""
 									/>
-									<p>{branch.branchName.en_US}</p>
+									<p>{branch.branchName}</p>
 								</button>
 							);
 						})}
