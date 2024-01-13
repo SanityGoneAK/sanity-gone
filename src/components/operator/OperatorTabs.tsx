@@ -1,7 +1,7 @@
 import { Tab } from "@headlessui/react";
 import { useStore } from "@nanostores/react";
 
-import { operatorStore } from "~/pages/operators/_store.ts";
+import { operatorStore } from "~/pages/[locale]/operators/_store";
 import OperatorAttributesPanel from "./panels/OperatorAttributesPanel";
 import { useState } from "react";
 import { cx } from "~/utils/styles.ts";

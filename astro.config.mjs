@@ -4,14 +4,36 @@ import node from "@astrojs/node";
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
-import astroI18next from "astro-i18next";
 
 // https://astro.build/config
 export default defineConfig({
 	output: "server",
+	i18n: {
+		defaultLocale: "en",
+		locales: [
+			{
+				path: "en",
+				codes: ["en-US", "en_US", "en"],
+			},
+			{
+				path: "jp",
+				codes: ["ja-JP", "ja_JP", "jp"],
+			},
+			{
+				path: "kr",
+				codes: ["ko-KR", "ko_KR", "kr"],
+			},
+			{
+				path: "zh-cn",
+				codes: ["zh-CN", "zh_CN", "cn", "zh-Hans-CN"],
+			},
+		],
+		routing: {
+			prefixDefaultLocale: true,
+		},
+	},
 	integrations: [
 		react(),
-		astroI18next(),
 		tailwind({
 			applyBaseStyles: false,
 		}),

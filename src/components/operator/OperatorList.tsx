@@ -2,7 +2,7 @@ import { useStore } from "@nanostores/react";
 
 import SvgRarityGradientDefs from "./SvgRarityGradientDefs";
 import operatorsJson from "../../../data/operators.json";
-import { $operators, $viewConfig } from "../../pages/operators/_store";
+import { $operators, $viewConfig } from "../../pages/[locale]/operators/_store";
 import {
 	operatorAvatar,
 	operatorBranchIcon,
@@ -188,7 +188,7 @@ const OperatorCompactItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 						)}`}
 					></a>
 				</div>
-				<div className="from-zinc-950 from-transparent via-transparent to-transparent group-hover:from-transparent to-100 flex h-full flex-col justify-end bg-gradient-to-b from-30% via-[67%] transition duration-100 ease-in-out focus-within:via-neutral-950/[0.67] focus-within:to-[#1c1c1c] group-hover:via-neutral-950/[0.67] group-hover:to-[#1c1c1c]">
+				<div className="from-zinc-950 to-100 flex h-full flex-col justify-end bg-gradient-to-b from-transparent from-30% via-transparent via-[67%] to-transparent transition duration-100 ease-in-out focus-within:via-neutral-950/[0.67] focus-within:to-[#1c1c1c] group-hover:from-transparent group-hover:via-neutral-950/[0.67] group-hover:to-[#1c1c1c]">
 					<a
 						href={`/operators/${slugify(
 							operator.name.en_US ?? ""

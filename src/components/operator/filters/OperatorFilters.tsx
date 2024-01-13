@@ -13,7 +13,7 @@ import {
 	type Rarity,
 	toggleBranch,
 	toggleRarity,
-} from "../../../pages/operators/_store";
+} from "../../../pages/[locale]/operators/_store";
 import { classToProfession, professionLookup } from "../../../utils/classes";
 import { operatorBranchIcon, operatorClassIcon } from "../../../utils/images";
 import { cx } from "../../../utils/styles";

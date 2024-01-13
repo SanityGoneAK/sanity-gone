@@ -1,6 +1,6 @@
 import type React from "react";
 
-import type { Rarity } from "~/pages/operators/_store";
+import type { Rarity } from "~/pages/[locale]/operators/_store";
 
 type Props = React.HTMLAttributes<SVGElement> & {
 	rarity: Rarity;

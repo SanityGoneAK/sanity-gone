@@ -5,7 +5,7 @@ import { useStore } from "@nanostores/react";
 import { Checkbox } from "~/components/ui/Checkbox";
 import PillButtonGroup from "~/components/ui/PillButtonGroup";
 import SliderWithInput from "~/components/ui/SliderWithInput";
-import { operatorStore } from "~/pages/operators/_store.ts";
+import { operatorStore } from "~/pages/[locale]/operators/_store";
 
 import CharacterStats from "../CharacterStats";
 import EliteButtonGroup from "../EliteButtonGroup";

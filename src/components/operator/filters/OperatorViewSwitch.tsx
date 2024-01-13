@@ -4,7 +4,7 @@ import * as ToggleGroup from "@radix-ui/react-toggle-group";
 import {
 	$viewConfig,
 	type ViewConfigValue,
-} from "../../../pages/operators/_store";
+} from "../../../pages/[locale]/operators/_store";
 
 const OperatorViewSwitch = () => {
 	const viewConfig = useStore($viewConfig);

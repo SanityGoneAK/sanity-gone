@@ -3,7 +3,7 @@ import { slugify } from "../../utils/strings";
 import operatorsJson from "../../../data/operators.json";
 import Layout from "../../layouts/Layout.astro";
 import { operatorIdStore } from "./_store";
-import CharacterSplash from "../../components/operator/CharacterSplash"
+import CharacterSplash from "../../components/operator/CharacterSplash";
 import MaterialRequirements from "../../components/operator/MaterialRequirements";
 import SvgRarityGradientDefs from "../../components/operator/SvgRarityGradientDefs";
 import OperatorTabs from "../../components/operator/OperatorTabs";
@@ -33,16 +33,19 @@ import OperatorInfo from "../../components/operator/OperatorInfo.astro";
 const { slug } = Astro.params;
 
 const idLookup = Object.fromEntries(
-	Object.entries(operatorsJson).map(([operatorId, operator]: [string, OutputTypes.Operator]) => {
-		return [slugify(operator.name.en_US), operatorId];
-	}));
+	Object.entries(operatorsJson).map(
+		([operatorId, operator]: [string, OutputTypes.Operator]) => {
+			return [slugify(operator.name.en_US), operatorId];
+		}
+	)
+);
 
 const operatorId = idLookup[slug];
 console.log(operatorId);
 
 const operator = operatorsJson[
 	operatorId as keyof typeof operatorsJson
-	] as OutputTypes.Operator;
+] as OutputTypes.Operator;
 operatorIdStore.set(operatorId);
 
 const relatedOperator = getRelatedCharacter(operator);
@@ -57,33 +60,45 @@ const relatedOperator = getRelatedCharacter(operator);
 		<div class="flex justify-between mb-6">
 			<ul class="p-0 m-0 flex items-center list-none gap-3 flex-grow">
 				<li class="text-base font-normal leading-normal flex-none">
-					<a href="/operators" class="text-blue hover:underline">Operators</a>
+					<a href="/operators" class="text-blue hover:underline"
+						>Operators</a
+					>
 				</li>
 				/
-				<li class="text-base font-bold leading-normal flex-none">{operator.name.en_US}</li>
+				<li class="text-base font-bold leading-normal flex-none">
+					{operator.name.en_US}
+				</li>
 				<li class="flex-grow"></li>
 				{
 					relatedOperator && (
 						<li class="flex-none">
 							<a
 								class="flex items-center text-yellow relative mr-3"
-								href={`/operators/${slugify(relatedOperator.name.en_US)}`}
+								href={`/operators/${slugify(
+									relatedOperator.name.en_US
+								)}`}
 							>
 								<img
 									class="w-8 h-8 border border-solid border-neutral-200 rounded-[4.5rem] mr-2"
 									src={operatorAvatar(relatedOperator.charId)}
 								/>
-								<span class="border-dashed border-b-[1px] border-neutral-200">{relatedOperator.name.en_US}</span>
+								<span class="border-dashed border-b-[1px] border-neutral-200">
+									{relatedOperator.name.en_US}
+								</span>
 							</a>
 						</li>
 					)
 				}
 			</ul>
 			<!-- TODO: Make this a component? -->
-			<a class="flex justify-center py-2 px-3 items-center gap-2 relative bg-gray rounded-[20px] border-2 border-transparent border-solid"
-			   style="background: linear-gradient(180deg, #14141B 0%, #191920 100%) padding-box, linear-gradient(180deg, #FED874 0%, #FFC397 100%) border-box;"
-			   href="#"
-			><span class="leading-tight text-base text-transparent font-semibold bg-gradient-to-b from-[#FED874] to-orange-light bg-clip-text">Operator Guide</span>
+			<a
+				class="flex justify-center py-2 px-3 items-center gap-2 relative bg-gray rounded-[20px] border-2 border-transparent border-solid"
+				style="background: linear-gradient(180deg, #14141B 0%, #191920 100%) padding-box, linear-gradient(180deg, #FED874 0%, #FFC397 100%) border-box;"
+				href="#"
+				><span
+					class="leading-tight text-base text-transparent font-semibold bg-gradient-to-b from-[#FED874] to-orange-light bg-clip-text"
+					>Operator Guide</span
+				>
 				<svg
 					width="16"
 					height="16"
@@ -110,7 +125,9 @@ const relatedOperator = getRelatedCharacter(operator);
 				</svg>
 			</a>
 		</div>
-		<div class="flex flex-col xl:flex-row rounded-lg border-neutral-400 border">
+		<div
+			class="flex flex-col xl:flex-row rounded-lg border-neutral-400 border"
+		>
 			<section class="flex-1">
 				<CharacterSplash client:visible />
 			</section>
@@ -119,7 +136,7 @@ const relatedOperator = getRelatedCharacter(operator);
 				<OperatorTabs client:visible />
 			</section>
 		</div>
-
 	</div>
 	<SvgRarityGradientDefs />
 </Layout>
+../../../utils/strings../../../../data/operators.json../../../components/operator/CharacterSplash../../../components/operator/MaterialRequirements../../../components/operator/SvgRarityGradientDefs../../../components/operator/OperatorTabs../../../utils/related-character../../../types/output-types../../../utils/images

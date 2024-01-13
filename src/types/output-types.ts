@@ -2,7 +2,7 @@ import type { Range } from "./gamedata-types";
 import type { RiicSkill } from "../../scripts/aggregate-riic-data";
 import type { CharacterStatValues } from "../utils/character-stats";
 import type { InterpolatedValue } from "../utils/description-parser";
-import type { Rarity } from "~/pages/operators/_store";
+import type { Rarity } from "~/pages/[locale]/operators/_store";
 
 export type { SkinSource, SkinCostTokenType } from "../../scripts/scrape-prts";
 export type { RiicSkill } from "../../scripts/aggregate-riic-data";

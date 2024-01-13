@@ -14,7 +14,7 @@ import {
 	$sortDirection,
 	type SortCategoryValue,
 	type SortDirectionValue,
-} from "../../../pages/operators/_store";
+} from "../../../pages/[locale]/operators/_store";
 import { useStore } from "@nanostores/react";
 
 const OperatorSort = () => {
