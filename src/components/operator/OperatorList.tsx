@@ -52,6 +52,7 @@ const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 					</div>
 					<a
 						className="block h-11 flex-grow"
+						tabIndex={-1}
 						href={`/operators/${slugify(
 							operator.name.en_US ?? ""
 						)}`}
@@ -63,6 +64,7 @@ const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 						href={`/operators/${slugify(
 							operator.name.en_US ?? ""
 						)}`}
+						tabIndex={-1}
 						className="flex flex-grow flex-col justify-end p-3"
 					>
 						<h3 className="flex flex-col text-lg font-semibold leading-6 text-neutral-50">
@@ -117,7 +119,7 @@ const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 							operator.name.en_US ?? ""
 						)}`}
 						className={cx(
-							"h-1 bg-gradient-to-r text-center brightness-100 filter transition-all duration-75 ease-in-out will-change-[height] group-hover:h-8",
+							"h-1 bg-gradient-to-r text-center brightness-100 filter transition-all duration-75 ease-in-out will-change-[height] focus:h-8 group-hover:h-8",
 							{
 								"from-neutral-50 to-neutral-100":
 									operator.rarity == 1,
@@ -135,6 +137,9 @@ const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 					>
 						<span className="mt-1 inline-block font-semibold uppercase text-neutral-950">
 							View Operator
+						</span>
+						<span className="visually-hidden">
+							{operator.name.en_US}
 						</span>
 					</a>
 				</div>
@@ -176,20 +181,21 @@ const OperatorCompactItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 						/>
 					</div>
 					<a
+						tabIndex={-1}
 						className="block h-11 flex-grow"
 						href={`/operators/${slugify(
 							operator.name.en_US ?? ""
 						)}`}
 					></a>
 				</div>
-				<div className="from-zinc-950 from-transparent via-transparent to-transparent group-hover:from-transparent to-100 flex h-full flex-col justify-end bg-gradient-to-b from-30% via-[67%] transition duration-100 ease-in-out group-hover:via-neutral-950/[0.67] group-hover:to-[#1c1c1c]">
+				<div className="from-zinc-950 from-transparent via-transparent to-transparent group-hover:from-transparent to-100 flex h-full flex-col justify-end bg-gradient-to-b from-30% via-[67%] transition duration-100 ease-in-out focus-within:via-neutral-950/[0.67] focus-within:to-[#1c1c1c] group-hover:via-neutral-950/[0.67] group-hover:to-[#1c1c1c]">
 					<a
 						href={`/operators/${slugify(
 							operator.name.en_US ?? ""
 						)}`}
-						className="flex flex-grow flex-col justify-end p-3"
+						className="group/link flex flex-grow flex-col justify-end p-3"
 					>
-						<h3 className="flex flex-col text-lg font-semibold leading-6 text-neutral-50 opacity-0 transition-opacity group-hover:opacity-100">
+						<h3 className="flex flex-col text-lg font-semibold leading-6 text-neutral-50 opacity-0 transition-opacity group-hover:opacity-100 group-focus/link:opacity-100">
 							{alterName ? (
 								<>
 									{charName}
