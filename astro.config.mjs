@@ -1,10 +1,10 @@
-import { defineConfig } from "astro/config";
 import path from "path";
-import react from "@astrojs/react";
-import astroI18next from "astro-i18next";
-import node from "@astrojs/node";
 
+import node from "@astrojs/node";
+import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
+import { defineConfig } from "astro/config";
+import astroI18next from "astro-i18next";
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,7 +13,7 @@ export default defineConfig({
 		react(),
 		astroI18next(),
 		tailwind({
-			applyBaseStyles: "false",
+			applyBaseStyles: false,
 		}),
 	],
 	adapter: node({
