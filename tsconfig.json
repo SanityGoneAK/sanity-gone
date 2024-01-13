@@ -12,5 +12,6 @@
 			"~/*": ["src/*"],
 			"data/*": ["data/*"]
 		}
-	}
+	},
+	"include": ["src/**/*", "scripts/**/*", ".storybook/**/*"]
 }
