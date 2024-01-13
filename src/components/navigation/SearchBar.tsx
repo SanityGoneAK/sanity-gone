@@ -115,7 +115,7 @@ const CustomHits: React.FC<{ onSelected?: () => void }> = ({ onSelected }) => {
 	return (
 		<Combobox.Options<"div">
 			as="div"
-			className="absolute left-[-1px] top-[calc(100%+1px)] m-0 p-0 flex w-[32rem] flex-col overflow-hidden rounded-b border border-neutral-400 bg-neutral-500"
+			className="absolute left-[-1px] top-[calc(100%+1px)] m-0 flex w-[32rem] flex-col overflow-hidden rounded-b border border-neutral-400 bg-neutral-500 p-0"
 		>
 			{operatorResults.length > 0 && (
 				<ul
@@ -246,6 +246,7 @@ const SearchBar: React.FC<Props> = ({ placeholder, onSelected }) => {
 				<Combobox<SearchResult>>
 					{({ activeOption }) => (
 						<InstantSearch
+							future={{ preserveSharedStateOnUnmount: true }}
 							searchClient={searchClient}
 							indexName={import.meta.env.PUBLIC_ALGOLIA_INDEX}
 						>
