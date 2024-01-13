@@ -1,3 +1,5 @@
+import tailwindCssGridAreas from "@savvywombat/tailwindcss-grid-areas";
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -52,7 +54,28 @@ export default {
 			boxShadow: {
 				"3xl": "8px 8px 16px 0px rgba(0, 0, 0, 0.25)",
 			},
+			gridTemplateRows: {
+				"desktop-layout": "64px 1fr",
+				"mobile-layout": "64px 64px 1fr",
+			},
+			gridTemplateColumns: {
+				"desktop-layout": "228px 1fr",
+				"mobile-layout": "1fr",
+			},
+			// prettier-ignore
+			gridTemplateAreas: {
+				"desktop-layout": [
+					"logo topright",
+					"sidebar main"
+				],
+				"mobile-layout": [
+					"logo",
+					"search",
+					"main"
+				],
+			},
 		},
 	},
-	plugins: [],
+	/** @type {any} tailwindcss-grid-areas seems to have a different plugin API from tailwind typings */
+	plugins: [tailwindCssGridAreas],
 };

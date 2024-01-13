@@ -1,0 +1,60 @@
+---
+/** This component is used for both the desktop sidebar as well as the toggleable mobile menu. */
+
+import DiscordLogo from "~/components/icons/DiscordLogo.astro";
+import TwitterLogo from "~/components/icons/TwitterLogo.astro";
+import NavigationLink from "~/components/navigation/NavigationLink.astro";
+
+const sidebarLinks: { href: string; name: string }[] = [
+	{
+		href: "/",
+		name: "Home",
+	},
+	{
+		href: "/operators",
+		name: "Operators",
+	},
+	// {
+	//   href: "/dps",
+	//   name: "DPS Calculator",
+	// },
+	// {
+	//   href: "/maps",
+	//   name: "Maps",
+	// },
+];
+---
+
+<div class="flex flex-col h-full">
+	<nav class="flex-grow">
+		{
+			sidebarLinks.map(({ href, name }) => (
+				<NavigationLink
+					href={href}
+					name={name}
+					active={
+						href === "/"
+							? Astro.url.pathname === "/"
+							: Astro.url.pathname.startsWith(href)
+					}
+				/>
+			))
+		}
+	</nav>
+	<div class="px-6 mb-6 text-sm">
+		<div class="flex gap-4 justify-center">
+			<DiscordLogo />
+			<TwitterLogo />
+		</div>
+		<hr class="text-neutral-400 my-6" />
+		<p class="mb-6 text-neutral-200">
+			Sanity;Gone is a community resource for Arknights players, providing
+			guides, reviews, and detailed information about the game.
+		</p>
+		<nav class="flex justify-between items-center text-neutral-100">
+			<a class="hover:text-neutral-50" href="#">Disclaimer</a>
+			<a class="hover:text-neutral-50" href="#">About</a>
+			<a class="hover:text-neutral-50" href="#">Contact</a>
+		</nav>
+	</div>
+</div>
