@@ -5,9 +5,22 @@ import DiscordLogo from "~/components/icons/DiscordLogo.astro";
 import TwitterLogo from "~/components/icons/TwitterLogo.astro";
 import NavigationLink from "~/components/navigation/NavigationLink.astro";
 import { getPathByLocale, getRelativeLocaleUrl } from "astro:i18n";
-import { defaultLang } from "~/i18n/languages";
-import { useTranslations } from "~/i18n/utils";
+import { allLanguages, defaultLang } from "~/i18n/languages";
+import { stripLangFromUrl, useTranslations } from "~/i18n/utils";
 import type { ui } from "~/i18n/ui";
+import LanguageSwitcher from "./LanguageSwitcher.tsx";
+import { getLangFromUrl } from "~/i18n/utils";
+
+const languages = Object.entries(allLanguages).map(([key, language]) => {
+	return [
+		key,
+		{
+			url: getRelativeLocaleUrl(key, stripLangFromUrl(Astro.url)),
+			label: language,
+		},
+	];
+});
+console.log(stripLangFromUrl(Astro.url), Astro.url.pathname);
 
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 const t = useTranslations(locale as keyof typeof ui);
@@ -48,16 +61,21 @@ const sidebarLinks: { href: string; name: string }[] = [
 			))
 		}
 	</nav>
-	<div class="px-6 mb-6 text-sm">
+	<div class="px-6 mb-6 flex flex-col gap-6 text-sm">
 		<div class="flex gap-4 justify-center">
 			<DiscordLogo />
 			<TwitterLogo />
 		</div>
-		<hr class="text-neutral-400 my-6" />
-		<p class="mb-6 text-neutral-200">
+		<hr class="text-neutral-400" />
+		<p class="text-neutral-200">
 			Sanity;Gone is a community resource for Arknights players, providing
 			guides, reviews, and detailed information about the game.
 		</p>
+		<LanguageSwitcher
+			languages={Object.fromEntries(languages)}
+			currentLanguage={locale}
+			client:visible
+		/>
 		<nav class="flex justify-between items-center text-neutral-100">
 			<a class="hover:text-neutral-50" href="#">Disclaimer</a>
 			<a class="hover:text-neutral-50" href="#">About</a>
@@ -65,3 +83,4 @@ const sidebarLinks: { href: string; name: string }[] = [
 		</nav>
 	</div>
 </div>
+./LanguageSwitcher.tsx

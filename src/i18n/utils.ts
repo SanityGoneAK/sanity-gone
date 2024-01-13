@@ -14,4 +14,4 @@ export function useTranslations(lang: keyof typeof ui) {
 }
 
 export const stripLangFromUrl = (url: URL) =>
-	url.pathname.split("/").slice(1).join("/");
+	url.pathname.split("/").slice(2).join("/");

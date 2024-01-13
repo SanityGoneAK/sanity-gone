@@ -88,7 +88,7 @@ const OperatorSort = () => {
 					)}
 				</button>
 			</DropdownMenuTrigger>
-			<DropdownMenuContent className="w-[var(--radix-dropdown-menu-trigger-width)] shadow-md md:w-36">
+			<DropdownMenuContent className="w-[var(--radix-dropdown-menu-trigger-width)] bg-neutral-900 shadow-md md:w-36 md:bg-neutral-800">
 				<DropdownMenuRadioGroup
 					value={
 						isSortEmpty ? "" : `${sortCategory}_${sortDirection}`

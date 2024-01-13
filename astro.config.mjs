@@ -17,15 +17,15 @@ export default defineConfig({
 			},
 			{
 				path: "jp",
-				codes: ["ja-JP", "ja_JP", "jp"],
+				codes: ["ja-JP", "ja_JP", "jp", "ja"],
 			},
 			{
 				path: "kr",
-				codes: ["ko-KR", "ko_KR", "kr"],
+				codes: ["ko-KR", "ko_KR", "kr", "ko"],
 			},
 			{
 				path: "zh-cn",
-				codes: ["zh-CN", "zh_CN", "cn", "zh-Hans-CN"],
+				codes: ["zh-CN", "zh-cn", "zh_CN", "cn", "zh-Hans-CN"],
 			},
 		],
 		routing: {
