@@ -548,7 +548,10 @@ function addRiicSkills(characters, locale, { opToRiicSkillsMap }) {
 			charId,
 			{
 				...character,
-				riicSkills: opToRiicSkillsMap[charId],
+				riicSkills:
+					charId == "char_1001_amiya2"
+						? opToRiicSkillsMap["char_002_amiya"]
+						: opToRiicSkillsMap[charId],
 			},
 		];
 	});

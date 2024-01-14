@@ -37,7 +37,7 @@ export type Rarity = 1 | 2 | 3 | 4 | 5 | 6;
  */
 export interface Operator extends Character {
 	voices: Voice[];
-	// skins: Skin[];
+	skins: Skin[];
 	isLimited: boolean;
 	releaseOrder: number; // lower value means released earlier
 	summons: Character[];
@@ -46,7 +46,7 @@ export interface Operator extends Character {
 	alterId: string | null;
 	// /** The corresponding base operator's character ID if this operator is an alter, or `null` if this operator isn't an alter. */
 	baseOperatorId: string | null;
-	// riicSkills: RiicSkill[];
+	riicSkills: RiicSkill[];
 	hasGuide: boolean;
 }
 
@@ -345,11 +345,11 @@ interface EliteOneOrTwoOperatorSkin extends BaseOperatorSkin {
 /** Custom operator skin art. */
 export interface SpecialOperatorSkin extends BaseOperatorSkin {
 	type: "skin";
-	// /** @see `SkinSource` */
-	// obtainSources: string[];
-	// cost: number | null;
-	// /** @see `SkinCostTokenType` */
-	// tokenType: string | null;
+	/** @see `SkinSource` */
+	obtainSources: string[];
+	cost: number | null;
+	/** @see `SkinCostTokenType` */
+	tokenType: string | null;
 }
 
 export type Skin =

@@ -10,15 +10,14 @@ import { fetchJetroyzRiicTranslations } from "./fetch-jetroyz-translations";
 import type * as GameDataTypes from "../src/types/gamedata-types";
 
 export interface RiicSkill {
-	// stages: Array<{
-	// 	// buffId: string;
-	// 	// name: string;
-	// 	// description: string;
-	// 	// skillIcon: string;
-	// 	// minElite: string;
-	// 	// minLevel: number;
-	// }>;
-	[otherProperties: string]: unknown;
+	stages: Array<{
+		buffId: string;
+		name: string;
+		description: string;
+		skillIcon: string;
+		minElite: string;
+		minLevel: number;
+	}>;
 }
 
 const BUILDING_LOCALES = {
