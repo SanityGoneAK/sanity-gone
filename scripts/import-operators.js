@@ -251,24 +251,15 @@ function addTalents(characters, locale, { jetTalentTranslations }) {
 				(candidate, phaseIndex) => {
 					const baseCandidateObject = {
 						...candidate,
-						name: {},
-						description: {},
+						name: "",
+						description: "",
 						range: candidate.rangeId
 							? rangeTable[candidate.rangeId]
 							: null,
 					};
-
-					if (CHARACTER_LOCALES[locale][charId]) {
-						baseCandidateObject.name[locale] =
-							CHARACTER_LOCALES[locale][charId]["talents"][
-								talentIndex
-							]["candidates"][phaseIndex].name;
-						baseCandidateObject.description[locale] =
-							CHARACTER_LOCALES[locale][charId]["talents"][
-								talentIndex
-							]["candidates"][phaseIndex].description;
-						return;
-					}
+					const characterLocale =
+						CHARACTER_LOCALES[locale][charId] ??
+						CHARACTER_LOCALES.zh_CN[charId];
 
 					if (
 						!CHARACTER_LOCALES[locale][charId] &&
@@ -281,17 +272,24 @@ function addTalents(characters, locale, { jetTalentTranslations }) {
 								jetTalentTranslations[charId][talentIndex][
 									phaseIndex
 								];
-							baseCandidateObject.name[locale] = talentTL.name;
-							baseCandidateObject.description[locale] =
-								talentTL.desc;
-							return;
+							baseCandidateObject.name = talentTL.name;
+							baseCandidateObject.description = talentTL.desc;
 						} catch {
 							console.warn(
 								`No translation found for: character ${charId}, talent index ${talentIndex}, phase index ${phaseIndex} at local ${locale}`
 							);
-							return;
 						}
+						return baseCandidateObject;
 					}
+
+					baseCandidateObject.name =
+						characterLocale["talents"][talentIndex]["candidates"][
+							phaseIndex
+						].name;
+					baseCandidateObject.description =
+						characterLocale["talents"][talentIndex]["candidates"][
+							phaseIndex
+						].description;
 
 					console.warn(
 						`No translation found for: character ${charId}, talent index ${talentIndex}, phase index ${phaseIndex} at local ${locale}`
@@ -361,7 +359,6 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 						);
 					}
 				}
-				// const enSkin = enSkinTable["charSkins"][cnSkin.skinId];
 				let skinName = "";
 
 				if (
@@ -375,7 +372,10 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 								.skinName;
 				}
 
-				if (skinType === "elite-one-or-two") {
+				if (
+					skinType === "elite-one-or-two" ||
+					skinType == "elite-zero"
+				) {
 					skinName = `Elite ${elite ?? 0}`;
 				}
 
@@ -420,11 +420,10 @@ function addSkills(characters, locale, { jetSkillTranslations }) {
 								? rangeTable[skillAtLevel.rangeId]
 								: null,
 						};
-
-						// SPECIAL CASES
-						// - heavyrain s1 (skchr_zebra_1) interpolates "duration" but this value is missing from the blackboard;
-						//   we have to append it to the blackboard manually
 						if (skillId === "skchr_zebra_1") {
+							// SPECIAL CASES
+							// - heavyrain s1 (skchr_zebra_1) interpolates "duration" but this value is missing from the blackboard;
+							//   we have to append it to the blackboard manually
 							baseSkillLevelObject.blackboard.push({
 								key: "duration",
 								value: baseSkillLevelObject.duration,
@@ -432,32 +431,27 @@ function addSkills(characters, locale, { jetSkillTranslations }) {
 						}
 
 						if (character.profession !== "TOKEN") {
-							baseSkillLevelObject.name = {};
-							baseSkillLevelObject.description = {};
+							baseSkillLevelObject.name = "";
+							baseSkillLevelObject.description = "";
 							const skillTL = jetSkillTranslations[skillId];
 
-							if (SKILL_LOCALES[locale][skillId]) {
-								baseSkillLevelObject.name[locale] =
-									SKILL_LOCALES[locale][skillId].levels[
-										levelIndex
-									].name;
-								baseSkillLevelObject.description[locale] =
-									SKILL_LOCALES[locale][skillId].levels[
-										levelIndex
-									].description;
-								return;
-							}
+							const skillLocale =
+								SKILL_LOCALES[locale][skillId] ??
+								SKILL_LOCALES["zh_CN"][skillId];
+
+							baseSkillLevelObject.name =
+								skillLocale.levels[levelIndex].name;
+							baseSkillLevelObject.description =
+								skillLocale.levels[levelIndex].description;
 
 							if (
 								skillTL &&
 								!SKILL_LOCALES[locale][skillId] &&
 								locale == "en_US"
 							) {
-								baseSkillLevelObject.name[locale] =
-									skillTL.name;
-								baseSkillLevelObject.description[locale] =
+								baseSkillLevelObject.name = skillTL.name;
+								baseSkillLevelObject.description =
 									skillTL.desc[levelIndex];
-								return;
 							}
 
 							console.warn(
@@ -557,7 +551,10 @@ function addRiicSkills(characters, locale, { opToRiicSkillsMap }) {
 			charId,
 			{
 				...character,
-				riicSkills: opToRiicSkillsMap[charId],
+				riicSkills:
+					charId == "char_1001_amiya2"
+						? opToRiicSkillsMap["char_002_amiya"]
+						: opToRiicSkillsMap[charId],
 			},
 		];
 	});

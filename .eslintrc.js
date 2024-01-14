@@ -29,7 +29,7 @@ module.exports = {
 				"plugin:@typescript-eslint/recommended",
 			],
 			parserOptions: {
-				project: "./tsconfig.json",
+				project: true,
 			},
 			rules: {
 				"react/jsx-uses-react": "off",
