@@ -13,5 +13,5 @@
 			"data/*": ["data/*"]
 		}
 	},
-	"include": ["src/**/*", "scripts/**/*", ".storybook/**/*"]
+	"include": ["src/**/*", ".storybook/**/*"]
 }
