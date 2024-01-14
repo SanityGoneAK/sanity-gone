@@ -318,7 +318,7 @@ interface Voice {
 	cvName: string[];
 }
 
-interface BaseOperatorSkin {
+interface Skin {
 	name: string;
 	skinId: string;
 	illustId: string;
@@ -328,34 +328,15 @@ interface BaseOperatorSkin {
 		modelName: string | null;
 		drawerList: string[] | null;
 	};
+	/** Skin type. One of "elite-zero" | "elite-one-or-two" | "skin" (where "skin" is a special skin). */
+	type: string;
+	/** Only present when type is "skin". @see {SkinSource} for possible values */
+	obtainSources?: string[];
+	/** Only present when type is "skin". Cost to purchase skin (with `tokenType`s, e.g. primes or CC currency) */
+	cost?: number | null;
+	/** Only present when type is "skin". @see {SkinCostTokenType} for possible values */
+	tokenType?: string | null;
 }
-
-/**
- * Default Elite 0 operator art.
- */
-interface EliteZeroOperatorSkin extends BaseOperatorSkin {
-	type: "elite-zero";
-}
-
-/** Elite 1 (for Amiya) or Elite 2 operator art. */
-interface EliteOneOrTwoOperatorSkin extends BaseOperatorSkin {
-	type: "elite-one-or-two";
-}
-
-/** Custom operator skin art. */
-export interface SpecialOperatorSkin extends BaseOperatorSkin {
-	type: "skin";
-	/** @see `SkinSource` */
-	obtainSources: string[];
-	cost: number | null;
-	/** @see `SkinCostTokenType` */
-	tokenType: string | null;
-}
-
-export type Skin =
-	| EliteZeroOperatorSkin
-	| EliteOneOrTwoOperatorSkin
-	| SpecialOperatorSkin;
 
 export type SearchResult =
 	| OperatorSearchResult
