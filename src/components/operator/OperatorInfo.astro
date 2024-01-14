@@ -14,44 +14,63 @@ interface Props {
 }
 
 const { operator } = Astro.props;
-const [baseName, alterName] = operator.name.en_US.split(/ the /i);
+const [baseName, alterName] = operator.name.split(/ the /i);
 const operatorClass = professionToClass(operator.profession);
 const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 ---
 
-<div class="grid pt-6 pb-4 px-6 grid-rows-[auto_auto] gap-y-2 bg-neutral-600/[.66]">
+<div
+	class="grid pt-6 pb-4 px-6 grid-rows-[auto_auto] gap-y-2 bg-neutral-600/[.66]"
+>
 	<h1 class="font-serif text-[40px] leading-none font-bold">
 		{baseName}
-		{alterName && <span class="text-neutral-200 font-normal">The {alterName}</span>}
+		{
+			alterName && (
+				<span class="text-neutral-200 font-normal">
+					The {alterName}
+				</span>
+			)
+		}
 	</h1>
-	<div class="grid grid-flow-col auto-cols-max gap-x-3 items-center justify-start">
+	<div
+		class="grid grid-flow-col auto-cols-max gap-x-3 items-center justify-start"
+	>
 		<div class="grid grid-flow-col items-center gap-x-2">
 			<span class="visually-hidden">Rarity: {rarity}</span>
 			<span class="grid grid-flow-col">
-        {
-			Array(rarity)
-				.fill(null)
-				.map(() => <StarIcon rarity={rarity} />)
-		}
-      </span>
+				{
+					Array(rarity)
+						.fill(null)
+						.map(() => <StarIcon rarity={rarity} />)
+				}
+			</span>
 			{
 				operator.isLimited && (
-					<span class={cx(`relative inline-block mr-1.5 text-base leading-normal
-					font-black italic bg-gradient-to-b bg-clip-text text-transparent uppercase`, {
-						6: "from-orange to-orange-light",
-						5: "from-yellow to-yellow-light",
-						4: "from-purple to-purple-light",
-						3: "from-blue to-blue-light",
-						2: "from-green to-green-light",
-						1: "bg-neutral-50"
-					}[rarity])}>Limited</span>
+					<span
+						class={cx(
+							`relative inline-block mr-1.5 text-base leading-normal
+					font-black italic bg-gradient-to-b bg-clip-text text-transparent uppercase`,
+							{
+								6: "from-orange to-orange-light",
+								5: "from-yellow to-yellow-light",
+								4: "from-purple to-purple-light",
+								3: "from-blue to-blue-light",
+								2: "from-green to-green-light",
+								1: "bg-neutral-50",
+							}[rarity]
+						)}
+					>
+						Limited
+					</span>
 				)
 			}
 		</div>
 		<div class="grid grid-flow-col items-center gap-x-2">
 			<img
 				class="h-4 w-full"
-				src={operatorClassIcon(classToProfession(operatorClass).toLowerCase())}
+				src={operatorClassIcon(
+					classToProfession(operatorClass).toLowerCase()
+				)}
 				alt=""
 			/>
 			<span>{operatorClass}</span>
@@ -59,7 +78,9 @@ const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 		<OperatorBranchAndTrait client:idle />
 		<InterpunctSpacer />
 		<span class="text-neutral-200"
-		>{getMeleeOrRangedOrBoth(operator.position, operator.description.en_US)}</span
+			>{
+				getMeleeOrRangedOrBoth(operator.position, operator.description)
+			}</span
 		>
 	</div>
 </div>

@@ -1,7 +1,7 @@
 import { atom, computed, action } from "nanostores";
 
-import branches from "../../../../data/branches.json";
-import operatorsJson from "../../../../data/operators.json";
+import branches from "data/en_US/branches.json";
+import operatorsJson from "data/en_US/operators.json";
 import { classToProfession, professionLookup } from "../../../utils/classes.ts";
 
 import type * as OutputTypes from "../../../types/output-types.ts";
@@ -45,7 +45,7 @@ export const $filterGuideAvailable = atom<boolean>(false);
 
 export const $availableBranches = computed($filterProfession, (professions) => {
 	return Object.entries(branches).filter(([key, branch]) => {
-		return professions.some((item) => item === branch.class.en_US);
+		return professions.some((item) => item === branch.class);
 	});
 });
 
@@ -98,8 +98,8 @@ export const $operators = computed(
 
 		if (sortCategory && sortDirection) {
 			if (sortCategory === "Alphabetical") {
-				baseOperators.sort(
-					(a, b) => a.name?.en_US.localeCompare(b.name?.en_US, "en")
+				baseOperators.sort((a, b) =>
+					a.name.localeCompare(b.name, "en")
 				);
 			}
 
@@ -132,7 +132,7 @@ export const toggleProfession = action(
 
 		const professionBranches = $availableBranches
 			.get()
-			.filter(([key, branch]) => branch.class.en_US === profession);
+			.filter(([key, branch]) => branch.class === profession);
 
 		$filterBranch.set(
 			$filterBranch

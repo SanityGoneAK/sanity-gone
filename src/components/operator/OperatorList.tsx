@@ -1,7 +1,6 @@
 import { useStore } from "@nanostores/react";
 
 import SvgRarityGradientDefs from "./SvgRarityGradientDefs";
-import operatorsJson from "../../../data/operators.json";
 import { $operators, $viewConfig } from "../../pages/[locale]/operators/_store";
 import {
 	operatorAvatar,
@@ -17,10 +16,11 @@ import StarIcon from "../icons/StarIcon";
 import { professionToClass } from "~/utils/classes";
 import { subProfessionIdToBranch } from "~/utils/branches";
 
-const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
-	operator,
-}) => {
-	const [charName, alterName] = operator.name?.en_US?.split(/\sthe\s/i);
+const OperatorLargeItem: React.FC<{
+	operator: OutputTypes.Operator;
+	locale: string;
+}> = ({ operator, locale }) => {
+	const [charName, alterName] = operator.name.split(/\sthe\s/i);
 	const rarityText = {
 		1: "text-neutral-50",
 		2: "text-green-light",
@@ -53,17 +53,13 @@ const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 					<a
 						className="block h-11 flex-grow"
 						tabIndex={-1}
-						href={`/operators/${slugify(
-							operator.name.en_US ?? ""
-						)}`}
+						href={`/${locale}/operators/${slugify(operator.name)}`}
 					></a>
 				</div>
 
 				<div className="flex h-full flex-col justify-end bg-gradient-to-b from-[transparent] from-40% via-neutral-950/[0.67] via-[67%] to-[#1c1c1c] to-100%">
 					<a
-						href={`/operators/${slugify(
-							operator.name.en_US ?? ""
-						)}`}
+						href={`/${locale}/operators/${slugify(operator.name)}`}
 						tabIndex={-1}
 						className="flex flex-grow flex-col justify-end p-3"
 					>
@@ -115,9 +111,7 @@ const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 					</a>
 
 					<a
-						href={`/operators/${slugify(
-							operator.name.en_US ?? ""
-						)}`}
+						href={`/${locale}/operators/${slugify(operator.name)}`}
 						className={cx(
 							"h-1 bg-gradient-to-r text-center brightness-100 filter transition-all duration-75 ease-in-out will-change-[height] focus:h-8 group-hover:h-8",
 							{
@@ -138,9 +132,7 @@ const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 						<span className="mt-1 inline-block font-semibold uppercase text-neutral-950">
 							View Operator
 						</span>
-						<span className="visually-hidden">
-							{operator.name.en_US}
-						</span>
+						<span className="visually-hidden">{operator.name}</span>
 					</a>
 				</div>
 			</div>
@@ -148,10 +140,11 @@ const OperatorLargeItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 	);
 };
 
-const OperatorCompactItem: React.FC<{ operator: OutputTypes.Operator }> = ({
-	operator,
-}) => {
-	const [charName, alterName] = operator.name?.en_US?.split(/\sthe\s/i);
+const OperatorCompactItem: React.FC<{
+	operator: OutputTypes.Operator;
+	locale: string;
+}> = ({ operator, locale }) => {
+	const [charName, alterName] = operator.name.split(/\sthe\s/i);
 	const rarityText = {
 		1: "text-neutral-50",
 		2: "text-green-light",
@@ -183,16 +176,12 @@ const OperatorCompactItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 					<a
 						tabIndex={-1}
 						className="block h-11 flex-grow"
-						href={`/operators/${slugify(
-							operator.name.en_US ?? ""
-						)}`}
+						href={`/${locale}/operators/${slugify(operator.name)}`}
 					></a>
 				</div>
 				<div className="from-zinc-950 to-100 flex h-full flex-col justify-end bg-gradient-to-b from-transparent from-30% via-transparent via-[67%] to-transparent transition duration-100 ease-in-out focus-within:via-neutral-950/[0.67] focus-within:to-[#1c1c1c] group-hover:from-transparent group-hover:via-neutral-950/[0.67] group-hover:to-[#1c1c1c]">
 					<a
-						href={`/operators/${slugify(
-							operator.name.en_US ?? ""
-						)}`}
+						href={`/${locale}/operators/${slugify(operator.name)}`}
 						className="group/link flex flex-grow flex-col justify-end p-3"
 					>
 						<h3 className="flex flex-col text-lg font-semibold leading-6 text-neutral-50 opacity-0 transition-opacity group-hover:opacity-100 group-focus/link:opacity-100">
@@ -238,7 +227,7 @@ const OperatorCompactItem: React.FC<{ operator: OutputTypes.Operator }> = ({
 	);
 };
 
-const OperatorList = () => {
+const OperatorList: React.FC<{ locale: string }> = ({ locale }) => {
 	const operators = useStore($operators);
 	const viewConfig = useStore($viewConfig);
 	const isMobile = useMediaQuery("(max-width: 768px)");
@@ -254,9 +243,17 @@ const OperatorList = () => {
 		>
 			{operators.map((op) =>
 				isMobile || viewConfig === "compact" ? (
-					<OperatorCompactItem key={op.charId} operator={op} />
+					<OperatorCompactItem
+						key={op.charId}
+						locale={locale}
+						operator={op}
+					/>
 				) : (
-					<OperatorLargeItem key={op.charId} operator={op} />
+					<OperatorLargeItem
+						key={op.charId}
+						locale={locale}
+						operator={op}
+					/>
 				)
 			)}
 			<SvgRarityGradientDefs />

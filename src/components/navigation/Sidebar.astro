@@ -9,7 +9,6 @@ import { allLanguages, defaultLang } from "~/i18n/languages";
 import { stripLangFromUrl, useTranslations } from "~/i18n/utils";
 import type { ui } from "~/i18n/ui";
 import LanguageSwitcher from "./LanguageSwitcher.tsx";
-import { getLangFromUrl } from "~/i18n/utils";
 
 const languages = Object.entries(allLanguages).map(([key, language]) => {
 	return [
@@ -20,7 +19,6 @@ const languages = Object.entries(allLanguages).map(([key, language]) => {
 		},
 	];
 });
-console.log(stripLangFromUrl(Astro.url), Astro.url.pathname);
 
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 const t = useTranslations(locale as keyof typeof ui);
@@ -53,8 +51,9 @@ const sidebarLinks: { href: string; name: string }[] = [
 					href={href}
 					name={name}
 					active={
-						href === "/"
-							? Astro.url.pathname === "/"
+						href.replace(`${locale}/`, "") === `/`
+							? Astro.url.pathname.replace(`${locale}/`, "") ===
+								`/`
 							: Astro.url.pathname.startsWith(href)
 					}
 				/>
