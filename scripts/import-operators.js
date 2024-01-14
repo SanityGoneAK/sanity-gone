@@ -347,7 +347,7 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 				) {
 					skinType = "elite-one-or-two";
 					elite = cnSkin.avatarId.endsWith("_1+") ? 1 : 2;
-				} else {
+				} else if (cnSkin.displaySkin.skinName != null) {
 					// if this is a special skin (i.e. not just an operator's default e0/e1/e2 art),
 					// look up the skin's obtain sources + cost
 					skinType = "skin";
@@ -372,7 +372,10 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 								.skinName;
 				}
 
-				if (skinType === "elite-one-or-two") {
+				if (
+					skinType === "elite-one-or-two" ||
+					skinType == "elite-zero"
+				) {
 					skinName = `Elite ${elite ?? 0}`;
 				}
 
