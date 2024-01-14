@@ -22,7 +22,7 @@ const OperatorViewSwitch = () => {
 				onValueChange={(value: ViewConfigValue) =>
 					$viewConfig.set(value)
 				}
-				className="flex h-8 w-20 justify-around overflow-hidden rounded-lg bg-neutral-800/[0.66]"
+				className="flex h-8 w-20 justify-around overflow-hidden rounded-lg bg-neutral-600"
 				type="single"
 			>
 				<ToggleGroup.Item

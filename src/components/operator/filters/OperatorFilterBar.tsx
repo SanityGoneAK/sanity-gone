@@ -56,7 +56,7 @@ const OperatorFilterBar = () => {
 							<Popover.Root>
 								<Popover.Trigger asChild>
 									<button
-										className="group flex h-8 w-8 items-center justify-center rounded-lg bg-neutral-800/[0.66] data-[state=open]:bg-gradient-to-b data-[state=open]:from-purple-light data-[state=open]:to-purple"
+										className="group flex h-8 w-8 items-center justify-center rounded-lg bg-neutral-600 data-[state=open]:bg-gradient-to-b data-[state=open]:from-purple-light data-[state=open]:to-purple"
 										aria-label="Open Filters"
 									>
 										<svg
