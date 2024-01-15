@@ -14,20 +14,17 @@ const EliteButtonGroup: React.FC<Props> = ({
 	onChange,
 }) => {
 	return (
-		<div className="flex items-center gap-x-6">
-			<span className="text-neutral-200">Promotion</span>
-			<div role="group" className="flex items-center gap-x-3">
-				{Array(maxElite + 1)
-					.fill(0)
-					.map((_, i) => (
-						<EliteButton
-							key={i}
-							elite={i}
-							active={i === currentElite}
-							onClick={onChange}
-						/>
-					))}
-			</div>
+		<div role="group" className="flex items-center gap-x-3">
+			{Array(maxElite + 1)
+				.fill(0)
+				.map((_, i) => (
+					<EliteButton
+						key={i}
+						elite={i}
+						active={i === currentElite}
+						onClick={onChange}
+					/>
+				))}
 		</div>
 	);
 };
