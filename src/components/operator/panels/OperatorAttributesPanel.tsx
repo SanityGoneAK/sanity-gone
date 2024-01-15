@@ -111,7 +111,7 @@ const OperatorAttributesPanel: React.FC = () => {
 					)}
 				</div>
 			</div>
-			<div className="grid gap-y-4 bg-neutral-800 p-6">
+			<div className="grid gap-y-4 rounded-br-lg bg-neutral-800 p-6">
 				<CharacterStats
 					character={operator}
 					elite={elite}

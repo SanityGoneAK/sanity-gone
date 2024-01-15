@@ -5,12 +5,12 @@ import { useStore } from "@nanostores/react";
 
 import { operatorStore } from "~/pages/[locale]/operators/_store";
 import { operatorSplash, operatorSplashAvatar } from "~/utils/images.ts";
+import { cx } from "~/utils/styles.ts";
 
 import { EliteOneIcon, EliteTwoIcon, EliteZeroIcon } from "../icons";
 import OriginiumIcon from "../icons/OriginiumIcon";
 
 import type * as OutputTypes from "~/types/output-types.ts";
-import { cx } from "~/utils/styles.ts";
 
 const CharacterSplash: React.FC = () => {
 	const { skins, voices } = useStore(operatorStore);
@@ -27,11 +27,11 @@ const CharacterSplash: React.FC = () => {
 	return (
 		<Tab.Group
 			as="div"
-			className="bg-neutral-800"
+			className="rounded-l-lg bg-neutral-800"
 			selectedIndex={selectedIndex}
 			onChange={setSelectedIndex}
 		>
-			<Tab.List className="flex overflow-hidden rounded-tl-[6px] bg-neutral-700">
+			<Tab.List className="flex overflow-hidden rounded-tl-lg bg-neutral-700">
 				{skins.map((skin, i) => {
 					return (
 						<Tab
