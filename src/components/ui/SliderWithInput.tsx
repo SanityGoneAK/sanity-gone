@@ -64,7 +64,7 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 	const label = type === "level" ? "Operator Level" : "Skill Rank";
 
 	return (
-		<div className="grid grid-cols-[1fr_auto] items-center gap-x-4">
+		<div className="flex items-center gap-x-4">
 			<Slider
 				aria-label={`${label} slider`}
 				slotProps={{
@@ -85,13 +85,11 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 							"block absolute w-[calc(100%+1.5rem)] h-1 bg-neutral-500",
 					},
 					thumb: (state: SliderThumbSlotState) => ({
-						className: `box-content absolute grid my-0 mx-[-12px] h-4 rounded-xl outline-offset-[-12px]
-						after:rounded-sm after:bg-neutral-200 hover:outline hover:outline-[12px]
-						hover:outline-neutral-50/[0.05] ${
-							state.active
-								? "outline outline-[12px] outline-neutral-50/[0.1]"
-								: ""
-						}`,
+						className: cx(
+							"h-2 w-6 p-3 box-content absolute grid my-0 mx-[-12px] rounded-xl outline-offset-[-12px] after:rounded-sm after:bg-neutral-200 hover:outline hover:outline-[12px] hover:outline-neutral-50/[0.05]",
+							state.active &&
+								"outline outline-[12px] outline-neutral-50/[0.1]"
+						),
 					}),
 					// TODO needs proper focusVisible style using a focus-visible polyfill
 					// focusVisible: classes.thumbFocusVisible,
@@ -101,11 +99,11 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 				max={max}
 				value={value}
 			/>
-			<div className="grid grid-cols-[repeat(4,auto)] items-center gap-x-4">
+			<div className="flex items-center gap-x-4">
 				<span className="text-neutral-200">{shortLabel ?? label}</span>
 				<input
 					aria-label={label}
-					className="box-border inline-flex w-14 bg-neutral-900 px-4 py-2 text-base font-normal text-neutral-50"
+					className="box-border inline-flex w-14 rounded-2xl bg-neutral-900 px-4 py-2 text-center text-base font-normal text-neutral-50"
 					onFocus={(e) => e.target.select()}
 					onBlur={handleBlur}
 					onChange={handleInputChange}
