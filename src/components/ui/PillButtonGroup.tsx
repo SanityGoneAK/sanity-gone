@@ -98,11 +98,11 @@ const PillButtonGroup = ({ labels, value, onChange, disabled }: Props) => {
 						onClick={() => onChange(label)}
 						aria-pressed={value === label}
 						// what in god's name is going on here
-						className={`first-of-type:rounded-l-8 last-of-type:rounded-r-8
-						relative z-[2] cursor-pointer rounded-lg border-none bg-none
-						px-2.5 py-[4.5px] text-base font-semibold leading-[27px]
-						text-neutral-400 transition-[background-color] transition-[color]
-						duration-200 disabled:cursor-not-allowed
+						className={`relative z-20
+						cursor-pointer rounded-lg border-none bg-none px-2.5 py-[4.5px]
+						text-base font-semibold leading-[27px] text-neutral-400 transition-[background-color,color]
+						duration-200 first-of-type:rounded-l-[32px]
+						last-of-type:rounded-r-[32px] disabled:cursor-not-allowed
 						aria-pressed:text-neutral-950
 						disabled:aria-pressed:bg-neutral-200
 						[&:not([aria-pressed="true"],:disabled)]:hover:bg-purple/10
@@ -119,23 +119,23 @@ const PillButtonGroup = ({ labels, value, onChange, disabled }: Props) => {
 			</div>
 			<div
 				ref={thumbContainerRef}
-				className=""
+				className="absolute bottom-0 left-0 right-0 top-0 z-10 inline-block overflow-hidden rounded-[32px]"
 				aria-hidden="true"
 				style={{ display: "none" }}
 			>
 				<span
-					className="absolute left-0 box-border inline-block h-full w-6 origin-[center-left] rounded-l-lg
-				bg-gradient-to-b from-purple to-purple-light px-0 py-[4.5px] text-base font-semibold leading-[27px]"
+					className="absolute left-0 box-border inline-block h-full w-6 origin-[center_left] rounded-l-lg
+				bg-gradient-to-b from-purple-light to-purple px-0 py-[4.5px] text-base font-semibold leading-[27px]"
 					ref={thumbLeftRef}
 				/>
 				<span
-					className="absolute left-0 box-border inline-block h-full w-[1px] origin-[center-left]
-				bg-gradient-to-b from-purple to-purple-light px-0 py-[4.5px] text-base font-semibold leading-[27px]"
+					className="absolute left-0 box-border inline-block h-full w-[1px] origin-[center_left]
+				bg-gradient-to-b from-purple-light to-purple px-0 py-[4.5px] text-base font-semibold leading-[27px]"
 					ref={thumbRef}
 				/>
 				<span
-					className="absolute left-0 box-border inline-block h-full w-6 origin-[center-left] rounded-r-lg
-				bg-gradient-to-b from-purple to-purple-light px-0 py-[4.5px] text-base font-semibold leading-[27px]"
+					className="absolute left-0 box-border inline-block h-full w-6 origin-[center_left] rounded-r-lg
+				bg-gradient-to-b from-purple-light to-purple px-0 py-[4.5px] text-base font-semibold leading-[27px]"
 					ref={thumbRightRef}
 				/>
 			</div>
