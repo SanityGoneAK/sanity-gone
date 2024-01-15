@@ -91,18 +91,17 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 							"block absolute w-[calc(100%+1.5rem)] h-1 bg-neutral-500",
 					},
 					thumb: {
-						className: cx(
-							"h-2 w-6 p-3 box-content absolute grid my-0 mx-[-12px] rounded-xl outline-offset-[-12px]",
-							"after:rounded-sm after:bg-neutral-200",
-							"hover:outline hover:outline-[12px] hover:outline-neutral-50/[0.05]",
-							"[&.Mui-active]:outline [&.Mui-active]:outline-[12px] [&.Mui-active]:outline-neutral-50/[0.1]",
-							// the default Mui-focusVisible style triggers even when using the mouse,
-							// which clashes with the .active style; so we have to constrain it to when it receives focus
-							// via keyboard
-							"[html[data-focus-source=key]_&.Mui-focusVisible]:outline",
-							"[html[data-focus-source=key]_&.Mui-focusVisible]:outline-3",
-							"[html[data-focus-source=key]_&.Mui-focusVisible]:outline-blue"
-						),
+						className: `h-2 w-6 p-3 box-content absolute grid my-0 mx-[-12px] rounded-xl outline-offset-[-12px]
+							after:rounded-sm after:bg-neutral-200
+							hover:outline hover:outline-[12px] hover:outline-neutral-50/[0.05]
+							[&.Mui-active]:outline [&.Mui-active]:outline-[12px] [&.Mui-active]:outline-neutral-50/[0.1]
+							[html[data-focus-source=key]_&.Mui-focusVisible]:outline
+							[html[data-focus-source=key]_&.Mui-focusVisible]:outline-3
+							[html[data-focus-source=key]_&.Mui-focusVisible]:outline-blue
+							`,
+						// the default Mui-focusVisible style triggers even when using the mouse,
+						// which clashes with the .active style; so we have to constrain it to when it receives focus
+						// via keyboard
 					},
 				}}
 				onChange={(_, value) => onChange(value as number)}
