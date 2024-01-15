@@ -1,16 +1,21 @@
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 import { useCallback, useEffect, useRef, useState } from "react";
 
-interface Props {
-	labels: string[];
-	value: string;
-	onChange: (newValue: string) => void;
+interface Props<T> {
+	labels: Array<T>;
+	value: T;
+	onChange: (newValue: T) => void;
 	disabled?: boolean;
 }
 
 const eventsToStartAnimatingOn = ["click", "touchstart", "hover"];
 
-const PillButtonGroup = ({ labels, value, onChange, disabled }: Props) => {
+const PillButtonGroup = <T extends string | number = string>({
+	labels,
+	value,
+	onChange,
+	disabled,
+}: Props<T>) => {
 	const [isAnimating, setIsAnimating] = useState(false);
 	const buttonWidths = useRef(Array(labels.length));
 
