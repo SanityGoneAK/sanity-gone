@@ -7,7 +7,7 @@ import { useState } from "react";
 import { cx } from "~/utils/styles.ts";
 // import OperatorRiicPanel from "./panels/OperatorRiicPanel";
 // import OperatorSkillsPanel from "./panels/OperatorSkillsPanel";
-// import OperatorTalentsPanel from "./panels/OperatorTalentsPanel";
+import OperatorTalentsPanel from "./panels/OperatorTalentsPanel";
 
 const OperatorTabs: React.FC = () => {
 	const operator = useStore(operatorStore);
@@ -56,7 +56,7 @@ const OperatorTabs: React.FC = () => {
 					<OperatorAttributesPanel />
 				</Tab.Panel>
 				<Tab.Panel id="operator-talents-panel">
-					{/*<OperatorTalentsPanel />*/}
+					<OperatorTalentsPanel />
 				</Tab.Panel>
 				{operator.skillData.length > 0 && (
 					<Tab.Panel id="operator-skills-panel">

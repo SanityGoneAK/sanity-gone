@@ -16,7 +16,7 @@ const EliteButtonGroup: React.FC<Props> = ({
 	return (
 		<div className="flex items-center gap-x-6">
 			<span className="text-neutral-200">Promotion</span>
-			<div role="group" className="flex items-center gap-x-4">
+			<div role="group" className="flex items-center gap-x-3">
 				{Array(maxElite + 1)
 					.fill(0)
 					.map((_, i) => (
@@ -56,7 +56,7 @@ const EliteButton: React.FC<{
 
 	return (
 		<button
-			className="background-none group cursor-pointer border-none p-2 leading-[0]"
+			className="background-none group flex h-8 w-8 cursor-pointer items-center justify-center border-none py-2 leading-[0]"
 			onClick={() => onClick(elite)}
 			aria-pressed={active}
 			aria-label={`Elite ${elite}`}
