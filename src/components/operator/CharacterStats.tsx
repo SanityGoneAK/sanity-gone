@@ -30,8 +30,8 @@ const CharacterStats: React.FC<Props> = ({
 	level,
 	useTrustBonus,
 	usePotentialBonus,
-	moduleId, // TODO modules aren't taken into account yet
-	moduleLevel, // TODO
+	moduleId,
+	moduleLevel,
 	character,
 }) => {
 	const {
@@ -51,8 +51,18 @@ const CharacterStats: React.FC<Props> = ({
 				level,
 				pots: usePotentialBonus,
 				trust: useTrustBonus,
+				moduleId,
+				moduleLevel,
 			}),
-		[elite, level, usePotentialBonus, useTrustBonus, character]
+		[
+			elite,
+			level,
+			usePotentialBonus,
+			useTrustBonus,
+			character,
+			moduleId,
+			moduleLevel,
+		]
 	);
 
 	return (

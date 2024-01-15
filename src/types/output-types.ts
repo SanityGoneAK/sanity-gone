@@ -318,7 +318,7 @@ interface Voice {
 	cvName: string[];
 }
 
-interface Skin {
+export interface Skin {
 	name: string;
 	skinId: string;
 	illustId: string;

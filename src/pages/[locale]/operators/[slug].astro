@@ -4,7 +4,6 @@ import operatorsJson from "data/en_US/operators.json";
 import Layout from "~/layouts/Layout.astro";
 import { operatorIdStore } from "./_store";
 import CharacterSplash from "~/components/operator/CharacterSplash";
-import MaterialRequirements from "~/components/operator/MaterialRequirements";
 import SvgRarityGradientDefs from "~/components/operator/SvgRarityGradientDefs";
 import OperatorTabs from "~/components/operator/OperatorTabs";
 
@@ -41,7 +40,7 @@ const idLookup = Object.fromEntries(
 );
 
 const operatorId = idLookup[slug];
-console.log(operatorId);
+// console.log(operatorId);
 
 const operator = operatorsJson[
 	operatorId as keyof typeof operatorsJson
@@ -55,7 +54,7 @@ const relatedOperator = getRelatedCharacter(operator);
 	window.operatorId = operatorId;
 </script>
 
-<Layout title={operator.name.en_US}>
+<Layout title={operator.name}>
 	<div class="w-full max-w-[1280px] mx-auto flex flex-col">
 		<div class="flex justify-between mb-6">
 			<ul class="p-0 m-0 flex items-center list-none gap-3 flex-grow">
@@ -74,7 +73,7 @@ const relatedOperator = getRelatedCharacter(operator);
 						<li class="flex-none">
 							<a
 								class="flex items-center text-yellow relative mr-3"
-								href={`/operators/${slugify(
+								href={`/en/operators/${slugify(
 									relatedOperator.name
 								)}`}
 							>

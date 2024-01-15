@@ -9,7 +9,7 @@ import { operatorSplash, operatorSplashAvatar } from "~/utils/images.ts";
 import { EliteOneIcon, EliteTwoIcon, EliteZeroIcon } from "../icons";
 import OriginiumIcon from "../icons/OriginiumIcon";
 
-import type { SpecialOperatorSkin } from "~/types/output-types.ts";
+import type * as OutputTypes from "~/types/output-types.ts";
 import { cx } from "~/utils/styles.ts";
 
 const CharacterSplash: React.FC = () => {
@@ -17,7 +17,7 @@ const CharacterSplash: React.FC = () => {
 
 	let startIndex = 0;
 	skins.forEach((skin, i) => {
-		if (skin.name.en_US === "Elite 2") {
+		if (skin.name === "Elite 2") {
 			startIndex = i;
 		}
 	});
@@ -50,7 +50,7 @@ const CharacterSplash: React.FC = () => {
 									skin.avatarId,
 									skin.type
 								)}
-								alt={skin.name.en_US}
+								alt={skin.name}
 							/>
 						</Tab>
 					);
@@ -73,7 +73,7 @@ const CharacterSplash: React.FC = () => {
 							<img
 								className="w-full"
 								src={operatorSplash(skin.portraitId, skin.type)}
-								alt={skin.name.en_US}
+								alt={skin.name}
 							/>
 							<div className="absolute bottom-6 left-6 inline-flex flex-col gap-2">
 								{skin.type === "elite-zero" && (
@@ -83,14 +83,14 @@ const CharacterSplash: React.FC = () => {
 									/>
 								)}
 								{skin.type === "elite-one-or-two" &&
-									skin.name.en_US === "Elite 1" && (
+									skin.name === "Elite 1" && (
 										<EliteOneIcon
 											className="h-12 w-[54px]"
 											white={true}
 										/>
 									)}
 								{skin.type === "elite-one-or-two" &&
-									skin.name.en_US === "Elite 2" && (
+									skin.name === "Elite 2" && (
 										<EliteTwoIcon
 											className="h-12 w-[54px]"
 											white={true}
@@ -117,10 +117,8 @@ const CharacterSplash: React.FC = () => {
 								{/*</div>*/}
 							</div>
 
-							{/* @ts-expect-error we are checking if this is an instance of a skin that can be bought */}
 							{skins[selectedIndex].cost &&
-								/* @ts-expect-error we are still checking if this skin can be bought*/
-								skins[selectedIndex].obtainSources.includes(
+								skins[selectedIndex].obtainSources?.includes(
 									"Outfit Store"
 								) && (
 									<div className="absolute bottom-6 right-6">
@@ -134,7 +132,7 @@ const CharacterSplash: React.FC = () => {
 														(
 															skins[
 																selectedIndex
-															] as SpecialOperatorSkin
+															] as OutputTypes.Skin
 														).cost
 													}
 												</span>

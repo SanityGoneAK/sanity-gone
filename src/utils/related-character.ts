@@ -1,4 +1,4 @@
-import operatorsJson from "../../data/operators.json";
+import operatorsJson from "../../data/en_US/operators.json";
 
 import type { Operator } from "../types/output-types";
 

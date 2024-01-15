@@ -57,9 +57,11 @@ export const getStatsAtLevel = (
 		level: number;
 		trust: boolean;
 		pots: boolean;
+		moduleId?: string | null;
+		moduleLevel?: number;
 	}
 ): CharacterStatValues => {
-	const { eliteLevel, level, trust, pots } = values;
+	const { eliteLevel, level, trust, pots, moduleId, moduleLevel } = values;
 
 	const { phases } = characterObject;
 	const activePhase = phases[eliteLevel];
@@ -79,7 +81,7 @@ export const getStatsAtLevel = (
 		def,
 		magicResistance: res,
 		cost: dp,
-		blockCnt: blockCount,
+		blockCnt,
 		respawnTime: redeploy,
 		baseAttackTime,
 	} = startingKeyFrame.data;
@@ -125,30 +127,57 @@ export const getStatsAtLevel = (
 				redeployTimeInSeconds: 0,
 			};
 
+	const {
+		atk: modAttack,
+		max_hp: modHealth,
+		def: modDefense,
+		attack_speed: modASPD,
+		magic_resistance: modRes,
+		cost: modDp,
+		respawn_time: modRedeploy,
+		block_cnt: modBlock,
+	} = moduleId
+		? getModuleStatIncrease(characterObject, moduleId, moduleLevel!)
+		: {
+				atk: 0,
+				max_hp: 0,
+				def: 0,
+				attack_speed: 0,
+				magic_resistance: 0,
+				cost: 0,
+				respawn_time: 0,
+				block_cnt: 0,
+			};
+
 	// apply trust-based and potential-based transforms
 	const health =
 		linearInterpolate(level, maxLevel, maxHp, finalMaxHp) +
 		(trust ? trustHp : 0) +
-		potHealth;
+		potHealth +
+		modHealth;
 	const attackPower =
 		linearInterpolate(level, maxLevel, atk, finalMaxAtk) +
 		(trust ? trustAtk : 0) +
-		potAttack;
+		potAttack +
+		modAttack;
 	const defense =
 		linearInterpolate(level, maxLevel, def, finalMaxDef) +
 		(trust ? trustDef : 0) +
-		potDefense;
+		potDefense +
+		modDefense;
 	const artsResistance =
 		linearInterpolate(level, maxLevel, res, finalMaxRes) +
 		(trust ? trustRes : 0) +
-		potRes;
-	const redeployTimeInSeconds = redeploy + potRedeploy;
-	const dpCost = dp + potDp;
+		potRes +
+		modRes;
+	const redeployTimeInSeconds = redeploy + potRedeploy + modRedeploy;
+	const dpCost = dp + potDp + modDp;
+	const blockCount = blockCnt + modBlock;
 
 	// ASPD...
 	const secondsPerAttack = calculateSecondsPerAttack(
 		baseAttackTime,
-		100 + potASPD
+		100 + potASPD + modASPD
 	);
 
 	return {
@@ -307,6 +336,56 @@ export const getMaxTrustStatIncrease = (
 	return characterObject.favorKeyFrames[
 		characterObject.favorKeyFrames.length - 1
 	].data;
+};
+
+export const getModuleStatIncrease = (
+	characterObject: OutputTypes.Character,
+	moduleId: string,
+	moduleLevel: number
+): {
+	atk: number;
+	max_hp: number;
+	def: number;
+	attack_speed: number;
+	magic_resistance: number;
+	cost: number;
+	respawn_time: number;
+	block_cnt: number;
+} => {
+	if (characterObject.modules == null) {
+		throw new Error(
+			`CharacterObject doesn't have modules, cannot get stat increase - charId: ${characterObject.charId}`
+		);
+	}
+	const op = characterObject as OutputTypes.Operator;
+	const module = op.modules.filter((mod) => mod.moduleId === moduleId)[0];
+
+	// get specific phase
+	// candidate for potential 0 (1) is used because potential does not affect stat changes
+	const modulePhase = module.phases[moduleLevel - 1].candidates[0];
+
+	const statChanges = {
+		atk: 0,
+		max_hp: 0,
+		def: 0,
+		attack_speed: 0,
+		magic_resistance: 0,
+		cost: 0,
+		respawn_time: 0,
+		block_cnt: 0,
+	};
+
+	modulePhase.attributeBlackboard.forEach((iv) => {
+		if (!(iv.key in statChanges)) {
+			throw new Error(
+				`Unknown attribute modified: ${iv.key} with value of ${iv.value} on module ${characterObject.charId}`
+			);
+		}
+		// @ts-expect-error we literally just checked if the key exists
+		statChanges[iv.key] += iv.value;
+	});
+
+	return statChanges;
 };
 
 export function getMeleeOrRangedOrBoth(
