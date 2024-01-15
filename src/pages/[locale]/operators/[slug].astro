@@ -13,6 +13,8 @@ import type * as OutputTypes from "~/types/output-types";
 import { operatorAvatar } from "~/utils/images";
 import InterpunctSpacer from "~/components/ui/InterpunctSpacer.astro";
 import OperatorInfo from "~/components/operator/OperatorInfo.astro";
+import { getPathByLocale, getRelativeLocaleUrl } from "astro:i18n";
+import { defaultLang } from "~/i18n/languages";
 
 // console.log(Object.entries(operatorsJson)[0]);
 //
@@ -30,6 +32,7 @@ import OperatorInfo from "~/components/operator/OperatorInfo.astro";
 // }
 
 const { slug } = Astro.params;
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 
 const idLookup = Object.fromEntries(
 	Object.entries(operatorsJson).map(
@@ -59,8 +62,9 @@ const relatedOperator = getRelatedCharacter(operator);
 		<div class="flex justify-between mb-6">
 			<ul class="p-0 m-0 flex items-center list-none gap-3 flex-grow">
 				<li class="text-base font-normal leading-normal flex-none">
-					<a href="/operators" class="text-blue hover:underline"
-						>Operators</a
+					<a
+						href={getRelativeLocaleUrl(locale, "/operators")}
+						class="text-blue hover:underline">Operators</a
 					>
 				</li>
 				/
@@ -73,9 +77,12 @@ const relatedOperator = getRelatedCharacter(operator);
 						<li class="flex-none">
 							<a
 								class="flex items-center text-yellow relative mr-3"
-								href={`/en/operators/${slugify(
-									relatedOperator.name
-								)}`}
+								href={getRelativeLocaleUrl(
+									locale,
+									`/operators/${slugify(
+										relatedOperator.name
+									)}`
+								)}
 							>
 								<img
 									class="w-8 h-8 border border-solid border-neutral-200 rounded-[4.5rem] mr-2"
