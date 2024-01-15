@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
 import { Slider } from "@mui/base";
-import initializeFocusSource from "ally.js/src/style/focus-source";
 
 import { cx } from "~/utils/styles.ts";
 
@@ -35,7 +34,9 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 	const inputRef = useRef<HTMLInputElement>(null);
 
 	useEffect(() => {
-		initializeFocusSource();
+		import("ally.js/src/style/focus-source").then((focusSource) =>
+			focusSource.default()
+		);
 	}, []);
 
 	const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (
