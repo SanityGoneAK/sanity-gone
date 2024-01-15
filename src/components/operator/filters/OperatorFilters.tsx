@@ -18,7 +18,7 @@ import { classToProfession, professionLookup } from "../../../utils/classes";
 import { operatorBranchIcon, operatorClassIcon } from "../../../utils/images";
 import { cx } from "../../../utils/styles";
 import StarIcon from "../../icons/StarIcon";
-import { Checkbox } from "../../ui/Checkbox";
+import Checkbox from "../../ui/Checkbox";
 
 const OperatorFilters = () => {
 	const filterProfession = useStore($filterProfession);
