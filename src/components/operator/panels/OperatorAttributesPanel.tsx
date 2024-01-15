@@ -11,6 +11,7 @@ import CharacterStats from "../CharacterStats";
 import EliteButtonGroup from "../EliteButtonGroup";
 import MaterialRequirements from "../MaterialRequirements";
 
+import type { CheckedState } from "@radix-ui/react-checkbox";
 import type * as OutputTypes from "~/types/output-types";
 
 const LMD_ITEM_ID = "4001";
@@ -60,6 +61,10 @@ const OperatorAttributesPanel: React.FC = () => {
 		setLevel(Math.min(operator.phases[newElite].maxLevel, level));
 	};
 
+	const handleTrustBonusCheckedChange = (checked: CheckedState) => {
+		setTrustBonusChecked(checked === true); // we're assuming "indeterminate" is impossible here
+	};
+
 	return (
 		<>
 			<div className="grid items-center gap-y-4 border-b border-neutral-600 bg-gradient-to-b from-neutral-800 to-neutral-700 p-6">
@@ -78,11 +83,10 @@ const OperatorAttributesPanel: React.FC = () => {
 				</div>
 				<div className="grid grid-cols-[auto_auto_1fr] items-center gap-x-6">
 					<div>
-						<label>
+						<label className="flex cursor-pointer items-center gap-2 text-neutral-200">
 							<Checkbox
-								className="text-neutral-200"
 								checked={isTrustBonusChecked}
-								onChange={setTrustBonusChecked}
+								onCheckedChange={handleTrustBonusCheckedChange}
 							/>
 							Trust
 						</label>
