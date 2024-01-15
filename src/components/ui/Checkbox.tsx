@@ -29,7 +29,9 @@ const Checkbox = React.forwardRef<
 	<CheckboxPrimitive.Root
 		ref={ref}
 		className={cx(
-			"ring-offset-background focus-visible:ring-ring peer h-4 w-4 shrink-0 rounded bg-neutral-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+			"ring-offset-background peer h-4 w-4 shrink-0 rounded bg-neutral-600",
+			"disabled:cursor-not-allowed disabled:opacity-50",
+			"focus-visible:ring-ring focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
 			className
 		)}
 		{...props}
@@ -43,4 +45,4 @@ const Checkbox = React.forwardRef<
 ));
 Checkbox.displayName = CheckboxPrimitive.Root.displayName;
 
-export { Checkbox };
+export default Checkbox;

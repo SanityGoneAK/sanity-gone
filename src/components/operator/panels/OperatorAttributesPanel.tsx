@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 
 import { useStore } from "@nanostores/react";
 
-import { Checkbox } from "~/components/ui/Checkbox";
+import Checkbox from "~/components/ui/Checkbox";
 import PillButtonGroup from "~/components/ui/PillButtonGroup";
 import SliderWithInput from "~/components/ui/SliderWithInput";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
@@ -78,12 +78,14 @@ const OperatorAttributesPanel: React.FC = () => {
 				</div>
 				<div className="grid grid-cols-[auto_auto_1fr] items-center gap-x-6">
 					<div>
-						<Checkbox
-							className="text-neutral-200"
-							label="Trust Bonus"
-							checked={isTrustBonusChecked}
-							onChange={setTrustBonusChecked}
-						/>
+						<label>
+							<Checkbox
+								className="text-neutral-200"
+								checked={isTrustBonusChecked}
+								onChange={setTrustBonusChecked}
+							/>
+							Trust
+						</label>
 					</div>
 					<div>
 						<Checkbox
