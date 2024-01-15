@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
-import { Slider, type SliderThumbSlotState } from "@mui/base";
+import { Slider } from "@mui/base";
+import initializeFocusSource from "ally.js/src/style/focus-source";
 
 import { cx } from "~/utils/styles.ts";
 
@@ -32,6 +33,10 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 		);
 	}, [type, value]);
 	const inputRef = useRef<HTMLInputElement>(null);
+
+	useEffect(() => {
+		initializeFocusSource();
+	}, []);
 
 	const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (
 		e
@@ -84,15 +89,20 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 						className:
 							"block absolute w-[calc(100%+1.5rem)] h-1 bg-neutral-500",
 					},
-					thumb: (state: SliderThumbSlotState) => ({
+					thumb: {
 						className: cx(
-							"h-2 w-6 p-3 box-content absolute grid my-0 mx-[-12px] rounded-xl outline-offset-[-12px] after:rounded-sm after:bg-neutral-200 hover:outline hover:outline-[12px] hover:outline-neutral-50/[0.05]",
-							state.active &&
-								"outline outline-[12px] outline-neutral-50/[0.1]"
+							"h-2 w-6 p-3 box-content absolute grid my-0 mx-[-12px] rounded-xl outline-offset-[-12px]",
+							"after:rounded-sm after:bg-neutral-200",
+							"hover:outline hover:outline-[12px] hover:outline-neutral-50/[0.05]",
+							"[&.Mui-active]:outline [&.Mui-active]:outline-[12px] [&.Mui-active]:outline-neutral-50/[0.1]",
+							// the default Mui-focusVisible style triggers even when using the mouse,
+							// which clashes with the .active style; so we have to constrain it to when it receives focus
+							// via keyboard
+							"[html[data-focus-source=key]_&.Mui-focusVisible]:outline",
+							"[html[data-focus-source=key]_&.Mui-focusVisible]:outline-3",
+							"[html[data-focus-source=key]_&.Mui-focusVisible]:outline-blue"
 						),
-					}),
-					// TODO needs proper focusVisible style using a focus-visible polyfill
-					// focusVisible: classes.thumbFocusVisible,
+					},
 				}}
 				onChange={(_, value) => onChange(value as number)}
 				min={1}
