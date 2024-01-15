@@ -80,7 +80,7 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 					},
 					track: {
 						className: cx(
-							"block absolute h-1 rounded-sm",
+							"block absolute h-[2px] rounded-sm",
 							type === "level"
 								? "bg-gradient-to-r from-yellow to-yellow-light"
 								: "bg-gradient-to-r from-blue to-blue-light"
