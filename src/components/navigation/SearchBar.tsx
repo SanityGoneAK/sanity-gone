@@ -115,7 +115,7 @@ const CustomHits: React.FC<{ onSelected?: () => void; locale: string }> = ({
 			}
 			onSelected && onSelected();
 		},
-		[onSelected]
+		[locale, onSelected]
 	);
 
 	return (
