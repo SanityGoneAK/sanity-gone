@@ -47,7 +47,9 @@ export const enemyAvatar = (enemyId: string): string => {
 };
 
 export const tokenImage = (id: string): string =>
-	`${baseURL}/torappu/dynamicassets/arts/charavatars/${id}.webp`;
+	`${baseURL}/torappu/dynamicassets/arts/charavatars/${encodeURIComponent(
+		id
+	)}.webp`;
 
 export const operatorClassIcon = (operatorClass: string): string =>
 	`${baseURL}/arts/icon_profession_${operatorClass.toLocaleLowerCase()}_large.webp`;
