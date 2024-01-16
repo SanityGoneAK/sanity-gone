@@ -7,7 +7,7 @@
 		"esModuleInterop": true,
 		"target": "esnext",
 		"baseUrl": ".",
-		"lib": ["esnext"],
+		"lib": ["esnext", "dom"],
 		"paths": {
 			"~/*": ["src/*"],
 			"data/*": ["data/*"]
