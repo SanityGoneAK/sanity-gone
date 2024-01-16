@@ -55,12 +55,15 @@ export interface CharacterRangeProps {
 const CharacterRange: React.FC<
 	CharacterRangeProps & React.HTMLAttributes<HTMLTableElement>
 > = (props) => {
-	const { rangeObject, ...rest } = props;
+	const { className, rangeObject, ...rest } = props;
 	const { rows, cols, grid } = normalizeRange(rangeObject);
 
 	return (
 		// FIXME
-		<table className="flex-shrink-0 border-separate" {...rest}>
+		<table
+			className={cx("flex-shrink-0 border-separate", className)}
+			{...rest}
+		>
 			<thead>
 				<tr>
 					<th></th>

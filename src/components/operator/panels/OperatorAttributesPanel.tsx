@@ -2,14 +2,16 @@ import { useMemo, useState } from "react";
 
 import { useStore } from "@nanostores/react";
 
+import CharacterRange from "~/components/operator/CharacterRange";
+import CharacterStats from "~/components/operator/CharacterStats";
+import EliteButtonGroup from "~/components/operator/EliteButtonGroup";
+import MaterialRequirements from "~/components/operator/MaterialRequirements";
 import Checkbox from "~/components/ui/Checkbox";
 import PillButtonGroup from "~/components/ui/PillButtonGroup";
 import SliderWithInput from "~/components/ui/SliderWithInput";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
-
-import CharacterStats from "../CharacterStats";
-import EliteButtonGroup from "../EliteButtonGroup";
-import MaterialRequirements from "../MaterialRequirements";
+import { getStatsAtLevel } from "~/utils/character-stats";
+import { tokenImage } from "~/utils/images";
 
 import type { CheckedState } from "@radix-ui/react-checkbox";
 import type * as OutputTypes from "~/types/output-types";
@@ -55,6 +57,25 @@ const OperatorAttributesPanel: React.FC = () => {
 	}, [elite, operator.phases, operator.rarity]);
 	const minElite = elite > 0 ? elite - 1 : 0;
 	const minLevel = maxLevelAtElite(operator.rarity, minElite);
+	const { rangeObject: range } = getStatsAtLevel(operator, {
+		eliteLevel: elite,
+		level,
+		pots: isPotentialBonusChecked,
+		trust: isTrustBonusChecked,
+		moduleId,
+		moduleLevel,
+	});
+	const summon = operator.summons.length === 1 ? operator.summons[0] : null;
+	const summonRange = summon
+		? getStatsAtLevel(summon, {
+				eliteLevel: elite,
+				level,
+				pots: isPotentialBonusChecked,
+				trust: isTrustBonusChecked,
+				moduleId,
+				moduleLevel,
+			}).rangeObject
+		: null;
 
 	const handleEliteChange = (newElite: number) => {
 		setElite(newElite);
@@ -118,15 +139,54 @@ const OperatorAttributesPanel: React.FC = () => {
 				</div>
 			</div>
 			<div className="grid gap-y-4 rounded-br-lg bg-neutral-800 p-6">
-				<CharacterStats
-					character={operator}
-					elite={elite}
-					level={level}
-					moduleId={moduleId}
-					moduleLevel={moduleLevel}
-					usePotentialBonus={isPotentialBonusChecked}
-					useTrustBonus={isTrustBonusChecked}
-				/>
+				<div className="flex flex-col gap-4">
+					<CharacterStats
+						character={operator}
+						elite={elite}
+						level={level}
+						moduleId={moduleId}
+						moduleLevel={moduleLevel}
+						usePotentialBonus={isPotentialBonusChecked}
+						useTrustBonus={isTrustBonusChecked}
+					/>
+					<div
+						className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-700
+	p-4 text-neutral-200
+	"
+					>
+						<span>Range</span>
+						<CharacterRange rangeObject={range} />
+					</div>
+
+					{summon && (
+						<div className="flex rounded bg-neutral-900">
+							<img
+								className="border-r border-neutral-600"
+								width="100"
+								src={tokenImage(summon.charId)}
+								alt={summon.name}
+							/>
+							<div className="flex flex-grow flex-col gap-4 p-4">
+								<CharacterStats
+									character={summon}
+									elite={elite}
+									level={level}
+									moduleId={moduleId}
+									moduleLevel={moduleLevel}
+									usePotentialBonus={isPotentialBonusChecked}
+									useTrustBonus={isTrustBonusChecked}
+								/>
+								<div className="border-t border-neutral-600" />
+								<div className="grid grid-cols-[auto,1fr] items-center justify-items-center px-4 text-neutral-200">
+									<span>Range</span>
+									<CharacterRange
+										rangeObject={summonRange!}
+									/>
+								</div>
+							</div>
+						</div>
+					)}
+				</div>
 				{itemCosts.length > 0 && (
 					<>
 						<h2 className="text-lg font-semibold leading-[23px]">

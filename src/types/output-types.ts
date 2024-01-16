@@ -40,7 +40,7 @@ export interface Operator extends Character {
 	skins: Skin[];
 	isLimited: boolean;
 	releaseOrder: number; // lower value means released earlier
-	summons: Character[];
+	summons: Summon[];
 	modules: Module[];
 	// /** The character ID of this operator's alter, or `null` if it doesn't have one. */
 	alterId: string | null;
