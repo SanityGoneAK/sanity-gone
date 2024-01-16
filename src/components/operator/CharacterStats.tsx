@@ -10,7 +10,6 @@ import {
 	HealthIcon,
 	HourglassIcon,
 } from "~/components/icons";
-import CharacterRange from "~/components/operator/CharacterRange";
 import { getStatsAtLevel } from "~/utils/character-stats";
 
 import type * as OutputTypes from "~/types/output-types";
@@ -43,7 +42,6 @@ const CharacterStats: React.FC<Props> = ({
 		secondsPerAttack,
 		blockCount,
 		dpCost,
-		rangeObject: range,
 	} = useMemo(
 		() =>
 			getStatsAtLevel(character, {
