@@ -1,3 +1,5 @@
+import { isOperator } from "~/types/guards";
+
 import { toTitleCase } from "./strings";
 
 import type { Range } from "../types/gamedata-types";
@@ -352,6 +354,22 @@ export const getModuleStatIncrease = (
 	respawn_time: number;
 	block_cnt: number;
 } => {
+	const statChanges = {
+		atk: 0,
+		max_hp: 0,
+		def: 0,
+		attack_speed: 0,
+		magic_resistance: 0,
+		cost: 0,
+		respawn_time: 0,
+		block_cnt: 0,
+	};
+	if (!isOperator(characterObject)) {
+		// FIXME this doesn't work correctly for e.g. pozy module that changes summon stats
+		// if this is a summon we should be checking the summoning operator's modules
+		return statChanges;
+	}
+
 	if (characterObject.modules == null) {
 		throw new Error(
 			`CharacterObject doesn't have modules, cannot get stat increase - charId: ${characterObject.charId}`
@@ -363,17 +381,6 @@ export const getModuleStatIncrease = (
 	// get specific phase
 	// candidate for potential 0 (1) is used because potential does not affect stat changes
 	const modulePhase = module.phases[moduleLevel - 1].candidates[0];
-
-	const statChanges = {
-		atk: 0,
-		max_hp: 0,
-		def: 0,
-		attack_speed: 0,
-		magic_resistance: 0,
-		cost: 0,
-		respawn_time: 0,
-		block_cnt: 0,
-	};
 
 	modulePhase.attributeBlackboard.forEach((iv) => {
 		if (!(iv.key in statChanges)) {
