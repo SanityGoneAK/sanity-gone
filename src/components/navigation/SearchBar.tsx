@@ -27,6 +27,7 @@ import type {
 import type { BaseHit } from "instantsearch.js";
 
 interface Props {
+	locale: string;
 	placeholder: string;
 	onSelected?: () => void;
 }
@@ -69,7 +70,10 @@ const CustomSearchInput: React.FC<{
 	);
 };
 
-const CustomHits: React.FC<{ onSelected?: () => void }> = ({ onSelected }) => {
+const CustomHits: React.FC<{ onSelected?: () => void; locale: string }> = ({
+	onSelected,
+	locale,
+}) => {
 	const { hits, results, sendEvent } = useHits<BaseHit & SearchResult>();
 
 	const operatorResults: OperatorSearchResult[] = [];
@@ -97,13 +101,15 @@ const CustomHits: React.FC<{ onSelected?: () => void }> = ({ onSelected }) => {
 			if (!option) return;
 
 			if (option.type === "operator") {
-				window.location.href = `/operators/${slugify(
+				window.location.href = `/${locale}/operators/${slugify(
 					option.name.en_US ?? ""
 				)}`;
 			} else if (option.type === "class") {
-				window.location.href = `/operators#${slugify(option.class)}`;
+				window.location.href = `/${locale}/operators#${slugify(
+					option.class
+				)}`;
 			} else {
-				window.location.href = `/operators#${slugify(
+				window.location.href = `/${locale}/operators#${slugify(
 					option.class.en_US ?? ""
 				)}-${subclassSlugify(option.name.en_US ?? "")}`;
 			}
@@ -232,7 +238,7 @@ const CustomHits: React.FC<{ onSelected?: () => void }> = ({ onSelected }) => {
 	);
 };
 
-const SearchBar: React.FC<Props> = ({ placeholder, onSelected }) => {
+const SearchBar: React.FC<Props> = ({ locale, placeholder, onSelected }) => {
 	const inputRef = useRef<HTMLInputElement>(null);
 
 	return (
@@ -254,7 +260,10 @@ const SearchBar: React.FC<Props> = ({ placeholder, onSelected }) => {
 								placeholder={placeholder}
 								inputRef={inputRef}
 							/>
-							<CustomHits onSelected={onSelected} />
+							<CustomHits
+								onSelected={onSelected}
+								locale={locale}
+							/>
 						</InstantSearch>
 					)}
 				</Combobox>

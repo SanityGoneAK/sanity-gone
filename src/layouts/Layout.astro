@@ -7,9 +7,13 @@ export interface Props {
 
 const { title, previousLocation, previousLocationLink } = Astro.props;
 
+import { getPathByLocale } from "astro:i18n";
 import SearchBar from "../components/navigation/SearchBar";
 import SanityGoneLogo from "~/components/SanityGoneLogo";
 import Sidebar from "~/components/navigation/Sidebar.astro";
+import { defaultLang } from "~/i18n/languages";
+
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 
 import "~/styles/base.css";
 ---
@@ -82,7 +86,11 @@ import "~/styles/base.css";
 				id="searchbar"
 				class="hidden grid-in-search sm:grid-in-topright group-data-[menu-open=true]/sitewrapper:block sm:block border-b border-solid border-neutral-500 sm:bg-neutral-700"
 			>
-				<SearchBar placeholder="Search" client:visible />
+				<SearchBar
+					placeholder="Search"
+					locale={locale}
+					client:visible
+				/>
 			</div>
 			<div
 				id="sidebar"
