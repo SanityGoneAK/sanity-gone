@@ -125,6 +125,7 @@ export async function createOperatorsJson(dataDir, locale) {
 		convertRarityIndex,
 		addSummons,
 
+		// @TODO: Translate Traits
 		// @TODO: Translate potential ranks
 		// @TODO: Convert ricc min elite to number
 		// @TODO: Figure out SpTypes and SkillTypes
@@ -270,7 +271,7 @@ function addTalents(characters, locale, { jetTalentTranslations }) {
 						try {
 							const talentTL =
 								jetTalentTranslations[charId][talentIndex][
-									phaseIndex
+								phaseIndex
 								];
 							baseCandidateObject.name = talentTL.name;
 							baseCandidateObject.description = talentTL.desc;
@@ -367,9 +368,9 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 				) {
 					skinName = SKIN_LOCALES[locale][cnSkin.skinId]
 						? SKIN_LOCALES[locale][cnSkin.skinId].displaySkin
-								.skinName
+							.skinName
 						: SKIN_LOCALES.zh_CN[cnSkin.skinId].displaySkin
-								.skinName;
+							.skinName;
 				}
 
 				if (
@@ -538,7 +539,7 @@ function addReleaseOrderAndLimited(
 			{
 				...character,
 				...releaseOrderAndLimitedLookup[
-					CHARACTER_LOCALES.zh_CN[charId].name
+				CHARACTER_LOCALES.zh_CN[charId].name
 				],
 			},
 		];
