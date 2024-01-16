@@ -46,15 +46,6 @@ export const enemyAvatar = (enemyId: string): string => {
 	)}.webp`;
 };
 
-/**
- * I do not know what this is for. So, I am going to surround it, so we can study it
- * in a lab somewhere
- * @param id No idea
- * ---------------------------------------------------------------------------------
- */
-export const summonImage = (id: string): string => `/images/avatars/${id}.webp`; // |
-// ---------------------------------------------------------------------------------
-
 export const tokenImage = (id: string): string =>
 	`${baseURL}/torappu/dynamicassets/arts/charavatars/${id}.webp`;
 
