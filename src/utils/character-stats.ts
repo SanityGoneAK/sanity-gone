@@ -396,3 +396,11 @@ export function getMeleeOrRangedOrBoth(
 		? "Melee or Ranged"
 		: toTitleCase(position);
 }
+
+export const phaseToNumber = (phase: string): number => {
+	const match = /^PHASE_(\d)$/.exec(phase);
+	if (match === null) {
+		throw new Error(`Expected a phase. Got ${phase} instead`);
+	}
+	return +match[1];
+};

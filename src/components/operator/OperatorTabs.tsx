@@ -6,7 +6,7 @@ import OperatorAttributesPanel from "./panels/OperatorAttributesPanel";
 import { useState } from "react";
 import { cx } from "~/utils/styles.ts";
 // import OperatorRiicPanel from "./panels/OperatorRiicPanel";
-// import OperatorSkillsPanel from "./panels/OperatorSkillsPanel";
+import OperatorSkillsPanel from "./panels/OperatorSkillsPanel";
 import OperatorTalentsPanel from "./panels/OperatorTalentsPanel";
 
 const OperatorTabs: React.FC = () => {
@@ -60,7 +60,7 @@ const OperatorTabs: React.FC = () => {
 				</Tab.Panel>
 				{operator.skillData.length > 0 && (
 					<Tab.Panel id="operator-skills-panel">
-						{/*<OperatorSkillsPanel />*/}
+						<OperatorSkillsPanel />
 					</Tab.Panel>
 				)}
 				<Tab.Panel id="operator-modules-panel">

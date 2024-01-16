@@ -73,6 +73,10 @@ export default {
 					"search",
 					"main"
 				],
+				"skills": [
+					"icon name",
+					"icon skilltype"
+				]
 			},
 		},
 	},

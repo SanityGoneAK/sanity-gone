@@ -86,7 +86,7 @@ const PotentialsDropdown: React.FC<PotentialsDropdownProps> = (props) => {
 		// disabled={potList.length === 1 && potList[0] === currentPotential}
 		>
 			<DropdownMenuTrigger
-				className={`grid h-10 cursor-pointer grid-flow-col grid-cols-["max-content"] items-center gap-x-2 whitespace-nowrap rounded-[18px] bg-neutral-500 px-3 py-2`}
+				className={`grid h-10 cursor-pointer grid-flow-col grid-cols-[max-content] items-center gap-x-2 whitespace-nowrap rounded-[18px] bg-neutral-500 px-3 py-2`}
 			>
 				{potentialLabel(currentPotential)}
 			</DropdownMenuTrigger>
@@ -97,7 +97,7 @@ const PotentialsDropdown: React.FC<PotentialsDropdownProps> = (props) => {
 						onSelect={() => onChange(pot)}
 					>
 						<DropdownMenuLabel
-							className={`grid cursor-pointer grid-flow-col grid-cols-["max-content"] items-center gap-x-2 whitespace-nowrap bg-neutral-500 px-3 py-2`}
+							className={`grid cursor-pointer grid-flow-col grid-cols-[max-content] items-center gap-x-2 whitespace-nowrap bg-neutral-500 px-3 py-2`}
 						>
 							{potentialLabel(pot)}
 						</DropdownMenuLabel>

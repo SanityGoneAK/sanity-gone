@@ -12,6 +12,7 @@ interface SliderWithInputProps {
 	max: number;
 	value: number;
 	onChange: (value: number) => void;
+	hideMax?: boolean;
 }
 
 function skillLevelNumberToMasteryLevel(level: number): string {
@@ -22,7 +23,7 @@ function skillLevelNumberToMasteryLevel(level: number): string {
 }
 
 const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
-	const { type, max, value, onChange } = props;
+	const { type, max, value, onChange, hideMax } = props;
 	const [rawInput, setRawInput] = useState(`${value}`);
 	useEffect(() => {
 		setRawInput(
@@ -109,11 +110,11 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 				max={max}
 				value={value}
 			/>
-			<div className="flex items-center gap-x-4">
+			<div className="flex items-center gap-x-2">
 				<span className="text-neutral-200">{shortLabel ?? label}</span>
 				<input
 					aria-label={label}
-					className="box-border inline-flex w-14 rounded-2xl bg-neutral-900 px-4 py-2 text-center text-base font-normal text-neutral-50"
+					className="box-border inline-flex h-8 w-10 rounded-lg bg-neutral-900 px-2.5 py-2 text-center text-base font-normal text-neutral-50"
 					onFocus={(e) => e.target.select()}
 					onBlur={handleBlur}
 					onChange={handleInputChange}
@@ -126,8 +127,12 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 						type === "skill" ? masteryLevelRegexString : undefined
 					}
 				/>
-				<span>/</span>
-				<span>{max}</span>
+				{!hideMax && (
+					<>
+						<span>/</span>
+						<span>{max}</span>
+					</>
+				)}
 			</div>
 		</div>
 	);

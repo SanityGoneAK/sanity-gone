@@ -36,6 +36,7 @@ export default defineConfig({
 		react(),
 		tailwind({
 			applyBaseStyles: false,
+			nesting: true,
 		}),
 	],
 	adapter: node({

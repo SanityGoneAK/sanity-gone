@@ -116,3 +116,29 @@ h6 {
 img {
 	object-fit: contain;
 }
+
+.skill-sp-type-item {
+	& ~ &::before {
+		content: "";
+		@apply absolute;
+		@apply left-6;
+		@apply top-0;
+		@apply bottom-0;
+		@apply border-l;
+		@apply border-neutral-600;
+	}
+}
+
+.highlight-desc {
+	.value-up {
+		@apply font-bold;
+		@apply text-blue-light;
+	}
+	.value-down {
+		@apply font-bold;
+		@apply text-red-light;
+	}
+	.skill-tooltip {
+		@apply text-neutral-200;
+	}
+}
