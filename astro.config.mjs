@@ -5,6 +5,8 @@ import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 
+import tailwindcssNesting from 'tailwindcss/nesting'
+
 // https://astro.build/config
 export default defineConfig({
 	output: "server",
@@ -58,5 +60,11 @@ export default defineConfig({
 				},
 			},
 		},
+		// vite warns if this option isn't present for some reason
+		css: {
+			postcss: {
+				plugins: [tailwindcssNesting]
+			}
+		}
 	},
 });
