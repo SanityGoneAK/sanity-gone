@@ -56,7 +56,9 @@ export const operatorBranchIcon = (subProfessionId: string): string =>
 	`${baseURL}/torappu/dynamicassets/arts/ui/subprofessionicon/sub_${subProfessionId}_icon.webp`;
 
 export const skillIcon = (iconId: string | null, skillId: string): string =>
-	`${baseURL}/skills/skill_icon_${iconId ?? skillId}.webp`;
+	`${baseURL}/torappu/dynamicassets/arts/skills/skill_icon_${
+		iconId ?? skillId
+	}.webp`;
 
 export const moduleImage = (moduleId: string): string =>
 	`${baseURL}/equip/icon/${moduleId}.webp`;
