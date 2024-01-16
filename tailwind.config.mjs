@@ -38,9 +38,9 @@ export default {
 			},
 			neutral: {
 				50: "#E8E8F2", // white
-				100: "#B8B8C0", // offwhite
+				100: "#B8B8C0", // offwhite (it's grite in my heart)
 				200: "#87879B", // gray
-				300: "#686879", // graytone
+				300: "#686879", // graytone (gridtone in my heart)
 				400: "#484858", // midtoneBrighterer
 				500: "#363643", // midtoneBrighter
 				600: "#24242E", // midtone
