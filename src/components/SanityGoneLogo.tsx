@@ -3,7 +3,7 @@ import React from "react";
 const SanityGoneLogo: React.FC = () => {
 	return (
 		<a
-			href="/operators"
+			href="/"
 			aria-label="Sanity Gone"
 			className="flex items-center p-2 leading-none"
 		>
