@@ -22,6 +22,7 @@ interface Props {
 	usePotentialBonus: boolean;
 	moduleId: string | null;
 	moduleLevel: number;
+	parentCharacter?: OutputTypes.Character;
 }
 
 const CharacterStats: React.FC<Props> = ({
@@ -32,6 +33,7 @@ const CharacterStats: React.FC<Props> = ({
 	moduleId,
 	moduleLevel,
 	character,
+	parentCharacter
 }) => {
 	const {
 		health,
@@ -44,7 +46,16 @@ const CharacterStats: React.FC<Props> = ({
 		dpCost,
 	} = useMemo(
 		() =>
-			getStatsAtLevel(character, {
+			parentCharacter
+				? getStatsAtLevel(character, {
+					eliteLevel: elite,
+					level,
+					pots: usePotentialBonus,
+					trust: useTrustBonus,
+					moduleId,
+					moduleLevel
+				}, character.charId, parentCharacter)
+				: getStatsAtLevel(character, {
 				eliteLevel: elite,
 				level,
 				pots: usePotentialBonus,

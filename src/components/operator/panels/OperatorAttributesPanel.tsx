@@ -74,7 +74,7 @@ const OperatorAttributesPanel: React.FC = () => {
 				trust: isTrustBonusChecked,
 				moduleId,
 				moduleLevel,
-			}).rangeObject
+			}, summon.charId, operator).rangeObject
 		: null;
 
 	const handleEliteChange = (newElite: number) => {
@@ -175,6 +175,7 @@ const OperatorAttributesPanel: React.FC = () => {
 									moduleLevel={moduleLevel}
 									usePotentialBonus={isPotentialBonusChecked}
 									useTrustBonus={isTrustBonusChecked}
+									parentCharacter={operator}
 								/>
 								<div className="border-t border-neutral-600" />
 								<div className="grid grid-cols-[auto,1fr] items-center justify-items-center px-4 text-neutral-200">

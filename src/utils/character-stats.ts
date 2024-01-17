@@ -61,7 +61,9 @@ export const getStatsAtLevel = (
 		pots: boolean;
 		moduleId?: string | null;
 		moduleLevel?: number;
-	}
+	},
+	tokenId?: string,
+	parentObject?: OutputTypes.Character,
 ): CharacterStatValues => {
 	const { eliteLevel, level, trust, pots, moduleId, moduleLevel } = values;
 
@@ -117,7 +119,8 @@ export const getStatsAtLevel = (
 		attackSpeed: potASPD,
 		dpCost: potDp,
 		redeployTimeInSeconds: potRedeploy,
-	} = pots
+	} = pots && doStatsChange(characterObject)
+		// if stats don't change (summon like skalter seaborn), favorKeyFrames is null
 		? getMaxPotStatIncrease(characterObject)
 		: {
 				health: 0,
@@ -139,7 +142,7 @@ export const getStatsAtLevel = (
 		respawn_time: modRedeploy,
 		block_cnt: modBlock,
 	} = moduleId
-		? getModuleStatIncrease(characterObject, moduleId, moduleLevel!)
+		? (tokenId ? getModuleStatIncrease(parentObject!, moduleId, moduleLevel!, tokenId) : getModuleStatIncrease(characterObject, moduleId, moduleLevel!))
 		: {
 				atk: 0,
 				max_hp: 0,
@@ -340,11 +343,7 @@ export const getMaxTrustStatIncrease = (
 	].data;
 };
 
-export const getModuleStatIncrease = (
-	characterObject: OutputTypes.Character,
-	moduleId: string,
-	moduleLevel: number
-): {
+interface ModuleStatChange {
 	atk: number;
 	max_hp: number;
 	def: number;
@@ -353,7 +352,14 @@ export const getModuleStatIncrease = (
 	cost: number;
 	respawn_time: number;
 	block_cnt: number;
-} => {
+}
+
+export const getModuleStatIncrease = (
+	characterObject: OutputTypes.Character,
+	moduleId: string,
+	moduleLevel: number,
+	tokenId?: string
+): ModuleStatChange => {
 	const statChanges = {
 		atk: 0,
 		max_hp: 0,
@@ -364,11 +370,6 @@ export const getModuleStatIncrease = (
 		respawn_time: 0,
 		block_cnt: 0,
 	};
-	if (!isOperator(characterObject)) {
-		// FIXME this doesn't work correctly for e.g. pozy module that changes summon stats
-		// if this is a summon we should be checking the summoning operator's modules
-		return statChanges;
-	}
 
 	if (characterObject.modules == null) {
 		throw new Error(
@@ -382,7 +383,16 @@ export const getModuleStatIncrease = (
 	// candidate for potential 0 (1) is used because potential does not affect stat changes
 	const modulePhase = module.phases[moduleLevel - 1].candidates[0];
 
-	modulePhase.attributeBlackboard.forEach((iv) => {
+	const toCheck = (!tokenId)
+		? modulePhase.attributeBlackboard
+		: modulePhase.tokenAttributeBlackboard[tokenId as keyof typeof modulePhase.tokenAttributeBlackboard]
+
+	if(!toCheck) {
+		// this module doesn't change the summon stats
+		return statChanges;
+	}
+
+	toCheck.forEach((iv) => {
 		if (!(iv.key in statChanges)) {
 			throw new Error(
 				`Unknown attribute modified: ${iv.key} with value of ${iv.value} on module ${characterObject.charId}`
