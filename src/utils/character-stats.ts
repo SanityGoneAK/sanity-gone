@@ -261,25 +261,25 @@ export const getPotStatIncreases = (
 		const attribChange = pot.buff.attributes.attributeModifiers[0].value;
 
 		switch (attribType) {
-			case 0:
+			case "MAX_HP": // used to be 0
 				curStats.health += attribChange;
 				break;
-			case 1:
+			case "ATK": // used to be 1
 				curStats.attackPower += attribChange;
 				break;
-			case 2:
+			case "DEF": // used to be 2
 				curStats.defense += attribChange;
 				break;
-			case 3:
+			case "MAGIC_RESISTANCE": // used to be 3
 				curStats.artsResistance += attribChange;
 				break;
-			case 4:
+			case "COST": // used to be 4
 				curStats.dpCost += attribChange;
 				break;
-			case 7:
+			case "ATTACK_SPEED": // used to be 7
 				curStats.attackSpeed += attribChange;
 				break;
-			case 21:
+			case "RESPAWN_TIME": // used to be 21
 				curStats.redeployTimeInSeconds += attribChange;
 				break;
 			default:
