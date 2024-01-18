@@ -114,7 +114,7 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 				<span className="text-neutral-200">{shortLabel ?? label}</span>
 				<input
 					aria-label={label}
-					className="box-border inline-flex h-8 w-10 rounded-lg bg-neutral-900 px-2.5 py-2 text-center text-base font-normal text-neutral-50"
+					className="box-border inline-flex h-8 w-10 rounded-lg bg-neutral-600 px-2.5 py-2 text-center text-base font-normal text-neutral-50"
 					onFocus={(e) => e.target.select()}
 					onBlur={handleBlur}
 					onChange={handleInputChange}

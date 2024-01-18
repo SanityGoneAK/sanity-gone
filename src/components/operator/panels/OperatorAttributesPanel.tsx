@@ -67,14 +67,19 @@ const OperatorAttributesPanel: React.FC = () => {
 	});
 	const summon = operator.summons.length === 1 ? operator.summons[0] : null;
 	const summonRange = summon
-		? getStatsAtLevel(summon, {
-				eliteLevel: elite,
-				level,
-				pots: isPotentialBonusChecked,
-				trust: isTrustBonusChecked,
-				moduleId,
-				moduleLevel,
-			}, summon.charId, operator).rangeObject
+		? getStatsAtLevel(
+				summon,
+				{
+					eliteLevel: elite,
+					level,
+					pots: isPotentialBonusChecked,
+					trust: isTrustBonusChecked,
+					moduleId,
+					moduleLevel,
+				},
+				summon.charId,
+				operator
+			).rangeObject
 		: null;
 
 	const handleEliteChange = (newElite: number) => {
@@ -88,7 +93,7 @@ const OperatorAttributesPanel: React.FC = () => {
 
 	return (
 		<>
-			<div className="grid items-center gap-y-4 border-b border-neutral-600 bg-gradient-to-b from-neutral-800 to-neutral-700 p-6">
+			<div className="grid items-center gap-y-4 border-b border-neutral-600 p-6">
 				<div className="grid grid-cols-[auto_1fr] items-center gap-x-4">
 					<EliteButtonGroup
 						currentElite={elite}
@@ -150,7 +155,7 @@ const OperatorAttributesPanel: React.FC = () => {
 						useTrustBonus={isTrustBonusChecked}
 					/>
 					<div
-						className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-700
+						className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600
 	p-4 text-neutral-200
 	"
 					>
