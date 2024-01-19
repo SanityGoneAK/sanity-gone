@@ -1,9 +1,9 @@
 import React from "react";
 
-const SanityGoneLogo: React.FC = () => {
+const SanityGoneLogo: React.FC<{ locale: string }> = ({ locale }) => {
 	return (
 		<a
-			href="/"
+			href={`/${locale}`}
 			aria-label="Sanity Gone"
 			className="flex items-center p-2 leading-none"
 		>
