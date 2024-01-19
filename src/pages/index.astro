@@ -1,0 +1,14 @@
+---
+import {
+	getAbsoluteLocaleUrl,
+	getPathByLocale,
+	getRelativeLocaleUrl,
+} from "astro:i18n";
+import { defaultLang } from "~/i18n/languages";
+
+const preferedLocale = Astro.preferredLocale ?? defaultLang;
+const localePath = getPathByLocale(preferedLocale);
+
+const redirectToPreferedLocale = getRelativeLocaleUrl(localePath, "/");
+return Astro.redirect(redirectToPreferedLocale, 301);
+---
