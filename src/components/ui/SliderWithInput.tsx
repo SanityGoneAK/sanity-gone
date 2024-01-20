@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { Slider } from "@mui/base";
 
+import Input from "~/components/ui/Input";
 import { cx } from "~/utils/styles.ts";
 
 const masteryLevelRegexString = "[Mm](?<masteryLevel>[123])";
@@ -112,9 +113,9 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 			/>
 			<div className="flex items-center gap-x-2">
 				<span className="text-neutral-200">{shortLabel ?? label}</span>
-				<input
+				<Input
 					aria-label={label}
-					className="box-border inline-flex h-8 w-10 rounded-lg bg-neutral-600 px-2.5 py-2 text-center text-base font-normal text-neutral-50"
+					className="w-10"
 					onFocus={(e) => e.target.select()}
 					onBlur={handleBlur}
 					onChange={handleInputChange}
