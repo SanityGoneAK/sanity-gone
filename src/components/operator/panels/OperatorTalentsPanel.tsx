@@ -1,9 +1,9 @@
 import { useMemo, useState } from "react";
 
 import { useStore } from "@nanostores/react";
-import cx from "clsx";
 
 import { operatorStore } from "~/pages/[locale]/operators/_store";
+
 import EliteButtonGroup from "../EliteButtonGroup";
 import OperatorTalent from "../OperatorTalent";
 import PotentialsDropdown from "../PotentialsDropdown";
@@ -14,7 +14,6 @@ const OperatorTalentsPanel: React.FC = () => {
 	const [elite, setElite] = useState(maxElite);
 
 	// Compute the map of available potentials at each elite level.
-	// Only needs to be done once, so an empty useMemo is used.
 	const potentialsMap = useMemo(() => {
 		const potentialsMap: { [eliteLevel: string]: number[] } = {};
 		operator.talents.forEach((talent) => {
@@ -28,6 +27,7 @@ const OperatorTalentsPanel: React.FC = () => {
 		});
 		return potentialsMap;
 	}, [operator.talents]);
+
 	const [potential, setPotential] = useState(
 		potentialsMap[`PHASE_${maxElite}`][0]
 	);

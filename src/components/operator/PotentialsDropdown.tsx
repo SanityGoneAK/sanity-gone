@@ -1,3 +1,5 @@
+import { range } from "lodash-es";
+
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -7,12 +9,12 @@ import {
 } from "~/components/ui/Dropdown";
 
 import {
-	PotentialFiveIcon,
-	PotentialFourIcon,
 	PotentialOneIcon,
-	PotentialSixIcon,
-	PotentialThreeIcon,
 	PotentialTwoIcon,
+	PotentialThreeIcon,
+	PotentialFourIcon,
+	PotentialFiveIcon,
+	PotentialSixIcon,
 } from "../icons";
 
 const potentialLabel = (potential: number) => {
@@ -74,7 +76,7 @@ export interface PotentialsDropdownProps {
 const PotentialsDropdown: React.FC<PotentialsDropdownProps> = (props) => {
 	const { potentialsToShow, currentPotential, onChange } = props;
 
-	const potList = potentialsToShow ?? [0, 1, 2, 3, 4, 5]; // default to all pots
+	const potList = potentialsToShow ?? range(6); // default to all pots
 
 	return (
 		// TODO style this correctly and fix it
@@ -85,9 +87,7 @@ const PotentialsDropdown: React.FC<PotentialsDropdownProps> = (props) => {
 		// TODO maybe we should disable the dropdown if there's only one option?
 		// disabled={potList.length === 1 && potList[0] === currentPotential}
 		>
-			<DropdownMenuTrigger
-				className={`grid h-10 cursor-pointer grid-flow-col grid-cols-[max-content] items-center gap-x-2 whitespace-nowrap rounded-[18px] bg-neutral-500 px-3 py-2`}
-			>
+			<DropdownMenuTrigger className="grid h-10 cursor-pointer grid-flow-col grid-cols-[max-content] items-center gap-x-2 whitespace-nowrap rounded-[18px] bg-neutral-500 px-3 py-2">
 				{potentialLabel(currentPotential)}
 			</DropdownMenuTrigger>
 			<DropdownMenuContent>
@@ -96,9 +96,7 @@ const PotentialsDropdown: React.FC<PotentialsDropdownProps> = (props) => {
 						key={index}
 						onSelect={() => onChange(pot)}
 					>
-						<DropdownMenuLabel
-							className={`grid cursor-pointer grid-flow-col grid-cols-[max-content] items-center gap-x-2 whitespace-nowrap bg-neutral-500 px-3 py-2`}
-						>
+						<DropdownMenuLabel className="grid cursor-pointer grid-flow-col grid-cols-[max-content] items-center gap-x-2 whitespace-nowrap bg-neutral-500 px-3 py-2">
 							{potentialLabel(pot)}
 						</DropdownMenuLabel>
 					</DropdownMenuItem>

@@ -6,7 +6,9 @@ import CharacterRange from "~/components/operator/CharacterRange";
 import CharacterStats from "~/components/operator/CharacterStats";
 import EliteButtonGroup from "~/components/operator/EliteButtonGroup";
 import MaterialRequirements from "~/components/operator/MaterialRequirements";
+import PotentialsDropdown from "~/components/operator/PotentialsDropdown";
 import Checkbox from "~/components/ui/Checkbox";
+import Input from "~/components/ui/Input";
 import PillButtonGroup from "~/components/ui/PillButtonGroup";
 import SliderWithInput from "~/components/ui/SliderWithInput";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
@@ -33,8 +35,11 @@ const OperatorAttributesPanel: React.FC = () => {
 	}, [operator.modules]);
 	const [moduleType, setModuleType] = useState(moduleTypes.at(-1)!);
 	const [moduleLevel, setModuleLevel] = useState(3);
-	const [isTrustBonusChecked, setTrustBonusChecked] = useState(false);
-	const [isPotentialBonusChecked, setPotentialBonusChecked] = useState(false);
+	const [isTrustChecked, setTrustChecked] = useState(true);
+	const [trust, setTrust] = useState(100);
+	const [potential, setPotential] = useState(0);
+
+	const trustToUse = isTrustChecked ? trust : 0;
 
 	const moduleId =
 		moduleType === "None"
@@ -60,8 +65,8 @@ const OperatorAttributesPanel: React.FC = () => {
 	const { rangeObject: range } = getStatsAtLevel(operator, {
 		eliteLevel: elite,
 		level,
-		pots: isPotentialBonusChecked,
-		trust: isTrustBonusChecked,
+		potential,
+		trust: trustToUse,
 		moduleId,
 		moduleLevel,
 	});
@@ -72,8 +77,8 @@ const OperatorAttributesPanel: React.FC = () => {
 				{
 					eliteLevel: elite,
 					level,
-					pots: isPotentialBonusChecked,
-					trust: isTrustBonusChecked,
+					potential,
+					trust: trustToUse,
 					moduleId,
 					moduleLevel,
 				},
@@ -88,7 +93,13 @@ const OperatorAttributesPanel: React.FC = () => {
 	};
 
 	const handleTrustBonusCheckedChange = (checked: CheckedState) => {
-		setTrustBonusChecked(checked === true); // we're assuming "indeterminate" is impossible here
+		setTrustChecked(checked === true); // we're assuming "indeterminate" is impossible here
+	};
+
+	const handleTrustChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+		if (e.target.validity.valid && e.target.value.length > 0) {
+			setTrust(parseInt(e.target.value, 10));
+		}
 	};
 
 	return (
@@ -108,21 +119,29 @@ const OperatorAttributesPanel: React.FC = () => {
 					/>
 				</div>
 				<div className="grid grid-cols-[auto_auto_1fr] items-center gap-x-6">
-					<div>
+					<div className="flex items-center gap-2">
 						<label className="flex cursor-pointer items-center gap-2 text-neutral-200">
 							<Checkbox
-								checked={isTrustBonusChecked}
+								checked={isTrustChecked}
 								onCheckedChange={handleTrustBonusCheckedChange}
 							/>
 							Trust
 						</label>
+						<Input
+							aria-label="Trust level"
+							size={3}
+							type="number"
+							min={0}
+							max={200}
+							value={trust}
+							onFocus={(e) => e.target.select()}
+							onChange={handleTrustChange}
+						/>
 					</div>
 					<div>
-						<Checkbox
-							className="text-neutral-200"
-							label="Potential Bonus"
-							checked={isPotentialBonusChecked}
-							onChange={setPotentialBonusChecked}
+						<PotentialsDropdown
+							currentPotential={potential}
+							onChange={setPotential}
 						/>
 					</div>
 					{moduleTypes.length > 1 && (
@@ -151,8 +170,8 @@ const OperatorAttributesPanel: React.FC = () => {
 						level={level}
 						moduleId={moduleId}
 						moduleLevel={moduleLevel}
-						usePotentialBonus={isPotentialBonusChecked}
-						useTrustBonus={isTrustBonusChecked}
+						potential={potential}
+						trust={trustToUse}
 					/>
 					<div
 						className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600
@@ -178,8 +197,8 @@ const OperatorAttributesPanel: React.FC = () => {
 									level={level}
 									moduleId={moduleId}
 									moduleLevel={moduleLevel}
-									usePotentialBonus={isPotentialBonusChecked}
-									useTrustBonus={isTrustBonusChecked}
+									potential={potential}
+									trust={trustToUse}
 									parentCharacter={operator}
 								/>
 								<div className="border-t border-neutral-600" />
