@@ -1,4 +1,6 @@
 import OpenAI from "openai";
+import { promises as fs } from "fs";
+import path from "path";
 
 /**
  * @param {"zh_CN" | "en_US" | "ja_JP" | "ko_KR"} locale - output locale
@@ -8,24 +10,54 @@ export async function translateOperators(locale) {
 		return;
 	}
 
-	const operators = Object.entries(
-		await import(`../data/${locale}/operators.json`)
-	).filter(
-		([charId, operator]) =>
-			operator.serverLocales &&
-			operator.serverLocales.length === 1 &&
-			operator.serverLocales.some(
-				(serverLocale) => serverLocale === "zh_CN"
+	const operatorsTlJson = await Promise.all(
+		Object.entries(await import(`../data/${locale}/operators.json`))
+			.filter(
+				([charId, operator]) =>
+					operator.serverLocales &&
+					operator.serverLocales.length === 1 &&
+					operator.serverLocales.some(
+						(serverLocale) => serverLocale === "zh_CN"
+					)
 			)
+			.map(async ([charId, character]) => {
+				return [
+					charId,
+					{
+						charId,
+						name: character.name,
+						itemUsage: await translateString(
+							locale,
+							character.itemUsage
+						),
+						itemDesc: await translateString(
+							locale,
+							character.itemDesc
+						),
+						itemObtainApproach: await translateString(
+							locale,
+							character.itemObtainApproach
+						),
+						description: await translateString(
+							locale,
+							character.description
+						),
+					},
+				];
+			})
 	);
+	// console.log(
+	// 	(await translateString(locale, operators[1][1].description)).choices[0]
+	// 		.message.content
+	// );
 
-	console.log(
-		(await translateString(locale, operators[1][1].description)).choices[0]
-			.message.content
+	fs.writeFile(
+		path.join(__dirname, "../data/", locale, "operators-tl.json"),
+		JSON.stringify(Object.fromEntries(await operatorsTlJson), null, 2)
 	);
 }
 
-function translateString(locale, string) {
+async function translateString(locale, string) {
 	const localeMap = {
 		en_US: "English",
 		ja_JP: "Japanese",
@@ -42,14 +74,13 @@ function translateString(locale, string) {
 		baseURL: "http://localhost:1234/v1",
 		apiKey: "not-needed",
 	});
-	console.log(locale);
-	console.log(string);
 
-	return openai.chat.completions.create({
-		messages: [
-			{
-				role: "system",
-				content: `You are an accurate translator of content for a game. Some of the content in game has specific formats, you will preserve this format while also translating the text accurately.
+	return (
+		await openai.chat.completions.create({
+			messages: [
+				{
+					role: "system",
+					content: `You are an accurate translator of content for a game. Some of the content in game has specific formats, you will preserve this format while also translating the text accurately.
                 Translate ALWAYS From Chinese to ${localeMap[locale]}. DO NOT UNDER ANY CIRUMSTANCE add anything to the response that is not the translation of the text given.
                 Translations should be in a Informal or Convertational style
 				
@@ -58,13 +89,14 @@ function translateString(locale, string) {
 				TO: ${localeExamples[locale]}
                 
                 When responding do not include any formatting just the translated text`,
-			},
-			{
-				role: "user",
-				content: `${string}`,
-			},
-		],
-	});
+				},
+				{
+					role: "user",
+					content: `${string}`,
+				},
+			],
+		})
+	).choices[0].message.content;
 }
 
 translateOperators("en_US");

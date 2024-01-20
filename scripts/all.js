@@ -4,6 +4,7 @@ import path from "path";
 import { createOperatorsJson } from "./import-operators.js";
 import { createBranchesJson } from "./import-branches.js";
 import { createItemsJson } from "./import-items.js";
+import { translateOperators } from "./translate-operators.js";
 // import { createMapsJson } from "./create-maps-json.js";
 // import { createEnemiesJson } from "./create-enemies-json.js";
 
@@ -20,6 +21,9 @@ import { createItemsJson } from "./import-items.js";
 		]);
 	});
 
+	["en_US", "ja_JP", "ko_KR"].forEach(async (locale) => {
+		await Promise.all([translateOperators(locale)]);
+	});
 	// unfortunately build-search-index depends on branches.json,
 	// so we have to wait to import it until branches.json has been written
 	// const { buildSearchIndex } = await import("./build-search-index.js");

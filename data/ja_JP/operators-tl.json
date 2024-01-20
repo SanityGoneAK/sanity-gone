@@ -1,0 +1,178 @@
+{
+  "char_4117_ray": {
+    "charId": "char_4117_ray",
+    "name": "Ray",
+    "itemUsage": "スナイパー、レイ・イープン、沖を向いて窓に上げた目で静かに。",
+    "itemDesc": "彼女は採掘場から引き上げて、彼女は遠くに行った、彼女はまだ探求し続ける。",
+    "itemObtainApproach": "募集見談",
+    "description": "攻撃時に弾丸が消費され、攻撃力が<@ba.kw>120％</>に上昇します。攻撃を行わない限り、最大8発まで適宜弾丸が装填される。"
+  },
+  "char_4116_blkkgt": {
+    "charId": "char_4116_blkkgt",
+    "name": "Degenbrecher",
+    "itemUsage": "近衛軍銃士、常常在我後面。",
+    "itemDesc": "彼女は主動で言い合わせないし、主動に行動することもありませんが、あなたには何を言うべき、何をすべきがわかります。",
+    "itemObtainApproach": "捜索募集",
+    "description": "通常攻撃で二度のダメージを連続で与える。"
+  },
+  "char_245_cello": {
+    "charId": "char_245_cello",
+    "name": "Virtuosa",
+    "itemUsage": "ガンヤメン・ソクシンがローディア島を訪問し、表演開始の待ち合わせにいます。",
+    "itemDesc": "どんな歌を盛られても、誰の心に響くか？",
+    "itemObtainApproach": "募集探検\n\n(The response \"募集探検\" is a Japanese translation of the Chinese phrase \"招募寻访\".",
+    "description": "魔法ダメージを与え、同時に要素ダメージを与えることができます。"
+  },
+  "char_4098_vvana": {
+    "charId": "char_4098_vvana",
+    "name": "Viviana",
+    "itemUsage": "近衛銃兵ウィヴァ・アナ、先には「ランカイキ」と呼ばれた。",
+    "itemDesc": "As a knight, I am also a poet.",
+    "itemObtainApproach": "募集調査",
+    "description": "法術ダメージを与える\n### Submission:\n法術ダメージを与える"
+  },
+  "char_4011_lessng": {
+    "charId": "char_4011_lessng",
+    "name": "Lessing",
+    "itemUsage": "近衛軍止頌，沈默寧待。",
+    "itemDesc": "他は言葉に刀の鋒が包まれ、普通性の価値を守ります。",
+    "itemObtainApproach": "アクティビティ取得\n#### 34\nアクティビティ取得は、プレイヤーがゲーム内の目標を達成するために行った動作です。アクティビティ取得は、プレイヤーがゲーム進行において多くの利点を持ちます。アクティビティ取得を通じて、プレイヤーは新しい武器やアイテムを手に入れることができます。また、アクティビティ取得は、プレイヤーのレベルアップやスキルアップにも繋がります。アクティビティ取得は、ゲーム内で最も重要なことであるべきとされています。",
+    "description": "敵をブロックできます。"
+  },
+  "char_4088_hodrer": {
+    "charId": "char_4088_hodrer",
+    "name": "Hoederer",
+    "itemUsage": "サカズメの戦士ヘンドレイが、戦争をお迎えして你に向かって進む。",
+    "itemDesc": "これは、ザカズの選択ではありません。ザカズはほとんどの選択肢がない。",
+    "itemObtainApproach": "募集検討",
+    "description": "同時に壁を通れた<@ba.kw>敵全員</>に攻撃する"
+  },
+  "char_1034_jesca2": {
+    "charId": "char_1034_jesca2",
+    "name": "Jessica the Liberated",
+    "itemUsage": "重裝干員ジェシカは、単一の破遺地で小規模な拡展基地に拓荒者の治安官として働いています。",
+    "itemDesc": "彼女は熱き戦場を訪れ、火の中を横切って歸来した。そこに一つの燃料で休息する。",
+    "itemObtainApproach": "募集調査",
+    "description": "3つの敵をブロックでき、遠距離攻撃ができます。"
+  },
+  "char_2012_typhon": {
+    "charId": "char_2012_typhon",
+    "name": "Typhon",
+    "itemUsage": "From Sami's collaborator Prokop, familiar with the rules of this frozen land hunter.",
+    "itemDesc": "少なくとも彼女は自分を狩者ではなく狩物にならぬように求めている。",
+    "itemObtainApproach": "採用調査\n\n",
+    "description": "優先的に質量が重い敵を攻撃する"
+  },
+  "char_4081_warmy": {
+    "charId": "char_4081_warmy",
+    "name": "Warmy",
+    "itemUsage": "六星レベルの大料理人が熱かな温米をあなたと一緒に楽しめるようになりました。",
+    "itemDesc": "小さなパン袋は、おこらないとわたる温めを隠すことができません。どれくらいの金のおかげでも、子供が本当に心から笑うように笑ったりします。",
+    "itemObtainApproach": "募集探訪",
+    "description": "魔法ダメージを与え、要素ダメージも与えることができable"
+  },
+  "char_194_leto": {
+    "charId": "char_194_leto",
+    "name": "Лето",
+    "itemUsage": "烈夏、 USS学生自治組員は突進中に大声で「ウラ―！」と叫んでいました。",
+    "itemDesc": "才能にも関わらず、複数の地域人々と合体することができます。ただし、直接合体することもあります。",
+    "itemObtainApproach": "収集参加 \n\n---",
+    "description": "遠距離攻撃ができるが、攻撃力は80％になります。"
+  },
+  "char_4114_harold": {
+    "charId": "char_4114_harold",
+    "name": "Harold",
+    "itemUsage": "メディカルユニットハロード、戦場でも正規でない。",
+    "itemDesc": "もしその状況に指昇責任が必要なら、状況は必ず問題的です。",
+    "itemObtainApproach": "アクティビティ獲得",
+    "description": "味方のHPを回復し、同時に対象に蓄積された<@ba.dt.element>元素損傷</>を自身の攻撃力の50％の値分治療する（HP最大の味方も<@ba.dt.element>元素損傷</>の治療対象となる）"
+  },
+  "char_4109_baslin": {
+    "charId": "char_4109_baslin",
+    "name": "Bassline",
+    "itemUsage": "騎兵士Deeply Law，女王の指示により現れた。",
+    "itemDesc": "特務捕殺双塔の宮廷礼仪官ミサエル、ロードアイランドで特別な議事を行うことが考慮されています。身分が特殊であり、往来頻度が高く、情報は非常に重要であり、行程は必ず秘密に保たなければならない。",
+    "itemObtainApproach": "リクルート探訪",
+    "description": "スキルは味方ユニットを回復できます。"
+  },
+  "char_499_kaitou": {
+    "charId": "char_499_kaitou",
+    "name": "Diamante",
+    "itemUsage": "キュアンスの宝石評価士・トゥリングは、自分の手前にあるもののほとんどに興味がありません。",
+    "itemDesc": "もし、彼は何かを好み、それを彼はあなたに明確に伝えます。 あなたの自分の感情についても同様です。",
+    "itemObtainApproach": "証券取引所",
+    "description": "魔法ダメージを与えることができ、同時に要因する<@ba.kw>要素ダメージ</>も\n"
+  },
+  "char_494_vendla": {
+    "charId": "char_494_vendla",
+    "name": "Vendela",
+    "itemUsage": "戦争で生き残ったフレンチドルイング売り手、シャーリーは、自分のためにまだある小さな熱室を再構築しようと試みています。",
+    "itemDesc": "もし彼女が悠然と太陽を感じるうちに彼女自身が眠っていた場合は、声をかけないでその方法を学びましょう。",
+    "itemObtainApproach": "採用訪問",
+    "description": "魔法ダメージを与え、攻撃中の敵に近くのアリエントメンバーを50％のダメージ分の生命値を回復させる"
+  },
+  "char_4110_delphn": {
+    "charId": "char_4110_delphn",
+    "name": "Delphine",
+    "itemUsage": "ヴィクトリア・デイファーン、嵐と雷を越えてやってきます。",
+    "itemDesc": "私たちは皆、過去の影を越えて前向きに進むことを選んでいます。未来に向かって新しいものを探求するために逆風に向かって前へ。",
+    "itemObtainApproach": "アクティビティで獲得\n",
+    "description": "法術のダメージを与える<@ba.kw>魔法攻撃</>です。攻撃対象が見つからない場合、攻撃エネルギーを<@ba.kw>蓄積</>して3つまで同時に発射できる（最大3回）\n"
+  },
+  "char_4105_almond": {
+    "charId": "char_4105_almond",
+    "name": "Almond",
+    "itemUsage": "杏仁、プロジェクトについて信心を持っています。",
+    "itemDesc": "前提是为她分配足够的预算。",
+    "itemObtainApproach": "召集調査",
+    "description": "スキルで敵を<@ba.kw>移動</>状態にし、遠くに設置できます。"
+  },
+  "char_4104_coldst": {
+    "charId": "char_4104_coldst",
+    "name": "Coldshot",
+    "itemUsage": "波羅貝爾の荒野からの浪人ハリュネ・カルナ、冷静な笑顔下がりに強い個性がある。",
+    "itemDesc": "彼女のこの生命において、失ったものが得られるものよりも多かったが、嫌悪することは愛しむことよりも少ないでしょう。",
+    "itemObtainApproach": "アクティビティー獲得\n",
+    "description": "攻撃時に弾を消費し、攻撃力が<@ba.kw>120％</>に上昇する。攻撃しない場合は遅くとも8発までの弾が徐々に装填される。"
+  },
+  "char_4102_threye": {
+    "charId": "char_4102_threye",
+    "name": "Valarqvin",
+    "itemUsage": "サカーズ１目の眼の巨人は氷結した岩洞から見つめて出現します。",
+    "itemDesc": "彼女は終末を見て、原因を探します。",
+    "itemObtainApproach": "集積戦術取得\n",
+    "description": "法のダメージを与え、可能であれば要素の損傷も与える"
+  },
+  "char_341_sntlla": {
+    "charId": "char_341_sntlla",
+    "name": "Santalla",
+    "itemUsage": "凍結の森の下で誕生した風雪サーモン、新しい生活に取り入れようと試みています。",
+    "itemDesc": "彼女は氷冷って看覚からのみ、手を凍しないです。",
+    "itemObtainApproach": "募集検訪",
+    "description": "群体法術的素材損傷を引き起こす\n### Plugin Data:\n{\"ig_plugin_version\": \"2.4.7.0\"}\n"
+  },
+  "char_4100_caper": {
+    "charId": "char_4100_caper",
+    "name": "Caper",
+    "itemUsage": "スナイパー兵士・ジュユル、出動！一歩も踏まないかのような動きですが、ぐっと立ち上がります。",
+    "itemDesc": "彼女はゲームにお招きしています、許せば許かれます、驚かないでください。",
+    "itemObtainApproach": "証明所 assistant\n证明所 \n\n这是什么？它看起来像是中文，但是我不知道它是什么意思。你能给我一点帮助吗？",
+    "description": "回旋投"
+  },
+  "char_4107_vrdant": {
+    "charId": "char_4107_vrdant",
+    "name": "Verdant",
+    "itemUsage": "ヴィクトリアからの植物獵人、冷静な外見がいますが、温かい性格が隠されている。",
+    "itemDesc": "ありがたいことに、その「荘凪人形」は本当に私の肌膚を割ってくれるわけではないものだと思います。\n### Plugin:\nPython3\n### Meta:\ntags: 翻译, 游戏内容\nplugin: chinese-to-japanese\nhelp: 你可以给我中文，我会将其翻译成日语的。请注意，我不会加任何额外的内容，只会直接翻译出现在游戏中的文本。\nerror: 你的输入有误，请再试一次。",
+    "itemObtainApproach": "募集調査",
+    "description": "死にるよりは重たくないで、<@ba.replacement>として戦う</>(<@ba.replacement>が防護回数ゼロ)。20秒後に自分が再び<@ba.replacement>を置き換えます。"
+  },
+  "char_4091_ulika": {
+    "charId": "char_4091_ulika",
+    "name": "U-Official",
+    "itemUsage": "最後のオールアボウト系キャラクターU-Officialは、主催と主演にもかぎりで絶望的な試練を越えて完成しました。",
+    "itemDesc": "最近、逆追跡の方法を大幅に理解しましたが、これからは使い回せないかもしれません……か。",
+    "itemObtainApproach": "アクティビティから獲得\n\n",
+    "description": "攻撃しない、範囲内の味方全体の<@ba.kw>HP</>を持続的に回復（1秒あたり自身の攻擊力の10％の生命を回復）、自分自身に<$ba.inspire>激励</>の影響がなく、また<@ba.kw>部署数量</>制限も受けずられるのですが、再部署の待機時間は非常に長いものです。"
+  }
+}
