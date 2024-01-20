@@ -212,15 +212,19 @@ function collectSummonData(characters, _, { summonIdToOperatorId }) {
 }
 
 function getLocalesForValue(charId, locale, value) {
-	if (value == "name" && !CHARACTER_LOCALES[locale][charId]) {
+	if (value === "name" && !CHARACTER_LOCALES[locale][charId]) {
 		return CHARACTER_LOCALES.zh_CN[charId].appellation;
 	}
 
-	if (value == "name" && charId == "char_1001_amiya2") {
+	if (value === "name" && charId === "char_1001_amiya2") {
 		return CHARACTER_LOCALES[locale][charId][value] + " (Guard)";
 	}
 
-	if (value == "name" && charId == "char_4055_bgsnow" && locale == "en_US") {
+	if (
+		value === "name" &&
+		charId === "char_4055_bgsnow" &&
+		locale === "en_US"
+	) {
 		return "Pozёmka";
 	}
 
@@ -267,7 +271,7 @@ function addTalents(characters, locale, { jetTalentTranslations }) {
 						!CHARACTER_LOCALES[locale][charId] &&
 						jetTalentTranslations[charId] &&
 						character.profession !== "TOKEN" &&
-						locale == "en_US"
+						locale === "en_US"
 					) {
 						try {
 							const talentTL =
@@ -376,7 +380,7 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 
 				if (
 					skinType === "elite-one-or-two" ||
-					skinType == "elite-zero"
+					skinType === "elite-zero"
 				) {
 					skinName = `Elite ${elite ?? 0}`;
 				}
@@ -449,7 +453,7 @@ function addSkills(characters, locale, { jetSkillTranslations }) {
 							if (
 								skillTL &&
 								!SKILL_LOCALES[locale][skillId] &&
-								locale == "en_US"
+								locale === "en_US"
 							) {
 								baseSkillLevelObject.name = skillTL.name;
 								baseSkillLevelObject.description =
@@ -589,7 +593,7 @@ function addRiicSkills(characters, locale, { opToRiicSkillsMap }) {
 			{
 				...character,
 				riicSkills:
-					charId == "char_1001_amiya2"
+					charId === "char_1001_amiya2"
 						? opToRiicSkillsMap["char_002_amiya"]
 						: opToRiicSkillsMap[charId],
 			},
