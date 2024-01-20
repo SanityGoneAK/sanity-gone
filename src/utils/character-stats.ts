@@ -1,3 +1,5 @@
+import { isEqual } from "lodash-es";
+
 import { toTitleCase } from "./strings";
 
 import type { Range } from "../types/gamedata-types";
@@ -51,10 +53,7 @@ export const doStatsChange = (
 			activePhase.attributesKeyFrames.length - 1
 		];
 
-	return (
-		JSON.stringify(startingKeyFrame.data) !==
-		JSON.stringify(finalKeyFrame.data)
-	);
+	return !isEqual(startingKeyFrame.data, finalKeyFrame.data);
 };
 
 /**
