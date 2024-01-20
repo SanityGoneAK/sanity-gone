@@ -124,10 +124,9 @@ export async function createOperatorsJson(dataDir, locale) {
 		addSkins,
 		convertRarityIndex,
 		addTraits,
+		addPotentialRanks,
 		addSummons,
 
-		// @TODO: Translate Traits
-		// @TODO: Translate potential ranks
 		// @TODO: Convert ricc min elite to number
 		// @TODO: Figure out SpTypes and SkillTypes
 		// All summon data for a specific character must be parsed at this point (e.g. Skills, Phases)
@@ -510,6 +509,35 @@ function addTraits(characters, locale) {
 				trait: {
 					candidates,
 				},
+			},
+		];
+	});
+}
+
+function addPotentialRanks(characters, locale) {
+	return characters.map(([charId, character]) => {
+		const potentialRanks = (character.potentialRanks ?? []).map(
+			(pontentialRank, potentialRankIndex) => {
+				const characterLocale =
+					CHARACTER_LOCALES[locale][charId] ??
+					CHARACTER_LOCALES.zh_CN[charId];
+
+				const description =
+					characterLocale.potentialRanks[potentialRankIndex]
+						.description;
+
+				return {
+					...pontentialRank,
+					description: description,
+				};
+			}
+		);
+
+		return [
+			charId,
+			{
+				...character,
+				potentialRanks: potentialRanks,
 			},
 		];
 	});
