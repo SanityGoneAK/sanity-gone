@@ -1,4 +1,4 @@
-import XRegExp from "xregexp";
+import { matchRecursive } from "xregexp";
 
 import type { MatchRecursiveValueNameMatch } from "xregexp";
 
@@ -30,16 +30,44 @@ export const descriptionToHtml = (
 	let htmlDescription = description.slice();
 	let recursiveMatch: MatchRecursiveValueNameMatch[] | null = null;
 	let match: RegExpMatchArray | null = null;
+
+	let addedClosingTags = 0;
+	let forceContinue = false;
+
 	do {
-		recursiveMatch = XRegExp.matchRecursive(
-			htmlDescription,
-			descriptionTagLeftDelim,
-			descriptionTagRightDelim,
-			"g",
-			{
-				valueNames: ["between", "tagName", "tagContent", "closingTag"],
-			}
-		);
+		forceContinue = false;
+		try {
+			recursiveMatch = matchRecursive(
+				htmlDescription,
+				descriptionTagLeftDelim,
+				descriptionTagRightDelim,
+				"g",
+				{
+					valueNames: [
+						"between",
+						"tagName",
+						"tagContent",
+						"closingTag",
+					],
+				}
+			);
+		} catch (e) {
+			// This is a hack to get around the fact that the game sometimes
+			// doesn't close its tags properly. If we encounter a tag that
+			// doesn't have a closing tag, we'll just add one and try again.
+			// Twice.
+
+			// This is terrible. I'm sorry.
+			console.log(`Auto-appending closing tag to ${htmlDescription}`);
+			htmlDescription += "</>";
+			addedClosingTags++;
+			forceContinue = true;
+			continue;
+		}
+
+		if (addedClosingTags >= 2) {
+			throw new Error(`Couldn't parse description: ${description}`);
+		}
 
 		if (recursiveMatch.length > 0) {
 			let resultingString = "";
@@ -109,7 +137,7 @@ export const descriptionToHtml = (
 
 			htmlDescription = resultingString;
 		}
-	} while (recursiveMatch.length > 0);
+	} while (forceContinue || (recursiveMatch?.length ?? 0 > 0));
 
 	// replace any newlines with <br> tags to get past HTML whitespace collapsing
 	htmlDescription = htmlDescription
