@@ -46,10 +46,6 @@ export async function translateOperators(locale) {
 				];
 			})
 	);
-	// console.log(
-	// 	(await translateString(locale, operators[1][1].description)).choices[0]
-	// 		.message.content
-	// );
 
 	fs.writeFile(
 		path.join(__dirname, "../data/", locale, "operators-tl.json"),
@@ -81,8 +77,8 @@ async function translateString(locale, string) {
 				{
 					role: "system",
 					content: `You are an accurate translator of content for a game. Some of the content in game has specific formats, you will preserve this format while also translating the text accurately.
-                Translate ALWAYS From Chinese to ${localeMap[locale]}. DO NOT UNDER ANY CIRUMSTANCE add anything to the response that is not the translation of the text given.
-                Translations should be in a Informal or Convertational style
+                Translate ALWAYS From Chinese to ${localeMap[locale]}. DO NOT UNDER ANY CIRCUMSTANCE add anything to the response that is not the translation of the text given.
+                Translations should be in a Informal or Conversational style
 				
                 Some examples of translations are 
 				FROM: 恢复友方单位生命，并回复相当于攻击力50%的<@ba.dt.element>元素损伤</>（可以回复未受伤友方单位的<@ba.dt.element>元素损伤</>）to
