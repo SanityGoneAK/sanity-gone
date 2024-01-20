@@ -123,6 +123,7 @@ export async function createOperatorsJson(dataDir, locale) {
 		addVoices,
 		addSkins,
 		convertRarityIndex,
+		addTraits,
 		addSummons,
 
 		// @TODO: Translate Traits
@@ -271,7 +272,7 @@ function addTalents(characters, locale, { jetTalentTranslations }) {
 						try {
 							const talentTL =
 								jetTalentTranslations[charId][talentIndex][
-								phaseIndex
+									phaseIndex
 								];
 							baseCandidateObject.name = talentTL.name;
 							baseCandidateObject.description = talentTL.desc;
@@ -368,9 +369,9 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 				) {
 					skinName = SKIN_LOCALES[locale][cnSkin.skinId]
 						? SKIN_LOCALES[locale][cnSkin.skinId].displaySkin
-							.skinName
+								.skinName
 						: SKIN_LOCALES.zh_CN[cnSkin.skinId].displaySkin
-							.skinName;
+								.skinName;
 				}
 
 				if (
@@ -479,6 +480,41 @@ function addSkills(characters, locale, { jetSkillTranslations }) {
 	});
 }
 
+function addTraits(characters, locale) {
+	return characters.map(([charId, character]) => {
+		if (character.trait === null) {
+			return [charId, character];
+		}
+
+		const candidates = (character.trait.candidates ?? []).map(
+			(candidate, candidateIndex) => {
+				const characterLocale =
+					CHARACTER_LOCALES[locale][charId] ??
+					CHARACTER_LOCALES.zh_CN[charId];
+
+				const overrideDescripton =
+					characterLocale.trait.candidates[candidateIndex]
+						.overrideDescripton;
+
+				return {
+					...candidate,
+					overrideDescripton: overrideDescripton,
+				};
+			}
+		);
+
+		return [
+			charId,
+			{
+				...character,
+				trait: {
+					candidates,
+				},
+			},
+		];
+	});
+}
+
 function filterSummons(characters) {
 	return characters.filter(
 		([charId, character]) => character.profession !== "TOKEN"
@@ -539,7 +575,7 @@ function addReleaseOrderAndLimited(
 			{
 				...character,
 				...releaseOrderAndLimitedLookup[
-				CHARACTER_LOCALES.zh_CN[charId].name
+					CHARACTER_LOCALES.zh_CN[charId].name
 				],
 			},
 		];
