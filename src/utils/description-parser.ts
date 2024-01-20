@@ -1,4 +1,4 @@
-import { matchRecursive } from "xregexp";
+import XRegExp from "xregexp";
 
 import type { MatchRecursiveValueNameMatch } from "xregexp";
 
@@ -7,6 +7,10 @@ export interface InterpolatedValue {
 	value: number;
 	[otherProperties: string]: unknown;
 }
+
+// can't use import {...} for this CJS module in Vite
+// eslint-disable-next-line import/no-named-as-default-member
+const { matchRecursive } = XRegExp;
 
 const descriptionTagLeftDelim = "<(?:@ba\\.|\\$|@cc\\.)[^>]+>";
 const descriptionTagRightDelim = "</>";
