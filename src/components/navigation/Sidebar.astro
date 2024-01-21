@@ -20,7 +20,9 @@ const languages = Object.entries(allLanguages).map(([key, language]) => {
 	];
 });
 
-const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
+const locale = getPathByLocale(
+	Astro.currentLocale ?? defaultLang
+) as keyof typeof allLanguages;
 const t = useTranslations(locale as keyof typeof ui);
 
 const sidebarLinks: { href: string; name: string }[] = [

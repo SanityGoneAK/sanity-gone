@@ -1,21 +1,21 @@
 import { range } from "lodash-es";
 
 import {
-	DropdownMenu,
-	DropdownMenuContent,
-	DropdownMenuItem,
-	DropdownMenuLabel,
-	DropdownMenuTrigger,
-} from "~/components/ui/Dropdown";
-
-import {
 	PotentialOneIcon,
 	PotentialTwoIcon,
 	PotentialThreeIcon,
 	PotentialFourIcon,
 	PotentialFiveIcon,
 	PotentialSixIcon,
-} from "../icons";
+} from "~/components/icons";
+import DropdownArrow from "~/components/icons/DropdownArrow";
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuRadioGroup,
+	DropdownMenuRadioItem,
+	DropdownMenuTrigger,
+} from "~/components/ui/Dropdown";
 
 const potentialLabel = (potential: number) => {
 	let icon = null;
@@ -23,7 +23,7 @@ const potentialLabel = (potential: number) => {
 		case 0:
 			icon = (
 				<PotentialOneIcon
-					className="h-[18px] w-[19px]"
+					className="h-[16px] w-auto"
 					noPotentialPathClassName="fill-neutral-200"
 				/>
 			);
@@ -31,7 +31,7 @@ const potentialLabel = (potential: number) => {
 		case 1:
 			icon = (
 				<PotentialTwoIcon
-					className="h-[18px] w-[19px]"
+					className="h-[16px] w-auto"
 					noPotentialPathClassName="fill-neutral-200"
 				/>
 			);
@@ -39,7 +39,7 @@ const potentialLabel = (potential: number) => {
 		case 2:
 			icon = (
 				<PotentialThreeIcon
-					className="h-[18px] w-[19px]"
+					className="h-[16px] w-auto"
 					noPotentialPathClassName="fill-neutral-200"
 				/>
 			);
@@ -47,16 +47,16 @@ const potentialLabel = (potential: number) => {
 		case 3:
 			icon = (
 				<PotentialFourIcon
-					className="h-[18px] w-[19px]"
+					className="h-[16px] w-auto"
 					noPotentialPathClassName="fill-neutral-200"
 				/>
 			);
 			break;
 		case 4:
-			icon = <PotentialFiveIcon className="h-[18px] w-[19px]" />;
+			icon = <PotentialFiveIcon className="h-[16px] w-auto" />;
 			break;
 		case 5:
-			icon = <PotentialSixIcon className="h-[18px] w-[19px]" />;
+			icon = <PotentialSixIcon className="h-[16px] w-auto" />;
 			break;
 	}
 	return (
@@ -79,28 +79,26 @@ const PotentialsDropdown: React.FC<PotentialsDropdownProps> = (props) => {
 	const potList = potentialsToShow ?? range(6); // default to all pots
 
 	return (
-		// TODO style this correctly and fix it
-		// This is basically a placeholder that kind of works
-		// Styles are ass right now because I have no idea how to style this properly
-		// Have fun, Blede
-		<DropdownMenu
-		// TODO maybe we should disable the dropdown if there's only one option?
-		// disabled={potList.length === 1 && potList[0] === currentPotential}
-		>
-			<DropdownMenuTrigger className="grid h-10 cursor-pointer grid-flow-col grid-cols-[max-content] items-center gap-x-2 whitespace-nowrap rounded-[18px] bg-neutral-500 px-3 py-2">
+		<DropdownMenu>
+			<DropdownMenuTrigger
+				disabled={
+					potList.length === 1 && potList[0] === currentPotential
+				}
+			>
 				{potentialLabel(currentPotential)}
+				<DropdownArrow />
 			</DropdownMenuTrigger>
 			<DropdownMenuContent>
-				{potList.map((pot, index) => (
-					<DropdownMenuItem
-						key={index}
-						onSelect={() => onChange(pot)}
-					>
-						<DropdownMenuLabel className="grid cursor-pointer grid-flow-col grid-cols-[max-content] items-center gap-x-2 whitespace-nowrap bg-neutral-500 px-3 py-2">
+				<DropdownMenuRadioGroup
+					value={`${currentPotential}`}
+					onValueChange={(value) => onChange(parseInt(value, 10))}
+				>
+					{potList.map((pot) => (
+						<DropdownMenuRadioItem key={pot} value={`${pot}`}>
 							{potentialLabel(pot)}
-						</DropdownMenuLabel>
-					</DropdownMenuItem>
-				))}
+						</DropdownMenuRadioItem>
+					))}
+				</DropdownMenuRadioGroup>
 			</DropdownMenuContent>
 		</DropdownMenu>
 	);
