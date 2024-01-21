@@ -62,7 +62,7 @@ const potentialLabel = (potential: number) => {
 	return (
 		<>
 			{icon}
-			<span>Potential {potential + 1}</span>
+			<span className="leading-none">Potential {potential + 1}</span>
 		</>
 	);
 };
