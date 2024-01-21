@@ -55,8 +55,12 @@ const ModuleInfo: React.FC<Props> = ({
 
 	return (
 		<div className="grid grid-cols-[192px_1fr] grid-rows-[auto_auto_1fr] items-center gap-x-4 gap-y-4 grid-areas-module">
-			<div className="h-full overflow-hidden rounded-lg bg-neutral-900 grid-in-image">
-				<img className="h-[182px]" src={moduleImage(moduleId)} alt="" />
+			<div className="flex h-full flex-col overflow-hidden rounded-lg bg-neutral-900 grid-in-image">
+				<img
+					className="h-[182px] flex-grow"
+					src={moduleImage(moduleId)}
+					alt=""
+				/>
 				<button
 					className="w-full border-t border-neutral-600 py-2 hover:bg-neutral-600"
 					type="button"

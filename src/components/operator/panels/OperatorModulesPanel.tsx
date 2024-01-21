@@ -1,11 +1,13 @@
-import { useStore } from "@nanostores/react";
 import { useMemo, useState } from "react";
-import PillButtonGroup from "~/components/ui/PillButtonGroup";
 
-import { operatorStore } from "~/pages/[locale]/operators/_store";
-import PotentialsDropdown from "../PotentialsDropdown";
-import MaterialRequirements from "../MaterialRequirements";
+import { useStore } from "@nanostores/react";
+
 import ModuleInfo from "~/components/operator/ModuleInfo.tsx";
+import PillButtonGroup from "~/components/ui/PillButtonGroup";
+import { operatorStore } from "~/pages/[locale]/operators/_store";
+
+import MaterialRequirements from "../MaterialRequirements";
+import PotentialsDropdown from "../PotentialsDropdown";
 
 import type * as OutputTypes from "~/types/output-types";
 
@@ -145,7 +147,7 @@ const OperatorModulesPanel: React.FC = () => {
 						<span>None</span>
 					</div>
 				)}
-				<div>
+				<div className="flex flex-col gap-4">
 					<h2 className="text-lg font-semibold leading-[23px]">
 						Promotion Requirements
 					</h2>
