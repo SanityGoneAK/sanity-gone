@@ -37,9 +37,9 @@ const Checkbox = React.forwardRef<
 		{...props}
 	>
 		<CheckboxPrimitive.Indicator
-			className={cx("text-current flex items-center justify-center")}
+			className={"text-current flex items-center justify-center"}
 		>
-			<div className={cx(checkboxVariants({ variant }))}></div>
+			<div className={checkboxVariants({ variant })}></div>
 		</CheckboxPrimitive.Indicator>
 	</CheckboxPrimitive.Root>
 ));
