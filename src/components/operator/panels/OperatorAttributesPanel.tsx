@@ -134,14 +134,13 @@ const OperatorAttributesPanel: React.FC = () => {
 						</label>
 						<Input
 							aria-label="Trust level"
-							size={3} // I don't know if this is useful semantically, but it sets the width wrong
 							type="number"
 							min={0}
 							max={200}
 							value={trust}
 							onFocus={(e) => e.target.select()}
 							onChange={handleTrustChange}
-							className={"w-11"} // So we have to re-set it here
+							className="w-11"
 						/>
 					</div>
 					<div>
