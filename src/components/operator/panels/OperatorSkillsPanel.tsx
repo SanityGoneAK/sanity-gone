@@ -12,6 +12,7 @@ import * as OutputTypes from "~/types/output-types";
 import { phaseToNumber } from "~/utils/character-stats.ts";
 import { descriptionToHtml } from "~/utils/description-parser";
 import { skillIcon } from "~/utils/images";
+import { cx } from "~/utils/styles";
 
 const OperatorSkillsPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
@@ -100,8 +101,8 @@ const OperatorSkillsPanel: React.FC = () => {
 					</h2>
 					<dl className="grid grid-flow-col justify-start gap-x-2 grid-in-skilltype">
 						<div className="inline-grid grid-flow-col gap-x-2 rounded bg-neutral-600 px-2 py-1">
-							<dt>Activation</dt>
-							<dd>
+							<dt className="text-neutral-200">Activation</dt>
+							<dd className="font-semibold">
 								{
 									OutputTypes.SkillType[
 										activeSkillLevel.skillType
@@ -110,8 +111,15 @@ const OperatorSkillsPanel: React.FC = () => {
 							</dd>
 						</div>
 						<div className="inline-grid grid-flow-col gap-x-2 rounded bg-neutral-600 px-2 py-1">
-							<dt>Recovery</dt>
-							<dd>
+							<dt className="text-neutral-200">Recovery</dt>
+							<dd
+								className={cx(
+									"font-semibold",
+									spRecoveryClassName[
+										activeSkillLevel.spData.spType
+									]
+								)}
+							>
 								{
 									OutputTypes.SkillSpType[
 										activeSkillLevel.spData.spType
@@ -122,32 +130,28 @@ const OperatorSkillsPanel: React.FC = () => {
 					</dl>
 				</div>
 				<dl className="flex gap-x-6">
-					<div
-						className={` relative flex w-full items-center justify-start gap-x-2 border-neutral-600`}
-					>
+					<div className="relative flex w-full items-center justify-start gap-x-2 border-neutral-600">
 						<SpCostIcon />
-						<dt>SP Cost</dt>
-						<dd className="ml-auto">
+						<dt className="text-neutral-200">SP Cost</dt>
+						<dd className="ml-auto font-semibold">
 							{activeSkillLevel.spData.spCost}
 						</dd>
 					</div>
 					<div className="w-1 border-r border-neutral-600"></div>
-					<div
-						className={` relative flex w-full items-center justify-start gap-x-2`}
-					>
+					<div className="relative flex w-full items-center justify-start gap-x-2">
 						<InitialSpIcon />
-						<dt>Initial SP</dt>
-						<dd className="ml-auto">
+						<dt className="text-neutral-200">Initial SP</dt>
+						<dd className="ml-auto font-semibold">
 							{activeSkillLevel.spData.initSp}
 						</dd>
 					</div>
 					<div className="w-1 border-r border-neutral-600"></div>
-					<div
-						className={` relative flex w-full items-center justify-start gap-x-2`}
-					>
+					<div className="relative flex w-full items-center justify-start gap-x-2">
 						<HourglassIcon />
-						<dt>Duration</dt>
-						<dd className="ml-auto">{skillDisplayDuration}</dd>
+						<dt className="text-neutral-200">Duration</dt>
+						<dd className="ml-auto font-semibold">
+							{skillDisplayDuration}
+						</dd>
 					</div>
 				</dl>
 				{activeSkillLevel.description && (
@@ -162,10 +166,13 @@ const OperatorSkillsPanel: React.FC = () => {
 					/>
 				)}
 				{activeSkillLevel.range && (
-					<CharacterRange
-						className="" // nothing here lol
-						rangeObject={activeSkillLevel.range}
-					/>
+					<div className="grid grid-cols-[auto,1fr] items-center rounded bg-neutral-600 p-4">
+						<span className="text-neutral-200">Range</span>
+						<CharacterRange
+							className="justify-self-center"
+							rangeObject={activeSkillLevel.range}
+						/>
+					</div>
 				)}
 				{itemCosts && (
 					<MaterialRequirements
@@ -179,4 +186,15 @@ const OperatorSkillsPanel: React.FC = () => {
 		</div>
 	);
 };
+
 export default OperatorSkillsPanel;
+
+const spRecoveryClassName: Record<
+	keyof typeof OutputTypes.SkillSpType,
+	string
+> = {
+	INCREASE_WHEN_ATTACK: "text-orange",
+	INCREASE_WHEN_TAKEN_DAMAGE: "text-yellow",
+	INCREASE_WITH_TIME: "text-green",
+	UNUSED: "",
+};
