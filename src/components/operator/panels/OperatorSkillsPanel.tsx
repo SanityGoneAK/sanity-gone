@@ -1,19 +1,17 @@
 import { useMemo, useState } from "react";
 
 import { useStore } from "@nanostores/react";
-import cx from "clsx";
 
 import { SpCostIcon, InitialSpIcon, HourglassIcon } from "~/components/icons";
+import CharacterRange from "~/components/operator/CharacterRange";
+import MaterialRequirements from "~/components/operator/MaterialRequirements";
 import PillButtonGroup from "~/components/ui/PillButtonGroup";
 import SliderWithInput from "~/components/ui/SliderWithInput";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
 import * as OutputTypes from "~/types/output-types";
+import { phaseToNumber } from "~/utils/character-stats.ts";
 import { descriptionToHtml } from "~/utils/description-parser";
 import { skillIcon } from "~/utils/images";
-import { phaseToNumber } from "~/utils/character-stats.ts";
-
-import CharacterRange from "../CharacterRange";
-import MaterialRequirements from "../MaterialRequirements";
 
 const OperatorSkillsPanel: React.FC = () => {
 	const operator = useStore(operatorStore);

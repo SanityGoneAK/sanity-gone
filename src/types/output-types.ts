@@ -176,24 +176,20 @@ export interface PotentialRanks {
 	equivalentCost: unknown; // unused
 }
 
-// export enum SkillType {
-// 	"Passive" = 0,
-// 	"Manual Trigger",
-// 	"Auto Trigger",
-// }
+/** Keys are strings used in game data, values are what we display in OperatorSkillsPanel */
+export const SkillType = {
+	PASSIVE: "Passive",
+	MANUAL: "Manual Trigger",
+	AUTO: "Auto Trigger",
+} as const;
 
-export enum SkillType {
-	"PASSIVE" = 0,
-	"MANUAL",
-	"AUTO",
-}
-
-export enum SkillSpType {
-	"Per Second Recovery" = 1,
-	"Offensive Recovery",
-	"UNUSED",
-	"Defensive Recovery",
-}
+/** Keys are strings used in game data, values are what we display in OperatorSkillsPanel */
+export const SkillSpType = {
+	INCREASE_WITH_TIME: "Per Second",
+	INCREASE_WHEN_ATTACK: "Offensive",
+	INCREASE_WHEN_TAKEN_DAMAGE: "Defensive",
+	UNUSED: "UNUSED",
+} as const;
 
 /**
  * Represents a skill's information at a specific skill level.
@@ -205,10 +201,9 @@ interface SkillLevel {
 	// but we expect it to be denormalized into a RangeObject before being passed to <SkillInfo />
 	rangeId: string | null;
 	range: Range | null;
-	skillType: string;
+	skillType: keyof typeof SkillType;
 	spData: {
-		// spType: SkillSpType;
-		spType: string | number;
+		spType: keyof typeof SkillSpType;
 		spCost: number;
 		initSp: number;
 		levelUpCost: unknown; // unused
