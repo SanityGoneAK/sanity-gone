@@ -10,7 +10,7 @@ import MaterialRequirements from "~/components/operator/MaterialRequirements";
 import PotentialsDropdown from "~/components/operator/PotentialsDropdown";
 import Checkbox from "~/components/ui/Checkbox";
 import Input from "~/components/ui/Input";
-import PillButtonGroup from "~/components/ui/PillButtonGroup";
+import PillButtonGroup from "~/components/ui/OldPillButtonGroup";
 import SliderWithInput from "~/components/ui/SliderWithInput";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
 import {

@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import { useStore } from "@nanostores/react";
 
 import ModuleInfo from "~/components/operator/ModuleInfo.tsx";
-import PillButtonGroup from "~/components/ui/PillButtonGroup";
+import PillButtonGroup from "~/components/ui/OldPillButtonGroup";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
 
 import MaterialRequirements from "../MaterialRequirements";

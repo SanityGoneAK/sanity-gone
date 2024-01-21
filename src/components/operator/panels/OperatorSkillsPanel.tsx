@@ -5,7 +5,7 @@ import { useStore } from "@nanostores/react";
 import { SpCostIcon, InitialSpIcon, HourglassIcon } from "~/components/icons";
 import CharacterRange from "~/components/operator/CharacterRange";
 import MaterialRequirements from "~/components/operator/MaterialRequirements";
-import PillButtonGroup from "~/components/ui/PillButtonGroup";
+import PillButtonGroup from "~/components/ui/OldPillButtonGroup";
 import SliderWithInput from "~/components/ui/SliderWithInput";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
 import * as OutputTypes from "~/types/output-types";
