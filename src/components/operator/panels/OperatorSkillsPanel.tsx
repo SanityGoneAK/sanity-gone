@@ -175,12 +175,17 @@ const OperatorSkillsPanel: React.FC = () => {
 					</div>
 				)}
 				{itemCosts && (
-					<MaterialRequirements
-						itemCosts={itemCosts}
-						minElite={minElite}
-						minLevel={minLevel}
-						minSkillLevel={skillLevel - 1}
-					/>
+					<>
+						<h2 className="text-lg font-semibold leading-[23px]">
+							Upgrade Requirements
+						</h2>
+						<MaterialRequirements
+							itemCosts={itemCosts}
+							minElite={minElite}
+							minLevel={minLevel}
+							minSkillLevel={skillLevel - 1}
+						/>
+					</>
 				)}
 			</div>
 		</div>
