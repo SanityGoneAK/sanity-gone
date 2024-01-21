@@ -35,12 +35,6 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 	}, [type, value]);
 	const inputRef = useRef<HTMLInputElement>(null);
 
-	useEffect(() => {
-		import("ally.js/src/style/focus-source").then((focusSource) =>
-			focusSource.default()
-		);
-	}, []);
-
 	const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (
 		e
 	) => {

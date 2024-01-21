@@ -19,6 +19,8 @@ import "~/styles/base.css";
 ---
 
 <script>
+	import initializeFocusSource from "ally.js/src/style/focus-source";
+
 	document.addEventListener("DOMContentLoaded", () => {
 		const mobileMenuTrigger = document.getElementById(
 			"mobile-menu-trigger"
@@ -29,6 +31,7 @@ import "~/styles/base.css";
 			siteWrapper.dataset.menuOpen = `${!open}`;
 			mobileMenuTrigger.ariaExpanded = `${!open}`;
 		});
+		initializeFocusSource();
 	});
 </script>
 <html lang="en">

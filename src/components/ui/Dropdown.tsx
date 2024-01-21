@@ -47,8 +47,12 @@ const DropdownMenuContent = forwardRef<
 ));
 DropdownMenuContent.displayName = DropdownMenuPrimitive.Content.displayName;
 
-const menuItemClasses =
-	"flex min-w-[var(--radix-dropdown-menu-trigger-width)] select-none items-center gap-2 px-2.5 py-2 hover:bg-neutral-400/[66] focus-visible:bg-neutral-400/[66] data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&:not(:focus-visible)]:outline-none [&:not([data-disabled])]:cursor-pointer data-[state=checked]:bg-neutral-400/[66]";
+const menuItemClasses = `flex min-w-[var(--radix-dropdown-menu-trigger-width)] select-none items-center gap-2 px-2.5 py-2
+	hover:bg-neutral-400/[66]
+	focus-visible:bg-neutral-400/[66]
+	data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&:not([data-disabled])]:cursor-pointer data-[state=checked]:bg-neutral-400/[66]
+	[&:not(:focus-visible,_html[data-focus-source=key])]:outline-none
+`;
 
 const DropdownMenuItem = forwardRef<
 	React.ElementRef<typeof DropdownMenuPrimitive.Item>,
