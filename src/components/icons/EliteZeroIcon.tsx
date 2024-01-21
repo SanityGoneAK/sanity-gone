@@ -20,7 +20,7 @@ const EliteZeroIcon: React.FC<Props> = ({ active, white, ...rest }) => {
 				className={cx(
 					"fill-[transparent] stroke-neutral-400 transition-[stroke] duration-200",
 					active
-						? "stroke-neutral-50"
+						? "stroke-[url(#rarity5)]"
 						: "group-hover:stroke-neutral-200",
 					white ? "stroke-neutral-50" : ""
 				)}

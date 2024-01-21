@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 
 import { useStore } from "@nanostores/react";
+import { range } from "lodash-es";
 
 import CharacterRange from "~/components/operator/CharacterRange";
 import CharacterStats from "~/components/operator/CharacterStats";
@@ -65,7 +66,7 @@ const OperatorAttributesPanel: React.FC = () => {
 	}, [elite, operator.phases, operator.rarity]);
 	const minElite = elite > 0 ? elite - 1 : 0;
 	const minLevel = maxLevelAtElite(operator.rarity, minElite);
-	const { rangeObject: range } = getStatsAtLevel(operator, {
+	const { rangeObject } = getStatsAtLevel(operator, {
 		eliteLevel: elite,
 		level,
 		potential,
@@ -113,7 +114,7 @@ const OperatorAttributesPanel: React.FC = () => {
 				<div className="grid grid-cols-[auto_1fr] items-center gap-x-4">
 					<EliteButtonGroup
 						currentElite={elite}
-						maxElite={maxElite}
+						eliteLevelsToShow={range(maxElite + 1)}
 						onChange={handleEliteChange}
 					/>
 					<SliderWithInput
@@ -185,7 +186,7 @@ const OperatorAttributesPanel: React.FC = () => {
 	"
 					>
 						<span>Range</span>
-						<CharacterRange rangeObject={range} />
+						<CharacterRange rangeObject={rangeObject} />
 					</div>
 
 					{summon && (

@@ -1,17 +1,30 @@
-import { useMemo, useState } from "react";
+import { createElement, useMemo, useState } from "react";
 
 import { useStore } from "@nanostores/react";
 
 import { operatorStore } from "~/pages/[locale]/operators/_store";
-
-import EliteButtonGroup from "../EliteButtonGroup";
-import OperatorTalent from "../OperatorTalent";
-import PotentialsDropdown from "../PotentialsDropdown";
+import { phaseToNumber } from "~/utils/character-stats";
+import { descriptionToHtml } from "~/utils/description-parser";
 import { riicSkillIcon } from "~/utils/images";
+
+import EliteButtonGroup, { getEliteIconComponent } from "../EliteButtonGroup";
 
 const OperatorRiicPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
-	const maxElite = operator.phases.length - 1;
+	const relevantEliteLevels = useMemo(
+		() =>
+			[
+				...new Set(
+					operator.riicSkills.flatMap((riicSkill) =>
+						riicSkill.stages.flatMap((stage) =>
+							phaseToNumber(stage.minElite)
+						)
+					)
+				),
+			].sort(),
+		[operator.riicSkills]
+	);
+	const maxElite = relevantEliteLevels.at(-1) ?? 0;
 	const [elite, setElite] = useState(maxElite);
 
 	const handleEliteChange = (newElite: number) => {
@@ -23,46 +36,62 @@ const OperatorRiicPanel: React.FC = () => {
 			<div className="grid grid-flow-col items-center justify-between gap-y-4 border-b border-neutral-600 pb-4">
 				<EliteButtonGroup
 					currentElite={elite}
-					maxElite={maxElite}
+					eliteLevelsToShow={relevantEliteLevels}
 					onChange={handleEliteChange}
 				/>
 			</div>
 
 			<div>
-				<div className="my-0 border-neutral-600 px-0 pb-6 [&:not(:first-of-type)]:border-t [&:not(:first-of-type)]:pt-6">
-					<div className="mb-4 flex items-center gap-4">
-						<img
-							className="size-6 object-contain"
-							src={riicSkillIcon("bskill_ctrl_aegir")}
-							alt=""
-						/>
-						<h2 className="font-serif text-2xl font-semibold">
-							Silence as a Sword
-						</h2>
-					</div>
-					<p>
-						When stationed at the Training Station, increase the
-						skill training speed of Specialist and Vanguard
-						operators by +30%
-					</p>
-				</div>
-				<div className="my-0 border-neutral-600 px-0 pb-6 [&:not(:first-of-type)]:border-t [&:not(:first-of-type)]:pt-6">
-					<div className="mb-4 flex items-center gap-4">
-						<img
-							className="size-6 object-contain"
-							src={riicSkillIcon("bskill_ctrl_aegir")}
-							alt=""
-						/>
-						<h2 className="font-serif text-2xl font-semibold">
-							Silence as a Sword
-						</h2>
-					</div>
-					<p>
-						When stationed at the Training Station, increase the
-						skill training speed of Specialist and Vanguard
-						operators by +30%
-					</p>
-				</div>
+				{operator.riicSkills.flatMap((riicSkill) => {
+					const activeStage = riicSkill.stages.findLast(
+						(stage) => phaseToNumber(stage.minElite) <= elite
+					);
+
+					if (!activeStage) {
+						return null;
+					}
+
+					return (
+						<div
+							key={`${activeStage.buffId}-${activeStage.minElite}-${activeStage.minLevel}`}
+							className="my-0 border-neutral-600 px-0 pb-6 [&:not(:first-of-type)]:border-t [&:not(:first-of-type)]:pt-6"
+						>
+							<div className="mb-4 flex items-center gap-4">
+								<img
+									className="size-6 object-contain"
+									src={riicSkillIcon(activeStage.skillIcon)}
+									alt=""
+								/>
+								<h2 className="font-serif text-2xl font-semibold">
+									{activeStage.name}
+								</h2>
+								{activeStage.minLevel > 1 && (
+									<div className="flex items-center gap-2 rounded-lg bg-neutral-500/[.33] px-2.5 py-2 text-yellow">
+										{createElement(
+											getEliteIconComponent(
+												phaseToNumber(
+													activeStage.minElite
+												)
+											),
+											{ active: true }
+										)}
+										<span className="leading-none">
+											Lv{activeStage.minLevel}
+										</span>
+									</div>
+								)}
+							</div>
+							<p
+								dangerouslySetInnerHTML={{
+									__html: descriptionToHtml(
+										activeStage.description,
+										[]
+									),
+								}}
+							/>
+						</div>
+					);
+				})}
 			</div>
 		</div>
 	);

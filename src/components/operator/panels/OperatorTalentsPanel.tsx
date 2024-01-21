@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 
 import { useStore } from "@nanostores/react";
+import { range } from "lodash-es";
 
 import { operatorStore } from "~/pages/[locale]/operators/_store";
 
@@ -52,7 +53,7 @@ const OperatorTalentsPanel: React.FC = () => {
 			<div className="flex items-center justify-between border-b border-neutral-600 pb-4">
 				<EliteButtonGroup
 					currentElite={elite}
-					maxElite={maxElite}
+					eliteLevelsToShow={range(maxElite + 1)}
 					onChange={handleEliteChange}
 				/>
 				<PotentialsDropdown

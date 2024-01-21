@@ -1,30 +1,33 @@
-import React, { createElement } from "react";
+import React, { createElement, useMemo } from "react";
 
 import { EliteZeroIcon, EliteOneIcon, EliteTwoIcon } from "~/components/icons";
 
 interface Props {
-	maxElite: number;
+	eliteLevelsToShow: number[];
 	currentElite: number;
 	onChange: (newElite: number) => void;
 }
 
 const EliteButtonGroup: React.FC<Props> = ({
-	maxElite,
+	eliteLevelsToShow,
 	currentElite,
 	onChange,
 }) => {
+	const eliteLevels = useMemo(
+		() => [...eliteLevelsToShow].sort(),
+		[eliteLevelsToShow]
+	);
+
 	return (
 		<div role="group" className="flex items-center gap-x-3">
-			{Array(maxElite + 1)
-				.fill(0)
-				.map((_, i) => (
-					<EliteButton
-						key={i}
-						elite={i}
-						active={i === currentElite}
-						onClick={onChange}
-					/>
-				))}
+			{eliteLevels.map((elite) => (
+				<EliteButton
+					key={elite}
+					elite={elite}
+					active={elite === currentElite}
+					onClick={onChange}
+				/>
+			))}
 		</div>
 	);
 };
@@ -35,22 +38,6 @@ const EliteButton: React.FC<{
 	active?: boolean;
 	onClick: (newElite: number) => void;
 }> = ({ elite, active, onClick }) => {
-	let icon = null;
-	switch (elite) {
-		case 0:
-			icon = EliteZeroIcon;
-			break;
-		case 1:
-			icon = EliteOneIcon;
-			break;
-		case 2:
-			icon = EliteTwoIcon;
-			break;
-	}
-	if (!icon) {
-		return null;
-	}
-
 	return (
 		<button
 			className="background-none group flex h-8 w-8 cursor-pointer items-center justify-center border-none py-2 leading-[0]"
@@ -58,9 +45,20 @@ const EliteButton: React.FC<{
 			aria-pressed={active}
 			aria-label={`Elite ${elite}`}
 		>
-			{createElement(icon, {
-				active,
-			})}
+			{createElement(getEliteIconComponent(elite), { active })}
 		</button>
 	);
 };
+
+export function getEliteIconComponent(elite: number) {
+	switch (elite) {
+		case 0:
+			return EliteZeroIcon;
+		case 1:
+			return EliteOneIcon;
+		case 2:
+			return EliteTwoIcon;
+		default:
+			throw new Error(`There's no such thing as Elite ${elite}`);
+	}
+}
