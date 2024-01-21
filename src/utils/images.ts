@@ -63,7 +63,7 @@ export const skillIcon = (iconId: string | null, skillId: string): string =>
 	}.webp`;
 
 export const moduleImage = (moduleId: string): string =>
-	`${baseURL}/equip/icon/${moduleId}.webp`;
+	`${baseURL}/torappu/dynamicassets/arts/ui/uniequipimg/${moduleId}.webp`;
 
 export const moduleTypeImage = (moduleType: string): string =>
 	`${baseURL}/torappu/dynamicassets/arts/ui/uniequiptype/${moduleType}.webp`;
