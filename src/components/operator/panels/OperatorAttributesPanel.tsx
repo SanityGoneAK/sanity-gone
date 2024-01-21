@@ -12,7 +12,10 @@ import Input from "~/components/ui/Input";
 import PillButtonGroup from "~/components/ui/PillButtonGroup";
 import SliderWithInput from "~/components/ui/SliderWithInput";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
-import { getStatsAtLevel } from "~/utils/character-stats";
+import {
+	getPotentialsWithStatChanges,
+	getStatsAtLevel,
+} from "~/utils/character-stats";
 import { tokenImage } from "~/utils/images";
 
 import type { CheckedState } from "@radix-ui/react-checkbox";
@@ -87,6 +90,8 @@ const OperatorAttributesPanel: React.FC = () => {
 			).rangeObject
 		: null;
 
+	const potsWithStatChanges = getPotentialsWithStatChanges(operator);
+
 	const handleEliteChange = (newElite: number) => {
 		setElite(newElite);
 		setLevel(Math.min(operator.phases[newElite].maxLevel, level));
@@ -129,19 +134,21 @@ const OperatorAttributesPanel: React.FC = () => {
 						</label>
 						<Input
 							aria-label="Trust level"
-							size={3}
+							size={3} // I don't know if this is useful semantically, but it sets the width wrong
 							type="number"
 							min={0}
 							max={200}
 							value={trust}
 							onFocus={(e) => e.target.select()}
 							onChange={handleTrustChange}
+							className={"w-11"} // So we have to re-set it here
 						/>
 					</div>
 					<div>
 						<PotentialsDropdown
 							currentPotential={potential}
 							onChange={setPotential}
+							potentialsToShow={potsWithStatChanges}
 						/>
 					</div>
 					{moduleTypes.length > 1 && (

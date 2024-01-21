@@ -375,6 +375,48 @@ export const getStatIncreaseAtPotential = (
 };
 
 /**
+ * Gets a list of the **zero-indexed** potentials that modify an operator's stats.
+ * This means not potentials that upgrade a talent / etc.
+ *
+ * This list includes Potential 0 by default, because downgrading to Potential 0 will decrease
+ * stats to (usually) a unique value that isn't at any other potentials.
+ *
+ * @param characterObject The character object to get the potentials with stat changes for.
+ */
+export const getPotentialsWithStatChanges = (
+	characterObject: OutputTypes.Character
+): number[] => {
+	const relevantStatIncreases = range(1, 6).map((p) =>
+		getPotentialStatIncrease(characterObject, p)
+	);
+
+	const potList = [0];
+	const zeroed = {
+		health: 0,
+		attackPower: 0,
+		defense: 0,
+		artsResistance: 0,
+		dpCost: 0,
+		attackSpeed: 0,
+		redeployTimeInSeconds: 0,
+		description: null,
+	};
+	for (let i = 0; i < 5; i++) {
+		console.log(`checking potential ${i}`);
+		let cur = relevantStatIncreases[i];
+		cur.description = null;
+
+		console.log(cur);
+
+		if (!isEqual(cur, zeroed)) {
+			potList.push(i + 1);
+		}
+	}
+
+	return potList;
+};
+
+/**
  * Returns the stat increase at the given trust level.
  * Assumed that this is for one's own operator (not a support character), so trust over 100 has the same effect as
  * 100 trust.
