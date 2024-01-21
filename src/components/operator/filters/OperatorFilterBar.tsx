@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import * as Collapsible from "@radix-ui/react-collapsible";
 import * as Popover from "@radix-ui/react-popover";
 
 import useMediaQuery from "~/utils/media-query";
+
 import OperatorFilters from "./OperatorFilters";
 import OperatorSort from "./OperatorSort";
 import OperatorViewSwitch from "./OperatorViewSwitch";
-import { cx } from "~/utils/styles";
 const OperatorFilterBar = () => {
 	const [open, setOpen] = useState(false);
 	const isMobile = useMediaQuery("(max-width: 768px)");
@@ -24,7 +24,7 @@ const OperatorFilterBar = () => {
 					</h1>
 					<Collapsible.Trigger asChild>
 						<button
-							className="group flex h-8 w-8 items-center justify-center rounded-lg bg-neutral-800/[0.66] data-[state=open]:bg-gradient-to-b data-[state=open]:from-purple-light data-[state=open]:to-purple md:hidden"
+							className="group flex h-8 w-8 items-center justify-center rounded-lg bg-neutral-800/[.66] data-[state=open]:bg-gradient-to-b data-[state=open]:from-purple-light data-[state=open]:to-purple md:hidden"
 							aria-label="Open Filters"
 						>
 							<svg
