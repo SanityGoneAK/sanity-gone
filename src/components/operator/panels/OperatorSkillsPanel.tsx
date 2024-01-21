@@ -69,8 +69,8 @@ const OperatorSkillsPanel: React.FC = () => {
 	}, [activeSkillLevel.duration]);
 
 	return (
-		<>
-			<div className="grid grid-cols-[auto_1fr] items-center gap-x-4 border-b border-neutral-600 bg-gradient-to-b from-neutral-800 to-neutral-700 p-6">
+		<div className="flex flex-col gap-4 p-6">
+			<div className="grid grid-cols-[auto_1fr] items-center gap-x-4 border-b border-neutral-600 pb-4">
 				<div className="grid grid-flow-col items-center gap-x-2 text-neutral-200">
 					<span>Skill</span>
 					<PillButtonGroup
@@ -87,21 +87,21 @@ const OperatorSkillsPanel: React.FC = () => {
 					hideMax
 				/>
 			</div>
-			<div className="grid gap-y-6 p-6">
-				<div className="grid-areas-skills grid grid-cols-[64px_1fr] items-center gap-x-4">
+			<div className="grid gap-y-6">
+				<div className="grid grid-cols-[64px_1fr] items-center gap-x-4 gap-y-1 grid-areas-skills">
 					<img
-						className="grid-in-icon h-16 w-16 rounded"
+						className="h-16 w-16 rounded grid-in-icon"
 						src={skillIcon(
 							activeSkillTableSkill.iconId,
 							activeSkillTableSkill.skillId
 						)}
 						alt=""
 					/>
-					<h2 className="grid-in-name font-serif text-2xl font-semibold leading-[31px]">
+					<h2 className="font-serif text-2xl font-semibold leading-[31px] grid-in-name">
 						{activeSkillLevel.name}
 					</h2>
-					<dl className="grid-in-skilltype grid grid-flow-col justify-start gap-x-2">
-						<div className="inline-grid grid-flow-col gap-x-2 bg-neutral-700 px-2 py-1">
+					<dl className="grid grid-flow-col justify-start gap-x-2 grid-in-skilltype">
+						<div className="inline-grid grid-flow-col gap-x-2 rounded bg-neutral-600 px-2 py-1">
 							<dt>Activation</dt>
 							<dd>
 								{
@@ -111,7 +111,7 @@ const OperatorSkillsPanel: React.FC = () => {
 								}
 							</dd>
 						</div>
-						<div className="inline-grid grid-flow-col gap-x-2 bg-neutral-700 px-2 py-1">
+						<div className="inline-grid grid-flow-col gap-x-2 rounded bg-neutral-600 px-2 py-1">
 							<dt>Recovery</dt>
 							<dd>
 								{
@@ -123,30 +123,33 @@ const OperatorSkillsPanel: React.FC = () => {
 						</div>
 					</dl>
 				</div>
-				<dl className="grid grid-flow-col gap-x-[49px]">
+				<dl className="flex gap-x-6">
 					<div
-						className={`skill-sp-type-item relative grid grid-cols-[auto_auto_1fr]
-					items-center justify-end gap-x-2`}
+						className={` relative flex w-full items-center justify-start gap-x-2 border-neutral-600`}
 					>
 						<SpCostIcon />
 						<dt>SP Cost</dt>
-						<dd>{activeSkillLevel.spData.spCost}</dd>
+						<dd className="ml-auto">
+							{activeSkillLevel.spData.spCost}
+						</dd>
 					</div>
+					<div className="w-1 border-r border-neutral-600"></div>
 					<div
-						className={`skill-sp-type-item relative grid grid-cols-[auto_auto_1fr]
-					items-center justify-end gap-x-2`}
+						className={` relative flex w-full items-center justify-start gap-x-2`}
 					>
 						<InitialSpIcon />
 						<dt>Initial SP</dt>
-						<dd>{activeSkillLevel.spData.initSp}</dd>
+						<dd className="ml-auto">
+							{activeSkillLevel.spData.initSp}
+						</dd>
 					</div>
+					<div className="w-1 border-r border-neutral-600"></div>
 					<div
-						className={`skill-sp-type-item relative grid grid-cols-[auto_auto_1fr]
-					items-center justify-end gap-x-2`}
+						className={` relative flex w-full items-center justify-start gap-x-2`}
 					>
 						<HourglassIcon />
 						<dt>Duration</dt>
-						<dd>{skillDisplayDuration}</dd>
+						<dd className="ml-auto">{skillDisplayDuration}</dd>
 					</div>
 				</dl>
 				{activeSkillLevel.description && (
@@ -175,7 +178,7 @@ const OperatorSkillsPanel: React.FC = () => {
 					/>
 				)}
 			</div>
-		</>
+		</div>
 	);
 };
 export default OperatorSkillsPanel;

@@ -25,9 +25,11 @@ const OperatorTalent: React.FC<Props> = ({
 
 	return (
 		talentPhase && (
-			<div className="mx-6 my-0 border-neutral-600 px-0 py-6 [&:not(:first-of-type)]:border-t">
-				<div className="mb-6 flex gap-4">
-					<p className="px-2 py-1">T{talentNumber}</p>
+			<div className="my-0 border-neutral-600 px-0 pb-6 [&:not(:first-of-type)]:border-t [&:not(:first-of-type)]:pt-6">
+				<div className="mb-4 flex gap-4">
+					<span className="bg-neutral-950 px-2 py-1 font-semibold text-neutral-200">
+						T{talentNumber}
+					</span>
 					<h2 className="font-serif text-2xl font-semibold leading-[31px]">
 						{talentPhase.name}
 					</h2>

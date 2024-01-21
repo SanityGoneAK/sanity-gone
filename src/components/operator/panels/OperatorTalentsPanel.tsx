@@ -38,8 +38,8 @@ const OperatorTalentsPanel: React.FC = () => {
 	};
 
 	return (
-		<>
-			<div className="grid grid-flow-col items-center justify-between gap-y-4 border border-neutral-600 bg-gradient-to-b from-neutral-800 to-neutral-700 p-6">
+		<div className="flex flex-col gap-4 p-6">
+			<div className="grid grid-flow-col items-center justify-between gap-y-4 border-b border-neutral-600 pb-4">
 				<EliteButtonGroup
 					currentElite={elite}
 					maxElite={maxElite}
@@ -63,7 +63,7 @@ const OperatorTalentsPanel: React.FC = () => {
 					/>
 				))}
 			</div>
-		</>
+		</div>
 	);
 };
 

@@ -103,8 +103,8 @@ const OperatorAttributesPanel: React.FC = () => {
 	};
 
 	return (
-		<>
-			<div className="grid items-center gap-y-4 border-b border-neutral-600 p-6">
+		<div className="flex flex-col gap-4 p-6">
+			<div className="grid items-center gap-y-4 border-b border-neutral-600 pb-4">
 				<div className="grid grid-cols-[auto_1fr] items-center gap-x-4">
 					<EliteButtonGroup
 						currentElite={elite}
@@ -162,7 +162,7 @@ const OperatorAttributesPanel: React.FC = () => {
 					)}
 				</div>
 			</div>
-			<div className="grid gap-y-4 rounded-br-lg bg-neutral-800 p-6">
+			<div className="grid gap-y-4 rounded-br-lg">
 				<div className="flex flex-col gap-4">
 					<CharacterStats
 						character={operator}
@@ -225,7 +225,7 @@ const OperatorAttributesPanel: React.FC = () => {
 					</>
 				)}
 			</div>
-		</>
+		</div>
 	);
 };
 
