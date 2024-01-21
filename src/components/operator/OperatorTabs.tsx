@@ -1,10 +1,12 @@
+import { useState } from "react";
+
 import { Tab } from "@headlessui/react";
 import { useStore } from "@nanostores/react";
 
 import { operatorStore } from "~/pages/[locale]/operators/_store";
-import OperatorAttributesPanel from "./panels/OperatorAttributesPanel";
-import { useState } from "react";
 import { cx } from "~/utils/styles.ts";
+
+import OperatorAttributesPanel from "./panels/OperatorAttributesPanel";
 // import OperatorRiicPanel from "./panels/OperatorRiicPanel";
 import OperatorSkillsPanel from "./panels/OperatorSkillsPanel";
 import OperatorTalentsPanel from "./panels/OperatorTalentsPanel";
@@ -35,11 +37,12 @@ const OperatorTabs: React.FC = () => {
 							key={label}
 							id={`operator-${label.toLowerCase()}-button`}
 							aria-controls={`operator-${label.toLowerCase()}-tabpanel`}
-							// FIXME there were some fixmes in here. have fun with them (refer to OperatorTabs\styles.css.ts in sg-astro-experimentation)
 							className={cx(
 								`relative cursor-pointer appearance-none border-none bg-none p-2 text-lg
-								font-semibold uppercase leading-[23px] text-neutral-200 outline-none
-								last:justify-self-end`,
+								font-semibold uppercase leading-[23px] text-neutral-200
+								last:justify-self-end
+								[&:not(:focus-visible,_html[data-focus-source=key])]:outline-none
+								`,
 								i === selectedIndex
 									? `:after:outline-none text-neutral-50 after:absolute after:bottom-[-8px] after:left-2 after:right-2 after:h-0
 									after:border after:border-neutral-50 after:shadow-[0px_-4px_16px] after:shadow-neutral-50`
