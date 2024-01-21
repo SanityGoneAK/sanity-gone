@@ -87,7 +87,7 @@ const OperatorSkillsPanel: React.FC = () => {
 					hideMax
 				/>
 			</div>
-			<div className="grid gap-y-6">
+			<div className="grid gap-y-4 rounded-br-lg">
 				<div className="grid grid-cols-[64px_1fr] items-center gap-x-4 gap-y-1 grid-areas-skills">
 					<img
 						className="h-16 w-16 rounded grid-in-icon"

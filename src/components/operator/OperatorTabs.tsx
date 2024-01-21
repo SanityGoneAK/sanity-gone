@@ -11,6 +11,7 @@ import OperatorAttributesPanel from "./panels/OperatorAttributesPanel";
 import OperatorMiscPanel from "./panels/OperatorMiscPanel";
 import OperatorSkillsPanel from "./panels/OperatorSkillsPanel";
 import OperatorTalentsPanel from "./panels/OperatorTalentsPanel";
+import OperatorModulesPanel from "./panels/OperatorModulesPanel";
 
 const OperatorTabs: React.FC = () => {
 	const operator = useStore(operatorStore);
@@ -67,8 +68,7 @@ const OperatorTabs: React.FC = () => {
 					</Tab.Panel>
 				)}
 				<Tab.Panel id="operator-modules-panel">
-					{/* TODO */}
-					Modules panel
+					<OperatorModulesPanel />
 				</Tab.Panel>
 				<Tab.Panel id="operator-riic-panel">
 					{/*<OperatorRiicPanel />*/}

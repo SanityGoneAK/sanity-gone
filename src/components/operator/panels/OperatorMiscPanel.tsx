@@ -7,7 +7,7 @@ const OperatorMiscPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
 
 	return (
-		<div className="flex h-full flex-col gap-4 p-6">
+		<div className="grid gap-y-4 rounded-br-lg p-6">
 			<ul className="flex gap-2">
 				{operator.tagList.map((tag, index) => (
 					<li

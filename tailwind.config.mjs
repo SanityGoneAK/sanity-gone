@@ -76,6 +76,15 @@ export default {
 				"skills": [
 					"icon name",
 					"icon skilltype"
+				],
+				"module-title": [
+					"icon name",
+					"icon code"
+				],
+				"module": [
+					"image title", 
+					"image stats", 
+					"image trait", 
 				]
 			},
 		},

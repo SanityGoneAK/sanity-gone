@@ -66,7 +66,7 @@ export const moduleImage = (moduleId: string): string =>
 	`${baseURL}/equip/icon/${moduleId}.webp`;
 
 export const moduleTypeImage = (moduleType: string): string =>
-	`${baseURL}/equip/type/${moduleType}.webp`;
+	`${baseURL}/torappu/dynamicassets/arts/ui/uniequiptype/${moduleType}.webp`;
 
 export const itemImage = (itemId: string): string =>
 	`${baseURL}/torappu/dynamicassets/arts/items/icons/${
