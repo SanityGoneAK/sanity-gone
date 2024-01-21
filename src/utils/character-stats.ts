@@ -402,12 +402,8 @@ export const getPotentialsWithStatChanges = (
 		description: null,
 	};
 	for (let i = 0; i < 5; i++) {
-		console.log(`checking potential ${i}`);
-		let cur = relevantStatIncreases[i];
+		const cur = relevantStatIncreases[i];
 		cur.description = null;
-
-		console.log(cur);
-
 		if (!isEqual(cur, zeroed)) {
 			potList.push(i + 1);
 		}
