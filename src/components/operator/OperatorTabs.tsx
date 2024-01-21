@@ -20,7 +20,7 @@ const OperatorTabs: React.FC = () => {
 		"Attributes",
 		"Talents",
 		operator.skillData.length > 0 && "Skills",
-		"Modules",
+		operator.modules.length > 0 && "Modules",
 		"RIIC",
 		"Misc",
 	].filter(Boolean) as string[];
@@ -33,7 +33,7 @@ const OperatorTabs: React.FC = () => {
 			selectedIndex={selectedIndex}
 			onChange={setSelectedIndex}
 		>
-			<Tab.List className="grid grid-cols-[repeat(5,auto)_1fr] gap-x-2 bg-neutral-600/[.66] px-4 pb-2">
+			<Tab.List className="flex gap-2 bg-neutral-600/[.66] px-4 pb-2">
 				{tabs.map((label, i) => {
 					return (
 						<Tab
@@ -48,7 +48,8 @@ const OperatorTabs: React.FC = () => {
 								i === selectedIndex
 									? `:after:outline-none text-neutral-50 after:absolute after:bottom-[-8px] after:left-2 after:right-2 after:h-0
 									after:border after:border-neutral-50 after:shadow-[0px_-4px_16px] after:shadow-neutral-50`
-									: "hover:text-neutral-100"
+									: "hover:text-neutral-100",
+								label === "Misc" ? "ml-auto" : ""
 							)}
 						>
 							{label}
@@ -68,9 +69,11 @@ const OperatorTabs: React.FC = () => {
 						<OperatorSkillsPanel />
 					</Tab.Panel>
 				)}
-				<Tab.Panel id="operator-modules-panel">
-					<OperatorModulesPanel />
-				</Tab.Panel>
+				{operator.modules.length > 0 && (
+					<Tab.Panel id="operator-modules-panel">
+						<OperatorModulesPanel />
+					</Tab.Panel>
+				)}
 				<Tab.Panel id="operator-riic-panel">
 					<OperatorRiicPanel />
 				</Tab.Panel>
