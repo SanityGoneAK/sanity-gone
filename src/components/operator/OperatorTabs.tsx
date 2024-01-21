@@ -8,6 +8,7 @@ import { cx } from "~/utils/styles.ts";
 
 import OperatorAttributesPanel from "./panels/OperatorAttributesPanel";
 // import OperatorRiicPanel from "./panels/OperatorRiicPanel";
+import OperatorMiscPanel from "./panels/OperatorMiscPanel";
 import OperatorSkillsPanel from "./panels/OperatorSkillsPanel";
 import OperatorTalentsPanel from "./panels/OperatorTalentsPanel";
 
@@ -73,8 +74,7 @@ const OperatorTabs: React.FC = () => {
 					{/*<OperatorRiicPanel />*/}
 				</Tab.Panel>
 				<Tab.Panel id="operator-misc-panel">
-					{/* TODO */}
-					Misc panel
+					<OperatorMiscPanel />
 				</Tab.Panel>
 			</Tab.Panels>
 		</Tab.Group>

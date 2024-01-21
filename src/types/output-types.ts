@@ -27,6 +27,7 @@ export interface Character {
 	skills: CharacterTableSkill[];
 	allSkillLvlup: SkillLevelUpgrade[];
 	skillData: SkillTableSkill[];
+	tagList: Array<string>;
 	[otherProperties: string]: unknown;
 }
 
