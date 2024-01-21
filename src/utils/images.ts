@@ -21,20 +21,7 @@ export const operatorSplash = (
 	return `${baseURL}/chararts/${encodeURIComponent(portraitId)}.webp`;
 };
 
-export const operatorSplashAvatar = (
-	avatarId: string,
-	skinType: string
-): string => {
-	if (skinType === "skin") {
-		return `${baseURL}/torappu/dynamicassets/arts/charavatars/skins/${encodeURIComponent(
-			avatarId
-		)}.webp`;
-	}
-	if (skinType === "elite-one-or-two") {
-		return `${baseURL}/torappu/dynamicassets/arts/charavatars/elite/${encodeURIComponent(
-			avatarId
-		)}.webp`;
-	}
+export const operatorSplashAvatar = (avatarId: string): string => {
 	return `${baseURL}/torappu/dynamicassets/arts/charavatars/${encodeURIComponent(
 		avatarId
 	)}.webp`;
@@ -69,12 +56,7 @@ export const moduleTypeImage = (moduleType: string): string =>
 	`${baseURL}/torappu/dynamicassets/arts/ui/uniequiptype/${moduleType}.webp`;
 
 export const itemImage = (itemId: string): string => {
-	if (itemId === "mod_unlock_token") {
-		return `${baseURL}/torappu/dynamicassets/arts/items/icons/acticon/${
-			itemsJson[itemId as keyof typeof itemsJson].iconId
-		}.webp`;
-	}
-	return `${baseURL}/torappu/dynamicassets/arts/items/icons/${
+	return `${baseURL}/torappu/dynamicassets/arts/item/${
 		itemsJson[itemId as keyof typeof itemsJson].iconId
 	}.webp`;
 };

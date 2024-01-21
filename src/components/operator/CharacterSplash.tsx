@@ -47,10 +47,7 @@ const CharacterSplash: React.FC = () => {
 						>
 							<img
 								className="relative h-16 w-16 object-cover"
-								src={operatorSplashAvatar(
-									skin.avatarId,
-									skin.type
-								)}
+								src={operatorSplashAvatar(skin.avatarId)}
 								alt={skin.name}
 							/>
 						</Tab>
