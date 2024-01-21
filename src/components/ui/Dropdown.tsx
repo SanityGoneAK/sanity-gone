@@ -17,7 +17,7 @@ const DropdownMenuTrigger = forwardRef<
 	<DropdownMenuPrimitive.Trigger
 		ref={ref}
 		className={cx(
-			"flex select-none items-center gap-2 rounded-lg bg-neutral-600 px-2.5 py-2 text-base leading-none focus-visible:bg-neutral-400/[66] [&:not(:disabled)]:hover:bg-neutral-400/[66]",
+			"flex select-none items-center gap-2 rounded-lg bg-neutral-600 px-2.5 py-2 text-base leading-none focus-visible:bg-neutral-400/[.66] [&:not(:disabled)]:hover:bg-neutral-400/[.66]",
 			"disabled:cursor-not-allowed disabled:opacity-50",
 			className
 		)}
@@ -49,9 +49,9 @@ const DropdownMenuContent = forwardRef<
 DropdownMenuContent.displayName = DropdownMenuPrimitive.Content.displayName;
 
 const menuItemClasses = `flex min-w-[var(--radix-dropdown-menu-trigger-width)] select-none items-center gap-2 px-2.5 py-2
-	hover:bg-neutral-400/[66]
-	focus-visible:bg-neutral-400/[66]
-	disabled:cursor-not-allowed disabled:pointer-events-none disabled:opacity-50 [&:not(:disabled)]:cursor-pointer data-[state=checked]:bg-neutral-400/[66]
+	hover:bg-neutral-400/[.66]
+	focus-visible:bg-neutral-400/[.66]
+	disabled:cursor-not-allowed disabled:pointer-events-none disabled:opacity-50 [&:not(:disabled)]:cursor-pointer data-[state=checked]:bg-neutral-400
 	outline-none [html[data-focus-source=key]_&:focus-visible]:-outline-offset-2 [html[data-focus-source=key]_&:focus-visible]:outline-blue-light
 `;
 
