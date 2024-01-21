@@ -8,6 +8,8 @@ import EliteButtonGroup from "../EliteButtonGroup";
 import OperatorTalent from "../OperatorTalent";
 import PotentialsDropdown from "../PotentialsDropdown";
 
+import type * as OutputTypes from "~/types/output-types";
+
 const OperatorTalentsPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
 	const maxElite = operator.phases.length - 1;
@@ -32,6 +34,14 @@ const OperatorTalentsPanel: React.FC = () => {
 		potentialsMap[`PHASE_${maxElite}`][0]
 	);
 
+	const talentPhases = useMemo(() => {
+		return operator.talents
+			.map((talent) => getTalentPhase(talent, potential, elite))
+			.filter(
+				(talentPhase) => !!talentPhase
+			) as OutputTypes.TalentPhase[];
+	}, [elite, operator.talents, potential]);
+
 	const handleEliteChange = (newElite: number) => {
 		setElite(newElite);
 		setPotential(potentialsMap[`PHASE_${maxElite}`][0]);
@@ -39,7 +49,7 @@ const OperatorTalentsPanel: React.FC = () => {
 
 	return (
 		<div className="flex flex-col gap-4 p-6">
-			<div className="grid grid-flow-col items-center justify-between gap-y-4 border-b border-neutral-600 pb-4">
+			<div className="flex items-center justify-between border-b border-neutral-600 pb-4">
 				<EliteButtonGroup
 					currentElite={elite}
 					maxElite={maxElite}
@@ -53,18 +63,32 @@ const OperatorTalentsPanel: React.FC = () => {
 			</div>
 
 			<div>
-				{operator.talents.map((talent, index) => (
-					<OperatorTalent
-						key={index}
-						talentNumber={index + 1}
-						talent={talent}
-						eliteLevel={elite}
-						potential={potential}
-					/>
-				))}
+				{talentPhases.length > 0
+					? talentPhases.map((talentPhase, index) => (
+							<OperatorTalent
+								key={index}
+								talentNumber={index + 1}
+								talentPhase={talentPhase}
+							/>
+						))
+					: "No talents at this elite level."}
 			</div>
 		</div>
 	);
 };
 
 export default OperatorTalentsPanel;
+
+function getTalentPhase(
+	talent: OutputTypes.Talent,
+	potential: number,
+	eliteLevel: number
+) {
+	return talent.candidates
+		.sort((a, b) => b.requiredPotentialRank - a.requiredPotentialRank)
+		.find(
+			(phase) =>
+				phase.requiredPotentialRank <= potential &&
+				phase.unlockCondition.phase === `PHASE_${eliteLevel}`
+		);
+}

@@ -28,9 +28,13 @@ const descriptionInterpolationRegex =
  * e.g. {foo:0%} will interpolate the numeric value "foo" in "blackboard" and display it as a percentage.
  */
 export const descriptionToHtml = (
-	description: string,
+	description: string | null,
 	interpolation: InterpolatedValue[]
 ): string => {
+	if (!description) {
+		return "";
+	}
+
 	let htmlDescription = description.slice();
 	let recursiveMatch: MatchRecursiveValueNameMatch[] | null = null;
 	let match: RegExpMatchArray | null = null;

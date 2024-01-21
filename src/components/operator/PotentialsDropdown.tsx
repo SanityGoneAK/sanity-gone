@@ -1,5 +1,3 @@
-import { range } from "lodash-es";
-
 import {
 	PotentialOneIcon,
 	PotentialTwoIcon,
@@ -75,31 +73,32 @@ export interface PotentialsDropdownProps {
 
 const PotentialsDropdown: React.FC<PotentialsDropdownProps> = (props) => {
 	const { potentialsToShow, currentPotential, onChange } = props;
-
-	const potList = potentialsToShow ?? range(6); // default to all pots
-
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger
 				disabled={
-					potList.length === 1 && potList[0] === currentPotential
+					!potentialsToShow ||
+					(potentialsToShow.length === 1 &&
+						potentialsToShow[0] === currentPotential)
 				}
 			>
 				{potentialLabel(currentPotential)}
 				<DropdownArrow />
 			</DropdownMenuTrigger>
-			<DropdownMenuContent>
-				<DropdownMenuRadioGroup
-					value={`${currentPotential}`}
-					onValueChange={(value) => onChange(parseInt(value, 10))}
-				>
-					{potList.map((pot) => (
-						<DropdownMenuRadioItem key={pot} value={`${pot}`}>
-							{potentialLabel(pot)}
-						</DropdownMenuRadioItem>
-					))}
-				</DropdownMenuRadioGroup>
-			</DropdownMenuContent>
+			{potentialsToShow && potentialsToShow.length > 0 && (
+				<DropdownMenuContent>
+					<DropdownMenuRadioGroup
+						value={`${currentPotential}`}
+						onValueChange={(value) => onChange(parseInt(value, 10))}
+					>
+						{potentialsToShow.map((pot) => (
+							<DropdownMenuRadioItem key={pot} value={`${pot}`}>
+								{potentialLabel(pot)}
+							</DropdownMenuRadioItem>
+						))}
+					</DropdownMenuRadioGroup>
+				</DropdownMenuContent>
+			)}
 		</DropdownMenu>
 	);
 };
