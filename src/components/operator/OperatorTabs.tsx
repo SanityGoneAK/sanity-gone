@@ -40,9 +40,8 @@ const OperatorTabs: React.FC = () => {
 							className={cx(
 								`relative cursor-pointer appearance-none border-none bg-none p-2 text-lg
 								font-semibold uppercase leading-[23px] text-neutral-200
-								last:justify-self-end
-								[&:not(:focus-visible,_html[data-focus-source=key])]:outline-none
-								`,
+								last:justify-self-end`,
+								"outline-none [html[data-focus-source=key]_&:focus-visible]:outline-offset-4 [html[data-focus-source=key]_&:focus-visible]:outline-blue-light",
 								i === selectedIndex
 									? `:after:outline-none text-neutral-50 after:absolute after:bottom-[-8px] after:left-2 after:right-2 after:h-0
 									after:border after:border-neutral-50 after:shadow-[0px_-4px_16px] after:shadow-neutral-50`

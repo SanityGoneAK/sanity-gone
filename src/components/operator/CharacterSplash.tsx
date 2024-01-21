@@ -37,7 +37,8 @@ const CharacterSplash: React.FC = () => {
 						<Tab
 							id={`${skin.skinId}-button`}
 							className={cx(
-								"focus-visible:outline-solid outline-solid relative m-0 flex h-16 w-16 cursor-pointer justify-center overflow-hidden border-none bg-neutral-500 object-cover p-0 opacity-[33%] focus-visible:outline-none",
+								"relative m-0 flex h-16 w-16 cursor-pointer justify-center overflow-hidden border-none bg-neutral-500 object-cover p-0 opacity-[33%]",
+								"outline-none [html[data-focus-source=key]_&:focus-visible]:-outline-offset-2 [html[data-focus-source=key]_&:focus-visible]:outline-blue-light",
 								i === selectedIndex
 									? ` !opacity-100 after:absolute after:bottom-0 after:h-1 after:w-full after:bg-neutral-50`
 									: ""
