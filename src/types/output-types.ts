@@ -277,6 +277,14 @@ export interface Module {
 	moduleIcon: string;
 	moduleName: string;
 	phases: ModulePhase;
+	itemCost: ItemCost[];
+	missionList: Mission[];
+}
+
+export interface Mission {
+	description: string;
+	moduleMissionId: string;
+	jumpStageId: string | null;
 }
 
 /**
@@ -306,6 +314,16 @@ export interface ModulePhaseCandidate {
 	tokenAttributeBlackboard: {
 		[summonCharacterId: string]: InterpolatedValue[];
 	};
+	// I have just decided that I am not going to parse this manually.
+	// No thank you
+
+	// unlockCondition: {
+	// 	// yes this one is still a number.
+	// 	// not PHASE_1, PHASE_2, etc.
+	// 	// kill me
+	// 	phase: number;
+	// 	level: number;
+	// };
 }
 
 interface Voice {

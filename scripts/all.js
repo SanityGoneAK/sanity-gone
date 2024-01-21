@@ -21,9 +21,12 @@ import { translateOperators } from "./translate-operators.js";
 		]);
 	});
 
-	["en_US", "ja_JP", "ko_KR"].forEach(async (locale) => {
-		await Promise.all([translateOperators(locale)]);
-	});
+	// dont translate operators for now
+
+	// ["en_US", "ja_JP", "ko_KR"].forEach(async (locale) => {
+	// 	await Promise.all([translateOperators(locale)]);
+	// });
+
 	// unfortunately build-search-index depends on branches.json,
 	// so we have to wait to import it until branches.json has been written
 	// const { buildSearchIndex } = await import("./build-search-index.js");

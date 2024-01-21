@@ -79,13 +79,36 @@ export function aggregateModuleData(locale) {
 			: UNIEQUIP_LOCALES.zh_CN.equipDict[moduleId].uniEquipName;
 
 		if (
-			locale == "en_US" &&
+			locale === "en_US" &&
 			!UNIEQUIP_LOCALES[locale].equipDict[moduleId] &&
 			moduleId in moduleTranslations &&
 			moduleTranslations[moduleId].moduleName
 		) {
 			moduleName = moduleTranslations[moduleId].moduleName;
 		}
+
+		// grab mission data
+		const missionListRaw =
+			UNIEQUIP_LOCALES.zh_CN.equipDict[moduleId].missionList;
+		const missionList = missionListRaw.map((missionId) => {
+			const missionDataCN = UNIEQUIP_LOCALES.zh_CN.missionList[missionId];
+			const missionDataLocal =
+				UNIEQUIP_LOCALES[locale].missionList[missionId];
+			return {
+				// grab localized description if available
+				// i really don't want to figure out translating these right now
+				description: missionDataLocal
+					? missionDataLocal.desc
+					: missionDataCN.desc,
+				moduleMissionId: missionId,
+				jumpStageId: missionDataCN.jumpStageId,
+			};
+		});
+
+		// grab items needed
+		const itemCost = Object.values(
+			cnUniequipTable.equipDict[moduleId].itemCost
+		);
 
 		// Use EN data for module phases if:
 		// - the module is available in EN
@@ -437,6 +460,8 @@ export function aggregateModuleData(locale) {
 				moduleIcon,
 				moduleName,
 				phases,
+				itemCost,
+				missionList,
 			},
 		];
 		// sort e.g. "CHA-X" before "CHA-Y"

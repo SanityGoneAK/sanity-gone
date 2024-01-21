@@ -32,7 +32,7 @@ const MaterialRequirements: React.FC<Props> = ({
 					{minElite === 0 && <EliteZeroIcon active />}
 					{minElite === 1 && <EliteOneIcon active />}
 					{minElite === 2 && <EliteTwoIcon active />}
-					<span className="text-transparent bg-gradient-to-b from-yellow-light to-yellow bg-clip-text text-base font-semibold leading-none">
+					<span className="bg-gradient-to-b from-yellow-light to-yellow bg-clip-text text-base font-semibold leading-none text-transparent">
 						Lv{minLevel}
 					</span>
 				</div>

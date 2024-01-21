@@ -68,10 +68,16 @@ export const moduleImage = (moduleId: string): string =>
 export const moduleTypeImage = (moduleType: string): string =>
 	`${baseURL}/torappu/dynamicassets/arts/ui/uniequiptype/${moduleType}.webp`;
 
-export const itemImage = (itemId: string): string =>
-	`${baseURL}/torappu/dynamicassets/arts/items/icons/${
+export const itemImage = (itemId: string): string => {
+	if (itemId === "mod_unlock_token") {
+		return `${baseURL}/torappu/dynamicassets/arts/items/icons/acticon/${
+			itemsJson[itemId as keyof typeof itemsJson].iconId
+		}.webp`;
+	}
+	return `${baseURL}/torappu/dynamicassets/arts/items/icons/${
 		itemsJson[itemId as keyof typeof itemsJson].iconId
 	}.webp`;
+};
 
 export const riicSkillIcon = (riicSkillIcon: string): string =>
 	`${baseURL}/torappu/dynamicassets/arts/building/skills/${riicSkillIcon}.webp`;

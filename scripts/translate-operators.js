@@ -94,5 +94,3 @@ async function translateString(locale, string) {
 		})
 	).choices[0].message.content;
 }
-
-translateOperators("en_US");
