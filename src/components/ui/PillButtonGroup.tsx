@@ -92,7 +92,10 @@ const PillButtonGroup = <T extends string | number = string>({
 	}, []);
 
 	return (
-		<div className="relative isolate inline-block w-fit" ref={rootRef}>
+		<div
+			className="relative isolate inline-block w-fit select-none"
+			ref={rootRef}
+		>
 			<div
 				className="inline-block rounded-[32px] bg-neutral-900"
 				role="group"
