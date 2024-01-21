@@ -51,7 +51,7 @@ const menuItemClasses = `flex min-w-[var(--radix-dropdown-menu-trigger-width)] s
 	hover:bg-neutral-400/[66]
 	focus-visible:bg-neutral-400/[66]
 	data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&:not([data-disabled])]:cursor-pointer data-[state=checked]:bg-neutral-400/[66]
-	[&:not(:focus-visible,_html[data-focus-source=key])]:outline-none
+	outline-none [html[data-focus-source=key]_&:focus-visible]:-outline-offset-2 [html[data-focus-source=key]_&:focus-visible]:outline-blue-light
 `;
 
 const DropdownMenuItem = forwardRef<
