@@ -18,7 +18,10 @@ const OperatorMiscPanel: React.FC = () => {
 	);
 	const infectionStatus = handbook.basicInfo.filter(
 		(info) => info.title === "Infection Status"
-	)[0]!;
+	);
+
+	// TODO use this to handle robot operators
+	const isRobot = operator.rarity === 1;
 
 	// 0: not open
 	// 1-4: archive 1-4
@@ -139,7 +142,9 @@ const OperatorMiscPanel: React.FC = () => {
 						Infection Status
 					</h3>
 					<p className="text-base font-normal leading-normal">
-						{infectionStatus.value}
+						{infectionStatus.length > 0
+							? infectionStatus[0].value
+							: "N/A"}
 					</p>
 				</div>
 				<div>
