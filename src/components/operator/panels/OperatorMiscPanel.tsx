@@ -268,10 +268,10 @@ const OperatorMiscPanel: React.FC = () => {
 
 				<div>
 					<p className="text-base font-normal leading-normal">
-						{operator.itemDesc}
+						{operator.itemUsage}
 					</p>
 					<p className="text-base font-normal italic leading-normal text-neutral-200">
-						{operator.itemUsage}
+						{operator.itemDesc}
 					</p>
 				</div>
 			</div>
