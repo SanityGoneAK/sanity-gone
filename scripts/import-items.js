@@ -49,7 +49,7 @@ function isItemWeCareAbout(itemId) {
 	return (
 		itemId === "4001" || // LMD
 		(entry.classifyType === "MATERIAL" &&
-			!itemId.startsWith("p_char_") && // character-specific potential tokens
+			// !itemId.startsWith("p_char_") && // character-specific potential tokens (we care about these now)
 			!itemId.startsWith("tier") && // generic potential tokens
 			!itemId.startsWith("voucher_full_")) // vouchers for event welfare ops like Flamebringer
 	);
@@ -69,7 +69,7 @@ function isItemWeCareAbout(itemId) {
 export async function createItemsJson(dataDir, locale) {
 	console.log(`Creating ${path.join(dataDir, "items.json")}...`);
 
-	const transformations = [filterItems, getLocalizedName, toEntries];
+	const transformations = [filterItems, getLocalizedNameAndDesc, toEntries];
 
 	const items = transformations.reduce((acc, transformation) => {
 		return transformation(acc, locale);
@@ -85,29 +85,39 @@ function filterItems(items) {
 	return items.filter((itemId) => isItemWeCareAbout(itemId));
 }
 
-function getLocalizedName(items, locale) {
+function getLocalizedNameAndDesc(items, locale) {
 	return items.map((itemId) => {
 		let name = "";
+		let description = "";
+		let usage = "";
 
 		if (itemId in UNOFFICIAL_ITEM_NAME_TRANSLATIONS) {
 			name = UNOFFICIAL_ITEM_NAME_TRANSLATIONS[itemId][locale];
-		}
-
-		if (ITEM_LOCALES[locale][itemId]) {
+		} else {
 			name = ITEM_LOCALES[locale][itemId]
 				? ITEM_LOCALES[locale][itemId].name
-				: ITEM_LOCALES["zh_CN"][itemId];
+				: ITEM_LOCALES["zh_CN"][itemId].name;
 		}
+
+		description = ITEM_LOCALES[locale][itemId]
+			? ITEM_LOCALES[locale][itemId].description
+			: ITEM_LOCALES["zh_CN"][itemId].description;
+
+		usage = ITEM_LOCALES[locale][itemId]
+			? ITEM_LOCALES[locale][itemId].usage
+			: ITEM_LOCALES["zh_CN"][itemId].usage;
 
 		return {
 			itemId,
 			name,
+			description,
+			usage,
 		};
 	});
 }
 
 function toEntries(items) {
-	return items.map(({ itemId, name }) => {
+	return items.map(({ itemId, name, description, usage }) => {
 		const item = ITEM_LOCALES.zh_CN[itemId];
 
 		return [
@@ -116,6 +126,8 @@ function toEntries(items) {
 				itemId,
 				name,
 				iconId: item.iconId,
+				description,
+				usage,
 				rarity: parseInt(item.rarity.replace("TIER_", "")),
 			},
 		];

@@ -49,6 +49,9 @@ export interface Operator extends Character {
 	baseOperatorId: string | null;
 	riicSkills: RiicSkill[];
 	hasGuide: boolean;
+	potentialItemId: string;
+	itemUsage: string;
+	itemDesc: string;
 
 	handbook: {
 		profile: string;

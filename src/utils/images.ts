@@ -1,4 +1,4 @@
-import itemsJson from "../../data/items.json";
+import itemsJson from "../../data/zh_CN/items.json";
 
 const baseURL = "https://penguacestergonenemypresslabdbdare.stinggy.com";
 
@@ -70,4 +70,8 @@ export const operatorPortrait = (operatorId: string): string => {
 			? "char_1001_amiya2_2"
 			: `${operatorId}_1`;
 	return `${baseURL}/arts/charportraits/${filename}.webp`;
+};
+
+export const arbitraryImage = (path: string): string => {
+	return `${baseURL}/${path}.webp`;
 };

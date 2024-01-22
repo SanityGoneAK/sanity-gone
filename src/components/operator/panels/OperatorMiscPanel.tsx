@@ -2,10 +2,72 @@ import { useStore } from "@nanostores/react";
 
 import ArchiveIcon from "~/components/icons/ArchiveIcon";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
+import { useState } from "react";
+
+import itemsJson from "../../../../data/en_US/items.json";
+import { arbitraryImage, itemImage } from "~/utils/images.ts";
+import { cx } from "~/utils/styles.ts";
 
 const OperatorMiscPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
+	const handbook = operator.handbook;
 
+	// split off Infection Status from basicInfo
+	const basicInfo = handbook.basicInfo.filter(
+		(info) => info.title !== "Infection Status"
+	);
+	const infectionStatus = handbook.basicInfo.filter(
+		(info) => info.title === "Infection Status"
+	)[0]!;
+
+	// 0: not open
+	// 1-4: archive 1-4
+	// 5: promotion record
+	const [currentArchive, setCurrentArchive] = useState(0);
+
+	console.log(operator.potentialItemId);
+	const potItem =
+		itemsJson[operator.potentialItemId as keyof typeof itemsJson];
+
+	if (currentArchive != 0) {
+		return (
+			<div className="flex flex-col gap-4 rounded-br-lg p-6">
+				<button
+					className="flex items-center gap-2"
+					onClick={() => setCurrentArchive(0)}
+					// TODO We may want to make this its own component
+				>
+					<svg
+						width="8"
+						height="14"
+						viewBox="0 0 8 14"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M7 13L1 7L7 1"
+							stroke="#B8B8C0"
+							strokeWidth="2"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+						/>
+					</svg>
+					<p>Miscellaneous Details</p>
+				</button>
+				<h2 className="font-serif text-2xl font-semibold">
+					{currentArchive <= 4
+						? `Archive ${currentArchive}`
+						: "Promotion Record"}
+				</h2>
+				<hr className="border border-neutral-600" />
+				<p className="whitespace-pre-line text-base font-normal leading-normal">
+					{currentArchive <= 4
+						? handbook.archives[currentArchive - 1]
+						: handbook.promotionRecord}
+				</p>
+			</div>
+		);
+	}
 	return (
 		<div className="grid gap-y-4 rounded-br-lg p-6">
 			<ul className="flex gap-2">
@@ -20,9 +82,8 @@ const OperatorMiscPanel: React.FC = () => {
 			</ul>
 			<div>
 				<h2 className="font-serif text-2xl font-semibold">Profile</h2>
-				<p>
-					Penguin Logistics employees, the last members of the Texas
-					family, have outstanding individual combat capabilities.
+				<p className="text-base font-normal leading-normal">
+					{handbook.profile}
 				</p>
 			</div>
 			<div className="grid grid-cols-[1fr,_1px,_1fr] gap-4">
@@ -31,12 +92,19 @@ const OperatorMiscPanel: React.FC = () => {
 						Basic Info
 					</h2>
 					<ul>
-						<li className="flex items-center justify-between">
-							<span className="text-neutral-200">Code</span>{" "}
-							<span className="text-lg font-semibold">
-								Texas the Ormetrosa
-							</span>
-						</li>
+						{basicInfo.map((info) => (
+							<li
+								className="mb-4 flex items-center justify-between last:mb-0"
+								key={info.title}
+							>
+								<span className="text-base leading-normal text-neutral-200">
+									{info.title}
+								</span>
+								<span className="text-lg font-semibold">
+									{info.value}
+								</span>
+							</li>
+						))}
 					</ul>
 				</div>
 				<div className="border-l border-neutral-600"></div>
@@ -45,73 +113,65 @@ const OperatorMiscPanel: React.FC = () => {
 						Physical Exam
 					</h2>
 					<ul>
-						<li className="flex items-center justify-between">
-							<span className="text-neutral-200">Code</span>{" "}
-							<span className="text-lg font-semibold">
-								Texas the Ormetrosa
-							</span>
-						</li>
+						{handbook.physicalExam.map((item) => (
+							<li
+								className="mb-4 flex items-center justify-between last:mb-0"
+								key={item.title}
+							>
+								<span className="text-base leading-normal text-neutral-200">
+									{
+										// TODO Do we want to collapse Originium Arts Assimilation
+										// into Arts Assimilation? It don't fit :pepegaturtle:
+										item.title
+									}
+								</span>
+								<span className="text-lg font-semibold">
+									{item.value}
+								</span>
+							</li>
+						))}
 					</ul>
 				</div>
 			</div>
-			<div className="rounded bg-neutral-600 p-4">
+			<div className="flex flex-col gap-4 rounded bg-neutral-600 p-4">
 				<div>
-					<h3 className="leading=[14px] mb-1 text-neutral-200">
+					<h3 className="mb-1 text-sm leading-none text-neutral-200">
 						Infection Status
 					</h3>
-					<p>
-						According to the medical test, subject is confirmed to
-						be uninfected.
+					<p className="text-base font-normal leading-normal">
+						{infectionStatus.value}
 					</p>
 				</div>
 				<div>
-					<h3 className="leading=[14px] mb-1 text-neutral-200">
+					<h3 className="mb-1 text-sm leading-none text-neutral-200">
 						Clinical Diagnosis Analysis
 					</h3>
-					<p>
-						The results of the imaging test showed that the internal
-						organs of the operator were clearly outlined, no
-						abnormal shadows were seen, no abnormalities were found
-						in the detection of Originium particles in the
-						circulatory system, and there was no sign of ore disease
-						infection. At this stage, it can be confirmed that he is
-						not infected with ore disease.[Fusion rate of somatic
-						cells and origin stones] 0%Operator Dexas showed no
-						signs of being infected by origin stones.[Blood Origin
-						Stone Crystallization Density] 0.12u/LJudging from the
-						experience of Operator Dexas, it is a miracle that she
-						was not infected in such a dangerous environment, or
-						conversely, this is also a proof of her superb skills.
+					<p
+						className="whitespace-pre-line text-base font-normal leading-normal"
+						// whitespace-pre-line to preserve newlines
+					>
+						{handbook.clinicalAnalysis}
 					</p>
 				</div>
 			</div>
 			<div className="flex justify-between gap-4">
-				<div className="flex h-32 w-full flex-col items-center justify-center gap-2 rounded bg-neutral-600 hover:bg-neutral-500">
-					<ArchiveIcon />
-					<p className="font-bold uppercase text-neutral-200">
-						ARCHIVE 1
-					</p>
-				</div>
-				<div className="flex h-32 w-full flex-col items-center justify-center gap-2 rounded bg-neutral-600 hover:bg-neutral-500">
-					<ArchiveIcon />
-					<p className="font-bold uppercase text-neutral-200">
-						ARCHIVE 2
-					</p>
-				</div>
-				<div className="flex h-32 w-full flex-col items-center justify-center gap-2 rounded bg-neutral-600 hover:bg-neutral-500">
-					<ArchiveIcon />
-					<p className="font-bold uppercase text-neutral-200">
-						ARCHIVE 3
-					</p>
-				</div>
-				<div className="flex h-32 w-full flex-col items-center justify-center gap-2 rounded bg-neutral-600 hover:bg-neutral-500">
-					<ArchiveIcon />
-					<p className="font-bold uppercase text-neutral-200">
-						ARCHIVE 4
-					</p>
-				</div>
+				{[1, 2, 3, 4].map((archive) => (
+					<button
+						onClick={() => setCurrentArchive(archive)}
+						key={`Archive ${archive}`}
+						className="flex h-32 w-full cursor-pointer flex-col items-center justify-center gap-2 rounded bg-neutral-600 hover:bg-neutral-500"
+					>
+						<ArchiveIcon />
+						<p className="font-bold uppercase text-neutral-200">
+							ARCHIVE {archive}
+						</p>
+					</button>
+				))}
 			</div>
-			<div className="flex h-16 items-center justify-center gap-2 bg-neutral-600 hover:bg-neutral-500">
+			<button
+				onClick={() => setCurrentArchive(5)}
+				className="flex h-16 items-center justify-center gap-2 bg-neutral-600 hover:bg-neutral-500"
+			>
 				<svg
 					width="28"
 					height="26"
@@ -129,6 +189,91 @@ const OperatorMiscPanel: React.FC = () => {
 				<p className="font-semibold text-neutral-200">
 					PROMOTION RECORD
 				</p>
+			</button>
+			<div className="flex flex-row items-center gap-4">
+				<div
+					className="inline-grid h-[52px] w-[52px]"
+					style={{
+						gridTemplateAreas: "'stack'",
+					}}
+				>
+					<div
+						className={cx(
+							"h-[52px] w-[52px] rounded-full border-2",
+							{
+								5: "border-yellow-light bg-yellow-light/30",
+								4: "border-purple-light bg-purple-light/30",
+								3: "border-blue-light bg-blue-light/30",
+								2: "border-green-light bg-green-light/30",
+								1: "border-neutral-50 bg-neutral-50/30",
+							}[operator.rarity - 1]
+						)}
+						style={{
+							gridArea: "stack",
+						}}
+					/>
+					<img
+						src={itemImage(potItem.iconId)}
+						className="h-[52px] w-[52px]"
+						style={{
+							gridArea: "stack",
+						}}
+					/>
+				</div>
+
+				<div>
+					<p className="text-base font-normal leading-normal">
+						{potItem.description}
+					</p>
+					<p className="text-base font-normal italic leading-normal text-neutral-200">
+						{potItem.usage}
+					</p>
+				</div>
+			</div>
+			<div className="flex flex-row items-center gap-4">
+				<div
+					className="inline-grid h-[52px] w-[52px]"
+					style={{
+						gridTemplateAreas: "'stack'",
+					}}
+				>
+					<div
+						className={cx(
+							"h-[52px] w-[52px] rounded-full border-2",
+							{
+								5: "border-yellow-light bg-yellow-light/30",
+								4: "border-purple-light bg-purple-light/30",
+								3: "border-blue-light bg-blue-light/30",
+								2: "border-green-light bg-green-light/30",
+								1: "border-neutral-50 bg-neutral-50/30",
+							}[operator.rarity - 1]
+						)}
+						style={{
+							gridArea: "stack",
+						}}
+					/>
+					<img
+						// i give up (for now)
+						// yes this is in fact not supposed to be a red packet
+						// TODO find the bloody resume image
+						src={arbitraryImage(
+							"torappu/dynamicassets/arts/item/randomDiamondShd_1"
+						)}
+						className="h-[52px] w-[52px]"
+						style={{
+							gridArea: "stack",
+						}}
+					/>
+				</div>
+
+				<div>
+					<p className="text-base font-normal leading-normal">
+						{operator.itemDesc}
+					</p>
+					<p className="text-base font-normal italic leading-normal text-neutral-200">
+						{operator.itemUsage}
+					</p>
+				</div>
 			</div>
 		</div>
 	);
