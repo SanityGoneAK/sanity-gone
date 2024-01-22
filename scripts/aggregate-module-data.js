@@ -73,10 +73,14 @@ export function aggregateModuleData(locale) {
 		// - fall back to CN
 
 		let moduleName = "";
+		let moduleDescription = "";
 
-		moduleName = UNIEQUIP_LOCALES[locale].equipDict[moduleId]
-			? UNIEQUIP_LOCALES[locale].equipDict[moduleId].uniEquipName
-			: UNIEQUIP_LOCALES.zh_CN.equipDict[moduleId].uniEquipName;
+		const uniequipLocale =
+			UNIEQUIP_LOCALES[locale].equipDict[moduleId] ??
+			UNIEQUIP_LOCALES.zh_CN.equipDict[moduleId];
+
+		moduleName = uniequipLocale.uniEquipName;
+		moduleDescription = uniequipLocale.uniEquipDesc;
 
 		if (
 			locale === "en_US" &&
@@ -459,6 +463,7 @@ export function aggregateModuleData(locale) {
 				moduleId,
 				moduleIcon,
 				moduleName,
+				moduleDescription,
 				phases,
 				itemCost,
 				missionList,
