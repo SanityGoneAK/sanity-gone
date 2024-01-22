@@ -295,6 +295,7 @@ export interface Module {
 	moduleIcon: string;
 	moduleName: string;
 	phases: ModulePhase;
+	moduleDescription: string;
 	itemCost: ItemCost[];
 	missionList: Mission[];
 }

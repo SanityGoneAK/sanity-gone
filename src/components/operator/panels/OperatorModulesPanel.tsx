@@ -10,6 +10,7 @@ import MaterialRequirements from "../MaterialRequirements";
 import PotentialsDropdown from "../PotentialsDropdown";
 
 import type * as OutputTypes from "~/types/output-types";
+import { moduleImage, moduleTypeImage } from "~/utils/images.ts";
 
 const OperatorModulesPanel: React.FC = () => {
 	const operator: OutputTypes.Operator = useStore(operatorStore);
@@ -80,6 +81,8 @@ const OperatorModulesPanel: React.FC = () => {
 	const [stage, setStage] = useState(3);
 	const [potential, setPotential] = useState(0);
 
+	const [viewStory, setViewStory] = useState(false);
+
 	// current active module ID
 	const moduleId = moduleType === "None" ? null : moduleIdLookup[moduleType];
 	const module: OutputTypes.Module = operator.modules.filter(
@@ -99,6 +102,52 @@ const OperatorModulesPanel: React.FC = () => {
 		}
 		setStage(stage);
 	};
+
+	if (viewStory) {
+		return (
+			<div className="flex flex-col gap-4 p-6">
+				<button
+					className="flex items-center gap-2"
+					onClick={() => setViewStory(false)}
+				>
+					<svg
+						width="8"
+						height="14"
+						viewBox="0 0 8 14"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M7 13L1 7L7 1"
+							stroke="#B8B8C0"
+							strokeWidth="2"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+						/>
+					</svg>
+					<p>Module Details</p>
+				</button>
+
+				<div className="grid grid-cols-[48px_1fr] items-center gap-x-2 grid-areas-module-title grid-in-title">
+					<img
+						className="h-12 grid-in-icon"
+						src={moduleTypeImage(module.moduleIcon.toLowerCase())}
+						alt=""
+					/>
+					<h2 className="font-serif text-2xl grid-in-name">
+						{module.moduleName}
+					</h2>
+					<p className="font-semibold text-purple grid-in-code">
+						EXE-Y
+					</p>
+				</div>
+				<hr className="border border-neutral-600" />
+				<p className="whitespace-pre-line text-base font-normal leading-normal">
+					{module.moduleDescription}
+				</p>
+			</div>
+		);
+	}
 
 	return (
 		<div className="flex flex-col gap-4 p-6">
@@ -140,6 +189,7 @@ const OperatorModulesPanel: React.FC = () => {
 						module={module}
 						stage={stage}
 						potential={potential}
+						onStoryClick={() => setViewStory(true)}
 					/>
 				) : (
 					<div className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600 p-4 text-neutral-200">

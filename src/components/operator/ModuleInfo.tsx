@@ -27,6 +27,7 @@ interface Props {
 	module: OutputTypes.Module;
 	stage: number; // 1, 2, 3
 	potential: number; // zero-indexed (0, 1, 2, 3, 4, 5)
+	onStoryClick: () => void;
 }
 
 const ModuleInfo: React.FC<Props> = ({
@@ -34,6 +35,7 @@ const ModuleInfo: React.FC<Props> = ({
 	module,
 	stage,
 	potential,
+	onStoryClick,
 }) => {
 	const moduleId = module.moduleId;
 	const {
@@ -64,6 +66,7 @@ const ModuleInfo: React.FC<Props> = ({
 				<button
 					className="w-full border-t border-neutral-600 py-2 hover:bg-neutral-600"
 					type="button"
+					onClick={onStoryClick}
 				>
 					View Story
 				</button>
