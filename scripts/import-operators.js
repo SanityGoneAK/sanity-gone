@@ -626,14 +626,16 @@ function addLoreDetails(characters, locale) {
 				actualLocale,
 				charIdToUse,
 				languageKeyMap[actualLocale].basicInfo
-			)
+			),
+			actualLocale
 		);
 		const physicalExam = parseStoryText(
 			getStoryText(
 				actualLocale,
 				charIdToUse,
 				languageKeyMap[actualLocale].physicalExam
-			)
+			),
+			actualLocale
 		);
 		const profile = getStoryText(
 			actualLocale,
