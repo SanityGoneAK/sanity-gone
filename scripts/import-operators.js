@@ -21,6 +21,11 @@ import { charSkins as enCharSkins } from "./ArknightsGameData_YoStar/en_US/gamed
 import { charSkins as jpCharSkins } from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/skin_table.json" assert { type: "json" };
 import { charSkins as krCharSkins } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/skin_table.json" assert { type: "json" };
 
+import { handbookDict as cnHandbookDict } from "./ArknightsGameData/zh_CN/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as enHandbookDict } from "./ArknightsGameData_YoStar/en_US/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as jpHandbookDict } from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as krHandbookDict } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+
 import rangeTable from "./ArknightsGameData/zh_CN/gamedata/excel/range_table.json" assert { type: "json" };
 import { voiceLangDict as voiceTable } from "./ArknightsGameData/zh_CN/gamedata/excel/charword_table.json" assert { type: "json" };
 
@@ -67,6 +72,13 @@ const SKIN_LOCALES = {
 	en_US: enCharSkins,
 	ja_JP: jpCharSkins,
 	ko_KR: krCharSkins,
+};
+
+const HANDBOOK_LOCALES = {
+	zh_CN: cnHandbookDict,
+	en_US: enHandbookDict,
+	ja_JP: jpHandbookDict,
+	ko_KR: krHandbookDict,
 };
 
 /**
@@ -132,6 +144,7 @@ export async function createOperatorsJson(dataDir, locale) {
 		// All summon data for a specific character must be parsed at this point (e.g. Skills, Phases)
 
 		filterSummons,
+		addLoreDetails,
 		addHasGuide,
 		addModules,
 		addRiicSkills,
@@ -551,6 +564,175 @@ function filterSummons(characters) {
 	return characters.filter(
 		([charId, character]) => character.profession !== "TOKEN"
 	);
+}
+
+function addLoreDetails(characters, locale) {
+	return characters.map(([charId, character]) => {
+		const languageKeyMap = {
+			en_US: {
+				basicInfo: "Basic Info",
+				physicalExam: "Physical Exam",
+				profile: "Profile",
+				clinicalAnalysis: "Clinical Analysis",
+				archive1: "Archive File 1",
+				archive2: "Archive File 2",
+				archive3: "Archive File 3",
+				archive4: "Archive File 4",
+				promotionRecord: "Promotion Record",
+			},
+			zh_CN: {
+				basicInfo: "基础档案",
+				physicalExam: "综合体检测试",
+				profile: "客观履历",
+				clinicalAnalysis: "临床诊断分析",
+				archive1: "档案资料一",
+				archive2: "档案资料二",
+				archive3: "档案资料三",
+				archive4: "档案资料四",
+				promotionRecord: "晋升记录",
+			},
+			ja_JP: {
+				basicInfo: "基礎情報",
+				physicalExam: "能力測定",
+				profile: "個人履歴",
+				clinicalAnalysis: "健康診断",
+				archive1: "第一資料",
+				archive2: "第二資料",
+				archive3: "第三資料",
+				archive4: "第四資料",
+				promotionRecord: "昇進記録",
+			},
+			ko_KR: {
+				basicInfo: "기본정보",
+				physicalExam: "종합검진",
+				profile: "프로필",
+				clinicalAnalysis: "임상 진단 분석",
+				archive1: "파일 자료 1",
+				archive2: "파일 자료 2",
+				archive3: "파일 자료 3",
+				archive4: "파일 자료 4",
+				promotionRecord: "승진 기록",
+			},
+		};
+
+		const charIdToUse =
+			charId === "char_1001_amiya2" ? "char_002_amiya" : charId;
+		const actualLocale = HANDBOOK_LOCALES[locale][charIdToUse]
+			? locale
+			: "zh_CN";
+
+		const basicInfo = parseStoryText(
+			getStoryText(
+				actualLocale,
+				charIdToUse,
+				languageKeyMap[actualLocale].basicInfo
+			)
+		);
+		const physicalExam = parseStoryText(
+			getStoryText(
+				actualLocale,
+				charIdToUse,
+				languageKeyMap[actualLocale].physicalExam
+			)
+		);
+		const profile = getStoryText(
+			actualLocale,
+			charIdToUse,
+			languageKeyMap[actualLocale].profile
+		);
+		const clinicalAnalysis = getStoryText(
+			actualLocale,
+			charIdToUse,
+			languageKeyMap[actualLocale].clinicalAnalysis
+		);
+		const promotionRecord = getStoryText(
+			actualLocale,
+			charIdToUse,
+			languageKeyMap[actualLocale].promotionRecord
+		);
+
+		const archives = [1, 2, 3, 4]
+			.map((archiveNumber) =>
+				getStoryText(
+					actualLocale,
+					charIdToUse,
+					languageKeyMap[actualLocale][`archive${archiveNumber}`]
+				)
+			)
+			.filter((archive) => archive);
+
+		return [
+			charId,
+			{
+				...character,
+				handbook: {
+					profile,
+					basicInfo,
+					physicalExam,
+					clinicalAnalysis,
+					promotionRecord,
+					archives,
+				},
+			},
+		];
+	});
+}
+
+/**
+ *
+ * @param {string} locale
+ * @param {string} charId
+ * @param {string} storyTitle
+ */
+function getStoryText(locale, charId, storyTitle) {
+	const storyData = HANDBOOK_LOCALES[locale][charId].storyTextAudio.find(
+		(story) => story.storyTitle === storyTitle
+	);
+	return storyData?.stories[0]?.storyText ?? null;
+}
+
+/**
+ * Parses the given text and converts it into an array of objects.
+ *
+ * @param {string} text
+ * @returns {Array<{ title: string, value: string }>} - An array of objects with title and value properties.
+ */
+function parseStoryText(text, locale) {
+	const lines = text ? text.split("\n") : "";
+	const objects = [];
+
+	let currentTitle = "";
+	let currentValue = "";
+
+	for (const line of lines) {
+		const match =
+			locale === "en_US" || locale === "ko_KR"
+				? line.match(/^\[([\w\s]+)\](.*)$/)
+				: line.match(/^【([^【】]+)】(.*)$/);
+
+		if (match) {
+			if (currentTitle !== "") {
+				objects.push({
+					title: currentTitle.trim(),
+					value: currentValue.trim(),
+				});
+			}
+
+			currentTitle = match[1];
+			currentValue = match[2];
+		} else {
+			currentValue += "\n" + line;
+		}
+	}
+
+	if (currentTitle !== "") {
+		objects.push({
+			title: currentTitle.trim(),
+			value: currentValue.trim(),
+		});
+	}
+
+	return objects;
 }
 
 function addSummons(characters, _, { summonIdToOperatorId }) {
