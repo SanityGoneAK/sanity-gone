@@ -73,5 +73,5 @@ export const operatorPortrait = (operatorId: string): string => {
 };
 
 export const arbitraryImage = (path: string): string => {
-	return `${baseURL}/${path}.webp`;
+	return `${baseURL}/${path}`;
 };

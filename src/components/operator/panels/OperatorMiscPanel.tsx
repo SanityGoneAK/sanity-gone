@@ -5,7 +5,7 @@ import { operatorStore } from "~/pages/[locale]/operators/_store";
 import { useState } from "react";
 
 import itemsJson from "../../../../data/en_US/items.json";
-import { arbitraryImage, itemImage } from "~/utils/images.ts";
+import { arbitraryImage, itemImage, operatorAvatar } from "~/utils/images.ts";
 import { cx } from "~/utils/styles.ts";
 
 const OperatorMiscPanel: React.FC = () => {
@@ -236,41 +236,20 @@ const OperatorMiscPanel: React.FC = () => {
 				</div>
 			</div>
 			<div className="flex flex-row items-center gap-4">
-				<div
-					className="inline-grid h-[52px] w-[52px]"
-					style={{
-						gridTemplateAreas: "'stack'",
-					}}
-				>
-					<div
-						className={cx(
-							"h-[52px] w-[52px] rounded-full border-2",
-							{
-								5: "border-yellow-light bg-yellow-light/30",
-								4: "border-purple-light bg-purple-light/30",
-								3: "border-blue-light bg-blue-light/30",
-								2: "border-green-light bg-green-light/30",
-								1: "border-neutral-50 bg-neutral-50/30",
-							}[operator.rarity - 1]
+				<div className="relative flex h-[52px] w-[52px] items-center">
+					<img
+						src={arbitraryImage(
+							`unknown/op_r${operator.rarity}.png`
 						)}
-						style={{
-							gridArea: "stack",
-						}}
+						className="relative h-[60px] w-[60px] object-cover"
 					/>
 					<img
-						// i give up (for now)
-						// yes this is in fact not supposed to be a red packet
-						// TODO find the bloody resume image
-						src={arbitraryImage(
-							"torappu/dynamicassets/arts/item/randomDiamondShd_1"
-						)}
-						className="h-[52px] w-[52px]"
-						style={{
-							gridArea: "stack",
-						}}
+						src={operatorAvatar(operator.charId, 0)}
+						className={
+							"absolute left-[8px] top-[8px] h-[30px] w-[30px]"
+						}
 					/>
 				</div>
-
 				<div>
 					<p className="text-base font-normal leading-normal">
 						{operator.itemUsage}
