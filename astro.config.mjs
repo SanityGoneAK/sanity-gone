@@ -42,7 +42,7 @@ export default defineConfig({
 			nesting: true,
 		}),
 	],
-	adapter: cloudflare(),
+	adapter: cloudflare({ mode: "directory" }),
 	vite: {
 		build: {
 			rollupOptions: {
