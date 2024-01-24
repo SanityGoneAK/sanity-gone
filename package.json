@@ -89,5 +89,6 @@
 		"ts-node": "^10.9.2",
 		"vite": "^5.0.12",
 		"vite-tsconfig-paths": "^4.2.3"
-	}
+	},
+	"packageManager": "yarn@1.22.21"
 }
