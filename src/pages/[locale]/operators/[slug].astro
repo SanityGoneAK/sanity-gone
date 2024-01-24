@@ -36,13 +36,15 @@ const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 
 const idLookup = Object.fromEntries(
 	Object.entries(operatorsJson).map(
+		// TODO: Fix this
+		// @ts-ignore
 		([operatorId, operator]: [string, OutputTypes.Operator]) => {
 			return [slugify(operator.name), operatorId];
 		}
 	)
 );
 
-const operatorId = idLookup[slug];
+const operatorId = idLookup[slug ?? ""];
 // console.log(operatorId);
 
 const operator = operatorsJson[

@@ -79,7 +79,13 @@ const OperatorLargeItem: React.FC<{
 							)}
 						</h3>
 						<div className="flex items-center">
-							<div className={cx(rarityText[operator.rarity])}>
+							<div
+								className={cx(
+									rarityText[
+										operator.rarity as keyof typeof rarityText
+									]
+								)}
+							>
 								<span className="visually-hidden">
 									Class:&nbsp;
 								</span>
@@ -97,13 +103,15 @@ const OperatorLargeItem: React.FC<{
 							<span
 								className={cx(
 									"ml-auto mr-0.5 leading-[21px]",
-									rarityText[operator.rarity]
+									rarityText[
+										operator.rarity as keyof typeof rarityText
+									]
 								)}
 							>
 								{operator.rarity}
 							</span>{" "}
 							<StarIcon
-								rarity={operator.rarity}
+								rarity={operator.rarity as OutputTypes.Rarity}
 								aria-hidden="true"
 								aria-label="stars"
 							/>

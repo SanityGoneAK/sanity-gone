@@ -19,7 +19,7 @@ const preview: Preview = {
 export default preview;
 
 export const decorators = [
-	(Story) => (
+	(Story: any) => (
 		<>
 			<Story />
 			<SvgRarityGradientDefs />

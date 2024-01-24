@@ -102,7 +102,7 @@ const CustomHits: React.FC<{ onSelected?: () => void; locale: string }> = ({
 
 			if (option.type === "operator") {
 				window.location.href = `/${locale}/operators/${slugify(
-					option.name.en_US ?? ""
+					option.name ?? ""
 				)}`;
 			} else if (option.type === "class") {
 				window.location.href = `/${locale}/operators#${slugify(
@@ -110,8 +110,8 @@ const CustomHits: React.FC<{ onSelected?: () => void; locale: string }> = ({
 				)}`;
 			} else {
 				window.location.href = `/${locale}/operators#${slugify(
-					option.class.en_US ?? ""
-				)}-${subclassSlugify(option.name.en_US ?? "")}`;
+					option.class ?? ""
+				)}-${subclassSlugify(option.name ?? "")}`;
 			}
 			onSelected && onSelected();
 		},
@@ -151,7 +151,7 @@ const CustomHits: React.FC<{ onSelected?: () => void; locale: string }> = ({
 								height={40}
 							/>
 							<span className="text-neutral-100">
-								{result.name.en_US}
+								{result.name}
 							</span>
 							<p className="text-sm leading-[18px] text-neutral-200">
 								<span
@@ -166,7 +166,7 @@ const CustomHits: React.FC<{ onSelected?: () => void; locale: string }> = ({
 								</span>
 								<span>
 									{result.class}&nbsp; •&nbsp;{" "}
-									{result.subclass.en_US}
+									{result.subclass}
 								</span>
 							</p>
 						</Combobox.Option>
@@ -215,12 +215,12 @@ const CustomHits: React.FC<{ onSelected?: () => void; locale: string }> = ({
 							<span className="text-neutral-100">
 								{result.type === "class"
 									? result.name
-									: result.name.en_US}
+									: result.name}
 							</span>
 							<span className="text-sm leading-[18px] text-neutral-200">
 								{result.type === "class"
 									? "Class"
-									: `${result.class.en_US} Branch`}
+									: `${result.class} Branch`}
 							</span>
 						</Combobox.Option>
 					))}
@@ -254,7 +254,7 @@ const SearchBar: React.FC<Props> = ({ locale, placeholder, onSelected }) => {
 						<InstantSearch
 							future={{ preserveSharedStateOnUnmount: true }}
 							searchClient={searchClient}
-							indexName={import.meta.env.PUBLIC_ALGOLIA_INDEX}
+							indexName={import.meta.env.ALGOLIA_EN_INDEX}
 						>
 							<CustomSearchInput
 								placeholder={placeholder}

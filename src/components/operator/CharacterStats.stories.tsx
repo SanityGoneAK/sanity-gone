@@ -12,6 +12,8 @@ const ops = Object.values(operatorsJson);
 
 const Template: StoryObj<typeof CharacterStats> = {
 	args: {
+		// TODO: Fix this
+		// @ts-ignore
 		character: ops[0],
 		elite: 2,
 		level: 90,

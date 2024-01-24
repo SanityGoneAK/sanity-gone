@@ -10,7 +10,6 @@ import {
 	$filterProfession,
 	$filterRarity,
 	toggleProfession,
-	type Rarity,
 	toggleBranch,
 	toggleRarity,
 } from "../../../pages/[locale]/operators/_store";
@@ -19,6 +18,7 @@ import { operatorBranchIcon, operatorClassIcon } from "../../../utils/images";
 import { cx } from "../../../utils/styles";
 import StarIcon from "../../icons/StarIcon";
 import Checkbox from "../../ui/Checkbox";
+import type { Rarity } from "~/types/output-types";
 
 const OperatorFilters = () => {
 	const filterProfession = useStore($filterProfession);

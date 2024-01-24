@@ -168,7 +168,7 @@ export const toggleBranch = action(
 export const toggleRarity = action(
 	$filterRarity,
 	"toggleRarity",
-	(filterRarityStore, rarity: Rarity) => {
+	(filterRarityStore, rarity: OutputTypes.Rarity) => {
 		if (filterRarityStore.get().indexOf(rarity) === -1) {
 			filterRarityStore.set([...filterRarityStore.get(), rarity]);
 			return;
