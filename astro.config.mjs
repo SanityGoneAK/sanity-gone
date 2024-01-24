@@ -1,10 +1,10 @@
 import path from "path";
 
+import cloudflare from "@astrojs/cloudflare";
 import node from "@astrojs/node";
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
-
 import tailwindcssNesting from "tailwindcss/nesting";
 
 // https://astro.build/config
@@ -42,9 +42,7 @@ export default defineConfig({
 			nesting: true,
 		}),
 	],
-	adapter: node({
-		mode: "standalone",
-	}),
+	adapter: cloudflare(),
 	vite: {
 		build: {
 			rollupOptions: {
