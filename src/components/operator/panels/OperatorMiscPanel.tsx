@@ -63,11 +63,15 @@ const OperatorMiscPanel: React.FC = () => {
 						: "Promotion Record"}
 				</h2>
 				<hr className="border border-neutral-600" />
-				<p className="whitespace-pre-line text-base font-normal leading-normal">
-					{currentArchive <= 4
-						? handbook.archives[currentArchive - 1]
-						: handbook.promotionRecord}
-				</p>
+				<p
+					className="whitespace-pre-line text-base font-normal leading-normal"
+					dangerouslySetInnerHTML={{
+						__html:
+							currentArchive <= 4
+								? handbook.archives[currentArchive - 1]
+								: handbook.promotionRecord,
+					}}
+				/>
 			</div>
 		);
 	}
@@ -236,7 +240,7 @@ const OperatorMiscPanel: React.FC = () => {
 				</div>
 			</div>
 			<div className="flex flex-row items-center gap-4">
-				<div className="relative flex h-[52px] w-[52px] items-center">
+				<div className="relative flex h-[52px] w-[52px] flex-none items-center">
 					<img
 						src={arbitraryImage(
 							`unknown/op_r${operator.rarity}.png`

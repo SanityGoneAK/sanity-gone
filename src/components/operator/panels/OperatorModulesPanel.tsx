@@ -142,9 +142,12 @@ const OperatorModulesPanel: React.FC = () => {
 					</p>
 				</div>
 				<hr className="border border-neutral-600" />
-				<p className="whitespace-pre-line text-base font-normal leading-normal">
-					{module.moduleDescription}
-				</p>
+				<p
+					className="whitespace-pre-line text-base font-normal leading-normal"
+					dangerouslySetInnerHTML={{
+						__html: module.moduleDescription,
+					}}
+				/>
 			</div>
 		);
 	}
