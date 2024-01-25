@@ -33,7 +33,9 @@ const OperatorTabs: React.FC = () => {
 			selectedIndex={selectedIndex}
 			onChange={setSelectedIndex}
 		>
-			<Tab.List className="flex gap-2 bg-neutral-600/[.66] px-4 pb-2">
+			{/* TODO i wanted to preview layout so i literally did the dumbest thing that would make it work lMAO
+			 this is terrible, fix it please */}
+			<Tab.List className="flex flex-row flex-wrap gap-2 bg-neutral-600/[.66] px-4 pb-2 sm:flex-nowrap">
 				{tabs.map((label, i) => {
 					return (
 						<Tab

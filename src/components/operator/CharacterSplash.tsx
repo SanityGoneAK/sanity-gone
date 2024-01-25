@@ -31,7 +31,7 @@ const CharacterSplash: React.FC = () => {
 			selectedIndex={selectedIndex}
 			onChange={setSelectedIndex}
 		>
-			<Tab.List className="flex overflow-hidden rounded-tl-lg bg-neutral-700">
+			<Tab.List className="absolute z-10 flex overflow-hidden rounded-br-lg bg-neutral-700 sm:relative sm:z-auto sm:rounded-br-none sm:rounded-tl-lg">
 				{skins.map((skin, i) => {
 					return (
 						<Tab
@@ -39,8 +39,9 @@ const CharacterSplash: React.FC = () => {
 							className={cx(
 								"relative m-0 flex h-16 w-16 cursor-pointer justify-center overflow-hidden border-none bg-neutral-500 object-cover p-0 opacity-[33%]",
 								"outline-none [html[data-focus-source=key]_&:focus-visible]:-outline-offset-2 [html[data-focus-source=key]_&:focus-visible]:outline-blue-light",
+								"last:rounded-br-lg sm:last:rounded-br-none",
 								i === selectedIndex
-									? ` !opacity-100 after:absolute after:bottom-0 after:h-1 after:w-full after:bg-neutral-50`
+									? ` bg-neutral-50 !opacity-100 after:absolute after:bottom-0 after:w-full after:bg-neutral-50 sm:bg-neutral-500 sm:after:h-1`
 									: ""
 							)}
 							key={skin.skinId}

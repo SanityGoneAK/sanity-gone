@@ -61,7 +61,7 @@ const relatedOperator = getRelatedCharacter(operator);
 
 <Layout title={operator.name}>
 	<div class="w-full max-w-[1280px] mx-auto flex flex-col">
-		<div class="flex justify-between mb-6">
+		<div class="hidden justify-between mb-6 sm:flex">
 			<ul class="p-0 m-0 flex items-center list-none gap-3 flex-grow">
 				<li class="text-base font-normal leading-normal flex-none">
 					<a
@@ -134,7 +134,7 @@ const relatedOperator = getRelatedCharacter(operator);
 			</a>
 		</div>
 		<div
-			class="flex flex-col xl:flex-row rounded-lg border-neutral-400 border"
+			class="flex flex-col xl:flex-row rounded-lg border-neutral-400 sm:border"
 		>
 			<section class="flex-1">
 				<CharacterSplash client:visible />

@@ -33,9 +33,9 @@ const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 		}
 	</h1>
 	<div
-		class="grid grid-flow-col auto-cols-max gap-x-3 items-center justify-start"
+		class="grid grid-flow-row sm:grid-flow-col auto-cols-max auto-rows-max gap-3 items-center justify-start"
 	>
-		<div class="grid grid-flow-col items-center gap-x-2">
+		<div class="grid grid-flow-col items-center gap-x-2 w-fit">
 			<span class="visually-hidden">Rarity: {rarity}</span>
 			<span class="grid grid-flow-col">
 				{
@@ -65,22 +65,24 @@ const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 				)
 			}
 		</div>
-		<div class="grid grid-flow-col items-center gap-x-2">
-			<img
-				class="h-4 w-full"
-				src={operatorClassIcon(
-					classToProfession(operatorClass).toLowerCase()
-				)}
-				alt=""
-			/>
-			<span>{operatorClass}</span>
-		</div>
-		<OperatorBranchAndTrait client:idle />
-		<InterpunctSpacer />
-		<span class="text-neutral-100"
+		<div class="grid grid-flow-col items-center gap-x-2 w-fit">
+			<div class="grid grid-flow-col items-center gap-x-2">
+				<img
+					class="h-4 w-full"
+					src={operatorClassIcon(
+						classToProfession(operatorClass).toLowerCase()
+					)}
+					alt=""
+				/>
+				<span>{operatorClass}</span>
+			</div>
+			<OperatorBranchAndTrait client:idle />
+			<InterpunctSpacer />
+			<span class="text-neutral-100"
 			>{
 				getMeleeOrRangedOrBoth(operator.position, operator.description)
 			}</span
-		>
+			>
+		</div>
 	</div>
 </div>
