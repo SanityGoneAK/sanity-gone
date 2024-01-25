@@ -1,7 +1,6 @@
 import React, { useCallback, useRef, useState } from "react";
 
 import { Combobox } from "@headlessui/react";
-import algoliasearch from "algoliasearch/lite";
 import {
 	InstantSearch,
 	useHits,
@@ -13,9 +12,9 @@ import {
 	operatorAvatar,
 	operatorBranchIcon,
 	operatorClassIcon,
-} from "../../utils/images.ts";
-import { slugify, subclassSlugify } from "../../utils/strings.ts";
-import { cx } from "../../utils/styles";
+} from "~/utils/images.ts";
+import { slugify, subclassSlugify } from "~/utils/strings.ts";
+import { cx } from "~/utils/styles.ts";
 import SearchIcon from "../icons/SearchIcon.tsx";
 
 import type {
@@ -23,8 +22,10 @@ import type {
 	ClassSearchResult,
 	BranchSearchResult,
 	OperatorSearchResult,
-} from "../../types/output-types.ts";
+	LocalizedString,
+} from "~/types/output-types.ts";
 import type { BaseHit } from "instantsearch.js";
+import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
 
 interface Props {
 	locale: string;
@@ -32,9 +33,9 @@ interface Props {
 	onSelected?: () => void;
 }
 
-const searchClient = algoliasearch(
-	import.meta.env.PUBLIC_ALGOLIA_APP_ID,
-	import.meta.env.PUBLIC_ALGOLIA_PUBLIC
+const { searchClient } = instantMeiliSearch(
+	import.meta.env.PUBLIC_MEILISEARCH_URL,
+	import.meta.env.PUBLIC_MEILISEARCH_KEY
 );
 
 const queryHook: UseSearchBoxProps["queryHook"] = (query, search) => {
@@ -70,10 +71,10 @@ const CustomSearchInput: React.FC<{
 	);
 };
 
-const CustomHits: React.FC<{ onSelected?: () => void; locale: string }> = ({
-	onSelected,
-	locale,
-}) => {
+const CustomHits: React.FC<{
+	onSelected?: () => void;
+	locale: string;
+}> = ({ onSelected, locale }) => {
 	const { hits, results, sendEvent } = useHits<BaseHit & SearchResult>();
 
 	const operatorResults: OperatorSearchResult[] = [];
@@ -102,7 +103,7 @@ const CustomHits: React.FC<{ onSelected?: () => void; locale: string }> = ({
 
 			if (option.type === "operator") {
 				window.location.href = `/${locale}/operators/${slugify(
-					option.name ?? ""
+					option.name.en_US ?? ""
 				)}`;
 			} else if (option.type === "class") {
 				window.location.href = `/${locale}/operators#${slugify(
@@ -111,7 +112,7 @@ const CustomHits: React.FC<{ onSelected?: () => void; locale: string }> = ({
 			} else {
 				window.location.href = `/${locale}/operators#${slugify(
 					option.class ?? ""
-				)}-${subclassSlugify(option.name ?? "")}`;
+				)}-${subclassSlugify(option.name.en_US ?? "")}`;
 			}
 			onSelected && onSelected();
 		},
@@ -151,7 +152,7 @@ const CustomHits: React.FC<{ onSelected?: () => void; locale: string }> = ({
 								height={40}
 							/>
 							<span className="text-neutral-100">
-								{result.name}
+								{result.name.en_US}
 							</span>
 							<p className="text-sm leading-[18px] text-neutral-200">
 								<span
@@ -214,8 +215,9 @@ const CustomHits: React.FC<{ onSelected?: () => void; locale: string }> = ({
 							/>
 							<span className="text-neutral-100">
 								{result.type === "class"
-									? result.name
-									: result.name}
+									? // TODO might wanna localize this first part
+										result.name
+									: result.name.en_US}
 							</span>
 							<span className="text-sm leading-[18px] text-neutral-200">
 								{result.type === "class"
@@ -254,7 +256,7 @@ const SearchBar: React.FC<Props> = ({ locale, placeholder, onSelected }) => {
 						<InstantSearch
 							future={{ preserveSharedStateOnUnmount: true }}
 							searchClient={searchClient}
-							indexName={import.meta.env.PUBLIC_ALGOLIA_EN_INDEX}
+							indexName={import.meta.env.PUBLIC_MEILISEARCH_INDEX}
 						>
 							<CustomSearchInput
 								placeholder={placeholder}

@@ -9,17 +9,17 @@ import { translateOperators } from "./translate-operators.js";
 // import { createEnemiesJson } from "./create-enemies-json.js";
 
 (async () => {
-	// ["zh_CN", "en_US", "ja_JP", "ko_KR"].forEach(async (locale) => {
-	// 	const dataDir = path.join(__dirname, "../data/", locale);
-	// 	await fs.mkdir(dataDir, { recursive: true });
-	// 	await Promise.all([
-	// 		createOperatorsJson(dataDir, locale),
-	// 		createBranchesJson(dataDir, locale),
-	// 		createItemsJson(dataDir, locale),
-	// 		// createMapsJson(dataDir),
-	// 		// createEnemiesJson(dataDir),
-	// 	]);
-	// });
+	for (const locale of ["zh_CN", "en_US", "ja_JP", "ko_KR"]) {
+		const dataDir = path.join(__dirname, "../data/", locale);
+		await fs.mkdir(dataDir, { recursive: true });
+		await Promise.all([
+			createOperatorsJson(dataDir, locale),
+			createBranchesJson(dataDir, locale),
+			createItemsJson(dataDir, locale),
+			// createMapsJson(dataDir),
+			// createEnemiesJson(dataDir),
+		]);
+	}
 
 	// dont translate operators for now
 
@@ -32,9 +32,7 @@ import { translateOperators } from "./translate-operators.js";
 	const { buildSearchIndex } = await import("./build-search-index.js");
 	// console.log("Building search index...");
 	// await buildSearchIndex(dataDir);
-	["zh_CN", "en_US", "ja_JP", "ko_KR"].forEach(async (locale) => {
-		await buildSearchIndex(locale);
-	});
+	await buildSearchIndex();
 
 	console.log("✅ Done.");
 })();

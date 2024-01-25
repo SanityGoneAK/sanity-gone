@@ -1,4 +1,4 @@
-import algoliasearch from "algoliasearch";
+import { MeiliSearch } from "meilisearch";
 
 import enBranchesJson from "../data/en_US/branches.json";
 import cnBranchesJson from "../data/zh_CN/branches.json";
@@ -30,10 +30,16 @@ const OPERATOR_LOCALES = {
 
 /** @typedef {import("../src/types/output-types").SearchResult} SearchResult */
 /**
+<<<<<<< Updated upstream
+=======
+ * Creates `{dataDir}/search.json`, a FlexSearch index used for Sanity;Gone's search bar.
+ * no it doesn't lol
+>>>>>>> Stashed changes
  *
  * @param {"zh_CN" | "en_US" | "ja_JP" | "ko_KR"} locale - output locale
  */
-export async function buildSearchIndex(locale) {
+
+export async function buildSearchIndex() {
 	/** @type {SearchResult[]} */
 	const searchArray = [];
 
@@ -60,14 +66,20 @@ export async function buildSearchIndex(locale) {
 		])
 	);
 
-	Object.values(OPERATOR_LOCALES[locale])
+	Object.values(OPERATOR_LOCALES.zh_CN)
 		.filter((e) => !e.isNotObtainable)
 		.forEach((op) => {
 			searchArray.push({
 				objectID: op.charId,
 				type: "operator",
 				charId: op.charId,
-				name: op.name,
+				name: Object.fromEntries(
+					["zh_CN", "en_US", "ja_JP", "ko_KR"].map((locale) => [
+						locale,
+						OPERATOR_LOCALES[locale][op.charId].name,
+					])
+				),
+				// TODO localize class and subclass names here too
 				class: professionToClass(op.profession),
 				subclass: subProfessionIdToBranch(op.subProfessionId),
 				rarity: op.rarity,
@@ -77,9 +89,10 @@ export async function buildSearchIndex(locale) {
 
 	[
 		...new Set(
-			Object.values(BRANCH_LOCALES[locale]).map((item) => item.class)
+			Object.values(BRANCH_LOCALES.zh_CN).map((item) => item.class)
 		),
 	].forEach((className) => {
+		// TODO localize class names
 		searchArray.push({
 			objectID: className,
 			type: "class",
@@ -88,32 +101,61 @@ export async function buildSearchIndex(locale) {
 		});
 	});
 
-	Object.entries(BRANCH_LOCALES[locale]).forEach(([branchName, branch]) => {
+	Object.entries(BRANCH_LOCALES.zh_CN).forEach(([branchName, branch]) => {
 		searchArray.push({
 			objectID: branchName,
 			type: "branch",
-			name: branch.branchName,
+			name: Object.fromEntries(
+				["zh_CN", "en_US", "ja_JP", "ko_KR"].map((locale) => [
+					locale,
+					BRANCH_LOCALES[locale][branchName].branchName,
+				])
+			),
 			class: branch.class,
 			subProfession: branchName,
 		});
 	});
 
-	const client = algoliasearch(
-		process.env.ALGOLIA_APP_ID,
-		process.env.ALGOLIA_SECRET
-	);
-	const INDEX_LOCALE = {
-		zh_CN: process.env.ALGOLIA_CN_INDEX,
-		en_US: process.env.ALGOLIA_EN_INDEX,
-		ja_JP: process.env.ALGOLIA_JP_INDEX,
-		ko_KR: process.env.ALGOLIA_KR_INDEX,
-	};
-	const index = client.initIndex(INDEX_LOCALE[locale]);
-	index.clearObjects();
+	// searchArray.forEach((item) => {
+	// 	console.log(item);
+	// });
 
-	index.saveObjects(searchArray).then(({ objectIDs }) => {
-		console.log(
-			`Created index in Algolia, added ${objectIDs.length} records`
-		);
+	const client = new MeiliSearch({
+		host: process.env.PUBLIC_MEILISEARCH_URL,
+		apiKey: process.env.MEILISEARCH_KEY,
 	});
+	await client.createIndex("operators", {
+		primaryKey: "objectID",
+	});
+	const index = client.index("operators");
+	index.addDocuments(searchArray).then(() => {
+		console.log("Created index in MeiliSearch");
+	});
+
+	// This is no longer needed since the key has already been created
+	// client
+	// 	.createKey({
+	// 		actions: ["search", "indexes.get"],
+	// 		indexes: ["operators"],
+	// 		name: "public",
+	// 		uid: "54058be6-5807-405e-add7-27cd85e3f8fc",
+	// 		description: "Public key for operators search",
+	// 		expiresAt: null,
+	// 	})
+	// 	.then((key) => {
+	// 		console.log(key);
+	// 		console.log("Key created");
+	// 	});
+	// client.getKey("54058be6-5807-405e-add7-27cd85e3f8fc").then((key) => {
+	// 	console.log(key);
+	// 	console.log("Key retrieved");
+	// });
+
+	// index.saveObjects(searchArray).then(({ objectIDs }) => {
+	// 	console.log(
+	// 		`Created index in Algolia, added ${objectIDs.length} records`
+	// 	);
+	// });
 }
+
+buildSearchIndex();

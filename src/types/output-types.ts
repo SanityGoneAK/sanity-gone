@@ -376,11 +376,18 @@ export type SearchResult =
 	| ClassSearchResult
 	| BranchSearchResult;
 
+export type LocalizedString = {
+	en_US: string;
+	ja_JP: string;
+	ko_KR: string;
+	zh_CN: string;
+};
+
 export interface OperatorSearchResult {
 	objectID: string;
 	type: "operator";
 	charId: string;
-	name: string;
+	name: LocalizedString;
 	class: string;
 	subclass: string;
 	rarity: number;
@@ -390,6 +397,7 @@ export interface OperatorSearchResult {
 export interface ClassSearchResult {
 	objectID: string;
 	type: "class";
+	// TODO localize this
 	name: string;
 	class: string;
 }
@@ -397,7 +405,7 @@ export interface ClassSearchResult {
 export interface BranchSearchResult {
 	objectID: string;
 	type: "branch";
-	name: string;
+	name: LocalizedString;
 	class: string;
 	subProfession: string;
 }
