@@ -7,6 +7,7 @@ import { useState } from "react";
 import itemsJson from "../../../../data/en_US/items.json";
 import { arbitraryImage, itemImage, operatorAvatar } from "~/utils/images.ts";
 import { cx } from "~/utils/styles.ts";
+import OriginiumIcon from "~/components/icons/OriginiumIcon.tsx";
 
 const OperatorMiscPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
@@ -93,7 +94,7 @@ const OperatorMiscPanel: React.FC = () => {
 					{handbook.profile}
 				</p>
 			</div>
-			<div className="grid grid-cols-[1fr,_1px,_1fr] gap-4">
+			<div className="flex flex-col gap-4 sm:grid sm:grid-cols-[1fr,_1px,_1fr]">
 				<div>
 					<h2 className="mb-4 font-serif text-2xl font-semibold">
 						Basic Info
@@ -114,7 +115,7 @@ const OperatorMiscPanel: React.FC = () => {
 						))}
 					</ul>
 				</div>
-				<div className="border-l border-neutral-600"></div>
+				<div className="border-t border-neutral-600 sm:border-l"></div>
 				<div>
 					<h2 className="mb-4 font-serif text-2xl font-semibold">
 						Physical Exam
@@ -126,11 +127,15 @@ const OperatorMiscPanel: React.FC = () => {
 								key={item.title}
 							>
 								<span className="text-base leading-normal text-neutral-200">
-									{
-										// TODO Do we want to collapse Originium Arts Assimilation
-										// into Arts Assimilation? It don't fit :pepegaturtle:
+									{item.title ===
+									"Originium Arts Assimilation" ? ( // i may or may not be slightly trolling
+										<div className="flex flex-row items-center gap-1.5">
+											<OriginiumIcon />
+											<p>Arts Assimilation</p>
+										</div>
+									) : (
 										item.title
-									}
+									)}
 								</span>
 								<span className="text-lg font-semibold">
 									{item.value}
@@ -163,7 +168,7 @@ const OperatorMiscPanel: React.FC = () => {
 					</p>
 				</div>
 			</div>
-			<div className="flex justify-between gap-4">
+			<div className="grid grid-flow-row grid-cols-2 grid-rows-2 justify-between gap-4 sm:flex">
 				{[1, 2, 3, 4].map((archive) => (
 					<button
 						onClick={() => setCurrentArchive(archive)}
