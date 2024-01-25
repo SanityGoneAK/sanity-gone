@@ -254,7 +254,7 @@ const SearchBar: React.FC<Props> = ({ locale, placeholder, onSelected }) => {
 						<InstantSearch
 							future={{ preserveSharedStateOnUnmount: true }}
 							searchClient={searchClient}
-							indexName={import.meta.env.ALGOLIA_EN_INDEX}
+							indexName={import.meta.env.PUBLIC_ALGOLIA_EN_INDEX}
 						>
 							<CustomSearchInput
 								placeholder={placeholder}
