@@ -56,7 +56,7 @@ const ModuleInfo: React.FC<Props> = ({
 	)!;
 
 	return (
-		<div className="grid grid-cols-[192px_1fr] grid-rows-[auto_auto_1fr] items-center gap-x-4 gap-y-4 grid-areas-module">
+		<div className="flex grid-cols-[192px_1fr] grid-rows-[auto_auto_1fr] flex-col items-stretch gap-x-4 gap-y-4 grid-areas-module sm:grid sm:items-center">
 			<div className="flex h-full flex-col overflow-hidden rounded-lg bg-neutral-900 grid-in-image">
 				<img
 					className="h-[182px] flex-grow"

@@ -154,8 +154,8 @@ const OperatorModulesPanel: React.FC = () => {
 
 	return (
 		<div className="flex flex-col gap-4 p-6">
-			<div className="grid grid-cols-[auto_auto_1fr] items-center gap-x-4 border-b border-neutral-600 pb-4">
-				<div className="grid grid-flow-col items-center gap-x-2 text-neutral-200">
+			<div className="grid grid-flow-col grid-cols-[auto_1fr] grid-rows-2 items-center gap-4 border-b border-neutral-600 pb-4 sm:grid-flow-row sm:grid-cols-[auto_auto_1fr] sm:grid-rows-1">
+				<div className="grid w-fit grid-flow-col items-center gap-x-2 text-neutral-200">
 					<span>Model</span>
 					<PillButtonGroup
 						labels={moduleTypes}
@@ -163,6 +163,7 @@ const OperatorModulesPanel: React.FC = () => {
 						onChange={setModuleType}
 					/>
 				</div>
+
 				<div className="grid grid-flow-col items-center gap-x-2 text-neutral-200">
 					Stage
 					<PillButtonGroup
