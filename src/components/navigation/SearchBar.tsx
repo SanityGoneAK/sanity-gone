@@ -22,13 +22,17 @@ import type {
 	ClassSearchResult,
 	BranchSearchResult,
 	OperatorSearchResult,
-	LocalizedString,
 } from "~/types/output-types.ts";
 import type { BaseHit } from "instantsearch.js";
 import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
+import {
+	type Locale,
+	localeToTag,
+	type LocalizedString,
+} from "~/i18n/languages.ts";
 
 interface Props {
-	locale: string;
+	locale: Locale;
 	placeholder: string;
 	onSelected?: () => void;
 }
@@ -73,7 +77,7 @@ const CustomSearchInput: React.FC<{
 
 const CustomHits: React.FC<{
 	onSelected?: () => void;
-	locale: string;
+	locale: Locale;
 }> = ({ onSelected, locale }) => {
 	const { hits, results, sendEvent } = useHits<BaseHit & SearchResult>();
 
@@ -152,7 +156,7 @@ const CustomHits: React.FC<{
 								height={40}
 							/>
 							<span className="text-neutral-100">
-								{result.name.en_US}
+								{result.name[localeToTag[locale]]}
 							</span>
 							<p className="text-sm leading-[18px] text-neutral-200">
 								<span
@@ -167,7 +171,7 @@ const CustomHits: React.FC<{
 								</span>
 								<span>
 									{result.class}&nbsp; •&nbsp;{" "}
-									{result.subclass}
+									{result.subclass[localeToTag[locale]]}
 								</span>
 							</p>
 						</Combobox.Option>
@@ -217,7 +221,7 @@ const CustomHits: React.FC<{
 								{result.type === "class"
 									? // TODO might wanna localize this first part
 										result.name
-									: result.name.en_US}
+									: result.name[localeToTag[locale]]}
 							</span>
 							<span className="text-sm leading-[18px] text-neutral-200">
 								{result.type === "class"

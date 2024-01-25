@@ -124,12 +124,20 @@ export const getStatsAtLevel = (
 		magicResistance: finalMaxRes,
 	} = finalKeyFrame.data;
 
+	// if stats don't change (summon like skalter seaborn), favorKeyFrames is null
 	const {
 		maxHp: trustHp,
 		atk: trustAtk,
 		def: trustDef,
 		magicResistance: trustRes,
-	} = getStatIncreaseAtTrust(characterObject, trust);
+	} = doStatsChange(characterObject)
+		? getStatIncreaseAtTrust(characterObject, trust)
+		: {
+				maxHp: 0,
+				atk: 0,
+				def: 0,
+				magicResistance: 0,
+			};
 
 	const {
 		health: potHealth,
@@ -140,8 +148,7 @@ export const getStatsAtLevel = (
 		dpCost: potDp,
 		redeployTimeInSeconds: potRedeploy,
 	} = doStatsChange(characterObject)
-		? // if stats don't change (summon like skalter seaborn), favorKeyFrames is null
-			getStatIncreaseAtPotential(characterObject, potential)
+		? getStatIncreaseAtPotential(characterObject, potential)
 		: {
 				health: 0,
 				attackPower: 0,

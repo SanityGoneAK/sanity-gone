@@ -79,9 +79,13 @@ export async function buildSearchIndex() {
 						OPERATOR_LOCALES[locale][op.charId].name,
 					])
 				),
-				// TODO localize class and subclass names here too
 				class: professionToClass(op.profession),
-				subclass: subProfessionIdToBranch(op.subProfessionId),
+				subclass: Object.fromEntries(
+					["zh_CN", "en_US", "ja_JP", "ko_KR"].map((locale) => [
+						locale,
+						subProfessionIdToBranch(op.subProfessionId, locale),
+					])
+				),
 				rarity: op.rarity,
 				hasGuide: !!operatorsWithGuides[op.name],
 			});
@@ -158,4 +162,4 @@ export async function buildSearchIndex() {
 	// });
 }
 
-buildSearchIndex();
+// buildSearchIndex();

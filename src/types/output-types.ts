@@ -2,6 +2,7 @@ import type { Range } from "./gamedata-types";
 import type { RiicSkill } from "../../scripts/aggregate-riic-data";
 import type { CharacterStatValues } from "../utils/character-stats";
 import type { InterpolatedValue } from "../utils/description-parser";
+import type { LocalizedString } from "~/i18n/languages.ts";
 
 export type { SkinSource, SkinCostTokenType } from "../../scripts/scrape-prts";
 export type { RiicSkill } from "../../scripts/aggregate-riic-data";
@@ -376,20 +377,13 @@ export type SearchResult =
 	| ClassSearchResult
 	| BranchSearchResult;
 
-export type LocalizedString = {
-	en_US: string;
-	ja_JP: string;
-	ko_KR: string;
-	zh_CN: string;
-};
-
 export interface OperatorSearchResult {
 	objectID: string;
 	type: "operator";
 	charId: string;
 	name: LocalizedString;
 	class: string;
-	subclass: string;
+	subclass: LocalizedString;
 	rarity: number;
 	hasGuide: boolean;
 }
