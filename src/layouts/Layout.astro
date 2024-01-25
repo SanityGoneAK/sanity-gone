@@ -11,7 +11,7 @@ import { getPathByLocale } from "astro:i18n";
 import SearchBar from "../components/navigation/SearchBar";
 import SanityGoneLogo from "~/components/SanityGoneLogo";
 import Sidebar from "~/components/navigation/Sidebar.astro";
-import { defaultLang } from "~/i18n/languages";
+import { defaultLang, type Locale } from "~/i18n/languages";
 
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 
@@ -91,7 +91,7 @@ import "~/styles/base.css";
 			>
 				<SearchBar
 					placeholder="Search"
-					locale={locale}
+					locale={locale as Locale}
 					client:visible
 				/>
 			</div>
