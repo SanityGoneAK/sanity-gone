@@ -2463,6 +2463,30 @@
     "usage": "用于提升温米的潜能。",
     "rarity": 5
   },
+  "p_char_4119_wanqin": {
+    "itemId": "p_char_4119_wanqin",
+    "name": "万顷的信物",
+    "iconId": "p_char_4119_wanqin",
+    "description": "一个精致的天师仪模型，据说是天师府限量贩售，在炎国孩子间人气很高。“想要拿到真的就要好好念书学习。”在炎国，每个孩子都听过这样的话。",
+    "usage": "用于提升万顷的潜能。",
+    "rarity": 5
+  },
+  "p_char_4122_grabds": {
+    "itemId": "p_char_4122_grabds",
+    "name": "小满的信物",
+    "iconId": "p_char_4122_grabds",
+    "description": "一支手工制作的竹笛，声音清亮，但音准稍稍有些问题。",
+    "usage": "用于提升小满的潜能。",
+    "rarity": 5
+  },
+  "p_char_4023_rfalcn": {
+    "itemId": "p_char_4023_rfalcn",
+    "name": "红隼的信物",
+    "iconId": "p_char_4023_rfalcn",
+    "description": "一柄古朴的弯刀。来自萨尔贡的部落战士把你视作战友，将它赠予了你。",
+    "usage": "用于提升红隼的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "Exusiai's Token",
@@ -3141,6 +3165,22 @@
     "iconId": "p_char_4117_ray",
     "description": "一本看不出制作者意图的剪贴册。里面的“奇异生物照片”似乎也是拼贴合成的图像，要不要告诉她呢？",
     "usage": "用于提升莱伊的潜能。",
+    "rarity": 6
+  },
+  "p_char_2025_shu": {
+    "itemId": "p_char_2025_shu",
+    "name": "黍的信物",
+    "iconId": "p_char_2025_shu",
+    "description": "一张古老的图画，体现了千年前人们对四季轮回原理的想象。时光流转，惟斯不变。",
+    "usage": "用于提升黍的潜能。",
+    "rarity": 6
+  },
+  "p_char_4121_zuole": {
+    "itemId": "p_char_4121_zuole",
+    "name": "左乐的信物",
+    "iconId": "p_char_4121_zuole",
+    "description": "一只有炎国特色的手工风筝，上面还沾染着些许林间树叶的气息。它常常因执线的手笨拙的动作而摔落，也总会重新乘风而起。",
+    "usage": "用于提升左乐的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
