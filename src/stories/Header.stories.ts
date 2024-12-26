@@ -17,11 +17,12 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const LoggedIn: Story = {
+	// @ts-expect-error placeholder
 	args: {
 		user: {
 			name: "Jane Doe",
 		},
 	},
 };
-
+// @ts-expect-error placeholder
 export const LoggedOut: Story = {};

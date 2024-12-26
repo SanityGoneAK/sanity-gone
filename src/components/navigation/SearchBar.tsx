@@ -118,7 +118,7 @@ const CustomHits: React.FC<{
 					option.class ?? ""
 				)}-${subclassSlugify(option.name.en_US ?? "")}`;
 			}
-			onSelected && onSelected();
+			return onSelected && onSelected();
 		},
 		[locale, onSelected]
 	);
@@ -163,7 +163,7 @@ const CustomHits: React.FC<{
 									className={cx(
 										"inline-block w-6 text-neutral-100",
 										rarityClasses[
-											result.rarity as keyof typeof rarityClasses
+										result.rarity as keyof typeof rarityClasses
 										]
 									)}
 								>
@@ -208,11 +208,11 @@ const CustomHits: React.FC<{
 								src={
 									result.type === "class"
 										? operatorClassIcon(
-												result.class.toLowerCase()
-											)
+											result.class.toLowerCase()
+										)
 										: operatorBranchIcon(
-												result.subProfession
-											)
+											result.subProfession
+										)
 								}
 								width={40}
 								height={40}
@@ -220,7 +220,7 @@ const CustomHits: React.FC<{
 							<span className="text-neutral-100">
 								{result.type === "class"
 									? // TODO might wanna localize this first part
-										result.name
+									result.name
 									: result.name[localeToTag[locale]]}
 							</span>
 							<span className="text-sm leading-[18px] text-neutral-200">
@@ -257,6 +257,7 @@ const SearchBar: React.FC<Props> = ({ locale, placeholder, onSelected }) => {
 				<SearchIcon className="mr-4" />
 				<Combobox<SearchResult>>
 					{({ activeOption }) => (
+						// @ts-expect-error react19 error
 						<InstantSearch
 							future={{ preserveSharedStateOnUnmount: true }}
 							searchClient={searchClient}
@@ -264,6 +265,7 @@ const SearchBar: React.FC<Props> = ({ locale, placeholder, onSelected }) => {
 						>
 							<CustomSearchInput
 								placeholder={placeholder}
+								// @ts-expect-error react19 error
 								inputRef={inputRef}
 							/>
 							<CustomHits

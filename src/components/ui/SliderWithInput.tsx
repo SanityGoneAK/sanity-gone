@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-import { Slider } from "@mui/base";
+import { Slider } from "@mui/base/Slider";
 
 import Input from "~/components/ui/Input";
 import { cx } from "~/utils/styles.ts";
@@ -67,7 +67,8 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 
 	return (
 		<div className="flex items-center gap-x-4">
-			<Slider
+			{/* @ts-expect-error something with MUI */}
+			<Slider<"input">
 				aria-label={`${label} slider`}
 				slotProps={{
 					root: {
@@ -99,6 +100,9 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 						// which clashes with the .active style; so we have to constrain it to when it receives focus
 						// via keyboard
 					},
+				}}
+				slots={{
+					root: "input",
 				}}
 				onChange={(_, value) => onChange(value as number)}
 				min={1}
