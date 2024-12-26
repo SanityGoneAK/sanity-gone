@@ -109,7 +109,6 @@ export function aggregateModuleData(locale) {
 			};
 		});
 
-		console.log(moduleId);
 		// grab items needed
 		const itemCost = Object.values(
 			cnUniequipTable.equipDict[moduleId]?.itemCost ?? {}
@@ -220,7 +219,8 @@ export function aggregateModuleData(locale) {
 				if (
 					target === "TRAIT" ||
 					target === "TRAIT_DATA_ONLY" ||
-					target === "DISPLAY"
+					target === "DISPLAY" ||
+					target === "OVERWRITE_BATTLE_DATA"
 				) {
 					if (curPart.overrideTraitDataBundle.candidates === null) {
 						// if we ever get here, HG has messed up big time
