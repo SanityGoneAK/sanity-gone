@@ -6,6 +6,8 @@ export const operatorAvatar = (charId: string, elite?: number): string => {
 	const basePath = `${baseURL}/torappu/dynamicassets/arts/charavatars/${charId}`;
 	if (charId === "char_002_amiya" && elite === 1) {
 		return `${basePath}_1+.webp`;
+	} else if (charId === "char_1037_amiya3" && elite === 1) {
+		return `${basePath}_2.webp`;
 	} else if (elite === 2) {
 		return `${basePath}_2.webp`;
 	}
@@ -65,10 +67,16 @@ export const riicSkillIcon = (riicSkillIcon: string): string =>
 	`${baseURL}/torappu/dynamicassets/arts/building/skills/${riicSkillIcon}.webp`;
 
 export const operatorPortrait = (operatorId: string): string => {
-	const filename =
-		operatorId === "char_1001_amiya2"
-			? "char_1001_amiya2_2"
-			: `${operatorId}_1`;
+	let filename = `${operatorId}_1`;
+
+	if (operatorId === "char_1001_amiya2") {
+		filename = "char_1001_amiya2_2";
+	}
+
+	if (operatorId === "char_1037_amiya3") {
+		filename = "char_1037_amiya3_2";
+	}
+
 	return `${baseURL}/arts/charportraits/${filename}.webp`;
 };
 
