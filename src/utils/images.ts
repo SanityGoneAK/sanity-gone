@@ -18,7 +18,7 @@ export const operatorSplash = (
 	skinType: string
 ): string => {
 	if (skinType === "skin") {
-		return `${baseURL}/skinpack/${encodeURIComponent(portraitId)}.webp`;
+		return `${baseURL}/skinpack/${encodeURIComponent(portraitId)}b.webp`;
 	}
 	return `${baseURL}/chararts/${encodeURIComponent(portraitId)}.webp`;
 };
