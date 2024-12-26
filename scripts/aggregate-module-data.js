@@ -60,7 +60,9 @@ export function aggregateModuleData(locale) {
 	const moduleData = {};
 
 	Object.entries(cnBattleEquipTable).forEach(([moduleId, cnBattleEquip]) => {
-		const operatorId = cnUniequipTable.equipDict[moduleId].charId;
+		const operatorId = cnUniequipTable.equipDict[moduleId].tmplId
+			? cnUniequipTable.equipDict[moduleId].tmplId
+			: cnUniequipTable.equipDict[moduleId].charId;
 		const operatorBattleEquip = { ...cnBattleEquip };
 
 		// get icon of module's type (like EXE-Y or SUM-X)

@@ -52,7 +52,7 @@ const operator = operatorsJson[
 ] as OutputTypes.Operator;
 operatorIdStore.set(operatorId);
 
-const relatedOperator = getRelatedCharacter(operator);
+const relatedOperators = getRelatedCharacter(operator);
 ---
 
 <script slot="head" define:vars={{ operatorId }}>
@@ -75,27 +75,32 @@ const relatedOperator = getRelatedCharacter(operator);
 				</li>
 				<li class="flex-grow"></li>
 				{
-					relatedOperator && (
-						<li class="flex-none">
-							<a
-								class="flex items-center text-yellow relative mr-3"
-								href={getRelativeLocaleUrl(
-									locale,
-									`/operators/${slugify(
-										relatedOperator.name
-									)}`
-								)}
-							>
-								<img
-									class="w-8 h-8 border border-solid border-neutral-200 rounded-[4.5rem] mr-2"
-									src={operatorAvatar(relatedOperator.charId)}
-								/>
-								<span class="border-dashed border-b-[1px] border-neutral-200">
-									{relatedOperator.name}
-								</span>
-							</a>
-						</li>
-					)
+					relatedOperators.length > 1 &&
+						relatedOperators.map((relatedOperator) => {
+							return (
+								<li class="flex-none">
+									<a
+										class="flex items-center text-yellow relative mr-3"
+										href={getRelativeLocaleUrl(
+											locale,
+											`/operators/${slugify(
+												relatedOperator.name
+											)}`
+										)}
+									>
+										<img
+											class="w-8 h-8 border border-solid border-neutral-200 rounded-[4.5rem] mr-2"
+											src={operatorAvatar(
+												relatedOperator.charId
+											)}
+										/>
+										<span class="border-dashed border-b-[1px] border-neutral-200">
+											{relatedOperator.name}
+										</span>
+									</a>
+								</li>
+							);
+						})
 				}
 			</ul>
 			<!-- TODO: Make this a component? -->

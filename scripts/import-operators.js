@@ -232,6 +232,10 @@ function getLocalesForValue(charId, locale, value) {
 		return CHARACTER_LOCALES[locale][charId][value] + " (Guard)";
 	}
 
+	if (value === "name" && charId === "char_1037_amiya3") {
+		return CHARACTER_LOCALES[locale][charId][value] + " (Medic)";
+	}
+
 	if (
 		value === "name" &&
 		charId === "char_4055_bgsnow" &&
@@ -351,8 +355,12 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 			.filter((skin) => {
 				// special case:
 				// amiya's guard form shows up as a skin, so we should filter that out
-				if (skin.skinId === "char_1001_amiya2#2") return false;
-				return skin.charId === charId;
+				// if (skin.skinId === "char_1001_amiya2#2") return false;
+				// if (skin.skinId === "char_1037_amiya3#2") return false;
+				return (
+					skin.tmplId === charId ||
+					(skin.charId === charId && skin.tmplId === null)
+				);
 			})
 			.map((cnSkin) => {
 				let skinType = "elite-zero";
@@ -579,6 +587,9 @@ function addLoreDetails(characters, locale) {
 				archive3: "Archive File 3",
 				archive4: "Archive File 4",
 				promotionRecord: "Promotion Record",
+				performanceReview: "Performance Review",
+				classConversionRecord1: "Class Conversion Record 1",
+				classConversionRecord2: "Class Conversion Record 2",
 			},
 			zh_CN: {
 				basicInfo: "基础档案",
@@ -590,6 +601,9 @@ function addLoreDetails(characters, locale) {
 				archive3: "档案资料三",
 				archive4: "档案资料四",
 				promotionRecord: "晋升记录",
+				performanceReview: "综合性能检测结果",
+				classConversionRecord1: "升变档案一",
+				classConversionRecord2: "升变档案二",
 			},
 			ja_JP: {
 				basicInfo: "基礎情報",
@@ -601,6 +615,9 @@ function addLoreDetails(characters, locale) {
 				archive3: "第三資料",
 				archive4: "第四資料",
 				promotionRecord: "昇進記録",
+				performanceReview: "総合性能",
+				classConversionRecord1: "昇格資料一",
+				classConversionRecord2: "昇格資料二",
 			},
 			ko_KR: {
 				basicInfo: "기본정보",
@@ -612,11 +629,18 @@ function addLoreDetails(characters, locale) {
 				archive3: "파일 자료 3",
 				archive4: "파일 자료 4",
 				promotionRecord: "승진 기록",
+				performanceReview: "종합 성능 테스트 결과",
+				classConversionRecord1: "프로모션 파일 자료 1",
+				classConversionRecord2: "프로모션 파일 자료 2",
 			},
 		};
 
-		const charIdToUse =
-			(charId === "char_1001_amiya2" || charId === "char_1037_amiya3") ? "char_002_amiya" : charId;
+		const charIdToUse = ["char_1001_amiya2", "char_1037_amiya3"].some(
+			(id) => id === charId
+		)
+			? "char_002_amiya"
+			: charId;
+
 		const actualLocale = HANDBOOK_LOCALES[locale][charIdToUse]
 			? locale
 			: "zh_CN";
@@ -652,6 +676,11 @@ function addLoreDetails(characters, locale) {
 			charIdToUse,
 			languageKeyMap[actualLocale].promotionRecord
 		);
+		const performanceReview = getStoryText(
+			actualLocale,
+			charIdToUse,
+			languageKeyMap[actualLocale].performanceReview
+		);
 
 		const archives = [1, 2, 3, 4]
 			.map((archiveNumber) =>
@@ -659,6 +688,18 @@ function addLoreDetails(characters, locale) {
 					actualLocale,
 					charIdToUse,
 					languageKeyMap[actualLocale][`archive${archiveNumber}`]
+				)
+			)
+			.filter((archive) => archive);
+
+		const classConversionRecord = [1, 2]
+			.map((recordNumber) =>
+				getStoryText(
+					actualLocale,
+					charIdToUse,
+					languageKeyMap[actualLocale][
+						`classConversionRecord${recordNumber}`
+					]
 				)
 			)
 			.filter((archive) => archive);
@@ -674,6 +715,8 @@ function addLoreDetails(characters, locale) {
 					clinicalAnalysis,
 					promotionRecord,
 					archives,
+					performanceReview,
+					classConversionRecord,
 				},
 			},
 		];
@@ -804,10 +847,11 @@ function addRiicSkills(characters, locale, { opToRiicSkillsMap }) {
 			charId,
 			{
 				...character,
-				riicSkills:
-					charId === "char_1001_amiya2"
-						? opToRiicSkillsMap["char_002_amiya"]
-						: opToRiicSkillsMap[charId],
+				riicSkills: ["char_1001_amiya2", "char_1037_amiya3"].some(
+					(id) => id === charId
+				)
+					? opToRiicSkillsMap["char_002_amiya"]
+					: opToRiicSkillsMap[charId],
 			},
 		];
 	});
