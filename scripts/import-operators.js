@@ -616,7 +616,7 @@ function addLoreDetails(characters, locale) {
 		};
 
 		const charIdToUse =
-			charId === "char_1001_amiya2" ? "char_002_amiya" : charId;
+			(charId === "char_1001_amiya2" || charId === "char_1037_amiya3") ? "char_002_amiya" : charId;
 		const actualLocale = HANDBOOK_LOCALES[locale][charIdToUse]
 			? locale
 			: "zh_CN";
