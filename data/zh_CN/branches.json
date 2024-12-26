@@ -287,7 +287,7 @@
   "ritualist": {
     "branchName": "巫役",
     "class": "Supporter",
-    "trait": "攻击造成<span class=\"keyword\">法术伤害</span>，可以造成<span class=\"keyword\">元素损伤</span>"
+    "trait": "攻击造成<span class=\"keyword\">法术伤害</span>，可以造成<span class=\"keyword\">元素损伤</span>，且不受<span class=\"keyword\">部署数量</span>限制，但再部署时间极长"
   },
   "hunter": {
     "branchName": "猎手",
@@ -303,5 +303,30 @@
     "branchName": "回环射手",
     "class": "Sniper",
     "trait": "持有<span class=\"keyword\">回旋投射物</span>时才能够攻击（投射物需要时间回收）"
+  },
+  "hammer": {
+    "branchName": "撼地者",
+    "class": "Guard",
+    "trait": "攻击使目标周围的其他敌人受到相当于攻击力<span class=\"keyword\">50%</span>的<span class=\"keyword\">群体</span>物理伤害"
+  },
+  "alchemist": {
+    "branchName": "炼金师",
+    "class": "Specialist",
+    "trait": "可以投掷<span class=\"keyword\">炼金单元</span>协助作战"
+  },
+  "primprotector": {
+    "branchName": "本源铁卫",
+    "class": "Defender",
+    "trait": "能够阻挡三个敌人，可以造成元素损伤"
+  },
+  "skywalker": {
+    "branchName": "巡空者",
+    "class": "Specialist",
+    "trait": "<span class=\"skill-tooltip\">起飞</span>后能够阻挡2个飞行敌人"
+  },
+  "soulcaster": {
+    "branchName": "塑灵术师",
+    "class": "Caster",
+    "trait": "攻击造成<span class=\"keyword\">法术伤害</span>，可以通过击倒敌人生成<span class=\"keyword\">召唤物</span>，可攻击到自身<span class=\"keyword\">召唤物</span>阻挡的敌人"
   }
 }
