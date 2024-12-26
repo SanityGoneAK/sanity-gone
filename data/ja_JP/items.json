@@ -651,32 +651,32 @@
     "itemId": "31073",
     "name": "茶色繊維",
     "iconId": "MTL_SL_XW",
-    "description": "源石工业的衍生产物，因其优异的性能在工业领域被广泛应用。近年来又因独特的外观而被设计行业所关注。",
-    "usage": "具备高强度与高模量的特种纤维束。可用于多种强化场合。",
+    "description": "源石産業から派生した産物であり、その非常に優れた性能から、工業分野で広く使用されている。近年では、そのユニークな見た目によって、デザイン業界からも注目されている。",
+    "usage": "高強度かつ高い弾力性を誇る特殊ファイバー。昇進やスキル強化に必要な素材。",
     "rarity": 3
   },
   "31074": {
     "itemId": "31074",
     "name": "硬化ファイバーボード",
     "iconId": "MTL_SL_XWB",
-    "description": "用特殊工艺制作的复合纤维板，物理与化学性能均相当优异，更具备少有的易加工特性，在许多工业流程中不可替代。",
-    "usage": "经过塑形固化处理的特种纤维板。可用于多种强化场合。",
+    "description": "特殊な製法で作られた複合ファイバー基板。物理と化学の両方で優秀な性能を誇り、さらに稀に見る加工のしやすさにより、多くの工業分野において代替不可能な存在となっている。",
+    "usage": "塑形硬化処理が施された特殊ファイバー基板。昇進やスキル強化に必要な素材。",
     "rarity": 4
   },
   "31083": {
     "itemId": "31083",
     "name": "シクロアルカンポリマー",
     "iconId": "MTL_SL_HT",
-    "description": "在实验室内诞生的新型透明材料，具备高透光度和优秀的各项耐性，将成为许多传统材料的优质替代品。",
-    "usage": "一种耐热性、耐化学性俱优的工业材料。可用于多种强化场合。",
+    "description": "実験室で誕生した新型の透明素材。高い透過率と様々な面においての高耐性を持っており、既存素材の上質な代替品になることが予想されている。",
+    "usage": "耐熱性と耐薬品性を兼ね備えた工業材料｡昇進やスキル強化に必要な素材。",
     "rarity": 3
   },
   "31084": {
     "itemId": "31084",
     "name": "シクロアルカンプリファブ",
     "iconId": "MTL_SL_HTT",
-    "description": "在合成流程中加入多种优良材料而得到的工业产品，保证透光度的同时大幅提升了强度与抗冲击性，在防护领域具有广阔应用前景。",
-    "usage": "由多种优良材料预加工而成的工业用材。可用于多种强化场合。",
+    "description": "合成のプロセスにおいて複数の優れた素材を追加したことにより誕生した工業製品。透過率を維持しつつも、強度と耐衝撃性が大幅に向上しており、防護具分野における幅広い応用が見込まれている。",
+    "usage": "前処理を施した優れた材料を複数使用し作られた工業材料。昇進やスキル強化に必要な素材。",
     "rarity": 4
   },
   "32001": {
@@ -713,26 +713,26 @@
   },
   "p_char_285_medic2": {
     "itemId": "p_char_285_medic2",
-    "name": "ランセット-2の印",
+    "name": "Lancet-2の印",
     "iconId": "p_char_285_medic2",
     "description": "「シュッとひと吹き、パッと効く」と書いてある医療用スプレーユニット。医療機器に挿入することも直接使うこともできる。",
-    "usage": "ランセット-2の潜在能力強化に用いられる。",
+    "usage": "Lancet-2の潜在能力強化に用いられる。",
     "rarity": 1
   },
   "p_char_286_cast3": {
     "itemId": "p_char_286_cast3",
-    "name": "キャッスル-3の印",
+    "name": "Castle-3の印",
     "iconId": "p_char_286_cast3",
     "description": "片面が堅固な携帯式装甲板。説明書はない。",
-    "usage": "キャッスル-3の潜在能力強化に用いられる。",
+    "usage": "Castle-3の潜在能力強化に用いられる。",
     "rarity": 1
   },
   "p_char_376_therex": {
     "itemId": "p_char_376_therex",
-    "name": "サーマル-EXの印",
+    "name": "THRM-EXの印",
     "iconId": "p_char_376_therex",
     "description": "発光するサーマルストレージコア。パッケージには極太フォントの黒い文字で「パッションを感じろ！」と書いてある。",
-    "usage": "サーマル-EXの潜在能力強化に用いられる。",
+    "usage": "THRM-EXの潜在能力強化に用いられる。",
     "rarity": 1
   },
   "p_char_4000_jnight": {
@@ -753,10 +753,18 @@
   },
   "p_char_4093_frston": {
     "itemId": "p_char_4093_frston",
-    "name": "フリストン-3の印",
+    "name": "Friston-3の印",
     "iconId": "p_char_4093_frston",
     "description": "一枚のポラロイド写真。この見知らぬ大地において、研究価値のあるものであれば彼は全て写真に収めた。",
     "usage": "フリストン-3の潜在能力強化に用いられる。",
+    "rarity": 1
+  },
+  "p_char_4136_phonor": {
+    "itemId": "p_char_4136_phonor",
+    "name": "PhonoR-0の印",
+    "iconId": "p_char_4136_phonor",
+    "description": "コンパクトなパンシーの巫術ユニット。耳に当てると、河谷の奥深くに響く憂愁な歌声が微かに聞こえてくる。",
+    "usage": "PhonoR-0の潜在能力強化に用いられる。",
     "rarity": 1
   },
   "p_char_502_nblade": {
@@ -1353,18 +1361,34 @@
   },
   "p_char_4107_vrdant": {
     "itemId": "p_char_4107_vrdant",
-    "name": "维荻的信物",
+    "name": "ヴァーダントの印",
     "iconId": "p_char_4107_vrdant",
-    "description": "一株看似杂草的小草，对他有特殊的意义。小草的叶片被割出锋利的切口，不用害怕，这不是为了伤害你。",
-    "usage": "用于提升维荻的潜能。",
+    "description": "雑草のような小さな植物だが、彼にとっては特別な意味を持つ。草の葉には鋭い切れ込みが入っているが、どうか怖がらないでほしい。それはあなたを傷つけるためのものではない。",
+    "usage": "ヴァーダントの潜在能力強化に用いられる。",
     "rarity": 4
   },
   "p_char_4100_caper": {
     "itemId": "p_char_4100_caper",
-    "name": "跃跃的信物",
+    "name": "ケイパーの印",
     "iconId": "p_char_4100_caper",
-    "description": "一个圆滚滚、软乎乎的白色绒球，她执意要送给你这份礼物。她的偷笑让你有了不好的预感，但至少现在什么都没发生。",
-    "usage": "用于提升跃跃的潜能。",
+    "description": "彼女はこのフワフワな白いポンポンを、どうしてもあなたにプレゼントしたいようだ。ニヤニヤ笑いに少しばかり不吉な予感を感じたものの、今のどころはまだ何も起こっていない。",
+    "usage": "ケイパーの潜在能力強化に用いられる。",
+    "rarity": 4
+  },
+  "p_char_4130_luton": {
+    "itemId": "p_char_4130_luton",
+    "name": "ルトナダの印",
+    "iconId": "p_char_4130_luton",
+    "description": "色褪せた薄黄色のスカーフ。しかし、それに込められた思い出が色褪せることはない。ふとした時に彼女は思わず考えてしまう――別れのあの日の母が、このスカーフを胸元に結んでくれたように、誰かがこれを自分の墓石にかぶせてくれるのだろうかと。",
+    "usage": "ルトナダの潜在能力強化に用いられる。",
+    "rarity": 4
+  },
+  "p_char_4165_ctrail": {
+    "itemId": "p_char_4165_ctrail",
+    "name": "云迹的信物",
+    "iconId": "p_char_4165_ctrail",
+    "description": "一个小小的白色挂件，用来纪念你陪伴她一起完成的飞行实验。她有点在意你会不会随时带在身上。",
+    "usage": "用于提升云迹的潜能。",
     "rarity": 4
   },
   "p_char_128_plosis": {
@@ -1899,7 +1923,7 @@
     "itemId": "p_char_265_sophia",
     "name": "ウィスラッシュの印",
     "iconId": "p_char_265_sophia",
-    "description": "カジミエーシュのキングシュロ銀行が発行するVIPクレジットカードのスペアカード。利用限度額が高く、カジミエーシュのどの主要都市でも使える。",
+    "description": "カジミエーシュのゴールデンパーム銀行が発行するVIPクレジットカードのスペアカード。利用限度額が高く、カジミエーシュのどの主要都市でも使える。",
     "usage": "ウィスラッシュの潜在能力強化に用いられる。",
     "rarity": 5
   },
@@ -2339,7 +2363,7 @@
     "itemId": "p_char_4006_melnte",
     "name": "メラナイトの印",
     "iconId": "p_char_4006_melnte",
-    "description": "大容量のチョコレート味の栄養補給剤。牛乳に溶かして、夜食として食べることが多い。十年以上前はクルビア全土の雑貨店で販売されていたが、今では滅多にお目にかかれない。",
+    "description": "大容量のチョコレート味の栄養補給剤。ミルク乳に溶かして、夜食として食べることが多い。十年以上前はクルビア全土の雑貨店で販売されていたが、今では滅多にお目にかかれない。",
     "usage": "メラナイトの潜在能力強化に用いられる。",
     "rarity": 5
   },
@@ -2361,18 +2385,18 @@
   },
   "p_char_341_sntlla": {
     "itemId": "p_char_341_sntlla",
-    "name": "寒檀的信物",
+    "name": "サンタラの印",
     "iconId": "p_char_341_sntlla",
-    "description": "一块雕刻着奇异符号的木块。你记得寒檀告诉过你，符号的意义是“温暖”。",
-    "usage": "用于提升寒檀的潜能。",
+    "description": "奇妙な記号が刻まれた木片。この記号は「温もり」という意味するのだと、かつてサンタラが教えてくれた。",
+    "usage": "サンタラの潜在能力強化に用いられる。",
     "rarity": 5
   },
   "p_char_4102_threye": {
     "itemId": "p_char_4102_threye",
-    "name": "凛视的信物",
+    "name": "ヴァラルクビンの印",
     "iconId": "p_char_4102_threye",
-    "description": "一盏长明灯，发光元件与她的法杖材质相同。她自己能在黑暗中视物，但她对你放心不下。",
-    "usage": "用于提升凛视的潜能。",
+    "description": "彼女のアーツユニットと同じ材質の発光部品が使用されている常夜灯。彼女自身は暗闇の中でも周りが見えるが、あなたのことを心配しているようだ。",
+    "usage": "ヴァラルクビンの潜在能力強化に用いられる。",
     "rarity": 5
   },
   "p_char_4106_bryota": {
@@ -2393,98 +2417,266 @@
   },
   "p_char_4105_almond": {
     "itemId": "p_char_4105_almond",
-    "name": "杏仁的信物",
+    "name": "アーモンドの印",
     "iconId": "p_char_4105_almond",
-    "description": "一枚金属制的哨子，用力吹动会发出响亮的哨音，相当提神。“哟嗬——开工啦！”",
-    "usage": "用于提升杏仁的潜能。",
+    "description": "金属製のホイッスル。強めに吹けば澄んだ音が辺りに響き渡り、頭がとても冴える。「よぉーし、そろそろ仕事を始めよっか！」",
+    "usage": "アーモンドの潜在能力強化に用いられる。",
     "rarity": 5
   },
   "p_char_4104_coldst": {
     "itemId": "p_char_4104_coldst",
-    "name": "冰酿的信物",
+    "name": "コールドショットの印",
     "iconId": "p_char_4104_coldst",
-    "description": "一颗被切割成圆球的冰块，放进杯子里大小刚好。如果想尝尝她的自酿酒，建议加冰稀释，更建议不要尝试。",
-    "usage": "用于提升冰酿的潜能。",
+    "description": "グラスにジャストフィットするアイスボール。彼女お手製のお酒を飲むときは、氷を入れて薄めるのがおすすめだ。もちろん、一滴も飲まないに越したことはない。",
+    "usage": "コールドショットの潜在能力強化に用いられる。",
     "rarity": 5
   },
   "p_char_4110_delphn": {
     "itemId": "p_char_4110_delphn",
-    "name": "戴菲恩的信物",
+    "name": "デルフィーンの印",
     "iconId": "p_char_4110_delphn",
-    "description": "一枚精致的袖扣。温德米尔出身的军人向来军容整洁，一丝不苟，现在她主动将这枚小信物摘下送给你。",
-    "usage": "用于提升戴菲恩的潜能。",
+    "description": "精巧な作りのカフスボタン。ウィンダミアの軍人は常に身だしなみに気を遣い、少しの乱れも許さない。だが今、彼女は自らこのカフスボタンを外し、あなたに贈った。",
+    "usage": "デルフィーンの潜在能力強化に用いられる。",
     "rarity": 5
   },
   "p_char_494_vendla": {
     "itemId": "p_char_494_vendla",
-    "name": "刺玫的信物",
+    "name": "ヴァンデラの印",
     "iconId": "p_char_494_vendla",
-    "description": "一枝枯萎的白玫瑰，米黄色花瓣上浸染了无法抹去的暗红痕迹，记录着她过去生活的某段回忆。过往已逝，她能攥住的并不多。",
-    "usage": "用于提升刺玫的潜能。",
+    "description": "萎れた白い薔薇。黄ばんだ花びらには消えることのない濃い赤が残っており、彼女が過ごした日々を物語る。過去は過ぎ去り、彼女がその手に掴めるものはそう多くはない。",
+    "usage": "ヴァンデラの潜在能力強化に用いられる。",
     "rarity": 5
   },
   "p_char_499_kaitou": {
     "itemId": "p_char_499_kaitou",
-    "name": "折光的信物",
+    "name": "ディアマンテの印",
     "iconId": "p_char_499_kaitou",
-    "description": "一个朴素的宝石放大镜，似乎已经用了许多年。请寻找伪造痕迹，请鉴定我的本质。",
-    "usage": "用于提升折光的潜能。",
+    "description": "シンプルな宝石があしらわれた虫眼鏡で、長年使われていたようだ。偽造の痕跡を見つけ出し、我が本質を見定めよ。",
+    "usage": "ディアマンテの潜在能力強化に用いられる。",
     "rarity": 5
   },
   "p_char_4109_baslin": {
     "itemId": "p_char_4109_baslin",
-    "name": "深律的信物",
+    "name": "ベースラインの印",
     "iconId": "p_char_4109_baslin",
-    "description": "一只低音号的喇叭口。深律已经将其擦拭干净，恢复了它往日的光泽。",
-    "usage": "用于提升深律的潜能。",
+    "description": "チューバのベル。ベースラインが丁寧に磨いたおかげで、かつての輝きを取り戻した。",
+    "usage": "ベースラインの潜在能力強化に用いられる。",
     "rarity": 5
   },
   "p_char_194_leto": {
     "itemId": "p_char_194_leto",
-    "name": "烈夏的信物",
+    "name": "リェータの印",
     "iconId": "p_char_194_leto",
-    "description": "一瓶代表家乡味道的蜂蜜饮料。烈夏将它递给你之后，立刻就要与你“干瓶”。",
-    "usage": "用于提升烈夏的潜能。",
+    "description": "故郷の味を代表するはちみつジュース。リェータはこれをあなたに手渡すと、即座に「乾杯」を要求してきた。",
+    "usage": "リェータの潜在能力強化に用いられる。",
     "rarity": 5
   },
   "p_char_4114_harold": {
     "itemId": "p_char_4114_harold",
-    "name": "哈洛德的信物",
+    "name": "ハロルドの印",
     "iconId": "p_char_4114_harold",
-    "description": "一瓶精挑细选的香水。从成分到如何使用，哈洛德为你进行了全面的说明，详尽到令人有些厌烦。",
-    "usage": "用于提升哈洛德的潜能。",
+    "description": "ハロルドが丁寧に選んでくれた香水。彼はその成分から使い方まで、少し鬱陶しいと感じてしまうほど細かく説明してくれた。",
+    "usage": "ハロルドの潜在能力強化に用いられる。",
     "rarity": 5
   },
   "p_char_4081_warmy": {
     "itemId": "p_char_4081_warmy",
-    "name": "温米的信物",
+    "name": "ウォーミーの印",
     "iconId": "p_char_4081_warmy",
-    "description": "一辆用糖纸叠成的小小运载车。你在旅途中给了温米几颗雷姆必拓奶糖，她变了个样子回赠与你。",
-    "usage": "用于提升温米的潜能。",
+    "description": "キャンディの包み紙で作られた小さなトレーラー。旅の途中、ウォーミーにレム・ビリトンのミルクキャンディをあげたのだが、彼女はそれを別の姿へと変え、お返しをしてくれたようだ。",
+    "usage": "ウォーミーの潜在能力強化に用いられる。",
     "rarity": 5
   },
   "p_char_4119_wanqin": {
     "itemId": "p_char_4119_wanqin",
-    "name": "万顷的信物",
+    "name": "ワンチィンの印",
     "iconId": "p_char_4119_wanqin",
-    "description": "一个精致的天师仪模型，据说是天师府限量贩售，在炎国孩子间人气很高。“想要拿到真的就要好好念书学习。”在炎国，每个孩子都听过这样的话。",
-    "usage": "用于提升万顷的潜能。",
+    "description": "細部までこだわって作られた天師儀のプラモデル。天師府で数量限定で販売されており、炎国の子どもたちの間で大流行しているらしい。「本物の天師儀がほしいのなら、ちゃんと真面目に勉強をしなさい」――炎国人なら幼い頃、誰しも一度は言われたことのある言葉だ。",
+    "usage": "ワンチィンの潜在能力強化に用いられる。",
     "rarity": 5
   },
   "p_char_4122_grabds": {
     "itemId": "p_char_4122_grabds",
-    "name": "小满的信物",
+    "name": "グレインバッズの印",
     "iconId": "p_char_4122_grabds",
-    "description": "一支手工制作的竹笛，声音清亮，但音准稍稍有些问题。",
-    "usage": "用于提升小满的潜能。",
+    "description": "手作りの竹笛。澄んだ音色をしているが、音程がややズレている。",
+    "usage": "グレインバッズの潜在能力強化に用いられる。",
     "rarity": 5
   },
   "p_char_4023_rfalcn": {
     "itemId": "p_char_4023_rfalcn",
-    "name": "红隼的信物",
+    "name": "ケストレルの印",
     "iconId": "p_char_4023_rfalcn",
-    "description": "一柄古朴的弯刀。来自萨尔贡的部落战士把你视作战友，将它赠予了你。",
-    "usage": "用于提升红隼的潜能。",
+    "description": "古風で飾り気のない刀。あなたを大切な戦友として認めたサルゴンの部族の戦士から贈られたもの。",
+    "usage": "ケストレルの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "p_char_4124_iana": {
+    "itemId": "p_char_4124_iana",
+    "name": "Ianaの印",
+    "iconId": "p_char_4124_iana",
+    "description": "普段使い用のコンタクトレンズ。着用してもバーチャルコピーは使用できないが、目の前の景色がはっきり見えるようになる。",
+    "usage": "Ianaの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "p_char_4125_rdoc": {
+    "itemId": "p_char_4125_rdoc",
+    "name": "Docの印",
+    "iconId": "p_char_4125_rdoc",
+    "description": "散弾の薬莢。あのような方法で衝突を解決したことを彼は悔やんでいるが、それでもより多くの命を救うために、迷いなく引き金を引いたのだ。",
+    "usage": "Docの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "p_char_4126_fuze": {
+    "itemId": "p_char_4126_fuze",
+    "name": "Fuzeの印",
+    "iconId": "p_char_4126_fuze",
+    "description": "個性的な形のヘルメット。だけど、それ以上に気になるのは、ヘルメットに隠された表情だ。",
+    "usage": "Fuzeの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "p_char_446_aroma": {
+    "itemId": "p_char_446_aroma",
+    "name": "アロマの印",
+    "iconId": "p_char_446_aroma",
+    "description": "お掃除サービスの予約リスト。それぞれの洗剤の香りに応じた使用状況も書かれている。必要な時はいつでも彼女を呼べばいい。どの香りがあなたの心を落ち着かせてくれるのか、彼女が一番分かっているのだから。",
+    "usage": "アロマの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "p_char_4131_odda": {
+    "itemId": "p_char_4131_odda",
+    "name": "オッダの印",
+    "iconId": "p_char_4131_odda",
+    "description": "集めた落ち葉で作った焼き芋。まだアツアツなので、持つ時はくれぐれもやけどしないように。",
+    "usage": "オッダの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "p_char_1036_fang2": {
+    "itemId": "p_char_1036_fang2",
+    "name": "歴陣鋭槍フェンの印",
+    "iconId": "p_char_1036_fang2",
+    "description": "オーバーサイズのコート。野外行動の際は、くれぐれも体を冷やさないように。",
+    "usage": "歴陣鋭槍フェンの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "p_char_4079_haini": {
+    "itemId": "p_char_4079_haini",
+    "name": "ルシーラの印",
+    "iconId": "p_char_4079_haini",
+    "description": "自作の交換用チケット。アイデアがありすぎる彼女は何を贈るかまだ決めかねている。これを持って交換しにいくと、その時の気分に応じて何かを作ってもらえるだろう。",
+    "usage": "ルシーラの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "p_char_4137_udflow": {
+    "itemId": "p_char_4137_udflow",
+    "name": "アンダーフローの印",
+    "iconId": "p_char_4137_udflow",
+    "description": "シンプルな金属製のフォルダー。持ち主の好みに応じて自動で書類を整理してくれる。アンダーフローは自分が提出した報告書をこのファイルに入れて保管してもらいたいようだ。",
+    "usage": "アンダーフローの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "p_char_4147_mitm": {
+    "itemId": "p_char_4147_mitm",
+    "name": "渡桥的信物",
+    "iconId": "p_char_4147_mitm",
+    "description": "一张第二份半价的甜品券。渡桥将它送给你时反复叮嘱，用掉这张券时一定要带上他。",
+    "usage": "用于提升渡桥的潜能。",
+    "rarity": 5
+  },
+  "p_char_4151_tinman": {
+    "itemId": "p_char_4151_tinman",
+    "name": "锡人的信物",
+    "iconId": "p_char_4151_tinman",
+    "description": "一枚平平无奇的螺母。你反复比对它和锡人，试图搞清楚它是从哪个部位卸下来的。",
+    "usage": "用于提升锡人的潜能。",
+    "rarity": 5
+  },
+  "p_char_4140_lasher": {
+    "itemId": "p_char_4140_lasher",
+    "name": "衡沙的信物",
+    "iconId": "p_char_4140_lasher",
+    "description": "一只特制的发条羽兽，会捡拾你身边亮闪闪的东西。发条羽兽和它的制作者一样眼光独到，而你的办公室丝毫没有变得整洁。",
+    "usage": "用于提升衡沙的潜能。",
+    "rarity": 5
+  },
+  "p_char_4139_papyrs": {
+    "itemId": "p_char_4139_papyrs",
+    "name": "莎草的信物",
+    "iconId": "p_char_4139_papyrs",
+    "description": "一本贴上了照片的《游历初步规划（第三版）》。她的旅程因和罗德岛的相逢而开始，祝她一路顺风。",
+    "usage": "用于提升莎草的潜能。",
+    "rarity": 5
+  },
+  "p_char_4142_laios": {
+    "itemId": "p_char_4142_laios",
+    "name": "莱欧斯的信物",
+    "iconId": "p_char_4142_laios",
+    "description": "一幅奇怪的画，画的好像是一种混合了各种泰拉生物外形特征的融合物。莱欧斯兴奋地跟你讲解这幅画的时候千万别理他。",
+    "usage": "用于提升莱欧斯的潜能。",
+    "rarity": 5
+  },
+  "p_char_4143_sensi": {
+    "itemId": "p_char_4143_sensi",
+    "name": "森西的信物",
+    "iconId": "p_char_4143_sensi",
+    "description": "一瓶森西随身携带的调味料，是来自那座遥远迷宫的独特口味。",
+    "usage": "用于提升森西的潜能。",
+    "rarity": 5
+  },
+  "p_char_4144_chilc": {
+    "itemId": "p_char_4144_chilc",
+    "name": "齐尔查克的信物",
+    "iconId": "p_char_4144_chilc",
+    "description": "一个小巧的腰包，可以装各种随身物品，外出探险时使用非常方便。",
+    "usage": "用于提升齐尔查克的潜能。",
+    "rarity": 5
+  },
+  "p_char_487_bobb": {
+    "itemId": "p_char_487_bobb",
+    "name": "波卜的信物",
+    "iconId": "p_char_487_bobb",
+    "description": "一个等人高的巨大毛绒玩具，内芯柔软，抱紧后再松开会缓慢回弹。既然生活总有些压力，那就只好寻找自我调节的手段。",
+    "usage": "用于提升波卜的潜能。",
+    "rarity": 5
+  },
+  "p_char_4162_cathy": {
+    "itemId": "p_char_4162_cathy",
+    "name": "凯瑟琳的信物",
+    "iconId": "p_char_4162_cathy",
+    "description": "用生产余料制作的发条小闹钟，海布里区的儿童玩具兼爆炸物定时器——现在它是你的了。",
+    "usage": "用于提升凯瑟琳的潜能。",
+    "rarity": 5
+  },
+  "p_char_4148_philae": {
+    "itemId": "p_char_4148_philae",
+    "name": "菲莱的信物",
+    "iconId": "p_char_4148_philae",
+    "description": "一种静坐冥想时使用的熏香，据说它的原料在生长时会竭尽沙土中的水分。如今它竭尽自己，只为助你思若泉流。",
+    "usage": "用于提升菲莱的潜能。",
+    "rarity": 5
+  },
+  "p_char_4155_talr": {
+    "itemId": "p_char_4155_talr",
+    "name": "裁度的信物",
+    "iconId": "p_char_4155_talr",
+    "description": "一枚坑坑洼洼的银色戒指，似乎曾属于某位家族成员，被当作顶针用了很久。",
+    "usage": "用于提升裁度的潜能。",
+    "rarity": 5
+  },
+  "p_char_4163_rosesa": {
+    "itemId": "p_char_4163_rosesa",
+    "name": "瑰盐的信物",
+    "iconId": "p_char_4163_rosesa",
+    "description": "一个带有奇异芬芳的药草卷，据说点燃后其香气可以凝神静气。但在交给医疗部鉴别之前最好不要擅自使用！",
+    "usage": "用于提升瑰盐的潜能。",
+    "rarity": 5
+  },
+  "p_char_4164_tecno": {
+    "itemId": "p_char_4164_tecno",
+    "name": "特克诺的信物",
+    "iconId": "p_char_4164_tecno",
+    "description": "一个脸颊烧焦的小木偶，圆溜溜的眼睛让你想起特克诺撒娇时的样子。",
+    "usage": "用于提升特克诺的潜能。",
     "rarity": 5
   },
   "p_char_103_angel": {
@@ -2667,7 +2859,7 @@
     "itemId": "p_char_400_weedy",
     "name": "ウィーディの印",
     "iconId": "p_char_400_weedy",
-    "description": "生物工学に基づいたシードラゴンの設計図の束。彼女自身がまとめた大量の注釈付き。「サルでもわかる作り方」と書いてある。多分。",
+    "description": "シードラゴンの設計図が書かれた紙の束。ウィーディ本人の注釈が大量に書いてある。一番上に「循獣でもわかる作り方」と書かれているが、本当だろうか？",
     "usage": "ウィーディの潜在能力強化に用いられる。",
     "rarity": 6
   },
@@ -3097,10 +3289,10 @@
   },
   "p_char_2012_typhon": {
     "itemId": "p_char_2012_typhon",
-    "name": "提丰的信物",
+    "name": "ティフォンの印",
     "iconId": "p_char_2012_typhon",
-    "description": "一瓶散发着浓郁气味的植物提取液。掩盖文明的气味，融入荒野，成为猎人，成为她的同伴。",
-    "usage": "用于提升提丰的潜能。",
+    "description": "強烈な匂いを放つ植物エキスが入ったボトル。文明の匂いを覆い隠し、荒野に融け込んで初めて、ハンターとなり、彼女の仲間になることができる。",
+    "usage": "ティフォンの潜在能力強化に用いられる。",
     "rarity": 6
   },
   "p_char_1033_swire2": {
@@ -3121,66 +3313,194 @@
   },
   "p_char_1034_jesca2": {
     "itemId": "p_char_1034_jesca2",
-    "name": "涤火杰西卡的信物",
+    "name": "滌火ジェシカの印",
     "iconId": "p_char_1034_jesca2",
-    "description": "一副定制激光瞄准镜，适用于夜间精确观瞄。她一直紧盯着前方，从未将视线移开。",
-    "usage": "用于提升涤火杰西卡的潜能。",
+    "description": "特注のレーザースコープ。夜間でも正確に照準を合わすことができる。彼女の目線は常に前方に向けられている。何があろうと決して逸らすことはない。",
+    "usage": "滌火ジェシカの潜在能力強化に用いられる。",
     "rarity": 6
   },
   "p_char_4088_hodrer": {
     "itemId": "p_char_4088_hodrer",
-    "name": "赫德雷的信物",
+    "name": "ヘドリーの印",
     "iconId": "p_char_4088_hodrer",
-    "description": "一本页角被燎焦的笔记。所记录的不仅有行动的结果，还有从灰烬中抖落的，萨卡兹们的生活。",
-    "usage": "用于提升赫德雷的潜能。",
+    "description": "一角に焼けた跡が残るノート。そこには作戦の結果だけでなく、戦火の灰燼の合間に息づくサルカズたちの生活が記されている。",
+    "usage": "ヘドリーの潜在能力強化に用いられる。",
     "rarity": 6
   },
   "p_char_4098_vvana": {
     "itemId": "p_char_4098_vvana",
-    "name": "薇薇安娜的信物",
+    "name": "ヴィヴィアナの印",
     "iconId": "p_char_4098_vvana",
-    "description": "一枚风干的金盏花书签。与书同行的旅程漫长而遥远，在离席暂别前，让它成为驻足于此的信标吧。",
-    "usage": "用于提升薇薇安娜的潜能。",
+    "description": "カレンデュラの押し花で作ったしおり。本と歩む旅路は長くて遠い。しばしの別れの前に、このしおりをここにとどまった印として残すことにしよう。",
+    "usage": "ヴィヴィアナの潜在能力強化に用いられる。",
     "rarity": 6
   },
   "p_char_245_cello": {
     "itemId": "p_char_245_cello",
-    "name": "塑心的信物",
+    "name": "ヴィルトゥオーサの印",
     "iconId": "p_char_245_cello",
-    "description": "一副质地考究的黑色手套。既能安抚琴弦，也能安抚繁杂的心声。",
-    "usage": "用于提升塑心的潜能。",
+    "description": "高級な黒い手袋。楽器の弦だけでなく、心にひしめく雑音さえもなだめることができる。",
+    "usage": "ヴィルトゥオーサの潜在能力強化に用いられる。",
     "rarity": 6
   },
   "p_char_4116_blkkgt": {
     "itemId": "p_char_4116_blkkgt",
-    "name": "锏的信物",
+    "name": "デーゲンブレヒャーの印",
     "iconId": "p_char_4116_blkkgt",
-    "description": "一个只能拨通她的号码的通讯终端。和普通的通讯终端在外表上明明没什么区别，却能给人无上的安心感。",
-    "usage": "用于提升锏的潜能。",
+    "description": "彼女の番号にしか繋がらない通信端末。見た目はごく普通のものとなんら変わりないが、これ以上ない安心感を与えてくれる。",
+    "usage": "デーゲンブレヒャーの潜在能力強化に用いられる。",
     "rarity": 6
   },
   "p_char_4117_ray": {
     "itemId": "p_char_4117_ray",
-    "name": "莱伊的信物",
+    "name": "レイの印",
     "iconId": "p_char_4117_ray",
-    "description": "一本看不出制作者意图的剪贴册。里面的“奇异生物照片”似乎也是拼贴合成的图像，要不要告诉她呢？",
-    "usage": "用于提升莱伊的潜能。",
+    "description": "作者の意図がまったく掴めないスクラップブック。中に貼ってある「奇妙な生き物の写真」はどうも合成画像のようだが、その事実を彼女に伝えるべきだろうか？",
+    "usage": "レイの潜在能力強化に用いられる。",
     "rarity": 6
   },
   "p_char_2025_shu": {
     "itemId": "p_char_2025_shu",
-    "name": "黍的信物",
+    "name": "シュウの印",
     "iconId": "p_char_2025_shu",
-    "description": "一张古老的图画，体现了千年前人们对四季轮回原理的想象。时光流转，惟斯不变。",
-    "usage": "用于提升黍的潜能。",
+    "description": "古い絵画には、千年前を生きる人々が想像する四季の法則が描かれている。いくら時が流れようと、変わらないものもあるのだ。",
+    "usage": "シュウの潜在能力強化に用いられる。",
     "rarity": 6
   },
   "p_char_4121_zuole": {
     "itemId": "p_char_4121_zuole",
-    "name": "左乐的信物",
+    "name": "ズオ・ラウの印",
     "iconId": "p_char_4121_zuole",
-    "description": "一只有炎国特色的手工风筝，上面还沾染着些许林间树叶的气息。它常常因执线的手笨拙的动作而摔落，也总会重新乘风而起。",
-    "usage": "用于提升左乐的潜能。",
+    "description": "炎国らしさに溢れた手作りの凧。今もなお木々の葉の匂いを微かに漂わせている。糸の手繰る手が拙いせいでよく空から落ちてしまうが、何度だって再び風に乗り、高く舞い上がるのだ。",
+    "usage": "ズオ・ラウの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "p_char_4123_ela": {
+    "itemId": "p_char_4123_ela",
+    "name": "Elaの印",
+    "iconId": "p_char_4123_ela",
+    "description": "ゴーグルとノイズキャンセリングイヤホンのセット。ゴーグルを渡しても使い道があるかどうか少し悩んだらしい。",
+    "usage": "Elaの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "p_char_4132_ascln": {
+    "itemId": "p_char_4132_ascln",
+    "name": "アスカロンの印",
+    "iconId": "p_char_4132_ascln",
+    "description": "煙が入った小さなガラス瓶。危険に遭遇した時これを割れば、すぐさまアスカロンが駆けつけてくれるだろう。",
+    "usage": "アスカロンの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "p_char_1035_wisdel": {
+    "itemId": "p_char_1035_wisdel",
+    "name": "ウィシャデルの印",
+    "iconId": "p_char_1035_wisdel",
+    "description": "笑顔マークが描かれた手榴弾。いつ渡されたものかは定かではないが、とりあえずポジティブに考えてみよう。それは、ひょっとしていつか咲き誇る盛大な花火かもしれない。",
+    "usage": "ウィシャデルの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "p_char_4133_logos": {
+    "itemId": "p_char_4133_logos",
+    "name": "ロゴスの印",
+    "iconId": "p_char_4133_logos",
+    "description": "原寸大の骨筆の模型。呪文を書くことはできないが、本艦での呪文被害者のリストを書き写すことはできる。",
+    "usage": "ロゴスの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "p_char_4134_cetsyr": {
+    "itemId": "p_char_4134_cetsyr",
+    "name": "シヴィライト・エテルナの印",
+    "iconId": "p_char_4134_cetsyr",
+    "description": "引き続きロドスと共に歩んでくれる誓い。これは今の彼女があなたに渡せる唯一のものだ。そして、彼女なら必ず誓いを果たすことをあなたは知っている。",
+    "usage": "シヴィライト・エテルナの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "p_char_4145_ulpia": {
+    "itemId": "p_char_4145_ulpia",
+    "name": "ウルピアヌスの印",
+    "iconId": "p_char_4145_ulpia",
+    "description": "錨の形に磨かれた岩礁。よく見ると、表面に刻まれた模様が音符の形をしている。",
+    "usage": "ウルピアヌスの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "p_char_4146_nymph": {
+    "itemId": "p_char_4146_nymph",
+    "name": "妮芙的信物",
+    "iconId": "p_char_4146_nymph",
+    "description": "一对做成心形的印章，能够印出复杂的花纹。按照妮芙的话说，这个礼物叫作“心心相”印。",
+    "usage": "用于提升妮芙的潜能。",
+    "rarity": 6
+  },
+  "p_char_4138_narant": {
+    "itemId": "p_char_4138_narant",
+    "name": "娜仁图亚的信物",
+    "iconId": "p_char_4138_narant",
+    "description": "一管自制的安眠药水，源自复杂的雨林植被和沙盗丰富的野外生存经验。她真心希望你能一直在她身边做她的好伙伴，还希望你不会因她而噩梦连连。",
+    "usage": "用于提升娜仁图亚的潜能。",
+    "rarity": 6
+  },
+  "p_char_4058_pepe": {
+    "itemId": "p_char_4058_pepe",
+    "name": "佩佩的信物",
+    "iconId": "p_char_4058_pepe",
+    "description": "一枚价值不菲的莲花胸针，请不要尝试卖掉它，它象征的意义比它的价值更加珍贵。",
+    "usage": "用于提升佩佩的潜能。",
+    "rarity": 6
+  },
+  "p_char_4141_marcil": {
+    "itemId": "p_char_4141_marcil",
+    "name": "玛露西尔的信物",
+    "iconId": "p_char_4141_marcil",
+    "description": "一本魔法书，里面记录着不少源石技艺和魔法融合的想法，似乎都能产生意想不到的效用。",
+    "usage": "用于提升玛露西尔的潜能。",
+    "rarity": 6
+  },
+  "p_char_1019_siege2": {
+    "itemId": "p_char_1019_siege2",
+    "name": "维娜·维多利亚的信物",
+    "iconId": "p_char_1019_siege2",
+    "description": "一块纪念罗德岛的铭牌，你好像在伦蒂尼姆重建后的街角见过，上面的铆钉也似曾相识。她说，铆钉一旦固定，就再也卸不下来了。",
+    "usage": "用于提升维娜·维多利亚的潜能。",
+    "rarity": 6
+  },
+  "p_char_1038_whitw2": {
+    "itemId": "p_char_1038_whitw2",
+    "name": "荒芜拉普兰德的信物",
+    "iconId": "p_char_1038_whitw2",
+    "description": "一封异常精美的紫色邀请函，角落潦草画着一只白狼和一串葡萄。她邀请你参加一场狂欢，但无人知晓主题是什么。",
+    "usage": "用于提升荒芜拉普兰德的潜能。",
+    "rarity": 6
+  },
+  "p_char_1502_crosly": {
+    "itemId": "p_char_1502_crosly",
+    "name": "弑君者的信物",
+    "iconId": "p_char_1502_crosly",
+    "description": "一副密闭性良好的黑色战术口罩。“我的面目隐匿，我的愤怒昭显。”",
+    "usage": "用于提升弑君者的潜能。",
+    "rarity": 6
+  },
+  "p_char_4026_vulpis": {
+    "itemId": "p_char_4026_vulpis",
+    "name": "忍冬的信物",
+    "iconId": "p_char_4026_vulpis",
+    "description": "一串手工制作的流苏挂饰，不知道是叙拉古还是东国的习俗，总之忍冬将它交给你以表尊敬和谢意。",
+    "usage": "用于提升忍冬的潜能。",
+    "rarity": 6
+  },
+  "p_char_4011_lessng": {
+    "itemId": "p_char_4011_lessng",
+    "name": "止颂的信物",
+    "iconId": "p_char_4011_lessng",
+    "description": "一个布带系成的、造型特殊的绳结。连接信任的两端，连接过去与未来。",
+    "usage": "用于提升止颂的潜能。",
+    "rarity": 6
+  },
+  "p_char_1039_thorn2": {
+    "itemId": "p_char_1039_thorn2",
+    "name": "引星棘刺的信物",
+    "iconId": "p_char_1039_thorn2",
+    "description": "一缕纤细的心相原质，悄然汇入你的体内。待棘刺将它收回时，他便能清晰地知晓你身体状况的变化。",
+    "usage": "用于提升引星棘刺的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
@@ -3663,6 +3983,14 @@
     "usage": "ヒューマスの潜在能力強化に用いられる。",
     "rarity": 4
   },
+  "class_p_char_4107_vrdant": {
+    "itemId": "class_p_char_4107_vrdant",
+    "name": "ヴァーダントの印（中堅）",
+    "iconId": "class_p_char_4107_vrdant",
+    "description": "雑草のような小さな植物だが、彼にとっては特別な意味を持つ。草の葉には鋭い切れ込みが入っているが、どうか怖がらないでほしい。それはあなたを傷つけるためのものではない。",
+    "usage": "ヴァーダントの潜在能力強化に用いられる。",
+    "rarity": 4
+  },
   "class_p_char_128_plosis": {
     "itemId": "class_p_char_128_plosis",
     "name": "フィリオプシスの印（中堅）",
@@ -3967,6 +4295,134 @@
     "usage": "シャマレの潜在能力強化に用いられる。",
     "rarity": 5
   },
+  "class_p_char_401_elysm": {
+    "itemId": "class_p_char_401_elysm",
+    "name": "エリジウムの印（中堅）",
+    "iconId": "class_p_char_401_elysm",
+    "description": "複雑かつ詳細に描かれた手書きの地形・路線図。もし読み解けなくても、エリジウム本人も喜んで自ら道を案内する。",
+    "usage": "エリジウムの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_378_asbest": {
+    "itemId": "class_p_char_378_asbest",
+    "name": "アスベストスの印（中堅）",
+    "iconId": "class_p_char_378_asbest",
+    "description": "探検セット。彼女の意図はおそらく、もしあなたが暇なら、一緒に外に行ってもいいということだろう。",
+    "usage": "アスベストスの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_343_tknogi": {
+    "itemId": "class_p_char_343_tknogi",
+    "name": "ツキノギの印（中堅）",
+    "iconId": "class_p_char_343_tknogi",
+    "description": "ツキノギが手ずから製作し祈りを込めた御守。聞くところによると、それを身に着けていれば心が穏やかになり、闇夜の恐怖を静めることすらできるという。",
+    "usage": "ツキノギの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_373_lionhd": {
+    "itemId": "class_p_char_373_lionhd",
+    "name": "レオンハルトの印（中堅）",
+    "iconId": "class_p_char_373_lionhd",
+    "description": "流行りの限定モデルのスニーカー。ヴィクトリアで大人気の球技の為に特別なデザインが施されているらしい。レム・ビリトンの技術を全面的に取り入れている。",
+    "usage": "レオンハルトの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_294_ayer": {
+    "itemId": "class_p_char_294_ayer",
+    "name": "エアースカーペの印（中堅）",
+    "iconId": "class_p_char_294_ayer",
+    "description": "敵への偵察及び敵からの偵察に関する自作の指南書。「いかなる状況でも自分の身をしっかりと守れるに越したことは無い。」彼はそう考えているようだ。",
+    "usage": "エアースカーペの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_344_beewax": {
+    "itemId": "class_p_char_344_beewax",
+    "name": "ビーズワクスの印（中堅）",
+    "iconId": "class_p_char_344_beewax",
+    "description": "精油や刷毛、やすりなどが含まれた角のお手入れ道具フルセット。砂漠の一族のオーダーメイドで、高額かつ希少な品物。もったいないと思わなければ、ただ爪のお手入れをするのに使うだけでも良い。",
+    "usage": "ビーズワクスの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_349_chiave": {
+    "itemId": "class_p_char_349_chiave",
+    "name": "キアーベの印（中堅）",
+    "iconId": "class_p_char_349_chiave",
+    "description": "キアーベお手製の「キアーベ一味」を表すタグ。あなたの名前も刻印されている。",
+    "usage": "キアーベの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_218_cuttle": {
+    "itemId": "class_p_char_218_cuttle",
+    "name": "アンドレアナの印（中堅）",
+    "iconId": "class_p_char_218_cuttle",
+    "description": "モデルガン。彼女の手作りで、とても精巧に作られている。",
+    "usage": "アンドレアナの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_415_flint": {
+    "itemId": "class_p_char_415_flint",
+    "name": "フリントの印（中堅）",
+    "iconId": "class_p_char_415_flint",
+    "description": "フリントお手製の鋭い石のナイフ。元の持ち主はいつも焼いた肉を切るために浸かっていた。野外の様々な場面で役に立つアイテムだが、手を切らないように気を付けて！",
+    "usage": "フリントの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_365_aprl": {
+    "itemId": "class_p_char_365_aprl",
+    "name": "エイプリルの印（中堅）",
+    "iconId": "class_p_char_365_aprl",
+    "description": "新しくパッケージングされた、「エイプリル」という曲を収録したアルバム。蝶々結びのリボンが付いている。",
+    "usage": "エイプリルの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_346_aosta": {
+    "itemId": "class_p_char_346_aosta",
+    "name": "アオスタの印（中堅）",
+    "iconId": "class_p_char_346_aosta",
+    "description": "アオスタ特製のシラクーザ風フェルトハット。上質な材料を使っており、製作者の意気込みが感じ取れる。",
+    "usage": "アオスタの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_436_whispr": {
+    "itemId": "class_p_char_436_whispr",
+    "name": "ウィスパーレインの印（中堅）",
+    "iconId": "class_p_char_436_whispr",
+    "description": "古びた映画の半券。確かにあの日々があった証し。日焼けして黄ばみ、表面のインクが所々消えていて文字は読み取れない。",
+    "usage": "ウィスパーレインの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_214_kafka": {
+    "itemId": "class_p_char_214_kafka",
+    "name": "カフカの印（中堅）",
+    "iconId": "class_p_char_214_kafka",
+    "description": "丹精込めて手入れされた一鉢の盆栽。添えられていたカードには「土の中に短刀が埋まっているので、必要に応じて林檎の皮を剥くのに使ってください」と書かれている。",
+    "usage": "カフカの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_338_iris": {
+    "itemId": "class_p_char_338_iris",
+    "name": "アイリスの印（中堅）",
+    "iconId": "class_p_char_338_iris",
+    "description": "手作りの本。公に出版されたことがない童話集で、挿絵も全て製作者が自ら描いたものである。",
+    "usage": "アイリスの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_455_nothin": {
+    "itemId": "class_p_char_455_nothin",
+    "name": "ウユウの印（中堅）",
+    "iconId": "class_p_char_455_nothin",
+    "description": "一枚の扇。骨には特殊な材料を使用しており、扇には「子虚烏有」と書かれている。",
+    "usage": "ウユウの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
+  "class_p_char_363_toddi": {
+    "itemId": "class_p_char_363_toddi",
+    "name": "トギフォンスの印（中堅）",
+    "iconId": "class_p_char_363_toddi",
+    "description": "精密カットされた二十面体の宝石結晶体。彼女によれば、ついでと他人に渡したものはプレゼントとは言えないらしい。",
+    "usage": "トギフォンスの潜在能力強化に用いられる。",
+    "rarity": 5
+  },
   "class_p_char_103_angel": {
     "itemId": "class_p_char_103_angel",
     "name": "エクシアの印（中堅）",
@@ -4133,6 +4589,102 @@
     "iconId": "class_p_char_250_phatom",
     "description": "古びた楽譜。音符や筆跡は全て、長い歳月の中でかすれてしまった。",
     "usage": "ファントムの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "class_p_char_400_weedy": {
+    "itemId": "class_p_char_400_weedy",
+    "name": "ウィーディの印（中堅）",
+    "iconId": "class_p_char_400_weedy",
+    "description": "シードラゴンの設計図が書かれた紙の束。ウィーディ本人の注釈が大量に書いてある。一番上に「循獣でもわかる作り方」と書かれているが、本当だろうか？",
+    "usage": "ウィーディの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "class_p_char_197_poca": {
+    "itemId": "class_p_char_197_poca",
+    "name": "ロサの印（中堅）",
+    "iconId": "class_p_char_197_poca",
+    "description": "一本のペーパーナイフ。彼女は厳かにあなたに差し出したが、あなたにはその理由がわからない。",
+    "usage": "ロサの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "class_p_char_358_lisa": {
+    "itemId": "class_p_char_358_lisa",
+    "name": "スズランの印（中堅）",
+    "iconId": "class_p_char_358_lisa",
+    "description": "スズランの花。コードネーム決めの際、自分で何か案があるかと尋ねられたリサがちょうど持っていたのが、このスズランの花の鉢だった。",
+    "usage": "スズランの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "class_p_char_293_thorns": {
+    "itemId": "class_p_char_293_thorns",
+    "name": "ソーンズの印（中堅）",
+    "iconId": "class_p_char_293_thorns",
+    "description": "薬液が入った小瓶。学び始めた頃初めて作ったものを記念に取っておいていた。危険なので使用の際はくれぐれも慎重に。",
+    "usage": "ソーンズの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "class_p_char_416_zumama": {
+    "itemId": "class_p_char_416_zumama",
+    "name": "ユーネクテスの印（中堅）",
+    "iconId": "class_p_char_416_zumama",
+    "description": "使い古したレンチ。機械を作るのにも、護身にも使える。",
+    "usage": "ユーネクテスの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "class_p_char_350_surtr": {
+    "itemId": "class_p_char_350_surtr",
+    "name": "スルトの印（中堅）",
+    "iconId": "class_p_char_350_surtr",
+    "description": "地名がたくさん記されているコピー紙。一部は赤ペンで消されている。暇があったら、これらの地点の探索を手伝ってあげよう。",
+    "usage": "スルトの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "class_p_char_423_blemsh": {
+    "itemId": "class_p_char_423_blemsh",
+    "name": "ブレミシャインの印（中堅）",
+    "iconId": "class_p_char_423_blemsh",
+    "description": "一冊の騎士の小説。滑稽な伝説、伝説的な滑稽さ。",
+    "usage": "ブレミシャインの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "class_p_char_311_mudrok": {
+    "itemId": "class_p_char_311_mudrok",
+    "name": "マドロックの印（中堅）",
+    "iconId": "class_p_char_311_mudrok",
+    "description": "小さな小さな岩の彫像。好奇の“眼差し”をこちらに向けているようにもみえる。",
+    "usage": "マドロックの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "class_p_char_264_f12yin": {
+    "itemId": "class_p_char_264_f12yin",
+    "name": "マウンテンの印（中堅）",
+    "iconId": "class_p_char_264_f12yin",
+    "description": "美しく包装されたぶどう酒。醸造元はクルビアのかなり有名な酒蔵のようだが、どのようにして入手したかは知らない。",
+    "usage": "マウンテンの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "class_p_char_332_archet": {
+    "itemId": "class_p_char_332_archet",
+    "name": "アルケットの印（中堅）",
+    "iconId": "class_p_char_332_archet",
+    "description": "修道院限定の記念記章。本当はお金で買うものですが、今回は友情の証として差し上げますね！",
+    "usage": "アルケットの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "class_p_char_362_saga": {
+    "itemId": "class_p_char_362_saga",
+    "name": "サガの印（中堅）",
+    "iconId": "class_p_char_362_saga",
+    "description": "彼女が自ら削り出した木魚。煩わしさを感じる時には、彼女と共に経を唱えよう。",
+    "usage": "サガの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "class_p_char_472_pasngr": {
+    "itemId": "class_p_char_472_pasngr",
+    "name": "パッセンジャーの印（中堅）",
+    "iconId": "class_p_char_472_pasngr",
+    "description": "一枚の古いサルゴン金貨。永らく運命の手に弄ばれてきた。今はあなたのものだ。",
+    "usage": "パッセンジャーの潜在能力強化に用いられる。",
     "rarity": 6
   }
 }

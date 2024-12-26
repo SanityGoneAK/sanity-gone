@@ -109,9 +109,10 @@ export function aggregateModuleData(locale) {
 			};
 		});
 
+		console.log(moduleId);
 		// grab items needed
 		const itemCost = Object.values(
-			cnUniequipTable.equipDict[moduleId].itemCost
+			cnUniequipTable.equipDict[moduleId]?.itemCost ?? {}
 		);
 
 		// Use EN data for module phases if:

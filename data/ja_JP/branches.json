@@ -12,7 +12,7 @@
   "tactician": {
     "branchName": "戦術家",
     "class": "Vanguard",
-    "trait": "공격 범위 내 <span class=\"keyword\">전술 포인트</span>를 1회 선택해 지원군 소환 가능, 지원군이 저지하는 적을 공격할 때 본인 공격력이 150%까지 상승"
+    "trait": "공격 범위 내 <span class=\"keyword\">전술 포인트</span>를 1회 선택해 지원군 소환, 지원군이 저지한 적 공격 시 자신의 공격력이 150%로 증가"
   },
   "bearer": {
     "branchName": "旗手",
@@ -32,7 +32,7 @@
   "artsfghter": {
     "branchName": "術戦士",
     "class": "Guard",
-    "trait": "일반 공격으로 적에게 <span class=\"keyword\">마법 대미지</span>"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 부여"
   },
   "instructor": {
     "branchName": "教官",
@@ -57,12 +57,12 @@
   "fearless": {
     "branchName": "勇士",
     "class": "Guard",
-    "trait": "적 1명 저지 가능. <span class=\"keyword\">배치 인원 수</span> 제약을 받지 않으나, 재배치 시간이 매우 길다"
+    "trait": "적 1명 저지 가능, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
   },
   "reaper": {
     "branchName": "鎌撃士",
     "class": "Guard",
-    "trait": "아군의 치료를 받을 수 없으며, 공격 시 <span class=\"keyword\">광역 대미지</span>를 입히고, 적 1명 적중할 때마다 자신의 HP가 <span class=\"keyword\">50</span> 회복, 최대 적용 수는 저지 가능 수와 동일"
+    "trait": "아군의 치료를 받을 수 없으며, 공격 시 <span class=\"keyword\">광역 대미지</span> 부여, 적 1명 적중할 때마다 자신의 HP가 <span class=\"keyword\">50</span> 회복, 최대 적용 수는 저지 가능 수와 동일"
   },
   "librator": {
     "branchName": "解放者",
@@ -72,7 +72,7 @@
   "protector": {
     "branchName": "重盾衛士",
     "class": "Defender",
-    "trait": "적 3명 저지 가능, <span class=\"keyword\">배치 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 길다"
+    "trait": "적 3명 저지 가능, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
   },
   "guardian": {
     "branchName": "庇護衛士",
@@ -102,7 +102,7 @@
   "fastshot": {
     "branchName": "速射手",
     "class": "Sniper",
-    "trait": "공중 목표 우선 공격, <span class=\"keyword\">배치 인원수</span> 제한을 받지 않지만 재배치 시간이 매우 길다"
+    "trait": "공중 목표 우선 공격, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
   },
   "closerange": {
     "branchName": "精密射手",
@@ -112,7 +112,7 @@
   "aoesniper": {
     "branchName": "榴弾射手",
     "class": "Sniper",
-    "trait": "적에게 <span class=\"keyword\">광역 물리 대미지</span>"
+    "trait": "공격 시 <span class=\"keyword\">광역 물리 대미지</span> 부여"
   },
   "longrange": {
     "branchName": "戦術射手",
@@ -127,52 +127,52 @@
   "siegesniper": {
     "branchName": "破城射手",
     "class": "Sniper",
-    "trait": "무게가 가장 무거운 적을 우선 공격"
+    "trait": "무게 등급이 가장 높은 적을 우선 공격"
   },
   "bombarder": {
     "branchName": "投擲手",
     "class": "Sniper",
-    "trait": "작은 범위 내 <span class=\"keyword\">지상</span> 적에게 물리 대미지를 <span class=\"keyword\">2회</span> 입히며(2회차부터는 여진으로써 대미지가 공격력의 절반으로 감소), <span class=\"keyword\">배치 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 길다"
+    "trait": "작은 범위 내 <span class=\"keyword\">지상</span> 적에게 물리 대미지를 <span class=\"keyword\">2회</span> 입히며(2회차부터는 여진으로써 대미지가 공격력의 절반으로 감소), <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
   },
   "corecaster": {
     "branchName": "中堅術師",
     "class": "Caster",
-    "trait": "일반 공격으로 적에게 <span class=\"keyword\">마법 대미지</span>"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 부여"
   },
   "splashcaster": {
     "branchName": "拡散術師",
     "class": "Caster",
-    "trait": "일반 공격으로 적에게 <span class=\"keyword\">광역 마법 대미지</span>"
+    "trait": "공격 시 <span class=\"keyword\">광역 마법 대미지</span> 부여"
   },
   "funnel": {
     "branchName": "操機術師",
     "class": "Caster",
-    "trait": "<span class=\"keyword\">공중 유닛</span>을 조작하여 적에게 <span class=\"keyword\">마법 대미지</span><br>공중 유닛은 연속으로 동일한 적을 공격할 시 대미지가 증가한다 (최고 오퍼레이터의 110% 공격력에 해당하는 대미지)"
+    "trait": "<span class=\"keyword\">공중 유닛</span>을 조종하여 적에게 <span class=\"keyword\">마법 대미지</span> 부여<br>같은 적을 연속으로 공격할 경우 대미지 증가 (최대 오퍼레이터 공격력의 110%에 해당하는 대미지)"
   },
   "phalanx": {
     "branchName": "法陣術師",
     "class": "Caster",
-    "trait": "평소에 <span class=\"keyword\">공격하지 않으며</span> 방어력과 마법 저항이 대폭 <span class=\"keyword\">상승</span>, 스킬 발동 시 공격 범위 내 모든 적에게 <span class=\"keyword\">광역 마법 대미지</span>를 입힌다"
+    "trait": "평소에 <span class=\"keyword\">공격하지 않으며</span> 방어력과 마법 저항이 대폭 <span class=\"keyword\">상승</span>, 스킬 발동 시 공격 범위 내 모든 적에게 <span class=\"keyword\">광역 마법 대미지</span> 부여"
   },
   "mystic": {
     "branchName": "秘術師",
     "class": "Caster",
-    "trait": "일반 공격으로 적에게 <span class=\"keyword\">마법 대미지</span>, 공격 목표를 못 찾으면 공격 에너지를 <span class=\"keyword\">저장</span>한 후 일제히 발사(최대 3개)"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 부여, 공격 목표를 못 찾으면 공격 에너지를 <span class=\"keyword\">저장</span>한 후 일제히 발사(최대 3개)"
   },
   "chain": {
     "branchName": "連鎖術師",
     "class": "Caster",
-    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, 공격이 <span class=\"keyword\">3</span>명의 적에게 튕기며, 튕길 때마다 대미지가 15%씩 감소, 동시에 일시적인 <span class=\"skill-tooltip\">정지</span> 효과 부여"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 부여, 공격이 <span class=\"keyword\">3</span>명의 적에게 튕기며, 튕길 때마다 대미지가 15%씩 감소, 동시에 일시적인 <span class=\"skill-tooltip\">정지</span> 효과 부여"
   },
   "blastcaster": {
     "branchName": "爆撃術師",
     "class": "Caster",
-    "trait": "공격이 <span class=\"keyword\">초원거리 범위 마법 대미지</span>를 준다"
+    "trait": "공격 시 <span class=\"keyword\">초원거리 광역 마법 대미지</span> 부여"
   },
   "physician": {
     "branchName": "医師",
     "class": "Medic",
-    "trait": "아군 HP를 회복할 수 있고, <span class=\"keyword\">배치 인원 수</span> 제약을 받지 않으나, 재배치 시간이 매우 길다"
+    "trait": "아군의 HP 회복, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
   },
   "ringhealer": {
     "branchName": "群癒師",
@@ -192,27 +192,27 @@
   "slower": {
     "branchName": "緩速師",
     "class": "Supporter",
-    "trait": "적에게 <span class=\"keyword\">마법 대미지</span>를 입히고 잠시 <span class=\"skill-tooltip\">정지</span> 효과를 준다"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 부여, 동시에 일시적인 <span class=\"skill-tooltip\">정지</span>  효과 부여"
   },
   "underminer": {
     "branchName": "呪詛師",
     "class": "Supporter",
-    "trait": "일반 공격으로 적에게 <span class=\"keyword\">마법 대미지</span>"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 부여"
   },
   "bard": {
     "branchName": "吟遊者",
     "class": "Supporter",
-    "trait": "공격을 진행하지 않고 공격 범위 내 모든 아군의 <span class=\"keyword\">HP</span>를 매초마다 자신의 공격력의 10% 만큼 회복, 자신은 <span class=\"skill-tooltip\">격려</span>의 영향을 받지 않는다."
+    "trait": "공격을 진행하지 않고, 범위 내 모든 아군의 <span class=\"keyword\">HP</span>를 초당 자신 공격력의 10%만큼 회복, 자신은 <span class=\"skill-tooltip\">격려</span>의 영향을 받지 않음. <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
   },
   "blessing": {
     "branchName": "祈祷師",
     "class": "Supporter",
-    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75%에 해당)"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 부여, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75%에 해당)"
   },
   "summoner": {
     "branchName": "召喚師",
     "class": "Supporter",
-    "trait": "적에게 <span class=\"keyword\">마법 대미지</span><br><span class=\"keyword\">소환물</span> 사용 가능"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 부여<br><span class=\"keyword\">소환물</span> 사용 가능"
   },
   "craftsman": {
     "branchName": "工匠",
@@ -222,7 +222,7 @@
   "executor": {
     "branchName": "執行者",
     "class": "Specialist",
-    "trait": "공격을 진행하지 않고,  <span class=\"keyword\">배치 인원 수</span> 제약을 받지 않으나,  재배치 시간이 매우 길다"
+    "trait": "공격을 진행하지 않으며, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
   },
   "pusher": {
     "branchName": "推撃手",
@@ -247,7 +247,7 @@
   "merchant": {
     "branchName": "行商人",
     "class": "Specialist",
-    "trait": "재배치 시간 <span class=\"keyword\">감소</span>, 퇴각 시 <span class=\"keyword\">배치 코스트</span>를 반환하지 않고, 전장에서 3초마다 배치 코스트를 3 <span class=\"keyword\">소모</span> (코스트 부족 시 자동 퇴각)"
+    "trait": "재배치 시간 <span class=\"keyword\">감소</span>, 퇴각 시 <span class=\"keyword\">배치 코스트</span>를 반환하지 않으며, 3초마다 배치 코스트 <span class=\"keyword\">3</span> 소모 (부족 시 자동 퇴각)"
   },
   "traper": {
     "branchName": "罠師",
@@ -285,23 +285,48 @@
     "trait": "저지 중인 <span class=\"keyword\">모든 적</span> 동시 공격"
   },
   "ritualist": {
-    "branchName": "儀式師",
+    "branchName": "祭儀師",
     "class": "Supporter",
-    "trait": "アーツダメージを与え、<span class=\"keyword\">元素ダメージ</span>を与えることができます"
+    "trait": "공격이 <span class=\"keyword\">마법 대미지</span>를 입히고, <span class=\"keyword\">원소 피해</span>를 입힐 수 있음, <span class=\"keyword\">배치 인원수</span> 제약을 받지 않지만, 재배치 시간이 매우 김"
   },
   "hunter": {
-    "branchName": "ハンター",
+    "branchName": "狩人",
     "class": "Sniper",
-    "trait": "攻撃には弾薬を消費し、攻撃力が<span class=\"keyword\">120%</span>に増加します。攻撃していないときに弾薬をゆっくりと補充します（最大8発）"
+    "trait": "공격 시 탄약을 소모하며 공격력이 <span class=\"keyword\">120%</span>까지 상승, 비공격 상태에서 서서히 탄약 장전 (최대 8발)"
   },
   "primcaster": {
-    "branchName": "プリムキャスター",
+    "branchName": "本源術師",
     "class": "Caster",
-    "trait": "アーツダメージを与え、<span class=\"keyword\">元素ダメージ</span>を与えることができます"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 를 입힘, 경우에 따라 <span class=\"keyword\">원소 대미지</span>를 입힘"
   },
   "loopshooter": {
-    "branchName": "ループシューター",
+    "branchName": "旋輪射手",
     "class": "Sniper",
-    "trait": "ブーメランを持っているときだけ攻撃できます（ブーメランは戻るのに時間がかかります）"
+    "trait": "<span class=\"keyword\">부메랑 투사체</span>를 보유한 경우에만 공격 가능 (투사체 회수 필요)"
+  },
+  "hammer": {
+    "branchName": "槌撃士",
+    "class": "Guard",
+    "trait": "공격이 목표 주변의 다른 적에게 공격력의 <span class=\"keyword\">50%</span>에 해당하는 <span class=\"keyword\">광역</span> 물리 대미지를 입힘"
+  },
+  "alchemist": {
+    "branchName": "炼金师",
+    "class": "Specialist",
+    "trait": "可以投掷<span class=\"keyword\">炼金单元</span>协助作战"
+  },
+  "primprotector": {
+    "branchName": "本源铁卫",
+    "class": "Defender",
+    "trait": "能够阻挡三个敌人，可以造成元素损伤"
+  },
+  "skywalker": {
+    "branchName": "巡空者",
+    "class": "Specialist",
+    "trait": "<span class=\"skill-tooltip\">起飞</span>后能够阻挡2个飞行敌人"
+  },
+  "soulcaster": {
+    "branchName": "塑灵术师",
+    "class": "Caster",
+    "trait": "攻击造成<span class=\"keyword\">法术伤害</span>，可以通过击倒敌人生成<span class=\"keyword\">召唤物</span>，可攻击到自身<span class=\"keyword\">召唤物</span>阻挡的敌人"
   }
 }

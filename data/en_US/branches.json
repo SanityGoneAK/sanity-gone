@@ -50,7 +50,7 @@
     "trait": "Normal attacks deal damage <span class=\"keyword\">twice</span>"
   },
   "musha": {
-    "branchName": "Musha",
+    "branchName": "Soloblade",
     "class": "Guard",
     "trait": "Can't be healed by other units. Recovers <span class=\"keyword\">30/50/70</span> (scales with elite promotion) self HP every time this operator attacks an enemy"
   },
@@ -202,7 +202,7 @@
   "bard": {
     "branchName": "Bard",
     "class": "Supporter",
-    "trait": "Does not attack but continuously restores the <span class=\"keyword\">HP</span> of all allies within range (the HP restored per second is equal to 10% of self ATK). Self is unaffected by <span class=\"skill-tooltip\">Inspiration</span>"
+    "trait": "Does not attack but continuously restores the <span class=\"keyword\">HP</span> of all allies within range (the HP restored per second is equal to 10% of self ATK). This unit is unaffected by <span class=\"skill-tooltip\">Inspiration</span>, and ignores the <span class=\"keyword\">Deployment Limit</span>, but has a long Redeployment Time."
   },
   "blessing": {
     "branchName": "Abjurer",
@@ -270,7 +270,7 @@
     "trait": "Has <span class=\"keyword\">reduced</span> Redeployment Time, can use ranged attacks"
   },
   "shotprotector": {
-    "branchName": "Sentinel Protector",
+    "branchName": "Sentry Protector",
     "class": "Defender",
     "trait": "Blocks 3 enemies and attacks from long range."
   },
@@ -287,21 +287,46 @@
   "ritualist": {
     "branchName": "Ritualist",
     "class": "Supporter",
-    "trait": "Deal <span class=\"keyword\">arts damage</span>, can inflict <span class=\"keyword\">elemental damage</span>"
+    "trait": "Attacks deal <span class=\"keyword\">Arts damage</span> and can inflict <span class=\"keyword\">Elemental Damage</span>. Not affected by <span class=\"keyword\">Deployment Limit</span>, but has a long Redeployment Time."
   },
   "hunter": {
     "branchName": "Hunter",
     "class": "Sniper",
-    "trait": "Consumes bullets for attacks, increases attack power to <span class=\"keyword\">120%</span>. Slowly reloads bullets when not attacking (up to 8 bullets)"
+    "trait": "Attacks consume Ammo to increase ATK to <span class=\"keyword\">120%</span>; While not attacking, Ammo will be slowly reloaded (max capacity 8)."
   },
   "primcaster": {
-    "branchName": "Primcaster",
+    "branchName": "Primal Caster",
     "class": "Caster",
-    "trait": "Deal <span class=\"keyword\">arts damage</span>, can inflict <span class=\"keyword\">elemental damage</span>"
+    "trait": "Attacks deal <span class=\"keyword\">Arts damage</span>, and can inflict <span class=\"keyword\">Elemental damage</span>"
   },
   "loopshooter": {
     "branchName": "Loopshooter",
     "class": "Sniper",
-    "trait": "Can only attack when holding <span class=\"keyword\">boomerangs</span> (boomerangs take time to return)"
+    "trait": "Can only attack while holding a <span class=\"keyword\">boomerang projectile</span> (projectile takes time to return)"
+  },
+  "hammer": {
+    "branchName": "Earthshaker",
+    "class": "Guard",
+    "trait": "Attacks deal <span class=\"keyword\">50%</span> ATK as <span class=\"keyword\">AOE</span> Physical damage to enemies around the target."
+  },
+  "alchemist": {
+    "branchName": "炼金师",
+    "class": "Specialist",
+    "trait": "可以投掷<span class=\"keyword\">炼金单元</span>协助作战"
+  },
+  "primprotector": {
+    "branchName": "本源铁卫",
+    "class": "Defender",
+    "trait": "能够阻挡三个敌人，可以造成元素损伤"
+  },
+  "skywalker": {
+    "branchName": "巡空者",
+    "class": "Specialist",
+    "trait": "<span class=\"skill-tooltip\">起飞</span>后能够阻挡2个飞行敌人"
+  },
+  "soulcaster": {
+    "branchName": "塑灵术师",
+    "class": "Caster",
+    "trait": "攻击造成<span class=\"keyword\">法术伤害</span>，可以通过击倒敌人生成<span class=\"keyword\">召唤物</span>，可攻击到自身<span class=\"keyword\">召唤物</span>阻挡的敌人"
   }
 }

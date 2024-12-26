@@ -587,7 +587,7 @@
     "itemId": "31033",
     "name": "결정 부품",
     "iconId": "MTL_SL_OC3",
-    "description": "오리지늄 결정 케이스로 제작한 공업 원자재. 현대 오리지늄 전자 공업의 기초 제품이다.",
+    "description": "오리지늄 결정 외피로 제작한 공업 원자재. 현대 오리지늄 전자 공업의 기초 제품이다.",
     "usage": "중요한 오리지늄 공업 재료. 다양한 강화 용도로 사용할 수 있으며 보다 고급스러운 오리지늄 전자 부속품을 제작 및 합성할 수 있다.",
     "rarity": 3
   },
@@ -651,32 +651,32 @@
     "itemId": "31073",
     "name": "갈색 섬유",
     "iconId": "MTL_SL_XW",
-    "description": "源石工业的衍生产物，因其优异的性能在工业领域被广泛应用。近年来又因独特的外观而被设计行业所关注。",
-    "usage": "具备高强度与高模量的特种纤维束。可用于多种强化场合。",
+    "description": "오리지늄 공업의 부속 산물. 우수한 성능으로 인해 산업 분야에서 널리 사용되지만, 최근 몇 년 동안 독특한 외형 때문에 디자인 업계의 주목마저 받고 있다.",
+    "usage": "고강도 및 고탄성 특수 섬유 다발. 다양한 강화 용도로 쓰인다.",
     "rarity": 3
   },
   "31074": {
     "itemId": "31074",
     "name": "경화 섬유보드",
     "iconId": "MTL_SL_XWB",
-    "description": "用特殊工艺制作的复合纤维板，物理与化学性能均相当优异，更具备少有的易加工特性，在许多工业流程中不可替代。",
-    "usage": "经过塑形固化处理的特种纤维板。可用于多种强化场合。",
+    "description": "특수한 공정으로 만든 복합 섬유판. 물리 및 화학 성능이 상당히 뛰어난데다, 가공하기 쉬운 특성마저 지녀 공업에서 대체 불가의 재료가 되었다.",
+    "usage": "성형 고화 처리된 특수 강화판. 다양한 강화 용도로 쓰인다.",
     "rarity": 4
   },
   "31083": {
     "itemId": "31083",
     "name": "졸로알케인 고분자",
     "iconId": "MTL_SL_HT",
-    "description": "在实验室内诞生的新型透明材料，具备高透光度和优秀的各项耐性，将成为许多传统材料的优质替代品。",
-    "usage": "一种耐热性、耐化学性俱优的工业材料。可用于多种强化场合。",
+    "description": "실험실에서 탄생한 신형 투명 재료. 높은 투광도와 우수한 내성이 있어 전통 재료의 대체품이 될 것으로 전망된다.",
+    "usage": "내열성 및 내화학성이 뛰어난 공업 재료. 다양한 강화 용도로 쓰인다.",
     "rarity": 3
   },
   "31084": {
     "itemId": "31084",
     "name": "졸로알케인 프리팹",
     "iconId": "MTL_SL_HTT",
-    "description": "在合成流程中加入多种优良材料而得到的工业产品，保证透光度的同时大幅提升了强度与抗冲击性，在防护领域具有广阔应用前景。",
-    "usage": "由多种优良材料预加工而成的工业用材。可用于多种强化场合。",
+    "description": "합성 과정에 여러 우수한 재료를 첨가해 얻은 공산품. 투광도를 보장하면서도 강도와 내충격성을 대폭 향상해, 방호 분야에서 광범위한 응용 전망을 보인다.",
+    "usage": "다양한 양질의 재료를 전처리하여 얻은 공업 재료. 다양한 강화 용도로 쓰인다.",
     "rarity": 4
   },
   "32001": {
@@ -757,6 +757,14 @@
     "iconId": "p_char_4093_frston",
     "description": "폴라로이드 사진 한 장. 이 낯선 대지를 마주한 그는 연구 가치가 있는 모든 존재를 다 찍을 것이다.",
     "usage": "Friston-3의 잠재능력 상승에 사용된다.",
+    "rarity": 1
+  },
+  "p_char_4136_phonor": {
+    "itemId": "p_char_4136_phonor",
+    "name": "PhonoR-0의 증표",
+    "iconId": "p_char_4136_phonor",
+    "description": "밴시 주술 유닛의 축소판. 귓가에 가져다 대면 협곡 깊은 곳에서 시작되는 우울한 노래가 희미하게 들려온다.",
+    "usage": "PhonoR-0의 잠재능력 상승에 사용된다.",
     "rarity": 1
   },
   "p_char_502_nblade": {
@@ -1353,18 +1361,34 @@
   },
   "p_char_4107_vrdant": {
     "itemId": "p_char_4107_vrdant",
-    "name": "维荻的信物",
+    "name": "버던트의 증표",
     "iconId": "p_char_4107_vrdant",
-    "description": "一株看似杂草的小草，对他有特殊的意义。小草的叶片被割出锋利的切口，不用害怕，这不是为了伤害你。",
-    "usage": "用于提升维荻的潜能。",
+    "description": "잡초로 보이는 작은 풀. 그에겐 특별한 의미가 있다. 풀잎은 날카롭게 잘려 있으나 두려워할 필요 없다, 당신을 해치려는 게 아니니까.",
+    "usage": "버던트의 잠재능력 상승에 사용된다.",
     "rarity": 4
   },
   "p_char_4100_caper": {
     "itemId": "p_char_4100_caper",
-    "name": "跃跃的信物",
+    "name": "케이퍼의 증표",
     "iconId": "p_char_4100_caper",
-    "description": "一个圆滚滚、软乎乎的白色绒球，她执意要送给你这份礼物。她的偷笑让你有了不好的预感，但至少现在什么都没发生。",
-    "usage": "用于提升跃跃的潜能。",
+    "description": "동글동글하고 말랑말랑한 솜털 공. 그녀가 기꺼이 당신에게 선물로 주려고 한다. 그녀의 묘한 웃음에 불길한 예감이 들었으나, 적어도 지금까지 아무 일도 일어나지 않았다.",
+    "usage": "케이퍼의 잠재능력 상승에 사용된다.",
+    "rarity": 4
+  },
+  "p_char_4130_luton": {
+    "itemId": "p_char_4130_luton",
+    "name": "루토나다의 증표",
+    "iconId": "p_char_4130_luton",
+    "description": "빛바랜 노란 스카프, 하지만 그 속에 담긴 추억은 사라지지 않는다. 헤어지던 날 어머니가 가슴에 묶어줬던 스카프를 훗날 사람들이 자신의 묘비에 어떻게 묶어줄지 그녀는 상상한다.",
+    "usage": "루토나다의 잠재능력 상승에 사용된다.",
+    "rarity": 4
+  },
+  "p_char_4165_ctrail": {
+    "itemId": "p_char_4165_ctrail",
+    "name": "云迹的信物",
+    "iconId": "p_char_4165_ctrail",
+    "description": "一个小小的白色挂件，用来纪念你陪伴她一起完成的飞行实验。她有点在意你会不会随时带在身上。",
+    "usage": "用于提升云迹的潜能。",
     "rarity": 4
   },
   "p_char_128_plosis": {
@@ -2361,18 +2385,18 @@
   },
   "p_char_341_sntlla": {
     "itemId": "p_char_341_sntlla",
-    "name": "寒檀的信物",
+    "name": "산탈라의 증표",
     "iconId": "p_char_341_sntlla",
-    "description": "一块雕刻着奇异符号的木块。你记得寒檀告诉过你，符号的意义是“温暖”。",
-    "usage": "用于提升寒檀的潜能。",
+    "description": "기이한 부호가 새겨진 나뭇조각. 이 부호는 '온기'라는 뜻이라고 산탈라가 알려줬던 게 기억난다.",
+    "usage": "산탈라의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
   "p_char_4102_threye": {
     "itemId": "p_char_4102_threye",
-    "name": "凛视的信物",
+    "name": "발라크빈의 증표",
     "iconId": "p_char_4102_threye",
-    "description": "一盏长明灯，发光元件与她的法杖材质相同。她自己能在黑暗中视物，但她对你放心不下。",
-    "usage": "用于提升凛视的潜能。",
+    "description": "꺼지지 않는 등불. 발광용 소재는 그녀의 아츠 스태프와 같은 재질이다. 그녀는 어둠 속에서도 앞을 볼 수 있지만, 당신에 대한 걱정은 놓을 수 없다.",
+    "usage": "발라크빈의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
   "p_char_4106_bryota": {
@@ -2393,98 +2417,266 @@
   },
   "p_char_4105_almond": {
     "itemId": "p_char_4105_almond",
-    "name": "杏仁的信物",
+    "name": "아몬드의 증표",
     "iconId": "p_char_4105_almond",
-    "description": "一枚金属制的哨子，用力吹动会发出响亮的哨音，相当提神。“哟嗬——开工啦！”",
-    "usage": "用于提升杏仁的潜能。",
+    "description": "금속제 호루라기. 세게 불면 우렁찬 소리가 나며 정신이 번쩍 든다. “오케이…… 작업 개시!”",
+    "usage": "아몬드의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
   "p_char_4104_coldst": {
     "itemId": "p_char_4104_coldst",
-    "name": "冰酿的信物",
+    "name": "콜드샷의 증표",
     "iconId": "p_char_4104_coldst",
-    "description": "一颗被切割成圆球的冰块，放进杯子里大小刚好。如果想尝尝她的自酿酒，建议加冰稀释，更建议不要尝试。",
-    "usage": "用于提升冰酿的潜能。",
+    "description": "동그랗게 다듬은 얼음. 술잔에 넣으면 크기가 딱 맞다. 그녀가 빚은 술을 맛보고 싶다면 얼음 넣을 걸 권장한다. 물론, 맛보지 않는 걸 더 권장하지만.",
+    "usage": "콜드샷의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
   "p_char_4110_delphn": {
     "itemId": "p_char_4110_delphn",
-    "name": "戴菲恩的信物",
+    "name": "델핀의 증표",
     "iconId": "p_char_4110_delphn",
-    "description": "一枚精致的袖扣。温德米尔出身的军人向来军容整洁，一丝不苟，现在她主动将这枚小信物摘下送给你。",
-    "usage": "用于提升戴菲恩的潜能。",
+    "description": "정교한 슬리브 버튼. 윈더미어 출신 군인은 항상 군용이 깔끔하고 빈틈이 없는데, 지금은 그녀가 자발적으로 이걸 떼어 당신에게 선물로 주려고 한다.",
+    "usage": "델핀의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
   "p_char_494_vendla": {
     "itemId": "p_char_494_vendla",
-    "name": "刺玫的信物",
+    "name": "벤델라의 증표",
     "iconId": "p_char_494_vendla",
-    "description": "一枝枯萎的白玫瑰，米黄色花瓣上浸染了无法抹去的暗红痕迹，记录着她过去生活的某段回忆。过往已逝，她能攥住的并不多。",
-    "usage": "用于提升刺玫的潜能。",
+    "description": "이미 시들어 버린 백장미. 베이지색 꽃잎에는 지울 수 없는 검붉은 자국이 물들어, 과거 그녀의 어떤 기억을 기록하고 있다. 과거는 이미 지나갔고, 그녀가 잡을 수 있는 건 많지 않다.",
+    "usage": "벤델라의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
   "p_char_499_kaitou": {
     "itemId": "p_char_499_kaitou",
-    "name": "折光的信物",
+    "name": "디아만테의 증표",
     "iconId": "p_char_499_kaitou",
-    "description": "一个朴素的宝石放大镜，似乎已经用了许多年。请寻找伪造痕迹，请鉴定我的本质。",
-    "usage": "用于提升折光的潜能。",
+    "description": "아주 소박한 보석 돋보기. 오래 사용한 것 같다. 위조의 흔적을 찾고, 자신의 본질을 감정하리라.",
+    "usage": "디아만테의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
   "p_char_4109_baslin": {
     "itemId": "p_char_4109_baslin",
-    "name": "深律的信物",
+    "name": "베이스라인의 증표",
     "iconId": "p_char_4109_baslin",
-    "description": "一只低音号的喇叭口。深律已经将其擦拭干净，恢复了它往日的光泽。",
-    "usage": "用于提升深律的潜能。",
+    "description": "튜바의 마우스피스. 베이스라인이 깔끔하게 닦은 덕에 과거의 광택을 되찾았다.",
+    "usage": "베이스라인의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
   "p_char_194_leto": {
     "itemId": "p_char_194_leto",
-    "name": "烈夏的信物",
+    "name": "레토의 증표",
     "iconId": "p_char_194_leto",
-    "description": "一瓶代表家乡味道的蜂蜜饮料。烈夏将它递给你之后，立刻就要与你“干瓶”。",
-    "usage": "用于提升烈夏的潜能。",
+    "description": "고향의 맛이 담겨있다는 벌꿀 음료. 이 음료를 당신에게 건넨 레토는 곧바로 '원샷'을 외쳤다.",
+    "usage": "레토의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
   "p_char_4114_harold": {
     "itemId": "p_char_4114_harold",
-    "name": "哈洛德的信物",
+    "name": "해럴드의 증표",
     "iconId": "p_char_4114_harold",
-    "description": "一瓶精挑细选的香水。从成分到如何使用，哈洛德为你进行了全面的说明，详尽到令人有些厌烦。",
-    "usage": "用于提升哈洛德的潜能。",
+    "description": "정성껏 고른 향수 한 병. 성분부터 사용법까지 해럴드는 자세하게 설명해 주었다. 너무 자세해서 짜증이 날 정도로.",
+    "usage": "해럴드의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
   "p_char_4081_warmy": {
     "itemId": "p_char_4081_warmy",
-    "name": "温米的信物",
+    "name": "워미의 증표",
     "iconId": "p_char_4081_warmy",
-    "description": "一辆用糖纸叠成的小小运载车。你在旅途中给了温米几颗雷姆必拓奶糖，她变了个样子回赠与你。",
-    "usage": "用于提升温米的潜能。",
+    "description": "사탕 포장지로 접은 작은 수송차. 여행 중에 당신은 워미에게 림 빌리턴의 사탕을 건네주었고, 워미는 모양을 바꿔 당신에게 답례했다.",
+    "usage": "워미의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
   "p_char_4119_wanqin": {
     "itemId": "p_char_4119_wanqin",
-    "name": "万顷的信物",
+    "name": "완칭의 증표",
     "iconId": "p_char_4119_wanqin",
-    "description": "一个精致的天师仪模型，据说是天师府限量贩售，在炎国孩子间人气很高。“想要拿到真的就要好好念书学习。”在炎国，每个孩子都听过这样的话。",
-    "usage": "用于提升万顷的潜能。",
+    "description": "정교하게 만든 천사의 모형. 한정판이라 염국 어린이들에게 엄청 인기 많다. “진짜를 갖고 싶으면 열심히 공부해.” 염국 아이라면 이 말은 다 들어봤을 것이다.",
+    "usage": "완칭의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
   "p_char_4122_grabds": {
     "itemId": "p_char_4122_grabds",
-    "name": "小满的信物",
+    "name": "그레인버즈의 증표",
     "iconId": "p_char_4122_grabds",
-    "description": "一支手工制作的竹笛，声音清亮，但音准稍稍有些问题。",
-    "usage": "用于提升小满的潜能。",
+    "description": "수제 대나무 피리. 맑은 소리를 내지만, 음이 약간 맞지 않는다.",
+    "usage": "그레인버즈의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
   "p_char_4023_rfalcn": {
     "itemId": "p_char_4023_rfalcn",
-    "name": "红隼的信物",
+    "name": "케스트럴의 증표",
     "iconId": "p_char_4023_rfalcn",
-    "description": "一柄古朴的弯刀。来自萨尔贡的部落战士把你视作战友，将它赠予了你。",
-    "usage": "用于提升红隼的潜能。",
+    "description": "고풍스러운 곡도. 사르곤 부족에서 온 전사가 당신을 전우로 받아들이고 이걸 선물로 주었다.",
+    "usage": "케스트럴의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "p_char_4124_iana": {
+    "itemId": "p_char_4124_iana",
+    "name": "Iana의 증표",
+    "iconId": "p_char_4124_iana",
+    "description": "한 쌍의 콘택트렌즈. 이걸 쓴다고 제미니 복제기를 쓸 수 있는 건 아니지만, 눈앞이 더 잘 보이는 건 확실하다.",
+    "usage": "Iana의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "p_char_4125_rdoc": {
+    "itemId": "p_char_4125_rdoc",
+    "name": "Doc의 증표",
+    "iconId": "p_char_4125_rdoc",
+    "description": "산탄총의 탄피. 이런 방식으로 충돌을 해결한 것에 그는 유감을 느꼈지만, 더 많은 생명을 구하기 위해서라면 그는 절대 망설이지 않는다.",
+    "usage": "Doc의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "p_char_4126_fuze": {
+    "itemId": "p_char_4126_fuze",
+    "name": "Fuze의 증표",
+    "iconId": "p_char_4126_fuze",
+    "description": "모양이 독특한 헬멧. 당신은 늘 헬멧 뒤의 얼굴이 어떤 표정을 짓고 있을지 궁금해했다.",
+    "usage": "Fuze의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "p_char_446_aroma": {
+    "itemId": "p_char_446_aroma",
+    "name": "아로마의 증표",
+    "iconId": "p_char_446_aroma",
+    "description": "청결 서비스 예약판, 서로 다른 향의 세제가 필요한 각 상황이 상세히 나열되어 있다. 필요할 때는 그녀를 부르자. 어떤 향이 당신을 가장 편안하게 만드는지 잘 알고 있으니까.",
+    "usage": "아로마의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "p_char_4131_odda": {
+    "itemId": "p_char_4131_odda",
+    "name": "오다의 증표",
+    "iconId": "p_char_4131_odda",
+    "description": "낙엽 더미 속에서 익힌 고구마 1개. 매우 뜨거우니 꺼낼 때 조심할 것.",
+    "usage": "오다의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "p_char_1036_fang2": {
+    "itemId": "p_char_1036_fang2",
+    "name": "팽 더 파이어 샤픈드의 증표",
+    "iconId": "p_char_1036_fang2",
+    "description": "커다란 코트 한 벌. 야외에서 활동할 때는 방풍과 보온에 주의해야 한다.",
+    "usage": "팽 더 파이어 샤픈드의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "p_char_4079_haini": {
+    "itemId": "p_char_4079_haini",
+    "name": "루실라의 증표",
+    "iconId": "p_char_4079_haini",
+    "description": "직접 만든 교환권. 그녀는 아이디어가 너무 많아 무엇을 보내야 할지 결정할 수 없다. 교환하러 가면 그녀가 기분에 따라 아무거나 만들어 줄 것이다.",
+    "usage": "루실라의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "p_char_4137_udflow": {
+    "itemId": "p_char_4137_udflow",
+    "name": "언더플로우의 증표",
+    "iconId": "p_char_4137_udflow",
+    "description": "금속으로 된 심플한 서류철. 사용자의 선호에 따라 자동으로 서류를 정리해준다. 언더플로우는 그녀가 제출하는 보고서를 보관하길 바라는 것 같다.",
+    "usage": "언더플로우의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "p_char_4147_mitm": {
+    "itemId": "p_char_4147_mitm",
+    "name": "渡桥的信物",
+    "iconId": "p_char_4147_mitm",
+    "description": "一张第二份半价的甜品券。渡桥将它送给你时反复叮嘱，用掉这张券时一定要带上他。",
+    "usage": "用于提升渡桥的潜能。",
+    "rarity": 5
+  },
+  "p_char_4151_tinman": {
+    "itemId": "p_char_4151_tinman",
+    "name": "锡人的信物",
+    "iconId": "p_char_4151_tinman",
+    "description": "一枚平平无奇的螺母。你反复比对它和锡人，试图搞清楚它是从哪个部位卸下来的。",
+    "usage": "用于提升锡人的潜能。",
+    "rarity": 5
+  },
+  "p_char_4140_lasher": {
+    "itemId": "p_char_4140_lasher",
+    "name": "衡沙的信物",
+    "iconId": "p_char_4140_lasher",
+    "description": "一只特制的发条羽兽，会捡拾你身边亮闪闪的东西。发条羽兽和它的制作者一样眼光独到，而你的办公室丝毫没有变得整洁。",
+    "usage": "用于提升衡沙的潜能。",
+    "rarity": 5
+  },
+  "p_char_4139_papyrs": {
+    "itemId": "p_char_4139_papyrs",
+    "name": "莎草的信物",
+    "iconId": "p_char_4139_papyrs",
+    "description": "一本贴上了照片的《游历初步规划（第三版）》。她的旅程因和罗德岛的相逢而开始，祝她一路顺风。",
+    "usage": "用于提升莎草的潜能。",
+    "rarity": 5
+  },
+  "p_char_4142_laios": {
+    "itemId": "p_char_4142_laios",
+    "name": "莱欧斯的信物",
+    "iconId": "p_char_4142_laios",
+    "description": "一幅奇怪的画，画的好像是一种混合了各种泰拉生物外形特征的融合物。莱欧斯兴奋地跟你讲解这幅画的时候千万别理他。",
+    "usage": "用于提升莱欧斯的潜能。",
+    "rarity": 5
+  },
+  "p_char_4143_sensi": {
+    "itemId": "p_char_4143_sensi",
+    "name": "森西的信物",
+    "iconId": "p_char_4143_sensi",
+    "description": "一瓶森西随身携带的调味料，是来自那座遥远迷宫的独特口味。",
+    "usage": "用于提升森西的潜能。",
+    "rarity": 5
+  },
+  "p_char_4144_chilc": {
+    "itemId": "p_char_4144_chilc",
+    "name": "齐尔查克的信物",
+    "iconId": "p_char_4144_chilc",
+    "description": "一个小巧的腰包，可以装各种随身物品，外出探险时使用非常方便。",
+    "usage": "用于提升齐尔查克的潜能。",
+    "rarity": 5
+  },
+  "p_char_487_bobb": {
+    "itemId": "p_char_487_bobb",
+    "name": "波卜的信物",
+    "iconId": "p_char_487_bobb",
+    "description": "一个等人高的巨大毛绒玩具，内芯柔软，抱紧后再松开会缓慢回弹。既然生活总有些压力，那就只好寻找自我调节的手段。",
+    "usage": "用于提升波卜的潜能。",
+    "rarity": 5
+  },
+  "p_char_4162_cathy": {
+    "itemId": "p_char_4162_cathy",
+    "name": "凯瑟琳的信物",
+    "iconId": "p_char_4162_cathy",
+    "description": "用生产余料制作的发条小闹钟，海布里区的儿童玩具兼爆炸物定时器——现在它是你的了。",
+    "usage": "用于提升凯瑟琳的潜能。",
+    "rarity": 5
+  },
+  "p_char_4148_philae": {
+    "itemId": "p_char_4148_philae",
+    "name": "菲莱的信物",
+    "iconId": "p_char_4148_philae",
+    "description": "一种静坐冥想时使用的熏香，据说它的原料在生长时会竭尽沙土中的水分。如今它竭尽自己，只为助你思若泉流。",
+    "usage": "用于提升菲莱的潜能。",
+    "rarity": 5
+  },
+  "p_char_4155_talr": {
+    "itemId": "p_char_4155_talr",
+    "name": "裁度的信物",
+    "iconId": "p_char_4155_talr",
+    "description": "一枚坑坑洼洼的银色戒指，似乎曾属于某位家族成员，被当作顶针用了很久。",
+    "usage": "用于提升裁度的潜能。",
+    "rarity": 5
+  },
+  "p_char_4163_rosesa": {
+    "itemId": "p_char_4163_rosesa",
+    "name": "瑰盐的信物",
+    "iconId": "p_char_4163_rosesa",
+    "description": "一个带有奇异芬芳的药草卷，据说点燃后其香气可以凝神静气。但在交给医疗部鉴别之前最好不要擅自使用！",
+    "usage": "用于提升瑰盐的潜能。",
+    "rarity": 5
+  },
+  "p_char_4164_tecno": {
+    "itemId": "p_char_4164_tecno",
+    "name": "特克诺的信物",
+    "iconId": "p_char_4164_tecno",
+    "description": "一个脸颊烧焦的小木偶，圆溜溜的眼睛让你想起特克诺撒娇时的样子。",
+    "usage": "用于提升特克诺的潜能。",
     "rarity": 5
   },
   "p_char_103_angel": {
@@ -2667,7 +2859,7 @@
     "itemId": "p_char_400_weedy",
     "name": "위디의 증표",
     "iconId": "p_char_400_weedy",
-    "description": "잔뜩 쌓인 시드래곤의 설계도. 그녀 본인이 쓴 주석이 빼곡히 적혀있다. 위에는 \"이대로 하면 원숭이라도 만들어 낼 수 있을 거야\" 라고 적혀있다. 과연 그럴까.",
+    "description": "잔뜩 쌓인 시드래곤의 설계도. 그녀 본인이 쓴 주석이 빼곡히 적혀있다. 위에는 “이대로 하면 백비스트도 만들어 낼 수 있을 거야”라고 적혀있다. 과연 그럴까.",
     "usage": "위디의 잠재능력 상승에 사용된다.",
     "rarity": 6
   },
@@ -2675,7 +2867,7 @@
     "itemId": "p_char_113_cqbw",
     "name": "W의 증표",
     "iconId": "p_char_113_cqbw",
-    "description": "W가 V자 손 모양을 하고 찍은 셀카 사진. 사진 한쪽에는 멀지 않은 곳에서 다른 사람과 이야기를 나누고 것으로 보이는 은빛 머리카락의 또 다른 살카즈 여성이 찍혀있다.",
+    "description": "W가 V자 손 모양을 하고 찍은 셀카 사진. 사진 한쪽에는 멀지 않은 곳에서 다른 사람과 이야기를 나누고 있는 것으로 보이는 은빛 머리카락의 또 다른 살카즈 여성이 찍혀있다.",
     "usage": "W의 잠재능력 상승에 사용된다.",
     "rarity": 6
   },
@@ -2876,7 +3068,7 @@
     "name": "플레임테일의 증표",
     "iconId": "p_char_420_flamtl",
     "description": "평범해 보이는 카시미어의 코인으로, 소나가 지하 경기장에서 첫 우승을 했을 때 얻은 유일한 보상이다.",
-    "usage": "소나의 잠재능력 상승에 사용된다.",
+    "usage": "플레임테일의 잠재능력 상승에 사용된다.",
     "rarity": 6
   },
   "p_char_206_gnosis": {
@@ -3097,10 +3289,10 @@
   },
   "p_char_2012_typhon": {
     "itemId": "p_char_2012_typhon",
-    "name": "提丰的信物",
+    "name": "티폰의 증표",
     "iconId": "p_char_2012_typhon",
-    "description": "一瓶散发着浓郁气味的植物提取液。掩盖文明的气味，融入荒野，成为猎人，成为她的同伴。",
-    "usage": "用于提升提丰的潜能。",
+    "description": "짙은 향이 나는 식물 추출액. 문명의 냄새를 가리고 황야에 녹아들어 사냥꾼이 되자. 그러면 그녀의 동료가 될 수 있으니.",
+    "usage": "티폰의 잠재능력 상승에 사용된다.",
     "rarity": 6
   },
   "p_char_1033_swire2": {
@@ -3121,66 +3313,194 @@
   },
   "p_char_1034_jesca2": {
     "itemId": "p_char_1034_jesca2",
-    "name": "涤火杰西卡的信物",
+    "name": "제시카 더 리버레이티드의 증표",
     "iconId": "p_char_1034_jesca2",
-    "description": "一副定制激光瞄准镜，适用于夜间精确观瞄。她一直紧盯着前方，从未将视线移开。",
-    "usage": "用于提升涤火杰西卡的潜能。",
+    "description": "맞춤 제작한 레이저 조준경. 야간 정밀 관찰에 적합하다. 그녀는 줄곧 앞을 주시하며 단 한 번도 시선을 떼지 않았다.",
+    "usage": "제시카 더 리버레이티드의 잠재능력 상승에 사용된다.",
     "rarity": 6
   },
   "p_char_4088_hodrer": {
     "itemId": "p_char_4088_hodrer",
-    "name": "赫德雷的信物",
+    "name": "외드레르의 증표",
     "iconId": "p_char_4088_hodrer",
-    "description": "一本页角被燎焦的笔记。所记录的不仅有行动的结果，还有从灰烬中抖落的，萨卡兹们的生活。",
-    "usage": "用于提升赫德雷的潜能。",
+    "description": "한쪽 귀퉁이가 타버린 노트. 기록된 것은 작전 결과뿐이 아니라, 잿더미에서 허덕이는 살카즈들의 삶도 있다.",
+    "usage": "외드레르의 잠재능력 상승에 사용된다.",
     "rarity": 6
   },
   "p_char_4098_vvana": {
     "itemId": "p_char_4098_vvana",
-    "name": "薇薇安娜的信物",
+    "name": "비비아나의 증표",
     "iconId": "p_char_4098_vvana",
-    "description": "一枚风干的金盏花书签。与书同行的旅程漫长而遥远，在离席暂别前，让它成为驻足于此的信标吧。",
-    "usage": "用于提升薇薇安娜的潜能。",
+    "description": "바람에 말린 금잔화 책갈피. 책과 함께하는 여정은 길고도 머니, 떠나기 전에 이를 여기에 머물렀음을 상징하는 표식으로 하자.",
+    "usage": "비비아나의 잠재능력 상승에 사용된다.",
     "rarity": 6
   },
   "p_char_245_cello": {
     "itemId": "p_char_245_cello",
-    "name": "塑心的信物",
+    "name": "비르투오사의 증표",
     "iconId": "p_char_245_cello",
-    "description": "一副质地考究的黑色手套。既能安抚琴弦，也能安抚繁杂的心声。",
-    "usage": "用于提升塑心的潜能。",
+    "description": "훌륭한 질감의 검은 장갑. 악기의 현 뿐만 아니라, 복잡한 마음도 달랠 수 있다.",
+    "usage": "비르투오사의 잠재능력 상승에 사용된다.",
     "rarity": 6
   },
   "p_char_4116_blkkgt": {
     "itemId": "p_char_4116_blkkgt",
-    "name": "锏的信物",
+    "name": "데겐블레허의 증표",
     "iconId": "p_char_4116_blkkgt",
-    "description": "一个只能拨通她的号码的通讯终端。和普通的通讯终端在外表上明明没什么区别，却能给人无上的安心感。",
-    "usage": "用于提升锏的潜能。",
+    "description": "그녀의 번호로만 연락할 수 있는 통신 단말. 일반적인 통신 단말과 별 차이가 없어 보이지만, 그 무엇보다도 큰 안도감을 준다.",
+    "usage": "데겐블레허의 잠재능력 상승에 사용된다.",
     "rarity": 6
   },
   "p_char_4117_ray": {
     "itemId": "p_char_4117_ray",
-    "name": "莱伊的信物",
+    "name": "레이의 증표",
     "iconId": "p_char_4117_ray",
-    "description": "一本看不出制作者意图的剪贴册。里面的“奇异生物照片”似乎也是拼贴合成的图像，要不要告诉她呢？",
-    "usage": "用于提升莱伊的潜能。",
+    "description": "제작자의 의도를 알 수 없는 스크랩북. 안에 있는 '기이한 생물 사진'은 아무래도 여러 그림을 이어 붙인 것 같은데, 알려 줘야 하나?",
+    "usage": "레이의 잠재능력 상승에 사용된다.",
     "rarity": 6
   },
   "p_char_2025_shu": {
     "itemId": "p_char_2025_shu",
-    "name": "黍的信物",
+    "name": "슈의 증표",
     "iconId": "p_char_2025_shu",
-    "description": "一张古老的图画，体现了千年前人们对四季轮回原理的想象。时光流转，惟斯不变。",
-    "usage": "用于提升黍的潜能。",
+    "description": "오래된 그림에 천 년 전 사람들이 사계절에 대한 원리와 상상이 그려져 있다. 시간이 흘러도 이것만은 변치 않는다.",
+    "usage": "슈의 잠재능력 상승에 사용된다.",
     "rarity": 6
   },
   "p_char_4121_zuole": {
     "itemId": "p_char_4121_zuole",
-    "name": "左乐的信物",
+    "name": "좌락의 증표",
     "iconId": "p_char_4121_zuole",
-    "description": "一只有炎国特色的手工风筝，上面还沾染着些许林间树叶的气息。它常常因执线的手笨拙的动作而摔落，也总会重新乘风而起。",
-    "usage": "用于提升左乐的潜能。",
+    "description": "염국 특색의 연. 아직 숲의 냄새가 조금 남아 있다. 다루는 손이 서툴러 종종 떨어지긴 하지만, 바람만 있으면 언제든지 하늘을 날아오른다.",
+    "usage": "좌락의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "p_char_4123_ela": {
+    "itemId": "p_char_4123_ela",
+    "name": "Ela의 증표",
+    "iconId": "p_char_4123_ela",
+    "description": "고글과 방음 헤드셋. 그녀는 한때 당신에게 과연 이 고글이 필요한지 확신이 들지 않았다.",
+    "usage": "Ela의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "p_char_4132_ascln": {
+    "itemId": "p_char_4132_ascln",
+    "name": "아스카론의 증표",
+    "iconId": "p_char_4132_ascln",
+    "description": "연기가 들어있는 작은 유리병. 위험한 순간에 병을 깨뜨리면 아스카론이 즉시 당신 곁으로 달려올 것이다.",
+    "usage": "아스카론의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "p_char_1035_wisdel": {
+    "itemId": "p_char_1035_wisdel",
+    "name": "위셔델의 증표",
+    "iconId": "p_char_1035_wisdel",
+    "description": "웃는 얼굴이 그려진 수류탄. 당신은 대체 언제부터 이것을 손에 쥐고 있었는지 잘 기억나지 않는다. 좋게 생각해 보면, 당신은 아직 피어나지 않은 불꽃을 받은 걸지도 모른다.",
+    "usage": "위셔델의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "p_char_4133_logos": {
+    "itemId": "p_char_4133_logos",
+    "name": "로고스의 증표",
+    "iconId": "p_char_4133_logos",
+    "description": "일대일로 복제된 골필 모형. 주문을 적는 데 사용할 수는 없지만, 함선 내 주문 피해자들의 명단을 적는 데는 사용할 수 있다.",
+    "usage": "로고스의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "p_char_4134_cetsyr": {
+    "itemId": "p_char_4134_cetsyr",
+    "name": "시빌라이트 에테르나의 증표",
+    "iconId": "p_char_4134_cetsyr",
+    "description": "로도스 아일랜드와 계속 함께 하겠다는 약속, 이것이 지금 그녀가 당신에게 줄 수 있는 유일한 것이다. 당신은 그녀가 그 약속을 반드시 지킬 것임을 알고 있다.",
+    "usage": "시빌라이트 에테르나의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "p_char_4145_ulpia": {
+    "itemId": "p_char_4145_ulpia",
+    "name": "울피아누스의 증표",
+    "iconId": "p_char_4145_ulpia",
+    "description": "닻의 모양으로 마모된 암초. 자세히 보면 그 위의 무늬가 음표처럼 보인다.",
+    "usage": "울피아누스의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "p_char_4146_nymph": {
+    "itemId": "p_char_4146_nymph",
+    "name": "妮芙的信物",
+    "iconId": "p_char_4146_nymph",
+    "description": "一对做成心形的印章，能够印出复杂的花纹。按照妮芙的话说，这个礼物叫作“心心相”印。",
+    "usage": "用于提升妮芙的潜能。",
+    "rarity": 6
+  },
+  "p_char_4138_narant": {
+    "itemId": "p_char_4138_narant",
+    "name": "娜仁图亚的信物",
+    "iconId": "p_char_4138_narant",
+    "description": "一管自制的安眠药水，源自复杂的雨林植被和沙盗丰富的野外生存经验。她真心希望你能一直在她身边做她的好伙伴，还希望你不会因她而噩梦连连。",
+    "usage": "用于提升娜仁图亚的潜能。",
+    "rarity": 6
+  },
+  "p_char_4058_pepe": {
+    "itemId": "p_char_4058_pepe",
+    "name": "佩佩的信物",
+    "iconId": "p_char_4058_pepe",
+    "description": "一枚价值不菲的莲花胸针，请不要尝试卖掉它，它象征的意义比它的价值更加珍贵。",
+    "usage": "用于提升佩佩的潜能。",
+    "rarity": 6
+  },
+  "p_char_4141_marcil": {
+    "itemId": "p_char_4141_marcil",
+    "name": "玛露西尔的信物",
+    "iconId": "p_char_4141_marcil",
+    "description": "一本魔法书，里面记录着不少源石技艺和魔法融合的想法，似乎都能产生意想不到的效用。",
+    "usage": "用于提升玛露西尔的潜能。",
+    "rarity": 6
+  },
+  "p_char_1019_siege2": {
+    "itemId": "p_char_1019_siege2",
+    "name": "维娜·维多利亚的信物",
+    "iconId": "p_char_1019_siege2",
+    "description": "一块纪念罗德岛的铭牌，你好像在伦蒂尼姆重建后的街角见过，上面的铆钉也似曾相识。她说，铆钉一旦固定，就再也卸不下来了。",
+    "usage": "用于提升维娜·维多利亚的潜能。",
+    "rarity": 6
+  },
+  "p_char_1038_whitw2": {
+    "itemId": "p_char_1038_whitw2",
+    "name": "荒芜拉普兰德的信物",
+    "iconId": "p_char_1038_whitw2",
+    "description": "一封异常精美的紫色邀请函，角落潦草画着一只白狼和一串葡萄。她邀请你参加一场狂欢，但无人知晓主题是什么。",
+    "usage": "用于提升荒芜拉普兰德的潜能。",
+    "rarity": 6
+  },
+  "p_char_1502_crosly": {
+    "itemId": "p_char_1502_crosly",
+    "name": "弑君者的信物",
+    "iconId": "p_char_1502_crosly",
+    "description": "一副密闭性良好的黑色战术口罩。“我的面目隐匿，我的愤怒昭显。”",
+    "usage": "用于提升弑君者的潜能。",
+    "rarity": 6
+  },
+  "p_char_4026_vulpis": {
+    "itemId": "p_char_4026_vulpis",
+    "name": "忍冬的信物",
+    "iconId": "p_char_4026_vulpis",
+    "description": "一串手工制作的流苏挂饰，不知道是叙拉古还是东国的习俗，总之忍冬将它交给你以表尊敬和谢意。",
+    "usage": "用于提升忍冬的潜能。",
+    "rarity": 6
+  },
+  "p_char_4011_lessng": {
+    "itemId": "p_char_4011_lessng",
+    "name": "止颂的信物",
+    "iconId": "p_char_4011_lessng",
+    "description": "一个布带系成的、造型特殊的绳结。连接信任的两端，连接过去与未来。",
+    "usage": "用于提升止颂的潜能。",
+    "rarity": 6
+  },
+  "p_char_1039_thorn2": {
+    "itemId": "p_char_1039_thorn2",
+    "name": "引星棘刺的信物",
+    "iconId": "p_char_1039_thorn2",
+    "description": "一缕纤细的心相原质，悄然汇入你的体内。待棘刺将它收回时，他便能清晰地知晓你身体状况的变化。",
+    "usage": "用于提升引星棘刺的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
@@ -3663,6 +3983,14 @@
     "usage": "휴머스의 잠재능력 상승에 사용된다.",
     "rarity": 4
   },
+  "class_p_char_4107_vrdant": {
+    "itemId": "class_p_char_4107_vrdant",
+    "name": "버던트의 커널 증표",
+    "iconId": "class_p_char_4107_vrdant",
+    "description": "잡초로 보이는 작은 풀. 그에겐 특별한 의미가 있다. 풀잎은 날카롭게 잘려 있으나 두려워할 필요 없다, 당신을 해치려는 게 아니니까.",
+    "usage": "버던트의 잠재능력 상승에 사용된다.",
+    "rarity": 4
+  },
   "class_p_char_128_plosis": {
     "itemId": "class_p_char_128_plosis",
     "name": "프틸롭시스의 커널 증표",
@@ -3967,6 +4295,134 @@
     "usage": "샤마르의 잠재능력 상승에 사용된다.",
     "rarity": 5
   },
+  "class_p_char_401_elysm": {
+    "itemId": "class_p_char_401_elysm",
+    "name": "엘리시움의 커널 증표",
+    "iconId": "class_p_char_401_elysm",
+    "description": "복잡하게도 그려진 등고선지도. 만약 잘 알아보지 못한다면, 엘리시움 본인이 직접 길을 알려줄 것이다.",
+    "usage": "엘리시움의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_378_asbest": {
+    "itemId": "class_p_char_378_asbest",
+    "name": "아스베스토스의 커널 증표",
+    "iconId": "class_p_char_378_asbest",
+    "description": "탐험 세트. 그녀가 하고자 하는 말은 아마 시간이 있으면 그녀와 같이 나가 좀 걷자는 뜻일 것이다.",
+    "usage": "아스베스토스의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_343_tknogi": {
+    "itemId": "class_p_char_343_tknogi",
+    "name": "츠키노기의 커널 증표",
+    "iconId": "class_p_char_343_tknogi",
+    "description": "츠키노기 본인이 제작하고 기복을 한 부적. 지니고 있으면 평상심을 유지하고 어두운 밤을 두려워하지 않도록 할 수 있다는 듯하다.",
+    "usage": "츠키노기의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_373_lionhd": {
+    "itemId": "class_p_char_373_lionhd",
+    "name": "레온하르트의 커널 증표",
+    "iconId": "class_p_char_373_lionhd",
+    "description": "신상 한정판 운동화. 빅토리아의 구기 운동 종목 유행에 편승하고자 특별 보조 디자인을 고안하였다. 기술 지원은 림 빌리턴에서 맡았다.",
+    "usage": "레온하르트의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_294_ayer": {
+    "itemId": "class_p_char_294_ayer",
+    "name": "에이어스카르페의 커널 증표",
+    "iconId": "class_p_char_294_ayer",
+    "description": "정찰 및 정찰을 따돌리는 법에 대한 사제 지침서. 그는 \"어떤 상황에서도 자기 몸은 지킬 수 있는 편이 좋으니까\" 라고 생각하고 있다.",
+    "usage": "에이어스카르페의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_344_beewax": {
+    "itemId": "class_p_char_344_beewax",
+    "name": "비즈왁스의 커널 증표",
+    "iconId": "class_p_char_344_beewax",
+    "description": "오일과 브러쉬, 사포가 들어 있는 뿔 관리 도구 풀세트. 적지 않은 돈을 들여 사막 부족에서 특별 제작한 것이다. 만약 아깝다고 생각하지 않는다면 그냥 손발톱을 관리하는 용도로도 사용 가능하다.",
+    "usage": "비즈왁스의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_349_chiave": {
+    "itemId": "class_p_char_349_chiave",
+    "name": "키아베의 커널 증표",
+    "iconId": "class_p_char_349_chiave",
+    "description": "본인이 직접 만든 '키아베 패거리'의 간판. 위에는 당신의 이름이 적혀있다.",
+    "usage": "키아베의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_218_cuttle": {
+    "itemId": "class_p_char_218_cuttle",
+    "name": "안드레아나의 커널 증표",
+    "iconId": "class_p_char_218_cuttle",
+    "description": "그녀가 직접 만든 모형 총. 상당히 정교하게 만들어졌다.",
+    "usage": "안드레아나의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_415_flint": {
+    "itemId": "class_p_char_415_flint",
+    "name": "플린트의 커널 증표",
+    "iconId": "class_p_char_415_flint",
+    "description": "날카로운 석제 비수. 플린트가 직접 만들었다. 전 주인은 구워먹을 고기를 써는 데 주로 썼었다. 다양한 야외 환경에서 사용하기 적합하지만, 사용하다 다치지 않도록 조심하자!",
+    "usage": "플린트의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_365_aprl": {
+    "itemId": "class_p_char_365_aprl",
+    "name": "에이프릴의 커널 증표",
+    "iconId": "class_p_char_365_aprl",
+    "description": "《에이프릴》곡이 수록된 리패키징 앨범. 앨범 위에는 리본이 나비매듭으로 매어져 있다.",
+    "usage": "에이프릴의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_346_aosta": {
+    "itemId": "class_p_char_346_aosta",
+    "name": "아오스타의 커널 증표",
+    "iconId": "class_p_char_346_aosta",
+    "description": "아오스타가 직접 만든 시라쿠사 스타일 브림햇. 상당히 좋은 재료를 사용한 걸 보면, 그가 얼마나 신경 써서 만들었는지 알 수 있다.",
+    "usage": "아오스타의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_436_whispr": {
+    "itemId": "class_p_char_436_whispr",
+    "name": "위스퍼레인의 커널 증표",
+    "iconId": "class_p_char_436_whispr",
+    "description": "아주 오래된 영화표의 일부분. 영화표의 겉면은 누렇게 바래 흐릿하고, 프린트된 잉크도 군데군데 벗겨져 있다.",
+    "usage": "위스퍼레인의 잠재능력 상승에 쓰인다.",
+    "rarity": 5
+  },
+  "class_p_char_214_kafka": {
+    "itemId": "class_p_char_214_kafka",
+    "name": "카프카의 커널 증표",
+    "iconId": "class_p_char_214_kafka",
+    "description": "정성껏 키운 분재에 카드를 추가했다. 카드에는 이렇게 적혀 있다. \"땅에 비수를 묻었어. 필요하면 파내서 사과 자를 때 써도 돼.\"",
+    "usage": "카프카의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_338_iris": {
+    "itemId": "class_p_char_338_iris",
+    "name": "아이리스의 커널 증표",
+    "iconId": "class_p_char_338_iris",
+    "description": "수공으로 만든 동화책. 시장에서 발행한 적 없는 동화 스토리 전집으로, 제작자가 모든 삽화를 직접 그렸다고 한다.",
+    "usage": "아이리스의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_455_nothin": {
+    "itemId": "class_p_char_455_nothin",
+    "name": "우요우의 커널 증표",
+    "iconId": "class_p_char_455_nothin",
+    "description": "부챗살이 특수한 재질로 만들어진 종이부채 한 자루, 부채의 면에는 '자허오유'라고 쓰여 있다.",
+    "usage": "우요우의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
+  "class_p_char_363_toddi": {
+    "itemId": "class_p_char_363_toddi",
+    "name": "토디폰스의 커널 증표",
+    "iconId": "class_p_char_363_toddi",
+    "description": "정밀하게 자른 이십면체 보석 결정. 토디폰스의 말에 따르면, 함부로 막 줄 수 있는 것은 선물이 아니라고 한다.",
+    "usage": "토디폰스의 잠재능력 상승에 사용된다.",
+    "rarity": 5
+  },
   "class_p_char_103_angel": {
     "itemId": "class_p_char_103_angel",
     "name": "엑시아의 커널 증표",
@@ -4133,6 +4589,102 @@
     "iconId": "class_p_char_250_phatom",
     "description": "오래된 악보. 음표와 글씨는 이미 오랜 세월 속에 희미해져 버렸다.",
     "usage": "팬텀의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "class_p_char_400_weedy": {
+    "itemId": "class_p_char_400_weedy",
+    "name": "위디의 커널 증표",
+    "iconId": "class_p_char_400_weedy",
+    "description": "잔뜩 쌓인 시드래곤의 설계도. 그녀 본인이 쓴 주석이 빼곡히 적혀있다. 위에는 “이대로 하면 백비스트도 만들어 낼 수 있을 거야”라고 적혀있다. 과연 그럴까.",
+    "usage": "위디의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "class_p_char_197_poca": {
+    "itemId": "class_p_char_197_poca",
+    "name": "로사의 커널 증표",
+    "iconId": "class_p_char_197_poca",
+    "description": "그녀는 사뭇 진지한 모습으로 페이퍼 나이프를 건네주었지만, 당신은 대체 무슨 이유 때문인지 잘 모른다.",
+    "usage": "로사의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "class_p_char_358_lisa": {
+    "itemId": "class_p_char_358_lisa",
+    "name": "스즈란의 커널 증표",
+    "iconId": "class_p_char_358_lisa",
+    "description": "한 떨기 은방울꽃. 리사에게 원하는 코드네임이 있냐고 물어볼 때, 그녀는 마침 이 꽃을 한 아름 끌어안고 있었다.",
+    "usage": "스즈란의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "class_p_char_293_thorns": {
+    "itemId": "class_p_char_293_thorns",
+    "name": "쏜즈의 커널 증표",
+    "iconId": "class_p_char_293_thorns",
+    "description": "약물이 들어있는 작은 병. 중학교 때의 기념작으로써, 매우 위험하니 사용 시엔 각별히 주의하도록 하자.",
+    "usage": "쏜즈의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "class_p_char_416_zumama": {
+    "itemId": "class_p_char_416_zumama",
+    "name": "유넥티스의 커널 증표",
+    "iconId": "class_p_char_416_zumama",
+    "description": "쓴 지 오래된 것처럼 보이는 스패너. 기계에 쓰기에 적합하지만, 호신용으로도 딱이다.",
+    "usage": "유넥티스의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "class_p_char_350_surtr": {
+    "itemId": "class_p_char_350_surtr",
+    "name": "수르트의 커널 증표",
+    "iconId": "class_p_char_350_surtr",
+    "description": "지명이 빼곡히 적힌 복사본 파일. 이 중 일부는 빨간색으로 줄이 그어져 있다. 만약 시간이 된다면, 함께 탐사를 도와줄 수도 있을 것이다.",
+    "usage": "수르트의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "class_p_char_423_blemsh": {
+    "itemId": "class_p_char_423_blemsh",
+    "name": "블레미샤인의 커널 증표",
+    "iconId": "class_p_char_423_blemsh",
+    "description": "어느 기사 소설. 황당한 전설, 그리고 전설의 황당함.",
+    "usage": "블레미샤인의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "class_p_char_311_mudrok": {
+    "itemId": "class_p_char_311_mudrok",
+    "name": "머드락의 커널 증표",
+    "iconId": "class_p_char_311_mudrok",
+    "description": "아주 작은 암석 조각상 하나. 마치 호기심 어린 '눈빛'으로 당신을 쳐다보고 있는 것만 같다.",
+    "usage": "머드락의 잠재능력 상승에 쓰인다.",
+    "rarity": 6
+  },
+  "class_p_char_264_f12yin": {
+    "itemId": "class_p_char_264_f12yin",
+    "name": "마운틴의 커널 증표",
+    "iconId": "class_p_char_264_f12yin",
+    "description": "정교한 포장의 와인. 생산지는 컬럼비아에서 아주 유명한 와이너리인 것 같다. 어떤 루트로 획득했는지는 알 수 없다.",
+    "usage": "마운틴의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "class_p_char_332_archet": {
+    "itemId": "class_p_char_332_archet",
+    "name": "아르케토의 커널 증표",
+    "iconId": "class_p_char_332_archet",
+    "description": "수도원의 한정 기념 배지. \"원래는 돈 받고 파는 건데, 이번만 우정의 의미로 선물하는 거예요!\"",
+    "usage": "아르케토의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "class_p_char_362_saga": {
+    "itemId": "class_p_char_362_saga",
+    "name": "사가의 커널 증표",
+    "iconId": "class_p_char_362_saga",
+    "description": "사가가 직접 조각한 목어. 마음이 불안할 땐 그녀와 함께 염불을 외워보는 게 어떨까.",
+    "usage": "사가의 잠재능력 상승에 사용된다.",
+    "rarity": 6
+  },
+  "class_p_char_472_pasngr": {
+    "itemId": "class_p_char_472_pasngr",
+    "name": "패신저의 커널 증표",
+    "iconId": "class_p_char_472_pasngr",
+    "description": "오래된 사르곤 금화. 오랫동안 운명의 손을 거쳐, 지금은 당신의 것이 되었다.",
+    "usage": "패신저의 잠재능력 상승에 사용된다.",
     "rarity": 6
   }
 }

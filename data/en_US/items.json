@@ -651,32 +651,32 @@
     "itemId": "31073",
     "name": "Brown Fiber",
     "iconId": "MTL_SL_XW",
-    "description": "源石工业的衍生产物，因其优异的性能在工业领域被广泛应用。近年来又因独特的外观而被设计行业所关注。",
-    "usage": "具备高强度与高模量的特种纤维束。可用于多种强化场合。",
+    "description": "A derived product in Originium engineering, widely used in industrial fields due to its exceptional functionality. In recent years, its unique appearance has also drawn keen interest from those working in design.",
+    "usage": "A specialized fiber bundle, possessing high tensile strength and elastic modulus. Used in a variety of strengthening projects.",
     "rarity": 3
   },
   "31074": {
     "itemId": "31074",
     "name": "Cured Fiberboard",
     "iconId": "MTL_SL_XWB",
-    "description": "用特殊工艺制作的复合纤维板，物理与化学性能均相当优异，更具备少有的易加工特性，在许多工业流程中不可替代。",
-    "usage": "经过塑形固化处理的特种纤维板。可用于多种强化场合。",
+    "description": "A compound fiber board crafted through bespoke manufacturing. Exhibits outstanding functionality, both physically and chemically, coupled with a rarely-seen ease of processing. An irreplaceable part of many an industrial workflow.",
+    "usage": "A specialized fiber board, solidified in a mold. Used in a variety of strengthening projects.",
     "rarity": 4
   },
   "31083": {
     "itemId": "31083",
     "name": "Cycloalkane Polymer",
     "iconId": "MTL_SL_HT",
-    "description": "在实验室内诞生的新型透明材料，具备高透光度和优秀的各项耐性，将成为许多传统材料的优质替代品。",
-    "usage": "一种耐热性、耐化学性俱优的工业材料。可用于多种强化场合。",
+    "description": "A novel transparent material born from the laboratory. Its high luminous transmittance and phenomenal durability in all aspects promise to make it an excellent substitute for many conventional materials.",
+    "usage": "A superlatively heat- and chemical-resistant industrial material. Used in a variety of strengthening projects.",
     "rarity": 3
   },
   "31084": {
     "itemId": "31084",
     "name": "Cycloalkane Prefab",
     "iconId": "MTL_SL_HTT",
-    "description": "在合成流程中加入多种优良材料而得到的工业产品，保证透光度的同时大幅提升了强度与抗冲击性，在防护领域具有广阔应用前景。",
-    "usage": "由多种优良材料预加工而成的工业用材。可用于多种强化场合。",
+    "description": "An industrial product arrived at through the introduction of several excellent materials into the synthesis process, preserving luminous transmittance while vastly increasing strength and shock resistance. Prospects are high for its wide adoption in the field of defense.",
+    "usage": "A prefabricated industrial intermediate composed of multiple first-rate materials. Used in a variety of strengthening projects.",
     "rarity": 4
   },
   "32001": {
@@ -757,6 +757,14 @@
     "iconId": "p_char_4093_frston",
     "description": "An instant photo. When confronted with this strange new world, he will photograph anything with research value.",
     "usage": "Used to improve the Potential of Friston-3.",
+    "rarity": 1
+  },
+  "p_char_4136_phonor": {
+    "itemId": "p_char_4136_phonor",
+    "name": "PhonoR-0's Token",
+    "iconId": "p_char_4136_phonor",
+    "description": "A compact Banshee witchcraft unit. Put it to your ear, and you'll hear faint, doleful ballads from the Valley's depths.",
+    "usage": "Used to improve the Potential of PhonoR-0.",
     "rarity": 1
   },
   "p_char_502_nblade": {
@@ -1353,18 +1361,34 @@
   },
   "p_char_4107_vrdant": {
     "itemId": "p_char_4107_vrdant",
-    "name": "维荻的信物",
+    "name": "Verdant's Token",
     "iconId": "p_char_4107_vrdant",
-    "description": "一株看似杂草的小草，对他有特殊的意义。小草的叶片被割出锋利的切口，不用害怕，这不是为了伤害你。",
-    "usage": "用于提升维荻的潜能。",
+    "description": "A stalk of grass one could mistake for a weed at first glance. Holds a special significance to him. A sharp notch has been cut in the grass's blade—don't worry, he's not trying to hurt you.",
+    "usage": "Used to improve the Potential of Verdant.",
     "rarity": 4
   },
   "p_char_4100_caper": {
     "itemId": "p_char_4100_caper",
-    "name": "跃跃的信物",
+    "name": "Caper's Token",
     "iconId": "p_char_4100_caper",
-    "description": "一个圆滚滚、软乎乎的白色绒球，她执意要送给你这份礼物。她的偷笑让你有了不好的预感，但至少现在什么都没发生。",
-    "usage": "用于提升跃跃的潜能。",
+    "description": "A soft, puffy ball of white fur. She insisted that you accept it. The smug smile on her face gives you a bad feeling, but nothing has happened. Yet.",
+    "usage": "Used to improve the Potential of Caper.",
+    "rarity": 4
+  },
+  "p_char_4130_luton": {
+    "itemId": "p_char_4130_luton",
+    "name": "Lutonada's Token",
+    "iconId": "p_char_4130_luton",
+    "description": "A pale yellow handkerchief, the memories within never fading. She already pictures how people will tie one to her gravestone, the way her mother did to her chest the day she said goodbye.",
+    "usage": "Used to improve the Potential of Lutonada.",
+    "rarity": 4
+  },
+  "p_char_4165_ctrail": {
+    "itemId": "p_char_4165_ctrail",
+    "name": "云迹的信物",
+    "iconId": "p_char_4165_ctrail",
+    "description": "一个小小的白色挂件，用来纪念你陪伴她一起完成的飞行实验。她有点在意你会不会随时带在身上。",
+    "usage": "用于提升云迹的潜能。",
     "rarity": 4
   },
   "p_char_128_plosis": {
@@ -2361,18 +2385,18 @@
   },
   "p_char_341_sntlla": {
     "itemId": "p_char_341_sntlla",
-    "name": "寒檀的信物",
+    "name": "Santalla's Token",
     "iconId": "p_char_341_sntlla",
-    "description": "一块雕刻着奇异符号的木块。你记得寒檀告诉过你，符号的意义是“温暖”。",
-    "usage": "用于提升寒檀的潜能。",
+    "description": "A curiously carved marker of wood. You recall Santalla once telling you how it signifies 'warmth.'",
+    "usage": "Used to improve the Potential of Santalla.",
     "rarity": 5
   },
   "p_char_4102_threye": {
     "itemId": "p_char_4102_threye",
-    "name": "凛视的信物",
+    "name": "Valarqvin's Token",
     "iconId": "p_char_4102_threye",
-    "description": "一盏长明灯，发光元件与她的法杖材质相同。她自己能在黑暗中视物，但她对你放心不下。",
-    "usage": "用于提升凛视的潜能。",
+    "description": "An eternal flame, its lighting element of the same material as her staff. She may be able to see in the dark, but she's not sure about you.",
+    "usage": "Used to improve the Potential of Valarqvin.",
     "rarity": 5
   },
   "p_char_4106_bryota": {
@@ -2393,98 +2417,266 @@
   },
   "p_char_4105_almond": {
     "itemId": "p_char_4105_almond",
-    "name": "杏仁的信物",
+    "name": "Almond's Token",
     "iconId": "p_char_4105_almond",
-    "description": "一枚金属制的哨子，用力吹动会发出响亮的哨音，相当提神。“哟嗬——开工啦！”",
-    "usage": "用于提升杏仁的潜能。",
+    "description": "A metal whistle that makes a shrill sound when blown hard. Quite the wake-up call. 'Yoo-hoooo—let's get to work!'",
+    "usage": "Used to improve the Potential of Almond.",
     "rarity": 5
   },
   "p_char_4104_coldst": {
     "itemId": "p_char_4104_coldst",
-    "name": "冰酿的信物",
+    "name": "Coldshot's Token",
     "iconId": "p_char_4104_coldst",
-    "description": "一颗被切割成圆球的冰块，放进杯子里大小刚好。如果想尝尝她的自酿酒，建议加冰稀释，更建议不要尝试。",
-    "usage": "用于提升冰酿的潜能。",
+    "description": "A chunk of ice carved into a globe, a perfect fit for the glass it sits in. To those interested in trying her homebrew, we suggest you take it on the rocks to water it down. Or better yet, DON'T try it.",
+    "usage": "Used to improve the Potential of Coldshot.",
     "rarity": 5
   },
   "p_char_4110_delphn": {
     "itemId": "p_char_4110_delphn",
-    "name": "戴菲恩的信物",
+    "name": "Delphine's Token",
     "iconId": "p_char_4110_delphn",
-    "description": "一枚精致的袖扣。温德米尔出身的军人向来军容整洁，一丝不苟，现在她主动将这枚小信物摘下送给你。",
-    "usage": "用于提升戴菲恩的潜能。",
+    "description": "A refined cufflink. Servicemen of Windermere lineage have always been fastidious about their martial appearances, with not a hair out of place. Now, she's removed this small token of her own accord, and gifted it to you.",
+    "usage": "Used to improve the Potential of Delphine.",
     "rarity": 5
   },
   "p_char_494_vendla": {
     "itemId": "p_char_494_vendla",
-    "name": "刺玫的信物",
+    "name": "Vendela's Token",
     "iconId": "p_char_494_vendla",
-    "description": "一枝枯萎的白玫瑰，米黄色花瓣上浸染了无法抹去的暗红痕迹，记录着她过去生活的某段回忆。过往已逝，她能攥住的并不多。",
-    "usage": "用于提升刺玫的潜能。",
+    "description": "A withered white rose, cream-colored petals stained by irremovable traces of deep red, reflecting certain recollections of her past life. Bygones are bygones, and there is so little she can hold onto.",
+    "usage": "Used to improve the Potential of Vendela.",
     "rarity": 5
   },
   "p_char_499_kaitou": {
     "itemId": "p_char_499_kaitou",
-    "name": "折光的信物",
+    "name": "Diamante's Token",
     "iconId": "p_char_499_kaitou",
-    "description": "一个朴素的宝石放大镜，似乎已经用了许多年。请寻找伪造痕迹，请鉴定我的本质。",
-    "usage": "用于提升折光的潜能。",
+    "description": "A simple gemstone magnifying glass that has seen many years of use. Find the traces of forgery, and identify my true nature.",
+    "usage": "Used to improve the Potential of Diamante.",
     "rarity": 5
   },
   "p_char_4109_baslin": {
     "itemId": "p_char_4109_baslin",
-    "name": "深律的信物",
+    "name": "Bassline's Token",
     "iconId": "p_char_4109_baslin",
-    "description": "一只低音号的喇叭口。深律已经将其擦拭干净，恢复了它往日的光泽。",
-    "usage": "用于提升深律的潜能。",
+    "description": "The mouthpiece of a tuba. Bassline has rubbed it clean and restored its former sheen.",
+    "usage": "Used to improve the Potential of Bassline.",
     "rarity": 5
   },
   "p_char_194_leto": {
     "itemId": "p_char_194_leto",
-    "name": "烈夏的信物",
+    "name": "Leto's Token",
     "iconId": "p_char_194_leto",
-    "description": "一瓶代表家乡味道的蜂蜜饮料。烈夏将它递给你之后，立刻就要与你“干瓶”。",
-    "usage": "用于提升烈夏的潜能。",
+    "description": "A bottle of honey beverage, emblematic of the taste of home. The moment Leto hands you this, she's gonna tell you 'chug.'",
+    "usage": "Used to improve the Potential of Leto.",
     "rarity": 5
   },
   "p_char_4114_harold": {
     "itemId": "p_char_4114_harold",
-    "name": "哈洛德的信物",
+    "name": "Harold's Token",
     "iconId": "p_char_4114_harold",
-    "description": "一瓶精挑细选的香水。从成分到如何使用，哈洛德为你进行了全面的说明，详尽到令人有些厌烦。",
-    "usage": "用于提升哈洛德的潜能。",
+    "description": "A bottle of discerningly selected perfume. From what goes into it to how to use it, Harold has explained each aspect to you in laborious enough detail to drive one up the wall.",
+    "usage": "Used to improve the Potential of Harold.",
     "rarity": 5
   },
   "p_char_4081_warmy": {
     "itemId": "p_char_4081_warmy",
-    "name": "温米的信物",
+    "name": "Warmy's Token",
     "iconId": "p_char_4081_warmy",
-    "description": "一辆用糖纸叠成的小小运载车。你在旅途中给了温米几颗雷姆必拓奶糖，她变了个样子回赠与你。",
-    "usage": "用于提升温米的潜能。",
+    "description": "A tiny little freight truck, made out of a candy wrapper. For each Rim Billy sweet you've given Warmy in your journey, she's transformed it and gifted it back to you.",
+    "usage": "Used to improve the Potential of Warmy.",
     "rarity": 5
   },
   "p_char_4119_wanqin": {
     "itemId": "p_char_4119_wanqin",
-    "name": "万顷的信物",
+    "name": "Wanqing's Token",
     "iconId": "p_char_4119_wanqin",
-    "description": "一个精致的天师仪模型，据说是天师府限量贩售，在炎国孩子间人气很高。“想要拿到真的就要好好念书学习。”在炎国，每个孩子都听过这样的话。",
-    "usage": "用于提升万顷的潜能。",
+    "description": "An exquisite model of a Tianshi apparatus, reportedly sold in limited runs by the Tianshi Bureaus to great fanfare among the children of Yan. Variations of 'you'd better study hard if you want one' ring in the ears of every Yanese child.",
+    "usage": "Used to improve the Potential of Wanqing.",
     "rarity": 5
   },
   "p_char_4122_grabds": {
     "itemId": "p_char_4122_grabds",
-    "name": "小满的信物",
+    "name": "Grain Buds's Token",
     "iconId": "p_char_4122_grabds",
-    "description": "一支手工制作的竹笛，声音清亮，但音准稍稍有些问题。",
-    "usage": "用于提升小满的潜能。",
+    "description": "A handmade bamboo flute. Pure and clear of timbre, but the tuning is mildly suspect.",
+    "usage": "Used to improve the Potential of Grain Buds.",
     "rarity": 5
   },
   "p_char_4023_rfalcn": {
     "itemId": "p_char_4023_rfalcn",
-    "name": "红隼的信物",
+    "name": "Kestrel's Token",
     "iconId": "p_char_4023_rfalcn",
-    "description": "一柄古朴的弯刀。来自萨尔贡的部落战士把你视作战友，将它赠予了你。",
-    "usage": "用于提升红隼的潜能。",
+    "description": "A rustic scimitar. Regarding you as a friend in arms, the tribal warrior of Sargon gifts you this.",
+    "usage": "Used to improve the Potential of Kestrel.",
+    "rarity": 5
+  },
+  "p_char_4124_iana": {
+    "itemId": "p_char_4124_iana",
+    "name": "Iana's Token",
+    "iconId": "p_char_4124_iana",
+    "description": "Contact lenses for everyday use. Does not endow you with the power of Gemini, but things do seem to look a little sharper.",
+    "usage": "Used to improve the Potential of Iana.",
+    "rarity": 5
+  },
+  "p_char_4125_rdoc": {
+    "itemId": "p_char_4125_rdoc",
+    "name": "Doc's Token",
+    "iconId": "p_char_4125_rdoc",
+    "description": "A shotgun shell. He regrets that the conflict had to be resolved that way, but he did not hesitate, not when even more lives were at stake.",
+    "usage": "Used to improve the Potential of Doc.",
+    "rarity": 5
+  },
+  "p_char_4126_fuze": {
+    "itemId": "p_char_4126_fuze",
+    "name": "Fuze's Token",
+    "iconId": "p_char_4126_fuze",
+    "description": "An unusual helmet. You often wonder what his expression is behind the mask.",
+    "usage": "Used to improve the Potential of Fuze.",
+    "rarity": 5
+  },
+  "p_char_446_aroma": {
+    "itemId": "p_char_446_aroma",
+    "name": "Aroma's Token",
+    "iconId": "p_char_446_aroma",
+    "description": "An appointment form for cleaning services, with a list of different scented detergents and their respective use cases. Call her when you need her, and she'll know which one will leave you a happy customer.",
+    "usage": "Used to improve the Potential of Aroma.",
+    "rarity": 5
+  },
+  "p_char_4131_odda": {
+    "itemId": "p_char_4131_odda",
+    "name": "Odda's Token",
+    "iconId": "p_char_4131_odda",
+    "description": "A sweet potato roasted in a pile of fallen leaves. Very hot—take care when holding.",
+    "usage": "Used to improve the Potential of Odda.",
+    "rarity": 5
+  },
+  "p_char_1036_fang2": {
+    "itemId": "p_char_1036_fang2",
+    "name": "Fang the Fire-Sharpened's Token",
+    "iconId": "p_char_1036_fang2",
+    "description": "A big ol' windbreaker. Gotta keep the wind out and stay warm while you're active in the wilderness.",
+    "usage": "Used to improve the Potential of Fang the Fire-Sharpened.",
+    "rarity": 5
+  },
+  "p_char_4079_haini": {
+    "itemId": "p_char_4079_haini",
+    "name": "Lucilla's Token",
+    "iconId": "p_char_4079_haini",
+    "description": "A hand-made coupon. She has so many ideas that she could not decide on what to gift; she makes something on the spot based on her mood at the time when you redeem the coupon.",
+    "usage": "Used to improve the Potential of Lucilla.",
+    "rarity": 5
+  },
+  "p_char_4137_udflow": {
+    "itemId": "p_char_4137_udflow",
+    "name": "Underflow's Token",
+    "iconId": "p_char_4137_udflow",
+    "description": "A simple metal folder that automatically sorts documents based on rules set by the user. Underflow seems to want you to use it for the reports she submits.",
+    "usage": "Used to improve the Potential of Underflow.",
+    "rarity": 5
+  },
+  "p_char_4147_mitm": {
+    "itemId": "p_char_4147_mitm",
+    "name": "渡桥的信物",
+    "iconId": "p_char_4147_mitm",
+    "description": "一张第二份半价的甜品券。渡桥将它送给你时反复叮嘱，用掉这张券时一定要带上他。",
+    "usage": "用于提升渡桥的潜能。",
+    "rarity": 5
+  },
+  "p_char_4151_tinman": {
+    "itemId": "p_char_4151_tinman",
+    "name": "锡人的信物",
+    "iconId": "p_char_4151_tinman",
+    "description": "一枚平平无奇的螺母。你反复比对它和锡人，试图搞清楚它是从哪个部位卸下来的。",
+    "usage": "用于提升锡人的潜能。",
+    "rarity": 5
+  },
+  "p_char_4140_lasher": {
+    "itemId": "p_char_4140_lasher",
+    "name": "衡沙的信物",
+    "iconId": "p_char_4140_lasher",
+    "description": "一只特制的发条羽兽，会捡拾你身边亮闪闪的东西。发条羽兽和它的制作者一样眼光独到，而你的办公室丝毫没有变得整洁。",
+    "usage": "用于提升衡沙的潜能。",
+    "rarity": 5
+  },
+  "p_char_4139_papyrs": {
+    "itemId": "p_char_4139_papyrs",
+    "name": "莎草的信物",
+    "iconId": "p_char_4139_papyrs",
+    "description": "一本贴上了照片的《游历初步规划（第三版）》。她的旅程因和罗德岛的相逢而开始，祝她一路顺风。",
+    "usage": "用于提升莎草的潜能。",
+    "rarity": 5
+  },
+  "p_char_4142_laios": {
+    "itemId": "p_char_4142_laios",
+    "name": "莱欧斯的信物",
+    "iconId": "p_char_4142_laios",
+    "description": "一幅奇怪的画，画的好像是一种混合了各种泰拉生物外形特征的融合物。莱欧斯兴奋地跟你讲解这幅画的时候千万别理他。",
+    "usage": "用于提升莱欧斯的潜能。",
+    "rarity": 5
+  },
+  "p_char_4143_sensi": {
+    "itemId": "p_char_4143_sensi",
+    "name": "森西的信物",
+    "iconId": "p_char_4143_sensi",
+    "description": "一瓶森西随身携带的调味料，是来自那座遥远迷宫的独特口味。",
+    "usage": "用于提升森西的潜能。",
+    "rarity": 5
+  },
+  "p_char_4144_chilc": {
+    "itemId": "p_char_4144_chilc",
+    "name": "齐尔查克的信物",
+    "iconId": "p_char_4144_chilc",
+    "description": "一个小巧的腰包，可以装各种随身物品，外出探险时使用非常方便。",
+    "usage": "用于提升齐尔查克的潜能。",
+    "rarity": 5
+  },
+  "p_char_487_bobb": {
+    "itemId": "p_char_487_bobb",
+    "name": "波卜的信物",
+    "iconId": "p_char_487_bobb",
+    "description": "一个等人高的巨大毛绒玩具，内芯柔软，抱紧后再松开会缓慢回弹。既然生活总有些压力，那就只好寻找自我调节的手段。",
+    "usage": "用于提升波卜的潜能。",
+    "rarity": 5
+  },
+  "p_char_4162_cathy": {
+    "itemId": "p_char_4162_cathy",
+    "name": "凯瑟琳的信物",
+    "iconId": "p_char_4162_cathy",
+    "description": "用生产余料制作的发条小闹钟，海布里区的儿童玩具兼爆炸物定时器——现在它是你的了。",
+    "usage": "用于提升凯瑟琳的潜能。",
+    "rarity": 5
+  },
+  "p_char_4148_philae": {
+    "itemId": "p_char_4148_philae",
+    "name": "菲莱的信物",
+    "iconId": "p_char_4148_philae",
+    "description": "一种静坐冥想时使用的熏香，据说它的原料在生长时会竭尽沙土中的水分。如今它竭尽自己，只为助你思若泉流。",
+    "usage": "用于提升菲莱的潜能。",
+    "rarity": 5
+  },
+  "p_char_4155_talr": {
+    "itemId": "p_char_4155_talr",
+    "name": "裁度的信物",
+    "iconId": "p_char_4155_talr",
+    "description": "一枚坑坑洼洼的银色戒指，似乎曾属于某位家族成员，被当作顶针用了很久。",
+    "usage": "用于提升裁度的潜能。",
+    "rarity": 5
+  },
+  "p_char_4163_rosesa": {
+    "itemId": "p_char_4163_rosesa",
+    "name": "瑰盐的信物",
+    "iconId": "p_char_4163_rosesa",
+    "description": "一个带有奇异芬芳的药草卷，据说点燃后其香气可以凝神静气。但在交给医疗部鉴别之前最好不要擅自使用！",
+    "usage": "用于提升瑰盐的潜能。",
+    "rarity": 5
+  },
+  "p_char_4164_tecno": {
+    "itemId": "p_char_4164_tecno",
+    "name": "特克诺的信物",
+    "iconId": "p_char_4164_tecno",
+    "description": "一个脸颊烧焦的小木偶，圆溜溜的眼睛让你想起特克诺撒娇时的样子。",
+    "usage": "用于提升特克诺的潜能。",
     "rarity": 5
   },
   "p_char_103_angel": {
@@ -2667,7 +2859,7 @@
     "itemId": "p_char_400_weedy",
     "name": "Weedy's Token",
     "iconId": "p_char_400_weedy",
-    "description": "A stack of Bionic Seadragon designs, including a lot of hand-written notes she made herself. 'Even a monkey could produce a new one,' or something like that.",
+    "description": "A sheaf of Bionic Seadragon blueprints. Crammed with helpful annotations from the designer herself, who's written 'even a beckbeast could make one from scratch with this.' And she's probably right.",
     "usage": "Used to improve the Potential of Weedy.",
     "rarity": 6
   },
@@ -2739,7 +2931,7 @@
     "itemId": "p_char_311_mudrok",
     "name": "Mudrock's Token",
     "iconId": "p_char_311_mudrok",
-    "description": "A tiny little rock sculture. It looks like it's 'gazing' at you inquisitively.",
+    "description": "A tiny little rock sculpture. It looks like it's 'gazing' at you inquisitively.",
     "usage": "Used to improve the Potential of Mudrock.",
     "rarity": 6
   },
@@ -3097,10 +3289,10 @@
   },
   "p_char_2012_typhon": {
     "itemId": "p_char_2012_typhon",
-    "name": "提丰的信物",
+    "name": "Typhon's Token",
     "iconId": "p_char_2012_typhon",
-    "description": "一瓶散发着浓郁气味的植物提取液。掩盖文明的气味，融入荒野，成为猎人，成为她的同伴。",
-    "usage": "用于提升提丰的潜能。",
+    "description": "A bottle of pungently aromatic plant extract. A scent to smother civilization. Blend into the wilds; become the hunter, and become her companion.",
+    "usage": "Used to improve the Potential of Typhon.",
     "rarity": 6
   },
   "p_char_1033_swire2": {
@@ -3121,66 +3313,194 @@
   },
   "p_char_1034_jesca2": {
     "itemId": "p_char_1034_jesca2",
-    "name": "涤火杰西卡的信物",
+    "name": "Jessica the Liberated's Token",
     "iconId": "p_char_1034_jesca2",
-    "description": "一副定制激光瞄准镜，适用于夜间精确观瞄。她一直紧盯着前方，从未将视线移开。",
-    "usage": "用于提升涤火杰西卡的潜能。",
+    "description": "A custom-ordered laser scope, used for precision nighttime aiming. She always has her sights set dead ahead, and never looks away.",
+    "usage": "Used to improve the Potential of Jessica the Liberated.",
     "rarity": 6
   },
   "p_char_4088_hodrer": {
     "itemId": "p_char_4088_hodrer",
-    "name": "赫德雷的信物",
+    "name": "Hoederer's Token",
     "iconId": "p_char_4088_hodrer",
-    "description": "一本页角被燎焦的笔记。所记录的不仅有行动的结果，还有从灰烬中抖落的，萨卡兹们的生活。",
-    "usage": "用于提升赫德雷的潜能。",
+    "description": "A notebook with a singed corner. Recorded are not only operation results, but the lives of Sarkaz, sifted from the ashes.",
+    "usage": "Used to improve the Potential of Hoederer.",
     "rarity": 6
   },
   "p_char_4098_vvana": {
     "itemId": "p_char_4098_vvana",
-    "name": "薇薇安娜的信物",
+    "name": "Viviana's Token",
     "iconId": "p_char_4098_vvana",
-    "description": "一枚风干的金盏花书签。与书同行的旅程漫长而遥远，在离席暂别前，让它成为驻足于此的信标吧。",
-    "usage": "用于提升薇薇安娜的潜能。",
+    "description": "A dried marigold bookmark. A book's journey is long and far; let it mark a temporary repose, the place to return to after stepping away.",
+    "usage": "Used to improve the Potential of Viviana.",
     "rarity": 6
   },
   "p_char_245_cello": {
     "itemId": "p_char_245_cello",
-    "name": "塑心的信物",
+    "name": "Virtuosa's Token",
     "iconId": "p_char_245_cello",
-    "description": "一副质地考究的黑色手套。既能安抚琴弦，也能安抚繁杂的心声。",
-    "usage": "用于提升塑心的潜能。",
+    "description": "A pair of black gloves made from fine materials, bringing calm to the instrument's strings, and to the restless sounds of the heart.",
+    "usage": "Used to improve the Potential of Virtuosa.",
     "rarity": 6
   },
   "p_char_4116_blkkgt": {
     "itemId": "p_char_4116_blkkgt",
-    "name": "锏的信物",
+    "name": "Degenbrecher's Token",
     "iconId": "p_char_4116_blkkgt",
-    "description": "一个只能拨通她的号码的通讯终端。和普通的通讯终端在外表上明明没什么区别，却能给人无上的安心感。",
-    "usage": "用于提升锏的潜能。",
+    "description": "A comms terminal that can only reach her number. Doesn't look any different to a regular comms terminal, but provides infinitely more relief.",
+    "usage": "Used to improve the Potential of Degenbrecher.",
     "rarity": 6
   },
   "p_char_4117_ray": {
     "itemId": "p_char_4117_ray",
-    "name": "莱伊的信物",
+    "name": "Ray's Token",
     "iconId": "p_char_4117_ray",
-    "description": "一本看不出制作者意图的剪贴册。里面的“奇异生物照片”似乎也是拼贴合成的图像，要不要告诉她呢？",
-    "usage": "用于提升莱伊的潜能。",
+    "description": "A scrapbook, author's intent indiscernible. The 'cryptid photo' inside seems like a collaged stitch job—should somebody tell her?",
+    "usage": "Used to improve the Potential of Ray.",
     "rarity": 6
   },
   "p_char_2025_shu": {
     "itemId": "p_char_2025_shu",
-    "name": "黍的信物",
+    "name": "Shu's Token",
     "iconId": "p_char_2025_shu",
-    "description": "一张古老的图画，体现了千年前人们对四季轮回原理的想象。时光流转，惟斯不变。",
-    "usage": "用于提升黍的潜能。",
+    "description": "An ancient illustration reflecting the principles on which the seasons revolve, as imagined by those a millennium ago. May time drift on and turn the age; it is this still that stays the same.",
+    "usage": "Used to improve the Potential of Shu.",
     "rarity": 6
   },
   "p_char_4121_zuole": {
     "itemId": "p_char_4121_zuole",
-    "name": "左乐的信物",
+    "name": "Zuo Le's Token",
     "iconId": "p_char_4121_zuole",
-    "description": "一只有炎国特色的手工风筝，上面还沾染着些许林间树叶的气息。它常常因执线的手笨拙的动作而摔落，也总会重新乘风而起。",
-    "usage": "用于提升左乐的潜能。",
+    "description": "A crafted kite of distinctly Yanese make, still carrying the scent of the leaves in the trees. While the clumsy hands of its flier often cause it to fall, it will always come to rise again on the wind.",
+    "usage": "Used to improve the Potential of Zuo Le.",
+    "rarity": 6
+  },
+  "p_char_4123_ela": {
+    "itemId": "p_char_4123_ela",
+    "name": "Ela's Token",
+    "iconId": "p_char_4123_ela",
+    "description": "A set of goggles and noise-canceling earphones. She was not sure whether you needed the goggles at one point.",
+    "usage": "Used to improve the Potential of Ela.",
+    "rarity": 6
+  },
+  "p_char_4132_ascln": {
+    "itemId": "p_char_4132_ascln",
+    "name": "Ascalon's Token",
+    "iconId": "p_char_4132_ascln",
+    "description": "A tiny glass phial filled with smoke. Shatter with your fingers when danger looms, and Ascalon will be by your side.",
+    "usage": "Used to improve the Potential of Ascalon.",
+    "rarity": 6
+  },
+  "p_char_1035_wisdel": {
+    "itemId": "p_char_1035_wisdel",
+    "name": "Wiš'adel's Token",
+    "iconId": "p_char_1035_wisdel",
+    "description": "A grenade with a smiley face scrawled on. You have no clue when this appeared in your hand. Okay, optimism: maybe it's just a beautiful firework waiting to blossom.",
+    "usage": "Used to improve the Potential of Wiš'adel.",
+    "rarity": 6
+  },
+  "p_char_4133_logos": {
+    "itemId": "p_char_4133_logos",
+    "name": "Logos's Token",
+    "iconId": "p_char_4133_logos",
+    "description": "A 1:1 scale replica bone pen. Useless for incanting. Very useful for copying down Rhodes Island's list of incantation victims.",
+    "usage": "Used to improve the Potential of Logos.",
+    "rarity": 6
+  },
+  "p_char_4134_cetsyr": {
+    "itemId": "p_char_4134_cetsyr",
+    "name": "Civilight Eterna's Token",
+    "iconId": "p_char_4134_cetsyr",
+    "description": "A promise to continue journeying with Rhodes Island; the only thing she can give you now. You know she'll keep her word.",
+    "usage": "Used to improve the Potential of Civilight Eterna.",
+    "rarity": 6
+  },
+  "p_char_4145_ulpia": {
+    "itemId": "p_char_4145_ulpia",
+    "name": "Ulpianus's Token",
+    "iconId": "p_char_4145_ulpia",
+    "description": "A rock taken from a reef that has been sculpted into the shape of an anchor. The patterns etched upon it seem to represent musical notes.",
+    "usage": "Used to improve the Potential of Ulpianus.",
+    "rarity": 6
+  },
+  "p_char_4146_nymph": {
+    "itemId": "p_char_4146_nymph",
+    "name": "妮芙的信物",
+    "iconId": "p_char_4146_nymph",
+    "description": "一对做成心形的印章，能够印出复杂的花纹。按照妮芙的话说，这个礼物叫作“心心相”印。",
+    "usage": "用于提升妮芙的潜能。",
+    "rarity": 6
+  },
+  "p_char_4138_narant": {
+    "itemId": "p_char_4138_narant",
+    "name": "娜仁图亚的信物",
+    "iconId": "p_char_4138_narant",
+    "description": "一管自制的安眠药水，源自复杂的雨林植被和沙盗丰富的野外生存经验。她真心希望你能一直在她身边做她的好伙伴，还希望你不会因她而噩梦连连。",
+    "usage": "用于提升娜仁图亚的潜能。",
+    "rarity": 6
+  },
+  "p_char_4058_pepe": {
+    "itemId": "p_char_4058_pepe",
+    "name": "佩佩的信物",
+    "iconId": "p_char_4058_pepe",
+    "description": "一枚价值不菲的莲花胸针，请不要尝试卖掉它，它象征的意义比它的价值更加珍贵。",
+    "usage": "用于提升佩佩的潜能。",
+    "rarity": 6
+  },
+  "p_char_4141_marcil": {
+    "itemId": "p_char_4141_marcil",
+    "name": "玛露西尔的信物",
+    "iconId": "p_char_4141_marcil",
+    "description": "一本魔法书，里面记录着不少源石技艺和魔法融合的想法，似乎都能产生意想不到的效用。",
+    "usage": "用于提升玛露西尔的潜能。",
+    "rarity": 6
+  },
+  "p_char_1019_siege2": {
+    "itemId": "p_char_1019_siege2",
+    "name": "维娜·维多利亚的信物",
+    "iconId": "p_char_1019_siege2",
+    "description": "一块纪念罗德岛的铭牌，你好像在伦蒂尼姆重建后的街角见过，上面的铆钉也似曾相识。她说，铆钉一旦固定，就再也卸不下来了。",
+    "usage": "用于提升维娜·维多利亚的潜能。",
+    "rarity": 6
+  },
+  "p_char_1038_whitw2": {
+    "itemId": "p_char_1038_whitw2",
+    "name": "荒芜拉普兰德的信物",
+    "iconId": "p_char_1038_whitw2",
+    "description": "一封异常精美的紫色邀请函，角落潦草画着一只白狼和一串葡萄。她邀请你参加一场狂欢，但无人知晓主题是什么。",
+    "usage": "用于提升荒芜拉普兰德的潜能。",
+    "rarity": 6
+  },
+  "p_char_1502_crosly": {
+    "itemId": "p_char_1502_crosly",
+    "name": "弑君者的信物",
+    "iconId": "p_char_1502_crosly",
+    "description": "一副密闭性良好的黑色战术口罩。“我的面目隐匿，我的愤怒昭显。”",
+    "usage": "用于提升弑君者的潜能。",
+    "rarity": 6
+  },
+  "p_char_4026_vulpis": {
+    "itemId": "p_char_4026_vulpis",
+    "name": "忍冬的信物",
+    "iconId": "p_char_4026_vulpis",
+    "description": "一串手工制作的流苏挂饰，不知道是叙拉古还是东国的习俗，总之忍冬将它交给你以表尊敬和谢意。",
+    "usage": "用于提升忍冬的潜能。",
+    "rarity": 6
+  },
+  "p_char_4011_lessng": {
+    "itemId": "p_char_4011_lessng",
+    "name": "止颂的信物",
+    "iconId": "p_char_4011_lessng",
+    "description": "一个布带系成的、造型特殊的绳结。连接信任的两端，连接过去与未来。",
+    "usage": "用于提升止颂的潜能。",
+    "rarity": 6
+  },
+  "p_char_1039_thorn2": {
+    "itemId": "p_char_1039_thorn2",
+    "name": "引星棘刺的信物",
+    "iconId": "p_char_1039_thorn2",
+    "description": "一缕纤细的心相原质，悄然汇入你的体内。待棘刺将它收回时，他便能清晰地知晓你身体状况的变化。",
+    "usage": "用于提升引星棘刺的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
@@ -3663,6 +3983,14 @@
     "usage": "Used to improve the Potential of Humus.",
     "rarity": 4
   },
+  "class_p_char_4107_vrdant": {
+    "itemId": "class_p_char_4107_vrdant",
+    "name": "Verdant's Kernel Token",
+    "iconId": "class_p_char_4107_vrdant",
+    "description": "A stalk of grass one could mistake for a weed at first glance. Holds a special significance to him. A sharp notch has been cut in the grass's blade—don't worry, he's not trying to hurt you.",
+    "usage": "Used to improve the Potential of Verdant.",
+    "rarity": 4
+  },
   "class_p_char_128_plosis": {
     "itemId": "class_p_char_128_plosis",
     "name": "Ptilopsis's Kernel Token",
@@ -3967,6 +4295,134 @@
     "usage": "Used to improve the Potential of Shamare.",
     "rarity": 5
   },
+  "class_p_char_401_elysm": {
+    "itemId": "class_p_char_401_elysm",
+    "name": "Elysium's Kernel Token",
+    "iconId": "class_p_char_401_elysm",
+    "description": "A complex and hand-drawn topographic map. If you can't make any sense of it, perhaps Elysium would be glad to lead the way.",
+    "usage": "Used to improve the Potential of Elysium.",
+    "rarity": 5
+  },
+  "class_p_char_378_asbest": {
+    "itemId": "class_p_char_378_asbest",
+    "name": "Asbestos's Kernel Token",
+    "iconId": "class_p_char_378_asbest",
+    "description": "A spare spelunking suit. She seems to be implying that if you have the time, you're free to take a walk with her.",
+    "usage": "Used to improve the Potential of Asbestos.",
+    "rarity": 5
+  },
+  "class_p_char_343_tknogi": {
+    "itemId": "class_p_char_343_tknogi",
+    "name": "Tsukinogi's Kernel Token",
+    "iconId": "class_p_char_343_tknogi",
+    "description": "A protective charm made by Tsukinogi. Rumors have it that carrying it calms the spirit and dispels the fear of the darkest nights.",
+    "usage": "Used to improve the Potential of Tsukinogi.",
+    "rarity": 5
+  },
+  "class_p_char_373_lionhd": {
+    "itemId": "class_p_char_373_lionhd",
+    "name": "Leonhardt's Kernel Token",
+    "iconId": "class_p_char_373_lionhd",
+    "description": "A pair of trendy limited-edition sneakers. It seems to include a special auxiliary design to accommodate one of Victoria's popular sports, with technical support from Rim Billiton.",
+    "usage": "Used to improve the Potential of Leonhardt.",
+    "rarity": 5
+  },
+  "class_p_char_294_ayer": {
+    "itemId": "class_p_char_294_ayer",
+    "name": "Ayerscarpe's Kernel Token",
+    "iconId": "class_p_char_294_ayer",
+    "description": "A self-authored reconnaissance and counter-reconnaissance manual. His thought process was, 'it's best to keep yourself protected under any circumstance.'",
+    "usage": "Used to improve the Potential of Ayerscarpe.",
+    "rarity": 5
+  },
+  "class_p_char_344_beewax": {
+    "itemId": "class_p_char_344_beewax",
+    "name": "Beeswax's Kernel Token",
+    "iconId": "class_p_char_344_beewax",
+    "description": "A full set of horn care supplies, including essential oils, soft brushes, and sandpaper strips. Custom-made by desert tribes, incredibly expensive and hard to find, you can just use it for a manicure - as long as you can stomach the cost.",
+    "usage": "Used to improve the Potential of Beeswax.",
+    "rarity": 5
+  },
+  "class_p_char_349_chiave": {
+    "itemId": "class_p_char_349_chiave",
+    "name": "Chiave's Kernel Token",
+    "iconId": "class_p_char_349_chiave",
+    "description": "A badge that he made himself, representing the 'Chiave Gang.' Your name is also engraved upon it.",
+    "usage": "Used to improve the Potential of Chiave.",
+    "rarity": 5
+  },
+  "class_p_char_218_cuttle": {
+    "itemId": "class_p_char_218_cuttle",
+    "name": "Andreana's Kernel Token",
+    "iconId": "class_p_char_218_cuttle",
+    "description": "A handmade model gun, painstakingly crafted by the Operator herself.",
+    "usage": "Used to improve the Potential of Andreana.",
+    "rarity": 5
+  },
+  "class_p_char_415_flint": {
+    "itemId": "class_p_char_415_flint",
+    "name": "Flint's Kernel Token",
+    "iconId": "class_p_char_415_flint",
+    "description": "A sharp stone dagger made by Flint herself, normally used by the owner to carve roasted meat. While useful for a variety of outdoor environments, be careful not to cut yourself!",
+    "usage": "Used to improve the Potential of Flint.",
+    "rarity": 5
+  },
+  "class_p_char_365_aprl": {
+    "itemId": "class_p_char_365_aprl",
+    "name": "April's Kernel Token",
+    "iconId": "class_p_char_365_aprl",
+    "description": "An album including the song 'April,' still freshly packaged and tied up in a lovely ribbon.",
+    "usage": "Used to improve the Potential of April.",
+    "rarity": 5
+  },
+  "class_p_char_346_aosta": {
+    "itemId": "class_p_char_346_aosta",
+    "name": "Aosta's Kernel Token",
+    "iconId": "class_p_char_346_aosta",
+    "description": "A Siracusan-style fedora handcrafted by the man himself. The fabric used in its construction is of very high quality, a clear example of his fine attention to detail.",
+    "usage": "Used to improve the Potential of Aosta.",
+    "rarity": 5
+  },
+  "class_p_char_436_whispr": {
+    "itemId": "class_p_char_436_whispr",
+    "name": "Whisperain's Kernel Token",
+    "iconId": "class_p_char_436_whispr",
+    "description": "An old-fashioned cinema ticket stub. The proof of a single memory. The ink on it falling off, old and yellowing, becoming indistinct with age.",
+    "usage": "Used to improve the Potential of Whisperain.",
+    "rarity": 5
+  },
+  "class_p_char_214_kafka": {
+    "itemId": "class_p_char_214_kafka",
+    "name": "Kafka's Kernel Token",
+    "iconId": "class_p_char_214_kafka",
+    "description": "An assiduously cared-for bonsai. Attached is a card, upon which is written: 'I buried a knife in here. It can peel apples, if you ever need.'",
+    "usage": "Used to improve the Potential of Kafka.",
+    "rarity": 5
+  },
+  "class_p_char_338_iris": {
+    "itemId": "class_p_char_338_iris",
+    "name": "Iris's Kernel Token",
+    "iconId": "class_p_char_338_iris",
+    "description": "A manually bound book of fairytales. A collection never released to the market, each illustration hand-drawn by its creator.",
+    "usage": "Used to improve the Potential of Iris.",
+    "rarity": 5
+  },
+  "class_p_char_455_nothin": {
+    "itemId": "class_p_char_455_nothin",
+    "name": "Mr. Nothing's Kernel Token",
+    "iconId": "class_p_char_455_nothin",
+    "description": "A paper fan, its frame made of special materials, on it written 'nonexistent and nothing.'",
+    "usage": "Used to improve the Potential of Mr. Nothing.",
+    "rarity": 5
+  },
+  "class_p_char_363_toddi": {
+    "itemId": "class_p_char_363_toddi",
+    "name": "Toddifons's Kernel Token",
+    "iconId": "class_p_char_363_toddi",
+    "description": "A delicately cut icosahedral crystal gemstone. By her logic, things you slough off onto others in passing can't be called gifts.",
+    "usage": "Used to improve the Potential of Toddifons.",
+    "rarity": 5
+  },
   "class_p_char_103_angel": {
     "itemId": "class_p_char_103_angel",
     "name": "Exusiai's Kernel Token",
@@ -4133,6 +4589,102 @@
     "iconId": "class_p_char_250_phatom",
     "description": "An old music score. The notes upon the manuscript have long been blurred by the passage of time.",
     "usage": "Used to improve the Potential of Phantom.",
+    "rarity": 6
+  },
+  "class_p_char_400_weedy": {
+    "itemId": "class_p_char_400_weedy",
+    "name": "Weedy's Kernel Token",
+    "iconId": "class_p_char_400_weedy",
+    "description": "A sheaf of Bionic Seadragon blueprints. Crammed with helpful annotations from the designer herself, who's written 'even a beckbeast could make one from scratch with this.' And she's probably right.",
+    "usage": "Used to improve the Potential of Weedy.",
+    "rarity": 6
+  },
+  "class_p_char_197_poca": {
+    "itemId": "class_p_char_197_poca",
+    "name": "Rosa's Kernel Token",
+    "iconId": "class_p_char_197_poca",
+    "description": "A paper cutter. She solemnly handed it to you, but you're not sure why.",
+    "usage": "Used to improve the Potential of Rosa.",
+    "rarity": 6
+  },
+  "class_p_char_358_lisa": {
+    "itemId": "class_p_char_358_lisa",
+    "name": "Suzuran's Kernel Token",
+    "iconId": "class_p_char_358_lisa",
+    "description": "A handful of lily-of-the-valley flowers. When Lisa was asked what she had in mind for her code name, she happened to have her arms around a pot filled with these flowers.",
+    "usage": "Used to improve the Potential of Suzuran.",
+    "rarity": 6
+  },
+  "class_p_char_293_thorns": {
+    "itemId": "class_p_char_293_thorns",
+    "name": "Thorns's Kernel Token",
+    "iconId": "class_p_char_293_thorns",
+    "description": "A small vial of medicinal fluid, a reminder of some of his earliest work; Danger, use with caution.",
+    "usage": "Used to improve the Potential of Thorns.",
+    "rarity": 6
+  },
+  "class_p_char_416_zumama": {
+    "itemId": "class_p_char_416_zumama",
+    "name": "Eunectes's Kernel Token",
+    "iconId": "class_p_char_416_zumama",
+    "description": "A wrench that seems to been used for a long time. Useful for mechanical manufacturing, or self-defense in a pinch.",
+    "usage": "Used to improve the Potential of Eunectes.",
+    "rarity": 6
+  },
+  "class_p_char_350_surtr": {
+    "itemId": "class_p_char_350_surtr",
+    "name": "Surtr's Kernel Token",
+    "iconId": "class_p_char_350_surtr",
+    "description": "A photocopied document filled with place names, several of which have been crossed out in red. If you have time, you can help scout these locations.",
+    "usage": "Used to improve the Potential of Surtr.",
+    "rarity": 6
+  },
+  "class_p_char_423_blemsh": {
+    "itemId": "class_p_char_423_blemsh",
+    "name": "Blemishine's Kernel Token",
+    "iconId": "class_p_char_423_blemsh",
+    "description": "A book of a knight's tale; an absurd legend, legendary absurdity.",
+    "usage": "Used to improve the Potential of Blemishine.",
+    "rarity": 6
+  },
+  "class_p_char_311_mudrok": {
+    "itemId": "class_p_char_311_mudrok",
+    "name": "Mudrock's Kernel Token",
+    "iconId": "class_p_char_311_mudrok",
+    "description": "A tiny little rock sculpture. It looks like it's 'gazing' at you inquisitively.",
+    "usage": "Used to improve the Potential of Mudrock.",
+    "rarity": 6
+  },
+  "class_p_char_264_f12yin": {
+    "itemId": "class_p_char_264_f12yin",
+    "name": "Mountain's Kernel Token",
+    "iconId": "class_p_char_264_f12yin",
+    "description": "A fine grape wine, all wrapped up. Its place of origin appears to be a very famed Columbian winery; we don't know by what means he obtained it.",
+    "usage": "Used to improve the Potential of Mountain.",
+    "rarity": 6
+  },
+  "class_p_char_332_archet": {
+    "itemId": "class_p_char_332_archet",
+    "name": "Archetto's Kernel Token",
+    "iconId": "class_p_char_332_archet",
+    "description": "A Monastery limited commemoration badge. Meant to be bought, but just call this one a gift of friendship!",
+    "usage": "Used to improve the Potential of Archetto.",
+    "rarity": 6
+  },
+  "class_p_char_362_saga": {
+    "itemId": "class_p_char_362_saga",
+    "name": "Saga's Kernel Token",
+    "iconId": "class_p_char_362_saga",
+    "description": "A wooden fish she carved by herself. When on edge, just chant the sutras with her.",
+    "usage": "Used to improve the Potential of Saga.",
+    "rarity": 6
+  },
+  "class_p_char_472_pasngr": {
+    "itemId": "class_p_char_472_pasngr",
+    "name": "Passenger's Kernel Token",
+    "iconId": "class_p_char_472_pasngr",
+    "description": "An ancient Sargon gold coin. Sent to and fro by the long hands of fate, it now belongs to you.",
+    "usage": "Used to improve the Potential of Passenger.",
     "rarity": 6
   }
 }
