@@ -27,7 +27,7 @@ const CharacterSplash: React.FC = () => {
 	return (
 		<Tab.Group
 			as="div"
-			className="rounded-l-lg bg-neutral-800"
+			className="rounded-l-lg"
 			selectedIndex={selectedIndex}
 			onChange={setSelectedIndex}
 		>
