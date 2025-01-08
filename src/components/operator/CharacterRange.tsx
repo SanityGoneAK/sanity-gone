@@ -85,7 +85,8 @@ const CharacterRange: React.FC<
 							<td
 								key={colIndex}
 								className={cx(
-									"box-border h-4 w-4 rounded-sm sm:h-3 sm:w-3",
+									"box-border h-4 w-4 rounded sm:h-4 sm:w-4", // was formerly sm:h-4 which means everything above small screen size has wider cells.
+									// this was probably not what we wanted, so i just made them the same thing
 									grid[rowIndex][colIndex] ===
 										GridCell.Operator && "bg-neutral-50",
 									grid[rowIndex][colIndex] ===

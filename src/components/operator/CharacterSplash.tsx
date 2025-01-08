@@ -31,7 +31,7 @@ const CharacterSplash: React.FC = () => {
 			selectedIndex={selectedIndex}
 			onChange={setSelectedIndex}
 		>
-			<Tab.List className="absolute z-10 flex overflow-hidden rounded-br-lg bg-neutral-700 sm:relative sm:z-auto sm:rounded-br-none sm:rounded-tl-lg">
+			<Tab.List className="absolute z-10 flex flex-col rounded overflow-hidden">
 				{skins.map((skin, i) => {
 					return (
 						<Tab
@@ -41,7 +41,7 @@ const CharacterSplash: React.FC = () => {
 								"outline-none [html[data-focus-source=key]_&:focus-visible]:-outline-offset-2 [html[data-focus-source=key]_&:focus-visible]:outline-blue-light",
 								"last:rounded-br-lg sm:last:rounded-br-none",
 								i === selectedIndex
-									? ` bg-neutral-50 !opacity-100 after:absolute after:bottom-0 after:w-full after:bg-neutral-50 sm:bg-neutral-500 sm:after:h-1`
+									? ` bg-neutral-50 !opacity-100` //  after:absolute after:bottom-0 after:w-full after:bg-neutral-50 sm:bg-neutral-500 sm:after:h-1
 									: ""
 							)}
 							key={skin.skinId}
@@ -61,10 +61,10 @@ const CharacterSplash: React.FC = () => {
 						<Tab.Panel
 							id={`${skin.skinId}-tabpanel`}
 							className={"relative"}
-							style={{
-								background:
-									"linear-gradient(270deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.1) 12.34%, rgba(0, 0, 0, 0) 32.5%)",
-							}}
+							// style={{
+							// 	background:
+							// 		"linear-gradient(270deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.1) 12.34%, rgba(0, 0, 0, 0) 32.5%)",
+							// }}    no longer needed - do not need gradient on right to transition to statblock anymore
 							key={skin.skinId}
 						>
 							{/* TODO: This image causes layout shift of the label when loading.

@@ -102,7 +102,7 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 					},
 				}}
 				slots={{
-					root: "input",
+					root: "div",
 				}}
 				onChange={(_, value) => onChange(value as number)}
 				min={1}

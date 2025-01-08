@@ -60,10 +60,10 @@ const relatedOperators = getRelatedCharacter(operator);
 </script>
 
 <Layout title={operator.name}>
-	<div class="w-full max-w-[1280px] mx-auto flex flex-col">
-		<div class="hidden justify-between mb-6 sm:flex">
-			<ul class="p-0 m-0 flex items-center list-none gap-3 flex-grow">
-				<li class="text-base font-normal leading-normal flex-none">
+	<div class="w-full mx-auto flex gap-4 ">
+		<div class="flex flex-col gap-4">
+			<ul class="p-0 m-0 flex items-center list-none gap-3 flex-none">
+				<li class="text-base font-normal leading-normal">
 					<a
 						href={getRelativeLocaleUrl(locale, "/operators")}
 						class="text-blue hover:underline">Operators</a
@@ -104,47 +104,48 @@ const relatedOperators = getRelatedCharacter(operator);
 						})
 				}
 			</ul>
-			<!-- TODO: Make this a component? -->
-			<a
-				class="flex justify-center py-2 px-3 items-center gap-2 relative bg-gray rounded-[20px] border-2 border-transparent border-solid"
-				style="background: linear-gradient(180deg, #14141B 0%, #191920 100%) padding-box, linear-gradient(180deg, #FED874 0%, #FFC397 100%) border-box;"
-				href="#"
-				><span
-					class="leading-tight text-base text-transparent font-semibold bg-gradient-to-b from-[#FED874] to-orange-light bg-clip-text"
-					>Operator Guide</span
-				>
-				<svg
-					width="16"
-					height="16"
-					viewBox="0 0 16 16"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						d="M8 0C8 4.41828 4.41828 8 0 8C4.41828 8 8 11.5817 8 16C8 11.5817 11.5817 8 16 8C11.5817 8 8 4.41828 8 0Z"
-						fill="url(#paint0_linear_4270_17189)"></path>
-					<defs>
-						<linearGradient
-							id="paint0_linear_4270_17189"
-							x1="8"
-							y1="0"
-							x2="8"
-							y2="16"
-							gradientUnits="userSpaceOnUse"
-						>
-							<stop stop-color="#FED874"></stop>
-							<stop offset="1" stop-color="#FFC397"></stop>
-						</linearGradient>
-					</defs>
-				</svg>
-			</a>
-		</div>
-		<div
-			class="flex flex-col xl:flex-row rounded-lg border-neutral-400 sm:border"
-		>
 			<section class="flex-1">
 				<CharacterSplash client:visible />
 			</section>
+			{/* below lies the remains of our old Operator Guide component */}
+			<!--&lt;!&ndash; TODO: Make this a component? &ndash;&gt;-->
+			<!--<a-->
+			<!--	class="flex justify-center py-2 px-3 items-center gap-2 relative bg-gray rounded-[20px] border-2 border-transparent border-solid"-->
+			<!--	style="background: linear-gradient(180deg, #14141B 0%, #191920 100%) padding-box, linear-gradient(180deg, #FED874 0%, #FFC397 100%) border-box;"-->
+			<!--	href="#"-->
+			<!--	><span-->
+			<!--		class="leading-tight text-base text-transparent font-semibold bg-gradient-to-b from-[#FED874] to-orange-light bg-clip-text"-->
+			<!--		>Operator Guide</span-->
+			<!--	>-->
+			<!--	<svg-->
+			<!--		width="16"-->
+			<!--		height="16"-->
+			<!--		viewBox="0 0 16 16"-->
+			<!--		fill="none"-->
+			<!--		xmlns="http://www.w3.org/2000/svg"-->
+			<!--	>-->
+			<!--		<path-->
+			<!--			d="M8 0C8 4.41828 4.41828 8 0 8C4.41828 8 8 11.5817 8 16C8 11.5817 11.5817 8 16 8C11.5817 8 8 4.41828 8 0Z"-->
+			<!--			fill="url(#paint0_linear_4270_17189)"></path>-->
+			<!--		<defs>-->
+			<!--			<linearGradient-->
+			<!--				id="paint0_linear_4270_17189"-->
+			<!--				x1="8"-->
+			<!--				y1="0"-->
+			<!--				x2="8"-->
+			<!--				y2="16"-->
+			<!--				gradientUnits="userSpaceOnUse"-->
+			<!--			>-->
+			<!--				<stop stop-color="#FED874"></stop>-->
+			<!--				<stop offset="1" stop-color="#FFC397"></stop>-->
+			<!--			</linearGradient>-->
+			<!--		</defs>-->
+			<!--	</svg>-->
+			<!--</a>-->
+		</div>
+		<div
+			class="flex flex-col xl:flex-row rounded flex-none w-[590px]"
+		>
 			<section
 				class="flex-1 bg-gradient-to-b from-neutral-800 to-neutral-700 rounded-lg"
 			>
