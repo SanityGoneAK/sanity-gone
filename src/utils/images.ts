@@ -41,7 +41,7 @@ export const tokenImage = (id: string): string =>
 	)}.webp`;
 
 export const operatorClassIcon = (operatorClass: string): string =>
-	`${baseURL}/arts/icon_profession_${operatorClass.toLocaleLowerCase()}_large.webp`;
+	`${baseURL}/unknown/classsvg/icon-${operatorClass.toLocaleLowerCase()}.svg`;
 
 export const operatorBranchIcon = (subProfessionId: string): string =>
 	`${baseURL}/torappu/dynamicassets/arts/ui/subprofessionicon/sub_${subProfessionId}_icon.webp`;
