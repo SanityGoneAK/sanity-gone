@@ -212,23 +212,32 @@ const OperatorModulesPanel: React.FC = () => {
 						minLevel={getMinLevel(operator.rarity)}
 					/>
 				</div>
-				<div className="flex flex-col gap-4">
-					<h2 className="text-lg font-semibold leading-[23px]">
-						Unlock Missions
-					</h2>
-					<div>
-						<h3 className="mb-1 text-sm leading-[14px] text-neutral-200">
-							Mission 1
-						</h3>
-						<p>{module.missionList[0].description}</p>
+				{/* I did not know this was a possibility. See Kal'tsit's module A (uniequip_004_kalts), it has no
+						missions listed. I don't know how / why.*/}
+				{module.missionList && module.missionList.length > 0 && (
+					<div className="flex flex-col gap-4">
+						<h2 className="text-lg font-semibold leading-[23px]">
+							Unlock Missions
+						</h2>
+						<div>
+							<h3 className="mb-1 text-sm leading-[14px] text-neutral-200">
+								Mission 1
+							</h3>
+
+							<p>
+								{module.missionList[0].description}
+							</p>
+						</div>
+						<div>
+							<h3 className="mb-1 text-sm leading-[14px] text-neutral-200">
+								Mission 2
+							</h3>
+							<p>
+								{module.missionList[1].description}
+							</p>
+						</div>
 					</div>
-					<div>
-						<h3 className="mb-1 text-sm leading-[14px] text-neutral-200">
-							Mission 2
-						</h3>
-						<p>{module.missionList[1].description}</p>
-					</div>
-				</div>
+				)}
 			</div>
 		</div>
 	);
