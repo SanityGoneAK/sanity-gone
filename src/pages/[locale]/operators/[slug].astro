@@ -17,6 +17,9 @@ import { getPathByLocale, getRelativeLocaleUrl } from "astro:i18n";
 import { defaultLang } from "~/i18n/languages";
 import { operatorSplash } from "~/utils/images.ts";
 
+import OperatorInfoIcon from "~/components/icons/OperatorInfoIcon.tsx";
+import GuideIcon from "~/components/icons/GuideIcon.tsx";
+
 // console.log(Object.entries(operatorsJson)[0]);
 //
 // export function getStaticPaths() {
@@ -157,6 +160,22 @@ const e2skin = operator.skins.filter(
 				class="flex-1 bg-gradient-to-b from-neutral-800 to-neutral-700 rounded-lg"
 			>
 				<OperatorInfo operator={operator} />
+				{/* switch to the guide here */}
+				{/* I don't know how we want to handle switching between the two
+				  so they're just styled buttons for now that don't do anything. We might
+				  want to change to Tabs or something later */}
+				<div class="pt-4 pb-2 px-5 bg-neutral-600/[.66]">
+					<div class="flex items-center bg-neutral-600 rounded-md h-8">
+						<button class="flex-1 flex items-center justify-center gap-2 h-8 bg-neutral-500 rounded font-semibold">
+							<OperatorInfoIcon/>
+							<span>Operator Info</span>
+						</button>
+						<div class="flex-1 flex items-center justify-center gap-2">
+							<GuideIcon/>
+							<span>Guide</span>
+						</div>
+					</div>
+				</div>
 				<OperatorTabs client:visible />
 			</section>
 		</div>
