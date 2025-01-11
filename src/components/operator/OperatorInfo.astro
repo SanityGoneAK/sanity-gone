@@ -22,15 +22,17 @@ const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 <div
 	class="grid grid-rows-[auto_auto] gap-y-2 bg-neutral-600/[.66] sm:rounded-t"
 >
-	<div class="flex items-center w-full gap-1 px-5 h-6 sm:rounded-t bg-orange/[.08]">
+	<div
+		class="flex items-center w-full gap-1 px-5 h-6 sm:rounded-t bg-orange/[.08]"
+	>
 		<span class="visually-hidden">Rarity: {rarity}</span>
 		<span class="grid grid-flow-col">
-				{
-					Array(rarity)
-						.fill(null)
-						.map(() => <StarIcon rarity={rarity} class="h-3"/>)
-				}
-			</span>
+			{
+				Array(rarity)
+					.fill(null)
+					.map(() => <StarIcon className="h-3" rarity={rarity} />)
+			}
+		</span>
 		{
 			operator.isLimited && (
 				<span
@@ -48,11 +50,11 @@ const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 					)}
 					style={
 						// tailwind doesn't appear to have this as a predefined class
-							"font-height: 10px; line-height: 12px;"
+						"font-height: 10px; line-height: 12px;"
 					}
 				>
-						Limited
-					</span>
+					Limited
+				</span>
 			)
 		}
 	</div>
@@ -62,8 +64,8 @@ const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 			{
 				alterName && (
 					<span class="text-neutral-200 font-normal">
-					The {alterName}
-				</span>
+						The {alterName}
+					</span>
 				)
 			}
 		</h1>
@@ -84,9 +86,12 @@ const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 				<OperatorBranchAndTrait client:idle />
 				<InterpunctSpacer />
 				<span class="text-neutral-100"
-				>{
-					getMeleeOrRangedOrBoth(operator.position, operator.description)
-				}</span
+					>{
+						getMeleeOrRangedOrBoth(
+							operator.position,
+							operator.description
+						)
+					}</span
 				>
 			</div>
 		</div>
