@@ -1,4 +1,5 @@
 import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json";
+import { spCharGroups } from "./ArknightsGameData/zh_CN/gamedata/excel/char_meta_table.json"
 
 const alterNameRegex = /(\S+)\s+the\s+/i;
 
@@ -21,16 +22,14 @@ export function getAlterMapping() {
 		([_, char]) => char.profession !== "TOKEN" && char.profession !== "TRAP"
 	);
 	operators.forEach(([opId, op]) => {
-		const match = op.appellation.match(alterNameRegex);
-		if (match) {
-			const existing = nameToAlters[match[1]];
-			if (existing) {
-				throw new Error(
-					`Duplicate alter id?? Found: [${existing}, ${opId}]`
-				);
-			}
-			nameToAlters[match[1]] = opId;
+		if (!spCharGroups[opId]) {
+			const result = Object.entries(spCharGroups).find(
+				([, alterIdsList]) => alterIdsList.includes(opId),
+			);
+			const original = operators.find(([originalOperatorId, _]) => originalOperatorId === result[0]);
+			nameToAlters[original[1].appellation] = opId;
 		}
+
 		nameToId[op.appellation] = opId;
 	});
 
