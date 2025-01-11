@@ -20,69 +20,75 @@ const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 ---
 
 <div
-	class="grid pt-6 pb-4 px-6 grid-rows-[auto_auto] gap-y-2 bg-neutral-600/[.66] rounded-tr-lg"
+	class="grid grid-rows-[auto_auto] gap-y-2 bg-neutral-600/[.66] sm:rounded-t"
 >
-	<h1 class="font-serif text-[40px] leading-none font-bold">
-		{baseName}
-		{
-			alterName && (
-				<span class="text-neutral-200 font-normal">
-					The {alterName}
-				</span>
-			)
-		}
-	</h1>
-	<div
-		class="grid grid-flow-row sm:grid-flow-col auto-cols-max auto-rows-max gap-3 items-center justify-start"
-	>
-		<div class="grid grid-flow-col items-center gap-x-2 w-fit">
-			<span class="visually-hidden">Rarity: {rarity}</span>
-			<span class="grid grid-flow-col">
+	<div class="flex items-center w-full gap-1 px-5 h-6 sm:rounded-t bg-orange/[.08]">
+		<span class="visually-hidden">Rarity: {rarity}</span>
+		<span class="grid grid-flow-col">
 				{
 					Array(rarity)
 						.fill(null)
-						.map(() => <StarIcon rarity={rarity} />)
+						.map(() => <StarIcon rarity={rarity} class="h-3"/>)
 				}
 			</span>
-			{
-				operator.isLimited && (
-					<span
-						class={cx(
-							`relative inline-block mr-1.5 text-base leading-normal
+		{
+			operator.isLimited && (
+				<span
+					class={cx(
+						`relative inline-block leading-normal
 					font-black italic bg-gradient-to-b bg-clip-text text-transparent uppercase`,
-							{
-								6: "from-orange to-orange-light",
-								5: "from-yellow to-yellow-light",
-								4: "from-purple to-purple-light",
-								3: "from-blue to-blue-light",
-								2: "from-green to-green-light",
-								1: "bg-neutral-50",
-							}[rarity]
-						)}
-					>
+						{
+							6: "from-orange to-orange-light",
+							5: "from-yellow to-yellow-light",
+							4: "from-purple to-purple-light",
+							3: "from-blue to-blue-light",
+							2: "from-green to-green-light",
+							1: "bg-neutral-50",
+						}[rarity]
+					)}
+					style={
+						// tailwind doesn't appear to have this as a predefined class
+							"font-height: 10px; line-height: 12px;"
+					}
+				>
 						Limited
 					</span>
+			)
+		}
+	</div>
+	<div class="px-5">
+		<h1 class="font-serif text-[40px] leading-none font-bold">
+			{baseName}
+			{
+				alterName && (
+					<span class="text-neutral-200 font-normal">
+					The {alterName}
+				</span>
 				)
 			}
-		</div>
-		<div class="grid grid-flow-col items-center gap-x-2 w-fit">
-			<div class="grid grid-flow-col items-center gap-x-2">
-				<img
-					class="h-4 w-full"
-					src={operatorClassIcon(
-						classToProfession(operatorClass).toLowerCase()
-					)}
-					alt=""
-				/>
-				<span>{operatorClass}</span>
+		</h1>
+		<div
+			class="grid grid-flow-row sm:grid-flow-col auto-cols-max auto-rows-max gap-3 items-center justify-start"
+		>
+			<div class="grid grid-flow-col items-center gap-x-2 w-fit">
+				<div class="grid grid-flow-col items-center gap-x-2">
+					<img
+						class="h-4 w-full"
+						src={operatorClassIcon(
+							classToProfession(operatorClass).toLowerCase()
+						)}
+						alt=""
+					/>
+					<span>{operatorClass}</span>
+				</div>
+				<OperatorBranchAndTrait client:idle />
+				<InterpunctSpacer />
+				<span class="text-neutral-100"
+				>{
+					getMeleeOrRangedOrBoth(operator.position, operator.description)
+				}</span
+				>
 			</div>
-			<OperatorBranchAndTrait client:idle />
-			<InterpunctSpacer />
-			<span class="text-neutral-100"
-			>{
-				getMeleeOrRangedOrBoth(operator.position, operator.description)
-			}</span
-			>
 		</div>
 	</div>
 </div>
