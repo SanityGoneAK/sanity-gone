@@ -6,12 +6,12 @@ import {
 } from "astro:i18n";
 import { defaultLang } from "~/i18n/languages";
 
-const preferedLocale = Astro.preferredLocale ?? defaultLang;
-const localePath = getPathByLocale(preferedLocale);
+const preferredLocale = Astro.preferredLocale ?? defaultLang;
+const localePath = getPathByLocale(preferredLocale);
 
-const redirectToPreferedLocale = getRelativeLocaleUrl(localePath, "/");
-if (redirectToPreferedLocale == "/") {
-	return Astro.redirect("/en", 301);
+const redirectToPreferredLocale = getRelativeLocaleUrl(localePath, "/");
+if (redirectToPreferredLocale == "/") {
+	return Astro.redirect("/en/operators", 301);
 }
-return Astro.redirect(redirectToPreferedLocale, 301);
+return Astro.redirect(redirectToPreferredLocale + 'operators/', 301);
 ---

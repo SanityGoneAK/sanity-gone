@@ -1,4 +1,5 @@
 ---
+import LanguageSwitcher from "../components/navigation/LanguageSwitcher";
 export interface Props {
 	title: string;
 	previousLocation?: string;
@@ -17,23 +18,6 @@ const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 
 import "~/styles/base.css";
 ---
-
-<script>
-	import initializeFocusSource from "ally.js/src/style/focus-source";
-
-	document.addEventListener("DOMContentLoaded", () => {
-		const mobileMenuTrigger = document.getElementById(
-			"mobile-menu-trigger"
-		)!;
-		const siteWrapper = document.getElementById("site-wrapper")!;
-		mobileMenuTrigger.addEventListener("click", () => {
-			const open = siteWrapper.dataset.menuOpen === "true";
-			siteWrapper.dataset.menuOpen = `${!open}`;
-			mobileMenuTrigger.ariaExpanded = `${!open}`;
-		});
-		initializeFocusSource();
-	});
-</script>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -109,3 +93,19 @@ import "~/styles/base.css";
 		</div>
 	</body>
 </html>
+<script>
+	import initializeFocusSource from "ally.js/src/style/focus-source";
+
+	document.addEventListener("DOMContentLoaded", () => {
+		const mobileMenuTrigger = document.getElementById(
+			"mobile-menu-trigger"
+		)!;
+		const siteWrapper = document.getElementById("site-wrapper")!;
+		mobileMenuTrigger.addEventListener("click", () => {
+			const open = siteWrapper.dataset.menuOpen === "true";
+			siteWrapper.dataset.menuOpen = `${!open}`;
+			mobileMenuTrigger.ariaExpanded = `${!open}`;
+		});
+		initializeFocusSource();
+	});
+</script>

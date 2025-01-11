@@ -9,6 +9,7 @@ import { allLanguages, defaultLang } from "~/i18n/languages";
 import { stripLangFromUrl, useTranslations } from "~/i18n/utils";
 import type { ui } from "~/i18n/ui";
 import LanguageSwitcher from "./LanguageSwitcher.tsx";
+import OperatorsNavIcon from "../icons/OperatorsNavIcon";
 
 const languages = Object.entries(allLanguages).map(([key, language]) => {
 	return [
@@ -24,15 +25,11 @@ const locale = getPathByLocale(
 	Astro.currentLocale ?? defaultLang
 ) as keyof typeof allLanguages;
 const t = useTranslations(locale as keyof typeof ui);
-
-const sidebarLinks: { href: string; name: string }[] = [
-	{
-		href: getRelativeLocaleUrl(locale, "/"),
-		name: t("nav.home"),
-	},
+const sidebarLinks: { href: string; name: string, icon: JSX.Element }[] = [
 	{
 		href: getRelativeLocaleUrl(locale, "/operators"),
 		name: t("nav.operators"),
+		icon: OperatorsNavIcon,
 	},
 	// {
 	//   href: "/dps",
@@ -48,10 +45,11 @@ const sidebarLinks: { href: string; name: string }[] = [
 <div class="flex flex-col h-full">
 	<nav class="flex-grow">
 		{
-			sidebarLinks.map(({ href, name }) => (
+			sidebarLinks.map(({ href, name, icon }) => (
 				<NavigationLink
 					href={href}
 					name={name}
+					icon={icon}
 					active={
 						href.replace(`${locale}/`, "") === `/`
 							? Astro.url.pathname.replace(`${locale}/`, "") ===

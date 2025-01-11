@@ -6,7 +6,7 @@ export const operatorAvatar = (charId: string, elite?: number): string => {
 	const basePath = `${baseURL}/torappu/dynamicassets/arts/charavatars/${charId}`;
 	if (charId === "char_002_amiya" && elite === 1) {
 		return `${basePath}_1+.webp`;
-	} else if (charId === "char_1037_amiya3" && elite === 1) {
+	} else if (charId === "char_1037_amiya3") {
 		return `${basePath}_2.webp`;
 	} else if (elite === 2) {
 		return `${basePath}_2.webp`;

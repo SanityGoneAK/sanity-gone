@@ -28,7 +28,6 @@ import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
 import {
 	type Locale,
 	localeToTag,
-	type LocalizedString,
 } from "~/i18n/languages.ts";
 
 interface Props {
@@ -76,7 +75,7 @@ const CustomSearchInput: React.FC<{
 };
 
 const CustomHits: React.FC<{
-	onSelected?: () => void;
+	onSelected?: (options: SearchResult) => void;
 	locale: Locale;
 }> = ({ onSelected, locale }) => {
 	const { hits, results, sendEvent } = useHits<BaseHit & SearchResult>();
@@ -105,20 +104,7 @@ const CustomHits: React.FC<{
 		(option: SearchResult | null) => {
 			if (!option) return;
 
-			if (option.type === "operator") {
-				window.location.href = `/${locale}/operators/${slugify(
-					option.name.en_US ?? ""
-				)}`;
-			} else if (option.type === "class") {
-				window.location.href = `/${locale}/operators#${slugify(
-					option.class
-				)}`;
-			} else {
-				window.location.href = `/${locale}/operators#${slugify(
-					option.class ?? ""
-				)}-${subclassSlugify(option.name.en_US ?? "")}`;
-			}
-			return onSelected && onSelected();
+			return onSelected && onSelected(option);
 		},
 		[locale, onSelected]
 	);
@@ -244,18 +230,38 @@ const CustomHits: React.FC<{
 	);
 };
 
-const SearchBar: React.FC<Props> = ({ locale, placeholder, onSelected }) => {
+const SearchBar: React.FC<Props> = ({ locale, placeholder }) => {
 	const inputRef = useRef<HTMLInputElement>(null);
+
+	const onSelected = (option: SearchResult) => {
+		if (!option){
+			return;
+		}
+
+		if (option.type === "operator") {
+			window.location.href = `/${locale}/operators/${slugify(
+				option.name.en_US ?? ""
+			)}`;
+		} else if (option.type === "class") {
+			window.location.href = `/${locale}/operators#${slugify(
+				option.class
+			)}`;
+		} else {
+			window.location.href = `/${locale}/operators#${slugify(
+				option.class ?? ""
+			)}-${subclassSlugify(option.name.en_US ?? "")}`;
+		}
+	}
 
 	return (
 		<div className="flex h-full w-full items-center px-3 sm:pl-6">
 			<form
 				role="search"
-				className="relative flex h-9 flex-grow flex-row items-center rounded-[18px] border border-neutral-100/[0] bg-neutral-500 px-4 focus-within:border-neutral-100/[0.9] sm:w-[512px] sm:flex-grow-0 focus-within:[&:has(input[data-headlessui-state='open'])]:rounded-b-none hover:[&:not(:focus-within)]:border-neutral-200/[0.8]"
+				className="relative flex h-9 flex-grow flex-row items-center rounded-l border border-neutral-100/[0] px-4 focus-within:border-neutral-200/[0.9] focus-within:bg-neutral-500 sm:w-[512px] sm:flex-grow-0 focus-within:[&:has(input[data-headlessui-state='open'])]:rounded-b-none hover:[&:not(:focus-within)]:bg-neutral-500"
 				onClick={() => inputRef.current?.focus()}
 			>
 				<SearchIcon className="mr-4" />
-				<Combobox<SearchResult>>
+				<Combobox<SearchResult> immediate onChange={onSelected}>
 					{({ activeOption }) => (
 						// @ts-expect-error react19 error
 						<InstantSearch

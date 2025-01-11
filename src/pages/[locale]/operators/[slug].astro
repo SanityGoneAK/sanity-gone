@@ -61,11 +61,6 @@ const e2skin = operator.skins.filter(
 	(skin) => skin.type === "elite-one-or-two"
 );
 ---
-
-<script slot="head" define:vars={{ operatorId }}>
-	window.operatorId = operatorId;
-</script>
-
 <Layout title={operator.name}>
 	<div class="w-full h-full relative mx-auto flex gap-4 sm:p-5">
 		<div
@@ -182,3 +177,6 @@ const e2skin = operator.skins.filter(
 	</div>
 	<SvgRarityGradientDefs />
 </Layout>
+<script slot="head" define:vars={{ operatorId }}>
+	window.operatorId = operatorId;
+</script>

@@ -3,7 +3,7 @@ import React from "react";
 const SanityGoneLogo: React.FC<{ locale: string }> = ({ locale }) => {
 	return (
 		<a
-			href={`/${locale}`}
+			href={`/${locale}/operators/`}
 			aria-label="Sanity Gone"
 			className="flex items-center p-2 leading-none"
 		>
