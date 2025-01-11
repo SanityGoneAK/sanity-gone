@@ -541,7 +541,7 @@ export function getMeleeOrRangedOrBoth(
 	description: string | null
 ) {
 	return description?.toLowerCase().includes("can be deployed on ranged")
-		? "Melee or Ranged"
+		? "Melee & Ranged"
 		: toTitleCase(position);
 }
 

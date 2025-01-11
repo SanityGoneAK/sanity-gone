@@ -70,7 +70,12 @@ const CharacterSplash: React.FC = () => {
 							{/* TODO: This image causes layout shift of the label when loading.
                   Change to Astro native images / provide height */}
 							<img
-								className="w-full"
+								style={
+									{
+										width: "clamp(0px, 100%, 60rem)",
+										margin: "0 auto",
+									}
+								}
 								src={operatorSplash(skin.portraitId, skin.type)}
 								alt={skin.name}
 							/>

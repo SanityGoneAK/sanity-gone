@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 import InterpunctSpacer from "../ui/InterpunctSpacer.astro";
 import StarIcon from "../icons/StarIcon";
 import OperatorBranchAndTrait from "./OperatorBranchAndTrait.tsx";
@@ -8,6 +10,11 @@ import { getMeleeOrRangedOrBoth } from "~/utils/character-stats";
 import { cx } from "~/utils/styles";
 
 import type * as OutputTypes from "~/types/output-types";
+import { operatorAvatar } from "../../utils/images";
+
+import MeleeIcon from "~/components/icons/MeleeIcon.tsx";
+import RangedIcon from "~/components/icons/RangedIcon.tsx";
+import MeleeAndRangedIcon from "~/components/icons/MeleeAndRangedIcon.tsx";
 
 interface Props {
 	operator: OutputTypes.Character;
@@ -17,6 +24,12 @@ const { operator } = Astro.props;
 const [baseName, alterName] = operator.name.split(/ the /i);
 const operatorClass = professionToClass(operator.profession);
 const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
+
+const meleeOrRanged = getMeleeOrRangedOrBoth(
+	operator.position,
+	operator.description
+);
+
 ---
 
 <div
@@ -58,24 +71,34 @@ const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 			)
 		}
 	</div>
-	<div class="px-5">
-		<h1 class="font-serif text-[40px] leading-none font-bold">
-			{baseName}
-			{
-				alterName && (
-					<span class="text-neutral-200 font-normal">
+	<div class="px-5 flex gap-4 w-full">
+		<div class="w-18 h-18">
+			<Image
+				class="rounded"
+				src={operatorAvatar(operator.charId, 0)}
+				alt={operator.name}
+				width="72"
+				height="72"
+			/>
+		</div>
+		<div class="flex flex-col flex-grow">
+			<div>
+				<h1 class="font-serif text-[36px] leading-10 font-bold">
+					{baseName}
+					{
+						alterName && (
+							<span class="text-neutral-200 font-normal">
 						The {alterName}
 					</span>
-				)
-			}
-		</h1>
-		<div
-			class="grid grid-flow-row sm:grid-flow-col auto-cols-max auto-rows-max gap-3 items-center justify-start"
-		>
-			<div class="grid grid-flow-col items-center gap-x-2 w-fit">
+						)
+					}
+				</h1>
+			</div>
+			<div class="flex-grow"></div> {/* spacer (theoretically never needed, but just to be safe) */}
+			<div class="flex items-center gap-x-3 w-full">
 				<div class="grid grid-flow-col items-center gap-x-2">
 					<img
-						class="h-4 w-full"
+						class="h-5 w-full"
 						src={operatorClassIcon(
 							classToProfession(operatorClass).toLowerCase()
 						)}
@@ -84,15 +107,30 @@ const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 					<span>{operatorClass}</span>
 				</div>
 				<OperatorBranchAndTrait client:idle />
-				<InterpunctSpacer />
-				<span class="text-neutral-100"
-					>{
-						getMeleeOrRangedOrBoth(
-							operator.position,
-							operator.description
+				<div class="flex-grow"></div> {/* spacer */}
+				<div class="flex flex-row items-center gap-2">
+					{
+						meleeOrRanged === "Melee" && (
+							<MeleeIcon/>
 						)
+					}
+					{
+						meleeOrRanged === "Ranged" && (
+							<RangedIcon/>
+						)
+					}
+					{
+						meleeOrRanged === "Melee & Ranged" && (
+							<MeleeAndRangedIcon/>
+						)
+					}
+					<span class="text-neutral-200"
+					>{
+						meleeOrRanged
 					}</span
-				>
+					>
+				</div>
+
 			</div>
 		</div>
 	</div>

@@ -12,7 +12,7 @@ const OperatorBranchAndTrait: React.FC = () => {
 	return (
 		<div className="grid grid-flow-col items-center gap-x-2">
 			<img
-				className="h-4 w-full"
+				className="h-5 w-full"
 				src={operatorBranchIcon(operator.subProfessionId)}
 				alt=""
 			/>
