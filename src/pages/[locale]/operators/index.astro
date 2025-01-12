@@ -15,3 +15,6 @@ const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 		<OperatorList locale={locale} client:visible />
 	</section>
 </Layout>
+<script slot="head" define:vars={{ locale }}>
+	window.locale = locale;
+</script>
