@@ -41,14 +41,14 @@ import "~/styles/base.css";
 		<title>{title}</title>
 		<slot name="head" />
 	</head>
-	<body class="bg-neutral-800 text-neutral-50 sm:overflow-hidden">
+	<body class="bg-neutral-900 text-neutral-50 sm:overflow-hidden">
 		<div
 			id="site-wrapper"
 			class="h-full group/sitewrapper grid grid-areas-mobile-layout grid-cols-mobile-layout grid-rows-mobile-layout sm:grid-areas-desktop-layout sm:grid-rows-desktop-layout sm:grid-cols-desktop-layout"
 			data-menu-open="false"
 		>
 			<div
-				class="flex justify-between grid-in-logo px-3 border-b border-r border-solid border-neutral-600 bg-neutral-900"
+				class="flex justify-between grid-in-logo px-3 border-b border-r border-solid border-neutral-600 bg-neutral-800"
 			>
 				<SanityGoneLogo locale={locale} />
 				<button
@@ -71,7 +71,7 @@ import "~/styles/base.css";
 			</div>
 			<div
 				id="searchbar"
-				class="hidden grid-in-search sm:grid-in-topright group-data-[menu-open=true]/sitewrapper:block sm:block border-b border-solid border-neutral-600 sm:bg-neutral-900"
+				class="hidden grid-in-search sm:grid-in-topright group-data-[menu-open=true]/sitewrapper:block sm:block border-b border-solid border-neutral-600 sm:bg-neutral-800"
 			>
 				<SearchBar
 					placeholder="Search"
@@ -81,7 +81,7 @@ import "~/styles/base.css";
 			</div>
 			<div
 				id="sidebar"
-				class="hidden grid-in-main sm:grid-in-sidebar group-data-[menu-open=true]/sitewrapper:block sm:block border-neutral-600 border-r bg-neutral-900"
+				class="hidden grid-in-main sm:grid-in-sidebar group-data-[menu-open=true]/sitewrapper:block sm:block border-neutral-600 border-r bg-neutral-800"
 			>
 				<Sidebar />
 			</div>

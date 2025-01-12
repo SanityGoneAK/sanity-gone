@@ -1,6 +1,6 @@
 const SvgRarityGradientDefs = () => {
 	return (
-		<svg>
+		<svg width="0" height="0" className="visually-hidden">
 			<defs>
 				{[1, 2, 3, 4, 5, 6].map((rarity) => {
 					return (
