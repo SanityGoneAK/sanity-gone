@@ -103,7 +103,7 @@ const CharacterSplash: React.FC = () => {
 									)}
 
 								<div className="inline-flex w-fit flex-col gap-2">
-									<div className="inline-flex w-fit items-center gap-2">
+									<div className="inline-flex w-fit items-center gap-2 h-6">
 										<span className="text-lg font-semibold leading-none">
 											{skin.name}
 										</span>
