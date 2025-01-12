@@ -103,7 +103,16 @@ const CharacterSplash: React.FC = () => {
 									)}
 
 								<div className="inline-flex w-fit flex-col gap-2">
-									<div className="inline-flex w-fit items-center gap-2 h-6">
+									<div
+										className={
+											`inline-flex w-fit items-center gap-2 ${skin.type.toLowerCase().includes("elite") ? "h-6" : ""}`
+											// weird fix that's necessary because we want there to be no leading when the skin is elite
+											// in order to better center the icon,
+											// but if it's a skin that's not bought using OP and also not an elite skin, not setting
+											// the height here causes a layout difference between those skins and the ones bought
+											// using OP.
+										}
+									>
 										<span className="text-lg font-semibold leading-none">
 											{skin.name}
 										</span>
