@@ -1,8 +1,11 @@
 ---
 import { slugify } from "~/utils/strings";
-import operatorsJson from "data/en_US/operators.json";
+import enOperatorsJson from "data/en_US/operators.json";
+import krOperatorsJson from "data/ko_KR/operators.json";
+import jpOperatorsJson from "data/ja_JP/operators.json";
+import cnOperatorsJson from "data/zh_CN/operators.json";
 import Layout from "~/layouts/Layout.astro";
-import { operatorIdStore } from "./_store";
+import { operatorIdStore, localeStore } from "./_store";
 import CharacterSplash from "~/components/operator/CharacterSplash";
 import SvgRarityGradientDefs from "~/components/operator/SvgRarityGradientDefs";
 import OperatorTabs from "~/components/operator/OperatorTabs";
@@ -11,7 +14,6 @@ import { getRelatedCharacter } from "~/utils/related-character";
 
 import type * as OutputTypes from "~/types/output-types";
 import { operatorAvatar } from "~/utils/images";
-import InterpunctSpacer from "~/components/ui/InterpunctSpacer.astro";
 import OperatorInfo from "~/components/operator/OperatorInfo.astro";
 import { getPathByLocale, getRelativeLocaleUrl } from "astro:i18n";
 import { defaultLang } from "~/i18n/languages";
@@ -37,9 +39,17 @@ import GuideIcon from "~/components/icons/GuideIcon.tsx";
 
 const { slug } = Astro.params;
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
+localeStore.set(locale);
+const operatorsMap = {
+	en: enOperatorsJson,
+	kr: krOperatorsJson,
+	jp: jpOperatorsJson,
+	'zh-cn': cnOperatorsJson,
+};
+const operatorsJson = operatorsMap[locale as keyof typeof operatorsMap];
 
 const idLookup = Object.fromEntries(
-	Object.entries(operatorsJson).map(
+	Object.entries(enOperatorsJson).map(
 		// TODO: Fix this
 		// @ts-ignore
 		([operatorId, operator]: [string, OutputTypes.Operator]) => {
@@ -49,15 +59,13 @@ const idLookup = Object.fromEntries(
 );
 
 const operatorId = idLookup[slug ?? ""];
-// console.log(operatorId);
 
 const operator = operatorsJson[
 	operatorId as keyof typeof operatorsJson
-] as OutputTypes.Operator;
+	] as OutputTypes.Operator;
 operatorIdStore.set(operatorId);
 
 const relatedOperators = getRelatedCharacter(operator);
-console.log(relatedOperators);
 const e2skin = operator.skins.filter(
 	(skin) => skin.type === "elite-one-or-two"
 );
@@ -84,33 +92,33 @@ const e2skin = operator.skins.filter(
 				<li class="flex-grow"></li>
 				{
 					relatedOperators.length > 0 &&
-						relatedOperators.map((relatedOperator) => {
-							return (
-								<li class="flex-none">
-									<a
-										class="flex items-center text-yellow relative mr-3"
-										href={getRelativeLocaleUrl(
-											locale,
-											`/operators/${slugify(
-												relatedOperator.name
-											)}`
+					relatedOperators.map((relatedOperator) => {
+						return (
+							<li class="flex-none">
+								<a
+									class="flex items-center text-yellow relative mr-3"
+									href={getRelativeLocaleUrl(
+										locale,
+										`/operators/${slugify(
+											relatedOperator.name
+										)}`
+									)}
+								>
+									<img
+										class="w-8 h-8 border border-solid border-neutral-200 rounded-[4.5rem] mr-2"
+										src={operatorAvatar(
+											relatedOperator.charId,
+											1
 										)}
-									>
-										<img
-											class="w-8 h-8 border border-solid border-neutral-200 rounded-[4.5rem] mr-2"
-											src={operatorAvatar(
-												relatedOperator.charId,
-												1
-											)}
-											alt=""
-										/>
-										<span class="border-dashed border-b-[1px] border-neutral-200">
+										alt=""
+									/>
+									<span class="border-dashed border-b-[1px] border-neutral-200">
 											{relatedOperator.name}
 										</span>
-									</a>
-								</li>
-							);
-						})
+								</a>
+							</li>
+						);
+					})
 				}
 			</ul>
 			<section class="flex-1">
@@ -179,6 +187,7 @@ const e2skin = operator.skins.filter(
 	</div>
 	<SvgRarityGradientDefs />
 </Layout>
-<script slot="head" define:vars={{ operatorId }}>
+<script slot="head" define:vars={{ operatorId, locale }}>
 	window.operatorId = operatorId;
+	window.locale = locale;
 </script>
