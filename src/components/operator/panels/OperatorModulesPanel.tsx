@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 
 import { useStore } from "@nanostores/react";
 
@@ -11,6 +11,7 @@ import PotentialsDropdown from "../PotentialsDropdown";
 
 import type * as OutputTypes from "~/types/output-types";
 import { moduleImage, moduleTypeImage } from "~/utils/images.ts";
+import Accordion from "~/components/ui/Accordion.tsx";
 
 const OperatorModulesPanel: React.FC = () => {
 	const operator: OutputTypes.Operator = useStore(operatorStore);
@@ -81,7 +82,7 @@ const OperatorModulesPanel: React.FC = () => {
 	const [stage, setStage] = useState(3);
 	const [potential, setPotential] = useState(0);
 
-	const [viewStory, setViewStory] = useState(false);
+	// const [viewStory, setViewStory] = useState(false);
 
 	// current active module ID
 	const moduleId = moduleType === "None" ? null : moduleIdLookup[moduleType];
@@ -103,58 +104,58 @@ const OperatorModulesPanel: React.FC = () => {
 		setStage(stage);
 	};
 
-	if (viewStory) {
-		return (
-			<div className="flex flex-col gap-4 p-6">
-				<button
-					className="flex items-center gap-2"
-					onClick={() => setViewStory(false)}
-				>
-					<svg
-						width="8"
-						height="14"
-						viewBox="0 0 8 14"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M7 13L1 7L7 1"
-							stroke="#B8B8C0"
-							strokeWidth="2"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-						/>
-					</svg>
-					<p>Module Details</p>
-				</button>
-
-				<div className="grid grid-cols-[48px_1fr] items-center gap-x-2 grid-areas-module-title grid-in-title">
-					<img
-						className="h-12 grid-in-icon"
-						src={moduleTypeImage(module.moduleIcon.toLowerCase())}
-						alt=""
-					/>
-					<h2 className="font-serif text-2xl grid-in-name">
-						{module.moduleName}
-					</h2>
-					<p className="font-semibold text-purple grid-in-code">
-						EXE-Y
-					</p>
-				</div>
-				<hr className="border border-neutral-600" />
-				<p
-					className="whitespace-pre-line text-base font-normal leading-normal"
-					dangerouslySetInnerHTML={{
-						__html: module.moduleDescription,
-					}}
-				/>
-			</div>
-		);
-	}
+	// if (viewStory) {
+	// 	return (
+	// 		<div className="flex flex-col gap-4 p-6">
+	// 			<button
+	// 				className="flex items-center gap-2"
+	// 				onClick={() => setViewStory(false)}
+	// 			>
+	// 				<svg
+	// 					width="8"
+	// 					height="14"
+	// 					viewBox="0 0 8 14"
+	// 					fill="none"
+	// 					xmlns="http://www.w3.org/2000/svg"
+	// 				>
+	// 					<path
+	// 						d="M7 13L1 7L7 1"
+	// 						stroke="#B8B8C0"
+	// 						strokeWidth="2"
+	// 						strokeLinecap="round"
+	// 						strokeLinejoin="round"
+	// 					/>
+	// 				</svg>
+	// 				<p>Module Details</p>
+	// 			</button>
+	//
+	// 			<div className="grid grid-cols-[48px_1fr] items-center gap-x-2 grid-areas-module-title grid-in-title">
+	// 				<img
+	// 					className="h-12 grid-in-icon"
+	// 					src={moduleTypeImage(module.moduleIcon.toLowerCase())}
+	// 					alt=""
+	// 				/>
+	// 				<h2 className="font-serif text-2xl grid-in-name">
+	// 					{module.moduleName}
+	// 				</h2>
+	// 				<p className="font-semibold text-purple grid-in-code">
+	// 					EXE-Y
+	// 				</p>
+	// 			</div>
+	// 			<hr className="border border-neutral-600" />
+	// 			<p
+	// 				className="whitespace-pre-line text-base font-normal leading-normal"
+	// 				dangerouslySetInnerHTML={{
+	// 					__html: module.moduleDescription,
+	// 				}}
+	// 			/>
+	// 		</div>
+	// 	);
+	// }
 
 	return (
 		<div className="flex flex-col gap-4 p-6">
-			<div className="grid grid-flow-col grid-cols-[auto_1fr] grid-rows-2 items-center gap-4 border-b border-neutral-600 pb-4 sm:grid-flow-row sm:grid-cols-[auto_auto_1fr] sm:grid-rows-1">
+			<div className="grid grid-flow-col grid-cols-[auto_1fr] grid-rows-2 items-center gap-4 border-b border-neutral-500 pb-4 sm:grid-flow-row sm:grid-cols-[auto_auto_1fr] sm:grid-rows-1">
 				<div className="grid w-fit grid-flow-col items-center gap-x-2 text-neutral-200">
 					<span>Model</span>
 					<PillButtonGroup
@@ -186,14 +187,13 @@ const OperatorModulesPanel: React.FC = () => {
 					/>
 				</div>
 			</div>
-			<div className="grid gap-y-4 rounded-br-lg">
+			<div className="flex flex-col gap-4">
 				{moduleId ? (
 					<ModuleInfo
 						operator={operator}
 						module={module}
 						stage={stage}
 						potential={potential}
-						onStoryClick={() => setViewStory(true)}
 					/>
 				) : (
 					<div className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600 p-4 text-neutral-200">
@@ -201,9 +201,10 @@ const OperatorModulesPanel: React.FC = () => {
 						<span>None</span>
 					</div>
 				)}
+				<hr className="border border-neutral-500" />
 				<div className="flex flex-col gap-4">
 					<h2 className="text-lg font-semibold leading-[23px]">
-						Promotion Requirements
+						Requirements
 					</h2>
 					<MaterialRequirements
 						// @ts-expect-error what is typescript waffling about
@@ -224,20 +225,27 @@ const OperatorModulesPanel: React.FC = () => {
 								Mission 1
 							</h3>
 
-							<p>
-								{module.missionList[0].description}
-							</p>
+							<p>{module.missionList[0].description}</p>
 						</div>
 						<div>
 							<h3 className="mb-1 text-sm leading-[14px] text-neutral-200">
 								Mission 2
 							</h3>
-							<p>
-								{module.missionList[1].description}
-							</p>
+							<p>{module.missionList[1].description}</p>
 						</div>
 					</div>
 				)}
+				<hr className="border border-neutral-600" />
+				<div>
+					<Accordion title={"DESCRIPTION (possible story spoilers)"}>
+						<p
+							className="text-white mt-0 whitespace-pre-line rounded-b text-base font-normal"
+							dangerouslySetInnerHTML={{
+								__html: module.moduleDescription,
+							}}
+						/>
+					</Accordion>
+				</div>
 			</div>
 		</div>
 	);

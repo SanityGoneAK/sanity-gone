@@ -27,7 +27,6 @@ interface Props {
 	module: OutputTypes.Module;
 	stage: number; // 1, 2, 3
 	potential: number; // zero-indexed (0, 1, 2, 3, 4, 5)
-	onStoryClick: () => void;
 }
 
 const ModuleInfo: React.FC<Props> = ({
@@ -35,7 +34,6 @@ const ModuleInfo: React.FC<Props> = ({
 	module,
 	stage,
 	potential,
-	onStoryClick,
 }) => {
 	const moduleId = module.moduleId;
 	const {
@@ -55,88 +53,164 @@ const ModuleInfo: React.FC<Props> = ({
 		(phase) => phase.requiredPotentialRank === potential
 	)!;
 
-	return (
-		<div className="flex grid-cols-[192px_1fr] grid-rows-[auto_auto_1fr] flex-col items-stretch gap-x-4 gap-y-4 grid-areas-module sm:grid sm:items-center">
-			<div className="flex h-full flex-col overflow-hidden rounded-lg bg-neutral-900 grid-in-image">
-				<img
-					className="h-[182px] flex-grow"
-					src={moduleImage(moduleId)}
-					alt=""
-				/>
-				<button
-					className="w-full border-t border-neutral-600 py-2 hover:bg-neutral-600"
-					type="button"
-					onClick={onStoryClick}
-				>
-					View Story
-				</button>
+	const statChanges = [
+		atk,
+		max_hp,
+		def,
+		attack_speed,
+		magic_resistance,
+		cost,
+		respawn_time,
+		block_cnt,
+	];
+
+	const statChangeCount = statChanges.filter((change) => change !== 0).length;
+
+	/**
+	 * This component is used to display one of the stat changes for a module.
+	 *
+	 * Yes, this is a bit of a mess. Modules is like a messy King Midas.
+	 * Everything it touches turns into a mess.
+	 *
+	 * @param props.changeNum The number of the stat change to display (1-indexed).
+	 * @returns The JSX for the stat change.
+	 */
+	const StatChange = (props: { changeNum: number }) => {
+		const { changeNum } = props;
+
+		// get the nth stat change
+		let changes = 0;
+		let changeIndex = -1;
+		for (let i = 0; i < statChanges.length; i++) {
+			if (statChanges[i] !== 0) {
+				changes++;
+				if (changes === changeNum) {
+					changeIndex = i;
+					break;
+				}
+			}
+		}
+
+		if (changeIndex === -1) {
+			return null;
+		}
+
+		const icon = (() => {
+			switch (changeIndex) {
+				case 0:
+					return <AttackPowerIcon />;
+				case 1:
+					return <HealthIcon />;
+				case 2:
+					return <DefenseIcon />;
+				case 3:
+					return <AttackSpeedIcon />;
+				case 4:
+					return <ArtsResistanceIcon />;
+				case 5:
+					return <DPCostIcon />;
+				case 6:
+					return <HourglassIcon />;
+				case 7:
+					return <BlockIcon />;
+				default:
+					return <></>;
+			}
+		})();
+
+		const statName = (() => {
+			switch (changeIndex) {
+				case 0:
+					return "Attack";
+				case 1:
+					return "Health";
+				case 2:
+					return "Defense";
+				case 3:
+					return "ASPD";
+				case 4:
+					return "RES";
+				case 5:
+					return "DP";
+				case 6:
+					return "Redep. Time";
+				case 7:
+					return "Block";
+				default:
+					return "";
+			}
+		})();
+
+		// don't use the plus if it's a negative stat change (DP and redeployment time)
+		const usePlus = [
+			"Attack",
+			"Health",
+			"Defense",
+			"ASPD",
+			"RES",
+			"Block",
+		].includes(statName);
+
+		return (
+			<div className="flex h-6 w-full items-center justify-start gap-x-2 rounded">
+				{icon}
+				<dt className="text-neutral-200">{statName}</dt>
+				<dd className="ml-auto text-lg font-semibold leading-none">
+					{usePlus ? "+" : ""}
+					{statChanges[changeIndex]}
+				</dd>
 			</div>
-			<div className="grid grid-cols-[48px_1fr] items-center gap-x-2 grid-areas-module-title grid-in-title">
+		);
+	};
+
+	// beware: flexbox gore lies ahead
+	// i should probably use grid. oh well!
+	return (
+		<div className="flex flex-col gap-4">
+			<div className="flex items-center gap-2">
 				<img
-					className="h-12 grid-in-icon"
+					className="h-6 grid-in-icon"
 					src={moduleTypeImage(module.moduleIcon.toLowerCase())}
 					alt=""
 				/>
-				<h2 className="font-serif text-2xl grid-in-name">
+				<h2 className="font-serif text-lg font-semibold leading-none grid-in-name">
 					{module.moduleName}
 				</h2>
-				<p className="font-semibold text-purple grid-in-code">EXE-Y</p>
+				<p className="font-semibold text-neutral-200">
+					{module.moduleIcon}
+				</p>
 			</div>
-			<dl className="flex gap-2 grid-in-stats">
-				{atk !== 0 && (
-					<div className="flex w-full items-center justify-start gap-x-2 rounded bg-neutral-600 px-2 py-1">
-						<AttackPowerIcon />
-						<dt className="text-neutral-200">Attack</dt>
-						<dd className="ml-auto">+{atk}</dd>
-					</div>
+			<dl className="flex">
+				{/* absolute nightmare fuel handling here. i had no idea how to do it otherwise*/}
+				{statChangeCount === 2 && (
+					<>
+						<StatChange changeNum={1} />
+						<div className="mx-6 h-full border-l border-neutral-500" />
+						<StatChange changeNum={2} />
+					</>
 				)}
-				{max_hp !== 0 && (
-					<div className="flex w-full items-center justify-start gap-x-2 rounded bg-neutral-600 px-2 py-1">
-						<HealthIcon />
-						<dt className="text-neutral-200">Health</dt>
-						<dd className="ml-auto">+{max_hp}</dd>
-					</div>
+				{statChangeCount === 3 && (
+					<>
+						<StatChange changeNum={1} />
+						<div className="mx-6 h-full border-l border-neutral-500" />
+						<StatChange changeNum={2} />
+						<div className="mx-6 h-full border-l border-neutral-500" />
+						<StatChange changeNum={3} />
+					</>
 				)}
-				{def !== 0 && (
-					<div className="flex w-full items-center justify-start gap-x-2 rounded bg-neutral-600 px-2 py-1">
-						<DefenseIcon />
-						<dt className="text-neutral-200">Defense</dt>
-						<dd className="ml-auto">+{def}</dd>
-					</div>
-				)}
-				{attack_speed !== 0 && (
-					<div className="flex w-full items-center justify-start gap-x-2 rounded bg-neutral-600 px-2 py-1">
-						<AttackSpeedIcon />
-						<dt className="text-neutral-200">ASPD</dt>
-						<dd className="ml-auto">+{attack_speed}</dd>
-					</div>
-				)}
-				{magic_resistance !== 0 && (
-					<div className="flex w-full items-center justify-start gap-x-2 rounded bg-neutral-600 px-2 py-1">
-						<ArtsResistanceIcon />
-						<dt className="text-neutral-200">MR</dt>
-						<dd className="ml-auto">+{magic_resistance}</dd>
-					</div>
-				)}
-				{cost !== 0 && (
-					<div className="flex w-full items-center justify-start gap-x-2 rounded bg-neutral-600 px-2 py-1">
-						<DPCostIcon />
-						<dt className="text-neutral-200">DP</dt>
-						<dd className="ml-auto">{cost}</dd>
-					</div>
-				)}
-				{respawn_time !== 0 && (
-					<div className="flex w-full items-center justify-start gap-x-2 rounded bg-neutral-600 px-2 py-1">
-						<HourglassIcon />
-						<dt className="text-neutral-200">Redep. Time</dt>
-						<dd className="ml-auto">{respawn_time}</dd>
-					</div>
-				)}
-				{block_cnt !== 0 && (
-					<div className="flex w-full items-center justify-start gap-x-2 rounded bg-neutral-600 px-2 py-1">
-						<BlockIcon />
-						<dt className="text-neutral-200">Block</dt>
-						<dd className="ml-auto">+{block_cnt}</dd>
+				{/* Why do operators with 4 stat changes exist? *dies of Nian* */}
+				{statChangeCount === 4 && (
+					<div className="flex w-full flex-col">
+						<div className="flex items-center">
+							<StatChange changeNum={1} />
+							<div className="mx-6 h-8 border-l border-neutral-500" />
+							<StatChange changeNum={2} />
+						</div>
+						<div className="flex items-center">
+							<StatChange changeNum={3} />
+							<div className="mx-6 h-8 border-l border-neutral-500" />
+							<StatChange changeNum={4} />
+						</div>
 					</div>
 				)}
 			</dl>
@@ -185,6 +259,13 @@ const ModuleInfo: React.FC<Props> = ({
 						></p>
 					</div>
 				)}
+			</div>
+			<div className="flex h-full flex-col overflow-hidden rounded-lg bg-neutral-800">
+				<img
+					className="h-[182px] flex-grow"
+					src={moduleImage(moduleId)}
+					alt=""
+				/>
 			</div>
 		</div>
 	);

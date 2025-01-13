@@ -25,10 +25,7 @@ import type {
 } from "~/types/output-types.ts";
 import type { BaseHit } from "instantsearch.js";
 import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
-import {
-	type Locale,
-	localeToTag,
-} from "~/i18n/languages.ts";
+import { type Locale, localeToTag } from "~/i18n/languages.ts";
 
 interface Props {
 	locale: Locale;
@@ -149,7 +146,7 @@ const CustomHits: React.FC<{
 									className={cx(
 										"inline-block w-6 text-neutral-100",
 										rarityClasses[
-										result.rarity as keyof typeof rarityClasses
+											result.rarity as keyof typeof rarityClasses
 										]
 									)}
 								>
@@ -194,11 +191,11 @@ const CustomHits: React.FC<{
 								src={
 									result.type === "class"
 										? operatorClassIcon(
-											result.class.toLowerCase()
-										)
+												result.class.toLowerCase()
+											)
 										: operatorBranchIcon(
-											result.subProfession
-										)
+												result.subProfession
+											)
 								}
 								width={40}
 								height={40}
@@ -206,7 +203,7 @@ const CustomHits: React.FC<{
 							<span className="text-neutral-100">
 								{result.type === "class"
 									? // TODO might wanna localize this first part
-									result.name
+										result.name
 									: result.name[localeToTag[locale]]}
 							</span>
 							<span className="text-sm leading-[18px] text-neutral-200">
@@ -234,7 +231,7 @@ const SearchBar: React.FC<Props> = ({ locale, placeholder }) => {
 	const inputRef = useRef<HTMLInputElement>(null);
 
 	const onSelected = (option: SearchResult) => {
-		if (!option){
+		if (!option) {
 			return;
 		}
 
@@ -251,7 +248,7 @@ const SearchBar: React.FC<Props> = ({ locale, placeholder }) => {
 				option.class ?? ""
 			)}-${subclassSlugify(option.name.en_US ?? "")}`;
 		}
-	}
+	};
 
 	return (
 		<div className="flex h-full w-full items-center px-3 sm:pl-6">
