@@ -207,6 +207,7 @@ export const SkillSpType = {
 	INCREASE_WITH_TIME: "Per Second",
 	INCREASE_WHEN_ATTACK: "Offensive",
 	INCREASE_WHEN_TAKEN_DAMAGE: "Defensive",
+	8: "Always Active",
 	UNUSED: "UNUSED",
 } as const;
 
