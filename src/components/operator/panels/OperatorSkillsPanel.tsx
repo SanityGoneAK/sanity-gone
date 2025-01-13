@@ -201,5 +201,6 @@ const spRecoveryClassName: Record<
 	INCREASE_WHEN_ATTACK: "text-orange",
 	INCREASE_WHEN_TAKEN_DAMAGE: "text-yellow",
 	INCREASE_WITH_TIME: "text-green",
+	8: "text-blue",
 	UNUSED: "",
 };
