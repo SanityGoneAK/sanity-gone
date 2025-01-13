@@ -9,7 +9,8 @@
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
-		"build": "astro check && astro build",
+		"check": "cross-env NODE_OPTIONS=--max_old_space_size=8192 astro check",
+		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
 		"lint": "prettier --write .",
@@ -81,6 +82,7 @@
 		"@typescript-eslint/eslint-plugin": "^8.18.2",
 		"@typescript-eslint/parser": "^8.18.2",
 		"cheerio": "^1.0.0",
+		"cross-env": "^7.0.3",
 		"eslint": "^9.17.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-import-resolver-typescript": "^3.7.0",
