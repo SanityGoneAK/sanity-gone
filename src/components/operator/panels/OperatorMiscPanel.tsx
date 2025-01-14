@@ -41,7 +41,7 @@ const OperatorMiscPanel: React.FC = () => {
 			!["Inspection Report", "Infection Status"].includes(info.title)
 	);
 
-	const isRobot = operator.rarity === 1;
+	const isRobot = operator.tagList.some((tag) => ['Robot', 'ロボット', '로봇', '支援机械'].includes(tag));
 
 	// 0: not open
 	// 1-4: archive 1-4
