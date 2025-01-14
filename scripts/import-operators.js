@@ -645,6 +645,8 @@ function addLoreDetails(characters, locale) {
 			? locale
 			: "zh_CN";
 
+		const isRobot = character.tagList.some((tag) => ['Robot', 'ロボット', '로봇', '支援机械'].includes(tag));
+
 		const basicInfo = parseStoryText(
 			getStoryText(
 				actualLocale,
@@ -657,7 +659,7 @@ function addLoreDetails(characters, locale) {
 			getStoryText(
 				actualLocale,
 				charIdToUse,
-				languageKeyMap[actualLocale].physicalExam
+				isRobot ? languageKeyMap[actualLocale].performanceReview : languageKeyMap[actualLocale].physicalExam
 			),
 			actualLocale
 		);
@@ -675,11 +677,6 @@ function addLoreDetails(characters, locale) {
 			actualLocale,
 			charIdToUse,
 			languageKeyMap[actualLocale].promotionRecord
-		);
-		const performanceReview = getStoryText(
-			actualLocale,
-			charIdToUse,
-			languageKeyMap[actualLocale].performanceReview
 		);
 
 		const archives = [1, 2, 3, 4]
@@ -715,7 +712,6 @@ function addLoreDetails(characters, locale) {
 					clinicalAnalysis,
 					promotionRecord,
 					archives,
-					performanceReview,
 					classConversionRecord,
 				},
 			},
