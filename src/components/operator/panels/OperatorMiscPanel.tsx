@@ -201,24 +201,22 @@ const OperatorMiscPanel: React.FC = () => {
 					</div>
 				)}
 			</div>
-			{
-				handbook.archives && handbook.archives.length > 0 && (
-					<div className="flex flex-col gap-4">
-						{handbook.archives.map((archive, index) => (
-							<div>
-								<Accordion
-									icon={<ArchiveIcon />}
-									title={`Archive ${index + 1}`}
-								>
-									<p className="whitespace-pre-line mt-0 font-normal text-neutral-50">
-										{archive}
-									</p>
-								</Accordion>
-							</div>
-						))}
-					</div>
-				)
-			}
+			{handbook.archives && handbook.archives.length > 0 && (
+				<div className="flex flex-col gap-4">
+					{handbook.archives.map((archive, index) => (
+						<div>
+							<Accordion
+								icon={<ArchiveIcon />}
+								title={`Archive ${index + 1}`}
+							>
+								<p className="mt-0 whitespace-pre-line font-normal text-neutral-50" dangerouslySetInnerHTML={
+									{ __html: archive }
+								}></p>
+							</Accordion>
+						</div>
+					))}
+				</div>
+			)}
 			{handbook.promotionRecord && (
 				<div>
 					<Accordion
@@ -226,54 +224,59 @@ const OperatorMiscPanel: React.FC = () => {
 						title="Promotion Record"
 						fill={true}
 					>
-						<p className="whitespace-pre-line mt-0 font-normal text-neutral-50">
+						<p className="mt-0 whitespace-pre-line font-normal text-neutral-50">
 							{handbook.promotionRecord}
 						</p>
 					</Accordion>
 				</div>
 			)}
-			{handbook.classConversionRecord && handbook.classConversionRecord.length > 0 && (
-				// oh hi amiya.
-				// guardmiya class conversion record first
-				<div className="flex flex-col gap-4">
-					<div>
-						<Accordion
-							icon={
-								<img
-									className="h-8 w-8"
-									src={operatorClassIcon(
-										classToProfession("Guard").toLowerCase()
-									)}
-									alt="Guard"
-								/>
-							}
-							title="Class Conversion Record"
-						>
-							<p className="whitespace-pre-line mt-0 font-normal text-neutral-50">
-								{handbook.classConversionRecord[0]}
-							</p>
-						</Accordion>
+			{handbook.classConversionRecord &&
+				handbook.classConversionRecord.length > 0 && (
+					// oh hi amiya.
+					// guardmiya class conversion record first
+					<div className="flex flex-col gap-4">
+						<div>
+							<Accordion
+								icon={
+									<img
+										className="h-8 w-8"
+										src={operatorClassIcon(
+											classToProfession(
+												"Guard"
+											).toLowerCase()
+										)}
+										alt="Guard"
+									/>
+								}
+								title="Class Conversion Record"
+							>
+								<p className="mt-0 whitespace-pre-line font-normal text-neutral-50" dangerouslySetInnerHTML={
+									{ __html: handbook.classConversionRecord[0] }
+								}></p>
+							</Accordion>
+						</div>
+						<div>
+							<Accordion
+								icon={
+									<img
+										className="h-8 w-8"
+										src={operatorClassIcon(
+											classToProfession(
+												"Medic"
+											).toLowerCase()
+										)}
+										alt="Medic"
+									/>
+								}
+								title="Class Conversion Record"
+							>
+								<p className="mt-0 whitespace-pre-line font-normal text-neutral-50" dangerouslySetInnerHTML={
+									{ __html: handbook.classConversionRecord[1] }
+								}></p>
+							</Accordion>
+						</div>
 					</div>
-					<div>
-						<Accordion
-							icon={
-								<img
-									className="h-8 w-8"
-									src={operatorClassIcon(
-										classToProfession("Medic").toLowerCase()
-									)}
-									alt="Medic"
-								/>
-							}
-							title="Class Conversion Record"
-						>
-							<p className="whitespace-pre-line mt-0 font-normal text-neutral-50">
-								{handbook.classConversionRecord[1]}
-							</p>
-						</Accordion>
-					</div>
-				</div>
-			)}
+				)}
 
 			<div className="flex flex-row items-center gap-4">
 				<div
