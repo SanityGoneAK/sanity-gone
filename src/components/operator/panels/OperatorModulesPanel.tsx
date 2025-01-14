@@ -12,6 +12,7 @@ import PotentialsDropdown from "../PotentialsDropdown";
 import type * as OutputTypes from "~/types/output-types";
 import { moduleImage, moduleTypeImage } from "~/utils/images.ts";
 import Accordion from "~/components/ui/Accordion.tsx";
+import ArchiveIcon from "~/components/icons/ArchiveIcon.tsx";
 
 const OperatorModulesPanel: React.FC = () => {
 	const operator: OutputTypes.Operator = useStore(operatorStore);
@@ -104,55 +105,6 @@ const OperatorModulesPanel: React.FC = () => {
 		setStage(stage);
 	};
 
-	// if (viewStory) {
-	// 	return (
-	// 		<div className="flex flex-col gap-4 p-6">
-	// 			<button
-	// 				className="flex items-center gap-2"
-	// 				onClick={() => setViewStory(false)}
-	// 			>
-	// 				<svg
-	// 					width="8"
-	// 					height="14"
-	// 					viewBox="0 0 8 14"
-	// 					fill="none"
-	// 					xmlns="http://www.w3.org/2000/svg"
-	// 				>
-	// 					<path
-	// 						d="M7 13L1 7L7 1"
-	// 						stroke="#B8B8C0"
-	// 						strokeWidth="2"
-	// 						strokeLinecap="round"
-	// 						strokeLinejoin="round"
-	// 					/>
-	// 				</svg>
-	// 				<p>Module Details</p>
-	// 			</button>
-	//
-	// 			<div className="grid grid-cols-[48px_1fr] items-center gap-x-2 grid-areas-module-title grid-in-title">
-	// 				<img
-	// 					className="h-12 grid-in-icon"
-	// 					src={moduleTypeImage(module.moduleIcon.toLowerCase())}
-	// 					alt=""
-	// 				/>
-	// 				<h2 className="font-serif text-2xl grid-in-name">
-	// 					{module.moduleName}
-	// 				</h2>
-	// 				<p className="font-semibold text-purple grid-in-code">
-	// 					EXE-Y
-	// 				</p>
-	// 			</div>
-	// 			<hr className="border border-neutral-600" />
-	// 			<p
-	// 				className="whitespace-pre-line text-base font-normal leading-normal"
-	// 				dangerouslySetInnerHTML={{
-	// 					__html: module.moduleDescription,
-	// 				}}
-	// 			/>
-	// 		</div>
-	// 	);
-	// }
-
 	return (
 		<div className="flex flex-col gap-4 p-6">
 			<div className="grid grid-flow-col grid-cols-[auto_1fr] grid-rows-2 items-center gap-4 border-b border-neutral-500 pb-4 sm:grid-flow-row sm:grid-cols-[auto_auto_1fr] sm:grid-rows-1">
@@ -237,7 +189,9 @@ const OperatorModulesPanel: React.FC = () => {
 				)}
 				<hr className="border border-neutral-600" />
 				<div>
-					<Accordion title={"DESCRIPTION (possible story spoilers)"}>
+					<Accordion title={"DESCRIPTION (possible story spoilers)"} icon={
+						<ArchiveIcon/>
+					}>
 						<p
 							className="text-white mt-0 whitespace-pre-line rounded-b text-base font-normal"
 							dangerouslySetInnerHTML={{

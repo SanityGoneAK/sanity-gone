@@ -5,23 +5,33 @@ import { operatorStore } from "~/pages/[locale]/operators/_store";
 import { useState } from "react";
 
 import itemsJson from "../../../../data/en_US/items.json";
-import { arbitraryImage, itemImage, operatorAvatar } from "~/utils/images.ts";
+import {
+	arbitraryImage,
+	itemImage,
+	operatorAvatar,
+	operatorClassIcon,
+} from "~/utils/images.ts";
 import { cx } from "~/utils/styles.ts";
 import OriginiumIcon from "~/components/icons/OriginiumIcon.tsx";
+import Accordion from "~/components/ui/Accordion.tsx";
+import { EliteTwoIcon } from "~/components/icons";
+import GuardIcon from "~/components/icons/GuardIcon.tsx";
+import { classToProfession } from "~/utils/classes.ts";
 
 const OperatorMiscPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
 	const handbook = operator.handbook;
 
-	// split off Infection Status from basicInfo
-	const basicInfo = handbook.basicInfo.filter(
-		(info) => info.title !== "Infection Status"
-	);
-	const infectionStatus = handbook.basicInfo.filter(
-		(info) => info.title === "Infection Status"
+	// split off Infection Status and Inspection Report (robots only) from basicInfo
+	const infectionInspection = handbook.basicInfo.filter((info) =>
+		["Inspection Report", "Infection Status"].includes(info.title)
 	);
 
-	// TODO use this to handle robot operators
+	const basicInfo = handbook.basicInfo.filter(
+		(info) =>
+			!["Inspection Report", "Infection Status"].includes(info.title)
+	);
+
 	const isRobot = operator.rarity === 1;
 
 	// 0: not open
@@ -29,7 +39,7 @@ const OperatorMiscPanel: React.FC = () => {
 	// 5: promotion record
 	const [currentArchive, setCurrentArchive] = useState(0);
 
-	console.log(operator.potentialItemId);
+	// console.log(operator.potentialItemId);
 	const potItem =
 		itemsJson[operator.potentialItemId as keyof typeof itemsJson];
 
@@ -76,8 +86,19 @@ const OperatorMiscPanel: React.FC = () => {
 			</div>
 		);
 	}
+
 	return (
 		<div className="grid gap-y-4 rounded-br-lg p-6">
+			<div className="inline-flex w-fit gap-2 rounded bg-neutral-800/80 text-base leading-normal text-neutral-50 backdrop-blur-[4px]">
+				<span className="text-neutral-200">VA</span>
+				<ul className="m-0 flex list-none gap-2 p-0">
+					{operator.voices.map((voice) => (
+						<li key={voice.voiceLangType}>
+							{voice.voiceLangType}:{voice.cvName.join(", ")}
+						</li>
+					))}
+				</ul>
+			</div>
 			<ul className="flex gap-2">
 				{operator.tagList.map((tag, index) => (
 					<li
@@ -102,13 +123,13 @@ const OperatorMiscPanel: React.FC = () => {
 					<ul>
 						{basicInfo.map((info) => (
 							<li
-								className="mb-4 flex items-center justify-between last:mb-0"
+								className="mb-4 flex h-6 items-center justify-between last:mb-0"
 								key={info.title}
 							>
-								<span className="text-base leading-normal text-neutral-200">
+								<span className="text-base leading-none text-neutral-200">
 									{info.title}
 								</span>
-								<span className="text-lg font-semibold">
+								<span className="text-lg font-semibold leading-none">
 									{info.value}
 								</span>
 							</li>
@@ -118,17 +139,18 @@ const OperatorMiscPanel: React.FC = () => {
 				<div className="border-t border-neutral-600 sm:border-l"></div>
 				<div>
 					<h2 className="mb-4 font-serif text-2xl font-semibold">
-						Physical Exam
+						{isRobot ? "Performance Review" : "Physical Exam"}
 					</h2>
 					<ul>
 						{handbook.physicalExam.map((item) => (
 							<li
-								className="mb-4 flex items-center justify-between last:mb-0"
+								className="mb-4 flex h-6 items-center justify-between last:mb-0"
 								key={item.title}
 							>
-								<span className="text-base leading-normal text-neutral-200">
+								<span className="text-base leading-none text-neutral-200">
 									{item.title ===
 									"Originium Arts Assimilation" ? ( // i may or may not be slightly trolling
+										// (it had to be done, otherwise certain arts assimilation values wouldn't fit)
 										<div className="flex flex-row items-center gap-1.5">
 											<OriginiumIcon />
 											<p>Arts Assimilation</p>
@@ -137,7 +159,7 @@ const OperatorMiscPanel: React.FC = () => {
 										item.title
 									)}
 								</span>
-								<span className="text-lg font-semibold">
+								<span className="text-lg font-semibold leading-none">
 									{item.value}
 								</span>
 							</li>
@@ -146,64 +168,113 @@ const OperatorMiscPanel: React.FC = () => {
 				</div>
 			</div>
 			<div className="flex flex-col gap-4 rounded bg-neutral-600 p-4">
-				<div>
-					<h3 className="mb-1 text-sm leading-none text-neutral-200">
-						Infection Status
-					</h3>
-					<p className="text-base font-normal leading-normal">
-						{infectionStatus.length > 0
-							? infectionStatus[0].value
-							: "N/A"}
-					</p>
-				</div>
-				<div>
-					<h3 className="mb-1 text-sm leading-none text-neutral-200">
-						Clinical Diagnosis Analysis
-					</h3>
-					<p
-						className="whitespace-pre-line text-base font-normal leading-normal"
-						// whitespace-pre-line to preserve newlines
-					>
-						{handbook.clinicalAnalysis}
-					</p>
-				</div>
-			</div>
-			<div className="grid grid-flow-row grid-cols-2 grid-rows-2 justify-between gap-4 sm:flex">
-				{[1, 2, 3, 4].map((archive) => (
-					<button
-						onClick={() => setCurrentArchive(archive)}
-						key={`Archive ${archive}`}
-						className="flex h-32 w-full cursor-pointer flex-col items-center justify-center gap-2 rounded bg-neutral-600 hover:bg-neutral-500"
-					>
-						<ArchiveIcon />
-						<p className="font-bold uppercase text-neutral-200">
-							ARCHIVE {archive}
+				{infectionInspection && infectionInspection.length > 0 ? (
+					<div>
+						<h3 className="mb-1 text-sm leading-none text-neutral-200">
+							{infectionInspection[0].title}
+						</h3>
+						<p className="text-base font-normal leading-normal">
+							{infectionInspection[0].value}
 						</p>
-					</button>
-				))}
+					</div>
+				) : (
+					<div>
+						<h3 className="mb-1 text-sm leading-none text-neutral-200">
+							Infection Status
+						</h3>
+						<p className="text-base font-normal leading-normal">
+							N/A
+						</p>
+					</div>
+				)}
+				{!isRobot && (
+					<div>
+						<h3 className="mb-1 text-sm leading-none text-neutral-200">
+							Clinical Diagnosis Analysis
+						</h3>
+						<p
+							className="whitespace-pre-line text-base font-normal leading-normal"
+							// whitespace-pre-line to preserve newlines
+						>
+							{handbook.clinicalAnalysis}
+						</p>
+					</div>
+				)}
 			</div>
-			<button
-				onClick={() => setCurrentArchive(5)}
-				className="flex h-16 items-center justify-center gap-2 bg-neutral-600 hover:bg-neutral-500"
-			>
-				<svg
-					width="28"
-					height="26"
-					viewBox="0 0 28 26"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						fillRule="evenodd"
-						clipRule="evenodd"
-						d="M6.72 25.3203L14 20.4663L21.28 25.3203L19.2 20.2003L16.8 18.6003L19.0406 17.1066L21.28 18.5997L20.3254 16.25L25.92 12.5203L28 7.40028L19.0408 13.3735L16.8 11.8797L25.92 5.79969L28 0.679688L14 10.0137L0 0.679688L2.08 5.79969L11.2 11.8797L8.95923 13.3735L0 7.40028L2.08 12.5203L7.67456 16.25L6.72 18.5997L8.9594 17.1066L11.2 18.6003L8.8 20.2003L6.72 25.3203ZM14 13.7457L11.7588 15.24L14 16.7343L16.2412 15.24L14 13.7457Z"
-						className="fill-neutral-200"
-					/>
-				</svg>
-				<p className="font-semibold text-neutral-200">
-					PROMOTION RECORD
-				</p>
-			</button>
+			{
+				handbook.archives && handbook.archives.length > 0 && (
+					<div className="flex flex-col gap-4">
+						{handbook.archives.map((archive, index) => (
+							<div>
+								<Accordion
+									icon={<ArchiveIcon />}
+									title={`Archive ${index + 1}`}
+								>
+									<p className="whitespace-pre-line mt-0 font-normal text-neutral-50">
+										{archive}
+									</p>
+								</Accordion>
+							</div>
+						))}
+					</div>
+				)
+			}
+			{handbook.promotionRecord && (
+				<div>
+					<Accordion
+						icon={<EliteTwoIcon />}
+						title="Promotion Record"
+						fill={true}
+					>
+						<p className="whitespace-pre-line mt-0 font-normal text-neutral-50">
+							{handbook.promotionRecord}
+						</p>
+					</Accordion>
+				</div>
+			)}
+			{handbook.classConversionRecord && (
+				// oh hi amiya.
+				// guardmiya class conversion record first
+				<div className="flex flex-col gap-4">
+					<div>
+						<Accordion
+							icon={
+								<img
+									className="h-8 w-8"
+									src={operatorClassIcon(
+										classToProfession("Guard").toLowerCase()
+									)}
+									alt="Guard"
+								/>
+							}
+							title="Class Conversion Record"
+						>
+							<p className="whitespace-pre-line mt-0 font-normal text-neutral-50">
+								{handbook.classConversionRecord[0]}
+							</p>
+						</Accordion>
+					</div>
+					<div>
+						<Accordion
+							icon={
+								<img
+									className="h-8 w-8"
+									src={operatorClassIcon(
+										classToProfession("Medic").toLowerCase()
+									)}
+									alt="Medic"
+								/>
+							}
+							title="Class Conversion Record"
+						>
+							<p className="whitespace-pre-line mt-0 font-normal text-neutral-50">
+								{handbook.classConversionRecord[1]}
+							</p>
+						</Accordion>
+					</div>
+				</div>
+			)}
+
 			<div className="flex flex-row items-center gap-4">
 				<div
 					className="inline-grid h-[52px] w-[52px]"
@@ -215,12 +286,13 @@ const OperatorMiscPanel: React.FC = () => {
 						className={cx(
 							"h-[52px] w-[52px] rounded-full border-2",
 							{
+								6: "border-yellow bg-yellow/30",
 								5: "border-yellow-light bg-yellow-light/30",
 								4: "border-purple-light bg-purple-light/30",
 								3: "border-blue-light bg-blue-light/30",
 								2: "border-green-light bg-green-light/30",
 								1: "border-neutral-50 bg-neutral-50/30",
-							}[operator.rarity - 1]
+							}[operator.rarity]
 						)}
 						style={{
 							gridArea: "stack",

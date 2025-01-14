@@ -55,6 +55,11 @@ export interface Operator extends Character {
 	itemDesc: string;
 
 	handbook: {
+		classConversionRecord?: string[]; // amiya only lol
+		// performanceReview?: Array<{
+		// 	title: string;
+		// 	value: string;
+		// }>; // robots only MOVED to physicalExam for robots too
 		profile: string;
 		basicInfo: Array<{
 			title: string;

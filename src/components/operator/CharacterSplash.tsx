@@ -14,7 +14,7 @@ import type * as OutputTypes from "~/types/output-types.ts";
 import PaintbrushIcon from "~/components/icons/PaintbrushIcon.tsx";
 
 const CharacterSplash: React.FC = () => {
-	const { skins, voices } = useStore(operatorStore);
+	const { skins } = useStore(operatorStore);
 
 	let startIndex = 0;
 	skins.forEach((skin, i) => {
@@ -148,19 +148,6 @@ const CharacterSplash: React.FC = () => {
 										</span>
 									</div>
 								</div>
-
-								{/* Old code for voice actors. Could still be useful. Probably not though. */}
-
-								{/*<div className="inline-flex w-fit gap-2 rounded bg-neutral-800/80 px-2 py-1 text-base leading-normal text-neutral-50 backdrop-blur-[4px]">*/}
-								{/*	<span className="text-neutral-200">VA</span>*/}
-								{/*	<ul className="m-0 flex list-none gap-2 p-0">*/}
-								{/*		{voices.map((voice) => (*/}
-								{/*			<li key={voice.voiceLangType}>*/}
-								{/*				{voice.cvName.join(", ")}*/}
-								{/*			</li>*/}
-								{/*		))}*/}
-								{/*	</ul>*/}
-								{/*</div>*/}
 							</div>
 						</Tab.Panel>
 					);
