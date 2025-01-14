@@ -232,7 +232,7 @@ const OperatorMiscPanel: React.FC = () => {
 					</Accordion>
 				</div>
 			)}
-			{handbook.classConversionRecord && (
+			{handbook.classConversionRecord && handbook.classConversionRecord.length > 0 && (
 				// oh hi amiya.
 				// guardmiya class conversion record first
 				<div className="flex flex-col gap-4">
