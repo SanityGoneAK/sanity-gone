@@ -2,6 +2,7 @@ import { useStore } from "@nanostores/react";
 
 import SvgRarityGradientDefs from "./SvgRarityGradientDefs";
 import { $operators, $viewConfig } from "../../pages/[locale]/operators/_store";
+import enOperatorsJson from "data/en_US/operators.json";
 import {
 	operatorAvatar,
 	operatorBranchIcon,
@@ -15,6 +16,9 @@ import { cx } from "~/utils/styles";
 import StarIcon from "../icons/StarIcon";
 import { professionToClass } from "~/utils/classes";
 import { subProfessionIdToBranch } from "~/utils/branches";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 const OperatorLargeItem: React.FC<{
 	operator: OutputTypes.Operator;
@@ -29,6 +33,8 @@ const OperatorLargeItem: React.FC<{
 		5: "text-yellow-light",
 		6: "text-orange-light",
 	};
+
+	const slug = slugify(enOperatorsJson[operator.charId as keyof typeof enOperatorsJson].name);
 
 	return (
 		<li className="relative h-[280px] w-full overflow-hidden rounded">
@@ -53,13 +59,13 @@ const OperatorLargeItem: React.FC<{
 					<a
 						className="block h-11 flex-grow"
 						tabIndex={-1}
-						href={`/${locale}/operators/${slugify(operator.name)}`}
+						href={`/${locale}/operators/${slug}`}
 					></a>
 				</div>
 
 				<div className="flex h-full flex-col justify-end bg-gradient-to-b from-[transparent] from-40% via-neutral-950/[0.67] via-[67%] to-[#1c1c1c] to-100%">
 					<a
-						href={`/${locale}/operators/${slugify(operator.name)}`}
+						href={`/${locale}/operators/${slug}`}
 						tabIndex={-1}
 						className="flex flex-grow flex-col justify-end p-3"
 					>
@@ -161,6 +167,8 @@ const OperatorCompactItem: React.FC<{
 		5: "text-yellow-light",
 		6: "text-orange-light",
 	};
+
+	const slug = slugify(enOperatorsJson[operator.charId as keyof typeof enOperatorsJson].name);
 	return (
 		<li className="relative h-36 overflow-hidden rounded sm:h-40">
 			<div className="h-full overflow-hidden bg-neutral-600">
@@ -184,12 +192,12 @@ const OperatorCompactItem: React.FC<{
 					<a
 						tabIndex={-1}
 						className="block h-11 flex-grow"
-						href={`/${locale}/operators/${slugify(operator.name)}`}
+						href={`/${locale}/operators/${slug}`}
 					></a>
 				</div>
 				<div className="from-zinc-950 to-100 flex h-full flex-col justify-end bg-gradient-to-b from-transparent from-30% via-transparent via-[67%] to-transparent transition duration-100 ease-in-out focus-within:via-neutral-950/[0.67] focus-within:to-[#1c1c1c] group-hover:from-transparent group-hover:via-neutral-950/[0.67] group-hover:to-[#1c1c1c]">
 					<a
-						href={`/${locale}/operators/${slugify(operator.name)}`}
+						href={`/${locale}/operators/${slug}`}
 						className="group/link flex flex-grow flex-col justify-end p-3"
 					>
 						<h3 className="flex flex-col text-lg font-semibold leading-6 text-neutral-50 opacity-0 transition-opacity group-hover:opacity-100 group-focus/link:opacity-100">
