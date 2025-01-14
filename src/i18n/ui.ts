@@ -2,6 +2,7 @@ export const ui = {
 	en: {
 		"nav.home": "Home",
 		"nav.operators": "Operators",
+		"nav.classes": "Classes",
 		"nav.search": "Search",
 		"nav.description": "Sanity;Gone is a community resource for Arknights players, providing guides, reviews, and detailed information about the game.",
 		"nav.disclaimer": "Disclaimer",
@@ -25,10 +26,12 @@ export const ui = {
 		"operators.index.filters.release_date": "Release Date",
 		"operators.index.filters.view": "View",
 
+		"operators.details.general.limited": "Limited",
 		"operators.details.general.elite": "Elite",
 		"operators.details.general.operator_info": "Operator Info",
 		"operators.details.general.guide": "Guide Info",
 		"operators.details.general.melee": "Melee",
+		"operators.details.general.range": "Range",
 		"operators.details.general.ranged": "Ranged",
 		"operators.details.general.melee_and_ranged": "Melee and Ranged",
 		"operators.details.general.potential": "Potential",
@@ -72,6 +75,8 @@ export const ui = {
 		"operators.details.modules.stage": "Stage",
 		"operators.details.modules.description": "Description",
 		"operators.details.modules.story_spoiler": "Possible Story Spoilers",
+		"operators.details.modules.mission": "Mission",
+		"operators.details.modules.unlock_missions": "Unlock Mission",
 
 		"operators.details.riic.title": "RIIC",
 
@@ -86,6 +91,7 @@ export const ui = {
 	"zh-cn": {
 		"nav.home": "主页",
 		"nav.operators": "干员",
+		"nav.classes": "Classes",
 		"nav.search": "搜索",
 		"nav.description": "Sanity;Gone is a community resource for Arknights players, providing guides, reviews, and detailed information about the game.",
 		"nav.disclaimer": "免责声明",
@@ -110,10 +116,12 @@ export const ui = {
 		"operators.index.filters.release_date": "Release Date",
 		"operators.index.filters.view": "View",
 
+		"operators.details.general.limited": "Limited",
 		"operators.details.general.elite": "Elite",
 		"operators.details.general.operator_info": "Operator Info",
 		"operators.details.general.guide": "Guide Info",
 		"operators.details.general.melee": "Melee",
+		"operators.details.general.range": "Range",
 		"operators.details.general.ranged": "Ranged",
 		"operators.details.general.melee_and_ranged": "Melee and Ranged",
 		"operators.details.general.potential": "Potential",
@@ -157,6 +165,8 @@ export const ui = {
 		"operators.details.modules.stage": "Stage",
 		"operators.details.modules.description": "Description",
 		"operators.details.modules.story_spoiler": "Possible Story Spoilers",
+		"operators.details.modules.mission": "Mission",
+		"operators.details.modules.unlock_missions": "Unlock Mission",
 
 		"operators.details.riic.title": "RIIC",
 
@@ -172,6 +182,7 @@ export const ui = {
 		"nav.home": "ホーム",
 		"nav.operators": "オペレーター",
 		"nav.search": "Search",
+		"nav.classes": "Classes",
 		"nav.description": "Sanity;Gone is a community resource for Arknights players, providing guides, reviews, and detailed information about the game",
 		"nav.disclaimer": "Disclaimer",
 		"nav.about": "About",
@@ -194,10 +205,12 @@ export const ui = {
 		"operators.index.filters.release_date": "Release Date",
 		"operators.index.filters.view": "View",
 
+		"operators.details.general.limited": "Limited",
 		"operators.details.general.elite": "Elite",
 		"operators.details.general.operator_info": "Operator Info",
 		"operators.details.general.guide": "Guide Info",
 		"operators.details.general.melee": "Melee",
+		"operators.details.general.range": "Range",
 		"operators.details.general.ranged": "Ranged",
 		"operators.details.general.melee_and_ranged": "Melee and Ranged",
 		"operators.details.general.potential": "Potential",
@@ -241,6 +254,8 @@ export const ui = {
 		"operators.details.modules.stage": "Stage",
 		"operators.details.modules.description": "Description",
 		"operators.details.modules.story_spoiler": "Possible Story Spoilers",
+		"operators.details.modules.mission": "Mission",
+		"operators.details.modules.unlock_missions": "Unlock Mission",
 
 		"operators.details.riic.title": "RIIC",
 
@@ -256,6 +271,7 @@ export const ui = {
 		"nav.home": "홈",
 		"nav.operators": "오퍼레이터",
 		"nav.search": "Search",
+		"nav.classes": "Classes",
 		"nav.description": "Sanity;Gone is a community resource for Arknights players, providing guides, reviews, and detailed information about the game.",
 		"nav.disclaimer": "Disclaimer",
 		"nav.about": "About",
@@ -278,10 +294,12 @@ export const ui = {
 		"operators.index.filters.release_date": "Release Date",
 		"operators.index.filters.view": "View",
 
+		"operators.details.general.limited": "Limited",
 		"operators.details.general.elite": "Elite",
 		"operators.details.general.operator_info": "Operator Info",
 		"operators.details.general.guide": "Guide Info",
 		"operators.details.general.melee": "Melee",
+		"operators.details.general.range": "Range",
 		"operators.details.general.ranged": "Ranged",
 		"operators.details.general.melee_and_ranged": "Melee and Ranged",
 		"operators.details.general.potential": "Potential",
@@ -325,6 +343,8 @@ export const ui = {
 		"operators.details.modules.stage": "Stage",
 		"operators.details.modules.description": "Description",
 		"operators.details.modules.story_spoiler": "Possible Story Spoilers",
+		"operators.details.modules.mission": "Mission",
+		"operators.details.modules.unlock_missions": "Unlock Mission",
 
 		"operators.details.riic.title": "RIIC",
 

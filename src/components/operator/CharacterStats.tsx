@@ -13,6 +13,10 @@ import {
 import { getStatsAtLevel } from "~/utils/character-stats";
 
 import type * as OutputTypes from "~/types/output-types";
+import { useStore } from "@nanostores/react";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 interface Props {
 	character: OutputTypes.Character;
@@ -35,6 +39,9 @@ const CharacterStats: React.FC<Props> = ({
 	character,
 	parentCharacter,
 }) => {
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
+
 	const {
 		health,
 		defense,
@@ -85,42 +92,42 @@ const CharacterStats: React.FC<Props> = ({
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<HealthIcon className="text-neutral-50" />
-					<span>Health</span>
+					<span>{t("operators.details.attributes.health")}</span>
 				</dt>
 				<dd className="font-semibold">{health}</dd>
 			</div>
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<DefenseIcon className="text-neutral-50" />
-					<span>Defense</span>
+					<span>{t("operators.details.attributes.defense")}</span>
 				</dt>
 				<dd className="font-semibold">{defense}</dd>
 			</div>
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<ArtsResistanceIcon className="text-neutral-50" />
-					<span>Arts Resistance</span>
+					<span>{t("operators.details.attributes.arts_resistance")}</span>
 				</dt>
 				<dd className="font-semibold">{artsResistance}</dd>
 			</div>
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<HourglassIcon className="text-neutral-50" />
-					<span>Redeploy Time</span>
+					<span>{t("operators.details.attributes.redeploy_time")}</span>
 				</dt>
 				<dd className="font-semibold">{redeployTimeInSeconds} sec</dd>
 			</div>
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<AttackPowerIcon className="text-neutral-50" />
-					<span>Attack Power</span>
+					<span>{t("operators.details.attributes.attack_power")}</span>
 				</dt>
 				<dd className="font-semibold">{attackPower}</dd>
 			</div>
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<AttackSpeedIcon className="text-neutral-50" />
-					<span>Attack Interval</span>
+					<span>{t("operators.details.attributes.attack_interval")}</span>
 				</dt>
 				<dd className="font-semibold">
 					{secondsPerAttack.toFixed(2)} sec
@@ -129,14 +136,14 @@ const CharacterStats: React.FC<Props> = ({
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<BlockIcon className="text-neutral-50" />
-					<span>Block</span>
+					<span>{t("operators.details.attributes.block")}</span>
 				</dt>
 				<dd className="font-semibold">{blockCount}</dd>
 			</div>
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<DPCostIcon className="text-neutral-50" />
-					<span>DP Cost</span>
+					<span>{t("operators.details.attributes.block")}</span>
 				</dt>
 				<dd className="font-semibold">{dpCost}</dd>
 			</div>

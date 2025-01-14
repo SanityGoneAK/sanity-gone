@@ -7,16 +7,13 @@ import branches from "data/en_US/branches.json";
 import { classToProfession, professionLookup } from "../../../utils/classes.ts";
 
 import type * as OutputTypes from "../../../types/output-types.ts";
+import { localeStore } from "~/pages/[locale]/_store.ts";
 const operatorsMap = {
 	en: enOperatorsJson,
 	kr: krOperatorsJson,
 	jp: jpOperatorsJson,
 	'zh-cn': cnOperatorsJson,
 };
-
-export const localeStore = atom<string>(
-	typeof window !== "undefined" ? (window as any).locale : "en"
-);
 
 export const operatorIdStore = atom<string>(
 	typeof window !== "undefined" ? (window as any).operatorId : ""

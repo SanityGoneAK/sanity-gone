@@ -5,7 +5,7 @@ import krOperatorsJson from "data/ko_KR/operators.json";
 import jpOperatorsJson from "data/ja_JP/operators.json";
 import cnOperatorsJson from "data/zh_CN/operators.json";
 import Layout from "~/layouts/Layout.astro";
-import { operatorIdStore, localeStore } from "./_store";
+import { operatorIdStore } from "./_store";
 import CharacterSplash from "~/components/operator/CharacterSplash";
 import SvgRarityGradientDefs from "~/components/operator/SvgRarityGradientDefs";
 import OperatorTabs from "~/components/operator/OperatorTabs";
@@ -21,6 +21,9 @@ import { operatorSplash } from "~/utils/images.ts";
 
 import OperatorInfoIcon from "~/components/icons/OperatorInfoIcon.tsx";
 import GuideIcon from "~/components/icons/GuideIcon.tsx";
+import { localeStore } from "../_store";
+import { useTranslations } from "../../../i18n/utils";
+import type { ui } from "../../../i18n/ui";
 
 // console.log(Object.entries(operatorsJson)[0]);
 //
@@ -40,6 +43,8 @@ import GuideIcon from "~/components/icons/GuideIcon.tsx";
 const { slug } = Astro.params;
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 localeStore.set(locale);
+const t = useTranslations(locale as keyof typeof ui);
+
 const operatorsMap = {
 	en: enOperatorsJson,
 	kr: krOperatorsJson,
@@ -80,7 +85,7 @@ const operatorBgSkin = operator.skins.find((skin) => skin.type === "elite-one-or
 				<li class="text-base font-normal leading-normal">
 					<a
 						href={getRelativeLocaleUrl(locale, "/operators")}
-						class="text-blue hover:underline">Operators</a
+						class="text-blue hover:underline">{t('nav.operators')}</a
 					>
 				</li>
 				/
@@ -171,11 +176,11 @@ const operatorBgSkin = operator.skins.find((skin) => skin.type === "elite-one-or
 					<div class="flex items-center bg-neutral-700 border-neutral-500 border rounded-md h-8">
 						<button class="flex-1 flex items-center justify-center gap-2 h-8 bg-neutral-500 rounded font-semibold">
 							<OperatorInfoIcon/>
-							<span>Operator Info</span>
+							<span>{t('operators.details.general.operator_info')}</span>
 						</button>
 						<button class="flex-1 flex items-center justify-center gap-2 cursor-not-allowed" disabled>
 							<GuideIcon/>
-							<span>Guide</span>
+							<span>{t('operators.details.general.guide')}</span>
 						</button>
 					</div>
 				</div>

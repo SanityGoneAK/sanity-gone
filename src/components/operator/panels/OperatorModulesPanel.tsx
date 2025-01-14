@@ -12,10 +12,16 @@ import PotentialsDropdown from "../PotentialsDropdown";
 import type * as OutputTypes from "~/types/output-types";
 import { moduleImage, moduleTypeImage } from "~/utils/images.ts";
 import Accordion from "~/components/ui/Accordion.tsx";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
 import ArchiveIcon from "~/components/icons/ArchiveIcon.tsx";
 
 const OperatorModulesPanel: React.FC = () => {
 	const operator: OutputTypes.Operator = useStore(operatorStore);
+
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
 
 	// This is the module types and IDs for the operator.
 	// Only needs to be computed once, so a useMemo is used.
@@ -109,7 +115,7 @@ const OperatorModulesPanel: React.FC = () => {
 		<div className="flex flex-col gap-4 p-6">
 			<div className="grid grid-flow-col grid-cols-[auto_1fr] grid-rows-2 items-center gap-4 border-b border-neutral-500 pb-4 sm:grid-flow-row sm:grid-cols-[auto_auto_1fr] sm:grid-rows-1">
 				<div className="grid w-fit grid-flow-col items-center gap-x-2 text-neutral-200">
-					<span>Model</span>
+					<span>{t('operators.details.modules.module')}</span>
 					<PillButtonGroup
 						labels={moduleTypes}
 						value={moduleType}
@@ -118,7 +124,7 @@ const OperatorModulesPanel: React.FC = () => {
 				</div>
 
 				<div className="grid grid-flow-col items-center gap-x-2 text-neutral-200">
-					Stage
+					{t("operators.details.modules.stage")}
 					<PillButtonGroup
 						labels={[1, 2, 3]}
 						value={stage}
@@ -149,14 +155,14 @@ const OperatorModulesPanel: React.FC = () => {
 					/>
 				) : (
 					<div className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600 p-4 text-neutral-200">
-						<span>Module</span>
-						<span>None</span>
+						<span>{t("operators.details.modules.module")}</span>
+						<span>{t("operators.details.attributes.module_none")}</span>
 					</div>
 				)}
 				<hr className="border border-neutral-500" />
 				<div className="flex flex-col gap-4">
 					<h2 className="text-lg font-semibold leading-[23px]">
-						Requirements
+						{t("operators.details.general.upgrade_requirements")}
 					</h2>
 					<MaterialRequirements
 						// @ts-expect-error what is typescript waffling about
@@ -170,18 +176,18 @@ const OperatorModulesPanel: React.FC = () => {
 				{module.missionList && module.missionList.length > 0 && (
 					<div className="flex flex-col gap-4">
 						<h2 className="text-lg font-semibold leading-[23px]">
-							Unlock Missions
+							{t("operators.details.modules.unlock_missions")}
 						</h2>
 						<div>
 							<h3 className="mb-1 text-sm leading-[14px] text-neutral-200">
-								Mission 1
+								{t('operators.details.modules.mission')} 1
 							</h3>
 
 							<p>{module.missionList[0].description}</p>
 						</div>
 						<div>
 							<h3 className="mb-1 text-sm leading-[14px] text-neutral-200">
-								Mission 2
+								{t('operators.details.modules.mission')} 2
 							</h3>
 							<p>{module.missionList[1].description}</p>
 						</div>

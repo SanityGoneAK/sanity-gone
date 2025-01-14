@@ -1,6 +1,7 @@
 import React, { useCallback, useRef, useState } from "react";
 
 import { Combobox } from "@headlessui/react";
+import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
 import {
 	InstantSearch,
 	useHits,
@@ -8,6 +9,8 @@ import {
 	type UseSearchBoxProps,
 } from "react-instantsearch";
 
+import { type Locale, localeToTag } from "~/i18n/languages.ts";
+import { useTranslations } from "~/i18n/utils.ts";
 import {
 	operatorAvatar,
 	operatorBranchIcon,
@@ -15,17 +18,17 @@ import {
 } from "~/utils/images.ts";
 import { slugify, subclassSlugify } from "~/utils/strings.ts";
 import { cx } from "~/utils/styles.ts";
+
 import SearchIcon from "../icons/SearchIcon.tsx";
 
+import type { BaseHit } from "instantsearch.js";
+import type { ui } from "~/i18n/ui.ts";
 import type {
 	SearchResult,
 	ClassSearchResult,
 	BranchSearchResult,
 	OperatorSearchResult,
 } from "~/types/output-types.ts";
-import type { BaseHit } from "instantsearch.js";
-import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
-import { type Locale, localeToTag } from "~/i18n/languages.ts";
 
 interface Props {
 	locale: Locale;
@@ -88,6 +91,7 @@ const CustomHits: React.FC<{
 		2: "",
 		1: "",
 	};
+	const t = useTranslations(locale as keyof typeof ui);
 
 	hits.forEach((result) => {
 		if (result.type === "operator") {
@@ -122,7 +126,7 @@ const CustomHits: React.FC<{
 						id="search-results-classes"
 						className="flex h-9 items-center bg-neutral-500 pl-4 text-sm leading-[18px] text-neutral-200"
 					>
-						Operators
+						{t("nav.operators")}
 					</li>
 					{operatorResults.slice(0, 5).map((result) => (
 						<Combobox.Option<"li", SearchResult | null>
@@ -172,7 +176,7 @@ const CustomHits: React.FC<{
 						id="search-results-classes"
 						className="flex h-9 items-center bg-neutral-500 pl-4 text-sm leading-[18px] text-neutral-200"
 					>
-						Classes
+						{t("nav.classes")}
 					</li>
 					{classResults.slice(0, 3).map((result) => (
 						<Combobox.Option<"li", SearchResult | null>

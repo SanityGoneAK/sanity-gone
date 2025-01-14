@@ -4,8 +4,10 @@ import OperatorFilterBar from "~/components/operator/filters/OperatorFilterBar";
 import OperatorList from "~/components/operator/OperatorList";
 import { getPathByLocale } from "astro:i18n";
 import { defaultLang } from "~/i18n/languages";
+import { localeStore } from "../_store";
 
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
+localeStore.set(locale);
 ---
 
 <Layout title="Operator List">

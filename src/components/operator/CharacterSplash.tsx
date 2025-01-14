@@ -12,6 +12,9 @@ import OriginiumIcon from "../icons/OriginiumIcon";
 
 import type * as OutputTypes from "~/types/output-types.ts";
 import PaintbrushIcon from "~/components/icons/PaintbrushIcon.tsx";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 const CharacterSplash: React.FC = () => {
 	const { skins } = useStore(operatorStore);
@@ -24,6 +27,9 @@ const CharacterSplash: React.FC = () => {
 	});
 
 	const [selectedIndex, setSelectedIndex] = useState(startIndex);
+
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
 
 	return (
 		<Tab.Group
@@ -58,6 +64,7 @@ const CharacterSplash: React.FC = () => {
 			</Tab.List>
 			<Tab.Panels className="h-full">
 				{skins.map((skin) => {
+					const skinName = skin.name.toLowerCase().includes('elite') ? t('operators.details.general.elite') + skin.name.toLowerCase().split('elite')[1] : skin.name;
 					return (
 						<Tab.Panel
 							id={`${skin.skinId}-tabpanel`}
@@ -105,7 +112,7 @@ const CharacterSplash: React.FC = () => {
 										}
 									>
 										<span className="text-lg font-semibold leading-none">
-											{skin.name}
+											{skinName}
 										</span>
 
 										{skins[selectedIndex].cost &&

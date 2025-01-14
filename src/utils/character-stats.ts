@@ -538,11 +538,11 @@ export const getModuleStatIncrease = (
  */
 export function getMeleeOrRangedOrBoth(
 	position: string,
-	description: string | null
+	description: string | null,
 ) {
 	return description?.toLowerCase().includes("can be deployed on ranged")
-		? "Melee & Ranged"
-		: toTitleCase(position);
+		? "melee_and_ranged"
+		: position.toLowerCase();
 }
 
 /**

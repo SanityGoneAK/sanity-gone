@@ -15,6 +15,12 @@ import { operatorAvatar } from "../../utils/images";
 import MeleeIcon from "~/components/icons/MeleeIcon.tsx";
 import RangedIcon from "~/components/icons/RangedIcon.tsx";
 import MeleeAndRangedIcon from "~/components/icons/MeleeAndRangedIcon.tsx";
+import { getPathByLocale } from "astro:i18n";
+import { defaultLang } from "../../i18n/languages";
+import { localeStore } from "../../pages/[locale]/_store";
+import { useTranslations } from "../../i18n/utils";
+import type { ui } from "../../i18n/ui";
+import { toTitleCase } from "../../utils/strings";
 
 interface Props {
 	operator: OutputTypes.Character;
@@ -25,11 +31,13 @@ const [baseName, alterName] = operator.name.split(/ the /i);
 const operatorClass = professionToClass(operator.profession);
 const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 
-const meleeOrRanged = getMeleeOrRangedOrBoth(
-	operator.position,
-	operator.description
-);
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
+const t = useTranslations(locale as keyof typeof ui);
 
+const meleeOrRanged = t('operators.details.general.'+getMeleeOrRangedOrBoth(
+	operator.position,
+	operator.description,
+));
 ---
 
 <div
@@ -38,7 +46,7 @@ const meleeOrRanged = getMeleeOrRangedOrBoth(
 	<div
 		class="flex items-center w-full gap-1 px-5 h-6 sm:rounded-t bg-orange/[.08]"
 	>
-		<span class="visually-hidden">Rarity: {rarity}</span>
+		<span class="visually-hidden">{t('operators.index.filters.rarity')}: {rarity}</span>
 		<span class="grid grid-flow-col">
 			{
 				Array(rarity)
@@ -66,7 +74,7 @@ const meleeOrRanged = getMeleeOrRangedOrBoth(
 						"font-height: 10px; line-height: 12px;"
 					}
 				>
-					Limited
+					{t('operators.details.general.limited')}
 				</span>
 			)
 		}

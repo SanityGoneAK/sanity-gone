@@ -1,7 +1,17 @@
 ---
-import Layout from "~/layouts/Layout.astro";
----
+import {
+	getAbsoluteLocaleUrl,
+	getPathByLocale,
+	getRelativeLocaleUrl,
+} from "astro:i18n";
+import { defaultLang } from "~/i18n/languages";
 
-<Layout title="Sanity;Gone">
-	<h1 class="text-4xl">HELLOWORLD</h1>
-</Layout>
+const preferredLocale = Astro.preferredLocale ?? defaultLang;
+const localePath = getPathByLocale(preferredLocale);
+
+const redirectToPreferredLocale = getRelativeLocaleUrl(localePath, "/");
+if (redirectToPreferredLocale == "/") {
+	return Astro.redirect("/en/operators", 301);
+}
+return Astro.redirect(redirectToPreferredLocale + 'operators/', 301);
+---

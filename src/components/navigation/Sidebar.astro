@@ -67,8 +67,7 @@ const sidebarLinks: { href: string; name: string, icon: any }[] = [
 		</div>
 		<hr class="text-neutral-400" />
 		<p class="text-neutral-200">
-			Sanity;Gone is a community resource for Arknights players, providing
-			guides, reviews, and detailed information about the game.
+			{t('nav.description')}
 		</p>
 		<LanguageSwitcher
 			languages={Object.fromEntries(languages)}
@@ -76,9 +75,9 @@ const sidebarLinks: { href: string; name: string, icon: any }[] = [
 			client:visible
 		/>
 		<nav class="flex justify-between items-center text-neutral-100">
-			<a class="hover:text-neutral-50" href="#">Disclaimer</a>
-			<a class="hover:text-neutral-50" href="#">About</a>
-			<a class="hover:text-neutral-50" href="#">Contact</a>
+			<a class="hover:text-neutral-50" href="#">{t('nav.disclaimer')}</a>
+			<a class="hover:text-neutral-50" href="#">{t('nav.about')}</a>
+			<a class="hover:text-neutral-50" href="#">{t('nav.contact')}</a>
 		</nav>
 	</div>
 </div>

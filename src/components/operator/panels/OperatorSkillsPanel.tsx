@@ -13,9 +13,16 @@ import { phaseToNumber } from "~/utils/character-stats.ts";
 import { descriptionToHtml } from "~/utils/description-parser";
 import { skillIcon } from "~/utils/images";
 import { cx } from "~/utils/styles";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 const OperatorSkillsPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
+
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
+
 	const numSkills = operator.skillData.length;
 	const [skillNumber, setSkillNumber] = useState(numSkills);
 	const maxSkillLevel = operator.phases.length > 2 ? 10 : 7;
@@ -67,11 +74,23 @@ const OperatorSkillsPanel: React.FC = () => {
 		return `${activeSkillLevel.duration} sec`;
 	}, [activeSkillLevel.duration]);
 
+	const spRecoveryTitle: Record<
+		keyof typeof OutputTypes.SkillSpType,
+		string
+	> = useMemo(() => ({
+		INCREASE_WHEN_ATTACK: t("operators.details.skills.increase_when_attack"),
+		INCREASE_WHEN_TAKEN_DAMAGE: t("operators.details.skills.increase_when_taken_damage"),
+		INCREASE_WITH_TIME: t("operators.details.skills.increase_with_time"),
+		8: t("operators.details.skills.always_active"),
+		UNUSED: "",
+	}), [locale]);
+
+
 	return (
 		<div className="flex flex-col gap-4 p-6">
 			<div className="grid grid-cols-[auto_1fr] items-center gap-x-4 border-b border-neutral-600 pb-4">
 				<div className="grid grid-flow-col items-center gap-x-2 text-neutral-200">
-					<span>Skill</span>
+					<span>{t('operators.details.skills.skill')}</span>
 					<PillButtonGroup
 						labels={skillLabels}
 						value={skillNumber}
@@ -121,7 +140,7 @@ const OperatorSkillsPanel: React.FC = () => {
 								)}
 							>
 								{
-									OutputTypes.SkillSpType[
+									spRecoveryTitle[
 										activeSkillLevel.spData.spType
 									]
 								}
@@ -132,7 +151,7 @@ const OperatorSkillsPanel: React.FC = () => {
 				<dl className="flex gap-x-6">
 					<div className="relative flex w-full items-center justify-start gap-x-2 border-neutral-600">
 						<SpCostIcon />
-						<dt className="text-neutral-200">SP Cost</dt>
+						<dt className="text-neutral-200">{t("operators.details.skills.sp_cost")}</dt>
 						<dd className="ml-auto font-semibold">
 							{activeSkillLevel.spData.spCost}
 						</dd>
@@ -140,7 +159,7 @@ const OperatorSkillsPanel: React.FC = () => {
 					<div className="w-1 border-r border-neutral-600"></div>
 					<div className="relative flex w-full items-center justify-start gap-x-2">
 						<InitialSpIcon />
-						<dt className="text-neutral-200">Initial SP</dt>
+						<dt className="text-neutral-200">{t("operators.details.skills.initial_sp")}</dt>
 						<dd className="ml-auto font-semibold">
 							{activeSkillLevel.spData.initSp}
 						</dd>
@@ -148,7 +167,7 @@ const OperatorSkillsPanel: React.FC = () => {
 					<div className="w-1 border-r border-neutral-600"></div>
 					<div className="relative flex w-full items-center justify-start gap-x-2">
 						<HourglassIcon />
-						<dt className="text-neutral-200">Duration</dt>
+						<dt className="text-neutral-200">{t("operators.details.skills.duration")}</dt>
 						<dd className="ml-auto font-semibold">
 							{skillDisplayDuration}
 						</dd>
@@ -167,7 +186,7 @@ const OperatorSkillsPanel: React.FC = () => {
 				)}
 				{activeSkillLevel.range && (
 					<div className="grid grid-cols-[auto,1fr] items-center rounded bg-neutral-600 p-4">
-						<span className="text-neutral-200">Range</span>
+						<span className="text-neutral-200">{t("operators.details.general.range")}</span>
 						<CharacterRange
 							className="justify-self-center"
 							rangeObject={activeSkillLevel.range}
@@ -177,7 +196,7 @@ const OperatorSkillsPanel: React.FC = () => {
 				{itemCosts && (
 					<>
 						<h2 className="text-lg font-semibold leading-[23px]">
-							Upgrade Requirements
+							{t("operators.details.general.upgrade_requirements")}
 						</h2>
 						<MaterialRequirements
 							itemCosts={itemCosts}

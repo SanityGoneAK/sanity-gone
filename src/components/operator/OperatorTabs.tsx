@@ -3,26 +3,34 @@ import { useState } from "react";
 import { Tab } from "@headlessui/react";
 import { useStore } from "@nanostores/react";
 
+import { useTranslations } from "~/i18n/utils.ts";
+import { localeStore } from "~/pages/[locale]/_store.ts";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
 import { cx } from "~/utils/styles.ts";
 
 import OperatorAttributesPanel from "./panels/OperatorAttributesPanel";
 // import OperatorRiicPanel from "./panels/OperatorRiicPanel";
 import OperatorMiscPanel from "./panels/OperatorMiscPanel";
-import OperatorSkillsPanel from "./panels/OperatorSkillsPanel";
-import OperatorTalentsPanel from "./panels/OperatorTalentsPanel";
 import OperatorModulesPanel from "./panels/OperatorModulesPanel";
 import OperatorRiicPanel from "./panels/OperatorRiicPanel";
+import OperatorSkillsPanel from "./panels/OperatorSkillsPanel";
+import OperatorTalentsPanel from "./panels/OperatorTalentsPanel";
+
+import type { ui } from "~/i18n/ui.ts";
 
 const OperatorTabs: React.FC = () => {
 	const operator = useStore(operatorStore);
+
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
+
 	const tabs = [
-		"Attributes",
-		"Talents",
-		operator.skillData.length > 0 && "Skills",
-		operator.modules.length > 0 && "Modules",
-		"RIIC",
-		"Misc",
+		t("operators.details.attributes.title"),
+		t("operators.details.talents.title"),
+		operator.skillData.length > 0 && t("operators.details.skills.title"),
+		operator.modules.length > 0 && t("operators.details.modules.title"),
+		t("operators.details.riic.title"),
+		t("operators.details.misc.title"),
 	].filter(Boolean) as string[];
 
 	const [selectedIndex, setSelectedIndex] = useState(0);
@@ -43,13 +51,10 @@ const OperatorTabs: React.FC = () => {
 							id={`operator-${label.toLowerCase()}-button`}
 							aria-controls={`operator-${label.toLowerCase()}-tabpanel`}
 							className={cx(
-								`relative cursor-pointer appearance-none border-none bg-none p-2 text-lg
-								font-semibold uppercase leading-[23px] text-neutral-200
-								last:justify-self-end`,
+								`relative cursor-pointer appearance-none border-none bg-none p-2 text-lg font-semibold uppercase leading-[23px] text-neutral-200 last:justify-self-end`,
 								"outline-none [html[data-focus-source=key]_&:focus-visible]:outline-offset-4 [html[data-focus-source=key]_&:focus-visible]:outline-blue-light",
 								i === selectedIndex
-									? `:after:outline-none text-neutral-50 after:absolute after:bottom-[-8px] after:left-2 after:right-2 after:h-0
-									after:border after:border-neutral-50`
+									? `:after:outline-none text-neutral-50 after:absolute after:bottom-[-8px] after:left-2 after:right-2 after:h-0 after:border after:border-neutral-50`
 									: "hover:text-neutral-100",
 								label === "Misc" ? "ml-auto" : ""
 							)}

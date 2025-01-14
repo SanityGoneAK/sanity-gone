@@ -21,17 +21,23 @@ import { tokenImage } from "~/utils/images";
 
 import type { CheckedState } from "@radix-ui/react-checkbox";
 import type * as OutputTypes from "~/types/output-types";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 const LMD_ITEM_ID = "4001";
 
 const OperatorAttributesPanel: React.FC = () => {
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
+
 	const operator = useStore(operatorStore);
 	const maxElite = operator.phases.length - 1;
 	const [elite, setElite] = useState(maxElite);
 	const [level, setLevel] = useState(operator.phases.at(-1)!.maxLevel);
 	const moduleTypes = useMemo(() => {
 		return [
-			"None",
+			t("operators.details.attributes.module_none"),
 			...operator.modules
 				.map((module) => module.moduleIcon.at(-1)!.toUpperCase())
 				.sort((a, b) => a.localeCompare(b)),
@@ -46,7 +52,7 @@ const OperatorAttributesPanel: React.FC = () => {
 	const trustToUse = isTrustChecked ? trust : 0;
 
 	const moduleId =
-		moduleType === "None"
+		moduleType === t("operators.details.attributes.module_none")
 			? null
 			: operator.modules.find((module) =>
 					module.moduleIcon.endsWith(moduleType)
@@ -131,7 +137,7 @@ const OperatorAttributesPanel: React.FC = () => {
 								checked={isTrustChecked}
 								onCheckedChange={handleTrustBonusCheckedChange}
 							/>
-							Trust
+							{t("operators.details.attributes.trust")}
 						</label>
 						<Input
 							aria-label="Trust level"
@@ -163,7 +169,7 @@ const OperatorAttributesPanel: React.FC = () => {
 								labels={[1, 2, 3]}
 								value={moduleLevel}
 								onChange={setModuleLevel}
-								disabled={moduleType === "None"}
+								disabled={moduleType === t("operators.details.attributes.module_none")}
 							/>
 						</div>
 					)}
@@ -185,7 +191,7 @@ const OperatorAttributesPanel: React.FC = () => {
 	p-4 text-neutral-200
 	"
 					>
-						<span>Range</span>
+						<span>{t("operators.details.general.range")}</span>
 						<CharacterRange rangeObject={rangeObject} />
 					</div>
 
@@ -210,7 +216,7 @@ const OperatorAttributesPanel: React.FC = () => {
 								/>
 								<div className="border-t border-neutral-600" />
 								<div className="grid grid-cols-[auto,1fr] items-center justify-items-center px-4 text-neutral-200">
-									<span>Range</span>
+									<span>{t("operators.details.general.range")}</span>
 									<CharacterRange
 										rangeObject={summonRange!}
 									/>
@@ -222,7 +228,7 @@ const OperatorAttributesPanel: React.FC = () => {
 				{itemCosts.length > 0 && (
 					<>
 						<h2 className="text-lg font-semibold leading-[23px]">
-							Promotion Requirements
+							{t("operators.details.general.promotion_requirements")}
 						</h2>
 						<MaterialRequirements
 							itemCosts={itemCosts}
