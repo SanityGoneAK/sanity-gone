@@ -83,9 +83,14 @@ export const ui = {
 		"operators.details.misc.title": "Misc",
 		"operators.details.misc.profile": "Profile",
 		"operators.details.misc.infection_status": "Infection Status",
+		"operators.details.misc.inspection_report": "Inspection Report",
+		"operators.details.misc.physical_exam": "Physical Exam",
+		"operators.details.misc.performance_review": "Performance Review",
 		"operators.details.misc.clinical_diagnosis_analysis": "Clinical Diagnosis Analysis",
 		"operators.details.misc.archive": "Archive",
 		"operators.details.misc.promotion_record": "Promotion Record",
+		"operators.details.misc.basic_info": "Basic Info",
+		"operators.details.misc.class_conversion_record": "Class Conversion Record",
 
 	},
 	"zh-cn": {
@@ -179,6 +184,8 @@ export const ui = {
 		"operators.details.misc.clinical_diagnosis_analysis": "临床诊断分析",
 		"operators.details.misc.archive": "档案资料",
 		"operators.details.misc.promotion_record": "晋升记录",
+		"operators.details.misc.basic_info": "Basic Info",
+		"operators.details.misc.class_conversion_record": "Class Conversion Record",
 
 	},
 	jp: {
@@ -265,9 +272,14 @@ export const ui = {
 		"operators.details.misc.title": "Misc",
 		"operators.details.misc.profile": "Profile",
 		"operators.details.misc.infection_status": "Infection Status",
+		"operators.details.misc.inspection_report": "Inspection Report",
+		"operators.details.misc.physical_exam": "Physical Exam",
+		"operators.details.misc.performance_review": "Performance Review",
 		"operators.details.misc.clinical_diagnosis_analysis": "Clinical Diagnosis Analysis",
 		"operators.details.misc.archive": "Archive",
 		"operators.details.misc.promotion_record": "Promotion Record",
+		"operators.details.misc.basic_info": "Basic Info",
+		"operators.details.misc.class_conversion_record": "Class Conversion Record",
 
 	},
 	kr: {
@@ -354,9 +366,14 @@ export const ui = {
 		"operators.details.misc.title": "Misc",
 		"operators.details.misc.profile": "Profile",
 		"operators.details.misc.infection_status": "Infection Status",
+		"operators.details.misc.inspection_report": "Inspection Report",
+		"operators.details.misc.physical_exam": "Physical Exam",
+		"operators.details.misc.performance_review": "Performance Review",
 		"operators.details.misc.clinical_diagnosis_analysis": "Clinical Diagnosis Analysis",
 		"operators.details.misc.archive": "Archive",
 		"operators.details.misc.promotion_record": "Promotion Record",
+		"operators.details.misc.basic_info": "Basic Info",
+		"operators.details.misc.class_conversion_record": "Class Conversion Record",
 
 	},
 } as const;

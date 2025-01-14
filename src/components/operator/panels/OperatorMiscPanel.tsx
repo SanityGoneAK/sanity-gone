@@ -4,7 +4,10 @@ import ArchiveIcon from "~/components/icons/ArchiveIcon";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
 import { useState } from "react";
 
-import itemsJson from "../../../../data/en_US/items.json";
+import enItemsJson from "../../../../data/en_US/items.json";
+import cnItemsJson from "../../../../data/zh_CN/items.json";
+import krItemsJson from "../../../../data/ko_KR/items.json";
+import jpItemsJson from "../../../../data/ja_JP/items.json";
 import {
 	arbitraryImage,
 	itemImage,
@@ -17,8 +20,14 @@ import Accordion from "~/components/ui/Accordion.tsx";
 import { EliteTwoIcon } from "~/components/icons";
 import GuardIcon from "~/components/icons/GuardIcon.tsx";
 import { classToProfession } from "~/utils/classes.ts";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 const OperatorMiscPanel: React.FC = () => {
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
+
 	const operator = useStore(operatorStore);
 	const handbook = operator.handbook;
 
@@ -40,6 +49,13 @@ const OperatorMiscPanel: React.FC = () => {
 	const [currentArchive, setCurrentArchive] = useState(0);
 
 	// console.log(operator.potentialItemId);
+	const itemMap = {
+		en: enItemsJson,
+		'zh-cn': cnItemsJson,
+		kr: krItemsJson,
+		jp: jpItemsJson,
+	}
+	const itemsJson = itemMap[locale as keyof typeof itemMap];
 	const potItem =
 		itemsJson[operator.potentialItemId as keyof typeof itemsJson];
 
@@ -70,8 +86,8 @@ const OperatorMiscPanel: React.FC = () => {
 				</button>
 				<h2 className="font-serif text-2xl font-semibold">
 					{currentArchive <= 4
-						? `Archive ${currentArchive}`
-						: "Promotion Record"}
+						? `${t('operators.details.misc.archive')} ${currentArchive}`
+						: t('operators.details.misc.promotion_record')}
 				</h2>
 				<hr className="border border-neutral-600" />
 				<p
@@ -118,7 +134,7 @@ const OperatorMiscPanel: React.FC = () => {
 			<div className="flex flex-col gap-4 sm:grid sm:grid-cols-[1fr,_1px,_1fr]">
 				<div>
 					<h2 className="mb-4 font-serif text-2xl font-semibold">
-						Basic Info
+						{t("operators.details.misc.basic_info")}
 					</h2>
 					<ul>
 						{basicInfo.map((info) => (
@@ -139,7 +155,7 @@ const OperatorMiscPanel: React.FC = () => {
 				<div className="border-t border-neutral-600 sm:border-l"></div>
 				<div>
 					<h2 className="mb-4 font-serif text-2xl font-semibold">
-						{isRobot ? "Performance Review" : "Physical Exam"}
+						{isRobot ? t('operators.details.misc.performance_review'): t("operators.details.misc.physical_exam")}
 					</h2>
 					<ul>
 						{handbook.physicalExam.map((item) => (
@@ -180,7 +196,7 @@ const OperatorMiscPanel: React.FC = () => {
 				) : (
 					<div>
 						<h3 className="mb-1 text-sm leading-none text-neutral-200">
-							Infection Status
+							{t("operators.details.misc.infection_status")}
 						</h3>
 						<p className="text-base font-normal leading-normal">
 							N/A
@@ -190,7 +206,7 @@ const OperatorMiscPanel: React.FC = () => {
 				{!isRobot && (
 					<div>
 						<h3 className="mb-1 text-sm leading-none text-neutral-200">
-							Clinical Diagnosis Analysis
+							{t("operators.details.misc.clinical_diagnosis_analysis")}
 						</h3>
 						<p
 							className="whitespace-pre-line text-base font-normal leading-normal"
@@ -207,7 +223,7 @@ const OperatorMiscPanel: React.FC = () => {
 						<div>
 							<Accordion
 								icon={<ArchiveIcon />}
-								title={`Archive ${index + 1}`}
+								title={`${t("operators.details.misc.archive")} ${index + 1}`}
 							>
 								<p className="mt-0 whitespace-pre-line font-normal text-neutral-50" dangerouslySetInnerHTML={
 									{ __html: archive }
@@ -221,7 +237,7 @@ const OperatorMiscPanel: React.FC = () => {
 				<div>
 					<Accordion
 						icon={<EliteTwoIcon />}
-						title="Promotion Record"
+						title={t("operators.details.misc.promotion_record")}
 						fill={true}
 					>
 						<p className="mt-0 whitespace-pre-line font-normal text-neutral-50">
@@ -248,7 +264,7 @@ const OperatorMiscPanel: React.FC = () => {
 										alt="Guard"
 									/>
 								}
-								title="Class Conversion Record"
+								title={t("operators.details.misc.class_conversion_record")}
 							>
 								<p className="mt-0 whitespace-pre-line font-normal text-neutral-50" dangerouslySetInnerHTML={
 									{ __html: handbook.classConversionRecord[0] }

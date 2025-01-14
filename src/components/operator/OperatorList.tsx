@@ -171,7 +171,7 @@ const OperatorCompactItem: React.FC<{
 
 	const enOperator = enOperatorsJson[operator.charId as keyof typeof enOperatorsJson] as OutputTypes.Operator;
 	const slug = slugify(enOperator.name);
-	
+
 	return (
 		<li className="relative h-36 overflow-hidden rounded sm:h-40">
 			<div className="h-full overflow-hidden bg-neutral-600">
