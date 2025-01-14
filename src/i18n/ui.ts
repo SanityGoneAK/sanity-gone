@@ -184,8 +184,8 @@ export const ui = {
 		"operators.details.misc.clinical_diagnosis_analysis": "临床诊断分析",
 		"operators.details.misc.archive": "档案资料",
 		"operators.details.misc.promotion_record": "晋升记录",
-		"operators.details.misc.basic_info": "Basic Info",
-		"operators.details.misc.class_conversion_record": "Class Conversion Record",
+		"operators.details.misc.basic_info": "基础档案", // more "basic archive" or "basic file" than "basic info"
+		"operators.details.misc.class_conversion_record": "升变档案",
 
 	},
 	jp: {
