@@ -27,7 +27,7 @@ const EliteTwoIcon: React.FC<Props> = ({ active, white, ...rest }) => {
 				// 	white ? "fill-neutral-50" : ""
 				// )}
 
-				// Commented out the above className. Might be easier to control the fill color in the parent component,
+				// Commented out the above className. Easier to control the fill color in the parent component,
 				// from whatever's using this icon.
 			/>
 		</svg>
