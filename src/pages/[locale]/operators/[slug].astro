@@ -70,7 +70,7 @@ const operator = operatorsJson[
 	] as OutputTypes.Operator;
 operatorIdStore.set(operatorId);
 
-const relatedOperators = getRelatedCharacter(operator);
+const relatedOperators = getRelatedCharacter(operator, locale);
 const operatorBgSkin = operator.skins.find((skin) => skin.type === "elite-one-or-two") || operator.skins.find((skin) => skin.type === "elite-zero");
 ---
 <Layout title={operator.name}>
