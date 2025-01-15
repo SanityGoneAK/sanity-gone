@@ -51,7 +51,8 @@ function isItemWeCareAbout(itemId) {
 		(entry.classifyType === "MATERIAL" &&
 			// !itemId.startsWith("p_char_") && // character-specific potential tokens (we care about these now)
 			!itemId.startsWith("tier") && // generic potential tokens
-			!itemId.startsWith("voucher_full_")) // vouchers for event welfare ops like Flamebringer
+			!itemId.startsWith("voucher_full_")) || // vouchers for event welfare ops like Flamebringer
+		entry.itemType === "ACTIVITY_POTENTIAL" // activity potential tokens (U-Official, Vigil, Lessing)
 	);
 }
 

@@ -261,7 +261,9 @@ const getPotentialStatIncrease = (
 ): PotentialStatChange => {
 	// if `potential === 0`, that means Potential 1 in game, i.e. initial operator state and no bonuses.
 	// In this case, return zeroes
-	if (potential === 0) {
+
+	// certain stupid operators don't have any potentials (conviction). also return zero in that case
+	if (potential === 0 || characterObject.potentialRanks.length === 0) {
 		return {
 			artsResistance: 0,
 			attackPower: 0,
