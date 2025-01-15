@@ -4686,5 +4686,29 @@
     "description": "An ancient Sargon gold coin. Sent to and fro by the long hands of fate, it now belongs to you.",
     "usage": "Used to improve the Potential of Passenger.",
     "rarity": 6
+  },
+  "voucher_vigil": {
+    "itemId": "voucher_vigil",
+    "name": "Vigil's Folder",
+    "iconId": "voucher_vigil",
+    "description": "These personal notes record thoughts on Nuova Volsinii's construction, the diligence and urgency of the writer plain to see. At the very back, however, are mixed in some pages of traditional Siracusan recipes.",
+    "usage": "A folder storing personal notes. Vigil is obtained the first time this item is obtained, and can improve Vigil's Potential thereafter.",
+    "rarity": 6
+  },
+  "voucher_ulika": {
+    "itemId": "voucher_ulika",
+    "name": "U-Official's Folder",
+    "iconId": "voucher_ulika",
+    "description": "A bunch of papers recording the streamer's various experiences in cute handwriting, but when flipped over becomes a map of a nomadic city, with detailed markings noting the frequency of debt collectors showing up.",
+    "usage": "A folder with handwritten notes inside. Used to obtain U-Official for the first time, and subsequently improve the potential of U-Official.",
+    "rarity": 1
+  },
+  "voucher_lessng": {
+    "itemId": "voucher_lessng",
+    "name": "Lessing's Folder",
+    "iconId": "voucher_lessng",
+    "description": "Several proverbs are written on the paper with tidy, print-like handwriting. The pen has penetrated the paper in a few places. There are also a few scribbles about things that need to be done.",
+    "usage": "A folder storing personal notes. Lessing is obtained the first time this item is obtained, and can improve Lessing's Potential thereafter.",
+    "rarity": 6
   }
 }

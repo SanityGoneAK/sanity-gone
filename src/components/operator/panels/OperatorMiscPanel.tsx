@@ -51,67 +51,21 @@ const OperatorMiscPanel: React.FC = () => {
 			].includes(info.title)
 	);
 
-	const isRobot = operator.tagList.some((tag) => ['Robot', 'ロボット', '로봇', '支援机械'].includes(tag));
-
-	// 0: not open
-	// 1-4: archive 1-4
-	// 5: promotion record
-	const [currentArchive, setCurrentArchive] = useState(0);
+	const isRobot = operator.tagList.some((tag) =>
+		["Robot", "ロボット", "로봇", "支援机械"].includes(tag)
+	);
 
 	// console.log(operator.potentialItemId);
 	const itemMap = {
 		en: enItemsJson,
-		'zh-cn': cnItemsJson,
+		"zh-cn": cnItemsJson,
 		kr: krItemsJson,
 		jp: jpItemsJson,
-	}
+	};
 	const itemsJson = itemMap[locale as keyof typeof itemMap];
-	const potItem =
-		itemsJson[operator.potentialItemId as keyof typeof itemsJson];
-
-	if (currentArchive != 0) {
-		return (
-			<div className="flex flex-col gap-4 rounded-br-lg p-6">
-				<button
-					className="flex items-center gap-2"
-					onClick={() => setCurrentArchive(0)}
-					// TODO We may want to make this its own component
-				>
-					<svg
-						width="8"
-						height="14"
-						viewBox="0 0 8 14"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M7 13L1 7L7 1"
-							stroke="#B8B8C0"
-							strokeWidth="2"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-						/>
-					</svg>
-					<p>Miscellaneous Details</p>
-				</button>
-				<h2 className="font-serif text-2xl font-semibold">
-					{currentArchive <= 4
-						? `${t('operators.details.misc.archive')} ${currentArchive}`
-						: t('operators.details.misc.promotion_record')}
-				</h2>
-				<hr className="border border-neutral-600" />
-				<p
-					className="whitespace-pre-line text-base font-normal leading-normal"
-					dangerouslySetInnerHTML={{
-						__html:
-							currentArchive <= 4
-								? handbook.archives[currentArchive - 1]
-								: handbook.promotionRecord,
-					}}
-				/>
-			</div>
-		);
-	}
+	const potItem = operator.potentialItemId
+		? itemsJson[operator.potentialItemId as keyof typeof itemsJson]
+		: itemsJson[operator.activityPotentialItemId as keyof typeof itemsJson];
 
 	return (
 		<div className="grid gap-y-4 rounded-br-lg p-6">
@@ -165,7 +119,9 @@ const OperatorMiscPanel: React.FC = () => {
 				<div className="border-t border-neutral-600 sm:border-l"></div>
 				<div>
 					<h2 className="mb-4 font-serif text-2xl font-semibold">
-						{isRobot ? t('operators.details.misc.performance_review'): t("operators.details.misc.physical_exam")}
+						{isRobot
+							? t("operators.details.misc.performance_review")
+							: t("operators.details.misc.physical_exam")}
 					</h2>
 					<ul>
 						{handbook.physicalExam.map((item) => (
@@ -216,7 +172,9 @@ const OperatorMiscPanel: React.FC = () => {
 				{!isRobot && (
 					<div>
 						<h3 className="mb-1 text-sm leading-none text-neutral-200">
-							{t("operators.details.misc.clinical_diagnosis_analysis")}
+							{t(
+								"operators.details.misc.clinical_diagnosis_analysis"
+							)}
 						</h3>
 						<p
 							className="whitespace-pre-line text-base font-normal leading-normal"
@@ -235,9 +193,12 @@ const OperatorMiscPanel: React.FC = () => {
 								icon={<ArchiveIcon />}
 								title={`${t("operators.details.misc.archive")} ${index + 1}`}
 							>
-								<p className="mt-0 whitespace-pre-line font-normal text-neutral-50" dangerouslySetInnerHTML={
-									{ __html: archive }
-								}></p>
+								<p
+									className="mt-0 whitespace-pre-line font-normal text-neutral-50"
+									dangerouslySetInnerHTML={{
+										__html: archive,
+									}}
+								></p>
 							</Accordion>
 						</div>
 					))}
@@ -274,11 +235,17 @@ const OperatorMiscPanel: React.FC = () => {
 										alt="Guard"
 									/>
 								}
-								title={t("operators.details.misc.class_conversion_record")}
+								title={t(
+									"operators.details.misc.class_conversion_record"
+								)}
 							>
-								<p className="mt-0 whitespace-pre-line font-normal text-neutral-50" dangerouslySetInnerHTML={
-									{ __html: handbook.classConversionRecord[0] }
-								}></p>
+								<p
+									className="mt-0 whitespace-pre-line font-normal text-neutral-50"
+									dangerouslySetInnerHTML={{
+										__html: handbook
+											.classConversionRecord[0],
+									}}
+								></p>
 							</Accordion>
 						</div>
 						<div>
@@ -296,55 +263,63 @@ const OperatorMiscPanel: React.FC = () => {
 								}
 								title="Class Conversion Record"
 							>
-								<p className="mt-0 whitespace-pre-line font-normal text-neutral-50" dangerouslySetInnerHTML={
-									{ __html: handbook.classConversionRecord[1] }
-								}></p>
+								<p
+									className="mt-0 whitespace-pre-line font-normal text-neutral-50"
+									dangerouslySetInnerHTML={{
+										__html: handbook
+											.classConversionRecord[1],
+									}}
+								></p>
 							</Accordion>
 						</div>
 					</div>
 				)}
+			{
+				// certain very special operators don't have potential items... (conviction again)
+				potItem && (
+					<div className="flex flex-row items-center gap-4">
+						<div
+							className="inline-grid h-[52px] w-[52px]"
+							style={{
+								gridTemplateAreas: "'stack'",
+							}}
+						>
+							<div
+								className={cx(
+									"h-[52px] w-[52px] rounded-full border-2",
+									{
+										6: "border-yellow bg-yellow/30",
+										5: "border-yellow-light bg-yellow-light/30",
+										4: "border-purple-light bg-purple-light/30",
+										3: "border-blue-light bg-blue-light/30",
+										2: "border-green-light bg-green-light/30",
+										1: "border-neutral-50 bg-neutral-50/30",
+									}[operator.rarity]
+								)}
+								style={{
+									gridArea: "stack",
+								}}
+							/>
+							<img
+								src={itemImage(potItem.iconId)}
+								className="h-[52px] w-[52px]"
+								style={{
+									gridArea: "stack",
+								}}
+							/>
+						</div>
 
-			<div className="flex flex-row items-center gap-4">
-				<div
-					className="inline-grid h-[52px] w-[52px]"
-					style={{
-						gridTemplateAreas: "'stack'",
-					}}
-				>
-					<div
-						className={cx(
-							"h-[52px] w-[52px] rounded-full border-2",
-							{
-								6: "border-yellow bg-yellow/30",
-								5: "border-yellow-light bg-yellow-light/30",
-								4: "border-purple-light bg-purple-light/30",
-								3: "border-blue-light bg-blue-light/30",
-								2: "border-green-light bg-green-light/30",
-								1: "border-neutral-50 bg-neutral-50/30",
-							}[operator.rarity]
-						)}
-						style={{
-							gridArea: "stack",
-						}}
-					/>
-					<img
-						src={itemImage(potItem.iconId)}
-						className="h-[52px] w-[52px]"
-						style={{
-							gridArea: "stack",
-						}}
-					/>
-				</div>
-
-				<div>
-					<p className="text-base font-normal leading-normal">
-						{potItem.description}
-					</p>
-					<p className="text-base font-normal italic leading-normal text-neutral-200">
-						{potItem.usage}
-					</p>
-				</div>
-			</div>
+						<div>
+							<p className="text-base font-normal leading-normal">
+								{potItem.description}
+							</p>
+							<p className="text-base font-normal italic leading-normal text-neutral-200">
+								{potItem.usage}
+							</p>
+						</div>
+					</div>
+				)
+			}
 			<div className="flex flex-row items-center gap-4">
 				<div className="relative flex h-[52px] w-[52px] flex-none items-center">
 					<img

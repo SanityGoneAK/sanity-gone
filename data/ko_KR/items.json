@@ -4686,5 +4686,29 @@
     "description": "오래된 사르곤 금화. 오랫동안 운명의 손을 거쳐, 지금은 당신의 것이 되었다.",
     "usage": "패신저의 잠재능력 상승에 사용된다.",
     "rarity": 6
+  },
+  "voucher_vigil": {
+    "itemId": "voucher_vigil",
+    "name": "비질의 서류철",
+    "iconId": "voucher_vigil",
+    "description": "휴대용 노트에는 작성자의 정성과 절박함이 보이는 뉴 볼시니 건설과 관련 아이디어가 적혀 있다. 그리고 맨 마지막에는 시라쿠사 전통 레시피도 몇 장 끼워져 있다.",
+    "usage": "휴대용 노트가 들어 있는 서류철. 최초 획득 시 비질을 획득할 수 있으며, 두 번째부터 비질의 잠재능력을 상승시킬 수 있다.",
+    "rarity": 6
+  },
+  "voucher_ulika": {
+    "itemId": "voucher_ulika",
+    "name": "U-Official의 서류철",
+    "iconId": "voucher_ulika",
+    "description": "종잇장에 귀여운 글씨로 한 스트리머의 속마음이 적혀있지만, 뒤집어 보면 한 이동도시의 지도라는 것을 알 수 있다. 지도에는 빚쟁이들의 출현 빈도에 관한 정보까지 자세히 적혀있다.",
+    "usage": "휴대용 노트가 들어 있는 서류철. 최초 획득 시 U-Official을 획득할 수 있으며, 두 번째부터 U-Official의 잠재능력을 상승시킬 수 있다.",
+    "rarity": 1
+  },
+  "voucher_lessng": {
+    "itemId": "voucher_lessng",
+    "name": "레싱의 서류철",
+    "iconId": "voucher_lessng",
+    "description": "종이에 인쇄체를 방불케 하는 정갈한 필체로 격언이 몇 줄 쓰여 있으며, 종이가 찢어질 정도로 쓴 글자도 있다. 그리고 해야 할 일을 대충 적은 종이 몇 장도 끼어 있다.",
+    "usage": "휴대용 노트가 들어 있는 서류철. 최초 획득 시 레싱을 획득할 수 있으며, 두 번째부터 레싱의 잠재능력을 상승시킬 수 있다.",
+    "rarity": 6
   }
 }
