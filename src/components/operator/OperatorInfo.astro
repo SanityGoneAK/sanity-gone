@@ -113,7 +113,7 @@ const meleeOrRangedString = t('operators.details.general.'+meleeOrRanged);
 						)}
 						alt=""
 					/>
-					<span>{operatorClass}</span>
+					<span>{t("operators."+operatorClass.toLowerCase())}</span>
 				</div>
 				<OperatorBranchAndTrait client:idle />
 				<div class="flex-grow"></div> {/* spacer */}
