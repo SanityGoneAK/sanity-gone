@@ -748,7 +748,7 @@ function parseStoryText(text, locale) {
 	for (const line of lines) {
 		const match =
 			locale === "en_US" || locale === "ko_KR"
-				? line.match(/^\[([\w\s]+)\](.*)$/)
+				? line.match(/^\[([\p{L}\p{N}\s]+)\](.*)$/u)
 				: line.match(/^【([^【】]+)】(.*)$/);
 
 		if (match) {

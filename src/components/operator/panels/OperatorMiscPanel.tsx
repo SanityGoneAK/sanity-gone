@@ -33,12 +33,22 @@ const OperatorMiscPanel: React.FC = () => {
 
 	// split off Infection Status and Inspection Report (robots only) from basicInfo
 	const infectionInspection = handbook.basicInfo.filter((info) =>
-		["Inspection Report", "Infection Status"].includes(info.title)
+		[
+			"Inspection Report", "Infection Status", // en
+			"鉱石病感染状況", "メンテナンス結果報告", // jp
+			"광석병 감염 상황", "점검 검사 보고",// kr
+			"矿石病感染情况", "维护检测报告", // cn
+		].includes(info.title)
 	);
 
 	const basicInfo = handbook.basicInfo.filter(
 		(info) =>
-			!["Inspection Report", "Infection Status"].includes(info.title)
+			![
+				"Inspection Report", "Infection Status", // en
+				"鉱石病感染状況", "メンテナンス結果報告", // jp
+				"광석병 감염 상황", "점검 검사 보고",// kr
+				"矿石病感染情况", "维护检测报告", // cn
+			].includes(info.title)
 	);
 
 	const isRobot = operator.tagList.some((tag) => ['Robot', 'ロボット', '로봇', '支援机械'].includes(tag));
