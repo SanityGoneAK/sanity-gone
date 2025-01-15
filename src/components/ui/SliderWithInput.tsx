@@ -4,6 +4,10 @@ import { Slider } from "@mui/base/Slider";
 
 import Input from "~/components/ui/Input";
 import { cx } from "~/utils/styles.ts";
+import { useStore } from "@nanostores/react";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 const masteryLevelRegexString = "[Mm](?<masteryLevel>[123])";
 const masteryLevelRegex = new RegExp(masteryLevelRegexString);
@@ -25,6 +29,10 @@ function skillLevelNumberToMasteryLevel(level: number): string {
 
 const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 	const { type, max, value, onChange, hideMax } = props;
+
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
+
 	const [rawInput, setRawInput] = useState(`${value}`);
 	useEffect(() => {
 		setRawInput(
@@ -62,7 +70,7 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 		}
 	};
 
-	const shortLabel = type === "level" ? "Lv" : "Rank";
+	const shortLabel = type === "level" ? "Lv" : t('operators.details.skills.rank');
 	const label = type === "level" ? "Operator Level" : "Skill Rank";
 
 	return (
@@ -109,7 +117,7 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 				max={max}
 				value={value}
 			/>
-			<div className="flex items-center gap-x-2">
+			<div className="flex flex-shrink-0 items-center gap-x-2">
 				<span className="text-neutral-200">{shortLabel ?? label}</span>
 				<Input
 					aria-label={label}
