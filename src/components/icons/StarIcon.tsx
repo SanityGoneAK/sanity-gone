@@ -31,7 +31,7 @@ const StarIcon: React.FC<Props> = ({ rarity, selected = false }) => {
 		>
 			<path
 				d="M2.17788 12L6.1875 9.07211L10.226 12L8.65384 7.41346L12.375 4.91827H7.84615L6.1875 0L4.55769 4.91827H0L3.72115 7.41346L2.17788 12Z"
-				fill="#FF994F" />
+				fill={fill} />
 		</svg>
 	);
 };

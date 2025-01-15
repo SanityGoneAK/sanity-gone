@@ -45,7 +45,15 @@ const meleeOrRangedString = t('operators.details.general.'+meleeOrRanged);
 	class="grid grid-rows-[auto_auto] gap-y-2 bg-neutral-600/[.66] sm:rounded-t"
 >
 	<div
-		class="flex items-center w-full gap-1 px-5 h-6 sm:rounded-t bg-orange/[.08]"
+		class={cx("flex items-center w-full gap-1 px-5 h-6 sm:rounded-t",
+			{
+				6: "bg-orange/[.08]",
+				5: "bg-yellow/[.08]",
+				4: "bg-purple/[.08]",
+				3: "bg-blue/[.08]",
+				2: "bg-green/[.08]",
+				1: "bg-neutral-50/[.08]",
+			}[rarity])}
 	>
 		<span class="visually-hidden">{t('operators.index.filters.rarity')}: {rarity}</span>
 		<span class="grid grid-flow-col">
