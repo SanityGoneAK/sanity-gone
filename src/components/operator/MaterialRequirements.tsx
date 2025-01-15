@@ -2,10 +2,17 @@ import Tooltip from "~/components/ui/Tooltip";
 import { itemImage } from "~/utils/images.ts";
 import { cx } from "~/utils/styles.ts";
 
-import itemsJson from "../../../data/items.json";
 import { EliteOneIcon, EliteTwoIcon, EliteZeroIcon } from "../icons";
 
 import type * as OutputTypes from "~/types/output-types";
+
+import enItemsJson from "data/en_US/items.json";
+import cnItemsJson from "data/zh_CN/items.json";
+import krItemsJson from "data/ko_KR/items.json";
+import jpItemsJson from "data/ja_JP/items.json";
+
+import { useStore } from "@nanostores/react";
+import { localeStore } from "~/pages/[locale]/_store.ts";
 
 interface Props {
 	minElite?: number;
@@ -14,24 +21,40 @@ interface Props {
 	itemCosts: OutputTypes.ItemCost[];
 }
 
-const shortNumberFormat = Intl.NumberFormat("en-US", {
-	notation: "compact",
-	maximumFractionDigits: 2,
-});
-
 const MaterialRequirements: React.FC<Props> = ({
 	itemCosts,
 	minElite,
 	minLevel = 1,
 	minSkillLevel = 1,
 }) => {
+	const locale = useStore(localeStore);
+
+	const shortNumberFormat = Intl.NumberFormat(locale, {
+		notation: "compact",
+		maximumFractionDigits: 2,
+	});
+
+	const itemMap = {
+		en: enItemsJson,
+		"zh-cn": cnItemsJson,
+		kr: krItemsJson,
+		jp: jpItemsJson,
+	};
+	const itemsJson = itemMap[locale as keyof typeof itemMap];
+
 	return (
 		<div className="grid auto-cols-min grid-flow-col items-center justify-start gap-x-4">
 			{minElite != null && (
 				<div className="grid grid-cols-[16px_auto] items-center gap-x-2 rounded-lg bg-neutral-500/[.33] px-2.5 py-2">
-					{minElite === 0 && <EliteZeroIcon active />}
-					{minElite === 1 && <EliteOneIcon active />}
-					{minElite === 2 && <EliteTwoIcon active />}
+					{minElite === 0 && (
+						<EliteZeroIcon className="stroke-[url(#rarity5)]" />
+					)}
+					{minElite === 1 && (
+						<EliteOneIcon className="fill-[url(#rarity5)]" />
+					)}
+					{minElite === 2 && (
+						<EliteTwoIcon className="fill-[url(#rarity5)]" />
+					)}
 					<span className="bg-gradient-to-b from-yellow-light to-yellow bg-clip-text text-base font-semibold leading-none text-transparent">
 						Lv{minLevel}
 					</span>
@@ -45,7 +68,7 @@ const MaterialRequirements: React.FC<Props> = ({
 					const { name, rarity } =
 						itemsJson[id as keyof typeof itemsJson];
 					return (
-						<Tooltip key={id} content={name.en_US}>
+						<Tooltip key={id} content={name}>
 							<div
 								className="inline-grid h-[52px] w-[52px]"
 								style={{
@@ -70,7 +93,7 @@ const MaterialRequirements: React.FC<Props> = ({
 								<img
 									className="z-[1] h-[52px] w-[52px]"
 									src={itemImage(id)}
-									alt={name.en_US}
+									alt={name}
 									style={{
 										gridArea: "stack",
 									}}
