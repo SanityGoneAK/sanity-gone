@@ -56,7 +56,7 @@ const OperatorTabs: React.FC = () => {
 								i === selectedIndex
 									? `:after:outline-none text-neutral-50 after:absolute after:bottom-[-8px] after:left-2 after:right-2 after:h-0 after:border after:border-neutral-50`
 									: "hover:text-neutral-100",
-								label === "Misc" ? "ml-auto" : ""
+								label === t("operators.details.misc.title") ? "ml-auto" : ""
 							)}
 						>
 							{label}
