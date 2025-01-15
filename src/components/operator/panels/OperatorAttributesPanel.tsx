@@ -134,6 +134,7 @@ const OperatorAttributesPanel: React.FC = () => {
 					<div className="flex items-center gap-2">
 						<label className="flex cursor-pointer items-center gap-2 text-neutral-200">
 							<Checkbox
+								variant={"info"}
 								checked={isTrustChecked}
 								onCheckedChange={handleTrustBonusCheckedChange}
 							/>
