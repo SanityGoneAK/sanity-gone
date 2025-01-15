@@ -9,7 +9,7 @@ import {
 	type UseSearchBoxProps,
 } from "react-instantsearch";
 
-import { type Locale, localeToTag } from "~/i18n/languages.ts";
+import { defaultLang, type Locale, localeToTag } from "~/i18n/languages.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import {
 	operatorAvatar,
@@ -157,7 +157,7 @@ const CustomHits: React.FC<{
 									{result.rarity}★
 								</span>
 								<span>
-									{result.class}&nbsp; •&nbsp;{" "}
+									{t("operators." + result.class?.toLowerCase() as keyof (typeof ui)[typeof defaultLang])}&nbsp; •&nbsp;{" "}
 									{result.subclass[localeToTag[locale]]}
 								</span>
 							</p>
@@ -212,8 +212,8 @@ const CustomHits: React.FC<{
 							</span>
 							<span className="text-sm leading-[18px] text-neutral-200">
 								{result.type === "class"
-									? "Class"
-									: `${result.class} Branch`}
+									? t('operators.index.filters.class')
+									: `${t("operators." + result.class?.toLowerCase() as keyof (typeof ui)[typeof defaultLang])} ${t('operators.index.filters.branch')}`}
 							</span>
 						</Combobox.Option>
 					))}
