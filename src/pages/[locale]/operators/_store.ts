@@ -29,7 +29,7 @@ export const operatorStore = computed(
 
 // View Format
 export type ViewConfigValue = "compact" | "large";
-export const $viewConfig = atom<ViewConfigValue>("compact");
+export const $viewConfig = atom<ViewConfigValue>("large");
 
 // Sorting
 export type SortDirectionValue = "ASC" | "DESC" | null;
