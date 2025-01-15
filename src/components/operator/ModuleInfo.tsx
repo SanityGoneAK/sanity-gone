@@ -14,6 +14,10 @@ import { getModuleStatIncrease } from "~/utils/character-stats";
 import { moduleImage, moduleTypeImage } from "~/utils/images.ts";
 
 import type * as OutputTypes from "~/types/output-types";
+import { useStore } from "@nanostores/react";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 // TODO: Do we want to handle modules such as Pozy Y?
 // a.k.a. show exact token stat changes for modules that
@@ -35,6 +39,9 @@ const ModuleInfo: React.FC<Props> = ({
 	stage,
 	potential,
 }) => {
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
+
 	const moduleId = module.moduleId;
 	const {
 		atk,
@@ -121,21 +128,21 @@ const ModuleInfo: React.FC<Props> = ({
 		const statName = (() => {
 			switch (changeIndex) {
 				case 0:
-					return "Attack";
+					return t("operators.details.modules.attack");
 				case 1:
-					return "Health";
+					return t("operators.details.modules.health");
 				case 2:
-					return "Defense";
+					return t("operators.details.modules.defense");
 				case 3:
-					return "ASPD";
+					return t("operators.details.modules.aspd");
 				case 4:
-					return "RES";
+					return t("operators.details.modules.res");
 				case 5:
-					return "DP";
+					return t("operators.details.modules.dp");
 				case 6:
-					return "Redep. Time";
+					return t("operators.details.modules.redeployment_time");
 				case 7:
-					return "Block";
+					return t("operators.details.modules.block");
 				default:
 					return "";
 			}
@@ -143,13 +150,13 @@ const ModuleInfo: React.FC<Props> = ({
 
 		// don't use the plus if it's a negative stat change (DP and redeployment time)
 		const usePlus = [
-			"Attack",
-			"Health",
-			"Defense",
-			"ASPD",
-			"RES",
-			"Block",
-		].includes(statName);
+			t("operators.details.modules.attack"),
+			t("operators.details.modules.health"),
+			t("operators.details.modules.defense"),
+			t("operators.details.modules.aspd"),
+			t("operators.details.modules.res"),
+			t("operators.details.modules.block"),
+		].includes(statName as ReturnType<typeof t> || "");
 
 		return (
 			<div className="flex h-6 w-full items-center justify-start gap-x-2 rounded">
@@ -217,17 +224,17 @@ const ModuleInfo: React.FC<Props> = ({
 			<div className="flex flex-col gap-2 self-start grid-in-trait">
 				<div>
 					<h3 className="mb-1 text-sm text-neutral-200">
-						Trait
+						{t('operators.details.modules.trait')}
 						{activeCandidate.traitEffectType === "update" && (
-							<span> (Added)</span>
+							<span> ({t("operators.details.modules.added")})</span>
 						)}
 						{activeCandidate.traitEffectType === "override" && (
-							<span> (Updated)</span>
+							<span> ({t('operators.details.modules.updated')})</span>
 						)}
 					</h3>
 					<p
 						dangerouslySetInnerHTML={{
-							__html: activeCandidate.traitEffect ?? "No effect",
+							__html: activeCandidate.traitEffect ?? t('operators.details.modules.no_effect'),
 						}}
 					></p>
 				</div>
@@ -237,24 +244,24 @@ const ModuleInfo: React.FC<Props> = ({
 							{
 								activeCandidate.talentEffect
 									? activeCandidate.talentIndex === -1
-										? "New Talent" // there is a new talent
-										: `Talent ${
+										? t('operators.details.modules.new_talent') // there is a new talent
+										: `${t('operators.details.modules.talent')} ${
 												activeCandidate.talentIndex + 1
 											}` // this is the talent modified
-									: "Talent" /* no talent modifications */
+									: t('operators.details.modules.talent') /* no talent modifications */
 							}
 							{activeCandidate.talentEffect &&
 								(activeCandidate.talentIndex === -1 ? ( // new talent added
-									<span> (Added)</span>
+									<span> ({t("operators.details.modules.added")})</span>
 								) : (
 									// current talent updated
-									<span> (Updated)</span>
+									<span> ({t('operators.details.modules.updated')})</span>
 								))}
 						</h3>
 						<p
 							dangerouslySetInnerHTML={{
 								__html:
-									activeCandidate.talentEffect ?? "No effect",
+									activeCandidate.talentEffect ?? t('operators.details.modules.no_effect'),
 							}}
 						></p>
 					</div>

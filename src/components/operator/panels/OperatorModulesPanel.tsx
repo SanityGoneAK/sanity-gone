@@ -195,7 +195,7 @@ const OperatorModulesPanel: React.FC = () => {
 				)}
 				<hr className="border border-neutral-600" />
 				<div>
-					<Accordion title={"DESCRIPTION (possible story spoilers)"} icon={
+					<Accordion title={`${t('operators.details.modules.description')} (${t('operators.details.modules.story_spoiler')})`} icon={
 						<ArchiveIcon/>
 					}>
 						<p

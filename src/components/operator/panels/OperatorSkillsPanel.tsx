@@ -66,10 +66,10 @@ const OperatorSkillsPanel: React.FC = () => {
 
 	const skillDisplayDuration = useMemo(() => {
 		if (activeSkillLevel.duration === -1) {
-			return "Infinite";
+			return t('operators.details.skills.infinite');
 		}
 		if (activeSkillLevel.duration === 0) {
-			return "Instant";
+			return t('operators.details.skills.instant');
 		}
 		return `${activeSkillLevel.duration} sec`;
 	}, [activeSkillLevel.duration]);
@@ -83,6 +83,15 @@ const OperatorSkillsPanel: React.FC = () => {
 		INCREASE_WITH_TIME: t("operators.details.skills.increase_with_time"),
 		8: t("operators.details.skills.always_active"),
 		UNUSED: "",
+	}), [locale]);
+
+	const typeTitle: Record<
+		keyof typeof OutputTypes.SkillType,
+		string
+	> = useMemo(() => ({
+		PASSIVE: t("operators.details.skills.passive"),
+		MANUAL: t("operators.details.skills.manual"),
+		AUTO: t("operators.details.skills.auto"),
 	}), [locale]);
 
 
@@ -120,17 +129,17 @@ const OperatorSkillsPanel: React.FC = () => {
 					</h2>
 					<dl className="grid grid-flow-col justify-start gap-x-2 grid-in-skilltype">
 						<div className="inline-grid grid-flow-col gap-x-2 rounded bg-neutral-600 px-2 py-1">
-							<dt className="text-neutral-200">Activation</dt>
+							<dt className="text-neutral-200">{t('operators.details.skills.activation')}</dt>
 							<dd className="font-semibold">
 								{
-									OutputTypes.SkillType[
+									typeTitle[
 										activeSkillLevel.skillType
 									]
 								}
 							</dd>
 						</div>
 						<div className="inline-grid grid-flow-col gap-x-2 rounded bg-neutral-600 px-2 py-1">
-							<dt className="text-neutral-200">Recovery</dt>
+							<dt className="text-neutral-200">{t('operators.details.skills.recovery')}</dt>
 							<dd
 								className={cx(
 									"font-semibold",
