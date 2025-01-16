@@ -48,8 +48,6 @@ const OperatorTalentsPanel: React.FC = () => {
 		setPotential(potentialsMap[`PHASE_${maxElite}`][0]);
 	};
 
-	console.log(talentPhases);
-
 	return (
 		<div className="flex flex-col gap-4 p-6">
 			<div className="flex items-center justify-between border-b border-neutral-600 pb-4">
@@ -72,7 +70,6 @@ const OperatorTalentsPanel: React.FC = () => {
 								key={index}
 								talentNumber={index + 1}
 								talentPhase={talentPhase}
-								className="border-b border-neutral-500 last:border-b-0"
 							/>
 						))
 					: "No talents at this elite level."}
