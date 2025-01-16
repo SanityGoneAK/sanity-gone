@@ -83,7 +83,7 @@ const CharacterSplash: React.FC = () => {
 							No more layout shift, just make sure there's also no layout shift on mobile */}
 							<img
 								style={{
-									width: isMobile ? "clamp(0px, 100%, 85vw)" : "clamp(0px, 100%, 55vw)",
+									width: isMobile ? "clamp(0px, 100%, 85vw)" : "clamp(0px, 100%, 50vw)",
 								}}
 								className="my-0 mx-auto md:w-2"
 								src={operatorSplash(skin.portraitId, skin.type)}
