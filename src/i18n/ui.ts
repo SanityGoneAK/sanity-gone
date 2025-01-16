@@ -17,6 +17,7 @@ export const ui = {
 		"operators.defender": "Defender",
 		"operators.supporter": "Supporter",
 		"operators.caster": "Caster",
+		"operators.sniper": "Sniper",
 
 		"operators.index.filters.class": "Class",
 		"operators.index.filters.branch": "Branch",
@@ -242,6 +243,7 @@ export const ui = {
 		"operators.defender": "Defender",
 		"operators.supporter": "Supporter",
 		"operators.caster": "Caster",
+		"operators.sniper": "Sniper",
 
 		"operators.index.filters.class": "Class",
 		"operators.index.filters.branch": "Branch",
@@ -356,6 +358,7 @@ export const ui = {
 		"operators.defender": "디펜더",
 		"operators.supporter": "서포터",
 		"operators.caster": "캐스터",
+		"operators.sniper": "Sniper",
 
 		"operators.index.filters.class": "포지션",
 		"operators.index.filters.branch": "세부 포지션",
