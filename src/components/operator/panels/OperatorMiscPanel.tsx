@@ -2,7 +2,7 @@ import { useStore } from "@nanostores/react";
 
 import ArchiveIcon from "~/components/icons/ArchiveIcon";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 
 import enItemsJson from "../../../../data/en_US/items.json";
 import cnItemsJson from "../../../../data/zh_CN/items.json";
@@ -23,6 +23,9 @@ import { classToProfession } from "~/utils/classes.ts";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
+import Tooltip from "~/components/ui/Tooltip.tsx";
+import { toTitleCase } from "~/utils/strings.ts";
+import StarIcon from "~/components/icons/StarIcon.tsx";
 
 const OperatorMiscPanel: React.FC = () => {
 	const locale = useStore(localeStore);
@@ -74,7 +77,15 @@ const OperatorMiscPanel: React.FC = () => {
 				<ul className="m-0 flex list-none gap-2 p-0">
 					{operator.voices.map((voice) => (
 						<li key={voice.voiceLangType}>
-							{voice.voiceLangType}:{voice.cvName.join(", ")}
+							<Tooltip content={voice.voiceLangType}>
+								<div className="flex gap-0.5">
+									<div className="relative flex items-center">
+										<img className="w-5" src={`/flags/${voice.voiceLangType}.png`} alt={voice.voiceLangType} />
+										{voice.voiceLangType === "CN_TOPOLECT" && <StarIcon className="absolute bottom-0.5 right-0" rarity={5}></StarIcon>}
+									</div>
+									{voice.cvName.join(", ")}
+								</div>
+							</Tooltip>
 						</li>
 					))}
 				</ul>
@@ -188,7 +199,7 @@ const OperatorMiscPanel: React.FC = () => {
 			{handbook.archives && handbook.archives.length > 0 && (
 				<div className="flex flex-col gap-4">
 					{handbook.archives.map((archive, index) => (
-						<div>
+						<div key={index}>
 							<Accordion
 								icon={<ArchiveIcon />}
 								title={`${t("operators.details.misc.archive")} ${index + 1}`}

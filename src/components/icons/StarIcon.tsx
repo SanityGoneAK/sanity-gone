@@ -6,7 +6,8 @@ type Props = React.HTMLAttributes<SVGElement> & {
 	selected?: boolean;
 };
 
-const StarIcon: React.FC<Props> = ({ rarity, selected = false }) => {
+const StarIcon: React.FC<Props> = (props) => {
+	const { rarity, selected = false } = props;
 	const fill = selected ? "black" : `url(#rarity${rarity})`;
 
 	return ( // old svg, 16px tall
@@ -28,6 +29,7 @@ const StarIcon: React.FC<Props> = ({ rarity, selected = false }) => {
 			viewBox="0 0 13 12"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
+			{...props}
 		>
 			<path
 				d="M2.17788 12L6.1875 9.07211L10.226 12L8.65384 7.41346L12.375 4.91827H7.84615L6.1875 0L4.55769 4.91827H0L3.72115 7.41346L2.17788 12Z"
