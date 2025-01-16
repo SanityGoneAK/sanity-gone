@@ -78,11 +78,8 @@ const OperatorMiscPanel: React.FC = () => {
 					{operator.voices.map((voice) => (
 						<li key={voice.voiceLangType}>
 							<Tooltip content={voice.voiceLangType}>
-								<div className="flex gap-0.5">
-									<div className="relative flex items-center">
-										<img className="w-5" src={`/flags/${voice.voiceLangType}.png`} alt={voice.voiceLangType} />
-										{voice.voiceLangType === "CN_TOPOLECT" && <StarIcon className="absolute bottom-0.5 right-0" rarity={5}></StarIcon>}
-									</div>
+								<div className="flex gap-0.5 items-center">
+									<img className="w-5" src={`/flags/${voice.voiceLangType}.png`} alt={voice.voiceLangType} />
 									{voice.cvName.join(", ")}
 								</div>
 							</Tooltip>
