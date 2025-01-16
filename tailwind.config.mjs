@@ -87,6 +87,9 @@ export default {
 					"image trait", 
 				]
 			},
+			screens: {
+				"lg+": "1360px",
+			},
 		},
 	},
 	/** @type {any} tailwindcss-grid-areas seems to have a different plugin API from tailwind typings */

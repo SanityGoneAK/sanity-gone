@@ -19,9 +19,12 @@ const OperatorViewSwitch = () => {
 			</label>
 			<ToggleGroup.Root
 				defaultValue={viewConfig}
-				onValueChange={(value: ViewConfigValue) =>
-					$viewConfig.set(value)
-				}
+				value={$viewConfig.get()}
+				onValueChange={(value: ViewConfigValue) => {
+					if (value){
+						$viewConfig.set(value);
+					}
+				}}
 				className="flex h-8 w-20 justify-around overflow-hidden rounded-lg bg-neutral-600"
 				type="single"
 			>
