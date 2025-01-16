@@ -9,13 +9,14 @@ import PillButtonGroup from "~/components/ui/OldPillButtonGroup";
 import SliderWithInput from "~/components/ui/SliderWithInput";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
 import * as OutputTypes from "~/types/output-types";
-import { phaseToNumber } from "~/utils/character-stats.ts";
+import { getStatsAtLevel, phaseToNumber } from "~/utils/character-stats.ts";
 import { descriptionToHtml } from "~/utils/description-parser";
-import { skillIcon } from "~/utils/images";
+import { skillIcon, tokenImage } from "~/utils/images";
 import { cx } from "~/utils/styles";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
+import CharacterStats from "~/components/operator/CharacterStats.tsx";
 
 const OperatorSkillsPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
@@ -32,6 +33,7 @@ const OperatorSkillsPanel: React.FC = () => {
 		[numSkills]
 	);
 	const activeSkillTableSkill = operator.skillData[skillNumber - 1];
+	const activeSkill = operator.skills[skillNumber - 1];
 	const activeSkillLevel = activeSkillTableSkill.levels[skillLevel - 1];
 	const { itemCosts, minElite, minLevel } = useMemo(() => {
 		if (skillLevel === 1) {
@@ -63,6 +65,20 @@ const OperatorSkillsPanel: React.FC = () => {
 			minLevel: upgrade.unlockCond.level,
 		};
 	}, [skillLevel, operator.skills, operator.allSkillLvlup, skillNumber]);
+	const summon = activeSkill.overrideTokenKey ? operator.summons.filter(summon => summon.charId === activeSkill.overrideTokenKey)[0] : null;
+	const summonRange = summon
+		? getStatsAtLevel(
+			summon,
+			{
+				eliteLevel: 2,
+				level: 90,
+				potential: 5,
+				trust: 100,
+			},
+			summon.charId,
+			operator
+		).rangeObject
+		: null;
 
 	const skillDisplayDuration = useMemo(() => {
 		if (activeSkillLevel.duration === -1) {
@@ -200,6 +216,35 @@ const OperatorSkillsPanel: React.FC = () => {
 							className="justify-self-center"
 							rangeObject={activeSkillLevel.range}
 						/>
+					</div>
+				)}
+				{summon && (
+					<div className="flex rounded bg-neutral-900">
+						<img
+							className="border-r border-neutral-600"
+							width="100"
+							src={tokenImage(summon.charId)}
+							alt={summon.name}
+						/>
+						<div className="flex flex-grow flex-col gap-4 p-4">
+							<CharacterStats
+								character={summon}
+								elite={2}
+								level={90}
+								moduleId={null}
+								moduleLevel={1}
+								potential={5}
+								trust={100}
+								parentCharacter={operator}
+							/>
+							<div className="border-t border-neutral-600" />
+							<div className="grid grid-cols-[auto,1fr] items-center justify-items-center px-4 text-neutral-200">
+								<span>{t("operators.details.general.range")}</span>
+								<CharacterRange
+									rangeObject={summonRange!}
+								/>
+							</div>
+						</div>
 					</div>
 				)}
 				{itemCosts && (

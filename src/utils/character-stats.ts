@@ -438,9 +438,12 @@ export const getStatIncreaseAtTrust = (
 	magicResistance: number;
 } => {
 	if (characterObject.favorKeyFrames == null) {
-		throw new Error(
-			`Can't get trust stat increase, favorKeyFrames is null; charId: ${characterObject.charId}`
-		);
+		return {
+			maxHp: 0,
+			atk: 0,
+			def: 0,
+			magicResistance: 0,
+		}
 	}
 
 	const trust = Math.min(100, rawTrust);
