@@ -68,6 +68,7 @@ export async function buildSearchIndex() {
 
 	Object.values(OPERATOR_LOCALES.zh_CN)
 		.filter((e) => !e.isNotObtainable)
+		.filter((op) => op.profession !== "TOKEN")
 		.forEach((op) => {
 			searchArray.push({
 				objectID: op.charId,
