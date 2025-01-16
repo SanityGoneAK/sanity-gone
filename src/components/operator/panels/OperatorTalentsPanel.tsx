@@ -48,6 +48,8 @@ const OperatorTalentsPanel: React.FC = () => {
 		setPotential(potentialsMap[`PHASE_${maxElite}`][0]);
 	};
 
+	console.log(talentPhases);
+
 	return (
 		<div className="flex flex-col gap-4 p-6">
 			<div className="flex items-center justify-between border-b border-neutral-600 pb-4">
@@ -63,13 +65,14 @@ const OperatorTalentsPanel: React.FC = () => {
 				/>
 			</div>
 
-			<div>
+			<div className="flex flex-col gap-4">
 				{talentPhases.length > 0
 					? talentPhases.map((talentPhase, index) => (
 							<OperatorTalent
 								key={index}
 								talentNumber={index + 1}
 								talentPhase={talentPhase}
+								className="border-b border-neutral-500 last:border-b-0"
 							/>
 						))
 					: "No talents at this elite level."}
@@ -90,6 +93,7 @@ function getTalentPhase(
 		.find(
 			(phase) =>
 				phase.requiredPotentialRank <= potential &&
-				phase.unlockCondition.phase === `PHASE_${eliteLevel}`
+				phase.unlockCondition.phase === `PHASE_${eliteLevel}` &&
+				phase.isHideTalent !== true // what even are "hidden talents"
 		);
 }
