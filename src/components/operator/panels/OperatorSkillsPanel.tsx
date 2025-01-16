@@ -115,7 +115,7 @@ const OperatorSkillsPanel: React.FC = () => {
 		<div className="flex flex-col gap-4 p-6">
 			<div className="grid grid-cols-[auto_1fr] items-center gap-x-4 border-b border-neutral-600 pb-4">
 				<div className="grid grid-flow-col items-center gap-x-2 text-neutral-200">
-					<span>{t('operators.details.skills.skill')}</span>
+					<span>{t("operators.details.skills.skill")}</span>
 					<PillButtonGroup
 						labels={skillLabels}
 						value={skillNumber}
@@ -131,52 +131,77 @@ const OperatorSkillsPanel: React.FC = () => {
 				/>
 			</div>
 			<div className="grid gap-y-4 rounded-br-lg">
-				<div className="grid grid-cols-[64px_1fr] items-center gap-x-4 gap-y-1 grid-areas-skills">
+				<div className="grid grid-cols-[48px_1fr] items-center gap-x-4 gap-y-1 grid-areas-skills">
 					<img
-						className="h-16 w-16 rounded grid-in-icon"
+						className="h-12 w-12 rounded grid-in-icon"
 						src={skillIcon(
 							activeSkillTableSkill.iconId,
 							activeSkillTableSkill.skillId
 						)}
 						alt=""
 					/>
-					<h2 className="font-serif text-2xl font-semibold leading-[31px] grid-in-name">
+					<h2 className="font-serif text-lg font-semibold leading-6 grid-in-name">
 						{activeSkillLevel.name}
 					</h2>
-					<dl className="grid grid-flow-col justify-start gap-x-2 grid-in-skilltype">
-						<div className="inline-grid grid-flow-col gap-x-2 rounded bg-neutral-600 px-2 py-1">
-							<dt className="text-neutral-200">{t('operators.details.skills.activation')}</dt>
-							<dd className="font-semibold">
-								{
-									typeTitle[
-										activeSkillLevel.skillType
-									]
-								}
-							</dd>
-						</div>
-						<div className="inline-grid grid-flow-col gap-x-2 rounded bg-neutral-600 px-2 py-1">
-							<dt className="text-neutral-200">{t('operators.details.skills.recovery')}</dt>
-							<dd
-								className={cx(
-									"font-semibold",
-									spRecoveryClassName[
-										activeSkillLevel.spData.spType
-									]
-								)}
-							>
-								{
-									spRecoveryTitle[
-										activeSkillLevel.spData.spType
-									]
-								}
-							</dd>
-						</div>
+					<dl className="grid h-6 grid-flow-col items-center justify-start gap-x-3 grid-in-skilltype">
+						{/*<div className="inline-grid grid-flow-col gap-x-2 rounded bg-neutral-600 px-2 py-1">*/}
+						{/*	<dt className="text-neutral-200">*/}
+						{/*		{t("operators.details.skills.activation")}*/}
+						{/*	</dt>*/}
+						{/*	<dd className="font-normal">*/}
+						{/*		{typeTitle[activeSkillLevel.skillType]}*/}
+						{/*	</dd>*/}
+						{/*</div>*/}
+
+						<span className="text-base leading-none text-neutral-50">
+							{typeTitle[activeSkillLevel.skillType]}
+						</span>
+
+						{/* TODO This is an InterpunctSpacer. Maybe consider making it a .tsx component so it can be used everywhere?*/}
+						<span
+							className={`inline-block h-1 w-1 rounded-full bg-neutral-400`}
+						></span>
+
+						<span
+							className={cx(
+								"text-base leading-none",
+								spRecoveryClassName[
+									activeSkillLevel.spData.spType
+								]
+							)}
+						>
+							{/* space here is only needed if it's in English */}
+							{spRecoveryTitle[activeSkillLevel.spData.spType] + ((locale === "en") ? " " : "")}
+							{t("operators.details.skills.recovery")}
+						</span>
+
+						{/*<div className="inline-grid grid-flow-col gap-x-2 rounded bg-neutral-600 px-2 py-1">*/}
+						{/*	<dt className="text-neutral-200">*/}
+						{/*		{t("operators.details.skills.recovery")}*/}
+						{/*	</dt>*/}
+						{/*	<dd*/}
+						{/*		className={cx(*/}
+						{/*			"font-semibold",*/}
+						{/*			spRecoveryClassName[*/}
+						{/*				activeSkillLevel.spData.spType*/}
+						{/*			]*/}
+						{/*		)}*/}
+						{/*	>*/}
+						{/*		{*/}
+						{/*			spRecoveryTitle[*/}
+						{/*				activeSkillLevel.spData.spType*/}
+						{/*			]*/}
+						{/*		}*/}
+						{/*	</dd>*/}
+						{/*</div>*/}
 					</dl>
 				</div>
 				<dl className="flex gap-x-6">
 					<div className="relative flex w-full items-center justify-start gap-x-2 border-neutral-600">
 						<SpCostIcon />
-						<dt className="text-neutral-200">{t("operators.details.skills.sp_cost")}</dt>
+						<dt className="text-neutral-200">
+							{t("operators.details.skills.sp_cost")}
+						</dt>
 						<dd className="ml-auto font-semibold">
 							{activeSkillLevel.spData.spCost}
 						</dd>
@@ -184,7 +209,9 @@ const OperatorSkillsPanel: React.FC = () => {
 					<div className="w-1 border-r border-neutral-600"></div>
 					<div className="relative flex w-full items-center justify-start gap-x-2">
 						<InitialSpIcon />
-						<dt className="text-neutral-200">{t("operators.details.skills.initial_sp")}</dt>
+						<dt className="text-neutral-200">
+							{t("operators.details.skills.initial_sp")}
+						</dt>
 						<dd className="ml-auto font-semibold">
 							{activeSkillLevel.spData.initSp}
 						</dd>
@@ -192,7 +219,9 @@ const OperatorSkillsPanel: React.FC = () => {
 					<div className="w-1 border-r border-neutral-600"></div>
 					<div className="relative flex w-full items-center justify-start gap-x-2">
 						<HourglassIcon />
-						<dt className="text-neutral-200">{t("operators.details.skills.duration")}</dt>
+						<dt className="text-neutral-200">
+							{t("operators.details.skills.duration")}
+						</dt>
 						<dd className="ml-auto font-semibold">
 							{skillDisplayDuration}
 						</dd>
@@ -211,7 +240,9 @@ const OperatorSkillsPanel: React.FC = () => {
 				)}
 				{activeSkillLevel.range && (
 					<div className="grid grid-cols-[auto,1fr] items-center rounded bg-neutral-600 p-4">
-						<span className="text-neutral-200">{t("operators.details.general.range")}</span>
+						<span className="text-neutral-200">
+							{t("operators.details.general.range")}
+						</span>
 						<CharacterRange
 							className="justify-self-center"
 							rangeObject={activeSkillLevel.range}
@@ -239,10 +270,10 @@ const OperatorSkillsPanel: React.FC = () => {
 							/>
 							<div className="border-t border-neutral-600" />
 							<div className="grid grid-cols-[auto,1fr] items-center justify-items-center px-4 text-neutral-200">
-								<span>{t("operators.details.general.range")}</span>
-								<CharacterRange
-									rangeObject={summonRange!}
-								/>
+								<span>
+									{t("operators.details.general.range")}
+								</span>
+								<CharacterRange rangeObject={summonRange!} />
 							</div>
 						</div>
 					</div>
@@ -250,7 +281,9 @@ const OperatorSkillsPanel: React.FC = () => {
 				{itemCosts && (
 					<>
 						<h2 className="text-lg font-semibold leading-[23px]">
-							{t("operators.details.general.upgrade_requirements")}
+							{t(
+								"operators.details.general.upgrade_requirements"
+							)}
 						</h2>
 						<MaterialRequirements
 							itemCosts={itemCosts}
