@@ -74,13 +74,13 @@ const relatedOperators = getRelatedCharacter(operator, locale);
 const operatorBgSkin = operator.skins.find((skin) => skin.type === "elite-one-or-two") || operator.skins.find((skin) => skin.type === "elite-zero");
 ---
 <Layout title={operator.name}>
-	<div class="w-full h-full relative mx-auto flex lg+:flex-row flex-col gap-4 sm:p-5 overflow-y-auto">
+	<div class="w-full h-full relative mx-auto flex xl:flex-row flex-col gap-4 sm:p-5 overflow-y-auto">
 		<div
 			class="absolute opacity-[0.075] top-0 left-0 right-0 bottom-0 h-full bg-[center_35%] before:absolute before:w-full before:h-full before:bg-[linear-gradient(180deg,_rgba(20,_20,_27,_0)_35%,_rgba(20,_20,_27,_0.75)_55%,_#14141B_100%)] -z-10"
 			style={`background-image: url(${operatorSplash(operatorBgSkin?.portraitId, operatorBgSkin?.type)});`}
 		>
 		</div>
-		<div class="flex flex-grow flex-col gap-4 p-4 sm:p-auto min-h-[85%] lg+:min-h-auto">
+		<div class="flex flex-grow flex-col gap-4 pb-0 xl:pb-4 p-4 sm:p-auto min-h-[60%] md:min-h-[85%] xl:min-h-auto">
 			<ul class="p-0 m-0 flex items-center list-none gap-3 flex-none">
 				<li class="text-base font-normal leading-normal">
 					<a
@@ -163,7 +163,7 @@ const operatorBgSkin = operator.skins.find((skin) => skin.type === "elite-one-or
 			<!--	</svg>-->
 			<!--</a>-->
 		</div>
-		<div class="rounded flex-none w-full lg+:w-[590px] lg+:overflow-y-auto">
+		<div class="rounded flex-none w-full xl:w-[590px] xl:overflow-y-auto">
 			<section
 				class="flex-1 bg-gradient-to-b from-neutral-800 to-neutral-700 rounded-lg h-max"
 			>

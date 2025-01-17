@@ -88,7 +88,8 @@ const CharacterStats: React.FC<Props> = ({
 	);
 
 	return (
-		<dl className="relative grid grid-flow-col grid-cols-2 grid-rows-4 gap-[calc(theme(space.12)+1px)] gap-y-4 after:absolute after:bottom-0 after:left-0 after:right-1/2 after:top-0  after:border-r after:border-neutral-600">
+		// 500px is the breakpoint at which this specific UI element breaks.
+		<dl className="relative grid grid-flow-col grid-cols-1 grid-rows-8 min-[500px]:grid-cols-2 min-[500px]:grid-rows-4 gap-[calc(theme(space.12)+1px)] gap-y-4 after:absolute after:bottom-0 after:right-1/2 after:top-0 min-[500px]:after:border-r after:border-neutral-600">
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<HealthIcon className="text-neutral-50" />
@@ -143,7 +144,7 @@ const CharacterStats: React.FC<Props> = ({
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<DPCostIcon className="text-neutral-50" />
-					<span>{t("operators.details.attributes.block")}</span>
+					<span>{t("operators.details.attributes.dp_cost")}</span>
 				</dt>
 				<dd className="font-semibold">{dpCost}</dd>
 			</div>

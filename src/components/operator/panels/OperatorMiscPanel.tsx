@@ -34,6 +34,8 @@ const OperatorMiscPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
 	const handbook = operator.handbook;
 
+	console.log(handbook.physicalExam);
+
 	// split off Infection Status and Inspection Report (robots only) from basicInfo
 	const infectionInspection = handbook.basicInfo.filter((info) =>
 		[
@@ -54,6 +56,24 @@ const OperatorMiscPanel: React.FC = () => {
 			].includes(info.title)
 	);
 
+	// split off PhysicalInfo if there are any newlines chilling in there at the end
+	const lastPhysicalInfo = handbook.physicalExam.length - 1;
+
+	// create a deep copy of PhysicalExam to not modify the original JSON
+	// (this will ensure reloads and data modifications won't break this)
+	// TODO Maybe this is better to handle in GameData?
+	let handbookPhysicalExam: {
+		title: string;
+		value: string;
+	}[] = JSON.parse(JSON.stringify(handbook.physicalExam));
+	let extraInfo = null;
+
+	if(handbook.physicalExam[lastPhysicalInfo].value.includes("\n")) {
+		const lastEntrySplit = handbookPhysicalExam[lastPhysicalInfo].value.split("\n");
+		extraInfo = lastEntrySplit.slice(1, lastEntrySplit.length).join("\n").trim();
+		handbookPhysicalExam[lastPhysicalInfo].value = lastEntrySplit[0].trim();
+	}
+
 	const isRobot = operator.tagList.some((tag) =>
 		["Robot", "ロボット", "로봇", "支援机械"].includes(tag)
 	);
@@ -72,14 +92,18 @@ const OperatorMiscPanel: React.FC = () => {
 
 	return (
 		<div className="grid gap-y-4 rounded-br-lg p-6">
-			<div className="inline-flex w-fit gap-2 rounded bg-neutral-800/80 text-base leading-normal text-neutral-50 backdrop-blur-[4px]">
+			<div className="inline-flex w-fit gap-2 rounded bg-neutral-800/80 text-base leading-normal text-neutral-50 backdrop-blur-[4px] flex-col min-[600px]:flex-row">
 				<span className="text-neutral-200">VA</span>
-				<ul className="m-0 flex list-none gap-2 p-0">
+				<ul className="m-0 flex flex-col min-[600px]:flex-row list-none gap-2 p-0">
 					{operator.voices.map((voice) => (
 						<li key={voice.voiceLangType}>
 							<Tooltip content={voice.voiceLangType}>
-								<div className="flex gap-0.5 items-center">
-									<img className="w-5" src={`/flags/${voice.voiceLangType}.png`} alt={voice.voiceLangType} />
+								<div className="flex items-center gap-0.5">
+									<img
+										className="w-5"
+										src={`/flags/${voice.voiceLangType}.png`}
+										alt={voice.voiceLangType}
+									/>
 									{voice.cvName.join(", ")}
 								</div>
 							</Tooltip>
@@ -98,7 +122,7 @@ const OperatorMiscPanel: React.FC = () => {
 				))}
 			</ul>
 			<div>
-				<h2 className="font-serif text-2xl font-semibold">Profile</h2>
+				<h2 className="font-serif text-2xl font-semibold">{t("operators.details.misc.profile")}</h2>
 				<p className="text-base font-normal leading-normal">
 					{handbook.profile}
 				</p>
@@ -132,7 +156,7 @@ const OperatorMiscPanel: React.FC = () => {
 							: t("operators.details.misc.physical_exam")}
 					</h2>
 					<ul>
-						{handbook.physicalExam.map((item) => (
+						{handbookPhysicalExam.map((item) => (
 							<li
 								className="mb-4 flex h-6 items-center justify-between last:mb-0"
 								key={item.title}
@@ -154,6 +178,16 @@ const OperatorMiscPanel: React.FC = () => {
 								</span>
 							</li>
 						))}
+						{extraInfo && (
+							<li className="mb-4 flex items-center justify-between last:mb-0">
+								<span
+									className="whitespace-pre-line text-base leading-snug text-neutral-200"
+									dangerouslySetInnerHTML={{
+										__html: extraInfo,
+									}}
+								></span>
+							</li>
+						)}
 					</ul>
 				</div>
 			</div>

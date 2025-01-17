@@ -88,7 +88,7 @@ export default {
 				]
 			},
 			screens: {
-				"lg+": "1360px",
+				"xl": "1360px", // biggest layout - operator screen is full size
 			},
 		},
 	},

@@ -385,7 +385,7 @@ export const ui = {
 		"operators.details.attributes.title": "스탯",
 		"operators.details.attributes.trust": "신뢰도",
 		"operators.details.attributes.module": "모듈",
-		"operators.details.attributes.module_none": "모듈 없음", // (or is it just 없음?),
+		"operators.details.attributes.module_none": "없음", // (or is it just 없음? it is, it needed to be shortened LMAO -Sting),
 		"operators.details.attributes.health": "최대 체력",
 		"operators.details.attributes.defense": "방어",
 		"operators.details.attributes.arts_resistance": "마법 저항",
@@ -428,7 +428,7 @@ export const ui = {
 		"operators.details.modules.new_talent": "신재능",
 		"operators.details.modules.updated": "강화",
 		"operators.details.modules.added": "추가",
-		"operators.details.modules.no_effect": "효과 없음",
+		"operators.details.modules.no_effect": "효과 없음", // was 효과 없음, shortened
 		"operators.details.modules.attack": "공격",
 		"operators.details.modules.health": "최대 체력",
 		"operators.details.modules.defense": "방어",

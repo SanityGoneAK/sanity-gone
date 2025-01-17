@@ -18,6 +18,7 @@ import { useStore } from "@nanostores/react";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
+import { cx } from "~/utils/styles.ts";
 
 // TODO: Do we want to handle modules such as Pozy Y?
 // a.k.a. show exact token stat changes for modules that
@@ -82,8 +83,8 @@ const ModuleInfo: React.FC<Props> = ({
 	 * @param props.changeNum The number of the stat change to display (1-indexed).
 	 * @returns The JSX for the stat change.
 	 */
-	const StatChange = (props: { changeNum: number }) => {
-		const { changeNum } = props;
+	const StatChange = (props: { changeNum: number, className?: string }) => {
+		const { changeNum, className } = props;
 
 		// get the nth stat change
 		let changes = 0;
@@ -159,7 +160,11 @@ const ModuleInfo: React.FC<Props> = ({
 		].includes(statName as ReturnType<typeof t> || "");
 
 		return (
-			<div className="flex h-6 w-full items-center justify-start gap-x-2 rounded">
+			<div
+				className={
+					`flex h-8 items-center justify-start gap-x-2 rounded ${className}`
+				}
+			>
 				{icon}
 				<dt className="text-neutral-200">{statName}</dt>
 				<dd className="ml-auto text-lg font-semibold leading-none">
@@ -170,8 +175,6 @@ const ModuleInfo: React.FC<Props> = ({
 		);
 	};
 
-	// beware: flexbox gore lies ahead
-	// i should probably use grid. oh well!
 	return (
 		<div className="flex flex-col gap-4">
 			<div className="flex items-center gap-2">
@@ -187,54 +190,63 @@ const ModuleInfo: React.FC<Props> = ({
 					{module.moduleIcon}
 				</p>
 			</div>
-			<dl className="flex">
-				{/* absolute nightmare fuel handling here. i had no idea how to do it otherwise*/}
+
+			<dl
+				className={cx(
+					"grid grid-cols-1",
+					statChangeCount === 2 || statChangeCount === 4
+						? "min-[600px]:grid-cols-[1fr_1fr]"
+						: "",
+					statChangeCount === 3 ? "min-[600px]:grid-cols-[1fr_1fr_1fr]" : ""
+				)}
+			>
+				{/* absolute nightmare fuel handling here. it's lowkey too annoying to make any sort of
+				generalizable layout here */}
 				{statChangeCount === 2 && (
 					<>
-						<StatChange changeNum={1} />
-						<div className="mx-6 h-full border-l border-neutral-500" />
-						<StatChange changeNum={2} />
+						<StatChange changeNum={1} className="min-[600px]:pr-6 min-[600px]:border-r border-neutral-500"/>
+						<StatChange changeNum={2} className="min-[600px]:pl-6"/>
 					</>
 				)}
 				{statChangeCount === 3 && (
 					<>
-						<StatChange changeNum={1} />
-						<div className="mx-6 h-full border-l border-neutral-500" />
-						<StatChange changeNum={2} />
-						<div className="mx-6 h-full border-l border-neutral-500" />
-						<StatChange changeNum={3} />
+						<StatChange changeNum={1} className="min-[600px]:pr-6 min-[600px]:border-r border-neutral-500"/>
+						<StatChange changeNum={2} className="min-[600px]:px-6 min-[600px]:border-r border-neutral-500" />
+						<StatChange changeNum={3} className="min-[600px]:pl-6"/>
 					</>
 				)}
 				{/* Why do operators with 4 stat changes exist? *dies of Nian* */}
 				{statChangeCount === 4 && (
-					<div className="flex w-full flex-col">
-						<div className="flex items-center">
-							<StatChange changeNum={1} />
-							<div className="mx-6 h-8 border-l border-neutral-500" />
-							<StatChange changeNum={2} />
-						</div>
-						<div className="flex items-center">
-							<StatChange changeNum={3} />
-							<div className="mx-6 h-8 border-l border-neutral-500" />
-							<StatChange changeNum={4} />
-						</div>
-					</div>
+					<>
+						<StatChange changeNum={1} className="min-[600px]:pr-6 min-[600px]:border-r border-neutral-500"/>
+						<StatChange changeNum={2} className="min-[600px]:pl-6"/>
+						<StatChange changeNum={3} className="min-[600px]:pr-6 min-[600px]:border-r border-neutral-500"/>
+						<StatChange changeNum={4} className="min-[600px]:pl-6"/>
+					</>
 				)}
 			</dl>
 			<div className="flex flex-col gap-2 self-start grid-in-trait">
 				<div>
 					<h3 className="mb-1 text-sm text-neutral-200">
-						{t('operators.details.modules.trait')}
+						{t("operators.details.modules.trait")}
 						{activeCandidate.traitEffectType === "update" && (
-							<span> ({t("operators.details.modules.added")})</span>
+							<span>
+								{" "}
+								({t("operators.details.modules.added")})
+							</span>
 						)}
 						{activeCandidate.traitEffectType === "override" && (
-							<span> ({t('operators.details.modules.updated')})</span>
+							<span>
+								{" "}
+								({t("operators.details.modules.updated")})
+							</span>
 						)}
 					</h3>
 					<p
 						dangerouslySetInnerHTML={{
-							__html: activeCandidate.traitEffect ?? t('operators.details.modules.no_effect'),
+							__html:
+								activeCandidate.traitEffect ??
+								t("operators.details.modules.no_effect"),
 						}}
 					></p>
 				</div>
@@ -244,24 +256,37 @@ const ModuleInfo: React.FC<Props> = ({
 							{
 								activeCandidate.talentEffect
 									? activeCandidate.talentIndex === -1
-										? t('operators.details.modules.new_talent') // there is a new talent
-										: `${t('operators.details.modules.talent')} ${
+										? t(
+												"operators.details.modules.new_talent"
+											) // there is a new talent
+										: `${t("operators.details.modules.talent")} ${
 												activeCandidate.talentIndex + 1
 											}` // this is the talent modified
-									: t('operators.details.modules.talent') /* no talent modifications */
+									: t(
+											"operators.details.modules.talent"
+										) /* no talent modifications */
 							}
 							{activeCandidate.talentEffect &&
 								(activeCandidate.talentIndex === -1 ? ( // new talent added
-									<span> ({t("operators.details.modules.added")})</span>
+									<span>
+										{" "}
+										({t("operators.details.modules.added")})
+									</span>
 								) : (
 									// current talent updated
-									<span> ({t('operators.details.modules.updated')})</span>
+									<span>
+										{" "}
+										(
+										{t("operators.details.modules.updated")}
+										)
+									</span>
 								))}
 						</h3>
 						<p
 							dangerouslySetInnerHTML={{
 								__html:
-									activeCandidate.talentEffect ?? t('operators.details.modules.no_effect'),
+									activeCandidate.talentEffect ??
+									t("operators.details.modules.no_effect"),
 							}}
 						></p>
 					</div>

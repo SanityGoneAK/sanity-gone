@@ -130,7 +130,8 @@ const OperatorAttributesPanel: React.FC = () => {
 						onChange={setLevel}
 					/>
 				</div>
-				<div className="grid grid-cols-[auto_auto_1fr] items-center gap-x-6">
+				{/* 600px is the breakpoint at which this specific UI element breaks. */}
+				<div className="grid grid-cols-[auto_auto] items-center gap-x-4 gap-y-4 min-[600px]:grid-cols-[auto_auto_1fr]">
 					<div className="flex items-center gap-2">
 						<label className="flex cursor-pointer items-center gap-2 text-neutral-200">
 							<Checkbox
@@ -151,7 +152,7 @@ const OperatorAttributesPanel: React.FC = () => {
 							className="w-11"
 						/>
 					</div>
-					<div>
+					<div className={"flex justify-self-end"}>
 						<PotentialsDropdown
 							currentPotential={potential}
 							onChange={setPotential}
@@ -159,8 +160,9 @@ const OperatorAttributesPanel: React.FC = () => {
 						/>
 					</div>
 					{moduleTypes.length > 1 && (
-						<div className="flex items-center gap-x-2 justify-self-end">
+						<div className="col-span-2 flex items-center gap-x-2 justify-self-end w-full min-[600px]:w-auto min-[600px]:col-span-1">
 							<span className="text-neutral-200">Module</span>
+							<div className="flex-grow min-[600px]:hidden"></div>
 							<PillButtonGroup
 								labels={moduleTypes}
 								value={moduleType}
@@ -170,7 +172,12 @@ const OperatorAttributesPanel: React.FC = () => {
 								labels={[1, 2, 3]}
 								value={moduleLevel}
 								onChange={setModuleLevel}
-								disabled={moduleType === t("operators.details.attributes.module_none")}
+								disabled={
+									moduleType ===
+									t(
+										"operators.details.attributes.module_none"
+									)
+								}
 							/>
 						</div>
 					)}
@@ -187,24 +194,20 @@ const OperatorAttributesPanel: React.FC = () => {
 						potential={potential}
 						trust={trustToUse}
 					/>
-					<div
-						className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600
-	p-4 text-neutral-200
-	"
-					>
+					<div className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600 p-4 text-neutral-200">
 						<span>{t("operators.details.general.range")}</span>
 						<CharacterRange rangeObject={rangeObject} />
 					</div>
 
 					{summon && (
-						<div className="flex rounded bg-neutral-900">
+						<div className="flex min-[600px]:flex-row flex-col items-center rounded bg-neutral-900">
 							<img
-								className="border-r border-neutral-600"
+								className=" border-neutral-600 mx-2 my-2"
 								width="100"
 								src={tokenImage(summon.charId)}
 								alt={summon.name}
 							/>
-							<div className="flex flex-grow flex-col gap-4 p-4">
+							<div className="flex flex-grow flex-col gap-4 p-4 w-full border-neutral-600 min-[600px]:border-t-0 min-[600px]:border-l border-t border-l-0">
 								<CharacterStats
 									character={summon}
 									elite={elite}
@@ -217,7 +220,9 @@ const OperatorAttributesPanel: React.FC = () => {
 								/>
 								<div className="border-t border-neutral-600" />
 								<div className="grid grid-cols-[auto,1fr] items-center justify-items-center px-4 text-neutral-200">
-									<span>{t("operators.details.general.range")}</span>
+									<span>
+										{t("operators.details.general.range")}
+									</span>
 									<CharacterRange
 										rangeObject={summonRange!}
 									/>
@@ -229,7 +234,9 @@ const OperatorAttributesPanel: React.FC = () => {
 				{itemCosts.length > 0 && (
 					<>
 						<h2 className="text-lg font-semibold leading-[23px]">
-							{t("operators.details.general.promotion_requirements")}
+							{t(
+								"operators.details.general.promotion_requirements"
+							)}
 						</h2>
 						<MaterialRequirements
 							itemCosts={itemCosts}
