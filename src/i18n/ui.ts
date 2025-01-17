@@ -358,7 +358,7 @@ export const ui = {
 		"operators.defender": "디펜더",
 		"operators.supporter": "서포터",
 		"operators.caster": "캐스터",
-		"operators.sniper": "Sniper",
+		"operators.sniper": "스나이퍼",
 
 		"operators.index.filters.class": "포지션",
 		"operators.index.filters.branch": "세부 포지션",
