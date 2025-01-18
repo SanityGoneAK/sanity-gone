@@ -12,6 +12,8 @@ import Checkbox from "~/components/ui/Checkbox";
 import Input from "~/components/ui/Input";
 import PillButtonGroup from "~/components/ui/OldPillButtonGroup";
 import SliderWithInput from "~/components/ui/SliderWithInput";
+import { useTranslations } from "~/i18n/utils.ts";
+import { localeStore } from "~/pages/[locale]/_store.ts";
 import { operatorStore } from "~/pages/[locale]/operators/_store";
 import {
 	getPotentialsWithStatChanges,
@@ -20,10 +22,8 @@ import {
 import { tokenImage } from "~/utils/images";
 
 import type { CheckedState } from "@radix-ui/react-checkbox";
-import type * as OutputTypes from "~/types/output-types";
-import { localeStore } from "~/pages/[locale]/_store.ts";
-import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
+import type * as OutputTypes from "~/types/output-types";
 
 const LMD_ITEM_ID = "4001";
 
@@ -37,7 +37,6 @@ const OperatorAttributesPanel: React.FC = () => {
 	const [level, setLevel] = useState(operator.phases.at(-1)!.maxLevel);
 	const moduleTypes = useMemo(() => {
 		return [
-			t("operators.details.attributes.module_none"),
 			...operator.modules
 				.map((module) => module.moduleIcon.at(-1)!.toUpperCase())
 				.sort((a, b) => a.localeCompare(b)),
@@ -46,17 +45,17 @@ const OperatorAttributesPanel: React.FC = () => {
 	const [moduleType, setModuleType] = useState(moduleTypes.at(-1)!);
 	const [moduleLevel, setModuleLevel] = useState(3);
 	const [isTrustChecked, setTrustChecked] = useState(true);
+	const [isModuleTypeChecked, setModuleTypeChecked] = useState(true);
 	const [trust, setTrust] = useState(100);
 	const [potential, setPotential] = useState(0);
 
 	const trustToUse = isTrustChecked ? trust : 0;
 
-	const moduleId =
-		moduleType === t("operators.details.attributes.module_none")
-			? null
-			: operator.modules.find((module) =>
-					module.moduleIcon.endsWith(moduleType)
-				)!.moduleId;
+	const moduleId = isModuleTypeChecked === false
+		? null
+		: operator.modules.find((module) =>
+				module.moduleIcon.endsWith(moduleType)
+			)!.moduleId;
 
 	const itemCosts = useMemo(() => {
 		const itemCosts: OutputTypes.ItemCost[] = [];
@@ -106,6 +105,10 @@ const OperatorAttributesPanel: React.FC = () => {
 
 	const handleTrustBonusCheckedChange = (checked: CheckedState) => {
 		setTrustChecked(checked === true); // we're assuming "indeterminate" is impossible here
+	};
+
+	const handleModuleCheckedChange = (checked: CheckedState) => {
+		setModuleTypeChecked(checked === true); // we're assuming "indeterminate" is impossible here
 	};
 
 	const handleTrustChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -159,20 +162,29 @@ const OperatorAttributesPanel: React.FC = () => {
 							potentialsToShow={potsWithStatChanges}
 						/>
 					</div>
-					{moduleTypes.length > 1 && (
+					{moduleTypes.length > 0 && (
 						<div className="col-span-2 flex items-center gap-x-2 justify-self-end w-full sm:w-auto sm:col-span-1">
-							<span className="text-neutral-200">Module</span>
 							<div className="flex-grow sm:hidden"></div>
+							<label className="flex cursor-pointer items-center gap-2 text-neutral-200">
+								<Checkbox
+									variant={"info"}
+									checked={isModuleTypeChecked}
+									onCheckedChange={handleModuleCheckedChange}
+								/>
+								{t("operators.details.attributes.module")}
+							</label>
 							<PillButtonGroup
 								labels={moduleTypes}
 								value={moduleType}
 								onChange={setModuleType}
+								disabled={!isModuleTypeChecked}
 							/>
 							<PillButtonGroup
 								labels={[1, 2, 3]}
 								value={moduleLevel}
 								onChange={setModuleLevel}
 								disabled={
+									!isModuleTypeChecked ||
 									moduleType ===
 									t(
 										"operators.details.attributes.module_none"
@@ -194,7 +206,8 @@ const OperatorAttributesPanel: React.FC = () => {
 						potential={potential}
 						trust={trustToUse}
 					/>
-					<div className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600 p-4 text-neutral-200">
+					<div
+						className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600 p-4 text-neutral-200">
 						<span>{t("operators.details.general.range")}</span>
 						<CharacterRange rangeObject={rangeObject} />
 					</div>
