@@ -15,6 +15,7 @@ import PaintbrushIcon from "~/components/icons/PaintbrushIcon.tsx";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
+import ContingencyTokenIcon from "~/components/icons/ContingencyTokenIcon.tsx";
 
 const CharacterSplash: React.FC = () => {
 	const { skins } = useStore(operatorStore);
@@ -130,6 +131,27 @@ const CharacterSplash: React.FC = () => {
 															}
 														</span>
 														<OriginiumIcon />
+													</div>
+												</div>
+											)}
+										{skins[selectedIndex].cost &&
+											skins[
+												selectedIndex
+												].obtainSources?.includes(
+												"Contingency Contract Store"
+											) && (
+												<div className="inline-flex w-fit rounded-lg bg-neutral-600 px-2.5 py-1 text-base leading-none text-neutral-50">
+													<div className="flex flex-row items-center">
+														<span className="mr-1 leading-none">
+															{
+																(
+																	skins[
+																		selectedIndex
+																		] as OutputTypes.Skin
+																).cost
+															}
+														</span>
+														<ContingencyTokenIcon />
 													</div>
 												</div>
 											)}
