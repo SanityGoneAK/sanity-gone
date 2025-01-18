@@ -199,7 +199,7 @@ const OperatorModulesPanel: React.FC = () => {
 						<ArchiveIcon/>
 					}>
 						<p
-							className="text-white mt-0 whitespace-pre-line rounded-b text-base font-normal"
+							className="text-neutral-50 mt-0 whitespace-pre-line rounded-b text-base font-normal"
 							dangerouslySetInnerHTML={{
 								__html: module.moduleDescription,
 							}}
