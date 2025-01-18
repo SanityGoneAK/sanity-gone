@@ -15,11 +15,9 @@ import PaintbrushIcon from "~/components/icons/PaintbrushIcon.tsx";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
-import useMediaQuery from "~/utils/media-query.ts";
 
 const CharacterSplash: React.FC = () => {
 	const { skins } = useStore(operatorStore);
-	const isMobile = useMediaQuery("(max-width: 768px)");
 
 	let startIndex = 0;
 	skins.forEach((skin, i) => {
@@ -82,10 +80,7 @@ const CharacterSplash: React.FC = () => {
 							{/* This was fixed by fixing the width and position of the panel on the right.
 							No more layout shift, just make sure there's also no layout shift on mobile */}
 							<img
-								style={{
-									width: isMobile ? "clamp(0px, 100%, 85vw)" : "clamp(0px, 100%, 50vw)",
-								}}
-								className="my-0 mx-auto md:w-2"
+								className="my-0 mx-auto w-[clamp(0px,100%,85vw)] md:w-[clamp(0px,100%,60rem)] h-auto"
 								src={operatorSplash(skin.portraitId, skin.type)}
 								alt={skin.name}
 							/>

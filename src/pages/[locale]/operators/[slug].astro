@@ -80,51 +80,57 @@ const operatorBgSkin = operator.skins.find((skin) => skin.type === "elite-one-or
 			style={`background-image: url(${operatorSplash(operatorBgSkin?.portraitId, operatorBgSkin?.type)});`}
 		>
 		</div>
-		<div class="flex flex-grow flex-col gap-4 pb-0 xl:pb-4 p-4 sm:p-auto min-h-[60%] md:min-h-[85%] xl:min-h-auto">
-			<ul class="p-0 m-0 flex items-center list-none gap-3 flex-none">
-				<li class="text-base font-normal leading-normal">
-					<a
-						href={getRelativeLocaleUrl(locale, "/operators")}
-						class="text-blue hover:underline">{t('nav.operators')}</a
-					>
-				</li>
-				/
-				<li class="text-base font-bold leading-normal flex-none">
-					{operator.name}
-				</li>
+		<div class="flex flex-grow flex-col gap-4 pb-0 xl:pb-4 p-4 sm:p-auto">
+			<ul class="p-0 m-0 flex items-center list-none gap-3 flex-none flex-wrap">
+				<ul class="flex items-center gap-3">
+					<li class="text-base font-normal leading-normal">
+						<a
+							href={getRelativeLocaleUrl(locale, "/operators")}
+							class="text-blue hover:underline">{t('nav.operators')}</a
+						>
+					</li>
+					/
+					<li class="text-base font-bold leading-normal flex-none">
+						{operator.name}
+					</li>
+				</ul>
+
 				<li class="flex-grow"></li>
-				{
-					relatedOperators.length > 0 &&
-					relatedOperators.map((relatedOperator) => {
-						return (
-							<li class="flex-none">
-								<a
-									class="flex items-center text-yellow relative mr-3"
-									href={getRelativeLocaleUrl(
-										locale,
-										`/operators/${slugify(
-											enOperatorsJson[relatedOperator.charId].name
-										)}`
-									)}
-								>
-									<img
-										class="w-8 h-8 border border-solid border-neutral-200 rounded-[4.5rem] mr-2"
-										src={operatorAvatar(
-											relatedOperator.charId,
-											1
+
+				<ul class="flex flex-row gap-3">
+					{
+						relatedOperators.length > 0 &&
+						relatedOperators.map((relatedOperator) => {
+							return (
+								<li class="flex-none">
+									<a
+										class="flex items-center text-yellow relative mr-3"
+										href={getRelativeLocaleUrl(
+											locale,
+											`/operators/${slugify(
+												enOperatorsJson[relatedOperator.charId].name
+											)}`
 										)}
-										alt=""
-									/>
-									<span class="border-dashed border-b-[1px] border-neutral-200">
+									>
+										<img
+											class="w-8 h-8 border border-solid border-neutral-200 rounded-[4.5rem] mr-2"
+											src={operatorAvatar(
+												relatedOperator.charId,
+												1
+											)}
+											alt=""
+										/>
+										<span class="border-dashed border-b-[1px] border-neutral-200">
 											{relatedOperator.name}
 										</span>
-								</a>
-							</li>
-						);
-					})
-				}
+									</a>
+								</li>
+							);
+						})
+					}
+				</ul>
 			</ul>
-			<section class="flex-1">
+			<section class="flex-1 min-h-[30rem]">
 				<CharacterSplash client:visible />
 			</section>
 			{/* below lies the remains of our old Operator Guide component */}

@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import InterpunctSpacer from "../ui/InterpunctSpacer.astro";
 import StarIcon from "../icons/StarIcon";
 import OperatorBranchAndTrait from "./OperatorBranchAndTrait.tsx";
+import OperatorBothTooltip from "~/components/operator/OperatorBothTooltip.tsx";
 import { operatorClassIcon } from "~/utils/images";
 import { professionToClass, classToProfession } from "~/utils/classes";
 import { getMeleeOrRangedOrBoth } from "~/utils/character-stats";
@@ -22,6 +23,8 @@ import { useTranslations } from "../../i18n/utils";
 import type { ui } from "../../i18n/ui";
 import { toTitleCase } from "../../utils/strings";
 
+import Tooltip from "~/components/ui/Tooltip";
+
 interface Props {
 	operator: OutputTypes.Character;
 }
@@ -38,7 +41,7 @@ const meleeOrRanged = getMeleeOrRangedOrBoth(
 	operator.position,
 	operator.description,
 );
-const meleeOrRangedString = t('operators.details.general.'+meleeOrRanged);
+const meleeOrRangedString = t("operators.details.general." + meleeOrRanged);
 ---
 
 <div
@@ -55,12 +58,13 @@ const meleeOrRangedString = t('operators.details.general.'+meleeOrRanged);
 				1: "bg-neutral-50/[.08]",
 			}[rarity])}
 	>
-		<span class="visually-hidden">{t('operators.index.filters.rarity')}: {rarity}</span>
+		<span class="visually-hidden">{t("operators.index.filters.rarity")}: {rarity}</span>
 		<span class="grid grid-flow-col">
 			{
 				Array(rarity)
 					.fill(null)
-					.map(() => <StarIcon className="h-3" rarity={rarity} />)
+					.map(() =>
+						<StarIcon className="h-3" rarity={rarity} />)
 			}
 		</span>
 		{
@@ -76,19 +80,20 @@ const meleeOrRangedString = t('operators.details.general.'+meleeOrRanged);
 							3: "bg-blue ",
 							2: "bg-green ",
 							1: "bg-neutral-50",
-						}[rarity]
+						}[rarity],
 					)}
 					style={
 						// tailwind doesn't appear to have this as a predefined class
+
 						"font-height: 10px; line-height: 12px;"
 					}
 				>
-					{t('operators.details.general.limited')}
+					{t("operators.details.general.limited")}
 				</span>
 			)
 		}
 	</div>
-	<div class="px-5 flex gap-4 w-full">
+	<div class="px-5 flex gap-4 w-full items-center">
 		<div class="w-18 h-18">
 			<Image
 				class="rounded"
@@ -111,44 +116,90 @@ const meleeOrRangedString = t('operators.details.general.'+meleeOrRanged);
 					}
 				</h1>
 			</div>
-			<div class="flex-grow"></div> {/* spacer (theoretically never needed, but just to be safe) */}
-			<div class="flex items-center gap-x-3 w-full">
+			<div class="hidden sm:inline flex-grow"></div>
+			{/* spacer (theoretically never needed, but just to be safe) */}
+			<div class="hidden sm:flex flex-row items-center gap-x-3">
 				<div class="grid grid-flow-col items-center gap-x-2">
 					<img
 						class="h-5 w-full"
 						src={operatorClassIcon(
-							classToProfession(operatorClass).toLowerCase()
+							classToProfession(operatorClass).toLowerCase(),
 						)}
 						alt=""
 					/>
-					<span>{t("operators."+operatorClass.toLowerCase())}</span>
+					<span>{t("operators." + operatorClass.toLowerCase())}</span>
 				</div>
 				<OperatorBranchAndTrait client:idle />
-				<div class="flex-grow"></div> {/* spacer */}
+				<div class="flex-grow"></div>
+				{/* spacer */}
 				<div class="flex flex-row items-center gap-2">
 					{
 						meleeOrRanged === "melee" && (
-							<MeleeIcon/>
+							<MeleeIcon />
 						)
 					}
 					{
 						meleeOrRanged === "ranged" && (
-							<RangedIcon/>
+							<RangedIcon />
 						)
 					}
 					{
 						meleeOrRanged === "melee_and_ranged" && (
-							<MeleeAndRangedIcon/>
+							<MeleeAndRangedIcon />
 						)
 					}
-					<span class="text-neutral-200"
-					>{
-						meleeOrRangedString
-					}</span
-					>
+					<span class="text-neutral-200">
+						{meleeOrRangedString}
+					</span>
 				</div>
-
 			</div>
+		</div>
+	</div>
+	{/* Mobile layout */}
+	<div class="sm:hidden flex items-center gap-x-2 mx-5 text-sm">
+		<div class="grid grid-flow-col items-center gap-x-2">
+			<img
+				class="h-5 w-full"
+				src={operatorClassIcon(
+					classToProfession(operatorClass).toLowerCase(),
+				)}
+				alt=""
+			/>
+			<span>{t("operators." + operatorClass.toLowerCase())}</span>
+		</div>
+		<OperatorBranchAndTrait client:idle />
+		<div class="flex-grow"></div>
+		{/* spacer */}
+		<div class="flex flex-row items-center gap-2">
+			{
+				meleeOrRanged === "melee" && (
+					<MeleeIcon />
+				)
+			}
+			{
+				meleeOrRanged === "ranged" && (
+					<RangedIcon />
+				)
+			}
+			{
+				meleeOrRanged === "melee_and_ranged" && (
+					<MeleeAndRangedIcon />
+				)
+			}
+			<span class="text-neutral-200">
+				{meleeOrRanged === "melee_and_ranged" && locale === "en"
+					? (
+						<OperatorBothTooltip client:idle />
+						// couldn't figure out how to get this to work, so i just used a tsx component
+						/* <Tooltip client:idle>
+							<span slot="content">t("operators.details.general.melee_and_ranged")</span>
+							<span class="relative cursor-help after:absolute after:bottom-0 after:left-0 after:right-0
+							   after:border-b after:border-dashed after:opacity-[33%]">Both</span>
+						</Tooltip> */
+					)
+					: meleeOrRangedString}
+			</span
+			>
 		</div>
 	</div>
 </div>

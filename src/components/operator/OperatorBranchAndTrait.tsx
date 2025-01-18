@@ -15,7 +15,7 @@ const OperatorBranchAndTrait: React.FC = () => {
 	const operator = useStore(operatorStore);
 	const locale = useStore(localeStore) as Locale;
 	return (
-		<div className="grid grid-flow-col items-center gap-x-2">
+		<div className="grid grid-flow-col items-center gap-x-1 sm:gap-x-2">
 			<img
 				className="h-5 w-full"
 				src={operatorBranchIcon(operator.subProfessionId)}

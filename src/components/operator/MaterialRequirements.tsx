@@ -43,7 +43,7 @@ const MaterialRequirements: React.FC<Props> = ({
 	const itemsJson = itemMap[locale as keyof typeof itemMap];
 
 	return (
-		<div className="grid auto-cols-min grid-flow-col items-center justify-start gap-x-4">
+		<div className="grid auto-cols-min grid-flow-col items-center justify-start gap-x-4 overflow-x-auto pb-4 sm:pb-0">
 			{minElite != null && (
 				<div className="grid grid-cols-[16px_auto] items-center gap-x-2 rounded-lg bg-neutral-500/[.33] px-2.5 py-2">
 					{minElite === 0 && (
