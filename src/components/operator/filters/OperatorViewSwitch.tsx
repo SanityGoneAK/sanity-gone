@@ -5,8 +5,14 @@ import {
 	$viewConfig,
 	type ViewConfigValue,
 } from "../../../pages/[locale]/operators/_store";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 const OperatorViewSwitch = () => {
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
+
 	const viewConfig = useStore($viewConfig);
 
 	return (
@@ -15,7 +21,7 @@ const OperatorViewSwitch = () => {
 				className="font- mr-2 text-neutral-200"
 				htmlFor="operator-view"
 			>
-				View
+				{t("operators.index.filters.view")}
 			</label>
 			<ToggleGroup.Root
 				defaultValue={viewConfig}
@@ -25,11 +31,11 @@ const OperatorViewSwitch = () => {
 						$viewConfig.set(value);
 					}
 				}}
-				className="flex h-8 w-20 justify-around overflow-hidden rounded-lg bg-neutral-600"
+				className="flex h-8 w-20 justify-around overflow-hidden rounded border border-neutral-600"
 				type="single"
 			>
 				<ToggleGroup.Item
-					className="group flex w-full items-center justify-center data-[state=on]:rounded-lg data-[state=on]:bg-gradient-to-b data-[state=on]:from-purple-light data-[state=on]:to-purple"
+					className="group flex w-full items-center justify-center data-[state=on]:rounded data-[state=on]:bg-neutral-50"
 					value="large"
 				>
 					<svg
@@ -56,7 +62,7 @@ const OperatorViewSwitch = () => {
 				</ToggleGroup.Item>
 				<ToggleGroup.Item
 					value="compact"
-					className="group flex w-full items-center justify-center data-[state=on]:rounded-lg data-[state=on]:bg-gradient-to-b data-[state=on]:from-purple-light data-[state=on]:to-purple"
+					className="group flex w-full items-center justify-center data-[state=on]:rounded data-[state=on]:bg-neutral-50"
 				>
 					<svg
 						width="20"

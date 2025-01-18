@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo } from "react";
+import React, { useCallback, useEffect, useMemo } from "react";
 
 import { useStore } from "@nanostores/react";
 
@@ -11,7 +11,7 @@ import {
 	$filterRarity,
 	toggleProfession,
 	toggleBranch,
-	toggleRarity,
+	toggleRarity, initializeFiltersFromUrl
 } from "../../../pages/[locale]/operators/_store";
 import { classToProfession, professionLookup } from "../../../utils/classes";
 import { operatorBranchIcon, operatorClassIcon } from "../../../utils/images";
@@ -32,7 +32,7 @@ const OperatorFilters = () => {
 	const filterRarity = useStore($filterRarity);
 	const filterGuideAvailable = useStore($filterGuideAvailable);
 	const availableBranches = useStore($availableBranches);
-2
+
 	const professions = Object.keys(professionLookup);
 
 	const clearFilters = useCallback(() => {
@@ -56,7 +56,7 @@ const OperatorFilters = () => {
 								key={profession}
 								onClick={() => toggleProfession(profession)}
 								className={cx(
-									"rounded p-2 w-full max-w-12 aspect-square flex justify-center items-center hover:bg-neutral-400",
+									"rounded p-3 w-full max-w-12 aspect-square flex justify-center items-center hover:bg-neutral-400",
 									{
 										"bg-neutral-50 hover:bg-neutral-100": selected,
 									}

@@ -5,9 +5,13 @@ import OperatorList from "~/components/operator/OperatorList";
 import { getPathByLocale } from "astro:i18n";
 import { defaultLang } from "~/i18n/languages";
 import { localeStore } from "../_store";
+import { initializeFiltersFromUrl } from "./_store";
 
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 localeStore.set(locale);
+const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams.entries());
+console.log(queryParams);
+initializeFiltersFromUrl((new URL(Astro.request.url)).searchParams);
 ---
 
 <Layout title="Operator List">
@@ -17,6 +21,7 @@ localeStore.set(locale);
 		<OperatorList locale={locale} client:visible />
 	</section>
 </Layout>
-<script slot="head" define:vars={{ locale }}>
+<script slot="head" define:vars={{ locale, queryParams }}>
 	window.locale = locale;
+	window.queryParams = queryParams;
 </script>

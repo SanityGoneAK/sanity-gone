@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import * as Collapsible from "@radix-ui/react-collapsible";
 import * as Popover from "@radix-ui/react-popover";
@@ -8,9 +8,11 @@ import useMediaQuery from "~/utils/media-query";
 import OperatorFilters from "./OperatorFilters";
 import OperatorSort from "./OperatorSort";
 import OperatorViewSwitch from "./OperatorViewSwitch";
+import { initializeFiltersFromUrl } from "~/pages/[locale]/operators/_store.ts";
 const OperatorFilterBar = () => {
 	const [open, setOpen] = useState(false);
 	const isMobile = useMediaQuery("(max-width: 768px)");
+
 	return (
 		<div className="mb-6 flex w-full justify-between">
 			<Collapsible.Root
@@ -51,8 +53,8 @@ const OperatorFilterBar = () => {
 					</Collapsible.Trigger>
 				</div>
 				<Collapsible.CollapsibleContent asChild>
-					<div className="flex flex-col gap-3 md:flex-row md:gap-6">
-						<div className="hidden md:block">
+					<div className="flex flex-col gap-3 md:flex-row md:gap-6 items-center">
+						<div className="hidden md:flex items-center">
 							<Popover.Root>
 								<Popover.Trigger asChild>
 									<button

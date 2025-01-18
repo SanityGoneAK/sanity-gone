@@ -12,9 +12,9 @@ import {
 import {
 	$isSortEmpty,
 	$sortCategory,
-	$sortDirection,
+	$sortDirection, serializeFiltersToUrl,
 	type SortCategoryValue,
-	type SortDirectionValue,
+	type SortDirectionValue
 } from "~/pages/[locale]/operators/_store";
 
 const OperatorSort = () => {
@@ -27,11 +27,13 @@ const OperatorSort = () => {
 
 		$sortDirection.set(direction as SortDirectionValue);
 		$sortCategory.set(category as SortCategoryValue);
+		serializeFiltersToUrl();
 	};
 
 	const clearSorting = () => {
 		$sortDirection.set(null);
 		$sortCategory.set(null);
+		serializeFiltersToUrl();
 	};
 
 	return (
