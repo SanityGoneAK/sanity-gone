@@ -196,7 +196,7 @@ const OperatorSkillsPanel: React.FC = () => {
 						{/*</div>*/}
 					</dl>
 				</div>
-				<dl className="flex gap-x-6 gap-y-2 flex-col min-[550px]:flex-row">
+				<dl className="flex gap-x-6 gap-y-2 flex-col sm:flex-row">
 					<div className="relative flex w-full items-center justify-start gap-x-2 border-neutral-600">
 						<SpCostIcon />
 						<dt className="text-neutral-200">
@@ -206,7 +206,7 @@ const OperatorSkillsPanel: React.FC = () => {
 							{activeSkillLevel.spData.spCost}
 						</dd>
 					</div>
-					<div className="w-1 min-[550px]:border-r border-neutral-600"></div>
+					<div className="w-1 sm:border-r border-neutral-600"></div>
 					<div className="relative flex w-full items-center justify-start gap-x-2">
 						<InitialSpIcon />
 						<dt className="text-neutral-200">
@@ -216,7 +216,7 @@ const OperatorSkillsPanel: React.FC = () => {
 							{activeSkillLevel.spData.initSp}
 						</dd>
 					</div>
-					<div className="w-1 min-[550px]:border-r border-neutral-600"></div>
+					<div className="w-1 sm:border-r border-neutral-600"></div>
 					<div className="relative flex w-full items-center justify-start gap-x-2">
 						<HourglassIcon />
 						<dt className="text-neutral-200">

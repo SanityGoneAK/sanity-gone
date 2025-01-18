@@ -92,9 +92,9 @@ const OperatorMiscPanel: React.FC = () => {
 
 	return (
 		<div className="grid gap-y-4 rounded-br-lg p-6">
-			<div className="inline-flex w-fit gap-2 rounded bg-neutral-800/80 text-base leading-normal text-neutral-50 backdrop-blur-[4px] flex-col min-[600px]:flex-row">
+			<div className="inline-flex w-fit gap-2 rounded bg-neutral-800/80 text-base leading-normal text-neutral-50 backdrop-blur-[4px] flex-col sm:flex-row">
 				<span className="text-neutral-200">VA</span>
-				<ul className="m-0 flex flex-col min-[600px]:flex-row list-none gap-2 p-0">
+				<ul className="m-0 flex flex-col sm:flex-row list-none gap-2 p-0">
 					{operator.voices.map((voice) => (
 						<li key={voice.voiceLangType}>
 							<Tooltip content={voice.voiceLangType}>

@@ -131,7 +131,7 @@ const OperatorAttributesPanel: React.FC = () => {
 					/>
 				</div>
 				{/* 600px is the breakpoint at which this specific UI element breaks. */}
-				<div className="grid grid-cols-[auto_auto] items-center gap-x-4 gap-y-4 min-[600px]:grid-cols-[auto_auto_1fr]">
+				<div className="grid grid-cols-[auto_auto] items-center gap-x-4 gap-y-4 sm:grid-cols-[auto_auto_1fr]">
 					<div className="flex items-center gap-2">
 						<label className="flex cursor-pointer items-center gap-2 text-neutral-200">
 							<Checkbox
@@ -160,9 +160,9 @@ const OperatorAttributesPanel: React.FC = () => {
 						/>
 					</div>
 					{moduleTypes.length > 1 && (
-						<div className="col-span-2 flex items-center gap-x-2 justify-self-end w-full min-[600px]:w-auto min-[600px]:col-span-1">
+						<div className="col-span-2 flex items-center gap-x-2 justify-self-end w-full sm:w-auto sm:col-span-1">
 							<span className="text-neutral-200">Module</span>
-							<div className="flex-grow min-[600px]:hidden"></div>
+							<div className="flex-grow sm:hidden"></div>
 							<PillButtonGroup
 								labels={moduleTypes}
 								value={moduleType}
@@ -200,14 +200,14 @@ const OperatorAttributesPanel: React.FC = () => {
 					</div>
 
 					{summon && (
-						<div className="flex min-[600px]:flex-row flex-col items-center rounded bg-neutral-900">
+						<div className="flex sm:flex-row flex-col items-center rounded bg-neutral-900">
 							<img
 								className=" border-neutral-600 mx-2 my-2"
 								width="100"
 								src={tokenImage(summon.charId)}
 								alt={summon.name}
 							/>
-							<div className="flex flex-grow flex-col gap-4 p-4 w-full border-neutral-600 min-[600px]:border-t-0 min-[600px]:border-l border-t border-l-0">
+							<div className="flex flex-grow flex-col gap-4 p-4 w-full border-neutral-600 sm:border-t-0 sm:border-l border-t border-l-0">
 								<CharacterStats
 									character={summon}
 									elite={elite}

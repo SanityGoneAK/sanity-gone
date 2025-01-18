@@ -195,33 +195,33 @@ const ModuleInfo: React.FC<Props> = ({
 				className={cx(
 					"grid grid-cols-1",
 					statChangeCount === 2 || statChangeCount === 4
-						? "min-[600px]:grid-cols-[1fr_1fr]"
+						? "sm:grid-cols-[1fr_1fr]"
 						: "",
-					statChangeCount === 3 ? "min-[600px]:grid-cols-[1fr_1fr_1fr]" : ""
+					statChangeCount === 3 ? "sm:grid-cols-[1fr_1fr_1fr]" : ""
 				)}
 			>
 				{/* absolute nightmare fuel handling here. it's lowkey too annoying to make any sort of
 				generalizable layout here */}
 				{statChangeCount === 2 && (
 					<>
-						<StatChange changeNum={1} className="min-[600px]:pr-6 min-[600px]:border-r border-neutral-500"/>
-						<StatChange changeNum={2} className="min-[600px]:pl-6"/>
+						<StatChange changeNum={1} className="sm:pr-6 sm:border-r border-neutral-500"/>
+						<StatChange changeNum={2} className="sm:pl-6"/>
 					</>
 				)}
 				{statChangeCount === 3 && (
 					<>
-						<StatChange changeNum={1} className="min-[600px]:pr-6 min-[600px]:border-r border-neutral-500"/>
-						<StatChange changeNum={2} className="min-[600px]:px-6 min-[600px]:border-r border-neutral-500" />
-						<StatChange changeNum={3} className="min-[600px]:pl-6"/>
+						<StatChange changeNum={1} className="sm:pr-6 sm:border-r border-neutral-500"/>
+						<StatChange changeNum={2} className="sm:px-6 sm:border-r border-neutral-500" />
+						<StatChange changeNum={3} className="sm:pl-6"/>
 					</>
 				)}
 				{/* Why do operators with 4 stat changes exist? *dies of Nian* */}
 				{statChangeCount === 4 && (
 					<>
-						<StatChange changeNum={1} className="min-[600px]:pr-6 min-[600px]:border-r border-neutral-500"/>
-						<StatChange changeNum={2} className="min-[600px]:pl-6"/>
-						<StatChange changeNum={3} className="min-[600px]:pr-6 min-[600px]:border-r border-neutral-500"/>
-						<StatChange changeNum={4} className="min-[600px]:pl-6"/>
+						<StatChange changeNum={1} className="sm:pr-6 sm:border-r border-neutral-500"/>
+						<StatChange changeNum={2} className="sm:pl-6"/>
+						<StatChange changeNum={3} className="sm:pr-6 sm:border-r border-neutral-500"/>
+						<StatChange changeNum={4} className="sm:pl-6"/>
 					</>
 				)}
 			</dl>
