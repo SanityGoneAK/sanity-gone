@@ -25,21 +25,6 @@ import { localeStore } from "../_store";
 import { useTranslations } from "../../../i18n/utils";
 import type { ui } from "../../../i18n/ui";
 
-// console.log(Object.entries(operatorsJson)[0]);
-//
-// export function getStaticPaths() {
-// 	return Object.entries(operatorsJson).map(([operatorId, operator]: [string, OutputTypes.Operator]) => {
-// 		console.log(operatorId);
-//
-// 		return {
-// 			params: {
-// 				slug: slugify(operator.name.en_US),
-// 			},
-// 			props: { operatorId },
-// 		};
-// 	});
-// }
-
 const { slug } = Astro.params;
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 localeStore.set(locale);
@@ -55,8 +40,6 @@ const operatorsJson = operatorsMap[locale as keyof typeof operatorsMap];
 
 const idLookup = Object.fromEntries(
 	Object.entries(enOperatorsJson).map(
-		// TODO: Fix this
-		// @ts-ignore
 		([operatorId, operator]: [string, OutputTypes.Operator]) => {
 			return [slugify(operator.name), operatorId];
 		}

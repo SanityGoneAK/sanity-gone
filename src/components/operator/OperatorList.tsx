@@ -42,6 +42,7 @@ const OperatorLargeItem: React.FC<{
 			<div className="h-full overflow-hidden bg-neutral-600">
 				<div className="relative w-full">
 					<img
+						loading="lazy"
 						className="h-full w-full object-fill object-right-bottom"
 						alt=""
 						src={operatorPortrait(operator.charId)}
@@ -177,6 +178,7 @@ const OperatorCompactItem: React.FC<{
 			<div className="h-full overflow-hidden bg-neutral-600">
 				<div className="relative h-full w-full">
 					<img
+						loading="lazy"
 						className="h-full w-full object-cover object-bottom"
 						alt=""
 						src={operatorAvatar(operator.charId)}
