@@ -19,14 +19,20 @@ import { cx } from "../../../utils/styles";
 import StarIcon from "../../icons/StarIcon";
 import Checkbox from "../../ui/Checkbox";
 import type { Rarity } from "~/types/output-types";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 const OperatorFilters = () => {
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
+
 	const filterProfession = useStore($filterProfession);
 	const filterBranch = useStore($filterBranch);
 	const filterRarity = useStore($filterRarity);
 	const filterGuideAvailable = useStore($filterGuideAvailable);
 	const availableBranches = useStore($availableBranches);
-
+2
 	const professions = Object.keys(professionLookup);
 
 	const clearFilters = useCallback(() => {
@@ -37,10 +43,10 @@ const OperatorFilters = () => {
 	}, []);
 
 	return (
-		<div className="flex w-full flex-col gap-4 rounded-lg text-neutral-200 md:max-w-[420px] md:bg-neutral-950 md:p-4">
+		<div className="flex w-full flex-col gap-4 rounded-lg text-neutral-200 md:w-[420px] md:bg-neutral-950 md:p-4">
 			<div>
-				<p>Class</p>
-				<div className="mt-2 flex justify-center gap-2 rounded bg-neutral-900 p-1 md:bg-neutral-700">
+				<p>{t("operators.index.filters.class")}</p>
+				<div className="mt-2 flex justify-center rounded border border-neutral-600">
 					{professions.map((profession) => {
 						const selected = filterProfession.some(
 							(item) => item === profession
@@ -48,24 +54,23 @@ const OperatorFilters = () => {
 						return (
 							<button
 								key={profession}
+								onClick={() => toggleProfession(profession)}
 								className={cx(
-									"rounded p-1 hover:bg-neutral-800",
+									"rounded p-2 w-full max-w-12 aspect-square flex justify-center items-center hover:bg-neutral-400",
 									{
-										"bg-gradient-to-b from-purple-light to-purple":
-											selected,
+										"bg-neutral-50 hover:bg-neutral-100": selected,
 									}
 								)}
 							>
 								<img
-									className={cx("size-8", {
-										"mix-blend-multiply invert ": selected,
+									className={cx('w-full', {
+										"mix-blend-multiply invert": selected,
 										"mix-blend-lighten": !selected,
 									})}
 									alt=""
 									src={operatorClassIcon(
 										classToProfession(profession)
 									)}
-									onClick={() => toggleProfession(profession)}
 								/>
 							</button>
 						);
@@ -73,10 +78,10 @@ const OperatorFilters = () => {
 				</div>
 			</div>
 			<div>
-				<p>Branch</p>
+				<p>{t("operators.index.filters.branch")}</p>
 				{availableBranches.length == 0 ? (
-					<div className="mt-2 flex items-center justify-center rounded bg-neutral-900/75 p-2 md:bg-neutral-900">
-						<p className="leading-5 text-neutral-300">
+					<div className="mt-2 flex items-center justify-center rounded bg-neutral-600 p-2 md:bg-neutral-900">
+						<p className="leading-5 text-neutral-100">
 							Select a Class
 						</p>
 					</div>
@@ -121,9 +126,9 @@ const OperatorFilters = () => {
 				)}
 			</div>
 			<div>
-				<p>Rarity</p>
+				<p>{t("operators.index.filters.rarity")}</p>
 				<div className="mt-2">
-					<div className="mt-2 flex items-center justify-center rounded bg-neutral-900 p-2 md:bg-neutral-700">
+					<div className="mt-2 flex items-center justify-center rounded border border-neutral-600">
 						{new Array<Rarity>(1, 2, 3, 4, 5, 6).map((rarity) => {
 							const selected = filterRarity.some(
 								(item) => item === rarity
@@ -154,7 +159,7 @@ const OperatorFilters = () => {
 									key={rarity}
 									onClick={() => toggleRarity(rarity)}
 									className={cx(
-										"flex w-full items-center justify-center gap-0.5 rounded font-semibold",
+										"flex aspect-square w-full max-w-12 items-center justify-center gap-0.5 rounded font-semibold",
 										rarityStyleVariants[rarity]
 									)}
 								>
@@ -170,14 +175,15 @@ const OperatorFilters = () => {
 				</div>
 			</div>
 			<div className="flex items-center">
-				<Checkbox
-					id="guides-available"
-					onCheckedChange={(value) =>
-						$filterGuideAvailable.set(!!value)
-					}
-				/>
-				<label className="ml-2" htmlFor="guides-available">
-					Guides Available
+				<label className="flex cursor-pointer items-center gap-2" htmlFor="guides-available">
+					<Checkbox
+						id="guides-available"
+						checked={$filterGuideAvailable.get()}
+						onCheckedChange={(value) =>
+							$filterGuideAvailable.set(!!value)
+						}
+					/>
+					{t("operators.index.filters.guides_available")}
 				</label>
 			</div>
 			<div className="mt-2">

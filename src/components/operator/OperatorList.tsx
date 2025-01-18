@@ -174,7 +174,7 @@ const OperatorCompactItem: React.FC<{
 	const slug = slugify(enOperator.name);
 
 	return (
-		<li className="relative h-36 overflow-hidden rounded sm:h-40">
+		<li className="relative aspect-square h-full overflow-hidden rounded">
 			<div className="h-full overflow-hidden bg-neutral-600">
 				<div className="relative h-full w-full">
 					<img
@@ -256,7 +256,7 @@ const OperatorList: React.FC<{ locale: string }> = ({ locale }) => {
 	return (
 		<ul
 			className={cx(
-				"grid list-none grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))]",
+				"grid list-none grid-cols-[repeat(auto-fill,_minmax(144px,_1fr))]",
 				isMobile || viewConfig === "compact"
 					? "gap-4 p-0"
 					: "gap-x-6 gap-y-4 p-0"
