@@ -41,11 +41,12 @@ const OperatorTabs: React.FC = () => {
 		<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
 			{/* TODO i wanted to preview layout so i literally did the dumbest thing that would make it work lMAO
 			 this is terrible, fix it please */}
-			<Tab.List className="flex flex-row flex-wrap gap-2 bg-neutral-600/[.66] px-4 pb-2 sm:flex-nowrap">
+			<Tab.List className="flex flex-row flex-wrap gap-2 bg-neutral-600/[.66] sm:px-4 pb-2 sm:flex-nowrap">
 				<Swiper
 					className={"m-0 mx-0 w-full"}
 					direction="horizontal"
 					modules={[Navigation, Scrollbar]}
+					navigation={true}
 					scrollbar={{ draggable: true }}
 					slidesPerView={"auto"}
 					freeMode={true}

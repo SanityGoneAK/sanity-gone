@@ -142,3 +142,16 @@ img {
 		@apply text-neutral-200;
 	}
 }
+
+.swiper-button-next, .swiper-button-prev {
+	--swiper-navigation-sides-offset: -5px;
+	background: radial-gradient(circle at 50% 50%, #24242E 0, rgba(36, 36, 46, 0.6) 50%, rgba(0,0,0,0) 99%);
+	@apply text-neutral-50;;
+}
+.swiper-button-disabled{
+	display: none;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+	--swiper-navigation-size: 20px;
+	width: 10px;
+}
