@@ -129,6 +129,7 @@ export async function buildSearchIndex() {
 		host: process.env.PUBLIC_MEILISEARCH_URL,
 		apiKey: process.env.MEILISEARCH_KEY,
 	});
+	await client.deleteIndex("operators");
 	await client.createIndex("operators", {
 		primaryKey: "objectID",
 	});
