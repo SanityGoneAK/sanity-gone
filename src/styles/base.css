@@ -155,3 +155,10 @@ img {
 	--swiper-navigation-size: 20px;
 	width: 10px;
 }
+
+.swiper-slide:first-child{
+	padding-left: 1rem;
+}
+.swiper-slide:last-child{
+	padding-right: 1rem;
+}
