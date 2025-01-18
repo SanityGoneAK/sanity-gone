@@ -389,7 +389,7 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 
 				if (
 					skinType === "skin" &&
-					SKIN_LOCALES[locale][cnSkin.skinId]
+					SKIN_LOCALES.zh_CN[cnSkin.skinId]
 				) {
 					skinName = SKIN_LOCALES[locale][cnSkin.skinId]
 						? SKIN_LOCALES[locale][cnSkin.skinId].displaySkin
