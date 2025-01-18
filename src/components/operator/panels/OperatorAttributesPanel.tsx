@@ -216,7 +216,7 @@ const OperatorAttributesPanel: React.FC = () => {
 						<div className="flex sm:flex-row flex-col items-center rounded bg-neutral-900">
 							<img
 								className=" border-neutral-600 mx-2 my-2"
-								width="100"
+								width="80"
 								src={tokenImage(summon.charId)}
 								alt={summon.name}
 							/>
