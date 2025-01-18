@@ -79,17 +79,17 @@ const memberGroups: {
 		members: [
 			{
 				name: "samidare",
-				role: "Lead Developer",
+				role: "Main Developer",
 				imageFilename: "samidare.png",
 			},
 			{
 				name: "Stinggyray",
-				role: "Developer, Editor",
+				role: "Main Developer, Editor",
 				imageFilename: "stinggyray.png",
 			},
 			{
 				name: "Blede",
-				role: "Developer",
+				role: "Main Developer",
 				imageFilename: "blede.png",
 			},
 			{
@@ -143,7 +143,7 @@ const memberGroups: {
 
 ---
 
-<Layout title="Disclaimer">
+<Layout title={t("nav.about")}>
 	<meta slot="head" name="description" content="About Sanity;Gone, a fan-made Arknights website." />
 	<meta slot="head" property="og:description" content="About Sanity;Gone, a fan-made Arknights website." />
 	<meta slot="head" property="og:image" content={`${Astro.url.origin}/brain-big.png`} />
@@ -153,12 +153,11 @@ const memberGroups: {
 		class="absolute top-0 left-0 right-0 bottom-1/2 bg-center bg-cover -z-10 before:-z-10 before:absolute before:inset-0 before:bg-[linear-gradient(180deg,rgba(20,20,27,0)_40%,rgba(20,20,27,0.75)_75%,#14141B_100%);]"
 		style={`background-image: url("/bg/about.jpg");`}
 	/>
-	<div class="mx-auto w-auto max-w-[1280px] text-base sm:text-lg flex flex-col gap-y-4">
+	<div class="mx-auto w-auto max-w-[1280px] text-base flex flex-col gap-y-4">
 		<h1 class="px-3 text-4xl font-bold mt-10">{t("nav.about").toLocaleUpperCase()}</h1>
 		<h1 class="px-3 font-semibold text-3xl">Sanity;Gone Team</h1>
 		<div>
 			<About memberGroups={memberGroups} client:load />
 		</div>
 	</div>
-
 </Layout>

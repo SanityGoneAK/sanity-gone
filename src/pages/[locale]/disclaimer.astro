@@ -14,7 +14,7 @@ const absoluteLocaleUrl = getAbsoluteLocaleUrl(preferredLocale, "/");
 const t = useTranslations(preferredLocale as keyof typeof ui);
 ---
 
-<Layout title="Disclaimer">
+<Layout title={t("nav.disclaimer")}>
 	<meta slot="head" name="description" content="Disclaimer for Sanity;Gone, a fan-made Arknights website. (Please don't sue us.)" />
 	<meta slot="head" property="og:description" content="Disclaimer for Sanity;Gone, a fan-made Arknights website. (Please don't sue us.)" />
 	<meta slot="head" property="og:image" content={`${Astro.url.origin}/brain-big.png`} />
