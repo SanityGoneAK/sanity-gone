@@ -51,7 +51,7 @@ const OperatorAttributesPanel: React.FC = () => {
 
 	const trustToUse = isTrustChecked ? trust : 0;
 
-	const moduleId = isModuleTypeChecked === false
+	const moduleId = (isModuleTypeChecked === false || moduleTypes.length === 0)
 		? null
 		: operator.modules.find((module) =>
 				module.moduleIcon.endsWith(moduleType)
