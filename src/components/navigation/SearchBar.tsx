@@ -113,7 +113,7 @@ const CustomHits: React.FC<{
 	return (
 		<Combobox.Options<"div">
 			as="div"
-			className="absolute left-[-1px] top-[calc(100%+1px)] z-50 m-0 flex w-full flex-col overflow-hidden rounded-b border border-neutral-400 bg-neutral-500 p-0 w-[calc(100%+2px)] md:w-[32rem]"
+			className="absolute left-[-1px] top-[calc(100%+1px)] z-50 m-0 flex flex-col overflow-hidden rounded-b border border-neutral-400 bg-neutral-500 p-0 w-[calc(100%+2px)] md:w-[32rem]"
 		>
 			{operatorResults.length > 0 && (
 				<ul

@@ -39,7 +39,7 @@ const About: React.FC<AboutProps> = (props) => {
 									</svg>
 								</DisclosureButton>
 								<DisclosurePanel
-									className="transition duration-200 ease-out data-[closed]:-translate-y-4 data-[closed]:opacity-0 motion-reduce:transition-none"
+									className="transition duration-200 ease-out data-[closed]:-translate-y-4 data-[closed]:opacity-0 motion-reduce:transition-none data-[open]:last:pb-2"
 									transition
 								>
 									<ul className="my-3 flex flex-col gap-6">
