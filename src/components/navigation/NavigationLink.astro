@@ -11,7 +11,7 @@ const { active, href, name, icon: IconComponent } = Astro.props;
 <a href={href} class:list={['block', {'border-r-2 border-neutral-100':active}]}>
 	<p
 		class:list={[
-			"h-16 pl-3 sm:pl-6 flex items-center text-neutral-300 text-base leading-6",
+			"h-16 pl-6 flex items-center text-neutral-300 text-base leading-6",
 			{ "hover:bg-neutral-700": !active },
 			{ "bg-neutral-600": active },
 		]}

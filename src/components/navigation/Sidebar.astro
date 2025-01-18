@@ -75,9 +75,9 @@ const sidebarLinks: { href: string; name: string, icon: any }[] = [
 			client:visible
 		/>
 		<nav class="flex justify-between items-center text-neutral-100">
-			<a class="hover:text-neutral-50" href="#">{t('nav.disclaimer')}</a>
-			<a class="hover:text-neutral-50" href="#">{t('nav.about')}</a>
-			<a class="hover:text-neutral-50" href="#">{t('nav.contact')}</a>
+			<a class="hover:text-neutral-50" href={getRelativeLocaleUrl(locale, "/disclaimer")}>{t('nav.disclaimer')}</a>
+			<a class="hover:text-neutral-50" href={getRelativeLocaleUrl(locale, "/about")}>{t('nav.about')}</a>
+			<a class="hover:text-neutral-50" href="mailto:sanitygone.dev@gmail.com">{t('nav.contact')}</a>
 		</nav>
 	</div>
 </div>

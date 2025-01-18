@@ -113,7 +113,7 @@ const CustomHits: React.FC<{
 	return (
 		<Combobox.Options<"div">
 			as="div"
-			className="absolute left-[-1px] top-[calc(100%+1px)] z-50 m-0 flex w-[32rem] flex-col overflow-hidden rounded-b border border-neutral-400 bg-neutral-500 p-0"
+			className="absolute left-[-1px] top-[calc(100%+1px)] z-50 m-0 flex w-full flex-col overflow-hidden rounded-b border border-neutral-400 bg-neutral-500 p-0 w-[calc(100%+2px)] md:w-[32rem]"
 		>
 			{operatorResults.length > 0 && (
 				<ul
@@ -255,10 +255,12 @@ const SearchBar: React.FC<Props> = ({ locale, placeholder }) => {
 	};
 
 	return (
-		<div className="flex h-full w-full items-center px-3 sm:pl-6">
+		<div className="flex h-full w-full items-center px-3 md:pl-6">
 			<form
 				role="search"
-				className="relative flex h-9 flex-grow flex-row items-center rounded border border-neutral-100/[0] px-4 focus-within:border-neutral-200/[0.9] focus-within:bg-neutral-500 sm:w-[512px] sm:flex-grow-0 focus-within:[&:has(input[data-open])]:rounded-b-none hover:[&:not(:focus-within)]:bg-neutral-500"
+				className="relative flex h-9 flex-grow flex-row items-center rounded border border-neutral-100/[0]
+				px-4 focus-within:border-neutral-200/[0.9] focus-within:bg-neutral-500 md:w-[32rem] md:flex-grow-0
+				focus-within:[&:has(input[data-open])]:rounded-b-none hover:[&:not(:focus-within)]:bg-neutral-500"
 				onClick={() => inputRef.current?.focus()}
 			>
 				<SearchIcon className="mr-4" />

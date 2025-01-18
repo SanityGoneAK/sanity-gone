@@ -74,6 +74,13 @@ const relatedOperators = getRelatedCharacter(operator, locale);
 const operatorBgSkin = operator.skins.find((skin) => skin.type === "elite-one-or-two") || operator.skins.find((skin) => skin.type === "elite-zero");
 ---
 <Layout title={operator.name}>
+	{/* OpenGraphProtocol and meta stuff (used for Discord embeds, SEO, and whatnot) */}
+	<meta slot="head" name="description" content={operator.itemUsage} />
+	<meta slot="head" property="og:description" content={operator.itemUsage} />
+	<meta slot="head" property="og:image" content={operatorAvatar(operator.charId, 1)} />
+	<meta slot="head" property="og:title" content={operator.name} />
+	<meta slot="head" property="og:type" content="website" />
+
 	<div class="w-full h-full relative mx-auto flex xl:flex-row flex-col gap-4 sm:p-5 overflow-y-auto">
 		<div
 			class="absolute opacity-[0.075] top-0 left-0 right-0 bottom-0 h-full bg-[center_35%] before:absolute before:w-full before:h-full before:bg-[linear-gradient(180deg,_rgba(20,_20,_27,_0)_35%,_rgba(20,_20,_27,_0.75)_55%,_#14141B_100%)] -z-10"
