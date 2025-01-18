@@ -77,6 +77,10 @@ export default {
 					"icon name",
 					"icon skilltype"
 				],
+				"skills-mobile": [
+					"icon name",
+					"skilltype skilltype"
+				],
 				"module-title": [
 					"icon name",
 					"icon code"
@@ -85,7 +89,15 @@ export default {
 					"image title", 
 					"image stats", 
 					"image trait", 
-				]
+				],
+				"op-info": [
+					"icon name",
+					"icon classes"
+				],
+				"op-info-mobile": [
+					"icon name",
+					"classes classes"
+				],
 			},
 			screens: {
 				"xl": "1360px", // biggest layout - operator screen is full size

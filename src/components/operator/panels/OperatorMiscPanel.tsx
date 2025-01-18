@@ -92,9 +92,11 @@ const OperatorMiscPanel: React.FC = () => {
 
 	return (
 		<div className="grid gap-y-4 rounded-br-lg p-6">
-			<div className="inline-flex w-fit gap-2 rounded bg-neutral-800/80 text-base leading-normal text-neutral-50 backdrop-blur-[4px] flex-col sm:flex-row">
-				<span className="text-neutral-200">VA</span>
-				<ul className="m-0 flex flex-col sm:flex-row list-none gap-2 p-0">
+			<div className="inline w-fit rounded bg-neutral-800/80 backdrop-blur-[4px]">
+				<ul className="m-0 flex list-none flex-wrap gap-2 p-0 items-center text-base leading-normal text-neutral-50">
+					<li>
+						<span className="text-neutral-200">VA</span>
+					</li>
 					{operator.voices.map((voice) => (
 						<li key={voice.voiceLangType}>
 							<Tooltip content={voice.voiceLangType}>
@@ -122,7 +124,9 @@ const OperatorMiscPanel: React.FC = () => {
 				))}
 			</ul>
 			<div>
-				<h2 className="font-serif text-2xl font-semibold">{t("operators.details.misc.profile")}</h2>
+				<h2 className="font-serif text-2xl font-semibold">
+					{t("operators.details.misc.profile")}
+				</h2>
 				<p className="text-base font-normal leading-normal">
 					{handbook.profile}
 				</p>

@@ -64,7 +64,7 @@ const CharacterSplash: React.FC = () => {
 			</Tab.List>
 			<Tab.Panels className="h-full">
 				{skins.map((skin) => {
-					const skinName = skin.name.toLowerCase().includes('elite') ? t('operators.details.general.elite') + skin.name.toLowerCase().split('elite')[1] : skin.name;
+					const skinName = skin.name.toLowerCase().includes('elite') ? (t('operators.details.general.elite') + skin.name.toLowerCase().split('elite')[1]) : skin.name;
 					return (
 						<Tab.Panel
 							id={`${skin.skinId}-tabpanel`}

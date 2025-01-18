@@ -131,7 +131,7 @@ const OperatorSkillsPanel: React.FC = () => {
 				/>
 			</div>
 			<div className="grid gap-y-4 rounded-br-lg">
-				<div className="grid grid-cols-[48px_1fr] items-center gap-x-4 gap-y-1 grid-areas-skills">
+				<div className="grid grid-cols-[48px_1fr] grid-flow-col items-center gap-x-4 gap-y-2 grid-areas-skills-mobile sm:grid-areas-skills">
 					<img
 						className="h-12 w-12 rounded grid-in-icon"
 						src={skillIcon(
@@ -143,16 +143,7 @@ const OperatorSkillsPanel: React.FC = () => {
 					<h2 className="font-serif text-lg font-semibold leading-6 grid-in-name">
 						{activeSkillLevel.name}
 					</h2>
-					<dl className="grid h-6 grid-flow-col items-center justify-start gap-x-3 grid-in-skilltype">
-						{/*<div className="inline-grid grid-flow-col gap-x-2 rounded bg-neutral-600 px-2 py-1">*/}
-						{/*	<dt className="text-neutral-200">*/}
-						{/*		{t("operators.details.skills.activation")}*/}
-						{/*	</dt>*/}
-						{/*	<dd className="font-normal">*/}
-						{/*		{typeTitle[activeSkillLevel.skillType]}*/}
-						{/*	</dd>*/}
-						{/*</div>*/}
-
+					<dl className="grid h-6 grid-flow-col items-center justify-start gap-x-2 sm:gap-x-3 grid-in-skilltype sm:col-span-1">
 						<span className="text-base leading-none text-neutral-50">
 							{typeTitle[activeSkillLevel.skillType]}
 						</span>
@@ -174,26 +165,6 @@ const OperatorSkillsPanel: React.FC = () => {
 							{spRecoveryTitle[activeSkillLevel.spData.spType] + ((locale === "en") ? " " : "")}
 							{t("operators.details.skills.recovery")}
 						</span>
-
-						{/*<div className="inline-grid grid-flow-col gap-x-2 rounded bg-neutral-600 px-2 py-1">*/}
-						{/*	<dt className="text-neutral-200">*/}
-						{/*		{t("operators.details.skills.recovery")}*/}
-						{/*	</dt>*/}
-						{/*	<dd*/}
-						{/*		className={cx(*/}
-						{/*			"font-semibold",*/}
-						{/*			spRecoveryClassName[*/}
-						{/*				activeSkillLevel.spData.spType*/}
-						{/*			]*/}
-						{/*		)}*/}
-						{/*	>*/}
-						{/*		{*/}
-						{/*			spRecoveryTitle[*/}
-						{/*				activeSkillLevel.spData.spType*/}
-						{/*			]*/}
-						{/*		}*/}
-						{/*	</dd>*/}
-						{/*</div>*/}
 					</dl>
 				</div>
 				<dl className="flex gap-x-6 gap-y-2 flex-col sm:flex-row">
