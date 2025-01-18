@@ -13,6 +13,8 @@ import jpItemsJson from "data/ja_JP/items.json";
 
 import { useStore } from "@nanostores/react";
 import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 interface Props {
 	minElite?: number;
@@ -28,6 +30,7 @@ const MaterialRequirements: React.FC<Props> = ({
 	minSkillLevel = 1,
 }) => {
 	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
 
 	const shortNumberFormat = Intl.NumberFormat(locale, {
 		notation: "compact",
@@ -43,9 +46,9 @@ const MaterialRequirements: React.FC<Props> = ({
 	const itemsJson = itemMap[locale as keyof typeof itemMap];
 
 	return (
-		<div className="grid auto-cols-min grid-flow-col items-center justify-start gap-x-4 overflow-x-auto pb-4 sm:pb-0">
+		<div className="flex flex-col gap-y-3">
 			{minElite != null && (
-				<div className="grid grid-cols-[16px_auto] items-center gap-x-2 rounded-lg bg-neutral-500/[.33] px-2.5 py-2">
+				<div className="grid grid-cols-[16px_auto] items-center gap-x-2">
 					{minElite === 0 && (
 						<EliteZeroIcon className="stroke-[url(#rarity5)]" />
 					)}
@@ -56,14 +59,15 @@ const MaterialRequirements: React.FC<Props> = ({
 						<EliteTwoIcon className="fill-[url(#rarity5)]" />
 					)}
 					<span className="bg-gradient-to-b from-yellow-light to-yellow bg-clip-text text-base font-semibold leading-none text-transparent">
-						Lv{minLevel}
+						{/* TODO Replace this with i18n'ed elite 0, 1, 2 */}
+						{t("operators.details.general.elite")} {minElite} Lv {minLevel}
 					</span>
 				</div>
 			)}
 			{minSkillLevel > 1 &&
 				// TODO
 				null}
-			<div className="grid grid-flow-col gap-x-2">
+			<div className="flex gap-x-2 overflow-x-auto">
 				{itemCosts.map(({ id, count }) => {
 					const { name, rarity } =
 						itemsJson[id as keyof typeof itemsJson];
