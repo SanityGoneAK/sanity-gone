@@ -12,11 +12,14 @@ import { initializeFiltersFromUrl } from "~/pages/[locale]/operators/_store.ts";
 const OperatorFilterBar = () => {
 	const [open, setOpen] = useState(false);
 	const isMobile = useMediaQuery("(max-width: 768px)");
+	useEffect(() => {
+		setOpen(isMobile ? open : true);
+	},[isMobile, open])
 
 	return (
 		<div className="mb-6 flex w-full justify-between">
 			<Collapsible.Root
-				open={isMobile ? open : true}
+				open={open}
 				onOpenChange={setOpen}
 				className="flex w-full flex-col justify-between md:flex-row"
 			>
@@ -92,10 +95,10 @@ const OperatorFilterBar = () => {
 								</Popover.Portal>
 							</Popover.Root>
 						</div>
-						<div>
+						<div className="w-full">
 							<OperatorSort />
 						</div>
-						<div className="block md:hidden">
+						<div className="block md:hidden w-full">
 							<OperatorFilters />
 						</div>
 						<div className="hidden md:block">

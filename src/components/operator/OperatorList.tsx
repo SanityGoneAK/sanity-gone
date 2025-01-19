@@ -127,7 +127,7 @@ const OperatorLargeItem: React.FC<{
 					</a>
 
 					<a
-						href={`/${locale}/operators/${slugify(operator.name)}`}
+						href={`/${locale}/operators/${slugify(slug)}`}
 						className={cx(
 							"h-1 bg-gradient-to-r text-center brightness-100 filter transition-all duration-75 ease-in-out will-change-[height] focus:h-8 group-hover:h-8",
 							{
