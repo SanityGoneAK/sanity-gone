@@ -392,7 +392,7 @@ export const ui = {
 		"operators.details.attributes.arts_resistance": "마법 저항",
 		"operators.details.attributes.redeploy_time": "재배치",
 		"operators.details.attributes.attack_power": "공격",
-		"operators.details.attributes.attack_interval": "공격 속도",
+		"operators.details.attributes.attack_interval": "공격 간격",
 		"operators.details.attributes.block": "저지 가능 수",
 		"operators.details.attributes.dp_cost": "배치 코스트",
 
