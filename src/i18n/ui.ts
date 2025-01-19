@@ -147,11 +147,11 @@ export const ui = {
 		"operators.index.filters.sort_by": "排序方式",
 		"operators.index.filters.alphabetical": "按字母顺序",
 		"operators.index.filters.release_date": "发布日期",
-		"operators.index.filters.view": "观看",
-		"operators.index.filters.clear_filters": "Clear Filters",
-		"operators.index.filters.clear_sort": "Clear Sort",
-		"operators.index.filters.select_class": "Select a class",
-		"operators.index.filters.view_operator": "View Operator",
+		"operators.index.filters.view": "显示模式",
+		"operators.index.filters.clear_filters": "清除筛选", // might just shorten to "清除" because it's clear enough and "filter" is awkward in chinese
+		"operators.index.filters.clear_sort": "清除排序",
+		"operators.index.filters.select_class": "选一个职业",
+		"operators.index.filters.view_operator": "观看干员",
 
 		"operators.details.general.limited": "限定",
 		"operators.details.general.elite": "精英",
@@ -180,7 +180,7 @@ export const ui = {
 
 		"operators.details.talents.title": "天赋",
 		"operators.details.talents.no_talents":
-			"No talents at this elite level",
+			"这个精英没有天赋。",
 
 		"operators.details.skills.title": "技能",
 		"operators.details.skills.skill": "技能",

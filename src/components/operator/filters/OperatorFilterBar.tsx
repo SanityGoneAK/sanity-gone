@@ -9,7 +9,15 @@ import OperatorFilters from "./OperatorFilters";
 import OperatorSort from "./OperatorSort";
 import OperatorViewSwitch from "./OperatorViewSwitch";
 import { initializeFiltersFromUrl } from "~/pages/[locale]/operators/_store.ts";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useStore } from "@nanostores/react";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
+
 const OperatorFilterBar = () => {
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
+	
 	const [open, setOpen] = useState(false);
 	const isMobile = useMediaQuery("(max-width: 768px)");
 	useEffect(() => {
@@ -25,7 +33,7 @@ const OperatorFilterBar = () => {
 			>
 				<div className="mb-4 flex h-8 w-full items-center justify-between md:mb-0 md:h-auto">
 					<h1 className="text-[32px] font-semibold not-italic leading-8 text-neutral-50">
-						Operators
+						{t("nav.operators")}
 					</h1>
 					<Collapsible.Trigger asChild>
 						<button
@@ -56,8 +64,8 @@ const OperatorFilterBar = () => {
 					</Collapsible.Trigger>
 				</div>
 				<Collapsible.CollapsibleContent asChild>
-					<div className="flex flex-col gap-3 md:flex-row md:gap-6 items-center">
-						<div className="hidden md:flex items-center">
+					<div className="flex flex-col items-center gap-3 md:flex-row md:gap-6">
+						<div className="hidden items-center md:flex">
 							<Popover.Root>
 								<Popover.Trigger asChild>
 									<button
@@ -98,7 +106,7 @@ const OperatorFilterBar = () => {
 						<div className="w-full">
 							<OperatorSort />
 						</div>
-						<div className="block md:hidden w-full">
+						<div className="block w-full md:hidden">
 							<OperatorFilters />
 						</div>
 						<div className="hidden md:block">
