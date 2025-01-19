@@ -41,7 +41,7 @@ const OperatorTabs: React.FC = () => {
 		<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
 			{/* TODO i wanted to preview layout so i literally did the dumbest thing that would make it work lMAO
 			 this is terrible, fix it please */}
-			<Tab.List className="flex flex-row flex-wrap gap-2 bg-neutral-600/[.66] sm:px-4 pb-2 sm:flex-nowrap">
+			<Tab.List className="flex flex-row flex-wrap gap-2 bg-neutral-600/[.66] sm:px-4 sm:flex-nowrap">
 				<Swiper
 					className={"m-0 mx-0 w-full"}
 					direction="horizontal"
@@ -66,10 +66,10 @@ const OperatorTabs: React.FC = () => {
 									id={`operator-${label.toLowerCase()}-button`}
 									aria-controls={`operator-${label.toLowerCase()}-tabpanel`}
 									className={cx(
-										`relative cursor-pointer appearance-none border-none bg-none p-2 text-lg font-semibold uppercase leading-[23px] text-neutral-200 last:justify-self-end`,
+										`relative cursor-pointer appearance-none border-none bg-none p-2 pb-3 text-lg font-semibold uppercase leading-[23px] text-neutral-200 last:justify-self-end`,
 										"outline-none [html[data-focus-source=key]_&:focus-visible]:outline-offset-4 [html[data-focus-source=key]_&:focus-visible]:outline-blue-light",
 										i === selectedIndex
-											? `:after:outline-none text-neutral-50 after:absolute after:bottom-[-8px] after:left-2 after:right-2 after:h-0 after:border after:border-neutral-50`
+											? `after:outline-none text-neutral-50 after:absolute after:bottom-0 after:left-2 after:right-2 after:h-0 after:border after:border-neutral-50`
 											: "hover:text-neutral-100"
 									)}
 								>
