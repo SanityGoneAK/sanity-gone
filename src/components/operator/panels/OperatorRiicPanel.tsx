@@ -2,7 +2,7 @@ import { createElement, useMemo, useState } from "react";
 
 import { useStore } from "@nanostores/react";
 
-import { operatorStore } from "~/pages/[locale]/operators/_store";
+import { operatorStore } from "~/pages/[locale]/operators/_slugstore";
 import { phaseToNumber } from "~/utils/character-stats";
 import { descriptionToHtml } from "~/utils/description-parser";
 import { riicSkillIcon } from "~/utils/images";

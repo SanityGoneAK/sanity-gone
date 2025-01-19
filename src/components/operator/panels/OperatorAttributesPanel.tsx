@@ -14,7 +14,7 @@ import PillButtonGroup from "~/components/ui/OldPillButtonGroup";
 import SliderWithInput from "~/components/ui/SliderWithInput";
 import { useTranslations } from "~/i18n/utils.ts";
 import { localeStore } from "~/pages/[locale]/_store.ts";
-import { operatorStore } from "~/pages/[locale]/operators/_store";
+import { operatorStore } from "~/pages/[locale]/operators/_slugstore";
 import {
 	getPotentialsWithStatChanges,
 	getStatsAtLevel,

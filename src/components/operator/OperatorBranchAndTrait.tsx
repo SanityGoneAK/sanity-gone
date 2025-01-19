@@ -1,7 +1,7 @@
 import { useStore } from "@nanostores/react";
 
 import Tooltip from "~/components/ui/Tooltip";
-import { operatorStore } from "~/pages/[locale]/operators/_store";
+import { operatorStore } from "~/pages/[locale]/operators/_slugstore";
 import { subProfessionIdToBranch } from "~/utils/branches.ts";
 import { operatorBranchIcon } from "~/utils/images.ts";
 
