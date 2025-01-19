@@ -44,6 +44,7 @@ export default defineConfig({
 	adapter: vercel(),
 	vite: {
 		build: {
+			minify: false,
 			rollupOptions: {
 				output: {
 					manualChunks: (id) => {

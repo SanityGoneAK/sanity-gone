@@ -16,9 +16,6 @@ import { cx } from "~/utils/styles";
 import StarIcon from "../icons/StarIcon";
 import { professionToClass } from "~/utils/classes";
 import { subProfessionIdToBranch } from "~/utils/branches";
-import { localeStore } from "~/pages/[locale]/_store.ts";
-import { useTranslations } from "~/i18n/utils.ts";
-import type { ui } from "~/i18n/ui.ts";
 
 const OperatorLargeItem: React.FC<{
 	operator: OutputTypes.Operator;
@@ -34,7 +31,9 @@ const OperatorLargeItem: React.FC<{
 		6: "text-orange-light",
 	};
 
-	const enOperator = enOperatorsJson[operator.charId as keyof typeof enOperatorsJson] as OutputTypes.Operator;
+	const enOperator = enOperatorsJson[
+		operator.charId as keyof typeof enOperatorsJson
+	] as OutputTypes.Operator;
 	const slug = slugify(enOperator.name);
 
 	return (
@@ -170,7 +169,9 @@ const OperatorCompactItem: React.FC<{
 		6: "text-orange-light",
 	};
 
-	const enOperator = enOperatorsJson[operator.charId as keyof typeof enOperatorsJson] as OutputTypes.Operator;
+	const enOperator = enOperatorsJson[
+		operator.charId as keyof typeof enOperatorsJson
+	] as OutputTypes.Operator;
 	const slug = slugify(enOperator.name);
 
 	return (
