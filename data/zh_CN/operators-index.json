@@ -2,6 +2,7 @@
   "char_1039_thorn2": {
     "charId": "char_1039_thorn2",
     "name": "引星棘刺",
+    "slug": "thorns-the-lodestar",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -14,6 +15,7 @@
   "char_1038_whitw2": {
     "charId": "char_1038_whitw2",
     "name": "荒芜拉普兰德",
+    "slug": "lappland-the-decadenza",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -26,6 +28,7 @@
   "char_4026_vulpis": {
     "charId": "char_4026_vulpis",
     "name": "忍冬",
+    "slug": "vulpisfoglia",
     "position": "MELEE",
     "rarity": 6,
     "profession": "PIONEER",
@@ -38,6 +41,7 @@
   "char_1502_crosly": {
     "charId": "char_1502_crosly",
     "name": "弑君者",
+    "slug": "crownslayer",
     "position": "MELEE",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -50,6 +54,7 @@
   "char_1019_siege2": {
     "charId": "char_1019_siege2",
     "name": "维娜·维多利亚",
+    "slug": "vina-victoria",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -62,6 +67,7 @@
   "char_4141_marcil": {
     "charId": "char_4141_marcil",
     "name": "玛露西尔",
+    "slug": "marcille",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -74,6 +80,7 @@
   "char_4058_pepe": {
     "charId": "char_4058_pepe",
     "name": "佩佩",
+    "slug": "pepe",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -86,6 +93,7 @@
   "char_4138_narant": {
     "charId": "char_4138_narant",
     "name": "娜仁图亚",
+    "slug": "narantuya",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -98,6 +106,7 @@
   "char_4146_nymph": {
     "charId": "char_4146_nymph",
     "name": "妮芙",
+    "slug": "nymph",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -110,6 +119,7 @@
   "char_4145_ulpia": {
     "charId": "char_4145_ulpia",
     "name": "乌尔比安",
+    "slug": "ulpianus",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -122,6 +132,7 @@
   "char_1035_wisdel": {
     "charId": "char_1035_wisdel",
     "name": "维什戴尔",
+    "slug": "wisadel",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -134,6 +145,7 @@
   "char_4133_logos": {
     "charId": "char_4133_logos",
     "name": "逻各斯",
+    "slug": "logos",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -146,6 +158,7 @@
   "char_4134_cetsyr": {
     "charId": "char_4134_cetsyr",
     "name": "魔王",
+    "slug": "civilight-eterna",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SUPPORT",
@@ -158,6 +171,7 @@
   "char_4132_ascln": {
     "charId": "char_4132_ascln",
     "name": "阿斯卡纶",
+    "slug": "ascalon",
     "position": "MELEE",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -170,6 +184,7 @@
   "char_4123_ela": {
     "charId": "char_4123_ela",
     "name": "艾拉",
+    "slug": "ela",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -182,6 +197,7 @@
   "char_2025_shu": {
     "charId": "char_2025_shu",
     "name": "黍",
+    "slug": "shu",
     "position": "MELEE",
     "rarity": 6,
     "profession": "TANK",
@@ -194,6 +210,7 @@
   "char_4121_zuole": {
     "charId": "char_4121_zuole",
     "name": "左乐",
+    "slug": "zuo-le",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -206,6 +223,7 @@
   "char_4117_ray": {
     "charId": "char_4117_ray",
     "name": "莱伊",
+    "slug": "ray",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -218,6 +236,7 @@
   "char_4116_blkkgt": {
     "charId": "char_4116_blkkgt",
     "name": "锏",
+    "slug": "degenbrecher",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -230,6 +249,7 @@
   "char_245_cello": {
     "charId": "char_245_cello",
     "name": "塑心",
+    "slug": "virtuosa",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SUPPORT",
@@ -242,6 +262,7 @@
   "char_4098_vvana": {
     "charId": "char_4098_vvana",
     "name": "薇薇安娜",
+    "slug": "viviana",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -254,6 +275,7 @@
   "char_4011_lessng": {
     "charId": "char_4011_lessng",
     "name": "止颂",
+    "slug": "lessing",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -266,6 +288,7 @@
   "char_4088_hodrer": {
     "charId": "char_4088_hodrer",
     "name": "赫德雷",
+    "slug": "hoederer",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -278,6 +301,7 @@
   "char_1034_jesca2": {
     "charId": "char_1034_jesca2",
     "name": "涤火杰西卡",
+    "slug": "jessica-the-liberated",
     "position": "MELEE",
     "rarity": 6,
     "profession": "TANK",
@@ -290,6 +314,7 @@
   "char_1016_agoat2": {
     "charId": "char_1016_agoat2",
     "name": "纯烬艾雅法拉",
+    "slug": "eyjafjalla-the-hvit-aska",
     "position": "RANGED",
     "rarity": 6,
     "profession": "MEDIC",
@@ -302,6 +327,7 @@
   "char_1033_swire2": {
     "charId": "char_1033_swire2",
     "name": "琳琅诗怀雅",
+    "slug": "swire-the-elegant-wit",
     "position": "MELEE",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -314,6 +340,7 @@
   "char_2012_typhon": {
     "charId": "char_2012_typhon",
     "name": "提丰",
+    "slug": "typhon",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -326,6 +353,7 @@
   "char_1032_excu2": {
     "charId": "char_1032_excu2",
     "name": "圣约送葬人",
+    "slug": "executor-the-ex-foedere",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -338,6 +366,7 @@
   "char_249_mlyss": {
     "charId": "char_249_mlyss",
     "name": "缪尔赛思",
+    "slug": "muelsyse",
     "position": "RANGED",
     "rarity": 6,
     "profession": "PIONEER",
@@ -350,6 +379,7 @@
   "char_4027_heyak": {
     "charId": "char_4027_heyak",
     "name": "霍尔海雅",
+    "slug": "hoolheyak",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -362,6 +392,7 @@
   "char_1031_slent2": {
     "charId": "char_1031_slent2",
     "name": "淬羽赫默",
+    "slug": "silence-the-paradigmatic",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SUPPORT",
@@ -374,6 +405,7 @@
   "char_4087_ines": {
     "charId": "char_4087_ines",
     "name": "伊内丝",
+    "slug": "ines",
     "position": "MELEE",
     "rarity": 6,
     "profession": "PIONEER",
@@ -386,6 +418,7 @@
   "char_1029_yato2": {
     "charId": "char_1029_yato2",
     "name": "麒麟R夜刀",
+    "slug": "kirin-r-yato",
     "position": "MELEE",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -398,6 +431,7 @@
   "char_4082_qiubai": {
     "charId": "char_4082_qiubai",
     "name": "仇白",
+    "slug": "qiubai",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -410,6 +444,7 @@
   "char_2024_chyue": {
     "charId": "char_2024_chyue",
     "name": "重岳",
+    "slug": "chongyue",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -422,6 +457,7 @@
   "char_4080_lin": {
     "charId": "char_4080_lin",
     "name": "林",
+    "slug": "lin",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -434,6 +470,7 @@
   "char_1020_reed2": {
     "charId": "char_1020_reed2",
     "name": "焰影苇草",
+    "slug": "reed-the-flame-shadow",
     "position": "RANGED",
     "rarity": 6,
     "profession": "MEDIC",
@@ -446,6 +483,7 @@
   "char_1028_texas2": {
     "charId": "char_1028_texas2",
     "name": "缄默德克萨斯",
+    "slug": "texas-the-omertosa",
     "position": "MELEE",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -458,6 +496,7 @@
   "char_4065_judge": {
     "charId": "char_4065_judge",
     "name": "斥罪",
+    "slug": "penance",
     "position": "MELEE",
     "rarity": 6,
     "profession": "TANK",
@@ -470,6 +509,7 @@
   "char_427_vigil": {
     "charId": "char_427_vigil",
     "name": "伺夜",
+    "slug": "vigil",
     "position": "RANGED",
     "rarity": 6,
     "profession": "PIONEER",
@@ -482,6 +522,7 @@
   "char_4072_ironmn": {
     "charId": "char_4072_ironmn",
     "name": "白铁",
+    "slug": "stainless",
     "position": "MELEE",
     "rarity": 6,
     "profession": "SUPPORT",
@@ -494,6 +535,7 @@
   "char_4064_mlynar": {
     "charId": "char_4064_mlynar",
     "name": "玛恩纳",
+    "slug": "mlynar",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -506,6 +548,7 @@
   "char_1026_gvial2": {
     "charId": "char_1026_gvial2",
     "name": "百炼嘉维尔",
+    "slug": "gavial-the-invincible",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -518,6 +561,7 @@
   "char_4055_bgsnow": {
     "charId": "char_4055_bgsnow",
     "name": "鸿雪",
+    "slug": "pozyomka",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -530,6 +574,7 @@
   "char_4048_doroth": {
     "charId": "char_4048_doroth",
     "name": "多萝西",
+    "slug": "dorothy",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -542,6 +587,7 @@
   "char_4046_ebnhlz": {
     "charId": "char_4046_ebnhlz",
     "name": "黑键",
+    "slug": "ebenholz",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -554,6 +600,7 @@
   "char_1023_ghost2": {
     "charId": "char_1023_ghost2",
     "name": "归溟幽灵鲨",
+    "slug": "specter-the-unchained",
     "position": "MELEE",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -566,6 +613,7 @@
   "char_4009_irene": {
     "charId": "char_4009_irene",
     "name": "艾丽妮",
+    "slug": "irene",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -578,6 +626,7 @@
   "char_4042_lumen": {
     "charId": "char_4042_lumen",
     "name": "流明",
+    "slug": "lumen",
     "position": "RANGED",
     "rarity": 6,
     "profession": "MEDIC",
@@ -590,6 +639,7 @@
   "char_4039_horn": {
     "charId": "char_4039_horn",
     "name": "号角",
+    "slug": "horn",
     "position": "MELEE",
     "rarity": 6,
     "profession": "TANK",
@@ -602,6 +652,7 @@
   "char_300_phenxi": {
     "charId": "char_300_phenxi",
     "name": "菲亚梅塔",
+    "slug": "fiammetta",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -614,6 +665,7 @@
   "char_377_gdglow": {
     "charId": "char_377_gdglow",
     "name": "澄闪",
+    "slug": "goldenglow",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -626,6 +678,7 @@
   "char_2023_ling": {
     "charId": "char_2023_ling",
     "name": "令",
+    "slug": "ling",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SUPPORT",
@@ -638,6 +691,7 @@
   "char_322_lmlee": {
     "charId": "char_322_lmlee",
     "name": "老鲤",
+    "slug": "lee",
     "position": "MELEE",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -650,6 +704,7 @@
   "char_206_gnosis": {
     "charId": "char_206_gnosis",
     "name": "灵知",
+    "slug": "gnosis",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SUPPORT",
@@ -662,6 +717,7 @@
   "char_1014_nearl2": {
     "charId": "char_1014_nearl2",
     "name": "耀骑士临光",
+    "slug": "nearl-the-radiant-knight",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -674,6 +730,7 @@
   "char_420_flamtl": {
     "charId": "char_420_flamtl",
     "name": "焰尾",
+    "slug": "flametail",
     "position": "MELEE",
     "rarity": 6,
     "profession": "PIONEER",
@@ -686,6 +743,7 @@
   "char_430_fartth": {
     "charId": "char_430_fartth",
     "name": "远牙",
+    "slug": "fartooth",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -698,6 +756,7 @@
   "char_479_sleach": {
     "charId": "char_479_sleach",
     "name": "琴柳",
+    "slug": "saileach",
     "position": "MELEE",
     "rarity": 6,
     "profession": "PIONEER",
@@ -710,6 +769,7 @@
   "char_1013_chen2": {
     "charId": "char_1013_chen2",
     "name": "假日威龙陈",
+    "slug": "chen-the-holungday",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -722,6 +782,7 @@
   "char_437_mizuki": {
     "charId": "char_437_mizuki",
     "name": "水月",
+    "slug": "mizuki",
     "position": "MELEE",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -734,6 +795,7 @@
   "char_485_pallas": {
     "charId": "char_485_pallas",
     "name": "帕拉斯",
+    "slug": "pallas",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -746,6 +808,7 @@
   "char_426_billro": {
     "charId": "char_426_billro",
     "name": "卡涅利安",
+    "slug": "carnelian",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -758,6 +821,7 @@
   "char_1012_skadi2": {
     "charId": "char_1012_skadi2",
     "name": "浊心斯卡蒂",
+    "slug": "skadi-the-corrupting-heart",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SUPPORT",
@@ -770,6 +834,7 @@
   "char_003_kalts": {
     "charId": "char_003_kalts",
     "name": "凯尔希",
+    "slug": "kaltsit",
     "position": "RANGED",
     "rarity": 6,
     "profession": "MEDIC",
@@ -782,6 +847,7 @@
   "char_474_glady": {
     "charId": "char_474_glady",
     "name": "歌蕾蒂娅",
+    "slug": "gladiia",
     "position": "MELEE",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -794,6 +860,7 @@
   "char_472_pasngr": {
     "charId": "char_472_pasngr",
     "name": "异客",
+    "slug": "passenger",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -806,6 +873,7 @@
   "char_456_ash": {
     "charId": "char_456_ash",
     "name": "灰烬",
+    "slug": "ash",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -818,6 +886,7 @@
   "char_2015_dusk": {
     "charId": "char_2015_dusk",
     "name": "夕",
+    "slug": "dusk",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -830,6 +899,7 @@
   "char_362_saga": {
     "charId": "char_362_saga",
     "name": "嵯峨",
+    "slug": "saga",
     "position": "MELEE",
     "rarity": 6,
     "profession": "PIONEER",
@@ -842,6 +912,7 @@
   "char_332_archet": {
     "charId": "char_332_archet",
     "name": "空弦",
+    "slug": "archetto",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -854,6 +925,7 @@
   "char_264_f12yin": {
     "charId": "char_264_f12yin",
     "name": "山",
+    "slug": "mountain",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -866,6 +938,7 @@
   "char_391_rosmon": {
     "charId": "char_391_rosmon",
     "name": "迷迭香",
+    "slug": "rosmontis",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -878,6 +951,7 @@
   "char_311_mudrok": {
     "charId": "char_311_mudrok",
     "name": "泥岩",
+    "slug": "mudrock",
     "position": "MELEE",
     "rarity": 6,
     "profession": "TANK",
@@ -890,6 +964,7 @@
   "char_423_blemsh": {
     "charId": "char_423_blemsh",
     "name": "瑕光",
+    "slug": "blemishine",
     "position": "MELEE",
     "rarity": 6,
     "profession": "TANK",
@@ -902,6 +977,7 @@
   "char_350_surtr": {
     "charId": "char_350_surtr",
     "name": "史尔特尔",
+    "slug": "surtr",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -914,6 +990,7 @@
   "char_416_zumama": {
     "charId": "char_416_zumama",
     "name": "森蚺",
+    "slug": "eunectes",
     "position": "MELEE",
     "rarity": 6,
     "profession": "TANK",
@@ -926,6 +1003,7 @@
   "char_293_thorns": {
     "charId": "char_293_thorns",
     "name": "棘刺",
+    "slug": "thorns",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -938,6 +1016,7 @@
   "char_358_lisa": {
     "charId": "char_358_lisa",
     "name": "铃兰",
+    "slug": "suzuran",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SUPPORT",
@@ -950,6 +1029,7 @@
   "char_197_poca": {
     "charId": "char_197_poca",
     "name": "早露",
+    "slug": "rosa",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -962,6 +1042,7 @@
   "char_113_cqbw": {
     "charId": "char_113_cqbw",
     "name": "W",
+    "slug": "w",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -974,6 +1055,7 @@
   "char_400_weedy": {
     "charId": "char_400_weedy",
     "name": "温蒂",
+    "slug": "weedy",
     "position": "MELEE",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -986,6 +1068,7 @@
   "char_250_phatom": {
     "charId": "char_250_phatom",
     "name": "傀影",
+    "slug": "phantom",
     "position": "MELEE",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -998,6 +1081,7 @@
   "char_222_bpipe": {
     "charId": "char_222_bpipe",
     "name": "风笛",
+    "slug": "bagpipe",
     "position": "MELEE",
     "rarity": 6,
     "profession": "PIONEER",
@@ -1010,6 +1094,7 @@
   "char_2013_cerber": {
     "charId": "char_2013_cerber",
     "name": "刻俄柏",
+    "slug": "ceobe",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -1022,6 +1107,7 @@
   "char_2014_nian": {
     "charId": "char_2014_nian",
     "name": "年",
+    "slug": "nian",
     "position": "MELEE",
     "rarity": 6,
     "profession": "TANK",
@@ -1034,6 +1120,7 @@
   "char_225_haak": {
     "charId": "char_225_haak",
     "name": "阿",
+    "slug": "aak",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SPECIAL",
@@ -1046,6 +1133,7 @@
   "char_017_huang": {
     "charId": "char_017_huang",
     "name": "煌",
+    "slug": "blaze",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -1058,6 +1146,7 @@
   "char_213_mostma": {
     "charId": "char_213_mostma",
     "name": "莫斯提马",
+    "slug": "mostima",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -1070,6 +1159,7 @@
   "char_248_mgllan": {
     "charId": "char_248_mgllan",
     "name": "麦哲伦",
+    "slug": "magallan",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SUPPORT",
@@ -1082,6 +1172,7 @@
   "char_188_helage": {
     "charId": "char_188_helage",
     "name": "赫拉格",
+    "slug": "hellagur",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -1094,6 +1185,7 @@
   "char_340_shwaz": {
     "charId": "char_340_shwaz",
     "name": "黑",
+    "slug": "schwarz",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -1106,6 +1198,7 @@
   "char_010_chen": {
     "charId": "char_010_chen",
     "name": "陈",
+    "slug": "chen",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -1118,6 +1211,7 @@
   "char_263_skadi": {
     "charId": "char_263_skadi",
     "name": "斯卡蒂",
+    "slug": "skadi",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -1130,6 +1224,7 @@
   "char_172_svrash": {
     "charId": "char_172_svrash",
     "name": "银灰",
+    "slug": "silverash",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -1142,6 +1237,7 @@
   "char_202_demkni": {
     "charId": "char_202_demkni",
     "name": "塞雷娅",
+    "slug": "saria",
     "position": "MELEE",
     "rarity": 6,
     "profession": "TANK",
@@ -1154,6 +1250,7 @@
   "char_136_hsguma": {
     "charId": "char_136_hsguma",
     "name": "星熊",
+    "slug": "hoshiguma",
     "position": "MELEE",
     "rarity": 6,
     "profession": "TANK",
@@ -1166,6 +1263,7 @@
   "char_179_cgbird": {
     "charId": "char_179_cgbird",
     "name": "夜莺",
+    "slug": "nightingale",
     "position": "RANGED",
     "rarity": 6,
     "profession": "MEDIC",
@@ -1178,6 +1276,7 @@
   "char_147_shining": {
     "charId": "char_147_shining",
     "name": "闪灵",
+    "slug": "shining",
     "position": "RANGED",
     "rarity": 6,
     "profession": "MEDIC",
@@ -1190,6 +1289,7 @@
   "char_291_aglina": {
     "charId": "char_291_aglina",
     "name": "安洁莉娜",
+    "slug": "angelina",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SUPPORT",
@@ -1202,6 +1302,7 @@
   "char_180_amgoat": {
     "charId": "char_180_amgoat",
     "name": "艾雅法拉",
+    "slug": "eyjafjalla",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -1214,6 +1315,7 @@
   "char_134_ifrit": {
     "charId": "char_134_ifrit",
     "name": "伊芙利特",
+    "slug": "ifrit",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -1226,6 +1328,7 @@
   "char_112_siege": {
     "charId": "char_112_siege",
     "name": "推进之王",
+    "slug": "siege",
     "position": "MELEE",
     "rarity": 6,
     "profession": "PIONEER",
@@ -1238,6 +1341,7 @@
   "char_103_angel": {
     "charId": "char_103_angel",
     "name": "能天使",
+    "slug": "exusiai",
     "position": "RANGED",
     "rarity": 6,
     "profession": "SNIPER",
@@ -1250,6 +1354,7 @@
   "char_4164_tecno": {
     "charId": "char_4164_tecno",
     "name": "特克诺",
+    "slug": "tecno",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -1262,6 +1367,7 @@
   "char_4163_rosesa": {
     "charId": "char_4163_rosesa",
     "name": "瑰盐",
+    "slug": "rose-salt",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -1274,6 +1380,7 @@
   "char_4155_talr": {
     "charId": "char_4155_talr",
     "name": "裁度",
+    "slug": "figurino",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -1286,6 +1393,7 @@
   "char_4148_philae": {
     "charId": "char_4148_philae",
     "name": "菲莱",
+    "slug": "philae",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -1298,6 +1406,7 @@
   "char_487_bobb": {
     "charId": "char_487_bobb",
     "name": "波卜",
+    "slug": "bobbing",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -1310,6 +1419,7 @@
   "char_4162_cathy": {
     "charId": "char_4162_cathy",
     "name": "凯瑟琳",
+    "slug": "catherine",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -1322,6 +1432,7 @@
   "char_4142_laios": {
     "charId": "char_4142_laios",
     "name": "莱欧斯",
+    "slug": "laios",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -1334,6 +1445,7 @@
   "char_4144_chilc": {
     "charId": "char_4144_chilc",
     "name": "齐尔查克",
+    "slug": "chilchuck",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -1346,6 +1458,7 @@
   "char_4143_sensi": {
     "charId": "char_4143_sensi",
     "name": "森西",
+    "slug": "senshi",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -1358,6 +1471,7 @@
   "char_4140_lasher": {
     "charId": "char_4140_lasher",
     "name": "衡沙",
+    "slug": "sand-reckoner",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -1370,6 +1484,7 @@
   "char_4139_papyrs": {
     "charId": "char_4139_papyrs",
     "name": "莎草",
+    "slug": "papyrus",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -1382,6 +1497,7 @@
   "char_4151_tinman": {
     "charId": "char_4151_tinman",
     "name": "锡人",
+    "slug": "tin-man",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -1394,6 +1510,7 @@
   "char_4147_mitm": {
     "charId": "char_4147_mitm",
     "name": "渡桥",
+    "slug": "mitm",
     "position": "RANGED",
     "rarity": 5,
     "profession": "PIONEER",
@@ -1406,6 +1523,7 @@
   "char_4079_haini": {
     "charId": "char_4079_haini",
     "name": "海霓",
+    "slug": "lucilla",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -1418,6 +1536,7 @@
   "char_4137_udflow": {
     "charId": "char_4137_udflow",
     "name": "深巡",
+    "slug": "underflow",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -1430,6 +1549,7 @@
   "char_1036_fang2": {
     "charId": "char_1036_fang2",
     "name": "历阵锐枪芬",
+    "slug": "fang-the-fire-sharpened",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -1442,6 +1562,7 @@
   "char_446_aroma": {
     "charId": "char_446_aroma",
     "name": "阿罗玛",
+    "slug": "aroma",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -1454,6 +1575,7 @@
   "char_4131_odda": {
     "charId": "char_4131_odda",
     "name": "奥达",
+    "slug": "odda",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -1466,6 +1588,7 @@
   "char_4125_rdoc": {
     "charId": "char_4125_rdoc",
     "name": "医生",
+    "slug": "doc",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -1478,6 +1601,7 @@
   "char_4124_iana": {
     "charId": "char_4124_iana",
     "name": "双月",
+    "slug": "iana",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -1490,6 +1614,7 @@
   "char_4126_fuze": {
     "charId": "char_4126_fuze",
     "name": "导火索",
+    "slug": "fuze",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -1502,6 +1627,7 @@
   "char_4023_rfalcn": {
     "charId": "char_4023_rfalcn",
     "name": "红隼",
+    "slug": "kestrel",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -1514,6 +1640,7 @@
   "char_4122_grabds": {
     "charId": "char_4122_grabds",
     "name": "小满",
+    "slug": "grain-buds",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -1526,6 +1653,7 @@
   "char_4119_wanqin": {
     "charId": "char_4119_wanqin",
     "name": "万顷",
+    "slug": "wanqing",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -1538,6 +1666,7 @@
   "char_4081_warmy": {
     "charId": "char_4081_warmy",
     "name": "温米",
+    "slug": "warmy",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -1550,6 +1679,7 @@
   "char_194_leto": {
     "charId": "char_194_leto",
     "name": "烈夏",
+    "slug": "leto",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -1562,6 +1692,7 @@
   "char_4114_harold": {
     "charId": "char_4114_harold",
     "name": "哈洛德",
+    "slug": "harold",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -1574,6 +1705,7 @@
   "char_4109_baslin": {
     "charId": "char_4109_baslin",
     "name": "深律",
+    "slug": "bassline",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -1586,6 +1718,7 @@
   "char_499_kaitou": {
     "charId": "char_499_kaitou",
     "name": "折光",
+    "slug": "diamante",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -1598,6 +1731,7 @@
   "char_494_vendla": {
     "charId": "char_494_vendla",
     "name": "刺玫",
+    "slug": "vendela",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -1610,6 +1744,7 @@
   "char_4110_delphn": {
     "charId": "char_4110_delphn",
     "name": "戴菲恩",
+    "slug": "delphine",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -1622,6 +1757,7 @@
   "char_4105_almond": {
     "charId": "char_4105_almond",
     "name": "杏仁",
+    "slug": "almond",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -1634,6 +1770,7 @@
   "char_4104_coldst": {
     "charId": "char_4104_coldst",
     "name": "冰酿",
+    "slug": "coldshot",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -1646,6 +1783,7 @@
   "char_488_buildr": {
     "charId": "char_488_buildr",
     "name": "青枳",
+    "slug": "poncirus",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -1658,6 +1796,7 @@
   "char_4106_bryota": {
     "charId": "char_4106_bryota",
     "name": "苍苔",
+    "slug": "bryophyta",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -1670,6 +1809,7 @@
   "char_4102_threye": {
     "charId": "char_4102_threye",
     "name": "凛视",
+    "slug": "valarqvin",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -1682,6 +1822,7 @@
   "char_341_sntlla": {
     "charId": "char_341_sntlla",
     "name": "寒檀",
+    "slug": "santalla",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -1694,6 +1835,7 @@
   "char_4015_spuria": {
     "charId": "char_4015_spuria",
     "name": "空构",
+    "slug": "spuria",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -1706,6 +1848,7 @@
   "char_498_inside": {
     "charId": "char_498_inside",
     "name": "隐现",
+    "slug": "insider",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -1718,6 +1861,7 @@
   "char_4006_melnte": {
     "charId": "char_4006_melnte",
     "name": "玫拉",
+    "slug": "melanite",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -1730,6 +1874,7 @@
   "char_464_cement": {
     "charId": "char_464_cement",
     "name": "洋灰",
+    "slug": "cement",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -1742,6 +1887,7 @@
   "char_154_morgan": {
     "charId": "char_154_morgan",
     "name": "摩根",
+    "slug": "morgan",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -1754,6 +1900,7 @@
   "char_1030_noirc2": {
     "charId": "char_1030_noirc2",
     "name": "火龙S黑角",
+    "slug": "rathalos-s-noir-corne",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -1766,6 +1913,7 @@
   "char_4083_chimes": {
     "charId": "char_4083_chimes",
     "name": "铎铃",
+    "slug": "wind-chimes",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -1778,6 +1926,7 @@
   "char_493_firwhl": {
     "charId": "char_493_firwhl",
     "name": "火哨",
+    "slug": "firewhistle",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -1790,6 +1939,7 @@
   "char_4078_bdhkgt": {
     "charId": "char_4078_bdhkgt",
     "name": "截云",
+    "slug": "jieyun",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -1802,6 +1952,7 @@
   "char_297_hamoni": {
     "charId": "char_297_hamoni",
     "name": "和弦",
+    "slug": "harmonie",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -1814,6 +1965,7 @@
   "char_4017_puzzle": {
     "charId": "char_4017_puzzle",
     "name": "谜图",
+    "slug": "puzzle",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -1826,6 +1978,7 @@
   "char_4014_lunacu": {
     "charId": "char_4014_lunacu",
     "name": "子月",
+    "slug": "lunacub",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -1838,6 +1991,7 @@
   "char_466_qanik": {
     "charId": "char_466_qanik",
     "name": "雪绒",
+    "slug": "qanipalaat",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -1850,6 +2004,7 @@
   "char_4071_peper": {
     "charId": "char_4071_peper",
     "name": "明椒",
+    "slug": "paprika",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -1862,6 +2017,7 @@
   "char_157_dagda": {
     "charId": "char_157_dagda",
     "name": "达格达",
+    "slug": "dagda",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -1874,6 +2030,7 @@
   "char_4066_highmo": {
     "charId": "char_4066_highmo",
     "name": "海沫",
+    "slug": "highmore",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -1886,6 +2043,7 @@
   "char_4032_provs": {
     "charId": "char_4032_provs",
     "name": "但书",
+    "slug": "proviso",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -1898,6 +2056,7 @@
   "char_497_ctable": {
     "charId": "char_497_ctable",
     "name": "晓歌",
+    "slug": "cantabile",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -1910,6 +2069,7 @@
   "char_4054_malist": {
     "charId": "char_4054_malist",
     "name": "至简",
+    "slug": "minimalist",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -1922,6 +2082,7 @@
   "char_1027_greyy2": {
     "charId": "char_1027_greyy2",
     "name": "承曦格雷伊",
+    "slug": "greyy-the-lightningbearer",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -1934,6 +2095,7 @@
   "char_135_halo": {
     "charId": "char_135_halo",
     "name": "星源",
+    "slug": "astgenne",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -1946,6 +2108,7 @@
   "char_1024_hbisc2": {
     "charId": "char_1024_hbisc2",
     "name": "濯尘芙蓉",
+    "slug": "hibiscus-the-purifier",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -1958,6 +2121,7 @@
   "char_4047_pianst": {
     "charId": "char_4047_pianst",
     "name": "车尔尼",
+    "slug": "czerny",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -1970,6 +2134,7 @@
   "char_4043_erato": {
     "charId": "char_4043_erato",
     "name": "埃拉托",
+    "slug": "erato",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -1982,6 +2147,7 @@
   "char_433_windft": {
     "charId": "char_433_windft",
     "name": "掠风",
+    "slug": "windflit",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -1994,6 +2160,7 @@
   "char_4040_rockr": {
     "charId": "char_4040_rockr",
     "name": "洛洛",
+    "slug": "rockrock",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -2006,6 +2173,7 @@
   "char_4045_heidi": {
     "charId": "char_4045_heidi",
     "name": "海蒂",
+    "slug": "heidi",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -2018,6 +2186,7 @@
   "char_4016_kazema": {
     "charId": "char_4016_kazema",
     "name": "风丸",
+    "slug": "kazemaru",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2030,6 +2199,7 @@
   "char_4036_forcer": {
     "charId": "char_4036_forcer",
     "name": "见行者",
+    "slug": "enforcer",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2042,6 +2212,7 @@
   "char_492_quercu": {
     "charId": "char_492_quercu",
     "name": "夏栎",
+    "slug": "quercus",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -2054,6 +2225,7 @@
   "char_476_blkngt": {
     "charId": "char_476_blkngt",
     "name": "夜半",
+    "slug": "blacknight",
     "position": "RANGED",
     "rarity": 5,
     "profession": "PIONEER",
@@ -2066,6 +2238,7 @@
   "char_1021_kroos2": {
     "charId": "char_1021_kroos2",
     "name": "寒芒克洛丝",
+    "slug": "kroos-the-keen-glint",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -2078,6 +2251,7 @@
   "char_4019_ncdeer": {
     "charId": "char_4019_ncdeer",
     "name": "九色鹿",
+    "slug": "nine-colored-deer",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -2090,6 +2264,7 @@
   "char_4025_aprot2": {
     "charId": "char_4025_aprot2",
     "name": "暮落",
+    "slug": "shalem",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -2102,6 +2277,7 @@
   "char_422_aurora": {
     "charId": "char_422_aurora",
     "name": "极光",
+    "slug": "aurora",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -2114,6 +2290,7 @@
   "char_4013_kjera": {
     "charId": "char_4013_kjera",
     "name": "耶拉",
+    "slug": "kjera",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -2126,6 +2303,7 @@
   "char_489_serum": {
     "charId": "char_489_serum",
     "name": "蚀清",
+    "slug": "corroserum",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -2138,6 +2316,7 @@
   "char_496_wildmn": {
     "charId": "char_496_wildmn",
     "name": "野鬃",
+    "slug": "wild-mane",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -2150,6 +2329,7 @@
   "char_449_glider": {
     "charId": "char_449_glider",
     "name": "蜜莓",
+    "slug": "honeyberry",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -2162,6 +2342,7 @@
   "char_431_ashlok": {
     "charId": "char_431_ashlok",
     "name": "灰毫",
+    "slug": "ashlock",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -2174,6 +2355,7 @@
   "char_473_mberry": {
     "charId": "char_473_mberry",
     "name": "桑葚",
+    "slug": "mulberry",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -2186,6 +2368,7 @@
   "char_421_crow": {
     "charId": "char_421_crow",
     "name": "羽毛笔",
+    "slug": "la-pluma",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2198,6 +2381,7 @@
   "char_486_takila": {
     "charId": "char_486_takila",
     "name": "龙舌兰",
+    "slug": "tequila",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2210,6 +2394,7 @@
   "char_478_kirara": {
     "charId": "char_478_kirara",
     "name": "绮良",
+    "slug": "kirara",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2222,6 +2407,7 @@
   "char_369_bena": {
     "charId": "char_369_bena",
     "name": "贝娜",
+    "slug": "bena",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2234,6 +2420,7 @@
   "char_475_akafyu": {
     "charId": "char_475_akafyu",
     "name": "赤冬",
+    "slug": "akafuyu",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2246,6 +2433,7 @@
   "char_363_toddi": {
     "charId": "char_363_toddi",
     "name": "熔泉",
+    "slug": "toddifons",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -2258,6 +2446,7 @@
   "char_304_zebra": {
     "charId": "char_304_zebra",
     "name": "暴雨",
+    "slug": "heavyrain",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -2270,6 +2459,7 @@
   "char_458_rfrost": {
     "charId": "char_458_rfrost",
     "name": "霜华",
+    "slug": "frost",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2282,6 +2472,7 @@
   "char_457_blitz": {
     "charId": "char_457_blitz",
     "name": "闪击",
+    "slug": "blitz",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -2294,6 +2485,7 @@
   "char_459_tachak": {
     "charId": "char_459_tachak",
     "name": "战车",
+    "slug": "tachanka",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2306,6 +2498,7 @@
   "char_455_nothin": {
     "charId": "char_455_nothin",
     "name": "乌有",
+    "slug": "mr.-nothing",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2318,6 +2511,7 @@
   "char_1011_lava2": {
     "charId": "char_1011_lava2",
     "name": "炎狱炎熔",
+    "slug": "lava-the-purgatory",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -2330,6 +2524,7 @@
   "char_402_tuye": {
     "charId": "char_402_tuye",
     "name": "图耶",
+    "slug": "tuye",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -2342,6 +2537,7 @@
   "char_338_iris": {
     "charId": "char_338_iris",
     "name": "爱丽丝",
+    "slug": "iris",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -2354,6 +2550,7 @@
   "char_214_kafka": {
     "charId": "char_214_kafka",
     "name": "卡夫卡",
+    "slug": "kafka",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2366,6 +2563,7 @@
   "char_451_robin": {
     "charId": "char_451_robin",
     "name": "罗宾",
+    "slug": "robin",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2378,6 +2576,7 @@
   "char_436_whispr": {
     "charId": "char_436_whispr",
     "name": "絮雨",
+    "slug": "whisperain",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -2390,6 +2589,7 @@
   "char_346_aosta": {
     "charId": "char_346_aosta",
     "name": "奥斯塔",
+    "slug": "aosta",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -2402,6 +2602,7 @@
   "char_265_sophia": {
     "charId": "char_265_sophia",
     "name": "鞭刃",
+    "slug": "whislash",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2414,6 +2615,7 @@
   "char_365_aprl": {
     "charId": "char_365_aprl",
     "name": "四月",
+    "slug": "april",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -2426,6 +2628,7 @@
   "char_388_mint": {
     "charId": "char_388_mint",
     "name": "薄绿",
+    "slug": "mint",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -2438,6 +2641,7 @@
   "char_415_flint": {
     "charId": "char_415_flint",
     "name": "燧石",
+    "slug": "flint",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2450,6 +2654,7 @@
   "char_411_tomimi": {
     "charId": "char_411_tomimi",
     "name": "特米米",
+    "slug": "tomimi",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -2462,6 +2667,7 @@
   "char_218_cuttle": {
     "charId": "char_218_cuttle",
     "name": "安哲拉",
+    "slug": "andreana",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -2474,6 +2680,7 @@
   "char_349_chiave": {
     "charId": "char_349_chiave",
     "name": "贾维",
+    "slug": "chiave",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -2486,6 +2693,7 @@
   "char_344_beewax": {
     "charId": "char_344_beewax",
     "name": "蜜蜡",
+    "slug": "beeswax",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -2498,6 +2706,7 @@
   "char_336_folivo": {
     "charId": "char_336_folivo",
     "name": "稀音",
+    "slug": "scene",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -2510,6 +2719,7 @@
   "char_294_ayer": {
     "charId": "char_294_ayer",
     "name": "断崖",
+    "slug": "ayerscarpe",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2522,6 +2732,7 @@
   "char_345_folnic": {
     "charId": "char_345_folnic",
     "name": "亚叶",
+    "slug": "folinic",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -2534,6 +2745,7 @@
   "char_373_lionhd": {
     "charId": "char_373_lionhd",
     "name": "莱恩哈特",
+    "slug": "leonhardt",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -2546,6 +2758,7 @@
   "char_405_absin": {
     "charId": "char_405_absin",
     "name": "苦艾",
+    "slug": "absinthe",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -2558,6 +2771,7 @@
   "char_343_tknogi": {
     "charId": "char_343_tknogi",
     "name": "月禾",
+    "slug": "tsukinogi",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -2570,6 +2784,7 @@
   "char_378_asbest": {
     "charId": "char_378_asbest",
     "name": "石棉",
+    "slug": "asbestos",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -2582,6 +2797,7 @@
   "char_401_elysm": {
     "charId": "char_401_elysm",
     "name": "极境",
+    "slug": "elysium",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -2594,6 +2810,7 @@
   "char_254_vodfox": {
     "charId": "char_254_vodfox",
     "name": "巫恋",
+    "slug": "shamare",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -2606,6 +2823,7 @@
   "char_333_sidero": {
     "charId": "char_333_sidero",
     "name": "铸铁",
+    "slug": "sideroca",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2618,6 +2836,7 @@
   "char_379_sesa": {
     "charId": "char_379_sesa",
     "name": "慑砂",
+    "slug": "sesa",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -2630,6 +2849,7 @@
   "char_252_bibeak": {
     "charId": "char_252_bibeak",
     "name": "柏喙",
+    "slug": "bibeak",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2642,6 +2862,7 @@
   "char_306_leizi": {
     "charId": "char_306_leizi",
     "name": "惊蛰",
+    "slug": "leizi",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -2654,6 +2875,7 @@
   "char_226_hmau": {
     "charId": "char_226_hmau",
     "name": "吽",
+    "slug": "hung",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -2666,6 +2888,7 @@
   "char_383_snsant": {
     "charId": "char_383_snsant",
     "name": "雪雉",
+    "slug": "snowsant",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2678,6 +2901,7 @@
   "char_367_swllow": {
     "charId": "char_367_swllow",
     "name": "灰喉",
+    "slug": "greythroat",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -2690,6 +2914,7 @@
   "char_356_broca": {
     "charId": "char_356_broca",
     "name": "布洛卡",
+    "slug": "broca",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2702,6 +2927,7 @@
   "char_261_sddrag": {
     "charId": "char_261_sddrag",
     "name": "苇草",
+    "slug": "reed",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -2714,6 +2940,7 @@
   "char_243_waaifu": {
     "charId": "char_243_waaifu",
     "name": "槐琥",
+    "slug": "waai-fu",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2726,6 +2953,7 @@
   "char_325_bison": {
     "charId": "char_325_bison",
     "name": "拜松",
+    "slug": "bison",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -2738,6 +2966,7 @@
   "char_275_breeze": {
     "charId": "char_275_breeze",
     "name": "微风",
+    "slug": "breeze",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -2750,6 +2979,7 @@
   "char_279_excu": {
     "charId": "char_279_excu",
     "name": "送葬人",
+    "slug": "executor",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -2762,6 +2992,7 @@
   "char_131_flameb": {
     "charId": "char_131_flameb",
     "name": "炎客",
+    "slug": "flamebringer",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2774,6 +3005,7 @@
   "char_274_astesi": {
     "charId": "char_274_astesi",
     "name": "星极",
+    "slug": "astesia",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2786,6 +3018,7 @@
   "char_326_glacus": {
     "charId": "char_326_glacus",
     "name": "格劳克斯",
+    "slug": "glaucus",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -2798,6 +3031,7 @@
   "char_348_ceylon": {
     "charId": "char_348_ceylon",
     "name": "锡兰",
+    "slug": "ceylon",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -2810,6 +3044,7 @@
   "char_308_swire": {
     "charId": "char_308_swire",
     "name": "诗怀雅",
+    "slug": "swire",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2822,6 +3057,7 @@
   "char_220_grani": {
     "charId": "char_220_grani",
     "name": "格拉尼",
+    "slug": "grani",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -2834,6 +3070,7 @@
   "char_164_nightm": {
     "charId": "char_164_nightm",
     "name": "夜魔",
+    "slug": "nightmare",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -2846,6 +3083,7 @@
   "char_230_savage": {
     "charId": "char_230_savage",
     "name": "暴行",
+    "slug": "savage",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -2858,6 +3096,7 @@
   "char_241_panda": {
     "charId": "char_241_panda",
     "name": "食铁兽",
+    "slug": "feater",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2870,6 +3109,7 @@
   "char_215_mantic": {
     "charId": "char_215_mantic",
     "name": "狮蝎",
+    "slug": "manticore",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2882,6 +3122,7 @@
   "char_101_sora": {
     "charId": "char_101_sora",
     "name": "空",
+    "slug": "sora",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -2894,6 +3135,7 @@
   "char_195_glassb": {
     "charId": "char_195_glassb",
     "name": "真理",
+    "slug": "istina",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -2906,6 +3148,7 @@
   "char_174_slbell": {
     "charId": "char_174_slbell",
     "name": "初雪",
+    "slug": "pramanix",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -2918,6 +3161,7 @@
   "char_173_slchan": {
     "charId": "char_173_slchan",
     "name": "崖心",
+    "slug": "cliffheart",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2930,6 +3174,7 @@
   "char_158_milu": {
     "charId": "char_158_milu",
     "name": "守林人",
+    "slug": "firewatch",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -2942,6 +3187,7 @@
   "char_145_prove": {
     "charId": "char_145_prove",
     "name": "普罗旺斯",
+    "slug": "provence",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -2954,6 +3200,7 @@
   "char_163_hpsts": {
     "charId": "char_163_hpsts",
     "name": "火神",
+    "slug": "vulcan",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -2966,6 +3213,7 @@
   "char_201_moeshd": {
     "charId": "char_201_moeshd",
     "name": "可颂",
+    "slug": "croissant",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -2978,6 +3226,7 @@
   "char_107_liskam": {
     "charId": "char_107_liskam",
     "name": "雷蛇",
+    "slug": "liskarm",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -2990,6 +3239,7 @@
   "char_144_red": {
     "charId": "char_144_red",
     "name": "红",
+    "slug": "projekt-red",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -3002,6 +3252,7 @@
   "char_148_nearl": {
     "charId": "char_148_nearl",
     "name": "临光",
+    "slug": "nearl",
     "position": "MELEE",
     "rarity": 5,
     "profession": "TANK",
@@ -3014,6 +3265,7 @@
   "char_171_bldsk": {
     "charId": "char_171_bldsk",
     "name": "华法琳",
+    "slug": "warfarin",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -3026,6 +3278,7 @@
   "char_108_silent": {
     "charId": "char_108_silent",
     "name": "赫默",
+    "slug": "silence",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -3038,6 +3291,7 @@
   "char_242_otter": {
     "charId": "char_242_otter",
     "name": "梅尔",
+    "slug": "mayer",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -3050,6 +3304,7 @@
   "char_166_skfire": {
     "charId": "char_166_skfire",
     "name": "天火",
+    "slug": "skyfire",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -3062,6 +3317,7 @@
   "char_002_amiya": {
     "charId": "char_002_amiya",
     "name": "阿米娅",
+    "slug": "amiya",
     "position": "RANGED",
     "rarity": 5,
     "profession": "CASTER",
@@ -3074,6 +3330,7 @@
   "char_1001_amiya2": {
     "charId": "char_1001_amiya2",
     "name": "阿米娅 (Guard)",
+    "slug": "amiya-(guard)",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -3086,6 +3343,7 @@
   "char_1037_amiya3": {
     "charId": "char_1037_amiya3",
     "name": "阿米娅 (Medic)",
+    "slug": "amiya-(medic)",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -3098,6 +3356,7 @@
   "char_219_meteo": {
     "charId": "char_219_meteo",
     "name": "陨星",
+    "slug": "meteorite",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -3110,6 +3369,7 @@
   "char_204_platnm": {
     "charId": "char_204_platnm",
     "name": "白金",
+    "slug": "platinum",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -3122,6 +3382,7 @@
   "char_129_bluep": {
     "charId": "char_129_bluep",
     "name": "蓝毒",
+    "slug": "blue-poison",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SNIPER",
@@ -3134,6 +3395,7 @@
   "char_143_ghost": {
     "charId": "char_143_ghost",
     "name": "幽灵鲨",
+    "slug": "specter",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -3146,6 +3408,7 @@
   "char_140_whitew": {
     "charId": "char_140_whitew",
     "name": "拉普兰德",
+    "slug": "lappland",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -3158,6 +3421,7 @@
   "char_155_tiger": {
     "charId": "char_155_tiger",
     "name": "因陀罗",
+    "slug": "indra",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -3170,6 +3434,7 @@
   "char_106_franka": {
     "charId": "char_106_franka",
     "name": "芙兰卡",
+    "slug": "franka",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
@@ -3182,6 +3447,7 @@
   "char_102_texas": {
     "charId": "char_102_texas",
     "name": "德克萨斯",
+    "slug": "texas",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -3194,6 +3460,7 @@
   "char_115_headbr": {
     "charId": "char_115_headbr",
     "name": "凛冬",
+    "slug": "zima",
     "position": "MELEE",
     "rarity": 5,
     "profession": "PIONEER",
@@ -3206,6 +3473,7 @@
   "char_128_plosis": {
     "charId": "char_128_plosis",
     "name": "白面鸮",
+    "slug": "ptilopsis",
     "position": "RANGED",
     "rarity": 5,
     "profession": "MEDIC",
@@ -3218,6 +3486,7 @@
   "char_4165_ctrail": {
     "charId": "char_4165_ctrail",
     "name": "云迹",
+    "slug": "contrail",
     "position": "MELEE",
     "rarity": 4,
     "profession": "SPECIAL",
@@ -3230,6 +3499,7 @@
   "char_4130_luton": {
     "charId": "char_4130_luton",
     "name": "露托",
+    "slug": "lutonada",
     "position": "MELEE",
     "rarity": 4,
     "profession": "TANK",
@@ -3242,6 +3512,7 @@
   "char_4100_caper": {
     "charId": "char_4100_caper",
     "name": "跃跃",
+    "slug": "caper",
     "position": "RANGED",
     "rarity": 4,
     "profession": "SNIPER",
@@ -3254,6 +3525,7 @@
   "char_4107_vrdant": {
     "charId": "char_4107_vrdant",
     "name": "维荻",
+    "slug": "verdant",
     "position": "MELEE",
     "rarity": 4,
     "profession": "SPECIAL",
@@ -3266,6 +3538,7 @@
   "char_491_humus": {
     "charId": "char_491_humus",
     "name": "休谟斯",
+    "slug": "humus",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3278,6 +3551,7 @@
   "char_4063_quartz": {
     "charId": "char_4063_quartz",
     "name": "石英",
+    "slug": "quartz",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3290,6 +3564,7 @@
   "char_4062_totter": {
     "charId": "char_4062_totter",
     "name": "铅踝",
+    "slug": "totter",
     "position": "RANGED",
     "rarity": 4,
     "profession": "SNIPER",
@@ -3302,6 +3577,7 @@
   "char_4067_lolxh": {
     "charId": "char_4067_lolxh",
     "name": "罗小黑",
+    "slug": "luo-xiaohei",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3314,6 +3590,7 @@
   "char_4041_chnut": {
     "charId": "char_4041_chnut",
     "name": "褐果",
+    "slug": "chestnut",
     "position": "RANGED",
     "rarity": 4,
     "profession": "MEDIC",
@@ -3326,6 +3603,7 @@
   "char_4004_pudd": {
     "charId": "char_4004_pudd",
     "name": "布丁",
+    "slug": "pudding",
     "position": "RANGED",
     "rarity": 4,
     "profession": "CASTER",
@@ -3338,6 +3616,7 @@
   "char_484_robrta": {
     "charId": "char_484_robrta",
     "name": "罗比菈塔",
+    "slug": "roberta",
     "position": "MELEE",
     "rarity": 4,
     "profession": "SUPPORT",
@@ -3350,6 +3629,7 @@
   "char_469_indigo": {
     "charId": "char_469_indigo",
     "name": "深靛",
+    "slug": "indigo",
     "position": "RANGED",
     "rarity": 4,
     "profession": "CASTER",
@@ -3362,6 +3642,7 @@
   "char_452_bstalk": {
     "charId": "char_452_bstalk",
     "name": "豆苗",
+    "slug": "beanstalk",
     "position": "RANGED",
     "rarity": 4,
     "profession": "PIONEER",
@@ -3374,6 +3655,7 @@
   "char_440_pinecn": {
     "charId": "char_440_pinecn",
     "name": "松果",
+    "slug": "pinecone",
     "position": "RANGED",
     "rarity": 4,
     "profession": "SNIPER",
@@ -3386,6 +3668,7 @@
   "char_347_jaksel": {
     "charId": "char_347_jaksel",
     "name": "杰克",
+    "slug": "jackie",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3398,6 +3681,7 @@
   "char_381_bubble": {
     "charId": "char_381_bubble",
     "name": "泡泡",
+    "slug": "bubble",
     "position": "MELEE",
     "rarity": 4,
     "profession": "TANK",
@@ -3410,6 +3694,7 @@
   "char_271_spikes": {
     "charId": "char_271_spikes",
     "name": "芳汀",
+    "slug": "arene",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3422,6 +3707,7 @@
   "char_366_acdrop": {
     "charId": "char_366_acdrop",
     "name": "酸糖",
+    "slug": "aciddrop",
     "position": "RANGED",
     "rarity": 4,
     "profession": "SNIPER",
@@ -3434,6 +3720,7 @@
   "char_272_strong": {
     "charId": "char_272_strong",
     "name": "孑",
+    "slug": "jaye",
     "position": "MELEE",
     "rarity": 4,
     "profession": "SPECIAL",
@@ -3446,6 +3733,7 @@
   "char_328_cammou": {
     "charId": "char_328_cammou",
     "name": "卡达",
+    "slug": "click",
     "position": "RANGED",
     "rarity": 4,
     "profession": "CASTER",
@@ -3458,6 +3746,7 @@
   "char_258_podego": {
     "charId": "char_258_podego",
     "name": "波登可",
+    "slug": "podenco",
     "position": "RANGED",
     "rarity": 4,
     "profession": "SUPPORT",
@@ -3470,6 +3759,7 @@
   "char_301_cutter": {
     "charId": "char_301_cutter",
     "name": "刻刀",
+    "slug": "cutter",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3482,6 +3772,7 @@
   "char_159_peacok": {
     "charId": "char_159_peacok",
     "name": "断罪者",
+    "slug": "conviction",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3494,6 +3785,7 @@
   "char_337_utage": {
     "charId": "char_337_utage",
     "name": "宴",
+    "slug": "utage",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3506,6 +3798,7 @@
   "char_385_finlpp": {
     "charId": "char_385_finlpp",
     "name": "清流",
+    "slug": "purestream",
     "position": "RANGED",
     "rarity": 4,
     "profession": "MEDIC",
@@ -3518,6 +3811,7 @@
   "char_302_glaze": {
     "charId": "char_302_glaze",
     "name": "安比尔",
+    "slug": "ambriel",
     "position": "RANGED",
     "rarity": 4,
     "profession": "SNIPER",
@@ -3530,6 +3824,7 @@
   "char_133_mm": {
     "charId": "char_133_mm",
     "name": "梅",
+    "slug": "may",
     "position": "RANGED",
     "rarity": 4,
     "profession": "SNIPER",
@@ -3542,6 +3837,7 @@
   "char_355_ethan": {
     "charId": "char_355_ethan",
     "name": "伊桑",
+    "slug": "ethan",
     "position": "MELEE",
     "rarity": 4,
     "profession": "SPECIAL",
@@ -3554,6 +3850,7 @@
   "char_190_clour": {
     "charId": "char_190_clour",
     "name": "红云",
+    "slug": "vermeil",
     "position": "RANGED",
     "rarity": 4,
     "profession": "SNIPER",
@@ -3566,6 +3863,7 @@
   "char_260_durnar": {
     "charId": "char_260_durnar",
     "name": "坚雷",
+    "slug": "dur-nar",
     "position": "MELEE",
     "rarity": 4,
     "profession": "TANK",
@@ -3578,6 +3876,7 @@
   "char_151_myrtle": {
     "charId": "char_151_myrtle",
     "name": "桃金娘",
+    "slug": "myrtle",
     "position": "MELEE",
     "rarity": 4,
     "profession": "PIONEER",
@@ -3590,6 +3889,7 @@
   "char_298_susuro": {
     "charId": "char_298_susuro",
     "name": "苏苏洛",
+    "slug": "sussurro",
     "position": "RANGED",
     "rarity": 4,
     "profession": "MEDIC",
@@ -3602,6 +3902,7 @@
   "char_253_greyy": {
     "charId": "char_253_greyy",
     "name": "格雷伊",
+    "slug": "greyy",
     "position": "RANGED",
     "rarity": 4,
     "profession": "CASTER",
@@ -3614,6 +3915,7 @@
   "char_137_brownb": {
     "charId": "char_137_brownb",
     "name": "猎蜂",
+    "slug": "beehunter",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3626,6 +3928,7 @@
   "char_277_sqrrel": {
     "charId": "char_277_sqrrel",
     "name": "阿消",
+    "slug": "shaw",
     "position": "MELEE",
     "rarity": 4,
     "profession": "SPECIAL",
@@ -3638,6 +3941,7 @@
   "char_183_skgoat": {
     "charId": "char_183_skgoat",
     "name": "地灵",
+    "slug": "earthspirit",
     "position": "RANGED",
     "rarity": 4,
     "profession": "SUPPORT",
@@ -3650,6 +3954,7 @@
   "char_110_deepcl": {
     "charId": "char_110_deepcl",
     "name": "深海色",
+    "slug": "deepcolor",
     "position": "RANGED",
     "rarity": 4,
     "profession": "SUPPORT",
@@ -3662,6 +3967,7 @@
   "char_196_sunbr": {
     "charId": "char_196_sunbr",
     "name": "古米",
+    "slug": "gummy",
     "position": "MELEE",
     "rarity": 4,
     "profession": "TANK",
@@ -3674,6 +3980,7 @@
   "char_150_snakek": {
     "charId": "char_150_snakek",
     "name": "蛇屠箱",
+    "slug": "cuora",
     "position": "MELEE",
     "rarity": 4,
     "profession": "TANK",
@@ -3686,6 +3993,7 @@
   "char_199_yak": {
     "charId": "char_199_yak",
     "name": "角峰",
+    "slug": "matterhorn",
     "position": "MELEE",
     "rarity": 4,
     "profession": "TANK",
@@ -3698,6 +4006,7 @@
   "char_181_flower": {
     "charId": "char_181_flower",
     "name": "调香师",
+    "slug": "perfumer",
     "position": "RANGED",
     "rarity": 4,
     "profession": "MEDIC",
@@ -3710,6 +4019,7 @@
   "char_187_ccheal": {
     "charId": "char_187_ccheal",
     "name": "嘉维尔",
+    "slug": "gavial",
     "position": "RANGED",
     "rarity": 4,
     "profession": "MEDIC",
@@ -3722,6 +4032,7 @@
   "char_117_myrrh": {
     "charId": "char_117_myrrh",
     "name": "末药",
+    "slug": "myrrh",
     "position": "RANGED",
     "rarity": 4,
     "profession": "MEDIC",
@@ -3734,6 +4045,7 @@
   "char_236_rope": {
     "charId": "char_236_rope",
     "name": "暗索",
+    "slug": "rope",
     "position": "MELEE",
     "rarity": 4,
     "profession": "SPECIAL",
@@ -3746,6 +4058,7 @@
   "char_237_gravel": {
     "charId": "char_237_gravel",
     "name": "砾",
+    "slug": "gravel",
     "position": "MELEE",
     "rarity": 4,
     "profession": "SPECIAL",
@@ -3758,6 +4071,7 @@
   "char_185_frncat": {
     "charId": "char_185_frncat",
     "name": "慕斯",
+    "slug": "mousse",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3770,6 +4084,7 @@
   "char_127_estell": {
     "charId": "char_127_estell",
     "name": "艾丝黛尔",
+    "slug": "estelle",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3782,6 +4097,7 @@
   "char_193_frostl": {
     "charId": "char_193_frostl",
     "name": "霜叶",
+    "slug": "frostleaf",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3794,6 +4110,7 @@
   "char_289_gyuki": {
     "charId": "char_289_gyuki",
     "name": "缠丸",
+    "slug": "matoimaru",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3806,6 +4123,7 @@
   "char_130_doberm": {
     "charId": "char_130_doberm",
     "name": "杜宾",
+    "slug": "dobermann",
     "position": "MELEE",
     "rarity": 4,
     "profession": "WARRIOR",
@@ -3818,6 +4136,7 @@
   "char_290_vigna": {
     "charId": "char_290_vigna",
     "name": "红豆",
+    "slug": "vigna",
     "position": "MELEE",
     "rarity": 4,
     "profession": "PIONEER",
@@ -3830,6 +4149,7 @@
   "char_149_scave": {
     "charId": "char_149_scave",
     "name": "清道夫",
+    "slug": "scavenger",
     "position": "MELEE",
     "rarity": 4,
     "profession": "PIONEER",
@@ -3842,6 +4162,7 @@
   "char_198_blackd": {
     "charId": "char_198_blackd",
     "name": "讯使",
+    "slug": "courier",
     "position": "MELEE",
     "rarity": 4,
     "profession": "PIONEER",
@@ -3854,6 +4175,7 @@
   "char_118_yuki": {
     "charId": "char_118_yuki",
     "name": "白雪",
+    "slug": "shirayuki",
     "position": "RANGED",
     "rarity": 4,
     "profession": "SNIPER",
@@ -3866,6 +4188,7 @@
   "char_126_shotst": {
     "charId": "char_126_shotst",
     "name": "流星",
+    "slug": "meteor",
     "position": "RANGED",
     "rarity": 4,
     "profession": "SNIPER",
@@ -3878,6 +4201,7 @@
   "char_235_jesica": {
     "charId": "char_235_jesica",
     "name": "杰西卡",
+    "slug": "jessica",
     "position": "RANGED",
     "rarity": 4,
     "profession": "SNIPER",
@@ -3890,6 +4214,7 @@
   "char_109_fmout": {
     "charId": "char_109_fmout",
     "name": "远山",
+    "slug": "gitano",
     "position": "RANGED",
     "rarity": 4,
     "profession": "CASTER",
@@ -3902,6 +4227,7 @@
   "char_141_nights": {
     "charId": "char_141_nights",
     "name": "夜烟",
+    "slug": "haze",
     "position": "RANGED",
     "rarity": 4,
     "profession": "CASTER",
@@ -3914,6 +4240,7 @@
   "char_284_spot": {
     "charId": "char_284_spot",
     "name": "斑点",
+    "slug": "spot",
     "position": "MELEE",
     "rarity": 3,
     "profession": "TANK",
@@ -3926,6 +4253,7 @@
   "char_281_popka": {
     "charId": "char_281_popka",
     "name": "泡普卡",
+    "slug": "popukar",
     "position": "MELEE",
     "rarity": 3,
     "profession": "WARRIOR",
@@ -3938,6 +4266,7 @@
   "char_283_midn": {
     "charId": "char_283_midn",
     "name": "月见夜",
+    "slug": "midnight",
     "position": "MELEE",
     "rarity": 3,
     "profession": "WARRIOR",
@@ -3950,6 +4279,7 @@
   "char_282_catap": {
     "charId": "char_282_catap",
     "name": "空爆",
+    "slug": "catapult",
     "position": "RANGED",
     "rarity": 3,
     "profession": "SNIPER",
@@ -3962,6 +4292,7 @@
   "char_278_orchid": {
     "charId": "char_278_orchid",
     "name": "梓兰",
+    "slug": "orchid",
     "position": "RANGED",
     "rarity": 3,
     "profession": "SUPPORT",
@@ -3974,6 +4305,7 @@
   "char_210_stward": {
     "charId": "char_210_stward",
     "name": "史都华德",
+    "slug": "steward",
     "position": "RANGED",
     "rarity": 3,
     "profession": "CASTER",
@@ -3986,6 +4318,7 @@
   "char_212_ansel": {
     "charId": "char_212_ansel",
     "name": "安赛尔",
+    "slug": "ansel",
     "position": "RANGED",
     "rarity": 3,
     "profession": "MEDIC",
@@ -3998,6 +4331,7 @@
   "char_120_hibisc": {
     "charId": "char_120_hibisc",
     "name": "芙蓉",
+    "slug": "hibiscus",
     "position": "RANGED",
     "rarity": 3,
     "profession": "MEDIC",
@@ -4010,6 +4344,7 @@
   "char_121_lava": {
     "charId": "char_121_lava",
     "name": "炎熔",
+    "slug": "lava",
     "position": "RANGED",
     "rarity": 3,
     "profession": "CASTER",
@@ -4022,6 +4357,7 @@
   "char_211_adnach": {
     "charId": "char_211_adnach",
     "name": "安德切尔",
+    "slug": "adnachiel",
     "position": "RANGED",
     "rarity": 3,
     "profession": "SNIPER",
@@ -4034,6 +4370,7 @@
   "char_124_kroos": {
     "charId": "char_124_kroos",
     "name": "克洛丝",
+    "slug": "kroos",
     "position": "RANGED",
     "rarity": 3,
     "profession": "SNIPER",
@@ -4046,6 +4383,7 @@
   "char_122_beagle": {
     "charId": "char_122_beagle",
     "name": "米格鲁",
+    "slug": "beagle",
     "position": "MELEE",
     "rarity": 3,
     "profession": "TANK",
@@ -4058,6 +4396,7 @@
   "char_209_ardign": {
     "charId": "char_209_ardign",
     "name": "卡缇",
+    "slug": "cardigan",
     "position": "MELEE",
     "rarity": 3,
     "profession": "TANK",
@@ -4070,6 +4409,7 @@
   "char_208_melan": {
     "charId": "char_208_melan",
     "name": "玫兰莎",
+    "slug": "melantha",
     "position": "MELEE",
     "rarity": 3,
     "profession": "WARRIOR",
@@ -4082,6 +4422,7 @@
   "char_192_falco": {
     "charId": "char_192_falco",
     "name": "翎羽",
+    "slug": "plume",
     "position": "MELEE",
     "rarity": 3,
     "profession": "PIONEER",
@@ -4094,6 +4435,7 @@
   "char_240_wyvern": {
     "charId": "char_240_wyvern",
     "name": "香草",
+    "slug": "vanilla",
     "position": "MELEE",
     "rarity": 3,
     "profession": "PIONEER",
@@ -4106,6 +4448,7 @@
   "char_123_fang": {
     "charId": "char_123_fang",
     "name": "芬",
+    "slug": "fang",
     "position": "MELEE",
     "rarity": 3,
     "profession": "PIONEER",
@@ -4118,6 +4461,7 @@
   "char_009_12fce": {
     "charId": "char_009_12fce",
     "name": "12F",
+    "slug": "12f",
     "position": "RANGED",
     "rarity": 2,
     "profession": "CASTER",
@@ -4130,6 +4474,7 @@
   "char_501_durin": {
     "charId": "char_501_durin",
     "name": "杜林",
+    "slug": "durin",
     "position": "RANGED",
     "rarity": 2,
     "profession": "CASTER",
@@ -4142,6 +4487,7 @@
   "char_503_rang": {
     "charId": "char_503_rang",
     "name": "巡林者",
+    "slug": "rangers",
     "position": "RANGED",
     "rarity": 2,
     "profession": "SNIPER",
@@ -4154,6 +4500,7 @@
   "char_500_noirc": {
     "charId": "char_500_noirc",
     "name": "黑角",
+    "slug": "noir-corne",
     "position": "MELEE",
     "rarity": 2,
     "profession": "TANK",
@@ -4166,6 +4513,7 @@
   "char_502_nblade": {
     "charId": "char_502_nblade",
     "name": "夜刀",
+    "slug": "yato",
     "position": "MELEE",
     "rarity": 2,
     "profession": "PIONEER",
@@ -4178,6 +4526,7 @@
   "char_4136_phonor": {
     "charId": "char_4136_phonor",
     "name": "PhonoR-0",
+    "slug": "phonor-0",
     "position": "RANGED",
     "rarity": 1,
     "profession": "SUPPORT",
@@ -4190,6 +4539,7 @@
   "char_4093_frston": {
     "charId": "char_4093_frston",
     "name": "Friston-3",
+    "slug": "friston-3",
     "position": "MELEE",
     "rarity": 1,
     "profession": "TANK",
@@ -4202,6 +4552,7 @@
   "char_4091_ulika": {
     "charId": "char_4091_ulika",
     "name": "U-Official",
+    "slug": "u-official",
     "position": "RANGED",
     "rarity": 1,
     "profession": "SUPPORT",
@@ -4214,6 +4565,7 @@
   "char_4077_palico": {
     "charId": "char_4077_palico",
     "name": "泰拉大陆调查团",
+    "slug": "terra-research-commission",
     "position": "RANGED",
     "rarity": 1,
     "profession": "SNIPER",
@@ -4226,6 +4578,7 @@
   "char_4000_jnight": {
     "charId": "char_4000_jnight",
     "name": "正义骑士号",
+    "slug": "justice-knight",
     "position": "RANGED",
     "rarity": 1,
     "profession": "SNIPER",
@@ -4238,6 +4591,7 @@
   "char_376_therex": {
     "charId": "char_376_therex",
     "name": "THRM-EX",
+    "slug": "thrm-ex",
     "position": "MELEE",
     "rarity": 1,
     "profession": "SPECIAL",
@@ -4250,6 +4604,7 @@
   "char_286_cast3": {
     "charId": "char_286_cast3",
     "name": "Castle-3",
+    "slug": "castle-3",
     "position": "MELEE",
     "rarity": 1,
     "profession": "WARRIOR",
@@ -4262,6 +4617,7 @@
   "char_285_medic2": {
     "charId": "char_285_medic2",
     "name": "Lancet-2",
+    "slug": "lancet-2",
     "position": "RANGED",
     "rarity": 1,
     "profession": "MEDIC",
