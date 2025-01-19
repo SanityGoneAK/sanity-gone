@@ -28,13 +28,13 @@ localeStore.set(locale);
 const t = useTranslations(locale as keyof typeof ui);
 
 const operatorsMap = {
-	en: "../../../../data/en_US/operators.json",
-	kr: "../../../../data/ko_KR/operators.json",
-	jp: "../../../../data/ja_JP/operators.json",
-	"zh-cn": "../../../../data/zh_CN/operators.json",
+	en: "../../../../../data/en_US/operators.json",
+	kr: "../../../../../data/ko_KR/operators.json",
+	jp: "../../../../../data/ja_JP/operators.json",
+	"zh-cn": "../../../../../data/zh_CN/operators.json",
 };
 const path = operatorsMap[locale as keyof typeof operatorsMap];
-const operators = await import(path);
+const operators = (await import(path, { assert: { type: "json" } })).default;
 operatorsJson.set(operators);
 
 export function getStaticPaths() {
@@ -60,7 +60,6 @@ const idLookup = Object.fromEntries(
 );
 
 const operatorId = idLookup[slug ?? ""];
-
 const operator = operators[
 	operatorId as keyof typeof operators
 	] as OutputTypes.Operator;
