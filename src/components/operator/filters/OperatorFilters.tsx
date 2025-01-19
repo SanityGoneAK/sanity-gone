@@ -22,6 +22,8 @@ import type { Rarity } from "~/types/output-types";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
+import { subProfessionIdToBranch } from "~/utils/branches.ts";
+import { localeToTag } from "~/i18n/languages.ts";
 
 const OperatorFilters = () => {
 	const locale = useStore(localeStore);
@@ -119,7 +121,7 @@ const OperatorFilters = () => {
 										src={operatorBranchIcon(key)}
 										alt=""
 									/>
-									<p>{branch.branchName}</p>
+									<p>{subProfessionIdToBranch(key, localeToTag[locale as keyof typeof localeToTag])}</p>
 								</button>
 							);
 						})}

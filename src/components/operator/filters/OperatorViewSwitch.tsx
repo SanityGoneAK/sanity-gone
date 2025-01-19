@@ -18,7 +18,7 @@ const OperatorViewSwitch = () => {
 	return (
 		<div style={{ display: "flex", alignItems: "center" }}>
 			<label
-				className="font- mr-2 text-neutral-200"
+				className="font- w-max mr-2 text-neutral-200"
 				htmlFor="operator-view"
 			>
 				{t("operators.index.filters.view")}
