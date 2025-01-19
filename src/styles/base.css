@@ -157,8 +157,10 @@ img {
 }
 
 .swiper-slide:first-child{
-	padding-left: 1rem;
+	@apply pl-4;
+	@apply sm:pl-0;
 }
 .swiper-slide:last-child{
-	padding-right: 1rem;
+	@apply pr-4;
+	@apply sm:pr-0;
 }
