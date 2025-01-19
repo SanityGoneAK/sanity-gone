@@ -10,11 +10,19 @@ import OperatorTalent from "../OperatorTalent";
 import PotentialsDropdown from "../PotentialsDropdown";
 
 import type * as OutputTypes from "~/types/output-types";
+import CharacterRange from "~/components/operator/CharacterRange.tsx";
+
+import { useTranslations } from "~/i18n/utils.ts";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 const OperatorTalentsPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
 	const maxElite = operator.phases.length - 1;
 	const [elite, setElite] = useState(maxElite);
+
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
 
 	// Compute the map of available potentials at each elite level.
 	const potentialsMap = useMemo(() => {
@@ -66,11 +74,29 @@ const OperatorTalentsPanel: React.FC = () => {
 			<div className="flex flex-col gap-4">
 				{talentPhases.length > 0
 					? talentPhases.map((talentPhase, index) => (
-							<OperatorTalent
-								key={index}
-								talentNumber={index + 1}
-								talentPhase={talentPhase}
-							/>
+							<>
+								<OperatorTalent
+									key={index}
+									talentNumber={index + 1}
+									talentPhase={talentPhase}
+								/>
+								{
+									// yes some talents have ranges. Tomimi why do you exist
+									talentPhase.range && (
+										<div className="grid grid-cols-[auto,1fr] items-center rounded bg-neutral-600 p-4">
+											<span className="text-neutral-200">
+												{t(
+													"operators.details.general.range"
+												)}
+											</span>
+											<CharacterRange
+												className="justify-self-center"
+												rangeObject={talentPhase.range}
+											/>
+										</div>
+									)
+								}
+							</>
 						))
 					: "No talents at this elite level."}
 			</div>
