@@ -3,14 +3,26 @@ import Layout from "~/layouts/Layout.astro";
 import OperatorFilterBar from "~/components/operator/filters/OperatorFilterBar";
 import OperatorList from "~/components/operator/OperatorList";
 import { getPathByLocale } from "astro:i18n";
-import { defaultLang } from "~/i18n/languages";
+import { allLanguages, defaultLang } from "~/i18n/languages";
 import { localeStore } from "../_store";
 import { $filterProfession, initializeFiltersFromUrl } from "./_store";
+import type * as OutputTypes from "../../../types/output-types";
+import { slugify } from "../../../utils/strings";
 
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 localeStore.set(locale);
 initializeFiltersFromUrl((new URL(Astro.request.url)).searchParams);
 const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams.entries());
+
+export function getStaticPaths() {
+	return Object.keys(allLanguages).flatMap((lang) => {
+			return {
+				params: {
+					locale: lang,
+				},
+			};
+	})
+}
 ---
 
 <Layout title="Operator List">

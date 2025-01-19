@@ -16,7 +16,7 @@ import type * as OutputTypes from "~/types/output-types";
 import { operatorAvatar } from "~/utils/images";
 import OperatorInfo from "~/components/operator/OperatorInfo.astro";
 import { getPathByLocale, getRelativeLocaleUrl } from "astro:i18n";
-import { defaultLang } from "~/i18n/languages";
+import { allLanguages, defaultLang } from "~/i18n/languages";
 import { operatorSplash } from "~/utils/images.ts";
 
 import OperatorInfoIcon from "~/components/icons/OperatorInfoIcon.tsx";
@@ -36,6 +36,19 @@ const operatorsMap = {
 	jp: jpOperatorsJson,
 	'zh-cn': cnOperatorsJson,
 };
+export function getStaticPaths() {
+	return Object.keys(allLanguages).flatMap((lang) => {
+		return Object.entries(enOperatorsJson).map(([operatorId, operator]: [string, OutputTypes.Operator]) => {
+			return {
+				params: {
+					locale: lang,
+					slug: slugify(operator.name),
+				},
+				props: { operatorId },
+			};
+		});
+	})
+}
 const operatorsJson = operatorsMap[locale as keyof typeof operatorsMap];
 
 const idLookup = Object.fromEntries(

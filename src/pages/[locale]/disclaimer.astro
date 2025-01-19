@@ -12,6 +12,16 @@ const preferredLocale = Astro.preferredLocale ?? defaultLang;
 const absoluteLocaleUrl = getAbsoluteLocaleUrl(preferredLocale, "/");
 
 const t = useTranslations(preferredLocale as keyof typeof ui);
+
+export function getStaticPaths() {
+	return Object.keys(allLanguages).flatMap((lang) => {
+		return {
+			params: {
+				locale: lang,
+			},
+		};
+	})
+}
 ---
 
 <Layout title={t("nav.disclaimer")}>
