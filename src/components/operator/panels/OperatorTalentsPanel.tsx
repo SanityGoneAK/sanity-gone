@@ -15,6 +15,7 @@ import CharacterRange from "~/components/operator/CharacterRange.tsx";
 import { useTranslations } from "~/i18n/utils.ts";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import type { ui } from "~/i18n/ui.ts";
+import { getStatsAtLevel } from "~/utils/character-stats.ts";
 
 const OperatorTalentsPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
@@ -56,6 +57,13 @@ const OperatorTalentsPanel: React.FC = () => {
 		setPotential(potentialsMap[`PHASE_${maxElite}`][0]);
 	};
 
+	const operatorRange = getStatsAtLevel(operator, {
+		level: 1,
+		eliteLevel: elite,
+		trust: 100,
+		potential: potential
+	}).rangeObject;
+
 	return (
 		<div className="flex flex-col gap-4 p-6">
 			<div className="flex items-center justify-between border-b border-neutral-600 pb-4">
@@ -92,6 +100,8 @@ const OperatorTalentsPanel: React.FC = () => {
 											<CharacterRange
 												className="justify-self-center"
 												rangeObject={talentPhase.range}
+												originalRangeObject={operatorRange}
+												showDifference={true}
 											/>
 										</div>
 									)
