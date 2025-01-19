@@ -14,13 +14,14 @@ const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams
 ---
 
 <Layout title="Operator List">
+	<script slot="head" define:vars={{ locale, queryParams }}>
+		window.locale = locale;
+		window.queryParams = queryParams;
+	</script>
+
 	<section class="mx-auto p-5 sm:py-auto max-w-[1800px]">
 		<OperatorFilterBar client:visible />
 
 		<OperatorList locale={locale} client:visible />
 	</section>
 </Layout>
-<script slot="head" define:vars={{ locale, queryParams }}>
-	window.locale = locale;
-	window.queryParams = queryParams;
-</script>
