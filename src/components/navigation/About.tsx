@@ -17,7 +17,7 @@ const About: React.FC<AboutProps> = (props) => {
 		<div>
 			<div className="bg-neutral-600 bg-opacity-50 px-3 xl:rounded-t-lg">
 				<div className="xl:hidden">
-					{memberGroups.map(({ title, members }) => {
+					{memberGroups.map(({ title, members }, i) => {
 						return (
 							<Disclosure key={title}>
 								<DisclosureButton className="group flex h-6 w-full items-center gap-6 py-6">
@@ -39,10 +39,10 @@ const About: React.FC<AboutProps> = (props) => {
 									</svg>
 								</DisclosureButton>
 								<DisclosurePanel
-									className="transition duration-200 ease-out data-[closed]:-translate-y-4 data-[closed]:opacity-0 motion-reduce:transition-none data-[open]:last:pb-2"
+									className="transition-all duration-200 ease-out data-[closed]:-translate-y-4 data-[closed]:opacity-0 motion-reduce:transition-none"
 									transition
 								>
-									<ul className="my-3 flex flex-col gap-6">
+									<ul className={"my-3 flex flex-col gap-6" + ((i === memberGroups.length - 1) ? " pb-2" : "")}>
 										{members.map(
 											({ name, role, imageFilename }) => {
 												return (
@@ -75,15 +75,15 @@ const About: React.FC<AboutProps> = (props) => {
 						);
 					})}
 				</div>
-				<div className="hidden xl:grid grid-cols-[1.5fr_auto_1fr_auto] gap-x-8 p-6">
+				<div className="hidden grid-cols-[1.5fr_auto_1fr_auto] gap-x-8 p-6 xl:grid">
 					{memberGroups.map(({ title, members }) => {
 						return (
 							<div key={title}>
-								<h3 className="flex w-full gap-8 items-center mb-6">
+								<h3 className="mb-6 flex w-full items-center gap-8">
 									{title}
 									<span className="h-[1px] w-full flex-grow bg-neutral-300"></span>
 								</h3>
-								<ul className="flex flex-col flex-wrap gap-6 max-h-[480px]">
+								<ul className="flex max-h-[480px] flex-col flex-wrap gap-6">
 									{members.map(
 										({ name, role, imageFilename }) => {
 											return (
@@ -117,7 +117,7 @@ const About: React.FC<AboutProps> = (props) => {
 				</div>
 			</div>
 			<div className="flex flex-row opacity-100">
-				<div className="bg-neutral-800 xl:bg-neutral-900 p-3 flex-grow xl:rounded-bl-lg">
+				<div className="flex-grow bg-neutral-800 p-3 xl:rounded-bl-lg xl:bg-neutral-900">
 					<h3 className="py-3 text-2xl uppercase">Special thanks</h3>
 					<ul className="list-inside list-disc text-neutral-200">
 						<li>
@@ -158,7 +158,7 @@ const About: React.FC<AboutProps> = (props) => {
 				<a
 					href="https://discord.gg/bAnrGzw75H"
 					target="_blank"
-					className="w-[340px] h-auto hidden xl:flex items-center justify-center relative overflow-hidden rounded-br-lg"
+					className="relative hidden h-auto w-[340px] items-center justify-center overflow-hidden rounded-br-lg xl:flex"
 					rel="noreferrer"
 				>
 					<svg
