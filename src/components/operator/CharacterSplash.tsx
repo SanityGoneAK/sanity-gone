@@ -69,7 +69,7 @@ const CharacterSplash: React.FC = () => {
 					return (
 						<Tab.Panel
 							id={`${skin.skinId}-tabpanel`}
-							className={"relative flex h-full items-center"}
+							className={"relative flex h-full items-center object-contain"}
 							// style={{
 							// 	background:
 							// 		"linear-gradient(270deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.1) 12.34%, rgba(0, 0, 0, 0) 32.5%)",
@@ -81,7 +81,7 @@ const CharacterSplash: React.FC = () => {
 							{/* This was fixed by fixing the width and position of the panel on the right.
 							No more layout shift, just make sure there's also no layout shift on mobile */}
 							<img
-								className="my-0 mx-auto w-[clamp(0px,100%,85vw)] md:w-[clamp(0px,100%,60rem)] h-auto"
+								className="my-0 mx-auto w-[clamp(0px,auto,85vw)] md:w-[clamp(0px,100%,60rem)] h-full object-contain"
 								src={operatorSplash(skin.portraitId, skin.type)}
 								alt={skin.name}
 							/>
