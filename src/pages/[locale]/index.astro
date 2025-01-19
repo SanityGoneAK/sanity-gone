@@ -4,7 +4,7 @@ import {
 	getPathByLocale,
 	getRelativeLocaleUrl,
 } from "astro:i18n";
-import { defaultLang } from "~/i18n/languages";
+import { allLanguages, defaultLang } from "~/i18n/languages";
 
 const preferredLocale = Astro.preferredLocale ?? defaultLang;
 const localePath = getPathByLocale(preferredLocale);
@@ -14,4 +14,14 @@ if (redirectToPreferredLocale == "/") {
 	return Astro.redirect("/en/operators", 301);
 }
 return Astro.redirect(redirectToPreferredLocale + 'operators/', 301);
+
+export function getStaticPaths() {
+  return Object.keys(allLanguages).flatMap((lang) => {
+    return {
+      params: {
+        locale: lang,
+      },
+    };
+  })
+}
 ---
