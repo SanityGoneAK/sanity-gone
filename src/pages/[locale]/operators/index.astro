@@ -13,7 +13,6 @@ const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 localeStore.set(locale);
 initializeFiltersFromUrl((new URL(Astro.request.url)).searchParams);
 const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams.entries());
-
 export const prerender = false;
 ---
 
