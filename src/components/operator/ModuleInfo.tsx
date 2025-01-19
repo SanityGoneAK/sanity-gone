@@ -54,6 +54,7 @@ const ModuleInfo: React.FC<Props> = ({
 		respawn_time,
 		block_cnt,
 		max_deck_stack_cnt,
+		max_deploy_count,
 	} = useMemo(() => {
 		return getModuleStatIncrease(operator, moduleId, stage);
 	}, [operator, moduleId, stage]);
@@ -72,6 +73,7 @@ const ModuleInfo: React.FC<Props> = ({
 		respawn_time,
 		block_cnt,
 		max_deck_stack_cnt,
+		max_deploy_count,
 	];
 
 	const statChangeCount = statChanges.filter((change) => change !== 0).length;

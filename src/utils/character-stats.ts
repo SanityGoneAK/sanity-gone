@@ -470,6 +470,7 @@ interface ModuleStatChange {
 	respawn_time: number;
 	block_cnt: number;
 	max_deck_stack_cnt: number;
+	max_deploy_count: number;
 }
 
 /**
@@ -499,6 +500,7 @@ export const getModuleStatIncrease = (
 		respawn_time: 0,
 		block_cnt: 0,
 		max_deck_stack_cnt: 0,
+		max_deploy_count: 0,
 	};
 
 	if (characterObject.modules == null) {
