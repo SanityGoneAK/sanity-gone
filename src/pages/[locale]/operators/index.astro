@@ -14,7 +14,7 @@ const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams
 ---
 
 <Layout title="Operator List">
-	<section class="mx-auto py-2 pl-5 sm:py-auto sm:p-5">
+	<section class="mx-auto p-5 sm:py-auto max-w-[1800px]">
 		<OperatorFilterBar client:visible />
 
 		<OperatorList locale={locale} client:visible />
