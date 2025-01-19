@@ -15,6 +15,7 @@ export type { RiicSkill } from "../../scripts/aggregate-riic-data";
 export interface Character {
 	charId: string;
 	name: string;
+	slug: string;
 	// cnName: string;
 	profession: string;
 	subProfessionId: string;

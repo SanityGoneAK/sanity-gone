@@ -2,7 +2,6 @@ import { useStore } from "@nanostores/react";
 
 import SvgRarityGradientDefs from "./SvgRarityGradientDefs";
 import { $operators, $viewConfig } from "../../pages/[locale]/operators/_store";
-import enOperatorsJson from "data/en_US/operators.json";
 import {
 	operatorAvatar,
 	operatorBranchIcon,
@@ -36,8 +35,7 @@ const OperatorLargeItem: React.FC<{
 	};
 
 	const t = useTranslations(locale as keyof typeof ui);
-	const enOperator = enOperatorsJson[operator.charId as keyof typeof enOperatorsJson] as OutputTypes.Operator;
-	const slug = slugify(enOperator.name);
+	const slug = operator.slug;
 
 	return (
 		<li className="relative h-[280px] w-full overflow-hidden rounded">
@@ -177,8 +175,7 @@ const OperatorCompactItem: React.FC<{
 		6: "text-orange-light",
 	};
 
-	const enOperator = enOperatorsJson[operator.charId as keyof typeof enOperatorsJson] as OutputTypes.Operator;
-	const slug = slugify(enOperator.name);
+	const slug = operator.slug;
 
 	return (
 		<li className="relative aspect-square h-full overflow-hidden rounded">
