@@ -80,6 +80,16 @@ const OperatorSkillsPanel: React.FC = () => {
 		).rangeObject
 		: null;
 
+	const operatorRange = getStatsAtLevel(
+		operator,
+		{
+			eliteLevel: 2,
+			level: 90,
+			potential: 5,
+			trust: 100,
+		}
+	).rangeObject;
+
 	const skillDisplayDuration = useMemo(() => {
 		if (activeSkillLevel.duration === -1) {
 			return t('operators.details.skills.infinite');
@@ -217,6 +227,8 @@ const OperatorSkillsPanel: React.FC = () => {
 						<CharacterRange
 							className="justify-self-center"
 							rangeObject={activeSkillLevel.range}
+							originalRangeObject={operatorRange}
+							showDifference={true}
 						/>
 					</div>
 				)}
