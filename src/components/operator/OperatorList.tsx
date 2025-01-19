@@ -251,19 +251,19 @@ const OperatorCompactItem: React.FC<{
 const OperatorList: React.FC<{ locale: string }> = ({ locale }) => {
 	const operators = useStore($operators);
 	const viewConfig = useStore($viewConfig);
-	const isMobile = useMediaQuery("(max-width: 768px)");
+	// const isMobile = useMediaQuery("(max-width: 768px)");
 
 	return (
 		<ul
 			className={cx(
 				"grid list-none grid-cols-[repeat(auto-fill,_minmax(144px,_1fr))]",
-				isMobile || viewConfig === "compact"
+				viewConfig === "compact"
 					? "gap-4 p-0"
 					: "gap-x-6 gap-y-4 p-0"
 			)}
 		>
 			{operators.map((op) =>
-				isMobile || viewConfig === "compact" ? (
+				viewConfig === "compact" ? (
 					<OperatorCompactItem
 						key={op.charId}
 						locale={locale}

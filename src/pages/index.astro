@@ -1,4 +1,7 @@
 ---
+// cannot pre-render this page because it redirects depending on your locale
+export const prerender = false;
+
 import {
 	getAbsoluteLocaleUrl,
 	getPathByLocale,
