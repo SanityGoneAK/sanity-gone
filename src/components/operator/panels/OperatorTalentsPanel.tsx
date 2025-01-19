@@ -101,7 +101,10 @@ const OperatorTalentsPanel: React.FC = () => {
 												className="justify-self-center"
 												rangeObject={talentPhase.range}
 												originalRangeObject={operatorRange}
-												showDifference={true}
+												// only show the difference if the talent is overriding the rangeId
+												showDifference={talentPhase.blackboard && talentPhase.blackboard.some(
+													(bb) => bb.key === "talent_override_rangeid_flag" && bb.value === 1
+												)}
 											/>
 										</div>
 									)

@@ -30,6 +30,7 @@ import type {
 	OperatorSearchResult,
 } from "~/types/output-types.ts";
 import { branchToSubProfessionId } from "~/utils/branches.ts";
+import { classToProfession } from "~/utils/classes.ts";
 
 interface Props {
 	locale: Locale;
@@ -114,7 +115,7 @@ const CustomHits: React.FC<{
 	return (
 		<Combobox.Options<"div">
 			as="div"
-			className="absolute left-[-1px] top-[calc(100%+1px)] z-50 m-0 flex flex-col overflow-hidden rounded-b border border-neutral-400 bg-neutral-500 p-0 w-[calc(100%+2px)] md:w-[32rem]"
+			className="absolute left-[-1px] top-[calc(100%+1px)] z-50 m-0 flex w-[calc(100%+2px)] flex-col overflow-hidden rounded-b border border-neutral-400 bg-neutral-500 p-0 md:w-[32rem]"
 		>
 			{operatorResults.length > 0 && (
 				<ul
@@ -158,7 +159,11 @@ const CustomHits: React.FC<{
 									{result.rarity}★
 								</span>
 								<span>
-									{t("operators." + result.class?.toLowerCase() as keyof (typeof ui)[typeof defaultLang])}&nbsp; •&nbsp;{" "}
+									{t(
+										("operators." +
+											result.class?.toLowerCase()) as keyof (typeof ui)[typeof defaultLang]
+									)}
+									&nbsp; •&nbsp;{" "}
 									{result.subclass[localeToTag[locale]]}
 								</span>
 							</p>
@@ -196,7 +201,9 @@ const CustomHits: React.FC<{
 								src={
 									result.type === "class"
 										? operatorClassIcon(
-												result.class.toLowerCase()
+												classToProfession(
+													result.class
+												).toLowerCase()
 											)
 										: operatorBranchIcon(
 												result.subProfession
@@ -213,8 +220,8 @@ const CustomHits: React.FC<{
 							</span>
 							<span className="text-sm leading-[18px] text-neutral-200">
 								{result.type === "class"
-									? t('operators.index.filters.class')
-									: `${t("operators." + result.class?.toLowerCase() as keyof (typeof ui)[typeof defaultLang])} ${t('operators.index.filters.branch')}`}
+									? t("operators.index.filters.class")
+									: `${t(("operators." + result.class?.toLowerCase()) as keyof (typeof ui)[typeof defaultLang])} ${t("operators.index.filters.branch")}`}
 							</span>
 						</Combobox.Option>
 					))}
@@ -255,9 +262,7 @@ const SearchBar: React.FC<Props> = ({ locale, placeholder }) => {
 		<div className="flex h-full w-full items-center px-3 md:pl-6">
 			<form
 				role="search"
-				className="relative flex h-9 flex-grow flex-row items-center rounded border border-neutral-100/[0]
-				px-4 focus-within:border-neutral-200/[0.9] focus-within:bg-neutral-500 md:w-[32rem] md:flex-grow-0
-				focus-within:[&:has(input[data-open])]:rounded-b-none hover:[&:not(:focus-within)]:bg-neutral-500"
+				className="relative flex h-9 flex-grow flex-row items-center rounded border border-neutral-100/[0] px-4 focus-within:border-neutral-200/[0.9] focus-within:bg-neutral-500 md:w-[32rem] md:flex-grow-0 focus-within:[&:has(input[data-open])]:rounded-b-none hover:[&:not(:focus-within)]:bg-neutral-500"
 				onClick={() => inputRef.current?.focus()}
 			>
 				<SearchIcon className="mr-4" />
