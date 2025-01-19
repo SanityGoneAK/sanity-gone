@@ -118,7 +118,9 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 				value={value}
 			/>
 			<div className="flex flex-shrink-0 items-center gap-x-2">
-				<span className="text-neutral-200">{shortLabel ?? label}</span>
+				<span className={`text-neutral-200 ${type === "skill" ? "hidden sm:inline" : ""}`}>
+					{shortLabel ?? label}
+				</span>
 				<Input
 					aria-label={label}
 					className="w-10"
