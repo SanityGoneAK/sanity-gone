@@ -27,7 +27,7 @@ const EliteButtonGroup: React.FC<Props> = ({
 			value={currentElite.toString()}
 			defaultValue={currentElite.toString()}
 			onValueChange={(value) => onChange(Number(value))}
-			className="flex items-center border border-neutral-600"
+			className="flex items-center border rounded border-neutral-600"
 		>
 			{eliteLevels.map((elite) => (
 				<EliteButton
@@ -48,7 +48,7 @@ const EliteButton: React.FC<{
 	return (
 		<ToggleGroup.Item
 			value={elite.toString()}
-			className="background-none group flex size-8 p-2 cursor-pointer items-center justify-center border-none py-2 leading-[0] data-[state=on]:rounded data-[state=on]:bg-yellow"
+			className="background-none group flex size-10 p-2 cursor-pointer items-center justify-center border-none py-2 leading-[0] data-[state=on]:rounded data-[state=on]:bg-yellow"
 			aria-label={`Elite ${elite}`}
 		>
 			{getEliteIconComponent(elite, currentElite == elite)}
