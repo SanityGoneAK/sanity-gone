@@ -1,4 +1,3 @@
-import { useCallback } from "react";
 import { defaultLang } from "./languages";
 import { ui } from "./ui";
 
@@ -9,12 +8,9 @@ export function getLangFromUrl(url: URL) {
 }
 
 export function useTranslations(lang: keyof typeof ui) {
-	const t = useCallback(
-		(key: keyof (typeof ui)[typeof defaultLang]) => {
-			return ui[lang][key] || ui[defaultLang][key];
-		},
-		[lang]
-	);
+	const t = (key: keyof (typeof ui)[typeof defaultLang]) => {
+		return ui[lang][key] || ui[defaultLang][key];
+	};
 	return t;
 }
 
