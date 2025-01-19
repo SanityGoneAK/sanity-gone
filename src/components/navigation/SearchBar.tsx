@@ -29,6 +29,7 @@ import type {
 	BranchSearchResult,
 	OperatorSearchResult,
 } from "~/types/output-types.ts";
+import { branchToSubProfessionId } from "~/utils/branches.ts";
 
 interface Props {
 	locale: Locale;
@@ -244,13 +245,9 @@ const SearchBar: React.FC<Props> = ({ locale, placeholder }) => {
 				option.name.en_US ?? ""
 			)}`;
 		} else if (option.type === "class") {
-			window.location.href = `/${locale}/operators#${slugify(
-				option.class
-			)}`;
+			window.location.href = `/${locale}/operators/?professions=${option.class}`;
 		} else {
-			window.location.href = `/${locale}/operators#${slugify(
-				option.class ?? ""
-			)}-${subclassSlugify(option.name.en_US ?? "")}`;
+			window.location.href = `/${locale}/operators/?professions=${option.class}&branches=${branchToSubProfessionId(option.name?.en_US) ?? ""}`;
 		}
 	};
 

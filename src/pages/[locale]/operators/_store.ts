@@ -35,7 +35,7 @@ export const $viewConfig = atom<ViewConfigValue>("large");
 export type SortDirectionValue = "ASC" | "DESC" | null;
 export const $sortDirection = atom<SortDirectionValue>(
 	typeof window !== "undefined"
-		? ((window as any).queryParams?.sortDirection ?? null)
+		? ((window as any).queryParams?.sortDirection as SortDirectionValue ?? null)
 		: null
 );
 
@@ -46,7 +46,7 @@ export type SortCategoryValue =
 	| null;
 export const $sortCategory = atom<SortCategoryValue>(
 	typeof window !== "undefined"
-		? ((window as any).queryParams?.sortCategory ?? null)
+		? ((window as any).queryParams?.sortCategory as SortCategoryValue ?? null)
 		: null
 );
 export const $isSortEmpty = computed(
@@ -256,20 +256,32 @@ export const initializeFiltersFromUrl = (defaultSearchParams: URLSearchParams | 
 	const params = defaultSearchParams ? defaultSearchParams : new URLSearchParams(window.location.search);
 
 	const professions = params.get("professions");
-	if (professions) $filterProfession.set(professions.split(","));
+	$filterProfession.set(professions ? professions.split(",") : []);
 
 	const queryBranches = params.get("branches");
-	if (queryBranches) $filterBranch.set(queryBranches.split(",") as Array<keyof typeof branches>);
+	$filterBranch.set(
+		queryBranches
+			? (queryBranches.split(",") as Array<keyof typeof branches>)
+			: []
+	);
 
 	const rarity = params.get("rarity");
-	if (rarity) $filterRarity.set(rarity.split(",").map(Number) as Array<OutputTypes.Rarity>);
+	$filterRarity.set(
+		rarity
+			? (rarity.split(",").map(Number) as Array<OutputTypes.Rarity>)
+			: []
+	);
 
 	const guideAvailable = params.get("guideAvailable");
 	$filterGuideAvailable.set(guideAvailable === "true");
 
 	const sortCategory = params.get("sortCategory");
-	if (sortCategory) $sortCategory.set(sortCategory as SortCategoryValue);
+	$sortCategory.set(
+		sortCategory ? (sortCategory as SortCategoryValue) : null
+	);
 
 	const sortDirection = params.get("sortDirection");
-	if (sortDirection) $sortDirection.set(sortDirection as SortDirectionValue);
+	$sortDirection.set(
+		sortDirection ? (sortDirection as SortDirectionValue) : null
+	);
 };

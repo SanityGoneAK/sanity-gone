@@ -41,4 +41,4 @@ export const subProfessionIdToBranch = (
 export const branchToSubProfessionId = (
 	branch: string,
 	locale = "en_US"
-): string => lookups[locale][branch];
+): string => reverseLookups[locale][branch];

@@ -5,13 +5,14 @@ import OperatorList from "~/components/operator/OperatorList";
 import { getPathByLocale } from "astro:i18n";
 import { defaultLang } from "~/i18n/languages";
 import { localeStore } from "../_store";
-import { initializeFiltersFromUrl } from "./_store";
+import { $filterProfession, initializeFiltersFromUrl } from "./_store";
 
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 localeStore.set(locale);
-const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams.entries());
-console.log(queryParams);
 initializeFiltersFromUrl((new URL(Astro.request.url)).searchParams);
+const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams.entries());
+console.log($filterProfession.get());
+console.log($filterProfession.get());
 ---
 
 <Layout title="Operator List">

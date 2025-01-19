@@ -11,7 +11,7 @@ import {
 	$filterRarity,
 	toggleProfession,
 	toggleBranch,
-	toggleRarity, initializeFiltersFromUrl
+	toggleRarity, initializeFiltersFromUrl, serializeFiltersToUrl
 } from "../../../pages/[locale]/operators/_store";
 import { classToProfession, professionLookup } from "../../../utils/classes";
 import { operatorBranchIcon, operatorClassIcon } from "../../../utils/images";
@@ -40,6 +40,7 @@ const OperatorFilters = () => {
 		$filterBranch.set([]);
 		$filterRarity.set([]);
 		$filterGuideAvailable.set(false);
+		serializeFiltersToUrl();
 	}, []);
 
 	return (
