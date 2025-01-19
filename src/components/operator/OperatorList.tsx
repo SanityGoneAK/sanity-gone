@@ -2,13 +2,11 @@ import { useStore } from "@nanostores/react";
 
 import SvgRarityGradientDefs from "./SvgRarityGradientDefs";
 import { $operators, $viewConfig } from "../../pages/[locale]/operators/_store";
-import enOperatorsJson from "data/en_US/operators.json";
 import {
 	operatorAvatar,
 	operatorBranchIcon,
 	operatorPortrait,
 } from "../../utils/images";
-import { slugify } from "../../utils/strings";
 
 import type * as OutputTypes from "../../types/output-types";
 import useMediaQuery from "~/utils/media-query";
@@ -36,8 +34,6 @@ const OperatorLargeItem: React.FC<{
 	};
 
 	const t = useTranslations(locale as keyof typeof ui);
-	const enOperator = enOperatorsJson[operator.charId as keyof typeof enOperatorsJson] as OutputTypes.Operator;
-	const slug = slugify(enOperator.name);
 
 	return (
 		<li className="relative h-[280px] w-full overflow-hidden rounded">
@@ -63,13 +59,13 @@ const OperatorLargeItem: React.FC<{
 					<a
 						className="block h-11 flex-grow"
 						tabIndex={-1}
-						href={`/${locale}/operators/${slug}`}
+						href={`/${locale}/operators/${operator.slug}`}
 					></a>
 				</div>
 
 				<div className="flex h-full flex-col justify-end bg-gradient-to-b from-[transparent] from-40% via-neutral-950/[0.67] via-[67%] to-[#1c1c1c] to-100%">
 					<a
-						href={`/${locale}/operators/${slug}`}
+						href={`/${locale}/operators/${operator.slug}`}
 						tabIndex={-1}
 						className="flex flex-grow flex-col justify-end p-3"
 					>
@@ -134,7 +130,7 @@ const OperatorLargeItem: React.FC<{
 					</a>
 
 					<a
-						href={`/${locale}/operators/${slugify(slug)}`}
+						href={`/${locale}/operators/${operator.slug}`}
 						className={cx(
 							"h-1 bg-gradient-to-r text-center brightness-100 filter transition-all duration-75 ease-in-out will-change-[height] focus:h-8 group-hover:h-8",
 							{
@@ -177,9 +173,6 @@ const OperatorCompactItem: React.FC<{
 		6: "text-orange-light",
 	};
 
-	const enOperator = enOperatorsJson[operator.charId as keyof typeof enOperatorsJson] as OutputTypes.Operator;
-	const slug = slugify(enOperator.name);
-
 	return (
 		<li className="relative aspect-square h-full overflow-hidden rounded">
 			<div className="h-full overflow-hidden bg-neutral-600">
@@ -204,12 +197,12 @@ const OperatorCompactItem: React.FC<{
 					<a
 						tabIndex={-1}
 						className="block h-11 flex-grow"
-						href={`/${locale}/operators/${slug}`}
+						href={`/${locale}/operators/${operator.slug}`}
 					></a>
 				</div>
 				<div className="from-zinc-950 to-100 flex h-full flex-col justify-end bg-gradient-to-b from-transparent from-30% via-transparent via-[67%] to-transparent transition duration-100 ease-in-out focus-within:via-neutral-950/[0.67] focus-within:to-[#1c1c1c] group-hover:from-transparent group-hover:via-neutral-950/[0.67] group-hover:to-[#1c1c1c]">
 					<a
-						href={`/${locale}/operators/${slug}`}
+						href={`/${locale}/operators/${operator.slug}`}
 						className="group/link flex flex-grow flex-col justify-end p-3"
 					>
 						<h3 className="flex flex-col text-lg font-semibold leading-6 text-neutral-50 opacity-0 transition-opacity group-hover:opacity-100 group-focus/link:opacity-100">
@@ -258,7 +251,6 @@ const OperatorCompactItem: React.FC<{
 const OperatorList: React.FC<{ locale: string }> = ({ locale }) => {
 	const operators = useStore($operators);
 	const viewConfig = useStore($viewConfig);
-	// const isMobile = useMediaQuery("(max-width: 768px)");
 
 	return (
 		<ul
@@ -269,6 +261,7 @@ const OperatorList: React.FC<{ locale: string }> = ({ locale }) => {
 					: "gap-x-6 gap-y-4 p-0"
 			)}
 		>
+			{/*{operators.map((op) => <OperatorLargeItem key={op.charId} locale={locale} operator={op} />)}*/}
 			{operators.map((op) =>
 				viewConfig === "compact" ? (
 					<OperatorCompactItem

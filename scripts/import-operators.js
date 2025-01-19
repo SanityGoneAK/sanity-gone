@@ -41,6 +41,7 @@ import { getAlterMapping } from "./get-alters.js";
 import { aggregateRiicData } from "./aggregate-riic-data";
 import { aggregateModuleData } from "./aggregate-module-data";
 import { fetchContentfulGraphQl } from "../src/utils/fetch";
+import { slugify } from "../src/utils/strings";
 
 const enPatchChars = enCharacterPatchTable.patchChars;
 const cnPatchChars = cnCharacterPatchTable.patchChars;
@@ -188,6 +189,7 @@ function localizeCharacterDetails(characters, locale) {
 			{
 				...character,
 				charId,
+				slug: slugify(getLocalesForValue(charId, "en_US", "name")),
 				name: getLocalesForValue(charId, locale, "name"),
 				description: getLocalesForValue(charId, locale, "description"),
 				tagList: getLocalesForValue(charId, locale, "tagList"),

@@ -1,28 +1,20 @@
 import { atom, computed, action } from "nanostores";
 import enOperatorsJson from "data/en_US/operators.json";
-import krOperatorsJson from "data/ko_KR/operators.json";
-import jpOperatorsJson from "data/ja_JP/operators.json";
-import cnOperatorsJson from "data/zh_CN/operators.json";
 import branches from "data/en_US/branches.json";
 import { classToProfession, professionLookup } from "../../../utils/classes.ts";
 
 import type * as OutputTypes from "../../../types/output-types.ts";
 import { localeStore } from "~/pages/[locale]/_store.ts";
-const operatorsMap = {
-	en: enOperatorsJson,
-	kr: krOperatorsJson,
-	jp: jpOperatorsJson,
-	'zh-cn': cnOperatorsJson,
-};
 
 export const operatorIdStore = atom<string>(
 	typeof window !== "undefined" ? (window as any).operatorId : ""
 );
 
+export const operatorsJson = atom<OutputTypes.Operator[]>(typeof window !== "undefined" ? (window as any).operatorsJson : enOperatorsJson);
+
 export const operatorStore = computed(
-	[operatorIdStore, localeStore],
-	(operatorId, locale) =>{
-		const operatorsJson = operatorsMap[locale as keyof typeof operatorsMap];
+	[operatorIdStore, localeStore, operatorsJson],
+	(operatorId, locale, operatorsJson) =>{
 		return operatorsJson[operatorId as keyof typeof operatorsJson] as OutputTypes.Operator;
 	}
 );
@@ -86,7 +78,8 @@ export const $operators = computed(
 		$filterGuideAvailable,
 		$sortCategory,
 		$sortDirection,
-		localeStore
+		localeStore,
+		operatorsJson,
 	],
 	(
 		professions,
@@ -96,11 +89,13 @@ export const $operators = computed(
 		sortCategory,
 		sortDirection,
 		locale,
+		operatorsJson,
 	) => {
-		const operatorsJson = operatorsMap[locale as keyof typeof operatorsMap];
-		let baseOperators = Object.values(
-			operatorsJson
-		) as OutputTypes.Operator[];
+		if (!operatorsJson) {
+			return [];
+		}
+		let baseOperators = Object.values(operatorsJson) as OutputTypes.Operator[];
+		baseOperators.pop();
 
 		if (professions.length > 0) {
 			baseOperators = baseOperators.filter((operator) =>

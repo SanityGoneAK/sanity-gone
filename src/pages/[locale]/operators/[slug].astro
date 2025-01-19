@@ -1,11 +1,8 @@
 ---
 import { slugify } from "~/utils/strings";
 import enOperatorsJson from "data/en_US/operators.json";
-import krOperatorsJson from "data/ko_KR/operators.json";
-import jpOperatorsJson from "data/ja_JP/operators.json";
-import cnOperatorsJson from "data/zh_CN/operators.json";
 import Layout from "~/layouts/Layout.astro";
-import { operatorIdStore } from "./_store";
+import { operatorIdStore, operatorsJson } from "./_store";
 import CharacterSplash from "~/components/operator/CharacterSplash";
 import SvgRarityGradientDefs from "~/components/operator/SvgRarityGradientDefs";
 import OperatorTabs from "~/components/operator/OperatorTabs";
@@ -31,38 +28,41 @@ localeStore.set(locale);
 const t = useTranslations(locale as keyof typeof ui);
 
 const operatorsMap = {
-	en: enOperatorsJson,
-	kr: krOperatorsJson,
-	jp: jpOperatorsJson,
-	'zh-cn': cnOperatorsJson,
+	en: "../../../../data/en_US/operators.json",
+	kr: "../../../../data/ko_KR/operators.json",
+	jp: "../../../../data/ja_JP/operators.json",
+	"zh-cn": "../../../../data/zh_CN/operators.json",
 };
+const path = operatorsMap[locale as keyof typeof operatorsMap];
+const operators = await import(path);
+operatorsJson.set(operators);
+
 export function getStaticPaths() {
 	return Object.keys(allLanguages).flatMap((lang) => {
 		return Object.entries(enOperatorsJson).map(([operatorId, operator]: [string, OutputTypes.Operator]) => {
 			return {
 				params: {
 					locale: lang,
-					slug: slugify(operator.name),
+					slug: operator.slug,
 				},
 				props: { operatorId },
 			};
 		});
 	})
 }
-const operatorsJson = operatorsMap[locale as keyof typeof operatorsMap];
 
 const idLookup = Object.fromEntries(
-	Object.entries(enOperatorsJson).map(
+	Object.entries(operators).map(
 		([operatorId, operator]: [string, OutputTypes.Operator]) => {
-			return [slugify(operator.name), operatorId];
+			return [operator.slug, operatorId];
 		}
 	)
 );
 
 const operatorId = idLookup[slug ?? ""];
 
-const operator = operatorsJson[
-	operatorId as keyof typeof operatorsJson
+const operator = operators[
+	operatorId as keyof typeof operators
 	] as OutputTypes.Operator;
 operatorIdStore.set(operatorId);
 
@@ -70,6 +70,11 @@ const relatedOperators = getRelatedCharacter(operator, locale);
 const operatorBgSkin = operator.skins.find((skin) => skin.type === "elite-one-or-two") || operator.skins.find((skin) => skin.type === "elite-zero");
 ---
 <Layout title={operator.name}>
+	<script slot="head" define:vars={{ operatorId, locale, operators }}>
+		window.operatorId = operatorId;
+		window.locale = locale;
+		window.operatorsJson = operators;
+	</script>
 	{/* OpenGraphProtocol and meta stuff (used for Discord embeds, SEO, and whatnot) */}
 	<meta slot="head" name="description" content={operator.itemUsage} />
 	<meta slot="head" property="og:description" content={operator.itemUsage} />
@@ -110,9 +115,7 @@ const operatorBgSkin = operator.skins.find((skin) => skin.type === "elite-one-or
 										class="flex items-center text-yellow relative mr-3"
 										href={getRelativeLocaleUrl(
 											locale,
-											`/operators/${slugify(
-												enOperatorsJson[relatedOperator.charId].name
-											)}`
+											`/operators/${relatedOperator.slug}`
 										)}
 									>
 										<img
@@ -199,7 +202,3 @@ const operatorBgSkin = operator.skins.find((skin) => skin.type === "elite-one-or
 	</div>
 	<SvgRarityGradientDefs />
 </Layout>
-<script slot="head" define:vars={{ operatorId, locale }}>
-	window.operatorId = operatorId;
-	window.locale = locale;
-</script>

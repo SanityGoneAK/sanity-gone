@@ -1,20 +1,11 @@
-import enOperatorsJson from "../../data/en_US/operators.json";
-import cnOperatorsJson from "../../data/zh_CN/operators.json";
-import jpOperatorsJson from "../../data/ja_JP/operators.json";
-import krOperatorsJson from "../../data/ko_KR/operators.json";
+
 
 import type { Operator } from "../types/output-types";
 import type { Locale } from "~/i18n/languages.ts";
-
-const operatorsMap = {
-	en: enOperatorsJson,
-	jp: jpOperatorsJson,
-	kr: krOperatorsJson,
-	'zh-cn': cnOperatorsJson,
-}
+import { operatorsJson as operatorsJsonStore } from "~/pages/[locale]/operators/_store.ts";
 
 export const getRelatedCharacter = (operator: Operator, locale: Locale): Operator[] => {
-	const operatorsJson = operatorsMap[locale];
+	const operatorsJson = operatorsJsonStore.get();
 	const operators = [];
 	if (operator.alterId) {
 		operators.push(

@@ -5,21 +5,33 @@ import OperatorList from "~/components/operator/OperatorList";
 import { getPathByLocale } from "astro:i18n";
 import { allLanguages, defaultLang } from "~/i18n/languages";
 import { localeStore } from "../_store";
-import { $filterProfession, initializeFiltersFromUrl } from "./_store";
+import { $filterProfession, initializeFiltersFromUrl, operatorsJson } from "./_store";
 import type * as OutputTypes from "../../../types/output-types";
 import { slugify } from "../../../utils/strings";
 
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 localeStore.set(locale);
+
+const operatorsMap = {
+	en: "../../../../data/en_US/operators.json",
+	kr: "../../../../data/ko_KR/operators.json",
+	jp: "../../../../data/ja_JP/operators.json",
+	"zh-cn": "../../../../data/zh_CN/operators.json",
+};
+const path = operatorsMap[locale as keyof typeof operatorsMap];
+const operators = await import(path);
+operatorsJson.set(operators);
+
 initializeFiltersFromUrl((new URL(Astro.request.url)).searchParams);
 const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams.entries());
 export const prerender = false;
 ---
 
 <Layout title="Operator List">
-	<script slot="head" define:vars={{ locale, queryParams }}>
+	<script slot="head" define:vars={{ locale, queryParams, operators }}>
 		window.locale = locale;
 		window.queryParams = queryParams;
+		window.operatorsJson = operators;
 	</script>
 
 	<section class="mx-auto p-5 sm:py-auto max-w-[1800px]">
