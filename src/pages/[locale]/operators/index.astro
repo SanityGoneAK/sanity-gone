@@ -14,15 +14,7 @@ localeStore.set(locale);
 initializeFiltersFromUrl((new URL(Astro.request.url)).searchParams);
 const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams.entries());
 
-export function getStaticPaths() {
-	return Object.keys(allLanguages).flatMap((lang) => {
-			return {
-				params: {
-					locale: lang,
-				},
-			};
-	})
-}
+export const prerender = false;
 ---
 
 <Layout title="Operator List">
