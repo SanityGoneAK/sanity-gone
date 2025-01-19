@@ -39,11 +39,10 @@ const OperatorTabs: React.FC = () => {
 
 	return (
 		<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
-			{/* TODO i wanted to preview layout so i literally did the dumbest thing that would make it work lMAO
-			 this is terrible, fix it please */}
 			<Tab.List className="flex flex-row flex-wrap gap-2 bg-neutral-600/[.66] sm:px-4 sm:flex-nowrap">
 				<Swiper
-					className={"m-0 mx-0 w-full"}
+					// prevent the swiper buttons from showing up briefly on layouts where they shouldn't be
+					className={"m-0 mx-0 w-full [&>.swiper-button-next]:sm:hidden [&>.swiper-button-prev]:sm:hidden"}
 					direction="horizontal"
 					modules={[Navigation, Scrollbar]}
 					navigation={true}

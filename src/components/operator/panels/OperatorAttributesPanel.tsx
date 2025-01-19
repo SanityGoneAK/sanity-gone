@@ -24,6 +24,7 @@ import { tokenImage } from "~/utils/images";
 import type { CheckedState } from "@radix-ui/react-checkbox";
 import type { ui } from "~/i18n/ui.ts";
 import type * as OutputTypes from "~/types/output-types";
+import { cx } from "~/utils/styles.ts";
 
 const LMD_ITEM_ID = "4001";
 
@@ -120,12 +121,17 @@ const OperatorAttributesPanel: React.FC = () => {
 	return (
 		<div className="flex flex-col gap-4 p-6">
 			<div className="grid items-center gap-y-4 border-b border-neutral-600 pb-4">
-				<div className="grid grid-cols-[auto_1fr] items-center gap-x-4">
-					<EliteButtonGroup
-						currentElite={elite}
-						eliteLevelsToShow={range(maxElite + 1)}
-						onChange={handleEliteChange}
-					/>
+				<div className="grid grid-cols-1 items-center gap-x-4 gap-y-4 sm:grid-cols-[auto_1fr]">
+					<div className="flex items-center justify-end gap-2">
+						<span className="text-neutral-200 sm:hidden">
+							Elite
+						</span>
+						<EliteButtonGroup
+							currentElite={elite}
+							eliteLevelsToShow={range(maxElite + 1)}
+							onChange={handleEliteChange}
+						/>
+					</div>
 					<SliderWithInput
 						type="level"
 						max={operator.phases[elite].maxLevel}
@@ -134,7 +140,14 @@ const OperatorAttributesPanel: React.FC = () => {
 					/>
 				</div>
 				{/* 600px is the breakpoint at which this specific UI element breaks. */}
-				<div className="grid grid-cols-[auto_auto] items-center gap-x-4 gap-y-4 sm:grid-cols-[auto_auto_1fr]">
+				<div
+					className={cx(
+						"grid grid-cols-[auto_auto] items-center gap-x-4 gap-y-4",
+						moduleTypes.length &&
+							moduleTypes.length < 3 &&
+							"sm:grid-cols-[auto_auto_1fr]"
+					)}
+				>
 					<div className="flex items-center gap-2">
 						<label className="flex cursor-pointer items-center gap-2 text-neutral-200">
 							<Checkbox
@@ -163,8 +176,13 @@ const OperatorAttributesPanel: React.FC = () => {
 						/>
 					</div>
 					{moduleTypes.length > 0 && (
-						<div className="col-span-2 flex items-center gap-x-2 justify-self-end w-full sm:w-auto sm:col-span-1">
-							<div className="flex-grow sm:hidden"></div>
+						<div
+							className={cx(
+								`col-span-2 flex w-full items-center gap-x-2 justify-self-end`,
+								moduleTypes.length < 3 &&
+									"sm:col-span-1 sm:w-auto"
+							)}
+						>
 							<label className="flex cursor-pointer items-center gap-2 text-neutral-200">
 								<Checkbox
 									variant={"info"}
@@ -179,6 +197,10 @@ const OperatorAttributesPanel: React.FC = () => {
 								onChange={setModuleType}
 								disabled={!isModuleTypeChecked}
 							/>
+							<div
+								className={`flex-grow ${moduleTypes.length < 3 && "sm:hidden"}`}
+							></div>
+							<span className={`text-neutral-200 sm:hidden ${moduleTypes.length === 3 && "hidden"}`}>{t("operators.details.modules.stage")}</span>
 							<PillButtonGroup
 								labels={[1, 2, 3]}
 								value={moduleLevel}
@@ -186,9 +208,9 @@ const OperatorAttributesPanel: React.FC = () => {
 								disabled={
 									!isModuleTypeChecked ||
 									moduleType ===
-									t(
-										"operators.details.attributes.module_none"
-									)
+										t(
+											"operators.details.attributes.module_none"
+										)
 								}
 							/>
 						</div>
@@ -206,21 +228,20 @@ const OperatorAttributesPanel: React.FC = () => {
 						potential={potential}
 						trust={trustToUse}
 					/>
-					<div
-						className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600 p-4 text-neutral-200">
+					<div className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600 p-4 text-neutral-200">
 						<span>{t("operators.details.general.range")}</span>
 						<CharacterRange rangeObject={rangeObject} />
 					</div>
 
 					{summon && (
-						<div className="flex sm:flex-row flex-col items-center rounded bg-neutral-900">
+						<div className="flex flex-col items-center rounded bg-neutral-900 sm:flex-row">
 							<img
-								className=" border-neutral-600 mx-2 my-2"
+								className="mx-2 my-2 border-neutral-600"
 								width="80"
 								src={tokenImage(summon.charId)}
 								alt={summon.name}
 							/>
-							<div className="flex flex-grow flex-col gap-4 p-4 w-full border-neutral-600 sm:border-t-0 sm:border-l border-t border-l-0">
+							<div className="flex w-full flex-grow flex-col gap-4 border-l-0 border-t border-neutral-600 p-4 sm:border-l sm:border-t-0">
 								<CharacterStats
 									character={summon}
 									elite={elite}

@@ -79,10 +79,11 @@ const t = useTranslations(locale as keyof typeof ui);
 				id="searchbar"
 				class="hidden grid-in-search md:grid-in-topright group-data-[menu-open=true]/sitewrapper:block md:block border-b border-solid border-neutral-600 md:bg-neutral-900"
 			>
+				{ /* set to client:load because search bar should be immediately available upon opening sidebar */}
 				<SearchBar
 					placeholder={t('nav.search')}
 					locale={locale as Locale}
-					client:visible
+					client:load
 				/>
 			</div>
 			<div
