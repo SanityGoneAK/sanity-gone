@@ -16,11 +16,18 @@ import {
 	type SortCategoryValue,
 	type SortDirectionValue
 } from "~/pages/[locale]/operators/_store";
+import { useMemo } from "react";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 const OperatorSort = () => {
 	const sortDirection = useStore($sortDirection);
 	const sortCategory = useStore($sortCategory);
 	const isSortEmpty = useStore($isSortEmpty);
+
+	const locale = useStore(localeStore);
+	const t = useTranslations(locale as keyof typeof ui);
 
 	const setSorting = (value: string) => {
 		const [category, direction] = value.split("_");
@@ -35,6 +42,14 @@ const OperatorSort = () => {
 		$sortCategory.set(null);
 		serializeFiltersToUrl();
 	};
+
+	const translations = useMemo(() => {
+		return {
+			"Alphabetical": t("operators.index.filters.alphabetical"),
+			"Rarity": t("operators.index.filters.rarity"),
+			"Release Date": t("operators.index.filters.release_date"),
+		}
+	}, [locale]);
 
 	return (
 		<DropdownMenu>
@@ -110,7 +125,7 @@ const OperatorSort = () => {
 										key={key}
 										value={key}
 									>
-										{sortCategory}
+										{sortCategory && translations[sortCategory]}
 										{sortDirection == "ASC" ? (
 											<svg
 												width="8"
@@ -146,7 +161,7 @@ const OperatorSort = () => {
 				</DropdownMenuRadioGroup>
 				<DropdownMenuSeparator />
 				<DropdownMenuItem onClick={clearSorting}>
-					Clear Sort
+					{t("operators.index.filters.clear_sort")}
 				</DropdownMenuItem>
 			</DropdownMenuContent>
 		</DropdownMenu>

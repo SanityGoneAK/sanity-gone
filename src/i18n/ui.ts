@@ -27,6 +27,10 @@ export const ui = {
 		"operators.index.filters.alphabetical": "Alphabetical",
 		"operators.index.filters.release_date": "Release Date",
 		"operators.index.filters.view": "View",
+		"operators.index.filters.clear_filters": "Clear Filters",
+		"operators.index.filters.clear_sort": "Clear Sort",
+		"operators.index.filters.select_class": "Select a class",
+		"operators.index.filters.view_operator": "View Operator",
 
 		"operators.details.general.limited": "Limited",
 		"operators.details.general.elite": "Elite",
@@ -56,6 +60,8 @@ export const ui = {
 		"operators.details.attributes.dp_cost": "DP Cost",
 
 		"operators.details.talents.title": "Talents",
+		"operators.details.talents.no_talents":
+			"No talents at this elite level",
 
 		"operators.details.skills.title": "Skills",
 		"operators.details.skills.skill": "Skill",
@@ -142,6 +148,10 @@ export const ui = {
 		"operators.index.filters.alphabetical": "按字母顺序",
 		"operators.index.filters.release_date": "发布日期",
 		"operators.index.filters.view": "观看",
+		"operators.index.filters.clear_filters": "Clear Filters",
+		"operators.index.filters.clear_sort": "Clear Sort",
+		"operators.index.filters.select_class": "Select a class",
+		"operators.index.filters.view_operator": "View Operator",
 
 		"operators.details.general.limited": "限定",
 		"operators.details.general.elite": "精英",
@@ -169,6 +179,8 @@ export const ui = {
 		"operators.details.attributes.dp_cost": "部署费用",
 
 		"operators.details.talents.title": "天赋",
+		"operators.details.talents.no_talents":
+			"No talents at this elite level",
 
 		"operators.details.skills.title": "技能",
 		"operators.details.skills.skill": "技能",
@@ -253,6 +265,10 @@ export const ui = {
 		"operators.index.filters.alphabetical": "名前順",
 		"operators.index.filters.release_date": "実装日順",
 		"operators.index.filters.view": "表示",
+		"operators.index.filters.clear_filters": "Clear Filters",
+		"operators.index.filters.clear_sort": "Clear Sort",
+		"operators.index.filters.select_class": "Select a class",
+		"operators.index.filters.view_operator": "View Operator",
 
 		"operators.details.general.limited": "限定",
 		"operators.details.general.elite": "昇進",
@@ -281,6 +297,8 @@ export const ui = {
 		"operators.details.attributes.dp_cost": "COST",
 
 		"operators.details.talents.title": "素質",
+		"operators.details.talents.no_talents":
+			"No talents at this elite level",
 
 		"operators.details.skills.title": "スキル",
 		"operators.details.skills.skill": "スキル",
@@ -365,6 +383,10 @@ export const ui = {
 		"operators.index.filters.alphabetical": "가나다순",
 		"operators.index.filters.release_date": "출시일순",
 		"operators.index.filters.view": "보기",
+		"operators.index.filters.clear_filters": "Clear Filters",
+		"operators.index.filters.clear_sort": "Clear Sort",
+		"operators.index.filters.select_class": "Select a class",
+		"operators.index.filters.view_operator": "View Operator",
 
 		"operators.details.general.limited": "한정",
 		"operators.details.general.elite": "정예화",
@@ -394,6 +416,8 @@ export const ui = {
 		"operators.details.attributes.dp_cost": "배치 코스트",
 
 		"operators.details.talents.title": "재능",
+		"operators.details.talents.no_talents":
+			"No talents at this elite level",
 
 		"operators.details.skills.title": "스킬",
 		"operators.details.skills.skill": "스킬",

@@ -19,6 +19,7 @@ import { subProfessionIdToBranch } from "~/utils/branches";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
+import { defaultLang, localeToTag } from "~/i18n/languages.ts";
 
 const OperatorLargeItem: React.FC<{
 	operator: OutputTypes.Operator;
@@ -34,6 +35,7 @@ const OperatorLargeItem: React.FC<{
 		6: "text-orange-light",
 	};
 
+	const t = useTranslations(locale as keyof typeof ui);
 	const enOperator = enOperatorsJson[operator.charId as keyof typeof enOperatorsJson] as OutputTypes.Operator;
 	const slug = slugify(enOperator.name);
 
@@ -97,12 +99,17 @@ const OperatorLargeItem: React.FC<{
 								<span className="visually-hidden">
 									Class:&nbsp;
 								</span>
-								{professionToClass(operator.profession)}
+								{t(
+									("operators." +
+										professionToClass(
+											operator.profession
+										).toLowerCase()) as keyof (typeof ui)[typeof defaultLang]
+								)}
 							</div>
 							<div className="visually-hidden">
 								Subclass:{" "}
 								{subProfessionIdToBranch(
-									operator.subProfessionId
+									operator.subProfessionId,
 								)}
 							</div>
 							<span className="visually-hidden">
@@ -146,7 +153,7 @@ const OperatorLargeItem: React.FC<{
 						)}
 					>
 						<span className="mt-1 inline-block font-semibold uppercase text-neutral-950">
-							View Operator
+							{t("operators.index.filters.view_operator")}
 						</span>
 						<span className="visually-hidden">{operator.name}</span>
 					</a>

@@ -83,7 +83,7 @@ const OperatorFilters = () => {
 				{availableBranches.length == 0 ? (
 					<div className="mt-2 flex items-center justify-center rounded bg-neutral-600 p-2 md:bg-neutral-900">
 						<p className="leading-5 text-neutral-100">
-							Select a Class
+							{t("operators.index.filters.select_class")}
 						</p>
 					</div>
 				) : (
@@ -194,7 +194,7 @@ const OperatorFilters = () => {
 					type="button"
 					onClick={() => clearFilters()}
 				>
-					Clear Filters
+					{t("operators.index.filters.clear_filters")}
 				</button>
 			</div>
 		</div>

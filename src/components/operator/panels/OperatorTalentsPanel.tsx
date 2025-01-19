@@ -111,7 +111,7 @@ const OperatorTalentsPanel: React.FC = () => {
 								}
 							</>
 						))
-					: "No talents at this elite level."}
+					: t('operators.details.talents.no_talents')}
 			</div>
 		</div>
 	);
