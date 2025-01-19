@@ -11,8 +11,6 @@ const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
 localeStore.set(locale);
 initializeFiltersFromUrl((new URL(Astro.request.url)).searchParams);
 const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams.entries());
-console.log($filterProfession.get());
-console.log($filterProfession.get());
 ---
 
 <Layout title="Operator List">
