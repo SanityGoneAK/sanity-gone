@@ -374,6 +374,7 @@ export const ui = {
 		"operators.details.general.operator_info": "오퍼레이터 정보",
 		"operators.details.general.guide": "공략",
 		"operators.details.general.melee": "근거리",
+		"operators.details.general.range": "범위",
 		"operators.details.general.ranged": "원거리",
 		"operators.details.general.melee_and_ranged": "전거리",
 		"operators.details.general.potential": "잠재능력",
