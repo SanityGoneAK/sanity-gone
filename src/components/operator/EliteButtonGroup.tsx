@@ -1,6 +1,8 @@
 import React, { createElement, useMemo } from "react";
 
 import { EliteZeroIcon, EliteOneIcon, EliteTwoIcon } from "~/components/icons";
+import * as ToggleGroup from "@radix-ui/react-toggle-group";
+import { cx } from "~/utils/styles.ts";
 
 interface Props {
 	eliteLevelsToShow: number[];
@@ -19,45 +21,49 @@ const EliteButtonGroup: React.FC<Props> = ({
 	);
 
 	return (
-		<div role="group" className="flex items-center gap-x-3">
+		<ToggleGroup.Root
+			type="single"
+			role="group"
+			value={currentElite.toString()}
+			defaultValue={currentElite.toString()}
+			onValueChange={(value) => onChange(Number(value))}
+			className="flex items-center border border-neutral-600"
+		>
 			{eliteLevels.map((elite) => (
 				<EliteButton
 					key={elite}
 					elite={elite}
-					active={elite === currentElite}
-					onClick={onChange}
+					currentElite={currentElite}
 				/>
 			))}
-		</div>
+		</ToggleGroup.Root>
 	);
 };
 export default EliteButtonGroup;
 
 const EliteButton: React.FC<{
 	elite: number;
-	active?: boolean;
-	onClick: (newElite: number) => void;
-}> = ({ elite, active, onClick }) => {
+	currentElite: number;
+}> = ({ elite, currentElite }) => {
 	return (
-		<button
-			className="background-none group flex h-8 w-8 cursor-pointer items-center justify-center border-none py-2 leading-[0]"
-			onClick={() => onClick(elite)}
-			aria-pressed={active}
+		<ToggleGroup.Item
+			value={elite.toString()}
+			className="background-none group flex size-8 p-2 cursor-pointer items-center justify-center border-none py-2 leading-[0] data-[state=on]:rounded data-[state=on]:bg-yellow"
 			aria-label={`Elite ${elite}`}
 		>
-			{createElement(getEliteIconComponent(elite), { active })}
-		</button>
+			{getEliteIconComponent(elite, currentElite == elite)}
+		</ToggleGroup.Item>
 	);
 };
 
-export function getEliteIconComponent(elite: number) {
+export function getEliteIconComponent(elite: number, activeElite: boolean) {
 	switch (elite) {
 		case 0:
-			return EliteZeroIcon;
+			return <EliteZeroIcon className={cx('fill-[transparent] stroke-1', {'stroke-neutral-200': !activeElite, 'stroke-neutral-900': activeElite})} />;
 		case 1:
-			return EliteOneIcon;
+			return <EliteOneIcon className={cx({'fill-neutral-200': !activeElite, 'fill-neutral-900': activeElite})}/>;
 		case 2:
-			return EliteTwoIcon;
+			return <EliteTwoIcon className={cx({'fill-neutral-200': !activeElite, 'fill-neutral-900': activeElite})}/>;
 		default:
 			throw new Error(`There's no such thing as Elite ${elite}`);
 	}
