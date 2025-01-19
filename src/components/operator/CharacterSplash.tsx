@@ -85,7 +85,7 @@ const CharacterSplash: React.FC = () => {
 								src={operatorSplash(skin.portraitId, skin.type)}
 								alt={skin.name}
 							/>
-							<div className="absolute bottom-0 left-0 inline-flex h-16 items-center gap-4">
+							<div className="absolute bottom-0 left-0 inline-flex h-16 items-center gap-4 bg-neutral-700/[0.6] p-3 rounded ">
 								{skin.type === "elite-zero" && (
 									<EliteZeroIcon className="h-12 w-12 stroke-neutral-50" />
 								)}
