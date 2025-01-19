@@ -42,9 +42,6 @@ export default defineConfig({
 		}),
 	],
 	adapter: vercel(),
-	build: {
-		redirects: false,
-	},
 	vite: {
 		build: {
 			rollupOptions: {
