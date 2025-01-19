@@ -56,7 +56,7 @@ const OperatorSort = () => {
 			<DropdownMenuTrigger className="w-full justify-between md:w-36">
 				{isSortEmpty ? (
 					<>
-						<span>Sort By</span>
+						<span>{t("operators.index.filters.sort_by")}</span>
 						<svg
 							width="16"
 							height="14"
