@@ -34,6 +34,9 @@ export default defineConfig({
 			redirectToDefaultLocale: false,
 		},
 	},
+	redirects: {
+		"/operators/[...slug]": "/en/operators/[...slug]",
+	},
 	integrations: [
 		react(),
 		tailwind({
