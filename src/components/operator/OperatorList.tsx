@@ -1,5 +1,15 @@
 import { useStore } from "@nanostores/react";
 
+import TraitInfo from "~/components/operator/TraitInfo.tsx";
+import Tooltip from "~/components/ui/Tooltip.tsx";
+import { defaultLang, localeToTag, type Locale } from "~/i18n/languages.ts";
+import { useTranslations } from "~/i18n/utils.ts";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { subProfessionIdToBranch } from "~/utils/branches";
+import { professionToClass } from "~/utils/classes";
+import useMediaQuery from "~/utils/media-query";
+import { cx } from "~/utils/styles";
+
 import SvgRarityGradientDefs from "./SvgRarityGradientDefs";
 import { $operators, $viewConfig } from "../../pages/[locale]/operators/_store";
 import {
@@ -9,22 +19,15 @@ import {
 } from "../../utils/images";
 import { slugify } from "../../utils/strings";
 
-import type * as OutputTypes from "../../types/output-types";
-import useMediaQuery from "~/utils/media-query";
-import { cx } from "~/utils/styles";
 import StarIcon from "../icons/StarIcon";
-import { professionToClass } from "~/utils/classes";
-import { subProfessionIdToBranch } from "~/utils/branches";
-import { localeStore } from "~/pages/[locale]/_store.ts";
-import { useTranslations } from "~/i18n/utils.ts";
+import type * as OutputTypes from "../../types/output-types";
+
+
 import type { ui } from "~/i18n/ui.ts";
-import { defaultLang, localeToTag } from "~/i18n/languages.ts";
-import Tooltip from "~/components/ui/Tooltip.tsx";
-import TraitInfo from "~/components/operator/TraitInfo.tsx";
 
 const OperatorLargeItem: React.FC<{
 	operator: OutputTypes.Operator;
-	locale: string;
+	locale: Locale;
 }> = ({ operator, locale }) => {
 	const [charName, alterName] = operator.name.split(/\sthe\s/i);
 	const rarityText = {
@@ -36,7 +39,7 @@ const OperatorLargeItem: React.FC<{
 		6: "text-orange-light",
 	};
 
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 	const slug = operator.slug;
 
 	return (
@@ -53,16 +56,20 @@ const OperatorLargeItem: React.FC<{
 			</div>
 			<div className="group absolute top-0 flex h-full w-full flex-col">
 				<div className="flex">
-					<Tooltip content={subProfessionIdToBranch(
-						operator.subProfessionId,
-					)}>
-					<div className="flex h-11 w-11 items-center justify-center rounded-br bg-neutral-800/[.66] p-1.5 transition-colors duration-150 ease-in-out will-change-['background-color'] hover:bg-neutral-700">
-						<img
-							className="h-full w-full"
-							src={operatorBranchIcon(operator.subProfessionId)}
-							alt=""
-						/>
-					</div>
+					<Tooltip
+						content={subProfessionIdToBranch(
+							operator.subProfessionId
+						)}
+					>
+						<div className="flex h-11 w-11 items-center justify-center rounded-br bg-neutral-800/[.66] p-1.5 transition-colors duration-150 ease-in-out will-change-['background-color'] hover:bg-neutral-700">
+							<img
+								className="h-full w-full"
+								src={operatorBranchIcon(
+									operator.subProfessionId
+								)}
+								alt=""
+							/>
+						</div>
 					</Tooltip>
 					<a
 						className="block h-11 flex-grow"
@@ -113,7 +120,7 @@ const OperatorLargeItem: React.FC<{
 							<div className="visually-hidden">
 								Subclass:{" "}
 								{subProfessionIdToBranch(
-									operator.subProfessionId,
+									operator.subProfessionId
 								)}
 							</div>
 							<span className="visually-hidden">
@@ -267,9 +274,7 @@ const OperatorList: React.FC<{ locale: string }> = ({ locale }) => {
 		<ul
 			className={cx(
 				"grid list-none grid-cols-[repeat(auto-fill,_minmax(144px,_1fr))]",
-				viewConfig === "compact"
-					? "gap-4 p-0"
-					: "gap-x-6 gap-y-4 p-0"
+				viewConfig === "compact" ? "gap-4 p-0" : "gap-x-6 gap-y-4 p-0"
 			)}
 		>
 			{operators.map((op) =>

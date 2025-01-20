@@ -64,7 +64,9 @@ const potentialLabel = (potential: number, potentialString: string) => {
 	return (
 		<>
 			{icon}
-			<span className="leading-none">{potentialString} {potential + 1}</span>
+			<span className="leading-none">
+				{potentialString} {potential + 1}
+			</span>
 		</>
 	);
 };
@@ -79,7 +81,7 @@ const PotentialsDropdown: React.FC<PotentialsDropdownProps> = (props) => {
 	const { potentialsToShow, currentPotential, onChange } = props;
 
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	return (
 		<DropdownMenu>
@@ -90,7 +92,10 @@ const PotentialsDropdown: React.FC<PotentialsDropdownProps> = (props) => {
 						potentialsToShow[0] === currentPotential)
 				}
 			>
-				{potentialLabel(currentPotential, t('operators.details.general.potential'))}
+				{potentialLabel(
+					currentPotential,
+					t("operators.details.general.potential")
+				)}
 				<DropdownArrow />
 			</DropdownMenuTrigger>
 			{potentialsToShow && potentialsToShow.length > 0 && (
@@ -101,7 +106,10 @@ const PotentialsDropdown: React.FC<PotentialsDropdownProps> = (props) => {
 					>
 						{potentialsToShow.map((pot) => (
 							<DropdownMenuRadioItem key={pot} value={`${pot}`}>
-								{potentialLabel(pot, t('operators.details.general.potential'))}
+								{potentialLabel(
+									pot,
+									t("operators.details.general.potential")
+								)}
 							</DropdownMenuRadioItem>
 						))}
 					</DropdownMenuRadioGroup>

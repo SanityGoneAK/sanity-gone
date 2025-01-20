@@ -22,7 +22,7 @@ const OperatorSkillsPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
 
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	const numSkills = operator.skillData.length;
 	const [skillNumber, setSkillNumber] = useState(numSkills);
@@ -65,37 +65,38 @@ const OperatorSkillsPanel: React.FC = () => {
 			minLevel: upgrade.unlockCond.level,
 		};
 	}, [skillLevel, operator.skills, operator.allSkillLvlup, skillNumber]);
-	const summon = activeSkill.overrideTokenKey ? operator.summons.filter(summon => summon.charId === activeSkill.overrideTokenKey)[0] : null;
+	const summon = activeSkill.overrideTokenKey
+		? operator.summons.filter(
+				(summon) => summon.charId === activeSkill.overrideTokenKey
+			)[0]
+		: null;
 	const summonRange = summon
 		? getStatsAtLevel(
-			summon,
-			{
-				eliteLevel: 2,
-				level: 90,
-				potential: 5,
-				trust: 100,
-			},
-			summon.charId,
-			operator
-		).rangeObject
+				summon,
+				{
+					eliteLevel: 2,
+					level: 90,
+					potential: 5,
+					trust: 100,
+				},
+				summon.charId,
+				operator
+			).rangeObject
 		: null;
 
-	const operatorRange = getStatsAtLevel(
-		operator,
-		{
-			eliteLevel: 2,
-			level: 90,
-			potential: 5,
-			trust: 100,
-		}
-	).rangeObject;
+	const operatorRange = getStatsAtLevel(operator, {
+		eliteLevel: 2,
+		level: 90,
+		potential: 5,
+		trust: 100,
+	}).rangeObject;
 
 	const skillDisplayDuration = useMemo(() => {
 		if (activeSkillLevel.duration === -1) {
-			return t('operators.details.skills.infinite');
+			return t("operators.details.skills.infinite");
 		}
 		if (activeSkillLevel.duration === 0) {
-			return t('operators.details.skills.instant');
+			return t("operators.details.skills.instant");
 		}
 		return `${activeSkillLevel.duration} sec`;
 	}, [activeSkillLevel.duration]);
@@ -103,23 +104,32 @@ const OperatorSkillsPanel: React.FC = () => {
 	const spRecoveryTitle: Record<
 		keyof typeof OutputTypes.SkillSpType,
 		string
-	> = useMemo(() => ({
-		INCREASE_WHEN_ATTACK: t("operators.details.skills.increase_when_attack"),
-		INCREASE_WHEN_TAKEN_DAMAGE: t("operators.details.skills.increase_when_taken_damage"),
-		INCREASE_WITH_TIME: t("operators.details.skills.increase_with_time"),
-		8: t("operators.details.skills.always_active"),
-		UNUSED: "",
-	}), [locale]);
+	> = useMemo(
+		() => ({
+			INCREASE_WHEN_ATTACK: t(
+				"operators.details.skills.increase_when_attack"
+			),
+			INCREASE_WHEN_TAKEN_DAMAGE: t(
+				"operators.details.skills.increase_when_taken_damage"
+			),
+			INCREASE_WITH_TIME: t(
+				"operators.details.skills.increase_with_time"
+			),
+			8: t("operators.details.skills.always_active"),
+			UNUSED: "",
+		}),
+		[locale]
+	);
 
-	const typeTitle: Record<
-		keyof typeof OutputTypes.SkillType,
-		string
-	> = useMemo(() => ({
-		PASSIVE: t("operators.details.skills.passive"),
-		MANUAL: t("operators.details.skills.manual"),
-		AUTO: t("operators.details.skills.auto"),
-	}), [locale]);
-
+	const typeTitle: Record<keyof typeof OutputTypes.SkillType, string> =
+		useMemo(
+			() => ({
+				PASSIVE: t("operators.details.skills.passive"),
+				MANUAL: t("operators.details.skills.manual"),
+				AUTO: t("operators.details.skills.auto"),
+			}),
+			[locale]
+		);
 
 	return (
 		<div className="flex flex-col gap-4 p-6">
@@ -141,7 +151,7 @@ const OperatorSkillsPanel: React.FC = () => {
 				/>
 			</div>
 			<div className="grid gap-y-4 rounded-br-lg">
-				<div className="grid grid-cols-[48px_1fr] grid-flow-col items-center gap-x-4 gap-y-2 grid-areas-skills-mobile sm:grid-areas-skills">
+				<div className="grid grid-flow-col grid-cols-[48px_1fr] items-center gap-x-4 gap-y-2 grid-areas-skills-mobile sm:grid-areas-skills">
 					<img
 						className="h-12 w-12 rounded grid-in-icon"
 						src={skillIcon(
@@ -153,7 +163,7 @@ const OperatorSkillsPanel: React.FC = () => {
 					<h2 className="font-serif text-lg font-semibold leading-6 grid-in-name">
 						{activeSkillLevel.name}
 					</h2>
-					<dl className="grid h-6 grid-flow-col items-center justify-start gap-x-2 sm:gap-x-3 grid-in-skilltype sm:col-span-1">
+					<dl className="grid h-6 grid-flow-col items-center justify-start gap-x-2 grid-in-skilltype sm:col-span-1 sm:gap-x-3">
 						<span className="text-base leading-none text-neutral-50">
 							{typeTitle[activeSkillLevel.skillType]}
 						</span>
@@ -172,12 +182,13 @@ const OperatorSkillsPanel: React.FC = () => {
 							)}
 						>
 							{/* space here is only needed if it's in English */}
-							{spRecoveryTitle[activeSkillLevel.spData.spType] + ((locale === "en") ? " " : "")}
+							{spRecoveryTitle[activeSkillLevel.spData.spType] +
+								(locale === "en" ? " " : "")}
 							{t("operators.details.skills.recovery")}
 						</span>
 					</dl>
 				</div>
-				<dl className="flex gap-x-6 gap-y-2 flex-col sm:flex-row">
+				<dl className="flex flex-col gap-x-6 gap-y-2 sm:flex-row">
 					<div className="relative flex w-full items-center justify-start gap-x-2 border-neutral-600">
 						<SpCostIcon />
 						<dt className="text-neutral-200">
@@ -187,7 +198,7 @@ const OperatorSkillsPanel: React.FC = () => {
 							{activeSkillLevel.spData.spCost}
 						</dd>
 					</div>
-					<div className="w-1 sm:border-r border-neutral-600"></div>
+					<div className="w-1 border-neutral-600 sm:border-r"></div>
 					<div className="relative flex w-full items-center justify-start gap-x-2">
 						<InitialSpIcon />
 						<dt className="text-neutral-200">
@@ -197,7 +208,7 @@ const OperatorSkillsPanel: React.FC = () => {
 							{activeSkillLevel.spData.initSp}
 						</dd>
 					</div>
-					<div className="w-1 sm:border-r border-neutral-600"></div>
+					<div className="w-1 border-neutral-600 sm:border-r"></div>
 					<div className="relative flex w-full items-center justify-start gap-x-2">
 						<HourglassIcon />
 						<dt className="text-neutral-200">

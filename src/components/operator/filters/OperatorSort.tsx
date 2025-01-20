@@ -12,9 +12,10 @@ import {
 import {
 	$isSortEmpty,
 	$sortCategory,
-	$sortDirection, serializeFiltersToUrl,
+	$sortDirection,
+	serializeFiltersToUrl,
 	type SortCategoryValue,
-	type SortDirectionValue
+	type SortDirectionValue,
 } from "~/pages/[locale]/operators/_store";
 import { useMemo } from "react";
 import { localeStore } from "~/pages/[locale]/_store.ts";
@@ -27,7 +28,7 @@ const OperatorSort = () => {
 	const isSortEmpty = useStore($isSortEmpty);
 
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	const setSorting = (value: string) => {
 		const [category, direction] = value.split("_");
@@ -45,10 +46,10 @@ const OperatorSort = () => {
 
 	const translations = useMemo(() => {
 		return {
-			"Alphabetical": t("operators.index.filters.alphabetical"),
-			"Rarity": t("operators.index.filters.rarity"),
+			Alphabetical: t("operators.index.filters.alphabetical"),
+			Rarity: t("operators.index.filters.rarity"),
 			"Release Date": t("operators.index.filters.release_date"),
-		}
+		};
 	}, [locale]);
 
 	return (
@@ -125,7 +126,8 @@ const OperatorSort = () => {
 										key={key}
 										value={key}
 									>
-										{sortCategory && translations[sortCategory]}
+										{sortCategory &&
+											translations[sortCategory]}
 										{sortDirection == "ASC" ? (
 											<svg
 												width="8"

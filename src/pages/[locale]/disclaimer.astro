@@ -4,11 +4,12 @@ import { allLanguages, defaultLang } from "~/i18n/languages";
 import Layout from "~/layouts/Layout.astro";
 import { operatorAvatar } from "~/utils/images";
 import { getAbsoluteLocaleUrl, getPathByLocale } from "astro:i18n";
+import type { Locale } from "~/i18n/languages";
 import { ui } from "~/i18n/ui";
 import { useTranslations } from "~/i18n/utils";
 import { operatorSplash } from "../../utils/images";
 
-const preferredLocale = Astro.preferredLocale ?? defaultLang;
+const preferredLocale = Astro.preferredLocale ?? defaultLang as Locale;
 const absoluteLocaleUrl = getAbsoluteLocaleUrl(preferredLocale, "/");
 
 const t = useTranslations(preferredLocale as keyof typeof ui);

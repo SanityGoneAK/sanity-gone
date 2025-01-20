@@ -12,12 +12,12 @@ interface Props {
 
 const TraitInfo: React.FC<Props> = ({ subProfessionId }) => {
 	const locale = useStore(localeStore);
-	const branchMap = {
+	const branchMap: Record<Locale, any> = {
 		en: enBranchesJson,
-		kr: krBranchesJson,
-		'zh-cn': cnBranchesJson,
-		jp: jpBranchesJson,
-	}
+		ko: krBranchesJson,
+		"zh-cn": cnBranchesJson,
+		ja: jpBranchesJson,
+	};
 	const branchesJson = branchMap[locale as keyof typeof branchMap];
 	const { trait } =
 		branchesJson[subProfessionId as keyof typeof branchesJson];

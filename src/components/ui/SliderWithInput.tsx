@@ -31,7 +31,7 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 	const { type, max, value, onChange, hideMax } = props;
 
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	const [rawInput, setRawInput] = useState(`${value}`);
 	useEffect(() => {
@@ -70,7 +70,8 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 		}
 	};
 
-	const shortLabel = type === "level" ? "Lv" : t('operators.details.skills.rank');
+	const shortLabel =
+		type === "level" ? "Lv" : t("operators.details.skills.rank");
 	const label = type === "level" ? "Operator Level" : "Skill Rank";
 
 	return (
@@ -118,7 +119,9 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 				value={value}
 			/>
 			<div className="flex flex-shrink-0 items-center gap-x-2">
-				<span className={`text-neutral-200 ${type === "skill" ? "hidden sm:inline" : ""}`}>
+				<span
+					className={`text-neutral-200 ${type === "skill" ? "hidden sm:inline" : ""}`}
+				>
 					{shortLabel ?? label}
 				</span>
 				<Input

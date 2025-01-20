@@ -11,7 +11,9 @@ import {
 	$filterRarity,
 	toggleProfession,
 	toggleBranch,
-	toggleRarity, initializeFiltersFromUrl, serializeFiltersToUrl
+	toggleRarity,
+	initializeFiltersFromUrl,
+	serializeFiltersToUrl,
 } from "../../../pages/[locale]/operators/_store";
 import { classToProfession, professionLookup } from "../../../utils/classes";
 import { operatorBranchIcon, operatorClassIcon } from "../../../utils/images";
@@ -27,7 +29,7 @@ import { localeToTag } from "~/i18n/languages.ts";
 
 const OperatorFilters = () => {
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	const filterProfession = useStore($filterProfession);
 	const filterBranch = useStore($filterBranch);
@@ -59,14 +61,15 @@ const OperatorFilters = () => {
 								key={profession}
 								onClick={() => toggleProfession(profession)}
 								className={cx(
-									"rounded p-3 w-full max-w-12 aspect-square flex justify-center items-center hover:bg-neutral-400",
+									"flex aspect-square w-full max-w-12 items-center justify-center rounded p-3 hover:bg-neutral-400",
 									{
-										"bg-neutral-50 hover:bg-neutral-100": selected,
+										"bg-neutral-50 hover:bg-neutral-100":
+											selected,
 									}
 								)}
 							>
 								<img
-									className={cx('w-full', {
+									className={cx("w-full", {
 										"mix-blend-multiply invert": selected,
 										"mix-blend-lighten": !selected,
 									})}
@@ -121,7 +124,14 @@ const OperatorFilters = () => {
 										src={operatorBranchIcon(key)}
 										alt=""
 									/>
-									<p>{subProfessionIdToBranch(key, localeToTag[locale as keyof typeof localeToTag])}</p>
+									<p>
+										{subProfessionIdToBranch(
+											key,
+											localeToTag[
+												locale as keyof typeof localeToTag
+											]
+										)}
+									</p>
 								</button>
 							);
 						})}
@@ -178,7 +188,10 @@ const OperatorFilters = () => {
 				</div>
 			</div>
 			<div className="flex items-center">
-				<label className="flex cursor-pointer items-center gap-2" htmlFor="guides-available">
+				<label
+					className="flex cursor-pointer items-center gap-2"
+					htmlFor="guides-available"
+				>
 					<Checkbox
 						id="guides-available"
 						checked={$filterGuideAvailable.get()}

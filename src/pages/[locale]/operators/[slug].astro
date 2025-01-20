@@ -23,17 +23,18 @@ import OperatorInfoIcon from "~/components/icons/OperatorInfoIcon.tsx";
 import GuideIcon from "~/components/icons/GuideIcon.tsx";
 import { localeStore } from "../_store";
 import { useTranslations } from "../../../i18n/utils";
+import type { Locale } from "~/i18n/languages";
 import type { ui } from "../../../i18n/ui";
 
 const { slug } = Astro.params;
-const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
 localeStore.set(locale);
-const t = useTranslations(locale as keyof typeof ui);
+const t = useTranslations(locale);
 
-const operatorsMap = {
+const operatorsMap: Record<Locale, any> = {
 	en: enOperatorsJson,
-	kr: krOperatorsJson,
-	jp: jpOperatorsJson,
+	ko: krOperatorsJson,
+	ja: jpOperatorsJson,
 	'zh-cn': cnOperatorsJson,
 };
 export function getStaticPaths() {

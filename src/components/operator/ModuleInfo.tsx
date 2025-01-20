@@ -41,7 +41,7 @@ const ModuleInfo: React.FC<Props> = ({
 	potential,
 }) => {
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	const moduleId = module.moduleId;
 	const {
@@ -87,7 +87,7 @@ const ModuleInfo: React.FC<Props> = ({
 	 * @param props.changeNum The number of the stat change to display (1-indexed).
 	 * @returns The JSX for the stat change.
 	 */
-	const StatChange = (props: { changeNum: number, className?: string }) => {
+	const StatChange = (props: { changeNum: number; className?: string }) => {
 		const { changeNum, className } = props;
 
 		// get the nth stat change
@@ -161,13 +161,11 @@ const ModuleInfo: React.FC<Props> = ({
 			t("operators.details.modules.aspd"),
 			t("operators.details.modules.res"),
 			t("operators.details.modules.block"),
-		].includes(statName as ReturnType<typeof t> || "");
+		].includes((statName as ReturnType<typeof t>) || "");
 
 		return (
 			<div
-				className={
-					`flex h-8 items-center justify-start gap-x-2 rounded ${className}`
-				}
+				className={`flex h-8 items-center justify-start gap-x-2 rounded ${className}`}
 			>
 				{icon}
 				<dt className="text-neutral-200">{statName}</dt>
@@ -208,24 +206,39 @@ const ModuleInfo: React.FC<Props> = ({
 				generalizable layout here */}
 				{statChangeCount === 2 && (
 					<>
-						<StatChange changeNum={1} className="sm:pr-6 sm:border-r border-neutral-500"/>
-						<StatChange changeNum={2} className="sm:pl-6"/>
+						<StatChange
+							changeNum={1}
+							className="border-neutral-500 sm:border-r sm:pr-6"
+						/>
+						<StatChange changeNum={2} className="sm:pl-6" />
 					</>
 				)}
 				{statChangeCount === 3 && (
 					<>
-						<StatChange changeNum={1} className="sm:pr-6 sm:border-r border-neutral-500"/>
-						<StatChange changeNum={2} className="sm:px-6 sm:border-r border-neutral-500" />
-						<StatChange changeNum={3} className="sm:pl-6"/>
+						<StatChange
+							changeNum={1}
+							className="border-neutral-500 sm:border-r sm:pr-6"
+						/>
+						<StatChange
+							changeNum={2}
+							className="border-neutral-500 sm:border-r sm:px-6"
+						/>
+						<StatChange changeNum={3} className="sm:pl-6" />
 					</>
 				)}
 				{/* Why do operators with 4 stat changes exist? *dies of Nian* */}
 				{statChangeCount === 4 && (
 					<>
-						<StatChange changeNum={1} className="sm:pr-6 sm:border-r border-neutral-500"/>
-						<StatChange changeNum={2} className="sm:pl-6"/>
-						<StatChange changeNum={3} className="sm:pr-6 sm:border-r border-neutral-500"/>
-						<StatChange changeNum={4} className="sm:pl-6"/>
+						<StatChange
+							changeNum={1}
+							className="border-neutral-500 sm:border-r sm:pr-6"
+						/>
+						<StatChange changeNum={2} className="sm:pl-6" />
+						<StatChange
+							changeNum={3}
+							className="border-neutral-500 sm:border-r sm:pr-6"
+						/>
+						<StatChange changeNum={4} className="sm:pl-6" />
 					</>
 				)}
 			</dl>

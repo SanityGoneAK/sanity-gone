@@ -23,7 +23,7 @@ const OperatorTalentsPanel: React.FC = () => {
 	const [elite, setElite] = useState(maxElite);
 
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	// Compute the map of available potentials at each elite level.
 	const potentialsMap = useMemo(() => {
@@ -61,7 +61,7 @@ const OperatorTalentsPanel: React.FC = () => {
 		level: 1,
 		eliteLevel: elite,
 		trust: 100,
-		potential: potential
+		potential: potential,
 	}).rangeObject;
 
 	return (
@@ -100,18 +100,26 @@ const OperatorTalentsPanel: React.FC = () => {
 											<CharacterRange
 												className="justify-self-center"
 												rangeObject={talentPhase.range}
-												originalRangeObject={operatorRange}
+												originalRangeObject={
+													operatorRange
+												}
 												// only show the difference if the talent is overriding the rangeId
-												showDifference={talentPhase.blackboard && talentPhase.blackboard.some(
-													(bb) => bb.key === "talent_override_rangeid_flag" && bb.value === 1
-												)}
+												showDifference={
+													talentPhase.blackboard &&
+													talentPhase.blackboard.some(
+														(bb) =>
+															bb.key ===
+																"talent_override_rangeid_flag" &&
+															bb.value === 1
+													)
+												}
 											/>
 										</div>
 									)
 								}
 							</>
 						))
-					: t('operators.details.talents.no_talents')}
+					: t("operators.details.talents.no_talents")}
 			</div>
 		</div>
 	);

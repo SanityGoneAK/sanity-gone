@@ -9,15 +9,16 @@ import { $filterProfession, initializeFiltersFromUrl } from "./_store";
 import type * as OutputTypes from "~/types/output-types";
 import { slugify } from "~/utils/strings";
 import { ui } from "~/i18n/ui";
+import type { Locale } from "~/i18n/languages";
 import { useTranslations } from "~/i18n/utils";
 
-const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
 localeStore.set(locale);
 initializeFiltersFromUrl((new URL(Astro.request.url)).searchParams);
 const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams.entries());
 export const prerender = false;
 
-const t = useTranslations(locale as keyof typeof ui);
+const t = useTranslations(locale);
 ---
 
 <Layout title="Operator List">
