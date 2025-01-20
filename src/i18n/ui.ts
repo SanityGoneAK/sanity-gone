@@ -2,6 +2,7 @@ export const ui = {
 	en: {
 		"nav.home": "Home",
 		"nav.operators": "Operators",
+		"nav.old_site": "Old Site (Guides)",
 		"nav.classes": "Classes",
 		"nav.search": "Search",
 		"nav.description":
@@ -123,6 +124,7 @@ export const ui = {
 	"zh-cn": {
 		"nav.home": "主页",
 		"nav.operators": "干员",
+		"nav.old_site": "Old Site (Guides)",
 		"nav.classes": "职业",
 		"nav.search": "搜索",
 		"nav.description":
@@ -240,6 +242,7 @@ export const ui = {
 	jp: {
 		"nav.home": "ホーム",
 		"nav.operators": "オペレーター",
+		"nav.old_site": "Old Site (Guides)",
 		"nav.search": "検索",
 		"nav.classes": "職業",
 		"nav.description":
@@ -358,6 +361,7 @@ export const ui = {
 	kr: {
 		"nav.home": "홈",
 		"nav.operators": "오퍼레이터",
+		"nav.old_site": "Old Site (Guides)",
 		"nav.search": "검색",
 		"nav.classes": "포지션",
 		"nav.description":
