@@ -1,47 +1,42 @@
 import { promises as fs } from "fs";
 import path from "path";
 
+import { aggregateModuleData } from "./aggregate-module-data";
+import { aggregateRiicData } from "./aggregate-riic-data";
+import { fetchContentfulGraphQl } from "../src/utils/fetch";
+import { slugify } from "../src/utils/strings";
+import cnCharacterPatchTable from "./ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json" assert { type: "json" };
 import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" assert { type: "json" };
+import { voiceLangDict as voiceTable } from "./ArknightsGameData/zh_CN/gamedata/excel/charword_table.json" assert { type: "json" };
+import { handbookDict as cnHandbookDict } from "./ArknightsGameData/zh_CN/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import rangeTable from "./ArknightsGameData/zh_CN/gamedata/excel/range_table.json" assert { type: "json" };
+import cnSkillTable from "./ArknightsGameData/zh_CN/gamedata/excel/skill_table.json" assert { type: "json" };
+import enCharacterPatchTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/char_patch_table.json" assert { type: "json" };
 import enCharacterTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json" assert { type: "json" };
 import jpCharacterTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json" assert { type: "json" };
 import krCharacterTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json" assert { type: "json" };
 
-import cnCharacterPatchTable from "./ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json" assert { type: "json" };
-import enCharacterPatchTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/char_patch_table.json" assert { type: "json" };
 import jpCharacterPatchTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/char_patch_table.json" assert { type: "json" };
 import krCharacterPatchTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/char_patch_table.json" assert { type: "json" };
-
-import cnSkillTable from "./ArknightsGameData/zh_CN/gamedata/excel/skill_table.json" assert { type: "json" };
 import enSkillTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/skill_table.json" assert { type: "json" };
 import jpSkillTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/skill_table.json" assert { type: "json" };
+import { handbookDict as krHandbookDict } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/handbook_info_table.json" assert { type: "json" };
 import krSkillTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/skill_table.json" assert { type: "json" };
-
 import { charSkins as cnCharSkins } from "./ArknightsGameData/zh_CN/gamedata/excel/skin_table.json" assert { type: "json" };
 import { charSkins as enCharSkins } from "./ArknightsGameData_YoStar/en_US/gamedata/excel/skin_table.json" assert { type: "json" };
 import { charSkins as jpCharSkins } from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/skin_table.json" assert { type: "json" };
 import { charSkins as krCharSkins } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/skin_table.json" assert { type: "json" };
-
-import { handbookDict as cnHandbookDict } from "./ArknightsGameData/zh_CN/gamedata/excel/handbook_info_table.json" assert { type: "json" };
 import { handbookDict as enHandbookDict } from "./ArknightsGameData_YoStar/en_US/gamedata/excel/handbook_info_table.json" assert { type: "json" };
 import { handbookDict as jpHandbookDict } from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/handbook_info_table.json" assert { type: "json" };
-import { handbookDict as krHandbookDict } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/handbook_info_table.json" assert { type: "json" };
-
-import rangeTable from "./ArknightsGameData/zh_CN/gamedata/excel/range_table.json" assert { type: "json" };
-import { voiceLangDict as voiceTable } from "./ArknightsGameData/zh_CN/gamedata/excel/charword_table.json" assert { type: "json" };
-
-import {
-	getReleaseOrderAndLimitedLookup,
-	getSkinObtainSourceAndCosts,
-} from "./scrape-prts";
 import {
 	fetchJetroyzSkillTranslations,
 	fetchJetroyzTalentTranslations,
 } from "./fetch-jetroyz-translations";
 import { getAlterMapping } from "./get-alters.js";
-import { aggregateRiicData } from "./aggregate-riic-data";
-import { aggregateModuleData } from "./aggregate-module-data";
-import { fetchContentfulGraphQl } from "../src/utils/fetch";
-import { slugify } from "../src/utils/strings";
+import {
+	getReleaseOrderAndLimitedLookup,
+	getSkinObtainSourceAndCosts,
+} from "./scrape-prts";
 
 const enPatchChars = enCharacterPatchTable.patchChars;
 const cnPatchChars = cnCharacterPatchTable.patchChars;
@@ -172,26 +167,46 @@ export async function createOperatorsJson(dataDir, locale) {
 		JSON.stringify(operatorsJson, null, 2)
 	);
 
-	const indexOperatorsJson = Object.fromEntries(characters.map(([charId, character]) => {
-		return [charId, {
-			charId,
-			name: character.name,
-			slug: character.slug,
-			position: character.position,
-			rarity: character.rarity,
-			profession: character.profession,
-			subProfessionId: character.subProfessionId,
-			alterId: character.alterId,
-			baseOperatorId: character.baseOperatorId,
-			isLimited: character.isLimited,
-			hasGuide: character.hasGuide,
-			releaseOrder: character.releaseOrder,
-		}]
-	}))
+	const indexOperatorsJson = Object.fromEntries(
+		characters.map(([charId, character]) => {
+			return [
+				charId,
+				{
+					charId,
+					name: character.name,
+					slug: character.slug,
+					position: character.position,
+					rarity: character.rarity,
+					profession: character.profession,
+					subProfessionId: character.subProfessionId,
+					alterId: character.alterId,
+					baseOperatorId: character.baseOperatorId,
+					isLimited: character.isLimited,
+					hasGuide: character.hasGuide,
+					releaseOrder: character.releaseOrder,
+				},
+			];
+		})
+	);
 	await fs.writeFile(
 		path.join(dataDir, "operators-index.json"),
 		JSON.stringify(indexOperatorsJson, null, 2)
 	);
+
+	if (locale === "en_US"){
+		const aceshipRedirect = Object.fromEntries(
+			characters.map(([charId, character]) => {
+				return [
+					charId,
+					`/en/operators/${character.slug}`
+				];
+			})
+		);
+		await fs.writeFile(
+			path.join(__dirname, "../public/","aceship.json"),
+			JSON.stringify(aceshipRedirect, null, 2)
+		);
+	}
 }
 
 function filterPlaceableObjects(characters) {
@@ -410,10 +425,7 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 				}
 				let skinName = "";
 
-				if (
-					skinType === "skin" &&
-					SKIN_LOCALES.zh_CN[cnSkin.skinId]
-				) {
+				if (skinType === "skin" && SKIN_LOCALES.zh_CN[cnSkin.skinId]) {
 					skinName = SKIN_LOCALES[locale][cnSkin.skinId]
 						? SKIN_LOCALES[locale][cnSkin.skinId].displaySkin
 								.skinName
@@ -668,7 +680,9 @@ function addLoreDetails(characters, locale) {
 			? locale
 			: "zh_CN";
 
-		const isRobot = character.tagList.some((tag) => ['Robot', 'ロボット', '로봇', '支援机械'].includes(tag));
+		const isRobot = character.tagList.some((tag) =>
+			["Robot", "ロボット", "로봇", "支援机械"].includes(tag)
+		);
 
 		const basicInfo = parseStoryText(
 			getStoryText(
@@ -682,7 +696,9 @@ function addLoreDetails(characters, locale) {
 			getStoryText(
 				actualLocale,
 				charIdToUse,
-				isRobot ? languageKeyMap[actualLocale].performanceReview : languageKeyMap[actualLocale].physicalExam
+				isRobot
+					? languageKeyMap[actualLocale].performanceReview
+					: languageKeyMap[actualLocale].physicalExam
 			),
 			actualLocale
 		);
