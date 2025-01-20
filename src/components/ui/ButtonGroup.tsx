@@ -129,7 +129,7 @@ const PillButtonGroup = <T extends string | number = string>({
 			ref={rootRef}
 		>
 			<div
-				className="inline-block rounded border border-neutral-600"
+				className="inline-block rounded border border-neutral-500"
 				role="group"
 			>
 				{labels.map((label, i) => (
@@ -139,10 +139,10 @@ const PillButtonGroup = <T extends string | number = string>({
 						aria-pressed={value === label}
 						// what in god's name is going on here
 						className={cx(
-							`relative z-20 cursor-pointer rounded border-none bg-none text-base font-semibold text-neutral-200 transition-[background-color,color] duration-200 disabled:cursor-not-allowed aria-pressed:text-neutral-950 disabled:aria-pressed:bg-neutral-200 [&:not([aria-pressed="true"],:disabled)]:hover:bg-blue-light/10 [&:not([aria-pressed="true"],:disabled)]:hover:text-blue-light`,
+							`relative z-20 cursor-pointer rounded border-none bg-none text-base font-semibold text-neutral-200 transition-[background-color,color] duration-200 disabled:cursor-not-allowed aria-pressed:text-neutral-950 disabled:aria-pressed:bg-neutral-200 [&:not([aria-pressed="true"],:disabled)]:hover:text-blue-light`,
 							elite
-								? "h-[40px] w-10 items-center"
-								: "px-2.5 py-[4.5px] leading-[27px]"
+								? `h-[40px] w-10 items-center [&:not([aria-pressed="true"],:disabled)]:hover:bg-yellow-light/10`
+								: `px-2.5 py-[4.5px] leading-[27px] [&:not([aria-pressed="true"],:disabled)]:hover:bg-blue-light/10`
 						)}
 						ref={(el) => {
 							buttonWidths.current[i] =

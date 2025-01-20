@@ -162,9 +162,23 @@ const CharacterSplash: React.FC = () => {
 									</div>
 									<div className="inline-flex h-5 gap-2">
 										<PaintbrushIcon />
-										<span className="text-blue-light">
-											{skin.displaySkin.drawerList?.join(
-												", "
+										<span>
+											{skin.displaySkin.drawerList?.map(
+												(drawer, index) => (
+													<span key={drawer}>
+														<a
+															href={`https://www.google.com/search?q=${drawer}+artist+arknights`}
+															className="text-blue-light"
+														>
+															{drawer}
+														</a>
+														{index !==
+															skin.displaySkin
+																.drawerList!
+																.length -
+																1 && ", "}
+													</span>
+												)
 											)}
 										</span>
 									</div>
