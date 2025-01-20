@@ -124,7 +124,7 @@ const OperatorAttributesPanel: React.FC = () => {
 				<div className="grid grid-cols-1 items-center gap-x-4 gap-y-4 sm:grid-cols-[auto_1fr]">
 					<div className="flex items-center justify-end gap-2">
 						<span className="text-neutral-200 sm:hidden">
-							Elite
+							{t("operators.details.general.elite")}
 						</span>
 						<EliteButtonGroup
 							currentElite={elite}
@@ -191,6 +191,9 @@ const OperatorAttributesPanel: React.FC = () => {
 								/>
 								{t("operators.details.attributes.module")}
 							</label>
+							<div
+								className={`flex-grow ${locale === "jp" ? "sm:hidden" : "hidden"}`}
+							></div>
 							<PillButtonGroup
 								labels={moduleTypes}
 								value={moduleType}
@@ -198,9 +201,13 @@ const OperatorAttributesPanel: React.FC = () => {
 								disabled={!isModuleTypeChecked}
 							/>
 							<div
-								className={`flex-grow ${moduleTypes.length < 3 && "sm:hidden"}`}
+								className={`flex-grow ${moduleTypes.length < 3 && "sm:hidden"} ${locale === "jp" && "hidden"}`}
 							></div>
-							<span className={`text-neutral-200 sm:hidden ${moduleTypes.length === 3 && "hidden"}`}>{t("operators.details.modules.stage")}</span>
+							<span
+								className={`text-neutral-200 sm:hidden ${(moduleTypes.length === 3 || locale === "jp") && "hidden"}`}
+							>
+								{t("operators.details.modules.stage")}
+							</span>
 							<PillButtonGroup
 								labels={[1, 2, 3]}
 								value={moduleLevel}
