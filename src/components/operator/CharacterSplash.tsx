@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Tab } from "@headlessui/react";
 import { useStore } from "@nanostores/react";
 
-import { operatorStore } from "~/pages/[locale]/operators/_store";
+import { operatorStore } from "~/pages/[locale]/operators/_slugstore";
 import { operatorSplash, operatorSplashAvatar } from "~/utils/images.ts";
 import { cx } from "~/utils/styles.ts";
 

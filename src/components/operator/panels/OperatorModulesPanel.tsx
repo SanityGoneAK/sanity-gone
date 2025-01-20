@@ -4,7 +4,7 @@ import { useStore } from "@nanostores/react";
 
 import ModuleInfo from "~/components/operator/ModuleInfo.tsx";
 import PillButtonGroup from "~/components/ui/OldPillButtonGroup";
-import { operatorStore } from "~/pages/[locale]/operators/_store";
+import { operatorStore } from "~/pages/[locale]/operators/_slugstore";
 
 import MaterialRequirements from "../MaterialRequirements";
 import PotentialsDropdown from "../PotentialsDropdown";

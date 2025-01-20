@@ -41,6 +41,7 @@ import { getAlterMapping } from "./get-alters.js";
 import { aggregateRiicData } from "./aggregate-riic-data";
 import { aggregateModuleData } from "./aggregate-module-data";
 import { fetchContentfulGraphQl } from "../src/utils/fetch";
+import { slugify } from "../src/utils/strings";
 
 const enPatchChars = enCharacterPatchTable.patchChars;
 const cnPatchChars = cnCharacterPatchTable.patchChars;
@@ -170,6 +171,26 @@ export async function createOperatorsJson(dataDir, locale) {
 		path.join(dataDir, "operators.json"),
 		JSON.stringify(operatorsJson, null, 2)
 	);
+
+	const indexOperatorsJson = Object.fromEntries(characters.map(([charId, character]) => {
+		return [charId, {
+			charId,
+			name: character.name,
+			slug: character.slug,
+			position: character.position,
+			rarity: character.rarity,
+			profession: character.profession,
+			subProfessionId: character.subProfessionId,
+			alterId: character.alterId,
+			baseOperatorId: character.baseOperatorId,
+			isLimited: character.isLimited,
+			releaseOrder: character.releaseOrder,
+		}]
+	}))
+	await fs.writeFile(
+		path.join(dataDir, "operators-index.json"),
+		JSON.stringify(indexOperatorsJson, null, 2)
+	);
 }
 
 function filterPlaceableObjects(characters) {
@@ -189,6 +210,7 @@ function localizeCharacterDetails(characters, locale) {
 				...character,
 				charId,
 				name: getLocalesForValue(charId, locale, "name"),
+				slug: slugify(getLocalesForValue(charId, "en_US", "name")),
 				description: getLocalesForValue(charId, locale, "description"),
 				tagList: getLocalesForValue(charId, locale, "tagList"),
 				itemUsage: getLocalesForValue(charId, locale, "itemUsage"),

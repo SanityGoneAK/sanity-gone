@@ -1,7 +1,7 @@
 import { useStore } from "@nanostores/react";
 
 import ArchiveIcon from "~/components/icons/ArchiveIcon";
-import { operatorStore } from "~/pages/[locale]/operators/_store";
+import { operatorStore } from "~/pages/[locale]/operators/_slugstore";
 import { Fragment, useState } from "react";
 
 import enItemsJson from "../../../../data/en_US/items.json";

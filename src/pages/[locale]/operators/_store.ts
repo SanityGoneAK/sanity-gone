@@ -1,8 +1,8 @@
 import { atom, computed, action } from "nanostores";
-import enOperatorsJson from "data/en_US/operators.json";
-import krOperatorsJson from "data/ko_KR/operators.json";
-import jpOperatorsJson from "data/ja_JP/operators.json";
-import cnOperatorsJson from "data/zh_CN/operators.json";
+import enOperatorsJson from "data/en_US/operators-index.json";
+import krOperatorsJson from "data/ko_KR/operators-index.json";
+import jpOperatorsJson from "data/ja_JP/operators-index.json";
+import cnOperatorsJson from "data/zh_CN/operators-index.json";
 import branches from "data/en_US/branches.json";
 import { classToProfession, professionLookup } from "../../../utils/classes.ts";
 
@@ -14,18 +14,6 @@ const operatorsMap = {
 	jp: jpOperatorsJson,
 	'zh-cn': cnOperatorsJson,
 };
-
-export const operatorIdStore = atom<string>(
-	typeof window !== "undefined" ? (window as any).operatorId : ""
-);
-
-export const operatorStore = computed(
-	[operatorIdStore, localeStore],
-	(operatorId, locale) =>{
-		const operatorsJson = operatorsMap[locale as keyof typeof operatorsMap];
-		return operatorsJson[operatorId as keyof typeof operatorsJson] as OutputTypes.Operator;
-	}
-);
 
 // View Format
 export type ViewConfigValue = "compact" | "large";

@@ -1,7 +1,7 @@
-import enOperatorsJson from "../../data/en_US/operators.json";
-import cnOperatorsJson from "../../data/zh_CN/operators.json";
-import jpOperatorsJson from "../../data/ja_JP/operators.json";
-import krOperatorsJson from "../../data/ko_KR/operators.json";
+import enOperatorsJson from "../../data/en_US/operators-index.json";
+import cnOperatorsJson from "../../data/zh_CN/operators-index.json";
+import jpOperatorsJson from "../../data/ja_JP/operators-index.json";
+import krOperatorsJson from "../../data/ko_KR/operators-index.json";
 
 import type { Operator } from "../types/output-types";
 import type { Locale } from "~/i18n/languages.ts";

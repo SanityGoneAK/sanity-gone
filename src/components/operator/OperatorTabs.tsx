@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { useTranslations } from "~/i18n/utils.ts";
 import { localeStore } from "~/pages/[locale]/_store.ts";
-import { operatorStore } from "~/pages/[locale]/operators/_store";
+import { operatorStore } from "~/pages/[locale]/operators/_slugstore";
 import { cx } from "~/utils/styles.ts";
 
 import OperatorAttributesPanel from "./panels/OperatorAttributesPanel";

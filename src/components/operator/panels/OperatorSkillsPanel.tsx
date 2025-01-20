@@ -7,7 +7,7 @@ import CharacterRange from "~/components/operator/CharacterRange";
 import MaterialRequirements from "~/components/operator/MaterialRequirements";
 import PillButtonGroup from "~/components/ui/OldPillButtonGroup";
 import SliderWithInput from "~/components/ui/SliderWithInput";
-import { operatorStore } from "~/pages/[locale]/operators/_store";
+import { operatorStore } from "~/pages/[locale]/operators/_slugstore";
 import * as OutputTypes from "~/types/output-types";
 import { getStatsAtLevel, phaseToNumber } from "~/utils/character-stats.ts";
 import { descriptionToHtml } from "~/utils/description-parser";

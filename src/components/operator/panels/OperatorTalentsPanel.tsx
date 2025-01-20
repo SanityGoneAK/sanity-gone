@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import { useStore } from "@nanostores/react";
 import { range } from "lodash-es";
 
-import { operatorStore } from "~/pages/[locale]/operators/_store";
+import { operatorStore } from "~/pages/[locale]/operators/_slugstore";
 
 import EliteButtonGroup from "../EliteButtonGroup";
 import OperatorTalent from "../OperatorTalent";
