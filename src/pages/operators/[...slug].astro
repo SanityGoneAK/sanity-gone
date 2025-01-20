@@ -1,0 +1,19 @@
+---
+import {
+	getAbsoluteLocaleUrl,
+	getPathByLocale,
+	getRelativeLocaleUrl,
+} from "astro:i18n";
+import { allLanguages, defaultLang } from "~/i18n/languages";
+
+const preferredLocale = Astro.preferredLocale ?? defaultLang;
+const localePath = getPathByLocale(preferredLocale);
+
+const {slug} = Astro.params;
+
+const redirectToPreferredLocale = getRelativeLocaleUrl(localePath, "/");
+if (redirectToPreferredLocale == "/") {
+	return Astro.redirect("/en/operators/" + slug, 301);
+}
+return Astro.redirect(redirectToPreferredLocale + 'operators/' + slug, 301);
+---
