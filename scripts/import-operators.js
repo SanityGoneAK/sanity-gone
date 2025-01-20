@@ -335,9 +335,9 @@ function addTalents(characters, locale, { jetTalentTranslations }) {
 							baseCandidateObject.name = talentTL.name;
 							baseCandidateObject.description = talentTL.desc;
 						} catch {
-							console.warn(
-								`No translation found for: character ${charId}, talent index ${talentIndex}, phase index ${phaseIndex} at local ${locale}`
-							);
+							// console.warn(
+							// 	`No translation found for: character ${charId}, talent index ${talentIndex}, phase index ${phaseIndex} at local ${locale}`
+							// );
 						}
 						return baseCandidateObject;
 					}
@@ -351,9 +351,9 @@ function addTalents(characters, locale, { jetTalentTranslations }) {
 							phaseIndex
 						].description;
 
-					console.warn(
-						`No translation found for: character ${charId}, talent index ${talentIndex}, phase index ${phaseIndex} at local ${locale}`
-					);
+					// console.warn(
+					// 	`No translation found for: character ${charId}, talent index ${talentIndex}, phase index ${phaseIndex} at local ${locale}`
+					// );
 
 					return baseCandidateObject;
 				}
@@ -515,9 +515,9 @@ function addSkills(characters, locale, { jetSkillTranslations }) {
 									skillTL.desc[levelIndex];
 							}
 
-							console.warn(
-								`No translation found for: skill ${skillId}, level index ${levelIndex} at locale ${locale}`
-							);
+							// console.warn(
+							// 	`No translation found for: skill ${skillId}, level index ${levelIndex} at locale ${locale}`
+							// );
 						}
 						return baseSkillLevelObject;
 					}

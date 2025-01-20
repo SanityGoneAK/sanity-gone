@@ -147,7 +147,7 @@
   "funnel": {
     "branchName": "驭械术师",
     "class": "Caster",
-    "trait": "操作<span class=\"keyword\">浮游单元</span>对敌人造成<span class=\"keyword\">法术伤害</span>\\n浮游单元连续攻击同一敌人时伤害提升（最高造成干员110%攻击力的伤害）"
+    "trait": "操作<span class=\"keyword\">浮游单元</span>对敌人造成<span class=\"keyword\">法术伤害</span><br>浮游单元连续攻击同一敌人时伤害提升（最高造成干员110%攻击力的伤害）"
   },
   "phalanx": {
     "branchName": "阵法术师",
@@ -212,7 +212,7 @@
   "summoner": {
     "branchName": "召唤师",
     "class": "Supporter",
-    "trait": "攻击造成<span class=\"keyword\">法术伤害</span>\\n可以使用<span class=\"keyword\">召唤物</span>协助作战"
+    "trait": "攻击造成<span class=\"keyword\">法术伤害</span><br>可以使用<span class=\"keyword\">召唤物</span>协助作战"
   },
   "craftsman": {
     "branchName": "工匠",
@@ -227,17 +227,17 @@
   "pusher": {
     "branchName": "推击手",
     "class": "Specialist",
-    "trait": "同时攻击阻挡的<span class=\"keyword\">所有敌人</span>\\n可以放置于远程位"
+    "trait": "同时攻击阻挡的<span class=\"keyword\">所有敌人</span><br>可以放置于远程位"
   },
   "stalker": {
     "branchName": "伏击客",
     "class": "Specialist",
-    "trait": "对攻击范围内<span class=\"keyword\">所有敌人</span>造成伤害\\n拥有50%的物理和法术闪避且不容易成为敌人的<span class=\"keyword\">攻击目标</span>"
+    "trait": "对攻击范围内<span class=\"keyword\">所有敌人</span>造成伤害<br>拥有50%的物理和法术闪避且不容易成为敌人的<span class=\"keyword\">攻击目标</span>"
   },
   "hookmaster": {
     "branchName": "钩索师",
     "class": "Specialist",
-    "trait": "技能可以使敌人产生<span class=\"keyword\">位移</span>\\n可以放置于远程位"
+    "trait": "技能可以使敌人产生<span class=\"keyword\">位移</span><br>可以放置于远程位"
   },
   "geek": {
     "branchName": "怪杰",

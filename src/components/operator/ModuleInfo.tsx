@@ -266,6 +266,7 @@ const ModuleInfo: React.FC<Props> = ({
 								activeCandidate.traitEffect ??
 								t("operators.details.modules.no_effect"),
 						}}
+						className="highlight-desc module-desc"
 					></p>
 				</div>
 				{activeCandidate.talentEffect && (

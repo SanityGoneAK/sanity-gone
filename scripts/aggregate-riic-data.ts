@@ -107,12 +107,12 @@ export async function aggregateRiicData(
 								description = jetTL.description;
 							}
 
-							console.warn(
-								"No translation available for buff: " +
-									buffId +
-									" in locale: " +
-									locale
-							);
+							// console.warn(
+							// 	"No translation available for buff: " +
+							// 		buffId +
+							// 		" in locale: " +
+							// 		locale
+							// );
 
 							return {
 								...baseBuffStage,

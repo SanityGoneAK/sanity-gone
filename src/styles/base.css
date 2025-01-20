@@ -143,6 +143,13 @@ img {
 	}
 }
 
+.module-desc {
+	.keyword {
+		@apply font-bold;
+		@apply text-blue-light
+	}
+}
+
 .swiper-button-next, .swiper-button-prev {
 	--swiper-navigation-sides-offset: -5px;
 	background: radial-gradient(circle at 50% 50%, #24242E 0, rgba(36, 36, 46, 0.6) 50%, rgba(0,0,0,0) 99%);
