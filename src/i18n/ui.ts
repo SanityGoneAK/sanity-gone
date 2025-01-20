@@ -153,7 +153,7 @@ export const ui = {
 		"operators.index.filters.clear_filters": "清除筛选", // might just shorten to "清除" because it's clear enough and "filter" is awkward in chinese
 		"operators.index.filters.clear_sort": "清除排序",
 		"operators.index.filters.select_class": "选一个职业",
-		"operators.index.filters.view_operator": "观看干员",
+		"operators.index.filters.view_operator": "查看干员",
 
 		"operators.details.general.limited": "限定",
 		"operators.details.general.elite": "精英",
