@@ -1,6 +1,6 @@
 import itemsJson from "../../data/zh_CN/items.json";
 
-const baseURL = "https://penguacestergonenemypresslabdbdare.stinggy.com";
+const baseURL = "https://penguacestergonenemypresslabdbdareprts.sanitygone.help";
 
 export const operatorAvatar = (charId: string, elite?: number): string => {
 	const basePath = `${baseURL}/torappu/dynamicassets/arts/charavatars/${charId}`;
