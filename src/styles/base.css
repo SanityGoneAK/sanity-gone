@@ -141,6 +141,10 @@ img {
 	.skill-tooltip {
 		@apply text-neutral-200;
 	}
+	.reminder-text {
+		/* @apply font-bold;  i think text-orange and font-bold also looks ok but i like this more */
+		@apply text-orange-light;
+	}
 }
 
 .module-desc {
