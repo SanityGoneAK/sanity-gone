@@ -140,8 +140,9 @@ const OperatorMiscPanel: React.FC = () => {
 				<h2 className="font-serif text-2xl font-semibold">
 					{t("operators.details.misc.profile")}
 				</h2>
-				<p className="text-base font-normal leading-normal">
-					{handbook.profile}
+				<p className="whitespace-pre-line text-base font-normal leading-normal" dangerouslySetInnerHTML={
+					{ __html: handbook.profile }
+				}>
 				</p>
 			</div>
 			<div className="flex flex-col gap-4 sm:grid sm:grid-cols-[1fr,_1px,_1fr]">
@@ -158,7 +159,7 @@ const OperatorMiscPanel: React.FC = () => {
 								<span className="text-base leading-none text-neutral-200">
 									{info.title}
 								</span>
-								<span className="text-lg font-semibold leading-none">
+								<span className="text-lg font-semibold leading-none text-right">
 									{info.value}
 								</span>
 							</li>
@@ -190,7 +191,7 @@ const OperatorMiscPanel: React.FC = () => {
 										item.title
 									)}
 								</span>
-								<span className="text-lg font-semibold leading-none">
+								<span className="text-lg font-semibold leading-none text-right">
 									{item.value}
 								</span>
 							</li>
