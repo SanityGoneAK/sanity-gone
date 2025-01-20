@@ -19,6 +19,8 @@ import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
 import { defaultLang, localeToTag } from "~/i18n/languages.ts";
+import Tooltip from "~/components/ui/Tooltip.tsx";
+import TraitInfo from "~/components/operator/TraitInfo.tsx";
 
 const OperatorLargeItem: React.FC<{
 	operator: OutputTypes.Operator;
@@ -51,6 +53,9 @@ const OperatorLargeItem: React.FC<{
 			</div>
 			<div className="group absolute top-0 flex h-full w-full flex-col">
 				<div className="flex">
+					<Tooltip content={subProfessionIdToBranch(
+						operator.subProfessionId,
+					)}>
 					<div className="flex h-11 w-11 items-center justify-center rounded-br bg-neutral-800/[.66] p-1.5 transition-colors duration-150 ease-in-out will-change-['background-color'] hover:bg-neutral-700">
 						<img
 							className="h-full w-full"
@@ -58,6 +63,7 @@ const OperatorLargeItem: React.FC<{
 							alt=""
 						/>
 					</div>
+					</Tooltip>
 					<a
 						className="block h-11 flex-grow"
 						tabIndex={-1}
