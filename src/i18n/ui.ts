@@ -181,8 +181,7 @@ export const ui = {
 		"operators.details.attributes.dp_cost": "部署费用",
 
 		"operators.details.talents.title": "天赋",
-		"operators.details.talents.no_talents":
-			"这个精英没有天赋。",
+		"operators.details.talents.no_talents": "这个精英没有天赋。",
 
 		"operators.details.skills.title": "技能",
 		"operators.details.skills.skill": "技能",
@@ -239,7 +238,7 @@ export const ui = {
 		"operators.details.misc.basic_info": "基础档案", // more "basic archive" or "basic file" than "basic info"
 		"operators.details.misc.class_conversion_record": "升变档案",
 	},
-	jp: {
+	ja: {
 		"nav.home": "ホーム",
 		"nav.operators": "オペレーター",
 		"nav.old_site": "Old Site (Guides)",
@@ -358,7 +357,7 @@ export const ui = {
 		"operators.details.misc.basic_info": "基礎情報",
 		"operators.details.misc.class_conversion_record": "昇格資料",
 	},
-	kr: {
+	ko: {
 		"nav.home": "홈",
 		"nav.operators": "오퍼레이터",
 		"nav.old_site": "Old Site (Guides)",

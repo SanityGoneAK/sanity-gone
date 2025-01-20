@@ -15,6 +15,7 @@ import { useStore } from "@nanostores/react";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
+import type { Locale } from "~/i18n/languages";
 
 interface Props {
 	minElite?: number;
@@ -30,18 +31,18 @@ const MaterialRequirements: React.FC<Props> = ({
 	minSkillLevel = 1,
 }) => {
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	const shortNumberFormat = Intl.NumberFormat(locale, {
 		notation: "compact",
 		maximumFractionDigits: 2,
 	});
 
-	const itemMap = {
+	const itemMap: Record<Locale, any> = {
 		en: enItemsJson,
 		"zh-cn": cnItemsJson,
-		kr: krItemsJson,
-		jp: jpItemsJson,
+		ko: krItemsJson,
+		ja: jpItemsJson,
 	};
 	const itemsJson = itemMap[locale as keyof typeof itemMap];
 
@@ -60,7 +61,8 @@ const MaterialRequirements: React.FC<Props> = ({
 					)}
 					<span className="bg-gradient-to-b from-yellow-light to-yellow bg-clip-text text-base font-semibold leading-none text-transparent">
 						{/* TODO Replace this with i18n'ed elite 0, 1, 2 */}
-						{t("operators.details.general.elite")} {minElite} Lv {minLevel}
+						{t("operators.details.general.elite")} {minElite} Lv{" "}
+						{minLevel}
 					</span>
 				</div>
 			)}

@@ -17,7 +17,7 @@ import MeleeIcon from "~/components/icons/MeleeIcon.tsx";
 import RangedIcon from "~/components/icons/RangedIcon.tsx";
 import MeleeAndRangedIcon from "~/components/icons/MeleeAndRangedIcon.tsx";
 import { getPathByLocale } from "astro:i18n";
-import { defaultLang } from "../../i18n/languages";
+import { defaultLang, type Locale } from "../../i18n/languages";
 import { localeStore } from "../../pages/[locale]/_store";
 import { useTranslations } from "../../i18n/utils";
 import type { ui } from "../../i18n/ui";
@@ -34,8 +34,8 @@ const [baseName, alterName] = operator.name.split(/ the /i);
 const operatorClass = professionToClass(operator.profession);
 const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
 
-const locale = getPathByLocale(Astro.currentLocale ?? defaultLang);
-const t = useTranslations(locale as keyof typeof ui);
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
+const t = useTranslations(locale);
 
 const meleeOrRanged = getMeleeOrRangedOrBoth(
 	operator.position,

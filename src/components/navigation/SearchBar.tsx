@@ -93,7 +93,7 @@ const CustomHits: React.FC<{
 		2: "",
 		1: "",
 	};
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	hits.forEach((result) => {
 		if (result.type === "operator") {

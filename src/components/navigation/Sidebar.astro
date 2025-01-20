@@ -7,7 +7,7 @@ import NavigationLink from "~/components/navigation/NavigationLink.astro";
 import { getPathByLocale, getRelativeLocaleUrl } from "astro:i18n";
 import { allLanguages, defaultLang } from "~/i18n/languages";
 import { stripLangFromUrl, useTranslations } from "~/i18n/utils";
-import type { ui } from "~/i18n/ui";
+import type { Locale } from "~/i18n/languages";
 import LanguageSwitcher from "./LanguageSwitcher.tsx";
 import OperatorsNavIcon from "~/components/icons/OperatorsNavIcon.astro";
 import SGNavIcon from "~/components/icons/SGNavIcon.astro";
@@ -24,8 +24,8 @@ const languages = Object.entries(allLanguages).map(([key, language]) => {
 
 const locale = getPathByLocale(
 	Astro.currentLocale ?? defaultLang
-) as keyof typeof allLanguages;
-const t = useTranslations(locale as keyof typeof ui);
+) as Locale;
+const t = useTranslations(locale);
 const sidebarLinks: { href: string; name: string, icon: any }[] = [
 	{
 		href: getRelativeLocaleUrl(locale, "/operators"),

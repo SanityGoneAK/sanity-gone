@@ -6,14 +6,17 @@ import krOperatorsJson from "../../data/ko_KR/operators-index.json";
 import type { Operator } from "../types/output-types";
 import type { Locale } from "~/i18n/languages.ts";
 
-const operatorsMap = {
+const operatorsMap: Record<Locale, any> = {
 	en: enOperatorsJson,
-	jp: jpOperatorsJson,
-	kr: krOperatorsJson,
-	'zh-cn': cnOperatorsJson,
-}
+	ja: jpOperatorsJson,
+	ko: krOperatorsJson,
+	"zh-cn": cnOperatorsJson,
+};
 
-export const getRelatedCharacter = (operator: Operator, locale: Locale): Operator[] => {
+export const getRelatedCharacter = (
+	operator: Operator,
+	locale: Locale
+): Operator[] => {
 	const operatorsJson = operatorsMap[locale];
 	const operators = [];
 	if (operator.alterId) {

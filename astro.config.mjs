@@ -1,27 +1,29 @@
 import path from "path";
+
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
+import vercel from "@astrojs/vercel";
 import { defineConfig } from "astro/config";
 import tailwindcssNesting from "tailwindcss/nesting";
 
-import vercel from "@astrojs/vercel";
+import { defaultLang } from "./src/i18n/languages";
 
 // https://astro.build/config
 export default defineConfig({
 	output: "static",
 	i18n: {
-		defaultLocale: "en",
+		defaultLocale: defaultLang,
 		locales: [
 			{
 				path: "en",
 				codes: ["en-US", "en_US", "en"],
 			},
 			{
-				path: "jp",
+				path: "ja",
 				codes: ["ja-JP", "ja_JP", "jp", "ja"],
 			},
 			{
-				path: "kr",
+				path: "ko",
 				codes: ["ko-KR", "ko_KR", "kr", "ko"],
 			},
 			{

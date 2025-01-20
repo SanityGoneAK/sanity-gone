@@ -1,9 +1,13 @@
-export const allLanguages = {
+import type { ui } from "./ui";
+
+export type Locale = keyof typeof ui;
+
+export const allLanguages: Record<Locale, string> = {
 	en: "English",
 	"zh-cn": "简体中文",
 	// "zh-tw": "正體中文",
-	jp: "日本語",
-	kr: "한국어",
+	ja: "日本語",
+	ko: "한국어",
 } as const;
 
 export interface LocalizedString {
@@ -13,15 +17,13 @@ export interface LocalizedString {
 	zh_CN: string;
 }
 
-export type Locale = "en" | "jp" | "kr" | "zh-cn";
-
 export const localeToTag: {
 	[index in Locale]: keyof LocalizedString;
 } = {
 	en: "en_US",
 	"zh-cn": "zh_CN",
-	jp: "ja_JP",
-	kr: "ko_KR",
+	ja: "ja_JP",
+	ko: "ko_KR",
 };
 
 export const defaultLang = "en";

@@ -7,17 +7,17 @@ import {
 	DropdownMenuTrigger,
 } from "~/components/ui/Dropdown";
 
-import type { allLanguages } from "~/i18n/languages";
+import type { Locale } from "~/i18n/languages";
 
 interface Props {
 	languages: Record<
-		keyof typeof allLanguages,
+		Locale,
 		{
 			url: string;
 			label: string;
 		}
 	>;
-	currentLanguage: keyof typeof allLanguages;
+	currentLanguage: Locale;
 }
 
 const LanguageSwitcher: React.FC<Props> = ({ languages, currentLanguage }) => {

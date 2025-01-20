@@ -1,18 +1,22 @@
 import { atom, computed, action } from "nanostores";
-import enOperatorsJson from "data/en_US/operators-index.json";
-import krOperatorsJson from "data/ko_KR/operators-index.json";
-import jpOperatorsJson from "data/ja_JP/operators-index.json";
-import cnOperatorsJson from "data/zh_CN/operators-index.json";
+
 import branches from "data/en_US/branches.json";
+import enOperatorsJson from "data/en_US/operators-index.json";
+import jpOperatorsJson from "data/ja_JP/operators-index.json";
+import krOperatorsJson from "data/ko_KR/operators-index.json";
+import cnOperatorsJson from "data/zh_CN/operators-index.json";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+
 import { classToProfession, professionLookup } from "../../../utils/classes.ts";
 
 import type * as OutputTypes from "../../../types/output-types.ts";
-import { localeStore } from "~/pages/[locale]/_store.ts";
-const operatorsMap = {
+import type { Locale } from "~/i18n/languages.ts";
+
+const operatorsMap: Record<Locale, any> = {
 	en: enOperatorsJson,
-	kr: krOperatorsJson,
-	jp: jpOperatorsJson,
-	'zh-cn': cnOperatorsJson,
+	ko: krOperatorsJson,
+	ja: jpOperatorsJson,
+	"zh-cn": cnOperatorsJson,
 };
 
 // View Format
@@ -23,7 +27,8 @@ export const $viewConfig = atom<ViewConfigValue>("large");
 export type SortDirectionValue = "ASC" | "DESC" | null;
 export const $sortDirection = atom<SortDirectionValue>(
 	typeof window !== "undefined"
-		? ((window as any).queryParams?.sortDirection as SortDirectionValue ?? null)
+		? (((window as any).queryParams?.sortDirection as SortDirectionValue) ??
+				null)
 		: null
 );
 
@@ -34,7 +39,8 @@ export type SortCategoryValue =
 	| null;
 export const $sortCategory = atom<SortCategoryValue>(
 	typeof window !== "undefined"
-		? ((window as any).queryParams?.sortCategory as SortCategoryValue ?? null)
+		? (((window as any).queryParams?.sortCategory as SortCategoryValue) ??
+				null)
 		: null
 );
 export const $isSortEmpty = computed(
@@ -55,7 +61,11 @@ export const $filterBranch = atom<Array<keyof typeof branches>>(
 );
 export const $filterRarity = atom<Array<OutputTypes.Rarity>>(
 	typeof window !== "undefined"
-		? ((window as any).queryParams?.rarity?.split(",")?.map((rarity: string) => Number(rarity) as OutputTypes.Rarity)?? [])
+		? ((window as any).queryParams?.rarity
+				?.split(",")
+				?.map(
+					(rarity: string) => Number(rarity) as OutputTypes.Rarity
+				) ?? [])
 		: []
 );
 export const $filterGuideAvailable = atom<boolean>(false);
@@ -74,7 +84,7 @@ export const $operators = computed(
 		$filterGuideAvailable,
 		$sortCategory,
 		$sortDirection,
-		localeStore
+		localeStore,
 	],
 	(
 		professions,
@@ -83,7 +93,7 @@ export const $operators = computed(
 		guideAvailable,
 		sortCategory,
 		sortDirection,
-		locale,
+		locale
 	) => {
 		const operatorsJson = operatorsMap[locale as keyof typeof operatorsMap];
 		let baseOperators = Object.values(
@@ -207,14 +217,15 @@ export const toggleRarity = action(
 );
 
 export const serializeFiltersToUrl = () => {
-	if (typeof window === "undefined"){
+	if (typeof window === "undefined") {
 		return;
 	}
 
 	const params = new URLSearchParams();
 
 	const professions = $filterProfession.get();
-	if (professions.length > 0) params.set("professions", professions.join(","));
+	if (professions.length > 0)
+		params.set("professions", professions.join(","));
 
 	const branches = $filterBranch.get();
 	if (branches.length > 0) params.set("branches", branches.join(","));
@@ -236,12 +247,16 @@ export const serializeFiltersToUrl = () => {
 	history.replaceState(null, "", url.toString());
 };
 
-export const initializeFiltersFromUrl = (defaultSearchParams: URLSearchParams | null | undefined) => {
+export const initializeFiltersFromUrl = (
+	defaultSearchParams: URLSearchParams | null | undefined
+) => {
 	if (typeof window === "undefined" && !defaultSearchParams) {
 		return;
 	}
 
-	const params = defaultSearchParams ? defaultSearchParams : new URLSearchParams(window.location.search);
+	const params = defaultSearchParams
+		? defaultSearchParams
+		: new URLSearchParams(window.location.search);
 
 	const professions = params.get("professions");
 	$filterProfession.set(professions ? professions.split(",") : []);

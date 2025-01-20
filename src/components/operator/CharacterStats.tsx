@@ -40,7 +40,7 @@ const CharacterStats: React.FC<Props> = ({
 	parentCharacter,
 }) => {
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	const {
 		health,
@@ -89,7 +89,7 @@ const CharacterStats: React.FC<Props> = ({
 
 	return (
 		// 500px is the breakpoint at which this specific UI element breaks.
-		<dl className="relative grid grid-flow-col grid-cols-1 grid-rows-8 sm:grid-cols-2 sm:grid-rows-4 gap-[calc(theme(space.12)+1px)] gap-y-4 after:absolute after:bottom-0 after:right-1/2 after:top-0 sm:after:border-r after:border-neutral-600">
+		<dl className="relative grid grid-flow-col grid-cols-1 grid-rows-8 gap-[calc(theme(space.12)+1px)] gap-y-4 after:absolute after:bottom-0 after:right-1/2 after:top-0 after:border-neutral-600 sm:grid-cols-2 sm:grid-rows-4 sm:after:border-r">
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<HealthIcon className="text-neutral-50" />
@@ -107,28 +107,36 @@ const CharacterStats: React.FC<Props> = ({
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<ArtsResistanceIcon className="text-neutral-50" />
-					<span>{t("operators.details.attributes.arts_resistance")}</span>
+					<span>
+						{t("operators.details.attributes.arts_resistance")}
+					</span>
 				</dt>
 				<dd className="font-semibold">{artsResistance}</dd>
 			</div>
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<HourglassIcon className="text-neutral-50" />
-					<span>{t("operators.details.attributes.redeploy_time")}</span>
+					<span>
+						{t("operators.details.attributes.redeploy_time")}
+					</span>
 				</dt>
 				<dd className="font-semibold">{redeployTimeInSeconds} sec</dd>
 			</div>
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<AttackPowerIcon className="text-neutral-50" />
-					<span>{t("operators.details.attributes.attack_power")}</span>
+					<span>
+						{t("operators.details.attributes.attack_power")}
+					</span>
 				</dt>
 				<dd className="font-semibold">{attackPower}</dd>
 			</div>
 			<div className="grid grid-cols-[1fr,auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<AttackSpeedIcon className="text-neutral-50" />
-					<span>{t("operators.details.attributes.attack_interval")}</span>
+					<span>
+						{t("operators.details.attributes.attack_interval")}
+					</span>
 				</dt>
 				<dd className="font-semibold">
 					{secondsPerAttack.toFixed(2)} sec

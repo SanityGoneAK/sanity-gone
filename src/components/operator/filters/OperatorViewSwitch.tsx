@@ -11,14 +11,14 @@ import type { ui } from "~/i18n/ui.ts";
 
 const OperatorViewSwitch = () => {
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	const viewConfig = useStore($viewConfig);
 
 	return (
 		<div style={{ display: "flex", alignItems: "center" }}>
 			<label
-				className="font- w-max mr-2 text-neutral-200"
+				className="font- mr-2 w-max text-neutral-200"
 				htmlFor="operator-view"
 			>
 				{t("operators.index.filters.view")}
@@ -27,7 +27,7 @@ const OperatorViewSwitch = () => {
 				defaultValue={viewConfig}
 				value={$viewConfig.get()}
 				onValueChange={(value: ViewConfigValue) => {
-					if (value){
+					if (value) {
 						$viewConfig.set(value);
 					}
 				}}

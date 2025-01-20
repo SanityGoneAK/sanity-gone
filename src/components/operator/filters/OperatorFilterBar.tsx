@@ -16,13 +16,13 @@ import type { ui } from "~/i18n/ui.ts";
 
 const OperatorFilterBar = () => {
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
-	
+	const t = useTranslations(locale);
+
 	const [open, setOpen] = useState(false);
 	const isMobile = useMediaQuery("(max-width: 768px)");
 	useEffect(() => {
 		setOpen(isMobile ? open : true);
-	},[isMobile, open])
+	}, [isMobile, open]);
 
 	return (
 		<div className="mb-6 flex w-full justify-between">

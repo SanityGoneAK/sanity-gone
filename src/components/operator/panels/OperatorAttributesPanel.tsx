@@ -20,17 +20,17 @@ import {
 	getStatsAtLevel,
 } from "~/utils/character-stats";
 import { tokenImage } from "~/utils/images";
+import { cx } from "~/utils/styles.ts";
 
 import type { CheckedState } from "@radix-ui/react-checkbox";
 import type { ui } from "~/i18n/ui.ts";
 import type * as OutputTypes from "~/types/output-types";
-import { cx } from "~/utils/styles.ts";
 
 const LMD_ITEM_ID = "4001";
 
 const OperatorAttributesPanel: React.FC = () => {
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	const operator = useStore(operatorStore);
 	const maxElite = operator.phases.length - 1;
@@ -52,11 +52,12 @@ const OperatorAttributesPanel: React.FC = () => {
 
 	const trustToUse = isTrustChecked ? trust : 0;
 
-	const moduleId = (isModuleTypeChecked === false || moduleTypes.length === 0)
-		? null
-		: operator.modules.find((module) =>
-				module.moduleIcon.endsWith(moduleType)
-			)!.moduleId;
+	const moduleId =
+		isModuleTypeChecked === false || moduleTypes.length === 0
+			? null
+			: operator.modules.find((module) =>
+					module.moduleIcon.endsWith(moduleType)
+				)!.moduleId;
 
 	const itemCosts = useMemo(() => {
 		const itemCosts: OutputTypes.ItemCost[] = [];
@@ -192,7 +193,7 @@ const OperatorAttributesPanel: React.FC = () => {
 								{t("operators.details.attributes.module")}
 							</label>
 							<div
-								className={`flex-grow ${locale === "jp" ? "sm:hidden" : "hidden"}`}
+								className={`flex-grow ${locale === "ja" ? "sm:hidden" : "hidden"}`}
 							></div>
 							<PillButtonGroup
 								labels={moduleTypes}
@@ -201,10 +202,10 @@ const OperatorAttributesPanel: React.FC = () => {
 								disabled={!isModuleTypeChecked}
 							/>
 							<div
-								className={`flex-grow ${moduleTypes.length < 3 && "sm:hidden"} ${locale === "jp" && "hidden"}`}
+								className={`flex-grow ${moduleTypes.length < 3 && "sm:hidden"} ${locale === "ja" && "hidden"}`}
 							></div>
 							<span
-								className={`text-neutral-200 sm:hidden ${(moduleTypes.length === 3 || locale === "jp") && "hidden"}`}
+								className={`text-neutral-200 sm:hidden ${(moduleTypes.length === 3 || locale === "ja") && "hidden"}`}
 							>
 								{t("operators.details.modules.stage")}
 							</span>

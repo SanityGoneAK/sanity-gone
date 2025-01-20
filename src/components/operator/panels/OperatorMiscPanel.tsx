@@ -1,35 +1,38 @@
-import { useStore } from "@nanostores/react";
-
-import ArchiveIcon from "~/components/icons/ArchiveIcon";
-import { operatorStore } from "~/pages/[locale]/operators/_slugstore";
 import { Fragment, useState } from "react";
 
-import enItemsJson from "../../../../data/en_US/items.json";
-import cnItemsJson from "../../../../data/zh_CN/items.json";
-import krItemsJson from "../../../../data/ko_KR/items.json";
-import jpItemsJson from "../../../../data/ja_JP/items.json";
+import { useStore } from "@nanostores/react";
+
+import { EliteTwoIcon } from "~/components/icons";
+import ArchiveIcon from "~/components/icons/ArchiveIcon";
+import GuardIcon from "~/components/icons/GuardIcon.tsx";
+import OriginiumIcon from "~/components/icons/OriginiumIcon.tsx";
+import StarIcon from "~/components/icons/StarIcon.tsx";
+import Accordion from "~/components/ui/Accordion.tsx";
+import Tooltip from "~/components/ui/Tooltip.tsx";
+import { useTranslations } from "~/i18n/utils.ts";
+import { localeStore } from "~/pages/[locale]/_store.ts";
+import { operatorStore } from "~/pages/[locale]/operators/_slugstore";
+import { classToProfession } from "~/utils/classes.ts";
 import {
 	arbitraryImage,
 	itemImage,
 	operatorAvatar,
 	operatorClassIcon,
 } from "~/utils/images.ts";
-import { cx } from "~/utils/styles.ts";
-import OriginiumIcon from "~/components/icons/OriginiumIcon.tsx";
-import Accordion from "~/components/ui/Accordion.tsx";
-import { EliteTwoIcon } from "~/components/icons";
-import GuardIcon from "~/components/icons/GuardIcon.tsx";
-import { classToProfession } from "~/utils/classes.ts";
-import { localeStore } from "~/pages/[locale]/_store.ts";
-import { useTranslations } from "~/i18n/utils.ts";
-import type { ui } from "~/i18n/ui.ts";
-import Tooltip from "~/components/ui/Tooltip.tsx";
 import { toTitleCase } from "~/utils/strings.ts";
-import StarIcon from "~/components/icons/StarIcon.tsx";
+import { cx } from "~/utils/styles.ts";
+
+import enItemsJson from "../../../../data/en_US/items.json";
+import jpItemsJson from "../../../../data/ja_JP/items.json";
+import krItemsJson from "../../../../data/ko_KR/items.json";
+import cnItemsJson from "../../../../data/zh_CN/items.json";
+
+import type { Locale } from "~/i18n/languages";
+import type { ui } from "~/i18n/ui.ts";
 
 const OperatorMiscPanel: React.FC = () => {
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	const operator = useStore(operatorStore);
 	const handbook = operator.handbook;
@@ -39,20 +42,28 @@ const OperatorMiscPanel: React.FC = () => {
 	// split off Infection Status and Inspection Report (robots only) from basicInfo
 	const infectionInspection = handbook.basicInfo.filter((info) =>
 		[
-			"Inspection Report", "Infection Status", // en
-			"鉱石病感染状況", "メンテナンス結果報告", // jp
-			"광석병 감염 상황", "점검 검사 보고",// kr
-			"矿石病感染情况", "维护检测报告", // cn
+			"Inspection Report",
+			"Infection Status", // en
+			"鉱石病感染状況",
+			"メンテナンス結果報告", // jp
+			"광석병 감염 상황",
+			"점검 검사 보고", // kr
+			"矿石病感染情况",
+			"维护检测报告", // cn
 		].includes(info.title)
 	);
 
 	const basicInfo = handbook.basicInfo.filter(
 		(info) =>
 			![
-				"Inspection Report", "Infection Status", // en
-				"鉱石病感染状況", "メンテナンス結果報告", // jp
-				"광석병 감염 상황", "점검 검사 보고",// kr
-				"矿石病感染情况", "维护检测报告", // cn
+				"Inspection Report",
+				"Infection Status", // en
+				"鉱石病感染状況",
+				"メンテナンス結果報告", // jp
+				"광석병 감염 상황",
+				"점검 검사 보고", // kr
+				"矿石病感染情况",
+				"维护检测报告", // cn
 			].includes(info.title)
 	);
 
@@ -62,15 +73,19 @@ const OperatorMiscPanel: React.FC = () => {
 	// create a deep copy of PhysicalExam to not modify the original JSON
 	// (this will ensure reloads and data modifications won't break this)
 	// TODO Maybe this is better to handle in GameData?
-	let handbookPhysicalExam: {
+	const handbookPhysicalExam: {
 		title: string;
 		value: string;
 	}[] = JSON.parse(JSON.stringify(handbook.physicalExam));
 	let extraInfo = null;
 
-	if(handbook.physicalExam[lastPhysicalInfo].value.includes("\n")) {
-		const lastEntrySplit = handbookPhysicalExam[lastPhysicalInfo].value.split("\n");
-		extraInfo = lastEntrySplit.slice(1, lastEntrySplit.length).join("\n").trim();
+	if (handbook.physicalExam[lastPhysicalInfo].value.includes("\n")) {
+		const lastEntrySplit =
+			handbookPhysicalExam[lastPhysicalInfo].value.split("\n");
+		extraInfo = lastEntrySplit
+			.slice(1, lastEntrySplit.length)
+			.join("\n")
+			.trim();
 		handbookPhysicalExam[lastPhysicalInfo].value = lastEntrySplit[0].trim();
 	}
 
@@ -79,11 +94,11 @@ const OperatorMiscPanel: React.FC = () => {
 	);
 
 	// console.log(operator.potentialItemId);
-	const itemMap = {
+	const itemMap: Record<Locale, any> = {
 		en: enItemsJson,
 		"zh-cn": cnItemsJson,
-		kr: krItemsJson,
-		jp: jpItemsJson,
+		ko: krItemsJson,
+		ja: jpItemsJson,
 	};
 	const itemsJson = itemMap[locale as keyof typeof itemMap];
 	const potItem = operator.potentialItemId
@@ -93,7 +108,7 @@ const OperatorMiscPanel: React.FC = () => {
 	return (
 		<div className="grid gap-y-4 rounded-br-lg p-6">
 			<div className="inline w-fit rounded bg-neutral-800/80 backdrop-blur-[4px]">
-				<ul className="m-0 flex list-none flex-wrap gap-2 p-0 items-center text-base leading-normal text-neutral-50">
+				<ul className="m-0 flex list-none flex-wrap items-center gap-2 p-0 text-base leading-normal text-neutral-50">
 					<li>
 						<span className="text-neutral-200">VA</span>
 					</li>

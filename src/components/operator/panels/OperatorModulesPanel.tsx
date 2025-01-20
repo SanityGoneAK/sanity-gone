@@ -21,7 +21,7 @@ const OperatorModulesPanel: React.FC = () => {
 	const operator: OutputTypes.Operator = useStore(operatorStore);
 
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	// This is the module types and IDs for the operator.
 	// Only needs to be computed once, so a useMemo is used.
@@ -113,9 +113,9 @@ const OperatorModulesPanel: React.FC = () => {
 
 	return (
 		<div className="flex flex-col gap-4 p-6">
-			<div className="grid grid-flow-col grid-cols-[auto_1fr] grid-rows-2 items-center gap-y-4 sm:gap-x-4 border-b border-neutral-500 pb-4 sm:grid-flow-row sm:grid-cols-[auto_auto_1fr] sm:grid-rows-1">
+			<div className="grid grid-flow-col grid-cols-[auto_1fr] grid-rows-2 items-center gap-y-4 border-b border-neutral-500 pb-4 sm:grid-flow-row sm:grid-cols-[auto_auto_1fr] sm:grid-rows-1 sm:gap-x-4">
 				<div className="grid w-fit grid-flow-col items-center gap-x-2 text-neutral-200">
-					<span>{t('operators.details.modules.module')}</span>
+					<span>{t("operators.details.modules.module")}</span>
 					<PillButtonGroup
 						labels={moduleTypes}
 						value={moduleType}
@@ -156,7 +156,9 @@ const OperatorModulesPanel: React.FC = () => {
 				) : (
 					<div className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600 p-4 text-neutral-200">
 						<span>{t("operators.details.modules.module")}</span>
-						<span>{t("operators.details.attributes.module_none")}</span>
+						<span>
+							{t("operators.details.attributes.module_none")}
+						</span>
 					</div>
 				)}
 				<hr className="border border-neutral-500" />
@@ -180,14 +182,14 @@ const OperatorModulesPanel: React.FC = () => {
 						</h2>
 						<div>
 							<h3 className="mb-1 text-sm leading-[14px] text-neutral-200">
-								{t('operators.details.modules.mission')} 1
+								{t("operators.details.modules.mission")} 1
 							</h3>
 
 							<p>{module.missionList[0].description}</p>
 						</div>
 						<div>
 							<h3 className="mb-1 text-sm leading-[14px] text-neutral-200">
-								{t('operators.details.modules.mission')} 2
+								{t("operators.details.modules.mission")} 2
 							</h3>
 							<p>{module.missionList[1].description}</p>
 						</div>
@@ -195,11 +197,12 @@ const OperatorModulesPanel: React.FC = () => {
 				)}
 				<hr className="border border-neutral-600" />
 				<div>
-					<Accordion title={`${t('operators.details.modules.description')} (${t('operators.details.modules.story_spoiler')})`} icon={
-						<ArchiveIcon/>
-					}>
+					<Accordion
+						title={`${t("operators.details.modules.description")} (${t("operators.details.modules.story_spoiler")})`}
+						icon={<ArchiveIcon />}
+					>
 						<p
-							className="text-neutral-50 mt-0 whitespace-pre-line rounded-b text-base font-normal"
+							className="mt-0 whitespace-pre-line rounded-b text-base font-normal text-neutral-50"
 							dangerouslySetInnerHTML={{
 								__html: module.moduleDescription,
 							}}

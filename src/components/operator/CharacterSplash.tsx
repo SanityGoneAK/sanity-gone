@@ -14,7 +14,6 @@ import type * as OutputTypes from "~/types/output-types.ts";
 import PaintbrushIcon from "~/components/icons/PaintbrushIcon.tsx";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
-import type { ui } from "~/i18n/ui.ts";
 import ContingencyTokenIcon from "~/components/icons/ContingencyTokenIcon.tsx";
 
 const CharacterSplash: React.FC = () => {
@@ -30,7 +29,7 @@ const CharacterSplash: React.FC = () => {
 	const [selectedIndex, setSelectedIndex] = useState(startIndex);
 
 	const locale = useStore(localeStore);
-	const t = useTranslations(locale as keyof typeof ui);
+	const t = useTranslations(locale);
 
 	return (
 		<Tab.Group
@@ -65,11 +64,16 @@ const CharacterSplash: React.FC = () => {
 			</Tab.List>
 			<Tab.Panels className="h-full">
 				{skins.map((skin) => {
-					const skinName = skin.name.toLowerCase().includes('elite') ? (t('operators.details.general.elite') + skin.name.toLowerCase().split('elite')[1]) : skin.name;
+					const skinName = skin.name.toLowerCase().includes("elite")
+						? t("operators.details.general.elite") +
+							skin.name.toLowerCase().split("elite")[1]
+						: skin.name;
 					return (
 						<Tab.Panel
 							id={`${skin.skinId}-tabpanel`}
-							className={"relative flex h-full items-center object-contain"}
+							className={
+								"relative flex h-full items-center object-contain"
+							}
 							// style={{
 							// 	background:
 							// 		"linear-gradient(270deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.1) 12.34%, rgba(0, 0, 0, 0) 32.5%)",
@@ -81,11 +85,11 @@ const CharacterSplash: React.FC = () => {
 							{/* This was fixed by fixing the width and position of the panel on the right.
 							No more layout shift, just make sure there's also no layout shift on mobile */}
 							<img
-								className="my-0 mx-auto w-[clamp(0px,auto,85vw)] md:w-[clamp(0px,100%,60rem)] h-full object-contain"
+								className="mx-auto my-0 h-full w-[clamp(0px,auto,85vw)] object-contain md:w-[clamp(0px,100%,60rem)]"
 								src={operatorSplash(skin.portraitId, skin.type)}
 								alt={skin.name}
 							/>
-							<div className="absolute bottom-0 left-0 inline-flex h-16 items-center gap-4 bg-neutral-700/[0.6] p-3 rounded ">
+							<div className="absolute bottom-0 left-0 inline-flex h-16 items-center gap-4 rounded bg-neutral-700/[0.6] p-3">
 								{skin.type === "elite-zero" && (
 									<EliteZeroIcon className="h-12 w-12 stroke-neutral-50" />
 								)}
@@ -137,7 +141,7 @@ const CharacterSplash: React.FC = () => {
 										{skins[selectedIndex].cost &&
 											skins[
 												selectedIndex
-												].obtainSources?.includes(
+											].obtainSources?.includes(
 												"Contingency Contract Store"
 											) && (
 												<div className="inline-flex w-fit rounded-lg bg-neutral-600 px-2.5 py-1 text-base leading-none text-neutral-50">
@@ -147,7 +151,7 @@ const CharacterSplash: React.FC = () => {
 																(
 																	skins[
 																		selectedIndex
-																		] as OutputTypes.Skin
+																	] as OutputTypes.Skin
 																).cost
 															}
 														</span>
