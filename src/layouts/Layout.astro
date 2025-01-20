@@ -24,7 +24,7 @@ import type { ui } from "../i18n/ui";
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
 const t = useTranslations(locale);
 ---
-<html lang="en">
+<html lang={locale}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
