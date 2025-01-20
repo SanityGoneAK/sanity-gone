@@ -184,6 +184,7 @@ export async function createOperatorsJson(dataDir, locale) {
 			alterId: character.alterId,
 			baseOperatorId: character.baseOperatorId,
 			isLimited: character.isLimited,
+			hasGuide: character.hasGuide,
 			releaseOrder: character.releaseOrder,
 		}]
 	}))

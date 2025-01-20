@@ -10,6 +10,7 @@ import { stripLangFromUrl, useTranslations } from "~/i18n/utils";
 import type { ui } from "~/i18n/ui";
 import LanguageSwitcher from "./LanguageSwitcher.tsx";
 import OperatorsNavIcon from "~/components/icons/OperatorsNavIcon.astro";
+import SGNavIcon from "~/components/icons/SGNavIcon.astro";
 
 const languages = Object.entries(allLanguages).map(([key, language]) => {
 	return [
@@ -30,6 +31,11 @@ const sidebarLinks: { href: string; name: string, icon: any }[] = [
 		href: getRelativeLocaleUrl(locale, "/operators"),
 		name: t("nav.operators"),
 		icon: OperatorsNavIcon,
+	},
+	{
+	  href: "https://old.sanitygone.help",
+	  name: "View Guides",
+		icon: SGNavIcon,
 	},
 	// {
 	//   href: "/dps",

@@ -10,6 +10,7 @@
     "alterId": null,
     "baseOperatorId": "char_293_thorns",
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 383
   },
   "char_1038_whitw2": {
@@ -23,6 +24,7 @@
     "alterId": null,
     "baseOperatorId": "char_140_whitew",
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 364
   },
   "char_4026_vulpis": {
@@ -36,6 +38,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 363
   },
   "char_1502_crosly": {
@@ -49,6 +52,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 362
   },
   "char_1019_siege2": {
@@ -62,6 +66,7 @@
     "alterId": null,
     "baseOperatorId": "char_112_siege",
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 358
   },
   "char_4141_marcil": {
@@ -75,6 +80,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 355
   },
   "char_4058_pepe": {
@@ -88,6 +94,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 351
   },
   "char_4138_narant": {
@@ -101,6 +108,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 350
   },
   "char_4146_nymph": {
@@ -114,6 +122,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 346
   },
   "char_4145_ulpia": {
@@ -127,6 +136,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 344
   },
   "char_1035_wisdel": {
@@ -140,6 +150,7 @@
     "alterId": null,
     "baseOperatorId": "char_113_cqbw",
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 340
   },
   "char_4133_logos": {
@@ -153,6 +164,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 339
   },
   "char_4134_cetsyr": {
@@ -166,6 +178,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 338
   },
   "char_4132_ascln": {
@@ -179,6 +192,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 335
   },
   "char_4123_ela": {
@@ -192,6 +206,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 331
   },
   "char_2025_shu": {
@@ -205,6 +220,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 326
   },
   "char_4121_zuole": {
@@ -218,6 +234,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 325
   },
   "char_4117_ray": {
@@ -231,6 +248,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 322
   },
   "char_4116_blkkgt": {
@@ -244,6 +262,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 320
   },
   "char_245_cello": {
@@ -257,6 +276,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 317
   },
   "char_4098_vvana": {
@@ -270,6 +290,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 316
   },
   "char_4011_lessng": {
@@ -283,6 +304,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 315
   },
   "char_4088_hodrer": {
@@ -296,6 +318,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 311
   },
   "char_1034_jesca2": {
@@ -309,6 +332,7 @@
     "alterId": null,
     "baseOperatorId": "char_235_jesica",
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 307
   },
   "char_1016_agoat2": {
@@ -322,6 +346,7 @@
     "alterId": null,
     "baseOperatorId": "char_180_amgoat",
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 304
   },
   "char_1033_swire2": {
@@ -335,6 +360,7 @@
     "alterId": null,
     "baseOperatorId": "char_308_swire",
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 303
   },
   "char_2012_typhon": {
@@ -348,6 +374,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 299
   },
   "char_1032_excu2": {
@@ -361,6 +388,7 @@
     "alterId": null,
     "baseOperatorId": "char_279_excu",
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 297
   },
   "char_249_mlyss": {
@@ -374,6 +402,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 293
   },
   "char_4027_heyak": {
@@ -387,6 +416,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 292
   },
   "char_1031_slent2": {
@@ -400,6 +430,7 @@
     "alterId": null,
     "baseOperatorId": "char_108_silent",
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 291
   },
   "char_4087_ines": {
@@ -413,6 +444,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 289
   },
   "char_1029_yato2": {
@@ -426,6 +458,7 @@
     "alterId": null,
     "baseOperatorId": "char_502_nblade",
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 284
   },
   "char_4082_qiubai": {
@@ -439,6 +472,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 281
   },
   "char_2024_chyue": {
@@ -452,6 +486,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 279
   },
   "char_4080_lin": {
@@ -465,6 +500,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 278
   },
   "char_1020_reed2": {
@@ -478,6 +514,7 @@
     "alterId": null,
     "baseOperatorId": "char_261_sddrag",
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 275
   },
   "char_1028_texas2": {
@@ -491,6 +528,7 @@
     "alterId": null,
     "baseOperatorId": "char_102_texas",
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 272
   },
   "char_4065_judge": {
@@ -504,6 +542,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 271
   },
   "char_427_vigil": {
@@ -517,6 +556,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 270
   },
   "char_4072_ironmn": {
@@ -530,6 +570,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 266
   },
   "char_4064_mlynar": {
@@ -543,6 +584,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 258
   },
   "char_1026_gvial2": {
@@ -556,6 +598,7 @@
     "alterId": null,
     "baseOperatorId": "char_187_ccheal",
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 256
   },
   "char_4055_bgsnow": {
@@ -569,6 +612,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 255
   },
   "char_4048_doroth": {
@@ -582,6 +626,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 252
   },
   "char_4046_ebnhlz": {
@@ -595,6 +640,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 249
   },
   "char_1023_ghost2": {
@@ -608,6 +654,7 @@
     "alterId": null,
     "baseOperatorId": "char_143_ghost",
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 245
   },
   "char_4009_irene": {
@@ -621,6 +668,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 244
   },
   "char_4042_lumen": {
@@ -634,6 +682,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 243
   },
   "char_4039_horn": {
@@ -647,6 +696,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 241
   },
   "char_300_phenxi": {
@@ -660,6 +710,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 237
   },
   "char_377_gdglow": {
@@ -673,6 +724,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 234
   },
   "char_2023_ling": {
@@ -686,6 +738,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 232
   },
   "char_322_lmlee": {
@@ -699,6 +752,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 231
   },
   "char_206_gnosis": {
@@ -712,6 +766,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 225
   },
   "char_1014_nearl2": {
@@ -725,6 +780,7 @@
     "alterId": null,
     "baseOperatorId": "char_148_nearl",
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 222
   },
   "char_420_flamtl": {
@@ -738,6 +794,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 221
   },
   "char_430_fartth": {
@@ -751,6 +808,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 215
   },
   "char_479_sleach": {
@@ -764,6 +822,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 213
   },
   "char_1013_chen2": {
@@ -777,6 +836,7 @@
     "alterId": null,
     "baseOperatorId": "char_010_chen",
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 210
   },
   "char_437_mizuki": {
@@ -790,6 +850,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 209
   },
   "char_485_pallas": {
@@ -803,6 +864,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 206
   },
   "char_426_billro": {
@@ -816,6 +878,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 205
   },
   "char_1012_skadi2": {
@@ -829,6 +892,7 @@
     "alterId": null,
     "baseOperatorId": "char_263_skadi",
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 201
   },
   "char_003_kalts": {
@@ -842,6 +906,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 200
   },
   "char_474_glady": {
@@ -855,6 +920,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 199
   },
   "char_472_pasngr": {
@@ -868,6 +934,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 197
   },
   "char_456_ash": {
@@ -881,6 +948,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 194
   },
   "char_2015_dusk": {
@@ -894,6 +962,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 190
   },
   "char_362_saga": {
@@ -907,6 +976,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 189
   },
   "char_332_archet": {
@@ -920,6 +990,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 185
   },
   "char_264_f12yin": {
@@ -933,6 +1004,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 182
   },
   "char_391_rosmon": {
@@ -946,6 +1018,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 177
   },
   "char_311_mudrok": {
@@ -959,6 +1032,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 176
   },
   "char_423_blemsh": {
@@ -972,6 +1046,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 173
   },
   "char_350_surtr": {
@@ -985,6 +1060,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 169
   },
   "char_416_zumama": {
@@ -998,6 +1074,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 165
   },
   "char_293_thorns": {
@@ -1011,6 +1088,7 @@
     "alterId": "char_1039_thorn2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 153
   },
   "char_358_lisa": {
@@ -1024,6 +1102,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 147
   },
   "char_197_poca": {
@@ -1037,6 +1116,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 143
   },
   "char_113_cqbw": {
@@ -1050,6 +1130,7 @@
     "alterId": "char_1035_wisdel",
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 137
   },
   "char_400_weedy": {
@@ -1063,6 +1144,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 136
   },
   "char_250_phatom": {
@@ -1076,6 +1158,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 133
   },
   "char_222_bpipe": {
@@ -1089,6 +1172,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 128
   },
   "char_2013_cerber": {
@@ -1102,6 +1186,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 123
   },
   "char_2014_nian": {
@@ -1115,6 +1200,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 121
   },
   "char_225_haak": {
@@ -1128,6 +1214,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 120
   },
   "char_017_huang": {
@@ -1141,6 +1228,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 117
   },
   "char_213_mostma": {
@@ -1154,6 +1242,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 112
   },
   "char_248_mgllan": {
@@ -1167,6 +1256,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 106
   },
   "char_188_helage": {
@@ -1180,6 +1270,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 101
   },
   "char_340_shwaz": {
@@ -1193,6 +1284,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 98
   },
   "char_010_chen": {
@@ -1206,6 +1298,7 @@
     "alterId": "char_1013_chen2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 94
   },
   "char_263_skadi": {
@@ -1219,6 +1312,7 @@
     "alterId": "char_1012_skadi2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 89
   },
   "char_172_svrash": {
@@ -1232,6 +1326,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 82
   },
   "char_202_demkni": {
@@ -1245,6 +1340,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 81
   },
   "char_136_hsguma": {
@@ -1258,6 +1354,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 80
   },
   "char_179_cgbird": {
@@ -1271,6 +1368,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 79
   },
   "char_147_shining": {
@@ -1284,6 +1382,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 78
   },
   "char_291_aglina": {
@@ -1297,6 +1396,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 77
   },
   "char_180_amgoat": {
@@ -1310,6 +1410,7 @@
     "alterId": "char_1016_agoat2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 76
   },
   "char_134_ifrit": {
@@ -1323,6 +1424,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 75
   },
   "char_112_siege": {
@@ -1336,6 +1438,7 @@
     "alterId": "char_1019_siege2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 74
   },
   "char_103_angel": {
@@ -1349,6 +1452,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 73
   },
   "char_4164_tecno": {
@@ -1362,6 +1466,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 382
   },
   "char_4163_rosesa": {
@@ -1375,6 +1480,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 381
   },
   "char_4155_talr": {
@@ -1388,6 +1494,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 361
   },
   "char_4148_philae": {
@@ -1401,6 +1508,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 360
   },
   "char_487_bobb": {
@@ -1414,6 +1522,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 357
   },
   "char_4162_cathy": {
@@ -1427,6 +1536,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 356
   },
   "char_4142_laios": {
@@ -1440,6 +1550,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 354
   },
   "char_4144_chilc": {
@@ -1453,6 +1564,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 353
   },
   "char_4143_sensi": {
@@ -1466,6 +1578,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 352
   },
   "char_4140_lasher": {
@@ -1479,6 +1592,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 349
   },
   "char_4139_papyrs": {
@@ -1492,6 +1606,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 348
   },
   "char_4151_tinman": {
@@ -1505,6 +1620,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 347
   },
   "char_4147_mitm": {
@@ -1518,6 +1634,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 345
   },
   "char_4079_haini": {
@@ -1531,6 +1648,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 343
   },
   "char_4137_udflow": {
@@ -1544,6 +1662,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 342
   },
   "char_1036_fang2": {
@@ -1557,6 +1676,7 @@
     "alterId": null,
     "baseOperatorId": "char_123_fang",
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 337
   },
   "char_446_aroma": {
@@ -1570,6 +1690,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 334
   },
   "char_4131_odda": {
@@ -1583,6 +1704,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 333
   },
   "char_4125_rdoc": {
@@ -1596,6 +1718,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 330
   },
   "char_4124_iana": {
@@ -1609,6 +1732,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 329
   },
   "char_4126_fuze": {
@@ -1622,6 +1746,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 328
   },
   "char_4023_rfalcn": {
@@ -1635,6 +1760,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 327
   },
   "char_4122_grabds": {
@@ -1648,6 +1774,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 324
   },
   "char_4119_wanqin": {
@@ -1661,6 +1788,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 323
   },
   "char_4081_warmy": {
@@ -1674,6 +1802,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 321
   },
   "char_194_leto": {
@@ -1687,6 +1816,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 319
   },
   "char_4114_harold": {
@@ -1700,6 +1830,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 318
   },
   "char_4109_baslin": {
@@ -1713,6 +1844,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 314
   },
   "char_499_kaitou": {
@@ -1726,6 +1858,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 313
   },
   "char_494_vendla": {
@@ -1739,6 +1872,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 310
   },
   "char_4110_delphn": {
@@ -1752,6 +1886,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 309
   },
   "char_4105_almond": {
@@ -1765,6 +1900,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 306
   },
   "char_4104_coldst": {
@@ -1778,6 +1914,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 305
   },
   "char_488_buildr": {
@@ -1791,6 +1928,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 302
   },
   "char_4106_bryota": {
@@ -1804,6 +1942,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 301
   },
   "char_4102_threye": {
@@ -1817,6 +1956,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 300
   },
   "char_341_sntlla": {
@@ -1830,6 +1970,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 298
   },
   "char_4015_spuria": {
@@ -1843,6 +1984,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 296
   },
   "char_498_inside": {
@@ -1856,6 +1998,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 295
   },
   "char_4006_melnte": {
@@ -1869,6 +2012,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 290
   },
   "char_464_cement": {
@@ -1882,6 +2026,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 288
   },
   "char_154_morgan": {
@@ -1895,6 +2040,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 287
   },
   "char_1030_noirc2": {
@@ -1908,6 +2054,7 @@
     "alterId": null,
     "baseOperatorId": "char_500_noirc",
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 283
   },
   "char_4083_chimes": {
@@ -1921,6 +2068,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 280
   },
   "char_493_firwhl": {
@@ -1934,6 +2082,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 277
   },
   "char_4078_bdhkgt": {
@@ -1947,6 +2096,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 276
   },
   "char_297_hamoni": {
@@ -1960,6 +2110,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 274
   },
   "char_4017_puzzle": {
@@ -1973,6 +2124,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 273
   },
   "char_4014_lunacu": {
@@ -1986,6 +2138,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 269
   },
   "char_466_qanik": {
@@ -1999,6 +2152,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 268
   },
   "char_4071_peper": {
@@ -2012,6 +2166,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 265
   },
   "char_157_dagda": {
@@ -2025,6 +2180,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 264
   },
   "char_4066_highmo": {
@@ -2038,6 +2194,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 262
   },
   "char_4032_provs": {
@@ -2051,6 +2208,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 257
   },
   "char_497_ctable": {
@@ -2064,6 +2222,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 254
   },
   "char_4054_malist": {
@@ -2077,6 +2236,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 253
   },
   "char_1027_greyy2": {
@@ -2090,6 +2250,7 @@
     "alterId": null,
     "baseOperatorId": "char_253_greyy",
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 251
   },
   "char_135_halo": {
@@ -2103,6 +2264,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 250
   },
   "char_1024_hbisc2": {
@@ -2116,6 +2278,7 @@
     "alterId": null,
     "baseOperatorId": "char_120_hibisc",
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 248
   },
   "char_4047_pianst": {
@@ -2129,6 +2292,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 247
   },
   "char_4043_erato": {
@@ -2142,6 +2306,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 246
   },
   "char_433_windft": {
@@ -2155,6 +2320,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 242
   },
   "char_4040_rockr": {
@@ -2168,6 +2334,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 240
   },
   "char_4045_heidi": {
@@ -2181,6 +2348,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 239
   },
   "char_4016_kazema": {
@@ -2194,6 +2362,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 236
   },
   "char_4036_forcer": {
@@ -2207,6 +2376,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 235
   },
   "char_492_quercu": {
@@ -2220,6 +2390,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 233
   },
   "char_476_blkngt": {
@@ -2233,6 +2404,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 230
   },
   "char_1021_kroos2": {
@@ -2246,6 +2418,7 @@
     "alterId": null,
     "baseOperatorId": "char_124_kroos",
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 229
   },
   "char_4019_ncdeer": {
@@ -2259,6 +2432,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 228
   },
   "char_4025_aprot2": {
@@ -2272,6 +2446,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 227
   },
   "char_422_aurora": {
@@ -2285,6 +2460,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 224
   },
   "char_4013_kjera": {
@@ -2298,6 +2474,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 223
   },
   "char_489_serum": {
@@ -2311,6 +2488,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 220
   },
   "char_496_wildmn": {
@@ -2324,6 +2502,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 219
   },
   "char_449_glider": {
@@ -2337,6 +2516,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 218
   },
   "char_431_ashlok": {
@@ -2350,6 +2530,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 214
   },
   "char_473_mberry": {
@@ -2363,6 +2544,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 212
   },
   "char_421_crow": {
@@ -2376,6 +2558,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 208
   },
   "char_486_takila": {
@@ -2389,6 +2572,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 207
   },
   "char_478_kirara": {
@@ -2402,6 +2586,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 204
   },
   "char_369_bena": {
@@ -2415,6 +2600,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 203
   },
   "char_475_akafyu": {
@@ -2428,6 +2614,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 198
   },
   "char_363_toddi": {
@@ -2441,6 +2628,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 196
   },
   "char_304_zebra": {
@@ -2454,6 +2642,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 195
   },
   "char_458_rfrost": {
@@ -2467,6 +2656,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 193
   },
   "char_457_blitz": {
@@ -2480,6 +2670,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
+    "hasGuide": false,
     "releaseOrder": 192
   },
   "char_459_tachak": {
@@ -2493,6 +2684,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 191
   },
   "char_455_nothin": {
@@ -2506,6 +2698,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 188
   },
   "char_1011_lava2": {
@@ -2519,6 +2712,7 @@
     "alterId": null,
     "baseOperatorId": "char_121_lava",
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 187
   },
   "char_402_tuye": {
@@ -2532,6 +2726,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 186
   },
   "char_338_iris": {
@@ -2545,6 +2740,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 184
   },
   "char_214_kafka": {
@@ -2558,6 +2754,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 181
   },
   "char_451_robin": {
@@ -2571,6 +2768,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 180
   },
   "char_436_whispr": {
@@ -2584,6 +2782,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 175
   },
   "char_346_aosta": {
@@ -2597,6 +2796,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 172
   },
   "char_265_sophia": {
@@ -2610,6 +2810,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 171
   },
   "char_365_aprl": {
@@ -2623,6 +2824,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 168
   },
   "char_388_mint": {
@@ -2636,6 +2838,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 167
   },
   "char_415_flint": {
@@ -2649,6 +2852,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 164
   },
   "char_411_tomimi": {
@@ -2662,6 +2866,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 163
   },
   "char_218_cuttle": {
@@ -2675,6 +2880,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 152
   },
   "char_349_chiave": {
@@ -2688,6 +2894,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 150
   },
   "char_344_beewax": {
@@ -2701,6 +2908,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 149
   },
   "char_336_folivo": {
@@ -2714,6 +2922,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 148
   },
   "char_294_ayer": {
@@ -2727,6 +2936,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 146
   },
   "char_345_folnic": {
@@ -2740,6 +2950,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 145
   },
   "char_373_lionhd": {
@@ -2753,6 +2964,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 142
   },
   "char_405_absin": {
@@ -2766,6 +2978,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 141
   },
   "char_343_tknogi": {
@@ -2779,6 +2992,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 139
   },
   "char_378_asbest": {
@@ -2792,6 +3006,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 138
   },
   "char_401_elysm": {
@@ -2805,6 +3020,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 135
   },
   "char_254_vodfox": {
@@ -2818,6 +3034,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 132
   },
   "char_333_sidero": {
@@ -2831,6 +3048,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 131
   },
   "char_379_sesa": {
@@ -2844,6 +3062,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 127
   },
   "char_252_bibeak": {
@@ -2857,6 +3076,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 126
   },
   "char_306_leizi": {
@@ -2870,6 +3090,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 122
   },
   "char_226_hmau": {
@@ -2883,6 +3104,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 119
   },
   "char_383_snsant": {
@@ -2896,6 +3118,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 118
   },
   "char_367_swllow": {
@@ -2909,6 +3132,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 116
   },
   "char_356_broca": {
@@ -2922,6 +3146,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 114
   },
   "char_261_sddrag": {
@@ -2935,6 +3160,7 @@
     "alterId": "char_1020_reed2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 113
   },
   "char_243_waaifu": {
@@ -2948,6 +3174,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 111
   },
   "char_325_bison": {
@@ -2961,6 +3188,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 110
   },
   "char_275_breeze": {
@@ -2974,6 +3202,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 108
   },
   "char_279_excu": {
@@ -2987,6 +3216,7 @@
     "alterId": "char_1032_excu2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 105
   },
   "char_131_flameb": {
@@ -3000,6 +3230,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 104
   },
   "char_274_astesi": {
@@ -3013,6 +3244,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 100
   },
   "char_326_glacus": {
@@ -3026,6 +3258,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 97
   },
   "char_348_ceylon": {
@@ -3039,6 +3272,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 96
   },
   "char_308_swire": {
@@ -3052,6 +3286,7 @@
     "alterId": "char_1033_swire2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 93
   },
   "char_220_grani": {
@@ -3065,6 +3300,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 88
   },
   "char_164_nightm": {
@@ -3078,6 +3314,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 87
   },
   "char_230_savage": {
@@ -3091,6 +3328,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 83
   },
   "char_241_panda": {
@@ -3104,6 +3342,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 72
   },
   "char_215_mantic": {
@@ -3117,6 +3356,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 71
   },
   "char_101_sora": {
@@ -3130,6 +3370,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 70
   },
   "char_195_glassb": {
@@ -3143,6 +3384,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 69
   },
   "char_174_slbell": {
@@ -3156,6 +3398,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 68
   },
   "char_173_slchan": {
@@ -3169,6 +3412,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 67
   },
   "char_158_milu": {
@@ -3182,6 +3426,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 66
   },
   "char_145_prove": {
@@ -3195,6 +3440,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 65
   },
   "char_163_hpsts": {
@@ -3208,6 +3454,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 64
   },
   "char_201_moeshd": {
@@ -3221,6 +3468,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 63
   },
   "char_107_liskam": {
@@ -3234,6 +3482,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 62
   },
   "char_144_red": {
@@ -3247,6 +3496,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 61
   },
   "char_148_nearl": {
@@ -3260,6 +3510,7 @@
     "alterId": "char_1014_nearl2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 60
   },
   "char_171_bldsk": {
@@ -3273,6 +3524,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 59
   },
   "char_108_silent": {
@@ -3286,6 +3538,7 @@
     "alterId": "char_1031_slent2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 58
   },
   "char_242_otter": {
@@ -3299,6 +3552,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 57
   },
   "char_166_skfire": {
@@ -3312,6 +3566,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 56
   },
   "char_002_amiya": {
@@ -3325,6 +3580,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 55
   },
   "char_1001_amiya2": {
@@ -3338,6 +3594,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 55
   },
   "char_1037_amiya3": {
@@ -3351,6 +3608,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 55
   },
   "char_219_meteo": {
@@ -3364,6 +3622,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 54
   },
   "char_204_platnm": {
@@ -3377,6 +3636,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 53
   },
   "char_129_bluep": {
@@ -3390,6 +3650,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 52
   },
   "char_143_ghost": {
@@ -3403,6 +3664,7 @@
     "alterId": "char_1023_ghost2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 51
   },
   "char_140_whitew": {
@@ -3416,6 +3678,7 @@
     "alterId": "char_1038_whitw2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 50
   },
   "char_155_tiger": {
@@ -3429,6 +3692,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 49
   },
   "char_106_franka": {
@@ -3442,6 +3706,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 48
   },
   "char_102_texas": {
@@ -3455,6 +3720,7 @@
     "alterId": "char_1028_texas2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 47
   },
   "char_115_headbr": {
@@ -3468,6 +3734,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 46
   },
   "char_128_plosis": {
@@ -3481,6 +3748,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 45
   },
   "char_4165_ctrail": {
@@ -3494,6 +3762,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 359
   },
   "char_4130_luton": {
@@ -3507,6 +3776,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 332
   },
   "char_4100_caper": {
@@ -3520,6 +3790,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 312
   },
   "char_4107_vrdant": {
@@ -3533,6 +3804,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 308
   },
   "char_491_humus": {
@@ -3546,6 +3818,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 286
   },
   "char_4063_quartz": {
@@ -3559,6 +3832,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 267
   },
   "char_4062_totter": {
@@ -3572,6 +3846,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 263
   },
   "char_4067_lolxh": {
@@ -3585,6 +3860,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 259
   },
   "char_4041_chnut": {
@@ -3598,6 +3874,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 238
   },
   "char_4004_pudd": {
@@ -3611,6 +3888,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 217
   },
   "char_484_robrta": {
@@ -3624,6 +3902,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 211
   },
   "char_469_indigo": {
@@ -3637,6 +3916,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 202
   },
   "char_452_bstalk": {
@@ -3650,6 +3930,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 183
   },
   "char_440_pinecn": {
@@ -3663,6 +3944,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 179
   },
   "char_347_jaksel": {
@@ -3676,6 +3958,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 174
   },
   "char_381_bubble": {
@@ -3689,6 +3972,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 170
   },
   "char_271_spikes": {
@@ -3702,6 +3986,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 166
   },
   "char_366_acdrop": {
@@ -3715,6 +4000,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 162
   },
   "char_272_strong": {
@@ -3728,6 +4014,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 151
   },
   "char_328_cammou": {
@@ -3741,6 +4028,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 144
   },
   "char_258_podego": {
@@ -3754,6 +4042,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 140
   },
   "char_301_cutter": {
@@ -3767,6 +4056,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 130
   },
   "char_159_peacok": {
@@ -3780,6 +4070,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 129
   },
   "char_337_utage": {
@@ -3793,6 +4084,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 125
   },
   "char_385_finlpp": {
@@ -3806,6 +4098,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 124
   },
   "char_302_glaze": {
@@ -3819,6 +4112,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 115
   },
   "char_133_mm": {
@@ -3832,6 +4126,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 109
   },
   "char_355_ethan": {
@@ -3845,6 +4140,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 107
   },
   "char_190_clour": {
@@ -3858,6 +4154,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 103
   },
   "char_260_durnar": {
@@ -3871,6 +4168,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 102
   },
   "char_151_myrtle": {
@@ -3884,6 +4182,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 99
   },
   "char_298_susuro": {
@@ -3897,6 +4196,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 95
   },
   "char_253_greyy": {
@@ -3910,6 +4210,7 @@
     "alterId": "char_1027_greyy2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 92
   },
   "char_137_brownb": {
@@ -3923,6 +4224,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 86
   },
   "char_277_sqrrel": {
@@ -3936,6 +4238,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 44
   },
   "char_183_skgoat": {
@@ -3949,6 +4252,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 43
   },
   "char_110_deepcl": {
@@ -3962,6 +4266,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 42
   },
   "char_196_sunbr": {
@@ -3975,6 +4280,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 41
   },
   "char_150_snakek": {
@@ -3988,6 +4294,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 40
   },
   "char_199_yak": {
@@ -4001,6 +4308,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 39
   },
   "char_181_flower": {
@@ -4014,6 +4322,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 38
   },
   "char_187_ccheal": {
@@ -4027,6 +4336,7 @@
     "alterId": "char_1026_gvial2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 37
   },
   "char_117_myrrh": {
@@ -4040,6 +4350,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 36
   },
   "char_236_rope": {
@@ -4053,6 +4364,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 35
   },
   "char_237_gravel": {
@@ -4066,6 +4378,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 34
   },
   "char_185_frncat": {
@@ -4079,6 +4392,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 33
   },
   "char_127_estell": {
@@ -4092,6 +4406,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 32
   },
   "char_193_frostl": {
@@ -4105,6 +4420,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 31
   },
   "char_289_gyuki": {
@@ -4118,6 +4434,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 30
   },
   "char_130_doberm": {
@@ -4131,6 +4448,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 29
   },
   "char_290_vigna": {
@@ -4144,6 +4462,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 28
   },
   "char_149_scave": {
@@ -4157,6 +4476,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 27
   },
   "char_198_blackd": {
@@ -4170,6 +4490,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 26
   },
   "char_118_yuki": {
@@ -4183,6 +4504,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 25
   },
   "char_126_shotst": {
@@ -4196,6 +4518,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 24
   },
   "char_235_jesica": {
@@ -4209,6 +4532,7 @@
     "alterId": "char_1034_jesca2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 23
   },
   "char_109_fmout": {
@@ -4222,6 +4546,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 22
   },
   "char_141_nights": {
@@ -4235,6 +4560,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 21
   },
   "char_284_spot": {
@@ -4248,6 +4574,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 91
   },
   "char_281_popka": {
@@ -4261,6 +4588,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 90
   },
   "char_283_midn": {
@@ -4274,6 +4602,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 85
   },
   "char_282_catap": {
@@ -4287,6 +4616,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 84
   },
   "char_278_orchid": {
@@ -4300,6 +4630,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 20
   },
   "char_210_stward": {
@@ -4313,6 +4644,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 19
   },
   "char_212_ansel": {
@@ -4326,6 +4658,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 18
   },
   "char_120_hibisc": {
@@ -4339,6 +4672,7 @@
     "alterId": "char_1024_hbisc2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 17
   },
   "char_121_lava": {
@@ -4352,6 +4686,7 @@
     "alterId": "char_1011_lava2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 16
   },
   "char_211_adnach": {
@@ -4365,6 +4700,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 15
   },
   "char_124_kroos": {
@@ -4378,6 +4714,7 @@
     "alterId": "char_1021_kroos2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 14
   },
   "char_122_beagle": {
@@ -4391,6 +4728,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 13
   },
   "char_209_ardign": {
@@ -4404,6 +4742,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 12
   },
   "char_208_melan": {
@@ -4417,6 +4756,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 11
   },
   "char_192_falco": {
@@ -4430,6 +4770,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 10
   },
   "char_240_wyvern": {
@@ -4443,6 +4784,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 9
   },
   "char_123_fang": {
@@ -4456,6 +4798,7 @@
     "alterId": "char_1036_fang2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 8
   },
   "char_009_12fce": {
@@ -4469,6 +4812,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 7
   },
   "char_501_durin": {
@@ -4482,6 +4826,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 6
   },
   "char_503_rang": {
@@ -4495,6 +4840,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 5
   },
   "char_500_noirc": {
@@ -4508,6 +4854,7 @@
     "alterId": "char_1030_noirc2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 4
   },
   "char_502_nblade": {
@@ -4521,6 +4868,7 @@
     "alterId": "char_1029_yato2",
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 3
   },
   "char_4136_phonor": {
@@ -4534,6 +4882,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 336
   },
   "char_4093_frston": {
@@ -4547,6 +4896,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 294
   },
   "char_4091_ulika": {
@@ -4560,6 +4910,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 285
   },
   "char_4077_palico": {
@@ -4573,6 +4924,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 282
   },
   "char_4000_jnight": {
@@ -4586,6 +4938,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 216
   },
   "char_376_therex": {
@@ -4599,6 +4952,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 134
   },
   "char_286_cast3": {
@@ -4612,6 +4966,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 2
   },
   "char_285_medic2": {
@@ -4625,6 +4980,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
+    "hasGuide": false,
     "releaseOrder": 1
   }
 }
