@@ -11,6 +11,8 @@ const localePath = getPathByLocale(preferredLocale);
 
 const {slug} = Astro.params;
 
+export const prerender = false;
+
 const redirectToPreferredLocale = getRelativeLocaleUrl(localePath, "/");
 if (redirectToPreferredLocale == "/") {
 	return Astro.redirect("/en/operators/" + slug, 301);
