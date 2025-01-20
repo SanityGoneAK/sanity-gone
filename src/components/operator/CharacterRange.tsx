@@ -127,8 +127,6 @@ const calculateDifference = (
 
 	grid[0 - minRowIndex][0 - minColIndex] = GridCell.Operator;
 
-	console.log(rows);
-	console.log(cols);
 	return {
 		rows,
 		cols,
