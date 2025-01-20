@@ -3,6 +3,7 @@ import React, { createElement, useMemo } from "react";
 import { EliteZeroIcon, EliteOneIcon, EliteTwoIcon } from "~/components/icons";
 import * as ToggleGroup from "@radix-ui/react-toggle-group";
 import { cx } from "~/utils/styles.ts";
+import OldPillButtonGroup from "~/components/ui/ButtonGroup.tsx";
 
 interface Props {
 	eliteLevelsToShow: number[];
@@ -10,7 +11,10 @@ interface Props {
 	onChange: (newElite: number) => void;
 }
 
-const EliteButtonGroup: React.FC<Props> = ({
+/**
+ * DEPRECATED: Use ButtonGroup instead
+ */
+const OldEliteButtonGroup: React.FC<Props> = ({
 	eliteLevelsToShow,
 	currentElite,
 	onChange,
@@ -39,7 +43,7 @@ const EliteButtonGroup: React.FC<Props> = ({
 		</ToggleGroup.Root>
 	);
 };
-export default EliteButtonGroup;
+export default OldEliteButtonGroup;
 
 const EliteButton: React.FC<{
 	elite: number;

@@ -124,7 +124,7 @@ export const ui = {
 	"zh-cn": {
 		"nav.home": "主页",
 		"nav.operators": "干员",
-		"nav.old_site": "Old Site (Guides)",
+		"nav.old_site": "旧网站（英文攻略）", // specifies that the old site is in english: old site (english guides)
 		"nav.classes": "职业",
 		"nav.search": "搜索",
 		"nav.description":
@@ -181,7 +181,7 @@ export const ui = {
 		"operators.details.attributes.dp_cost": "部署费用",
 
 		"operators.details.talents.title": "天赋",
-		"operators.details.talents.no_talents": "这个精英没有天赋。",
+		"operators.details.talents.no_talents": "这个精英没有天赋",
 
 		"operators.details.skills.title": "技能",
 		"operators.details.skills.skill": "技能",

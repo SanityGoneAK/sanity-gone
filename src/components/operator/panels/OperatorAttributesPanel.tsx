@@ -5,12 +5,11 @@ import { range } from "lodash-es";
 
 import CharacterRange from "~/components/operator/CharacterRange";
 import CharacterStats from "~/components/operator/CharacterStats";
-import EliteButtonGroup from "~/components/operator/EliteButtonGroup";
 import MaterialRequirements from "~/components/operator/MaterialRequirements";
 import PotentialsDropdown from "~/components/operator/PotentialsDropdown";
 import Checkbox from "~/components/ui/Checkbox";
 import Input from "~/components/ui/Input";
-import PillButtonGroup from "~/components/ui/OldPillButtonGroup";
+import PillButtonGroup from "~/components/ui/ButtonGroup.tsx";
 import SliderWithInput from "~/components/ui/SliderWithInput";
 import { useTranslations } from "~/i18n/utils.ts";
 import { localeStore } from "~/pages/[locale]/_store.ts";
@@ -25,6 +24,7 @@ import { cx } from "~/utils/styles.ts";
 import type { CheckedState } from "@radix-ui/react-checkbox";
 import type { ui } from "~/i18n/ui.ts";
 import type * as OutputTypes from "~/types/output-types";
+import ButtonGroup from "~/components/ui/ButtonGroup.tsx";
 
 const LMD_ITEM_ID = "4001";
 
@@ -127,10 +127,11 @@ const OperatorAttributesPanel: React.FC = () => {
 						<span className="text-neutral-200 sm:hidden">
 							{t("operators.details.general.elite")}
 						</span>
-						<EliteButtonGroup
-							currentElite={elite}
-							eliteLevelsToShow={range(maxElite + 1)}
+						<ButtonGroup
+							labels={range(maxElite + 1)}
+							value={elite}
 							onChange={handleEliteChange}
+							elite={true}
 						/>
 					</div>
 					<SliderWithInput

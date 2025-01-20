@@ -19,6 +19,7 @@ import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
 import { cx } from "~/utils/styles.ts";
+import { descriptionToHtml } from "~/utils/description-parser.ts";
 
 // TODO: Do we want to handle modules such as Pozy Y?
 // a.k.a. show exact token stat changes for modules that

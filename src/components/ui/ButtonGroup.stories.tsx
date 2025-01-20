@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import PillButtonGroup from "./OldPillButtonGroup";
+import PillButtonGroup from "./ButtonGroup.tsx";
 
 import type { StoryObj } from "@storybook/react";
 

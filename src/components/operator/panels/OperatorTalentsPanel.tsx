@@ -5,7 +5,6 @@ import { range } from "lodash-es";
 
 import { operatorStore } from "~/pages/[locale]/operators/_slugstore";
 
-import EliteButtonGroup from "../EliteButtonGroup";
 import OperatorTalent from "../OperatorTalent";
 import PotentialsDropdown from "../PotentialsDropdown";
 
@@ -16,6 +15,7 @@ import { useTranslations } from "~/i18n/utils.ts";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import type { ui } from "~/i18n/ui.ts";
 import { getStatsAtLevel } from "~/utils/character-stats.ts";
+import ButtonGroup from "~/components/ui/ButtonGroup.tsx";
 
 const OperatorTalentsPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
@@ -67,10 +67,11 @@ const OperatorTalentsPanel: React.FC = () => {
 	return (
 		<div className="flex flex-col gap-4 p-6">
 			<div className="flex items-center justify-between border-b border-neutral-600 pb-4">
-				<EliteButtonGroup
-					currentElite={elite}
-					eliteLevelsToShow={range(maxElite + 1)}
+				<ButtonGroup
+					labels={range(maxElite + 1)}
+					value={elite}
 					onChange={handleEliteChange}
+					elite={true}
 				/>
 				<PotentialsDropdown
 					potentialsToShow={potentialsMap[`PHASE_${elite}`]}
@@ -91,7 +92,7 @@ const OperatorTalentsPanel: React.FC = () => {
 								{
 									// yes some talents have ranges. Tomimi why do you exist
 									talentPhase.range && (
-										<div className="grid grid-cols-[auto,1fr] items-center rounded bg-neutral-600 p-4">
+										<div className="grid grid-cols-[auto,1fr] items-center rounded bg-neutral-600 p-4" key={`talent-range-${index}`}>
 											<span className="text-neutral-200">
 												{t(
 													"operators.details.general.range"

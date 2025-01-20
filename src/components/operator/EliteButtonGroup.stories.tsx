@@ -2,13 +2,13 @@ import { useState } from "react";
 
 import { range } from "lodash-es";
 
-import EliteButtonGroup from "./EliteButtonGroup";
+import OldEliteButtonGroup from "./OldEliteButtonGroup.tsx";
 
 import type { StoryObj } from "@storybook/react";
 
-export default { component: EliteButtonGroup };
+export default { component: OldEliteButtonGroup };
 
-export const Default: StoryObj<typeof EliteButtonGroup> = {
+export const Default: StoryObj<typeof OldEliteButtonGroup> = {
 	args: {
 		eliteLevelsToShow: range(3),
 		currentElite: 0,
@@ -16,7 +16,7 @@ export const Default: StoryObj<typeof EliteButtonGroup> = {
 	render: (args) => {
 		const [elite, setElite] = useState(args.currentElite);
 		return (
-			<EliteButtonGroup
+			<OldEliteButtonGroup
 				{...args}
 				currentElite={elite}
 				onChange={setElite}

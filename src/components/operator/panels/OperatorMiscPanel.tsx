@@ -37,8 +37,6 @@ const OperatorMiscPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
 	const handbook = operator.handbook;
 
-	console.log(handbook.physicalExam);
-
 	// split off Infection Status and Inspection Report (robots only) from basicInfo
 	const infectionInspection = handbook.basicInfo.filter((info) =>
 		[

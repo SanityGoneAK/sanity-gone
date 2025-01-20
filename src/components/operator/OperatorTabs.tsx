@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Tab } from "@headlessui/react";
 import { useStore } from "@nanostores/react";
 import { Navigation, Scrollbar } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 
 import { useTranslations } from "~/i18n/utils.ts";
 import { localeStore } from "~/pages/[locale]/_store.ts";
@@ -20,6 +20,7 @@ import OperatorTalentsPanel from "./panels/OperatorTalentsPanel";
 
 const OperatorTabs: React.FC = () => {
 	const operator = useStore(operatorStore);
+	const swiperRef = useRef(null);
 
 	const locale = useStore(localeStore);
 	const t = useTranslations(locale);

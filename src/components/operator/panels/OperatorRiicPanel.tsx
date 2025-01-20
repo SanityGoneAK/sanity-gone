@@ -7,7 +7,9 @@ import { phaseToNumber } from "~/utils/character-stats";
 import { descriptionToHtml } from "~/utils/description-parser";
 import { riicSkillIcon } from "~/utils/images";
 
-import EliteButtonGroup, { getEliteIconComponent } from "../EliteButtonGroup";
+import { getEliteIconComponent } from "../OldEliteButtonGroup.tsx";
+import { range } from "lodash-es";
+import ButtonGroup from "~/components/ui/ButtonGroup.tsx";
 
 const OperatorRiicPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
@@ -34,10 +36,11 @@ const OperatorRiicPanel: React.FC = () => {
 	return (
 		<div className="flex flex-col gap-4 p-6">
 			<div className="grid grid-flow-col items-center justify-between gap-y-4 border-b border-neutral-600 pb-4">
-				<EliteButtonGroup
-					currentElite={elite}
-					eliteLevelsToShow={relevantEliteLevels}
+				<ButtonGroup
+					labels={range(maxElite + 1)}
+					value={elite}
 					onChange={handleEliteChange}
+					elite={true}
 				/>
 			</div>
 
