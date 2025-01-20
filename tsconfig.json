@@ -13,5 +13,9 @@
 			"data/*": ["data/*"]
 		}
 	},
-	"include": ["src/**/*", ".storybook/**/*"]
+	"include": ["src/**/*", ".storybook/**/*"],
+	"exclude": [
+		"scripts/ArknightsGameData/**/*",
+		"scripts/ArknightsGameData_YoStar/**/*"
+	]
 }

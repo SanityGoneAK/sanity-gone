@@ -12,122 +12,162 @@ import { FlatCompat } from "@eslint/eslintrc";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    recommendedConfig: js.configs.recommended,
-    allConfig: js.configs.all
+	baseDirectory: __dirname,
+	recommendedConfig: js.configs.recommended,
+	allConfig: js.configs.all,
 });
 
-export default [...fixupConfigRules(compat.extends(
-    "eslint:recommended",
-    "plugin:storybook/recommended",
-    "plugin:prettier/recommended",
-    "plugin:import/recommended",
-    "plugin:import/typescript",
-)), {
-    plugins: {
-        "@typescript-eslint": typescriptEslint,
-        react,
-        "react-hooks": fixupPluginRules(reactHooks),
-        prettier: fixupPluginRules(prettier),
-    },
+export default [
+	{
+		ignores: [
+			"./scripts/ArknightsGameData/**",
+			"./scripts/ArknightsGameData_YoStar/**",
+		],
+	},
+	...fixupConfigRules(
+		compat.extends(
+			"eslint:recommended",
+			"plugin:storybook/recommended",
+			"plugin:prettier/recommended",
+			"plugin:import/recommended",
+			"plugin:import/typescript"
+		)
+	),
+	{
+		plugins: {
+			"@typescript-eslint": typescriptEslint,
+			react,
+			"react-hooks": fixupPluginRules(reactHooks),
+			prettier: fixupPluginRules(prettier),
+		},
 
-    languageOptions: {
-        parser: tsParser,
-    },
+		languageOptions: {
+			parser: tsParser,
+		},
 
-    settings: {
-        react: {
-            version: "detect",
-        },
+		settings: {
+			react: {
+				version: "detect",
+			},
 
-        "import/parsers": {
-            "@typescript-eslint/parser": [".ts", ".tsx"],
-        },
+			"import/parsers": {
+				"@typescript-eslint/parser": [".ts", ".tsx"],
+			},
 
-        "import/resolver": {
-            typescript: {},
-        },
-    },
+			"import/resolver": {
+				typescript: {},
+			},
+		},
 
-    rules: {
-        "no-unused-vars": ["warn", {
-            varsIgnorePattern: "^_",
-        }],
+		rules: {
+			"no-unused-vars": [
+				"warn",
+				{
+					varsIgnorePattern: "^_",
+				},
+			],
 
-        "prettier/prettier": ["warn", {
-            endOfLine: "auto",
-        }],
+			"prettier/prettier": [
+				"warn",
+				{
+					endOfLine: "auto",
+				},
+			],
 
-        "react/no-unknown-property": ["error", {
-            ignore: ["css"],
-        }],
+			"react/no-unknown-property": [
+				"error",
+				{
+					ignore: ["css"],
+				},
+			],
 
-        "eol-last": "warn",
+			"eol-last": "warn",
 
-        "import/order": ["warn", {
-            "newlines-between": "always",
+			"import/order": [
+				"warn",
+				{
+					"newlines-between": "always",
 
-            groups: [
-                "builtin",
-                "external",
-                "internal",
-                ["parent", "sibling", "index"],
-                ["object", "type", "unknown"],
-            ],
+					groups: [
+						"builtin",
+						"external",
+						"internal",
+						["parent", "sibling", "index"],
+						["object", "type", "unknown"],
+					],
 
-            pathGroups: [{
-                pattern: "react",
-                group: "builtin",
-            }, {
-                pattern: "react-dom",
-                group: "builtin",
-            }],
+					pathGroups: [
+						{
+							pattern: "react",
+							group: "builtin",
+						},
+						{
+							pattern: "react-dom",
+							group: "builtin",
+						},
+					],
 
-            pathGroupsExcludedImportTypes: [],
+					pathGroupsExcludedImportTypes: [],
 
-            alphabetize: {
-                order: "asc",
-                caseInsensitive: true,
-            },
-        }],
-    },
-}, ...compat.extends("plugin:react/recommended", "plugin:@typescript-eslint/recommended").map(config => ({
-    ...config,
-    files: ["**/*.ts", "**/*.tsx"],
-})), {
-    files: ["**/*.ts", "**/*.tsx"],
+					alphabetize: {
+						order: "asc",
+						caseInsensitive: true,
+					},
+				},
+			],
+		},
+	},
+	...compat
+		.extends(
+			"plugin:react/recommended",
+			"plugin:@typescript-eslint/recommended"
+		)
+		.map((config) => ({
+			...config,
+			files: ["**/*.ts", "**/*.tsx"],
+		})),
+	{
+		files: ["**/*.ts", "**/*.tsx"],
 
-    languageOptions: {
-        ecmaVersion: 5,
-        sourceType: "script",
+		languageOptions: {
+			ecmaVersion: 5,
+			sourceType: "script",
 
-        parserOptions: {
-            project: true,
-        },
-    },
+			parserOptions: {
+				project: true,
+			},
+		},
 
-    rules: {
-        "react/jsx-uses-react": "off",
-        "react/react-in-jsx-scope": "off",
-        "react/prop-types": "off",
+		rules: {
+			"react/jsx-uses-react": "off",
+			"react/react-in-jsx-scope": "off",
+			"react/prop-types": "off",
 
-        "@typescript-eslint/restrict-template-expressions": ["error", {
-            allowNumber: true,
-        }],
+			"@typescript-eslint/restrict-template-expressions": [
+				"error",
+				{
+					allowNumber: true,
+				},
+			],
 
-        "@typescript-eslint/no-unused-vars": ["warn", {
-            varsIgnorePattern: "^_",
-        }],
+			"@typescript-eslint/no-unused-vars": [
+				"warn",
+				{
+					varsIgnorePattern: "^_",
+				},
+			],
 
-        "react-hooks/rules-of-hooks": "error",
-        "react-hooks/exhaustive-deps": "warn",
-        "@typescript-eslint/no-explicit-any": "off",
-        "@typescript-eslint/no-non-null-assertion": "off",
-    },
-}, {
-    files: ["**/*.stories.tsx"],
+			"react-hooks/rules-of-hooks": "error",
+			"react-hooks/exhaustive-deps": "warn",
+			"@typescript-eslint/no-explicit-any": "off",
+			"@typescript-eslint/no-non-null-assertion": "off",
+		},
+	},
+	{
+		files: ["**/*.stories.tsx"],
 
-    rules: {
-        "react-hooks/rules-of-hooks": "off",
-    },
-}];
+		rules: {
+			"react-hooks/rules-of-hooks": "off",
+		},
+	},
+];
