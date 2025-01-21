@@ -447,6 +447,7 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 					illustId: cnSkin.illustId,
 					avatarId: cnSkin.avatarId,
 					portraitId: cnSkin.portraitId,
+					dynIllustId: cnSkin.dynIllustId,
 					displaySkin: {
 						modelName: cnSkin.displaySkin.modelName,
 						drawerList: cnSkin.displaySkin.drawerList,

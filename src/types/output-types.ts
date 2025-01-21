@@ -363,6 +363,7 @@ export interface Skin {
 	name: string;
 	skinId: string;
 	illustId: string;
+	dynIllustId: string | null;
 	avatarId: string;
 	portraitId: string;
 	displaySkin: {

@@ -15,6 +15,7 @@ import PaintbrushIcon from "~/components/icons/PaintbrushIcon.tsx";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import ContingencyTokenIcon from "~/components/icons/ContingencyTokenIcon.tsx";
+import CharacterSpinePlayer from "~/components/operator/CharacterSpinePlayer.tsx";
 
 const CharacterSplash: React.FC = () => {
 	const { skins } = useStore(operatorStore);
@@ -84,11 +85,24 @@ const CharacterSplash: React.FC = () => {
                   Change to Astro native images / provide height */}
 							{/* This was fixed by fixing the width and position of the panel on the right.
 							No more layout shift, just make sure there's also no layout shift on mobile */}
-							<img
-								className="mx-auto my-0 h-full w-[clamp(0px,auto,85vw)] object-contain md:w-[clamp(0px,100%,60rem)]"
-								src={operatorSplash(skin.portraitId, skin.type)}
-								alt={skin.name}
-							/>
+							{/*<img*/}
+							{/*	className="mx-auto my-0 h-full w-[clamp(0px,auto,85vw)] object-contain md:w-[clamp(0px,100%,60rem)]"*/}
+							{/*	src={operatorSplash(skin.portraitId, skin.type)}*/}
+							{/*	alt={skin.name}*/}
+							{/*/>*/}
+							{skin.dynIllustId ? (
+								<CharacterSpinePlayer dynIllustId={skin.dynIllustId} />
+							) : (
+								<img
+									className="mx-auto my-0 h-full w-[clamp(0px,auto,85vw)] object-contain md:w-[clamp(0px,100%,60rem)]"
+									src={operatorSplash(
+										skin.portraitId,
+										skin.type
+									)}
+									alt={skin.name}
+								/>
+							)}
+
 							<div className="absolute bottom-0 left-0 inline-flex h-16 items-center gap-4 rounded bg-neutral-700/[0.6] p-3">
 								{skin.type === "elite-zero" && (
 									<EliteZeroIcon className="h-12 w-12 stroke-neutral-50" />
