@@ -1,4 +1,4 @@
-import { createElement, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 import { useStore } from "@nanostores/react";
 
@@ -7,9 +7,9 @@ import { phaseToNumber } from "~/utils/character-stats";
 import { descriptionToHtml } from "~/utils/description-parser";
 import { riicSkillIcon } from "~/utils/images";
 
-import { getEliteIconComponent } from "../OldEliteButtonGroup.tsx";
 import { range } from "lodash-es";
 import ButtonGroup from "~/components/ui/ButtonGroup.tsx";
+import { EliteOneIcon, EliteTwoIcon, EliteZeroIcon } from "~/components/icons";
 
 const OperatorRiicPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
@@ -70,14 +70,16 @@ const OperatorRiicPanel: React.FC = () => {
 								</h2>
 								{activeStage.minLevel > 1 && (
 									<div className="flex items-center gap-2 rounded-lg bg-neutral-500/[.33] px-2.5 py-2 text-yellow">
-										{createElement(
-											getEliteIconComponent(
-												phaseToNumber(
-													activeStage.minElite
-												)
-											),
-											{ active: true }
+										{activeStage.minElite === "PHASE_0" && (
+											<EliteZeroIcon className="fill-none stroke-neutral-200" />
 										)}
+										{activeStage.minElite === "PHASE_1" && (
+											<EliteOneIcon className="fill-neutral-200" />
+										)}
+										{activeStage.minElite === "PHASE_2" && (
+											<EliteTwoIcon className="fill-neutral-200" />
+										)}
+
 										<span className="leading-none">
 											Lv{activeStage.minLevel}
 										</span>

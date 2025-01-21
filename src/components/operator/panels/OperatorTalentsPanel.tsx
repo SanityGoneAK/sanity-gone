@@ -83,16 +83,15 @@ const OperatorTalentsPanel: React.FC = () => {
 			<div className="flex flex-col gap-4">
 				{talentPhases.length > 0
 					? talentPhases.map((talentPhase, index) => (
-							<>
+							<div key={"talent-" + index} className={"flex flex-col gap-4"}>
 								<OperatorTalent
-									key={index}
 									talentNumber={index + 1}
 									talentPhase={talentPhase}
 								/>
 								{
 									// yes some talents have ranges. Tomimi why do you exist
 									talentPhase.range && (
-										<div className="grid grid-cols-[auto,1fr] items-center rounded bg-neutral-600 p-4" key={`talent-range-${index}`}>
+										<div className="grid grid-cols-[auto,1fr] items-center rounded bg-neutral-600 p-4">
 											<span className="text-neutral-200">
 												{t(
 													"operators.details.general.range"
@@ -118,7 +117,7 @@ const OperatorTalentsPanel: React.FC = () => {
 										</div>
 									)
 								}
-							</>
+							</div>
 						))
 					: t("operators.details.talents.no_talents")}
 			</div>
