@@ -57,7 +57,7 @@ const OperatorRiicPanel: React.FC = () => {
 					return (
 						<div
 							key={`${activeStage.buffId}-${activeStage.minElite}-${activeStage.minLevel}`}
-							className="my-0 border-neutral-600 px-0 pb-6 [&:not(:first-of-type)]:border-t [&:not(:first-of-type)]:pt-6"
+							className="my-0 border-t border-neutral-600 px-0 pb-6 pt-6 first:border-none first:pt-0 last:pb-0"
 						>
 							<div className="mb-4 flex items-center gap-4">
 								<img
