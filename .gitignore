@@ -5,6 +5,10 @@ dist/
 
 /.idea/
 
+.idea/
+
+spine/
+
 # dependencies
 node_modules/
 

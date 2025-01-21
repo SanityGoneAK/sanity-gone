@@ -7,10 +7,29 @@ import { Buffer } from "buffer";
 import { spine } from "~/spine/spine-player.js";
 import { useEffect } from "react";
 import axios from "axios";
-import { spineAtlas, spineSkel, spineSpriteSheet } from "~/utils/images.ts";
+import { baseURL, spineAtlas, spineSkel, spineSpriteSheet } from "~/utils/images.ts";
 
 interface CharacterSpinePlayerProps {
 	dynIllustId: string;
+}
+
+const specialCases: {
+	[key: string]: {
+		atlasUrl?: string;
+		skelUrl?: string;
+		pngUrl?: string;
+		assetName?: string;
+	};
+} = {
+	"dyn_illust_char_4058_pepe": {
+		skelUrl: `${baseURL}/arts/dynchars/dyn_illust_char_4058_pepe.json`,
+	},
+	"dyn_illust_char_437_mizuki_sale#7": {
+		skelUrl: `${baseURL}/unknown/spine/dyn_illust_char_437_mizuki_sale%237.skel`,
+	},
+	"dyn_illust_char_1020_reed2_summer#17": {
+		skelUrl: `${baseURL}/arts/dynchars/dyn_illust_char_1020_reed2_summer%2317.json`,
+	}
 }
 
 const CharacterSpinePlayer: React.FC<CharacterSpinePlayerProps> = (props) => {
@@ -22,13 +41,21 @@ const CharacterSpinePlayer: React.FC<CharacterSpinePlayerProps> = (props) => {
 
 	console.log(dynIllustId);
 
+	const atlasUrl = specialCases[dynIllustId]?.atlasUrl ?? spineAtlas(dynIllustId);
+	const skelUrl = specialCases[dynIllustId]?.skelUrl ?? spineSkel(dynIllustId);
+
+	console.log(skelUrl);
+
+	const pngUrl = specialCases[dynIllustId]?.pngUrl ?? spineSpriteSheet(dynIllustId);
+	const assetName = specialCases[dynIllustId]?.assetName ?? spineSpriteSheet(dynIllustId, true);
+
 	useEffect(() => {
 		// fetch and base64 encode the sprite sheet, to fix the issue with any hashtags in the URL
 
 		// This implementation prevents the need to modify spine-player.js.
 		// The alternative implementation is to use encodeURIComponent() on the URL path for the image in spine-player.js, line 2298.
 		axios
-			.get(spineSpriteSheet(dynIllustId), { responseType: "arraybuffer" })
+			.get(pngUrl, { responseType: "arraybuffer" })
 			.then((response) => {
 				const base64 = Buffer.from(response.data, "binary").toString(
 					"base64"
@@ -39,21 +66,42 @@ const CharacterSpinePlayer: React.FC<CharacterSpinePlayerProps> = (props) => {
 					[key: string]: string;
 				} = {};
 				// rawDataURIs[dynIllustId + ".png"] = spriteSheet;
-				rawDataURIs[spineSpriteSheet(dynIllustId, true)] = spriteSheet;
+				rawDataURIs[assetName] = spriteSheet;
 
 				console.log(rawDataURIs);
 
-				// @ts-expect-error spine
-				const test = new spine.SpinePlayer("op-live2d", {
-					atlasUrl: spineAtlas(dynIllustId),
-					skelUrl: spineSkel(dynIllustId),
+				const config: {
+					atlasUrl: string;
+					rawDataURIs: {
+						[key: string]: string;
+					};
+					premultipliedAlpha: boolean;
+					alpha: boolean;
+					backgroundColor: string;
+					defaultMix: number;
+					fps: number;
+					skelUrl?: string;
+					jsonUrl?: string;
+				} = {
+					atlasUrl: atlasUrl,
 					rawDataURIs: rawDataURIs,
 					premultipliedAlpha: false,
 					alpha: true,
 					backgroundColor: "#00000000",
 					defaultMix: 0,
 					fps: 60
-				});
+				};
+
+				if(skelUrl.endsWith(".json")) {
+					config["jsonUrl"] = skelUrl;
+				} else {
+					config["skelUrl"] = skelUrl;
+				}
+
+				console.log(config);
+
+				// @ts-expect-error spine
+				const test = new spine.SpinePlayer("op-live2d", config);
 			})
 			.catch((error) => {
 				console.error(error);

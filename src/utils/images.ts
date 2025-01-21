@@ -1,6 +1,6 @@
 import itemsJson from "../../data/zh_CN/items.json";
 
-const baseURL = "https://penguacestergonenemypresslabdbdareprts.sanitygone.help";
+export const baseURL = "https://penguacestergonenemypresslabdbdareprts.sanitygone.help";
 
 export const spineAtlas = (skinId: string): string => {
 	return `${baseURL}/arts/dynchars/${encodeURIComponent(skinId)}.atlas`;
