@@ -5,6 +5,7 @@
 html {
 	scrollbar-width: auto;
 	scrollbar-color: rgba(255, 255, 255, 0.8) transparent;
+	word-break: auto-phrase;
 }
 
 a,
@@ -150,28 +151,35 @@ img {
 .module-desc {
 	.keyword {
 		@apply font-bold;
-		@apply text-blue-light
+		@apply text-blue-light;
 	}
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
 	--swiper-navigation-sides-offset: -5px;
-	background: radial-gradient(circle at 50% 50%, #24242E 0, rgba(36, 36, 46, 0.6) 50%, rgba(0,0,0,0) 99%);
-	@apply text-neutral-50;;
+	background: radial-gradient(
+		circle at 50% 50%,
+		#24242e 0,
+		rgba(36, 36, 46, 0.6) 50%,
+		rgba(0, 0, 0, 0) 99%
+	);
+	@apply text-neutral-50;
 }
-.swiper-button-disabled{
+.swiper-button-disabled {
 	display: none;
 }
-.swiper-button-next::after, .swiper-button-prev::after{
+.swiper-button-next::after,
+.swiper-button-prev::after {
 	--swiper-navigation-size: 20px;
 	width: 10px;
 }
 
-.swiper-slide:first-child{
+.swiper-slide:first-child {
 	@apply pl-4;
 	@apply sm:pl-0;
 }
-.swiper-slide:last-child{
+.swiper-slide:last-child {
 	@apply pr-4;
 	@apply sm:pr-0;
 }
