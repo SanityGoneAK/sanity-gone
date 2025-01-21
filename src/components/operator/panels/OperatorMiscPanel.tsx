@@ -163,7 +163,13 @@ const OperatorMiscPanel: React.FC = () => {
 									{info.title}
 								</span>
 								<span
-									className={`whitespace-pre-line text-right text-lg font-semibold leading-none`}
+									className={cx(
+										`max-w-[250px] whitespace-pre-wrap text-right text-lg font-semibold leading-none`,
+										info.value.length > 50 ? "break-words" : ""
+									)}
+									// i hate ifrit, i have to set max-w-250px AND break-words or the layout completely breaks on mobile
+									// due to lackluster whitespace-pre-wrap support... it does it correctly but it
+									// expands the div to be way too wide, expanding the whole layout
 								>
 									{info.value}
 								</span>
