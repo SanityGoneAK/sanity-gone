@@ -34,8 +34,8 @@ const t = useTranslations(locale);
 	<meta slot="head" property="og:type" content="website" />
 
 	<section class="mx-auto p-5 sm:py-auto max-w-[1800px]">
-		<OperatorFilterBar client:visible />
+		<OperatorFilterBar client:load />
 
-		<OperatorList locale={locale} client:visible />
+		<OperatorList locale={locale} client:load />
 	</section>
 </Layout>
