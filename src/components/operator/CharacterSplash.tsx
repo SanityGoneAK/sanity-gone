@@ -91,7 +91,9 @@ const CharacterSplash: React.FC = () => {
 							{/*	alt={skin.name}*/}
 							{/*/>*/}
 							{skin.dynIllustId ? (
-								<CharacterSpinePlayer dynIllustId={skin.dynIllustId} />
+								<div className="mx-auto my-0 max-h-[100vh] h-full w-full">
+									<CharacterSpinePlayer dynIllustId={skin.dynIllustId} />
+								</div>
 							) : (
 								<img
 									className="mx-auto my-0 h-full w-[clamp(0px,auto,85vw)] object-contain md:w-[clamp(0px,100%,60rem)]"

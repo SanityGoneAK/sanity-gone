@@ -44,7 +44,7 @@ const CharacterSpinePlayer: React.FC<CharacterSpinePlayerProps> = (props) => {
 	const atlasUrl = specialCases[dynIllustId]?.atlasUrl ?? spineAtlas(dynIllustId);
 	const skelUrl = specialCases[dynIllustId]?.skelUrl ?? spineSkel(dynIllustId);
 
-	console.log(skelUrl);
+	// console.log(skelUrl);
 
 	const pngUrl = specialCases[dynIllustId]?.pngUrl ?? spineSpriteSheet(dynIllustId);
 	const assetName = specialCases[dynIllustId]?.assetName ?? spineSpriteSheet(dynIllustId, true);
@@ -68,20 +68,10 @@ const CharacterSpinePlayer: React.FC<CharacterSpinePlayerProps> = (props) => {
 				// rawDataURIs[dynIllustId + ".png"] = spriteSheet;
 				rawDataURIs[assetName] = spriteSheet;
 
-				console.log(rawDataURIs);
+				// console.log(rawDataURIs);
 
 				const config: {
-					atlasUrl: string;
-					rawDataURIs: {
-						[key: string]: string;
-					};
-					premultipliedAlpha: boolean;
-					alpha: boolean;
-					backgroundColor: string;
-					defaultMix: number;
-					fps: number;
-					skelUrl?: string;
-					jsonUrl?: string;
+					[key: string]: any;
 				} = {
 					atlasUrl: atlasUrl,
 					rawDataURIs: rawDataURIs,
@@ -89,7 +79,13 @@ const CharacterSpinePlayer: React.FC<CharacterSpinePlayerProps> = (props) => {
 					alpha: true,
 					backgroundColor: "#00000000",
 					defaultMix: 0,
-					fps: 60
+					fps: 60,
+					// viewport: {
+					// 	padLeft: 0,
+					// 	padRight: 0,
+					// 	padTop: 0,
+					// 	padBottom: 0
+					// }
 				};
 
 				if(skelUrl.endsWith(".json")) {
@@ -97,8 +93,6 @@ const CharacterSpinePlayer: React.FC<CharacterSpinePlayerProps> = (props) => {
 				} else {
 					config["skelUrl"] = skelUrl;
 				}
-
-				console.log(config);
 
 				// @ts-expect-error spine
 				const test = new spine.SpinePlayer("op-live2d", config);
@@ -111,7 +105,6 @@ const CharacterSpinePlayer: React.FC<CharacterSpinePlayerProps> = (props) => {
 	return (
 		<>
 			<div className="h-full w-full" id="op-live2d"></div>
-			<script async></script>
 			<link rel="stylesheet" href="/spine-player.css" />
 		</>
 	);
