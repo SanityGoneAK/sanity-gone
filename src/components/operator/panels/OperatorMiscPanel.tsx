@@ -140,10 +140,10 @@ const OperatorMiscPanel: React.FC = () => {
 				<h2 className="font-serif text-2xl font-semibold">
 					{t("operators.details.misc.profile")}
 				</h2>
-				<p className="whitespace-pre-line text-base font-normal leading-normal" dangerouslySetInnerHTML={
-					{ __html: handbook.profile }
-				}>
-				</p>
+				<p
+					className="whitespace-pre-line text-base font-normal leading-normal"
+					dangerouslySetInnerHTML={{ __html: handbook.profile }}
+				></p>
 			</div>
 			<div className="flex flex-col gap-4 sm:grid sm:grid-cols-[1fr,_1px,_1fr]">
 				<div>
@@ -153,13 +153,18 @@ const OperatorMiscPanel: React.FC = () => {
 					<ul>
 						{basicInfo.map((info) => (
 							<li
-								className="mb-4 flex h-6 items-center justify-between last:mb-0"
+								className={cx(
+									`mb-4 flex items-center justify-between last:mb-0`,
+									info.value.length > 50 ? "" : "h-6" // oh hi ifrit...
+								)}
 								key={info.title}
 							>
 								<span className="text-base leading-none text-neutral-200">
 									{info.title}
 								</span>
-								<span className="text-lg font-semibold leading-none text-right">
+								<span
+									className={`whitespace-pre-line text-right text-lg font-semibold leading-none`}
+								>
 									{info.value}
 								</span>
 							</li>
@@ -191,7 +196,7 @@ const OperatorMiscPanel: React.FC = () => {
 										item.title
 									)}
 								</span>
-								<span className="text-lg font-semibold leading-none text-right">
+								<span className="text-right text-lg font-semibold leading-none">
 									{item.value}
 								</span>
 							</li>
