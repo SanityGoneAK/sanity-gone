@@ -4,6 +4,9 @@ dist/
 .astro/
 
 /.idea/
+idea/
+
+spine/
 
 # dependencies
 node_modules/
