@@ -14,30 +14,6 @@ const ITEM_LOCALES = {
 };
 
 const UNOFFICIAL_ITEM_NAME_TRANSLATIONS = {
-	31073: {
-		zh_CN: "褐素纤维",
-		en_US: "Brown Fiber",
-		ja_JP: "茶色繊維",
-		ko_KR: "갈색 섬유",
-	},
-	31074: {
-		zh_CN: "固化纤维板",
-		en_US: "Cured Fiberboard",
-		ja_JP: "硬化ファイバーボード",
-		ko_KR: "경화 섬유보드",
-	},
-	31083: {
-		zh_CN: "环烃聚质",
-		en_US: "Cycloalkane Polymer",
-		ja_JP: "シクロアルカンポリマー",
-		ko_KR: "졸로알케인 고분자",
-	},
-	31084: {
-		zh_CN: "环烃预制体",
-		en_US: "Cycloalkane Prefab",
-		ja_JP: "シクロアルカンプリファブ",
-		ko_KR: "졸로알케인 프리팹",
-	},
 };
 
 /**

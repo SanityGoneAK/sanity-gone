@@ -649,7 +649,7 @@
   },
   "31073": {
     "itemId": "31073",
-    "name": "Brown Fiber",
+    "name": "Fuscous Fiber",
     "iconId": "MTL_SL_XW",
     "description": "A derived product in Originium engineering, widely used in industrial fields due to its exceptional functionality. In recent years, its unique appearance has also drawn keen interest from those working in design.",
     "usage": "A specialized fiber bundle, possessing high tensile strength and elastic modulus. Used in a variety of strengthening projects.",
@@ -657,7 +657,7 @@
   },
   "31074": {
     "itemId": "31074",
-    "name": "Cured Fiberboard",
+    "name": "Solidified Fiber Board",
     "iconId": "MTL_SL_XWB",
     "description": "A compound fiber board crafted through bespoke manufacturing. Exhibits outstanding functionality, both physically and chemically, coupled with a rarely-seen ease of processing. An irreplaceable part of many an industrial workflow.",
     "usage": "A specialized fiber board, solidified in a mold. Used in a variety of strengthening projects.",
@@ -665,7 +665,7 @@
   },
   "31083": {
     "itemId": "31083",
-    "name": "Cycloalkane Polymer",
+    "name": "Aggregate Cyclicene",
     "iconId": "MTL_SL_HT",
     "description": "A novel transparent material born from the laboratory. Its high luminous transmittance and phenomenal durability in all aspects promise to make it an excellent substitute for many conventional materials.",
     "usage": "A superlatively heat- and chemical-resistant industrial material. Used in a variety of strengthening projects.",
@@ -673,7 +673,7 @@
   },
   "31084": {
     "itemId": "31084",
-    "name": "Cycloalkane Prefab",
+    "name": "Cyclicene Prefab",
     "iconId": "MTL_SL_HTT",
     "description": "An industrial product arrived at through the introduction of several excellent materials into the synthesis process, preserving luminous transmittance while vastly increasing strength and shock resistance. Prospects are high for its wide adoption in the field of defense.",
     "usage": "A prefabricated industrial intermediate composed of multiple first-rate materials. Used in a variety of strengthening projects.",
