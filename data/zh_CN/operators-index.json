@@ -1,4 +1,32 @@
 {
+  "char_2026_yu": {
+    "charId": "char_2026_yu",
+    "name": "余",
+    "slug": "yu",
+    "position": "MELEE",
+    "rarity": 6,
+    "profession": "TANK",
+    "subProfessionId": "primprotector",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": true,
+    "hasGuide": false,
+    "releaseOrder": 387
+  },
+  "char_1040_blaze2": {
+    "charId": "char_1040_blaze2",
+    "name": "烛煌",
+    "slug": "blaze-the-igniting-spark",
+    "position": "RANGED",
+    "rarity": 6,
+    "profession": "CASTER",
+    "subProfessionId": "primcaster",
+    "alterId": null,
+    "baseOperatorId": "char_017_huang",
+    "isLimited": false,
+    "hasGuide": false,
+    "releaseOrder": 386
+  },
   "char_1039_thorn2": {
     "charId": "char_1039_thorn2",
     "name": "引星棘刺",
@@ -1225,7 +1253,7 @@
     "rarity": 6,
     "profession": "WARRIOR",
     "subProfessionId": "centurion",
-    "alterId": null,
+    "alterId": "char_1040_blaze2",
     "baseOperatorId": null,
     "isLimited": false,
     "hasGuide": false,
@@ -1454,6 +1482,34 @@
     "isLimited": false,
     "hasGuide": false,
     "releaseOrder": 73
+  },
+  "char_4172_xingzh": {
+    "charId": "char_4172_xingzh",
+    "name": "行箸",
+    "slug": "xingzhu",
+    "position": "RANGED",
+    "rarity": 5,
+    "profession": "SUPPORT",
+    "subProfessionId": "blessing",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "hasGuide": false,
+    "releaseOrder": 385
+  },
+  "char_4052_surfer": {
+    "charId": "char_4052_surfer",
+    "name": "寻澜",
+    "slug": "surfer",
+    "position": "MELEE",
+    "rarity": 5,
+    "profession": "PIONEER",
+    "subProfessionId": "agent",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "hasGuide": false,
+    "releaseOrder": 384
   },
   "char_4164_tecno": {
     "charId": "char_4164_tecno",

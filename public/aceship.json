@@ -1,4 +1,6 @@
 {
+  "char_2026_yu": "/en/operators/yu",
+  "char_1040_blaze2": "/en/operators/blaze-the-igniting-spark",
   "char_1039_thorn2": "/en/operators/thorns-the-lodestar",
   "char_1038_whitw2": "/en/operators/lappland-the-decadenza",
   "char_4026_vulpis": "/en/operators/vulpisfoglia",
@@ -103,6 +105,8 @@
   "char_134_ifrit": "/en/operators/ifrit",
   "char_112_siege": "/en/operators/siege",
   "char_103_angel": "/en/operators/exusiai",
+  "char_4172_xingzh": "/en/operators/xingzhu",
+  "char_4052_surfer": "/en/operators/surfer",
   "char_4164_tecno": "/en/operators/tecno",
   "char_4163_rosesa": "/en/operators/rose-salt",
   "char_4155_talr": "/en/operators/figurino",

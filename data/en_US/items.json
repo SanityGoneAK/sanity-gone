@@ -2679,6 +2679,22 @@
     "usage": "用于提升特克诺的潜能。",
     "rarity": 5
   },
+  "p_char_4052_surfer": {
+    "itemId": "p_char_4052_surfer",
+    "name": "寻澜的信物",
+    "iconId": "p_char_4052_surfer",
+    "description": "一张圈出了哥伦比亚某几处地点的地图，还附着那些美丽风光的照片。或许下一次她就会带着你一同前往。",
+    "usage": "用于提升寻澜的潜能。",
+    "rarity": 5
+  },
+  "p_char_4172_xingzh": {
+    "itemId": "p_char_4172_xingzh",
+    "name": "行箸的信物",
+    "iconId": "p_char_4172_xingzh",
+    "description": "一枚玉雕止箸。行箸以寻百味，止箸以品其味。",
+    "usage": "用于提升行箸的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "Exusiai's Token",
@@ -3501,6 +3517,22 @@
     "iconId": "p_char_1039_thorn2",
     "description": "一缕纤细的心相原质，悄然汇入你的体内。待棘刺将它收回时，他便能清晰地知晓你身体状况的变化。",
     "usage": "用于提升引星棘刺的潜能。",
+    "rarity": 6
+  },
+  "p_char_2026_yu": {
+    "itemId": "p_char_2026_yu",
+    "name": "余的信物",
+    "iconId": "p_char_2026_yu",
+    "description": "一份空白的菜单，凭此可找余单独开小灶。看着它，有些人就已经馋得流口水了。",
+    "usage": "用于提升余的潜能。",
+    "rarity": 6
+  },
+  "p_char_1040_blaze2": {
+    "itemId": "p_char_1040_blaze2",
+    "name": "烛煌的信物",
+    "iconId": "p_char_1040_blaze2",
+    "description": "一个随时能够点火煮食物的便携炉子。一起彻夜加班的时候，她会把煮好的泡面分你一半。",
+    "usage": "用于提升烛煌的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
