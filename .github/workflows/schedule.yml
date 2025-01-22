@@ -1,0 +1,35 @@
+name: Update assets
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0,6,12,18 * * *"
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install Yarn
+        run: npm install --global yarn
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Run Update Data
+        run: yarn update-game-data
+
+      - name: Commit updates
+        run: |
+          git config --global user.name "Sanity;Gone"
+          git config --global user.email "actions@users.noreply.github.com"
+          git pull --all
+          git add data
+          git diff-index --quiet HEAD || git commit -m "Update game data" && git push
