@@ -18,6 +18,8 @@ interface SliderWithInputProps {
 	value: number;
 	onChange: (value: number) => void;
 	hideMax?: boolean;
+	inputClasses?: string;
+	sliderClasses?: string;
 }
 
 function skillLevelNumberToMasteryLevel(level: number): string {
@@ -28,7 +30,7 @@ function skillLevelNumberToMasteryLevel(level: number): string {
 }
 
 const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
-	const { type, max, value, onChange, hideMax } = props;
+	const { type, max, value, onChange, hideMax, inputClasses, sliderClasses } = props;
 
 	const locale = useStore(localeStore);
 	const t = useTranslations(locale);
@@ -75,14 +77,15 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 	const label = type === "level" ? "Operator Level" : "Skill Rank";
 
 	return (
-		<div className="flex items-center gap-x-4">
+		// return a fragment instead of a div, so the two components can be positioned individually
+		<>
 			{/* @ts-expect-error something with MUI */}
 			<Slider<"input">
 				aria-label={`${label} slider`}
 				slotProps={{
 					root: {
 						className:
-							"inline-flex mr-6 items-center h-4 relative cursor-pointer w-unset lg:w-full grow lg:grow-0",
+							"inline-flex mr-6 items-center h-4 relative cursor-pointer w-unset",
 					},
 					track: {
 						className: cx(
@@ -117,6 +120,7 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 				min={1}
 				max={max}
 				value={value}
+				className={sliderClasses}
 			/>
 			<div className="flex flex-shrink-0 items-center gap-x-2">
 				<span
@@ -126,7 +130,7 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 				</span>
 				<Input
 					aria-label={label}
-					className="w-10"
+					className={inputClasses ?? "w-10"}
 					onFocus={(e) => e.target.select()}
 					onBlur={handleBlur}
 					onChange={handleInputChange}
@@ -141,12 +145,12 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 				/>
 				{!hideMax && (
 					<>
-						<span>/</span>
-						<span>{max}</span>
+						<span className="text-neutral-400">/</span>
+						<span className="text-neutral-200">{max}</span>
 					</>
 				)}
 			</div>
-		</div>
+		</>
 	);
 };
 export default SliderWithInput;

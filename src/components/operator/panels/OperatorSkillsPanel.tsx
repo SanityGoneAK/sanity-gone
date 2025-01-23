@@ -142,13 +142,16 @@ const OperatorSkillsPanel: React.FC = () => {
 						onChange={setSkillNumber}
 					/>
 				</div>
-				<SliderWithInput
-					type="skill"
-					value={skillLevel}
-					onChange={setSkillLevel}
-					max={maxSkillLevel}
-					hideMax
-				/>
+				<div className="flex flex-row items-center w-full gap-4">
+					<SliderWithInput
+						type="skill"
+						value={skillLevel}
+						onChange={setSkillLevel}
+						max={maxSkillLevel}
+						hideMax
+						sliderClasses={"w-full"}
+					/>
+				</div>
 			</div>
 			<div className="grid gap-y-4 rounded-br-lg">
 				<div className="grid grid-flow-col grid-cols-[48px_1fr] items-center gap-x-4 gap-y-2 grid-areas-skills-mobile sm:grid-areas-skills">
@@ -158,7 +161,7 @@ const OperatorSkillsPanel: React.FC = () => {
 							activeSkillTableSkill.iconId,
 							activeSkillTableSkill.skillId
 						)}
-						alt=""
+						alt={activeSkillLevel.name}
 					/>
 					<h2 className="font-serif text-lg font-semibold leading-6 grid-in-name">
 						{activeSkillLevel.name}
