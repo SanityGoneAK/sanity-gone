@@ -77,7 +77,7 @@ export interface Operator extends Character {
 	};
 }
 
-export Gender = "Male" | "Female" | "Other";
+export type Gender = "Male" | "Female" | "Other";
 
 /**
  * Represents an Arknights summon. Currently only has a single extra property: the operatorId of the operator that summons it.
