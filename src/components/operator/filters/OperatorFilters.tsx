@@ -22,7 +22,7 @@ import { operatorBranchIcon, operatorClassIcon } from "../../../utils/images";
 import { cx } from "../../../utils/styles";
 import StarIcon from "../../icons/StarIcon";
 import Checkbox from "../../ui/Checkbox";
-import type { Rarity } from "~/types/output-types";
+import type { Gender, Rarity } from "~/types/output-types";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
@@ -203,26 +203,28 @@ const OperatorFilters = () => {
 				<p>{t("operators.index.filters.gender")}</p>
 				<div className="mt-2">
 					<div className="text-red-500 mt-2 flex items-center justify-center gap-2 rounded border border-neutral-600 text-neutral-50">
-						{["Male", "Female", "Other"].map((gender) => {
-							const selected = filterGender.some(
-								(item) => item === gender
-							);
-							return (
-								<button
-									key={gender}
-									onClick={() => toggleGender(gender)}
-									className={cx(
-										"flex aspect-square w-full max-w-12 items-center justify-center rounded hover:bg-neutral-400",
-										{
-											"bg-neutral-50 text-neutral-800 hover:bg-neutral-100":
-												selected,
-										}
-									)}
-								>
-									{genderTranslations[gender]}
-								</button>
-							);
-						})}
+						{new Array<Gender>("Male", "Female", "Other").map(
+							(gender: Gender) => {
+								const selected = filterGender.some(
+									(item) => item === gender
+								);
+								return (
+									<button
+										key={gender}
+										onClick={() => toggleGender(gender)}
+										className={cx(
+											"flex w-full py-2 items-center justify-center rounded hover:bg-neutral-400",
+											{
+												"bg-neutral-50 text-neutral-800 hover:bg-neutral-100":
+													selected,
+											}
+										)}
+									>
+										{genderTranslations[gender]}
+									</button>
+								);
+							}
+						)}
 					</div>
 				</div>
 			</div>
