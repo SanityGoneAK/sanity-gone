@@ -9,9 +9,11 @@ import {
 	$filterGuideAvailable,
 	$filterProfession,
 	$filterRarity,
+	$filterGender,
 	toggleProfession,
 	toggleBranch,
 	toggleRarity,
+	toggleGender,
 	initializeFiltersFromUrl,
 	serializeFiltersToUrl,
 } from "../../../pages/[locale]/operators/_store";
@@ -34,6 +36,7 @@ const OperatorFilters = () => {
 	const filterProfession = useStore($filterProfession);
 	const filterBranch = useStore($filterBranch);
 	const filterRarity = useStore($filterRarity);
+	const filterGender = useStore($filterGender);
 	const filterGuideAvailable = useStore($filterGuideAvailable);
 	const availableBranches = useStore($availableBranches);
 
@@ -43,9 +46,18 @@ const OperatorFilters = () => {
 		$filterProfession.set([]);
 		$filterBranch.set([]);
 		$filterRarity.set([]);
+		$filterGender.set([]);
 		$filterGuideAvailable.set(false);
 		serializeFiltersToUrl();
 	}, []);
+
+	const genderTranslations = useMemo(() => {
+		return {
+			Male: t("operators.index.filters.gender.male"),
+			Female: t("operators.index.filters.gender.female"),
+			Other: t("operators.index.filters.gender.other"),
+		};
+	}, [locale]);
 
 	return (
 		<div className="flex w-full flex-col gap-4 rounded-lg text-neutral-200 md:w-[420px] md:bg-neutral-950 md:p-4">
@@ -181,6 +193,33 @@ const OperatorFilters = () => {
 										rarity={rarity}
 										selected={selected}
 									/>
+								</button>
+							);
+						})}
+					</div>
+				</div>
+			</div>
+			<div>
+				<p>{t("operators.index.filters.gender")}</p>
+				<div className="mt-2">
+					<div className="text-red-500 mt-2 flex items-center justify-center gap-2 rounded border border-neutral-600 text-neutral-50">
+						{["Male", "Female", "Other"].map((gender) => {
+							const selected = filterGender.some(
+								(item) => item === gender
+							);
+							return (
+								<button
+									key={gender}
+									onClick={() => toggleGender(gender)}
+									className={cx(
+										"flex aspect-square w-full max-w-12 items-center justify-center rounded hover:bg-neutral-400",
+										{
+											"bg-neutral-50 text-neutral-800 hover:bg-neutral-100":
+												selected,
+										}
+									)}
+								>
+									{genderTranslations[gender]}
 								</button>
 							);
 						})}
