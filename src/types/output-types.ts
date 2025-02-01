@@ -54,6 +54,7 @@ export interface Operator extends Character {
 	potentialItemId: string;
 	itemUsage: string;
 	itemDesc: string;
+	gender: Gender;
 
 	handbook: {
 		classConversionRecord?: string[]; // amiya only lol
@@ -75,6 +76,8 @@ export interface Operator extends Character {
 		archives: string[];
 	};
 }
+
+export type Gender = "Male" | "Female" | "Other";
 
 /**
  * Represents an Arknights summon. Currently only has a single extra property: the operatorId of the operator that summons it.

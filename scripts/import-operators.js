@@ -141,6 +141,7 @@ export async function createOperatorsJson(dataDir, locale) {
 
 		filterSummons,
 		addLoreDetails,
+		addGender,
 		addHasGuide,
 		addModules,
 		addRiicSkills,
@@ -184,6 +185,7 @@ export async function createOperatorsJson(dataDir, locale) {
 					isLimited: character.isLimited,
 					hasGuide: character.hasGuide,
 					releaseOrder: character.releaseOrder,
+					gender: character.gender,
 				},
 			];
 		})
@@ -193,17 +195,14 @@ export async function createOperatorsJson(dataDir, locale) {
 		JSON.stringify(indexOperatorsJson, null, 2)
 	);
 
-	if (locale === "en_US"){
+	if (locale === "en_US") {
 		const aceshipRedirect = Object.fromEntries(
 			characters.map(([charId, character]) => {
-				return [
-					charId,
-					`/en/operators/${character.slug}`
-				];
+				return [charId, `/en/operators/${character.slug}`];
 			})
 		);
 		await fs.writeFile(
-			path.join(__dirname, "../public/","aceship.json"),
+			path.join(__dirname, "../public/", "aceship.json"),
 			JSON.stringify(aceshipRedirect, null, 2)
 		);
 	}
@@ -943,6 +942,35 @@ function addHasGuide(characters, _, { resultFetchContentfulGraphQl }) {
 				hasGuide: !!operatorsWithGuides[character.name],
 			},
 		];
+	});
+}
+
+function addGender(characters) {
+	const genderMap = {
+		Male: "Male",
+		Female: "Female",
+		男: "Male",
+		女: "Female",
+		남: "Male",
+		여: "Female",
+	};
+
+	return characters.map(([charId, character]) => {
+		// CN handbook is missing ifrit's `basic_info`...
+		if (charId == "char_134_ifrit") {
+			return [charId, { ...character, gender: "Female" }];
+		}
+		// Arene's EN gender entry is "Male]" (for some reason)
+		if (charId == "char_271_spikes") {
+			return [charId, { ...character, gender: "Male" }];
+		}
+
+		// FIXME(Unavailable): Don't hardcode the second entry...
+		// Checking for `Gender` is annoying because robots have different localization.
+		const genderLocalized = character.handbook.basicInfo[1];
+		const gender = genderMap[genderLocalized.value] ?? "Other";
+
+		return [charId, { ...character, gender }];
 	});
 }
 

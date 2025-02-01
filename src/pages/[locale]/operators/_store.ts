@@ -68,6 +68,11 @@ export const $filterRarity = atom<Array<OutputTypes.Rarity>>(
 				) ?? [])
 		: []
 );
+export const $filterGender = atom<Array<OutputTypes.Gender>>(
+	typeof window !== "undefined"
+		? ((window as any).queryParams?.gender?.split(",") ?? [])
+		: []
+);
 export const $filterGuideAvailable = atom<boolean>(false);
 
 export const $availableBranches = computed($filterProfession, (professions) => {
@@ -81,6 +86,7 @@ export const $operators = computed(
 		$filterProfession,
 		$filterBranch,
 		$filterRarity,
+		$filterGender,
 		$filterGuideAvailable,
 		$sortCategory,
 		$sortDirection,
@@ -90,6 +96,7 @@ export const $operators = computed(
 		professions,
 		branches,
 		rarity,
+		gender,
 		guideAvailable,
 		sortCategory,
 		sortDirection,
@@ -117,6 +124,12 @@ export const $operators = computed(
 		if (rarity.length > 0) {
 			baseOperators = baseOperators.filter((operator) =>
 				rarity.some((rarityIndex) => operator.rarity === rarityIndex)
+			);
+		}
+
+		if (gender.length > 0) {
+			baseOperators = baseOperators.filter((operator) =>
+				gender.some((gender) => operator.gender === gender)
 			);
 		}
 
@@ -216,6 +229,23 @@ export const toggleRarity = action(
 	}
 );
 
+export const toggleGender = action(
+	$filterGender,
+	"toggleGender",
+	(filterGenderStore, gender: OutputTypes.Gender) => {
+		if (filterGenderStore.get().indexOf(gender) === -1) {
+			filterGenderStore.set([...filterGenderStore.get(), gender]);
+			serializeFiltersToUrl();
+			return;
+		}
+
+		filterGenderStore.set(
+			filterGenderStore.get().filter((item) => item !== gender)
+		);
+		serializeFiltersToUrl();
+	}
+);
+
 export const serializeFiltersToUrl = () => {
 	if (typeof window === "undefined") {
 		return;
@@ -232,6 +262,9 @@ export const serializeFiltersToUrl = () => {
 
 	const rarity = $filterRarity.get();
 	if (rarity.length > 0) params.set("rarity", rarity.join(","));
+
+	const gender = $filterGender.get();
+	if (gender.length > 0) params.set("gender", gender.join(","));
 
 	if ($filterGuideAvailable.get()) params.set("guideAvailable", "true");
 
@@ -273,6 +306,11 @@ export const initializeFiltersFromUrl = (
 		rarity
 			? (rarity.split(",").map(Number) as Array<OutputTypes.Rarity>)
 			: []
+	);
+
+	const gender = params.get("gender");
+	$filterGender.set(
+		gender ? (gender.split(",") as Array<OutputTypes.Gender>) : []
 	);
 
 	const guideAvailable = params.get("guideAvailable");

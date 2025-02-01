@@ -25,6 +25,7 @@ import type { CheckedState } from "@radix-ui/react-checkbox";
 import type { ui } from "~/i18n/ui.ts";
 import type * as OutputTypes from "~/types/output-types";
 import ButtonGroup from "~/components/ui/ButtonGroup.tsx";
+import Tooltip from "~/components/ui/Tooltip.tsx";
 
 const LMD_ITEM_ID = "4001";
 
@@ -120,13 +121,10 @@ const OperatorAttributesPanel: React.FC = () => {
 	};
 
 	return (
-		<div className="flex flex-col gap-4 p-6">
-			<div className="grid items-center gap-y-4 border-b border-neutral-600 pb-4">
-				<div className="grid grid-cols-1 items-center gap-x-4 gap-y-4 sm:grid-cols-[auto_1fr]">
-					<div className="flex items-center justify-end gap-2">
-						<span className="text-neutral-200 sm:hidden">
-							{t("operators.details.general.elite")}
-						</span>
+		<div className="flex flex-col gap-4 p-6 pt-[21px]">
+			<div className="grid items-center border-b border-neutral-600 pb-4">
+				<div className="grid grid-flow-col grid-cols-[1fr_auto] grid-rows-2 items-center gap-x-4 gap-y-0">
+					<div className="flex items-center gap-2">
 						<ButtonGroup
 							labels={range(maxElite + 1)}
 							value={elite}
@@ -139,26 +137,66 @@ const OperatorAttributesPanel: React.FC = () => {
 						max={operator.phases[elite].maxLevel}
 						value={level}
 						onChange={setLevel}
+						inputClasses={`w-10 h-10 rounded-full border border-yellow text-white font-semibold text-xl leading-none
+							p-0 focus:ring-2 focus:ring-yellow-light focus:ring-opacity-50 focus:outline-none text-center
+							justify-end`}
+						sliderClasses={"col-span-2"}
 					/>
 				</div>
 				{/* 600px is the breakpoint at which this specific UI element breaks. */}
 				<div
 					className={cx(
-						"grid grid-cols-[auto_auto] items-center gap-x-4 gap-y-4",
-						moduleTypes.length &&
-							moduleTypes.length < 3 &&
-							"sm:grid-cols-[auto_auto_1fr]"
+						"mt-1 flex flex-wrap items-center gap-x-4 gap-y-4"
 					)}
 				>
-					<div className="flex items-center gap-2">
-						<label className="flex cursor-pointer items-center gap-2 text-neutral-200">
-							<Checkbox
-								variant={"info"}
-								checked={isTrustChecked}
-								onCheckedChange={handleTrustBonusCheckedChange}
+					{moduleTypes.length > 0 && (
+						<div
+							className={cx(
+								`col-span-2 flex w-full items-center gap-x-2 justify-self-end sm:col-span-1 sm:w-auto`
+							)}
+						>
+							<label className="flex cursor-pointer items-center gap-2 text-neutral-200">
+								<Checkbox
+									variant={"info"}
+									checked={isModuleTypeChecked}
+									onCheckedChange={handleModuleCheckedChange}
+								/>
+								{t("operators.details.attributes.module")}
+							</label>
+							<PillButtonGroup
+								labels={moduleTypes}
+								value={moduleType}
+								onChange={setModuleType}
+								disabled={!isModuleTypeChecked}
 							/>
-							{t("operators.details.attributes.trust")}
-						</label>
+							<PillButtonGroup
+								labels={[1, 2, 3]}
+								value={moduleLevel}
+								onChange={setModuleLevel}
+								disabled={
+									!isModuleTypeChecked ||
+									moduleType ===
+										t(
+											"operators.details.attributes.module_none"
+										)
+								}
+							/>
+						</div>
+					)}
+					<div className="hidden flex-grow sm:inline"></div>
+					<div className="flex items-center gap-2">
+						<Tooltip>
+							<label className="flex cursor-pointer items-center gap-2 text-neutral-200">
+								<Checkbox
+									variant={"info"}
+									checked={isTrustChecked}
+									onCheckedChange={
+										handleTrustBonusCheckedChange
+									}
+								/>
+								{t("operators.details.attributes.trust")}
+							</label>
+						</Tooltip>
 						<Input
 							aria-label="Trust level"
 							type="number"
@@ -177,53 +215,6 @@ const OperatorAttributesPanel: React.FC = () => {
 							potentialsToShow={potsWithStatChanges}
 						/>
 					</div>
-					{moduleTypes.length > 0 && (
-						<div
-							className={cx(
-								`col-span-2 flex w-full items-center gap-x-2 justify-self-end`,
-								moduleTypes.length < 3 &&
-									"sm:col-span-1 sm:w-auto"
-							)}
-						>
-							<label className="flex cursor-pointer items-center gap-2 text-neutral-200">
-								<Checkbox
-									variant={"info"}
-									checked={isModuleTypeChecked}
-									onCheckedChange={handleModuleCheckedChange}
-								/>
-								{t("operators.details.attributes.module")}
-							</label>
-							<div
-								className={`flex-grow ${locale === "ja" ? "sm:hidden" : "hidden"}`}
-							></div>
-							<PillButtonGroup
-								labels={moduleTypes}
-								value={moduleType}
-								onChange={setModuleType}
-								disabled={!isModuleTypeChecked}
-							/>
-							<div
-								className={`flex-grow ${moduleTypes.length < 3 && "sm:hidden"} ${locale === "ja" && "hidden"}`}
-							></div>
-							<span
-								className={`text-neutral-200 sm:hidden ${(moduleTypes.length === 3 || locale === "ja") && "hidden"}`}
-							>
-								{t("operators.details.modules.stage")}
-							</span>
-							<PillButtonGroup
-								labels={[1, 2, 3]}
-								value={moduleLevel}
-								onChange={setModuleLevel}
-								disabled={
-									!isModuleTypeChecked ||
-									moduleType ===
-										t(
-											"operators.details.attributes.module_none"
-										)
-								}
-							/>
-						</div>
-					)}
 				</div>
 			</div>
 			<div className="grid gap-y-4 rounded-br-lg">

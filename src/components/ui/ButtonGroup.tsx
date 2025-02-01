@@ -141,8 +141,8 @@ const PillButtonGroup = <T extends string | number = string>({
 						className={cx(
 							`relative z-20 cursor-pointer rounded border-none bg-none text-base font-semibold text-neutral-200 transition-[background-color,color] duration-200 disabled:cursor-not-allowed aria-pressed:text-neutral-950 disabled:aria-pressed:bg-neutral-200 [&:not([aria-pressed="true"],:disabled)]:hover:text-blue-light`,
 							elite
-								? `h-[40px] w-10 items-center [&:not([aria-pressed="true"],:disabled)]:hover:bg-yellow-light/10`
-								: `px-2.5 py-[4.5px] leading-[27px] [&:not([aria-pressed="true"],:disabled)]:hover:bg-blue-light/10`
+								? `h-8 w-9 items-center [&:not([aria-pressed="true"],:disabled)]:hover:bg-yellow-light/10`
+								: `px-1.5 py-[7px] leading-4 [&:not([aria-pressed="true"],:disabled)]:hover:bg-blue-light/10`
 						)}
 						ref={(el) => {
 							buttonWidths.current[i] =
@@ -155,7 +155,7 @@ const PillButtonGroup = <T extends string | number = string>({
 								{label === 0 && (
 									<EliteZeroIcon
 										className={cx(
-											"h-[22px] w-6 fill-none",
+											"h-4 w-[18px] fill-none",
 											value === label
 												? "stroke-neutral-900"
 												: "stroke-neutral-200"
@@ -165,7 +165,7 @@ const PillButtonGroup = <T extends string | number = string>({
 								{label === 1 && (
 									<EliteOneIcon
 										className={cx(
-											"h-[22px] w-6",
+											"h-4 w-[18px]",
 											value === label
 												? "fill-neutral-900"
 												: "fill-neutral-200"
@@ -175,7 +175,7 @@ const PillButtonGroup = <T extends string | number = string>({
 								{label === 2 && (
 									<EliteTwoIcon
 										className={cx(
-											"h-[22px] w-6",
+											"h-4 w-[18px]",
 											value === label
 												? "fill-neutral-900"
 												: "fill-neutral-200"
@@ -184,7 +184,13 @@ const PillButtonGroup = <T extends string | number = string>({
 								)}
 							</div>
 						) : (
-							label
+							<div
+								className={
+									label.toString().length === 1 ? "w-3" : ""
+								}
+							>
+								{label}
+							</div>
 						)}
 					</button>
 				))}

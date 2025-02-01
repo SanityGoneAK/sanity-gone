@@ -9,9 +9,11 @@ import {
 	$filterGuideAvailable,
 	$filterProfession,
 	$filterRarity,
+	$filterGender,
 	toggleProfession,
 	toggleBranch,
 	toggleRarity,
+	toggleGender,
 	initializeFiltersFromUrl,
 	serializeFiltersToUrl,
 } from "../../../pages/[locale]/operators/_store";
@@ -20,7 +22,7 @@ import { operatorBranchIcon, operatorClassIcon } from "../../../utils/images";
 import { cx } from "../../../utils/styles";
 import StarIcon from "../../icons/StarIcon";
 import Checkbox from "../../ui/Checkbox";
-import type { Rarity } from "~/types/output-types";
+import type { Gender, Rarity } from "~/types/output-types";
 import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
@@ -34,6 +36,7 @@ const OperatorFilters = () => {
 	const filterProfession = useStore($filterProfession);
 	const filterBranch = useStore($filterBranch);
 	const filterRarity = useStore($filterRarity);
+	const filterGender = useStore($filterGender);
 	const filterGuideAvailable = useStore($filterGuideAvailable);
 	const availableBranches = useStore($availableBranches);
 
@@ -43,9 +46,18 @@ const OperatorFilters = () => {
 		$filterProfession.set([]);
 		$filterBranch.set([]);
 		$filterRarity.set([]);
+		$filterGender.set([]);
 		$filterGuideAvailable.set(false);
 		serializeFiltersToUrl();
 	}, []);
+
+	const genderTranslations = useMemo(() => {
+		return {
+			Male: t("operators.index.filters.gender.male"),
+			Female: t("operators.index.filters.gender.female"),
+			Other: t("operators.index.filters.gender.other"),
+		};
+	}, [locale]);
 
 	return (
 		<div className="flex w-full flex-col gap-4 rounded-lg text-neutral-200 md:w-[420px] md:bg-neutral-950 md:p-4">
@@ -184,6 +196,35 @@ const OperatorFilters = () => {
 								</button>
 							);
 						})}
+					</div>
+				</div>
+			</div>
+			<div>
+				<p>{t("operators.index.filters.gender")}</p>
+				<div className="mt-2">
+					<div className="text-red-500 mt-2 flex items-center justify-center gap-2 rounded border border-neutral-600 text-neutral-50">
+						{new Array<Gender>("Male", "Female", "Other").map(
+							(gender: Gender) => {
+								const selected = filterGender.some(
+									(item) => item === gender
+								);
+								return (
+									<button
+										key={gender}
+										onClick={() => toggleGender(gender)}
+										className={cx(
+											"flex w-full py-2 items-center justify-center rounded hover:bg-neutral-400",
+											{
+												"bg-neutral-50 text-neutral-800 hover:bg-neutral-100":
+													selected,
+											}
+										)}
+									>
+										{genderTranslations[gender]}
+									</button>
+								);
+							}
+						)}
 					</div>
 				</div>
 			</div>

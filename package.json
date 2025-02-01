@@ -25,10 +25,10 @@
 	"dependencies": {
 		"@astrojs/check": "^0.9.4",
 		"@astrojs/cloudflare": "^12.1.0",
-		"@astrojs/node": "^9.0.0",
-		"@astrojs/react": "^4.1.2",
+		"@astrojs/node": "^9.0.2",
+		"@astrojs/react": "^4.1.6",
 		"@astrojs/tailwind": "^5.1.4",
-		"@astrojs/vercel": "^8.0.1",
+		"@astrojs/vercel": "^8.0.3",
 		"@headlessui/react": "^2.2.0",
 		"@meilisearch/instant-meilisearch": "^0.23.0",
 		"@mui/base": "5.0.0-beta.31",
@@ -95,7 +95,7 @@
 		"storybook": "^8.4.7",
 		"sucrase": "^3.35.0",
 		"ts-node": "^10.9.2",
-		"vite": "^5.4.6",
+		"vite": "^6.0.11",
 		"vite-tsconfig-paths": "^5.1.4"
 	},
 	"packageManager": "yarn@1.22.21"
