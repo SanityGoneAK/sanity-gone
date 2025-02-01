@@ -16,11 +16,11 @@ jobs:
         uses: SpicyPizza/create-envfile@v2.0
         with:
           envkey_MEILISEARCH_KEY: ${{ secrets.MEILISEARCH_KEY }}
-          envkey_PUBLIC_MEILISEARCH_URL: ${{ vars.PUBLIC_MEILISEARCH_URL }}
-          envkey_PUBLIC_MEILISEARCH_INDEX: ${{ vars.PUBLIC_MEILISEARCH_INDEX }}
-          envkey_PUBLIC_MEILISEARCH_KEY: ${{ vars.PUBLIC_MEILISEARCH_KEY }}
-          envkey_CONTENTFUL_SPACE_ID: ${{ vars.CONTENTFUL_SPACE_ID }}
-          envkey_CONTENTFUL_ACCESS_TOKEN: ${{ vars.CONTENTFUL_ACCESS_TOKEN }}
+          envkey_PUBLIC_MEILISEARCH_URL: ${{ secrets.PUBLIC_MEILISEARCH_URL }}
+          envkey_PUBLIC_MEILISEARCH_INDEX: ${{ secrets.PUBLIC_MEILISEARCH_INDEX }}
+          envkey_PUBLIC_MEILISEARCH_KEY: ${{ secrets.PUBLIC_MEILISEARCH_KEY }}
+          envkey_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          envkey_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
 
       - name: Set Node.js 18.x
         uses: actions/setup-node@v3
