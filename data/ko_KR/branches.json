@@ -122,7 +122,7 @@
   "reaperrange": {
     "branchName": "산탄사수",
     "class": "Sniper",
-    "trait": "공격 범위 내 <span class=\"keyword\">모든 적</span>을 공격<br>자신의 전방 첫 줄의 적에게 공격력이 150%까지 상승한다"
+    "trait": "범위 내의 <span class=\"keyword\">모든 적</span> 공격, 전방 첫 줄의 적에 대한 공격력이 150%로 증가"
   },
   "siegesniper": {
     "branchName": "공성사수",
@@ -157,12 +157,12 @@
   "mystic": {
     "branchName": "미스틱 캐스터",
     "class": "Caster",
-    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 부여, 공격 목표를 못 찾으면 공격 에너지를 <span class=\"keyword\">저장</span>한 후 일제히 발사(최대 3개)"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, 공격 목표가 없을 경우 공격 에너지를 <span class=\"keyword\">저장</span>한 후 일제히 발사(최대 3개)"
   },
   "chain": {
     "branchName": "체인 캐스터",
     "class": "Caster",
-    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 부여, 공격이 <span class=\"keyword\">3</span>명의 적에게 튕기며, 튕길 때마다 대미지가 15%씩 감소, 동시에 일시적인 <span class=\"skill-tooltip\">정지</span> 효과 부여"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 를 입히고, 공격이 <span class=\"keyword\">3</span>명의 적에게 튕기며, 튕길 때마다 대미지가 15%씩 감소, 동시에 일시적인 <span class=\"skill-tooltip\">정지</span> 효과 부여"
   },
   "blastcaster": {
     "branchName": "블래스트 캐스터",
@@ -310,9 +310,9 @@
     "trait": "공격이 목표 주변의 다른 적에게 공격력의 <span class=\"keyword\">50%</span>에 해당하는 <span class=\"keyword\">광역</span> 물리 대미지를 입힘"
   },
   "alchemist": {
-    "branchName": "炼金师",
+    "branchName": "연금술사",
     "class": "Specialist",
-    "trait": "可以投掷<span class=\"keyword\">炼金单元</span>协助作战"
+    "trait": "<span class=\"keyword\">연금 유닛</span>을 투척해 작전 지원"
   },
   "primprotector": {
     "branchName": "本源铁卫",

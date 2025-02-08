@@ -151,7 +151,7 @@
   },
   "char_4146_nymph": {
     "charId": "char_4146_nymph",
-    "name": "Nymph",
+    "name": "님프",
     "slug": "nymph",
     "position": "RANGED",
     "rarity": 6,
@@ -1786,7 +1786,7 @@
   },
   "char_4151_tinman": {
     "charId": "char_4151_tinman",
-    "name": "Tin Man",
+    "name": "틴맨",
     "slug": "tin-man",
     "position": "RANGED",
     "rarity": 5,
@@ -1801,7 +1801,7 @@
   },
   "char_4147_mitm": {
     "charId": "char_4147_mitm",
-    "name": "Mitm",
+    "name": "미틈",
     "slug": "mitm",
     "position": "RANGED",
     "rarity": 5,

@@ -310,9 +310,9 @@
     "trait": "Attacks deal <span class=\"keyword\">50%</span> ATK as <span class=\"keyword\">AOE</span> Physical damage to enemies around the target."
   },
   "alchemist": {
-    "branchName": "炼金师",
+    "branchName": "Alchemist",
     "class": "Specialist",
-    "trait": "可以投掷<span class=\"keyword\">炼金单元</span>协助作战"
+    "trait": "Can throw <span class=\"keyword\">Alchemical Units</span>to assist in combat"
   },
   "primprotector": {
     "branchName": "本源铁卫",

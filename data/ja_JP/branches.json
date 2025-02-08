@@ -310,9 +310,9 @@
     "trait": "攻撃対象の周囲にいる敵に攻撃力の<span class=\"keyword\">50%</span>の<span class=\"keyword\">範囲</span>物理ダメージを与える"
   },
   "alchemist": {
-    "branchName": "炼金师",
+    "branchName": "錬金士",
     "class": "Specialist",
-    "trait": "可以投掷<span class=\"keyword\">炼金单元</span>协助作战"
+    "trait": "<span class=\"keyword\">錬金ユニット</span>を投擲可能"
   },
   "primprotector": {
     "branchName": "本源铁卫",
