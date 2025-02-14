@@ -1,4 +1,19 @@
 {
+  "char_4010_etlchi": {
+    "charId": "char_4010_etlchi",
+    "name": "Entelechia",
+    "slug": "entelechia",
+    "position": "MELEE",
+    "rarity": 6,
+    "profession": "WARRIOR",
+    "subProfessionId": "reaper",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "hasGuide": false,
+    "releaseOrder": 389,
+    "gender": "Female"
+  },
   "char_2026_yu": {
     "charId": "char_2026_yu",
     "name": "Yu",
@@ -1588,6 +1603,21 @@
     "hasGuide": false,
     "releaseOrder": 73,
     "gender": "Female"
+  },
+  "char_4173_nowell": {
+    "charId": "char_4173_nowell",
+    "name": "Nowell",
+    "slug": "nowell",
+    "position": "RANGED",
+    "rarity": 5,
+    "profession": "MEDIC",
+    "subProfessionId": "healer",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "hasGuide": false,
+    "releaseOrder": 388,
+    "gender": "Male"
   },
   "char_4172_xingzh": {
     "charId": "char_4172_xingzh",
