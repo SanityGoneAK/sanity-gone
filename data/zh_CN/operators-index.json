@@ -1619,21 +1619,6 @@
     "releaseOrder": 388,
     "gender": "Male"
   },
-  "char_4172_xingzh": {
-    "charId": "char_4172_xingzh",
-    "name": "行箸",
-    "slug": "xingzhu",
-    "position": "RANGED",
-    "rarity": 5,
-    "profession": "SUPPORT",
-    "subProfessionId": "blessing",
-    "alterId": null,
-    "baseOperatorId": null,
-    "isLimited": false,
-    "hasGuide": false,
-    "releaseOrder": 385,
-    "gender": "Female"
-  },
   "char_4052_surfer": {
     "charId": "char_4052_surfer",
     "name": "寻澜",
@@ -1642,6 +1627,21 @@
     "rarity": 5,
     "profession": "PIONEER",
     "subProfessionId": "agent",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "hasGuide": false,
+    "releaseOrder": 385,
+    "gender": "Female"
+  },
+  "char_4172_xingzh": {
+    "charId": "char_4172_xingzh",
+    "name": "行箸",
+    "slug": "xingzhu",
+    "position": "RANGED",
+    "rarity": 5,
+    "profession": "SUPPORT",
+    "subProfessionId": "blessing",
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
