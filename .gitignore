@@ -8,6 +8,10 @@ idea/
 
 spine/
 
+.idea/
+
+spine/
+
 # dependencies
 node_modules/
 

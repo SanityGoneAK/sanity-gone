@@ -49,6 +49,7 @@
 		"ally.js": "^1.4.1",
 		"astro": "^5.1.1",
 		"axios": "^1.7.9",
+		"buffer": "^6.0.3",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"dotenv": "^16.4.7",
