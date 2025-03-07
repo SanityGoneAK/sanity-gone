@@ -1,4 +1,19 @@
 {
+  "char_450_necras": {
+    "charId": "char_450_necras",
+    "name": "Necrass",
+    "slug": "necrass",
+    "position": "RANGED",
+    "rarity": 6,
+    "profession": "CASTER",
+    "subProfessionId": "soulcaster",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "hasGuide": false,
+    "releaseOrder": 392,
+    "gender": "Female"
+  },
   "char_4010_etlchi": {
     "charId": "char_4010_etlchi",
     "name": "Entelechia",
@@ -1602,6 +1617,36 @@
     "isLimited": false,
     "hasGuide": false,
     "releaseOrder": 73,
+    "gender": "Female"
+  },
+  "char_4171_wulfen": {
+    "charId": "char_4171_wulfen",
+    "name": "Wulfenite",
+    "slug": "wulfenite",
+    "position": "RANGED",
+    "rarity": 5,
+    "profession": "SPECIAL",
+    "subProfessionId": "traper",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "hasGuide": false,
+    "releaseOrder": 391,
+    "gender": "Female"
+  },
+  "char_4177_brigid": {
+    "charId": "char_4177_brigid",
+    "name": "Brigid",
+    "slug": "brigid",
+    "position": "RANGED",
+    "rarity": 5,
+    "profession": "SNIPER",
+    "subProfessionId": "loopshooter",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "hasGuide": false,
+    "releaseOrder": 390,
     "gender": "Female"
   },
   "char_4173_nowell": {

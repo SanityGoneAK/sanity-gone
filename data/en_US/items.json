@@ -2703,6 +2703,22 @@
     "usage": "用于提升诺威尔的潜能。",
     "rarity": 5
   },
+  "p_char_4171_wulfen": {
+    "itemId": "p_char_4171_wulfen",
+    "name": "钼铅的信物",
+    "iconId": "p_char_4171_wulfen",
+    "description": "一块美丽的矿石，根据钼铅的说法，它的颜色会发生变化。工作之余，不妨看一眼，或许会有惊喜。",
+    "usage": "用于提升钼铅的潜能。",
+    "rarity": 5
+  },
+  "p_char_4177_brigid": {
+    "itemId": "p_char_4177_brigid",
+    "name": "水灯心的信物",
+    "iconId": "p_char_4177_brigid",
+    "description": "一枚环环相扣的草编绳结，其寓意无法在任何现存书籍上找到。给草绳涂抹兽油是罕见的举动，但或许她只是不想让你被草梗割伤。",
+    "usage": "用于提升水灯心的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "Exusiai's Token",
@@ -3549,6 +3565,14 @@
     "iconId": "p_char_4010_etlchi",
     "description": "一条银链，上面什么也没挂。你与她最为亲近的时刻尚未到来，等到那时，她会将那份记忆凝成血晶，再正式赠予你。",
     "usage": "用于提升隐德来希的潜能。",
+    "rarity": 6
+  },
+  "p_char_450_necras": {
+    "itemId": "p_char_450_necras",
+    "name": "死芒的信物",
+    "iconId": "p_char_450_necras",
+    "description": "一本从未出版过的故事集，没有一个故事有结局。细细看去，每个没完结的故事都指向一个尚在人世的人，你自己也在其中。",
+    "usage": "用于提升死芒的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
