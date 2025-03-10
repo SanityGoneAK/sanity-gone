@@ -136,7 +136,7 @@
   },
   "char_4141_marcil": {
     "charId": "char_4141_marcil",
-    "name": "Marcille",
+    "name": "マルシル",
     "slug": "marcille",
     "position": "RANGED",
     "rarity": 6,
@@ -147,7 +147,7 @@
     "isLimited": true,
     "hasGuide": false,
     "releaseOrder": 355,
-    "gender": "Female"
+    "gender": "Other"
   },
   "char_4058_pepe": {
     "charId": "char_4058_pepe",
@@ -1786,7 +1786,7 @@
   },
   "char_4142_laios": {
     "charId": "char_4142_laios",
-    "name": "Laios",
+    "name": "ライオス",
     "slug": "laios",
     "position": "MELEE",
     "rarity": 5,
@@ -1797,11 +1797,11 @@
     "isLimited": true,
     "hasGuide": false,
     "releaseOrder": 354,
-    "gender": "Male"
+    "gender": "Other"
   },
   "char_4144_chilc": {
     "charId": "char_4144_chilc",
-    "name": "Chilchuck",
+    "name": "チルチャック",
     "slug": "chilchuck",
     "position": "MELEE",
     "rarity": 5,
@@ -1812,11 +1812,11 @@
     "isLimited": true,
     "hasGuide": false,
     "releaseOrder": 353,
-    "gender": "Male"
+    "gender": "Other"
   },
   "char_4143_sensi": {
     "charId": "char_4143_sensi",
-    "name": "Senshi",
+    "name": "センシ",
     "slug": "senshi",
     "position": "MELEE",
     "rarity": 5,
@@ -1827,7 +1827,7 @@
     "isLimited": false,
     "hasGuide": false,
     "releaseOrder": 352,
-    "gender": "Male"
+    "gender": "Other"
   },
   "char_4140_lasher": {
     "charId": "char_4140_lasher",

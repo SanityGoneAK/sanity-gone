@@ -136,7 +136,7 @@
   },
   "char_4141_marcil": {
     "charId": "char_4141_marcil",
-    "name": "Marcille",
+    "name": "마르실",
     "slug": "marcille",
     "position": "RANGED",
     "rarity": 6,
@@ -1786,7 +1786,7 @@
   },
   "char_4142_laios": {
     "charId": "char_4142_laios",
-    "name": "Laios",
+    "name": "라이오스",
     "slug": "laios",
     "position": "MELEE",
     "rarity": 5,
@@ -1801,7 +1801,7 @@
   },
   "char_4144_chilc": {
     "charId": "char_4144_chilc",
-    "name": "Chilchuck",
+    "name": "칠책",
     "slug": "chilchuck",
     "position": "MELEE",
     "rarity": 5,
@@ -1816,7 +1816,7 @@
   },
   "char_4143_sensi": {
     "charId": "char_4143_sensi",
-    "name": "Senshi",
+    "name": "센시",
     "slug": "senshi",
     "position": "MELEE",
     "rarity": 5,
