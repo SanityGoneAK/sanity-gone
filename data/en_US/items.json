@@ -2609,26 +2609,26 @@
   },
   "p_char_4142_laios": {
     "itemId": "p_char_4142_laios",
-    "name": "莱欧斯的信物",
+    "name": "Laios' Token",
     "iconId": "p_char_4142_laios",
-    "description": "一幅奇怪的画，画的好像是一种混合了各种泰拉生物外形特征的融合物。莱欧斯兴奋地跟你讲解这幅画的时候千万别理他。",
-    "usage": "用于提升莱欧斯的潜能。",
+    "description": "A strange painting depicting what seems to be a chimeric creature that blends the features of all sorts of Terran wildlife into one. If Laios starts explaining this masterpiece to you, resist the urge to show interest—it only encourages his enthusiasm.",
+    "usage": "Used to improve the Potential of Laios.",
     "rarity": 5
   },
   "p_char_4143_sensi": {
     "itemId": "p_char_4143_sensi",
-    "name": "森西的信物",
+    "name": "Senshi's Token",
     "iconId": "p_char_4143_sensi",
-    "description": "一瓶森西随身携带的调味料，是来自那座遥远迷宫的独特口味。",
-    "usage": "用于提升森西的潜能。",
+    "description": "A bottle of seasoning Senshi carries around with him, containing a unique flavor from that distant dungeon.",
+    "usage": "Used to improve the Potential of Senshi.",
     "rarity": 5
   },
   "p_char_4144_chilc": {
     "itemId": "p_char_4144_chilc",
-    "name": "齐尔查克的信物",
+    "name": "Chilchuck's Token",
     "iconId": "p_char_4144_chilc",
-    "description": "一个小巧的腰包，可以装各种随身物品，外出探险时使用非常方便。",
-    "usage": "用于提升齐尔查克的潜能。",
+    "description": "A small waist pouch, able to hold all sorts of things. Very handy when it comes to exploring.",
+    "usage": "Used to improve the Potential of Chilchuck.",
     "rarity": 5
   },
   "p_char_487_bobb": {
@@ -3489,10 +3489,10 @@
   },
   "p_char_4141_marcil": {
     "itemId": "p_char_4141_marcil",
-    "name": "玛露西尔的信物",
+    "name": "Marcille's Token",
     "iconId": "p_char_4141_marcil",
-    "description": "一本魔法书，里面记录着不少源石技艺和魔法融合的想法，似乎都能产生意想不到的效用。",
-    "usage": "用于提升玛露西尔的潜能。",
+    "description": "A magic tome filled with ideas on how to fuse Originium Arts and magic. They always seem to produce unexpected results.",
+    "usage": "Used to improve the Potential of Marcille.",
     "rarity": 6
   },
   "p_char_1019_siege2": {
