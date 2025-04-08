@@ -1,4 +1,19 @@
 {
+  "char_4179_monstr": {
+    "charId": "char_4179_monstr",
+    "name": "Mon3tr",
+    "slug": "mon3tr",
+    "position": "RANGED",
+    "rarity": 6,
+    "profession": "MEDIC",
+    "subProfessionId": "chainhealer",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "hasGuide": false,
+    "releaseOrder": 395,
+    "gender": "Female"
+  },
   "char_450_necras": {
     "charId": "char_450_necras",
     "name": "Necrass",
@@ -1617,6 +1632,21 @@
     "isLimited": false,
     "hasGuide": false,
     "releaseOrder": 73,
+    "gender": "Female"
+  },
+  "char_4178_alanna": {
+    "charId": "char_4178_alanna",
+    "name": "Alanna",
+    "slug": "alanna",
+    "position": "MELEE",
+    "rarity": 5,
+    "profession": "SUPPORT",
+    "subProfessionId": "craftsman",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "hasGuide": false,
+    "releaseOrder": 394,
     "gender": "Female"
   },
   "char_4171_wulfen": {
@@ -4153,6 +4183,21 @@
     "hasGuide": false,
     "releaseOrder": 45,
     "gender": "Female"
+  },
+  "char_445_wscoot": {
+    "charId": "char_445_wscoot",
+    "name": "Windscoot",
+    "slug": "windscoot",
+    "position": "MELEE",
+    "rarity": 4,
+    "profession": "WARRIOR",
+    "subProfessionId": "librator",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "hasGuide": false,
+    "releaseOrder": 393,
+    "gender": "Male"
   },
   "char_4165_ctrail": {
     "charId": "char_4165_ctrail",

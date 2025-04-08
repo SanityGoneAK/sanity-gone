@@ -1,4 +1,5 @@
 {
+  "char_4179_monstr": "/en/operators/mon3tr",
   "char_450_necras": "/en/operators/necrass",
   "char_4010_etlchi": "/en/operators/entelechia",
   "char_2026_yu": "/en/operators/yu",
@@ -107,6 +108,7 @@
   "char_134_ifrit": "/en/operators/ifrit",
   "char_112_siege": "/en/operators/siege",
   "char_103_angel": "/en/operators/exusiai",
+  "char_4178_alanna": "/en/operators/alanna",
   "char_4171_wulfen": "/en/operators/wulfenite",
   "char_4177_brigid": "/en/operators/brigid",
   "char_4173_nowell": "/en/operators/nowell",
@@ -276,6 +278,7 @@
   "char_102_texas": "/en/operators/texas",
   "char_115_headbr": "/en/operators/zima",
   "char_128_plosis": "/en/operators/ptilopsis",
+  "char_445_wscoot": "/en/operators/windscoot",
   "char_4165_ctrail": "/en/operators/contrail",
   "char_4130_luton": "/en/operators/lutonada",
   "char_4100_caper": "/en/operators/caper",

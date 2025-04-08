@@ -549,14 +549,15 @@ function addTraits(characters, locale) {
 				const characterLocale =
 					CHARACTER_LOCALES[locale][charId] ??
 					CHARACTER_LOCALES.zh_CN[charId];
-
-				const overrideDescripton =
-					characterLocale.trait.candidates[candidateIndex]
-						.overrideDescripton;
+				const candidateLocale =
+					characterLocale.trait?.candidates[candidateIndex] ??
+					CHARACTER_LOCALES.zh_CN[charId].trait?.candidates[
+						candidateIndex
+					];
 
 				return {
 					...candidate,
-					overrideDescripton: overrideDescripton,
+					overrideDescripton: candidateLocale.overrideDescripton,
 				};
 			}
 		);

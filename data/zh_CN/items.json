@@ -551,6 +551,14 @@
     "usage": "对工艺要求极高的现代科技产物。用于高级强化场合。",
     "rarity": 5
   },
+  "30165": {
+    "itemId": "30165",
+    "name": "重相位对映体",
+    "iconId": "MTL_SL_DYT",
+    "description": "仍处于试验阶段的新材料，不仅能够承受高功率的能量输出，甚至对源石技艺展现出了自适应的特性。这或许预示了光学防护材料的发展方向。",
+    "usage": "光功能材料领域最尖端技术的产物。用于高级强化场合。",
+    "rarity": 5
+  },
   "31013": {
     "itemId": "31013",
     "name": "凝胶",
@@ -677,6 +685,22 @@
     "iconId": "MTL_SL_HTT",
     "description": "在合成流程中加入多种优良材料而得到的工业产品，保证透光度的同时大幅提升了强度与抗冲击性，在防护领域具有广阔应用前景。",
     "usage": "由多种优良材料预加工而成的工业用材。可用于多种强化场合。",
+    "rarity": 4
+  },
+  "31093": {
+    "itemId": "31093",
+    "name": "类凝结核",
+    "iconId": "MTL_SL_JH",
+    "description": "能够吸附多种物质的微粒，最初仅被当作廉价吸附剂使用，后因其通用性和易于实现的凝结条件而被应用于尖端领域。",
+    "usage": "在实验室中人工合成的微粒，拥有良好的吸附性能。可用于多种强化场合。",
+    "rarity": 3
+  },
+  "31094": {
+    "itemId": "31094",
+    "name": "手性屈光体",
+    "iconId": "MTL_SL_QGT",
+    "description": "拥有良好的物理强度，源石技艺耐受力也相当惊人的光学材料，目前可用于光学防护领域。其他用途仍在测试当中。",
+    "usage": "具备良好光学性能和物理性能的特种光学材料。用于高级强化场合。",
     "rarity": 4
   },
   "32001": {
@@ -1389,6 +1413,14 @@
     "iconId": "p_char_4165_ctrail",
     "description": "一个小小的白色挂件，用来纪念你陪伴她一起完成的飞行实验。她有点在意你会不会随时带在身上。",
     "usage": "用于提升云迹的潜能。",
+    "rarity": 4
+  },
+  "p_char_445_wscoot": {
+    "itemId": "p_char_445_wscoot",
+    "name": "骋风的信物",
+    "iconId": "p_char_445_wscoot",
+    "description": "一枚刻着“出入平安”的桃木挂件，他说，桃木可以辟邪，点缀的玉石带来好运，总之——木牌上的四个字是最要紧的事。",
+    "usage": "用于提升骋风的潜能。",
     "rarity": 4
   },
   "p_char_128_plosis": {
@@ -2719,6 +2751,14 @@
     "usage": "用于提升水灯心的潜能。",
     "rarity": 5
   },
+  "p_char_4178_alanna": {
+    "itemId": "p_char_4178_alanna",
+    "name": "阿兰娜的信物",
+    "iconId": "p_char_4178_alanna",
+    "description": "一把多功能扳手，这是阿兰娜独自操作数控机床制作出的第一件作品。她把这份独一无二的纪念品送给了你，并提醒你末端的小锤子可以用来敲开坚果。",
+    "usage": "用于提升阿兰娜的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "能天使的信物",
@@ -3573,6 +3613,14 @@
     "iconId": "p_char_450_necras",
     "description": "一本从未出版过的故事集，没有一个故事有结局。细细看去，每个没完结的故事都指向一个尚在人世的人，你自己也在其中。",
     "usage": "用于提升死芒的潜能。",
+    "rarity": 6
+  },
+  "p_char_4179_monstr": {
+    "itemId": "p_char_4179_monstr",
+    "name": "Mon3tr的信物",
+    "iconId": "p_char_4179_monstr",
+    "description": "一块可以改变形态的金属构造体，原本悬浮于Mon3tr身侧。它能帮助你应对许多危机，它会提醒你许多事情。",
+    "usage": "用于提升Mon3tr的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
@@ -4495,6 +4543,62 @@
     "usage": "用于提升熔泉的潜能。",
     "rarity": 5
   },
+  "class_p_char_475_akafyu": {
+    "itemId": "class_p_char_475_akafyu",
+    "name": "赤冬的中坚信物",
+    "iconId": "class_p_char_475_akafyu",
+    "description": "一盘生拌兽肉。能一块大笑着吃到光盘的才是好兄弟。",
+    "usage": "用于提升赤冬的潜能。",
+    "rarity": 5
+  },
+  "class_p_char_478_kirara": {
+    "itemId": "class_p_char_478_kirara",
+    "name": "绮良的中坚信物",
+    "iconId": "class_p_char_478_kirara",
+    "description": "《机械忍者2》典藏版。东国经典游戏的初期典藏版，她迫不及待将喜欢的都与你分享。",
+    "usage": "用于提升绮良的潜能。",
+    "rarity": 5
+  },
+  "class_p_char_421_crow": {
+    "itemId": "class_p_char_421_crow",
+    "name": "羽毛笔的中坚信物",
+    "iconId": "class_p_char_421_crow",
+    "description": "一本《多索雷斯调酒指南》，上面不少配方旁边都有她的笔记，看来这些都是她擅长的，闲暇之余可以找她点一杯。",
+    "usage": "用于提升羽毛笔的潜能。",
+    "rarity": 5
+  },
+  "class_p_char_473_mberry": {
+    "itemId": "class_p_char_473_mberry",
+    "name": "桑葚的中坚信物",
+    "iconId": "class_p_char_473_mberry",
+    "description": "挂着炎国特色装饰的红色平安符。桑葚特地为你请回的护身符，上面写着难懂的炎国文字，香火的气息若有若无。",
+    "usage": "用于提升桑葚的潜能。",
+    "rarity": 5
+  },
+  "class_p_char_431_ashlok": {
+    "itemId": "class_p_char_431_ashlok",
+    "name": "灰毫的中坚信物",
+    "iconId": "class_p_char_431_ashlok",
+    "description": "一枚击发后留下的弹壳，上面有着灰毫的签名。 这一发炮弹曾经为她带来了胜利，现在，它是你的了。",
+    "usage": "用于提升灰毫的潜能。",
+    "rarity": 5
+  },
+  "class_p_char_489_serum": {
+    "itemId": "class_p_char_489_serum",
+    "name": "蚀清的中坚信物",
+    "iconId": "class_p_char_489_serum",
+    "description": "一个个贴着密密麻麻标签的试剂瓶。《反腐蚀覆膜试剂》《反反腐蚀覆膜试剂》《反反......反反腐蚀覆膜试剂》，字有点小。呃，认真的？",
+    "usage": "用于提升蚀清的潜能。",
+    "rarity": 5
+  },
+  "class_p_char_422_aurora": {
+    "itemId": "class_p_char_422_aurora",
+    "name": "极光的中坚信物",
+    "iconId": "class_p_char_422_aurora",
+    "description": "一把密码锁。能打开她随身携带的工具箱，里面的东西任你取用。",
+    "usage": "用于提升极光的潜能。",
+    "rarity": 5
+  },
   "class_p_char_103_angel": {
     "itemId": "class_p_char_103_angel",
     "name": "能天使的中坚信物",
@@ -4757,6 +4861,70 @@
     "iconId": "class_p_char_472_pasngr",
     "description": "一枚古老的萨尔贡金币。经由漫长的命运之手反复摆弄，现在归你了。",
     "usage": "用于提升异客的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_003_kalts": {
+    "itemId": "class_p_char_003_kalts",
+    "name": "凯尔希的中坚信物",
+    "iconId": "class_p_char_003_kalts",
+    "description": "一个奇特的怀表，从未在诸国见过的制式，上面刻有四个年份日期，以及歪歪扭扭的几个字母。",
+    "usage": "用于提升凯尔希的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_426_billro": {
+    "itemId": "class_p_char_426_billro",
+    "name": "卡涅利安的中坚信物",
+    "iconId": "class_p_char_426_billro",
+    "description": "旅行家收藏的小纪念品。她曾指着纪念品说，买下这个的地方风光很好，下次带你一起去看。",
+    "usage": "用于提升卡涅利安的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_485_pallas": {
+    "itemId": "class_p_char_485_pallas",
+    "name": "帕拉斯的中坚信物",
+    "iconId": "class_p_char_485_pallas",
+    "description": "一部米诺斯英雄史诗。“英雄自人民中来，又回到人民当中。”这句写在卷首的话被圈了出来。",
+    "usage": "用于提升帕拉斯的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_437_mizuki": {
+    "itemId": "class_p_char_437_mizuki",
+    "name": "水月的中坚信物",
+    "iconId": "class_p_char_437_mizuki",
+    "description": "某经典电子游戏四十周年时发行的纪念章中的一枚。套章中的每个角色都有着各不相同的表情，可爱到让人想要把它给一口——",
+    "usage": "用于提升水月的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_479_sleach": {
+    "itemId": "class_p_char_479_sleach",
+    "name": "琴柳的中坚信物",
+    "iconId": "class_p_char_479_sleach",
+    "description": "一小截风干了的柳枝。每一粒嫩芽都很完好，仿佛只要沾了水，就还能蓬勃生长。",
+    "usage": "用于提升琴柳的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_430_fartth": {
+    "itemId": "class_p_char_430_fartth",
+    "name": "远牙的中坚信物",
+    "iconId": "class_p_char_430_fartth",
+    "description": "粗糙的木制短笛。由远牙亲手削制，能够吹出简单的音节。做工简单，所有扎手的木刺都被细心地磨平。",
+    "usage": "用于提升远牙的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_420_flamtl": {
+    "itemId": "class_p_char_420_flamtl",
+    "name": "焰尾的中坚信物",
+    "iconId": "class_p_char_420_flamtl",
+    "description": "一枚看似无奇的卡西米尔金币，这是索娜第一次在地下竞技场获胜时，所获得的唯一一枚报酬。",
+    "usage": "用于提升焰尾的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_206_gnosis": {
+    "itemId": "class_p_char_206_gnosis",
+    "name": "灵知的中坚信物",
+    "iconId": "class_p_char_206_gnosis",
+    "description": "一柄在他来到罗德岛后亲手打造的护身短剑。你在很久以后才偶然得知，这是埃德怀斯家表示友情的一种方式。",
+    "usage": "用于提升灵知的潜能。",
     "rarity": 6
   },
   "voucher_vigil": {
