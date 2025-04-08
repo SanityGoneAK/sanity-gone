@@ -136,7 +136,7 @@
   },
   "char_1019_siege2": {
     "charId": "char_1019_siege2",
-    "name": "Vina Victoria",
+    "name": "ヴィーナ・ヴィクトリア",
     "slug": "vina-victoria",
     "position": "MELEE",
     "rarity": 6,
@@ -1786,7 +1786,7 @@
   },
   "char_487_bobb": {
     "charId": "char_487_bobb",
-    "name": "Bobbing",
+    "name": "ボビング",
     "slug": "bobbing",
     "position": "RANGED",
     "rarity": 5,
@@ -1801,7 +1801,7 @@
   },
   "char_4162_cathy": {
     "charId": "char_4162_cathy",
-    "name": "Catherine",
+    "name": "キャサリン",
     "slug": "catherine",
     "position": "MELEE",
     "rarity": 5,

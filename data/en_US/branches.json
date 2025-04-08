@@ -287,7 +287,7 @@
   "ritualist": {
     "branchName": "Ritualist",
     "class": "Supporter",
-    "trait": "Attacks deal <span class=\"keyword\">Arts damage</span> and can inflict <span class=\"keyword\">Elemental Damage</span>. Not affected by <span class=\"keyword\">Deployment Limit</span>, but has a long Redeployment Time."
+    "trait": "Attacks deal <span class=\"keyword\">Arts damage</span> and can inflict <span class=\"keyword\">Elemental Injury</span>. Not affected by <span class=\"keyword\">Deployment Limit</span>, but has a long Redeployment Time."
   },
   "hunter": {
     "branchName": "Hunter",
@@ -297,7 +297,7 @@
   "primcaster": {
     "branchName": "Primal Caster",
     "class": "Caster",
-    "trait": "Attacks deal <span class=\"keyword\">Arts damage</span>, and can inflict <span class=\"keyword\">Elemental damage</span>"
+    "trait": "Attacks deal <span class=\"keyword\">Arts damage</span>, and can inflict <span class=\"keyword\">Elemental Damage</span>"
   },
   "loopshooter": {
     "branchName": "Loopshooter",
@@ -312,7 +312,7 @@
   "alchemist": {
     "branchName": "Alchemist",
     "class": "Specialist",
-    "trait": "Can throw <span class=\"keyword\">Alchemical Units</span>to assist in combat"
+    "trait": "Can throw <span class=\"keyword\">Alchemical Units</span> to assist in combat"
   },
   "primprotector": {
     "branchName": "本源铁卫",

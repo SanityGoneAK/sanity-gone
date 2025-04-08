@@ -97,7 +97,7 @@
   "fortress": {
     "branchName": "포트리스",
     "class": "Defender",
-    "trait": "적을 저지하지 않을 때, 원거리 광역 물리 공격 시전"
+    "trait": "적을 저지하지 않을 때 <span class=\"keyword\">원거리 광역</span> 물리 공격 시전"
   },
   "fastshot": {
     "branchName": "명사수",
@@ -157,12 +157,12 @@
   "mystic": {
     "branchName": "미스틱 캐스터",
     "class": "Caster",
-    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, 공격 목표가 없을 경우 공격 에너지를 <span class=\"keyword\">저장</span>한 후 일제히 발사(최대 3개)"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, 공격 목표가 없을 경우 공격 에너지를 <span class=\"keyword\">저장</span>한 후 일제히 발사 (최대 3개)"
   },
   "chain": {
     "branchName": "체인 캐스터",
     "class": "Caster",
-    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 를 입히고, 공격이 <span class=\"keyword\">3</span>명의 적에게 튕기며, 튕길 때마다 대미지가 15%씩 감소, 동시에 일시적인 <span class=\"skill-tooltip\">정지</span> 효과 부여"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, 공격이 <span class=\"keyword\">3</span>명의 적에게 튕기며, 튕길 때마다 대미지가 15%씩 감소, 동시에 일시적인 <span class=\"skill-tooltip\">정지</span> 효과 부여"
   },
   "blastcaster": {
     "branchName": "블래스트 캐스터",
@@ -297,7 +297,7 @@
   "primcaster": {
     "branchName": "프라이멀 캐스터",
     "class": "Caster",
-    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span> 를 입힘, 경우에 따라 <span class=\"keyword\">원소 대미지</span>를 입힘"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입힘, 경우에 따라 <span class=\"keyword\">원소 대미지</span>를 입힘"
   },
   "loopshooter": {
     "branchName": "루프슈터",
