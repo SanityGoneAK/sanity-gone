@@ -1,6 +1,18 @@
 import itemsJson from "../../data/zh_CN/items.json";
 
-const baseURL = "https://penguacestergonenemypresslabdbdareprts.sanitygone.help";
+export const baseURL = "https://penguacestergonenemypresslabdbdareprts.sanitygone.help";
+
+export const spineAtlas = (skinId: string): string => {
+	return `${baseURL}/arts/dynchars/${encodeURIComponent(skinId)}.atlas`;
+}
+
+export const spineSkel = (skinId: string): string => {
+	return `${baseURL}/arts/dynchars/${encodeURIComponent(skinId)}.skel`;
+}
+
+export const spineSpriteSheet = (skinId: string, unencoded?: boolean): string => {
+	return `${baseURL}/arts/dynchars/${unencoded ? skinId : encodeURIComponent(skinId)}.png`;
+}
 
 export const operatorAvatar = (charId: string, elite?: number): string => {
 	const basePath = `${baseURL}/torappu/dynamicassets/arts/charavatars/${charId}`;
