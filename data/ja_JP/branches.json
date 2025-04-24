@@ -315,14 +315,14 @@
     "trait": "<span class=\"keyword\">錬金ユニット</span>を投擲可能"
   },
   "primprotector": {
-    "branchName": "本源铁卫",
+    "branchName": "本源衛士",
     "class": "Defender",
-    "trait": "能够阻挡三个敌人，可以造成元素损伤"
+    "trait": "敵を3体までブロック<br>元素損傷を与える能力を持つ"
   },
   "skywalker": {
     "branchName": "巡空者",
     "class": "Specialist",
-    "trait": "<span class=\"skill-tooltip\">起飞</span>后能够阻挡2个飞行敌人"
+    "trait": "<span class=\"skill-tooltip\">離陸</span>中、空中の敵を2体までブロックできる"
   },
   "soulcaster": {
     "branchName": "塑灵术师",

@@ -91,7 +91,7 @@
   },
   "char_1038_whitw2": {
     "charId": "char_1038_whitw2",
-    "name": "Lappland the Decadenza",
+    "name": "荒蕪ラップランド",
     "slug": "lappland-the-decadenza",
     "position": "RANGED",
     "rarity": 6,
@@ -106,7 +106,7 @@
   },
   "char_4026_vulpis": {
     "charId": "char_4026_vulpis",
-    "name": "Vulpisfoglia",
+    "name": "ウルピスフォリア",
     "slug": "vulpisfoglia",
     "position": "MELEE",
     "rarity": 6,
@@ -121,7 +121,7 @@
   },
   "char_1502_crosly": {
     "charId": "char_1502_crosly",
-    "name": "Crownslayer",
+    "name": "クラウンスレイヤー",
     "slug": "crownslayer",
     "position": "MELEE",
     "rarity": 6,
@@ -1756,7 +1756,7 @@
   },
   "char_4155_talr": {
     "charId": "char_4155_talr",
-    "name": "Figurino",
+    "name": "フィグリーノ",
     "slug": "figurino",
     "position": "MELEE",
     "rarity": 5,
@@ -1771,7 +1771,7 @@
   },
   "char_4148_philae": {
     "charId": "char_4148_philae",
-    "name": "Philae",
+    "name": "フィラエ",
     "slug": "philae",
     "position": "MELEE",
     "rarity": 5,
@@ -4201,7 +4201,7 @@
   },
   "char_4165_ctrail": {
     "charId": "char_4165_ctrail",
-    "name": "Contrail",
+    "name": "コントレイル",
     "slug": "contrail",
     "position": "MELEE",
     "rarity": 4,
