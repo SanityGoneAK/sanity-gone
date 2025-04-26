@@ -315,14 +315,14 @@
     "trait": "Can throw <span class=\"keyword\">Alchemical Units</span> to assist in combat"
   },
   "primprotector": {
-    "branchName": "本源铁卫",
+    "branchName": "Primal Protector",
     "class": "Defender",
-    "trait": "能够阻挡三个敌人，可以造成元素损伤"
+    "trait": "Blocks 3 enemies, and can inflict Elemental Injury"
   },
   "skywalker": {
-    "branchName": "巡空者",
+    "branchName": "Skyranger",
     "class": "Specialist",
-    "trait": "<span class=\"skill-tooltip\">起飞</span>后能够阻挡2个飞行敌人"
+    "trait": "After <span class=\"skill-tooltip\">Taking Off</span>, can block 2 flying enemies"
   },
   "soulcaster": {
     "branchName": "塑灵术师",

@@ -1409,10 +1409,10 @@
   },
   "p_char_4165_ctrail": {
     "itemId": "p_char_4165_ctrail",
-    "name": "云迹的信物",
+    "name": "Contrail's Token",
     "iconId": "p_char_4165_ctrail",
-    "description": "一个小小的白色挂件，用来纪念你陪伴她一起完成的飞行实验。她有点在意你会不会随时带在身上。",
-    "usage": "用于提升云迹的潜能。",
+    "description": "A small white strap, to commemorate your successful test flight with her. There's a part of her hoping you will keep it on you wherever you go.",
+    "usage": "Used to improve the Potential of Contrail.",
     "rarity": 4
   },
   "p_char_445_wscoot": {
@@ -2681,18 +2681,18 @@
   },
   "p_char_4148_philae": {
     "itemId": "p_char_4148_philae",
-    "name": "菲莱的信物",
+    "name": "Philae's Token",
     "iconId": "p_char_4148_philae",
-    "description": "一种静坐冥想时使用的熏香，据说它的原料在生长时会竭尽沙土中的水分。如今它竭尽自己，只为助你思若泉流。",
-    "usage": "用于提升菲莱的潜能。",
+    "description": "A type of incense used during meditation. It is said that the plant it is made from exhausts the water supply in sandy soil as it grows. Now it exhausts itself, all to help with your meditation.",
+    "usage": "Used to improve the Potential of Philae.",
     "rarity": 5
   },
   "p_char_4155_talr": {
     "itemId": "p_char_4155_talr",
-    "name": "裁度的信物",
+    "name": "Figurino's Token",
     "iconId": "p_char_4155_talr",
-    "description": "一枚坑坑洼洼的银色戒指，似乎曾属于某位家族成员，被当作顶针用了很久。",
-    "usage": "用于提升裁度的潜能。",
+    "description": "A pitted silver ring. It seems it once belonged to a mafioso, but it has been used as a thimble for a very long time.",
+    "usage": "Used to improve the Potential of Figurino.",
     "rarity": 5
   },
   "p_char_4163_rosesa": {
@@ -3545,34 +3545,34 @@
   },
   "p_char_1038_whitw2": {
     "itemId": "p_char_1038_whitw2",
-    "name": "荒芜拉普兰德的信物",
+    "name": "Lappland the Decadenza's Token",
     "iconId": "p_char_1038_whitw2",
-    "description": "一封异常精美的紫色邀请函，角落潦草画着一只白狼和一串葡萄。她邀请你参加一场狂欢，但无人知晓主题是什么。",
-    "usage": "用于提升荒芜拉普兰德的潜能。",
+    "description": "An extremely elegant purple invitation, with a white wolf and a grape scrawled on the corner. She has invited you to a party, but no one knows what the party is about.",
+    "usage": "Used to improve the Potential of Lappland the Decadenza.",
     "rarity": 6
   },
   "p_char_1502_crosly": {
     "itemId": "p_char_1502_crosly",
-    "name": "弑君者的信物",
+    "name": "CrownSlayer's Token",
     "iconId": "p_char_1502_crosly",
-    "description": "一副密闭性良好的黑色战术口罩。“我的面目隐匿，我的愤怒昭显。”",
-    "usage": "用于提升弑君者的潜能。",
+    "description": "An airtight black tactical mask. 'My face is concealed, but my anger is for all to see.'",
+    "usage": "Used to improve the Potential of CrownSlayer.",
     "rarity": 6
   },
   "p_char_4026_vulpis": {
     "itemId": "p_char_4026_vulpis",
-    "name": "忍冬的信物",
+    "name": "Vulpisfoglia's Token",
     "iconId": "p_char_4026_vulpis",
-    "description": "一串手工制作的流苏挂饰，不知道是叙拉古还是东国的习俗，总之忍冬将它交给你以表尊敬和谢意。",
-    "usage": "用于提升忍冬的潜能。",
+    "description": "A set of handmade tassels. You're not sure if it's a Siracusan or Higashinese tradition, but Vulpisfoglia gave them to you to show her respect and gratitude.",
+    "usage": "Used to improve the Potential of Vulpisfoglia.",
     "rarity": 6
   },
   "p_char_4011_lessng": {
     "itemId": "p_char_4011_lessng",
-    "name": "止颂的信物",
+    "name": "Lessing's Token",
     "iconId": "p_char_4011_lessng",
-    "description": "一个布带系成的、造型特殊的绳结。连接信任的两端，连接过去与未来。",
-    "usage": "用于提升止颂的潜能。",
+    "description": "An unusual knot tied from some cloth. Trust binds together the two ends, binds past and future.",
+    "usage": "Used to improve the Potential of Lessing.",
     "rarity": 6
   },
   "p_char_1039_thorn2": {

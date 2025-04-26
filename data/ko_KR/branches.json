@@ -315,14 +315,14 @@
     "trait": "<span class=\"keyword\">연금 유닛</span>을 투척해 작전 지원"
   },
   "primprotector": {
-    "branchName": "本源铁卫",
+    "branchName": "프라이멀 프로텍터",
     "class": "Defender",
-    "trait": "能够阻挡三个敌人，可以造成元素损伤"
+    "trait": "적 3명 저지 가능, 공격 시 원소 피해를 입힘"
   },
   "skywalker": {
-    "branchName": "巡空者",
+    "branchName": "스카이레인저",
     "class": "Specialist",
-    "trait": "<span class=\"skill-tooltip\">起飞</span>后能够阻挡2个飞行敌人"
+    "trait": "<span class=\"skill-tooltip\">이륙</span> 후 비행하는 적 2명 저지 가능"
   },
   "soulcaster": {
     "branchName": "塑灵术师",
