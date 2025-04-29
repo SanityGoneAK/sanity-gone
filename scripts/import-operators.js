@@ -5,29 +5,39 @@ import { aggregateModuleData } from "./aggregate-module-data";
 import { aggregateRiicData } from "./aggregate-riic-data";
 import { fetchContentfulGraphQl } from "../src/utils/fetch";
 import { slugify } from "../src/utils/strings";
-import cnCharacterPatchTable from "./ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json" assert { type: "json" };
-import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" assert { type: "json" };
-import { voiceLangDict as voiceTable } from "./ArknightsGameData/zh_CN/gamedata/excel/charword_table.json" assert { type: "json" };
-import { handbookDict as cnHandbookDict } from "./ArknightsGameData/zh_CN/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+
 import rangeTable from "./ArknightsGameData/zh_CN/gamedata/excel/range_table.json" assert { type: "json" };
-import cnSkillTable from "./ArknightsGameData/zh_CN/gamedata/excel/skill_table.json" assert { type: "json" };
-import enCharacterPatchTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/char_patch_table.json" assert { type: "json" };
+
+import { voiceLangDict as cnVoiceTable } from "./ArknightsGameData/zh_CN/gamedata/excel/charword_table.json" assert { type: "json" };
+import { voiceLangDict as enVoiceTable } from "./ArknightsGameData_YoStar/en_US/gamedata/excel/charword_table.json" assert { type: "json" };
+import { voiceLangDict as jpVoiceTable } from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/charword_table.json" assert { type: "json" };
+import { voiceLangDict as krVoiceTable } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/charword_table.json" assert { type: "json" };
+
+import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" assert { type: "json" };
 import enCharacterTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json" assert { type: "json" };
 import jpCharacterTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json" assert { type: "json" };
 import krCharacterTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json" assert { type: "json" };
 
+import cnCharacterPatchTable from "./ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json" assert { type: "json" };
+import enCharacterPatchTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/char_patch_table.json" assert { type: "json" };
 import jpCharacterPatchTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/char_patch_table.json" assert { type: "json" };
 import krCharacterPatchTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/char_patch_table.json" assert { type: "json" };
+
+import cnSkillTable from "./ArknightsGameData/zh_CN/gamedata/excel/skill_table.json" assert { type: "json" };
 import enSkillTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/skill_table.json" assert { type: "json" };
 import jpSkillTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/skill_table.json" assert { type: "json" };
-import { handbookDict as krHandbookDict } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/handbook_info_table.json" assert { type: "json" };
 import krSkillTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/skill_table.json" assert { type: "json" };
+
 import { charSkins as cnCharSkins } from "./ArknightsGameData/zh_CN/gamedata/excel/skin_table.json" assert { type: "json" };
 import { charSkins as enCharSkins } from "./ArknightsGameData_YoStar/en_US/gamedata/excel/skin_table.json" assert { type: "json" };
 import { charSkins as jpCharSkins } from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/skin_table.json" assert { type: "json" };
 import { charSkins as krCharSkins } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/skin_table.json" assert { type: "json" };
+
+import { handbookDict as cnHandbookDict } from "./ArknightsGameData/zh_CN/gamedata/excel/handbook_info_table.json" assert { type: "json" };
 import { handbookDict as enHandbookDict } from "./ArknightsGameData_YoStar/en_US/gamedata/excel/handbook_info_table.json" assert { type: "json" };
 import { handbookDict as jpHandbookDict } from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as krHandbookDict } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+
 import {
 	fetchJetroyzSkillTranslations,
 	fetchJetroyzTalentTranslations,
@@ -75,6 +85,13 @@ const HANDBOOK_LOCALES = {
 	en_US: enHandbookDict,
 	ja_JP: jpHandbookDict,
 	ko_KR: krHandbookDict,
+};
+
+const VOICE_LOCALES = {
+	zh_CN: cnVoiceTable,
+	en_US: enVoiceTable,
+	ja_JP: jpVoiceTable,
+	ko_KR: krVoiceTable,
 };
 
 /**
@@ -128,7 +145,6 @@ export async function createOperatorsJson(dataDir, locale) {
 		addPhases,
 		addTalents,
 		addSkills,
-		addVoices,
 		addSkins,
 		convertRarityIndex,
 		addTraits,
@@ -140,6 +156,7 @@ export async function createOperatorsJson(dataDir, locale) {
 		// All summon data for a specific character must be parsed at this point (e.g. Skills, Phases)
 
 		filterSummons,
+		addVoices,
 		addLoreDetails,
 		addGender,
 		addHasGuide,
@@ -370,11 +387,11 @@ function addTalents(characters, locale, { jetTalentTranslations }) {
 	});
 }
 
-function addVoices(characters) {
+function addVoices(characters, locale) {
 	return characters.map(([charId, character]) => {
-		const voices = voiceTable[charId]
-			? Object.values(voiceTable[charId].dict)
-			: [];
+		let voices =
+			VOICE_LOCALES[locale][charId] ?? VOICE_LOCALES.zh_CN[charId];
+		voices = Object.values(voices.dict);
 
 		return [
 			charId,
