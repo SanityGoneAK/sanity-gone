@@ -17,6 +17,7 @@ import OperatorModulesPanel from "./panels/OperatorModulesPanel";
 import OperatorRiicPanel from "./panels/OperatorRiicPanel";
 import OperatorSkillsPanel from "./panels/OperatorSkillsPanel";
 import OperatorTalentsPanel from "./panels/OperatorTalentsPanel";
+import OperatorVoicePanel from "./panels/OperatorVoicePanel";
 
 const OperatorTabs: React.FC = () => {
 	const operator = useStore(operatorStore);
@@ -31,6 +32,7 @@ const OperatorTabs: React.FC = () => {
 		operator.skillData.length > 0 && t("operators.details.skills.title"),
 		operator.modules.length > 0 && t("operators.details.modules.title"),
 		t("operators.details.riic.title"),
+		t("operators.details.voice.title"),
 		t("operators.details.misc.title"),
 	].filter(Boolean) as string[];
 
@@ -99,6 +101,9 @@ const OperatorTabs: React.FC = () => {
 				)}
 				<Tab.Panel id="operator-riic-panel">
 					<OperatorRiicPanel />
+				</Tab.Panel>
+				<Tab.Panel id="operator-voice-panel">
+					<OperatorVoicePanel />
 				</Tab.Panel>
 				<Tab.Panel id="operator-misc-panel">
 					<OperatorMiscPanel />

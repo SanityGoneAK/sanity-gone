@@ -8,10 +8,10 @@ import { slugify } from "../src/utils/strings";
 
 import rangeTable from "./ArknightsGameData/zh_CN/gamedata/excel/range_table.json" assert { type: "json" };
 
-import { voiceLangDict as cnVoiceTable } from "./ArknightsGameData/zh_CN/gamedata/excel/charword_table.json" assert { type: "json" };
-import { voiceLangDict as enVoiceTable } from "./ArknightsGameData_YoStar/en_US/gamedata/excel/charword_table.json" assert { type: "json" };
-import { voiceLangDict as jpVoiceTable } from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/charword_table.json" assert { type: "json" };
-import { voiceLangDict as krVoiceTable } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/charword_table.json" assert { type: "json" };
+import cnVoiceTable from "./ArknightsGameData/zh_CN/gamedata/excel/charword_table.json" assert { type: "json" };
+import enVoiceTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/charword_table.json" assert { type: "json" };
+import jpVoiceTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/charword_table.json" assert { type: "json" };
+import krVoiceTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/charword_table.json" assert { type: "json" };
 
 import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" assert { type: "json" };
 import enCharacterTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json" assert { type: "json" };
@@ -388,16 +388,32 @@ function addTalents(characters, locale, { jetTalentTranslations }) {
 }
 
 function addVoices(characters, locale) {
+	const localeCharWords = Object.entries(VOICE_LOCALES[locale].charWords);
+	const cnCharWords = Object.entries(VOICE_LOCALES.zh_CN.charWords);
+
 	return characters.map(([charId, character]) => {
 		let voices =
-			VOICE_LOCALES[locale][charId] ?? VOICE_LOCALES.zh_CN[charId];
+			VOICE_LOCALES[locale].voiceLangDict[charId] ??
+			VOICE_LOCALES.zh_CN.voiceLangDict[charId];
 		voices = Object.values(voices.dict);
+
+		const localeVoiceLines = localeCharWords.filter(([, charWord]) => {
+			return charWord.wordKey === charId;
+		});
+
+		const cnVoiceLines = cnCharWords.filter(([, charWord]) => {
+			return charWord.wordKey === charId;
+		});
 
 		return [
 			charId,
 			{
 				...character,
 				voices,
+				voiceLines:
+					localeVoiceLines.length > 0
+						? Object.values(Object.fromEntries(localeVoiceLines))
+						: Object.values(Object.fromEntries(cnVoiceLines)),
 			},
 		];
 	});

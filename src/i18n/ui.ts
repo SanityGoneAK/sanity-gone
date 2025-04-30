@@ -111,6 +111,8 @@ export const ui = {
 
 		"operators.details.riic.title": "RIIC",
 
+		"operators.details.voice.title": "Voice",
+
 		"operators.details.misc.title": "Misc",
 		"operators.details.misc.profile": "Profile",
 		"operators.details.misc.infection_status": "Infection Status",
@@ -233,6 +235,8 @@ export const ui = {
 		"operators.details.modules.block": "阻挡数",
 
 		"operators.details.riic.title": "基建",
+
+		"operators.details.voice.title": "Voice",
 
 		"operators.details.misc.title": "杂项",
 		"operators.details.misc.profile": "客观履历", // what this section is called in game. probably not the best translation of "profile" directly
@@ -357,6 +361,8 @@ export const ui = {
 
 		"operators.details.riic.title": "基地",
 
+		"operators.details.voice.title": "Voice",
+
 		"operators.details.misc.title": "その他",
 		"operators.details.misc.profile": "情報",
 		"operators.details.misc.infection_status": "鉱石病感染状況",
@@ -480,6 +486,8 @@ export const ui = {
 		"operators.details.modules.block": "저지 가능 수",
 
 		"operators.details.riic.title": "인프라", // n.b. "Base" is labeled 기반시설 on the main menu; namuwiki uses 인프라
+
+		"operators.details.voice.title": "Voice",
 
 		"operators.details.misc.title": "기타",
 		"operators.details.misc.profile": "기록",

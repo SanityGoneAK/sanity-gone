@@ -16,6 +16,6 @@ const operatorsMap: Record<Locale, any> = {
 	"zh-cn": cnOperatorsJson,
 };
 
-export const operatorStore = atom<OutputTypes.Character>(
+export const operatorStore = atom<OutputTypes.Operator>(
 	typeof window !== "undefined" ? (window as any).operator : ""
 );
