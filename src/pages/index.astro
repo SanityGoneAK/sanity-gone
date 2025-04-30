@@ -16,5 +16,5 @@ const redirectToPreferredLocale = getRelativeLocaleUrl(localePath, "/");
 if (redirectToPreferredLocale == "/") {
 	return Astro.redirect("/en/operators", 301);
 }
-return Astro.redirect(redirectToPreferredLocale + 'operators/', 301);
+return Astro.redirect(redirectToPreferredLocale + "operators/", 301);
 ---
