@@ -1,6 +1,9 @@
 ---
 import { slugify } from "~/utils/strings";
-import enOperatorsJson from "data/en_US/operators-index.json";
+import enOperatorsJson from "data/en_US/operators.json";
+import krOperatorsJson from "data/ko_KR/operators.json";
+import jpOperatorsJson from "data/ja_JP/operators.json";
+import cnOperatorsJson from "data/zh_CN/operators.json";
 import Layout from "~/layouts/Layout.astro";
 import { operatorStore } from "./_slugstore";
 import CharacterSplash from "~/components/operator/CharacterSplash";
@@ -27,6 +30,12 @@ const { slug } = Astro.params;
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
 localeStore.set(locale);
 const t = useTranslations(locale);
+const operatorsMap: Record<Locale, any> = {
+	en: enOperatorsJson,
+	ko: krOperatorsJson,
+	ja: jpOperatorsJson,
+	"zh-cn": cnOperatorsJson,
+};
 
 export function getStaticPaths() {
 	return Object.keys(allLanguages).flatMap((lang) => {
@@ -43,7 +52,7 @@ export function getStaticPaths() {
 		);
 	});
 }
-// const operatorsJson = operatorsMap[locale as keyof typeof operatorsMap];
+const operatorsJson = operatorsMap[locale as keyof typeof operatorsMap];
 
 const idLookup = Object.fromEntries(
 	Object.entries(enOperatorsJson).map(
@@ -54,14 +63,10 @@ const idLookup = Object.fromEntries(
 );
 
 const operatorId = idLookup[slug ?? ""];
-const url = `${Astro.url.protocol}//${Astro.url.host}/api/${locale}/operators/${operatorId}.json`;
-console.log(url);
-const response = await (await fetch(url)).json();
-const operator = response as OutputTypes.Operator;
+const operator = operatorsJson[
+	operatorId as keyof typeof operatorsJson
+] as OutputTypes.Operator;
 
-// const operator = operatorsJson[
-// 	operatorId as keyof typeof operatorsJson
-// ] as OutputTypes.Operator;
 operatorStore.set(operator);
 
 const relatedOperators = getRelatedCharacter(operator, locale);
