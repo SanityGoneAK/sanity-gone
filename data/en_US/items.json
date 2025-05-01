@@ -791,6 +791,14 @@
     "usage": "Used to improve the Potential of PhonoR-0.",
     "rarity": 1
   },
+  "p_char_4188_confes": {
+    "itemId": "p_char_4188_confes",
+    "name": "CONFESS-47的信物",
+    "iconId": "p_char_4188_confes",
+    "description": "一本便携迷你经书。CONFESS-47提醒你，它没有手，不能主动把礼物递给你，你只能付费进车厢里去取。",
+    "usage": "用于提升CONFESS-47的潜能。",
+    "rarity": 1
+  },
   "p_char_502_nblade": {
     "itemId": "p_char_502_nblade",
     "name": "Yato's Token",
@@ -2759,6 +2767,14 @@
     "usage": "用于提升阿兰娜的潜能。",
     "rarity": 5
   },
+  "p_char_4187_graceb": {
+    "itemId": "p_char_4187_graceb",
+    "name": "聆音的信物",
+    "iconId": "p_char_4187_graceb",
+    "description": "一盆清新的百合花，从干员聆音的花圃中移栽而来。她总是很擅长照料新生的花朵。",
+    "usage": "用于提升聆音的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "Exusiai's Token",
@@ -3621,6 +3637,30 @@
     "iconId": "p_char_4179_monstr",
     "description": "一块可以改变形态的金属构造体，原本悬浮于Mon3tr身侧。它能帮助你应对许多危机，它会提醒你许多事情。",
     "usage": "用于提升Mon3tr的潜能。",
+    "rarity": 6
+  },
+  "p_char_1041_angel2": {
+    "itemId": "p_char_1041_angel2",
+    "name": "新约能天使的信物",
+    "iconId": "p_char_1041_angel2",
+    "description": "无敌绝世老板奖章。集满五颗最佳老板奖章可以兑换一枚超强老板奖章，集齐一百枚超强老板奖章可以兑换一枚无敌绝世老板奖章。能天使在被问起奖章是否还会继续迭代时微笑不语。",
+    "usage": "用于提升新约能天使的潜能。",
+    "rarity": 6
+  },
+  "p_char_4193_lemuen": {
+    "itemId": "p_char_4193_lemuen",
+    "name": "蕾缪安的信物",
+    "iconId": "p_char_4193_lemuen",
+    "description": "一颗苹果，一盆土。吃掉它，种下它，等到它开花的时候，她希望你摘下花朵送还给她。",
+    "usage": "用于提升蕾缪安的潜能。",
+    "rarity": 6
+  },
+  "p_char_4194_rmixer": {
+    "itemId": "p_char_4194_rmixer",
+    "name": "信仰搅拌机的信物",
+    "iconId": "p_char_4194_rmixer",
+    "description": "一枚闪着光的徽章，见证了他对拉特兰多年的守护，也见证了圣城对他无尽的信任。",
+    "usage": "用于提升信仰搅拌机的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
