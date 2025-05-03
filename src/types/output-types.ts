@@ -40,6 +40,7 @@ export type Rarity = 1 | 2 | 3 | 4 | 5 | 6;
  */
 export interface Operator extends Character {
 	voices: Voices;
+	voiceLines: VoiceLines;
 	skins: Skin[];
 	isLimited: boolean;
 	releaseOrder: number; // lower value means released earlier
