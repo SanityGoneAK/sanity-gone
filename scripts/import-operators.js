@@ -391,29 +391,39 @@ function addVoices(characters, locale) {
 	const localeCharWords = Object.entries(VOICE_LOCALES[locale].charWords);
 	const cnCharWords = Object.entries(VOICE_LOCALES.zh_CN.charWords);
 
+	const cnVoiceLangDict = VOICE_LOCALES.zh_CN.voiceLangDict;
+	const localeVoiceLangDict = VOICE_LOCALES[locale].voiceLangDict;
+
 	return characters.map(([charId, character]) => {
-		let voices =
-			VOICE_LOCALES[locale].voiceLangDict[charId] ??
-			VOICE_LOCALES.zh_CN.voiceLangDict[charId];
-		voices = Object.values(voices.dict);
 
-		const localeVoiceLines = localeCharWords.filter(([, charWord]) => {
-			return charWord.wordKey === charId;
-		});
+		const voices = Object.fromEntries(Object.entries(cnVoiceLangDict)
+			.filter(([, voiceEntry]) => voiceEntry.charId === charId)
+			.map(([voiceKey, { dict: cnDict }]) => {
+				const localeDict = localeVoiceLangDict[voiceKey]?.dict ?? {};
+				return [voiceKey, { ...cnDict, ...localeDict }];
+			}));
 
-		const cnVoiceLines = cnCharWords.filter(([, charWord]) => {
-			return charWord.wordKey === charId;
-		});
+
+		const voiceLines = Object.fromEntries(Object.keys(voices).map((voiceKey) => {
+			const localeVoiceLines = Object.fromEntries(
+				localeCharWords.filter(
+					([_, charWord]) => charWord.wordKey === voiceKey
+				)
+			);
+			const cnVoiceLines = Object.fromEntries(
+				cnCharWords.filter(
+					([_, charWord]) => charWord.wordKey == voiceKey
+					)
+			);
+			return [voiceKey, Object.values({ ...cnVoiceLines, ...localeVoiceLines })];
+		}))
 
 		return [
 			charId,
 			{
 				...character,
 				voices,
-				voiceLines:
-					localeVoiceLines.length > 0
-						? Object.values(Object.fromEntries(localeVoiceLines))
-						: Object.values(Object.fromEntries(cnVoiceLines)),
+				voiceLines,
 			},
 		];
 	});
@@ -483,6 +493,7 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 						modelName: cnSkin.displaySkin.modelName,
 						drawerList: cnSkin.displaySkin.drawerList,
 					},
+					voiceId: cnSkin.voiceId,
 					...skinSourcesAndCosts,
 				};
 			});

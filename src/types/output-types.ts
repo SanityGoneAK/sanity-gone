@@ -39,7 +39,7 @@ export type Rarity = 1 | 2 | 3 | 4 | 5 | 6;
  * Represents a single Arknights operator, which has some extra properties compared to a `Character`.
  */
 export interface Operator extends Character {
-	voices: Voice[];
+	voices: Voices;
 	skins: Skin[];
 	isLimited: boolean;
 	releaseOrder: number; // lower value means released earlier
@@ -355,12 +355,33 @@ export interface ModulePhaseCandidate {
 	// 	level: number;
 	// };
 }
-
-interface Voice {
-	wordkey: string;
-	voiceLangType: string;
-	cvName: string[];
+interface VoiceDetail {
+	wordkey: string
+	voiceLangType: string
+	cvName: string[]
+	voicePath: string | null
 }
+
+type VoiceDict = Record<string, VoiceDetail>
+type Voices = Record<string, VoiceDict>
+
+interface CharWord {
+	charWordId: string
+	wordKey: string
+	charId: string
+	voiceId: string
+	voiceText: string
+	voiceTitle: string
+	voiceIndex: number
+	voiceType: string
+	unlockType: string
+	unlockParam: any[]
+	lockDescription: string
+	placeType: string
+	voiceAsset: string
+}
+
+type VoiceLines = Record<string, CharWord[]>
 
 export interface Skin {
 	name: string;
