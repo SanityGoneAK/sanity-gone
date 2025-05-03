@@ -2,7 +2,7 @@
   "pioneer": {
     "branchName": "尖兵",
     "class": "Vanguard",
-    "trait": "能够阻挡两个敌人"
+    "trait": "能够阻挡两个敌人，且不受<span class=\"keyword\">部署数量</span>限制，但再部署时间极长"
   },
   "charger": {
     "branchName": "冲锋手",
@@ -328,5 +328,10 @@
     "branchName": "塑灵术师",
     "class": "Caster",
     "trait": "攻击造成<span class=\"keyword\">法术伤害</span>，可以通过击倒敌人生成<span class=\"keyword\">召唤物</span>，可攻击到自身<span class=\"keyword\">召唤物</span>阻挡的敌人"
+  },
+  "primguard": {
+    "branchName": "本源近卫",
+    "class": "Guard",
+    "trait": "能够阻挡两个敌人，可以造成<span class=\"keyword\">元素伤害</span>"
   }
 }

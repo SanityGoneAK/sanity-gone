@@ -54,6 +54,7 @@ const OperatorMiscPanel: React.FC = () => {
 	const basicInfo = handbook.basicInfo.filter(
 		(info) =>
 			![
+				"Footnote",
 				"Inspection Report",
 				"Infection Status", // en
 				"鉱石病感染状況",
@@ -85,6 +86,16 @@ const OperatorMiscPanel: React.FC = () => {
 			.join("\n")
 			.trim();
 		handbookPhysicalExam[lastPhysicalInfo].value = lastEntrySplit[0].trim();
+	}
+
+	let footnote = null;
+	if (["Footnote",
+		"追記",
+		"별첨",
+		"附注",]
+		.includes(handbook.physicalExam[lastPhysicalInfo].title)) {
+		footnote = handbook.physicalExam[lastPhysicalInfo];
+		handbookPhysicalExam.splice(lastPhysicalInfo, 1);
 	}
 
 	const isRobot = operator.tagList.some((tag) =>
@@ -167,9 +178,9 @@ const OperatorMiscPanel: React.FC = () => {
 										`max-w-[250px] whitespace-pre-wrap text-right text-lg font-semibold leading-none`,
 										info.value.length > 50 ? "break-words" : ""
 									)}
-									// i hate ifrit, i have to set max-w-250px AND break-words or the layout completely breaks on mobile
-									// due to lackluster whitespace-pre-wrap support... it does it correctly but it
-									// expands the div to be way too wide, expanding the whole layout
+								// i hate ifrit, i have to set max-w-250px AND break-words or the layout completely breaks on mobile
+								// due to lackluster whitespace-pre-wrap support... it does it correctly but it
+								// expands the div to be way too wide, expanding the whole layout
 								>
 									{info.value}
 								</span>
@@ -192,7 +203,7 @@ const OperatorMiscPanel: React.FC = () => {
 							>
 								<span className="text-base leading-none text-neutral-200">
 									{item.title ===
-									"Originium Arts Assimilation" ? ( // i may or may not be slightly trolling
+										"Originium Arts Assimilation" ? ( // i may or may not be slightly trolling
 										// (it had to be done, otherwise certain arts assimilation values wouldn't fit)
 										<div className="flex flex-row items-center gap-1.5">
 											<OriginiumIcon />
@@ -216,6 +227,16 @@ const OperatorMiscPanel: React.FC = () => {
 									}}
 								></span>
 							</li>
+						)}
+						{footnote && (
+							<div>
+								<h3 className="mb-1 text-sm leading-none text-neutral-200">
+									{footnote.title}
+								</h3>
+								<p className="tfootnoteext-base font-normal leading-normal">
+									{footnote.value}
+								</p>
+							</div>
 						)}
 					</ul>
 				</div>
@@ -249,7 +270,7 @@ const OperatorMiscPanel: React.FC = () => {
 						</h3>
 						<p
 							className="whitespace-pre-line text-base font-normal leading-normal"
-							// whitespace-pre-line to preserve newlines
+						// whitespace-pre-line to preserve newlines
 						>
 							{handbook.clinicalAnalysis}
 						</p>
