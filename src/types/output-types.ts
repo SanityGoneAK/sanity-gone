@@ -402,6 +402,7 @@ export interface Skin {
 	cost?: number | null;
 	/** Only present when type is "skin". @see {SkinCostTokenType} for possible values */
 	tokenType?: string | null;
+	voiceId?: string | null;
 }
 
 export type SearchResult =

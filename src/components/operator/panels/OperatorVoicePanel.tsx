@@ -24,25 +24,56 @@ import {
 } from "media-chrome/react";
 import PlayIcon from "~/components/icons/PlayIcon.tsx";
 import PauseIcon from "~/components/icons/PauseIcon.tsx";
+import { Tab } from "@headlessui/react";
+import { operatorSplashAvatar } from "~/utils/images.ts";
 
 const OperatorVoicePanel: React.FC = () => {
 	const locale = useStore(localeStore);
 	const t = useTranslations(locale);
 	const operator = useStore(operatorStore);
 
-	const [skinId, setSkinId] = useState(operator.charId);
+	const [voiceId, setVoiceId] = useState(operator.charId);
+	const skins = useMemo(() => {
+		return operator.skins
+			.filter((skin) => skin.voiceId !== null || skin.name === "Elite 2");
+	}, [voiceId])
 	const voiceDict = useMemo(() => {
-		return operator.voices[skinId];
-	}, [skinId]);
+		return operator.voices[voiceId];
+	}, [voiceId]);
 	const [currentVoiceLanguage, setCurrentVoiceLanguage] =
 		useState("CN_MANDARIN");
 	const voiceLines = useMemo(() => {
-		return operator.voiceLines[skinId];
-	}, [skinId, currentVoiceLanguage]);
+		return operator.voiceLines[voiceId];
+	}, [voiceId, currentVoiceLanguage]);
 
 	return (
 		<div className="flex flex-col gap-4 p-6">
-			<div className="inline w-fit rounded border-b border-neutral-600 bg-neutral-800/80 pb-4 backdrop-blur-[4px]">
+			{ skins.length > 1 &&  <div className="z-10 flex overflow-hidden rounded">
+				{skins.map((skin) => {
+					return (
+						<div
+							id={`${skin.skinId}-button`}
+							className={cx(
+								"relative m-0 flex h-16 w-16 cursor-pointer justify-center overflow-hidden border-none bg-neutral-500 object-cover p-0 opacity-[33%]",
+								"outline-none [html[data-focus-source=key]_&:focus-visible]:-outline-offset-2 [html[data-focus-source=key]_&:focus-visible]:outline-blue-light",
+								"last:rounded-br-lg sm:last:rounded-br-none",
+								skin.voiceId === voiceId || (skin.name === "Elite 2" && voiceId === operator.charId)
+									? `bg-neutral-50 !opacity-100` //  after:absolute after:bottom-0 after:w-full after:bg-neutral-50 sm:bg-neutral-500 sm:after:h-1
+									: ""
+							)}
+							key={skin.skinId}
+							onClick={() => {setVoiceId(skin.name === "Elite 2" ? operator.charId : skin.voiceId ?? operator.charId);}}
+						>
+							<img
+								className="relative h-16 w-16 object-cover"
+								src={operatorSplashAvatar(skin.avatarId)}
+								alt={skin.name}
+							/>
+						</div>
+					);
+				})}
+			</div>}
+			<div className="inline w-full rounded border-b border-neutral-600 bg-neutral-800/80 pb-4 backdrop-blur-[4px]">
 				<ul className="m-0 flex list-none flex-wrap items-center gap-2 p-0 text-base leading-normal text-neutral-50">
 					{Object.values(voiceDict).map((voice) => (
 						<li key={voice.voiceLangType}>
