@@ -361,7 +361,7 @@ export const ui = {
 
 		"operators.details.riic.title": "基地",
 
-		"operators.details.voice.title": "Voice",
+		"operators.details.voice.title": "ボイス",
 
 		"operators.details.misc.title": "その他",
 		"operators.details.misc.profile": "情報",
@@ -487,7 +487,7 @@ export const ui = {
 
 		"operators.details.riic.title": "인프라", // n.b. "Base" is labeled 기반시설 on the main menu; namuwiki uses 인프라
 
-		"operators.details.voice.title": "Voice",
+		"operators.details.voice.title": "보이스",
 
 		"operators.details.misc.title": "기타",
 		"operators.details.misc.profile": "기록",
