@@ -1,14 +1,18 @@
+/* eslint-disable no-console */
 import { promises as fs } from "fs";
 import path from "path";
 
 import { createOperatorsJson } from "./import-operators.js";
 import { createBranchesJson } from "./import-branches.js";
 import { createItemsJson } from "./import-items.js";
-import { translateOperators } from "./translate-operators.js";
+// import { translateOperators } from "./translate-operators.js";
+import { createPrtsScrapeJson } from "./fetch-prts-data.ts";
 // import { createMapsJson } from "./create-maps-json.js";
 // import { createEnemiesJson } from "./create-enemies-json.js";
 
 (async () => {
+	await createPrtsScrapeJson();
+
 	for (const locale of ["zh_CN", "en_US", "ja_JP", "ko_KR"]) {
 		const dataDir = path.join(__dirname, "../data/", locale);
 		await fs.mkdir(dataDir, { recursive: true });
