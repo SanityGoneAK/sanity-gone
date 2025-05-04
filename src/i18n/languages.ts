@@ -10,6 +10,28 @@ export const allLanguages: Record<Locale, string> = {
 	ko: "한국어",
 } as const;
 
+export function getLocaleFromLanguage(
+	languageName: string
+): Locale | undefined {
+	for (const [locale, name] of Object.entries(allLanguages)) {
+		if (name === languageName) {
+			return locale as Locale;
+		}
+	}
+	return undefined; // not found
+}
+
+export const voiceLanguagesToLocaleKey = {
+	CN_MANDARIN: "zh-cn",
+	CN_TOPOLECT: "custom",
+	JP: "ja",
+	EN: "en",
+	KR: "ko",
+	ITA: "custom",
+	GER: "custom",
+	RUS: "custom",
+} as const;
+
 export interface LocalizedString {
 	en_US: string;
 	ja_JP: string;

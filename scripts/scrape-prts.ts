@@ -64,6 +64,7 @@ export async function getSkinObtainSourceAndCosts() {
 	const allSkinEntries = (
 		await Promise.all(
 			brandLinks.map(async (brandLink) => {
+
 				const res = await axios.get(`${PRTS_BASE_URL}${brandLink}`);
 				const $ = load(res.data);
 				const brandSkinEntries = $("h2 + .wikitable").map((_i, el) => {
@@ -200,6 +201,7 @@ export async function getSkinObtainSourceAndCosts() {
 					};
 				});
 
+				setTimeout(() => (''), Math.random() * 1000);
 				return brandSkinEntries.toArray();
 			})
 		)
