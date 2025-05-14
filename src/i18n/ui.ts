@@ -236,7 +236,7 @@ export const ui = {
 
 		"operators.details.riic.title": "基建",
 
-		"operators.details.voice.title": "语音记录",
+		"operators.details.voice.title": "语音",
 
 		"operators.details.misc.title": "杂项",
 		"operators.details.misc.profile": "客观履历", // what this section is called in game. probably not the best translation of "profile" directly
