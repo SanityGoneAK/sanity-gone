@@ -357,32 +357,32 @@ export interface ModulePhaseCandidate {
 	// };
 }
 interface VoiceDetail {
-	wordkey: string
-	voiceLangType: string
-	cvName: string[]
-	voicePath: string | null
+	wordkey: string;
+	voiceLangType: string;
+	cvName: string[];
+	voicePath: string | null;
 }
 
-type VoiceDict = Record<string, VoiceDetail>
-type Voices = Record<string, VoiceDict>
+type VoiceDict = Record<string, VoiceDetail>;
+type Voices = Record<string, VoiceDict>;
 
 interface CharWord {
-	charWordId: string
-	wordKey: string
-	charId: string
-	voiceId: string
-	voiceText: string
-	voiceTitle: string
-	voiceIndex: number
-	voiceType: string
-	unlockType: string
-	unlockParam: any[]
-	lockDescription: string
-	placeType: string
-	voiceAsset: string
+	charWordId: string;
+	wordKey: string;
+	charId: string;
+	voiceId: string;
+	voiceText: string;
+	voiceTitle: string;
+	voiceIndex: number;
+	voiceType: string;
+	unlockType: string;
+	unlockParam: any[];
+	lockDescription: string;
+	placeType: string;
+	voiceAsset: string;
 }
 
-type VoiceLines = Record<string, CharWord[]>
+type VoiceLines = Record<string, Record<string, CharWord[]>>;
 
 export interface Skin {
 	name: string;

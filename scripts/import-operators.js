@@ -46,8 +46,9 @@ import { getAlterMapping } from "./get-alters.js";
 
 import {
 	releaseOrderAndLimitedLookup,
-	skinObtainSourceAndCosts as skinSourceAndCostLookup,
+	skinObtainSourceAndCosts,
 } from "../data/prts-scrape.json" assert { type: "json" };
+import { log } from "console";
 
 const enPatchChars = enCharacterPatchTable.patchChars;
 const cnPatchChars = cnCharacterPatchTable.patchChars;
@@ -136,6 +137,7 @@ export async function createOperatorsJson(dataDir, locale) {
 	const denormalizedCharacters = Object.entries(CHARACTER_LOCALES["zh_CN"]);
 
 	const transformations = [
+		// debugFilter,
 		filterPlaceableObjects,
 		localizeCharacterDetails,
 		collectSummonData,
@@ -169,7 +171,7 @@ export async function createOperatorsJson(dataDir, locale) {
 			summonIdToOperatorId,
 			jetSkillTranslations,
 			jetTalentTranslations,
-			skinSourceAndCostLookup,
+			skinObtainSourceAndCosts,
 			releaseOrderAndLimitedLookup,
 			opToRiicSkillsMap,
 			resultFetchContentfulGraphQl,
@@ -220,6 +222,12 @@ export async function createOperatorsJson(dataDir, locale) {
 			JSON.stringify(aceshipRedirect, null, 2)
 		);
 	}
+}
+
+function debugFilter(characters) {
+	return characters.filter(
+		([charId, character]) => charId === "char_1038_whitw2"
+	);
 }
 
 function filterPlaceableObjects(characters) {
@@ -403,21 +411,33 @@ function addVoices(characters, locale) {
 		);
 
 		const voiceLines = Object.fromEntries(
-			Object.keys(voices).map((voiceKey) => {
-				const localeVoiceLines = Object.fromEntries(
-					localeCharWords.filter(
-						([_, charWord]) => charWord.wordKey === voiceKey
-					)
+			Object.entries(voices).map(([voiceKey, languages]) => {
+				const langVoiceLines = Object.fromEntries(
+					Object.keys(languages).map((languageKey) => {
+						const localeVoiceLines = Object.fromEntries(
+							localeCharWords.filter(
+								([_, charWord]) =>
+									charWord.wordKey ===
+									languages[languageKey].wordkey
+							)
+						);
+						const cnVoiceLines = Object.fromEntries(
+							cnCharWords.filter(
+								([_, charWord]) =>
+									charWord.wordKey ===
+									languages[languageKey].wordkey
+							)
+						);
+						return [
+							languageKey,
+							Object.values({
+								...cnVoiceLines,
+								...localeVoiceLines,
+							}),
+						];
+					})
 				);
-				const cnVoiceLines = Object.fromEntries(
-					cnCharWords.filter(
-						([_, charWord]) => charWord.wordKey == voiceKey
-					)
-				);
-				return [
-					voiceKey,
-					Object.values({ ...cnVoiceLines, ...localeVoiceLines }),
-				];
+				return [voiceKey, langVoiceLines];
 			})
 		);
 
@@ -432,7 +452,7 @@ function addVoices(characters, locale) {
 	});
 }
 
-function addSkins(characters, locale, { skinSourceAndCostLookup }) {
+function addSkins(characters, locale, { skinObtainSourceAndCosts }) {
 	return characters.map(([charId, character]) => {
 		const skins = Object.values(SKIN_LOCALES.zh_CN)
 			.filter((skin) => {
@@ -461,7 +481,7 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 					// look up the skin's obtain sources + cost
 					skinType = "skin";
 					skinSourcesAndCosts =
-						skinSourceAndCostLookup[cnSkin.skinId];
+						skinObtainSourceAndCosts[cnSkin.skinId];
 					if (!skinSourcesAndCosts) {
 						console.warn(
 							`Couldn't find skin source / cost info for: ${cnSkin.skinId}`

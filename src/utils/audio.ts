@@ -6,14 +6,27 @@ const baseURL =
 export const operatorVoiceLine = (
 	locale: Locale | "custom",
 	voiceAsset: string
-): string => {
-	const localeMap: Record<Locale | "custom", string> = {
-		en: "voice_en",
-		"zh-cn": "voice_cn",
-		ja: "voice",
-		ko: "voice_kr",
-		custom: "voice_custom",
+): string[] => {
+	const transformedVoiceAssetPath =
+		voiceAsset.split("/")[0].toLocaleLowerCase() +
+		"/" +
+		voiceAsset.split("/")[1];
+	const localeMap: Record<Locale | "custom", string[]> = {
+		en: [
+			`${baseURL}/en/torappu/dynamicassets/audio/sound_beta_2/voice_en/${voiceAsset}.mp3`,
+		],
+		"zh-cn": [
+			`${baseURL}/cn/audio/sound_beta_2/voice_cn/${voiceAsset}.mp3`,
+		],
+		ja: [`${baseURL}/cn/audio/sound_beta_2/voice/${voiceAsset}.mp3`],
+		ko: [
+			`${baseURL}/kr/torappu/dynamicassets/audio/sound_beta_2/voice_kr/${voiceAsset}.mp3`,
+		],
+		custom: [
+			`${baseURL}/en/torappu/dynamicassets/audio/sound_beta_2/voice_custom/${transformedVoiceAssetPath}.mp3`,
+			`${baseURL}/cn/audio/sound_beta_2/voice_custom/${transformedVoiceAssetPath}.mp3`,
+		],
 	};
 
-	return `${baseURL}/cn/audio/sound_beta_2/${localeMap[locale]}/${voiceAsset}.mp3`;
+	return localeMap[locale];
 };

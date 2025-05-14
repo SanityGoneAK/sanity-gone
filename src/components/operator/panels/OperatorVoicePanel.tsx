@@ -1,5 +1,16 @@
-import { useStore } from "@nanostores/react";
 import { useMemo, useState } from "react";
+
+import { Tab } from "@headlessui/react";
+import { useStore } from "@nanostores/react";
+import {
+	MediaController,
+	MediaControlBar,
+	MediaPlayButton,
+	MediaTimeDisplay,
+	MediaTimeRange,
+	MediaVolumeRange,
+	MediaMuteButton,
+} from "media-chrome/react";
 import PillButtonGroup from "~/components/ui/ButtonGroup";
 
 import Tooltip from "~/components/ui/Tooltip.tsx";
@@ -14,17 +25,10 @@ import { localeStore } from "~/pages/[locale]/_store";
 import { operatorStore } from "~/pages/[locale]/operators/_slugstore";
 import { operatorVoiceLine } from "~/utils/audio";
 import { cx } from "~/utils/styles.ts";
-import {
-  MediaController,
-  MediaControlBar,
-  MediaPlayButton,
-  MediaTimeDisplay,
-  MediaTimeRange,
-  MediaVolumeRange, MediaMuteButton
-} from "media-chrome/react";
 import PlayIcon from "~/components/icons/PlayIcon.tsx";
 import PauseIcon from "~/components/icons/PauseIcon.tsx";
-import { Tab } from "@headlessui/react";
+
+
 import { operatorSplashAvatar } from "~/utils/images.ts";
 
 const OperatorVoicePanel: React.FC = () => {
@@ -34,45 +38,56 @@ const OperatorVoicePanel: React.FC = () => {
 
 	const [voiceId, setVoiceId] = useState(operator.charId);
 	const skins = useMemo(() => {
-		return operator.skins
-			.filter((skin) => skin.voiceId !== null || skin.name === "Elite 2");
-	}, [voiceId])
+		return operator.skins.filter(
+			(skin) => skin.voiceId !== null || skin.name === "Elite 2"
+		);
+	}, [voiceId]);
 	const voiceDict = useMemo(() => {
 		return operator.voices[voiceId];
 	}, [voiceId]);
 	const [currentVoiceLanguage, setCurrentVoiceLanguage] =
 		useState("CN_MANDARIN");
 	const voiceLines = useMemo(() => {
-		return operator.voiceLines[voiceId];
+		return operator.voiceLines[voiceId][currentVoiceLanguage];
 	}, [voiceId, currentVoiceLanguage]);
 
 	return (
 		<div className="flex flex-col gap-4 p-6">
-			{ skins.length > 1 &&  <div className="z-10 flex overflow-hidden rounded">
-				{skins.map((skin) => {
-					return (
-						<div
-							id={`${skin.skinId}-button`}
-							className={cx(
-								"relative m-0 flex h-16 w-16 cursor-pointer justify-center overflow-hidden border-none bg-neutral-500 object-cover p-0 opacity-[33%]",
-								"outline-none [html[data-focus-source=key]_&:focus-visible]:-outline-offset-2 [html[data-focus-source=key]_&:focus-visible]:outline-blue-light",
-								"last:rounded-br-lg sm:last:rounded-br-none",
-								skin.voiceId === voiceId || (skin.name === "Elite 2" && voiceId === operator.charId)
-									? `bg-neutral-50 !opacity-100` //  after:absolute after:bottom-0 after:w-full after:bg-neutral-50 sm:bg-neutral-500 sm:after:h-1
-									: ""
-							)}
-							key={skin.skinId}
-							onClick={() => {setVoiceId(skin.name === "Elite 2" ? operator.charId : skin.voiceId ?? operator.charId);}}
-						>
-							<img
-								className="relative h-16 w-16 object-cover"
-								src={operatorSplashAvatar(skin.avatarId)}
-								alt={skin.name}
-							/>
-						</div>
-					);
-				})}
-			</div>}
+			{skins.length > 1 && (
+				<div className="z-10 flex overflow-hidden rounded">
+					{skins.map((skin) => {
+						return (
+							<div
+								id={`${skin.skinId}-button`}
+								className={cx(
+									"relative m-0 flex h-16 w-16 cursor-pointer justify-center overflow-hidden border-none bg-neutral-500 object-cover p-0 opacity-[33%]",
+									"outline-none [html[data-focus-source=key]_&:focus-visible]:-outline-offset-2 [html[data-focus-source=key]_&:focus-visible]:outline-blue-light",
+									"last:rounded-br-lg sm:last:rounded-br-none",
+									skin.voiceId === voiceId ||
+										(skin.name === "Elite 2" &&
+											voiceId === operator.charId)
+										? `bg-neutral-50 !opacity-100` //  after:absolute after:bottom-0 after:w-full after:bg-neutral-50 sm:bg-neutral-500 sm:after:h-1
+										: ""
+								)}
+								key={skin.skinId}
+								onClick={() => {
+									setVoiceId(
+										skin.name === "Elite 2"
+											? operator.charId
+											: (skin.voiceId ?? operator.charId)
+									);
+								}}
+							>
+								<img
+									className="relative h-16 w-16 object-cover"
+									src={operatorSplashAvatar(skin.avatarId)}
+									alt={skin.name}
+								/>
+							</div>
+						);
+					})}
+				</div>
+			)}
 			<div className="inline w-full rounded border-b border-neutral-600 bg-neutral-800/80 pb-4 backdrop-blur-[4px]">
 				<ul className="m-0 flex list-none flex-wrap items-center gap-2 p-0 text-base leading-normal text-neutral-50">
 					{Object.values(voiceDict).map((voice) => (
@@ -98,11 +113,15 @@ const OperatorVoicePanel: React.FC = () => {
 										src={`/flags/${voice.voiceLangType}.png`}
 										alt={voice.voiceLangType}
 									/>
-									<span className={cx("text-neutral-200", {
-										"text-neutral-50":
-											currentVoiceLanguage ===
-											voice.voiceLangType,
-									})}>{voice.voiceLangType}</span>
+									<span
+										className={cx("text-neutral-200", {
+											"text-neutral-50":
+												currentVoiceLanguage ===
+												voice.voiceLangType,
+										})}
+									>
+										{voice.voiceLangType}
+									</span>
 									<span className="font-semibold">
 										{voice.cvName.join(", ")}
 									</span>
@@ -123,26 +142,45 @@ const OperatorVoicePanel: React.FC = () => {
 								{line.voiceTitle}
 							</h2>
 							<p>{line.voiceText}</p>
-							<MediaController className="bg-neutral-600 h-16 rounded-lg overflow-hidden" audio>
-								<audio
-									slot="media"
-									src={operatorVoiceLine(
+							<MediaController
+								className="h-16 overflow-hidden rounded-lg bg-neutral-600"
+								audio
+							>
+								<audio slot="media">
+									{operatorVoiceLine(
 										voiceLanguagesToLocaleKey[
 											currentVoiceLanguage as keyof typeof voiceLanguagesToLocaleKey
 										],
 										line.voiceAsset
-									)}
-								/>
-								<MediaControlBar className="w-full h-full bg-neutral-600 px-4 ">
-                  <MediaPlayButton className="bg-neutral-600">
-                    <span slot="play"><PlayIcon/></span>
-                    <span slot="pause"><PauseIcon/></span>
-                  </MediaPlayButton>
-									<MediaTimeDisplay showDuration className="bg-neutral-600"/>
+									).map((url, voiceLineIndex) => {
+										return (
+											<source
+												src={url}
+												key={`${line.voiceId}-${voiceLineIndex}`}
+											></source>
+										);
+									})}
+								</audio>
+								<MediaControlBar className="h-full w-full bg-neutral-600 px-4">
+									<MediaPlayButton className="bg-neutral-600">
+										<span slot="play">
+											<PlayIcon />
+										</span>
+										<span slot="pause">
+											<PauseIcon />
+										</span>
+									</MediaPlayButton>
+									<MediaTimeDisplay
+										showDuration
+										className="bg-neutral-600"
+									/>
 									<MediaTimeRange className="bg-neutral-600">
-										<span slot="thumb" className="ml-1 h-2 w-6 p-3 box-content absolute grid my-0 mx-[-12px] rounded-xl outline-offset-[-12px] after:rounded-sm after:bg-neutral-200 hover:outline hover:outline-[12px] hover:outline-neutral-50/[0.05]"></span>
+										<span
+											slot="thumb"
+											className="absolute mx-[-12px] my-0 ml-1 box-content grid h-2 w-6 rounded-xl p-3 outline-offset-[-12px] after:rounded-sm after:bg-neutral-200 hover:outline hover:outline-[12px] hover:outline-neutral-50/[0.05]"
+										></span>
 									</MediaTimeRange>
-                  <MediaMuteButton className="bg-neutral-600" />
+									<MediaMuteButton className="bg-neutral-600" />
 									<MediaVolumeRange className="bg-neutral-600" />
 								</MediaControlBar>
 							</MediaController>

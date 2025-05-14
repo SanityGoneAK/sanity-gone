@@ -616,15 +616,15 @@
       "isLimited": false,
       "releaseOrder": 154
     },
-    "预备干员-术师": {
+    "预备干员-近战": {
       "isLimited": false,
       "releaseOrder": 155
     },
-    "预备干员-狙击": {
+    "预备干员-术师": {
       "isLimited": false,
       "releaseOrder": 156
     },
-    "预备干员-近战": {
+    "预备干员-狙击": {
       "isLimited": false,
       "releaseOrder": 157
     },
@@ -1492,31 +1492,31 @@
       "isLimited": false,
       "releaseOrder": 373
     },
-    "Misery(卫戍协议)": {
+    "Pith(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 374
     },
-    "Pith(卫戍协议)": {
+    "Sharp(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 375
     },
-    "Sharp(卫戍协议)": {
+    "Raidian(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 376
     },
-    "Raidian(卫戍协议)": {
+    "Stormeye(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 377
     },
-    "Stormeye(卫戍协议)": {
+    "Touch(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 378
     },
-    "Touch(卫戍协议)": {
+    "郁金香(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 379
     },
-    "郁金香(卫戍协议)": {
+    "Misery(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 380
     },
@@ -1736,14 +1736,14 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 24,
       "tokenType": "Originium Prime"
     },
     "char_332_archet@sale#14": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 21,
       "tokenType": "Originium Prime"
     },
     "char_208_melan@epoque#1": {
@@ -2341,7 +2341,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 18,
       "tokenType": "Originium Prime"
     },
     "char_120_hibisc@nian#1": {
@@ -3846,7 +3846,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 18,
       "tokenType": "Originium Prime"
     },
     "char_4136_phonor@boc#9": {
@@ -4337,7 +4337,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 18,
       "tokenType": "Originium Prime"
     },
     "char_1028_texas2@iteration#1": {
@@ -4365,7 +4365,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 18,
       "tokenType": "Originium Prime"
     },
     "char_297_hamoni@unveiling#1": {
