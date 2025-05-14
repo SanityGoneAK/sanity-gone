@@ -8,10 +8,10 @@ import { slugify } from "../src/utils/strings";
 
 import rangeTable from "./ArknightsGameData/zh_CN/gamedata/excel/range_table.json" assert { type: "json" };
 
-import { voiceLangDict as cnVoiceTable } from "./ArknightsGameData/zh_CN/gamedata/excel/charword_table.json" assert { type: "json" };
-import { voiceLangDict as enVoiceTable } from "./ArknightsGameData_YoStar/en_US/gamedata/excel/charword_table.json" assert { type: "json" };
-import { voiceLangDict as jpVoiceTable } from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/charword_table.json" assert { type: "json" };
-import { voiceLangDict as krVoiceTable } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/charword_table.json" assert { type: "json" };
+import cnVoiceTable from "./ArknightsGameData/zh_CN/gamedata/excel/charword_table.json" assert { type: "json" };
+import enVoiceTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/charword_table.json" assert { type: "json" };
+import jpVoiceTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/charword_table.json" assert { type: "json" };
+import krVoiceTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/charword_table.json" assert { type: "json" };
 
 import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" assert { type: "json" };
 import enCharacterTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json" assert { type: "json" };
@@ -43,10 +43,12 @@ import {
 	fetchJetroyzTalentTranslations,
 } from "./fetch-jetroyz-translations";
 import { getAlterMapping } from "./get-alters.js";
+
 import {
-	getReleaseOrderAndLimitedLookup,
-	getSkinObtainSourceAndCosts,
-} from "./scrape-prts";
+	releaseOrderAndLimitedLookup,
+	skinObtainSourceAndCosts,
+} from "../data/prts-scrape.json" assert { type: "json" };
+import { log } from "console";
 
 const enPatchChars = enCharacterPatchTable.patchChars;
 const cnPatchChars = cnCharacterPatchTable.patchChars;
@@ -122,15 +124,11 @@ export async function createOperatorsJson(dataDir, locale) {
 	const [
 		jetSkillTranslations,
 		jetTalentTranslations,
-		skinSourceAndCostLookup,
-		releaseOrderAndLimitedLookup,
 		opToRiicSkillsMap,
 		resultFetchContentfulGraphQl,
 	] = await Promise.all([
 		fetchJetroyzSkillTranslations(),
 		fetchJetroyzTalentTranslations(),
-		getSkinObtainSourceAndCosts(),
-		getReleaseOrderAndLimitedLookup(),
 		aggregateRiicData(locale),
 		fetchContentfulGraphQl(contentfulQuery),
 	]);
@@ -139,6 +137,7 @@ export async function createOperatorsJson(dataDir, locale) {
 	const denormalizedCharacters = Object.entries(CHARACTER_LOCALES["zh_CN"]);
 
 	const transformations = [
+		// debugFilter,
 		filterPlaceableObjects,
 		localizeCharacterDetails,
 		collectSummonData,
@@ -172,7 +171,7 @@ export async function createOperatorsJson(dataDir, locale) {
 			summonIdToOperatorId,
 			jetSkillTranslations,
 			jetTalentTranslations,
-			skinSourceAndCostLookup,
+			skinObtainSourceAndCosts,
 			releaseOrderAndLimitedLookup,
 			opToRiicSkillsMap,
 			resultFetchContentfulGraphQl,
@@ -223,6 +222,12 @@ export async function createOperatorsJson(dataDir, locale) {
 			JSON.stringify(aceshipRedirect, null, 2)
 		);
 	}
+}
+
+function debugFilter(characters) {
+	return characters.filter(
+		([charId, character]) => charId === "char_1038_whitw2"
+	);
 }
 
 function filterPlaceableObjects(characters) {
@@ -388,22 +393,66 @@ function addTalents(characters, locale, { jetTalentTranslations }) {
 }
 
 function addVoices(characters, locale) {
+	const localeCharWords = Object.entries(VOICE_LOCALES[locale].charWords);
+	const cnCharWords = Object.entries(VOICE_LOCALES.zh_CN.charWords);
+
+	const cnVoiceLangDict = VOICE_LOCALES.zh_CN.voiceLangDict;
+	const localeVoiceLangDict = VOICE_LOCALES[locale].voiceLangDict;
+
 	return characters.map(([charId, character]) => {
-		let voices =
-			VOICE_LOCALES[locale][charId] ?? VOICE_LOCALES.zh_CN[charId];
-		voices = Object.values(voices.dict);
+		const voices = Object.fromEntries(
+			Object.entries(cnVoiceLangDict)
+				.filter(([, voiceEntry]) => voiceEntry.charId === charId)
+				.map(([voiceKey, { dict: cnDict }]) => {
+					const localeDict =
+						localeVoiceLangDict[voiceKey]?.dict ?? {};
+					return [voiceKey, { ...cnDict, ...localeDict }];
+				})
+		);
+
+		const voiceLines = Object.fromEntries(
+			Object.entries(voices).map(([voiceKey, languages]) => {
+				const langVoiceLines = Object.fromEntries(
+					Object.keys(languages).map((languageKey) => {
+						const localeVoiceLines = Object.fromEntries(
+							localeCharWords.filter(
+								([_, charWord]) =>
+									charWord.wordKey ===
+									languages[languageKey].wordkey
+							)
+						);
+						const cnVoiceLines = Object.fromEntries(
+							cnCharWords.filter(
+								([_, charWord]) =>
+									charWord.wordKey ===
+									languages[languageKey].wordkey
+							)
+						);
+						return [
+							languageKey,
+							Object.values({
+								...cnVoiceLines,
+								...localeVoiceLines,
+							}),
+						];
+					})
+				);
+				return [voiceKey, langVoiceLines];
+			})
+		);
 
 		return [
 			charId,
 			{
 				...character,
 				voices,
+				voiceLines,
 			},
 		];
 	});
 }
 
-function addSkins(characters, locale, { skinSourceAndCostLookup }) {
+function addSkins(characters, locale, { skinObtainSourceAndCosts }) {
 	return characters.map(([charId, character]) => {
 		const skins = Object.values(SKIN_LOCALES.zh_CN)
 			.filter((skin) => {
@@ -432,7 +481,7 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 					// look up the skin's obtain sources + cost
 					skinType = "skin";
 					skinSourcesAndCosts =
-						skinSourceAndCostLookup[cnSkin.skinId];
+						skinObtainSourceAndCosts[cnSkin.skinId];
 					if (!skinSourcesAndCosts) {
 						console.warn(
 							`Couldn't find skin source / cost info for: ${cnSkin.skinId}`
@@ -467,6 +516,7 @@ function addSkins(characters, locale, { skinSourceAndCostLookup }) {
 						modelName: cnSkin.displaySkin.modelName,
 						drawerList: cnSkin.displaySkin.drawerList,
 					},
+					voiceId: cnSkin.voiceId,
 					...skinSourcesAndCosts,
 				};
 			});

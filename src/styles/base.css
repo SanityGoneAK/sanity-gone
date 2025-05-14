@@ -85,6 +85,11 @@ body {
 	--color-rarity-5-dark: theme("colors.yellow.DEFAULT");
 	--color-rarity-6: theme("colors.orange.light");
 	--color-rarity-6-dark: theme("colors.orange.DEFAULT");
+
+	/*Media Player*/
+	--media-range-bar-color: theme("colors.red.DEFAULT");
+	--media-range-track-background: theme("colors.neutral.500");
+	--media-time-range-buffered-color: theme("colors.neutral.400");
 }
 
 img,
