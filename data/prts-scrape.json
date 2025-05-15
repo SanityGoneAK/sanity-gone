@@ -3856,6 +3856,13 @@
       "cost": null,
       "tokenType": null
     },
+    "char_163_hpsts@boc#10": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
     "char_248_mgllan@kitchen#1": {
       "obtainSources": [
         "Outfit Store"
