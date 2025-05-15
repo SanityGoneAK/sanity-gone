@@ -116,27 +116,6 @@ const OperatorMiscPanel: React.FC = () => {
 
 	return (
 		<div className="grid gap-y-4 rounded-br-lg p-6">
-			<div className="inline w-fit rounded bg-neutral-800/80 backdrop-blur-[4px]">
-				<ul className="m-0 flex list-none flex-wrap items-center gap-2 p-0 text-base leading-normal text-neutral-50">
-					<li>
-						<span className="text-neutral-200">VA</span>
-					</li>
-					{operator.voices.map((voice) => (
-						<li key={voice.voiceLangType}>
-							<Tooltip content={voice.voiceLangType}>
-								<div className="flex items-center gap-0.5">
-									<img
-										className="w-5"
-										src={`/flags/${voice.voiceLangType}.png`}
-										alt={voice.voiceLangType}
-									/>
-									{voice.cvName.join(", ")}
-								</div>
-							</Tooltip>
-						</li>
-					))}
-				</ul>
-			</div>
 			<ul className="flex gap-2">
 				{operator.tagList.map((tag, index) => (
 					<li
