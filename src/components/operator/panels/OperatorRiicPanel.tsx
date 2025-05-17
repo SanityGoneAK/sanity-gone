@@ -37,7 +37,7 @@ const OperatorRiicPanel: React.FC = () => {
 		<div className="flex flex-col gap-4 p-6">
 			<div className="grid grid-flow-col items-center justify-between gap-y-4 border-b border-neutral-600 pb-4">
 				<ButtonGroup
-					labels={range(maxElite + 1)}
+					labels={relevantEliteLevels}
 					value={elite}
 					onChange={handleEliteChange}
 					elite={true}
