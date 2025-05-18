@@ -2,6 +2,7 @@ export const ui = {
 	en: {
 		"nav.home": "Home",
 		"nav.operators": "Operators",
+		"nav.recruitment": "Recruitment",
 		"nav.old_site": "Old Site (Guides)",
 		"nav.classes": "Classes",
 		"nav.search": "Search",
@@ -10,6 +11,13 @@ export const ui = {
 		"nav.disclaimer": "Disclaimer",
 		"nav.about": "About",
 		"nav.contact": "Contact",
+
+		"nav.settings.label": "Settings",
+		"nav.settings.language": "Language",
+		"nav.settings.server": "Server",
+		"nav.settings.global": "Global",
+		"nav.settings.cn": "CN",
+		"nav.settings.description": "Select your language and server preferences",
 
 		"operators.medic": "Medic",
 		"operators.vanguard": "Vanguard",
@@ -130,6 +138,7 @@ export const ui = {
 	"zh-cn": {
 		"nav.home": "主页",
 		"nav.operators": "干员",
+		"nav.recruitment": "Recruitment",
 		"nav.old_site": "旧网站（英文攻略）", // specifies that the old site is in english: old site (english guides)
 		"nav.classes": "职业",
 		"nav.search": "搜索",
@@ -138,6 +147,13 @@ export const ui = {
 		"nav.disclaimer": "免责声明",
 		"nav.about": "关于",
 		"nav.contact": "联系",
+
+		"nav.settings.label": "Settings",
+		"nav.settings.language": "Language",
+		"nav.settings.server": "Server",
+		"nav.settings.global": "Global",
+		"nav.settings.cn": "CN",
+		"nav.settings.description": "Select your language and server preferences",
 
 		"operators.medic": "医疗",
 		"operators.vanguard": "先锋",
@@ -253,6 +269,7 @@ export const ui = {
 	ja: {
 		"nav.home": "ホーム",
 		"nav.operators": "オペレーター",
+		"nav.recruitment": "Recruitment",
 		"nav.old_site": "Old Site (Guides)",
 		"nav.search": "検索",
 		"nav.classes": "職業",
@@ -261,6 +278,13 @@ export const ui = {
 		"nav.disclaimer": "著作権について",
 		"nav.about": "サイト情報",
 		"nav.contact": "お問い合わせ",
+
+		"nav.settings.label": "Settings",
+		"nav.settings.language": "Language",
+		"nav.settings.server": "Server",
+		"nav.settings.global": "Global",
+		"nav.settings.cn": "CN",
+		"nav.settings.description": "Select your language and server preferences",
 
 		"operators.medic": "医療",
 		"operators.vanguard": "先鋒",
@@ -378,6 +402,7 @@ export const ui = {
 	ko: {
 		"nav.home": "홈",
 		"nav.operators": "오퍼레이터",
+		"nav.recruitment": "Recruitment",
 		"nav.old_site": "Old Site (Guides)",
 		"nav.search": "검색",
 		"nav.classes": "포지션",
@@ -386,6 +411,13 @@ export const ui = {
 		"nav.disclaimer": "저작권 안내",
 		"nav.about": "사이트 소개",
 		"nav.contact": "문의하기",
+
+		"nav.settings.label": "Settings",
+		"nav.settings.language": "Language",
+		"nav.settings.server": "Server",
+		"nav.settings.global": "Global",
+		"nav.settings.cn": "CN",
+		"nav.settings.description": "Select your language and server preferences",
 
 		"operators.medic": "메딕",
 		"operators.vanguard": "뱅가드",

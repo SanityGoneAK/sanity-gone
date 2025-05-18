@@ -1,0 +1,38 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import OperatorFilterBar from "~/components/operator/filters/OperatorFilterBar";
+import OperatorList from "~/components/operator/OperatorList";
+import { getPathByLocale } from "astro:i18n";
+import { allLanguages, defaultLang } from "~/i18n/languages";
+import type * as OutputTypes from "~/types/output-types";
+import { slugify } from "~/utils/strings";
+import { ui } from "~/i18n/ui";
+import type { Locale } from "~/i18n/languages";
+import { useTranslations } from "~/i18n/utils";
+import { localeStore } from "../_store";
+import Settings from "~/components/navigation/Settings";
+
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
+localeStore.set(locale);
+const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams.entries());
+export const prerender = false;
+
+const t = useTranslations(locale);
+---
+
+<Layout title="Operator List">
+  <script slot="head" define:vars={{ locale, queryParams }}>
+    window.locale = locale;
+    window.queryParams = queryParams;
+  </script>
+
+  <meta slot="head" name="description" content="Calculate the recruitment of operators for any server and view all possible combinations" />
+  <meta slot="head" property="og:description" content="Calculate the recruitment of operators for any server and view all possible combinations" />
+  <meta slot="head" property="og:image" content={`${Astro.url.origin}/brain-big.png`} />
+  <meta slot="head" property="og:title" content={t("nav.recruitment")} />
+  <meta slot="head" property="og:type" content="website" />
+
+  <section class="mx-auto p-5 sm:py-auto max-w-[1800px]">
+    Recruitment Goes Here
+  </section>
+</Layout>

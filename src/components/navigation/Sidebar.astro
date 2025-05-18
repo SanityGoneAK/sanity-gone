@@ -5,22 +5,10 @@ import DiscordLogo from "~/components/icons/DiscordLogo.astro";
 import TwitterLogo from "~/components/icons/TwitterLogo.astro";
 import NavigationLink from "~/components/navigation/NavigationLink.astro";
 import { getPathByLocale, getRelativeLocaleUrl } from "astro:i18n";
-import { allLanguages, defaultLang } from "~/i18n/languages";
 import { stripLangFromUrl, useTranslations } from "~/i18n/utils";
 import type { Locale } from "~/i18n/languages";
-import LanguageSwitcher from "./LanguageSwitcher.tsx";
 import OperatorsNavIcon from "~/components/icons/OperatorsNavIcon.astro";
 import SGNavIcon from "~/components/icons/SGNavIcon.astro";
-
-const languages = Object.entries(allLanguages).map(([key, language]) => {
-	return [
-		key,
-		{
-			url: getRelativeLocaleUrl(key, stripLangFromUrl(Astro.url)),
-			label: language,
-		},
-	];
-});
 
 const locale = getPathByLocale(
 	Astro.currentLocale ?? defaultLang
@@ -35,6 +23,11 @@ const sidebarLinks: { href: string; name: string, icon: any }[] = [
 	{
 	  href: "https://old.sanitygone.help/operators",
 	  name: t("nav.old_site"),
+		icon: SGNavIcon,
+	},
+	{
+		href: getRelativeLocaleUrl(locale, "/recruitment"),
+		name: t("nav.old_site"),
 		icon: SGNavIcon,
 	},
 	// {
@@ -75,11 +68,6 @@ const sidebarLinks: { href: string; name: string, icon: any }[] = [
 		<p class="text-neutral-200">
 			{t('nav.description')}
 		</p>
-		<LanguageSwitcher
-			languages={Object.fromEntries(languages)}
-			currentLanguage={locale}
-			client:visible
-		/>
 		<nav class="flex justify-between items-center text-neutral-100">
 			<a class="hover:text-neutral-50" href={getRelativeLocaleUrl(locale, "/disclaimer")}>{t('nav.disclaimer')}</a>
 			<a class="hover:text-neutral-50" href={getRelativeLocaleUrl(locale, "/about")}>{t('nav.about')}</a>
