@@ -133,11 +133,15 @@ function getTalentPhase(
 	eliteLevel: number
 ) {
 	return talent.candidates
-		.sort((a, b) => b.requiredPotentialRank - a.requiredPotentialRank)
-		.find(
+		.filter(
 			(phase) =>
 				phase.requiredPotentialRank <= potential &&
-				phase.unlockCondition.phase === `PHASE_${eliteLevel}` &&
-				phase.isHideTalent !== true // what even are "hidden talents"
-		);
+				parseInt(phase.unlockCondition.phase.slice(6)) <= eliteLevel &&
+				!phase.isHideTalent
+		)
+		.sort(
+			(a, b) =>
+				parseInt(b.unlockCondition.phase.slice(6)) -
+				parseInt(a.unlockCondition.phase.slice(6))
+		)[0] ?? null;
 }

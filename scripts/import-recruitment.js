@@ -3,17 +3,16 @@ import path from "path";
 
 import { Combination } from "js-combinatorics";
 
-import cnGachaTable from "./ArknightsGameData/zh_CN/gamedata/excel/gacha_table.json";
-import enGachaTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/gacha_table.json";
-import jpGachaTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/gacha_table.json";
-import krGachaTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/gacha_table.json";
-
-import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" assert { type: "json" };
-import enCharacterTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json" assert { type: "json" };
-import jpCharacterTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json" assert { type: "json" };
-import krCharacterTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json" assert { type: "json" };
-import { toTitleCase } from "../src/utils/strings";
 import { professionToClass } from "../src/utils/classes";
+import { toTitleCase } from "../src/utils/strings";
+import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" assert { type: "json" };
+import cnGachaTable from "./ArknightsGameData/zh_CN/gamedata/excel/gacha_table.json";
+import enCharacterTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json" assert { type: "json" };
+import enGachaTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/gacha_table.json";
+import jpCharacterTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json" assert { type: "json" };
+import jpGachaTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/gacha_table.json";
+import krCharacterTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json" assert { type: "json" };
+import krGachaTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/gacha_table.json";
 
 const GACHA_LOCALES = {
 	zh_CN: cnGachaTable,

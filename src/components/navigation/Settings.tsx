@@ -6,6 +6,7 @@ import { localeStore, serverStore } from "~/pages/[locale]/_store.ts";
 import type { Locale } from "~/i18n/languages.ts";
 import SettingsIcon from "~/components/icons/SettingsIcon.tsx";
 import { useTranslations } from "~/i18n/utils.ts";
+import LockedIcon from "~/components/icons/LockedIcon.tsx";
 
 interface Props {
   languages: Record<
@@ -16,8 +17,9 @@ interface Props {
     }
   >;
   currentLanguage: Locale;
+  serverSelector?: boolean
 }
-const Settings: React.FC<Props> = ({ languages, currentLanguage }) => {
+const Settings: React.FC<Props> = ({ languages, currentLanguage, serverSelector = false }) => {
   const $server = useStore(serverStore);
   const locale = useStore(localeStore);
   const t = useTranslations(locale);
@@ -26,8 +28,14 @@ const Settings: React.FC<Props> = ({ languages, currentLanguage }) => {
     <Dialog.Root>
       <Dialog.Trigger asChild>
         <button
-          className="inline-flex text-neutral-50 bg-neutral-600 items-center justify-center py-2 px-3 font-medium leading-none outline-none outline-offset-1 hover:bg-neutral-500 focus-visible:outline-2 focus-visible:outline-neutral-200 select-none gap-2 rounded-3xl">
-          <SettingsIcon></SettingsIcon> {t("nav.settings.label")}
+          className="inline-flex text-neutral-50 bg-neutral-600 items-center border border-neutral-500 justify-center py-2 px-3 font-medium leading-none outline-none outline-offset-1 hover:bg-neutral-500 focus-visible:outline-2 focus-visible:outline-neutral-200 select-none gap-2 rounded-3xl">
+          {!serverSelector && <><SettingsIcon></SettingsIcon>{t("nav.settings.label")}</>}
+          {serverSelector && <>
+            <span className="text-neutral-200">{t("nav.settings.server")}</span>
+            <span
+              className="font-semibold">{$server === "Global" ? t("nav.settings.global") : t("nav.settings.cn")}</span>
+            <LockedIcon/>
+          </>}
         </button>
       </Dialog.Trigger>
       <Dialog.Portal>
