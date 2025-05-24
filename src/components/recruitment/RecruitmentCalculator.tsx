@@ -20,7 +20,7 @@ import { operatorAvatar, operatorBranchIcon } from "~/utils/images.ts";
 import { professionToClass } from "~/utils/classes.ts";
 import { subProfessionIdToBranch } from "~/utils/branches.ts";
 import Settings from "~/components/navigation/Settings.tsx";
-import type { Locale } from "~/i18n/languages.ts";
+import { defaultLang, type Locale } from "~/i18n/languages.ts";
 import Tooltip from "~/components/ui/Tooltip.tsx";
 import StarIcon from "~/components/icons/StarIcon.tsx";
 import type { Rarity } from "~/types/output-types.ts";
@@ -34,6 +34,8 @@ import {
 } from "~/components/ui/Dropdown.tsx";
 import DropdownArrow from "~/components/icons/DropdownArrow.tsx";
 import FilterIcon from "~/components/icons/FilterIcon.tsx";
+import { toTitleCase } from "~/utils/strings.ts";
+import type { ui } from "~/i18n/ui.ts";
 
 const TAG_LOCALES = {
   'zh-cn': cnRecruitmentTags,
@@ -163,7 +165,7 @@ const RecruitmentCalculator: React.FC<Props> = ({languages}) => {
     }
   };
 
-  const guranteedGradient = {
+  const guaranteedGradient = {
     4: 'bg-gradient-to-r from-transparent to-purple/15',
     5: 'bg-gradient-to-r from-transparent to-yellow/15',
     6: 'bg-gradient-to-r from-transparent to-orange/15',
@@ -228,7 +230,7 @@ const RecruitmentCalculator: React.FC<Props> = ({languages}) => {
         <DropdownMenu>
           <DropdownMenuTrigger className="grid grid-cols-[auto,1fr,auto] items-center justify-items-start">
             <span className="text-neutral-200">Tag Order</span>
-            <span className="font-semibold">{tagOrderType}</span>
+            <span className="font-semibold">{toTitleCase(tagOrderType)}</span>
             <DropdownArrow className="mt-1" />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
@@ -238,7 +240,7 @@ const RecruitmentCalculator: React.FC<Props> = ({languages}) => {
                   key={orderType}
                   value={orderType}
                 >
-                  {orderType}
+                  {toTitleCase(orderType)}
                 </DropdownMenuRadioItem>
               ))}
             </DropdownMenuRadioGroup>
@@ -250,7 +252,7 @@ const RecruitmentCalculator: React.FC<Props> = ({languages}) => {
         <>
           {Object.entries(tagGroup).map(([group, items]) => (
             <div key={group} className="mb-4">
-              <p className="text-neutral-200 mb-2">{group}</p>
+              <p className="text-neutral-200 mb-2">{t("recruitment.tag_groups."+group as keyof (typeof ui)[typeof defaultLang])}</p>
               <div className="flex items-center gap-2 flex-wrap">
                 {items.map((item) => {
                   const tag = tagData.find(tag => tag.tagId === item);
@@ -298,8 +300,8 @@ const RecruitmentCalculator: React.FC<Props> = ({languages}) => {
                   const tag = tagData.find(tag => tag.tagId === tagId);
                   return <Tag active={true} className="bg-neutral-50">{tag?.tagName}</Tag>
                 })}
-                {item.guarantees.length > 0 && item.guarantees[0] > 3 && <div className={cx("flex-grow flex py-1 px-2 rounded-r-full justify-end items-center", guranteedGradient[item.guarantees[0] as keyof typeof guranteedGradient])}>
-                  <span className={cx("bg-gradient-to-b text-transparent bg-clip-text",rarityText[item.guarantees[0] as keyof typeof rarityText])}>Guranteed {item.guarantees[0]}</span>
+                {item.guarantees.length > 0 && item.guarantees[0] > 3 && <div className={cx("flex-grow flex py-1 px-2 rounded-r-full justify-end items-center", guaranteedGradient[item.guarantees[0] as keyof typeof guaranteedGradient])}>
+                  <span className={cx("bg-gradient-to-b text-transparent bg-clip-text",rarityText[item.guarantees[0] as keyof typeof rarityText])}>guaranteed {item.guarantees[0]}</span>
                   <StarIcon rarity={item.guarantees[0] as Rarity}/>
                 </div>}
               </div>
