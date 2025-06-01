@@ -12,7 +12,6 @@ import krOperatorsJson from "../data/ko_KR/operators.json";
 
 import { subProfessionIdToBranch } from "../src/utils/branches";
 import { professionToClass } from "../src/utils/classes";
-import { fetchContentfulGraphQl } from "../src/utils/fetch";
 
 const BRANCH_LOCALES = {
 	zh_CN: cnBranchesJson,
@@ -55,16 +54,6 @@ export async function buildSearchIndex() {
     }
   }
   `;
-	/** @type any */
-	const { operatorAnalysisCollection } =
-		await fetchContentfulGraphQl(contentfulQuery);
-
-	const operatorsWithGuides = Object.fromEntries(
-		operatorAnalysisCollection.items.map((item) => [
-			item.operator.name,
-			item.operator.slug,
-		])
-	);
 
 	Object.values(OPERATOR_LOCALES.zh_CN)
 		.filter((e) => !e.isNotObtainable)
@@ -88,7 +77,7 @@ export async function buildSearchIndex() {
 					])
 				),
 				rarity: op.rarity,
-				hasGuide: !!operatorsWithGuides[op.name],
+				hasGuide: false,
 			});
 		});
 
