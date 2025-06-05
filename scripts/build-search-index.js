@@ -1,4 +1,8 @@
 import { MeiliSearch } from "meilisearch";
+import dotenv from "dotenv";
+import path from "path";
+
+dotenv.config({ path: path.join(__dirname, "..", ".env") });
 
 import enBranchesJson from "../data/en_US/branches.json";
 import cnBranchesJson from "../data/zh_CN/branches.json";
@@ -28,32 +32,9 @@ const OPERATOR_LOCALES = {
 };
 
 /** @typedef {import("../src/types/output-types").SearchResult} SearchResult */
-/**
-<<<<<<< Updated upstream
-=======
- * Creates `{dataDir}/search.json`, a FlexSearch index used for Sanity;Gone's search bar.
- * no it doesn't lol
->>>>>>> Stashed changes
- *
- * @param {"zh_CN" | "en_US" | "ja_JP" | "ko_KR"} locale - output locale
- */
-
 export async function buildSearchIndex() {
 	/** @type {SearchResult[]} */
 	const searchArray = [];
-
-	const contentfulQuery = `
-  query {
-    operatorAnalysisCollection {
-      items {
-        operator {
-          name
-          slug
-        }
-      }
-    }
-  }
-  `;
 
 	Object.values(OPERATOR_LOCALES.zh_CN)
 		.filter((e) => !e.isNotObtainable)
