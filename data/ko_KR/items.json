@@ -2775,6 +2775,22 @@
     "usage": "用于提升聆音的潜能。",
     "rarity": 5
   },
+  "p_char_4191_tippi": {
+    "itemId": "p_char_4191_tippi",
+    "name": "蒂比的信物",
+    "iconId": "p_char_4191_tippi",
+    "description": "一个喷漆罐，嗞——可以拿它在墙上喷绘你喜欢的图案，但不要随便乱涂乱画哦。",
+    "usage": "用于提升蒂比的潜能。",
+    "rarity": 5
+  },
+  "p_char_4198_christ": {
+    "itemId": "p_char_4198_christ",
+    "name": "Miss.Christine的信物",
+    "iconId": "p_char_4198_christ",
+    "description": "一张印着爪印的工牌。你把它挂在了Miss.Christine的脖子上，但第二天它就出现在了你的桌面上。",
+    "usage": "用于提升Miss.Christine的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "엑시아의 증표",
@@ -3661,6 +3677,14 @@
     "iconId": "p_char_4194_rmixer",
     "description": "一枚闪着光的徽章，见证了他对拉特兰多年的守护，也见证了圣城对他无尽的信任。",
     "usage": "用于提升信仰搅拌机的潜能。",
+    "rarity": 6
+  },
+  "p_char_1042_phatm2": {
+    "itemId": "p_char_1042_phatm2",
+    "name": "酒神的信物",
+    "iconId": "p_char_1042_phatm2",
+    "description": "一片金叶，细腻的叶脉纹理栩栩如生。你认出它是来自傀影耳边的华美装饰，时常沐浴在聚光灯下——对他而言，戏剧亦如自然。",
+    "usage": "用于提升酒神的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {

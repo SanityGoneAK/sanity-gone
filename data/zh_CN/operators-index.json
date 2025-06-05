@@ -1,4 +1,18 @@
 {
+  "char_1042_phatm2": {
+    "charId": "char_1042_phatm2",
+    "name": "酒神",
+    "slug": "tragodia",
+    "position": "RANGED",
+    "rarity": 6,
+    "profession": "SUPPORT",
+    "subProfessionId": "ritualist",
+    "alterId": null,
+    "baseOperatorId": "char_250_phatom",
+    "isLimited": false,
+    "releaseOrder": 403,
+    "gender": "Male"
+  },
   "char_1041_angel2": {
     "charId": "char_1041_angel2",
     "name": "新约能天使",
@@ -1267,7 +1281,7 @@
     "rarity": 6,
     "profession": "SPECIAL",
     "subProfessionId": "executor",
-    "alterId": null,
+    "alterId": "char_1042_phatm2",
     "baseOperatorId": null,
     "isLimited": false,
     "releaseOrder": 133,
@@ -1566,6 +1580,34 @@
     "isLimited": false,
     "releaseOrder": 73,
     "gender": "Female"
+  },
+  "char_4191_tippi": {
+    "charId": "char_4191_tippi",
+    "name": "蒂比",
+    "slug": "tippi",
+    "position": "MELEE",
+    "rarity": 5,
+    "profession": "SPECIAL",
+    "subProfessionId": "skywalker",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 402,
+    "gender": "Female"
+  },
+  "char_4198_christ": {
+    "charId": "char_4198_christ",
+    "name": "Miss.Christine",
+    "slug": "miss.christine",
+    "position": "RANGED",
+    "rarity": 5,
+    "profession": "CASTER",
+    "subProfessionId": "primcaster",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 401,
+    "gender": "Other"
   },
   "char_4187_graceb": {
     "charId": "char_4187_graceb",

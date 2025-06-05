@@ -1,4 +1,5 @@
 {
+  "char_1042_phatm2": "/en/operators/tragodia",
   "char_1041_angel2": "/en/operators/exusiai-the-new-covenant",
   "char_4193_lemuen": "/en/operators/lemuen",
   "char_4194_rmixer": "/en/operators/sankta-miksaparato",
@@ -111,6 +112,8 @@
   "char_134_ifrit": "/en/operators/ifrit",
   "char_112_siege": "/en/operators/siege",
   "char_103_angel": "/en/operators/exusiai",
+  "char_4191_tippi": "/en/operators/tippi",
+  "char_4198_christ": "/en/operators/miss.christine",
   "char_4187_graceb": "/en/operators/gracebearer",
   "char_4178_alanna": "/en/operators/alanna",
   "char_4171_wulfen": "/en/operators/wulfenite",

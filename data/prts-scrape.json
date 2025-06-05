@@ -1599,6 +1599,18 @@
     "新约能天使": {
       "isLimited": true,
       "releaseOrder": 400
+    },
+    "Miss.Christine": {
+      "isLimited": false,
+      "releaseOrder": 401
+    },
+    "蒂比": {
+      "isLimited": false,
+      "releaseOrder": 402
+    },
+    "酒神": {
+      "isLimited": false,
+      "releaseOrder": 403
     }
   },
   "skinObtainSourceAndCosts": {
@@ -2342,6 +2354,20 @@
         "Outfit Store"
       ],
       "cost": 18,
+      "tokenType": "Originium Prime"
+    },
+    "char_4079_haini@epoque#45": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4066_highmo@epoque#45": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_120_hibisc@nian#1": {
@@ -4380,6 +4406,13 @@
         "Outfit Store"
       ],
       "cost": 18,
+      "tokenType": "Originium Prime"
+    },
+    "char_4132_ascln@iteration#4": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_297_hamoni@unveiling#1": {
