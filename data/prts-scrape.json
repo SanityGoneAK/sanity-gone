@@ -620,15 +620,15 @@
       "isLimited": false,
       "releaseOrder": 155
     },
-    "预备干员-术师": {
+    "预备干员-狙击": {
       "isLimited": false,
       "releaseOrder": 156
     },
-    "预备干员-狙击": {
+    "预备干员-术师": {
       "isLimited": false,
       "releaseOrder": 157
     },
-    "Sharp": {
+    "Stormeye": {
       "isLimited": false,
       "releaseOrder": 158
     },
@@ -636,11 +636,11 @@
       "isLimited": false,
       "releaseOrder": 159
     },
-    "Stormeye": {
+    "Pith": {
       "isLimited": false,
       "releaseOrder": 160
     },
-    "Pith": {
+    "Sharp": {
       "isLimited": false,
       "releaseOrder": 161
     },
