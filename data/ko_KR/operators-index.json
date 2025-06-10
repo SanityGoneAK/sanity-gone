@@ -127,7 +127,7 @@
   },
   "char_1039_thorn2": {
     "charId": "char_1039_thorn2",
-    "name": "Thorns the Lodestar",
+    "name": "쏜즈 더 로드스타",
     "slug": "thorns-the-lodestar",
     "position": "RANGED",
     "rarity": 6,
@@ -205,7 +205,7 @@
     "subProfessionId": "splashcaster",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 355,
     "gender": "Female"
   },
@@ -331,7 +331,7 @@
     "subProfessionId": "traper",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 331,
     "gender": "Female"
   },
@@ -583,7 +583,7 @@
     "subProfessionId": "executor",
     "alterId": null,
     "baseOperatorId": "char_502_nblade",
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 284,
     "gender": "Female"
   },
@@ -1073,7 +1073,7 @@
     "subProfessionId": "fastshot",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 194,
     "gender": "Female"
   },
@@ -1709,7 +1709,7 @@
   },
   "char_4164_tecno": {
     "charId": "char_4164_tecno",
-    "name": "Tecno",
+    "name": "테크노",
     "slug": "tecno",
     "position": "RANGED",
     "rarity": 5,
@@ -1723,7 +1723,7 @@
   },
   "char_4163_rosesa": {
     "charId": "char_4163_rosesa",
-    "name": "Rose Salt",
+    "name": "로즈솔트",
     "slug": "rose-salt",
     "position": "RANGED",
     "rarity": 5,
@@ -1801,7 +1801,7 @@
     "subProfessionId": "fearless",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 354,
     "gender": "Male"
   },
@@ -1815,7 +1815,7 @@
     "subProfessionId": "agent",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 353,
     "gender": "Male"
   },
@@ -1969,7 +1969,7 @@
     "subProfessionId": "instructor",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 330,
     "gender": "Male"
   },
@@ -1983,7 +1983,7 @@
     "subProfessionId": "dollkeeper",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 329,
     "gender": "Female"
   },
@@ -2305,7 +2305,7 @@
     "subProfessionId": "musha",
     "alterId": null,
     "baseOperatorId": "char_500_noirc",
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 283,
     "gender": "Male"
   },
@@ -2907,7 +2907,7 @@
     "subProfessionId": "traper",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 193,
     "gender": "Female"
   },
@@ -2921,7 +2921,7 @@
     "subProfessionId": "shotprotector",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 192,
     "gender": "Male"
   },

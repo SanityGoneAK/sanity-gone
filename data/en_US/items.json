@@ -2705,18 +2705,18 @@
   },
   "p_char_4163_rosesa": {
     "itemId": "p_char_4163_rosesa",
-    "name": "瑰盐的信物",
+    "name": "Rose Salt's Token",
     "iconId": "p_char_4163_rosesa",
-    "description": "一个带有奇异芬芳的药草卷，据说点燃后其香气可以凝神静气。但在交给医疗部鉴别之前最好不要擅自使用！",
-    "usage": "用于提升瑰盐的潜能。",
+    "description": "A wad of medicinal herbs with a bizarre scent, said to promote concentration and calm the spirit when burned. Better not use it before Medical gets the chance to identify it!",
+    "usage": "Used to improve the Potential of Rose Salt.",
     "rarity": 5
   },
   "p_char_4164_tecno": {
     "itemId": "p_char_4164_tecno",
-    "name": "特克诺的信物",
+    "name": "Tecno's Token",
     "iconId": "p_char_4164_tecno",
-    "description": "一个脸颊烧焦的小木偶，圆溜溜的眼睛让你想起特克诺撒娇时的样子。",
-    "usage": "用于提升特克诺的潜能。",
+    "description": "A small puppet with burning red cheeks, its big round eyes reminding you of Tecno whenever she's pleading for something.",
+    "usage": "Used to improve the Potential of Tecno.",
     "rarity": 5
   },
   "p_char_4052_surfer": {
@@ -3609,10 +3609,10 @@
   },
   "p_char_1039_thorn2": {
     "itemId": "p_char_1039_thorn2",
-    "name": "引星棘刺的信物",
+    "name": "Thorns the Lodestar's Token",
     "iconId": "p_char_1039_thorn2",
-    "description": "一缕纤细的心相原质，悄然汇入你的体内。待棘刺将它收回时，他便能清晰地知晓你身体状况的变化。",
-    "usage": "用于提升引星棘刺的潜能。",
+    "description": "A fine strand of Corazonix, quietly flowing through your bloodstream. Once Thorns recalls it, he will know every single change happening inside your body.",
+    "usage": "Used to improve the Potential of Thorns the Lodestar.",
     "rarity": 6
   },
   "p_char_2026_yu": {
