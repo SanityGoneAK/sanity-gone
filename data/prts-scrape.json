@@ -765,15 +765,15 @@
       "releaseOrder": 191
     },
     "闪击": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 192
     },
     "霜华": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 193
     },
     "灰烬": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 194
     },
     "暴雨": {
@@ -1129,11 +1129,11 @@
       "releaseOrder": 282
     },
     "火龙S黑角": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 283
     },
     "麒麟R夜刀": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 284
     },
     "U-Official": {
@@ -1313,15 +1313,15 @@
       "releaseOrder": 328
     },
     "双月": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 329
     },
     "医生": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 330
     },
     "艾拉": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 331
     },
     "露托": {
@@ -1409,15 +1409,15 @@
       "releaseOrder": 352
     },
     "齐尔查克": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 353
     },
     "莱欧斯": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 354
     },
     "玛露西尔": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 355
     },
     "凯瑟琳": {
