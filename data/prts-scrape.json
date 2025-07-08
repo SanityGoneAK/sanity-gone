@@ -1611,6 +1611,14 @@
     "酒神": {
       "isLimited": false,
       "releaseOrder": 403
+    },
+    "录武官": {
+      "isLimited": false,
+      "releaseOrder": 404
+    },
+    "司霆惊蛰": {
+      "isLimited": false,
+      "releaseOrder": 405
     }
   },
   "skinObtainSourceAndCosts": {
@@ -2384,6 +2392,13 @@
       "cost": null,
       "tokenType": null
     },
+    "char_4145_ulpia@epoque#48": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_120_hibisc@nian#1": {
       "obtainSources": [
         "Outfit Store"
@@ -2707,6 +2722,27 @@
       "tokenType": "Originium Prime"
     },
     "char_4130_luton@yun#6": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4055_bgsnow@yun#7": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_325_bison@yun#7": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
+    "char_150_snakek@yun#7": {
       "obtainSources": [
         "Outfit Store"
       ],
@@ -3078,6 +3114,13 @@
       ],
       "cost": null,
       "tokenType": null
+    },
+    "char_4080_lin@summer#19": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
     },
     "char_241_panda@marthe#1": {
       "obtainSources": [

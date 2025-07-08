@@ -2791,6 +2791,14 @@
     "usage": "用于提升Miss.Christine的潜能。",
     "rarity": 5
   },
+  "p_char_4196_reckpr": {
+    "itemId": "p_char_4196_reckpr",
+    "name": "录武官的信物",
+    "iconId": "p_char_4196_reckpr",
+    "description": "一瓶药效够劲的跌打损伤药，涂抹后的疼痛比受伤时更甚。好在，他上药的动作熟练，安慰人的技巧更是纯熟。",
+    "usage": "用于提升录武官的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "Exusiai's Token",
@@ -3685,6 +3693,14 @@
     "iconId": "p_char_1042_phatm2",
     "description": "一片金叶，细腻的叶脉纹理栩栩如生。你认出它是来自傀影耳边的华美装饰，时常沐浴在聚光灯下——对他而言，戏剧亦如自然。",
     "usage": "用于提升酒神的潜能。",
+    "rarity": 6
+  },
+  "p_char_1043_leizi2": {
+    "itemId": "p_char_1043_leizi2",
+    "name": "司霆惊蛰的信物",
+    "iconId": "p_char_1043_leizi2",
+    "description": "一张五雷镇宅符。好歹不是某种训诫，而是她对你的祝福。",
+    "usage": "用于提升司霆惊蛰的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {

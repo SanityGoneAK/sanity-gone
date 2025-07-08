@@ -1427,20 +1427,6 @@
     "releaseOrder": 94,
     "gender": "Female"
   },
-  "char_263_skadi": {
-    "charId": "char_263_skadi",
-    "name": "스카디",
-    "slug": "skadi",
-    "position": "MELEE",
-    "rarity": 6,
-    "profession": "WARRIOR",
-    "subProfessionId": "fearless",
-    "alterId": "char_1012_skadi2",
-    "baseOperatorId": null,
-    "isLimited": false,
-    "releaseOrder": 89,
-    "gender": "Female"
-  },
   "char_172_svrash": {
     "charId": "char_172_svrash",
     "name": "실버애쉬",
@@ -1454,6 +1440,32 @@
     "isLimited": false,
     "releaseOrder": 82,
     "gender": "Male"
+  },
+  "char_1043_leizi2": {
+    "charId": "char_1043_leizi2",
+    "name": "Leizi the Thunderbringer",
+    "slug": "leizi-the-thunderbringer",
+    "position": "MELEE",
+    "rarity": 6,
+    "profession": "WARRIOR",
+    "subProfessionId": "librator",
+    "alterId": null,
+    "baseOperatorId": "char_306_leizi",
+    "gender": "Female"
+  },
+  "char_263_skadi": {
+    "charId": "char_263_skadi",
+    "name": "스카디",
+    "slug": "skadi",
+    "position": "MELEE",
+    "rarity": 6,
+    "profession": "WARRIOR",
+    "subProfessionId": "fearless",
+    "alterId": "char_1012_skadi2",
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 89,
+    "gender": "Female"
   },
   "char_202_demkni": {
     "charId": "char_202_demkni",
@@ -3339,7 +3351,7 @@
     "rarity": 5,
     "profession": "CASTER",
     "subProfessionId": "chain",
-    "alterId": null,
+    "alterId": "char_1043_leizi2",
     "baseOperatorId": null,
     "isLimited": false,
     "releaseOrder": 122,
@@ -4002,6 +4014,18 @@
     "isLimited": false,
     "releaseOrder": 45,
     "gender": "Female"
+  },
+  "char_4196_reckpr": {
+    "charId": "char_4196_reckpr",
+    "name": "Record Keeper",
+    "slug": "record-keeper",
+    "position": "RANGED",
+    "rarity": 5,
+    "profession": "MEDIC",
+    "subProfessionId": "physician",
+    "alterId": null,
+    "baseOperatorId": null,
+    "gender": "Male"
   },
   "char_445_wscoot": {
     "charId": "char_445_wscoot",
