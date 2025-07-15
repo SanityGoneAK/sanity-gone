@@ -3703,6 +3703,14 @@
     "usage": "用于提升司霆惊蛰的潜能。",
     "rarity": 6
   },
+  "p_char_4195_radian": {
+    "itemId": "p_char_4195_radian",
+    "name": "电弧的信物",
+    "iconId": "p_char_4195_radian",
+    "description": "一枚不知名的金属元件，似乎是“小轴”核心结构的一部分，她说这是机械进行精密度升级时留下的残余，如同孩子落下的乳齿。",
+    "usage": "用于提升电弧的潜能。",
+    "rarity": 6
+  },
   "class_p_char_123_fang": {
     "itemId": "class_p_char_123_fang",
     "name": "フェンの印（中堅）",

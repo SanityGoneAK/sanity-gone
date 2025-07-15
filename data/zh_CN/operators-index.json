@@ -1,4 +1,18 @@
 {
+  "char_4195_radian": {
+    "charId": "char_4195_radian",
+    "name": "电弧",
+    "slug": "raidian",
+    "position": "RANGED",
+    "rarity": 6,
+    "profession": "SUPPORT",
+    "subProfessionId": "summoner",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 406,
+    "gender": "Female"
+  },
   "char_1043_leizi2": {
     "charId": "char_1043_leizi2",
     "name": "司霆惊蛰",
