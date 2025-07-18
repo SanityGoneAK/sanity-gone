@@ -127,7 +127,7 @@
   },
   "char_2026_yu": {
     "charId": "char_2026_yu",
-    "name": "Yu",
+    "name": "위",
     "slug": "yu",
     "position": "MELEE",
     "rarity": 6,
@@ -141,7 +141,7 @@
   },
   "char_1040_blaze2": {
     "charId": "char_1040_blaze2",
-    "name": "Blaze the Igniting Spark",
+    "name": "블레이즈 디 이그나이팅 스파크",
     "slug": "blaze-the-igniting-spark",
     "position": "RANGED",
     "rarity": 6,
@@ -1723,7 +1723,7 @@
   },
   "char_4052_surfer": {
     "charId": "char_4052_surfer",
-    "name": "Surfer",
+    "name": "서퍼",
     "slug": "surfer",
     "position": "MELEE",
     "rarity": 5,
@@ -1737,7 +1737,7 @@
   },
   "char_4172_xingzh": {
     "charId": "char_4172_xingzh",
-    "name": "Xingzhu",
+    "name": "싱주",
     "slug": "xingzhu",
     "position": "RANGED",
     "rarity": 5,

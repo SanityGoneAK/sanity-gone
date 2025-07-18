@@ -2721,18 +2721,18 @@
   },
   "p_char_4052_surfer": {
     "itemId": "p_char_4052_surfer",
-    "name": "寻澜的信物",
+    "name": "Surfer's Token",
     "iconId": "p_char_4052_surfer",
-    "description": "一张圈出了哥伦比亚某几处地点的地图，还附着那些美丽风光的照片。或许下一次她就会带着你一同前往。",
-    "usage": "用于提升寻澜的潜能。",
+    "description": "A map of Columbia with a few locations circled, along with photos of the beautiful sights that can be found there. Maybe she'll bring you along for the next trip.",
+    "usage": "Used to improve the Potential of Surfer.",
     "rarity": 5
   },
   "p_char_4172_xingzh": {
     "itemId": "p_char_4172_xingzh",
-    "name": "行箸的信物",
+    "name": "Xingzhu's Token",
     "iconId": "p_char_4172_xingzh",
-    "description": "一枚玉雕止箸。行箸以寻百味，止箸以品其味。",
-    "usage": "用于提升行箸的潜能。",
+    "description": "A jade chopstick rest. Let your chopsticks wander to seek new flavors, let them rest to savor the taste.",
+    "usage": "Used to improve the Potential of Xingzhu.",
     "rarity": 5
   },
   "p_char_4173_nowell": {
@@ -3625,18 +3625,18 @@
   },
   "p_char_2026_yu": {
     "itemId": "p_char_2026_yu",
-    "name": "余的信物",
+    "name": "Yu's Token",
     "iconId": "p_char_2026_yu",
-    "description": "一份空白的菜单，凭此可找余单独开小灶。看着它，有些人就已经馋得流口水了。",
-    "usage": "用于提升余的潜能。",
+    "description": "A blank menu, with which you can book a dinner for one with Yu as the chef. Seeing it is enough to get some people drooling.",
+    "usage": "Used to improve the Potential of Yu.",
     "rarity": 6
   },
   "p_char_1040_blaze2": {
     "itemId": "p_char_1040_blaze2",
-    "name": "烛煌的信物",
+    "name": "Blaze the Igniting Spark's Token",
     "iconId": "p_char_1040_blaze2",
-    "description": "一个随时能够点火煮食物的便携炉子。一起彻夜加班的时候，她会把煮好的泡面分你一半。",
-    "usage": "用于提升烛煌的潜能。",
+    "description": "A portable oven, able to be lit and cook food in an instant. Whenever the two of you are stuck working overtime all night, she'll give you half the instant noodles she cooks.",
+    "usage": "Used to improve the Potential of Blaze the Igniting Spark.",
     "rarity": 6
   },
   "p_char_4010_etlchi": {
