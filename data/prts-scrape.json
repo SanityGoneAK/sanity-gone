@@ -4336,6 +4336,13 @@
       "cost": 24,
       "tokenType": "Originium Prime"
     },
+    "char_151_myrtle@taiko#1": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_332_archet@shining#1": {
       "obtainSources": [
         "Outfit Store"
