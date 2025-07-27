@@ -35,6 +35,7 @@ const nameOverrides = {
 
 const recruitableNameToIdOverride = {
 	"Justice Knight": "char_4000_jnight",
+	샤미르: "char_254_vodfox",
 };
 
 export async function createRecruitmentJson(dataDir, locale) {
@@ -52,7 +53,6 @@ export async function createRecruitmentJson(dataDir, locale) {
 				const charId =
 					recruitableNameToIdOverride[opName] ??
 					operatorNameToCharId[opName];
-				console.log(charId, opName);
 				const opData = CHARACTER_LOCALES[locale][charId];
 				const tags = [
 					...(opData.tagList ?? []),
