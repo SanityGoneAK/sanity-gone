@@ -1,4 +1,8 @@
 import { MeiliSearch } from "meilisearch";
+import dotenv from "dotenv";
+import path from "path";
+
+dotenv.config({ path: path.join(__dirname, "..", ".env") });
 
 import enBranchesJson from "../data/en_US/branches.json";
 import cnBranchesJson from "../data/zh_CN/branches.json";
@@ -12,7 +16,6 @@ import krOperatorsJson from "../data/ko_KR/operators.json";
 
 import { subProfessionIdToBranch } from "../src/utils/branches";
 import { professionToClass } from "../src/utils/classes";
-import { fetchContentfulGraphQl } from "../src/utils/fetch";
 
 const BRANCH_LOCALES = {
 	zh_CN: cnBranchesJson,
@@ -29,42 +32,9 @@ const OPERATOR_LOCALES = {
 };
 
 /** @typedef {import("../src/types/output-types").SearchResult} SearchResult */
-/**
-<<<<<<< Updated upstream
-=======
- * Creates `{dataDir}/search.json`, a FlexSearch index used for Sanity;Gone's search bar.
- * no it doesn't lol
->>>>>>> Stashed changes
- *
- * @param {"zh_CN" | "en_US" | "ja_JP" | "ko_KR"} locale - output locale
- */
-
 export async function buildSearchIndex() {
 	/** @type {SearchResult[]} */
 	const searchArray = [];
-
-	const contentfulQuery = `
-  query {
-    operatorAnalysisCollection {
-      items {
-        operator {
-          name
-          slug
-        }
-      }
-    }
-  }
-  `;
-	/** @type any */
-	const { operatorAnalysisCollection } =
-		await fetchContentfulGraphQl(contentfulQuery);
-
-	const operatorsWithGuides = Object.fromEntries(
-		operatorAnalysisCollection.items.map((item) => [
-			item.operator.name,
-			item.operator.slug,
-		])
-	);
 
 	Object.values(OPERATOR_LOCALES.zh_CN)
 		.filter((e) => !e.isNotObtainable)
@@ -88,7 +58,7 @@ export async function buildSearchIndex() {
 					])
 				),
 				rarity: op.rarity,
-				hasGuide: !!operatorsWithGuides[op.name],
+				hasGuide: false,
 			});
 		});
 

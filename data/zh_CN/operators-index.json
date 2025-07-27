@@ -1,4 +1,46 @@
 {
+  "char_4195_radian": {
+    "charId": "char_4195_radian",
+    "name": "电弧",
+    "slug": "raidian",
+    "position": "RANGED",
+    "rarity": 6,
+    "profession": "SUPPORT",
+    "subProfessionId": "summoner",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 406,
+    "gender": "Female"
+  },
+  "char_1043_leizi2": {
+    "charId": "char_1043_leizi2",
+    "name": "司霆惊蛰",
+    "slug": "leizi-the-thunderbringer",
+    "position": "MELEE",
+    "rarity": 6,
+    "profession": "WARRIOR",
+    "subProfessionId": "librator",
+    "alterId": null,
+    "baseOperatorId": "char_306_leizi",
+    "isLimited": false,
+    "releaseOrder": 405,
+    "gender": "Female"
+  },
+  "char_1042_phatm2": {
+    "charId": "char_1042_phatm2",
+    "name": "酒神",
+    "slug": "tragodia",
+    "position": "RANGED",
+    "rarity": 6,
+    "profession": "SUPPORT",
+    "subProfessionId": "ritualist",
+    "alterId": null,
+    "baseOperatorId": "char_250_phatom",
+    "isLimited": false,
+    "releaseOrder": 403,
+    "gender": "Male"
+  },
   "char_1041_angel2": {
     "charId": "char_1041_angel2",
     "name": "新约能天使",
@@ -10,7 +52,6 @@
     "alterId": null,
     "baseOperatorId": "char_103_angel",
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 400,
     "gender": "Female"
   },
@@ -25,7 +66,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 399,
     "gender": "Female"
   },
@@ -40,7 +80,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 398,
     "gender": "Male"
   },
@@ -55,7 +94,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 395,
     "gender": "Female"
   },
@@ -70,7 +108,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 392,
     "gender": "Female"
   },
@@ -85,7 +122,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 389,
     "gender": "Female"
   },
@@ -100,7 +136,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 387,
     "gender": "Male"
   },
@@ -115,7 +150,6 @@
     "alterId": null,
     "baseOperatorId": "char_017_huang",
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 386,
     "gender": "Female"
   },
@@ -130,7 +164,6 @@
     "alterId": null,
     "baseOperatorId": "char_293_thorns",
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 383,
     "gender": "Male"
   },
@@ -145,7 +178,6 @@
     "alterId": null,
     "baseOperatorId": "char_140_whitew",
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 364,
     "gender": "Female"
   },
@@ -160,7 +192,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 363,
     "gender": "Female"
   },
@@ -175,7 +206,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 362,
     "gender": "Female"
   },
@@ -190,7 +220,6 @@
     "alterId": null,
     "baseOperatorId": "char_112_siege",
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 358,
     "gender": "Female"
   },
@@ -204,8 +233,7 @@
     "subProfessionId": "splashcaster",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
-    "hasGuide": false,
+    "isLimited": false,
     "releaseOrder": 355,
     "gender": "Female"
   },
@@ -220,7 +248,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 351,
     "gender": "Female"
   },
@@ -235,7 +262,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 350,
     "gender": "Female"
   },
@@ -250,7 +276,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 346,
     "gender": "Female"
   },
@@ -265,7 +290,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 344,
     "gender": "Male"
   },
@@ -280,7 +304,6 @@
     "alterId": null,
     "baseOperatorId": "char_113_cqbw",
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 340,
     "gender": "Female"
   },
@@ -295,7 +318,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 339,
     "gender": "Male"
   },
@@ -310,7 +332,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 338,
     "gender": "Female"
   },
@@ -325,7 +346,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 335,
     "gender": "Female"
   },
@@ -339,8 +359,7 @@
     "subProfessionId": "traper",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
-    "hasGuide": false,
+    "isLimited": false,
     "releaseOrder": 331,
     "gender": "Female"
   },
@@ -355,7 +374,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 326,
     "gender": "Female"
   },
@@ -370,7 +388,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 325,
     "gender": "Male"
   },
@@ -385,7 +402,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 322,
     "gender": "Female"
   },
@@ -400,7 +416,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 320,
     "gender": "Female"
   },
@@ -415,7 +430,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 317,
     "gender": "Female"
   },
@@ -430,7 +444,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 316,
     "gender": "Female"
   },
@@ -445,7 +458,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 315,
     "gender": "Male"
   },
@@ -460,7 +472,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 311,
     "gender": "Male"
   },
@@ -475,7 +486,6 @@
     "alterId": null,
     "baseOperatorId": "char_235_jesica",
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 307,
     "gender": "Female"
   },
@@ -490,7 +500,6 @@
     "alterId": null,
     "baseOperatorId": "char_180_amgoat",
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 304,
     "gender": "Female"
   },
@@ -505,7 +514,6 @@
     "alterId": null,
     "baseOperatorId": "char_308_swire",
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 303,
     "gender": "Female"
   },
@@ -520,7 +528,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 299,
     "gender": "Female"
   },
@@ -535,7 +542,6 @@
     "alterId": null,
     "baseOperatorId": "char_279_excu",
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 297,
     "gender": "Male"
   },
@@ -550,7 +556,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 293,
     "gender": "Female"
   },
@@ -565,7 +570,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 292,
     "gender": "Female"
   },
@@ -580,7 +584,6 @@
     "alterId": null,
     "baseOperatorId": "char_108_silent",
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 291,
     "gender": "Female"
   },
@@ -595,7 +598,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 289,
     "gender": "Female"
   },
@@ -609,8 +611,7 @@
     "subProfessionId": "executor",
     "alterId": null,
     "baseOperatorId": "char_502_nblade",
-    "isLimited": true,
-    "hasGuide": false,
+    "isLimited": false,
     "releaseOrder": 284,
     "gender": "Female"
   },
@@ -625,7 +626,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 281,
     "gender": "Female"
   },
@@ -640,7 +640,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 279,
     "gender": "Male"
   },
@@ -655,7 +654,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 278,
     "gender": "Female"
   },
@@ -670,7 +668,6 @@
     "alterId": null,
     "baseOperatorId": "char_261_sddrag",
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 275,
     "gender": "Female"
   },
@@ -685,7 +682,6 @@
     "alterId": null,
     "baseOperatorId": "char_102_texas",
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 272,
     "gender": "Female"
   },
@@ -700,7 +696,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 271,
     "gender": "Female"
   },
@@ -715,7 +710,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 270,
     "gender": "Male"
   },
@@ -730,7 +724,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 266,
     "gender": "Male"
   },
@@ -745,7 +738,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 258,
     "gender": "Male"
   },
@@ -760,7 +752,6 @@
     "alterId": null,
     "baseOperatorId": "char_187_ccheal",
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 256,
     "gender": "Female"
   },
@@ -775,7 +766,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 255,
     "gender": "Female"
   },
@@ -790,7 +780,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 252,
     "gender": "Female"
   },
@@ -805,7 +794,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 249,
     "gender": "Male"
   },
@@ -820,7 +808,6 @@
     "alterId": null,
     "baseOperatorId": "char_143_ghost",
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 245,
     "gender": "Female"
   },
@@ -835,7 +822,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 244,
     "gender": "Female"
   },
@@ -850,7 +836,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 243,
     "gender": "Male"
   },
@@ -865,7 +850,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 241,
     "gender": "Female"
   },
@@ -880,7 +864,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 237,
     "gender": "Female"
   },
@@ -895,7 +878,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 234,
     "gender": "Female"
   },
@@ -910,7 +892,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 232,
     "gender": "Female"
   },
@@ -925,7 +906,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 231,
     "gender": "Male"
   },
@@ -940,7 +920,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 225,
     "gender": "Male"
   },
@@ -955,7 +934,6 @@
     "alterId": null,
     "baseOperatorId": "char_148_nearl",
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 222,
     "gender": "Female"
   },
@@ -970,7 +948,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 221,
     "gender": "Female"
   },
@@ -985,7 +962,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 215,
     "gender": "Female"
   },
@@ -1000,7 +976,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 213,
     "gender": "Female"
   },
@@ -1015,7 +990,6 @@
     "alterId": null,
     "baseOperatorId": "char_010_chen",
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 210,
     "gender": "Female"
   },
@@ -1030,7 +1004,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 209,
     "gender": "Male"
   },
@@ -1045,7 +1018,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 206,
     "gender": "Female"
   },
@@ -1060,7 +1032,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 205,
     "gender": "Female"
   },
@@ -1075,7 +1046,6 @@
     "alterId": null,
     "baseOperatorId": "char_263_skadi",
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 201,
     "gender": "Female"
   },
@@ -1090,7 +1060,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 200,
     "gender": "Female"
   },
@@ -1105,7 +1074,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 199,
     "gender": "Female"
   },
@@ -1120,7 +1088,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 197,
     "gender": "Male"
   },
@@ -1134,8 +1101,7 @@
     "subProfessionId": "fastshot",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
-    "hasGuide": false,
+    "isLimited": false,
     "releaseOrder": 194,
     "gender": "Female"
   },
@@ -1150,7 +1116,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 190,
     "gender": "Female"
   },
@@ -1165,7 +1130,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 189,
     "gender": "Female"
   },
@@ -1180,7 +1144,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 185,
     "gender": "Female"
   },
@@ -1195,7 +1158,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 182,
     "gender": "Male"
   },
@@ -1210,7 +1172,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 177,
     "gender": "Female"
   },
@@ -1225,7 +1186,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 176,
     "gender": "Female"
   },
@@ -1240,7 +1200,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 173,
     "gender": "Female"
   },
@@ -1255,7 +1214,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 169,
     "gender": "Female"
   },
@@ -1270,7 +1228,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 165,
     "gender": "Female"
   },
@@ -1285,7 +1242,6 @@
     "alterId": "char_1039_thorn2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 153,
     "gender": "Male"
   },
@@ -1300,7 +1256,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 147,
     "gender": "Female"
   },
@@ -1315,7 +1270,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 143,
     "gender": "Female"
   },
@@ -1330,7 +1284,6 @@
     "alterId": "char_1035_wisdel",
     "baseOperatorId": null,
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 137,
     "gender": "Female"
   },
@@ -1345,7 +1298,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 136,
     "gender": "Female"
   },
@@ -1357,10 +1309,9 @@
     "rarity": 6,
     "profession": "SPECIAL",
     "subProfessionId": "executor",
-    "alterId": null,
+    "alterId": "char_1042_phatm2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 133,
     "gender": "Male"
   },
@@ -1375,7 +1326,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 128,
     "gender": "Female"
   },
@@ -1390,7 +1340,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 123,
     "gender": "Female"
   },
@@ -1405,7 +1354,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
-    "hasGuide": false,
     "releaseOrder": 121,
     "gender": "Female"
   },
@@ -1420,7 +1368,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 120,
     "gender": "Male"
   },
@@ -1435,7 +1382,6 @@
     "alterId": "char_1040_blaze2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 117,
     "gender": "Female"
   },
@@ -1450,7 +1396,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 112,
     "gender": "Female"
   },
@@ -1465,7 +1410,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 106,
     "gender": "Female"
   },
@@ -1480,7 +1424,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 101,
     "gender": "Male"
   },
@@ -1495,7 +1438,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 98,
     "gender": "Female"
   },
@@ -1510,7 +1452,6 @@
     "alterId": "char_1013_chen2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 94,
     "gender": "Female"
   },
@@ -1525,7 +1466,6 @@
     "alterId": "char_1012_skadi2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 89,
     "gender": "Female"
   },
@@ -1540,7 +1480,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 82,
     "gender": "Male"
   },
@@ -1555,7 +1494,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 81,
     "gender": "Female"
   },
@@ -1570,7 +1508,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 80,
     "gender": "Female"
   },
@@ -1585,7 +1522,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 79,
     "gender": "Female"
   },
@@ -1600,7 +1536,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 78,
     "gender": "Female"
   },
@@ -1615,7 +1550,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 77,
     "gender": "Female"
   },
@@ -1630,7 +1564,6 @@
     "alterId": "char_1016_agoat2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 76,
     "gender": "Female"
   },
@@ -1645,7 +1578,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 75,
     "gender": "Female"
   },
@@ -1660,7 +1592,6 @@
     "alterId": "char_1019_siege2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 74,
     "gender": "Female"
   },
@@ -1675,9 +1606,50 @@
     "alterId": "char_1041_angel2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 73,
     "gender": "Female"
+  },
+  "char_4196_reckpr": {
+    "charId": "char_4196_reckpr",
+    "name": "录武官",
+    "slug": "record-keeper",
+    "position": "RANGED",
+    "rarity": 5,
+    "profession": "MEDIC",
+    "subProfessionId": "physician",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 404,
+    "gender": "Male"
+  },
+  "char_4191_tippi": {
+    "charId": "char_4191_tippi",
+    "name": "蒂比",
+    "slug": "tippi",
+    "position": "MELEE",
+    "rarity": 5,
+    "profession": "SPECIAL",
+    "subProfessionId": "skywalker",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 402,
+    "gender": "Female"
+  },
+  "char_4198_christ": {
+    "charId": "char_4198_christ",
+    "name": "Miss.Christine",
+    "slug": "miss.christine",
+    "position": "RANGED",
+    "rarity": 5,
+    "profession": "CASTER",
+    "subProfessionId": "primcaster",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 401,
+    "gender": "Other"
   },
   "char_4187_graceb": {
     "charId": "char_4187_graceb",
@@ -1690,7 +1662,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 397,
     "gender": "Female"
   },
@@ -1705,7 +1676,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 394,
     "gender": "Female"
   },
@@ -1720,7 +1690,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 391,
     "gender": "Female"
   },
@@ -1735,7 +1704,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 390,
     "gender": "Female"
   },
@@ -1750,7 +1718,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 388,
     "gender": "Male"
   },
@@ -1765,7 +1732,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 385,
     "gender": "Female"
   },
@@ -1780,7 +1746,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 384,
     "gender": "Female"
   },
@@ -1795,7 +1760,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 382,
     "gender": "Female"
   },
@@ -1810,7 +1774,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 381,
     "gender": "Female"
   },
@@ -1825,7 +1788,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 361,
     "gender": "Male"
   },
@@ -1840,7 +1802,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 360,
     "gender": "Female"
   },
@@ -1855,7 +1816,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 357,
     "gender": "Male"
   },
@@ -1870,7 +1830,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 356,
     "gender": "Female"
   },
@@ -1884,8 +1843,7 @@
     "subProfessionId": "fearless",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
-    "hasGuide": false,
+    "isLimited": false,
     "releaseOrder": 354,
     "gender": "Male"
   },
@@ -1899,8 +1857,7 @@
     "subProfessionId": "agent",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
-    "hasGuide": false,
+    "isLimited": false,
     "releaseOrder": 353,
     "gender": "Male"
   },
@@ -1915,7 +1872,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 352,
     "gender": "Male"
   },
@@ -1930,7 +1886,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 349,
     "gender": "Male"
   },
@@ -1945,7 +1900,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 348,
     "gender": "Female"
   },
@@ -1960,7 +1914,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 347,
     "gender": "Male"
   },
@@ -1975,7 +1928,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 345,
     "gender": "Male"
   },
@@ -1990,7 +1942,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 343,
     "gender": "Female"
   },
@@ -2005,7 +1956,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 342,
     "gender": "Female"
   },
@@ -2020,7 +1970,6 @@
     "alterId": null,
     "baseOperatorId": "char_123_fang",
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 337,
     "gender": "Female"
   },
@@ -2035,7 +1984,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 334,
     "gender": "Female"
   },
@@ -2050,7 +1998,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 333,
     "gender": "Male"
   },
@@ -2064,8 +2011,7 @@
     "subProfessionId": "instructor",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
-    "hasGuide": false,
+    "isLimited": false,
     "releaseOrder": 330,
     "gender": "Male"
   },
@@ -2079,8 +2025,7 @@
     "subProfessionId": "dollkeeper",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
-    "hasGuide": false,
+    "isLimited": false,
     "releaseOrder": 329,
     "gender": "Female"
   },
@@ -2095,7 +2040,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 328,
     "gender": "Male"
   },
@@ -2110,7 +2054,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 327,
     "gender": "Female"
   },
@@ -2125,7 +2068,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 324,
     "gender": "Female"
   },
@@ -2140,7 +2082,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 323,
     "gender": "Male"
   },
@@ -2155,7 +2096,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 321,
     "gender": "Female"
   },
@@ -2170,7 +2110,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 319,
     "gender": "Female"
   },
@@ -2185,7 +2124,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 318,
     "gender": "Male"
   },
@@ -2200,7 +2138,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 314,
     "gender": "Male"
   },
@@ -2215,7 +2152,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 313,
     "gender": "Male"
   },
@@ -2230,7 +2166,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 310,
     "gender": "Female"
   },
@@ -2245,7 +2180,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 309,
     "gender": "Female"
   },
@@ -2260,7 +2194,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 306,
     "gender": "Female"
   },
@@ -2275,7 +2208,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 305,
     "gender": "Female"
   },
@@ -2290,7 +2222,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 302,
     "gender": "Female"
   },
@@ -2305,7 +2236,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 301,
     "gender": "Male"
   },
@@ -2320,7 +2250,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 300,
     "gender": "Female"
   },
@@ -2335,7 +2264,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 298,
     "gender": "Female"
   },
@@ -2350,7 +2278,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 296,
     "gender": "Female"
   },
@@ -2365,7 +2292,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 295,
     "gender": "Male"
   },
@@ -2380,7 +2306,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 290,
     "gender": "Female"
   },
@@ -2395,7 +2320,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 288,
     "gender": "Female"
   },
@@ -2410,7 +2334,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 287,
     "gender": "Female"
   },
@@ -2424,8 +2347,7 @@
     "subProfessionId": "musha",
     "alterId": null,
     "baseOperatorId": "char_500_noirc",
-    "isLimited": true,
-    "hasGuide": false,
+    "isLimited": false,
     "releaseOrder": 283,
     "gender": "Male"
   },
@@ -2440,7 +2362,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 280,
     "gender": "Female"
   },
@@ -2455,7 +2376,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 277,
     "gender": "Female"
   },
@@ -2470,7 +2390,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 276,
     "gender": "Female"
   },
@@ -2485,7 +2404,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 274,
     "gender": "Female"
   },
@@ -2500,7 +2418,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 273,
     "gender": "Male"
   },
@@ -2515,7 +2432,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 269,
     "gender": "Female"
   },
@@ -2530,7 +2446,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 268,
     "gender": "Male"
   },
@@ -2545,7 +2460,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 265,
     "gender": "Female"
   },
@@ -2560,7 +2474,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 264,
     "gender": "Female"
   },
@@ -2575,7 +2488,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 262,
     "gender": "Female"
   },
@@ -2590,7 +2502,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 257,
     "gender": "Female"
   },
@@ -2605,7 +2516,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 254,
     "gender": "Female"
   },
@@ -2620,7 +2530,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 253,
     "gender": "Male"
   },
@@ -2635,7 +2544,6 @@
     "alterId": null,
     "baseOperatorId": "char_253_greyy",
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 251,
     "gender": "Male"
   },
@@ -2650,7 +2558,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 250,
     "gender": "Female"
   },
@@ -2665,7 +2572,6 @@
     "alterId": null,
     "baseOperatorId": "char_120_hibisc",
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 248,
     "gender": "Female"
   },
@@ -2680,7 +2586,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 247,
     "gender": "Male"
   },
@@ -2695,7 +2600,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 246,
     "gender": "Female"
   },
@@ -2710,7 +2614,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 242,
     "gender": "Male"
   },
@@ -2725,7 +2628,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 240,
     "gender": "Female"
   },
@@ -2740,7 +2642,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 239,
     "gender": "Female"
   },
@@ -2755,7 +2656,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 236,
     "gender": "Female"
   },
@@ -2770,7 +2670,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 235,
     "gender": "Male"
   },
@@ -2785,7 +2684,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 233,
     "gender": "Female"
   },
@@ -2800,7 +2698,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 230,
     "gender": "Female"
   },
@@ -2815,7 +2712,6 @@
     "alterId": null,
     "baseOperatorId": "char_124_kroos",
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 229,
     "gender": "Female"
   },
@@ -2830,7 +2726,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 228,
     "gender": "Female"
   },
@@ -2845,7 +2740,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 227,
     "gender": "Male"
   },
@@ -2860,7 +2754,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 224,
     "gender": "Female"
   },
@@ -2875,7 +2768,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 223,
     "gender": "Female"
   },
@@ -2890,7 +2782,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 220,
     "gender": "Male"
   },
@@ -2905,7 +2796,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 219,
     "gender": "Female"
   },
@@ -2920,7 +2810,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 218,
     "gender": "Female"
   },
@@ -2935,7 +2824,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 214,
     "gender": "Female"
   },
@@ -2950,7 +2838,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 212,
     "gender": "Female"
   },
@@ -2965,7 +2852,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 208,
     "gender": "Female"
   },
@@ -2980,7 +2866,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 207,
     "gender": "Male"
   },
@@ -2995,7 +2880,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 204,
     "gender": "Female"
   },
@@ -3010,7 +2894,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 203,
     "gender": "Female"
   },
@@ -3025,7 +2908,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 198,
     "gender": "Female"
   },
@@ -3040,7 +2922,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 196,
     "gender": "Female"
   },
@@ -3055,7 +2936,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 195,
     "gender": "Female"
   },
@@ -3069,8 +2949,7 @@
     "subProfessionId": "traper",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
-    "hasGuide": false,
+    "isLimited": false,
     "releaseOrder": 193,
     "gender": "Female"
   },
@@ -3084,8 +2963,7 @@
     "subProfessionId": "shotprotector",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
-    "hasGuide": false,
+    "isLimited": false,
     "releaseOrder": 192,
     "gender": "Male"
   },
@@ -3100,7 +2978,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 191,
     "gender": "Male"
   },
@@ -3115,7 +2992,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 188,
     "gender": "Male"
   },
@@ -3130,7 +3006,6 @@
     "alterId": null,
     "baseOperatorId": "char_121_lava",
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 187,
     "gender": "Female"
   },
@@ -3145,7 +3020,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 186,
     "gender": "Female"
   },
@@ -3160,7 +3034,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 184,
     "gender": "Female"
   },
@@ -3175,7 +3048,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 181,
     "gender": "Female"
   },
@@ -3190,7 +3062,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 180,
     "gender": "Female"
   },
@@ -3205,7 +3076,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 175,
     "gender": "Female"
   },
@@ -3220,7 +3090,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 172,
     "gender": "Male"
   },
@@ -3235,7 +3104,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 171,
     "gender": "Female"
   },
@@ -3250,7 +3118,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 168,
     "gender": "Female"
   },
@@ -3265,7 +3132,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 167,
     "gender": "Female"
   },
@@ -3280,7 +3146,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 164,
     "gender": "Female"
   },
@@ -3295,7 +3160,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 163,
     "gender": "Female"
   },
@@ -3310,7 +3174,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 152,
     "gender": "Female"
   },
@@ -3325,7 +3188,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 150,
     "gender": "Male"
   },
@@ -3340,7 +3202,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 149,
     "gender": "Female"
   },
@@ -3355,7 +3216,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 148,
     "gender": "Female"
   },
@@ -3370,7 +3230,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 146,
     "gender": "Male"
   },
@@ -3385,7 +3244,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 145,
     "gender": "Female"
   },
@@ -3400,7 +3258,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 142,
     "gender": "Male"
   },
@@ -3415,7 +3272,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 141,
     "gender": "Female"
   },
@@ -3430,7 +3286,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 139,
     "gender": "Female"
   },
@@ -3445,7 +3300,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 138,
     "gender": "Female"
   },
@@ -3460,7 +3314,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 135,
     "gender": "Male"
   },
@@ -3475,7 +3328,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 132,
     "gender": "Female"
   },
@@ -3490,7 +3342,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 131,
     "gender": "Female"
   },
@@ -3505,7 +3356,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 127,
     "gender": "Male"
   },
@@ -3520,7 +3370,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 126,
     "gender": "Female"
   },
@@ -3532,10 +3381,9 @@
     "rarity": 5,
     "profession": "CASTER",
     "subProfessionId": "chain",
-    "alterId": null,
+    "alterId": "char_1043_leizi2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 122,
     "gender": "Female"
   },
@@ -3550,7 +3398,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 119,
     "gender": "Male"
   },
@@ -3565,7 +3412,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 118,
     "gender": "Female"
   },
@@ -3580,7 +3426,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 116,
     "gender": "Female"
   },
@@ -3595,7 +3440,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 114,
     "gender": "Male"
   },
@@ -3610,7 +3454,6 @@
     "alterId": "char_1020_reed2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 113,
     "gender": "Female"
   },
@@ -3625,7 +3468,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 111,
     "gender": "Female"
   },
@@ -3640,7 +3482,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 110,
     "gender": "Male"
   },
@@ -3655,7 +3496,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 108,
     "gender": "Female"
   },
@@ -3670,7 +3510,6 @@
     "alterId": "char_1032_excu2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 105,
     "gender": "Male"
   },
@@ -3685,7 +3524,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 104,
     "gender": "Male"
   },
@@ -3700,7 +3538,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 100,
     "gender": "Female"
   },
@@ -3715,7 +3552,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 97,
     "gender": "Female"
   },
@@ -3730,7 +3566,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 96,
     "gender": "Female"
   },
@@ -3745,7 +3580,6 @@
     "alterId": "char_1033_swire2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 93,
     "gender": "Female"
   },
@@ -3760,7 +3594,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 88,
     "gender": "Female"
   },
@@ -3775,7 +3608,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 87,
     "gender": "Female"
   },
@@ -3790,7 +3622,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 83,
     "gender": "Female"
   },
@@ -3805,7 +3636,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 72,
     "gender": "Female"
   },
@@ -3820,7 +3650,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 71,
     "gender": "Female"
   },
@@ -3835,7 +3664,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 70,
     "gender": "Female"
   },
@@ -3850,7 +3678,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 69,
     "gender": "Female"
   },
@@ -3865,7 +3692,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 68,
     "gender": "Female"
   },
@@ -3880,7 +3706,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 67,
     "gender": "Female"
   },
@@ -3895,7 +3720,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 66,
     "gender": "Female"
   },
@@ -3910,7 +3734,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 65,
     "gender": "Female"
   },
@@ -3925,7 +3748,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 64,
     "gender": "Female"
   },
@@ -3940,7 +3762,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 63,
     "gender": "Female"
   },
@@ -3955,7 +3776,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 62,
     "gender": "Female"
   },
@@ -3970,7 +3790,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 61,
     "gender": "Female"
   },
@@ -3985,7 +3804,6 @@
     "alterId": "char_1014_nearl2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 60,
     "gender": "Female"
   },
@@ -4000,7 +3818,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 59,
     "gender": "Female"
   },
@@ -4015,7 +3832,6 @@
     "alterId": "char_1031_slent2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 58,
     "gender": "Female"
   },
@@ -4030,7 +3846,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 57,
     "gender": "Female"
   },
@@ -4045,7 +3860,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 56,
     "gender": "Female"
   },
@@ -4060,7 +3874,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 55,
     "gender": "Female"
   },
@@ -4075,7 +3888,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 55,
     "gender": "Female"
   },
@@ -4090,7 +3902,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 55,
     "gender": "Female"
   },
@@ -4105,7 +3916,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 54,
     "gender": "Female"
   },
@@ -4120,7 +3930,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 53,
     "gender": "Female"
   },
@@ -4135,7 +3944,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 52,
     "gender": "Female"
   },
@@ -4150,7 +3958,6 @@
     "alterId": "char_1023_ghost2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 51,
     "gender": "Female"
   },
@@ -4165,7 +3972,6 @@
     "alterId": "char_1038_whitw2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 50,
     "gender": "Female"
   },
@@ -4180,7 +3986,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 49,
     "gender": "Female"
   },
@@ -4195,7 +4000,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 48,
     "gender": "Female"
   },
@@ -4210,7 +4014,6 @@
     "alterId": "char_1028_texas2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 47,
     "gender": "Female"
   },
@@ -4225,7 +4028,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 46,
     "gender": "Female"
   },
@@ -4240,7 +4042,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 45,
     "gender": "Female"
   },
@@ -4255,7 +4056,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 393,
     "gender": "Male"
   },
@@ -4270,7 +4070,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 359,
     "gender": "Female"
   },
@@ -4285,7 +4084,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 332,
     "gender": "Female"
   },
@@ -4300,7 +4098,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 312,
     "gender": "Female"
   },
@@ -4315,7 +4112,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 308,
     "gender": "Male"
   },
@@ -4330,7 +4126,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 286,
     "gender": "Male"
   },
@@ -4345,7 +4140,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 267,
     "gender": "Female"
   },
@@ -4360,7 +4154,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 263,
     "gender": "Male"
   },
@@ -4375,7 +4168,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 259,
     "gender": "Male"
   },
@@ -4390,7 +4182,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 238,
     "gender": "Male"
   },
@@ -4405,7 +4196,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 217,
     "gender": "Female"
   },
@@ -4420,7 +4210,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 211,
     "gender": "Female"
   },
@@ -4435,7 +4224,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 202,
     "gender": "Female"
   },
@@ -4450,7 +4238,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 183,
     "gender": "Female"
   },
@@ -4465,7 +4252,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 179,
     "gender": "Female"
   },
@@ -4480,7 +4266,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 174,
     "gender": "Female"
   },
@@ -4495,7 +4280,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 170,
     "gender": "Female"
   },
@@ -4510,7 +4294,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 166,
     "gender": "Male"
   },
@@ -4525,7 +4308,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 162,
     "gender": "Female"
   },
@@ -4540,7 +4322,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 151,
     "gender": "Male"
   },
@@ -4555,7 +4336,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 144,
     "gender": "Female"
   },
@@ -4570,7 +4350,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 140,
     "gender": "Female"
   },
@@ -4585,7 +4364,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 130,
     "gender": "Female"
   },
@@ -4600,7 +4378,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 129,
     "gender": "Other"
   },
@@ -4615,7 +4392,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 125,
     "gender": "Female"
   },
@@ -4630,7 +4406,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 124,
     "gender": "Female"
   },
@@ -4645,7 +4420,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 115,
     "gender": "Female"
   },
@@ -4660,7 +4434,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 109,
     "gender": "Female"
   },
@@ -4675,7 +4448,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 107,
     "gender": "Male"
   },
@@ -4690,7 +4462,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 103,
     "gender": "Female"
   },
@@ -4705,7 +4476,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 102,
     "gender": "Female"
   },
@@ -4720,7 +4490,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 99,
     "gender": "Female"
   },
@@ -4735,7 +4504,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 95,
     "gender": "Female"
   },
@@ -4750,7 +4518,6 @@
     "alterId": "char_1027_greyy2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 92,
     "gender": "Male"
   },
@@ -4765,7 +4532,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 86,
     "gender": "Female"
   },
@@ -4780,7 +4546,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 44,
     "gender": "Female"
   },
@@ -4795,7 +4560,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 43,
     "gender": "Female"
   },
@@ -4810,7 +4574,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 42,
     "gender": "Female"
   },
@@ -4825,7 +4588,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 41,
     "gender": "Female"
   },
@@ -4840,7 +4602,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 40,
     "gender": "Female"
   },
@@ -4855,7 +4616,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 39,
     "gender": "Male"
   },
@@ -4870,7 +4630,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 38,
     "gender": "Female"
   },
@@ -4885,7 +4644,6 @@
     "alterId": "char_1026_gvial2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 37,
     "gender": "Female"
   },
@@ -4900,7 +4658,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 36,
     "gender": "Female"
   },
@@ -4915,7 +4672,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 35,
     "gender": "Female"
   },
@@ -4930,7 +4686,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 34,
     "gender": "Female"
   },
@@ -4945,7 +4700,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 33,
     "gender": "Female"
   },
@@ -4960,7 +4714,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 32,
     "gender": "Female"
   },
@@ -4975,7 +4728,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 31,
     "gender": "Female"
   },
@@ -4990,7 +4742,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 30,
     "gender": "Female"
   },
@@ -5005,7 +4756,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 29,
     "gender": "Female"
   },
@@ -5020,7 +4770,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 28,
     "gender": "Female"
   },
@@ -5035,7 +4784,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 27,
     "gender": "Female"
   },
@@ -5050,7 +4798,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 26,
     "gender": "Male"
   },
@@ -5065,7 +4812,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 25,
     "gender": "Female"
   },
@@ -5080,7 +4826,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 24,
     "gender": "Female"
   },
@@ -5095,7 +4840,6 @@
     "alterId": "char_1034_jesca2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 23,
     "gender": "Female"
   },
@@ -5110,7 +4854,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 22,
     "gender": "Female"
   },
@@ -5125,7 +4868,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 21,
     "gender": "Female"
   },
@@ -5140,7 +4882,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 91,
     "gender": "Male"
   },
@@ -5155,7 +4896,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 90,
     "gender": "Female"
   },
@@ -5170,7 +4910,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 85,
     "gender": "Male"
   },
@@ -5185,7 +4924,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 84,
     "gender": "Female"
   },
@@ -5200,7 +4938,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 20,
     "gender": "Female"
   },
@@ -5215,7 +4952,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 19,
     "gender": "Male"
   },
@@ -5230,7 +4966,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 18,
     "gender": "Male"
   },
@@ -5245,7 +4980,6 @@
     "alterId": "char_1024_hbisc2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 17,
     "gender": "Female"
   },
@@ -5260,7 +4994,6 @@
     "alterId": "char_1011_lava2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 16,
     "gender": "Female"
   },
@@ -5275,7 +5008,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 15,
     "gender": "Male"
   },
@@ -5290,7 +5022,6 @@
     "alterId": "char_1021_kroos2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 14,
     "gender": "Female"
   },
@@ -5305,7 +5036,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 13,
     "gender": "Female"
   },
@@ -5320,7 +5050,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 12,
     "gender": "Female"
   },
@@ -5335,7 +5064,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 11,
     "gender": "Female"
   },
@@ -5350,7 +5078,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 10,
     "gender": "Female"
   },
@@ -5365,7 +5092,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 9,
     "gender": "Female"
   },
@@ -5380,7 +5106,6 @@
     "alterId": "char_1036_fang2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 8,
     "gender": "Female"
   },
@@ -5395,7 +5120,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 7,
     "gender": "Male"
   },
@@ -5410,7 +5134,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 6,
     "gender": "Female"
   },
@@ -5425,7 +5148,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 5,
     "gender": "Male"
   },
@@ -5440,7 +5162,6 @@
     "alterId": "char_1030_noirc2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 4,
     "gender": "Male"
   },
@@ -5455,7 +5176,6 @@
     "alterId": "char_1029_yato2",
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 3,
     "gender": "Female"
   },
@@ -5470,7 +5190,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 396,
     "gender": "Other"
   },
@@ -5485,7 +5204,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 336,
     "gender": "Female"
   },
@@ -5500,7 +5218,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 294,
     "gender": "Male"
   },
@@ -5515,7 +5232,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 285,
     "gender": "Female"
   },
@@ -5530,7 +5246,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 282,
     "gender": "Other"
   },
@@ -5545,7 +5260,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 216,
     "gender": "Female"
   },
@@ -5560,7 +5274,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 134,
     "gender": "Male"
   },
@@ -5575,7 +5288,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 2,
     "gender": "Male"
   },
@@ -5590,7 +5302,6 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "hasGuide": false,
     "releaseOrder": 1,
     "gender": "Female"
   }

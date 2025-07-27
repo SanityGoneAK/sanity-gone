@@ -620,15 +620,15 @@
       "isLimited": false,
       "releaseOrder": 155
     },
-    "预备干员-术师": {
+    "预备干员-狙击": {
       "isLimited": false,
       "releaseOrder": 156
     },
-    "预备干员-狙击": {
+    "预备干员-术师": {
       "isLimited": false,
       "releaseOrder": 157
     },
-    "Sharp": {
+    "Stormeye": {
       "isLimited": false,
       "releaseOrder": 158
     },
@@ -636,11 +636,11 @@
       "isLimited": false,
       "releaseOrder": 159
     },
-    "Stormeye": {
+    "Pith": {
       "isLimited": false,
       "releaseOrder": 160
     },
-    "Pith": {
+    "Sharp": {
       "isLimited": false,
       "releaseOrder": 161
     },
@@ -765,15 +765,15 @@
       "releaseOrder": 191
     },
     "闪击": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 192
     },
     "霜华": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 193
     },
     "灰烬": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 194
     },
     "暴雨": {
@@ -1129,11 +1129,11 @@
       "releaseOrder": 282
     },
     "火龙S黑角": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 283
     },
     "麒麟R夜刀": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 284
     },
     "U-Official": {
@@ -1313,15 +1313,15 @@
       "releaseOrder": 328
     },
     "双月": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 329
     },
     "医生": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 330
     },
     "艾拉": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 331
     },
     "露托": {
@@ -1409,15 +1409,15 @@
       "releaseOrder": 352
     },
     "齐尔查克": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 353
     },
     "莱欧斯": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 354
     },
     "玛露西尔": {
-      "isLimited": true,
+      "isLimited": false,
       "releaseOrder": 355
     },
     "凯瑟琳": {
@@ -1464,27 +1464,27 @@
       "isLimited": false,
       "releaseOrder": 366
     },
-    "预备干员-术师(卫戍协议)": {
+    "预备干员-特种(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 367
     },
-    "预备干员-特种(卫戍协议)": {
+    "预备干员-辅助(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 368
     },
-    "预备干员-狙击(卫戍协议)": {
+    "预备干员-近卫(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 369
     },
-    "预备干员-辅助(卫戍协议)": {
+    "预备干员-重装(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 370
     },
-    "预备干员-近卫(卫戍协议)": {
+    "预备干员-术师(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 371
     },
-    "预备干员-重装(卫戍协议)": {
+    "预备干员-狙击(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 372
     },
@@ -1496,27 +1496,27 @@
       "isLimited": false,
       "releaseOrder": 374
     },
-    "Raidian(卫戍协议)": {
+    "Stormeye(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 375
     },
-    "Stormeye(卫戍协议)": {
+    "Touch(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 376
     },
-    "Touch(卫戍协议)": {
+    "郁金香(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 377
     },
-    "郁金香(卫戍协议)": {
+    "Misery(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 378
     },
-    "Misery(卫戍协议)": {
+    "Mechanist(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 379
     },
-    "Mechanist(卫戍协议)": {
+    "Raidian(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 380
     },
@@ -1599,6 +1599,30 @@
     "新约能天使": {
       "isLimited": true,
       "releaseOrder": 400
+    },
+    "Miss.Christine": {
+      "isLimited": false,
+      "releaseOrder": 401
+    },
+    "蒂比": {
+      "isLimited": false,
+      "releaseOrder": 402
+    },
+    "酒神": {
+      "isLimited": false,
+      "releaseOrder": 403
+    },
+    "录武官": {
+      "isLimited": false,
+      "releaseOrder": 404
+    },
+    "司霆惊蛰": {
+      "isLimited": false,
+      "releaseOrder": 405
+    },
+    "电弧": {
+      "isLimited": false,
+      "releaseOrder": 406
     }
   },
   "skinObtainSourceAndCosts": {
@@ -1815,7 +1839,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 24,
+      "cost": 21,
       "tokenType": "Originium Prime"
     },
     "char_102_texas@epoque#7": {
@@ -2306,28 +2330,28 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 18,
       "tokenType": "Originium Prime"
     },
     "char_4146_nymph@epoque#42": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 18,
       "tokenType": "Originium Prime"
     },
     "char_4102_threye@epoque#42": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 18,
       "tokenType": "Originium Prime"
     },
     "char_260_durnar@epoque#42": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 18,
       "tokenType": "Originium Prime"
     },
     "char_190_clour@epoque#43": {
@@ -2342,6 +2366,41 @@
         "Outfit Store"
       ],
       "cost": 18,
+      "tokenType": "Originium Prime"
+    },
+    "char_4079_haini@epoque#45": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4066_highmo@epoque#45": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4137_udflow@epoque#46": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_154_morgan@epoque#47": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
+    "char_4145_ulpia@epoque#48": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_120_hibisc@nian#1": {
@@ -2665,6 +2724,34 @@
         "Outfit Store"
       ],
       "cost": 18,
+      "tokenType": "Originium Prime"
+    },
+    "char_4130_luton@yun#6": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4055_bgsnow@yun#7": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_325_bison@yun#7": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
+    "char_150_snakek@yun#7": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_147_shining@summer#1": {
@@ -3032,6 +3119,13 @@
       ],
       "cost": null,
       "tokenType": null
+    },
+    "char_4080_lin@summer#19": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
     },
     "char_241_panda@marthe#1": {
       "obtainSources": [
@@ -3797,7 +3891,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 21,
       "tokenType": "Originium Prime"
     },
     "char_278_orchid@boc#6": {
@@ -4242,6 +4336,13 @@
       "cost": 24,
       "tokenType": "Originium Prime"
     },
+    "char_151_myrtle@taiko#1": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_332_archet@shining#1": {
       "obtainSources": [
         "Outfit Store"
@@ -4373,6 +4474,13 @@
         "Outfit Store"
       ],
       "cost": 18,
+      "tokenType": "Originium Prime"
+    },
+    "char_4132_ascln@iteration#4": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_297_hamoni@unveiling#1": {

@@ -3,7 +3,6 @@ import path from "path";
 
 import { aggregateModuleData } from "./aggregate-module-data";
 import { aggregateRiicData } from "./aggregate-riic-data";
-import { fetchContentfulGraphQl } from "../src/utils/fetch";
 import { slugify } from "../src/utils/strings";
 
 import rangeTable from "./ArknightsGameData/zh_CN/gamedata/excel/range_table.json" assert { type: "json" };
@@ -121,17 +120,12 @@ export async function createOperatorsJson(dataDir, locale) {
 		}
 	}`;
 
-	const [
-		jetSkillTranslations,
-		jetTalentTranslations,
-		opToRiicSkillsMap,
-		resultFetchContentfulGraphQl,
-	] = await Promise.all([
-		fetchJetroyzSkillTranslations(),
-		fetchJetroyzTalentTranslations(),
-		aggregateRiicData(locale),
-		fetchContentfulGraphQl(contentfulQuery),
-	]);
+	const [jetSkillTranslations, jetTalentTranslations, opToRiicSkillsMap] =
+		await Promise.all([
+			fetchJetroyzSkillTranslations(),
+			fetchJetroyzTalentTranslations(),
+			aggregateRiicData(locale),
+		]);
 
 	const summonIdToOperatorId = {};
 	const denormalizedCharacters = Object.entries(CHARACTER_LOCALES["zh_CN"]);
@@ -158,7 +152,6 @@ export async function createOperatorsJson(dataDir, locale) {
 		addVoices,
 		addLoreDetails,
 		addGender,
-		addHasGuide,
 		addModules,
 		addRiicSkills,
 		addAlterInformation,
@@ -174,7 +167,6 @@ export async function createOperatorsJson(dataDir, locale) {
 			skinObtainSourceAndCosts,
 			releaseOrderAndLimitedLookup,
 			opToRiicSkillsMap,
-			resultFetchContentfulGraphQl,
 		});
 	}, denormalizedCharacters);
 
@@ -991,25 +983,6 @@ function sortByRarityAndRelease(characters) {
 			charB.rarity - charA.rarity ||
 			charB.releaseOrder - charA.releaseOrder
 		);
-	});
-}
-
-function addHasGuide(characters, _, { resultFetchContentfulGraphQl }) {
-	const { operatorAnalysisCollection } = resultFetchContentfulGraphQl;
-	const operatorsWithGuides = Object.fromEntries(
-		operatorAnalysisCollection.items.map((item) => [
-			item.operator.name,
-			item.operator.slug,
-		])
-	);
-	return characters.map(([charId, character]) => {
-		return [
-			charId,
-			{
-				...character,
-				hasGuide: !!operatorsWithGuides[character.name],
-			},
-		];
 	});
 }
 

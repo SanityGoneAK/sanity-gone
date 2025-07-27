@@ -12,7 +12,7 @@
   "tactician": {
     "branchName": "戦術家",
     "class": "Vanguard",
-    "trait": "攻撃範囲内で<span class=\"keyword\">戦術召集点</span>を指定し援軍を召喚できる<br>援軍がブロック中の敵を自身が攻撃する時、攻撃力が150％まで上昇"
+    "trait": "攻撃範囲内で<span class=\"keyword\">戦術召集点</span>を指定し援軍を召喚できる<br>援軍がブロック中の敵を自身が攻撃する時、攻撃力が150%まで上昇"
   },
   "bearer": {
     "branchName": "旗手",
@@ -37,12 +37,12 @@
   "instructor": {
     "branchName": "教官",
     "class": "Guard",
-    "trait": "攻撃距離が<span class=\"keyword\">やや長い</span>、自身がブロックしていない敵を攻撃時、攻撃力が120％まで上昇"
+    "trait": "攻撃距離が<span class=\"keyword\">やや長い</span>、自身がブロックしていない敵を攻撃時、攻撃力が120%まで上昇"
   },
   "lord": {
     "branchName": "領主",
     "class": "Guard",
-    "trait": "80％の攻撃力で<span class=\"keyword\">遠距離攻撃</span>も行える"
+    "trait": "80%の攻撃力で<span class=\"keyword\">遠距離攻撃</span>も行える"
   },
   "sword": {
     "branchName": "剣豪",
@@ -187,7 +187,7 @@
   "wandermedic": {
     "branchName": "放浪医",
     "class": "Medic",
-    "trait": "味方のHPを回復し、同時に対象に蓄積された<span class=\"elemental-damage\">元素損傷</span>を自身の攻撃力の50％の値分治療する（HP最大の味方も<span class=\"elemental-damage\">元素損傷</span>の治療対象となる）"
+    "trait": "味方のHPを回復し、同時に対象に蓄積された<span class=\"elemental-damage\">元素損傷</span>を自身の攻撃力の50%の値分治療する（HP最大の味方も<span class=\"elemental-damage\">元素損傷</span>の治療対象となる）"
   },
   "slower": {
     "branchName": "緩速師",
@@ -202,12 +202,12 @@
   "bard": {
     "branchName": "吟遊者",
     "class": "Supporter",
-    "trait": "攻撃しない<br>攻撃範囲内の味方全員の<span class=\"keyword\">HP</span>を継続回復(1秒ごとに攻撃力の10%回復)<br>自身は<span class=\"skill-tooltip\">鼓舞</span>状態の効果を受けない<br><span class=\"keyword\">配置可能数</span>にカウントされない<br>再配置までの時間が極めて長い"
+    "trait": "攻撃しない<br>攻撃範囲内の味方全員の<span class=\"keyword\">HP</span>を継続回復（1秒ごとに攻撃力の10%回復）<br>自身は<span class=\"skill-tooltip\">鼓舞</span>状態の効果を受けない<br><span class=\"keyword\">配置可能数</span>にカウントされない<br>再配置までの時間が極めて長い"
   },
   "blessing": {
     "branchName": "祈祷師",
     "class": "Supporter",
-    "trait": "敵に<span class=\"keyword\">術ダメージ</span>を与える<br>スキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の75％）"
+    "trait": "敵に<span class=\"keyword\">術ダメージ</span>を与える<br>スキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の75%）"
   },
   "summoner": {
     "branchName": "召喚師",
@@ -232,7 +232,7 @@
   "stalker": {
     "branchName": "潜伏者",
     "class": "Specialist",
-    "trait": "攻撃範囲内の<span class=\"keyword\">敵全員</span>を同時に攻撃<br>物理回避、術回避が50％上昇<br>敵に<span class=\"keyword\">狙われにくい</span>"
+    "trait": "攻撃範囲内の<span class=\"keyword\">敵全員</span>を同時に攻撃<br>物理回避、術回避が50%上昇<br>敵に<span class=\"keyword\">狙われにくい</span>"
   },
   "hookmaster": {
     "branchName": "鉤縄師",
@@ -247,7 +247,7 @@
   "merchant": {
     "branchName": "行商人",
     "class": "Specialist",
-    "trait": "再配置までの時間が<span class=\"keyword\">短い</span><br>撤退時に<span class=\"keyword\">コスト</span>を返却しない<br>配置中、3秒ごとにコストを3<span class=\"keyword\">消費</span>（コスト不足時自動に撤退）"
+    "trait": "再配置までの時間が<span class=\"keyword\">短い</span><br>撤退時に<span class=\"keyword\">コスト</span>を返却しない<br>配置中、3秒ごとにコストを3<span class=\"keyword\">消費</span>（所持コスト不足時自動的に撤退）"
   },
   "traper": {
     "branchName": "罠師",
@@ -325,9 +325,9 @@
     "trait": "<span class=\"skill-tooltip\">離陸</span>中、空中の敵を2体までブロックできる"
   },
   "soulcaster": {
-    "branchName": "塑灵术师",
+    "branchName": "創霊術師",
     "class": "Caster",
-    "trait": "攻击造成<span class=\"keyword\">法术伤害</span>，可以通过击倒敌人生成<span class=\"keyword\">召唤物</span>，可攻击到自身<span class=\"keyword\">召唤物</span>阻挡的敌人"
+    "trait": "<span class=\"keyword\">術攻撃</span>を行う<br>敵を倒すことで<span class=\"keyword\">召喚物</span>を召喚可能<br>自身の<span class=\"keyword\">召喚物</span>にブロックされている敵を攻撃可能"
   },
   "primguard": {
     "branchName": "本源近卫",

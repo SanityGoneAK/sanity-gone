@@ -58,8 +58,9 @@ export async function aggregateRiicData(
 
 			const charBuffs = cnCharRiicData.buffChar.map(
 				({ buffData }, skillIndex) => {
-					const buffStages = buffData.map(
-						(cnBuff, skillLevelIndex) => {
+					const buffStages =
+						Array.isArray(buffData) &&
+						buffData.map((cnBuff, skillLevelIndex) => {
 							let requiresJetTL = false;
 							const { buffId } = cnBuff;
 							const baseBuffStage = {
@@ -123,8 +124,7 @@ export async function aggregateRiicData(
 										buffId as keyof typeof BUILDING_LOCALES.zh_CN.buffs
 									].skillIcon,
 							};
-						}
-					);
+						});
 
 					return {
 						stages: buffStages,

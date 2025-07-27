@@ -2705,34 +2705,34 @@
   },
   "p_char_4163_rosesa": {
     "itemId": "p_char_4163_rosesa",
-    "name": "瑰盐的信物",
+    "name": "Rose Salt's Token",
     "iconId": "p_char_4163_rosesa",
-    "description": "一个带有奇异芬芳的药草卷，据说点燃后其香气可以凝神静气。但在交给医疗部鉴别之前最好不要擅自使用！",
-    "usage": "用于提升瑰盐的潜能。",
+    "description": "A wad of medicinal herbs with a bizarre scent, said to promote concentration and calm the spirit when burned. Better not use it before Medical gets the chance to identify it!",
+    "usage": "Used to improve the Potential of Rose Salt.",
     "rarity": 5
   },
   "p_char_4164_tecno": {
     "itemId": "p_char_4164_tecno",
-    "name": "特克诺的信物",
+    "name": "Tecno's Token",
     "iconId": "p_char_4164_tecno",
-    "description": "一个脸颊烧焦的小木偶，圆溜溜的眼睛让你想起特克诺撒娇时的样子。",
-    "usage": "用于提升特克诺的潜能。",
+    "description": "A small puppet with burning red cheeks, its big round eyes reminding you of Tecno whenever she's pleading for something.",
+    "usage": "Used to improve the Potential of Tecno.",
     "rarity": 5
   },
   "p_char_4052_surfer": {
     "itemId": "p_char_4052_surfer",
-    "name": "寻澜的信物",
+    "name": "Surfer's Token",
     "iconId": "p_char_4052_surfer",
-    "description": "一张圈出了哥伦比亚某几处地点的地图，还附着那些美丽风光的照片。或许下一次她就会带着你一同前往。",
-    "usage": "用于提升寻澜的潜能。",
+    "description": "A map of Columbia with a few locations circled, along with photos of the beautiful sights that can be found there. Maybe she'll bring you along for the next trip.",
+    "usage": "Used to improve the Potential of Surfer.",
     "rarity": 5
   },
   "p_char_4172_xingzh": {
     "itemId": "p_char_4172_xingzh",
-    "name": "行箸的信物",
+    "name": "Xingzhu's Token",
     "iconId": "p_char_4172_xingzh",
-    "description": "一枚玉雕止箸。行箸以寻百味，止箸以品其味。",
-    "usage": "用于提升行箸的潜能。",
+    "description": "A jade chopstick rest. Let your chopsticks wander to seek new flavors, let them rest to savor the taste.",
+    "usage": "Used to improve the Potential of Xingzhu.",
     "rarity": 5
   },
   "p_char_4173_nowell": {
@@ -2773,6 +2773,30 @@
     "iconId": "p_char_4187_graceb",
     "description": "一盆清新的百合花，从干员聆音的花圃中移栽而来。她总是很擅长照料新生的花朵。",
     "usage": "用于提升聆音的潜能。",
+    "rarity": 5
+  },
+  "p_char_4191_tippi": {
+    "itemId": "p_char_4191_tippi",
+    "name": "蒂比的信物",
+    "iconId": "p_char_4191_tippi",
+    "description": "一个喷漆罐，嗞——可以拿它在墙上喷绘你喜欢的图案，但不要随便乱涂乱画哦。",
+    "usage": "用于提升蒂比的潜能。",
+    "rarity": 5
+  },
+  "p_char_4198_christ": {
+    "itemId": "p_char_4198_christ",
+    "name": "Miss.Christine的信物",
+    "iconId": "p_char_4198_christ",
+    "description": "一张印着爪印的工牌。你把它挂在了Miss.Christine的脖子上，但第二天它就出现在了你的桌面上。",
+    "usage": "用于提升Miss.Christine的潜能。",
+    "rarity": 5
+  },
+  "p_char_4196_reckpr": {
+    "itemId": "p_char_4196_reckpr",
+    "name": "录武官的信物",
+    "iconId": "p_char_4196_reckpr",
+    "description": "一瓶药效够劲的跌打损伤药，涂抹后的疼痛比受伤时更甚。好在，他上药的动作熟练，安慰人的技巧更是纯熟。",
+    "usage": "用于提升录武官的潜能。",
     "rarity": 5
   },
   "p_char_103_angel": {
@@ -3593,26 +3617,26 @@
   },
   "p_char_1039_thorn2": {
     "itemId": "p_char_1039_thorn2",
-    "name": "引星棘刺的信物",
+    "name": "Thorns the Lodestar's Token",
     "iconId": "p_char_1039_thorn2",
-    "description": "一缕纤细的心相原质，悄然汇入你的体内。待棘刺将它收回时，他便能清晰地知晓你身体状况的变化。",
-    "usage": "用于提升引星棘刺的潜能。",
+    "description": "A fine strand of Corazonix, quietly flowing through your bloodstream. Once Thorns recalls it, he will know every single change happening inside your body.",
+    "usage": "Used to improve the Potential of Thorns the Lodestar.",
     "rarity": 6
   },
   "p_char_2026_yu": {
     "itemId": "p_char_2026_yu",
-    "name": "余的信物",
+    "name": "Yu's Token",
     "iconId": "p_char_2026_yu",
-    "description": "一份空白的菜单，凭此可找余单独开小灶。看着它，有些人就已经馋得流口水了。",
-    "usage": "用于提升余的潜能。",
+    "description": "A blank menu, with which you can book a dinner for one with Yu as the chef. Seeing it is enough to get some people drooling.",
+    "usage": "Used to improve the Potential of Yu.",
     "rarity": 6
   },
   "p_char_1040_blaze2": {
     "itemId": "p_char_1040_blaze2",
-    "name": "烛煌的信物",
+    "name": "Blaze the Igniting Spark's Token",
     "iconId": "p_char_1040_blaze2",
-    "description": "一个随时能够点火煮食物的便携炉子。一起彻夜加班的时候，她会把煮好的泡面分你一半。",
-    "usage": "用于提升烛煌的潜能。",
+    "description": "A portable oven, able to be lit and cook food in an instant. Whenever the two of you are stuck working overtime all night, she'll give you half the instant noodles she cooks.",
+    "usage": "Used to improve the Potential of Blaze the Igniting Spark.",
     "rarity": 6
   },
   "p_char_4010_etlchi": {
@@ -3661,6 +3685,30 @@
     "iconId": "p_char_4194_rmixer",
     "description": "一枚闪着光的徽章，见证了他对拉特兰多年的守护，也见证了圣城对他无尽的信任。",
     "usage": "用于提升信仰搅拌机的潜能。",
+    "rarity": 6
+  },
+  "p_char_1042_phatm2": {
+    "itemId": "p_char_1042_phatm2",
+    "name": "酒神的信物",
+    "iconId": "p_char_1042_phatm2",
+    "description": "一片金叶，细腻的叶脉纹理栩栩如生。你认出它是来自傀影耳边的华美装饰，时常沐浴在聚光灯下——对他而言，戏剧亦如自然。",
+    "usage": "用于提升酒神的潜能。",
+    "rarity": 6
+  },
+  "p_char_1043_leizi2": {
+    "itemId": "p_char_1043_leizi2",
+    "name": "司霆惊蛰的信物",
+    "iconId": "p_char_1043_leizi2",
+    "description": "一张五雷镇宅符。好歹不是某种训诫，而是她对你的祝福。",
+    "usage": "用于提升司霆惊蛰的潜能。",
+    "rarity": 6
+  },
+  "p_char_4195_radian": {
+    "itemId": "p_char_4195_radian",
+    "name": "电弧的信物",
+    "iconId": "p_char_4195_radian",
+    "description": "一枚不知名的金属元件，似乎是“小轴”核心结构的一部分，她说这是机械进行精密度升级时留下的残余，如同孩子落下的乳齿。",
+    "usage": "用于提升电弧的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
