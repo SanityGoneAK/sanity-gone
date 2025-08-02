@@ -333,5 +333,10 @@
     "branchName": "本源近卫",
     "class": "Guard",
     "trait": "能够阻挡两个敌人，可以造成<span class=\"keyword\">元素伤害</span>"
+  },
+  "counsellor": {
+    "branchName": "策士",
+    "class": "Vanguard",
+    "trait": "能够阻挡两个敌人，可以支援待部署区的我方单位"
   }
 }
