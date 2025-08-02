@@ -7,6 +7,7 @@ import { createBranchesJson } from "./import-branches.js";
 import { createItemsJson } from "./import-items.js";
 // import { translateOperators } from "./translate-operators.js";
 import { createPrtsScrapeJson } from "./fetch-prts-data.ts";
+import { createRecruitmentJson } from "./import-recruitment.js";
 // import { createMapsJson } from "./create-maps-json.js";
 // import { createEnemiesJson } from "./create-enemies-json.js";
 
@@ -20,6 +21,7 @@ import { createPrtsScrapeJson } from "./fetch-prts-data.ts";
 			createOperatorsJson(dataDir, locale),
 			createBranchesJson(dataDir, locale),
 			createItemsJson(dataDir, locale),
+			createRecruitmentJson(dataDir, locale),
 			// createMapsJson(dataDir),
 			// createEnemiesJson(dataDir),
 		]);

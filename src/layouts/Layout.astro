@@ -8,21 +8,31 @@ export interface Props {
 
 const { title, previousLocation, previousLocationLink } = Astro.props;
 
-import { getPathByLocale } from "astro:i18n";
+import { getPathByLocale, getRelativeLocaleUrl } from "astro:i18n";
 import SearchBar from "../components/navigation/SearchBar";
 import SanityGoneLogo from "~/components/SanityGoneLogo";
 import Sidebar from "~/components/navigation/Sidebar.astro";
-import { defaultLang, type Locale } from "~/i18n/languages";
+import Settings from "~/components/navigation/Settings";
+import { allLanguages, defaultLang, type Locale } from "~/i18n/languages";
 
 import "swiper/css";
 import 'swiper/css/navigation';
 
 import "~/styles/base.css";
-import { useTranslations } from "../i18n/utils";
+import { stripLangFromUrl, useTranslations } from "../i18n/utils";
 import type { ui } from "../i18n/ui";
 
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
 const t = useTranslations(locale);
+const languages = Object.entries(allLanguages).map(([key, language]) => {
+	return [
+		key,
+		{
+			url: getRelativeLocaleUrl(key, stripLangFromUrl(Astro.url)),
+			label: language,
+		},
+	];
+});
 ---
 <html lang={locale}>
 	<head>
@@ -93,12 +103,15 @@ const t = useTranslations(locale);
 				id="searchbar"
 				class="hidden grid-in-search md:grid-in-topright group-data-[menu-open=true]/sitewrapper:block md:block border-b border-solid border-neutral-600 md:bg-neutral-800"
 			>
-				{ /* set to client:load because search bar should be immediately available upon opening sidebar */}
-				<SearchBar
-					placeholder={t('nav.search')}
-					locale={locale as Locale}
-					client:load
-				/>
+				<div class="flex h-full w-full items-center justify-between px-3 md:pl-6">
+					{ /* set to client:load because search bar should be immediately available upon opening sidebar */}
+					<SearchBar
+						placeholder={t('nav.search')}
+						locale={locale as Locale}
+						client:load
+					/>
+					<Settings client:load languages={Object.fromEntries(languages)} currentLanguage={locale}></Settings>
+				</div>
 			</div>
 			<div
 				id="sidebar"

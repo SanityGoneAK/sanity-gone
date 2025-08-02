@@ -1,0 +1,157 @@
+[
+  {
+    "tagId": 1,
+    "tagName": "前衛タイプ",
+    "tagGroup": 1
+  },
+  {
+    "tagId": 2,
+    "tagName": "狙撃タイプ",
+    "tagGroup": 2
+  },
+  {
+    "tagId": 3,
+    "tagName": "重装タイプ",
+    "tagGroup": 3
+  },
+  {
+    "tagId": 4,
+    "tagName": "医療タイプ",
+    "tagGroup": 4
+  },
+  {
+    "tagId": 5,
+    "tagName": "補助タイプ",
+    "tagGroup": 5
+  },
+  {
+    "tagId": 6,
+    "tagName": "術師タイプ",
+    "tagGroup": 6
+  },
+  {
+    "tagId": 7,
+    "tagName": "特殊タイプ",
+    "tagGroup": 7
+  },
+  {
+    "tagId": 8,
+    "tagName": "先鋒タイプ",
+    "tagGroup": 8
+  },
+  {
+    "tagId": 9,
+    "tagName": "近距離",
+    "tagGroup": 9
+  },
+  {
+    "tagId": 10,
+    "tagName": "遠距離",
+    "tagGroup": 10
+  },
+  {
+    "tagId": 11,
+    "tagName": "上級エリート",
+    "tagGroup": 11
+  },
+  {
+    "tagId": 12,
+    "tagName": "牽制",
+    "tagGroup": 12
+  },
+  {
+    "tagId": 13,
+    "tagName": "爆発力",
+    "tagGroup": 13
+  },
+  {
+    "tagId": 14,
+    "tagName": "エリート",
+    "tagGroup": 14
+  },
+  {
+    "tagId": 15,
+    "tagName": "治療",
+    "tagGroup": 15
+  },
+  {
+    "tagId": 16,
+    "tagName": "支援",
+    "tagGroup": 16
+  },
+  {
+    "tagId": 17,
+    "tagName": "初期",
+    "tagGroup": 17
+  },
+  {
+    "tagId": 18,
+    "tagName": "COST回復",
+    "tagGroup": 18
+  },
+  {
+    "tagId": 19,
+    "tagName": "火力",
+    "tagGroup": 19
+  },
+  {
+    "tagId": 20,
+    "tagName": "生存",
+    "tagGroup": 20
+  },
+  {
+    "tagId": 21,
+    "tagName": "範囲攻撃",
+    "tagGroup": 21
+  },
+  {
+    "tagId": 22,
+    "tagName": "防御",
+    "tagGroup": 22
+  },
+  {
+    "tagId": 23,
+    "tagName": "減速",
+    "tagGroup": 23
+  },
+  {
+    "tagId": 24,
+    "tagName": "弱化",
+    "tagGroup": 24
+  },
+  {
+    "tagId": 25,
+    "tagName": "高速再配置",
+    "tagGroup": 25
+  },
+  {
+    "tagId": 26,
+    "tagName": "強制移動",
+    "tagGroup": 26
+  },
+  {
+    "tagId": 27,
+    "tagName": "召喚",
+    "tagGroup": 27
+  },
+  {
+    "tagId": 28,
+    "tagName": "ロボット",
+    "tagGroup": 28
+  },
+  {
+    "tagId": 29,
+    "tagName": "元素",
+    "tagGroup": 29
+  },
+  {
+    "tagId": 1012,
+    "tagName": "男性",
+    "tagGroup": 1012
+  },
+  {
+    "tagId": 1013,
+    "tagName": "女性",
+    "tagGroup": 1013
+  }
+]
