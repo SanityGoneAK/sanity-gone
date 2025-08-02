@@ -2799,6 +2799,22 @@
     "usage": "用于提升录武官的潜能。",
     "rarity": 5
   },
+  "p_char_4203_kichi": {
+    "itemId": "p_char_4203_kichi",
+    "name": "吉星的信物",
+    "iconId": "p_char_4203_kichi",
+    "description": "几张图案新潮的贴纸。吉星在拉面店消费获得的系列贴纸，其中有一张是手绘的，她说自己终究还是缺一张，但想让你集满。",
+    "usage": "用于提升吉星的潜能。",
+    "rarity": 5
+  },
+  "p_char_4199_makiri": {
+    "itemId": "p_char_4199_makiri",
+    "name": "松桐的信物",
+    "iconId": "p_char_4199_makiri",
+    "description": "一张精心设计的名片，留着它，你总会知道去哪里能找到他——或者让他找到你。",
+    "usage": "用于提升松桐的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "エクシアの印",
@@ -3709,6 +3725,22 @@
     "iconId": "p_char_4195_radian",
     "description": "一枚不知名的金属元件，似乎是“小轴”核心结构的一部分，她说这是机械进行精密度升级时留下的残余，如同孩子落下的乳齿。",
     "usage": "用于提升电弧的潜能。",
+    "rarity": 6
+  },
+  "p_char_4202_haruka": {
+    "itemId": "p_char_4202_haruka",
+    "name": "遥的信物",
+    "iconId": "p_char_4202_haruka",
+    "description": "一沓鳞兽形状的便利贴。她说自己会用这个记录接下来的日程，作为一种提醒。说完，她饶有兴趣地看着你，想知道你会在上面写些什么。",
+    "usage": "用于提升遥的潜能。",
+    "rarity": 6
+  },
+  "p_char_1044_hsgma2": {
+    "itemId": "p_char_1044_hsgma2",
+    "name": "斩业星熊的信物",
+    "iconId": "p_char_1044_hsgma2",
+    "description": "一个用旧了的龙门近卫局督察证外壳。这些外壳她都留着，但送给别人还是第一次。",
+    "usage": "用于提升斩业星熊的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {

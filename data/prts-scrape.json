@@ -1623,6 +1623,22 @@
     "电弧": {
       "isLimited": false,
       "releaseOrder": 406
+    },
+    "松桐": {
+      "isLimited": false,
+      "releaseOrder": 407
+    },
+    "吉星": {
+      "isLimited": false,
+      "releaseOrder": 408
+    },
+    "遥": {
+      "isLimited": false,
+      "releaseOrder": 409
+    },
+    "斩业星熊": {
+      "isLimited": true,
+      "releaseOrder": 410
     }
   },
   "skinObtainSourceAndCosts": {
@@ -3127,6 +3143,27 @@
       "cost": 0,
       "tokenType": "Originium Prime"
     },
+    "char_1013_chen2@summer#20": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_450_necras@summer#20": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_133_mm@summer#20": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_241_panda@marthe#1": {
       "obtainSources": [
         "Outfit Store"
@@ -3182,6 +3219,13 @@
       ],
       "cost": null,
       "tokenType": null
+    },
+    "char_1039_thorn2@marthe#9": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
     },
     "char_179_cgbird@witch#1": {
       "obtainSources": [
@@ -4537,6 +4581,13 @@
         "Outfit Store"
       ],
       "cost": 18,
+      "tokenType": "Originium Prime"
+    },
+    "char_4058_pepe@sightseer#2": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
       "tokenType": "Originium Prime"
     }
   }
