@@ -141,7 +141,7 @@
   },
   "char_4010_etlchi": {
     "charId": "char_4010_etlchi",
-    "name": "Entelechia",
+    "name": "エンテレケイア",
     "slug": "entelechia",
     "position": "MELEE",
     "rarity": 6,
@@ -1765,7 +1765,7 @@
   },
   "char_4173_nowell": {
     "charId": "char_4173_nowell",
-    "name": "Nowell",
+    "name": "ノウエル",
     "slug": "nowell",
     "position": "RANGED",
     "rarity": 5,
