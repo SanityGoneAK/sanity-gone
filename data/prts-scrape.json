@@ -3164,6 +3164,13 @@
       "cost": 0,
       "tokenType": "Originium Prime"
     },
+    "char_366_acdrop@summer#21": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
     "char_241_panda@marthe#1": {
       "obtainSources": [
         "Outfit Store"
@@ -4584,6 +4591,13 @@
       "tokenType": "Originium Prime"
     },
     "char_4058_pepe@sightseer#2": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4140_lasher@sightseer#3": {
       "obtainSources": [
         "Outfit Store"
       ],
