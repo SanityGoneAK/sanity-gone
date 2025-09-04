@@ -9,7 +9,7 @@
     "subProfessionId": "lord",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 415,
     "gender": "Female"
   },
@@ -1661,7 +1661,7 @@
     "subProfessionId": "bard",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 414,
     "gender": "Female"
   },
@@ -1675,7 +1675,7 @@
     "subProfessionId": "dollkeeper",
     "alterId": null,
     "baseOperatorId": null,
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 413,
     "gender": "Female"
   },
