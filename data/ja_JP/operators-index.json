@@ -1,4 +1,18 @@
 {
+  "char_4182_oblvns": {
+    "charId": "char_4182_oblvns",
+    "name": "Togawa Sakiko",
+    "slug": "togawa-sakiko",
+    "position": "MELEE",
+    "rarity": 6,
+    "profession": "WARRIOR",
+    "subProfessionId": "lord",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": true,
+    "releaseOrder": 415,
+    "gender": "Female"
+  },
   "char_1044_hsgma2": {
     "charId": "char_1044_hsgma2",
     "name": "Hoshiguma the Breacher",
@@ -1635,6 +1649,62 @@
     "baseOperatorId": null,
     "isLimited": false,
     "releaseOrder": 73,
+    "gender": "Female"
+  },
+  "char_4184_dolris": {
+    "charId": "char_4184_dolris",
+    "name": "Misumi Uika",
+    "slug": "misumi-uika",
+    "position": "RANGED",
+    "rarity": 5,
+    "profession": "SUPPORT",
+    "subProfessionId": "bard",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": true,
+    "releaseOrder": 414,
+    "gender": "Female"
+  },
+  "char_4183_mortis": {
+    "charId": "char_4183_mortis",
+    "name": "Wakaba Mutsumi",
+    "slug": "wakaba-mutsumi",
+    "position": "MELEE",
+    "rarity": 5,
+    "profession": "SPECIAL",
+    "subProfessionId": "dollkeeper",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": true,
+    "releaseOrder": 413,
+    "gender": "Female"
+  },
+  "char_4186_tmoris": {
+    "charId": "char_4186_tmoris",
+    "name": "Yahata Umiri",
+    "slug": "yahata-umiri",
+    "position": "MELEE",
+    "rarity": 5,
+    "profession": "SPECIAL",
+    "subProfessionId": "stalker",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 412,
+    "gender": "Female"
+  },
+  "char_4185_amoris": {
+    "charId": "char_4185_amoris",
+    "name": "Yūtenji Nyamu",
+    "slug": "yutenji-nyamu",
+    "position": "MELEE",
+    "rarity": 5,
+    "profession": "WARRIOR",
+    "subProfessionId": "hammer",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 411,
     "gender": "Female"
   },
   "char_4203_kichi": {

@@ -28,7 +28,6 @@ import { cx } from "~/utils/styles.ts";
 import PlayIcon from "~/components/icons/PlayIcon.tsx";
 import PauseIcon from "~/components/icons/PauseIcon.tsx";
 
-
 import { operatorSplashAvatar } from "~/utils/images.ts";
 
 const OperatorVoicePanel: React.FC = () => {
@@ -45,8 +44,9 @@ const OperatorVoicePanel: React.FC = () => {
 	const voiceDict = useMemo(() => {
 		return operator.voices[voiceId];
 	}, [voiceId]);
-	const [currentVoiceLanguage, setCurrentVoiceLanguage] =
-		useState("CN_MANDARIN");
+	const [currentVoiceLanguage, setCurrentVoiceLanguage] = useState(
+		Object.keys(operator.voiceLines[voiceId])[0]
+	);
 	const voiceLines = useMemo(() => {
 		return operator.voiceLines[voiceId][currentVoiceLanguage];
 	}, [voiceId, currentVoiceLanguage]);

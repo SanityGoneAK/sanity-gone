@@ -32,6 +32,7 @@ export const voiceLanguagesToLocaleKey = {
 	RUS: "custom",
 	FRE: "custom",
 	SPA: "custom",
+	LINKAGE: "ja",
 } as const;
 
 export interface LocalizedString {
