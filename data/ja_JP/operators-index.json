@@ -141,7 +141,7 @@
   },
   "char_450_necras": {
     "charId": "char_450_necras",
-    "name": "Necrass",
+    "name": "ネクラス",
     "slug": "necrass",
     "position": "RANGED",
     "rarity": 6,
@@ -1807,7 +1807,7 @@
   },
   "char_4171_wulfen": {
     "charId": "char_4171_wulfen",
-    "name": "Wulfenite",
+    "name": "ウルフェナイト",
     "slug": "wulfenite",
     "position": "RANGED",
     "rarity": 5,
@@ -1821,7 +1821,7 @@
   },
   "char_4177_brigid": {
     "charId": "char_4177_brigid",
-    "name": "Brigid",
+    "name": "ブリギッド",
     "slug": "brigid",
     "position": "RANGED",
     "rarity": 5,

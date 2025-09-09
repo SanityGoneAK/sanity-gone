@@ -52,7 +52,7 @@
   "musha": {
     "branchName": "武者",
     "class": "Guard",
-    "trait": "味方の治療対象にならない<br>敵を攻撃する度自身のHPを<span class=\"keyword\">70</span>回復"
+    "trait": "味方の治療対象にならない<br>敵を攻撃するたび自身のHPを<span class=\"keyword\">70</span>回復"
   },
   "fearless": {
     "branchName": "勇士",
@@ -62,12 +62,12 @@
   "reaper": {
     "branchName": "鎌撃士",
     "class": "Guard",
-    "trait": "味方の治療対象にならない<br>攻撃は<span class=\"keyword\">範囲物理ダメージ</span>を与え、敵を1体攻撃する度自身のHPを<span class=\"keyword\">50</span>回復（攻撃毎の最大回復回数はブロック数と同じ）"
+    "trait": "味方の治療対象にならない<br>攻撃は<span class=\"keyword\">範囲物理ダメージ</span>を与え、敵を1体攻撃するたび自身のHPを<span class=\"keyword\">50</span>回復（攻撃毎の最大回復回数はブロック数と同じ）"
   },
   "librator": {
     "branchName": "解放者",
     "class": "Guard",
-    "trait": "通常時は攻撃せずブロック数が０となり、攻撃力が<span class=\"keyword\">+200%</span>まで徐々に上昇していく（最大値になるまでの時間は<span class=\"keyword\">40</span>秒）<br>スキル終了時、特性による攻撃力上昇効果をリセットする"
+    "trait": "通常時は攻撃せずブロック数が0となり、攻撃力が<span class=\"keyword\">+200%</span>まで徐々に上昇していく（最大値になるまでの時間は<span class=\"keyword\">40</span>秒）<br>スキル終了時、特性による攻撃力上昇効果をリセット"
   },
   "protector": {
     "branchName": "重盾衛士",
@@ -162,7 +162,7 @@
   "chain": {
     "branchName": "連鎖術師",
     "class": "Caster",
-    "trait": "<span class=\"keyword\">3</span>体目まで跳躍していく<span class=\"keyword\">術ダメージ</span>を敵に与え、跳躍する度ダメージが15%減衰し、敵を一瞬<span class=\"skill-tooltip\">足止め</span>"
+    "trait": "<span class=\"keyword\">3</span>体目まで跳躍していく<span class=\"keyword\">術ダメージ</span>を敵に与え、跳躍するたびダメージが15%減衰し、敵を一瞬<span class=\"skill-tooltip\">足止め</span>"
   },
   "blastcaster": {
     "branchName": "爆撃術師",
@@ -182,7 +182,7 @@
   "healer": {
     "branchName": "療養師",
     "class": "Medic",
-    "trait": "治療範囲が広く、遠く離れた味方を治療時、HP回復効果が<span class=\"keyword\">80%</span>になる"
+    "trait": "治療範囲が広く、遠く離れた味方を治療時、治療量が<span class=\"keyword\">80%</span>になる"
   },
   "wandermedic": {
     "branchName": "放浪医",
@@ -207,7 +207,7 @@
   "blessing": {
     "branchName": "祈祷師",
     "class": "Supporter",
-    "trait": "敵に<span class=\"keyword\">術ダメージ</span>を与える<br>スキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の75%）"
+    "trait": "敵に<span class=\"keyword\">術ダメージ</span>を与える<br>スキル発動中、通常攻撃が味方に対する治療行動になる（治療量は攻撃力の75%）"
   },
   "summoner": {
     "branchName": "召喚師",
@@ -262,7 +262,7 @@
   "incantationmedic": {
     "branchName": "呪癒師",
     "class": "Medic",
-    "trait": "術ダメージを与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの50%回復"
+    "trait": "術ダメージを与え、敵を攻撃するたび攻撃範囲内の味方1人のHPを与ダメージの50%回復"
   },
   "agent": {
     "branchName": "偵察兵",
@@ -277,7 +277,7 @@
   "chainhealer": {
     "branchName": "連鎖癒師",
     "class": "Medic",
-    "trait": "味方のHPを回復する際、<span class=\"keyword\">3</span>体目の味方まで回復が跳躍する（回復量は25%ずつ減衰）"
+    "trait": "味方のHPを回復<br>味方を治療する際、<span class=\"keyword\">3</span>体目の味方まで治療が跳躍していく（跳躍するたびに治療量は25%ずつ減衰）"
   },
   "crusher": {
     "branchName": "重剣士",

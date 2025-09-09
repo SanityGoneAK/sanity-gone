@@ -22,7 +22,7 @@
   "centurion": {
     "branchName": "공격수",
     "class": "Guard",
-    "trait": "저지하고 있는 <span class=\"keyword\">모든 적</span> 동시 공격"
+    "trait": "저지하고 있는 <span class=\"keyword\">모든 적</span> 동시에 공격"
   },
   "fighter": {
     "branchName": "파이터",
@@ -227,7 +227,7 @@
   "pusher": {
     "branchName": "푸쉬마스터",
     "class": "Specialist",
-    "trait": "저지하고 있는 <span class=\"keyword\">모든 적</span> 동시 공격<br>고지대 위치에 배치 가능"
+    "trait": "저지하고 있는 <span class=\"keyword\">모든 적</span> 동시에 공격<br>고지대 위치에 배치 가능"
   },
   "stalker": {
     "branchName": "매복자",
@@ -282,7 +282,7 @@
   "crusher": {
     "branchName": "대검사",
     "class": "Guard",
-    "trait": "저지하고 있는 <span class=\"keyword\">모든 적</span> 동시 공격"
+    "trait": "저지하고 있는 <span class=\"keyword\">모든 적</span> 동시에 공격"
   },
   "ritualist": {
     "branchName": "의식술사",
@@ -292,7 +292,7 @@
   "hunter": {
     "branchName": "사냥꾼",
     "class": "Sniper",
-    "trait": "공격 시 탄약을 소모하며, 공격력이 <span class=\"keyword\">120%</span>까지 증가, 비공격 상태에서 서서히 탄약 장전 (최대 8발)"
+    "trait": "공격 시 탄약을 소모하며 공격력이 <span class=\"keyword\">120%</span>까지 증가, 비공격 상태에서 서서히 탄약 장전 (최대 8발)"
   },
   "primcaster": {
     "branchName": "프라이멀 캐스터",
