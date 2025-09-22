@@ -636,11 +636,11 @@
       "isLimited": false,
       "releaseOrder": 159
     },
-    "Pith": {
+    "Sharp": {
       "isLimited": false,
       "releaseOrder": 160
     },
-    "Sharp": {
+    "Pith": {
       "isLimited": false,
       "releaseOrder": 161
     },
@@ -1784,13 +1784,6 @@
       ],
       "cost": 21,
       "tokenType": "Originium Prime"
-    },
-    "char_124_kroos@sale#14": {
-      "obtainSources": [
-        "Event"
-      ],
-      "cost": null,
-      "tokenType": null
     },
     "char_1035_wisdel@sale#14": {
       "obtainSources": [
@@ -4069,6 +4062,13 @@
       ],
       "cost": null,
       "tokenType": null
+    },
+    "char_487_bobb@kitchen#4": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
     },
     "char_250_phatom@ghost#1": {
       "obtainSources": [
