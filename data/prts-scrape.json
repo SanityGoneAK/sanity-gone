@@ -1785,6 +1785,13 @@
       "cost": 21,
       "tokenType": "Originium Prime"
     },
+    "char_124_kroos@sale#14": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
     "char_1035_wisdel@sale#14": {
       "obtainSources": [
         "Outfit Store"
@@ -1798,6 +1805,13 @@
       ],
       "cost": 21,
       "tokenType": "Originium Prime"
+    },
+    "char_003_kalts@sale#14": {
+      "obtainSources": [
+        "Unknown"
+      ],
+      "cost": null,
+      "tokenType": null
     },
     "char_208_melan@epoque#1": {
       "obtainSources": [
@@ -2720,6 +2734,13 @@
       "cost": null,
       "tokenType": null
     },
+    "char_1011_lava2@whirlwind#9": {
+      "obtainSources": [
+        "Integrated Strategies"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
     "char_4014_lunacu@yun#1": {
       "obtainSources": [
         "Outfit Store"
@@ -2784,6 +2805,13 @@
       "tokenType": "Originium Prime"
     },
     "char_254_vodfox@yun#8": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4155_talr@yun#9": {
       "obtainSources": [
         "Outfit Store"
       ],
@@ -4490,6 +4518,13 @@
       ],
       "cost": 18,
       "tokenType": "Originium Prime"
+    },
+    "char_4017_puzzle@shining#3": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
     },
     "char_159_peacok@game#1": {
       "obtainSources": [
