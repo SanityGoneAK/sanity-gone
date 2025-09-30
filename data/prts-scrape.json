@@ -1882,7 +1882,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 24,
       "tokenType": "Originium Prime"
     },
     "char_102_texas@epoque#7": {
@@ -2415,21 +2415,21 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 18,
       "tokenType": "Originium Prime"
     },
     "char_4066_highmo@epoque#45": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 18,
       "tokenType": "Originium Prime"
     },
     "char_4137_udflow@epoque#46": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 18,
       "tokenType": "Originium Prime"
     },
     "char_154_morgan@epoque#47": {
@@ -2443,7 +2443,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 18,
       "tokenType": "Originium Prime"
     },
     "char_120_hibisc@nian#1": {
@@ -3188,36 +3188,36 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 21,
       "tokenType": "Originium Prime"
     },
     "char_1013_chen2@summer#20": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 21,
       "tokenType": "Originium Prime"
     },
     "char_450_necras@summer#20": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 21,
       "tokenType": "Originium Prime"
     },
     "char_133_mm@summer#20": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 18,
       "tokenType": "Originium Prime"
     },
     "char_366_acdrop@summer#21": {
       "obtainSources": [
-        "Event"
+        "Contingency Contract Store"
       ],
-      "cost": null,
-      "tokenType": null
+      "cost": 2000,
+      "tokenType": "Contingency Contract Token"
     },
     "char_241_panda@marthe#1": {
       "obtainSources": [
@@ -3279,7 +3279,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 0,
+      "cost": 21,
       "tokenType": "Originium Prime"
     },
     "char_179_cgbird@witch#1": {
