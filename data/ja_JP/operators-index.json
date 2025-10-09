@@ -1793,7 +1793,7 @@
   },
   "char_4178_alanna": {
     "charId": "char_4178_alanna",
-    "name": "Alanna",
+    "name": "アランナ",
     "slug": "alanna",
     "position": "MELEE",
     "rarity": 5,
@@ -4173,7 +4173,7 @@
   },
   "char_445_wscoot": {
     "charId": "char_445_wscoot",
-    "name": "Windscoot",
+    "name": "ウィンドスクート",
     "slug": "windscoot",
     "position": "MELEE",
     "rarity": 4,

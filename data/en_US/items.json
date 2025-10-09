@@ -553,10 +553,10 @@
   },
   "30165": {
     "itemId": "30165",
-    "name": "重相位对映体",
+    "name": "Rephasic Enantiomer",
     "iconId": "MTL_SL_DYT",
-    "description": "仍处于试验阶段的新材料，不仅能够承受高功率的能量输出，甚至对源石技艺展现出了自适应的特性。这或许预示了光学防护材料的发展方向。",
-    "usage": "光功能材料领域最尖端技术的产物。用于高级强化场合。",
+    "description": "A new material still in the experimental stage. Not only can it output large amounts of energy, but it can also adapt to Originium Arts. This may indicate the future development of this optically protective material.",
+    "usage": "A product of cutting-edge research on luminescent materials. Can be used for high level upgrades.",
     "rarity": 5
   },
   "31013": {
@@ -689,18 +689,18 @@
   },
   "31093": {
     "itemId": "31093",
-    "name": "类凝结核",
+    "name": "Coagulative Nodule",
     "iconId": "MTL_SL_JH",
-    "description": "能够吸附多种物质的微粒，最初仅被当作廉价吸附剂使用，后因其通用性和易于实现的凝结条件而被应用于尖端领域。",
-    "usage": "在实验室中人工合成的微粒，拥有良好的吸附性能。可用于多种强化场合。",
+    "description": "A particle that can adsorb many different materials. At first, it was only used in cheap adsorbents, but has since become a cutting-edge material thanks to its strong universal coagulative properties.",
+    "usage": "A lab-made synthetic particle, boasting powerful adsorption properties. Can be used in a variety of strengthening projects.",
     "rarity": 3
   },
   "31094": {
     "itemId": "31094",
-    "name": "手性屈光体",
+    "name": "Chiral Refractor",
     "iconId": "MTL_SL_QGT",
-    "description": "拥有良好的物理强度，源石技艺耐受力也相当惊人的光学材料，目前可用于光学防护领域。其他用途仍在测试当中。",
-    "usage": "具备良好光学性能和物理性能的特种光学材料。用于高级强化场合。",
+    "description": "An optical material that boasts both physical durability and astonishing Originium Arts resistance, currently used in studies regarding optical protection. Other uses are still being tested.",
+    "usage": "A specialized material that displays useful optical qualities and other physical traits. Can be used for high level upgrades.",
     "rarity": 4
   },
   "32001": {
@@ -1425,10 +1425,10 @@
   },
   "p_char_445_wscoot": {
     "itemId": "p_char_445_wscoot",
-    "name": "骋风的信物",
+    "name": "Windscoot's Token",
     "iconId": "p_char_445_wscoot",
-    "description": "一枚刻着“出入平安”的桃木挂件，他说，桃木可以辟邪，点缀的玉石带来好运，总之——木牌上的四个字是最要紧的事。",
-    "usage": "用于提升骋风的潜能。",
+    "description": "A peachwood pendant with 'Go in Peace' carved on it. He says that peachwood wards off evil, while the jade studding it brings good fortune. Basically, it's the words carved on the wood that are the most important part.",
+    "usage": "Used to improve the Potential of Windscoot.",
     "rarity": 4
   },
   "p_char_128_plosis": {
@@ -2761,10 +2761,10 @@
   },
   "p_char_4178_alanna": {
     "itemId": "p_char_4178_alanna",
-    "name": "阿兰娜的信物",
+    "name": "Alanna's Token",
     "iconId": "p_char_4178_alanna",
-    "description": "一把多功能扳手，这是阿兰娜独自操作数控机床制作出的第一件作品。她把这份独一无二的纪念品送给了你，并提醒你末端的小锤子可以用来敲开坚果。",
-    "usage": "用于提升阿兰娜的潜能。",
+    "description": "A multi-functional spanner, the very first thing Alanna made on her own with a CNC tool. She's given this unique gift to you, with a reminder that the miniature hammer at its tip is perfect for cracking open nuts.",
+    "usage": "Used to improve the Potential of Alanna.",
     "rarity": 5
   },
   "p_char_4187_graceb": {
@@ -3705,10 +3705,10 @@
   },
   "p_char_4179_monstr": {
     "itemId": "p_char_4179_monstr",
-    "name": "Mon3tr的信物",
+    "name": "Mon3tr's Token",
     "iconId": "p_char_4179_monstr",
-    "description": "一块可以改变形态的金属构造体，原本悬浮于Mon3tr身侧。它能帮助你应对许多危机，它会提醒你许多事情。",
-    "usage": "用于提升Mon3tr的潜能。",
+    "description": "A metal construct that can change its shape, originally suspended beside Mon3tr's body. It can aid you in times of trouble. It will remind you of many things.",
+    "usage": "Used to improve the Potential of Mon3tr.",
     "rarity": 6
   },
   "p_char_1041_angel2": {
