@@ -1431,6 +1431,14 @@
     "usage": "윈드스쿠트의 잠재능력 상승에 사용된다.",
     "rarity": 4
   },
+  "p_char_4208_wintim": {
+    "itemId": "p_char_4208_wintim",
+    "name": "冬时的信物",
+    "iconId": "p_char_4208_wintim",
+    "description": "一份令人费解的实验数据。冬时尝试向你解释，这份数据或许可以拯救数以万计的人，并将它递给了你。",
+    "usage": "用于提升冬时的潜能。",
+    "rarity": 4
+  },
   "p_char_128_plosis": {
     "itemId": "p_char_128_plosis",
     "name": "프틸롭시스의 증표",
@@ -2847,6 +2855,14 @@
     "usage": "用于提升八幡海铃的潜能。",
     "rarity": 5
   },
+  "p_char_4207_branch": {
+    "itemId": "p_char_4207_branch",
+    "name": "折桠的信物",
+    "iconId": "p_char_4207_branch",
+    "description": "一面手工制作的“小铜钟”，表面被打磨光滑，边缘被锉至平整，肖似曾在矿井边、冰面上陪伴她的旧物。现在，她把它送给你。",
+    "usage": "用于提升折桠的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "엑시아의 증표",
@@ -3781,6 +3797,14 @@
     "iconId": "p_char_4182_oblvns",
     "description": "一个玩偶，通常被放在祥子的钢琴上。它静静地坐在那，一直陪伴着祥子。",
     "usage": "用于提升丰川祥子的潜能。",
+    "rarity": 6
+  },
+  "p_char_4204_mantra": {
+    "itemId": "p_char_4204_mantra",
+    "name": "真言的信物",
+    "iconId": "p_char_4204_mantra",
+    "description": "一枚升级过的信号接收器，能帮助她更轻松地与人“交流”。将它别在身上吧，如果你希望她时不时回应你的脑中所想。",
+    "usage": "用于提升真言的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {

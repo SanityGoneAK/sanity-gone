@@ -1139,7 +1139,7 @@
     "itemId": "p_char_196_sunbr",
     "name": "古米的信物",
     "iconId": "p_char_196_sunbr",
-    "description": "一张“古米早餐厨房”优惠卷。-100%是不是免费的意思......？",
+    "description": "一张“古米早餐厨房”优惠券。-100%是不是免费的意思......？",
     "usage": "用于提升古米的潜能。",
     "rarity": 4
   },
@@ -1429,6 +1429,14 @@
     "iconId": "p_char_445_wscoot",
     "description": "一枚刻着“出入平安”的桃木挂件，他说，桃木可以辟邪，点缀的玉石带来好运，总之——木牌上的四个字是最要紧的事。",
     "usage": "用于提升骋风的潜能。",
+    "rarity": 4
+  },
+  "p_char_4208_wintim": {
+    "itemId": "p_char_4208_wintim",
+    "name": "冬时的信物",
+    "iconId": "p_char_4208_wintim",
+    "description": "一份令人费解的实验数据。冬时尝试向你解释，这份数据或许可以拯救数以万计的人，并将它递给了你。",
+    "usage": "用于提升冬时的潜能。",
     "rarity": 4
   },
   "p_char_128_plosis": {
@@ -2847,6 +2855,14 @@
     "usage": "用于提升八幡海铃的潜能。",
     "rarity": 5
   },
+  "p_char_4207_branch": {
+    "itemId": "p_char_4207_branch",
+    "name": "折桠的信物",
+    "iconId": "p_char_4207_branch",
+    "description": "一面手工制作的“小铜钟”，表面被打磨光滑，边缘被锉至平整，肖似曾在矿井边、冰面上陪伴她的旧物。现在，她把它送给你。",
+    "usage": "用于提升折桠的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "能天使的信物",
@@ -3783,6 +3799,14 @@
     "usage": "用于提升丰川祥子的潜能。",
     "rarity": 6
   },
+  "p_char_4204_mantra": {
+    "itemId": "p_char_4204_mantra",
+    "name": "真言的信物",
+    "iconId": "p_char_4204_mantra",
+    "description": "一枚升级过的信号接收器，能帮助她更轻松地与人“交流”。将它别在身上吧，如果你希望她时不时回应你的脑中所想。",
+    "usage": "用于提升真言的潜能。",
+    "rarity": 6
+  },
   "class_p_char_123_fang": {
     "itemId": "class_p_char_123_fang",
     "name": "芬的中坚信物",
@@ -4051,7 +4075,7 @@
     "itemId": "class_p_char_196_sunbr",
     "name": "古米的中坚信物",
     "iconId": "class_p_char_196_sunbr",
-    "description": "一张“古米早餐厨房”优惠卷。-100%是不是免费的意思......？",
+    "description": "一张“古米早餐厨房”优惠券。-100%是不是免费的意思......？",
     "usage": "用于提升古米的潜能。",
     "rarity": 4
   },

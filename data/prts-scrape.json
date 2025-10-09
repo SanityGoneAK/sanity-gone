@@ -1659,6 +1659,18 @@
     "丰川祥子": {
       "isLimited": false,
       "releaseOrder": 415
+    },
+    "冬时": {
+      "isLimited": false,
+      "releaseOrder": 416
+    },
+    "折桠": {
+      "isLimited": false,
+      "releaseOrder": 417
+    },
+    "真言": {
+      "isLimited": false,
+      "releaseOrder": 418
     }
   },
   "skinObtainSourceAndCosts": {
@@ -2445,6 +2457,13 @@
       ],
       "cost": 18,
       "tokenType": "Originium Prime"
+    },
+    "char_445_wscoot@epoque#49": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
     },
     "char_120_hibisc@nian#1": {
       "obtainSources": [
