@@ -1,12 +1,11 @@
 # build output
 dist/
-
 # generated types
 .astro/
-.vercel
 
-# IDE
+/.idea/
 idea/
+
 spine/
 
 # dependencies
@@ -18,12 +17,11 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+
 # environment variables
 .env
 .env.production
 
 # macOS-specific files
 .DS_Store
-
-# Misc
-_old
+.vercel
