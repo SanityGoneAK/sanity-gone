@@ -1,0 +1,9 @@
+{
+	"$schema": "https://turborepo.com/schema.json",
+	"tasks": {
+		"//#format-and-lint": {},
+		"//#format-and-lint:fix": {
+			"cache": false
+		}
+	}
+}

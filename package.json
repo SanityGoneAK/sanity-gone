@@ -5,9 +5,8 @@
 	"keywords": [],
 	"author": "",
 	"scripts": {
-		"format": "biome format --write",
-		"lint": "biome lint --write",
-		"format-lint": "biome check --write",
+		"format-and-lint": "biome check .",
+		"format-and-lint:fix": "biome check . --write",
 		"prepare": "husky"
 	},
 	"license": "ISC",
@@ -15,15 +14,12 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.2.5",
 		"husky": "^9.1.7",
-		"lint-staged": "^16.2.4"
+		"lint-staged": "^16.2.4",
+		"turbo": "^2.5.8"
 	},
 	"lint-staged": {
 		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
-			"biome check --files-ignore-unknown=true",
-			"biome check --write --no-errors-on-unmatched",
-			"biome check --write --unsafe --no-errors-on-unmatched",
-			"biome format --write --no-errors-on-unmatched",
-			"biome lint --write --no-errors-on-unmatched"
+			"turbo format-and-lint:fix"
 		]
 	}
 }
