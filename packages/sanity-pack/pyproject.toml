@@ -1,0 +1,23 @@
+[project]
+name = "sanity-pack"
+version = "0.2.0"
+description = "Arknights asset, data extraction, and processing tool"
+authors = [
+    {name = "Sanity;Gone 0"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "typer (>=0.19.2,<0.20.0)",
+    "pydantic (>=2.12.0,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "sanity_pack", from = "src"}]
+
+[tool.poetry.scripts]
+sanity-pack = "sanity_pack.cli:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,81 @@
+"""Configuration models for Sanity Pack."""
+
+from pathlib import Path
+from typing import Dict, List
+from pydantic import BaseModel, Field, field_validator
+from enum import Enum
+from typing import Optional
+
+class ServerRegion(str, Enum):
+    """Available server regions."""
+    CN = "CN"
+    EN = "EN"
+    JP = "JP"
+    KR = "KR"
+
+
+class ServerConfig(BaseModel):
+    """Configuration for a specific server region."""
+    enabled: bool = Field(default=True, description="Whether to fetch data from this server")
+    path_whitelist: Optional[List[str]] = Field(
+        default=None,
+        description="List of paths to extract. If None, all paths will be extracted",
+    )
+
+    @field_validator("path_whitelist")
+    @classmethod
+    def normalize_paths(cls, v: List[str]) -> List[str]:
+        """Normalize path separators to forward slashes."""
+        return [path.replace("\\", "/") for path in v]
+
+
+class Config(BaseModel):
+    """Main configuration for Sanity Pack."""
+    output_dir: Path = Field(default=Path("./assets"), description="Directory for extracted data")
+    cache_dir: Path = Field(default=Path("./cache"), description="Directory for cache files")
+    servers: Dict[ServerRegion, ServerConfig] = Field(
+        default_factory=lambda: {
+            server: ServerConfig() for server in ServerRegion
+        }, 
+        description="Configuration for each server region")
+
+    @field_validator("output_dir", "cache_dir")
+    @classmethod
+    def resolve_path(cls, v: Path) -> Path:
+        """Resolve path to absolute."""
+        return v.expanduser().resolve()
+
+    def get_enabled_servers(self) -> List[ServerRegion]:
+        """Get list of enabled server regions."""
+        return [
+            region for region, config in self.servers.items()
+            if config.enabled
+        ]
+
+    def is_path_whitelisted(self, region: ServerRegion, path: str) -> bool:
+        """Check if a path is whitelisted for a specific region."""
+        if region not in self.servers:
+            return False
+        
+        server_config = self.servers[region]
+        path_normalized = path.replace("\\", "/")
+        
+        return any(
+            path_normalized.startswith(whitelist_path)
+            for whitelist_path in server_config.path_whitelist
+        )
+
+    model_config = {
+        "json_schema_extra": {
+            "example": {
+                "output_dir": "./assets",
+                "cache_dir": "./cache",
+                "servers": {
+                    "CN": {
+                        "enabled": True,
+                        "path_whitelist": ["anon", "arts/charportraits"]
+                    }
+                }
+            }
+        }
+    }

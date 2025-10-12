@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="173a3188-f024-4de3-a5fb-e5d694077198" name="Changes" comment="Added translations">
-      <change afterPath="$PROJECT_DIR$/turbo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/sanity-pack/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/sanity-pack/src/sanity_pack/cli.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo.json" beforeDir="false" afterPath="$PROJECT_DIR$/turbo.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,7 @@
         <option value="Astro Component" />
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -76,22 +78,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Node.js.get-alters.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/alejandroalvarezporras/Documents/Projects/sanity-gone/scripts/ArknightsGameData_YoStar/en_US&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.TypeScript&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/alejandroalvarezporras/Documents/Projects/sanity-gone/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.get-alters.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.laravel-idea.search-composer-json": "true",
+    "last_opened_file_path": "/Users/alejandroalvarezporras/Documents/Projects/sanity-gone/scripts/ArknightsGameData_YoStar/en_US",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "ts.external.directory.path": "/Users/alejandroalvarezporras/Documents/Projects/sanity-gone/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/operators" />
@@ -149,7 +151,7 @@
       <workItem from="1753405251597" duration="2000" />
       <workItem from="1753570077724" duration="31000" />
       <workItem from="1754006889259" duration="1000" />
-      <workItem from="1760197782008" duration="11712000" />
+      <workItem from="1760197782008" duration="11857000" />
     </task>
     <task id="LOCAL-00001" summary="Ui translation updates">
       <option name="closed" value="true" />

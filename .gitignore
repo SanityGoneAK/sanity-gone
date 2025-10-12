@@ -5,6 +5,7 @@ dist/
 .astro/
 .vercel
 .turbo
+__pycache__
 
 # IDE
 idea/
@@ -12,6 +13,7 @@ spine/
 
 # dependencies
 node_modules/
+.venv
 
 # logs
 npm-debug.log*

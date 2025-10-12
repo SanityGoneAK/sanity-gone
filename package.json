@@ -1,6 +1,6 @@
 {
 	"name": "sanity-gone",
-	"version": "1.0.0",
+	"version": "3.0.0",
 	"description": "",
 	"keywords": [],
 	"author": "",
@@ -19,7 +19,7 @@
 	},
 	"lint-staged": {
 		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
-			"turbo format-and-lint:fix"
+			"turbo format-and-lint:fix --"
 		]
 	}
 }

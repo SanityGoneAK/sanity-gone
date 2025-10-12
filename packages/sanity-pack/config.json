@@ -1,0 +1,49 @@
+{
+	"output_dir": "./assets",
+	"cache_dir": "./cache",
+	"servers": {
+		"CN": {
+			"enabled": true,
+			"path_whitelist": [
+				"anon",
+				"arts/building/buffs/buff_icon_hub.ab",
+				"spritepack/building_ui_buff_skills_h1_0.ab",
+				"spritepack/ui_char_avatar_",
+				"arts/charportraits",
+				"arts/dynchars",
+				"chararts",
+				"skinpack",
+				"ui_equip_big_img_hub_h1",
+				"arts/profession_large_hub.ab",
+				"spritepack/ui_sub_profession_icon_hub_h2_0.ab",
+				"spritepack/skill_icons_",
+				"spritepack/ui_medal",
+				"spritepack/ui_equip_",
+				"spritepack/ui_equip_type_hub_h2_0.ab",
+				"spritepack/ui_item_icons_h1_",
+				"arts/ui_item_icons",
+				"arts/items/item_icons_no_tiny_hub.ab",
+				"spritepack/icon_enemies_",
+				"audio/sound_beta_2/voice/",
+				"audio/sound_beta_2/voice_cn",
+				"audio/sound_beta_2/voice_custom"
+			]
+		},
+		"EN": {
+			"enabled": true,
+			"path_whitelist": [
+				"anon",
+				"audio/sound_beta_2/voice_en",
+				"audio/sound_beta_2/voice_custom"
+			]
+		},
+		"JP": {
+			"enabled": true,
+			"path_whitelist": ["anon"]
+		},
+		"KR": {
+			"enabled": true,
+			"path_whitelist": ["anon", "audio/sound_beta_2/voice_kr"]
+		}
+	}
+}

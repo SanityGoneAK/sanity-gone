@@ -1,0 +1,10 @@
+{
+	"name": "sanity-pack",
+	"version": "0.2.0",
+	"scripts": {
+		"sanity-pack:download": "poetry run sanity_pack download",
+		"sanity-pack:unpack": "poetry run sanity_pack unpack",
+		"sanity-pack:process": "poetry run sanity_pack process",
+		"sanity-pack:run": "turbo sanity-pack:download sanity-pack:unpack sanity-pack:process"
+	}
+}

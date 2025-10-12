@@ -4,6 +4,20 @@
 		"//#format-and-lint": {},
 		"//#format-and-lint:fix": {
 			"cache": false
+		},
+		"sanity-pack:download": {},
+		"sanity-pack:unpack": {
+			"dependsOn": ["sanity-pack:download"]
+		},
+		"sanity-pack:process": {
+			"dependsOn": ["sanity-pack:unpack"]
+		},
+		"sanity-pack:run": {
+			"dependsOn": [
+				"sanity-pack:download",
+				"sanity-pack:unpack",
+				"sanity-pack:process"
+			]
 		}
 	}
 }
