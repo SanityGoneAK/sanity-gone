@@ -8,8 +8,12 @@ from sanity_pack.config import (
     get_config_manager,
     ServerRegion,
 )
+from sanity_pack.config import app as config_command
+from sanity_pack.cache import app as cache_command
 
 app = typer.Typer(help="Sanity Pack CLI")
+app.add_typer(config_command, name="config")
+app.add_typer(cache_command, name="cache")
 console = Console()
 
 
@@ -42,36 +46,6 @@ def download(
         server_config = config.servers.get(r)
         if server_config:
             console.print(f"\n[cyan]{r.value}[/cyan]: {len(server_config.path_whitelist)} paths whitelisted")
-
-@app.command()
-def config_show(
-    config_file: Optional[Path] = typer.Option(
-        None,
-        "--config", "-c",
-        help="Path to config file"
-    ),
-):
-    """Show current configuration"""
-    config = get_config(config_file)
-    
-    console.print("\n[bold]Configuration:[/bold]")
-    console.print(f"Output dir: {config.output_dir}")
-    console.print(f"Cache dir:  {config.cache_dir}")
-    
-    # Create table for server configs
-    table = Table(title="\nServer Configurations")
-    table.add_column("Region", style="cyan")
-    table.add_column("Enabled", style="green")
-    table.add_column("Whitelisted Paths", style="yellow")
-    
-    for region, server_config in config.servers.items():
-        table.add_row(
-            region.value,
-            "✓" if server_config.enabled else "✗",
-            str(len(server_config.path_whitelist))
-        )
-    
-    console.print(table)
 
 @app.command()
 def unpack():
