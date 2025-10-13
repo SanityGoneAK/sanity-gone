@@ -9,6 +9,10 @@ class ServerVersion(BaseModel):
     """Version information for a specific server."""
     resource: str = Field(..., description="Resource version string")
     client: str = Field(..., description="Client version string")
+    folders: Dict[str, int] = Field(
+        default_factory=dict,
+        description="Aggregated folder sizes (bytes) for this version"
+    )
 
 
 class VersionCache(BaseModel):
@@ -58,55 +62,65 @@ class VersionCache(BaseModel):
 
 
 class AssetCache(BaseModel):
-    """Cache for asset hashes."""
-    assets: Dict[str, str] = Field(
+    """Cache for asset hashes per server region."""
+    assets: Dict[ServerRegion, Dict[str, str]] = Field(
         default_factory=dict,
-        description="Asset path to hash mapping"
+        description="Per-region asset path to hash mapping"
     )
 
-    def get_hash(self, path: str) -> str | None:
-        """Get hash for a specific asset path."""
-        return self.assets.get(path)
+    def get_hash(self, region: ServerRegion, path: str) -> str | None:
+        """Get hash for a specific asset path in a region."""
+        return self.assets.get(region, {}).get(path)
 
-    def set_hash(self, path: str, hash_value: str) -> None:
-        """Set hash for a specific asset path."""
-        self.assets[path] = hash_value
+    def set_hash(self, region: ServerRegion, path: str, hash_value: str) -> None:
+        """Set hash for a specific asset path in a region."""
+        if region not in self.assets:
+            self.assets[region] = {}
+        self.assets[region][path] = hash_value
 
-    def has_asset(self, path: str) -> bool:
-        """Check if asset exists in cache."""
-        return path in self.assets
+    def has_asset(self, region: ServerRegion, path: str) -> bool:
+        """Check if asset exists in cache for a region."""
+        return path in self.assets.get(region, {})
 
-    def is_hash_changed(self, path: str, hash_value: str) -> bool:
+    def is_hash_changed(self, region: ServerRegion, path: str, hash_value: str) -> bool:
         """
-        Check if hash has changed for an asset.
+        Check if hash has changed for an asset in a region.
         
         Returns:
             True if hash changed or doesn't exist, False otherwise
         """
-        if not self.has_asset(path):
+        if not self.has_asset(region, path):
             return True
-        return self.assets[path] != hash_value
+        return self.assets[region][path] != hash_value
 
-    def remove_asset(self, path: str) -> None:
-        """Remove asset from cache."""
-        self.assets.pop(path, None)
+    def remove_asset(self, region: ServerRegion, path: str) -> None:
+        """Remove asset from cache for a region."""
+        if region in self.assets:
+            self.assets[region].pop(path, None)
 
-    def clear(self) -> None:
-        """Clear all assets from cache."""
-        self.assets.clear()
+    def clear(self, region: ServerRegion | None = None) -> None:
+        """Clear assets from cache. If region is None, clears all."""
+        if region is None:
+            self.assets.clear()
+        elif region in self.assets:
+            self.assets[region].clear()
 
-    def get_assets_count(self) -> int:
-        """Get total number of cached assets."""
-        return len(self.assets)
+    def get_assets_count(self, region: ServerRegion | None = None) -> int:
+        """Get total number of cached assets. If region is None, returns total across all regions."""
+        if region is None:
+            return sum(len(assets) for assets in self.assets.values())
+        return len(self.assets.get(region, {}))
 
     def filter_changed_assets(
         self,
+        region: ServerRegion,
         new_assets: Dict[str, str]
     ) -> Dict[str, str]:
         """
-        Filter assets to only those that changed or are new.
+        Filter assets to only those that changed or are new for a region.
         
         Args:
+            region: Server region to check
             new_assets: Dict of path -> hash for new assets
             
         Returns:
@@ -114,6 +128,6 @@ class AssetCache(BaseModel):
         """
         changed = {}
         for path, hash_value in new_assets.items():
-            if self.is_hash_changed(path, hash_value):
+            if self.is_hash_changed(region, path, hash_value):
                 changed[path] = hash_value
         return changed

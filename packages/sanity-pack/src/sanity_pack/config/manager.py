@@ -5,7 +5,8 @@ from pathlib import Path
 from typing import Optional
 from rich.console import Console
 
-from sanity_pack.config.models import Config
+from sanity_pack.utils.logger import log
+from sanity_pack.config.models import Config, ServerConfig, ServerRegion
 
 console = Console()
 
@@ -41,10 +42,10 @@ class ConfigManager:
             ValueError: If config file is invalid
         """
         if not self.config_path.exists():
-            console.print(
+            log.warning(
                 f"[yellow]Config file not found at {self.config_path}[/yellow]"
             )
-            console.print("[yellow]Creating default configuration...[/yellow]")
+            log.warning("[yellow]Creating default configuration...[/yellow]")
             self._config = self.create_default()
             self.save(self._config)
             return self._config
@@ -73,7 +74,7 @@ class ConfigManager:
             data = json.loads(config.model_dump_json())
             json.dump(data, f, indent=2, ensure_ascii=False)
         
-        console.print(f"[green]Config saved to {self.config_path}[/green]")
+        log.info(f"[green]Config saved to {self.config_path}[/green]")
 
     def create_default(self) -> Config:
         """

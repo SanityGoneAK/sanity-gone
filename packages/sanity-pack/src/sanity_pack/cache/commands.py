@@ -35,6 +35,12 @@ def show(
     console.print(f"Tracked servers: {stats['tracked_servers']}")
     console.print(f"Cached assets: {stats['cached_assets']}")
     
+    # Show assets per region
+    if 'assets_per_region' in stats:
+        console.print("\n[bold]Assets per Region:[/bold]")
+        for region, count in stats['assets_per_region'].items():
+            console.print(f"  {region}: {count} assets")
+    
     # Show version cache
     version_cache = cache_mgr.get_versions()
     if version_cache.versions:
@@ -89,6 +95,11 @@ def clear_assets(
         "--config", "-c",
         help="Path to config file"
     ),
+    region: Optional[ServerRegion] = typer.Option(
+        None,
+        "--region", "-r",
+        help="Clear assets for specific region only"
+    ),
     force: bool = typer.Option(
         False,
         "--force", "-f",
@@ -97,7 +108,8 @@ def clear_assets(
 ):
     """Clear asset cache"""
     if not force:
-        confirm = typer.confirm("Are you sure you want to clear asset cache?")
+        region_text = f" for {region.value}" if region else ""
+        confirm = typer.confirm(f"Are you sure you want to clear asset cache{region_text}?")
         if not confirm:
             raise typer.Abort()
     
@@ -105,10 +117,12 @@ def clear_assets(
     cache_mgr = get_cache_manager(config.cache_dir)
     
     asset_cache = cache_mgr.get_assets()
-    asset_cache.clear()
+    asset_cache.clear(region)
+    
     cache_mgr.save_assets()
     
-    console.print("[green]Asset cache cleared[/green]")
+    region_text = f" for {region.value}" if region else ""
+    console.print(f"[green]Asset cache cleared{region_text}[/green]")
 
 
 @app.command()
@@ -133,8 +147,13 @@ def clear_all(
     config = get_config(config_file)
     cache_mgr = get_cache_manager(config.cache_dir)
     
-    cache_mgr.clear_all()
-    cache_mgr.save_all()
+    asset_cache = cache_mgr.get_assets()
+    asset_cache.clear()
+    cache_mgr.save_assets()
+    
+    version_cache = cache_mgr.get_versions()
+    version_cache.versions.clear()
+    cache_mgr.save_versions()
     
     console.print("[green]All caches cleared[/green]")
 
@@ -142,6 +161,7 @@ def clear_all(
 @app.command()
 def check_asset(
     path: str = typer.Argument(..., help="Asset path to check"),
+    region: ServerRegion = typer.Argument(..., help="Server region to check"),
     config_file: Optional[Path] = typer.Option(
         None,
         "--config", "-c",
@@ -153,13 +173,15 @@ def check_asset(
     cache_mgr = get_cache_manager(config.cache_dir)
     asset_cache = cache_mgr.get_assets()
     
-    if asset_cache.has_asset(path):
-        hash_value = asset_cache.get_hash(path)
+    if asset_cache.has_asset(region, path):
+        hash_value = asset_cache.get_hash(region, path)
         console.print(f"[green]✓ Asset is cached[/green]")
+        console.print(f"Region: {region.value}")
         console.print(f"Path: {path}")
         console.print(f"Hash: {hash_value}")
     else:
         console.print(f"[yellow]✗ Asset not found in cache[/yellow]")
+        console.print(f"Region: {region.value}")
         console.print(f"Path: {path}")
 
 if __name__ == "__main__":

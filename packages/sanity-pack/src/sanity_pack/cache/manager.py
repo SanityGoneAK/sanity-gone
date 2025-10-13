@@ -3,13 +3,10 @@
 import json
 from pathlib import Path
 from typing import Optional
-from rich.console import Console
+from sanity_pack.utils.logger import log
 
 from sanity_pack.cache.models import VersionCache, AssetCache
 from sanity_pack.config.models import ServerRegion
-
-console = Console()
-
 
 class CacheManager:
     """Manages cache loading and saving."""
@@ -43,7 +40,7 @@ class CacheManager:
             VersionCache object
         """
         if not self.version_cache_path.exists():
-            console.print(
+            log.warning(
                 f"[yellow]Version cache not found, creating new one[/yellow]"
             )
             self._version_cache = VersionCache()
@@ -62,11 +59,11 @@ class CacheManager:
             self._version_cache = VersionCache.model_validate(data)
             return self._version_cache
         except json.JSONDecodeError as e:
-            console.print(f"[red]Invalid JSON in version cache: {e}[/red]")
+            log.exception(f"[red]Invalid JSON in version cache: {e}[/red]")
             self._version_cache = VersionCache()
             return self._version_cache
         except Exception as e:
-            console.print(f"[red]Failed to load version cache: {e}[/red]")
+            log.exception(f"[red]Failed to load version cache[/red]")
             self._version_cache = VersionCache()
             return self._version_cache
 
@@ -110,7 +107,7 @@ class CacheManager:
             AssetCache object
         """
         if not self.asset_cache_path.exists():
-            console.print(
+            log.warning(
                 f"[yellow]Asset cache not found, creating new one[/yellow]"
             )
             self._asset_cache = AssetCache()
@@ -121,18 +118,31 @@ class CacheManager:
                 data = json.load(f)
             
             # Handle both old and new formats
-            if "assets" not in data:
-                # Old format: direct dict {"path": "hash"}
-                data = {"assets": data}
-            
-            self._asset_cache = AssetCache.model_validate(data)
+            if "assets" in data:
+                # Old format: {"assets": {"path": "hash"}}
+                # Convert to new format: {"CN": {"path": "hash"}}
+                old_assets = data["assets"]
+                # We can't determine region from old format, so put everything under CN
+                # This is a migration fallback
+                converted_data = {"assets": {ServerRegion.CN: old_assets}}
+                self._asset_cache = AssetCache.model_validate(converted_data)
+            else:
+                # New format: {"CN": {"path": "hash"}, "EN": {"path": "hash"}}
+                # Convert string keys to ServerRegion enums
+                converted_data = {
+                    "assets": {
+                        ServerRegion(region): assets 
+                        for region, assets in data.items()
+                    }
+                }
+                self._asset_cache = AssetCache.model_validate(converted_data)
             return self._asset_cache
         except json.JSONDecodeError as e:
-            console.print(f"[red]Invalid JSON in asset cache: {e}[/red]")
+            log.exception(f"[red]Invalid JSON in asset cache[/red]")
             self._asset_cache = AssetCache()
             return self._asset_cache
         except Exception as e:
-            console.print(f"[red]Failed to load asset cache: {e}[/red]")
+            log.exception(f"[red]Failed to load asset cache[/red]")
             self._asset_cache = AssetCache()
             return self._asset_cache
 
@@ -147,8 +157,11 @@ class CacheManager:
             cache = self.get_assets()
         
         with open(self.asset_cache_path, "w", encoding="utf-8") as f:
-            # Use the format with "assets" wrapper
-            data = cache.model_dump()
+            # Save in the new per-server format: {"CN": {"path": "hash"}, "EN": {"path": "hash"}}
+            data = {
+                region.value: assets
+                for region, assets in cache.assets.items()
+            }
             json.dump(data, f, indent=2, ensure_ascii=False)
 
     def get_assets(self) -> AssetCache:
@@ -175,18 +188,6 @@ class CacheManager:
         self._asset_cache = None
         return self.get_versions(), self.get_assets()
 
-    def save_all(self) -> None:
-        """Save both version and asset caches."""
-        self.save_versions()
-        self.save_assets()
-
-    def clear_all(self) -> None:
-        """Clear all caches (in memory only, doesn't delete files)."""
-        if self._version_cache:
-            self._version_cache.versions.clear()
-        if self._asset_cache:
-            self._asset_cache.clear()
-
     def get_stats(self) -> dict:
         """
         Get cache statistics.
@@ -202,6 +203,10 @@ class CacheManager:
             "asset_cache_exists": self.asset_cache_path.exists(),
             "tracked_servers": len(versions.versions),
             "cached_assets": assets.get_assets_count(),
+            "assets_per_region": {
+                region.value: assets.get_assets_count(region)
+                for region in ServerRegion
+            }
         }
 
 

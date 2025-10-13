@@ -30,3 +30,5 @@ pnpm-debug.log*
 
 # Misc
 _old
+packages/sanity-pack/assets
+packages/sanity-pack/.logs
