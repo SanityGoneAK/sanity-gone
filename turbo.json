@@ -5,6 +5,8 @@
 		"//#format-and-lint:fix": {
 			"cache": false
 		},
+		"dev": {},
+		"build": {},
 		"sanity-pack:download": {},
 		"sanity-pack:unpack": {
 			"dependsOn": ["sanity-pack:download"]
