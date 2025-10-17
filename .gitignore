@@ -32,3 +32,5 @@ pnpm-debug.log*
 _old
 packages/sanity-pack/assets
 packages/sanity-pack/.logs
+
+.idea/workspace.xml
