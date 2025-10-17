@@ -1,6 +1,5 @@
 """Specialized Spine asset processor based on Ark-Unpacker."""
 
-import asyncio
 from pathlib import Path
 from typing import Dict, Any, Optional, List, Tuple
 from dataclasses import dataclass
@@ -131,7 +130,7 @@ class SpineAssetProcessor:
         
         return textures
 
-    async def _find_spine_components(self, env: UnityPy.Environment) -> List[Tuple[str, str, Dict[str, Any]]]:
+    def _find_spine_components(self, env: UnityPy.Environment) -> List[Tuple[str, str, Dict[str, Any]]]:
         """Find and group Spine components in the environment."""
         spine_groups = []
         
@@ -182,12 +181,12 @@ class SpineAssetProcessor:
         
         return spine_groups
 
-    async def process(self, obj: Object, file_path: Path, region: ServerRegion) -> Optional[SpineAsset]:
+    def process(self, obj: Object, file_path: Path, region: ServerRegion) -> Optional[SpineAsset]:
         """Process a Spine asset object."""
         try:
             # Load environment to find all related components
             env = UnityPy.load(str(file_path))
-            spine_groups = await self._find_spine_components(env)
+            spine_groups = self._find_spine_components(env)
             
             if not spine_groups:
                 return None
@@ -208,7 +207,7 @@ class SpineAssetProcessor:
             )
             
             # Save the asset
-            await self._save_spine_asset(spine_asset, file_path, region)
+            self._save_spine_asset(spine_asset, file_path, region)
             
             log.info(f"Processed Spine asset: {atlas_name} (type: {asset_type})")
             return spine_asset
@@ -217,7 +216,7 @@ class SpineAssetProcessor:
             log.exception(f"Failed to process Spine asset: {str(e)}")
             return None
 
-    async def _save_spine_asset(self, spine_asset: SpineAsset, file_path: Path, region: ServerRegion):
+    def _save_spine_asset(self, spine_asset: SpineAsset, file_path: Path, region: ServerRegion):
         """Save a complete Spine asset."""
         try:
             # Prepare data for saving
@@ -228,7 +227,7 @@ class SpineAssetProcessor:
             }
             
             # Save using the safe saver
-            result = await self._saver.save_spine_assets(spine_data, file_path, region)
+            result = self._saver.save_spine_assets(spine_data, file_path, region)
             
             if result.success:
                 log.debug(f"Saved Spine asset: {spine_asset.name}")

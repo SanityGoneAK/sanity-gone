@@ -1,9 +1,10 @@
 from __future__ import annotations
 
-import asyncio
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from io import BytesIO
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple, Any, Coroutine
+from typing import Dict, List, Optional, Tuple, Any
 from zipfile import ZipFile
 
 from sanity_pack.config.models import Config, ServerRegion
@@ -19,7 +20,7 @@ class ArknightsAssets:
         self._config = config
         self._region = region
         self._concurrency = max(1, concurrency)
-        self._semaphore = asyncio.Semaphore(self._concurrency)
+        self._semaphore = threading.Semaphore(self._concurrency)
         self._cache_mgr = get_cache_manager(config.cache_dir)
 
     def _is_path_whitelisted(self, path: str) -> bool:
@@ -33,17 +34,17 @@ class ArknightsAssets:
             for prefix in server_cfg.path_whitelist
         )
 
-    async def _fetch_version(self, session: ArknightsSession) -> Tuple[str, str]:
+    def _fetch_version(self, session: ArknightsSession) -> Tuple[str, str]:
         """Return (resource, client) version tuple for the region."""
-        data = await session.fetch_json(VERSION_URLS[self._region])
+        data = session.fetch_json(VERSION_URLS[self._region])
         resource = data["resVersion"]
         client = data["clientVersion"]
         return resource, client
 
-    async def _fetch_asset_list(self, session: ArknightsSession, resource: str) -> List[Dict]:
+    def _fetch_asset_list(self, session: ArknightsSession, resource: str) -> List[Dict]:
         url = f"{ASSET_BASE_URLS[self._region]}/assets/{resource}/hot_update_list.json"
         log.info(f"Hot Update List acquired: {url}")
-        data = await session.fetch_json(url)
+        data = session.fetch_json(url)
         return data.get("abInfos", [])
 
     def _transform_asset_path(self, path: str) -> str:
@@ -54,9 +55,9 @@ class ArknightsAssets:
             + ".dat"
         )
 
-    async def _download_one(self, session: ArknightsSession, resource: str, asset_path: str, asset_hash: str, base_out_dir: Path) -> Optional[int]:
+    def _download_one(self, session: ArknightsSession, resource: str, asset_path: str, asset_hash: str, base_out_dir: Path) -> Optional[int]:
         """Download one asset, extract, update cache. Returns bytes written or None if skipped/failed."""
-        async with self._semaphore:
+        with self._semaphore:
             if not self._is_path_whitelisted(asset_path):
                 return None
 
@@ -69,14 +70,14 @@ class ArknightsAssets:
 
             # Use internal session for HTTP
             if not session._session:
-                raise RuntimeError("ArknightsSession must be used as an async context manager")
+                raise RuntimeError("ArknightsSession must be used as a context manager")
 
             log.info(f"Downloading asset: {url}")
 
             try:
-                async with session._session.get(url) as resp:
-                    resp.raise_for_status()
-                    blob = await resp.read()
+                resp = session._session.get(url, timeout=60)
+                resp.raise_for_status()
+                blob = resp.content
             except Exception:
                 log.exception(f"Failed to download {asset_path} from {self._region.value}")
                 return None
@@ -103,7 +104,7 @@ class ArknightsAssets:
             asset_cache.set_hash(self._region, asset_path, asset_hash)
             return bytes_written
 
-    async def download(self) -> None:
+    def download(self) -> None:
         """
         Download all assets for the region.
         """
@@ -111,18 +112,18 @@ class ArknightsAssets:
         server_dir.mkdir(parents=True, exist_ok=True)
         log.info(f"Downloading assets for region {self._region.value}")
 
-        async with ArknightsSession(self._config) as session:
-            resource, client = await self._fetch_version(session)
+        with ArknightsSession(self._config) as session:
+            resource, client = self._fetch_version(session)
 
             versions = self._cache_mgr.get_versions()
             # Ensure entry exists
             versions.set_version(self._region, resource=resource, client=client)
             self._cache_mgr.save_versions(versions)
 
-            assets = await self._fetch_asset_list(session, resource)
+            assets = self._fetch_asset_list(session, resource)
 
-            # Prepare tasks
-            tasks: List[asyncio.Task] = []
+            # Prepare download tasks
+            download_tasks = []
             for entry in assets:
                 if not isinstance(entry, dict):
                     continue
@@ -130,13 +131,21 @@ class ArknightsAssets:
                 hash_value = entry.get("hash") or entry.get("md5")
                 if not name or not hash_value:
                     continue
-                tasks.append(
-                    asyncio.create_task(
-                        self._download_one(session, resource, name, hash_value, server_dir)
-                    )
-                )
+                download_tasks.append((session, resource, name, hash_value, server_dir))
 
-            await asyncio.gather(*tasks)
+            # Execute downloads in thread pool
+            with ThreadPoolExecutor(max_workers=self._concurrency) as executor:
+                futures = [
+                    executor.submit(self._download_one, *task)
+                    for task in download_tasks
+                ]
+                
+                # Wait for all downloads to complete
+                for future in as_completed(futures):
+                    try:
+                        future.result()
+                    except Exception as e:
+                        log.exception(f"Download task failed: {e}")
 
             # Persist asset cache at end
             self._cache_mgr.save_assets()

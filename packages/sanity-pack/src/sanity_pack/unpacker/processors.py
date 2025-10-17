@@ -19,13 +19,13 @@ class AssetResult:
 @runtime_checkable
 class AssetProcessor(Protocol[T]):
     """Protocol for asset processors."""
-    async def process(self, obj: T) -> Optional[AssetResult]:
+    def process(self, obj: T) -> Optional[AssetResult]:
         """Process a Unity object and return the result."""
         ...
 
 class TextureProcessor(AssetProcessor[ObjectReader[Texture2D]]):
     """Processor for Texture2D objects."""
-    async def process(self, obj: ObjectReader[Texture2D]) -> Optional[AssetResult]:
+    def process(self, obj: ObjectReader[Texture2D]) -> Optional[AssetResult]:
         try:
             data = obj.read()
             return AssetResult(
@@ -40,7 +40,7 @@ class TextureProcessor(AssetProcessor[ObjectReader[Texture2D]]):
 
 class SpriteProcessor(AssetProcessor[ObjectReader[Sprite]]):
     """Processor for Sprite objects."""
-    async def process(self, obj: ObjectReader[Sprite]) -> Optional[AssetResult]:
+    def process(self, obj: ObjectReader[Sprite]) -> Optional[AssetResult]:
         try:
             data = obj.read()
             return AssetResult(
@@ -55,7 +55,7 @@ class SpriteProcessor(AssetProcessor[ObjectReader[Sprite]]):
 
 class TextAssetProcessor(AssetProcessor[ObjectReader[TextAsset]]):
     """Processor for TextAsset objects."""
-    async def process(self, obj: ObjectReader[TextAsset]) -> Optional[AssetResult]:
+    def process(self, obj: ObjectReader[TextAsset]) -> Optional[AssetResult]:
         try:
             data = obj.read()
             return AssetResult(
@@ -70,7 +70,7 @@ class TextAssetProcessor(AssetProcessor[ObjectReader[TextAsset]]):
 
 class MonoBehaviourProcessor(AssetProcessor[ObjectReader[MonoBehaviour]]):
     """Processor for MonoBehaviour objects."""
-    async def process(self, obj: ObjectReader[MonoBehaviour]) -> Optional[AssetResult]:
+    def process(self, obj: ObjectReader[MonoBehaviour]) -> Optional[AssetResult]:
         try:
             obj.read()
             if obj.serialized_type.node:
@@ -87,7 +87,7 @@ class MonoBehaviourProcessor(AssetProcessor[ObjectReader[MonoBehaviour]]):
 
 class AudioClipProcessor(AssetProcessor[ObjectReader[AudioClip]]):
     """Processor for AudioClip objects."""
-    async def process(self, obj: ObjectReader[AudioClip]) -> Optional[AssetResult]:
+    def process(self, obj: ObjectReader[AudioClip]) -> Optional[AssetResult]:
         try:
             clip = obj.read()
             return AssetResult(

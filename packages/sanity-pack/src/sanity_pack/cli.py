@@ -3,7 +3,8 @@ from rich.console import Console
 from rich.table import Table
 from typing import Optional
 from pathlib import Path
-import asyncio
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from sanity_pack.config import (
     get_config,
@@ -48,15 +49,22 @@ def download(
     log.info(f"[bold green]Downloading from regions: {', '.join(r.value for r in regions)}[/bold green]")
     log.info(f"Output directory: {config.output_dir}")
 
-    async def _run():
-        tasks = [
-            ArknightsAssets(config=config, region=r, concurrency=concurrency).download()
+    # Execute downloads in parallel threads
+    with ThreadPoolExecutor(max_workers=len(regions)) as executor:
+        futures = {
+            executor.submit(
+                ArknightsAssets(config=config, region=r, concurrency=concurrency).download
+            ): r.value
             for r in regions
-        ]
-        results = await asyncio.gather(*tasks)
-        return dict(zip([r.value for r in regions], results))
-
-    asyncio.run(_run())
+        }
+        
+        results = {}
+        for future in as_completed(futures):
+            region_name = futures[future]
+            try:
+                results[region_name] = future.result()
+            except Exception as e:
+                log.exception(f"Failed to download from region {region_name}: {e}")
     
     log.info(f"[green]✓ Completed Asset Download[/green]")
 
@@ -86,17 +94,24 @@ def unpack(
     log.info(f"[bold green]Unpacking assets for regions: {', '.join(r.value for r in regions)}[/bold green]")
     log.info(f"Output directory: {config.output_dir}")
 
-    async def _run():
-        tasks = [
-            UnityAssetExtractor(config=config, region=r, concurrency=concurrency).unpack()
+    # Execute unpacking in parallel threads
+    with ThreadPoolExecutor(max_workers=len(regions)) as executor:
+        futures = {
+            executor.submit(
+                UnityAssetExtractor(config=config, region=r, concurrency=concurrency).unpack
+            ): r.value
             for r in regions
-        ]
-        results = await asyncio.gather(*tasks)
-        return dict(zip([r.value for r in regions], results))
-    
-    asyncio.run(_run())
+        }
+        
+        results = {}
+        for future in as_completed(futures):
+            region_name = futures[future]
+            try:
+                results[region_name] = future.result()
+            except Exception as e:
+                log.exception(f"Failed to unpack region {region_name}: {e}")
 
-    log.info(f"[green]✓ Completed Asset Download[/green]")
+    log.info(f"[green]✓ Completed Asset Unpacking[/green]")
 
 @app.command()
 def process():
