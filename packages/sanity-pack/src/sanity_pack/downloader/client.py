@@ -29,7 +29,7 @@ class ArknightsSession:
     _session: aiohttp.ClientSession | None = None
 
     def __init__(self, config: Config, session: aiohttp.ClientSession | None = None):
-        self._session = session
+        self.session = session
         self._config = config
         self._cache = get_cache_manager(config.cache_dir)
         self._semaphore = asyncio.Semaphore(200) 
@@ -52,7 +52,7 @@ class ArknightsSession:
             self._session = None
             
     @retry(stop=stop_after_attempt(5), wait=wait_exponential(multiplier=1, min=4, max=20))
-    async def _fetch_json(self, url: str) -> Dict:
+    async def fetch_json(self, url: str) -> Dict:
         """Fetch and parse JSON from a URL with retry logic."""
         
         if not self._session:

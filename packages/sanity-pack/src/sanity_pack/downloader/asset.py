@@ -3,10 +3,8 @@ from __future__ import annotations
 import asyncio
 from io import BytesIO
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Any, Coroutine
 from zipfile import ZipFile
-
-from tenacity import retry, stop_after_attempt, wait_exponential
 
 from sanity_pack.config.models import Config, ServerRegion
 from sanity_pack.cache.manager import get_cache_manager
@@ -37,15 +35,15 @@ class ArknightsAssets:
 
     async def _fetch_version(self, session: ArknightsSession) -> Tuple[str, str]:
         """Return (resource, client) version tuple for the region."""
-        data = await session._fetch_json(VERSION_URLS[self._region])
+        data = await session.fetch_json(VERSION_URLS[self._region])
         resource = data["resVersion"]
         client = data["clientVersion"]
         return resource, client
 
     async def _fetch_asset_list(self, session: ArknightsSession, resource: str) -> List[Dict]:
         url = f"{ASSET_BASE_URLS[self._region]}/assets/{resource}/hot_update_list.json"
-        log.debug(f"Hot Update List acquired: {url}")
-        data = await session._fetch_json(url)
+        log.info(f"Hot Update List acquired: {url}")
+        data = await session.fetch_json(url)
         return data.get("abInfos", [])
 
     def _transform_asset_path(self, path: str) -> str:
@@ -72,6 +70,8 @@ class ArknightsAssets:
             # Use internal session for HTTP
             if not session._session:
                 raise RuntimeError("ArknightsSession must be used as an async context manager")
+
+            log.info(f"Downloading asset: {url}")
 
             try:
                 async with session._session.get(url) as resp:
@@ -103,13 +103,13 @@ class ArknightsAssets:
             asset_cache.set_hash(self._region, asset_path, asset_hash)
             return bytes_written
 
-    async def download(self, show_progress: bool = True) -> Dict[str, int]:
+    async def download(self) -> None:
         """
         Download all assets for the region.
-        Returns folder->size(bytes) mapping for this run to be merged into version cache.
         """
         server_dir = self._config.output_dir / self._region.value.lower()
         server_dir.mkdir(parents=True, exist_ok=True)
+        log.info(f"Downloading assets for region {self._region.value}")
 
         async with ArknightsSession(self._config) as session:
             resource, client = await self._fetch_version(session)
@@ -136,27 +136,7 @@ class ArknightsAssets:
                     )
                 )
 
-            # Rich progress (optional external control)
-            if show_progress:
-                from rich.progress import Progress, TimeRemainingColumn, BarColumn, SpinnerColumn, TaskProgressColumn
-
-                with Progress(
-                    SpinnerColumn(),
-                    f"Downloading ({self._region.value})",
-                    BarColumn(),
-                    TaskProgressColumn(),
-                    TimeRemainingColumn(),
-                    transient=False,
-                ) as progress:
-                    task_id = progress.add_task(f"{self._region.value}", total=len(tasks))
-
-                    for coro in asyncio.as_completed(tasks):
-                        _ = await coro
-                        progress.advance(task_id, 1)
-
-            # If no progress UI, still await all
-            if not show_progress:
-                await asyncio.gather(*tasks)
+            await asyncio.gather(*tasks)
 
             # Persist asset cache at end
             self._cache_mgr.save_assets()

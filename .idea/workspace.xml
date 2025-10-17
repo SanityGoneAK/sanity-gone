@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="173a3188-f024-4de3-a5fb-e5d694077198" name="Changes" comment="Added translations">
-      <change afterPath="$PROJECT_DIR$/packages/sanity-pack/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/sanity-pack/src/sanity_pack/cli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turbo.json" beforeDir="false" afterPath="$PROJECT_DIR$/turbo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/sanity-pack/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/sanity-pack/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/sanity-pack/src/sanity_pack/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/sanity-pack/src/sanity_pack/cli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/sanity-pack/src/sanity_pack/downloader/asset.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/sanity-pack/src/sanity_pack/downloader/asset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/sanity-pack/src/sanity_pack/downloader/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/sanity-pack/src/sanity_pack/downloader/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/sanity-pack/src/sanity_pack/unpacker/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/sanity-pack/src/sanity_pack/unpacker/manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/sanity-pack/src/sanity_pack/unpacker/processors.py" beforeDir="false" afterPath="$PROJECT_DIR$/packages/sanity-pack/src/sanity_pack/unpacker/processors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/sanity-pack/src/sanity_pack/utils/tui.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
@@ -80,16 +85,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Node.js.get-alters.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.laravel-idea.search-composer-json": "true",
-    "last_opened_file_path": "/Users/alejandroalvarezporras/Documents/Projects/sanity-gone/scripts/ArknightsGameData_YoStar/en_US",
+    "last_opened_file_path": "/Users/alejandroalvarezporras/Documents/Projects/sanity-gone",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/alejandroalvarezporras/Documents/Projects/sanity-gone/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -101,6 +109,8 @@
       <recent name="$PROJECT_DIR$/public/flags" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/sanity-pack" />
+      <recent name="$PROJECT_DIR$/packages/sanity-pack/src" />
       <recent name="$PROJECT_DIR$/_old" />
     </key>
   </component>
@@ -108,16 +118,11 @@
     <configuration name="get-alters.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/_old/scripts/get-alters.js" working-dir="$PROJECT_DIR$/_old/scripts">
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Node.js.get-alters.js" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+        <option value="bundled-python-sdk-164cda30dcd9-0af03a5fa574-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26830.99" />
       </set>
     </attachedChunks>
   </component>

@@ -2,15 +2,16 @@ from dataclasses import dataclass
 from typing import Dict, List, Optional, Union, Tuple, Any, Protocol, runtime_checkable, TypeVar, Generic
 from pathlib import Path
 from UnityPy.classes import Texture2D, Sprite, AssetBundle, TextAsset, MonoBehaviour, AudioClip, Object, MonoScript
+from UnityPy.files import ObjectReader
 
 from sanity_pack.utils.logger import log
 
-T = TypeVar('T', bound=Object)
+T = TypeVar('T', bound=ObjectReader)
 
 @dataclass
 class AssetResult:
     """Result of processing an asset."""
-    obj: Object
+    obj: ObjectReader
     content: Any
     object_type: type
     name: str
@@ -22,9 +23,9 @@ class AssetProcessor(Protocol[T]):
         """Process a Unity object and return the result."""
         ...
 
-class TextureProcessor(AssetProcessor[Texture2D]):
+class TextureProcessor(AssetProcessor[ObjectReader[Texture2D]]):
     """Processor for Texture2D objects."""
-    async def process(self, obj: Texture2D) -> Optional[AssetResult]:
+    async def process(self, obj: ObjectReader[Texture2D]) -> Optional[AssetResult]:
         try:
             data = obj.read()
             return AssetResult(
@@ -37,9 +38,9 @@ class TextureProcessor(AssetProcessor[Texture2D]):
             log.exception(f"Error processing texture")
             return None
 
-class SpriteProcessor(AssetProcessor[Sprite]):
+class SpriteProcessor(AssetProcessor[ObjectReader[Sprite]]):
     """Processor for Sprite objects."""
-    async def process(self, obj: Sprite) -> Optional[AssetResult]:
+    async def process(self, obj: ObjectReader[Sprite]) -> Optional[AssetResult]:
         try:
             data = obj.read()
             return AssetResult(
@@ -52,9 +53,9 @@ class SpriteProcessor(AssetProcessor[Sprite]):
             log.exception(f"Error processing sprite")
             return None
 
-class TextAssetProcessor(AssetProcessor[TextAsset]):
+class TextAssetProcessor(AssetProcessor[ObjectReader[TextAsset]]):
     """Processor for TextAsset objects."""
-    async def process(self, obj: TextAsset) -> Optional[AssetResult]:
+    async def process(self, obj: ObjectReader[TextAsset]) -> Optional[AssetResult]:
         try:
             data = obj.read()
             return AssetResult(
@@ -67,9 +68,9 @@ class TextAssetProcessor(AssetProcessor[TextAsset]):
             log.exception(f"Error processing text asset")
             return None
 
-class MonoBehaviourProcessor(AssetProcessor[MonoBehaviour]):
+class MonoBehaviourProcessor(AssetProcessor[ObjectReader[MonoBehaviour]]):
     """Processor for MonoBehaviour objects."""
-    async def process(self, obj: MonoBehaviour) -> Optional[AssetResult]:
+    async def process(self, obj: ObjectReader[MonoBehaviour]) -> Optional[AssetResult]:
         try:
             obj.read()
             if obj.serialized_type.node:
@@ -84,9 +85,9 @@ class MonoBehaviourProcessor(AssetProcessor[MonoBehaviour]):
             log.exception(f"Error processing MonoBehaviour")
         return None
 
-class AudioClipProcessor(AssetProcessor[AudioClip]):
+class AudioClipProcessor(AssetProcessor[ObjectReader[AudioClip]]):
     """Processor for AudioClip objects."""
-    async def process(self, obj: AudioClip) -> Optional[AssetResult]:
+    async def process(self, obj: ObjectReader[AudioClip]) -> Optional[AssetResult]:
         try:
             clip = obj.read()
             return AssetResult(
@@ -102,7 +103,7 @@ class AudioClipProcessor(AssetProcessor[AudioClip]):
 class AssetProcessorFactory:
     """Factory for creating asset processors."""
     @staticmethod
-    def get_processor(obj: Object) -> Optional[AssetProcessor]:
+    def get_processor(obj: ObjectReader) -> Optional[AssetProcessor]:
         """Get the appropriate processor for a Unity object."""
         try:
             obj_type = obj.read()
