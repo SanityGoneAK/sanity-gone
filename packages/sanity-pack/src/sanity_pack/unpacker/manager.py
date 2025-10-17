@@ -1,211 +1,121 @@
-"""Main unpacker manager for async Unity asset processing."""
-
 import asyncio
+import json
 from pathlib import Path
-from typing import Dict, List, Optional, Set
-from dataclasses import dataclass
+from typing import Optional
+import aiofiles
+import aiofiles.os
 
 import UnityPy
+from UnityPy.enums.BundleFile import CompressionFlags
 from UnityPy.helpers import CompressionHelper
+from UnityPy.classes import AudioClip, MonoBehaviour, Object, Sprite, TextAsset, Texture2D
 
-from sanity_pack.config.models import Config, ServerRegion
-from sanity_pack.utils.logger import log
 from sanity_pack.utils.compression import decompress_lz4ak
-from .saver import SafeFileSaver
-from .processors import AssetProcessorFactory
-from .spine import SpineAssetProcessor
+from sanity_pack.config.models import Config, ServerRegion
+from sanity_pack.unpacker.processors import AssetProcessorFactory, AssetResult
+from sanity_pack.utils.logger import log
 
-# Configure UnityPy decompression
-CompressionHelper.DECOMPRESSION_MAP[UnityPy.enums.BundleFile.CompressionFlags.LZHAM] = decompress_lz4ak
-
-
-@dataclass
-class UnpackResult:
-    """Result of unpacking an asset file."""
-    file_path: Path
-    objects_processed: int
-    files_saved: int
-    errors: List[str]
-    spine_assets_found: int = 0
+CompressionHelper.DECOMPRESSION_MAP[CompressionFlags.LZHAM] = decompress_lz4ak
 
 
-class UnityAssetUnpacker:
-    """Main manager for async Unity asset unpacking."""
-
-    def __init__(self, config: Config, concurrency: int = 50):
-        self._config = config
-        self._concurrency = max(1, concurrency)
-        self._semaphore = asyncio.Semaphore(self._concurrency)
-        self._saver = SafeFileSaver()
+class UnityAssetExtractor:
+    """Handles extraction of Unity assets from downloaded game files."""
+    """Assets (.ab) can have objects inside of them of many types we use the Processor to handle these types"""
+    
+    def __init__(self, config: Config, region: ServerRegion, concurrency: int = 128):
+        self.config = config
+        self._region = region
+        self._semaphore = asyncio.Semaphore(concurrency)  # Limit concurrent extractions
+        self._object_semaphore = asyncio.Semaphore(concurrency)  # Limit concurrent object processing
         self._processor_factory = AssetProcessorFactory()
-        self._spine_processor = SpineAssetProcessor()
-
-    def _get_asset_files(self, region: ServerRegion) -> List[Path]:
-        """Get all asset files for a region."""
-        server_dir = self._config.output_dir / region.value.lower()
-        if not server_dir.exists():
-            return []
-        
-        asset_files = []
-        # Find .ab and .bin files
-        for pattern in ["**/*.ab", "**/*.bin"]:
-            asset_files.extend(server_dir.glob(pattern))
-        
-        return asset_files
-
-    async def _process_asset_file(self, file_path: Path, region: ServerRegion) -> UnpackResult:
-        """Process a single asset file."""
-        async with self._semaphore:
-            result = UnpackResult(
-                file_path=file_path,
-                objects_processed=0,
-                files_saved=0,
-                errors=[]
-            )
-            
-            try:
-                log.info(f"Processing {file_path.name}...")
-                
-                # Load Unity environment
-                env = UnityPy.load(str(file_path))
-                objects = list(env.objects)
-                result.objects_processed = len(objects)
-                
-                # Process objects concurrently
-                tasks = []
-                for obj in objects:
-                    task = self._process_object(obj, file_path, region)
-                    tasks.append(task)
-                
-                # Wait for all processing to complete
-                processed_results = await asyncio.gather(*tasks, return_exceptions=True)
-                
-                # Count successful results and handle errors
-                for processed_result in processed_results:
-                    if isinstance(processed_result, Exception):
-                        result.errors.append(str(processed_result))
-                    elif processed_result:
-                        result.files_saved += 1
-                        if hasattr(processed_result, 'is_spine') and processed_result.is_spine:
-                            result.spine_assets_found += 1
-                
-                # Clean up original asset file
-                file_path.unlink()
-                log.info(f"✓ Processed {file_path.name} ({result.objects_processed} objects, {result.files_saved} files)")
-                
-            except Exception as e:
-                error_msg = f"Failed to process {file_path.name}: {str(e)}"
-                log.exception(error_msg)
-                result.errors.append(error_msg)
-            
-            return result
-
-    async def _process_object(self, obj, file_path: Path, region: ServerRegion):
+    
+    async def _process_object(self, obj: Object) -> Optional[AssetResult]:
         """Process a single Unity object."""
-        try:
-            # Check if it's a Spine asset first
-            if self._spine_processor.is_spine_asset(obj):
-                return await self._spine_processor.process(obj, file_path, region)
-            
-            # Use standard processor
+        async with self._object_semaphore:
             processor = self._processor_factory.get_processor(obj)
             if processor:
-                return await processor.process(obj, file_path, region)
-            
+                return await processor.process(obj)
             return None
-            
-        except Exception as e:
-            log.exception(f"Error processing object {obj}: {str(e)}")
-            return None
+    
+    def _get_env(self, asset_path: str) -> UnityPy.Environment:
+        """Get or create a UnityPy environment for the given asset."""
+        server_dir = self.config.output_dir / self._region.value.lower()
+        asset_file = server_dir / asset_path
+        return UnityPy.load(str(asset_file))
+    
+    # TODO: Move this to saver.py
+    async def _save_asset(self, result: AssetResult, asset_path: Path, base_dir: Path) -> None:
+        """Save an asset to disk asynchronously."""
+        # Get the target path based on the source path and object type
+        target_path = self._get_target_path(
+            result.obj,
+            result.name,
+            asset_path.parent,
+            base_dir
+        )
+        log.info(f"Saving to path: {str(target_path)}...")
+        await aiofiles.os.makedirs(target_path.parent, exist_ok=True)
 
-    async def unpack_region(self, region: ServerRegion, show_progress: bool = True) -> Dict[str, any]:
-        """Unpack all assets for a specific region."""
-        asset_files = self._get_asset_files(region)
-        
-        if not asset_files:
-            log.warning(f"No asset files found for {region.value}")
-            return {"region": region.value, "files_processed": 0, "total_objects": 0, "total_saved": 0, "spine_assets": 0, "errors": 0}
-        
-        log.info(f"Found {len(asset_files)} asset files for {region.value}")
-        
-        # Process files with optional progress bar
-        if show_progress:
-            from rich.progress import Progress, SpinnerColumn, BarColumn, TaskProgressColumn, TimeRemainingColumn
+        if result.object_type in (Texture2D, Sprite):
+            file_extension = ".png" if "dynchars" in str(target_path) else ".webp"
             
-            with Progress(
-                SpinnerColumn(),
-                f"Unpacking ({region.value})",
-                BarColumn(),
-                TaskProgressColumn(),
-                TimeRemainingColumn(),
-                transient=False,
-            ) as progress:
-                task_id = progress.add_task(f"Processing {region.value}", total=len(asset_files))
+            # Overrides to grab all data correctly
+            target_path_str = target_path.as_posix()
+            if "/arts/item" in target_path_str:
+                target_path = base_dir / "arts/items" / target_path.name
+            if "/arts/charavatars" in target_path_str:
+                target_path = base_dir / "arts/charavatars" / target_path.name
+            
+            target_path = target_path.with_suffix(file_extension)
+            # Save image in a separate thread to avoid blocking
+            await asyncio.get_event_loop().run_in_executor(
+                None, 
+                lambda: result.content.save(target_path)
+            )
+
+        elif result.object_type == TextAsset:
+            async with aiofiles.open(target_path, 'wb') as f:
+                await f.write(result.content)
+
+        elif result.object_type == MonoBehaviour:
+            target_path = target_path.with_suffix('.json')
+            async with aiofiles.open(target_path, 'w', encoding='utf-8') as f:
+                await f.write(json.dumps(result.content, indent=2, ensure_ascii=False))
+
+        elif result.object_type == AudioClip:
+            for name, audio_data in result.content.items():
+                audio_path = self._get_target_path(result.obj, name, asset_path, base_dir)
+                await aiofiles.os.makedirs(audio_path.parent, exist_ok=True)
+                async with aiofiles.open(audio_path, 'wb') as f:
+                    await f.write(audio_data)
+    
+    async def process_asset(self, asset_path: Path) -> None:
+        """Process a single asset file (.ab) asynchronously."""
+        async with self._semaphore:
+            try:
+                relative_path = asset_path.relative_to(self.config.output_dir / self._region.value.lower())
+                log.info(f"Extracting {relative_path}...")
                 
-                tasks = [
-                    self._process_asset_file(file_path, region)
-                    for file_path in asset_files
+                # 1. Get UnityPy environment
+                env = self._get_env(str(relative_path))
+                
+                # 2. Process all objects
+                tasks = [self._process_object(obj) for obj in env.objects]
+                results = await asyncio.gather(*tasks)
+                
+                # 3. Save all assets concurrently
+                base_dir = self.config.output_dir / self._region.value.lower()
+                save_tasks = [
+                    self._save_asset(result, relative_path, base_dir)
+                    for result in results
+                    if result
                 ]
+                await asyncio.gather(*save_tasks)
                 
-                results = []
-                for coro in asyncio.as_completed(tasks):
-                    result = await coro
-                    results.append(result)
-                    progress.advance(task_id, 1)
-        else:
-            # Process without progress bar
-            tasks = [
-                self._process_asset_file(file_path, region)
-                for file_path in asset_files
-            ]
-            results = await asyncio.gather(*tasks)
-        
-        # Aggregate results
-        total_objects = sum(r.objects_processed for r in results)
-        total_saved = sum(r.files_saved for r in results)
-        total_spine = sum(r.spine_assets_found for r in results)
-        total_errors = sum(len(r.errors) for r in results)
-        
-        log.info(f"✓ {region.value}: {len(asset_files)} files, {total_objects} objects, {total_saved} files saved, {total_spine} spine assets, {total_errors} errors")
-        
-        return {
-            "region": region.value,
-            "files_processed": len(asset_files),
-            "total_objects": total_objects,
-            "total_saved": total_saved,
-            "spine_assets": total_spine,
-            "errors": total_errors
-        }
-
-    async def unpack_all(self, regions: Optional[List[ServerRegion]] = None, show_progress: bool = True) -> Dict[str, any]:
-        """Unpack assets for all enabled regions concurrently."""
-        if regions is None:
-            regions = self._config.get_enabled_servers()
-        
-        log.info(f"Unpacking assets for regions: {', '.join(r.value for r in regions)}")
-        
-        # Process all regions concurrently
-        tasks = [
-            self.unpack_region(region, show_progress)
-            for region in regions
-        ]
-        
-        results = await asyncio.gather(*tasks)
-        
-        # Aggregate all results
-        total_files = sum(r["files_processed"] for r in results)
-        total_objects = sum(r["total_objects"] for r in results)
-        total_saved = sum(r["total_saved"] for r in results)
-        total_spine = sum(r["spine_assets"] for r in results)
-        total_errors = sum(r["errors"] for r in results)
-        
-        log.info(f"✓ Unpacking complete: {total_files} files, {total_objects} objects, {total_saved} files saved, {total_spine} spine assets, {total_errors} errors")
-        
-        return {
-            "regions": results,
-            "total_files": total_files,
-            "total_objects": total_objects,
-            "total_saved": total_saved,
-            "spine_assets": total_spine,
-            "errors": total_errors
-        }
+                # 4. Clean up
+                await asyncio.get_event_loop().run_in_executor(None, asset_path.unlink)
+                log.info(f"Successfully extracted assets from {relative_path}")
+                
+            except Exception as e:
+                log.exception(f"Error processing {asset_path}")
+    
