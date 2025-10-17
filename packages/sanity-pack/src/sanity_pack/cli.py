@@ -1,14 +1,11 @@
 import typer
 from rich.console import Console
-from rich.table import Table
 from typing import Optional
 from pathlib import Path
-import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from sanity_pack.config import (
     get_config,
-    get_config_manager,
     ServerRegion,
 )
 from sanity_pack.config import app as config_command
@@ -81,7 +78,7 @@ def unpack(
         help="Path to config file"
     ),
     concurrency: int = typer.Option(
-        50,
+        40,
         "--concurrency",
         help="Max concurrent extractions",
     ),
