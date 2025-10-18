@@ -9,7 +9,7 @@ from UnityPy.classes import TextAsset, Texture2D, MonoBehaviour, Object
 
 from sanity_pack.config.models import ServerRegion
 from sanity_pack.utils.logger import log
-from .saver import SafeFileSaver
+from .save import SafeFileSaver
 
 
 @dataclass

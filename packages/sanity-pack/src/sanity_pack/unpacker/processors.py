@@ -9,7 +9,7 @@ from sanity_pack.utils.logger import log
 T = TypeVar('T', bound=ObjectReader)
 
 @dataclass
-class AssetResult:
+class ObjectResult:
     """Result of processing an asset."""
     obj: ObjectReader
     content: Any
@@ -17,18 +17,18 @@ class AssetResult:
     name: str
 
 @runtime_checkable
-class AssetProcessor(Protocol[T]):
+class ObjectProcessor(Protocol[T]):
     """Protocol for asset processors."""
-    def process(self, obj: T) -> Optional[AssetResult]:
+    def process(self, obj: T) -> Optional[ObjectResult]:
         """Process a Unity object and return the result."""
         ...
 
-class TextureProcessor(AssetProcessor[ObjectReader[Texture2D]]):
+class TextureProcessor(ObjectProcessor[ObjectReader[Texture2D]]):
     """Processor for Texture2D objects."""
-    def process(self, obj: ObjectReader[Texture2D]) -> Optional[AssetResult]:
+    def process(self, obj: ObjectReader[Texture2D]) -> Optional[ObjectResult]:
         try:
             data = obj.read()
-            return AssetResult(
+            return ObjectResult(
                 name=getattr(data, 'm_Name', None),
                 obj=obj,
                 content=data.image,
@@ -38,12 +38,12 @@ class TextureProcessor(AssetProcessor[ObjectReader[Texture2D]]):
             log.exception(f"Error processing texture")
             return None
 
-class SpriteProcessor(AssetProcessor[ObjectReader[Sprite]]):
+class SpriteProcessor(ObjectProcessor[ObjectReader[Sprite]]):
     """Processor for Sprite objects."""
-    def process(self, obj: ObjectReader[Sprite]) -> Optional[AssetResult]:
+    def process(self, obj: ObjectReader[Sprite]) -> Optional[ObjectResult]:
         try:
             data = obj.read()
-            return AssetResult(
+            return ObjectResult(
                 name=getattr(data, 'm_Name', None),
                 obj=obj,
                 content=data.image,
@@ -53,12 +53,12 @@ class SpriteProcessor(AssetProcessor[ObjectReader[Sprite]]):
             log.exception(f"Error processing sprite")
             return None
 
-class TextAssetProcessor(AssetProcessor[ObjectReader[TextAsset]]):
+class TextAssetProcessor(ObjectProcessor[ObjectReader[TextAsset]]):
     """Processor for TextAsset objects."""
-    def process(self, obj: ObjectReader[TextAsset]) -> Optional[AssetResult]:
+    def process(self, obj: ObjectReader[TextAsset]) -> Optional[ObjectResult]:
         try:
             data = obj.read()
-            return AssetResult(
+            return ObjectResult(
                 name=Path(obj.container).name if obj.container else getattr(data, 'm_Name', None),
                 obj=obj,
                 content=data.m_Script.encode("utf-8", "surrogateescape"),
@@ -68,14 +68,14 @@ class TextAssetProcessor(AssetProcessor[ObjectReader[TextAsset]]):
             log.exception(f"Error processing text asset")
             return None
 
-class MonoBehaviourProcessor(AssetProcessor[ObjectReader[MonoBehaviour]]):
+class MonoBehaviourProcessor(ObjectProcessor[ObjectReader[MonoBehaviour]]):
     """Processor for MonoBehaviour objects."""
-    def process(self, obj: ObjectReader[MonoBehaviour]) -> Optional[AssetResult]:
+    def process(self, obj: ObjectReader[MonoBehaviour]) -> Optional[ObjectResult]:
         try:
             obj.read()
             if obj.serialized_type.node:
                 tree = obj.read_typetree()
-                return AssetResult(
+                return ObjectResult(
                     name=tree["m_Name"],
                     obj=obj,
                     content=tree,
@@ -85,12 +85,12 @@ class MonoBehaviourProcessor(AssetProcessor[ObjectReader[MonoBehaviour]]):
             log.exception(f"Error processing MonoBehaviour")
         return None
 
-class AudioClipProcessor(AssetProcessor[ObjectReader[AudioClip]]):
+class AudioClipProcessor(ObjectProcessor[ObjectReader[AudioClip]]):
     """Processor for AudioClip objects."""
-    def process(self, obj: ObjectReader[AudioClip]) -> Optional[AssetResult]:
+    def process(self, obj: ObjectReader[AudioClip]) -> Optional[ObjectResult]:
         try:
             clip = obj.read()
-            return AssetResult(
+            return ObjectResult(
                 obj=obj,
                 name=str(Path(obj.container).stem),
                 content={name: byte for name, byte in clip.samples.items()},
@@ -103,7 +103,7 @@ class AudioClipProcessor(AssetProcessor[ObjectReader[AudioClip]]):
 class AssetProcessorFactory:
     """Factory for creating asset processors."""
     @staticmethod
-    def get_processor(obj: ObjectReader) -> Optional[AssetProcessor]:
+    def get_processor(obj: ObjectReader) -> Optional[ObjectProcessor]:
         """Get the appropriate processor for a Unity object."""
         try:
             obj_type = obj.read()

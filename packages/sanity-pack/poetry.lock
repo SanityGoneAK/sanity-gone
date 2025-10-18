@@ -961,6 +961,18 @@ files = [
 ]
 
 [[package]]
+name = "spine-asset"
+version = "1.1.1"
+description = "Spine Animation Asset Parser Library"
+optional = false
+python-versions = "<4,>=3.9"
+groups = ["main"]
+files = [
+    {file = "spine_asset-1.1.1-py3-none-any.whl", hash = "sha256:407a09421a4e629bf6a45079130bcfb7abcda09dc9e03f3772a6c0929eb7bf80"},
+    {file = "spine_asset-1.1.1.tar.gz", hash = "sha256:ec8633a44c7f9ef479685ec9bfea3219f83b972eda8ef4a0a9b870e4230a9ac0"},
+]
+
+[[package]]
 name = "tenacity"
 version = "9.1.2"
 description = "Retry code until it succeeds"
@@ -1176,4 +1188,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<4.0"
-content-hash = "419565cc16b2c4cd0f8ad486ae521e5a3490f22540cf627d81e20dbeffc87fab"
+content-hash = "31466841084648e22eddd6394007c3ab19c58466add2b0a18585f4204a3dbc0d"

@@ -11,21 +11,12 @@ from UnityPy.helpers import CompressionHelper
 from UnityPy.classes import AudioClip, MonoBehaviour, Object, Sprite, TextAsset, Texture2D
 
 from sanity_pack.utils.compression import decompress_lz4ak
-from sanity_pack.config.models import Config, ServerRegion
-from sanity_pack.unpacker.processors import AssetProcessorFactory, AssetResult
 from sanity_pack.utils.logger import log
+from sanity_pack.config.models import Config, ServerRegion
+from sanity_pack.unpacker.processors import AssetProcessorFactory, ObjectResult
+from sanity_pack.unpacker.save import Save
 
 CompressionHelper.DECOMPRESSION_MAP[CompressionFlags.LZHAM] = decompress_lz4ak
-
-
-def _get_target_path(obj: ObjectReader, name: str, source_dir: Path, output_dir: Path) -> Path:
-    """Determine the target path for saving an asset."""
-    if obj.container:
-        source_dir = Path(*Path(obj.container).parts[1:-1])
-
-    assert isinstance(name, str)
-    return output_dir / source_dir / name
-
 
 class UnityAssetExtractor:
     """Handles extraction of Unity assets from downloaded game files."""
@@ -39,7 +30,7 @@ class UnityAssetExtractor:
         self._object_semaphore = threading.Semaphore(concurrency)  # Limit concurrent object processing
         self._processor_factory = AssetProcessorFactory()
     
-    def _process_object(self, obj: ObjectReader) -> Optional[AssetResult]:
+    def _process_object(self, obj: ObjectReader) -> Optional[ObjectResult]:
         """Process a single Unity object."""
         with self._object_semaphore:
             processor = self._processor_factory.get_processor(obj)
@@ -52,49 +43,6 @@ class UnityAssetExtractor:
         server_dir = self.config.output_dir / self._region.value.lower()
         asset_file = server_dir / asset_path
         return UnityPy.load(str(asset_file))
-
-    # TODO: Move this to saver.py
-    def _save_asset(self, result: AssetResult, asset_path: Path, base_dir: Path) -> None:
-        """Save an asset to disk."""
-        # Get the target path based on the source path and object type
-        target_path = _get_target_path(
-            result.obj,
-            result.name,
-            asset_path.parent,
-            base_dir
-        )
-        log.info(f"Saving to path: {str(target_path)}...")
-        target_path.parent.mkdir(parents=True, exist_ok=True)
-
-        if result.object_type in (Texture2D, Sprite):
-            file_extension = ".png" if "dynchars" in str(target_path) else ".webp"
-            
-            # Overrides to grab all data correctly
-            target_path_str = target_path.as_posix()
-            if "/arts/item" in target_path_str:
-                target_path = base_dir / "arts/items" / target_path.name
-            if "/arts/charavatars" in target_path_str:
-                target_path = base_dir / "arts/charavatars" / target_path.name
-            
-            target_path = target_path.with_suffix(file_extension)
-            # Save image
-            result.content.save(target_path)
-
-        elif result.object_type == TextAsset:
-            with open(target_path, 'wb') as f:
-                f.write(result.content)
-
-        elif result.object_type == MonoBehaviour:
-            target_path = target_path.with_suffix('.json')
-            with open(target_path, 'w', encoding='utf-8') as f:
-                f.write(json.dumps(result.content, indent=2, ensure_ascii=False))
-
-        elif result.object_type == AudioClip:
-            for name, audio_data in result.content.items():
-                audio_path = _get_target_path(result.obj, name, asset_path, base_dir)
-                audio_path.parent.mkdir(parents=True, exist_ok=True)
-                with open(audio_path, 'wb') as f:
-                    f.write(audio_data)
     
     def process_asset(self, asset_path: Path) -> None:
         """Process a single asset file (.ab)."""
@@ -110,12 +58,14 @@ class UnityAssetExtractor:
                 with ThreadPoolExecutor(max_workers=self._concurrency) as executor:
                     futures = [executor.submit(self._process_object, obj) for obj in env.objects]
                     results = [f.result() for f in as_completed(futures)]
+
+                # Identify if objects/results in the asset relate to a Spine
                 
-                # 3. Save all assets
+                # 4. Save all assets
                 base_dir = self.config.output_dir / self._region.value.lower()
-                for result in results:
-                    if result:
-                        self._save_asset(result, relative_path, base_dir)
+                with ThreadPoolExecutor(max_workers=self._concurrency) as executor:
+                    save_futures = [executor.submit(Save.object, result, relative_path, base_dir) for result in results if result]
+                    save_results = [f.result() for f in as_completed(save_futures)]
                 
                 # 4. Clean up
                 asset_path.unlink()
