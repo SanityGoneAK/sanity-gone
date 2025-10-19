@@ -20,6 +20,22 @@ class UnpackMode(str, Enum):
     UNITY_PY = "unity_py"
 
 
+class ArknightsStudioConfig(BaseModel):
+    """Configuration for Arknights Studio CLI tool."""
+    cli_dll_path: Path = Field(
+        default=Path("./ArknightsStudioCLI/ArknightsStudioCLI.dll"),
+        description="Path to ArknightsStudioCLI.dll"
+    )
+    
+    @field_validator("cli_dll_path")
+    @classmethod
+    def validate_cli_path(cls, v: Path) -> Path:
+        """Resolve and validate CLI DLL path."""
+        resolved = v.expanduser().resolve()
+        # Note: We don't check existence here as the file might not exist yet during config creation
+        return resolved
+
+
 class ServerConfig(BaseModel):
     """Configuration for a specific server region."""
     enabled: bool = Field(default=True, description="Whether to fetch data from this server")
@@ -40,6 +56,10 @@ class Config(BaseModel):
     output_dir: Path = Field(default=Path("./assets"), description="Directory for extracted data")
     cache_dir: Path = Field(default=Path("./cache"), description="Directory for cache files")
     unpack_mode: UnpackMode = Field(default=UnpackMode.ARKNIGHTS_STUDIO, description="Method of unpacking assets")
+    arknights_studio: Optional[ArknightsStudioConfig] = Field(
+        default=None,
+        description="Configuration for Arknights Studio CLI (required when unpack_mode is ARKNIGHTS_STUDIO)"
+    )
     servers: Dict[ServerRegion, ServerConfig] = Field(
         default_factory=lambda: {
             server: ServerConfig() for server in ServerRegion
@@ -77,6 +97,10 @@ class Config(BaseModel):
             "example": {
                 "output_dir": "./assets",
                 "cache_dir": "./cache",
+                "unpack_mode": "arknights_studio",
+                "arknights_studio": {
+                    "cli_dll_path": "./ArknightsStudioCLI/ArknightsStudioCLI.dll"
+                },
                 "servers": {
                     "CN": {
                         "enabled": True,

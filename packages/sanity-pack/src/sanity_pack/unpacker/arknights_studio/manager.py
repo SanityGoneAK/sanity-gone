@@ -1,9 +1,11 @@
 """Asset unpacker using Arknights Studio tools."""
 
+import shutil
+import subprocess
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from typing import Optional
+from typing import List, Optional
 
 from sanity_pack.utils.logger import log
 from sanity_pack.config.models import Config, ServerRegion
@@ -20,53 +22,88 @@ class ArknightsStudioExtractor(AssetUnpacker):
     def __init__(self, config: Config, region: ServerRegion, concurrency: int = 128):
         super().__init__(config, region, concurrency)
         self._semaphore = threading.Semaphore(concurrency)  # Limit concurrent extractions
-        # TODO: Initialize Arknights Studio specific tools/processors here
+        
+        # Validate Arknights Studio configuration
+        if not config.arknights_studio:
+            raise ValueError(
+                "Arknights Studio configuration is required when using ARKNIGHTS_STUDIO unpack mode. "
+                "Please add 'arknights_studio' section to your config."
+            )
+        
+        self._cli_dll_path = config.arknights_studio.cli_dll_path
+        
+        # Validate CLI DLL exists
+        if not self._cli_dll_path.exists():
+            raise FileNotFoundError(
+                f"ArknightsStudioCLI.dll not found at: {self._cli_dll_path}\n"
+                "Please ensure the CLI is installed and the path in config is correct."
+            )
     
-    def process_asset(self, asset_path: Path) -> None:
-        """Process a single asset file using Arknights Studio tools.
+    def _run_cli(self, input_path: Path, output_path: Path) -> None:
+        """Run ArknightsStudioCLI to extract assets.
         
         Args:
-            asset_path: Path to the asset file to process
+            input_path: Path to asset file or folder to process
+            output_path: Path to output directory
         """
-        with self._semaphore:
-            try:
-                relative_path = asset_path.relative_to(self.config.output_dir / self._region.value.lower())
-                log.info(f"Extracting Asset with Arknights Studio: {relative_path}...")
+        # Build command
+        cmd = [
+            "dotnet",
+            str(self._cli_dll_path),
+            str(input_path),
+            "-o", str(output_path),
+            "-g", "containerFull",  # Group by container path
+            "--image-format", "webp",  # Use asset name for filename
+        ]
+        try:
+            result = subprocess.run(
+                cmd,
+                check=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True
+            )
+            
+            if result.stdout:
+                log.info(f"CLI output: {result.stdout}")
                 
-                # TODO: Implement Arknights Studio extraction logic
-                # 1. Load asset with Arknights Studio tools
-                # 2. Extract objects/prefabs
-                # 3. Save extracted content
-                # 4. Clean up
-                
-                log.warning(f"Arknights Studio extraction not yet implemented for: {relative_path}")
-                
-            except Exception as e:
-                log.exception(f"Error processing {asset_path} with Arknights Studio")
-    
+        except subprocess.CalledProcessError as e:
+            error_msg = e.stderr if e.stderr else str(e)
+            log.error(f"ArknightsStudioCLI failed: {error_msg}")
+            raise
+        except FileNotFoundError:
+            raise RuntimeError(
+                "dotnet command not found. Please ensure .NET runtime is installed.\n"
+                "Download from: https://dotnet.microsoft.com/download"
+            )
+
     def unpack(self) -> None:
-        """Unpack all assets using Arknights Studio tools."""
+        """Unpack all assets using Arknights Studio CLI."""
         log.info(f"\nProcessing {self._region.value} server assets with Arknights Studio...")
+        log.info(f"CLI Path: {self._cli_dll_path}")
+        
         server_dir = self.config.output_dir / self._region.value.lower()
-        asset_files = []
+
+        self._run_cli(server_dir, server_dir)
         
-        # Find .ab and .bin files
-        for pattern in ["**/*.ab", "**/*.bin"]:
-            asset_files.extend(server_dir.glob(pattern))
-        
-        if not asset_files:
-            log.warning(f"No asset files found in {server_dir}")
-            return
-        
-        log.info(f"Found {len(asset_files)} asset files to process")
-        
-        # Process assets in parallel
-        with ThreadPoolExecutor(max_workers=self._concurrency) as executor:
-            futures = [executor.submit(self.process_asset, file_path) for file_path in asset_files]
-            for future in as_completed(futures):
-                try:
-                    future.result()
-                except Exception as e:
-                    log.exception(f"Unpack task failed: {e}")
+        # Move all folders from server_dir/dyn to server_dir
+        dyn_dir = server_dir / "dyn"
+        if dyn_dir.exists() and dyn_dir.is_dir():
+            log.info(f"Moving extracted assets from {dyn_dir} to {server_dir}")
+            for item in dyn_dir.iterdir():
+                if item.is_dir():
+                    dest = server_dir / item.name
+                    if dest.exists():
+                        log.warning(f"Destination {dest} already exists, merging contents...")
+                        shutil.copytree(item, dest, dirs_exist_ok=True)
+                        shutil.rmtree(item)
+                    else:
+                        shutil.move(str(item), str(dest))
+                    log.info(f"Moved {item.name} to {server_dir}")
+            
+            # Remove empty dyn directory
+            if not any(dyn_dir.iterdir()):
+                dyn_dir.rmdir()
+                log.info(f"Removed empty dyn directory")
         
         log.info(f"Completed Arknights Studio unpacking for {self._region.value}")
