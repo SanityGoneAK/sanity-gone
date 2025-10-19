@@ -1,6 +1,7 @@
 {
 	"output_dir": "./assets",
 	"cache_dir": "./cache",
+	"unpack_mode": "unity_py",
 	"servers": {
 		"CN": {
 			"enabled": true,

@@ -8,24 +8,24 @@ import UnityPy
 from UnityPy.enums.BundleFile import CompressionFlags
 from UnityPy.files import ObjectReader
 from UnityPy.helpers import CompressionHelper
-from UnityPy.classes import AudioClip, MonoBehaviour, Object, Sprite, TextAsset, Texture2D
 
 from sanity_pack.utils.compression import decompress_lz4ak
 from sanity_pack.utils.logger import log
 from sanity_pack.config.models import Config, ServerRegion
-from sanity_pack.unpacker.processors import AssetProcessorFactory, ObjectResult
-from sanity_pack.unpacker.save import Save
+from sanity_pack.unpacker.base import AssetUnpacker
+from sanity_pack.unpacker.unity_py.processors import AssetProcessorFactory, ObjectResult
+from sanity_pack.unpacker.unity_py.save import Save
 
 CompressionHelper.DECOMPRESSION_MAP[CompressionFlags.LZHAM] = decompress_lz4ak
 
-class UnityAssetExtractor:
-    """Handles extraction of Unity assets from downloaded game files."""
-    """Assets (.ab) can have objects inside of them of many types we use the Processor to handle these types"""
+class UnityAssetExtractor(AssetUnpacker):
+    """Handles extraction of Unity assets from downloaded game files using UnityPy.
     
-    def __init__(self, config: Config, region: ServerRegion, concurrency: int = 128):
-        self.config = config
-        self._region = region
-        self._concurrency = concurrency
+    Assets (.ab) can have objects inside of them of many types we use the Processor to handle these types.
+    """
+    
+    def __init__(self, config: Config, region: ServerRegion, concurrency: int = 64):
+        super().__init__(config, region, concurrency)
         self._semaphore = threading.Semaphore(concurrency)  # Limit concurrent extractions
         self._object_semaphore = threading.Semaphore(concurrency)  # Limit concurrent object processing
         self._processor_factory = AssetProcessorFactory()
@@ -53,7 +53,7 @@ class UnityAssetExtractor:
                 
                 # 1. Get UnityPy environment
                 env = self._get_env(str(relative_path))
-                
+
                 # 2. Process all objects in thread pool
                 with ThreadPoolExecutor(max_workers=self._concurrency) as executor:
                     futures = [executor.submit(self._process_object, obj) for obj in env.objects]

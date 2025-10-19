@@ -1,7 +1,7 @@
 import typer
 from typing import Optional
 from pathlib import Path
-from sanity_pack.config import get_config
+from sanity_pack.config import get_config, get_config_manager
 from rich.console import Console
 from rich.table import Table
 
@@ -22,7 +22,8 @@ def show(
     console.print("\n[bold]Configuration:[/bold]")
     console.print(f"Output dir: {config.output_dir}")
     console.print(f"Cache dir:  {config.cache_dir}")
-    
+    console.print(f"Unpack Mode:  {config.unpack_mode}")
+
     # Create table for server configs
     table = Table(title="\nServer Configurations")
     table.add_column("Region", style="cyan")
@@ -80,6 +81,7 @@ def validate(
         console.print(f"  Enabled servers: {len(config.get_enabled_servers())}")
         console.print(f"  Output dir: {config.output_dir}")
         console.print(f"  Cache dir: {config.cache_dir}")
+        console.print(f"  Cache dir: {config.unpack_mode}")
     except Exception as e:
         console.print(f"[red]✗ Configuration is invalid: {e}[/red]")
         raise typer.Exit(1)

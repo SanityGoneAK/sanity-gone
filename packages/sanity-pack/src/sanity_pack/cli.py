@@ -7,12 +7,13 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from sanity_pack.config import (
     get_config,
     ServerRegion,
+    UnpackMode,
 )
 from sanity_pack.config import app as config_command
 from sanity_pack.cache import app as cache_command
 from sanity_pack.utils.logger import log
 from sanity_pack.downloader.asset import ArknightsAssets
-from sanity_pack.unpacker.manager import UnityAssetExtractor
+from sanity_pack.utils.unpacker import get_unpacker
 
 app = typer.Typer(help="Sanity Pack CLI")
 app.add_typer(config_command, name="config")
@@ -89,13 +90,14 @@ def unpack(
     regions = [region] if region else config.get_enabled_servers()
     
     log.info(f"[bold green]Unpacking assets for regions: {', '.join(r.value for r in regions)}[/bold green]")
+    log.info(f"Unpack mode: {config.unpack_mode.value}")
     log.info(f"Output directory: {config.output_dir}")
 
     # Execute unpacking in parallel threads
     with ThreadPoolExecutor(max_workers=len(regions)) as executor:
         futures = {
             executor.submit(
-                UnityAssetExtractor(config=config, region=r, concurrency=concurrency).unpack
+                get_unpacker(config, r, concurrency).unpack
             ): r.value
             for r in regions
         }

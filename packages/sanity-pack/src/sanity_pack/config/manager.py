@@ -6,7 +6,7 @@ from typing import Optional
 from rich.console import Console
 
 from sanity_pack.utils.logger import log
-from sanity_pack.config.models import Config, ServerConfig, ServerRegion
+from sanity_pack.config.models import Config, ServerConfig, ServerRegion, UnpackMode
 
 console = Console()
 
@@ -86,6 +86,7 @@ class ConfigManager:
         return Config(
             output_dir=Path("./assets"),
             cache_dir=Path("./cache"),
+            unpack_mode=UnpackMode.ARKNIGHTS_STUDIO,
             servers={
                 ServerRegion.CN: ServerConfig(
                     enabled=True,

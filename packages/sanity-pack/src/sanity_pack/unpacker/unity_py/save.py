@@ -6,8 +6,34 @@ import UnityPy
 from UnityPy.files import ObjectReader
 from UnityPy.classes import Texture2D, Sprite, AssetBundle, TextAsset, MonoBehaviour, AudioClip, Object, MonoScript
 
-from sanity_pack.unpacker.processors import ObjectResult
+from sanity_pack.unpacker.unity_py.processors import ObjectResult
 from sanity_pack.utils.logger import log
+
+# Path override configuration for images
+# Maps source path patterns to their target directory
+IMAGE_PATH_OVERRIDES = {
+    "/arts/item": "arts/items", # items has many nested folders this flattens that structure
+    "/arts/charavatars": "arts/charavatars", # same with charavatars, elite avatars are in nested folders
+}
+
+def _apply_path_overrides(target_path: Path, base_dir: Path, overrides: dict[str, str]) -> Path:
+    """Apply path overrides based on configuration.
+    
+    Args:
+        target_path: The original target path
+        base_dir: The base output directory
+        overrides: Dictionary mapping source patterns to target directories
+    
+    Returns:
+        Modified path if an override matches, otherwise the original path
+    """
+    target_path_str = target_path.as_posix()
+    
+    for source_pattern, target_dir in overrides.items():
+        if source_pattern in target_path_str:
+            return base_dir / target_dir / target_path.name
+    
+    return target_path
 
 def _get_target_path(obj: ObjectReader, name: str, source_dir: Path, output_dir: Path) -> Path:
     """Determine the target path for saving an asset."""
@@ -16,8 +42,6 @@ def _get_target_path(obj: ObjectReader, name: str, source_dir: Path, output_dir:
 
     assert isinstance(name, str)
     return output_dir / source_dir / name
-
-
 
 class Save:
     @staticmethod
@@ -34,15 +58,9 @@ class Save:
         log.info(f"Saving to path: {str(target_path)}...")
 
         match result.object_type:
-            case UnityPy.classes.Sprite, UnityPy.classes.Texture2D:
+            case UnityPy.classes.Sprite | UnityPy.classes.Texture2D:
                 target_path = target_path.with_suffix(".webp")
-                target_path_str = target_path.as_posix()
-
-                if "/arts/item" in target_path_str:
-                    target_path = base_dir / "arts/items" / target_path.name
-                if "/arts/charavatars" in target_path_str:
-                    target_path = base_dir / "arts/charavatars" / target_path.name
-
+                target_path = _apply_path_overrides(target_path, base_dir, IMAGE_PATH_OVERRIDES)
                 Save.image(result.content, target_path)
             case UnityPy.classes.TextAsset:
                 Save.bytes(result.content, target_path)

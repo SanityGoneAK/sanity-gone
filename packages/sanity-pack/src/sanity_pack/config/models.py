@@ -13,6 +13,12 @@ class ServerRegion(str, Enum):
     JP = "JP"
     KR = "KR"
 
+class UnpackMode(str, Enum):
+    """Available unpack modes. Unity Py is a lower level implementation than arknights studio,
+     but we have more control over it, some paths to containers are not specified in UnityPy vs Arknights Studio specifically prefabs"""
+    ARKNIGHTS_STUDIO = "arknights_studio"
+    UNITY_PY = "unity_py"
+
 
 class ServerConfig(BaseModel):
     """Configuration for a specific server region."""
@@ -33,6 +39,7 @@ class Config(BaseModel):
     """Main configuration for Sanity Pack."""
     output_dir: Path = Field(default=Path("./assets"), description="Directory for extracted data")
     cache_dir: Path = Field(default=Path("./cache"), description="Directory for cache files")
+    unpack_mode: UnpackMode = Field(default=UnpackMode.ARKNIGHTS_STUDIO, description="Method of unpacking assets")
     servers: Dict[ServerRegion, ServerConfig] = Field(
         default_factory=lambda: {
             server: ServerConfig() for server in ServerRegion
