@@ -8,7 +8,7 @@
 	"servers": {
 		"CN": {
 			"enabled": true,
-			"path_whitelist": ["audio/sound_beta_2/voice/"]
+			"path_whitelist": ["arts/charportraits"]
 		},
 		"EN": {
 			"enabled": false,

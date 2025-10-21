@@ -67,26 +67,63 @@ class ArknightsStudioExtractor(AssetUnpacker):
             )
             
             if result.stdout:
-                log.info(f"CLI output: {result.stdout}")
+                log.debug(f"CLI output for {input_path.name}: {result.stdout}")
                 
         except subprocess.CalledProcessError as e:
             error_msg = e.stderr if e.stderr else str(e)
-            log.error(f"ArknightsStudioCLI failed: {error_msg}")
+            log.error(f"ArknightsStudioCLI failed for {input_path.name}: {error_msg}")
             raise
         except FileNotFoundError:
             raise RuntimeError(
                 "dotnet command not found. Please ensure .NET runtime is installed.\n"
                 "Download from: https://dotnet.microsoft.com/download"
             )
-
-    def unpack(self) -> None:
-        """Unpack all assets using Arknights Studio CLI."""
-        log.info(f"\nProcessing {self._region.value} server assets with Arknights Studio...")
-        log.info(f"CLI Path: {self._cli_dll_path}")
+    
+    def _process_asset(self, asset_path: Path, output_dir: Path) -> None:
+        """Process a single asset through the CLI with semaphore control.
         
-        server_dir = self.config.output_dir / self._region.value.lower()
-
-        self._run_cli(server_dir, server_dir)
+        Args:
+            asset_path: Path to the asset file to process
+            output_dir: Output directory for extracted assets
+        """
+        with self._semaphore:
+            try:
+                log.info(f"Processing asset: {asset_path.name}")
+                self._run_cli(asset_path, output_dir)
+                log.info(f"Completed asset: {asset_path.name}")
+            except Exception as e:
+                log.error(f"Failed to process asset {asset_path.name}: {e}")
+    
+    def _collect_assets(self, server_dir: Path) -> list[Path]:
+        """Collect all asset files to process from the server directory.
+        
+        Recursively walks through all subdirectories to find asset files.
+        
+        Args:
+            server_dir: Server directory containing assets
+            
+        Returns:
+            List of asset file paths to process
+        """
+        assets = []
+        
+        # Recursively collect all files from server_dir and its subdirectories
+        for item in server_dir.rglob("*"):
+            if item.is_file():
+                assets.append(item)
+        
+        log.info(f"Found {len(assets)} assets to process (searched recursively)")
+        return assets
+    
+    def _reorganize_extracted_assets(self, server_dir: Path) -> None:
+        """Reorganize extracted assets after CLI processing.
+        
+        This moves assets from nested directories and cleans up the structure.
+        
+        Args:
+            server_dir: Server directory containing extracted assets
+        """
+        log.info(f"Reorganizing extracted assets in {server_dir}")
         
         # Move all folders from server_dir/dyn to server_dir
         dyn_dir = server_dir / "dyn"
@@ -129,5 +166,40 @@ class ArknightsStudioExtractor(AssetUnpacker):
                 full_path = os.path.join(root, directory)
                 if not os.listdir(full_path):
                     os.rmdir(full_path)
+
+    def unpack(self) -> None:
+        """Unpack all assets using Arknights Studio CLI with concurrent processing."""
+        log.info(f"\nProcessing {self._region.value} server assets with Arknights Studio...")
+        log.info(f"CLI Path: {self._cli_dll_path}")
+        log.info(f"Concurrency: {self._semaphore._value} threads")
+        
+        server_dir = self.config.output_dir / self._region.value.lower()
+        
+        # Collect all assets to process
+        assets = self._collect_assets(server_dir)
+        
+        if not assets:
+            log.warning(f"No assets found in {server_dir}")
+            return
+        
+        # Process each asset concurrently using threads
+        threads = []
+        for asset_path in assets:
+            thread = threading.Thread(
+                target=self._process_asset,
+                args=(asset_path, server_dir)
+            )
+            thread.start()
+            threads.append(thread)
+        
+        # Wait for all threads to complete
+        log.info(f"Waiting for {len(threads)} asset processing threads to complete...")
+        for thread in threads:
+            thread.join()
+        
+        log.info("All assets processed, starting reorganization...")
+        
+        # After all CLI operations complete, reorganize the extracted assets
+        self._reorganize_extracted_assets(server_dir)
         
         log.info(f"Completed Arknights Studio unpacking for {self._region.value}")
