@@ -8,7 +8,7 @@
 	"servers": {
 		"CN": {
 			"enabled": true,
-			"path_whitelist": ["pkgrps/btl_pfb_tokens_0.ab"]
+			"path_whitelist": ["audio/sound_beta_2/voice/"]
 		},
 		"EN": {
 			"enabled": false,

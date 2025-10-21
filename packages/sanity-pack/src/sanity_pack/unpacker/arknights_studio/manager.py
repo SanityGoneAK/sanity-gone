@@ -101,8 +101,7 @@ class ArknightsStudioExtractor(AssetUnpacker):
                         shutil.rmtree(item)
                     else:
                         shutil.move(str(item), str(dest))
-                    log.info(f"Moved {item.name} to {server_dir}")
-            
+
             # Remove empty dyn directory
             if not any(dyn_dir.iterdir()):
                 dyn_dir.rmdir()
@@ -120,13 +119,9 @@ class ArknightsStudioExtractor(AssetUnpacker):
                 current_path = os.path.join(root, file)
                 if len(files) == 1 or "#" in root:
                     desired_relpath = os.path.join(os.path.dirname(os.path.dirname(os.path.relpath(current_path, server_dir))), file)
-                    log.info(f"Copying {current_path} to {desired_relpath}")
-                    future_path = os.path.join(server_dir, desired_relpath).lower()
-                    log.info(f"Future Path {future_path}")
+                    future_path = os.path.join(server_dir, desired_relpath)
                 else:
-                    future_path = os.path.join(server_dir, os.path.relpath(current_path, server_dir).lower())
-                    log.info(f"Current Path {current_path}")
-                    log.info(f"Future Path {future_path}")
+                    future_path = os.path.join(server_dir, os.path.relpath(current_path, server_dir))
 
                 os.makedirs(os.path.dirname(future_path), exist_ok=True)
                 shutil.move(os.path.abspath(current_path), os.path.abspath(future_path))

@@ -14,6 +14,7 @@ from sanity_pack.cache import app as cache_command
 from sanity_pack.utils.logger import log
 from sanity_pack.downloader.asset import ArknightsAssets
 from sanity_pack.utils.unpacker import get_unpacker
+from sanity_pack.pipelines import PipelineManager
 
 app = typer.Typer(help="Sanity Pack CLI")
 app.add_typer(config_command, name="config")
@@ -113,9 +114,36 @@ def unpack(
     log.info(f"[green]✓ Completed Asset Unpacking[/green]")
 
 @app.command()
-def process():
-    """Process images and audio for web use"""
-    typer.echo("Processing assets...")
+def pipeline(
+    region: Optional[ServerRegion] = typer.Option(
+        None,
+        "--region", "-r",
+        help="Server region to process (if not specified, processes all enabled)"
+    ),
+    config_file: Optional[Path] = typer.Option(
+        None,
+        "--config", "-c",
+        help="Path to config file"
+    ),
+):
+    """Run post-processing pipeline on unpacked assets"""
+    config = get_config(config_file)
+    
+    regions = [region] if region else config.get_enabled_servers()
+    
+    log.info(f"[bold green]Running pipeline for regions: {', '.join(r.value for r in regions)}[/bold green]")
+    log.info(f"Unpack mode: {config.unpack_mode.value}")
+    log.info(f"Output directory: {config.output_dir}")
+    
+    # Execute pipeline for each region sequentially
+    for r in regions:
+        try:
+            manager = PipelineManager(config=config, region=r)
+            manager.run()
+        except Exception as e:
+            log.exception(f"Failed to run pipeline for region {r.value}: {e}")
+    
+    log.info(f"[green]✓ Completed Pipeline Processing[/green]")
 
 def main():
     app()
