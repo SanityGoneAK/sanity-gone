@@ -3,9 +3,10 @@
 import shutil
 import subprocess
 import threading
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from typing import List, Optional
+import os
+import re
+
 
 from sanity_pack.utils.logger import log
 from sanity_pack.config.models import Config, ServerRegion
@@ -53,7 +54,8 @@ class ArknightsStudioExtractor(AssetUnpacker):
             str(input_path),
             "-o", str(output_path),
             "-g", "containerFull",  # Group by container path
-            "--image-format", "webp",  # Use asset name for filename
+            "-t", "Sprite,AkPortraitSprite,AudioClip,TextAsset",
+            "--image-format", "webp",  # Use webp for image formats
         ]
         try:
             result = subprocess.run(
@@ -105,5 +107,32 @@ class ArknightsStudioExtractor(AssetUnpacker):
             if not any(dyn_dir.iterdir()):
                 dyn_dir.rmdir()
                 log.info(f"Removed empty dyn directory")
+
+        # Taken and modified from Ashlen's ArknightsAssets repo, resolves a bunch of issues with folder structures.
+        # https://github.com/ArknightsAssets/ArknightsAssets2/blob/master/script.py
+        for root, dirs, files in os.walk(server_dir):
+            # when a file is alone in its directory then move it up a directory
+            # when a file is in a numbered directory (with #) then also move it up a directory
+            # when a file is in the form filename_#00.ext and there exists filename.ext, skip it, as it is a duplicate due to assetstudio
+            for file in files:
+                if (match := re.match(r"^(.+?)(_#\d+?)(\..+?)$", file)) and match[1] + match[3] in files:
+                    continue
+                current_path = os.path.join(root, file)
+                if len(files) == 1 or "#" in root:
+                    desired_relpath = os.path.join(os.path.dirname(os.path.dirname(os.path.relpath(current_path, server_dir))), file)
+                    log.info(f"Copying {current_path} to {desired_relpath}")
+                    future_path = os.path.join(server_dir, desired_relpath).lower()
+                    log.info(f"Future Path {future_path}")
+                else:
+                    future_path = os.path.join(server_dir, os.path.relpath(current_path, server_dir).lower())
+                    log.info(f"Current Path {current_path}")
+                    log.info(f"Future Path {future_path}")
+
+                os.makedirs(os.path.dirname(future_path), exist_ok=True)
+                shutil.move(os.path.abspath(current_path), os.path.abspath(future_path))
+            for directory in dirs:
+                full_path = os.path.join(root, directory)
+                if not os.listdir(full_path):
+                    os.rmdir(full_path)
         
         log.info(f"Completed Arknights Studio unpacking for {self._region.value}")

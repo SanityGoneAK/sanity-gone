@@ -74,8 +74,6 @@ class AssetCache(BaseModel):
 
     def set_hash(self, region: ServerRegion, path: str, hash_value: str) -> None:
         """Set hash for a specific asset path in a region."""
-        if region not in self.assets:
-            self.assets[region] = {}
         self.assets[region][path] = hash_value
 
     def has_asset(self, region: ServerRegion, path: str) -> bool:

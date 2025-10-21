@@ -111,6 +111,8 @@ class ArknightsAssets:
         server_dir = self._config.output_dir / self._region.value.lower()
         server_dir.mkdir(parents=True, exist_ok=True)
         log.info(f"Downloading assets for region {self._region.value}")
+        asset_cache = self._cache_mgr.get_assets()
+        asset_cache.assets[self._region] = {}
 
         with ArknightsSession(self._config) as session:
             resource, client = self._fetch_version(session)
