@@ -1,11 +1,9 @@
 import logging
 from logging import Formatter
-from rich.progress import track
 from datetime import datetime
 from rich.console import Console
 from rich.logging import RichHandler
 from pathlib import Path
-import time
 
 from logging.handlers import  RotatingFileHandler
 LOGFORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'

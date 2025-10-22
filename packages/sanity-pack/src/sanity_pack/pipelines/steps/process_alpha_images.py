@@ -60,13 +60,7 @@ class ProcessAlphaImagesStep(PipelineStep):
         return None
     
     def process(self) -> None:
-        """Process images with alpha channels.
-
-        TODO: Implement alpha image processing:
-        - Find images with alpha channels
-        - Apply alpha channel processing/optimization
-        - Save processed images
-        """
+        """Process images with alpha channels."""
         log.info(f"Processing alpha images in {self._output_dir}")
 
         image_extensions = {'.png', '.jpg', '.jpeg', '.webp'}
