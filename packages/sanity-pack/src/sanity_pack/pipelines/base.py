@@ -23,7 +23,7 @@ class PipelineStep(ABC):
         """
         self.config = config
         self.region = region
-        self._output_dir = config.output_dir / region.value
+        self._output_dir = config.output_dir / region.value.lower()
     
     @property
     @abstractmethod
