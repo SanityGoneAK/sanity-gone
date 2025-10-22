@@ -91,6 +91,7 @@ class ArknightsStudioExtractor(AssetUnpacker):
                 log.info(f"Processing asset: {asset_path.name}")
                 self._run_cli(asset_path, output_dir)
                 log.info(f"Completed asset: {asset_path.name}")
+                asset_path.unlink()
             except Exception as e:
                 log.error(f"Failed to process asset {asset_path.name}: {e}")
     
