@@ -2,7 +2,7 @@
   "pioneer": {
     "branchName": "Pioneer",
     "class": "Vanguard",
-    "trait": "Blocks 2 enemies"
+    "trait": "Blocks 2 enemies and ignores <span class=\"keyword\">Deployment Limit</span>, but has a long Redeployment Time"
   },
   "charger": {
     "branchName": "Charger",
@@ -37,7 +37,7 @@
   "instructor": {
     "branchName": "Instructor",
     "class": "Guard",
-    "trait": "Can attack enemies <span class=\"keyword\">from range</span>; When attacking enemies not blocked by self, increase ATK to 120%"
+    "trait": "Has <span class=\"keyword\">extended</span> attack range; When attacking enemies not blocked by self, increase ATK to 120%"
   },
   "lord": {
     "branchName": "Lord",
@@ -330,9 +330,9 @@
     "trait": "Deals <span class=\"keyword\">Arts damage</span>; Can create <span class=\"keyword\">Summons</span> by defeating enemies, and can attack enemies blocked by these <span class=\"keyword\">Summons</span>"
   },
   "primguard": {
-    "branchName": "本源近卫",
+    "branchName": "Primal Guard",
     "class": "Guard",
-    "trait": "能够阻挡两个敌人，可以造成<span class=\"keyword\">元素伤害</span>"
+    "trait": "Blocks 2 enemies, and can inflict <span class=\"keyword\">Elemental damage</span>"
   },
   "counsellor": {
     "branchName": "策士",

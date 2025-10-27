@@ -99,7 +99,7 @@
   },
   "char_1041_angel2": {
     "charId": "char_1041_angel2",
-    "name": "Exusiai the New Covenant",
+    "name": "엑시아 더 뉴 커버넌트",
     "slug": "exusiai-the-new-covenant",
     "position": "RANGED",
     "rarity": 6,
@@ -113,7 +113,7 @@
   },
   "char_4193_lemuen": {
     "charId": "char_4193_lemuen",
-    "name": "Lemuen",
+    "name": "르무엔",
     "slug": "lemuen",
     "position": "RANGED",
     "rarity": 6,
@@ -127,7 +127,7 @@
   },
   "char_4194_rmixer": {
     "charId": "char_4194_rmixer",
-    "name": "Sankta Miksaparato",
+    "name": "산크타 믹사파라토",
     "slug": "sankta-miksaparato",
     "position": "MELEE",
     "rarity": 6,
@@ -1793,7 +1793,7 @@
   },
   "char_4198_christ": {
     "charId": "char_4198_christ",
-    "name": "Miss.Christine",
+    "name": "미스 크리스틴",
     "slug": "miss.christine",
     "position": "RANGED",
     "rarity": 5,
@@ -1807,7 +1807,7 @@
   },
   "char_4187_graceb": {
     "charId": "char_4187_graceb",
-    "name": "Gracebearer",
+    "name": "그레이스베어러",
     "slug": "gracebearer",
     "position": "MELEE",
     "rarity": 5,

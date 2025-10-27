@@ -2,7 +2,7 @@
   "pioneer": {
     "branchName": "척후병",
     "class": "Vanguard",
-    "trait": "적 2명 저지 가능"
+    "trait": "적 2명 저지 가능, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
   },
   "charger": {
     "branchName": "돌격수",
@@ -207,7 +207,7 @@
   "blessing": {
     "branchName": "비호자",
     "class": "Supporter",
-    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75%에 해당)"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히며, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75%에 해당)"
   },
   "summoner": {
     "branchName": "소환사",
@@ -262,7 +262,7 @@
   "incantationmedic": {
     "branchName": "주술 메딕",
     "class": "Medic",
-    "trait": "공격 시 마법 대미지를 입히고, 적을 공격할 때마다 공격 범위 내 아군 1명의 HP를 대미지의 50%만큼 회복"
+    "trait": "공격 시 마법 대미지를 입히며, 적을 공격할 때마다 공격 범위 내 아군 1명의 HP를 대미지의 50%만큼 회복"
   },
   "agent": {
     "branchName": "에이전트",
@@ -297,7 +297,7 @@
   "primcaster": {
     "branchName": "프라이멀 캐스터",
     "class": "Caster",
-    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, <span class=\"keyword\">원소 대미지</span>를 입힐 수 있음"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히며, <span class=\"keyword\">원소 대미지</span>를 입힐 수 있음"
   },
   "loopshooter": {
     "branchName": "루프슈터",
@@ -327,12 +327,12 @@
   "soulcaster": {
     "branchName": "셰이퍼 캐스터",
     "class": "Caster",
-    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, 적 처치 시 <span class=\"keyword\">소환물</span> 생성, 자신의 <span class=\"keyword\">소환물</span>이 저지한 적 공격 가능"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히며, 적 처치 시 <span class=\"keyword\">소환물</span> 생성, <span class=\"keyword\">소환물</span>이 저지한 적 공격 가능"
   },
   "primguard": {
-    "branchName": "本源近卫",
+    "branchName": "프라이멀 가드",
     "class": "Guard",
-    "trait": "能够阻挡两个敌人，可以造成<span class=\"keyword\">元素伤害</span>"
+    "trait": "적 2명 저지 가능, 공격 시 <span class=\"keyword\">원소 대미지</span>를 입힘"
   },
   "counsellor": {
     "branchName": "策士",

@@ -1152,6 +1152,18 @@
         ]
       },
       {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
+          14
+        ]
+      },
+      {
         "id": "char_237_gravel",
         "name": "Gravel",
         "rarity": 4,
@@ -1358,6 +1370,18 @@
           17,
           9,
           8
+        ]
+      },
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
+          28
         ]
       }
     ],
@@ -1651,6 +1675,18 @@
         "tags": [
           25,
           12,
+          9,
+          7,
+          14
+        ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
           9,
           7,
           14
@@ -2015,6 +2051,18 @@
           22,
           9,
           3,
+          28
+        ]
+      },
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
           28
         ]
       }
@@ -3063,6 +3111,19 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -3143,6 +3204,18 @@
           12,
           10,
           6
+        ]
+      },
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
+          28
         ]
       }
     ],
@@ -3797,6 +3870,18 @@
           19,
           10,
           6,
+          14
+        ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
           14
         ]
       }
@@ -4614,6 +4699,18 @@
           19,
           10,
           6,
+          14
+        ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
           14
         ]
       },
@@ -5730,6 +5827,18 @@
         ]
       },
       {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
+          14
+        ]
+      },
+      {
         "id": "char_237_gravel",
         "name": "Gravel",
         "rarity": 4,
@@ -5929,6 +6038,18 @@
           29,
           10,
           5,
+          28
+        ]
+      },
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
           28
         ]
       }
@@ -10146,6 +10267,18 @@
         ]
       },
       {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
+          14
+        ]
+      },
+      {
         "id": "char_237_gravel",
         "name": "Gravel",
         "rarity": 4,
@@ -10391,6 +10524,18 @@
           7,
           14
         ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -10422,6 +10567,18 @@
         "tags": [
           19,
           20,
+          9,
+          7,
+          14
+        ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
           9,
           7,
           14
@@ -10571,6 +10728,18 @@
         "tags": [
           25,
           12,
+          9,
+          7,
+          14
+        ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
           9,
           7,
           14
@@ -10820,6 +10989,18 @@
           9,
           8
         ]
+      },
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
+          28
+        ]
       }
     ],
     "guarantees": []
@@ -10877,6 +11058,19 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -10900,10 +11094,23 @@
           8,
           14
         ]
+      },
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
+          28
+        ]
       }
     ],
     "guarantees": [
-      5
+      5,
+      1
     ]
   },
   "14,8": {
@@ -11285,6 +11492,29 @@
       4
     ]
   },
+  "28,8": {
+    "tags": [
+      28,
+      8
+    ],
+    "operators": [
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
+          28
+        ]
+      }
+    ],
+    "guarantees": [
+      1
+    ]
+  },
   "11,9": {
     "tags": [
       11,
@@ -11516,6 +11746,19 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -11563,10 +11806,23 @@
           7,
           14
         ]
+      },
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
+          28
+        ]
       }
     ],
     "guarantees": [
-      5
+      5,
+      1
     ]
   },
   "13,9": {
@@ -11892,6 +12148,18 @@
         "tags": [
           25,
           12,
+          9,
+          7,
+          14
+        ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
           9,
           7,
           14
@@ -12347,6 +12615,18 @@
           19,
           9,
           1,
+          14
+        ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
           14
         ]
       },
@@ -12984,6 +13264,18 @@
         ]
       },
       {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
+          14
+        ]
+      },
+      {
         "id": "char_237_gravel",
         "name": "Gravel",
         "rarity": 4,
@@ -13116,6 +13408,18 @@
           22,
           9,
           3,
+          28
+        ]
+      },
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
           28
         ]
       }
@@ -15233,6 +15537,19 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -15445,6 +15762,19 @@
       {
         "id": "char_222_bpipe",
         "name": "Bagpipe",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
+          11,
+          14
+        ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
         "rarity": 6,
         "tags": [
           18,
@@ -15777,6 +16107,19 @@
           19,
           10,
           2,
+          11,
+          14
+        ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
           11,
           14
         ]
@@ -16316,6 +16659,29 @@
     ],
     "guarantees": [
       5
+    ]
+  },
+  "12,28": {
+    "tags": [
+      12,
+      28
+    ],
+    "operators": [
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
+          28
+        ]
+      }
+    ],
+    "guarantees": [
+      1
     ]
   },
   "13,14": {
@@ -16956,6 +17322,18 @@
           6,
           14
         ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -17449,6 +17827,18 @@
         "tags": [
           25,
           12,
+          9,
+          7,
+          14
+        ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
           9,
           7,
           14
@@ -18253,6 +18643,18 @@
       25
     ],
     "operators": [
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
+          14
+        ]
+      },
       {
         "id": "char_272_strong",
         "name": "Jaye",
@@ -25432,6 +25834,18 @@
           7,
           14
         ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -25464,6 +25878,18 @@
         "tags": [
           19,
           20,
+          9,
+          7,
+          14
+        ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
           9,
           7,
           14
@@ -25618,6 +26044,18 @@
         "tags": [
           25,
           12,
+          9,
+          7,
+          14
+        ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
           9,
           7,
           14
@@ -26104,6 +26542,18 @@
           7,
           14
         ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -26224,6 +26674,18 @@
           7,
           14
         ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -26297,6 +26759,18 @@
       7
     ],
     "operators": [
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
+          14
+        ]
+      },
       {
         "id": "char_272_strong",
         "name": "Jaye",
@@ -26440,6 +26914,19 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -26464,10 +26951,23 @@
           8,
           14
         ]
+      },
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
+          28
+        ]
       }
     ],
     "guarantees": [
-      5
+      5,
+      1
     ]
   },
   "14,8,9": {
@@ -26822,6 +27322,30 @@
     ],
     "guarantees": []
   },
+  "28,8,9": {
+    "tags": [
+      28,
+      8,
+      9
+    ],
+    "operators": [
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
+          28
+        ]
+      }
+    ],
+    "guarantees": [
+      1
+    ]
+  },
   "10,18,8": {
     "tags": [
       10,
@@ -26900,6 +27424,19 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -26938,6 +27475,19 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -26967,6 +27517,19 @@
       {
         "id": "char_222_bpipe",
         "name": "Bagpipe",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
+          11,
+          14
+        ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
         "rarity": 6,
         "tags": [
           18,
@@ -27028,6 +27591,30 @@
     ],
     "guarantees": [
       5
+    ]
+  },
+  "12,28,8": {
+    "tags": [
+      12,
+      28,
+      8
+    ],
+    "operators": [
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
+          28
+        ]
+      }
+    ],
+    "guarantees": [
+      1
     ]
   },
   "14,16,8": {
@@ -27620,6 +28207,19 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -27728,6 +28328,19 @@
       {
         "id": "char_222_bpipe",
         "name": "Bagpipe",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
+          11,
+          14
+        ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
         "rarity": 6,
         "tags": [
           18,
@@ -27958,6 +28571,19 @@
           20,
           9,
           1,
+          11,
+          14
+        ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
           11,
           14
         ]
@@ -28313,6 +28939,30 @@
       5
     ]
   },
+  "12,28,9": {
+    "tags": [
+      12,
+      28,
+      9
+    ],
+    "operators": [
+      {
+        "id": "char_4188_confes",
+        "name": "CONFESS-47",
+        "rarity": 1,
+        "tags": [
+          28,
+          12,
+          9,
+          8,
+          28
+        ]
+      }
+    ],
+    "guarantees": [
+      1
+    ]
+  },
   "13,19,9": {
     "tags": [
       13,
@@ -28666,6 +29316,18 @@
           1,
           14
         ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -28976,6 +29638,18 @@
         "tags": [
           25,
           12,
+          9,
+          7,
+          14
+        ]
+      },
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
           9,
           7,
           14
@@ -29470,6 +30144,18 @@
       9
     ],
     "operators": [
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
+          14
+        ]
+      },
       {
         "id": "char_272_strong",
         "name": "Jaye",
@@ -31991,6 +32677,19 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -32315,6 +33014,19 @@
           19,
           10,
           2,
+          11,
+          14
+        ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
           11,
           14
         ]
@@ -32965,6 +33677,19 @@
       {
         "id": "char_222_bpipe",
         "name": "Bagpipe",
+        "rarity": 6,
+        "tags": [
+          18,
+          19,
+          9,
+          8,
+          11,
+          14
+        ]
+      },
+      {
+        "id": "char_362_saga",
+        "name": "Saga",
         "rarity": 6,
         "tags": [
           18,
@@ -33882,6 +34607,30 @@
           23,
           10,
           2,
+          14
+        ]
+      }
+    ],
+    "guarantees": [
+      5
+    ]
+  },
+  "14,19,25": {
+    "tags": [
+      14,
+      19,
+      25
+    ],
+    "operators": [
+      {
+        "id": "char_455_nothin",
+        "name": "Mr. Nothing",
+        "rarity": 5,
+        "tags": [
+          25,
+          19,
+          9,
+          7,
           14
         ]
       }

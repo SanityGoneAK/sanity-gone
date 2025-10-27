@@ -2,7 +2,7 @@
   "pioneer": {
     "branchName": "先駆兵",
     "class": "Vanguard",
-    "trait": "敵を2体までブロック"
+    "trait": "敵を2体までブロック<br><span class=\"keyword\">配置可能数</span>にカウントされない、再配置までの時間が極めて長い"
   },
   "charger": {
     "branchName": "突撃兵",
@@ -330,9 +330,9 @@
     "trait": "<span class=\"keyword\">術攻撃</span>を行う<br>敵を倒すことで<span class=\"keyword\">召喚物</span>を召喚可能<br>自身の<span class=\"keyword\">召喚物</span>にブロックされている敵を攻撃可能"
   },
   "primguard": {
-    "branchName": "本源近卫",
+    "branchName": "本源戦士",
     "class": "Guard",
-    "trait": "能够阻挡两个敌人，可以造成<span class=\"keyword\">元素伤害</span>"
+    "trait": "敵を2体までブロック<br><span class=\"keyword\">元素ダメージ</span>を与える能力を持つ"
   },
   "counsellor": {
     "branchName": "策士",

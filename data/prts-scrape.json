@@ -1676,33 +1676,30 @@
   "skinObtainSourceAndCosts": {
     "char_002_amiya@winter#1": {
       "obtainSources": [
-        "Event",
-        "Contingency Contract Store"
+        "Event"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_181_flower@daily#1": {
       "obtainSources": [
-        "Event",
-        "Contingency Contract Store"
+        "Event"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_002_amiya@epoque#4": {
       "obtainSources": [
-        "Event",
-        "Contingency Contract Store"
+        "Event"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_202_demkni@test#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_002_amiya@test#1": {
@@ -1752,7 +1749,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_121_lava@sale#9": {
@@ -1780,21 +1777,21 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 24,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1032_excu2@sale#12": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 24,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1037_amiya3@sale#13": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_124_kroos@sale#14": {
@@ -1808,14 +1805,14 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 24,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_332_archet@sale#14": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_003_kalts@sale#14": {
@@ -1827,19 +1824,17 @@
     },
     "char_208_melan@epoque#1": {
       "obtainSources": [
-        "Event",
-        "Contingency Contract Store"
+        "Event"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_109_fmout@epoque#2": {
       "obtainSources": [
-        "Event",
-        "Contingency Contract Store"
+        "Event"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_128_plosis@epoque#3": {
       "obtainSources": [
@@ -1852,15 +1847,15 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_215_mantic@epoque#4": {
       "obtainSources": [
         "Contingency Contract Store"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_164_nightm@epoque#5": {
       "obtainSources": [
@@ -1873,42 +1868,42 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_274_astesi@epoque#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_220_grani@epoque#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_113_cqbw@epoque#7": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 24,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_102_texas@epoque#7": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_130_doberm@epoque#7": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_355_ethan@epoque#7": {
@@ -1920,31 +1915,30 @@
     },
     "char_253_greyy@epoque#8": {
       "obtainSources": [
-        "Event",
-        "Contingency Contract Store"
+        "Event"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_344_beewax@epoque#9": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_343_tknogi@epoque#9": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_181_flower@epoque#9": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_258_podego@epoque#9": {
@@ -1965,28 +1959,28 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_485_pallas@epoque#12": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_197_poca@epoque#12": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_218_cuttle@epoque#12": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_151_myrtle@epoque#12": {
@@ -2000,28 +1994,28 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_479_sleach@epoque#14": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_473_mberry@epoque#14": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_402_tuye@epoque#14": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_337_utage@epoque#15": {
@@ -2035,56 +2029,56 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_475_akafyu@epoque#15": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_496_wildmn@epoque#16": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_472_pasngr@epoque#17": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 24,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1014_nearl2@epoque#17": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_391_rosmon@epoque#17": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_449_glider@epoque#17": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_101_sora@epoque#17": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_492_quercu@epoque#17": {
@@ -2098,7 +2092,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_485_pallas@epoque#19": {
@@ -2112,70 +2106,70 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4036_forcer@epoque#20": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_358_lisa@epoque#22": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_388_mint@epoque#22": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_336_folivo@epoque#22": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_274_astesi@epoque#23": {
       "obtainSources": [
         "Contingency Contract Store"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_4039_horn@epoque#24": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4045_heidi@epoque#24": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_297_hamoni@epoque#24": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_135_halo@epoque#25": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_209_ardign@epoque#26": {
@@ -2189,7 +2183,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_126_shotst@epoque#28": {
@@ -2203,35 +2197,35 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 24,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_222_bpipe@epoque#28": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_405_absin@epoque#28": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_431_ashlok@epoque#28": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4017_puzzle@epoque#29": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_212_ansel@epoque#29": {
@@ -2245,14 +2239,14 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_388_mint@epoque#30": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_183_skgoat@epoque#30": {
@@ -2266,84 +2260,84 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_489_serum@epoque#31": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_464_cement@epoque#31": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_440_pinecn@epoque#31": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1031_slent2@epoque#32": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_474_glady@epoque#33": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4065_judge@epoque#33": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4006_melnte@epoque#33": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1016_agoat2@epoque#34": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 24,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_488_buildr@epoque#34": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4106_bryota@epoque#34": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1028_texas2@epoque#36": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_499_kaitou@epoque#37": {
@@ -2357,56 +2351,56 @@
       "obtainSources": [
         "Contingency Contract Store"
       ],
-      "cost": 2000,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_4098_vvana@epoque#40": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_222_bpipe@epoque#40": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_289_gyuki@epoque#40": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4119_wanqin@epoque#41": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4146_nymph@epoque#42": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4102_threye@epoque#42": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_260_durnar@epoque#42": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_190_clour@epoque#43": {
@@ -2420,28 +2414,28 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4079_haini@epoque#45": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4066_highmo@epoque#45": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4137_udflow@epoque#46": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_154_morgan@epoque#47": {
@@ -2455,7 +2449,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_445_wscoot@epoque#49": {
@@ -2476,50 +2470,49 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_308_swire@nian#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_107_liskam@nian#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_235_jesica@nian#2": {
       "obtainSources": [
-        "Event",
-        "Contingency Contract Store"
+        "Event"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_2014_nian@nian#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_225_haak@nian#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_226_hmau@nian#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_436_whispr@nian#4": {
@@ -2533,35 +2526,35 @@
       "obtainSources": [
         "Contingency Contract Store"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_1011_lava2@nian#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_2015_dusk@nian#7": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_455_nothin@nian#7": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_241_panda@nian#7": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_469_indigo@nian#7": {
@@ -2575,7 +2568,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_476_blkngt@nian#8": {
@@ -2589,49 +2582,49 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_497_ctable@nian#9": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_473_mberry@nian#9": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_2024_chyue@nian#10": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4080_lin@nian#10": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4066_highmo@nian#10": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_449_glider@nian#10": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_385_finlpp@nian#11": {
@@ -2645,49 +2638,49 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_369_bena@epoque#38": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_2025_shu@nian#11": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4121_zuole@nian#11": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_136_hsguma@nian#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_2013_cerber@whirlwind#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_243_waaifu@whirlwind#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_347_jaksel@whirlwind#2": {
@@ -2701,49 +2694,49 @@
       "obtainSources": [
         "Contingency Contract Store"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_366_acdrop@whirlwind#4": {
       "obtainSources": [
         "Contingency Contract Store"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_430_fartth@whirlwind#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4025_aprot2@whirlwind#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4071_peper@whirlwind#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_131_flameb@whirlwind#6": {
       "obtainSources": [
         "Contingency Contract Store"
       ],
-      "cost": 2000,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_4011_lessng@whirlwind#7": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4131_odda@whirlwind#8": {
@@ -2764,49 +2757,49 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4078_bdhkgt@yun#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4122_grabds@yun#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_128_plosis@yun#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4083_chimes@yun#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4130_luton@yun#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4055_bgsnow@yun#7": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_325_bison@yun#7": {
@@ -2820,42 +2813,42 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_254_vodfox@yun#8": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4155_talr@yun#9": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_147_shining@summer#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_166_skfire@summer#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_290_vigna@summer#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_212_ansel@summer#1": {
@@ -2867,95 +2860,93 @@
     },
     "char_199_yak@summer#1": {
       "obtainSources": [
-        "Event",
-        "Contingency Contract Store"
+        "Event"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_286_cast3@summer#1": {
       "obtainSources": [
-        "Event",
-        "Contingency Contract Store"
+        "Event"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_134_ifrit@summer#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_101_sora@summer#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_196_sunbr@summer#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_148_nearl@summer#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_236_rope@summer#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_263_skadi@summer#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_145_prove@summer#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_204_platnm@summer#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_172_svrash@summer#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_2013_cerber@summer#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_201_moeshd@summer#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_337_utage@summer#4": {
@@ -2969,21 +2960,21 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_291_aglina@summer#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_411_tomimi@summer#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_298_susuro@summer#6": {
@@ -2997,77 +2988,77 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_311_mudrok@summer#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_333_sidero@summer#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_272_strong@summer#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_171_bldsk@summer#7": {
       "obtainSources": [
         "Contingency Contract Store"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_426_billro@summer#8": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_131_flameb@summer#8": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_476_blkngt@summer#8": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_350_surtr@summer#9": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_421_crow@summer#9": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_401_elysm@summer#9": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_484_robrta@summer#10": {
@@ -3081,21 +3072,21 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4072_ironmn@summer#11": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_344_beewax@summer#11": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_302_glaze@summer#11": {
@@ -3109,21 +3100,21 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_377_gdglow@summer#12": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_151_myrtle@summer#12": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4041_chnut@summer#12": {
@@ -3144,7 +3135,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_341_sntlla@summer#15": {
@@ -3172,28 +3163,28 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_2012_typhon@summer#17": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4032_provs@summer#17": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4062_totter@summer#17": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4100_caper@summer#18": {
@@ -3207,78 +3198,78 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1013_chen2@summer#20": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_450_necras@summer#20": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_133_mm@summer#20": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_366_acdrop@summer#21": {
       "obtainSources": [
         "Contingency Contract Store"
       ],
-      "cost": 2000,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_241_panda@marthe#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_115_headbr@marthe#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_129_bluep@marthe#3": {
       "obtainSources": [
         "Contingency Contract Store"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_356_broca@marthe#4": {
       "obtainSources": [
         "Contingency Contract Store"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_263_skadi@marthe#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_192_falco@marthe#6": {
       "obtainSources": [
         "Contingency Contract Store"
       ],
-      "cost": 2000,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_376_therex@marthe#7": {
       "obtainSources": [
@@ -3298,57 +3289,56 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_179_cgbird@witch#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_171_bldsk@witch#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_124_kroos@witch#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_236_rope@witch#1": {
       "obtainSources": [
-        "Event",
-        "Contingency Contract Store"
+        "Event"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_423_blemsh@witch#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_254_vodfox@witch#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_383_snsant@witch#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_328_cammou@witch#2": {
@@ -3362,77 +3352,77 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_338_iris@witch#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4016_kazema@witch#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4048_doroth@witch#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_300_phenxi@witch#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_492_quercu@witch#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_436_whispr@witch#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4116_blkkgt@witch#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_017_huang@witch#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4109_baslin@witch#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_281_popka@witch#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_123_fang@winter#1": {
@@ -3446,42 +3436,42 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_143_ghost@winter#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_198_blackd@winter#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_252_bibeak@winter#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_271_spikes@winter#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_237_gravel@winter#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_108_silent@winter#2": {
@@ -3502,7 +3492,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_298_susuro@winter#4": {
@@ -3516,71 +3506,70 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_172_svrash@snow#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_174_slbell@snow#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_209_ardign@snow#1": {
       "obtainSources": [
-        "Event",
-        "Contingency Contract Store"
+        "Event"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_400_weedy@snow#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_401_elysm@snow#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_158_milu@snow#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_426_billro@snow#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_373_lionhd@snow#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_214_kafka@snow#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_452_bstalk@snow#4": {
@@ -3594,21 +3583,21 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4043_erato@snow#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1027_greyy2@snow#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4004_pudd@snow#5": {
@@ -3622,107 +3611,105 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_343_tknogi@snow#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_466_qanik@snow#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4114_harold@snow#7": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_103_angel@wild#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_173_slchan@wild#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_150_snakek@wild#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_117_myrrh@wild#1": {
       "obtainSources": [
-        "Event",
-        "Contingency Contract Store"
+        "Event"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_112_siege@wild#2": {
       "obtainSources": [
-        "Event",
-        "Contingency Contract Store"
+        "Event"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
     },
     "char_158_milu@wild#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_235_jesica@wild#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_358_lisa@wild#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_373_lionhd@wild#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_365_aprl@wild#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_345_folnic@wild#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_145_prove@wild#5": {
@@ -3736,35 +3723,35 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4055_bgsnow@wild#7": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4032_provs@wild#7": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_185_frncat@wild#7": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4047_pianst@wild#8": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_2012_typhon@wild#9": {
@@ -3785,105 +3772,105 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_108_silent@sweep#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_235_jesica@sweep#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_340_shwaz@striker#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_107_liskam@striker#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_112_siege@striker#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_155_tiger@striker#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_149_scave@striker#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4104_coldst@striker#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_202_demkni@boc#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_291_aglina@boc#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_140_whitew@boc#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_279_excu@boc#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_367_swllow@boc#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_283_midn@boc#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_122_beagle@boc#1": {
@@ -3897,42 +3884,42 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_118_yuki@boc#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_264_f12yin@boc#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_416_zumama@boc#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_294_ayer@boc#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_415_flint@boc#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_284_spot@boc#3": {
@@ -3946,21 +3933,21 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_206_gnosis@boc#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_422_aurora@boc#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_285_medic2@boc#4": {
@@ -3981,35 +3968,35 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_003_kalts@boc#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 24,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1023_ghost2@boc#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1013_chen2@boc#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4046_ebnhlz@boc#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_278_orchid@boc#6": {
@@ -4030,21 +4017,21 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 24,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4087_ines@boc#8": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_293_thorns@boc#8": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_230_savage@boc#8": {
@@ -4058,7 +4045,7 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4136_phonor@boc#9": {
@@ -4079,28 +4066,28 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_195_glassb@kitchen#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_137_brownb@kitchen#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_498_inside@kitchen#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_230_savage@kitchen#3": {
@@ -4114,28 +4101,28 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_250_phatom@ghost#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_242_otter@ghost#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_326_glacus@ghost#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_277_sqrrel@ghost#1": {
@@ -4149,126 +4136,133 @@
       "obtainSources": [
         "Contingency Contract Store"
       ],
-      "cost": 300,
-      "tokenType": "Contingency Contract Token"
+      "cost": null,
+      "tokenType": null
+    },
+    "char_349_chiave@race#2": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
     },
     "char_017_huang@as#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_198_blackd@as#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_290_vigna@as#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_311_mudrok@ambienceSynesthesia#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_486_takila@ambienceSynesthesia#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_261_sddrag@ambienceSynesthesia#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4042_lumen@ambienceSynesthesia#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4009_irene@ambienceSynesthesia#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_484_robrta@ambienceSynesthesia#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_172_svrash@ambienceSynesthesia#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4027_heyak@ambienceSynesthesia#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1033_swire2@ambienceSynesthesia#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4087_ines@ambienceSynesthesia#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4072_ironmn@ambienceSynesthesia#5": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_249_mlyss@ambienceSynesthesia#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4133_logos@ambienceSynesthesia#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_213_mostma@ambienceSynesthesia#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_103_angel@kfc#1": {
@@ -4303,14 +4297,14 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_459_tachak@rainbow6#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_293_thorns@it#1": {
@@ -4318,70 +4312,70 @@
         "Outfit Store",
         "Redemption Code"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_350_surtr@it#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_115_headbr@it#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_358_lisa@lxh#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4040_rockr@lxh#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4077_palico@mh#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1001_amiya2@casc#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_2023_ling@ncg#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4082_qiubai@ncg#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_106_franka@ncg#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4019_ncdeer@ncdeer#1": {
@@ -4395,126 +4389,147 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4125_rdoc@rainbow6#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4124_iana@rainbow6#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_322_lmlee@sanrio#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_377_gdglow@sanrio#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4091_ulika@sanrio#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4141_marcil@dungeon#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1034_jesca2@cfa#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_2014_nian@cfa#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_2024_chyue@cfa#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 24,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_151_myrtle@taiko#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4182_oblvns@avemujica#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4186_tmoris@avemujica#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4184_dolris@avemujica#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4185_amoris@avemujica#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4183_mortis@avemujica#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_180_amgoat@sanrio#2": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_1032_excu2@sanrio#2": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4042_lumen@sanrio#2": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_332_archet@shining#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_274_astesi@shining#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_440_pinecn@shining#1": {
@@ -4528,14 +4543,14 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4117_ray@shining#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4017_puzzle@shining#3": {
@@ -4556,42 +4571,42 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_346_aosta@game#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_478_kirara@game#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 15,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_306_leizi@game#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4009_irene@game#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1021_kroos2@game#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_240_wyvern@game#4": {
@@ -4605,77 +4620,77 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_437_mizuki@game#6": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1028_texas2@iteration#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1012_skadi2@iteration#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 24,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_129_bluep@iteration#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4064_mlynar@iteration#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4132_ascln@iteration#4": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_297_hamoni@unveiling#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_271_spikes@unveiling#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_164_nightm@unveiling#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_1024_hbisc2@unveiling#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4107_vrdant@unveiling#3": {
@@ -4689,35 +4704,35 @@
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4088_hodrer@sightseer#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_400_weedy@sightseer#1": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4058_pepe@sightseer#2": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 21,
+      "cost": 0,
       "tokenType": "Originium Prime"
     },
     "char_4140_lasher@sightseer#3": {
       "obtainSources": [
         "Outfit Store"
       ],
-      "cost": 18,
+      "cost": 0,
       "tokenType": "Originium Prime"
     }
   }
