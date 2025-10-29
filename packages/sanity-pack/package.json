@@ -2,9 +2,14 @@
 	"name": "sanity-pack",
 	"version": "0.2.0",
 	"scripts": {
-		"sanity-pack:download": "poetry run sanity_pack download",
-		"sanity-pack:unpack": "poetry run sanity_pack unpack",
-		"sanity-pack:process": "poetry run sanity_pack process",
-		"sanity-pack:run": "turbo sanity-pack:download sanity-pack:unpack sanity-pack:process"
+		"sanity-pack:download": "poetry run sanity-pack download",
+		"sanity-pack:unpack": "poetry run sanity-pack unpack",
+		"sanity-pack:process": "poetry run sanity-pack pipeline",
+		"sanity-pack:run": "turbo sanity-pack:download sanity-pack:unpack sanity-pack:pipeline",
+
+		"sanity-pack:fbs:download": "poetry run sanity-pack download -c config-fbs.json",
+		"sanity-pack:fbs:unpack": "poetry run sanity-pack unpack -c config-fbs.json",
+		"sanity-pack:fbs:process": "poetry run sanity-pack fbs download -c config-fbs.json && poetry run sanity-pack fbs process -c config-fbs.json",
+		"sanity-pack:fbs:run": "turbo sanity-pack:fbs:download sanity-pack:fbs:unpack sanity-pack:fbs:process"
 	}
 }

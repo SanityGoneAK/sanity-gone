@@ -11,6 +11,7 @@ from sanity_pack.utils.logger import log
 
 VERSION_URLS: dict[ServerRegion, str] = {
     ServerRegion.CN: "https://ak-conf.hypergryph.com/config/prod/official/Android/version",
+    ServerRegion.TW: "https://ak-conf-tw.gryphline.com/config/prod/official/Android/version",
     ServerRegion.EN: "https://ark-us-static-online.yo-star.com/assetbundle/official/Android/version",
     ServerRegion.JP: "https://ark-jp-static-online.yo-star.com/assetbundle/official/Android/version",
     ServerRegion.KR: "https://ark-kr-static-online-1300509597.yo-star.com/assetbundle/official/Android/version",
@@ -18,6 +19,7 @@ VERSION_URLS: dict[ServerRegion, str] = {
 
 ASSET_BASE_URLS: dict[ServerRegion, str] = {
     ServerRegion.CN: "https://ak.hycdn.cn/assetbundle/official/Android",
+    ServerRegion.TW: "https://ak-tw.hg-cdn.com/assetbundle/official/Android",
     ServerRegion.EN: "https://ark-us-static-online.yo-star.com/assetbundle/official/Android",
     ServerRegion.JP: "https://ark-jp-static-online.yo-star.com/assetbundle/official/Android",
     ServerRegion.KR: "https://ark-kr-static-online-1300509597.yo-star.com/assetbundle/official/Android",

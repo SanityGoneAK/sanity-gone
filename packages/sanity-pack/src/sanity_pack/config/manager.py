@@ -86,6 +86,7 @@ class ConfigManager:
         return Config(
             output_dir=Path("./assets"),
             cache_dir=Path("./cache"),
+            fbs_dir=Path("./fbs"),
             unpack_mode=UnpackMode.ARKNIGHTS_STUDIO,
             servers={
                 ServerRegion.CN: ServerConfig(

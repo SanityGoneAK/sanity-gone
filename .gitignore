@@ -33,5 +33,6 @@ _old
 packages/sanity-pack/assets
 packages/sanity-pack/.logs
 packages/sanity-pack/ArknightsStudioCLI/
+packages/sanity-pack/fbs/assets/
 
 .idea/workspace.xml

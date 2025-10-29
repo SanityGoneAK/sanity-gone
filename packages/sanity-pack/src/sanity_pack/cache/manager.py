@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Optional
 from sanity_pack.utils.logger import log
 
-from sanity_pack.cache.models import VersionCache, AssetCache
+from sanity_pack.cache.models import VersionCache, AssetCache, FlatBuffersCache
 from sanity_pack.config.models import ServerRegion
 
 class CacheManager:
@@ -13,6 +13,7 @@ class CacheManager:
 
     VERSION_CACHE_NAME = "versions.json"
     ASSET_CACHE_NAME = "assets.json"
+    FLATBUFFERS_CACHE_NAME = "flatbuffers.json"
 
     def __init__(self, cache_dir: Path):
         """
@@ -26,9 +27,11 @@ class CacheManager:
         
         self.version_cache_path = self.cache_dir / self.VERSION_CACHE_NAME
         self.asset_cache_path = self.cache_dir / self.ASSET_CACHE_NAME
+        self.flatbuffers_cache_path = self.cache_dir / self.FLATBUFFERS_CACHE_NAME
         
         self._version_cache: Optional[VersionCache] = None
         self._asset_cache: Optional[AssetCache] = None
+        self._flatbuffers_cache: Optional[FlatBuffersCache] = None
 
     # ========== Version Cache Methods ==========
 
@@ -175,18 +178,86 @@ class CacheManager:
             self._asset_cache = self.load_assets()
         return self._asset_cache
 
-    # ========== Combined Operations ==========
+    # ========== FlatBuffers Cache Methods ==========
 
-    def reload_all(self) -> tuple[VersionCache, AssetCache]:
+    def load_flatbuffers(self) -> FlatBuffersCache:
         """
-        Reload both version and asset caches.
+        Load FlatBuffers cache from file.
 
         Returns:
-            Tuple of (VersionCache, AssetCache)
+            FlatBuffersCache object
+        """
+        if not self.flatbuffers_cache_path.exists():
+            log.warning(
+                f"[yellow]FlatBuffers cache not found, creating new one[/yellow]"
+            )
+            self._flatbuffers_cache = FlatBuffersCache()
+            return self._flatbuffers_cache
+
+        try:
+            with open(self.flatbuffers_cache_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            
+            # Convert string keys to ServerRegion enums
+            converted_data = {
+                "schemas": {
+                    ServerRegion(region): schemas 
+                    for region, schemas in data.items()
+                }
+            }
+            self._flatbuffers_cache = FlatBuffersCache.model_validate(converted_data)
+            return self._flatbuffers_cache
+        except json.JSONDecodeError as e:
+            log.exception(f"[red]Invalid JSON in FlatBuffers cache: {e}[/red]")
+            self._flatbuffers_cache = FlatBuffersCache()
+            return self._flatbuffers_cache
+        except Exception as e:
+            log.exception(f"[red]Failed to load FlatBuffers cache[/red]")
+            self._flatbuffers_cache = FlatBuffersCache()
+            return self._flatbuffers_cache
+
+    def save_flatbuffers(self, cache: Optional[FlatBuffersCache] = None) -> None:
+        """
+        Save FlatBuffers cache to file.
+
+        Args:
+            cache: FlatBuffersCache to save. If None, saves the current cache.
+        """
+        if cache is None:
+            cache = self.get_flatbuffers()
+        
+        with open(self.flatbuffers_cache_path, "w", encoding="utf-8") as f:
+            # Save in per-server format: {"CN": {"schema": "commit"}, "EN": {"schema": "commit"}}
+            data = {
+                region.value: schemas
+                for region, schemas in cache.schemas.items()
+            }
+            json.dump(data, f, indent=2, ensure_ascii=False)
+
+    def get_flatbuffers(self) -> FlatBuffersCache:
+        """
+        Get FlatBuffers cache, loading if necessary.
+
+        Returns:
+            FlatBuffersCache object
+        """
+        if self._flatbuffers_cache is None:
+            self._flatbuffers_cache = self.load_flatbuffers()
+        return self._flatbuffers_cache
+
+    # ========== Combined Operations ==========
+
+    def reload_all(self) -> tuple[VersionCache, AssetCache, FlatBuffersCache]:
+        """
+        Reload all caches.
+
+        Returns:
+            Tuple of (VersionCache, AssetCache, FlatBuffersCache)
         """
         self._version_cache = None
         self._asset_cache = None
-        return self.get_versions(), self.get_assets()
+        self._flatbuffers_cache = None
+        return self.get_versions(), self.get_assets(), self.get_flatbuffers()
 
     def get_stats(self) -> dict:
         """
@@ -197,14 +268,21 @@ class CacheManager:
         """
         versions = self.get_versions()
         assets = self.get_assets()
+        flatbuffers = self.get_flatbuffers()
         
         return {
             "version_cache_exists": self.version_cache_path.exists(),
             "asset_cache_exists": self.asset_cache_path.exists(),
+            "flatbuffers_cache_exists": self.flatbuffers_cache_path.exists(),
             "tracked_servers": len(versions.versions),
             "cached_assets": assets.get_assets_count(),
+            "cached_schemas": flatbuffers.get_schemas_count(),
             "assets_per_region": {
                 region.value: assets.get_assets_count(region)
+                for region in ServerRegion
+            },
+            "schemas_per_region": {
+                region.value: flatbuffers.get_schemas_count(region)
                 for region in ServerRegion
             }
         }
@@ -257,3 +335,16 @@ def get_asset_cache(cache_dir: Optional[Path] = None) -> AssetCache:
         AssetCache object
     """
     return get_cache_manager(cache_dir).get_assets()
+
+
+def get_flatbuffers_cache(cache_dir: Optional[Path] = None) -> FlatBuffersCache:
+    """
+    Convenience function to get FlatBuffers cache.
+
+    Args:
+        cache_dir: Cache directory (only used on first call)
+
+    Returns:
+        FlatBuffersCache object
+    """
+    return get_cache_manager(cache_dir).get_flatbuffers()

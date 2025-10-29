@@ -1,6 +1,7 @@
 {
 	"output_dir": "./assets",
 	"cache_dir": "./cache",
+	"fbs_dir": "./fbs",
 	"unpack_mode": "arknights_studio",
 	"arknights_studio": {
 		"cli_dll_path": "./ArknightsStudioCLI/ArknightsStudioCLI.dll"

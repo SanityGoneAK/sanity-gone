@@ -9,6 +9,7 @@ from typing import Optional
 class ServerRegion(str, Enum):
     """Available server regions."""
     CN = "CN"
+    TW = "TW"
     EN = "EN"
     JP = "JP"
     KR = "KR"
@@ -55,6 +56,7 @@ class Config(BaseModel):
     """Main configuration for Sanity Pack."""
     output_dir: Path = Field(default=Path("./assets"), description="Directory for extracted data")
     cache_dir: Path = Field(default=Path("./cache"), description="Directory for cache files")
+    fbs_dir: Path = Field(default=Path("./fbs"), description="Directory for flatbuffer schemas")
     unpack_mode: UnpackMode = Field(default=UnpackMode.ARKNIGHTS_STUDIO, description="Method of unpacking assets")
     arknights_studio: Optional[ArknightsStudioConfig] = Field(
         default=None,

@@ -129,3 +129,58 @@ class AssetCache(BaseModel):
             if self.is_hash_changed(region, path, hash_value):
                 changed[path] = hash_value
         return changed
+
+
+class FlatBuffersCache(BaseModel):
+    """Cache for FlatBuffers schema commit mappings per server region."""
+    schemas: Dict[ServerRegion, Dict[str, str]] = Field(
+        default_factory=dict,
+        description="Per-region schema name to commit hash mapping"
+    )
+
+    def get_commit(self, region: ServerRegion, schema: str) -> str | None:
+        """Get commit hash for a specific schema in a region."""
+        return self.schemas.get(region, {}).get(schema)
+
+    def set_commit(self, region: ServerRegion, schema: str, commit: str) -> None:
+        """Set commit hash for a specific schema in a region."""
+        if region not in self.schemas:
+            self.schemas[region] = {}
+        self.schemas[region][schema] = commit
+
+    def has_schema(self, region: ServerRegion, schema: str) -> bool:
+        """Check if schema exists in cache for a region."""
+        return schema in self.schemas.get(region, {})
+
+    def is_commit_changed(self, region: ServerRegion, schema: str, commit: str) -> bool:
+        """
+        Check if commit has changed for a schema in a region.
+        
+        Returns:
+            True if commit changed or doesn't exist, False otherwise
+        """
+        if not self.has_schema(region, schema):
+            return True
+        return self.schemas[region][schema] != commit
+
+    def remove_schema(self, region: ServerRegion, schema: str) -> None:
+        """Remove schema from cache for a region."""
+        if region in self.schemas:
+            self.schemas[region].pop(schema, None)
+
+    def clear(self, region: ServerRegion | None = None) -> None:
+        """Clear schemas from cache. If region is None, clears all."""
+        if region is None:
+            self.schemas.clear()
+        elif region in self.schemas:
+            self.schemas[region].clear()
+
+    def get_schemas_count(self, region: ServerRegion | None = None) -> int:
+        """Get total number of cached schemas. If region is None, returns total across all regions."""
+        if region is None:
+            return sum(len(schemas) for schemas in self.schemas.values())
+        return len(self.schemas.get(region, {}))
+
+    def get_all_schemas(self, region: ServerRegion) -> Dict[str, str]:
+        """Get all schemas for a specific region."""
+        return self.schemas.get(region, {}).copy()

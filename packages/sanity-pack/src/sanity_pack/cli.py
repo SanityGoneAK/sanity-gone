@@ -10,7 +10,8 @@ from sanity_pack.config import (
     UnpackMode,
 )
 from sanity_pack.config import app as config_command
-from sanity_pack.cache import app as cache_command
+from sanity_pack.fbs import app as arknights_fbs_command
+from sanity_pack.cache import app as cache_command, get_cache_manager
 from sanity_pack.utils.logger import log
 from sanity_pack.downloader.asset import ArknightsAssets
 from sanity_pack.utils.unpacker import get_unpacker
@@ -19,6 +20,7 @@ from sanity_pack.pipelines import PipelineManager
 app = typer.Typer(help="Sanity Pack CLI")
 app.add_typer(config_command, name="config")
 app.add_typer(cache_command, name="cache")
+app.add_typer(arknights_fbs_command, name="fbs")
 console = Console()
 
 
@@ -35,18 +37,24 @@ def download(
         help="Path to config file"
     ),
     concurrency: int = typer.Option(
-        64,
+        48,
         "--concurrency",
         help="Max concurrent downloads",
     ),
 ):
     """Download latest game data via hot update"""
     config = get_config(config_file)
+    cache_mgr = get_cache_manager(config.cache_dir)
 
     regions = [region] if region else config.get_enabled_servers()
 
     log.info(f"[bold green]Downloading from regions: {', '.join(r.value for r in regions)}[/bold green]")
     log.info(f"Output directory: {config.output_dir}")
+
+    asset_cache = cache_mgr.get_assets()
+
+    for region in regions:
+        asset_cache.assets[region] = {}
 
     # Execute downloads in parallel threads
     with ThreadPoolExecutor(max_workers=len(regions)) as executor:
@@ -80,7 +88,7 @@ def unpack(
         help="Path to config file"
     ),
     concurrency: int = typer.Option(
-        40,
+        30,
         "--concurrency",
         help="Max concurrent extractions",
     ),
