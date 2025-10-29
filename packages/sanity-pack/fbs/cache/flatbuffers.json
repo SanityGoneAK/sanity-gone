@@ -51,7 +51,9 @@
 		"character_table": "3cd83986000ba0bd4a88d78a636558cb7505684a",
 		"building_local_data": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
 		"enemy_database": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
-		"prts___levels": "3cd83986000ba0bd4a88d78a636558cb7505684a"
+		"prts___levels": "3cd83986000ba0bd4a88d78a636558cb7505684a",
+		"init_text": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
+		"main_text": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a"
 	},
 	"TW": {
 		"buff_table": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
@@ -105,7 +107,9 @@
 		"gacha_table": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
 		"building_local_data": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
 		"enemy_database": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
-		"prts___levels": "ab9749987ce58650d328d28a6545476fb5269070"
+		"prts___levels": "ab9749987ce58650d328d28a6545476fb5269070",
+		"init_text": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
+		"main_text": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a"
 	},
 	"CN": {
 		"buff_table": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
@@ -162,6 +166,8 @@
 		"charm_table": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
 		"building_local_data": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
 		"enemy_database": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
-		"prts___levels": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a"
+		"prts___levels": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
+		"init_text": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a",
+		"main_text": "3cc62e82842f8b54c4fd20973e8be9ed3dd1732a"
 	}
 }
