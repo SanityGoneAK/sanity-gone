@@ -1439,6 +1439,14 @@
     "usage": "用于提升冬时的潜能。",
     "rarity": 4
   },
+  "p_char_4051_akkord": {
+    "itemId": "p_char_4051_akkord",
+    "name": "协律的信物",
+    "iconId": "p_char_4051_akkord",
+    "description": "一盆被刻印了音乐术式的蓝色夜光植物，和它说话能够听到它的嗡鸣。协律说，这样心情就会变好，睡觉也能更香。也不知道真的假的。",
+    "usage": "用于提升协律的潜能。",
+    "rarity": 4
+  },
   "p_char_128_plosis": {
     "itemId": "p_char_128_plosis",
     "name": "フィリオプシスの印",
@@ -2863,6 +2871,22 @@
     "usage": "用于提升折桠的潜能。",
     "rarity": 5
   },
+  "p_char_4211_snhunt": {
+    "itemId": "p_char_4211_snhunt",
+    "name": "雪猎的信物",
+    "iconId": "p_char_4211_snhunt",
+    "description": "一小团裂云兽的绒毛。她说，如果在雪山中迷了路，裂云兽和她就能凭着这团绒毛的气味找到你，将你带出这漫天的风雪，她相信自己能够做到。",
+    "usage": "用于提升雪猎的潜能。",
+    "rarity": 5
+  },
+  "p_char_394_hadiya": {
+    "itemId": "p_char_394_hadiya",
+    "name": "哈蒂娅的信物",
+    "iconId": "p_char_394_hadiya",
+    "description": "一片从她的战杖上更换下来的形状特别的刃片。哈蒂娅向你承诺，未来这片刀刃将会成为沙漠里人人认可的通行证。",
+    "usage": "用于提升哈蒂娅的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "エクシアの印",
@@ -3805,6 +3829,30 @@
     "iconId": "p_char_4204_mantra",
     "description": "一枚升级过的信号接收器，能帮助她更轻松地与人“交流”。将它别在身上吧，如果你希望她时不时回应你的脑中所想。",
     "usage": "用于提升真言的潜能。",
+    "rarity": 6
+  },
+  "p_char_1045_svash2": {
+    "itemId": "p_char_1045_svash2",
+    "name": "凛御银灰的信物",
+    "iconId": "p_char_1045_svash2",
+    "description": "与他的佩剑配套的剑鞘。用源石冰晶制成，永远不会损毁。",
+    "usage": "用于提升凛御银灰的潜能。",
+    "rarity": 6
+  },
+  "p_char_1046_sbell2": {
+    "itemId": "p_char_1046_sbell2",
+    "name": "圣聆初雪的信物",
+    "iconId": "p_char_1046_sbell2",
+    "description": "一只存放着香料的小木匣，带有蔓珠院熏香的气味。她依照谢拉格礼待密友的习俗将它交给你。",
+    "usage": "用于提升圣聆初雪的潜能。",
+    "rarity": 6
+  },
+  "p_char_1047_halo2": {
+    "itemId": "p_char_1047_halo2",
+    "name": "溯光星源的信物",
+    "iconId": "p_char_1047_halo2",
+    "description": "一份未被命名的手稿，也是一扇通往新领域的窄门。她在一个清晨把它放在你的办公桌上。",
+    "usage": "用于提升溯光星源的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {

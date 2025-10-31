@@ -338,5 +338,10 @@
     "branchName": "策士",
     "class": "Vanguard",
     "trait": "能够阻挡两个敌人，可以支援待部署区的我方单位"
+  },
+  "mercenary": {
+    "branchName": "佣兵",
+    "class": "Guard",
+    "trait": "可消耗部署费用来强化作战能力"
   }
 }
