@@ -1671,6 +1671,30 @@
     "真言": {
       "isLimited": false,
       "releaseOrder": 418
+    },
+    "协律": {
+      "isLimited": false,
+      "releaseOrder": 419
+    },
+    "哈蒂娅": {
+      "isLimited": false,
+      "releaseOrder": 420
+    },
+    "雪猎": {
+      "isLimited": false,
+      "releaseOrder": 421
+    },
+    "溯光星源": {
+      "isLimited": false,
+      "releaseOrder": 422
+    },
+    "圣聆初雪": {
+      "isLimited": false,
+      "releaseOrder": 423
+    },
+    "凛御银灰": {
+      "isLimited": true,
+      "releaseOrder": 424
     }
   },
   "skinObtainSourceAndCosts": {
@@ -1821,6 +1845,13 @@
       ],
       "cost": null,
       "tokenType": null
+    },
+    "char_1038_whitw2@sale#15": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
     },
     "char_208_melan@epoque#1": {
       "obtainSources": [
@@ -2453,6 +2484,34 @@
       "tokenType": "Originium Prime"
     },
     "char_445_wscoot@epoque#49": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
+    "char_4134_cetsyr@epoque#50": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_1019_siege2@epoque#50": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4027_heyak@epoque#50": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_127_estell@epoque#50": {
       "obtainSources": [
         "Event"
       ],
