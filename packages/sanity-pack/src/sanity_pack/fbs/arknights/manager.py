@@ -160,7 +160,7 @@ class FlatBuffersSchemaManager:
     def get_schema(self, schema: str, commit: str) -> Path:
         """Extract a FlatBuffers schema file from the local git repository."""
         schema_file = f"{schema}.fbs"
-        schema_path = self._fbs_dir / self.region.lower() / schema_file
+        schema_path = self._fbs_dir / "raw" / self.region.lower() / schema_file
         
         # Ensure fbs directory exists
         self._fbs_dir.mkdir(parents=True, exist_ok=True)

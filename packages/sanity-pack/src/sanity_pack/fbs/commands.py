@@ -1,5 +1,3 @@
-import logging
-
 import typer
 from typing import Optional
 from pathlib import Path
@@ -8,6 +6,7 @@ import subprocess
 from sanity_pack.utils.logger import log
 from sanity_pack.config import get_config, ServerRegion
 from sanity_pack.fbs.arknights.manager import FlatBuffersSchemaManager
+from sanity_pack.fbs.arknights.python_compiler import FlatBuffersPythonCompiler
 
 app = typer.Typer(help="Arknights Flat Buffer management commands")
 
@@ -74,4 +73,48 @@ def decode(
             log.exception(f"Failed to decode FlatBuffers for region {r.value}: {e}")
     
     log.info(f"[green]✓ Completed FlatBuffers Decoding[/green]")
+
+
+@app.command()
+def compile(
+    region: Optional[ServerRegion] = typer.Option(
+        None,
+        "--region", "-r",
+        help="Server region to compile (if not specified, compiles all enabled)"
+    ),
+    config_file: Optional[Path] = typer.Option(
+        None,
+        "--config", "-c",
+        help="Path to config file (defaults to config-fbs.json)"
+    ),
+    output_dir: Optional[Path] = typer.Option(
+        None,
+        "--output", "-o",
+        help="Output directory for Python files (defaults to fbs_dir/python/{region})"
+    ),
+):
+    """Compile FlatBuffers schema files (.fbs) into Python scripts."""
+    # Default to config-fbs.json if no config specified
+    if config_file is None:
+        config_file = Path("config-fbs.json")
+    
+    config = get_config(config_file)
+    
+    regions = [region] if region else config.get_enabled_servers()
+    
+    log.info(f"Config file: {config_file}")
+    log.info(f"[bold green]Compiling FlatBuffers schemas to Python[/bold green]")
+    log.info(f"FBS directory: {config.fbs_dir}")
+
+    total_count = 0
+    for region in regions:
+        try:
+            compiler = FlatBuffersPythonCompiler(config, region, output_dir)
+            count = compiler.compile_all()
+            total_count += count
+        except Exception as e:
+            log.exception(f"[red]Failed to compile FlatBuffers for region {region.value}: {e}[/red]")
+
+    log.info(f"[bold green]✓ Completed Python compilation: {total_count} total files[/bold green]")
+    return total_count
 
