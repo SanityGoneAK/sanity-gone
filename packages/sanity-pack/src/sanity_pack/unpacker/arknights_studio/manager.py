@@ -161,7 +161,12 @@ class ArknightsStudioExtractor(AssetUnpacker):
                 else:
                     future_path = os.path.join(server_dir, os.path.relpath(current_path, server_dir))
 
+                if os.path.basename(os.path.dirname(current_path)).endswith(".lua"):
+                    os.rename(os.path.dirname(current_path), os.path.dirname(current_path).replace(".lua", ""))
+                    current_path = os.path.join(os.path.dirname(current_path).replace(".lua", ""), file)
+
                 os.makedirs(os.path.dirname(future_path), exist_ok=True)
+                # log.info(f"Moving {os.path.abspath(current_path)} to {os.path.abspath(future_path)}")
                 shutil.move(os.path.abspath(current_path), os.path.abspath(future_path))
             for directory in dirs:
                 full_path = os.path.join(root, directory)
@@ -192,7 +197,7 @@ class ArknightsStudioExtractor(AssetUnpacker):
             )
             thread.start()
             threads.append(thread)
-        
+        #
         # Wait for all threads to complete
         log.info(f"Waiting for {len(threads)} asset processing threads to complete...")
         for thread in threads:
