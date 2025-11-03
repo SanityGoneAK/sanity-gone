@@ -9,15 +9,15 @@
 	"servers": {
 		"CN": {
 			"enabled": true,
-			"path_whitelist": ["arts/charportraits"]
+			"path_whitelist": ["anon"]
+		},
+		"TW": {
+			"enabled": true,
+			"path_whitelist": ["anon"]
 		},
 		"EN": {
-			"enabled": false,
-			"path_whitelist": [
-				"anon",
-				"audio/sound_beta_2/voice_en",
-				"audio/sound_beta_2/voice_custom"
-			]
+			"enabled": true,
+			"path_whitelist": ["anon"]
 		},
 		"JP": {
 			"enabled": false,
@@ -25,7 +25,7 @@
 		},
 		"KR": {
 			"enabled": false,
-			"path_whitelist": ["anon", "audio/sound_beta_2/voice_kr"]
+			"path_whitelist": ["anon"]
 		}
 	}
 }

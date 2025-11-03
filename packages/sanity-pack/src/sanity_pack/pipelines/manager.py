@@ -20,10 +20,10 @@ class PipelineManager:
     
     # Define the default pipeline steps in execution order
     DEFAULT_PIPELINE: List[Type[PipelineStep]] = [
-        ProcessPortraitsStep,
+        # ProcessPortraitsStep,
         # ConvertWavToMp3Step,
-        ProcessAlphaImagesStep,
-        # DecodeTextAssetsStep,
+        # ProcessAlphaImagesStep,
+        DecodeTextAssetsStep,
         # CleanupStep,  # Always run cleanup last
     ]
     
