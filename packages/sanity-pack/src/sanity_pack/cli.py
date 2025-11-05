@@ -52,9 +52,9 @@ def download(
     log.info(f"Output directory: {config.output_dir}")
 
     asset_cache = cache_mgr.get_assets()
-
     for region in regions:
-        asset_cache.assets[region] = {}
+        if region not in asset_cache.assets:
+            asset_cache.assets[region] = {}
 
     # Execute downloads in parallel threads
     with ThreadPoolExecutor(max_workers=len(regions)) as executor:

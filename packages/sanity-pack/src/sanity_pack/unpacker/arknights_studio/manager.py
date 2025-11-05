@@ -54,7 +54,7 @@ class ArknightsStudioExtractor(AssetUnpacker):
             str(input_path),
             "-o", str(output_path),
             "-g", "containerFull",  # Group by container path
-            "-t", "Sprite,AkPortraitSprite,AudioClip,TextAsset",
+            "-t", "Sprite,AkPortraitSprite,AudioClip,TextAsset,Texture2D",
             "--image-format", "webp",  # Use webp for image formats
         ]
         try:

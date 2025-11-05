@@ -9,15 +9,15 @@
 	"servers": {
 		"CN": {
 			"enabled": true,
-			"path_whitelist": ["anon"]
+			"path_whitelist": ["refs/arts/enm_art", "battle/enm_pfb"]
 		},
 		"TW": {
-			"enabled": true,
+			"enabled": false,
 			"path_whitelist": ["anon"]
 		},
 		"EN": {
-			"enabled": true,
-			"path_whitelist": ["anon"]
+			"enabled": false,
+			"path_whitelist": ["battle/enm_pfb"]
 		},
 		"JP": {
 			"enabled": false,
