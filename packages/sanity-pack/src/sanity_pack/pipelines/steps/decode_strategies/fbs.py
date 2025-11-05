@@ -16,15 +16,17 @@ from sanity_pack.utils.logger import log
 class FBSDecodeStrategy:
     """Strategy for decoding FlatBuffers files."""
     
-    def __init__(self, fbs_dir: Path, region: ServerRegion):
+    def __init__(self, fbs_dir: Path, region: ServerRegion, flatc_path: str = "flatc"):
         """Initialize FBS decode strategy.
         
         Args:
             fbs_dir: Base directory containing FBS schemas
             region: Server region being processed
+            flatc_path: Path to flatc executable (can be a command name or full path)
         """
         self.fbs_dir = Path(fbs_dir)
         self.region = region
+        self.flatc_path = flatc_path
         
         # Determine server type for schema directory
         # Use region's lowercase value (e.g., 'cn', 'jp', 'tw', 'en', 'kr')
@@ -90,7 +92,7 @@ class FBSDecodeStrategy:
             ValueError: If flatc fails
         """
         args = [
-            "flatc",
+            self.flatc_path,
             "-o",
             str(output_directory),
             str(fbs_schema_path),

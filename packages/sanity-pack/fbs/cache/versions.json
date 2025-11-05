@@ -4,14 +4,14 @@
 		"client": "31.5.80",
 		"folders": {}
 	},
+	"CN": {
+		"resource": "25-11-04-06-39-31_371c8a",
+		"client": "2.6.71",
+		"folders": {}
+	},
 	"TW": {
 		"resource": "25-10-26-13-30-45_17fdc7",
 		"client": "30.5.02",
-		"folders": {}
-	},
-	"CN": {
-		"resource": "25-10-31-10-13-38_6636d3",
-		"client": "2.6.71",
 		"folders": {}
 	}
 }

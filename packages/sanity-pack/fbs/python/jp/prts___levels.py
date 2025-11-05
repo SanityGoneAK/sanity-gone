@@ -1618,7 +1618,7 @@ class clz_Torappu_AttributesData(object):
         return 0
 
     # clz_Torappu_AttributesData
-    def Def(self):
+    def Def_(self):
         o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(8))
         if o != 0:
             return self._tab.Get(flatbuffers.number_types.Int32Flags, o + self._tab.Pos)
@@ -1794,7 +1794,7 @@ def clz_Torappu_AttributesDataAddMaxHp(builder, maxHp):
 def clz_Torappu_AttributesDataAddAtk(builder, atk):
     builder.PrependInt32Slot(1, atk, 0)
 
-def clz_Torappu_AttributesDataAddDef(builder, def_):
+def clz_Torappu_AttributesDataAddDef_(builder, def_):
     builder.PrependInt32Slot(2, def_, 0)
 
 def clz_Torappu_AttributesDataAddMagicResistance(builder, magicResistance):
@@ -2524,7 +2524,7 @@ class clz_Torappu_EnemyDatabase_AttributesData(object):
         return None
 
     # clz_Torappu_EnemyDatabase_AttributesData
-    def Def(self):
+    def Def_(self):
         o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(8))
         if o != 0:
             x = self._tab.Indirect(o + self._tab.Pos)
@@ -2812,7 +2812,7 @@ def clz_Torappu_EnemyDatabase_AttributesDataAddMaxHp(builder, maxHp):
 def clz_Torappu_EnemyDatabase_AttributesDataAddAtk(builder, atk):
     builder.PrependUOffsetTRelativeSlot(1, flatbuffers.number_types.UOffsetTFlags.py_type(atk), 0)
 
-def clz_Torappu_EnemyDatabase_AttributesDataAddDef(builder, def_):
+def clz_Torappu_EnemyDatabase_AttributesDataAddDef_(builder, def_):
     builder.PrependUOffsetTRelativeSlot(2, flatbuffers.number_types.UOffsetTFlags.py_type(def_), 0)
 
 def clz_Torappu_EnemyDatabase_AttributesDataAddMagicResistance(builder, magicResistance):

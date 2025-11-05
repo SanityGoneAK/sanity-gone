@@ -3,6 +3,7 @@
 	"cache_dir": "./cache",
 	"fbs_dir": "./fbs",
 	"unpack_mode": "arknights_studio",
+	"flatc_path": "./flatc",
 	"arknights_studio": {
 		"cli_dll_path": "./ArknightsStudioCLI/ArknightsStudioCLI.dll"
 	},

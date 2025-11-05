@@ -194,7 +194,7 @@ class FlatBuffersSchemaManager:
     ) -> Path:
         """Run the flatbuffers cli. Returns the output filename."""
         args = [
-            "flatc",
+            self.config.flatc_path,
             "-o",
             str(output_directory),
             str(fbs_schema_path),

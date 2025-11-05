@@ -71,7 +71,7 @@ class FlatBuffersPythonCompiler:
 
         # Compile FBS to Python
         result = subprocess.run(
-            ['flatc', '--python', '--gen-onefile', '-o', str(self.output_dir), str(fbs_file)],
+            [self.config.flatc_path, '--python', '--gen-onefile', '-o', str(self.output_dir), str(fbs_file)],
             capture_output=True,
             text=True,
             check=False

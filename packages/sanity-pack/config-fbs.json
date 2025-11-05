@@ -2,6 +2,7 @@
 	"output_dir": "./fbs/assets",
 	"cache_dir": "./fbs/cache",
 	"fbs_dir": "./fbs",
+	"flatc_path": "./flatc",
 	"unpack_mode": "unity_py",
 	"arknights_studio": {
 		"cli_dll_path": "./ArknightsStudioCLI/ArknightsStudioCLI.dll"

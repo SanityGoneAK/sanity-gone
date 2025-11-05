@@ -108,7 +108,7 @@ class clz_Torappu_EnemyHandbookLevelInfoData(object):
         return None
 
     # clz_Torappu_EnemyHandbookLevelInfoData
-    def Def(self):
+    def Def_(self):
         o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(8))
         if o != 0:
             x = self._tab.Indirect(o + self._tab.Pos)
@@ -186,7 +186,7 @@ def clz_Torappu_EnemyHandbookLevelInfoDataAddClassLevel(builder, classLevel):
 def clz_Torappu_EnemyHandbookLevelInfoDataAddAttack(builder, attack):
     builder.PrependUOffsetTRelativeSlot(1, flatbuffers.number_types.UOffsetTFlags.py_type(attack), 0)
 
-def clz_Torappu_EnemyHandbookLevelInfoDataAddDef(builder, def_):
+def clz_Torappu_EnemyHandbookLevelInfoDataAddDef_(builder, def_):
     builder.PrependUOffsetTRelativeSlot(2, flatbuffers.number_types.UOffsetTFlags.py_type(def_), 0)
 
 def clz_Torappu_EnemyHandbookLevelInfoDataAddMagicRes(builder, magicRes):

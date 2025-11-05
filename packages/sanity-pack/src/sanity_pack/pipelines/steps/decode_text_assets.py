@@ -46,7 +46,7 @@ class DecodeTextAssetsStep(PipelineStep):
         except ImportError as e:
             log.warning(f"AES decoding not available: {e}")
             self.aes_strategy = None
-        self.fbs_strategy = FBSDecodeStrategy(config.fbs_dir, region)
+        self.fbs_strategy = FBSDecodeStrategy(config.fbs_dir, region, config.flatc_path)
     
     def is_binary_file(self, path: Path) -> bool:
         """Check if a file is binary.

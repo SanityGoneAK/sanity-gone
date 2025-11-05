@@ -57,6 +57,7 @@ class Config(BaseModel):
     output_dir: Path = Field(default=Path("./assets"), description="Directory for extracted data")
     cache_dir: Path = Field(default=Path("./cache"), description="Directory for cache files")
     fbs_dir: Path = Field(default=Path("./fbs"), description="Directory for flatbuffer schemas")
+    flatc_path: str = Field(default="flatc", description="Path to flatc executable (can be a command name or full path)")
     unpack_mode: UnpackMode = Field(default=UnpackMode.ARKNIGHTS_STUDIO, description="Method of unpacking assets")
     arknights_studio: Optional[ArknightsStudioConfig] = Field(
         default=None,
@@ -99,6 +100,7 @@ class Config(BaseModel):
             "example": {
                 "output_dir": "./assets",
                 "cache_dir": "./cache",
+                "flatc_path": "flatc",
                 "unpack_mode": "arknights_studio",
                 "arknights_studio": {
                     "cli_dll_path": "./ArknightsStudioCLI/ArknightsStudioCLI.dll"
