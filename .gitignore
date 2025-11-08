@@ -36,3 +36,5 @@ packages/sanity-pack/ArknightsStudioCLI/
 packages/sanity-pack/fbs/assets/
 
 .idea/workspace.xml
+
+packages/sanity-pack/flatc

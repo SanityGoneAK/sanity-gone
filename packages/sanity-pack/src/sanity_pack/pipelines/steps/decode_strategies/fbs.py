@@ -31,7 +31,12 @@ class FBSDecodeStrategy:
         # Determine server type for schema directory
         # Use region's lowercase value (e.g., 'cn', 'jp', 'tw', 'en', 'kr')
         # This matches the FBS directory structure
-        self.server_type = region.value.lower()
+        self.server_type = 'jp' # We use JP for YoStar related paths
+        match self.region:
+            case ServerRegion.CN:
+                self.server_type = 'cn'
+            case ServerRegion.TW:
+                self.server_type = 'tw'
         
         self.schema_dir = self.fbs_dir / "raw" / self.server_type
     
@@ -47,6 +52,11 @@ class FBSDecodeStrategy:
         # Extract table name from path (e.g., "buff_table1fc1b5" -> "buff_table")
         if match := re.search(r"(\w+_(?:table|data|const|database|text))[0-9a-fA-F]{6}", file_path.name):
             return match.group(1)
+
+        if match := re.search(r"(gamedata/levels/(?:obt|activities)/.+?)\.bytes", file_path.name):
+            # Override for levels to use the same fbs file
+            return 'prts__levels'
+
         return None
     
     def _get_schema_path(self, table_name: str) -> Optional[Path]:
@@ -61,15 +71,7 @@ class FBSDecodeStrategy:
         schema_path = self.schema_dir / f"{table_name}.fbs"
         if schema_path.exists():
             return schema_path
-        
-        # Fallback: if region-specific directory doesn't exist, try 'yostar' for non-CN regions
-        if self.region != ServerRegion.CN and not self.schema_dir.exists():
-            fallback_dir = self.fbs_dir / "raw" / "yostar"
-            fallback_path = fallback_dir / f"{table_name}.fbs"
-            if fallback_path.exists():
-                log.debug(f"Using fallback schema from yostar directory: {table_name}")
-                return fallback_path
-        
+
         return None
     
     def run_flatbuffers(
@@ -203,7 +205,7 @@ class FBSDecodeStrategy:
                 
                 # Process the output
                 parsed_data = json.loads(output_path.read_text(encoding="utf-8"))
-                parsed_data = self.recursively_collapse_keys(parsed_data)
+                # parsed_data = self.recursively_collapse_keys(parsed_data)
                 
                 # If the result is a single-key dict, extract the value
                 if isinstance(parsed_data, dict) and len(parsed_data) == 1:
