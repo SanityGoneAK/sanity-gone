@@ -53,15 +53,15 @@ class FBSDecodeStrategy:
         if match := re.search(r"(\w+_(?:table|data|const|database|text))[0-9a-fA-F]{6}", file_path.name):
             return match.group(1)
 
-        if match := re.search(r"(gamedata/levels/(?:obt|activities)/.+?)\.bytes", file_path.name):
+        if match := re.search(r"(gamedata/levels/(?:obt|activities)/.+?)\.bytes", str(file_path)):
             # Override for levels to use the same fbs file
-            return 'prts__levels'
+            return 'prts___levels'
 
         return None
     
     def _get_schema_path(self, table_name: str) -> Optional[Path]:
         """Get the schema path for a table name.
-        
+
         Args:
             table_name: Name of the table
             

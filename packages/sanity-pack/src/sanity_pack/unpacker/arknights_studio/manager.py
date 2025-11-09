@@ -3,6 +3,7 @@
 import shutil
 import subprocess
 import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 import os
 import re
@@ -20,7 +21,7 @@ class ArknightsStudioExtractor(AssetUnpacker):
     with better support for game-specific structures like prefabs.
     """
     
-    def __init__(self, config: Config, region: ServerRegion, concurrency: int = 128):
+    def __init__(self, config: Config, region: ServerRegion, concurrency: int = 4):
         super().__init__(config, region, concurrency)
         self._semaphore = threading.Semaphore(concurrency)  # Limit concurrent extractions
         
@@ -109,9 +110,8 @@ class ArknightsStudioExtractor(AssetUnpacker):
         assets = []
         
         # Recursively collect all files from server_dir and its subdirectories
-        for item in server_dir.rglob("*"):
-            if item.is_file():
-                assets.append(item)
+        for pattern in ["**/*.ab", "**/*.bin"]:
+            assets.extend(server_dir.glob(pattern))
         
         log.info(f"Found {len(assets)} assets to process (searched recursively)")
         return assets
@@ -177,7 +177,7 @@ class ArknightsStudioExtractor(AssetUnpacker):
         """Unpack all assets using Arknights Studio CLI with concurrent processing."""
         log.info(f"\nProcessing {self._region.value} server assets with Arknights Studio...")
         log.info(f"CLI Path: {self._cli_dll_path}")
-        log.info(f"Concurrency: {self._semaphore._value} threads")
+        log.info(f"Concurrency: {self._concurrency} threads")
         
         server_dir = self.config.output_dir / self._region.value.lower()
         
@@ -188,20 +188,25 @@ class ArknightsStudioExtractor(AssetUnpacker):
             log.warning(f"No assets found in {server_dir}")
             return
         
-        # Process each asset concurrently using threads
-        threads = []
-        for asset_path in assets:
-            thread = threading.Thread(
-                target=self._process_asset,
-                args=(asset_path, server_dir)
-            )
-            thread.start()
-            threads.append(thread)
-        #
-        # Wait for all threads to complete
-        log.info(f"Waiting for {len(threads)} asset processing threads to complete...")
-        for thread in threads:
-            thread.join()
+        log.info(f"Processing {len(assets)} assets with max {self._concurrency} concurrent threads...")
+        with ThreadPoolExecutor(max_workers=self._concurrency) as executor:
+            # Submit all tasks to the thread pool
+            futures = {
+                executor.submit(self._process_asset, asset_path, server_dir): asset_path
+                for asset_path in assets
+            }
+            
+            completed = 0
+            for future in as_completed(futures):
+                completed += 1
+                asset_path = futures[future]
+                try:
+                    future.result()
+                except Exception as e:
+                    log.error(f"Asset {asset_path.name} failed: {e}")
+                
+                if completed % 10 == 0 or completed == len(assets):
+                    log.info(f"Progress: {completed}/{len(assets)} assets processed")
         
         log.info("All assets processed, starting reorganization...")
         

@@ -37,7 +37,7 @@ def download(
         help="Path to config file"
     ),
     concurrency: int = typer.Option(
-        48,
+        16,
         "--concurrency",
         help="Max concurrent downloads",
     ),
@@ -88,7 +88,7 @@ def unpack(
         help="Path to config file"
     ),
     concurrency: int = typer.Option(
-        30,
+        16,
         "--concurrency",
         help="Max concurrent extractions",
     ),
