@@ -127,7 +127,7 @@
   },
   "char_1042_phatm2": {
     "charId": "char_1042_phatm2",
-    "name": "Tragodia",
+    "name": "トラゴーディア",
     "slug": "tragodia",
     "position": "RANGED",
     "rarity": 6,
@@ -1849,7 +1849,7 @@
   },
   "char_4191_tippi": {
     "charId": "char_4191_tippi",
-    "name": "Tippi",
+    "name": "ティッピ",
     "slug": "tippi",
     "position": "MELEE",
     "rarity": 5,
