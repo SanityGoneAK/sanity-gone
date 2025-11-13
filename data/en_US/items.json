@@ -2793,18 +2793,18 @@
   },
   "p_char_4191_tippi": {
     "itemId": "p_char_4191_tippi",
-    "name": "蒂比的信物",
+    "name": "Tippi's Token",
     "iconId": "p_char_4191_tippi",
-    "description": "一个喷漆罐，嗞——可以拿它在墙上喷绘你喜欢的图案，但不要随便乱涂乱画哦。",
-    "usage": "用于提升蒂比的潜能。",
+    "description": "A spray can—Psssh—With it, you can draw whatever you like on the wall. Just be sure not to spray random doodles or whatever.",
+    "usage": "Used to improve the Potential of Tippi.",
     "rarity": 5
   },
   "p_char_4198_christ": {
     "itemId": "p_char_4198_christ",
-    "name": "Miss.Christine的信物",
+    "name": "Miss.Christine's Token",
     "iconId": "p_char_4198_christ",
-    "description": "一张印着爪印的工牌。你把它挂在了Miss.Christine的脖子上，但第二天它就出现在了你的桌面上。",
-    "usage": "用于提升Miss.Christine的潜能。",
+    "description": "A badge marked with a pawprint. You hung it around Miss.Christine's neck, but the next day, it was back on your desk.",
+    "usage": "Used to improve the Potential of Miss.Christine.",
     "rarity": 5
   },
   "p_char_4196_reckpr": {
@@ -3777,10 +3777,10 @@
   },
   "p_char_1042_phatm2": {
     "itemId": "p_char_1042_phatm2",
-    "name": "酒神的信物",
+    "name": "Tragodia's Token",
     "iconId": "p_char_1042_phatm2",
-    "description": "一片金叶，细腻的叶脉纹理栩栩如生。你认出它是来自傀影耳边的华美装饰，时常沐浴在聚光灯下——对他而言，戏剧亦如自然。",
-    "usage": "用于提升酒神的潜能。",
+    "description": "A gold leaf, sporting incredibly realistic venation. You recognize it from the ornate wreath around Phantom's ears, often seen bathing in the spotlight. Drama comes naturally to him.",
+    "usage": "Used to improve the Potential of Tragodia.",
     "rarity": 6
   },
   "p_char_1043_leizi2": {
@@ -4793,42 +4793,42 @@
   },
   "class_p_char_421_crow": {
     "itemId": "class_p_char_421_crow",
-    "name": "羽毛笔的中坚信物",
+    "name": "La Pluma's Kernel Token",
     "iconId": "class_p_char_421_crow",
-    "description": "一本《多索雷斯调酒指南》，上面不少配方旁边都有她的笔记，看来这些都是她擅长的，闲暇之余可以找她点一杯。",
-    "usage": "用于提升羽毛笔的潜能。",
+    "description": "A copy of the 'Dossoles Guide to Cocktails,' with plenty of recipes full of her notes on the side. These all seem to be her specialties—if you've got time to spare, you can order a round from her.",
+    "usage": "Used to improve the Potential of La Pluma.",
     "rarity": 5
   },
   "class_p_char_473_mberry": {
     "itemId": "class_p_char_473_mberry",
-    "name": "桑葚的中坚信物",
+    "name": "Mulberry's Kernel Token",
     "iconId": "class_p_char_473_mberry",
-    "description": "挂着炎国特色装饰的红色平安符。桑葚特地为你请回的护身符，上面写着难懂的炎国文字，香火的气息若有若无。",
-    "usage": "用于提升桑葚的潜能。",
+    "description": "Adorned with Yan's characteristic red protective charms. Mulberry asked for this amulet back specifically for you. Incomprehensible Yan characters are written on it, and an almost imperceptible scent of incense seems to linger.",
+    "usage": "Used to improve the Potential of Mulberry.",
     "rarity": 5
   },
   "class_p_char_431_ashlok": {
     "itemId": "class_p_char_431_ashlok",
-    "name": "灰毫的中坚信物",
+    "name": "Ashlock's Kernel Token",
     "iconId": "class_p_char_431_ashlok",
-    "description": "一枚击发后留下的弹壳，上面有着灰毫的签名。 这一发炮弹曾经为她带来了胜利，现在，它是你的了。",
-    "usage": "用于提升灰毫的潜能。",
+    "description": "A shell casing left over from a shot, bearing Ashlock's signature. This once brought her victory, and now, it belongs to you.",
+    "usage": "Used to improve the Potential of Ashlock.",
     "rarity": 5
   },
   "class_p_char_489_serum": {
     "itemId": "class_p_char_489_serum",
-    "name": "蚀清的中坚信物",
+    "name": "Corroserum's Kernel Token",
     "iconId": "class_p_char_489_serum",
-    "description": "一个个贴着密密麻麻标签的试剂瓶。《反腐蚀覆膜试剂》《反反腐蚀覆膜试剂》《反反......反反腐蚀覆膜试剂》，字有点小。呃，认真的？",
-    "usage": "用于提升蚀清的潜能。",
+    "description": "A reagent bottle with label after label thickly pasted over it. 'Anti-corrosive coating reagent,' 'anti-anti-corrosive coating reagent,' 'anti-anti-...anti-anti-corrosive coating reagent,' the font is smaller and smaller. Er, seriously?",
+    "usage": "Used to improve the Potential of Corroserum.",
     "rarity": 5
   },
   "class_p_char_422_aurora": {
     "itemId": "class_p_char_422_aurora",
-    "name": "极光的中坚信物",
+    "name": "Aurora's Kernel Token",
     "iconId": "class_p_char_422_aurora",
-    "description": "一把密码锁。能打开她随身携带的工具箱，里面的东西任你取用。",
-    "usage": "用于提升极光的潜能。",
+    "description": "A combination lock. You can open the toolbox she carries, and you're allowed to use the stuff inside.",
+    "usage": "Used to improve the Potential of Aurora.",
     "rarity": 5
   },
   "class_p_char_103_angel": {
@@ -5121,42 +5121,42 @@
   },
   "class_p_char_437_mizuki": {
     "itemId": "class_p_char_437_mizuki",
-    "name": "水月的中坚信物",
+    "name": "Mizuki's Kernel Token",
     "iconId": "class_p_char_437_mizuki",
-    "description": "某经典电子游戏四十周年时发行的纪念章中的一枚。套章中的每个角色都有着各不相同的表情，可爱到让人想要把它给一口——",
-    "usage": "用于提升水月的潜能。",
+    "description": "One of some classic video game's commemoration badges distributed for its 40th anniversary. The characters that appear on them each have completely different expressions, and are so cute you could just open wide and—",
+    "usage": "Used to improve the Potential of Mizuki.",
     "rarity": 6
   },
   "class_p_char_479_sleach": {
     "itemId": "class_p_char_479_sleach",
-    "name": "琴柳的中坚信物",
+    "name": "Saileach's Kernel Token",
     "iconId": "class_p_char_479_sleach",
-    "description": "一小截风干了的柳枝。每一粒嫩芽都很完好，仿佛只要沾了水，就还能蓬勃生长。",
-    "usage": "用于提升琴柳的潜能。",
+    "description": "A small segment of a dried willow branch. Each bud is still perfectly intact, as if it could grow once more if dipped into water.",
+    "usage": "Used to improve the Potential of Saileach.",
     "rarity": 6
   },
   "class_p_char_430_fartth": {
     "itemId": "class_p_char_430_fartth",
-    "name": "远牙的中坚信物",
+    "name": "Fartooth's Kernel Token",
     "iconId": "class_p_char_430_fartth",
-    "description": "粗糙的木制短笛。由远牙亲手削制，能够吹出简单的音节。做工简单，所有扎手的木刺都被细心地磨平。",
-    "usage": "用于提升远牙的潜能。",
+    "description": "A rough, handmade piccolo. Fartooth made it herself, and it is capable of producing a few simple sounds. The craftsmanship was simple, so the prickly splinters have been meticulously smoothed over.",
+    "usage": "Used to improve the Potential of Fartooth.",
     "rarity": 6
   },
   "class_p_char_420_flamtl": {
     "itemId": "class_p_char_420_flamtl",
-    "name": "焰尾的中坚信物",
+    "name": "Flametail's Kernel Token",
     "iconId": "class_p_char_420_flamtl",
-    "description": "一枚看似无奇的卡西米尔金币，这是索娜第一次在地下竞技场获胜时，所获得的唯一一枚报酬。",
-    "usage": "用于提升焰尾的潜能。",
+    "description": "A seemingly mundane Kazimierzian coin. This was the sole reward Sona earned from her first victory in the underground arena.",
+    "usage": "Used to improve the Potential of Flametail.",
     "rarity": 6
   },
   "class_p_char_206_gnosis": {
     "itemId": "class_p_char_206_gnosis",
-    "name": "灵知的中坚信物",
+    "name": "Gnosis's Kernel Token",
     "iconId": "class_p_char_206_gnosis",
-    "description": "一柄在他来到罗德岛后亲手打造的护身短剑。你在很久以后才偶然得知，这是埃德怀斯家表示友情的一种方式。",
-    "usage": "用于提升灵知的潜能。",
+    "description": "A self-defense dagger he forged after his arrival at Rhodes Island. You only found out far later, by pure chance, that this is one of the ways the Edelweisses show their friendship.",
+    "usage": "Used to improve the Potential of Gnosis.",
     "rarity": 6
   },
   "voucher_vigil": {
