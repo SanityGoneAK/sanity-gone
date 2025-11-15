@@ -3351,6 +3351,13 @@
       "cost": 0,
       "tokenType": "Originium Prime"
     },
+    "char_491_humus@marthe#10": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
     "char_179_cgbird@witch#1": {
       "obtainSources": [
         "Outfit Store"
