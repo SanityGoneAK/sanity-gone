@@ -636,11 +636,11 @@
       "isLimited": false,
       "releaseOrder": 159
     },
-    "Sharp": {
+    "Pith": {
       "isLimited": false,
       "releaseOrder": 160
     },
-    "Pith": {
+    "Sharp": {
       "isLimited": false,
       "releaseOrder": 161
     },
@@ -1492,31 +1492,31 @@
       "isLimited": false,
       "releaseOrder": 373
     },
-    "Sharp(卫戍协议)": {
+    "Stormeye(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 374
     },
-    "Stormeye(卫戍协议)": {
+    "Touch(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 375
     },
-    "Touch(卫戍协议)": {
+    "郁金香(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 376
     },
-    "郁金香(卫戍协议)": {
+    "Misery(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 377
     },
-    "Misery(卫戍协议)": {
+    "Mechanist(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 378
     },
-    "Mechanist(卫戍协议)": {
+    "Raidian(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 379
     },
-    "Raidian(卫戍协议)": {
+    "Sharp(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 380
     },
@@ -1695,6 +1695,14 @@
     "凛御银灰": {
       "isLimited": true,
       "releaseOrder": 424
+    },
+    "盟约·辅助干员": {
+      "isLimited": false,
+      "releaseOrder": 425
+    },
+    "领主·Sharp": {
+      "isLimited": false,
+      "releaseOrder": 426
     }
   },
   "skinObtainSourceAndCosts": {
