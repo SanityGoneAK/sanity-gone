@@ -1512,11 +1512,11 @@
       "isLimited": false,
       "releaseOrder": 378
     },
-    "Raidian(卫戍协议)": {
+    "Sharp(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 379
     },
-    "Sharp(卫戍协议)": {
+    "Raidian(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 380
     },
@@ -2814,6 +2814,13 @@
       "tokenType": null
     },
     "char_1011_lava2@whirlwind#9": {
+      "obtainSources": [
+        "Integrated Strategies"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
+    "char_322_lmlee@whirlwind#10": {
       "obtainSources": [
         "Integrated Strategies"
       ],
@@ -4733,6 +4740,13 @@
       "tokenType": "Originium Prime"
     },
     "char_4132_ascln@iteration#4": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_1502_crosly@iteration#5": {
       "obtainSources": [
         "Outfit Store"
       ],
