@@ -25,10 +25,6 @@ class ProcessAlphaImagesStep(PipelineStep):
     @property
     def name(self) -> str:
         return "Process Alpha Images"
-    
-    @property
-    def required_modes(self) -> Optional[Set[UnpackMode]]:
-        return {UnpackMode.UNITY_PY}
 
     def combine_alpha_rgb(self, rgb_path: Path, alpha_path: Path, output_path: Optional[Path] = None) -> Image.Image:
         """Combine RGB and alpha channel images into a single RGBA image."""
