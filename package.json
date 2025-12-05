@@ -73,7 +73,6 @@
 		"@eslint/compat": "^1.2.4",
 		"@eslint/eslintrc": "^3.2.0",
 		"@eslint/js": "^9.17.0",
-		"@savvywombat/tailwindcss-grid-areas": "^4.0.0",
 		"@storybook/addon-essentials": "^8.4.7",
 		"@storybook/addon-links": "^7.6.7",
 		"@storybook/blocks": "^8.4.7",
