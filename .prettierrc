@@ -6,5 +6,9 @@
 	"singleQuote": false,
 	"printWidth": 80,
 	"endOfLine": "auto",
-	"plugins": ["prettier-plugin-tailwindcss"]
+	"plugins": [
+		"prettier-plugin-tailwindcss"
+	],
+	"tailwindConfig": "./tailwind.config.cjs",
+	"tailwindStylesheet": "./src/styles/tailwind.css"
 }

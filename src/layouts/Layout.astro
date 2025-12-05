@@ -74,11 +74,11 @@ const languages = Object.entries(allLanguages).map(([key, language]) => {
 	<!-- End Google Tag Manager (noscript) -->
 		<div
 			id="site-wrapper"
-			class="h-full group/sitewrapper grid grid-areas-mobile-layout grid-cols-mobile-layout grid-rows-mobile-layout md:grid-areas-desktop-layout md:grid-rows-desktop-layout md:grid-cols-desktop-layout"
+			class="h-full group/sitewrapper grid [grid-template-areas:'logo''search''main'] grid-cols-mobile-layout grid-rows-mobile-layout md:[grid-template-areas:'logo_topright''sidebar_main'] md:grid-rows-desktop-layout md:grid-cols-desktop-layout"
 			data-menu-open="false"
 		>
 			<div
-				class="flex justify-between grid-in-logo px-3 border-b border-r border-solid border-neutral-600 bg-neutral-800 items-center"
+				class="flex justify-between [grid-area:logo] px-3 border-b border-r border-solid border-neutral-600 bg-neutral-800 items-center"
 			>
 				<SanityGoneLogo locale={locale} />
 				<button
@@ -101,7 +101,7 @@ const languages = Object.entries(allLanguages).map(([key, language]) => {
 			</div>
 			<div
 				id="searchbar"
-				class="hidden grid-in-search md:grid-in-topright group-data-[menu-open=true]/sitewrapper:block md:block border-b border-solid border-neutral-600 md:bg-neutral-800"
+				class="hidden [grid-area:search] md:[grid-area:topright] group-data-[menu-open=true]/sitewrapper:block md:block border-b border-solid border-neutral-600 md:bg-neutral-800"
 			>
 				<div class="flex h-full w-full items-center justify-between px-3 md:pl-6">
 					{ /* set to client:load because search bar should be immediately available upon opening sidebar */}
@@ -115,12 +115,12 @@ const languages = Object.entries(allLanguages).map(([key, language]) => {
 			</div>
 			<div
 				id="sidebar"
-				class="hidden grid-in-main md:grid-in-sidebar group-data-[menu-open=true]/sitewrapper:block md:block border-neutral-600 border-r bg-neutral-800"
+				class="hidden [grid-area:main] md:[grid-area:sidebar] group-data-[menu-open=true]/sitewrapper:block md:block border-neutral-600 border-r bg-neutral-800"
 			>
 				<Sidebar />
 			</div>
 			<main
-				class="grid-in-main group-data-[menu-open=true]/sitewrapper:hidden group-data-[menu-open=false]/sitewrapper:row-start-2 overflow-y-auto"
+				class="[grid-area:main] group-data-[menu-open=true]/sitewrapper:hidden group-data-[menu-open=false]/sitewrapper:row-start-2 overflow-y-auto"
 			>
 				<slot />
 			</main>
