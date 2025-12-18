@@ -262,7 +262,7 @@
   dependencies:
     prismjs "^1.30.0"
 
-"@astrojs/react@4.4.2":
+"@astrojs/react@^4.4.2":
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/@astrojs/react/-/react-4.4.2.tgz#343e0c895a8cb6aede5d857b59e02139a1ac191e"
   integrity sha512-1tl95bpGfuaDMDn8O3x/5Dxii1HPvzjvpL2YTuqOOrQehs60I2DKiDgh1jrKc7G8lv+LQT5H15V6QONQ+9waeQ==
@@ -289,7 +289,7 @@
   resolved "https://registry.yarnpkg.com/@astrojs/underscore-redirects/-/underscore-redirects-1.0.0.tgz#c38689ce358877351419a9da31ccf2b849bc75d2"
   integrity sha512-qZxHwVnmb5FXuvRsaIGaqWgnftjCuMY+GSbaVZdBmE4j8AfgPqKPxYp8SUERyJcjpKCEmO4wD6ybuGH8A2kVRQ==
 
-"@astrojs/vercel@9.0.2":
+"@astrojs/vercel@^9.0.2":
   version "9.0.2"
   resolved "https://registry.yarnpkg.com/@astrojs/vercel/-/vercel-9.0.2.tgz#1a86ee040e8eae1e99e74a95c6a2d91677b2f8bc"
   integrity sha512-L/pQal/5fity/rLmQ5KsqYaVphhNI+Eui+WnLbuqZ7Vf9ocmwX6v0pSDqSejgTQMoMQJq4FPWR8XAtsxMB4Yfw==
