@@ -154,19 +154,19 @@ const OperatorSkillsPanel: React.FC = () => {
 				</div>
 			</div>
 			<div className="grid gap-y-4 rounded-br-lg">
-				<div className="grid grid-flow-col grid-cols-[48px_1fr] items-center gap-x-4 gap-y-2 grid-areas-skills-mobile sm:grid-areas-skills">
+				<div className="grid grid-flow-col grid-cols-[48px_1fr] items-center gap-x-4 gap-y-2 [grid-template-areas:'icon_name''skilltype_skilltype'] sm:[grid-template-areas:'icon_name''icon_skilltype']">
 					<img
-						className="h-12 w-12 rounded grid-in-icon"
+						className="h-12 w-12 rounded [grid-area:icon]"
 						src={skillIcon(
 							activeSkillTableSkill.iconId,
 							activeSkillTableSkill.skillId
 						)}
 						alt={activeSkillLevel.name}
 					/>
-					<h2 className="font-serif text-lg font-semibold leading-6 grid-in-name">
+					<h2 className="font-serif text-lg font-semibold leading-6 [grid-area:name]">
 						{activeSkillLevel.name}
 					</h2>
-					<dl className="grid h-6 grid-flow-col items-center justify-start gap-x-2 grid-in-skilltype sm:col-span-1 sm:gap-x-3">
+					<dl className="grid h-6 grid-flow-col items-center justify-start gap-x-2 [grid-area:skilltype] sm:col-span-1 sm:gap-x-3">
 						<span className="text-base leading-none text-neutral-50">
 							{typeTitle[activeSkillLevel.skillType]}
 						</span>
@@ -234,7 +234,7 @@ const OperatorSkillsPanel: React.FC = () => {
 					/>
 				)}
 				{activeSkillLevel.range && (
-					<div className="grid grid-cols-[auto,1fr] items-center rounded bg-neutral-600 p-4">
+					<div className="grid grid-cols-[auto_1fr] items-center rounded bg-neutral-600 p-4">
 						<span className="text-neutral-200">
 							{t("operators.details.general.range")}
 						</span>

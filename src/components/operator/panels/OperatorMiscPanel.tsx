@@ -135,7 +135,7 @@ const OperatorMiscPanel: React.FC = () => {
 					dangerouslySetInnerHTML={{ __html: handbook.profile }}
 				></p>
 			</div>
-			<div className="flex flex-col gap-4 sm:grid sm:grid-cols-[1fr,_1px,_1fr]">
+			<div className="flex flex-col gap-4 sm:grid sm:grid-cols-[1fr_1px_1fr]">
 				<div>
 					<h2 className="mb-4 font-serif text-2xl font-semibold">
 						{t("operators.details.misc.basic_info")}

@@ -90,21 +90,21 @@ const CharacterStats: React.FC<Props> = ({
 	return (
 		// 500px is the breakpoint at which this specific UI element breaks.
 		<dl className="relative grid grid-flow-col grid-cols-1 grid-rows-8 gap-[calc(theme(space.12)+1px)] gap-y-4 after:absolute after:bottom-0 after:right-1/2 after:top-0 after:border-neutral-600 sm:grid-cols-2 sm:grid-rows-4 sm:after:border-r">
-			<div className="grid grid-cols-[1fr,auto]">
+			<div className="grid grid-cols-[1fr_auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<HealthIcon className="text-neutral-50" />
 					<span>{t("operators.details.attributes.health")}</span>
 				</dt>
 				<dd className="font-semibold">{health}</dd>
 			</div>
-			<div className="grid grid-cols-[1fr,auto]">
+			<div className="grid grid-cols-[1fr_auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<DefenseIcon className="text-neutral-50" />
 					<span>{t("operators.details.attributes.defense")}</span>
 				</dt>
 				<dd className="font-semibold">{defense}</dd>
 			</div>
-			<div className="grid grid-cols-[1fr,auto]">
+			<div className="grid grid-cols-[1fr_auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<ArtsResistanceIcon className="text-neutral-50" />
 					<span>
@@ -113,7 +113,7 @@ const CharacterStats: React.FC<Props> = ({
 				</dt>
 				<dd className="font-semibold">{artsResistance}</dd>
 			</div>
-			<div className="grid grid-cols-[1fr,auto]">
+			<div className="grid grid-cols-[1fr_auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<HourglassIcon className="text-neutral-50" />
 					<span>
@@ -122,7 +122,7 @@ const CharacterStats: React.FC<Props> = ({
 				</dt>
 				<dd className="font-semibold">{redeployTimeInSeconds} sec</dd>
 			</div>
-			<div className="grid grid-cols-[1fr,auto]">
+			<div className="grid grid-cols-[1fr_auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<AttackPowerIcon className="text-neutral-50" />
 					<span>
@@ -131,7 +131,7 @@ const CharacterStats: React.FC<Props> = ({
 				</dt>
 				<dd className="font-semibold">{attackPower}</dd>
 			</div>
-			<div className="grid grid-cols-[1fr,auto]">
+			<div className="grid grid-cols-[1fr_auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<AttackSpeedIcon className="text-neutral-50" />
 					<span>
@@ -142,14 +142,14 @@ const CharacterStats: React.FC<Props> = ({
 					{secondsPerAttack.toFixed(2)} sec
 				</dd>
 			</div>
-			<div className="grid grid-cols-[1fr,auto]">
+			<div className="grid grid-cols-[1fr_auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<BlockIcon className="text-neutral-50" />
 					<span>{t("operators.details.attributes.block")}</span>
 				</dt>
 				<dd className="font-semibold">{blockCount}</dd>
 			</div>
-			<div className="grid grid-cols-[1fr,auto]">
+			<div className="grid grid-cols-[1fr_auto]">
 				<dt className="inline-flex items-center gap-x-2 text-neutral-200">
 					<DPCostIcon className="text-neutral-50" />
 					<span>{t("operators.details.attributes.dp_cost")}</span>

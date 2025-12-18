@@ -1,4 +1,18 @@
 {
+  "char_4212_nasti": {
+    "charId": "char_4212_nasti",
+    "name": "娜斯提",
+    "slug": "nasti",
+    "position": "MELEE",
+    "rarity": 6,
+    "profession": "SUPPORT",
+    "subProfessionId": "craftsman",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 429,
+    "gender": "Female"
+  },
   "char_1045_svash2": {
     "charId": "char_1045_svash2",
     "name": "凛御银灰",
@@ -1706,6 +1720,34 @@
     "isLimited": false,
     "releaseOrder": 73,
     "gender": "Female"
+  },
+  "char_4214_cairn": {
+    "charId": "char_4214_cairn",
+    "name": "响石",
+    "slug": "cairn",
+    "position": "MELEE",
+    "rarity": 5,
+    "profession": "TANK",
+    "subProfessionId": "primprotector",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 428,
+    "gender": "Female"
+  },
+  "char_4213_skybx": {
+    "charId": "char_4213_skybx",
+    "name": "天空盒",
+    "slug": "skybox",
+    "position": "RANGED",
+    "rarity": 5,
+    "profession": "SNIPER",
+    "subProfessionId": "skybreaker",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 427,
+    "gender": "Male"
   },
   "char_4211_snhunt": {
     "charId": "char_4211_snhunt",

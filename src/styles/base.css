@@ -1,6 +1,122 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss' source('../../src');
+
+@config '../../tailwind.config.mjs';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+
+  probably don't need this
+*/
+/*@layer base {*/
+/*  *,*/
+/*  ::after,*/
+/*  ::before,*/
+/*  ::backdrop,*/
+/*  ::file-selector-button {*/
+/*    border-color: var(--color-gray-200, currentcolor);*/
+/*  }*/
+/*}*/
+
+/* Tailwind 4.0 now configures the theme using CSS variables */
+@theme {
+    /* Unset Tailwind's default colors */
+    --color-*: initial;
+
+    /* Color Palette */
+    --color-green-light: #D3FF9B;
+    --color-green: #A7E855;
+    --color-blue-light: #83CBFF;
+    --color-blue: #49B3FF;
+    --color-purple-light: #B1AFFF;
+    --color-purple: #7F6BFF;
+    --color-yellow-light: #FFEBB8;
+    --color-yellow: #FED874;
+    --color-orange-light: #FFC397;
+    --color-orange: #FF994F;
+    --color-red-light: #FF9B9B;
+    --color-red: #F45C5C;
+
+    --color-transparent: transparent;
+
+    --color-neutral-50: #E8E8F2;  /* white */
+    --color-neutral-100: #B8B8C0; /* offwhite (i prefer grite) */
+    --color-neutral-200: #87879B; /* gray */
+    --color-neutral-300: #686879; /* graytone (i prefer gridtone) */
+    --color-neutral-400: #484858; /* midtoneBrighterer */
+    --color-neutral-500: #363643; /* midtoneBrighter */
+    --color-neutral-600: #24242E; /* midtone */
+    --color-neutral-700: #191920; /* midtoneDarker */
+    --color-neutral-800: #14141B; /* darktone */
+    --color-neutral-900: #101014; /* black */
+    --color-neutral-950: #050507; /* blackest */
+
+    /* Breakpoint */
+    --breakpoint-xl: 1360px;
+
+    /* Font */
+    --font-sans: "Source Sans Pro", sans-serif;
+    --font-serif: "Crimson Text", serif;
+
+    /* Box shadow */
+    --shadow-3xl: 8px 8px 16px 0px rgba(0, 0, 0, 0.25);
+
+    /* Animation */
+    --animate-overlay-show: overlay-show 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    @keyframes overlay-show {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    --animate-content-show: content-show 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    @keyframes content-show {
+        from {
+            opacity: 0;
+            transform: scale(0.96);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+/* Grid layouts for desktop/mobile */
+/* @utility lets us use breakpoints like md: */
+@utility grid-layout-desktop {
+    grid-template-rows: 64px 1fr;
+    grid-template-columns: 228px 1fr;
+}
+
+@utility grid-layout-mobile {
+    grid-template-rows: 64px 64px 1fr;
+    grid-template-columns: 1fr;
+}
+
+:root {
+    -webkit-font-smoothing: antialiased;
+    --color-rarity-1: var(--color-neutral-50);
+    --color-rarity-1-dark: var(--color-neutral-100);
+    --color-rarity-2: var(--color-green-light);
+    --color-rarity-2-dark: var(--color-green);
+    --color-rarity-3: var(--color-blue-light);
+    --color-rarity-3-dark: var(--color-blue);
+    --color-rarity-4: var(--color-purple-light);
+    --color-rarity-4-dark: var(--color-purple);
+    --color-rarity-5: var(--color-yellow-light);
+    --color-rarity-5-dark: var(--color-yellow);
+    --color-rarity-6: var(--color-orange-light);
+    --color-rarity-6-dark: var(--color-orange);
+
+    /*Media Player*/
+    --media-range-bar-color: var(--color-red);
+    --media-range-track-background: var(--color-neutral-500);
+    --media-time-range-buffered-color: var(--color-neutral-400);
+}
 
 html {
 	scrollbar-width: auto;
@@ -62,34 +178,13 @@ input[type="number"] {
 	box-sizing: border-box;
 }
 
-* {
-	margin: 0;
-}
+/** {*/
+/*	margin: 0;*/
+/*}*/
 
 html,
 body {
 	height: 100%;
-}
-
-:root {
-	-webkit-font-smoothing: antialiased;
-	--color-rarity-1: theme("colors.neutral.50");
-	--color-rarity-1-dark: theme("colors.neutral.100");
-	--color-rarity-2: theme("colors.green.light");
-	--color-rarity-2-dark: theme("colors.green.DEFAULT");
-	--color-rarity-3: theme("colors.blue.light");
-	--color-rarity-3-dark: theme("colors.blue.DEFAULT");
-	--color-rarity-4: theme("colors.purple.light");
-	--color-rarity-4-dark: theme("colors.purple.DEFAULT");
-	--color-rarity-5: theme("colors.yellow.light");
-	--color-rarity-5-dark: theme("colors.yellow.DEFAULT");
-	--color-rarity-6: theme("colors.orange.light");
-	--color-rarity-6-dark: theme("colors.orange.DEFAULT");
-
-	/*Media Player*/
-	--media-range-bar-color: theme("colors.red.DEFAULT");
-	--media-range-track-background: theme("colors.neutral.500");
-	--media-time-range-buffered-color: theme("colors.neutral.400");
 }
 
 img,
@@ -101,12 +196,13 @@ svg {
 	max-width: 100%;
 }
 
-input,
-button,
-textarea,
-select {
-	font: inherit;
-}
+/* ?????? why */
+/*input,*/
+/*button,*/
+/*textarea,*/
+/*select {*/
+/*	font: inherit;*/
+/*}*/
 
 p,
 h1,

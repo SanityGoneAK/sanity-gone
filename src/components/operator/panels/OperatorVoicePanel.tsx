@@ -172,7 +172,7 @@ const OperatorVoicePanel: React.FC = () => {
 									</MediaPlayButton>
 									<MediaTimeDisplay
 										showDuration
-										className="bg-neutral-600"
+										className="bg-neutral-600 ml-4 mr-2"
 									/>
 									<MediaTimeRange className="bg-neutral-600">
 										<span

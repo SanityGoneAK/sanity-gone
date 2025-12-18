@@ -1703,6 +1703,18 @@
     "领主·Sharp": {
       "isLimited": false,
       "releaseOrder": 426
+    },
+    "天空盒": {
+      "isLimited": false,
+      "releaseOrder": 427
+    },
+    "响石": {
+      "isLimited": false,
+      "releaseOrder": 428
+    },
+    "娜斯提": {
+      "isLimited": false,
+      "releaseOrder": 429
     }
   },
   "skinObtainSourceAndCosts": {
@@ -3716,6 +3728,20 @@
       "cost": 0,
       "tokenType": "Originium Prime"
     },
+    "char_1020_reed2@snow#8": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_1036_fang2@snow#8": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_103_angel@wild#1": {
       "obtainSources": [
         "Outfit Store"
@@ -4705,6 +4731,13 @@
       "tokenType": "Originium Prime"
     },
     "char_437_mizuki@game#6": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4163_rosesa@game#7": {
       "obtainSources": [
         "Outfit Store"
       ],

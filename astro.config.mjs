@@ -1,10 +1,9 @@
 import path from "path";
 
 import react from "@astrojs/react";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 import vercel from "@astrojs/vercel";
 import { defineConfig } from "astro/config";
-import tailwindcssNesting from "tailwindcss/nesting";
 
 import { defaultLang } from "./src/i18n/languages";
 
@@ -38,10 +37,6 @@ export default defineConfig({
 	},
 	integrations: [
 		react(),
-		tailwind({
-			applyBaseStyles: false,
-			nesting: true,
-		}),
 	],
 	adapter: vercel(),
 	vite: {
@@ -61,10 +56,11 @@ export default defineConfig({
 			},
 		},
 		// vite warns if this option isn't present for some reason
-		css: {
-			postcss: {
-				plugins: [tailwindcssNesting],
-			},
-		},
+		// css: {
+		// 	postcss: {
+		// 		plugins: [tailwindcssNesting],
+		// 	},
+		// },
+		plugins: [tailwindcss()]
 	},
 });
