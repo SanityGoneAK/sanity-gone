@@ -2887,6 +2887,22 @@
     "usage": "用于提升哈蒂娅的潜能。",
     "rarity": 5
   },
+  "p_char_4214_cairn": {
+    "itemId": "p_char_4214_cairn",
+    "name": "响石的信物",
+    "iconId": "p_char_4214_cairn",
+    "description": "一枚“天空氧气瓶”的瓶盖。初见时，这是你聘用她的定金，现在，这是你加入她的旅行社的证章。",
+    "usage": "用于提升响石的潜能。",
+    "rarity": 5
+  },
+  "p_char_4213_skybx": {
+    "itemId": "p_char_4213_skybx",
+    "name": "天空盒的信物",
+    "iconId": "p_char_4213_skybx",
+    "description": "一架大炮般粗重的高倍单筒望远镜。他说，他总有一天要带着所有哥伦比亚人征服天空，可别错过了。",
+    "usage": "用于提升天空盒的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "엑시아의 증표",
@@ -3853,6 +3869,14 @@
     "iconId": "p_char_1047_halo2",
     "description": "一份未被命名的手稿，也是一扇通往新领域的窄门。她在一个清晨把它放在你的办公桌上。",
     "usage": "用于提升溯光星源的潜能。",
+    "rarity": 6
+  },
+  "p_char_4212_nasti": {
+    "itemId": "p_char_4212_nasti",
+    "name": "娜斯提的信物",
+    "iconId": "p_char_4212_nasti",
+    "description": "一支树枝造型的骨笔，可以辅助完成一些精密作业。娜斯提说不必因为它叫“骨笔”就有所顾虑，折断了她随时帮你换新的。",
+    "usage": "用于提升娜斯提的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {

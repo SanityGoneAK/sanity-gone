@@ -228,7 +228,7 @@ const OperatorAttributesPanel: React.FC = () => {
 						potential={potential}
 						trust={trustToUse}
 					/>
-					<div className="grid grid-cols-[auto,1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600 p-4 text-neutral-200">
+					<div className="grid grid-cols-[auto_1fr] items-center justify-items-center gap-x-2 rounded-lg bg-neutral-600 p-4 text-neutral-200">
 						<span>{t("operators.details.general.range")}</span>
 						<CharacterRange rangeObject={rangeObject} />
 					</div>

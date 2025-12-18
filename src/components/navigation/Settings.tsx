@@ -28,7 +28,9 @@ const Settings: React.FC<Props> = ({ languages, currentLanguage, serverSelector 
     <Dialog.Root>
       <Dialog.Trigger asChild>
         <button
-          className="inline-flex text-neutral-50 bg-neutral-600 items-center border border-neutral-500 justify-center py-2 px-3 font-medium leading-none outline-none outline-offset-1 hover:bg-neutral-500 focus-visible:outline-2 focus-visible:outline-neutral-200 select-none gap-2 rounded-3xl">
+          className="inline-flex text-neutral-50 bg-neutral-600 items-center border border-neutral-500
+          justify-center py-2 px-3 font-medium leading-none outline-none outline-offset-1 hover:bg-neutral-500
+          focus-visible:outline-2 focus-visible:outline-neutral-200 select-none gap-2 rounded-3xl">
           {!serverSelector && <><SettingsIcon></SettingsIcon>{t("nav.settings.label")}</>}
           {serverSelector && <>
             <span className="text-neutral-200">{t("nav.settings.server")}</span>
@@ -39,9 +41,11 @@ const Settings: React.FC<Props> = ({ languages, currentLanguage, serverSelector 
         </button>
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 bg-neutral-900/40 data-[state=open]:animate-overlayShow" />
+        <Dialog.Overlay className="fixed inset-0 bg-neutral-900/40 data-[state=open]:animate-overlay-show" />
         <Dialog.Content
-          className="fixed left-1/2 top-1/2 max-h-[85vh] w-[90vw] max-w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-md bg-neutral-800 border border-neutral-600 p-4 shadow-[var(--shadow-6)] focus:outline-none data-[state=open]:animate-contentShow">
+          className="fixed left-1/2 top-1/2 z-100 max-h-[85vh] w-[90vw] max-w-[400px] -translate-x-1/2 -translate-y-1/2
+          rounded-md bg-neutral-800 border border-neutral-600 p-4 shadow-[var(--shadow-6)] focus:outline-none
+          data-[state=open]:animate-content-show">
           <Dialog.Title className="sr-only">
             {t("nav.settings.label")}
           </Dialog.Title>

@@ -91,7 +91,7 @@ const OperatorTalentsPanel: React.FC = () => {
 								{
 									// yes some talents have ranges. Tomimi why do you exist
 									talentPhase.range && (
-										<div className="grid grid-cols-[auto,1fr] items-center rounded bg-neutral-600 p-4">
+										<div className="grid grid-cols-[auto_1fr] items-center rounded bg-neutral-600 p-4">
 											<span className="text-neutral-200">
 												{t(
 													"operators.details.general.range"

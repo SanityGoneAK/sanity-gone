@@ -182,11 +182,11 @@ const ModuleInfo: React.FC<Props> = ({
 		<div className="flex flex-col gap-4">
 			<div className="flex items-center gap-2">
 				<img
-					className="h-6 grid-in-icon"
+					className="h-6"
 					src={moduleTypeImage(module.moduleIcon.toLowerCase())}
 					alt=""
 				/>
-				<h2 className="font-serif text-lg font-semibold leading-none grid-in-name">
+				<h2 className="font-serif text-lg font-semibold leading-none">
 					{module.moduleName}
 				</h2>
 				<p className="font-semibold text-neutral-200">
@@ -243,7 +243,7 @@ const ModuleInfo: React.FC<Props> = ({
 					</>
 				)}
 			</dl>
-			<div className="flex flex-col gap-2 self-start grid-in-trait">
+			<div className="flex flex-col gap-2 self-start">
 				<div>
 					<h3 className="mb-1 text-sm text-neutral-200">
 						{t("operators.details.modules.trait")}
