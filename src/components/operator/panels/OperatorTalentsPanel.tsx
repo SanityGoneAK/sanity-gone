@@ -64,6 +64,9 @@ const OperatorTalentsPanel: React.FC = () => {
 		potential: potential,
 	}).rangeObject;
 
+	console.log(potentialsMap);
+	console.log(operator.talents);
+
 	return (
 		<div className="flex flex-col gap-4 p-6">
 			<div className="flex items-center justify-between border-b border-neutral-600 pb-4">
@@ -90,7 +93,7 @@ const OperatorTalentsPanel: React.FC = () => {
 								/>
 								{
 									// yes some talents have ranges. Tomimi why do you exist
-									talentPhase.range && (
+									talentPhase.range ? (
 										<div className="grid grid-cols-[auto_1fr] items-center rounded bg-neutral-600 p-4">
 											<span className="text-neutral-200">
 												{t(
@@ -115,7 +118,7 @@ const OperatorTalentsPanel: React.FC = () => {
 												}
 											/>
 										</div>
-									)
+									) : null
 								}
 							</div>
 						))
@@ -140,8 +143,15 @@ function getTalentPhase(
 				!phase.isHideTalent
 		)
 		.sort(
-			(a, b) =>
-				parseInt(b.unlockCondition.phase.slice(6)) -
-				parseInt(a.unlockCondition.phase.slice(6))
+			(a, b) => {
+				const phase1 = parseInt(a.unlockCondition.phase.slice(6));
+				const phase2 = parseInt(b.unlockCondition.phase.slice(6));
+
+				if (phase1 === phase2) {
+					// tiebreak using higher potential
+					return b.requiredPotentialRank - a.requiredPotentialRank;
+				}
+				return phase2 - phase1;
+			}
 		)[0] ?? null;
 }
