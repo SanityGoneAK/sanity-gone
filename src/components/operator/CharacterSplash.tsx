@@ -31,6 +31,8 @@ const CharacterSplash: React.FC = () => {
 	const locale = useStore(localeStore);
 	const t = useTranslations(locale);
 
+	console.log(skins[selectedIndex].cost);
+
 	return (
 		<Tab.Group
 			as="div"
@@ -117,12 +119,12 @@ const CharacterSplash: React.FC = () => {
 											{skinName}
 										</span>
 
-										{skins[selectedIndex].cost &&
+										{(skins[selectedIndex].cost && skins[selectedIndex].cost !== 0 &&
 											skins[
 												selectedIndex
 											].obtainSources?.includes(
 												"Outfit Store"
-											) && (
+											)) ? (
 												<div className="inline-flex w-fit rounded-lg bg-neutral-600 px-2.5 py-1 text-base leading-none text-neutral-50">
 													<div className="flex flex-row items-center">
 														<span className="mr-1 leading-none">
@@ -137,13 +139,13 @@ const CharacterSplash: React.FC = () => {
 														<OriginiumIcon />
 													</div>
 												</div>
-											)}
-										{skins[selectedIndex].cost &&
+											) : null}
+										{(skins[selectedIndex].cost && skins[selectedIndex].cost !== 0 &&
 											skins[
 												selectedIndex
 											].obtainSources?.includes(
 												"Contingency Contract Store"
-											) && (
+											)) ? (
 												<div className="inline-flex w-fit rounded-lg bg-neutral-600 px-2.5 py-1 text-base leading-none text-neutral-50">
 													<div className="flex flex-row items-center">
 														<span className="mr-1 leading-none">
@@ -158,7 +160,7 @@ const CharacterSplash: React.FC = () => {
 														<ContingencyTokenIcon />
 													</div>
 												</div>
-											)}
+											) : null }
 									</div>
 									<div className="inline-flex h-5 gap-2">
 										<PaintbrushIcon />
