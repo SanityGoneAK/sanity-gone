@@ -100,6 +100,12 @@ enum enum__Torappu_ItemType : int {
     EMOTICON_SET = 82,
     EXCLUSIVE_TKT_GACHA = 83,
     EXCLUSIVE_TKT_GACHA_10 = 84,
+    SO_CHAR_EXP = 85,
+    GIFTPACKAGE_TKT = 86,
+    VOUCHER_SKIN_V2 = 87,
+    RANDOM_VOUCHER_SKIN = 88,
+    ACT1VHALFIDLE_ITEM = 89,
+    PLOT_ITEM = 90,
 }
 
 table clz_Torappu_ItemBundle {
@@ -121,6 +127,7 @@ enum enum__Torappu_StageDropType : int {
     CHARM_DROP = 9,
     OVERRIDE_DROP = 10,
     ITEM_RETURN = 11,
+    CONDITION_DROP = 12,
 }
 
 table clz_Torappu_WeightItemBundle {
@@ -245,7 +252,14 @@ enum enum__Torappu_ActivityType : int {
     ENEMY_DUEL = 52,
     VEC_BREAK_V2 = 53,
     TYPE_ACT42SIDE = 54,
-    ENUM = 55,
+    TYPE_ACT44SIDE = 55,
+    HALFIDLE_VERIFY1 = 56,
+    TYPE_ACT45SIDE = 57,
+    TEAM_QUEST = 58,
+    RECRUIT_ONLY = 59,
+    TYPE_ACT46SIDE = 60,
+    AUTOCHESS_SEASON = 61,
+    ENUM = 62,
 }
 
 table clz_Torappu_RetroActData {
@@ -259,6 +273,7 @@ table clz_Torappu_RetroActData {
     haveTrail: bool; 
     customActId: string; 
     customActType: enum__Torappu_ActivityType; 
+    trapDomainId: string; 
 }
 
 table dict__string__clz_Torappu_RetroActData {
@@ -372,6 +387,8 @@ table clz_Torappu_StageData_SpecialStoryInfo {
     rewards: [clz_Torappu_ItemBundle]; 
     progressInfo: clz_Torappu_StageData_SpecialProgressInfo; 
     imageId: string; 
+    keyItemId: string; 
+    unlockDesc: string; 
 }
 
 table clz_Torappu_StageData {
@@ -395,6 +412,7 @@ table clz_Torappu_StageData {
     canBattleReplay: bool; 
     apCost: int; 
     apFailReturn: int; 
+    maxSlot: int; 
     etItemId: string; 
     etCost: int; 
     etFailReturn: int; 
@@ -434,6 +452,7 @@ table clz_Torappu_StageData {
     sixStarDisplayRewardList: [clz_Torappu_ItemBundle]; 
     advancedRuneIdList1: [string]; 
     advancedRuneIdList2: [string]; 
+    useSpecialSizeMapPreview: bool; 
 }
 
 table dict__string__clz_Torappu_StageData {
@@ -651,6 +670,8 @@ enum enum__Torappu_ActArchiveType : int {
     QUEST = 23,
     FRAGMENT = 24,
     DISASTER = 25,
+    COPPER = 26,
+    WRATH = 27,
 }
 
 enum enum__Torappu_Act17sideData_ArchiveItemUnlockCondition : int {
@@ -730,6 +751,13 @@ enum enum__Torappu_Battle_SideType : int {
     ALL = 7,
 }
 
+enum enum__Torappu_TileData_HeightTypeMask : int {
+    NONE = 0,
+    LOWLAND = 1,
+    HIGHLAND = 2,
+    ALL = 3,
+}
+
 table clz_Torappu_RuneData_Selector {
     professionMask: enum__Torappu_ProfessionCategory; 
     buildableMask: enum__Torappu_BuildableType; 
@@ -747,6 +775,7 @@ table clz_Torappu_RuneData_Selector {
     filterTagExcludeFilter: [string]; 
     subProfessionExcludeFilter: [string]; 
     mapTagFilter: [string]; 
+    heightTypeMask: enum__Torappu_TileData_HeightTypeMask; 
 }
 
 table clz_Torappu_Blackboard_DataPair {

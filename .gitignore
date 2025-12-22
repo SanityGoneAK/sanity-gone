@@ -38,3 +38,4 @@ packages/sanity-pack/fbs/assets/
 .idea/workspace.xml
 
 packages/sanity-pack/flatc
+packages/sanity-pack/OpenArknightsFBS/

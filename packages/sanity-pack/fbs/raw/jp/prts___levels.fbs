@@ -39,6 +39,7 @@ table clz_Torappu_LevelData_Options {
     isTrainingLevel: bool; 
     isHardTrainingLevel: bool; 
     isPredefinedCardsSelectable: bool; 
+    displayRestTime: bool; 
     maxPlayTime: float; 
     functionDisableMask: enum__Torappu_BattleFunctionDisableMask; 
     configBlackBoard: [clz_Torappu_Blackboard_DataPair]; 
@@ -195,7 +196,8 @@ enum enum__Torappu_CheckpointType : int {
     ALERT = 7,
     PATROL_MOVE = 8,
     WAIT_BOSSRUSH_WAVE = 9,
-    INVALID = 10,
+    MAP_OFFSET_MOVE = 10,
+    INVALID = 11,
 }
 
 table clz_Torappu_RouteData_CheckpointData {
@@ -495,6 +497,11 @@ table clz_Torappu_CharacterData_UniqueEquipPair {
     level: int; 
 }
 
+table clz_Torappu_CharacterData_MasterInfo {
+    masterId: string; 
+    level: int; 
+}
+
 enum enum__Torappu_EvolvePhase : int {
     PHASE_0 = 0,
     PHASE_1 = 1,
@@ -518,6 +525,7 @@ table clz_Torappu_LevelData_PredefinedData_PredefinedCharacter {
     alias: string; 
     uniEquipIds: [clz_Torappu_CharacterData_UniqueEquipPair]; 
     showSpIllust: bool; 
+    masterInfos: [clz_Torappu_CharacterData_MasterInfo]; 
     inst: clz_Torappu_CharacterInst_Metadata; 
     skillIndex: int; 
     mainSkillLvl: int; 
@@ -531,6 +539,7 @@ table clz_Torappu_LevelData_PredefinedData_PredefinedCard {
     alias: string; 
     uniEquipIds: [clz_Torappu_CharacterData_UniqueEquipPair]; 
     showSpIllust: bool; 
+    masterInfos: [clz_Torappu_CharacterData_MasterInfo]; 
     inst: clz_Torappu_CharacterInst_Metadata; 
     skillIndex: int; 
     mainSkillLvl: int; 
@@ -545,6 +554,7 @@ table clz_Torappu_LevelData_PredefinedData_PredefinedTokenCard {
     alias: string; 
     uniEquipIds: [clz_Torappu_CharacterData_UniqueEquipPair]; 
     showSpIllust: bool; 
+    masterInfos: [clz_Torappu_CharacterData_MasterInfo]; 
     inst: clz_Torappu_CharacterInst_Metadata; 
     skillIndex: int; 
     mainSkillLvl: int; 

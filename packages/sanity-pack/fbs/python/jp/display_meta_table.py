@@ -15,6 +15,11 @@ class enum__Torappu_PlayerAvatarGroupType(object):
     DYNAMIC = 5
 
 
+class enum__Torappu_HomeMultiFormChangeRule(object):
+    NONE = 0
+    TIME = 1
+
+
 class enum__Torappu_ItemRarity(object):
     TIER_1 = 0
     TIER_2 = 1
@@ -143,6 +148,11 @@ class enum__Torappu_ItemType(object):
     EXCLUSIVE_TKT_GACHA = 83
     EXCLUSIVE_TKT_GACHA_10 = 84
     SO_CHAR_EXP = 85
+    GIFTPACKAGE_TKT = 86
+    VOUCHER_SKIN_V2 = 87
+    RANDOM_VOUCHER_SKIN = 88
+    ACT1VHALFIDLE_ITEM = 89
+    PLOT_ITEM = 90
 
 
 class enum__Torappu_EmojiSceneType(object):
@@ -151,6 +161,8 @@ class enum__Torappu_EmojiSceneType(object):
     ACTMULTIV3_PICK = 2
     ACTMULTIV3_BATTLE = 3
     ENEMYDUEL_BATTLE = 4
+    AUTOCHESS_ROOM = 5
+    AUTOCHESS_BATTLE = 6
 
 
 class enum__Torappu_UIGuideTarget(object):
@@ -199,6 +211,10 @@ class enum__Torappu_UIGuideTarget(object):
     VEC_BREAK_V2 = 44
     GUN_TASK = 45
     SPECIAL_OPERATOR = 46
+    INFORMANT = 47
+    ACT1VHALFIDLE = 48
+    MONOPOLY = 49
+    AUTO_CHESS = 50
 
 
 class clz_Torappu_PlayerAvatarPerData(object):
@@ -544,6 +560,62 @@ def clz_Torappu_PlayerAvatarDataEnd(builder):
 
 
 
+class clz_Torappu_HomeBackgroundMultiFormData(object):
+    __slots__ = ['_tab']
+
+    @classmethod
+    def GetRootAs(cls, buf, offset=0):
+        n = flatbuffers.encode.Get(flatbuffers.packer.uoffset, buf, offset)
+        x = clz_Torappu_HomeBackgroundMultiFormData()
+        x.Init(buf, n + offset)
+        return x
+
+    @classmethod
+    def GetRootAsclz_Torappu_HomeBackgroundMultiFormData(cls, buf, offset=0):
+        """This method is deprecated. Please switch to GetRootAs."""
+        return cls.GetRootAs(buf, offset)
+    # clz_Torappu_HomeBackgroundMultiFormData
+    def Init(self, buf, pos):
+        self._tab = flatbuffers.table.Table(buf, pos)
+
+    # clz_Torappu_HomeBackgroundMultiFormData
+    def MultiFormBgId(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(4))
+        if o != 0:
+            return self._tab.String(o + self._tab.Pos)
+        return None
+
+    # clz_Torappu_HomeBackgroundMultiFormData
+    def SortId(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(6))
+        if o != 0:
+            return self._tab.Get(flatbuffers.number_types.Int32Flags, o + self._tab.Pos)
+        return 0
+
+    # clz_Torappu_HomeBackgroundMultiFormData
+    def BgMusicId(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(8))
+        if o != 0:
+            return self._tab.String(o + self._tab.Pos)
+        return None
+
+def clz_Torappu_HomeBackgroundMultiFormDataStart(builder):
+    builder.StartObject(3)
+
+def clz_Torappu_HomeBackgroundMultiFormDataAddMultiFormBgId(builder, multiFormBgId):
+    builder.PrependUOffsetTRelativeSlot(0, flatbuffers.number_types.UOffsetTFlags.py_type(multiFormBgId), 0)
+
+def clz_Torappu_HomeBackgroundMultiFormDataAddSortId(builder, sortId):
+    builder.PrependInt32Slot(1, sortId, 0)
+
+def clz_Torappu_HomeBackgroundMultiFormDataAddBgMusicId(builder, bgMusicId):
+    builder.PrependUOffsetTRelativeSlot(2, flatbuffers.number_types.UOffsetTFlags.py_type(bgMusicId), 0)
+
+def clz_Torappu_HomeBackgroundMultiFormDataEnd(builder):
+    return builder.EndObject()
+
+
+
 class clz_Torappu_HomeBackgroundSingleData(object):
     __slots__ = ['_tab']
 
@@ -591,36 +663,67 @@ class clz_Torappu_HomeBackgroundSingleData(object):
         return None
 
     # clz_Torappu_HomeBackgroundSingleData
-    def BgMusicId(self):
+    def BgDes(self):
         o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(12))
         if o != 0:
             return self._tab.String(o + self._tab.Pos)
         return None
 
     # clz_Torappu_HomeBackgroundSingleData
-    def BgDes(self):
+    def BgUsage(self):
         o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(14))
         if o != 0:
             return self._tab.String(o + self._tab.Pos)
         return None
 
     # clz_Torappu_HomeBackgroundSingleData
-    def BgUsage(self):
+    def IsMultiForm(self):
         o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(16))
         if o != 0:
-            return self._tab.String(o + self._tab.Pos)
+            return bool(self._tab.Get(flatbuffers.number_types.BoolFlags, o + self._tab.Pos))
+        return False
+
+    # clz_Torappu_HomeBackgroundSingleData
+    def ChangeRule(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(18))
+        if o != 0:
+            return self._tab.Get(flatbuffers.number_types.Int32Flags, o + self._tab.Pos)
+        return 0
+
+    # clz_Torappu_HomeBackgroundSingleData
+    def MultiFormList(self, j):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(20))
+        if o != 0:
+            x = self._tab.Vector(o)
+            x += flatbuffers.number_types.UOffsetTFlags.py_type(j) * 4
+            x = self._tab.Indirect(x)
+            obj = clz_Torappu_HomeBackgroundMultiFormData()
+            obj.Init(self._tab.Bytes, x)
+            return obj
         return None
 
     # clz_Torappu_HomeBackgroundSingleData
+    def MultiFormListLength(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(20))
+        if o != 0:
+            return self._tab.VectorLen(o)
+        return 0
+
+    # clz_Torappu_HomeBackgroundSingleData
+    def MultiFormListIsNone(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(20))
+        return o == 0
+
+    # clz_Torappu_HomeBackgroundSingleData
     def ObtainApproach(self):
-        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(18))
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(22))
         if o != 0:
             return self._tab.String(o + self._tab.Pos)
         return None
 
     # clz_Torappu_HomeBackgroundSingleData
     def UnlockDesList(self, j):
-        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(20))
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(24))
         if o != 0:
             a = self._tab.Vector(o)
             return self._tab.String(a + flatbuffers.number_types.UOffsetTFlags.py_type(j * 4))
@@ -628,18 +731,18 @@ class clz_Torappu_HomeBackgroundSingleData(object):
 
     # clz_Torappu_HomeBackgroundSingleData
     def UnlockDesListLength(self):
-        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(20))
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(24))
         if o != 0:
             return self._tab.VectorLen(o)
         return 0
 
     # clz_Torappu_HomeBackgroundSingleData
     def UnlockDesListIsNone(self):
-        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(20))
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(24))
         return o == 0
 
 def clz_Torappu_HomeBackgroundSingleDataStart(builder):
-    builder.StartObject(9)
+    builder.StartObject(11)
 
 def clz_Torappu_HomeBackgroundSingleDataAddBgId(builder, bgId):
     builder.PrependUOffsetTRelativeSlot(0, flatbuffers.number_types.UOffsetTFlags.py_type(bgId), 0)
@@ -653,25 +756,80 @@ def clz_Torappu_HomeBackgroundSingleDataAddBgStartTime(builder, bgStartTime):
 def clz_Torappu_HomeBackgroundSingleDataAddBgName(builder, bgName):
     builder.PrependUOffsetTRelativeSlot(3, flatbuffers.number_types.UOffsetTFlags.py_type(bgName), 0)
 
-def clz_Torappu_HomeBackgroundSingleDataAddBgMusicId(builder, bgMusicId):
-    builder.PrependUOffsetTRelativeSlot(4, flatbuffers.number_types.UOffsetTFlags.py_type(bgMusicId), 0)
-
 def clz_Torappu_HomeBackgroundSingleDataAddBgDes(builder, bgDes):
-    builder.PrependUOffsetTRelativeSlot(5, flatbuffers.number_types.UOffsetTFlags.py_type(bgDes), 0)
+    builder.PrependUOffsetTRelativeSlot(4, flatbuffers.number_types.UOffsetTFlags.py_type(bgDes), 0)
 
 def clz_Torappu_HomeBackgroundSingleDataAddBgUsage(builder, bgUsage):
-    builder.PrependUOffsetTRelativeSlot(6, flatbuffers.number_types.UOffsetTFlags.py_type(bgUsage), 0)
+    builder.PrependUOffsetTRelativeSlot(5, flatbuffers.number_types.UOffsetTFlags.py_type(bgUsage), 0)
+
+def clz_Torappu_HomeBackgroundSingleDataAddIsMultiForm(builder, isMultiForm):
+    builder.PrependBoolSlot(6, isMultiForm, 0)
+
+def clz_Torappu_HomeBackgroundSingleDataAddChangeRule(builder, changeRule):
+    builder.PrependInt32Slot(7, changeRule, 0)
+
+def clz_Torappu_HomeBackgroundSingleDataAddMultiFormList(builder, multiFormList):
+    builder.PrependUOffsetTRelativeSlot(8, flatbuffers.number_types.UOffsetTFlags.py_type(multiFormList), 0)
+
+def clz_Torappu_HomeBackgroundSingleDataStartMultiFormListVector(builder, numElems):
+    return builder.StartVector(4, numElems, 4)
 
 def clz_Torappu_HomeBackgroundSingleDataAddObtainApproach(builder, obtainApproach):
-    builder.PrependUOffsetTRelativeSlot(7, flatbuffers.number_types.UOffsetTFlags.py_type(obtainApproach), 0)
+    builder.PrependUOffsetTRelativeSlot(9, flatbuffers.number_types.UOffsetTFlags.py_type(obtainApproach), 0)
 
 def clz_Torappu_HomeBackgroundSingleDataAddUnlockDesList(builder, unlockDesList):
-    builder.PrependUOffsetTRelativeSlot(8, flatbuffers.number_types.UOffsetTFlags.py_type(unlockDesList), 0)
+    builder.PrependUOffsetTRelativeSlot(10, flatbuffers.number_types.UOffsetTFlags.py_type(unlockDesList), 0)
 
 def clz_Torappu_HomeBackgroundSingleDataStartUnlockDesListVector(builder, numElems):
     return builder.StartVector(4, numElems, 4)
 
 def clz_Torappu_HomeBackgroundSingleDataEnd(builder):
+    return builder.EndObject()
+
+
+
+class clz_Torappu_HomeThemeMultiFormData(object):
+    __slots__ = ['_tab']
+
+    @classmethod
+    def GetRootAs(cls, buf, offset=0):
+        n = flatbuffers.encode.Get(flatbuffers.packer.uoffset, buf, offset)
+        x = clz_Torappu_HomeThemeMultiFormData()
+        x.Init(buf, n + offset)
+        return x
+
+    @classmethod
+    def GetRootAsclz_Torappu_HomeThemeMultiFormData(cls, buf, offset=0):
+        """This method is deprecated. Please switch to GetRootAs."""
+        return cls.GetRootAs(buf, offset)
+    # clz_Torappu_HomeThemeMultiFormData
+    def Init(self, buf, pos):
+        self._tab = flatbuffers.table.Table(buf, pos)
+
+    # clz_Torappu_HomeThemeMultiFormData
+    def MultiFormTmId(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(4))
+        if o != 0:
+            return self._tab.String(o + self._tab.Pos)
+        return None
+
+    # clz_Torappu_HomeThemeMultiFormData
+    def SortId(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(6))
+        if o != 0:
+            return self._tab.Get(flatbuffers.number_types.Int32Flags, o + self._tab.Pos)
+        return 0
+
+def clz_Torappu_HomeThemeMultiFormDataStart(builder):
+    builder.StartObject(2)
+
+def clz_Torappu_HomeThemeMultiFormDataAddMultiFormTmId(builder, multiFormTmId):
+    builder.PrependUOffsetTRelativeSlot(0, flatbuffers.number_types.UOffsetTFlags.py_type(multiFormTmId), 0)
+
+def clz_Torappu_HomeThemeMultiFormDataAddSortId(builder, sortId):
+    builder.PrependInt32Slot(1, sortId, 0)
+
+def clz_Torappu_HomeThemeMultiFormDataEnd(builder):
     return builder.EndObject()
 
 
@@ -744,15 +902,53 @@ class clz_Torappu_HomeThemeDisplayData(object):
         return None
 
     # clz_Torappu_HomeThemeDisplayData
-    def ObtainApproach(self):
+    def IsMultiForm(self):
         o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(18))
+        if o != 0:
+            return bool(self._tab.Get(flatbuffers.number_types.BoolFlags, o + self._tab.Pos))
+        return False
+
+    # clz_Torappu_HomeThemeDisplayData
+    def ChangeRule(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(20))
+        if o != 0:
+            return self._tab.Get(flatbuffers.number_types.Int32Flags, o + self._tab.Pos)
+        return 0
+
+    # clz_Torappu_HomeThemeDisplayData
+    def MultiFormList(self, j):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(22))
+        if o != 0:
+            x = self._tab.Vector(o)
+            x += flatbuffers.number_types.UOffsetTFlags.py_type(j) * 4
+            x = self._tab.Indirect(x)
+            obj = clz_Torappu_HomeThemeMultiFormData()
+            obj.Init(self._tab.Bytes, x)
+            return obj
+        return None
+
+    # clz_Torappu_HomeThemeDisplayData
+    def MultiFormListLength(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(22))
+        if o != 0:
+            return self._tab.VectorLen(o)
+        return 0
+
+    # clz_Torappu_HomeThemeDisplayData
+    def MultiFormListIsNone(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(22))
+        return o == 0
+
+    # clz_Torappu_HomeThemeDisplayData
+    def ObtainApproach(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(24))
         if o != 0:
             return self._tab.String(o + self._tab.Pos)
         return None
 
     # clz_Torappu_HomeThemeDisplayData
     def UnlockDesList(self, j):
-        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(20))
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(26))
         if o != 0:
             a = self._tab.Vector(o)
             return self._tab.String(a + flatbuffers.number_types.UOffsetTFlags.py_type(j * 4))
@@ -760,39 +956,39 @@ class clz_Torappu_HomeThemeDisplayData(object):
 
     # clz_Torappu_HomeThemeDisplayData
     def UnlockDesListLength(self):
-        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(20))
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(26))
         if o != 0:
             return self._tab.VectorLen(o)
         return 0
 
     # clz_Torappu_HomeThemeDisplayData
     def UnlockDesListIsNone(self):
-        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(20))
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(26))
         return o == 0
 
     # clz_Torappu_HomeThemeDisplayData
     def IsLimitObtain(self):
-        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(22))
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(28))
         if o != 0:
             return bool(self._tab.Get(flatbuffers.number_types.BoolFlags, o + self._tab.Pos))
         return False
 
     # clz_Torappu_HomeThemeDisplayData
     def HideWhenLimit(self):
-        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(24))
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(30))
         if o != 0:
             return bool(self._tab.Get(flatbuffers.number_types.BoolFlags, o + self._tab.Pos))
         return False
 
     # clz_Torappu_HomeThemeDisplayData
     def Rarity(self):
-        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(26))
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(32))
         if o != 0:
             return self._tab.Get(flatbuffers.number_types.Int32Flags, o + self._tab.Pos)
         return 0
 
 def clz_Torappu_HomeThemeDisplayDataStart(builder):
-    builder.StartObject(12)
+    builder.StartObject(15)
 
 def clz_Torappu_HomeThemeDisplayDataAddId(builder, id):
     builder.PrependUOffsetTRelativeSlot(0, flatbuffers.number_types.UOffsetTFlags.py_type(id), 0)
@@ -815,23 +1011,35 @@ def clz_Torappu_HomeThemeDisplayDataAddTmDes(builder, tmDes):
 def clz_Torappu_HomeThemeDisplayDataAddTmUsage(builder, tmUsage):
     builder.PrependUOffsetTRelativeSlot(6, flatbuffers.number_types.UOffsetTFlags.py_type(tmUsage), 0)
 
+def clz_Torappu_HomeThemeDisplayDataAddIsMultiForm(builder, isMultiForm):
+    builder.PrependBoolSlot(7, isMultiForm, 0)
+
+def clz_Torappu_HomeThemeDisplayDataAddChangeRule(builder, changeRule):
+    builder.PrependInt32Slot(8, changeRule, 0)
+
+def clz_Torappu_HomeThemeDisplayDataAddMultiFormList(builder, multiFormList):
+    builder.PrependUOffsetTRelativeSlot(9, flatbuffers.number_types.UOffsetTFlags.py_type(multiFormList), 0)
+
+def clz_Torappu_HomeThemeDisplayDataStartMultiFormListVector(builder, numElems):
+    return builder.StartVector(4, numElems, 4)
+
 def clz_Torappu_HomeThemeDisplayDataAddObtainApproach(builder, obtainApproach):
-    builder.PrependUOffsetTRelativeSlot(7, flatbuffers.number_types.UOffsetTFlags.py_type(obtainApproach), 0)
+    builder.PrependUOffsetTRelativeSlot(10, flatbuffers.number_types.UOffsetTFlags.py_type(obtainApproach), 0)
 
 def clz_Torappu_HomeThemeDisplayDataAddUnlockDesList(builder, unlockDesList):
-    builder.PrependUOffsetTRelativeSlot(8, flatbuffers.number_types.UOffsetTFlags.py_type(unlockDesList), 0)
+    builder.PrependUOffsetTRelativeSlot(11, flatbuffers.number_types.UOffsetTFlags.py_type(unlockDesList), 0)
 
 def clz_Torappu_HomeThemeDisplayDataStartUnlockDesListVector(builder, numElems):
     return builder.StartVector(4, numElems, 4)
 
 def clz_Torappu_HomeThemeDisplayDataAddIsLimitObtain(builder, isLimitObtain):
-    builder.PrependBoolSlot(9, isLimitObtain, 0)
+    builder.PrependBoolSlot(12, isLimitObtain, 0)
 
 def clz_Torappu_HomeThemeDisplayDataAddHideWhenLimit(builder, hideWhenLimit):
-    builder.PrependBoolSlot(10, hideWhenLimit, 0)
+    builder.PrependBoolSlot(13, hideWhenLimit, 0)
 
 def clz_Torappu_HomeThemeDisplayDataAddRarity(builder, rarity):
-    builder.PrependInt32Slot(11, rarity, 0)
+    builder.PrependInt32Slot(14, rarity, 0)
 
 def clz_Torappu_HomeThemeDisplayDataEnd(builder):
     return builder.EndObject()
@@ -1200,6 +1408,174 @@ def dict__string__clz_Torappu_HomeThemeLimitDataEnd(builder):
 
 
 
+class clz_Torappu_HomeMultiFormInfoData(object):
+    __slots__ = ['_tab']
+
+    @classmethod
+    def GetRootAs(cls, buf, offset=0):
+        n = flatbuffers.encode.Get(flatbuffers.packer.uoffset, buf, offset)
+        x = clz_Torappu_HomeMultiFormInfoData()
+        x.Init(buf, n + offset)
+        return x
+
+    @classmethod
+    def GetRootAsclz_Torappu_HomeMultiFormInfoData(cls, buf, offset=0):
+        """This method is deprecated. Please switch to GetRootAs."""
+        return cls.GetRootAs(buf, offset)
+    # clz_Torappu_HomeMultiFormInfoData
+    def Init(self, buf, pos):
+        self._tab = flatbuffers.table.Table(buf, pos)
+
+    # clz_Torappu_HomeMultiFormInfoData
+    def ChangeRule(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(4))
+        if o != 0:
+            return self._tab.Get(flatbuffers.number_types.Int32Flags, o + self._tab.Pos)
+        return 0
+
+    # clz_Torappu_HomeMultiFormInfoData
+    def BgDesc(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(6))
+        if o != 0:
+            return self._tab.String(o + self._tab.Pos)
+        return None
+
+    # clz_Torappu_HomeMultiFormInfoData
+    def TmDesc(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(8))
+        if o != 0:
+            return self._tab.String(o + self._tab.Pos)
+        return None
+
+def clz_Torappu_HomeMultiFormInfoDataStart(builder):
+    builder.StartObject(3)
+
+def clz_Torappu_HomeMultiFormInfoDataAddChangeRule(builder, changeRule):
+    builder.PrependInt32Slot(0, changeRule, 0)
+
+def clz_Torappu_HomeMultiFormInfoDataAddBgDesc(builder, bgDesc):
+    builder.PrependUOffsetTRelativeSlot(1, flatbuffers.number_types.UOffsetTFlags.py_type(bgDesc), 0)
+
+def clz_Torappu_HomeMultiFormInfoDataAddTmDesc(builder, tmDesc):
+    builder.PrependUOffsetTRelativeSlot(2, flatbuffers.number_types.UOffsetTFlags.py_type(tmDesc), 0)
+
+def clz_Torappu_HomeMultiFormInfoDataEnd(builder):
+    return builder.EndObject()
+
+
+
+class clz_Torappu_HomeMultiFormTimeRuleData(object):
+    __slots__ = ['_tab']
+
+    @classmethod
+    def GetRootAs(cls, buf, offset=0):
+        n = flatbuffers.encode.Get(flatbuffers.packer.uoffset, buf, offset)
+        x = clz_Torappu_HomeMultiFormTimeRuleData()
+        x.Init(buf, n + offset)
+        return x
+
+    @classmethod
+    def GetRootAsclz_Torappu_HomeMultiFormTimeRuleData(cls, buf, offset=0):
+        """This method is deprecated. Please switch to GetRootAs."""
+        return cls.GetRootAs(buf, offset)
+    # clz_Torappu_HomeMultiFormTimeRuleData
+    def Init(self, buf, pos):
+        self._tab = flatbuffers.table.Table(buf, pos)
+
+    # clz_Torappu_HomeMultiFormTimeRuleData
+    def Id(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(4))
+        if o != 0:
+            return self._tab.String(o + self._tab.Pos)
+        return None
+
+    # clz_Torappu_HomeMultiFormTimeRuleData
+    def StartHour(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(6))
+        if o != 0:
+            return self._tab.Get(flatbuffers.number_types.Int32Flags, o + self._tab.Pos)
+        return 0
+
+def clz_Torappu_HomeMultiFormTimeRuleDataStart(builder):
+    builder.StartObject(2)
+
+def clz_Torappu_HomeMultiFormTimeRuleDataAddId(builder, id):
+    builder.PrependUOffsetTRelativeSlot(0, flatbuffers.number_types.UOffsetTFlags.py_type(id), 0)
+
+def clz_Torappu_HomeMultiFormTimeRuleDataAddStartHour(builder, startHour):
+    builder.PrependInt32Slot(1, startHour, 0)
+
+def clz_Torappu_HomeMultiFormTimeRuleDataEnd(builder):
+    return builder.EndObject()
+
+
+
+class dict__string__list_clz_Torappu_HomeMultiFormTimeRuleData(object):
+    __slots__ = ['_tab']
+
+    @classmethod
+    def GetRootAs(cls, buf, offset=0):
+        n = flatbuffers.encode.Get(flatbuffers.packer.uoffset, buf, offset)
+        x = dict__string__list_clz_Torappu_HomeMultiFormTimeRuleData()
+        x.Init(buf, n + offset)
+        return x
+
+    @classmethod
+    def GetRootAsdict__string__list_clz_Torappu_HomeMultiFormTimeRuleData(cls, buf, offset=0):
+        """This method is deprecated. Please switch to GetRootAs."""
+        return cls.GetRootAs(buf, offset)
+    # dict__string__list_clz_Torappu_HomeMultiFormTimeRuleData
+    def Init(self, buf, pos):
+        self._tab = flatbuffers.table.Table(buf, pos)
+
+    # dict__string__list_clz_Torappu_HomeMultiFormTimeRuleData
+    def Key(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(4))
+        if o != 0:
+            return self._tab.String(o + self._tab.Pos)
+        return None
+
+    # dict__string__list_clz_Torappu_HomeMultiFormTimeRuleData
+    def Value(self, j):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(6))
+        if o != 0:
+            x = self._tab.Vector(o)
+            x += flatbuffers.number_types.UOffsetTFlags.py_type(j) * 4
+            x = self._tab.Indirect(x)
+            obj = clz_Torappu_HomeMultiFormTimeRuleData()
+            obj.Init(self._tab.Bytes, x)
+            return obj
+        return None
+
+    # dict__string__list_clz_Torappu_HomeMultiFormTimeRuleData
+    def ValueLength(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(6))
+        if o != 0:
+            return self._tab.VectorLen(o)
+        return 0
+
+    # dict__string__list_clz_Torappu_HomeMultiFormTimeRuleData
+    def ValueIsNone(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(6))
+        return o == 0
+
+def dict__string__list_clz_Torappu_HomeMultiFormTimeRuleDataStart(builder):
+    builder.StartObject(2)
+
+def dict__string__list_clz_Torappu_HomeMultiFormTimeRuleDataAddKey(builder, key):
+    builder.PrependUOffsetTRelativeSlot(0, flatbuffers.number_types.UOffsetTFlags.py_type(key), 0)
+
+def dict__string__list_clz_Torappu_HomeMultiFormTimeRuleDataAddValue(builder, value):
+    builder.PrependUOffsetTRelativeSlot(1, flatbuffers.number_types.UOffsetTFlags.py_type(value), 0)
+
+def dict__string__list_clz_Torappu_HomeMultiFormTimeRuleDataStartValueVector(builder, numElems):
+    return builder.StartVector(4, numElems, 4)
+
+def dict__string__list_clz_Torappu_HomeMultiFormTimeRuleDataEnd(builder):
+    return builder.EndObject()
+
+
+
 class clz_Torappu_HomeBackgroundData(object):
     __slots__ = ['_tab']
 
@@ -1329,21 +1705,69 @@ class clz_Torappu_HomeBackgroundData(object):
         return o == 0
 
     # clz_Torappu_HomeBackgroundData
-    def DefaultBgMusicId(self):
+    def MultiFormInfoData(self, j):
         o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(16))
+        if o != 0:
+            x = self._tab.Vector(o)
+            x += flatbuffers.number_types.UOffsetTFlags.py_type(j) * 4
+            x = self._tab.Indirect(x)
+            obj = clz_Torappu_HomeMultiFormInfoData()
+            obj.Init(self._tab.Bytes, x)
+            return obj
+        return None
+
+    # clz_Torappu_HomeBackgroundData
+    def MultiFormInfoDataLength(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(16))
+        if o != 0:
+            return self._tab.VectorLen(o)
+        return 0
+
+    # clz_Torappu_HomeBackgroundData
+    def MultiFormInfoDataIsNone(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(16))
+        return o == 0
+
+    # clz_Torappu_HomeBackgroundData
+    def TimeRuleData(self, j):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(18))
+        if o != 0:
+            x = self._tab.Vector(o)
+            x += flatbuffers.number_types.UOffsetTFlags.py_type(j) * 4
+            x = self._tab.Indirect(x)
+            obj = dict__string__list_clz_Torappu_HomeMultiFormTimeRuleData()
+            obj.Init(self._tab.Bytes, x)
+            return obj
+        return None
+
+    # clz_Torappu_HomeBackgroundData
+    def TimeRuleDataLength(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(18))
+        if o != 0:
+            return self._tab.VectorLen(o)
+        return 0
+
+    # clz_Torappu_HomeBackgroundData
+    def TimeRuleDataIsNone(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(18))
+        return o == 0
+
+    # clz_Torappu_HomeBackgroundData
+    def DefaultBgMusicId(self):
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(20))
         if o != 0:
             return self._tab.String(o + self._tab.Pos)
         return None
 
     # clz_Torappu_HomeBackgroundData
     def ThemeStartTime(self):
-        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(18))
+        o = flatbuffers.number_types.UOffsetTFlags.py_type(self._tab.Offset(22))
         if o != 0:
             return self._tab.Get(flatbuffers.number_types.Int64Flags, o + self._tab.Pos)
         return 0
 
 def clz_Torappu_HomeBackgroundDataStart(builder):
-    builder.StartObject(8)
+    builder.StartObject(10)
 
 def clz_Torappu_HomeBackgroundDataAddDefaultBackgroundId(builder, defaultBackgroundId):
     builder.PrependUOffsetTRelativeSlot(0, flatbuffers.number_types.UOffsetTFlags.py_type(defaultBackgroundId), 0)
@@ -1375,11 +1799,23 @@ def clz_Torappu_HomeBackgroundDataAddThemeLimitData(builder, themeLimitData):
 def clz_Torappu_HomeBackgroundDataStartThemeLimitDataVector(builder, numElems):
     return builder.StartVector(4, numElems, 4)
 
+def clz_Torappu_HomeBackgroundDataAddMultiFormInfoData(builder, multiFormInfoData):
+    builder.PrependUOffsetTRelativeSlot(6, flatbuffers.number_types.UOffsetTFlags.py_type(multiFormInfoData), 0)
+
+def clz_Torappu_HomeBackgroundDataStartMultiFormInfoDataVector(builder, numElems):
+    return builder.StartVector(4, numElems, 4)
+
+def clz_Torappu_HomeBackgroundDataAddTimeRuleData(builder, timeRuleData):
+    builder.PrependUOffsetTRelativeSlot(7, flatbuffers.number_types.UOffsetTFlags.py_type(timeRuleData), 0)
+
+def clz_Torappu_HomeBackgroundDataStartTimeRuleDataVector(builder, numElems):
+    return builder.StartVector(4, numElems, 4)
+
 def clz_Torappu_HomeBackgroundDataAddDefaultBgMusicId(builder, defaultBgMusicId):
-    builder.PrependUOffsetTRelativeSlot(6, flatbuffers.number_types.UOffsetTFlags.py_type(defaultBgMusicId), 0)
+    builder.PrependUOffsetTRelativeSlot(8, flatbuffers.number_types.UOffsetTFlags.py_type(defaultBgMusicId), 0)
 
 def clz_Torappu_HomeBackgroundDataAddThemeStartTime(builder, themeStartTime):
-    builder.PrependInt64Slot(7, themeStartTime, 0)
+    builder.PrependInt64Slot(9, themeStartTime, 0)
 
 def clz_Torappu_HomeBackgroundDataEnd(builder):
     return builder.EndObject()
