@@ -1,0 +1,22 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 8382955500577391686
+  },
+  "m_Name": "local_pref",
+  "numberUnitFormat": "{0}{1}",
+  "numberUnits": [
+    "",
+    "만",
+    "억",
+    "조"
+  ],
+  "unitStepSize": 10000,
+  "battleResultCharWordLineLength": 17,
+  "splitMode": 0
+}

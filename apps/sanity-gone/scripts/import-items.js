@@ -1,16 +1,18 @@
 import { promises as fs } from "fs";
 import path from "path";
 
-import { items as cnItems } from "./ArknightsGameData/zh_CN/gamedata/excel/item_table.json";
-import { items as enItems } from "./ArknightsGameData_YoStar/en_US/gamedata/excel/item_table.json";
-import { items as jpItems } from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/item_table.json";
-import { items as krItems } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/item_table.json";
+import { items as cnItems } from "./data/cn/gamedata/excel/item_table.json";
+import { items as enItems } from "./data/en/gamedata/excel/item_table.json";
+import { items as jpItems } from "./data/jp/gamedata/excel/item_table.json";
+import { items as krItems } from "./data/kr/gamedata/excel/item_table.json";
+import { items as twItems } from "./data/tw/gamedata/excel/item_table.json";
 
 const ITEM_LOCALES = {
 	zh_CN: cnItems,
 	en_US: enItems,
 	ja_JP: jpItems,
 	ko_KR: krItems,
+	zh_TW: twItems,
 };
 
 const UNOFFICIAL_ITEM_NAME_TRANSLATIONS = {

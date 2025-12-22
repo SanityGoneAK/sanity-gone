@@ -5,37 +5,43 @@ import { aggregateModuleData } from "./aggregate-module-data";
 import { aggregateRiicData } from "./aggregate-riic-data";
 import { slugify } from "../src/utils/strings";
 
-import rangeTable from "./ArknightsGameData/zh_CN/gamedata/excel/range_table.json" assert { type: "json" };
+import rangeTable from "./data/cn/gamedata/excel/range_table.json" assert { type: "json" };
 
-import cnVoiceTable from "./ArknightsGameData/zh_CN/gamedata/excel/charword_table.json" assert { type: "json" };
-import enVoiceTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/charword_table.json" assert { type: "json" };
-import jpVoiceTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/charword_table.json" assert { type: "json" };
-import krVoiceTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/charword_table.json" assert { type: "json" };
+import cnVoiceTable from "./data/cn/gamedata/excel/charword_table.json" assert { type: "json" };
+import enVoiceTable from "./data/en/gamedata/excel/charword_table.json" assert { type: "json" };
+import jpVoiceTable from "./data/jp/gamedata/excel/charword_table.json" assert { type: "json" };
+import krVoiceTable from "./data/kr/gamedata/excel/charword_table.json" assert { type: "json" };
+import twVoiceTable from "./data/tw/gamedata/excel/charword_table.json" assert { type: "json" };
 
-import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" assert { type: "json" };
-import enCharacterTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json" assert { type: "json" };
-import jpCharacterTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json" assert { type: "json" };
-import krCharacterTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json" assert { type: "json" };
+import cnCharacterTable from "./data/cn/gamedata/excel/character_table.json" assert { type: "json" };
+import enCharacterTable from "./data/en/gamedata/excel/character_table.json" assert { type: "json" };
+import jpCharacterTable from "./data/jp/gamedata/excel/character_table.json" assert { type: "json" };
+import krCharacterTable from "./data/kr/gamedata/excel/character_table.json" assert { type: "json" };
+import twCharacterTable from "./data/tw/gamedata/excel/character_table.json" assert { type: "json" };
 
-import cnCharacterPatchTable from "./ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json" assert { type: "json" };
-import enCharacterPatchTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/char_patch_table.json" assert { type: "json" };
-import jpCharacterPatchTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/char_patch_table.json" assert { type: "json" };
-import krCharacterPatchTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/char_patch_table.json" assert { type: "json" };
+import cnCharacterPatchTable from "./data/cn/gamedata/excel/char_patch_table.json" assert { type: "json" };
+import enCharacterPatchTable from "./data/en/gamedata/excel/char_patch_table.json" assert { type: "json" };
+import jpCharacterPatchTable from "./data/jp/gamedata/excel/char_patch_table.json" assert { type: "json" };
+import krCharacterPatchTable from "./data/kr/gamedata/excel/char_patch_table.json" assert { type: "json" };
+import twCharacterPatchTable from "./data/tw/gamedata/excel/char_patch_table.json" assert { type: "json" };
 
-import cnSkillTable from "./ArknightsGameData/zh_CN/gamedata/excel/skill_table.json" assert { type: "json" };
-import enSkillTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/skill_table.json" assert { type: "json" };
-import jpSkillTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/skill_table.json" assert { type: "json" };
-import krSkillTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/skill_table.json" assert { type: "json" };
+import cnSkillTable from "./data/cn/gamedata/excel/skill_table.json" assert { type: "json" };
+import enSkillTable from "./data/en/gamedata/excel/skill_table.json" assert { type: "json" };
+import jpSkillTable from "./data/jp/gamedata/excel/skill_table.json" assert { type: "json" };
+import krSkillTable from "./data/kr/gamedata/excel/skill_table.json" assert { type: "json" };
+import twSkillTable from "./data/tw/gamedata/excel/skill_table.json" assert { type: "json" };
 
-import { charSkins as cnCharSkins } from "./ArknightsGameData/zh_CN/gamedata/excel/skin_table.json" assert { type: "json" };
-import { charSkins as enCharSkins } from "./ArknightsGameData_YoStar/en_US/gamedata/excel/skin_table.json" assert { type: "json" };
-import { charSkins as jpCharSkins } from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/skin_table.json" assert { type: "json" };
-import { charSkins as krCharSkins } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/skin_table.json" assert { type: "json" };
+import { charSkins as cnCharSkins } from "./data/cn/gamedata/excel/skin_table.json" assert { type: "json" };
+import { charSkins as enCharSkins } from "./data/en/gamedata/excel/skin_table.json" assert { type: "json" };
+import { charSkins as jpCharSkins } from "./data/jp/gamedata/excel/skin_table.json" assert { type: "json" };
+import { charSkins as krCharSkins } from "./data/kr/gamedata/excel/skin_table.json" assert { type: "json" };
+import { charSkins as twCharSkins } from "./data/tw/gamedata/excel/skin_table.json" assert { type: "json" };
 
-import { handbookDict as cnHandbookDict } from "./ArknightsGameData/zh_CN/gamedata/excel/handbook_info_table.json" assert { type: "json" };
-import { handbookDict as enHandbookDict } from "./ArknightsGameData_YoStar/en_US/gamedata/excel/handbook_info_table.json" assert { type: "json" };
-import { handbookDict as jpHandbookDict } from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/handbook_info_table.json" assert { type: "json" };
-import { handbookDict as krHandbookDict } from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as cnHandbookDict } from "./data/cn/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as enHandbookDict } from "./data/en/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as jpHandbookDict } from "./data/jp/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as krHandbookDict } from "./data/kr/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as twHandbookDict } from "./data/tw/gamedata/excel/handbook_info_table.json" assert { type: "json" };
 
 import {
 	fetchJetroyzSkillTranslations,
@@ -53,6 +59,7 @@ const enPatchChars = enCharacterPatchTable.patchChars;
 const cnPatchChars = cnCharacterPatchTable.patchChars;
 const jpPatchChars = jpCharacterPatchTable.patchChars;
 const krPatchChars = krCharacterPatchTable.patchChars;
+const twPatchChars = twCharacterPatchTable.patchChars;
 
 /** @type {{ [characterId: string]: string }} */
 const NAME_OVERRIDES = {
@@ -65,6 +72,7 @@ const CHARACTER_LOCALES = {
 	en_US: { ...enCharacterTable, ...enPatchChars },
 	ja_JP: { ...jpCharacterTable, ...jpPatchChars },
 	ko_KR: { ...krCharacterTable, ...krPatchChars },
+	zh_TW: { ...twCharacterTable, ...twPatchChars },
 };
 
 const SKILL_LOCALES = {
@@ -72,6 +80,7 @@ const SKILL_LOCALES = {
 	en_US: enSkillTable,
 	ja_JP: jpSkillTable,
 	ko_KR: krSkillTable,
+	zh_TW: twSkillTable,
 };
 
 const SKIN_LOCALES = {
@@ -79,6 +88,7 @@ const SKIN_LOCALES = {
 	en_US: enCharSkins,
 	ja_JP: jpCharSkins,
 	ko_KR: krCharSkins,
+	zh_TW: twCharSkins,
 };
 
 const HANDBOOK_LOCALES = {
@@ -86,6 +96,7 @@ const HANDBOOK_LOCALES = {
 	en_US: enHandbookDict,
 	ja_JP: jpHandbookDict,
 	ko_KR: krHandbookDict,
+	zh_TW: twHandbookDict,
 };
 
 const VOICE_LOCALES = {
@@ -93,6 +104,7 @@ const VOICE_LOCALES = {
 	en_US: enVoiceTable,
 	ja_JP: jpVoiceTable,
 	ko_KR: krVoiceTable,
+	zh_TW: twVoiceTable,
 };
 
 /**
@@ -104,7 +116,7 @@ const VOICE_LOCALES = {
  * - this operator's summons from character_table
  *
  * @param {string} dataDir - output directory
- * @param {"zh_CN" | "en_US" | "ja_JP" | "ko_KR"} locale - output locale
+ * @param {"zh_CN" | "en_US" | "ja_JP" | "ko_KR" | "zh_TW"} locale - output locale
  */
 export async function createOperatorsJson(dataDir, locale) {
 	console.log(`Creating ${path.join(dataDir, "operators.json")}...`);

@@ -1,0 +1,147 @@
+[
+  {
+    "tagId": 1,
+    "tagName": "近衛幹員",
+    "tagGroup": 1
+  },
+  {
+    "tagId": 2,
+    "tagName": "狙擊幹員",
+    "tagGroup": 2
+  },
+  {
+    "tagId": 3,
+    "tagName": "重裝幹員",
+    "tagGroup": 3
+  },
+  {
+    "tagId": 4,
+    "tagName": "醫療幹員",
+    "tagGroup": 4
+  },
+  {
+    "tagId": 5,
+    "tagName": "輔助幹員",
+    "tagGroup": 5
+  },
+  {
+    "tagId": 6,
+    "tagName": "術師幹員",
+    "tagGroup": 6
+  },
+  {
+    "tagId": 7,
+    "tagName": "特種幹員",
+    "tagGroup": 7
+  },
+  {
+    "tagId": 8,
+    "tagName": "先鋒幹員",
+    "tagGroup": 8
+  },
+  {
+    "tagId": 9,
+    "tagName": "近戰位",
+    "tagGroup": 9
+  },
+  {
+    "tagId": 10,
+    "tagName": "遠程位",
+    "tagGroup": 10
+  },
+  {
+    "tagId": 11,
+    "tagName": "高級資深幹員",
+    "tagGroup": 11
+  },
+  {
+    "tagId": 12,
+    "tagName": "控場",
+    "tagGroup": 12
+  },
+  {
+    "tagId": 13,
+    "tagName": "爆發",
+    "tagGroup": 13
+  },
+  {
+    "tagId": 14,
+    "tagName": "資深幹員",
+    "tagGroup": 14
+  },
+  {
+    "tagId": 15,
+    "tagName": "治療",
+    "tagGroup": 15
+  },
+  {
+    "tagId": 16,
+    "tagName": "支援",
+    "tagGroup": 16
+  },
+  {
+    "tagId": 17,
+    "tagName": "新手",
+    "tagGroup": 17
+  },
+  {
+    "tagId": 18,
+    "tagName": "費用回復",
+    "tagGroup": 18
+  },
+  {
+    "tagId": 19,
+    "tagName": "輸出",
+    "tagGroup": 19
+  },
+  {
+    "tagId": 20,
+    "tagName": "生存",
+    "tagGroup": 20
+  },
+  {
+    "tagId": 21,
+    "tagName": "群攻",
+    "tagGroup": 21
+  },
+  {
+    "tagId": 22,
+    "tagName": "防護",
+    "tagGroup": 22
+  },
+  {
+    "tagId": 23,
+    "tagName": "減速",
+    "tagGroup": 23
+  },
+  {
+    "tagId": 24,
+    "tagName": "削弱",
+    "tagGroup": 24
+  },
+  {
+    "tagId": 25,
+    "tagName": "快速復活",
+    "tagGroup": 25
+  },
+  {
+    "tagId": 26,
+    "tagName": "位移",
+    "tagGroup": 26
+  },
+  {
+    "tagId": 27,
+    "tagName": "召喚",
+    "tagGroup": 27
+  },
+  {
+    "tagId": 28,
+    "tagName": "支援機械",
+    "tagGroup": 28
+  },
+  {
+    "tagId": 29,
+    "tagName": "元素",
+    "tagGroup": 29
+  }
+]

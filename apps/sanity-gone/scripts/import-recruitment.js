@@ -5,20 +5,23 @@ import { Combination } from "js-combinatorics";
 
 import { professionToClass } from "../src/utils/classes";
 import { toTitleCase } from "../src/utils/strings";
-import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" assert { type: "json" };
-import cnGachaTable from "./ArknightsGameData/zh_CN/gamedata/excel/gacha_table.json";
-import enCharacterTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json" assert { type: "json" };
-import enGachaTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/gacha_table.json";
-import jpCharacterTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json" assert { type: "json" };
-import jpGachaTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/gacha_table.json";
-import krCharacterTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json" assert { type: "json" };
-import krGachaTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/gacha_table.json";
+import cnCharacterTable from "./data/cn/gamedata/excel/character_table.json" assert { type: "json" };
+import cnGachaTable from "./data/cn/gamedata/excel/gacha_table.json";
+import enCharacterTable from "./data/en/gamedata/excel/character_table.json" assert { type: "json" };
+import enGachaTable from "./data/en/gamedata/excel/gacha_table.json";
+import jpCharacterTable from "./data/jp/gamedata/excel/character_table.json" assert { type: "json" };
+import jpGachaTable from "./data/jp/gamedata/excel/gacha_table.json";
+import krCharacterTable from "./data/kr/gamedata/excel/character_table.json" assert { type: "json" };
+import krGachaTable from "./data/kr/gamedata/excel/gacha_table.json";
+import twCharacterTable from "./data/tw/gamedata/excel/character_table.json" assert { type: "json" };
+import twGachaTable from "./data/tw/gamedata/excel/gacha_table.json";
 
 const GACHA_LOCALES = {
 	zh_CN: cnGachaTable,
 	en_US: enGachaTable,
 	ja_JP: jpGachaTable,
 	ko_KR: krGachaTable,
+	zh_TW: twGachaTable,
 };
 
 const CHARACTER_LOCALES = {
@@ -26,6 +29,7 @@ const CHARACTER_LOCALES = {
 	en_US: enCharacterTable,
 	ja_JP: jpCharacterTable,
 	ko_KR: krCharacterTable,
+	zh_TW: twCharacterTable,
 };
 
 const nameOverrides = {
@@ -36,6 +40,7 @@ const nameOverrides = {
 const recruitableNameToIdOverride = {
 	"Justice Knight": "char_4000_jnight",
 	샤미르: "char_254_vodfox",
+	奧斯塔: 'char_346_aosta'
 };
 
 export async function createRecruitmentJson(dataDir, locale) {

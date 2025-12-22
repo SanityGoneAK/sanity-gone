@@ -1,5 +1,5 @@
-import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json";
-import { spCharGroups } from "./ArknightsGameData/zh_CN/gamedata/excel/char_meta_table.json"
+import cnCharacterTable from "./data/cn/gamedata/excel/character_table.json";
+import { spCharGroups } from "./data/cn/gamedata/excel/char_meta_table.json"
 
 const alterNameRegex = /(\S+)\s+the\s+/i;
 

@@ -113,7 +113,7 @@
   },
   "char_4195_radian": {
     "charId": "char_4195_radian",
-    "name": "Raidian",
+    "name": "라이디언",
     "slug": "raidian",
     "position": "RANGED",
     "rarity": 6,
@@ -127,7 +127,7 @@
   },
   "char_1043_leizi2": {
     "charId": "char_1043_leizi2",
-    "name": "Leizi the Thunderbringer",
+    "name": "레이즈 더 썬더브링어",
     "slug": "leizi-the-thunderbringer",
     "position": "MELEE",
     "rarity": 6,
@@ -1877,7 +1877,7 @@
   },
   "char_4196_reckpr": {
     "charId": "char_4196_reckpr",
-    "name": "Record Keeper",
+    "name": "레코드키퍼",
     "slug": "record-keeper",
     "position": "RANGED",
     "rarity": 5,

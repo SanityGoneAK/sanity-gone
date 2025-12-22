@@ -1,23 +1,27 @@
-import cnBattleEquipTable from "./ArknightsGameData/zh_CN/gamedata/excel/battle_equip_table.json";
-import cnUniequipTable from "./ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json";
+import cnBattleEquipTable from "./data/cn/gamedata/excel/battle_equip_table.json";
+import cnUniequipTable from "./data/cn/gamedata/excel/uniequip_table.json";
 
-import enBattleEquipTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/battle_equip_table.json";
-import enUniequipTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/uniequip_table.json";
+import enBattleEquipTable from "./data/en/gamedata/excel/battle_equip_table.json";
+import enUniequipTable from "./data/en/gamedata/excel/uniequip_table.json";
 
-import jpBattleEquipTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/battle_equip_table.json";
-import jpUniequipTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/uniequip_table.json";
+import jpBattleEquipTable from "./data/jp/gamedata/excel/battle_equip_table.json";
+import jpUniequipTable from "./data/jp/gamedata/excel/uniequip_table.json";
 
-import krBattleEquipTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/battle_equip_table.json";
-import krUniequipTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/uniequip_table.json";
+import krBattleEquipTable from "./data/kr/gamedata/excel/battle_equip_table.json";
+import krUniequipTable from "./data/kr/gamedata/excel/uniequip_table.json";
+
+import twBattleEquipTable from "./data/tw/gamedata/excel/battle_equip_table.json";
+import twUniequipTable from "./data/tw/gamedata/excel/uniequip_table.json";
 
 import moduleTranslations from "./translations/module-tls.json";
-import rangeTable from "./ArknightsGameData/zh_CN/gamedata/excel/range_table.json";
+import rangeTable from "./data/cn/gamedata/excel/range_table.json";
 
 const UNIEQUIP_LOCALES = {
 	zh_CN: cnUniequipTable,
 	en_US: enUniequipTable,
 	ja_JP: jpUniequipTable,
 	ko_KR: krUniequipTable,
+	zh_TW: twUniequipTable,
 };
 
 const BATTLE_EQUIP_LOCALES = {
@@ -25,6 +29,7 @@ const BATTLE_EQUIP_LOCALES = {
 	en_US: enBattleEquipTable,
 	ja_JP: jpBattleEquipTable,
 	ko_KR: krBattleEquipTable,
+	zh_TW: twBattleEquipTable,
 };
 
 import { descriptionToHtml } from "../src/utils/description-parser";

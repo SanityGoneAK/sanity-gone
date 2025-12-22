@@ -14,7 +14,7 @@ import { createRecruitmentJson } from "./import-recruitment.js";
 (async () => {
 	await createPrtsScrapeJson();
 
-	for (const locale of ["zh_CN", "en_US", "ja_JP", "ko_KR"]) {
+	for (const locale of ["zh_CN", "en_US", "ja_JP", "ko_KR", "zh_TW"]) {
 		const dataDir = path.join(__dirname, "../data/", locale);
 		await fs.mkdir(dataDir, { recursive: true });
 		await Promise.all([

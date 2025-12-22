@@ -2809,10 +2809,10 @@
   },
   "p_char_4196_reckpr": {
     "itemId": "p_char_4196_reckpr",
-    "name": "录武官的信物",
+    "name": "Record Keeper's Token",
     "iconId": "p_char_4196_reckpr",
-    "description": "一瓶药效够劲的跌打损伤药，涂抹后的疼痛比受伤时更甚。好在，他上药的动作熟练，安慰人的技巧更是纯熟。",
-    "usage": "用于提升录武官的潜能。",
+    "description": "A bottle of powerful medicine for combat injuries, though its sting when applied is more painful than the injury itself. Luckily, he is an expert at applying it, and even better at comforting the wounded.",
+    "usage": "Used to improve the Potential of Record Keeper.",
     "rarity": 5
   },
   "p_char_4203_kichi": {
@@ -3801,18 +3801,18 @@
   },
   "p_char_1043_leizi2": {
     "itemId": "p_char_1043_leizi2",
-    "name": "司霆惊蛰的信物",
+    "name": "Leizi the Thunderbringer's Token",
     "iconId": "p_char_1043_leizi2",
-    "description": "一张五雷镇宅符。好歹不是某种训诫，而是她对你的祝福。",
-    "usage": "用于提升司霆惊蛰的潜能。",
+    "description": "A suppressive talisman of the Five Thunders. This is not a form of admonishment, but rather, her blessing to you.",
+    "usage": "Used to improve the Potential of Leizi the Thunderbringer.",
     "rarity": 6
   },
   "p_char_4195_radian": {
     "itemId": "p_char_4195_radian",
-    "name": "电弧的信物",
+    "name": "Raidian's Token",
     "iconId": "p_char_4195_radian",
-    "description": "一枚不知名的金属元件，似乎是“小轴”核心结构的一部分，她说这是机械进行精密度升级时留下的残余，如同孩子落下的乳齿。",
-    "usage": "用于提升电弧的潜能。",
+    "description": "A piece of some obscure metallic element. Apparently a part of Axie's core structure. She says it is a leftover from when the machine's accuracy was being upgraded, like a baby tooth falling out.",
+    "usage": "Used to improve the Potential of Raidian.",
     "rarity": 6
   },
   "p_char_4202_haruka": {

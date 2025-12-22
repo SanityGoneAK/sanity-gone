@@ -6,20 +6,30 @@
 			"cache": false
 		},
 		"dev": {},
-		"build": {},
-		"sanity-pack:download": {},
+		"build": {
+			"dependsOn": ["^build"]
+		},
+		"update-game-data": {},
+
+		"sanity-pack:fbs:download": {},
+		"sanity-pack:fbs:unpack": {
+			"dependsOn": ["sanity-pack:fbs:download"]
+		},
+		"sanity-pack:fbs:process": {
+			"dependsOn": ["sanity-pack:fbs:unpack"]
+		},
+		"sanity-pack:fbs:compile": {
+			"dependsOn": ["sanity-pack:fbs:process"]
+		},
+
+		"sanity-pack:download": {
+			"dependsOn": ["sanity-pack:fbs:compile"]
+		},
 		"sanity-pack:unpack": {
-			"dependsOn": ["sanity-pack:download"]
+			"dependsOn": ["sanity-pack:gamedata:download"]
 		},
 		"sanity-pack:process": {
-			"dependsOn": ["sanity-pack:unpack"]
-		},
-		"sanity-pack:run": {
-			"dependsOn": [
-				"sanity-pack:download",
-				"sanity-pack:unpack",
-				"sanity-pack:process"
-			]
+			"dependsOn": ["sanity-pack:gamedata:unpack"]
 		}
 	}
 }

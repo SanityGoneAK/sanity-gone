@@ -29,6 +29,11 @@ export default defineConfig({
 				path: "zh-cn",
 				codes: ["zh-CN", "zh-cn", "zh_CN", "cn", "zh-Hans-CN"],
 			},
+			// TODO: Support TW
+			// {
+			// 	path: "zh-tw",
+			// 	codes: ["zh-tw_TW", "zh-tw", 'zh_TW', 'tw', 'zh-Hant-TW'],
+			// }
 		],
 		routing: {
 			prefixDefaultLocale: true,

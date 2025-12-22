@@ -1,9 +1,10 @@
-import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" assert { type: "json" };
+import cnCharacterTable from "./data/cn/gamedata/excel/character_table.json" assert { type: "json" };
 
-import cnBuildingData from "./ArknightsGameData/zh_CN/gamedata/excel/building_data.json" assert { type: "json" };
-import enBuildingData from "./ArknightsGameData_YoStar/en_US/gamedata/excel/building_data.json" assert { type: "json" };
-import jpBuildingData from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/building_data.json" assert { type: "json" };
-import krBuildingData from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/building_data.json" assert { type: "json" };
+import cnBuildingData from "./data/cn/gamedata/excel/building_data.json" assert { type: "json" };
+import enBuildingData from "./data/en/gamedata/excel/building_data.json" assert { type: "json" };
+import jpBuildingData from "./data/jp/gamedata/excel/building_data.json" assert { type: "json" };
+import krBuildingData from "./data/kr/gamedata/excel/building_data.json" assert { type: "json" };
+import twBuildingData from "./data/tw/gamedata/excel/building_data.json" assert { type: "json" };
 
 import { fetchJetroyzRiicTranslations } from "./fetch-jetroyz-translations";
 
@@ -25,6 +26,7 @@ const BUILDING_LOCALES = {
 	en_US: enBuildingData,
 	ja_JP: jpBuildingData,
 	ko_KR: krBuildingData,
+	zh_TW: twBuildingData,
 };
 
 /**
@@ -32,7 +34,7 @@ const BUILDING_LOCALES = {
  * apply Jetroyz's unofficial translations to their RIIC skills.
  */
 export async function aggregateRiicData(
-	locale: "zh_CN" | "en_US" | "ja_JP" | "ko_KR"
+	locale: "zh_CN" | "en_US" | "ja_JP" | "ko_KR" | "zh_TW",
 ) {
 	const jetRiicTranslations = await fetchJetroyzRiicTranslations();
 

@@ -1,15 +1,17 @@
 import { promises as fs } from "fs";
 import path from "path";
 
-import enUniequipTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/uniequip_table.json";
-import krUniequipTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/uniequip_table.json";
-import jpUniequipTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/uniequip_table.json";
-import cnUniequipTable from "./ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json";
+import enUniequipTable from "./data/en/gamedata/excel/uniequip_table.json";
+import krUniequipTable from "./data/kr/gamedata/excel/uniequip_table.json";
+import jpUniequipTable from "./data/jp/gamedata/excel/uniequip_table.json";
+import cnUniequipTable from "./data/cn/gamedata/excel/uniequip_table.json";
+import twUniequipTable from "./data/tw/gamedata/excel/uniequip_table.json";
 
-import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" assert { type: "json" };
-import enCharacterTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json" assert { type: "json" };
-import krCharacterTable from "./ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json" assert { type: "json" };
-import jpCharacterTable from "./ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json" assert { type: "json" };
+import cnCharacterTable from "./data/cn/gamedata/excel/character_table.json" assert { type: "json" };
+import enCharacterTable from "./data/en/gamedata/excel/character_table.json" assert { type: "json" };
+import krCharacterTable from "./data/kr/gamedata/excel/character_table.json" assert { type: "json" };
+import jpCharacterTable from "./data/jp/gamedata/excel/character_table.json" assert { type: "json" };
+import twCharacterTable from "./data/tw/gamedata/excel/character_table.json" assert { type: "json" };
 
 import { professionToClass } from "../src/utils/classes";
 import { descriptionToHtml } from "../src/utils/description-parser";
@@ -23,6 +25,7 @@ const BRANCH_LOCALES = {
 	en_US: enUniequipTable.subProfDict,
 	ja_JP: jpUniequipTable.subProfDict,
 	ko_KR: krUniequipTable.subProfDict,
+	zh_TW: twUniequipTable.subProfDict,
 };
 
 const CHARACTER_LOCALES = {
@@ -30,6 +33,7 @@ const CHARACTER_LOCALES = {
 	en_US: enCharacterTable,
 	ja_JP: jpCharacterTable,
 	ko_KR: krCharacterTable,
+	zh_TW: twCharacterTable,
 };
 
 // These are translations of the branches in CN that are out, but are not yet added to EN.

@@ -1,0 +1,2080 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 6719628806764689861
+  },
+  "m_Name": "CpuLadder",
+  "_middleThresholdSOCScore": 1200,
+  "_lowThresholdSOCScore": 600,
+  "_androidCPULadder": [
+    {
+      "cpu": "qualcomm sm8750-ab snapdragon 8 elite",
+      "mainKeyword": "sm8750-ab",
+      "score": 2187.0
+    },
+    {
+      "cpu": "qualcomm sm8750 snapdragon 8 elite",
+      "mainKeyword": "sm8750",
+      "score": 2187.0
+    },
+    {
+      "cpu": "mediatek mt6991 dimensity 9400",
+      "mainKeyword": "mt6991",
+      "score": 1987.0
+    },
+    {
+      "cpu": "mediatek mt6989 dimensity 9300",
+      "mainKeyword": "mt6989",
+      "score": 1656.0
+    },
+    {
+      "cpu": "mediatek mt8796 dimensity 9300",
+      "mainKeyword": "mt8796",
+      "score": 1656.0
+    },
+    {
+      "cpu": "qualcomm sm8650 snapdragon 8 gen 3",
+      "mainKeyword": "sm8650",
+      "score": 1596.0
+    },
+    {
+      "cpu": "qualcomm sm8735 snapdragon 8s gen 4",
+      "mainKeyword": "sm8735",
+      "score": 1588.0
+    },
+    {
+      "cpu": "qualcomm sm8635 snapdragon 8s gen 3",
+      "mainKeyword": "sm8635",
+      "score": 1484.0
+    },
+    {
+      "cpu": "qualcomm sm8550 snapdragon 8 gen 2",
+      "mainKeyword": "sm8550",
+      "score": 1468.0
+    },
+    {
+      "cpu": "qualcomm sm8550-ac snapdragon 8 gen 2",
+      "mainKeyword": "sm8550-ac",
+      "score": 1468.0999755859375
+    },
+    {
+      "cpu": "qualcomm sm8550-ab snapdragon 8 gen 2",
+      "mainKeyword": "sm8550-ab",
+      "score": 1468.0999755859375
+    },
+    {
+      "cpu": "qualcomm sm7675 snapdragon 7+ gen 3",
+      "mainKeyword": "sm7675",
+      "score": 1406.0
+    },
+    {
+      "cpu": "mediatek mt6985 dimensity 9200",
+      "mainKeyword": "mt6985",
+      "score": 1399.0
+    },
+    {
+      "cpu": "mediatek mt8798z/cnza dimensity 9000+",
+      "mainKeyword": "mt8798z/cnza",
+      "score": 1395.0
+    },
+    {
+      "cpu": "mediatek mt8798z/tnza dimensity 9000+",
+      "mainKeyword": "mt8798z/tnza",
+      "score": 1395.0
+    },
+    {
+      "cpu": "qualcomm sm8475 snapdragon 8+ gen 1",
+      "mainKeyword": "sm8475",
+      "score": 1263.0999755859375
+    },
+    {
+      "cpu": "qualcomm sm7475-ab snapdragon 7+ gen 2",
+      "mainKeyword": "sm7475-ab",
+      "score": 1243.0
+    },
+    {
+      "cpu": "qualcomm sm7475 snapdragon 7+ gen 2",
+      "mainKeyword": "sm7475",
+      "score": 1243.0
+    },
+    {
+      "cpu": "mediatek mt6897 dimensity 8300",
+      "mainKeyword": "mt6897",
+      "score": 1157.0
+    },
+    {
+      "cpu": "mediatek mt8792 dimensity 8300",
+      "mainKeyword": "mt8792",
+      "score": 1157.0
+    },
+    {
+      "cpu": "mediatek mt6983 dimensity 9000",
+      "mainKeyword": "mt6983",
+      "score": 1110.0
+    },
+    {
+      "cpu": "qualcomm sm8450 snapdragon 8 gen 1",
+      "mainKeyword": "sm8450",
+      "score": 1105.0999755859375
+    },
+    {
+      "cpu": "mediatek mt6899 dimensity 8400 ultra",
+      "mainKeyword": "mt6899",
+      "score": 1100.0
+    },
+    {
+      "cpu": "mediatek mt6896 dimensity 8200",
+      "mainKeyword": "mt6896",
+      "score": 966.0
+    },
+    {
+      "cpu": "mediatek mt6896z/cza dimensity 8200",
+      "mainKeyword": "mt6896z/cza",
+      "score": 966.0
+    },
+    {
+      "cpu": "mediatek mt6878 dimensity 7350",
+      "mainKeyword": "mt6878",
+      "score": 965.0
+    },
+    {
+      "cpu": "qualcomm sm8350-ac snapdragon 888+",
+      "mainKeyword": "sm8350-ac",
+      "score": 933.5
+    },
+    {
+      "cpu": "qualcomm sm8350 snapdragon 888",
+      "mainKeyword": "sm8350",
+      "score": 932.5
+    },
+    {
+      "cpu": "qualcomm sm8250-ac snapdragon 870",
+      "mainKeyword": "sm8250-ac",
+      "score": 925.5
+    },
+    {
+      "cpu": "samsung exynos 2100",
+      "mainKeyword": "exynos2100",
+      "score": 908.0
+    },
+    {
+      "cpu": "hisilicon kirin 9000",
+      "mainKeyword": "kirin9000",
+      "score": 906.0
+    },
+    {
+      "cpu": "qualcomm sm8250-ab snapdragon 865+",
+      "mainKeyword": "sm8250-ab",
+      "score": 905.6666870117188
+    },
+    {
+      "cpu": "hisilicon kirin 9000e",
+      "mainKeyword": "kirin9000e",
+      "score": 900.0
+    },
+    {
+      "cpu": "mediatek mt6886 dimensity 7200",
+      "mainKeyword": "mt6886",
+      "score": 894.0
+    },
+    {
+      "cpu": "qualcomm sm8325 snapdragon 888",
+      "mainKeyword": "sm8325",
+      "score": 888.0
+    },
+    {
+      "cpu": "qualcomm sm7635 snapdragon 7s gen 3",
+      "mainKeyword": "sm7635",
+      "score": 880.0
+    },
+    {
+      "cpu": "mediatek mt6895 dimensity 8000",
+      "mainKeyword": "mt6895",
+      "score": 877.0
+    },
+    {
+      "cpu": "qualcomm sm7550 snapdragon 7 gen 3",
+      "mainKeyword": "sm7550",
+      "score": 871.0
+    },
+    {
+      "cpu": "mediatek mt8791 kompanio 900t",
+      "mainKeyword": "mt8791",
+      "score": 870.0
+    },
+    {
+      "cpu": "qualcomm sm8250 snapdragon 865",
+      "mainKeyword": "sm8250",
+      "score": 854.933349609375
+    },
+    {
+      "cpu": "qualcomm kona snapdragon 865+",
+      "mainKeyword": "kona",
+      "score": 854.0
+    },
+    {
+      "cpu": "qualcomm sdm782g snapdragon 782g",
+      "mainKeyword": "sdm782g",
+      "score": 842.0
+    },
+    {
+      "cpu": "mediatek mt6891 dimensity 1100",
+      "mainKeyword": "mt6891",
+      "score": 825.0
+    },
+    {
+      "cpu": "mediatek mt8797 kompanio 1300t",
+      "mainKeyword": "mt8797",
+      "score": 811.0
+    },
+    {
+      "cpu": "mediatek mt6893 dimensity 1200",
+      "mainKeyword": "mt6893",
+      "score": 810.0
+    },
+    {
+      "cpu": "mediatek mt6891z dimensity 1100",
+      "mainKeyword": "mt6891z",
+      "score": 805.0
+    },
+    {
+      "cpu": "samsung exynos 1080",
+      "mainKeyword": "e1080",
+      "score": 800.0
+    },
+    {
+      "cpu": "qualcomm sm7450-ab snapdragon 7 gen 1",
+      "mainKeyword": "sm7450-ab",
+      "score": 797.0
+    },
+    {
+      "cpu": "qualcomm sm7450 snapdragon 7 gen 1",
+      "mainKeyword": "sm7450",
+      "score": 797.0
+    },
+    {
+      "cpu": "qualcomm sm7435 snapdragon 7s gen 2",
+      "mainKeyword": "sm7435",
+      "score": 785.0
+    },
+    {
+      "cpu": "mediatek mt6889z dimensity 1000+",
+      "mainKeyword": "mt6889z",
+      "score": 785.0
+    },
+    {
+      "cpu": "samsung exynos 990",
+      "mainKeyword": "exynos990",
+      "score": 774.3333129882812
+    },
+    {
+      "cpu": "hisilicon kirin 990",
+      "mainKeyword": "kirin990",
+      "score": 756.5
+    },
+    {
+      "cpu": "hisilicon kirin 990",
+      "mainKeyword": "kirin990",
+      "score": 756.5
+    },
+    {
+      "cpu": "mediatek mt6855 dimensity 7025 ultra",
+      "mainKeyword": "mt6855",
+      "score": 741.0
+    },
+    {
+      "cpu": "samsung exynos 9 series 9820",
+      "mainKeyword": "exynos9820",
+      "score": 744.5
+    },
+    {
+      "cpu": "mediatek mt6877t dimensity 920",
+      "mainKeyword": "mt6877t",
+      "score": 741.0
+    },
+    {
+      "cpu": "qualcomm sm8150-ac snapdragon 860",
+      "mainKeyword": "sm8150-ac",
+      "score": 738.0
+    },
+    {
+      "cpu": "qualcomm sm8150-ac snapdragon 855+",
+      "mainKeyword": "sm8150-ac",
+      "score": 726.2857055664062
+    },
+    {
+      "cpu": "mediatek mt8795z/tnza",
+      "mainKeyword": "mt8795z/tnza",
+      "score": 711.0
+    },
+    {
+      "cpu": "qualcomm sm6450 snapdragon 6 gen 1",
+      "mainKeyword": "sm6450",
+      "score": 706.0
+    },
+    {
+      "cpu": "qualcomm sm4450 snapdragon 4 gen 2",
+      "mainKeyword": "sm4450",
+      "score": 705.0
+    },
+    {
+      "cpu": "mediatek mt6877v dimensity 900",
+      "mainKeyword": "mt6877v",
+      "score": 704.0
+    },
+    {
+      "cpu": "samsung exynos 9 series 9825",
+      "mainKeyword": "exynos9825",
+      "score": 700.3333129882812
+    },
+    {
+      "cpu": "mediatek mt6855 dimensity 930",
+      "mainKeyword": "mt6855",
+      "score": 699.0
+    },
+    {
+      "cpu": "mediatek mt6855v/aza dimensity 930",
+      "mainKeyword": "mt6855v/aza",
+      "score": 699.0
+    },
+    {
+      "cpu": "qualcomm sm8150 snapdragon 855",
+      "mainKeyword": "sm8150",
+      "score": 684.6206665039062
+    },
+    {
+      "cpu": "qualcomm sm7350-ab snapdragon 780g",
+      "mainKeyword": "sm7350-ab",
+      "score": 684.0
+    },
+    {
+      "cpu": "qualcomm sm7350 snapdragon 780g",
+      "mainKeyword": "sm7350",
+      "score": 683.5999755859375
+    },
+    {
+      "cpu": "qualcomm sm7325 snapdragon 778g",
+      "mainKeyword": "sm7325",
+      "score": 683.5
+    },
+    {
+      "cpu": "qualcomm sdm778g snapdragon 778g",
+      "mainKeyword": "sdm778g",
+      "score": 683.0
+    },
+    {
+      "cpu": "hisilicon kirin 980",
+      "mainKeyword": "kirin980",
+      "score": 683.0
+    },
+    {
+      "cpu": "qualcomm sm6375 snapdragon 695",
+      "mainKeyword": "sm6375",
+      "score": 661.0
+    },
+    {
+      "cpu": "qualcomm sm7250-ac snapdragon 768g",
+      "mainKeyword": "sm7250-ac",
+      "score": 650.0
+    },
+    {
+      "cpu": "samsung exynos 880",
+      "mainKeyword": "exynos880",
+      "score": 641.0
+    },
+    {
+      "cpu": "mediatek mt6875 dimensity 820",
+      "mainKeyword": "mt6875",
+      "score": 640.0
+    },
+    {
+      "cpu": "samsung exynos 980",
+      "mainKeyword": "exynos980",
+      "score": 631.0
+    },
+    {
+      "cpu": "qualcomm sm4375 snapdragon 4 gen 1",
+      "mainKeyword": "sm4375",
+      "score": 629.0
+    },
+    {
+      "cpu": "mediatek mt6781 helio g96",
+      "mainKeyword": "mt6781",
+      "score": 600.0
+    },
+    {
+      "cpu": "mediatek mt6853v dimensity 800u",
+      "mainKeyword": "mt6853v",
+      "score": 597.0
+    },
+    {
+      "cpu": "hisilicon kirin 810",
+      "mainKeyword": "kirin810",
+      "score": 592.0
+    },
+    {
+      "cpu": "mediatek mt6785 helio g95",
+      "mainKeyword": "mt6785",
+      "score": 585.0
+    },
+    {
+      "cpu": "qualcomm sm7250-ab snapdragon 76",
+      "mainKeyword": "sm7250-ab",
+      "score": 581.0
+    },
+    {
+      "cpu": "qualcomm sm7250 snapdragon 765",
+      "mainKeyword": "sm7250",
+      "score": 580.0999755859375
+    },
+    {
+      "cpu": "qualcomm sdm750g snapdragon 750g",
+      "mainKeyword": "sdm750g",
+      "score": 580.0
+    },
+    {
+      "cpu": "qualcomm sm7225 snapdragon 750g",
+      "mainKeyword": "sm7225",
+      "score": 580.0
+    },
+    {
+      "cpu": "mediatek mt6853t dimensity 800u",
+      "mainKeyword": "mt6853t",
+      "score": 576.0
+    },
+    {
+      "cpu": "qualcomm sm7250-aa snapdragon 765",
+      "mainKeyword": "sm7250-aa",
+      "score": 575.0
+    },
+    {
+      "cpu": "samsung exynos 9 series 9810",
+      "mainKeyword": "exynos9810",
+      "score": 569.0
+    },
+    {
+      "cpu": "mediatek mt6835 dimensity 6100+",
+      "mainKeyword": "mt6835",
+      "score": 569.0
+    },
+    {
+      "cpu": "qualcomm sdm76  snapdragon 76",
+      "mainKeyword": "sdm76",
+      "score": 560.0
+    },
+    {
+      "cpu": "qualcomm sm7125 snapdragon 720g",
+      "mainKeyword": "sm7125",
+      "score": 559.5
+    },
+    {
+      "cpu": "qualcomm sm6350 snapdragon 690",
+      "mainKeyword": "sm6350",
+      "score": 558.0
+    },
+    {
+      "cpu": "qualcomm lagoon snapdragon 690",
+      "mainKeyword": "lagoon",
+      "score": 558.0
+    },
+    {
+      "cpu": "qualcomm sm7150-ac snapdragon 732g",
+      "mainKeyword": "sm7150-ac",
+      "score": 556.0
+    },
+    {
+      "cpu": "mediatek mt6789 helio g99",
+      "mainKeyword": "mt6789",
+      "score": 553.0
+    },
+    {
+      "cpu": "mediatek mt8781 helio g99",
+      "mainKeyword": "mt8781",
+      "score": 550.0
+    },
+    {
+      "cpu": "mediatek mt6833p dimensity 810",
+      "mainKeyword": "mt6833p",
+      "score": 539.0
+    },
+    {
+      "cpu": "mediatek mt6833 dimensity 700",
+      "mainKeyword": "mt6833",
+      "score": 538.0
+    },
+    {
+      "cpu": "mediatek mt6789v/cd helio g99",
+      "mainKeyword": "mt6789v/cd",
+      "score": 534.0
+    },
+    {
+      "cpu": "mediatek mt6785v helio g90t",
+      "mainKeyword": "mt6785v",
+      "score": 533.0
+    },
+    {
+      "cpu": "mediatek mt6785t helio g90t",
+      "mainKeyword": "mt6785t",
+      "score": 533.0
+    },
+    {
+      "cpu": "qualcomm sm7150 snapdragon 730g",
+      "mainKeyword": "sm7150",
+      "score": 520.0
+    },
+    {
+      "cpu": "mediatek mt6833v dimensity 700",
+      "mainKeyword": "mt6833v",
+      "score": 520.0
+    },
+    {
+      "cpu": "mediatek mt6853v dimensity 720",
+      "mainKeyword": "mt6853v",
+      "score": 516.0
+    },
+    {
+      "cpu": "mediatek mt6873 dimensity 800",
+      "mainKeyword": "mt6873",
+      "score": 515.0
+    },
+    {
+      "cpu": "qualcomm sm4350-ac snapdragon 480+",
+      "mainKeyword": "sm4350-ac",
+      "score": 515.0
+    },
+    {
+      "cpu": "qualcomm sm7150-aa snapdragon 730",
+      "mainKeyword": "sm7150-aa",
+      "score": 509.75
+    },
+    {
+      "cpu": "qualcomm sdm730g aie snapdragon 730",
+      "mainKeyword": "sdm730g",
+      "score": 509.75
+    },
+    {
+      "cpu": "qualcomm sm4350 snapdragon 480",
+      "mainKeyword": "sm4350",
+      "score": 509.0
+    },
+    {
+      "cpu": "qualcomm sm6150 snapdragon 675",
+      "mainKeyword": "sm6150",
+      "score": 487.6666564941406
+    },
+    {
+      "cpu": "qualcomm sdm845 snapdragon 845",
+      "mainKeyword": "sdm845",
+      "score": 471.23077392578125
+    },
+    {
+      "cpu": "qualcomm sda845 snapdragon 845",
+      "mainKeyword": "sda845",
+      "score": 471.23077392578125
+    },
+    {
+      "cpu": "qualcomm khaje snapdragon 845",
+      "mainKeyword": "khaje",
+      "score": 461.0
+    },
+    {
+      "cpu": "hisilicon kirin 985",
+      "mainKeyword": "kirin985",
+      "score": 460.0
+    },
+    {
+      "cpu": "hisilicon kirin 820",
+      "mainKeyword": "kirin820",
+      "score": 450.0
+    },
+    {
+      "cpu": "qualcomm sm6225 snapdragon 680",
+      "mainKeyword": "sm6225",
+      "score": 434.0
+    },
+    {
+      "cpu": "qualcomm sdm712 snapdragon 712",
+      "mainKeyword": "sdm712",
+      "score": 404.75
+    },
+    {
+      "cpu": "mediatek mt6779v helio p95",
+      "mainKeyword": "mt6779v",
+      "score": 398.0
+    },
+    {
+      "cpu": "qualcomm sdm710 snapdragon 710",
+      "mainKeyword": "sdm710",
+      "score": 385.0
+    },
+    {
+      "cpu": "mediatek mt6769v/cu helio g80",
+      "mainKeyword": "mt6769v/cu",
+      "score": 374.0
+    },
+    {
+      "cpu": "hisilicon kirin 960",
+      "mainKeyword": "kirin960",
+      "score": 367.0
+    },
+    {
+      "cpu": "mediatek mt6769v/cz helio g85",
+      "mainKeyword": "mt6769v/cz",
+      "score": 356.0
+    },
+    {
+      "cpu": "qualcomm msm8998 snapdragon 835",
+      "mainKeyword": "msm8998",
+      "score": 360.31817626953125
+    },
+    {
+      "cpu": "samsung exynos 9 octa 8895",
+      "mainKeyword": "exynos8895",
+      "score": 360.25
+    },
+    {
+      "cpu": "mediatek mt6769t helio g80",
+      "mainKeyword": "mt6769t",
+      "score": 357.0
+    },
+    {
+      "cpu": "mediatek mt6769v/ct helio g80",
+      "mainKeyword": "mt6769v/ct",
+      "score": 354.0
+    },
+    {
+      "cpu": "unisoc ums512",
+      "mainKeyword": "ums512",
+      "score": 353.0
+    },
+    {
+      "cpu": "mediatek mt6769z helio g85",
+      "mainKeyword": "mt6769z",
+      "score": 353.0
+    },
+    {
+      "cpu": "unisoc tiger t610",
+      "mainKeyword": "t610",
+      "score": 348.0
+    },
+    {
+      "cpu": "hisilicon kirin 955",
+      "mainKeyword": "kirin955",
+      "score": 346.6666564941406
+    },
+    {
+      "cpu": "mediatek mt6769h helio g88",
+      "mainKeyword": "mt6769h",
+      "score": 354.0
+    },
+    {
+      "cpu": "mediatek mt6769 helio g88",
+      "mainKeyword": "mt6769",
+      "score": 354.0
+    },
+    {
+      "cpu": "mediatek mt6768 helio p65",
+      "mainKeyword": "mt6768",
+      "score": 339.6666564941406
+    },
+    {
+      "cpu": "hisilicon kirin 950",
+      "mainKeyword": "kirin950",
+      "score": 338.75
+    },
+    {
+      "cpu": "qualcomm sm6359 snapdragon 678",
+      "mainKeyword": "sm6359",
+      "score": 337.5
+    },
+    {
+      "cpu": "samsung exynos 8 octa 8890",
+      "mainKeyword": "exynos8890",
+      "score": 337.0
+    },
+    {
+      "cpu": "hisilicon kirin 970",
+      "mainKeyword": "kirin970",
+      "score": 337.0
+    },
+    {
+      "cpu": "qualcomm sdm670 snapdragon 670",
+      "mainKeyword": "sdm670",
+      "score": 335.6666564941406
+    },
+    {
+      "cpu": "samsung exynos 7 octa 9610",
+      "mainKeyword": "exynos9610",
+      "score": 330.0
+    },
+    {
+      "cpu": "samsung exynos 7 octa 9609",
+      "mainKeyword": "exynos9609",
+      "score": 327.0
+    },
+    {
+      "cpu": "unisoc ud710",
+      "mainKeyword": "ud710",
+      "score": 327.0
+    },
+    {
+      "cpu": "hisilicon kirin 710f",
+      "mainKeyword": "kirin710f",
+      "score": 322.5
+    },
+    {
+      "cpu": "hisilicon kirin 710",
+      "mainKeyword": "kirin710",
+      "score": 321.5714416503906
+    },
+    {
+      "cpu": "qualcomm sdm660 snapdragon 660",
+      "mainKeyword": "sdm660",
+      "score": 320.6875
+    },
+    {
+      "cpu": "qualcomm sda660 snapdragon 660",
+      "mainKeyword": "sda660",
+      "score": 320.6875
+    },
+    {
+      "cpu": "samsung exynos 7 octa 9611",
+      "mainKeyword": "exynos9611",
+      "score": 317.5714416503906
+    },
+    {
+      "cpu": "mediatek mt8176",
+      "mainKeyword": "mt8176",
+      "score": 313.0
+    },
+    {
+      "cpu": "qualcomm sm6115 snapdragon 662",
+      "mainKeyword": "sm6115",
+      "score": 310.0
+    },
+    {
+      "cpu": "qualcomm bengal snapdragon 662",
+      "mainKeyword": "bengal",
+      "score": 310.0
+    },
+    {
+      "cpu": "mediatek mt6885z dimensity 1000l",
+      "mainKeyword": "mt6885z",
+      "score": 308.0
+    },
+    {
+      "cpu": "qualcomm sm6125 snapdragon 665",
+      "mainKeyword": "sm6125",
+      "score": 305.79998779296875
+    },
+    {
+      "cpu": "qualcomm sdm665 snapdragon 665",
+      "mainKeyword": "sdm665",
+      "score": 305.0
+    },
+    {
+      "cpu": "qualcomm trinket snapdragon 665",
+      "mainKeyword": "trinket",
+      "score": 305.0
+    },
+    {
+      "cpu": "qualcomm msm8996 pro-ab snapdragon 821",
+      "mainKeyword": "msm8996pro",
+      "score": 304.7272644042969
+    },
+    {
+      "cpu": "unisoc ums312",
+      "mainKeyword": "ums312",
+      "score": 304.0
+    },
+    {
+      "cpu": "mediatek mt6771v helio p70",
+      "mainKeyword": "mt6771v",
+      "score": 302.5
+    },
+    {
+      "cpu": "mediatek mt6771t helio p70",
+      "mainKeyword": "mt6771t",
+      "score": 302.5
+    },
+    {
+      "cpu": "samsung exynos 7 octa 7885",
+      "mainKeyword": "exynos7885",
+      "score": 296.0
+    },
+    {
+      "cpu": "qualcomm msm8996 snapdragon 820",
+      "mainKeyword": "msm8996",
+      "score": 287.3157958984375
+    },
+    {
+      "cpu": "mediatek mt6771 helio p60",
+      "mainKeyword": "mt6771",
+      "score": 286.20001220703125
+    },
+    {
+      "cpu": "mediatek mt8183",
+      "mainKeyword": "mt8183",
+      "score": 286.0
+    },
+    {
+      "cpu": "mediatek mt8788",
+      "mainKeyword": "mt8788",
+      "score": 284.0
+    },
+    {
+      "cpu": "mediatek mt6799 helio x30",
+      "mainKeyword": "mt6799",
+      "score": 281.0
+    },
+    {
+      "cpu": "qualcomm sdm632 snapdragon 632",
+      "mainKeyword": "sdm632",
+      "score": 265.0
+    },
+    {
+      "cpu": "qualcomm sdm636 snapdragon 636",
+      "mainKeyword": "sdm636",
+      "score": 259.375
+    },
+    {
+      "cpu": "samsung exynos 7 octa 7904",
+      "mainKeyword": "exynos7904",
+      "score": 251.8000030517578
+    },
+    {
+      "cpu": "qualcomm sm4250 snapdragon 460",
+      "mainKeyword": "sm4250",
+      "score": 249.0
+    },
+    {
+      "cpu": "mediatek mt6797x helio x27",
+      "mainKeyword": "mt6797x",
+      "score": 248.0
+    },
+    {
+      "cpu": "mediatek mt6797 helio x20",
+      "mainKeyword": "mt6797",
+      "score": 247.0
+    },
+    {
+      "cpu": "samsung exynos 7 octa 7420",
+      "mainKeyword": "exynos7420",
+      "score": 240.875
+    },
+    {
+      "cpu": "qualcomm msm8976 snapdragon 652",
+      "mainKeyword": "msm8976",
+      "score": 239.0
+    },
+    {
+      "cpu": "qualcomm msm8956 snapdragon 650",
+      "mainKeyword": "msm8956",
+      "score": 238.0
+    },
+    {
+      "cpu": "samsung exynos 7 octa 7884",
+      "mainKeyword": "exynos7884",
+      "score": 231.0
+    },
+    {
+      "cpu": "qualcomm msm8976 pro snapdragon 653",
+      "mainKeyword": "msm8976pro",
+      "score": 225.0
+    },
+    {
+      "cpu": "samsung exynos 7 octa 5433",
+      "mainKeyword": "exynos5433",
+      "score": 224.0
+    },
+    {
+      "cpu": "qualcomm msm8994 snapdragon 810",
+      "mainKeyword": "msm8994",
+      "score": 219.7857208251953
+    },
+    {
+      "cpu": "mediatek mt6797d helio x23",
+      "mainKeyword": "mt6797d",
+      "score": 214.0
+    },
+    {
+      "cpu": "mediatek mt6797t helio x25",
+      "mainKeyword": "mt6797t",
+      "score": 205.0
+    },
+    {
+      "cpu": "hisilicon kirin 659",
+      "mainKeyword": "kirin659",
+      "score": 189.3333282470703
+    },
+    {
+      "cpu": "hisilicon kirin 658",
+      "mainKeyword": "kirin658",
+      "score": 185.0
+    },
+    {
+      "cpu": "qualcomm msm8953 pro snapdragon 626",
+      "mainKeyword": "msm8953pro",
+      "score": 176.14285278320312
+    },
+    {
+      "cpu": "qualcomm msm8992 snapdragon 808",
+      "mainKeyword": "msm8992",
+      "score": 175.5
+    },
+    {
+      "cpu": "qualcomm sdm630 snapdragon 630",
+      "mainKeyword": "sdm630",
+      "score": 173.0
+    },
+    {
+      "cpu": "qualcomm sdm439 snapdragon 439",
+      "mainKeyword": "sdm439",
+      "score": 173.0
+    },
+    {
+      "cpu": "samsung exynos 5 octa 5430",
+      "mainKeyword": "exynos5430",
+      "score": 172.0
+    },
+    {
+      "cpu": "samsung exynos 850",
+      "mainKeyword": "exynos850",
+      "score": 170.0
+    },
+    {
+      "cpu": "mediatek mt6765 helio p35",
+      "mainKeyword": "mt6765",
+      "score": 169.0
+    },
+    {
+      "cpu": "qualcomm msm8953 snapdragon 625",
+      "mainKeyword": "msm8953",
+      "score": 168.5
+    },
+    {
+      "cpu": "hisilicon kirin 655",
+      "mainKeyword": "kirin655",
+      "score": 168.1999969482422
+    },
+    {
+      "cpu": "hisilicon kirin 650",
+      "mainKeyword": "kirin650",
+      "score": 166.0
+    },
+    {
+      "cpu": "mediatek mt6765v helio p35",
+      "mainKeyword": "mt6765v",
+      "score": 164.0
+    },
+    {
+      "cpu": "samsung exynos 5 octa 5420",
+      "mainKeyword": "exynos5420",
+      "score": 160.3333282470703
+    },
+    {
+      "cpu": "mediatek mt6757 helio p20",
+      "mainKeyword": "mt6757",
+      "score": 157.25
+    },
+    {
+      "cpu": "mediatek mt6763v helio p23",
+      "mainKeyword": "mt6763v",
+      "score": 156.25
+    },
+    {
+      "cpu": "mediatek mt6763 helio p23",
+      "mainKeyword": "mt6763",
+      "score": 156.25
+    },
+    {
+      "cpu": "samsung exynos 5 dual 5250",
+      "mainKeyword": "exynos5250",
+      "score": 152.0
+    },
+    {
+      "cpu": "qualcomm apq8084 snapdragon 805",
+      "mainKeyword": "apq8084",
+      "score": 151.0
+    },
+    {
+      "cpu": "qualcomm msm8974 snapdragon 800",
+      "mainKeyword": "msm8974",
+      "score": 147.89999389648438
+    },
+    {
+      "cpu": "qualcomm msm8974ac snapdragon 801",
+      "mainKeyword": "msm8974ac",
+      "score": 147.88888549804688
+    },
+    {
+      "cpu": "mediatek mt8768n",
+      "mainKeyword": "mt8768n",
+      "score": 147.0
+    },
+    {
+      "cpu": "qualcomm sdm450 snapdragon 450",
+      "mainKeyword": "sdm450",
+      "score": 145.39999389648438
+    },
+    {
+      "cpu": "qualcomm sda450 snapdragon 450",
+      "mainKeyword": "sda450",
+      "score": 145.39999389648438
+    },
+    {
+      "cpu": "mediatek mt6762g helio g25",
+      "mainKeyword": "mt6762g",
+      "score": 142.0
+    },
+    {
+      "cpu": "samsung exynos 7 octa 7880",
+      "mainKeyword": "exynos7880",
+      "score": 142.0
+    },
+    {
+      "cpu": "unisoc sc9863a",
+      "mainKeyword": "sc9863a",
+      "score": 141.0
+    },
+    {
+      "cpu": "mediatek mt6762v/ca helio p22",
+      "mainKeyword": "mt6762v/ca",
+      "score": 138.0
+    },
+    {
+      "cpu": "mediatek mt6755 helio p10",
+      "mainKeyword": "mt6755",
+      "score": 137.42857360839844
+    },
+    {
+      "cpu": "samsung exynos 5 octa 5410",
+      "mainKeyword": "exynos5410",
+      "score": 135.10000610351562
+    },
+    {
+      "cpu": "mediatek mt6762v/cr helio p22",
+      "mainKeyword": "mt6762v/cr",
+      "score": 135.0
+    },
+    {
+      "cpu": "mediatek mt6762 helio p22",
+      "mainKeyword": "mt6762",
+      "score": 135.0
+    },
+    {
+      "cpu": "mediatek mt6762v/cb helio p22",
+      "mainKeyword": "mt6762v/cb",
+      "score": 128.0
+    },
+    {
+      "cpu": "mediatek mt6737t",
+      "mainKeyword": "mt6737t",
+      "score": 124.0
+    },
+    {
+      "cpu": "qualcomm msm8952 snapdragon 617",
+      "mainKeyword": "msm8952",
+      "score": 118.5
+    },
+    {
+      "cpu": "mediatek mt6750",
+      "mainKeyword": "mt6750",
+      "score": 117.5
+    },
+    {
+      "cpu": "qualcomm msm8937 snapdragon 430",
+      "mainKeyword": "msm8937",
+      "score": 115.86666870117188
+    },
+    {
+      "cpu": "samsung exynos 7 octa 7870",
+      "mainKeyword": "exynos7870",
+      "score": 115.625
+    },
+    {
+      "cpu": "mediatek mt6753",
+      "mainKeyword": "mt6753",
+      "score": 114.0
+    },
+    {
+      "cpu": "qualcomm msm8940 snapdragon 435",
+      "mainKeyword": "msm8940",
+      "score": 112.75
+    },
+    {
+      "cpu": "qualcomm msm8939v2 snapdragon 616",
+      "mainKeyword": "msm8939v2",
+      "score": 109.0
+    },
+    {
+      "cpu": "qualcomm msm8960t snapdragon s4 pro",
+      "mainKeyword": "msm8960t",
+      "score": 108.0999984741211
+    },
+    {
+      "cpu": "samsung exynos 7 octa 7580",
+      "mainKeyword": "exynos7580",
+      "score": 108.0
+    },
+    {
+      "cpu": "qualcomm msm8939 snapdragon 615",
+      "mainKeyword": "msm8939",
+      "score": 105.75
+    },
+    {
+      "cpu": "qualcomm msm8917 snapdragon 425",
+      "mainKeyword": "msm8917",
+      "score": 105.5999984741211
+    },
+    {
+      "cpu": "qualcomm apq8064t snapdragon 600",
+      "mainKeyword": "apq8064t",
+      "score": 104.80000305175781
+    },
+    {
+      "cpu": "hisilicon kirin 620",
+      "mainKeyword": "kirin620",
+      "score": 103.0
+    },
+    {
+      "cpu": "samsung exynos 7 quad 7578",
+      "mainKeyword": "exynos7578",
+      "score": 101.0
+    },
+    {
+      "cpu": "samsung exynos 7 quad 7570",
+      "mainKeyword": "exynos7570",
+      "score": 100.33333587646484
+    },
+    {
+      "cpu": "mediatek mt6737",
+      "mainKeyword": "mt6737",
+      "score": 89.83333587646484
+    },
+    {
+      "cpu": "qualcomm msm8930ab snapdragon 400",
+      "mainKeyword": "msm8930ab",
+      "score": 84.0
+    },
+    {
+      "cpu": "qualcomm msm8916 snapdragon 410",
+      "mainKeyword": "msm8916",
+      "score": 81.82353210449219
+    },
+    {
+      "cpu": "qualcomm msm8226 snapdragon 400",
+      "mainKeyword": "msm8226",
+      "score": 76.14286041259766
+    },
+    {
+      "cpu": "samsung exynos 3 quad 3470",
+      "mainKeyword": "exynos3470",
+      "score": 73.0
+    },
+    {
+      "cpu": "qualcomm msm8960 snapdragon s4 plus",
+      "mainKeyword": "msm8960",
+      "score": 66.0
+    },
+    {
+      "cpu": "qualcomm msm8909 snapdragon 210",
+      "mainKeyword": "msm8909",
+      "score": 62.0
+    },
+    {
+      "cpu": "qualcomm msm8610 snapdragon 200",
+      "mainKeyword": "msm8610",
+      "score": 62.0
+    }
+  ],
+  "_androidGPULadder": [
+    {
+      "gpu": "adreno (tm) 830",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "mali-g925 mp12",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "mali-g720 mp12",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "mali-g720 mc7",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "adreno (tm) 750",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "mali-g925-immortalis mc12",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "adreno (tm) 740",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "mali-g720-immortalis mc12",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "adreno (tm) 735",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "xclipse 940",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "adreno (tm) 732",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "mali-g715-immortalis mc11",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "mali-g715",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "mali-g615 mc6",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "mali-g615 mc5",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "adreno (tm) 730",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "mali-g710 mc10",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "mali-g710",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "adreno (tm) 725",
+      "gradingLevel": 3
+    },
+    {
+      "gpu": "maleoon 920",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "xclipse 920",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "adreno (tm) 720",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "maleoon 910",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g615 mc2",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "adreno (tm) 660",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "adreno (tm) 810",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g78",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g78 mp20",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g78 mp24",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g78 mp22",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "adreno (tm) 650",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g78 mp14",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g610",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g610 mc6",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g610 mc4",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali g78 mp10",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "adreno (tm) 644",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "adreno (tm) 642",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "adreno (tm) 642l",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "adreno (tm) 640",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "adreno (tm) 630",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g77",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali g77 mp11",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g77 mc9",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g76",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g76 mp16",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "adreno (tm) 710",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g77 mp8",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g77 mc7",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g76 mp14",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g76 mp12",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g76 mp10",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali g77 mp5",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "powervr b-series bxm-8-256",
+      "gradingLevel": 2
+    },
+    {
+      "gpu": "mali-g68",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g68 mc4",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g57",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g57 mc5",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g72 mp18",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 620",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g57 mc4",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g52",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 540",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 619",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 619l*",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g76 mp5",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g72",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g76 mc4",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g57 mc3",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 618",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g57 mc2",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g71 mp20",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "powervr 7xt gt7600 plus",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 530",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 616",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "powervr 7xt gt7600",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "powervr 7xtp-mt4",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 615",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 613",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "powervr rogue gm9446",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g71",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "img powervr gm 9446",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 612",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t880 mp12",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g52 mc2",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 610",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 512",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g72 mp3",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 430",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t760 mp8",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t860",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t860 mp4",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g52 mp1",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 510",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 509",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 508",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 420",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 418",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g51",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "powervr gx6450",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t830",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t830 mp3",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t880 mp4",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g71 mp2",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-g71 mp1",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t880",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t880 mp2",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 506",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t760 mp6",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t628 mp6",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "powervr g6430",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t830 mp2",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 505",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t860 mp2",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t760 mp4",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "powervr g6200",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "powervr rogue ge8322",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "powervr rogue ge8320",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "powervr rogue ge8300",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 405",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 504",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t628 mp4",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t820",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t830 mp1",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t720 mp2",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t604 mp4",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t760 mp2",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t720",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-t720 mp1",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 308",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "powervr rogue ge8100",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "powervr ge8100",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "adreno (tm) 306",
+      "gradingLevel": 1
+    },
+    {
+      "gpu": "mali-450 mp4",
+      "gradingLevel": 1
+    }
+  ],
+  "_iOSGenerationLadder": [
+    {
+      "iOSGeneration": 56,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 57,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 58,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 59,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 61,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 63,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 64,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 65,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 66,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 67,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 68,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 69,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 70,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 71,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 72,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 73,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 74,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 75,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 76,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 77,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 78,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 79,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 80,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 81,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 82,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 83,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 84,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 85,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 86,
+      "gradingLevel": 3
+    },
+    {
+      "iOSGeneration": 1,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 2,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 3,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 4,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 5,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 6,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 7,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 8,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 9,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 10,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 11,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 12,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 13,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 14,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 15,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 16,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 17,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 18,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 19,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 20,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 21,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 22,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 23,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 24,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 25,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 26,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 27,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 28,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 29,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 30,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 31,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 32,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 33,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 34,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 35,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 36,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 37,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 38,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 39,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 40,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 41,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 42,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 43,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 44,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 45,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 46,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 47,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 48,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 49,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 50,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 51,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 52,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 53,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 54,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 55,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 60,
+      "gradingLevel": 2
+    },
+    {
+      "iOSGeneration": 62,
+      "gradingLevel": 2
+    }
+  ]
+}
