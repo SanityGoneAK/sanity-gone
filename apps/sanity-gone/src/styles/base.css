@@ -1,0 +1,278 @@
+@import 'tailwindcss' source('../../src');
+
+@config '../../tailwind.config.mjs';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+
+  probably don't need this
+*/
+/*@layer base {*/
+/*  *,*/
+/*  ::after,*/
+/*  ::before,*/
+/*  ::backdrop,*/
+/*  ::file-selector-button {*/
+/*    border-color: var(--color-gray-200, currentcolor);*/
+/*  }*/
+/*}*/
+
+/* Tailwind 4.0 now configures the theme using CSS variables */
+@theme {
+    /* Unset Tailwind's default colors */
+    --color-*: initial;
+
+    /* Color Palette */
+    --color-green-light: #D3FF9B;
+    --color-green: #A7E855;
+    --color-blue-light: #83CBFF;
+    --color-blue: #49B3FF;
+    --color-purple-light: #B1AFFF;
+    --color-purple: #7F6BFF;
+    --color-yellow-light: #FFEBB8;
+    --color-yellow: #FED874;
+    --color-orange-light: #FFC397;
+    --color-orange: #FF994F;
+    --color-red-light: #FF9B9B;
+    --color-red: #F45C5C;
+
+    --color-transparent: transparent;
+
+    --color-neutral-50: #E8E8F2;  /* white */
+    --color-neutral-100: #B8B8C0; /* offwhite (i prefer grite) */
+    --color-neutral-200: #87879B; /* gray */
+    --color-neutral-300: #686879; /* graytone (i prefer gridtone) */
+    --color-neutral-400: #484858; /* midtoneBrighterer */
+    --color-neutral-500: #363643; /* midtoneBrighter */
+    --color-neutral-600: #24242E; /* midtone */
+    --color-neutral-700: #191920; /* midtoneDarker */
+    --color-neutral-800: #14141B; /* darktone */
+    --color-neutral-900: #101014; /* black */
+    --color-neutral-950: #050507; /* blackest */
+
+    /* Breakpoint */
+    --breakpoint-xl: 1360px;
+
+    /* Font */
+    --font-sans: "Source Sans Pro", sans-serif;
+    --font-serif: "Crimson Text", serif;
+
+    /* Box shadow */
+    --shadow-3xl: 8px 8px 16px 0px rgba(0, 0, 0, 0.25);
+
+    /* Animation */
+    --animate-overlay-show: overlay-show 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    @keyframes overlay-show {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    --animate-content-show: content-show 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    @keyframes content-show {
+        from {
+            opacity: 0;
+            transform: scale(0.96);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+/* Grid layouts for desktop/mobile */
+/* @utility lets us use breakpoints like md: */
+@utility grid-layout-desktop {
+    grid-template-rows: 64px 1fr;
+    grid-template-columns: 228px 1fr;
+}
+
+@utility grid-layout-mobile {
+    grid-template-rows: 64px 64px 1fr;
+    grid-template-columns: 1fr;
+}
+
+:root {
+    -webkit-font-smoothing: antialiased;
+    --color-rarity-1: var(--color-neutral-50);
+    --color-rarity-1-dark: var(--color-neutral-100);
+    --color-rarity-2: var(--color-green-light);
+    --color-rarity-2-dark: var(--color-green);
+    --color-rarity-3: var(--color-blue-light);
+    --color-rarity-3-dark: var(--color-blue);
+    --color-rarity-4: var(--color-purple-light);
+    --color-rarity-4-dark: var(--color-purple);
+    --color-rarity-5: var(--color-yellow-light);
+    --color-rarity-5-dark: var(--color-yellow);
+    --color-rarity-6: var(--color-orange-light);
+    --color-rarity-6-dark: var(--color-orange);
+
+    /*Media Player*/
+    --media-range-bar-color: var(--color-red);
+    --media-range-track-background: var(--color-neutral-500);
+    --media-time-range-buffered-color: var(--color-neutral-400);
+}
+
+html {
+	scrollbar-width: auto;
+	scrollbar-color: rgba(255, 255, 255, 0.8) transparent;
+}
+
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.search-input[type="search"]::-webkit-search-cancel-button {
+	display: none;
+}
+
+*::-webkit-scrollbar {
+	width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	background-clip: content-box;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+*::-webkit-scrollbar-thumb:active {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/** {*/
+/*	margin: 0;*/
+/*}*/
+
+html,
+body {
+	height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* ?????? why */
+/*input,*/
+/*button,*/
+/*textarea,*/
+/*select {*/
+/*	font: inherit;*/
+/*}*/
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+img {
+	object-fit: contain;
+}
+
+.skill-sp-type-item {
+	& ~ &::before {
+		content: "";
+		@apply absolute;
+		@apply left-6;
+		@apply top-0;
+		@apply bottom-0;
+		@apply border-l;
+		@apply border-neutral-600;
+	}
+}
+
+.highlight-desc {
+	.value-up {
+		@apply font-bold;
+		@apply text-blue-light;
+	}
+	.value-down {
+		@apply font-bold;
+		@apply text-red-light;
+	}
+	.skill-tooltip {
+		@apply text-neutral-200;
+	}
+	.reminder-text {
+		/* @apply font-bold;  i think text-orange and font-bold also looks ok but i like this more */
+		@apply text-orange-light;
+	}
+}
+
+.module-desc {
+	.keyword {
+		@apply font-bold;
+		@apply text-blue-light
+	}
+}
+
+.swiper-button-next, .swiper-button-prev {
+	--swiper-navigation-sides-offset: -5px;
+	background: radial-gradient(circle at 50% 50%, #24242E 0, rgba(36, 36, 46, 0.6) 50%, rgba(0,0,0,0) 99%);
+	@apply text-neutral-50;;
+}
+.swiper-button-disabled{
+	display: none;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+	--swiper-navigation-size: 20px;
+	width: 10px;
+}
+
+.swiper-slide:first-child{
+	@apply pl-4;
+	@apply sm:pl-0;
+}
+.swiper-slide:last-child{
+	@apply pr-4;
+	@apply sm:pr-0;
+}

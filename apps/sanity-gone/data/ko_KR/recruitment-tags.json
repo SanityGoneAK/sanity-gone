@@ -1,0 +1,157 @@
+[
+  {
+    "tagId": 1,
+    "tagName": "가드",
+    "tagGroup": 1
+  },
+  {
+    "tagId": 2,
+    "tagName": "스나이퍼",
+    "tagGroup": 2
+  },
+  {
+    "tagId": 3,
+    "tagName": "디펜더",
+    "tagGroup": 3
+  },
+  {
+    "tagId": 4,
+    "tagName": "메딕",
+    "tagGroup": 4
+  },
+  {
+    "tagId": 5,
+    "tagName": "서포터",
+    "tagGroup": 5
+  },
+  {
+    "tagId": 6,
+    "tagName": "캐스터",
+    "tagGroup": 6
+  },
+  {
+    "tagId": 7,
+    "tagName": "스페셜리스트",
+    "tagGroup": 7
+  },
+  {
+    "tagId": 8,
+    "tagName": "뱅가드",
+    "tagGroup": 8
+  },
+  {
+    "tagId": 9,
+    "tagName": "근거리",
+    "tagGroup": 9
+  },
+  {
+    "tagId": 10,
+    "tagName": "원거리",
+    "tagGroup": 10
+  },
+  {
+    "tagId": 11,
+    "tagName": "고급 특별 채용",
+    "tagGroup": 11
+  },
+  {
+    "tagId": 12,
+    "tagName": "제어형",
+    "tagGroup": 12
+  },
+  {
+    "tagId": 13,
+    "tagName": "누커",
+    "tagGroup": 13
+  },
+  {
+    "tagId": 14,
+    "tagName": "특별 채용",
+    "tagGroup": 14
+  },
+  {
+    "tagId": 15,
+    "tagName": "힐링",
+    "tagGroup": 15
+  },
+  {
+    "tagId": 16,
+    "tagName": "지원",
+    "tagGroup": 16
+  },
+  {
+    "tagId": 17,
+    "tagName": "신입",
+    "tagGroup": 17
+  },
+  {
+    "tagId": 18,
+    "tagName": "코스트+",
+    "tagGroup": 18
+  },
+  {
+    "tagId": 19,
+    "tagName": "딜러",
+    "tagGroup": 19
+  },
+  {
+    "tagId": 20,
+    "tagName": "생존형",
+    "tagGroup": 20
+  },
+  {
+    "tagId": 21,
+    "tagName": "범위공격",
+    "tagGroup": 21
+  },
+  {
+    "tagId": 22,
+    "tagName": "방어형",
+    "tagGroup": 22
+  },
+  {
+    "tagId": 23,
+    "tagName": "감속",
+    "tagGroup": 23
+  },
+  {
+    "tagId": 24,
+    "tagName": "디버프",
+    "tagGroup": 24
+  },
+  {
+    "tagId": 25,
+    "tagName": "쾌속부활",
+    "tagGroup": 25
+  },
+  {
+    "tagId": 26,
+    "tagName": "강제이동",
+    "tagGroup": 26
+  },
+  {
+    "tagId": 27,
+    "tagName": "소환",
+    "tagGroup": 27
+  },
+  {
+    "tagId": 28,
+    "tagName": "로봇",
+    "tagGroup": 28
+  },
+  {
+    "tagId": 29,
+    "tagName": "원소",
+    "tagGroup": 29
+  },
+  {
+    "tagId": 1012,
+    "tagName": "남성",
+    "tagGroup": 1012
+  },
+  {
+    "tagId": 1013,
+    "tagName": "여성",
+    "tagGroup": 1013
+  }
+]

@@ -1,0 +1,8 @@
+---
+export const prerender = false;
+
+const {slug} = Astro.params;
+---
+<div>
+  <script define:vars={{ slug }}>window.location = "/en/operators/" + slug</script>
+</div>

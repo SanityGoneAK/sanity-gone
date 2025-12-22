@@ -1,0 +1,58 @@
+name: Update assets
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0,6,12,18 * * *"
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v2.0
+        with:
+          envkey_MEILISEARCH_KEY: ${{ secrets.MEILISEARCH_KEY }}
+          envkey_PUBLIC_MEILISEARCH_URL: ${{ secrets.PUBLIC_MEILISEARCH_URL }}
+          envkey_PUBLIC_MEILISEARCH_INDEX: ${{ secrets.PUBLIC_MEILISEARCH_INDEX }}
+          envkey_PUBLIC_MEILISEARCH_KEY: ${{ secrets.PUBLIC_MEILISEARCH_KEY }}
+          envkey_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          envkey_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
+
+      - name: Set Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install Yarn
+        run: npm install --global yarn
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Run Update Data
+        run: yarn update-game-data
+
+      - name: Commit updates
+        run: |
+          git config --global user.name "Sanity;Gone"
+          git config --global user.email "actions@users.noreply.github.com"
+          git pull --all
+          git add data
+          git add scripts/ArknightsGameData
+          git add scripts/ArknightsGameData_YoStar
+          git diff-index --quiet HEAD || git commit -m "Update game data" && git push
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: amondnet/vercel-action@v20
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          vercel-args: '--prod'
+          vercel-org-id: ${{ secrets.ORG_ID}}
+          vercel-project-id: ${{ secrets.PROJECT_ID}}

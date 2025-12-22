@@ -1,0 +1,2290 @@
+{
+  "2001": {
+    "itemId": "2001",
+    "name": {
+      "zh_CN": "基础作战记录",
+      "en_US": "Drill Battle Record",
+      "ja_JP": "入門作戦記録",
+      "ko_KR": "기초작전기록"
+    },
+    "iconId": "sprite_exp_card_t1",
+    "rarity": 2
+  },
+  "2002": {
+    "itemId": "2002",
+    "name": {
+      "zh_CN": "初级作战记录",
+      "en_US": "Frontline Battle Record",
+      "ja_JP": "初級作戦記録",
+      "ko_KR": "초급작전기록"
+    },
+    "iconId": "sprite_exp_card_t2",
+    "rarity": 3
+  },
+  "2003": {
+    "itemId": "2003",
+    "name": {
+      "zh_CN": "中级作战记录",
+      "en_US": "Tactical Battle Record",
+      "ja_JP": "中級作戦記録",
+      "ko_KR": "중급작전기록"
+    },
+    "iconId": "sprite_exp_card_t3",
+    "rarity": 4
+  },
+  "2004": {
+    "itemId": "2004",
+    "name": {
+      "zh_CN": "高级作战记录",
+      "en_US": "Strategic Battle Record",
+      "ja_JP": "上級作戦記録",
+      "ko_KR": "고급작전기록"
+    },
+    "iconId": "sprite_exp_card_t4",
+    "rarity": 5
+  },
+  "3211": {
+    "itemId": "3211",
+    "name": {
+      "zh_CN": "先锋芯片",
+      "en_US": "Vanguard Chip",
+      "ja_JP": "初級先鋒SoC",
+      "ko_KR": "뱅가드 칩"
+    },
+    "iconId": "MTL_ASC_PIO1",
+    "rarity": 3
+  },
+  "3212": {
+    "itemId": "3212",
+    "name": {
+      "zh_CN": "先锋芯片组",
+      "en_US": "Vanguard Chip Pack",
+      "ja_JP": "中級先鋒SoC",
+      "ko_KR": "뱅가드 칩셋"
+    },
+    "iconId": "MTL_ASC_PIO2",
+    "rarity": 4
+  },
+  "3213": {
+    "itemId": "3213",
+    "name": {
+      "zh_CN": "先锋双芯片",
+      "en_US": "Vanguard Dualchip",
+      "ja_JP": "上級先鋒SoC",
+      "ko_KR": "뱅가드 듀얼 칩"
+    },
+    "iconId": "MTL_ASC_PIO3",
+    "rarity": 5
+  },
+  "3221": {
+    "itemId": "3221",
+    "name": {
+      "zh_CN": "近卫芯片",
+      "en_US": "Guard Chip",
+      "ja_JP": "初級前衛SoC",
+      "ko_KR": "가드 칩"
+    },
+    "iconId": "MTL_ASC_GRD1",
+    "rarity": 3
+  },
+  "3222": {
+    "itemId": "3222",
+    "name": {
+      "zh_CN": "近卫芯片组",
+      "en_US": "Guard Chip Pack",
+      "ja_JP": "中級前衛SoC",
+      "ko_KR": "가드 칩셋"
+    },
+    "iconId": "MTL_ASC_GRD2",
+    "rarity": 4
+  },
+  "3223": {
+    "itemId": "3223",
+    "name": {
+      "zh_CN": "近卫双芯片",
+      "en_US": "Guard Dualchip",
+      "ja_JP": "上級前衛SoC",
+      "ko_KR": "가드 듀얼 칩"
+    },
+    "iconId": "MTL_ASC_GRD3",
+    "rarity": 5
+  },
+  "3231": {
+    "itemId": "3231",
+    "name": {
+      "zh_CN": "重装芯片",
+      "en_US": "Defender Chip",
+      "ja_JP": "初級重装SoC",
+      "ko_KR": "디펜더 칩"
+    },
+    "iconId": "MTL_ASC_TNK1",
+    "rarity": 3
+  },
+  "3232": {
+    "itemId": "3232",
+    "name": {
+      "zh_CN": "重装芯片组",
+      "en_US": "Defender Chip Pack",
+      "ja_JP": "中級重装SoC",
+      "ko_KR": "디펜더 칩셋"
+    },
+    "iconId": "MTL_ASC_TNK2",
+    "rarity": 4
+  },
+  "3233": {
+    "itemId": "3233",
+    "name": {
+      "zh_CN": "重装双芯片",
+      "en_US": "Defender Dualchip",
+      "ja_JP": "上級重装SoC",
+      "ko_KR": "디펜더 듀얼 칩"
+    },
+    "iconId": "MTL_ASC_TNK3",
+    "rarity": 5
+  },
+  "3241": {
+    "itemId": "3241",
+    "name": {
+      "zh_CN": "狙击芯片",
+      "en_US": "Sniper Chip",
+      "ja_JP": "初級狙撃SoC",
+      "ko_KR": "스나이퍼 칩"
+    },
+    "iconId": "MTL_ASC_SNP1",
+    "rarity": 3
+  },
+  "3242": {
+    "itemId": "3242",
+    "name": {
+      "zh_CN": "狙击芯片组",
+      "en_US": "Sniper Chip Pack",
+      "ja_JP": "中級狙撃SoC",
+      "ko_KR": "스나이퍼 칩셋"
+    },
+    "iconId": "MTL_ASC_SNP2",
+    "rarity": 4
+  },
+  "3243": {
+    "itemId": "3243",
+    "name": {
+      "zh_CN": "狙击双芯片",
+      "en_US": "Sniper Dualchip",
+      "ja_JP": "上級狙撃SoC",
+      "ko_KR": "스나이퍼 듀얼 칩"
+    },
+    "iconId": "MTL_ASC_SNP3",
+    "rarity": 5
+  },
+  "3251": {
+    "itemId": "3251",
+    "name": {
+      "zh_CN": "术师芯片",
+      "en_US": "Caster Chip",
+      "ja_JP": "初級術師SoC",
+      "ko_KR": "캐스터 칩"
+    },
+    "iconId": "MTL_ASC_CST1",
+    "rarity": 3
+  },
+  "3252": {
+    "itemId": "3252",
+    "name": {
+      "zh_CN": "术师芯片组",
+      "en_US": "Caster Chip Pack",
+      "ja_JP": "中級術師SoC",
+      "ko_KR": "캐스터 칩셋"
+    },
+    "iconId": "MTL_ASC_CST2",
+    "rarity": 4
+  },
+  "3253": {
+    "itemId": "3253",
+    "name": {
+      "zh_CN": "术师双芯片",
+      "en_US": "Caster Dualchip",
+      "ja_JP": "上級術師SoC",
+      "ko_KR": "캐스터 듀얼 칩"
+    },
+    "iconId": "MTL_ASC_CST3",
+    "rarity": 5
+  },
+  "3261": {
+    "itemId": "3261",
+    "name": {
+      "zh_CN": "医疗芯片",
+      "en_US": "Medic Chip",
+      "ja_JP": "初級医療SoC",
+      "ko_KR": "메딕 칩"
+    },
+    "iconId": "MTL_ASC_MED1",
+    "rarity": 3
+  },
+  "3262": {
+    "itemId": "3262",
+    "name": {
+      "zh_CN": "医疗芯片组",
+      "en_US": "Medic Chip Pack",
+      "ja_JP": "中級医療SoC",
+      "ko_KR": "메딕 칩셋"
+    },
+    "iconId": "MTL_ASC_MED2",
+    "rarity": 4
+  },
+  "3263": {
+    "itemId": "3263",
+    "name": {
+      "zh_CN": "医疗双芯片",
+      "en_US": "Medic Dualchip",
+      "ja_JP": "上級医療SoC",
+      "ko_KR": "메딕 듀얼 칩"
+    },
+    "iconId": "MTL_ASC_MED3",
+    "rarity": 5
+  },
+  "3271": {
+    "itemId": "3271",
+    "name": {
+      "zh_CN": "辅助芯片",
+      "en_US": "Supporter Chip",
+      "ja_JP": "初級補助SoC",
+      "ko_KR": "서포터 칩"
+    },
+    "iconId": "MTL_ASC_SUP1",
+    "rarity": 3
+  },
+  "3272": {
+    "itemId": "3272",
+    "name": {
+      "zh_CN": "辅助芯片组",
+      "en_US": "Supporter Chip Pack",
+      "ja_JP": "中級補助SoC",
+      "ko_KR": "서포터 칩셋"
+    },
+    "iconId": "MTL_ASC_SUP2",
+    "rarity": 4
+  },
+  "3273": {
+    "itemId": "3273",
+    "name": {
+      "zh_CN": "辅助双芯片",
+      "en_US": "Supporter Dualchip",
+      "ja_JP": "上級補助SoC",
+      "ko_KR": "서포터 듀얼 칩"
+    },
+    "iconId": "MTL_ASC_SUP3",
+    "rarity": 5
+  },
+  "3281": {
+    "itemId": "3281",
+    "name": {
+      "zh_CN": "特种芯片",
+      "en_US": "Specialist Chip",
+      "ja_JP": "初級特殊SoC",
+      "ko_KR": "스페셜리스트 칩"
+    },
+    "iconId": "MTL_ASC_SPC1",
+    "rarity": 3
+  },
+  "3282": {
+    "itemId": "3282",
+    "name": {
+      "zh_CN": "特种芯片组",
+      "en_US": "Specialist Chip Pack",
+      "ja_JP": "中級特殊SoC",
+      "ko_KR": "스페셜리스트 칩셋"
+    },
+    "iconId": "MTL_ASC_SPC2",
+    "rarity": 4
+  },
+  "3283": {
+    "itemId": "3283",
+    "name": {
+      "zh_CN": "特种双芯片",
+      "en_US": "Specialist Dualchip",
+      "ja_JP": "上級特殊SoC",
+      "ko_KR": "스페셜리스트 듀얼 칩"
+    },
+    "iconId": "MTL_ASC_SPC3",
+    "rarity": 5
+  },
+  "3301": {
+    "itemId": "3301",
+    "name": {
+      "zh_CN": "技巧概要·卷1",
+      "en_US": "Skill Summary - 1",
+      "ja_JP": "アーツ学Ⅰ",
+      "ko_KR": "스킬개론 제1권"
+    },
+    "iconId": "MTL_SKILL1",
+    "rarity": 2
+  },
+  "3302": {
+    "itemId": "3302",
+    "name": {
+      "zh_CN": "技巧概要·卷2",
+      "en_US": "Skill Summary - 2",
+      "ja_JP": "アーツ学Ⅱ",
+      "ko_KR": "스킬개론 제2권"
+    },
+    "iconId": "MTL_SKILL2",
+    "rarity": 3
+  },
+  "3303": {
+    "itemId": "3303",
+    "name": {
+      "zh_CN": "技巧概要·卷3",
+      "en_US": "Skill Summary - 3",
+      "ja_JP": "アーツ学Ⅲ",
+      "ko_KR": "스킬개론 제3권"
+    },
+    "iconId": "MTL_SKILL3",
+    "rarity": 4
+  },
+  "4001": {
+    "itemId": "4001",
+    "name": {
+      "zh_CN": "龙门币",
+      "en_US": "LMD",
+      "ja_JP": "龍門幣",
+      "ko_KR": "용문폐"
+    },
+    "iconId": "GOLD",
+    "rarity": 4
+  },
+  "30011": {
+    "itemId": "30011",
+    "name": {
+      "zh_CN": "源岩",
+      "en_US": "Orirock",
+      "ja_JP": "源岩鉱",
+      "ko_KR": "원암"
+    },
+    "iconId": "MTL_SL_G1",
+    "rarity": 1
+  },
+  "30012": {
+    "itemId": "30012",
+    "name": {
+      "zh_CN": "固源岩",
+      "en_US": "Orirock Cube",
+      "ja_JP": "初級源岩",
+      "ko_KR": "원암 큐브"
+    },
+    "iconId": "MTL_SL_G2",
+    "rarity": 2
+  },
+  "30013": {
+    "itemId": "30013",
+    "name": {
+      "zh_CN": "固源岩组",
+      "en_US": "Orirock Cluster",
+      "ja_JP": "中級源岩",
+      "ko_KR": "원암 큐브 번들"
+    },
+    "iconId": "MTL_SL_G3",
+    "rarity": 3
+  },
+  "30014": {
+    "itemId": "30014",
+    "name": {
+      "zh_CN": "提纯源岩",
+      "en_US": "Orirock Concentration",
+      "ja_JP": "上級源岩",
+      "ko_KR": "정제 원암"
+    },
+    "iconId": "MTL_SL_G4",
+    "rarity": 4
+  },
+  "30021": {
+    "itemId": "30021",
+    "name": {
+      "zh_CN": "代糖",
+      "en_US": "Sugar Substitute",
+      "ja_JP": "ブドウ糖",
+      "ko_KR": "대체당"
+    },
+    "iconId": "MTL_SL_STRG1",
+    "rarity": 1
+  },
+  "30022": {
+    "itemId": "30022",
+    "name": {
+      "zh_CN": "糖",
+      "en_US": "Sugar",
+      "ja_JP": "初級糖原",
+      "ko_KR": "포도당"
+    },
+    "iconId": "MTL_SL_STRG2",
+    "rarity": 2
+  },
+  "30023": {
+    "itemId": "30023",
+    "name": {
+      "zh_CN": "糖组",
+      "en_US": "Sugar Pack",
+      "ja_JP": "中級糖原",
+      "ko_KR": "포도당 번들"
+    },
+    "iconId": "MTL_SL_STRG3",
+    "rarity": 3
+  },
+  "30024": {
+    "itemId": "30024",
+    "name": {
+      "zh_CN": "糖聚块",
+      "en_US": "Sugar Lump",
+      "ja_JP": "上級糖原",
+      "ko_KR": "포도당 팩"
+    },
+    "iconId": "MTL_SL_STRG4",
+    "rarity": 4
+  },
+  "30031": {
+    "itemId": "30031",
+    "name": {
+      "zh_CN": "酯原料",
+      "en_US": "Ester",
+      "ja_JP": "エステル原料",
+      "ko_KR": "에스테르 원료"
+    },
+    "iconId": "MTL_SL_RUSH1",
+    "rarity": 1
+  },
+  "30032": {
+    "itemId": "30032",
+    "name": {
+      "zh_CN": "聚酸酯",
+      "en_US": "Polyester",
+      "ja_JP": "初級エステル",
+      "ko_KR": "폴리에스테르"
+    },
+    "iconId": "MTL_SL_RUSH2",
+    "rarity": 2
+  },
+  "30033": {
+    "itemId": "30033",
+    "name": {
+      "zh_CN": "聚酸酯组",
+      "en_US": "Polyester Pack",
+      "ja_JP": "中級エステル",
+      "ko_KR": "폴리에스테르 번들"
+    },
+    "iconId": "MTL_SL_RUSH3",
+    "rarity": 3
+  },
+  "30034": {
+    "itemId": "30034",
+    "name": {
+      "zh_CN": "聚酸酯块",
+      "en_US": "Polyester Lump",
+      "ja_JP": "上級エステル",
+      "ko_KR": "폴리에스테르 팩"
+    },
+    "iconId": "MTL_SL_RUSH4",
+    "rarity": 4
+  },
+  "30041": {
+    "itemId": "30041",
+    "name": {
+      "zh_CN": "异铁碎片",
+      "en_US": "Oriron Shard",
+      "ja_JP": "異鉄の欠片",
+      "ko_KR": "이철 조각"
+    },
+    "iconId": "MTL_SL_IRON1",
+    "rarity": 1
+  },
+  "30042": {
+    "itemId": "30042",
+    "name": {
+      "zh_CN": "异铁",
+      "en_US": "Oriron",
+      "ja_JP": "初級異鉄",
+      "ko_KR": "이철"
+    },
+    "iconId": "MTL_SL_IRON2",
+    "rarity": 2
+  },
+  "30043": {
+    "itemId": "30043",
+    "name": {
+      "zh_CN": "异铁组",
+      "en_US": "Oriron Cluster",
+      "ja_JP": "中級異鉄",
+      "ko_KR": "이철 번들"
+    },
+    "iconId": "MTL_SL_IRON3",
+    "rarity": 3
+  },
+  "30044": {
+    "itemId": "30044",
+    "name": {
+      "zh_CN": "异铁块",
+      "en_US": "Oriron Block",
+      "ja_JP": "上級異鉄",
+      "ko_KR": "이철 팩"
+    },
+    "iconId": "MTL_SL_IRON4",
+    "rarity": 4
+  },
+  "30051": {
+    "itemId": "30051",
+    "name": {
+      "zh_CN": "双酮",
+      "en_US": "Diketon",
+      "ja_JP": "アケトン試剤",
+      "ko_KR": "디케톤"
+    },
+    "iconId": "MTL_SL_KETONE1",
+    "rarity": 1
+  },
+  "30052": {
+    "itemId": "30052",
+    "name": {
+      "zh_CN": "酮凝集",
+      "en_US": "Polyketon",
+      "ja_JP": "初級アケトン",
+      "ko_KR": "아케톤 응집체"
+    },
+    "iconId": "MTL_SL_KETONE2",
+    "rarity": 2
+  },
+  "30053": {
+    "itemId": "30053",
+    "name": {
+      "zh_CN": "酮凝集组",
+      "en_US": "Aketon",
+      "ja_JP": "中級アケトン",
+      "ko_KR": "아케톤 응집체 번들"
+    },
+    "iconId": "MTL_SL_KETONE3",
+    "rarity": 3
+  },
+  "30054": {
+    "itemId": "30054",
+    "name": {
+      "zh_CN": "酮阵列",
+      "en_US": "Keton Colloid",
+      "ja_JP": "上級アケトン",
+      "ko_KR": "아케톤 팩"
+    },
+    "iconId": "MTL_SL_KETONE4",
+    "rarity": 4
+  },
+  "30061": {
+    "itemId": "30061",
+    "name": {
+      "zh_CN": "破损装置",
+      "en_US": "Damaged Device",
+      "ja_JP": "破損装置",
+      "ko_KR": "파손된 장치"
+    },
+    "iconId": "MTL_SL_BOSS1",
+    "rarity": 1
+  },
+  "30062": {
+    "itemId": "30062",
+    "name": {
+      "zh_CN": "装置",
+      "en_US": "Device",
+      "ja_JP": "初級装置",
+      "ko_KR": "장치"
+    },
+    "iconId": "MTL_SL_BOSS2",
+    "rarity": 2
+  },
+  "30063": {
+    "itemId": "30063",
+    "name": {
+      "zh_CN": "全新装置",
+      "en_US": "Integrated Device",
+      "ja_JP": "中級装置",
+      "ko_KR": "리뉴얼 장치"
+    },
+    "iconId": "MTL_SL_BOSS3",
+    "rarity": 3
+  },
+  "30064": {
+    "itemId": "30064",
+    "name": {
+      "zh_CN": "改量装置",
+      "en_US": "Optimized Device",
+      "ja_JP": "上級装置",
+      "ko_KR": "개량 장치"
+    },
+    "iconId": "MTL_SL_BOSS4",
+    "rarity": 4
+  },
+  "30073": {
+    "itemId": "30073",
+    "name": {
+      "zh_CN": "扭转醇",
+      "en_US": "Loxic Kohl",
+      "ja_JP": "合成コール",
+      "ko_KR": "로식 콜"
+    },
+    "iconId": "MTL_SL_ALCOHOL1",
+    "rarity": 3
+  },
+  "30074": {
+    "itemId": "30074",
+    "name": {
+      "zh_CN": "白马醇",
+      "en_US": "White Horse Kohl",
+      "ja_JP": "上級合成コール",
+      "ko_KR": "화이트 호스 콜"
+    },
+    "iconId": "MTL_SL_ALCOHOL2",
+    "rarity": 4
+  },
+  "30083": {
+    "itemId": "30083",
+    "name": {
+      "zh_CN": "轻锰矿",
+      "en_US": "Manganese Ore",
+      "ja_JP": "マンガン",
+      "ko_KR": "망간 광석"
+    },
+    "iconId": "MTL_SL_MANGANESE1",
+    "rarity": 3
+  },
+  "30084": {
+    "itemId": "30084",
+    "name": {
+      "zh_CN": "三水锰矿",
+      "en_US": "Manganese Trihydrate",
+      "ja_JP": "上級マンガン",
+      "ko_KR": "망간 중합체"
+    },
+    "iconId": "MTL_SL_MANGANESE2",
+    "rarity": 4
+  },
+  "30093": {
+    "itemId": "30093",
+    "name": {
+      "zh_CN": "研磨石",
+      "en_US": "Grindstone",
+      "ja_JP": "砥石",
+      "ko_KR": "연마석"
+    },
+    "iconId": "MTL_SL_PG1",
+    "rarity": 3
+  },
+  "30094": {
+    "itemId": "30094",
+    "name": {
+      "zh_CN": "五水研磨石",
+      "en_US": "Grindstone Pentahydrate",
+      "ja_JP": "上級砥石",
+      "ko_KR": "고급연마석"
+    },
+    "iconId": "MTL_SL_PG2",
+    "rarity": 4
+  },
+  "30103": {
+    "itemId": "30103",
+    "name": {
+      "zh_CN": "RMA70-12",
+      "en_US": "RMA70-12",
+      "ja_JP": "RMA70-12",
+      "ko_KR": "RMA70-12"
+    },
+    "iconId": "MTL_SL_RMA7012",
+    "rarity": 3
+  },
+  "30104": {
+    "itemId": "30104",
+    "name": {
+      "zh_CN": "RMA70-24",
+      "en_US": "RMA70-24",
+      "ja_JP": "RMA70-24",
+      "ko_KR": "RMA70-24"
+    },
+    "iconId": "MTL_SL_RMA7024",
+    "rarity": 4
+  },
+  "30115": {
+    "itemId": "30115",
+    "name": {
+      "zh_CN": "聚合剂",
+      "en_US": "Polymerization Preparation",
+      "ja_JP": "融合剤",
+      "ko_KR": "중합제"
+    },
+    "iconId": "MTL_SL_PP",
+    "rarity": 5
+  },
+  "30125": {
+    "itemId": "30125",
+    "name": {
+      "zh_CN": "双极纳米片",
+      "en_US": "Bipolar Nanoflake",
+      "ja_JP": "ナノフレーク",
+      "ko_KR": "바이폴라 나노플레이크 칩"
+    },
+    "iconId": "MTL_SL_BN",
+    "rarity": 5
+  },
+  "30135": {
+    "itemId": "30135",
+    "name": {
+      "zh_CN": "D32钢",
+      "en_US": "D32 Steel",
+      "ja_JP": "D32鋼",
+      "ko_KR": "D32강"
+    },
+    "iconId": "MTL_SL_DS",
+    "rarity": 5
+  },
+  "30145": {
+    "itemId": "30145",
+    "name": {
+      "zh_CN": "晶体电子单元",
+      "en_US": "Crystalline Electronic Unit",
+      "ja_JP": "結晶制御装置",
+      "ko_KR": "결정 전자 장치"
+    },
+    "iconId": "MTL_SL_OEU",
+    "rarity": 5
+  },
+  "30155": {
+    "itemId": "30155",
+    "name": {
+      "zh_CN": "烧结核凝晶",
+      "en_US": "Nucleic Crystal Sinter",
+      "ja_JP": "焼結核凝晶",
+      "ko_KR": "핵결정체 소결물"
+    },
+    "iconId": "MTL_SL_SHJ",
+    "rarity": 5
+  },
+  "31013": {
+    "itemId": "31013",
+    "name": {
+      "zh_CN": "凝胶",
+      "en_US": "Coagulating Gel",
+      "ja_JP": "人工ゲル",
+      "ko_KR": "젤"
+    },
+    "iconId": "MTL_SL_PGEL3",
+    "rarity": 3
+  },
+  "31014": {
+    "itemId": "31014",
+    "name": {
+      "zh_CN": "聚合凝胶",
+      "en_US": "Polymerized Gel",
+      "ja_JP": "融合ゲル",
+      "ko_KR": "중합젤"
+    },
+    "iconId": "MTL_SL_PGEL4",
+    "rarity": 4
+  },
+  "31023": {
+    "itemId": "31023",
+    "name": {
+      "zh_CN": "炽合金",
+      "en_US": "Incandescent Alloy",
+      "ja_JP": "熾合金",
+      "ko_KR": "열합금"
+    },
+    "iconId": "MTL_SL_IAM3",
+    "rarity": 3
+  },
+  "31024": {
+    "itemId": "31024",
+    "name": {
+      "zh_CN": "炽合金块",
+      "en_US": "Incandescent Alloy Block",
+      "ja_JP": "上級熾合金",
+      "ko_KR": "열합금 팩"
+    },
+    "iconId": "MTL_SL_IAM4",
+    "rarity": 4
+  },
+  "31033": {
+    "itemId": "31033",
+    "name": {
+      "zh_CN": "晶体元件",
+      "en_US": "Crystalline Component",
+      "ja_JP": "素子結晶",
+      "ko_KR": "결정 부품"
+    },
+    "iconId": "MTL_SL_OC3",
+    "rarity": 3
+  },
+  "31034": {
+    "itemId": "31034",
+    "name": {
+      "zh_CN": "晶体电路",
+      "en_US": "Crystalline Circuit",
+      "ja_JP": "結晶回路",
+      "ko_KR": "결정 회로"
+    },
+    "iconId": "MTL_SL_OC4",
+    "rarity": 4
+  },
+  "31043": {
+    "itemId": "31043",
+    "name": {
+      "zh_CN": "半自然溶剂",
+      "en_US": "Semi-Synthetic Solvent",
+      "ja_JP": "半自然溶剤",
+      "ko_KR": "반합성 용제"
+    },
+    "iconId": "MTL_SL_SS",
+    "rarity": 3
+  },
+  "31044": {
+    "itemId": "31044",
+    "name": {
+      "zh_CN": "精炼溶剂",
+      "en_US": "Refined Solvent",
+      "ja_JP": "精錬溶剤",
+      "ko_KR": "정제된 용제"
+    },
+    "iconId": "MTL_SL_RS",
+    "rarity": 4
+  },
+  "31053": {
+    "itemId": "31053",
+    "name": {
+      "zh_CN": "化合切削液",
+      "en_US": "Compound Cutting Fluid",
+      "ja_JP": "切削液",
+      "ko_KR": "중합 절삭유"
+    },
+    "iconId": "MTL_SL_CCF",
+    "rarity": 3
+  },
+  "31054": {
+    "itemId": "31054",
+    "name": {
+      "zh_CN": "切削原液",
+      "en_US": "Cutting Fluid Solution",
+      "ja_JP": "上級切削液",
+      "ko_KR": "절삭유 원액"
+    },
+    "iconId": "MTL_SL_PLCF",
+    "rarity": 4
+  },
+  "31063": {
+    "itemId": "31063",
+    "name": {
+      "zh_CN": "转质盐组",
+      "en_US": "Transmuted Salt",
+      "ja_JP": "転化塩",
+      "ko_KR": "합성 소금 번들"
+    },
+    "iconId": "MTL_SL_ZY",
+    "rarity": 3
+  },
+  "31064": {
+    "itemId": "31064",
+    "name": {
+      "zh_CN": "转质盐聚块",
+      "en_US": "Transmuted Salt Agglomerate",
+      "ja_JP": "上級転化塩",
+      "ko_KR": "합성 소금 팩"
+    },
+    "iconId": "MTL_SL_ZYK",
+    "rarity": 4
+  },
+  "31073": {
+    "itemId": "31073",
+    "name": {
+      "zh_CN": "褐素纤维",
+      "en_US": "Brown Fiber",
+      "ja_JP": "茶色繊維",
+      "ko_KR": "갈색 섬유"
+    },
+    "iconId": "MTL_SL_XW",
+    "rarity": 3
+  },
+  "31074": {
+    "itemId": "31074",
+    "name": {
+      "zh_CN": "固化纤维板",
+      "en_US": "Cured Fiberboard",
+      "ja_JP": "硬化ファイバーボード",
+      "ko_KR": "경화 섬유보드"
+    },
+    "iconId": "MTL_SL_XWB",
+    "rarity": 4
+  },
+  "31083": {
+    "itemId": "31083",
+    "name": {
+      "zh_CN": "环烃聚质",
+      "en_US": "Cycloalkane Polymer",
+      "ja_JP": "シクロアルカンポリマー",
+      "ko_KR": "졸로알케인 고분자"
+    },
+    "iconId": "MTL_SL_HT",
+    "rarity": 3
+  },
+  "31084": {
+    "itemId": "31084",
+    "name": {
+      "zh_CN": "环烃预制体",
+      "en_US": "Cycloalkane Prefab",
+      "ja_JP": "シクロアルカンプリファブ",
+      "ko_KR": "졸로알케인 프리팹"
+    },
+    "iconId": "MTL_SL_HTT",
+    "rarity": 4
+  },
+  "32001": {
+    "itemId": "32001",
+    "name": {
+      "zh_CN": "芯片助剂",
+      "en_US": "Chip Catalyst",
+      "ja_JP": "SoC強化剤",
+      "ko_KR": "칩 첨가제"
+    },
+    "iconId": "MTL_ASC_DI",
+    "rarity": 4
+  },
+  "mod_unlock_token": {
+    "itemId": "mod_unlock_token",
+    "name": {
+      "zh_CN": "模组数据块",
+      "en_US": "Module Data Block",
+      "ja_JP": "モジュールデータ",
+      "ko_KR": "모듈 데이터 칩"
+    },
+    "iconId": "mod_unlock_token",
+    "rarity": 5
+  },
+  "mod_update_token_2": {
+    "itemId": "mod_update_token_2",
+    "name": {
+      "zh_CN": "数据增补仪",
+      "en_US": "Data Supplement Instrument",
+      "ja_JP": "データ補完マシン",
+      "ko_KR": "데이터 리더기"
+    },
+    "iconId": "mod_update_token_2",
+    "rarity": 5
+  },
+  "mod_update_token_1": {
+    "itemId": "mod_update_token_1",
+    "name": {
+      "zh_CN": "数据增补条",
+      "en_US": "Data Supplement Stick",
+      "ja_JP": "データ補完チップ",
+      "ko_KR": "데이터 메모리"
+    },
+    "iconId": "mod_update_token_1",
+    "rarity": 4
+  },
+  "class_p_char_123_fang": {
+    "itemId": "class_p_char_123_fang",
+    "name": {
+      "zh_CN": "芬的中坚信物",
+      "en_US": "Fang's Kernel Token",
+      "ja_JP": "フェンの印（中堅）",
+      "ko_KR": "팽의 커널 증표"
+    },
+    "iconId": "class_p_char_123_fang",
+    "rarity": 3
+  },
+  "class_p_char_240_wyvern": {
+    "itemId": "class_p_char_240_wyvern",
+    "name": {
+      "zh_CN": "香草的中坚信物",
+      "en_US": "Vanilla's Kernel Token",
+      "ja_JP": "バニラの印（中堅）",
+      "ko_KR": "바닐라의 커널 증표"
+    },
+    "iconId": "class_p_char_240_wyvern",
+    "rarity": 3
+  },
+  "class_p_char_192_falco": {
+    "itemId": "class_p_char_192_falco",
+    "name": {
+      "zh_CN": "翎羽的中坚信物",
+      "en_US": "Plume's Kernel Token",
+      "ja_JP": "プリュムの印（中堅）",
+      "ko_KR": "플룸의 커널 증표"
+    },
+    "iconId": "class_p_char_192_falco",
+    "rarity": 3
+  },
+  "class_p_char_208_melan": {
+    "itemId": "class_p_char_208_melan",
+    "name": {
+      "zh_CN": "玫兰莎的中坚信物",
+      "en_US": "Melantha's Kernel Token",
+      "ja_JP": "メランサの印（中堅）",
+      "ko_KR": "멜란사의 커널 증표"
+    },
+    "iconId": "class_p_char_208_melan",
+    "rarity": 3
+  },
+  "class_p_char_209_ardign": {
+    "itemId": "class_p_char_209_ardign",
+    "name": {
+      "zh_CN": "卡缇的中坚信物",
+      "en_US": "Cardigan's Kernel Token",
+      "ja_JP": "カーディの印（中堅）",
+      "ko_KR": "카디건의 커널 증표"
+    },
+    "iconId": "class_p_char_209_ardign",
+    "rarity": 3
+  },
+  "class_p_char_122_beagle": {
+    "itemId": "class_p_char_122_beagle",
+    "name": {
+      "zh_CN": "米格鲁的中坚信物",
+      "en_US": "Beagle's Kernel Token",
+      "ja_JP": "ビーグルの印（中堅）",
+      "ko_KR": "비글의 커널 증표"
+    },
+    "iconId": "class_p_char_122_beagle",
+    "rarity": 3
+  },
+  "class_p_char_124_kroos": {
+    "itemId": "class_p_char_124_kroos",
+    "name": {
+      "zh_CN": "克洛丝的中坚信物",
+      "en_US": "Kroos's Kernel Token",
+      "ja_JP": "クルースの印（中堅）",
+      "ko_KR": "크루스의 커널 증표"
+    },
+    "iconId": "class_p_char_124_kroos",
+    "rarity": 3
+  },
+  "class_p_char_121_lava": {
+    "itemId": "class_p_char_121_lava",
+    "name": {
+      "zh_CN": "炎熔的中坚信物",
+      "en_US": "Lava's Kernel Token",
+      "ja_JP": "ラヴァの印（中堅）",
+      "ko_KR": "라바의 커널 증표"
+    },
+    "iconId": "class_p_char_121_lava",
+    "rarity": 3
+  },
+  "class_p_char_120_hibisc": {
+    "itemId": "class_p_char_120_hibisc",
+    "name": {
+      "zh_CN": "芙蓉的中坚信物",
+      "en_US": "Hibiscus's Kernel Token",
+      "ja_JP": "ハイビスカスの印（中堅）",
+      "ko_KR": "히비스커스의 커널 증표"
+    },
+    "iconId": "class_p_char_120_hibisc",
+    "rarity": 3
+  },
+  "class_p_char_212_ansel": {
+    "itemId": "class_p_char_212_ansel",
+    "name": {
+      "zh_CN": "安赛尔的中坚信物",
+      "en_US": "Ansel's Kernel Token",
+      "ja_JP": "アンセルの印（中堅）",
+      "ko_KR": "안셀의 커널 증표"
+    },
+    "iconId": "class_p_char_212_ansel",
+    "rarity": 3
+  },
+  "class_p_char_210_stward": {
+    "itemId": "class_p_char_210_stward",
+    "name": {
+      "zh_CN": "史都华德的中坚信物",
+      "en_US": "Steward's Kernel Token",
+      "ja_JP": "スチュワードの印（中堅）",
+      "ko_KR": "스튜어드의 커널 증표"
+    },
+    "iconId": "class_p_char_210_stward",
+    "rarity": 3
+  },
+  "class_p_char_278_orchid": {
+    "itemId": "class_p_char_278_orchid",
+    "name": {
+      "zh_CN": "梓兰的中坚信物",
+      "en_US": "Orchid's Kernel Token",
+      "ja_JP": "オーキッドの印（中堅）",
+      "ko_KR": "오키드의 커널 증표"
+    },
+    "iconId": "class_p_char_278_orchid",
+    "rarity": 3
+  },
+  "class_p_char_282_catap": {
+    "itemId": "class_p_char_282_catap",
+    "name": {
+      "zh_CN": "空爆的中坚信物",
+      "en_US": "Catapult's Kernel Token",
+      "ja_JP": "カタパルトの印（中堅）",
+      "ko_KR": "캐터펄트의 커널 증표"
+    },
+    "iconId": "class_p_char_282_catap",
+    "rarity": 3
+  },
+  "class_p_char_283_midn": {
+    "itemId": "class_p_char_283_midn",
+    "name": {
+      "zh_CN": "月见夜的中坚信物",
+      "en_US": "Midnight's Kernel Token",
+      "ja_JP": "ミッドナイトの印（中堅）",
+      "ko_KR": "미드나이트의 커널 증표"
+    },
+    "iconId": "class_p_char_283_midn",
+    "rarity": 3
+  },
+  "class_p_char_284_spot": {
+    "itemId": "class_p_char_284_spot",
+    "name": {
+      "zh_CN": "斑点的中坚信物",
+      "en_US": "Spot's Kernel Token",
+      "ja_JP": "スポットの印（中堅）",
+      "ko_KR": "스팟의 커널 증표"
+    },
+    "iconId": "class_p_char_284_spot",
+    "rarity": 3
+  },
+  "class_p_char_281_popka": {
+    "itemId": "class_p_char_281_popka",
+    "name": {
+      "zh_CN": "泡普卡的中坚信物",
+      "en_US": "Popukar's Kernel Token",
+      "ja_JP": "ポプカルの印（中堅）",
+      "ko_KR": "포푸카의 커널 증표"
+    },
+    "iconId": "class_p_char_281_popka",
+    "rarity": 3
+  },
+  "class_p_char_141_nights": {
+    "itemId": "class_p_char_141_nights",
+    "name": {
+      "zh_CN": "夜烟的中坚信物",
+      "en_US": "Haze's Kernel Token",
+      "ja_JP": "ヘイズの印（中堅）",
+      "ko_KR": "헤이즈의 커널 증표"
+    },
+    "iconId": "class_p_char_141_nights",
+    "rarity": 4
+  },
+  "class_p_char_109_fmout": {
+    "itemId": "class_p_char_109_fmout",
+    "name": {
+      "zh_CN": "远山的中坚信物",
+      "en_US": "Gitano's Kernel Token",
+      "ja_JP": "ギターノの印（中堅）",
+      "ko_KR": "기타노의 커널 증표"
+    },
+    "iconId": "class_p_char_109_fmout",
+    "rarity": 4
+  },
+  "class_p_char_235_jesica": {
+    "itemId": "class_p_char_235_jesica",
+    "name": {
+      "zh_CN": "杰西卡的中坚信物",
+      "en_US": "Jessica's Kernel Token",
+      "ja_JP": "ジェシカの印（中堅）",
+      "ko_KR": "제시카의 커널 증표"
+    },
+    "iconId": "class_p_char_235_jesica",
+    "rarity": 4
+  },
+  "class_p_char_126_shotst": {
+    "itemId": "class_p_char_126_shotst",
+    "name": {
+      "zh_CN": "流星的中坚信物",
+      "en_US": "Meteor's Kernel Token",
+      "ja_JP": "メテオの印（中堅）",
+      "ko_KR": "메테오의 커널 증표"
+    },
+    "iconId": "class_p_char_126_shotst",
+    "rarity": 4
+  },
+  "class_p_char_118_yuki": {
+    "itemId": "class_p_char_118_yuki",
+    "name": {
+      "zh_CN": "白雪的中坚信物",
+      "en_US": "Shirayuki's Kernel Token",
+      "ja_JP": "シラユキの印（中堅）",
+      "ko_KR": "시라유키의 커널 증표"
+    },
+    "iconId": "class_p_char_118_yuki",
+    "rarity": 4
+  },
+  "class_p_char_149_scave": {
+    "itemId": "class_p_char_149_scave",
+    "name": {
+      "zh_CN": "清道夫的中坚信物",
+      "en_US": "Scavenger's Kernel Token",
+      "ja_JP": "スカベンジャーの印（中堅）",
+      "ko_KR": "스캐빈저의 커널 증표"
+    },
+    "iconId": "class_p_char_149_scave",
+    "rarity": 4
+  },
+  "class_p_char_290_vigna": {
+    "itemId": "class_p_char_290_vigna",
+    "name": {
+      "zh_CN": "红豆的中坚信物",
+      "en_US": "Vigna's Kernel Token",
+      "ja_JP": "ヴィグナの印（中堅）",
+      "ko_KR": "비그나의 커널 증표"
+    },
+    "iconId": "class_p_char_290_vigna",
+    "rarity": 4
+  },
+  "class_p_char_130_doberm": {
+    "itemId": "class_p_char_130_doberm",
+    "name": {
+      "zh_CN": "杜宾的中坚信物",
+      "en_US": "Dobermann's Kernel Token",
+      "ja_JP": "ドーベルマンの印（中堅）",
+      "ko_KR": "도베르만의 커널 증표"
+    },
+    "iconId": "class_p_char_130_doberm",
+    "rarity": 4
+  },
+  "class_p_char_289_gyuki": {
+    "itemId": "class_p_char_289_gyuki",
+    "name": {
+      "zh_CN": "缠丸的中坚信物",
+      "en_US": "Matoimaru's Kernel Token",
+      "ja_JP": "マトイマルの印（中堅）",
+      "ko_KR": "마토이마루의 커널 증표"
+    },
+    "iconId": "class_p_char_289_gyuki",
+    "rarity": 4
+  },
+  "class_p_char_193_frostl": {
+    "itemId": "class_p_char_193_frostl",
+    "name": {
+      "zh_CN": "霜叶的中坚信物",
+      "en_US": "Frostleaf's Kernel Token",
+      "ja_JP": "フロストリーフの印（中堅）",
+      "ko_KR": "프로스트리프의 커널 증표"
+    },
+    "iconId": "class_p_char_193_frostl",
+    "rarity": 4
+  },
+  "class_p_char_185_frncat": {
+    "itemId": "class_p_char_185_frncat",
+    "name": {
+      "zh_CN": "慕斯的中坚信物",
+      "en_US": "Mousse's Kernel Token",
+      "ja_JP": "ムースの印（中堅）",
+      "ko_KR": "무스의 커널 증표"
+    },
+    "iconId": "class_p_char_185_frncat",
+    "rarity": 4
+  },
+  "class_p_char_237_gravel": {
+    "itemId": "class_p_char_237_gravel",
+    "name": {
+      "zh_CN": "砾的中坚信物",
+      "en_US": "Gravel's Kernel Token",
+      "ja_JP": "グラベルの印（中堅）",
+      "ko_KR": "그라벨의 커널 증표"
+    },
+    "iconId": "class_p_char_237_gravel",
+    "rarity": 4
+  },
+  "class_p_char_236_rope": {
+    "itemId": "class_p_char_236_rope",
+    "name": {
+      "zh_CN": "暗索的中坚信物",
+      "en_US": "Rope's Kernel Token",
+      "ja_JP": "ロープの印（中堅）",
+      "ko_KR": "로프의 커널 증표"
+    },
+    "iconId": "class_p_char_236_rope",
+    "rarity": 4
+  },
+  "class_p_char_117_myrrh": {
+    "itemId": "class_p_char_117_myrrh",
+    "name": {
+      "zh_CN": "末药的中坚信物",
+      "en_US": "Myrrh's Kernel Token",
+      "ja_JP": "ミルラの印（中堅）",
+      "ko_KR": "미르의 커널 증표"
+    },
+    "iconId": "class_p_char_117_myrrh",
+    "rarity": 4
+  },
+  "class_p_char_181_flower": {
+    "itemId": "class_p_char_181_flower",
+    "name": {
+      "zh_CN": "调香师的中坚信物",
+      "en_US": "Perfumer's Kernel Token",
+      "ja_JP": "パフューマーの印（中堅）",
+      "ko_KR": "퍼퓨머의 커널 증표"
+    },
+    "iconId": "class_p_char_181_flower",
+    "rarity": 4
+  },
+  "class_p_char_199_yak": {
+    "itemId": "class_p_char_199_yak",
+    "name": {
+      "zh_CN": "角峰的中坚信物",
+      "en_US": "Matterhorn's Kernel Token",
+      "ja_JP": "マッターホルンの印（中堅）",
+      "ko_KR": "마터호른의 커널 증표"
+    },
+    "iconId": "class_p_char_199_yak",
+    "rarity": 4
+  },
+  "class_p_char_150_snakek": {
+    "itemId": "class_p_char_150_snakek",
+    "name": {
+      "zh_CN": "蛇屠箱的中坚信物",
+      "en_US": "Cuora's Kernel Token",
+      "ja_JP": "クオーラの印（中堅）",
+      "ko_KR": "쿠오라의 커널 증표"
+    },
+    "iconId": "class_p_char_150_snakek",
+    "rarity": 4
+  },
+  "class_p_char_196_sunbr": {
+    "itemId": "class_p_char_196_sunbr",
+    "name": {
+      "zh_CN": "古米的中坚信物",
+      "en_US": "Gummy's Kernel Token",
+      "ja_JP": "グムの印（中堅）",
+      "ko_KR": "굼의 커널 증표"
+    },
+    "iconId": "class_p_char_196_sunbr",
+    "rarity": 4
+  },
+  "class_p_char_110_deepcl": {
+    "itemId": "class_p_char_110_deepcl",
+    "name": {
+      "zh_CN": "深海色的中坚信物",
+      "en_US": "Deepcolor's Kernel Token",
+      "ja_JP": "ディピカの印（中堅）",
+      "ko_KR": "딥컬러의 커널 증표"
+    },
+    "iconId": "class_p_char_110_deepcl",
+    "rarity": 4
+  },
+  "class_p_char_183_skgoat": {
+    "itemId": "class_p_char_183_skgoat",
+    "name": {
+      "zh_CN": "地灵的中坚信物",
+      "en_US": "Earthspirit's Kernel Token",
+      "ja_JP": "アーススピリットの印（中堅）",
+      "ko_KR": "어스스피릿의 커널 증표"
+    },
+    "iconId": "class_p_char_183_skgoat",
+    "rarity": 4
+  },
+  "class_p_char_277_sqrrel": {
+    "itemId": "class_p_char_277_sqrrel",
+    "name": {
+      "zh_CN": "阿消的中坚信物",
+      "en_US": "Shaw's Kernel Token",
+      "ja_JP": "ショウの印（中堅）",
+      "ko_KR": "쇼의 커널 증표"
+    },
+    "iconId": "class_p_char_277_sqrrel",
+    "rarity": 4
+  },
+  "class_p_char_137_brownb": {
+    "itemId": "class_p_char_137_brownb",
+    "name": {
+      "zh_CN": "猎蜂的中坚信物",
+      "en_US": "Beehunter's Kernel Token",
+      "ja_JP": "ビーハンターの印（中堅）",
+      "ko_KR": "비헌터의 커널 증표"
+    },
+    "iconId": "class_p_char_137_brownb",
+    "rarity": 4
+  },
+  "class_p_char_253_greyy": {
+    "itemId": "class_p_char_253_greyy",
+    "name": {
+      "zh_CN": "格雷伊的中坚信物",
+      "en_US": "Greyy's Kernel Token",
+      "ja_JP": "グレイの印（中堅）",
+      "ko_KR": "그레이의 커널 증표"
+    },
+    "iconId": "class_p_char_253_greyy",
+    "rarity": 4
+  },
+  "class_p_char_298_susuro": {
+    "itemId": "class_p_char_298_susuro",
+    "name": {
+      "zh_CN": "苏苏洛的中坚信物",
+      "en_US": "Sussurro's Kernel Token",
+      "ja_JP": "ススーロの印（中堅）",
+      "ko_KR": "수수로의 커널 증표"
+    },
+    "iconId": "class_p_char_298_susuro",
+    "rarity": 4
+  },
+  "class_p_char_151_myrtle": {
+    "itemId": "class_p_char_151_myrtle",
+    "name": {
+      "zh_CN": "桃金娘的中坚信物",
+      "en_US": "Myrtle's Kernel Token",
+      "ja_JP": "テンニンカの印（中堅）",
+      "ko_KR": "머틀의 커널 증표"
+    },
+    "iconId": "class_p_char_151_myrtle",
+    "rarity": 4
+  },
+  "class_p_char_190_clour": {
+    "itemId": "class_p_char_190_clour",
+    "name": {
+      "zh_CN": "红云的中坚信物",
+      "en_US": "Vermeil's Kernel Token",
+      "ja_JP": "ヴァーミルの印（中堅）",
+      "ko_KR": "버메일의 커널 증표"
+    },
+    "iconId": "class_p_char_190_clour",
+    "rarity": 4
+  },
+  "class_p_char_133_mm": {
+    "itemId": "class_p_char_133_mm",
+    "name": {
+      "zh_CN": "梅的中坚信物",
+      "en_US": "May's Kernel Token",
+      "ja_JP": "メイの印（中堅）",
+      "ko_KR": "메이의 커널 증표"
+    },
+    "iconId": "class_p_char_133_mm",
+    "rarity": 4
+  },
+  "class_p_char_302_glaze": {
+    "itemId": "class_p_char_302_glaze",
+    "name": {
+      "zh_CN": "安比尔的中坚信物",
+      "en_US": "Ambriel's Kernel Token",
+      "ja_JP": "アンブリエルの印（中堅）",
+      "ko_KR": "엠브리엘의 커널 증표"
+    },
+    "iconId": "class_p_char_302_glaze",
+    "rarity": 4
+  },
+  "class_p_char_337_utage": {
+    "itemId": "class_p_char_337_utage",
+    "name": {
+      "zh_CN": "宴的中坚信物",
+      "en_US": "Utage's Kernel Token",
+      "ja_JP": "ウタゲの印（中堅）",
+      "ko_KR": "우타게의 커널 증표"
+    },
+    "iconId": "class_p_char_337_utage",
+    "rarity": 4
+  },
+  "class_p_char_301_cutter": {
+    "itemId": "class_p_char_301_cutter",
+    "name": {
+      "zh_CN": "刻刀的中坚信物",
+      "en_US": "Cutter's Kernel Token",
+      "ja_JP": "カッターの印（中堅）",
+      "ko_KR": "커터의 커널 증표"
+    },
+    "iconId": "class_p_char_301_cutter",
+    "rarity": 4
+  },
+  "class_p_char_258_podego": {
+    "itemId": "class_p_char_258_podego",
+    "name": {
+      "zh_CN": "波登可的中坚信物",
+      "en_US": "Podenco's Kernel Token",
+      "ja_JP": "ポデンコの印（中堅）",
+      "ko_KR": "포덴코의 커널 증표"
+    },
+    "iconId": "class_p_char_258_podego",
+    "rarity": 4
+  },
+  "class_p_char_328_cammou": {
+    "itemId": "class_p_char_328_cammou",
+    "name": {
+      "zh_CN": "卡达的中坚信物",
+      "en_US": "Click's Kernel Token",
+      "ja_JP": "カシャの印（中堅）",
+      "ko_KR": "클릭의 커널 증표"
+    },
+    "iconId": "class_p_char_328_cammou",
+    "rarity": 4
+  },
+  "class_p_char_272_strong": {
+    "itemId": "class_p_char_272_strong",
+    "name": {
+      "zh_CN": "孑的中坚信物",
+      "en_US": "Jaye's Kernel Token",
+      "ja_JP": "ジェイの印（中堅）",
+      "ko_KR": "제이의 커널 증표"
+    },
+    "iconId": "class_p_char_272_strong",
+    "rarity": 4
+  },
+  "class_p_char_366_acdrop": {
+    "itemId": "class_p_char_366_acdrop",
+    "name": {
+      "zh_CN": "酸糖的中坚信物",
+      "en_US": "Aciddrop's Kernel Token",
+      "ja_JP": "アシッドドロップの印（中堅）",
+      "ko_KR": "애시드드롭의 커널 증표"
+    },
+    "iconId": "class_p_char_366_acdrop",
+    "rarity": 4
+  },
+  "class_p_char_271_spikes": {
+    "itemId": "class_p_char_271_spikes",
+    "name": {
+      "zh_CN": "芳汀的中坚信物",
+      "en_US": "Arene's Kernel Token",
+      "ja_JP": "アレーンの印（中堅）",
+      "ko_KR": "아렌의 커널 증표"
+    },
+    "iconId": "class_p_char_271_spikes",
+    "rarity": 4
+  },
+  "class_p_char_381_bubble": {
+    "itemId": "class_p_char_381_bubble",
+    "name": {
+      "zh_CN": "泡泡的中坚信物",
+      "en_US": "Bubble's Kernel Token",
+      "ja_JP": "バブルの印（中堅）",
+      "ko_KR": "버블의 커널 증표"
+    },
+    "iconId": "class_p_char_381_bubble",
+    "rarity": 4
+  },
+  "class_p_char_347_jaksel": {
+    "itemId": "class_p_char_347_jaksel",
+    "name": {
+      "zh_CN": "杰克的中坚信物",
+      "en_US": "Jackie's Kernel Token",
+      "ja_JP": "ジャッキーの印（中堅）",
+      "ko_KR": "재키의 커널 증표"
+    },
+    "iconId": "class_p_char_347_jaksel",
+    "rarity": 4
+  },
+  "class_p_char_440_pinecn": {
+    "itemId": "class_p_char_440_pinecn",
+    "name": {
+      "zh_CN": "松果的中坚信物",
+      "en_US": "Pinecone's Kernel Token",
+      "ja_JP": "パインコーンの印（中堅）",
+      "ko_KR": "파인콘의 커널 증표"
+    },
+    "iconId": "class_p_char_440_pinecn",
+    "rarity": 4
+  },
+  "class_p_char_452_bstalk": {
+    "itemId": "class_p_char_452_bstalk",
+    "name": {
+      "zh_CN": "豆苗的中坚信物",
+      "en_US": "Beanstalk's Kernel Token",
+      "ja_JP": "ビーンストークの印（中堅）",
+      "ko_KR": "빈스토크의 커널 증표"
+    },
+    "iconId": "class_p_char_452_bstalk",
+    "rarity": 4
+  },
+  "class_p_char_469_indigo": {
+    "itemId": "class_p_char_469_indigo",
+    "name": {
+      "zh_CN": "深靛的中坚信物",
+      "en_US": "Indigo's Kernel Token",
+      "ja_JP": "インディゴの印（中堅）",
+      "ko_KR": "인디고의 커널 증표"
+    },
+    "iconId": "class_p_char_469_indigo",
+    "rarity": 4
+  },
+  "class_p_char_484_robrta": {
+    "itemId": "class_p_char_484_robrta",
+    "name": {
+      "zh_CN": "罗比菈塔的中坚信物",
+      "en_US": "Roberta's Kernel Token",
+      "ja_JP": "ロベルタの印（中堅）",
+      "ko_KR": "로베르타의 커널 증표"
+    },
+    "iconId": "class_p_char_484_robrta",
+    "rarity": 4
+  },
+  "class_p_char_4041_chnut": {
+    "itemId": "class_p_char_4041_chnut",
+    "name": {
+      "zh_CN": "褐果的中坚信物",
+      "en_US": "Chestnut's Kernel Token",
+      "ja_JP": "チェストナットの印（中堅）",
+      "ko_KR": "체스트넛의 커널 증표"
+    },
+    "iconId": "class_p_char_4041_chnut",
+    "rarity": 4
+  },
+  "class_p_char_4062_totter": {
+    "itemId": "class_p_char_4062_totter",
+    "name": {
+      "zh_CN": "铅踝的中坚信物",
+      "en_US": "Totter's Kernel Token",
+      "ja_JP": "トターの印（中堅）",
+      "ko_KR": "토터의 커널 증표"
+    },
+    "iconId": "class_p_char_4062_totter",
+    "rarity": 4
+  },
+  "class_p_char_491_humus": {
+    "itemId": "class_p_char_491_humus",
+    "name": {
+      "zh_CN": "休谟斯的中坚信物",
+      "en_US": "Humus's Kernel Token",
+      "ja_JP": "ヒューマスの印（中堅）",
+      "ko_KR": "휴머스의 커널 증표"
+    },
+    "iconId": "class_p_char_491_humus",
+    "rarity": 4
+  },
+  "class_p_char_128_plosis": {
+    "itemId": "class_p_char_128_plosis",
+    "name": {
+      "zh_CN": "白面鸮的中坚信物",
+      "en_US": "Ptilopsis's Kernel Token",
+      "ja_JP": "フィリオプシスの印（中堅）",
+      "ko_KR": "프틸롭시스의 커널 증표"
+    },
+    "iconId": "class_p_char_128_plosis",
+    "rarity": 5
+  },
+  "class_p_char_115_headbr": {
+    "itemId": "class_p_char_115_headbr",
+    "name": {
+      "zh_CN": "凛冬的中坚信物",
+      "en_US": "Zima's Kernel Token",
+      "ja_JP": "ズィマーの印（中堅）",
+      "ko_KR": "지마의 커널 증표"
+    },
+    "iconId": "class_p_char_115_headbr",
+    "rarity": 5
+  },
+  "class_p_char_102_texas": {
+    "itemId": "class_p_char_102_texas",
+    "name": {
+      "zh_CN": "德克萨斯的中坚信物",
+      "en_US": "Texas's Kernel Token",
+      "ja_JP": "テキサスの印（中堅）",
+      "ko_KR": "텍사스의 커널 증표"
+    },
+    "iconId": "class_p_char_102_texas",
+    "rarity": 5
+  },
+  "class_p_char_106_franka": {
+    "itemId": "class_p_char_106_franka",
+    "name": {
+      "zh_CN": "芙兰卡的中坚信物",
+      "en_US": "Franka's Kernel Token",
+      "ja_JP": "フランカの印（中堅）",
+      "ko_KR": "프란카의 커널 증표"
+    },
+    "iconId": "class_p_char_106_franka",
+    "rarity": 5
+  },
+  "class_p_char_140_whitew": {
+    "itemId": "class_p_char_140_whitew",
+    "name": {
+      "zh_CN": "拉普兰德的中坚信物",
+      "en_US": "Lappland's Kernel Token",
+      "ja_JP": "ラップランドの印（中堅）",
+      "ko_KR": "라플란드의 커널 증표"
+    },
+    "iconId": "class_p_char_140_whitew",
+    "rarity": 5
+  },
+  "class_p_char_143_ghost": {
+    "itemId": "class_p_char_143_ghost",
+    "name": {
+      "zh_CN": "幽灵鲨的中坚信物",
+      "en_US": "Specter's Kernel Token",
+      "ja_JP": "スペクターの印（中堅）",
+      "ko_KR": "스펙터의 커널 증표"
+    },
+    "iconId": "class_p_char_143_ghost",
+    "rarity": 5
+  },
+  "class_p_char_129_bluep": {
+    "itemId": "class_p_char_129_bluep",
+    "name": {
+      "zh_CN": "蓝毒的中坚信物",
+      "en_US": "Blue Poison's Kernel Token",
+      "ja_JP": "アズリウスの印（中堅）",
+      "ko_KR": "블루포이즌의 커널 증표"
+    },
+    "iconId": "class_p_char_129_bluep",
+    "rarity": 5
+  },
+  "class_p_char_204_platnm": {
+    "itemId": "class_p_char_204_platnm",
+    "name": {
+      "zh_CN": "白金的中坚信物",
+      "en_US": "Platinum's Kernel Token",
+      "ja_JP": "プラチナの印（中堅）",
+      "ko_KR": "플래티넘의 커널 증표"
+    },
+    "iconId": "class_p_char_204_platnm",
+    "rarity": 5
+  },
+  "class_p_char_219_meteo": {
+    "itemId": "class_p_char_219_meteo",
+    "name": {
+      "zh_CN": "陨星的中坚信物",
+      "en_US": "Meteorite's Kernel Token",
+      "ja_JP": "メテオリーテの印（中堅）",
+      "ko_KR": "메테오라이트의 커널 증표"
+    },
+    "iconId": "class_p_char_219_meteo",
+    "rarity": 5
+  },
+  "class_p_char_166_skfire": {
+    "itemId": "class_p_char_166_skfire",
+    "name": {
+      "zh_CN": "天火的中坚信物",
+      "en_US": "Skyfire's Kernel Token",
+      "ja_JP": "スカイフレアの印（中堅）",
+      "ko_KR": "스카이파이어의 커널 증표"
+    },
+    "iconId": "class_p_char_166_skfire",
+    "rarity": 5
+  },
+  "class_p_char_242_otter": {
+    "itemId": "class_p_char_242_otter",
+    "name": {
+      "zh_CN": "梅尔的中坚信物",
+      "en_US": "Mayer's Kernel Token",
+      "ja_JP": "メイヤーの印（中堅）",
+      "ko_KR": "메이어의 커널 증표"
+    },
+    "iconId": "class_p_char_242_otter",
+    "rarity": 5
+  },
+  "class_p_char_108_silent": {
+    "itemId": "class_p_char_108_silent",
+    "name": {
+      "zh_CN": "赫默的中坚信物",
+      "en_US": "Silence's Kernel Token",
+      "ja_JP": "サイレンスの印（中堅）",
+      "ko_KR": "사일런스의 커널 증표"
+    },
+    "iconId": "class_p_char_108_silent",
+    "rarity": 5
+  },
+  "class_p_char_171_bldsk": {
+    "itemId": "class_p_char_171_bldsk",
+    "name": {
+      "zh_CN": "华法琳的中坚信物",
+      "en_US": "Warfarin's Kernel Token",
+      "ja_JP": "ワルファリンの印（中堅）",
+      "ko_KR": "와파린의 커널 증표"
+    },
+    "iconId": "class_p_char_171_bldsk",
+    "rarity": 5
+  },
+  "class_p_char_148_nearl": {
+    "itemId": "class_p_char_148_nearl",
+    "name": {
+      "zh_CN": "临光的中坚信物",
+      "en_US": "Nearl's Kernel Token",
+      "ja_JP": "ニアールの印（中堅）",
+      "ko_KR": "니어의 커널 증표"
+    },
+    "iconId": "class_p_char_148_nearl",
+    "rarity": 5
+  },
+  "class_p_char_144_red": {
+    "itemId": "class_p_char_144_red",
+    "name": {
+      "zh_CN": "红的中坚信物",
+      "en_US": "Projekt Red's Kernel Token",
+      "ja_JP": "レッドの印（中堅）",
+      "ko_KR": "레드의 커널 증표"
+    },
+    "iconId": "class_p_char_144_red",
+    "rarity": 5
+  },
+  "class_p_char_107_liskam": {
+    "itemId": "class_p_char_107_liskam",
+    "name": {
+      "zh_CN": "雷蛇的中坚信物",
+      "en_US": "Liskarm's Kernel Token",
+      "ja_JP": "リスカムの印（中堅）",
+      "ko_KR": "리스캄의 커널 증표"
+    },
+    "iconId": "class_p_char_107_liskam",
+    "rarity": 5
+  },
+  "class_p_char_201_moeshd": {
+    "itemId": "class_p_char_201_moeshd",
+    "name": {
+      "zh_CN": "可颂的中坚信物",
+      "en_US": "Croissant's Kernel Token",
+      "ja_JP": "クロワッサンの印（中堅）",
+      "ko_KR": "크루아상의 커널 증표"
+    },
+    "iconId": "class_p_char_201_moeshd",
+    "rarity": 5
+  },
+  "class_p_char_145_prove": {
+    "itemId": "class_p_char_145_prove",
+    "name": {
+      "zh_CN": "普罗旺斯的中坚信物",
+      "en_US": "Provence's Kernel Token",
+      "ja_JP": "プロヴァンスの印（中堅）",
+      "ko_KR": "프로방스의 커널 증표"
+    },
+    "iconId": "class_p_char_145_prove",
+    "rarity": 5
+  },
+  "class_p_char_158_milu": {
+    "itemId": "class_p_char_158_milu",
+    "name": {
+      "zh_CN": "守林人的中坚信物",
+      "en_US": "Firewatch's Kernel Token",
+      "ja_JP": "ファイヤーウォッチの印（中堅）",
+      "ko_KR": "파이어워치의 커널 증표"
+    },
+    "iconId": "class_p_char_158_milu",
+    "rarity": 5
+  },
+  "class_p_char_173_slchan": {
+    "itemId": "class_p_char_173_slchan",
+    "name": {
+      "zh_CN": "崖心的中坚信物",
+      "en_US": "Cliffheart's Kernel Token",
+      "ja_JP": "クリフハートの印（中堅）",
+      "ko_KR": "클리프하트의 커널 증표"
+    },
+    "iconId": "class_p_char_173_slchan",
+    "rarity": 5
+  },
+  "class_p_char_174_slbell": {
+    "itemId": "class_p_char_174_slbell",
+    "name": {
+      "zh_CN": "初雪的中坚信物",
+      "en_US": "Pramanix's Kernel Token",
+      "ja_JP": "プラマニクスの印（中堅）",
+      "ko_KR": "프라마닉스의 커널 증표"
+    },
+    "iconId": "class_p_char_174_slbell",
+    "rarity": 5
+  },
+  "class_p_char_195_glassb": {
+    "itemId": "class_p_char_195_glassb",
+    "name": {
+      "zh_CN": "真理的中坚信物",
+      "en_US": "Istina's Kernel Token",
+      "ja_JP": "イースチナの印（中堅）",
+      "ko_KR": "이스티나의 커널 증표"
+    },
+    "iconId": "class_p_char_195_glassb",
+    "rarity": 5
+  },
+  "class_p_char_101_sora": {
+    "itemId": "class_p_char_101_sora",
+    "name": {
+      "zh_CN": "空的中坚信物",
+      "en_US": "Sora's Kernel Token",
+      "ja_JP": "ソラの印（中堅）",
+      "ko_KR": "소라의 커널 증표"
+    },
+    "iconId": "class_p_char_101_sora",
+    "rarity": 5
+  },
+  "class_p_char_215_mantic": {
+    "itemId": "class_p_char_215_mantic",
+    "name": {
+      "zh_CN": "狮蝎的中坚信物",
+      "en_US": "Manticore's Kernel Token",
+      "ja_JP": "マンティコアの印（中堅）",
+      "ko_KR": "맨티코어의 커널 증표"
+    },
+    "iconId": "class_p_char_215_mantic",
+    "rarity": 5
+  },
+  "class_p_char_241_panda": {
+    "itemId": "class_p_char_241_panda",
+    "name": {
+      "zh_CN": "食铁兽的中坚信物",
+      "en_US": "FEater's Kernel Token",
+      "ja_JP": "エフイーターの印（中堅）",
+      "ko_KR": "에프이터의 커널 증표"
+    },
+    "iconId": "class_p_char_241_panda",
+    "rarity": 5
+  },
+  "class_p_char_164_nightm": {
+    "itemId": "class_p_char_164_nightm",
+    "name": {
+      "zh_CN": "夜魔的中坚信物",
+      "en_US": "Nightmare's Kernel Token",
+      "ja_JP": "ナイトメアの印（中堅）",
+      "ko_KR": "나이트메어의 커널 증표"
+    },
+    "iconId": "class_p_char_164_nightm",
+    "rarity": 5
+  },
+  "class_p_char_308_swire": {
+    "itemId": "class_p_char_308_swire",
+    "name": {
+      "zh_CN": "诗怀雅的中坚信物",
+      "en_US": "Swire's Kernel Token",
+      "ja_JP": "スワイヤーの印（中堅）",
+      "ko_KR": "스와이어의 커널 증표"
+    },
+    "iconId": "class_p_char_308_swire",
+    "rarity": 5
+  },
+  "class_p_char_326_glacus": {
+    "itemId": "class_p_char_326_glacus",
+    "name": {
+      "zh_CN": "格劳克斯的中坚信物",
+      "en_US": "Glaucus's Kernel Token",
+      "ja_JP": "グラウコスの印（中堅）",
+      "ko_KR": "글라우쿠스의 커널 증표"
+    },
+    "iconId": "class_p_char_326_glacus",
+    "rarity": 5
+  },
+  "class_p_char_274_astesi": {
+    "itemId": "class_p_char_274_astesi",
+    "name": {
+      "zh_CN": "星极的中坚信物",
+      "en_US": "Astesia's Kernel Token",
+      "ja_JP": "アステシアの印（中堅）",
+      "ko_KR": "아스테시아의 커널 증표"
+    },
+    "iconId": "class_p_char_274_astesi",
+    "rarity": 5
+  },
+  "class_p_char_279_excu": {
+    "itemId": "class_p_char_279_excu",
+    "name": {
+      "zh_CN": "送葬人的中坚信物",
+      "en_US": "Executor's Kernel Token",
+      "ja_JP": "イグゼキュターの印（中堅）",
+      "ko_KR": "이그제큐터의 커널 증표"
+    },
+    "iconId": "class_p_char_279_excu",
+    "rarity": 5
+  },
+  "class_p_char_243_waaifu": {
+    "itemId": "class_p_char_243_waaifu",
+    "name": {
+      "zh_CN": "槐琥的中坚信物",
+      "en_US": "Waai Fu's Kernel Token",
+      "ja_JP": "ワイフーの印（中堅）",
+      "ko_KR": "와이후의 커널 증표"
+    },
+    "iconId": "class_p_char_243_waaifu",
+    "rarity": 5
+  },
+  "class_p_char_261_sddrag": {
+    "itemId": "class_p_char_261_sddrag",
+    "name": {
+      "zh_CN": "苇草的中坚信物",
+      "en_US": "Reed's Kernel Token",
+      "ja_JP": "リードの印（中堅）",
+      "ko_KR": "리드의 커널 증표"
+    },
+    "iconId": "class_p_char_261_sddrag",
+    "rarity": 5
+  },
+  "class_p_char_356_broca": {
+    "itemId": "class_p_char_356_broca",
+    "name": {
+      "zh_CN": "布洛卡的中坚信物",
+      "en_US": "Broca's Kernel Token",
+      "ja_JP": "ブローカの印（中堅）",
+      "ko_KR": "브로카의 커널 증표"
+    },
+    "iconId": "class_p_char_356_broca",
+    "rarity": 5
+  },
+  "class_p_char_367_swllow": {
+    "itemId": "class_p_char_367_swllow",
+    "name": {
+      "zh_CN": "灰喉的中坚信物",
+      "en_US": "GreyThroat's Kernel Token",
+      "ja_JP": "グレースロートの印（中堅）",
+      "ko_KR": "그레이스롯의 커널 증표"
+    },
+    "iconId": "class_p_char_367_swllow",
+    "rarity": 5
+  },
+  "class_p_char_226_hmau": {
+    "itemId": "class_p_char_226_hmau",
+    "name": {
+      "zh_CN": "吽的中坚信物",
+      "en_US": "Hung's Kernel Token",
+      "ja_JP": "ウンの印（中堅）",
+      "ko_KR": "훔의 커널 증표"
+    },
+    "iconId": "class_p_char_226_hmau",
+    "rarity": 5
+  },
+  "class_p_char_306_leizi": {
+    "itemId": "class_p_char_306_leizi",
+    "name": {
+      "zh_CN": "惊蛰的中坚信物",
+      "en_US": "Leizi's Kernel Token",
+      "ja_JP": "レイズの印（中堅）",
+      "ko_KR": "레이즈의 커널 증표"
+    },
+    "iconId": "class_p_char_306_leizi",
+    "rarity": 5
+  },
+  "class_p_char_379_sesa": {
+    "itemId": "class_p_char_379_sesa",
+    "name": {
+      "zh_CN": "慑砂的中坚信物",
+      "en_US": "Sesa's Kernel Token",
+      "ja_JP": "シェーシャの印（中堅）",
+      "ko_KR": "세사의 커널 증표"
+    },
+    "iconId": "class_p_char_379_sesa",
+    "rarity": 5
+  },
+  "class_p_char_254_vodfox": {
+    "itemId": "class_p_char_254_vodfox",
+    "name": {
+      "zh_CN": "巫恋的中坚信物",
+      "en_US": "Shamare's Kernel Token",
+      "ja_JP": "シャマレの印（中堅）",
+      "ko_KR": "샤마르의 커널 증표"
+    },
+    "iconId": "class_p_char_254_vodfox",
+    "rarity": 5
+  },
+  "class_p_char_103_angel": {
+    "itemId": "class_p_char_103_angel",
+    "name": {
+      "zh_CN": "能天使的中坚信物",
+      "en_US": "Exusiai's Kernel Token",
+      "ja_JP": "エクシアの印（中堅）",
+      "ko_KR": "엑시아의 커널 증표"
+    },
+    "iconId": "class_p_char_103_angel",
+    "rarity": 6
+  },
+  "class_p_char_112_siege": {
+    "itemId": "class_p_char_112_siege",
+    "name": {
+      "zh_CN": "推进之王的中坚信物",
+      "en_US": "Siege's Kernel Token",
+      "ja_JP": "シージの印（中堅）",
+      "ko_KR": "시즈의 커널 증표"
+    },
+    "iconId": "class_p_char_112_siege",
+    "rarity": 6
+  },
+  "class_p_char_134_ifrit": {
+    "itemId": "class_p_char_134_ifrit",
+    "name": {
+      "zh_CN": "伊芙利特的中坚信物",
+      "en_US": "Ifrit's Kernel Token",
+      "ja_JP": "イフリータの印（中堅）",
+      "ko_KR": "이프리트의 커널 증표"
+    },
+    "iconId": "class_p_char_134_ifrit",
+    "rarity": 6
+  },
+  "class_p_char_180_amgoat": {
+    "itemId": "class_p_char_180_amgoat",
+    "name": {
+      "zh_CN": "艾雅法拉的中坚信物",
+      "en_US": "Eyjafjalla's Kernel Token",
+      "ja_JP": "エイヤフィヤトラの印（中堅）",
+      "ko_KR": "에이야퍄들라의 커널 증표"
+    },
+    "iconId": "class_p_char_180_amgoat",
+    "rarity": 6
+  },
+  "class_p_char_291_aglina": {
+    "itemId": "class_p_char_291_aglina",
+    "name": {
+      "zh_CN": "安洁莉娜的中坚信物",
+      "en_US": "Angelina's Kernel Token",
+      "ja_JP": "アンジェリーナの印（中堅）",
+      "ko_KR": "안젤리나의 커널 증표"
+    },
+    "iconId": "class_p_char_291_aglina",
+    "rarity": 6
+  },
+  "class_p_char_147_shining": {
+    "itemId": "class_p_char_147_shining",
+    "name": {
+      "zh_CN": "闪灵的中坚信物",
+      "en_US": "Shining's Kernel Token",
+      "ja_JP": "シャイニングの印（中堅）",
+      "ko_KR": "샤이닝의 커널 증표"
+    },
+    "iconId": "class_p_char_147_shining",
+    "rarity": 6
+  },
+  "class_p_char_179_cgbird": {
+    "itemId": "class_p_char_179_cgbird",
+    "name": {
+      "zh_CN": "夜莺的中坚信物",
+      "en_US": "Nightingale's Kernel Token",
+      "ja_JP": "ナイチンゲールの印（中堅）",
+      "ko_KR": "나이팅게일의 커널 증표"
+    },
+    "iconId": "class_p_char_179_cgbird",
+    "rarity": 6
+  },
+  "class_p_char_136_hsguma": {
+    "itemId": "class_p_char_136_hsguma",
+    "name": {
+      "zh_CN": "星熊的中坚信物",
+      "en_US": "Hoshiguma's Kernel Token",
+      "ja_JP": "ホシグマの印（中堅）",
+      "ko_KR": "호시구마의 커널 증표"
+    },
+    "iconId": "class_p_char_136_hsguma",
+    "rarity": 6
+  },
+  "class_p_char_202_demkni": {
+    "itemId": "class_p_char_202_demkni",
+    "name": {
+      "zh_CN": "塞雷娅的中坚信物",
+      "en_US": "Saria's Kernel Token",
+      "ja_JP": "サリアの印（中堅）",
+      "ko_KR": "사리아의 커널 증표"
+    },
+    "iconId": "class_p_char_202_demkni",
+    "rarity": 6
+  },
+  "class_p_char_172_svrash": {
+    "itemId": "class_p_char_172_svrash",
+    "name": {
+      "zh_CN": "银灰的中坚信物",
+      "en_US": "SilverAsh's Kernel Token",
+      "ja_JP": "シルバーアッシュの印（中堅）",
+      "ko_KR": "실버애쉬의 커널 증표"
+    },
+    "iconId": "class_p_char_172_svrash",
+    "rarity": 6
+  },
+  "class_p_char_263_skadi": {
+    "itemId": "class_p_char_263_skadi",
+    "name": {
+      "zh_CN": "斯卡蒂的中坚信物",
+      "en_US": "Skadi's Kernel Token",
+      "ja_JP": "スカジの印（中堅）",
+      "ko_KR": "스카디의 커널 증표"
+    },
+    "iconId": "class_p_char_263_skadi",
+    "rarity": 6
+  },
+  "class_p_char_010_chen": {
+    "itemId": "class_p_char_010_chen",
+    "name": {
+      "zh_CN": "陈的中坚信物",
+      "en_US": "Ch'en's Kernel Token",
+      "ja_JP": "チェンの印（中堅）",
+      "ko_KR": "첸의 커널 증표"
+    },
+    "iconId": "class_p_char_010_chen",
+    "rarity": 6
+  },
+  "class_p_char_340_shwaz": {
+    "itemId": "class_p_char_340_shwaz",
+    "name": {
+      "zh_CN": "黑的中坚信物",
+      "en_US": "Schwarz's Kernel Token",
+      "ja_JP": "シュヴァルツの印（中堅）",
+      "ko_KR": "슈바르츠의 커널 증표"
+    },
+    "iconId": "class_p_char_340_shwaz",
+    "rarity": 6
+  },
+  "class_p_char_188_helage": {
+    "itemId": "class_p_char_188_helage",
+    "name": {
+      "zh_CN": "赫拉格的中坚信物",
+      "en_US": "Hellagur's Kernel Token",
+      "ja_JP": "ヘラグの印（中堅）",
+      "ko_KR": "헬라그의 커널 증표"
+    },
+    "iconId": "class_p_char_188_helage",
+    "rarity": 6
+  },
+  "class_p_char_248_mgllan": {
+    "itemId": "class_p_char_248_mgllan",
+    "name": {
+      "zh_CN": "麦哲伦的中坚信物",
+      "en_US": "Magallan's Kernel Token",
+      "ja_JP": "マゼランの印（中堅）",
+      "ko_KR": "마젤란의 커널 증표"
+    },
+    "iconId": "class_p_char_248_mgllan",
+    "rarity": 6
+  },
+  "class_p_char_213_mostma": {
+    "itemId": "class_p_char_213_mostma",
+    "name": {
+      "zh_CN": "莫斯提马的中坚信物",
+      "en_US": "Mostima's Kernel Token",
+      "ja_JP": "モスティマの印（中堅）",
+      "ko_KR": "모스티마의 커널 증표"
+    },
+    "iconId": "class_p_char_213_mostma",
+    "rarity": 6
+  },
+  "class_p_char_017_huang": {
+    "itemId": "class_p_char_017_huang",
+    "name": {
+      "zh_CN": "煌的中坚信物",
+      "en_US": "Blaze's Kernel Token",
+      "ja_JP": "ブレイズの印（中堅）",
+      "ko_KR": "블레이즈의 커널 증표"
+    },
+    "iconId": "class_p_char_017_huang",
+    "rarity": 6
+  },
+  "class_p_char_225_haak": {
+    "itemId": "class_p_char_225_haak",
+    "name": {
+      "zh_CN": "阿的中坚信物",
+      "en_US": "Aak's Kernel Token",
+      "ja_JP": "アの印（中堅）",
+      "ko_KR": "아의 커널 증표"
+    },
+    "iconId": "class_p_char_225_haak",
+    "rarity": 6
+  },
+  "class_p_char_2013_cerber": {
+    "itemId": "class_p_char_2013_cerber",
+    "name": {
+      "zh_CN": "刻俄柏的中坚信物",
+      "en_US": "Ceobe's Kernel Token",
+      "ja_JP": "ケオベの印（中堅）",
+      "ko_KR": "케오베의 커널 증표"
+    },
+    "iconId": "class_p_char_2013_cerber",
+    "rarity": 6
+  },
+  "class_p_char_222_bpipe": {
+    "itemId": "class_p_char_222_bpipe",
+    "name": {
+      "zh_CN": "风笛的中坚信物",
+      "en_US": "Bagpipe's Kernel Token",
+      "ja_JP": "バグパイプの印（中堅）",
+      "ko_KR": "백파이프의 커널 증표"
+    },
+    "iconId": "class_p_char_222_bpipe",
+    "rarity": 6
+  },
+  "class_p_char_250_phatom": {
+    "itemId": "class_p_char_250_phatom",
+    "name": {
+      "zh_CN": "傀影的中坚信物",
+      "en_US": "Phantom's Kernel Token",
+      "ja_JP": "ファントムの印（中堅）",
+      "ko_KR": "팬텀의 커널 증표"
+    },
+    "iconId": "class_p_char_250_phatom",
+    "rarity": 6
+  }
+}

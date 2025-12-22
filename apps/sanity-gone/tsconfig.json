@@ -1,0 +1,21 @@
+{
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"jsxImportSource": "react",
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"target": "esnext",
+		"baseUrl": ".",
+		"lib": ["esnext", "dom"],
+		"paths": {
+			"~/*": ["src/*"],
+			"data/*": ["data/*"]
+		}
+	},
+	"include": ["src/**/*", ".storybook/**/*"],
+	"exclude": [
+		"scripts/ArknightsGameData/**/*",
+		"scripts/ArknightsGameData_YoStar/**/*"
+	]
+}
