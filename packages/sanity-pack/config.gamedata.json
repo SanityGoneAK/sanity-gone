@@ -1,0 +1,32 @@
+{
+	"output_dir": "./gamedata/assets",
+	"cache_dir": "./gamedata/cache",
+	"fbs_dir": "./fbs",
+	"unpack_mode": "unity_py",
+	"flatc_path": "./flatc",
+	"arknights_studio": {
+		"cli_dll_path": "./ArknightsStudioCLI/ArknightsStudioCLI.dll"
+	},
+	"servers": {
+		"CN": {
+			"enabled": true,
+			"path_whitelist": ["anon", "gamedata"]
+		},
+		"TW": {
+			"enabled": true,
+			"path_whitelist": ["anon", "gamedata"]
+		},
+		"EN": {
+			"enabled": true,
+			"path_whitelist": ["anon", "gamedata"]
+		},
+		"JP": {
+			"enabled": true,
+			"path_whitelist": ["anon", "gamedata"]
+		},
+		"KR": {
+			"enabled": true,
+			"path_whitelist": ["anon", "gamedata"]
+		}
+	}
+}

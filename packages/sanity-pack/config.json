@@ -2,7 +2,7 @@
 	"output_dir": "./assets",
 	"cache_dir": "./cache",
 	"fbs_dir": "./fbs",
-	"unpack_mode": "unity_py",
+	"unpack_mode": "arknights_studio",
 	"flatc_path": "./flatc",
 	"arknights_studio": {
 		"cli_dll_path": "./ArknightsStudioCLI/ArknightsStudioCLI.dll"
@@ -11,7 +11,6 @@
 		"CN": {
 			"enabled": true,
 			"path_whitelist": [
-				"anon",
 				"refs/arts/enm_art",
 				"arts/building/buffs/buff_icon_hub.ab",
 				"spritepack/building_ui_buff_skills_h1_0.ab",
@@ -38,25 +37,20 @@
 				"audio/sound_beta_2/voice_custom"
 			]
 		},
-		"TW": {
-			"enabled": true,
-			"path_whitelist": ["anon"]
-		},
 		"EN": {
 			"enabled": true,
 			"path_whitelist": [
-				"anon",
 				"audio/sound_beta_2/voice_en",
 				"audio/sound_beta_2/voice_custom"
 			]
 		},
 		"JP": {
 			"enabled": true,
-			"path_whitelist": ["anon", "audio/sound_beta_2/voice_en"]
+			"path_whitelist": ["audio/sound_beta_2/voice_en"]
 		},
 		"KR": {
 			"enabled": true,
-			"path_whitelist": ["anon", "audio/sound_beta_2/voice_kr"]
+			"path_whitelist": ["audio/sound_beta_2/voice_kr"]
 		}
 	}
 }

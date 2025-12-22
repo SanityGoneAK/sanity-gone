@@ -1,0 +1,27 @@
+{
+	"EN": {
+		"resource": "25-12-15-14-31-30_ae2e55",
+		"client": "32.6.21",
+		"folders": {}
+	},
+	"JP": {
+		"resource": "25-12-15-14-38-03_745a7f",
+		"client": "32.6.21",
+		"folders": {}
+	},
+	"TW": {
+		"resource": "25-12-10-11-45-53_101b11",
+		"client": "31.5.81",
+		"folders": {}
+	},
+	"KR": {
+		"resource": "25-12-16-13-16-39_dd08ba",
+		"client": "32.6.21",
+		"folders": {}
+	},
+	"CN": {
+		"resource": "25-12-09-11-06-25_6d7e1b",
+		"client": "2.6.82",
+		"folders": {}
+	}
+}

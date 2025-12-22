@@ -5,12 +5,14 @@
 		"sanity-pack:download": "poetry run sanity-pack download",
 		"sanity-pack:unpack": "poetry run sanity-pack unpack",
 		"sanity-pack:process": "poetry run sanity-pack pipeline",
-		"sanity-pack:run": "turbo sanity-pack:download sanity-pack:unpack sanity-pack:pipeline",
 
-		"sanity-pack:fbs:download": "poetry run sanity-pack download -c config-fbs.json",
-		"sanity-pack:fbs:unpack": "poetry run sanity-pack unpack -c config-fbs.json",
-		"sanity-pack:fbs:process": "poetry run sanity-pack fbs download && poetry run sanity-pack fbs decode -c config-fbs.json",
-		"sanity-pack:fbs:compile": "poetry run sanity-pack fbs compile -c config-fbs.json",
-		"sanity-pack:fbs:run": "turbo sanity-pack:fbs:download sanity-pack:fbs:unpack sanity-pack:fbs:process sanity-pack:fbs:compile"
+		"sanity-pack:fbs:download": "poetry run sanity-pack download -c config.fbs.json",
+		"sanity-pack:fbs:unpack": "poetry run sanity-pack unpack -c config.fbs.json",
+		"sanity-pack:fbs:process": "poetry run sanity-pack fbs download && poetry run sanity-pack fbs decode -c config.fbs.json",
+		"sanity-pack:fbs:compile": "poetry run sanity-pack fbs compile -c config.fbs.json",
+
+		"sanity-pack:gamedata:download": "poetry run sanity-pack download -c config.gamedata.json",
+		"sanity-pack:gamedata:unpack": "poetry run sanity-pack unpack -c config.gamedata.json",
+		"sanity-pack:gamedata:process": "poetry run sanity-pack pipeline -c config.gamedata.json"
 	}
 }

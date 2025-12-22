@@ -91,9 +91,7 @@ class DecodeTextAssetsStep(PipelineStep):
     def load_json_or_bson(self, data: bytes):
         """Load json or possibly bson."""
         if b"\x00" in data[:256]:
-            import bson
-
-            return bson.loads(data)
+            return bson.decode(data)
 
         return json.loads(data)
 
