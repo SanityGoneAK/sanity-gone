@@ -1,3 +1,0 @@
-[header(actId="sandbox_1", npcId="")]
-飛箭難鑿穴，刃切了無痕。雨來成碎錦，風起現花紋。
-[end]

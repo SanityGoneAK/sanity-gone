@@ -31,7 +31,9 @@
   "_keys": [
     "epoque_39",
     "epoque_42",
+    "iteration_epoque",
     "nian_11",
+    "sale_16",
     "sale_iteration_boc_epoque_game",
     "shining_2",
     "winter_sale_epoque"
@@ -39,7 +41,9 @@
   "_values": [
     "Premain/PremainTitleBar/epoque_39",
     "Premain/PremainTitleBar/epoque_42",
+    "Premain/PremainTitleBar/iteration_epoque",
     "Premain/PremainTitleBar/nian_11",
+    "Premain/PremainTitleBar/sale_16",
     "Premain/PremainTitleBar/sale_iteration_boc_epoque_game",
     "Premain/PremainTitleBar/shining_2",
     "Premain/PremainTitleBar/winter_sale_epoque"

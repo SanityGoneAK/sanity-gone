@@ -1152,6 +1152,96 @@
             "bindMainlineZoneId": null,
             "bindMainlineRetroZoneId": null
         },
+        "act5bossrush_zone1": {
+            "zoneID": "act5bossrush_zone1",
+            "zoneIndex": 0,
+            "type": "ACTIVITY",
+            "zoneNameFirst": null,
+            "zoneNameSecond": "強敵當前",
+            "zoneNameTitleCurrent": null,
+            "zoneNameTitleUnCurrent": null,
+            "zoneNameTitleEx": null,
+            "zoneNameThird": null,
+            "lockedText": null,
+            "antiSpoilerId": null,
+            "canPreview": false,
+            "hasAdditionalPanel": false,
+            "sixStarMilestoneGroupId": null,
+            "bindMainlineZoneId": null,
+            "bindMainlineRetroZoneId": null
+        },
+        "act43side_zone1": {
+            "zoneID": "act43side_zone1",
+            "zoneIndex": 0,
+            "type": "ACTIVITY",
+            "zoneNameFirst": null,
+            "zoneNameSecond": "演出開始",
+            "zoneNameTitleCurrent": null,
+            "zoneNameTitleUnCurrent": null,
+            "zoneNameTitleEx": null,
+            "zoneNameThird": null,
+            "lockedText": null,
+            "antiSpoilerId": null,
+            "canPreview": false,
+            "hasAdditionalPanel": false,
+            "sixStarMilestoneGroupId": null,
+            "bindMainlineZoneId": null,
+            "bindMainlineRetroZoneId": null
+        },
+        "act43side_zone2": {
+            "zoneID": "act43side_zone2",
+            "zoneIndex": 1,
+            "type": "ACTIVITY",
+            "zoneNameFirst": null,
+            "zoneNameSecond": "為戲劇，為永恆",
+            "zoneNameTitleCurrent": null,
+            "zoneNameTitleUnCurrent": null,
+            "zoneNameTitleEx": null,
+            "zoneNameThird": null,
+            "lockedText": null,
+            "antiSpoilerId": null,
+            "canPreview": false,
+            "hasAdditionalPanel": false,
+            "sixStarMilestoneGroupId": null,
+            "bindMainlineZoneId": null,
+            "bindMainlineRetroZoneId": null
+        },
+        "act34sre_zone1": {
+            "zoneID": "act34sre_zone1",
+            "zoneIndex": 0,
+            "type": "ACTIVITY",
+            "zoneNameFirst": null,
+            "zoneNameSecond": "信標投放",
+            "zoneNameTitleCurrent": null,
+            "zoneNameTitleUnCurrent": null,
+            "zoneNameTitleEx": null,
+            "zoneNameThird": null,
+            "lockedText": null,
+            "antiSpoilerId": null,
+            "canPreview": false,
+            "hasAdditionalPanel": false,
+            "sixStarMilestoneGroupId": null,
+            "bindMainlineZoneId": null,
+            "bindMainlineRetroZoneId": null
+        },
+        "act34sre_zone2": {
+            "zoneID": "act34sre_zone2",
+            "zoneIndex": 1,
+            "type": "ACTIVITY",
+            "zoneNameFirst": null,
+            "zoneNameSecond": "防線鞏固",
+            "zoneNameTitleCurrent": null,
+            "zoneNameTitleUnCurrent": null,
+            "zoneNameTitleEx": null,
+            "zoneNameThird": null,
+            "lockedText": null,
+            "antiSpoilerId": null,
+            "canPreview": false,
+            "hasAdditionalPanel": false,
+            "sixStarMilestoneGroupId": null,
+            "bindMainlineZoneId": null,
+            "bindMainlineRetroZoneId": null
+        },
         "act1break_zone1": {
             "zoneID": "act1break_zone1",
             "zoneIndex": 0,
@@ -6641,6 +6731,42 @@
             "sixStarMilestoneGroupId": null,
             "bindMainlineZoneId": null,
             "bindMainlineRetroZoneId": null
+        },
+        "permanent_sidestory_26_zone1": {
+            "zoneID": "permanent_sidestory_26_zone1",
+            "zoneIndex": 0,
+            "type": "SIDESTORY",
+            "zoneNameFirst": null,
+            "zoneNameSecond": "信標投放",
+            "zoneNameTitleCurrent": null,
+            "zoneNameTitleUnCurrent": null,
+            "zoneNameTitleEx": null,
+            "zoneNameThird": null,
+            "lockedText": null,
+            "antiSpoilerId": null,
+            "canPreview": false,
+            "hasAdditionalPanel": false,
+            "sixStarMilestoneGroupId": null,
+            "bindMainlineZoneId": null,
+            "bindMainlineRetroZoneId": null
+        },
+        "permanent_sidestory_26_zone2": {
+            "zoneID": "permanent_sidestory_26_zone2",
+            "zoneIndex": 1,
+            "type": "SIDESTORY",
+            "zoneNameFirst": null,
+            "zoneNameSecond": "防線鞏固",
+            "zoneNameTitleCurrent": null,
+            "zoneNameTitleUnCurrent": null,
+            "zoneNameTitleEx": null,
+            "zoneNameThird": null,
+            "lockedText": null,
+            "antiSpoilerId": null,
+            "canPreview": false,
+            "hasAdditionalPanel": false,
+            "sixStarMilestoneGroupId": null,
+            "bindMainlineZoneId": null,
+            "bindMainlineRetroZoneId": null
         }
     },
     "weeklyAdditionInfo": {
@@ -6730,6 +6856,26 @@
         }
     },
     "zoneValidInfo": {
+        "act5bossrush_zone1": {
+            "startTs": 1768550400,
+            "endTs": 1769716799
+        },
+        "act43side_zone1": {
+            "startTs": 1766995200,
+            "endTs": 1768161599
+        },
+        "act43side_zone2": {
+            "startTs": 1767600000,
+            "endTs": 1768161599
+        },
+        "act34sre_zone1": {
+            "startTs": 1768204800,
+            "endTs": 1769025599
+        },
+        "act34sre_zone2": {
+            "startTs": 1768204800,
+            "endTs": 1769025599
+        },
         "act1break_zone1": {
             "startTs": 1765785600,
             "endTs": 1767556799

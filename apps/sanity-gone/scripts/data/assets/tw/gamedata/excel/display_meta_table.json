@@ -388,6 +388,17 @@
                 "dynAvatarId": null
             },
             {
+                "avatarId": "avatar_special_MissC",
+                "avatarType": "SPECIAL",
+                "avatarIdSort": 40,
+                "avatarIdDesc": "紀念郵件獲得\n“女士的准許”",
+                "avatarItemName": "“女士的准許”",
+                "avatarItemDesc": "Miss.Christine的超級特別許可。得到它的人可以與美麗的女士共進晚餐，並為其提供全程摸摸服務，實在令人羨慕！",
+                "avatarItemUsage": "用來彰顯個性的圖案，能夠將之設置為頭像。",
+                "obtainApproach": "特殊方式獲得",
+                "dynAvatarId": null
+            },
+            {
                 "avatarId": "avatar_special_49",
                 "avatarType": "SPECIAL",
                 "avatarIdSort": 41,
@@ -1081,6 +1092,17 @@
                 "dynAvatarId": null
             },
             {
+                "avatarId": "avatar_activity_HE",
+                "avatarType": "ACTIVITY",
+                "avatarIdSort": 63,
+                "avatarIdDesc": "【空想花庭】記錄修復\n“空想花庭”",
+                "avatarItemName": "“空想花庭”",
+                "avatarItemDesc": "樂園凋敗崩塌，而生命之價值長存。",
+                "avatarItemUsage": "用來彰顯個性的圖案，能夠將之設置為頭像。",
+                "obtainApproach": "記錄修復獲得",
+                "dynAvatarId": null
+            },
+            {
                 "avatarId": "avatar_dyn_01",
                 "avatarType": "DYNAMIC",
                 "avatarIdSort": 1,
@@ -1112,6 +1134,17 @@
                 "avatarItemUsage": "用來彰顯個性的動態頭像。",
                 "obtainApproach": "特殊方式獲得",
                 "dynAvatarId": "assets_avatar_dyn_03"
+            },
+            {
+                "avatarId": "avatar_dyn_04",
+                "avatarType": "DYNAMIC",
+                "avatarIdSort": 4,
+                "avatarIdDesc": "購買首次發售時裝\n【於萬千宇宙之中】獲得\n“兔兔許願星”",
+                "avatarItemName": "“兔兔許願星”",
+                "avatarItemDesc": "在滿載祝福的這一天，與所有星星一起為她許下願望。",
+                "avatarItemUsage": "用來彰顯個性的動態頭像。",
+                "obtainApproach": "特殊方式獲得",
+                "dynAvatarId": "assets_avatar_dyn_04"
             },
             {
                 "avatarId": "avatar_def_01",
@@ -1295,7 +1328,8 @@
                 "avatarIdList": [
                     "avatar_dyn_01",
                     "avatar_dyn_02",
-                    "avatar_dyn_03"
+                    "avatar_dyn_03",
+                    "avatar_dyn_04"
                 ]
             },
             "SPECIAL": {
@@ -1337,6 +1371,7 @@
                     "avatar_special_37",
                     "avatar_special_38",
                     "avatar_special_39",
+                    "avatar_special_MissC",
                     "avatar_special_49"
                 ]
             },
@@ -1406,7 +1441,8 @@
                     "avatar_activity_ARC1",
                     "avatar_activity_RL4_3",
                     "avatar_activity_ED_1",
-                    "avatar_activity_CW"
+                    "avatar_activity_CW",
+                    "avatar_activity_HE"
                 ]
             },
             "DEFAULT": {
@@ -3478,6 +3514,24 @@
                         "type": "AP_SUPPLY"
                     }
                 ]
+            },
+            "mail_amiyaBirth_2026_1": {
+                "id": "mail_amiyaBirth_2026_1",
+                "type": "NORMAL",
+                "sortId": 46,
+                "displayReceiveTs": 1766494800,
+                "year": 0,
+                "dateDelta": -1,
+                "senderId": "amiya_2025",
+                "title": "來自阿米婭的感謝",
+                "content": "今天大家說要提前結束會議，帶我去一個地方時，我還以為是有緊急事件要處理。沒想到一推開門，看到的是漫天飛舞的彩帶紙花，還有博士您和幹員們的笑臉。\n原來這個就是您早上和我說的“特殊禮物”呀，我真的很開心，謝謝您，博士。\n我知道您還在忙，所以專門留了一個生日小蛋糕給您，博士一定要記得吃哦，也請記得不要工作得太晚。\n嘿嘿，晚安，博士~",
+                "rewardList": [
+                    {
+                        "id": "ap_supply_lt_120_2025_8",
+                        "count": 1,
+                        "type": "AP_SUPPLY"
+                    }
+                ]
             }
         },
         "constData": {
@@ -3515,6 +3569,11 @@
                 "senderId": "arknights_choearth",
                 "senderName": "山山兔",
                 "avatarId": "mail_choearth_amiya"
+            },
+            "amiya_2025": {
+                "senderId": "amiya_2025",
+                "senderName": "阿米婭",
+                "avatarId": "avatar_special_amiya_2025"
             }
         }
     },
