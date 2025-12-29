@@ -61,7 +61,7 @@ class AESDecodeStrategy:
         if b"\x00" in data[:256]:
             try:
                 import bson
-                return bson.loads(data)
+                return bson.decode(data)
             except ImportError:
                 log.warning("bson module not available, falling back to JSON")
                 # Fall through to JSON parsing
