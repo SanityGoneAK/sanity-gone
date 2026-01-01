@@ -1,17 +1,17 @@
 import { promises as fs } from "fs";
 import path from "path";
 
-import enUniequipTable from "./data/en/gamedata/excel/uniequip_table.json";
-import krUniequipTable from "./data/kr/gamedata/excel/uniequip_table.json";
-import jpUniequipTable from "./data/jp/gamedata/excel/uniequip_table.json";
-import cnUniequipTable from "./data/cn/gamedata/excel/uniequip_table.json";
-import twUniequipTable from "./data/tw/gamedata/excel/uniequip_table.json";
+import enUniequipTable from "./data/arknights-gamedata/en/gamedata/excel/uniequip_table.json";
+import krUniequipTable from "./data/arknights-gamedata/kr/gamedata/excel/uniequip_table.json";
+import jpUniequipTable from "./data/arknights-gamedata/jp/gamedata/excel/uniequip_table.json";
+import cnUniequipTable from "./data/arknights-gamedata/cn/gamedata/excel/uniequip_table.json";
+import twUniequipTable from "./data/arknights-gamedata/tw/gamedata/excel/uniequip_table.json";
 
-import cnCharacterTable from "./data/cn/gamedata/excel/character_table.json" assert { type: "json" };
-import enCharacterTable from "./data/en/gamedata/excel/character_table.json" assert { type: "json" };
-import krCharacterTable from "./data/kr/gamedata/excel/character_table.json" assert { type: "json" };
-import jpCharacterTable from "./data/jp/gamedata/excel/character_table.json" assert { type: "json" };
-import twCharacterTable from "./data/tw/gamedata/excel/character_table.json" assert { type: "json" };
+import cnCharacterTable from "./data/arknights-gamedata/cn/gamedata/excel/character_table.json" assert { type: "json" };
+import enCharacterTable from "./data/arknights-gamedata/en/gamedata/excel/character_table.json" assert { type: "json" };
+import krCharacterTable from "./data/arknights-gamedata/kr/gamedata/excel/character_table.json" assert { type: "json" };
+import jpCharacterTable from "./data/arknights-gamedata/jp/gamedata/excel/character_table.json" assert { type: "json" };
+import twCharacterTable from "./data/arknights-gamedata/tw/gamedata/excel/character_table.json" assert { type: "json" };
 
 import { professionToClass } from "../src/utils/classes";
 import { descriptionToHtml } from "../src/utils/description-parser";

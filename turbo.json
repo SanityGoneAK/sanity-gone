@@ -9,26 +9,6 @@
 		"build": {
 			"dependsOn": ["^build"]
 		},
-		"update-game-data": {},
-		"copy-game-data": {},
-		"sanity-pack:fbs:download": {},
-		"sanity-pack:fbs:unpack": {
-			"dependsOn": ["sanity-pack:fbs:download"]
-		},
-		"sanity-pack:fbs:process": {
-			"dependsOn": ["sanity-pack:fbs:unpack"]
-		},
-		"sanity-pack:fbs:compile": {
-			"dependsOn": ["sanity-pack:fbs:process"]
-		},
-		"sanity-pack:gamedata:download": {
-			"dependsOn": ["sanity-pack:fbs:compile"]
-		},
-		"sanity-pack:gamedata:unpack": {
-			"dependsOn": ["sanity-pack:gamedata:download"]
-		},
-		"sanity-pack:gamedata:process": {
-			"dependsOn": ["sanity-pack:gamedata:unpack"]
-		}
+		"update-game-data": {}
 	}
 }

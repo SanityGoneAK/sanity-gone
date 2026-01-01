@@ -1,10 +1,10 @@
-import cnCharacterTable from "./data/cn/gamedata/excel/character_table.json" assert { type: "json" };
+import cnCharacterTable from "./data/arknights-gamedata/cn/gamedata/excel/character_table.json" assert { type: "json" };
 
-import cnBuildingData from "./data/cn/gamedata/excel/building_data.json" assert { type: "json" };
-import enBuildingData from "./data/en/gamedata/excel/building_data.json" assert { type: "json" };
-import jpBuildingData from "./data/jp/gamedata/excel/building_data.json" assert { type: "json" };
-import krBuildingData from "./data/kr/gamedata/excel/building_data.json" assert { type: "json" };
-import twBuildingData from "./data/tw/gamedata/excel/building_data.json" assert { type: "json" };
+import cnBuildingData from "./data/arknights-gamedata/cn/gamedata/excel/building_data.json" assert { type: "json" };
+import enBuildingData from "./data/arknights-gamedata/en/gamedata/excel/building_data.json" assert { type: "json" };
+import jpBuildingData from "./data/arknights-gamedata/jp/gamedata/excel/building_data.json" assert { type: "json" };
+import krBuildingData from "./data/arknights-gamedata/kr/gamedata/excel/building_data.json" assert { type: "json" };
+import twBuildingData from "./data/arknights-gamedata/tw/gamedata/excel/building_data.json" assert { type: "json" };
 
 import { fetchJetroyzRiicTranslations } from "./fetch-jetroyz-translations";
 

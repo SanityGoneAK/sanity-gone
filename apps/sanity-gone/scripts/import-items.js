@@ -1,11 +1,11 @@
 import { promises as fs } from "fs";
 import path from "path";
 
-import { items as cnItems } from "./data/cn/gamedata/excel/item_table.json";
-import { items as enItems } from "./data/en/gamedata/excel/item_table.json";
-import { items as jpItems } from "./data/jp/gamedata/excel/item_table.json";
-import { items as krItems } from "./data/kr/gamedata/excel/item_table.json";
-import { items as twItems } from "./data/tw/gamedata/excel/item_table.json";
+import { items as cnItems } from "./data/arknights-gamedata/cn/gamedata/excel/item_table.json";
+import { items as enItems } from "./data/arknights-gamedata/en/gamedata/excel/item_table.json";
+import { items as jpItems } from "./data/arknights-gamedata/jp/gamedata/excel/item_table.json";
+import { items as krItems } from "./data/arknights-gamedata/kr/gamedata/excel/item_table.json";
+import { items as twItems } from "./data/arknights-gamedata/tw/gamedata/excel/item_table.json";
 
 const ITEM_LOCALES = {
 	zh_CN: cnItems,

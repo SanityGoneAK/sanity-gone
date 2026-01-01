@@ -1,7 +1,7 @@
 import { load } from "cheerio";
 
 import axios from "./axios";
-import { charSkins as cnCharSkins } from "./data/cn/gamedata/excel/skin_table.json";
+import { charSkins as cnCharSkins } from "./data/arknights-gamedata/cn/gamedata/excel/skin_table.json";
 
 const PRTS_BASE_URL = "https://prts.wiki";
 const PRTS_OPERATOR_LIST_URL = `${PRTS_BASE_URL}/w/%E5%B9%B2%E5%91%98%E4%B8%8A%E7%BA%BF%E6%97%B6%E9%97%B4%E4%B8%80%E8%A7%88`;

@@ -1,3 +1,0 @@
-[header(actId="sandbox_1", npcId="")]
-歡迎來到沙島，（後面的字跡看不清了）
-[end]

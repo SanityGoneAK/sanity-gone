@@ -1,0 +1,3 @@
+[submodule "apps/sanity-gone/scripts/data/arknights-gamedata"]
+	path = apps/sanity-gone/scripts/data/arknights-gamedata
+	url = https://github.com/SanityGoneAK/arknights-gamedata.git

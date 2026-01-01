@@ -5,43 +5,43 @@ import { aggregateModuleData } from "./aggregate-module-data";
 import { aggregateRiicData } from "./aggregate-riic-data";
 import { slugify } from "../src/utils/strings";
 
-import rangeTable from "./data/cn/gamedata/excel/range_table.json" assert { type: "json" };
+import rangeTable from "./data/arknights-gamedata/cn/gamedata/excel/range_table.json" assert { type: "json" };
 
-import cnVoiceTable from "./data/cn/gamedata/excel/charword_table.json" assert { type: "json" };
-import enVoiceTable from "./data/en/gamedata/excel/charword_table.json" assert { type: "json" };
-import jpVoiceTable from "./data/jp/gamedata/excel/charword_table.json" assert { type: "json" };
-import krVoiceTable from "./data/kr/gamedata/excel/charword_table.json" assert { type: "json" };
-import twVoiceTable from "./data/tw/gamedata/excel/charword_table.json" assert { type: "json" };
+import cnVoiceTable from "./data/arknights-gamedata/cn/gamedata/excel/charword_table.json" assert { type: "json" };
+import enVoiceTable from "./data/arknights-gamedata/en/gamedata/excel/charword_table.json" assert { type: "json" };
+import jpVoiceTable from "./data/arknights-gamedata/jp/gamedata/excel/charword_table.json" assert { type: "json" };
+import krVoiceTable from "./data/arknights-gamedata/kr/gamedata/excel/charword_table.json" assert { type: "json" };
+import twVoiceTable from "./data/arknights-gamedata/tw/gamedata/excel/charword_table.json" assert { type: "json" };
 
-import cnCharacterTable from "./data/cn/gamedata/excel/character_table.json" assert { type: "json" };
-import enCharacterTable from "./data/en/gamedata/excel/character_table.json" assert { type: "json" };
-import jpCharacterTable from "./data/jp/gamedata/excel/character_table.json" assert { type: "json" };
-import krCharacterTable from "./data/kr/gamedata/excel/character_table.json" assert { type: "json" };
-import twCharacterTable from "./data/tw/gamedata/excel/character_table.json" assert { type: "json" };
+import cnCharacterTable from "./data/arknights-gamedata/cn/gamedata/excel/character_table.json" assert { type: "json" };
+import enCharacterTable from "./data/arknights-gamedata/en/gamedata/excel/character_table.json" assert { type: "json" };
+import jpCharacterTable from "./data/arknights-gamedata/jp/gamedata/excel/character_table.json" assert { type: "json" };
+import krCharacterTable from "./data/arknights-gamedata/kr/gamedata/excel/character_table.json" assert { type: "json" };
+import twCharacterTable from "./data/arknights-gamedata/tw/gamedata/excel/character_table.json" assert { type: "json" };
 
-import cnCharacterPatchTable from "./data/cn/gamedata/excel/char_patch_table.json" assert { type: "json" };
-import enCharacterPatchTable from "./data/en/gamedata/excel/char_patch_table.json" assert { type: "json" };
-import jpCharacterPatchTable from "./data/jp/gamedata/excel/char_patch_table.json" assert { type: "json" };
-import krCharacterPatchTable from "./data/kr/gamedata/excel/char_patch_table.json" assert { type: "json" };
-import twCharacterPatchTable from "./data/tw/gamedata/excel/char_patch_table.json" assert { type: "json" };
+import cnCharacterPatchTable from "./data/arknights-gamedata/cn/gamedata/excel/char_patch_table.json" assert { type: "json" };
+import enCharacterPatchTable from "./data/arknights-gamedata/en/gamedata/excel/char_patch_table.json" assert { type: "json" };
+import jpCharacterPatchTable from "./data/arknights-gamedata/jp/gamedata/excel/char_patch_table.json" assert { type: "json" };
+import krCharacterPatchTable from "./data/arknights-gamedata/kr/gamedata/excel/char_patch_table.json" assert { type: "json" };
+import twCharacterPatchTable from "./data/arknights-gamedata/tw/gamedata/excel/char_patch_table.json" assert { type: "json" };
 
-import cnSkillTable from "./data/cn/gamedata/excel/skill_table.json" assert { type: "json" };
-import enSkillTable from "./data/en/gamedata/excel/skill_table.json" assert { type: "json" };
-import jpSkillTable from "./data/jp/gamedata/excel/skill_table.json" assert { type: "json" };
-import krSkillTable from "./data/kr/gamedata/excel/skill_table.json" assert { type: "json" };
-import twSkillTable from "./data/tw/gamedata/excel/skill_table.json" assert { type: "json" };
+import cnSkillTable from "./data/arknights-gamedata/cn/gamedata/excel/skill_table.json" assert { type: "json" };
+import enSkillTable from "./data/arknights-gamedata/en/gamedata/excel/skill_table.json" assert { type: "json" };
+import jpSkillTable from "./data/arknights-gamedata/jp/gamedata/excel/skill_table.json" assert { type: "json" };
+import krSkillTable from "./data/arknights-gamedata/kr/gamedata/excel/skill_table.json" assert { type: "json" };
+import twSkillTable from "./data/arknights-gamedata/tw/gamedata/excel/skill_table.json" assert { type: "json" };
 
-import { charSkins as cnCharSkins } from "./data/cn/gamedata/excel/skin_table.json" assert { type: "json" };
-import { charSkins as enCharSkins } from "./data/en/gamedata/excel/skin_table.json" assert { type: "json" };
-import { charSkins as jpCharSkins } from "./data/jp/gamedata/excel/skin_table.json" assert { type: "json" };
-import { charSkins as krCharSkins } from "./data/kr/gamedata/excel/skin_table.json" assert { type: "json" };
-import { charSkins as twCharSkins } from "./data/tw/gamedata/excel/skin_table.json" assert { type: "json" };
+import { charSkins as cnCharSkins } from "./data/arknights-gamedata/cn/gamedata/excel/skin_table.json" assert { type: "json" };
+import { charSkins as enCharSkins } from "./data/arknights-gamedata/en/gamedata/excel/skin_table.json" assert { type: "json" };
+import { charSkins as jpCharSkins } from "./data/arknights-gamedata/jp/gamedata/excel/skin_table.json" assert { type: "json" };
+import { charSkins as krCharSkins } from "./data/arknights-gamedata/kr/gamedata/excel/skin_table.json" assert { type: "json" };
+import { charSkins as twCharSkins } from "./data/arknights-gamedata/tw/gamedata/excel/skin_table.json" assert { type: "json" };
 
-import { handbookDict as cnHandbookDict } from "./data/cn/gamedata/excel/handbook_info_table.json" assert { type: "json" };
-import { handbookDict as enHandbookDict } from "./data/en/gamedata/excel/handbook_info_table.json" assert { type: "json" };
-import { handbookDict as jpHandbookDict } from "./data/jp/gamedata/excel/handbook_info_table.json" assert { type: "json" };
-import { handbookDict as krHandbookDict } from "./data/kr/gamedata/excel/handbook_info_table.json" assert { type: "json" };
-import { handbookDict as twHandbookDict } from "./data/tw/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as cnHandbookDict } from "./data/arknights-gamedata/cn/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as enHandbookDict } from "./data/arknights-gamedata/en/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as jpHandbookDict } from "./data/arknights-gamedata/jp/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as krHandbookDict } from "./data/arknights-gamedata/kr/gamedata/excel/handbook_info_table.json" assert { type: "json" };
+import { handbookDict as twHandbookDict } from "./data/arknights-gamedata/tw/gamedata/excel/handbook_info_table.json" assert { type: "json" };
 
 import {
 	fetchJetroyzSkillTranslations,
@@ -710,6 +710,20 @@ function addLoreDetails(characters, locale) {
 				performanceReview: "综合性能检测结果",
 				classConversionRecord1: "升变档案一",
 				classConversionRecord2: "升变档案二",
+			},
+			zh_TW: {
+				basicInfo: "基礎檔案",
+				physicalExam: "綜合體檢測試",
+				profile: "客觀履歷",
+				clinicalAnalysis: "臨床診斷分析",
+				archive1: "檔案資料一",
+				archive2: "檔案資料二",
+				archive3: "檔案資料三",
+				archive4: "檔案資料四",
+				promotionRecord: "晉升記錄",
+				performanceReview: "綜合性能檢測結果",
+				classConversionRecord1: "升變檔案一",
+				classConversionRecord2: "升變檔案二",
 			},
 			ja_JP: {
 				basicInfo: "基礎情報",

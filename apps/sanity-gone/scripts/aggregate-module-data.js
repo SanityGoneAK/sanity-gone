@@ -1,20 +1,20 @@
-import cnBattleEquipTable from "./data/cn/gamedata/excel/battle_equip_table.json";
-import cnUniequipTable from "./data/cn/gamedata/excel/uniequip_table.json";
+import cnBattleEquipTable from "./data/arknights-gamedata/cn/gamedata/excel/battle_equip_table.json";
+import cnUniequipTable from "./data/arknights-gamedata/cn/gamedata/excel/uniequip_table.json";
 
-import enBattleEquipTable from "./data/en/gamedata/excel/battle_equip_table.json";
-import enUniequipTable from "./data/en/gamedata/excel/uniequip_table.json";
+import enBattleEquipTable from "./data/arknights-gamedata/en/gamedata/excel/battle_equip_table.json";
+import enUniequipTable from "./data/arknights-gamedata/en/gamedata/excel/uniequip_table.json";
 
-import jpBattleEquipTable from "./data/jp/gamedata/excel/battle_equip_table.json";
-import jpUniequipTable from "./data/jp/gamedata/excel/uniequip_table.json";
+import jpBattleEquipTable from "./data/arknights-gamedata/jp/gamedata/excel/battle_equip_table.json";
+import jpUniequipTable from "./data/arknights-gamedata/jp/gamedata/excel/uniequip_table.json";
 
-import krBattleEquipTable from "./data/kr/gamedata/excel/battle_equip_table.json";
-import krUniequipTable from "./data/kr/gamedata/excel/uniequip_table.json";
+import krBattleEquipTable from "./data/arknights-gamedata/kr/gamedata/excel/battle_equip_table.json";
+import krUniequipTable from "./data/arknights-gamedata/kr/gamedata/excel/uniequip_table.json";
 
-import twBattleEquipTable from "./data/tw/gamedata/excel/battle_equip_table.json";
-import twUniequipTable from "./data/tw/gamedata/excel/uniequip_table.json";
+import twBattleEquipTable from "./data/arknights-gamedata/tw/gamedata/excel/battle_equip_table.json";
+import twUniequipTable from "./data/arknights-gamedata/tw/gamedata/excel/uniequip_table.json";
 
 import moduleTranslations from "./translations/module-tls.json";
-import rangeTable from "./data/cn/gamedata/excel/range_table.json";
+import rangeTable from "./data/arknights-gamedata/cn/gamedata/excel/range_table.json";
 
 const UNIEQUIP_LOCALES = {
 	zh_CN: cnUniequipTable,

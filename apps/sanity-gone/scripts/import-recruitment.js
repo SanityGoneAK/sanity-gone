@@ -5,16 +5,16 @@ import { Combination } from "js-combinatorics";
 
 import { professionToClass } from "../src/utils/classes";
 import { toTitleCase } from "../src/utils/strings";
-import cnCharacterTable from "./data/cn/gamedata/excel/character_table.json" assert { type: "json" };
-import cnGachaTable from "./data/cn/gamedata/excel/gacha_table.json";
-import enCharacterTable from "./data/en/gamedata/excel/character_table.json" assert { type: "json" };
-import enGachaTable from "./data/en/gamedata/excel/gacha_table.json";
-import jpCharacterTable from "./data/jp/gamedata/excel/character_table.json" assert { type: "json" };
-import jpGachaTable from "./data/jp/gamedata/excel/gacha_table.json";
-import krCharacterTable from "./data/kr/gamedata/excel/character_table.json" assert { type: "json" };
-import krGachaTable from "./data/kr/gamedata/excel/gacha_table.json";
-import twCharacterTable from "./data/tw/gamedata/excel/character_table.json" assert { type: "json" };
-import twGachaTable from "./data/tw/gamedata/excel/gacha_table.json";
+import cnCharacterTable from "./data/arknights-gamedata/cn/gamedata/excel/character_table.json" assert { type: "json" };
+import cnGachaTable from "./data/arknights-gamedata/cn/gamedata/excel/gacha_table.json";
+import enCharacterTable from "./data/arknights-gamedata/en/gamedata/excel/character_table.json" assert { type: "json" };
+import enGachaTable from "./data/arknights-gamedata/en/gamedata/excel/gacha_table.json";
+import jpCharacterTable from "./data/arknights-gamedata/jp/gamedata/excel/character_table.json" assert { type: "json" };
+import jpGachaTable from "./data/arknights-gamedata/jp/gamedata/excel/gacha_table.json";
+import krCharacterTable from "./data/arknights-gamedata/kr/gamedata/excel/character_table.json" assert { type: "json" };
+import krGachaTable from "./data/arknights-gamedata/kr/gamedata/excel/gacha_table.json";
+import twCharacterTable from "./data/arknights-gamedata/tw/gamedata/excel/character_table.json" assert { type: "json" };
+import twGachaTable from "./data/arknights-gamedata/tw/gamedata/excel/gacha_table.json";
 
 const GACHA_LOCALES = {
 	zh_CN: cnGachaTable,

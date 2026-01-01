@@ -1873,6 +1873,27 @@
       "cost": 0,
       "tokenType": "Originium Prime"
     },
+    "char_1001_amiya2@sale#16": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_391_rosmon@sale#16": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4121_zuole@sale#16": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_208_melan@epoque#1": {
       "obtainSources": [
         "Event"
@@ -3379,6 +3400,13 @@
       "tokenType": "Originium Prime"
     },
     "char_491_humus@marthe#10": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
+    "char_381_bubble@marthe#11": {
       "obtainSources": [
         "Event"
       ],

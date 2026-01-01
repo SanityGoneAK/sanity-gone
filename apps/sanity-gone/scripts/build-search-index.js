@@ -8,11 +8,13 @@ import enBranchesJson from "../data/en_US/branches.json";
 import cnBranchesJson from "../data/zh_CN/branches.json";
 import jpBranchesJson from "../data/ja_JP/branches.json";
 import krBranchesJson from "../data/ko_KR/branches.json";
+import twBranchesJson from "../data/zh_TW/branches.json"
 
 import enOperatorsJson from "../data/en_US/operators.json";
 import cnOperatorsJson from "../data/zh_CN/operators.json";
 import jpOperatorsJson from "../data/ja_JP/operators.json";
 import krOperatorsJson from "../data/ko_KR/operators.json";
+import twOperatorsJson from "../data/zh_TW/operators.json";
 
 import { subProfessionIdToBranch } from "../src/utils/branches";
 import { professionToClass } from "../src/utils/classes";
@@ -22,6 +24,7 @@ const BRANCH_LOCALES = {
 	en_US: enBranchesJson,
 	ja_JP: jpBranchesJson,
 	ko_KR: krBranchesJson,
+	zh_TW: twBranchesJson,
 };
 
 const OPERATOR_LOCALES = {
@@ -29,6 +32,7 @@ const OPERATOR_LOCALES = {
 	en_US: enOperatorsJson,
 	ja_JP: jpOperatorsJson,
 	ko_KR: krOperatorsJson,
+	zh_TW: twOperatorsJson,
 };
 
 /** @typedef {import("../src/types/output-types").SearchResult} SearchResult */
@@ -45,14 +49,14 @@ export async function buildSearchIndex() {
 				type: "operator",
 				charId: op.charId,
 				name: Object.fromEntries(
-					["zh_CN", "en_US", "ja_JP", "ko_KR"].map((locale) => [
+					["zh_CN", "en_US", "ja_JP", "ko_KR", "zh_TW"].map((locale) => [
 						locale,
 						OPERATOR_LOCALES[locale][op.charId].name,
 					])
 				),
 				class: professionToClass(op.profession),
 				subclass: Object.fromEntries(
-					["zh_CN", "en_US", "ja_JP", "ko_KR"].map((locale) => [
+					["zh_CN", "en_US", "ja_JP", "ko_KR", "zh_TW"].map((locale) => [
 						locale,
 						subProfessionIdToBranch(op.subProfessionId, locale),
 					])
@@ -81,7 +85,7 @@ export async function buildSearchIndex() {
 			objectID: branchName,
 			type: "branch",
 			name: Object.fromEntries(
-				["zh_CN", "en_US", "ja_JP", "ko_KR"].map((locale) => [
+				["zh_CN", "en_US", "ja_JP", "ko_KR", "zh_TW"].map((locale) => [
 					locale,
 					BRANCH_LOCALES[locale][branchName].branchName,
 				])
