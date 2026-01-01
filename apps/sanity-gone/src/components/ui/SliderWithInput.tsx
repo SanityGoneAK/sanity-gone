@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-import { Slider } from "@mui/base/Slider";
+import { Slider } from '@base-ui/react/slider';
 
 import Input from "~/components/ui/Input";
 import { cx } from "~/utils/styles.ts";
@@ -79,8 +79,47 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 	return (
 		// return a fragment instead of a div, so the two components can be positioned individually
 		<>
-			{/* @ts-expect-error something with MUI */}
-			<Slider<"input">
+			<Slider.Root 
+				className={cx(sliderClasses)}
+				value={value} 
+				onValueChange={(value) => onChange(value as number)}
+				min={1}
+				max={max}
+			>
+				<Slider.Control className="flex w-full touch-none items-center mr-6 h-4 select-none">
+					<Slider.Track className="block absolute w-[calc(100%+1.5rem)] h-1 bg-neutral-500">
+					<Slider.Indicator className={cx(
+							"block absolute h-[2px] rounded-sm",
+							type === "level"
+								? "bg-gradient-to-r from-yellow to-yellow-light"
+								: "bg-gradient-to-r from-blue to-blue-light"
+						)} />
+					<Slider.Thumb className={cx(
+						"h-2 w-6 bg-neutral-200 rounded-xl hover:outline-12 hover:outline-neutral-50/[0.05]",
+						"has-[:focus-visible]:outline-6",
+						type === "level" ? "has-[:focus-visible]:outline-yellow" : "has-[:focus-visible]:outline-blue")} />
+					</Slider.Track>
+				</Slider.Control>
+				{/* <Slider.Control className={"inline-flex mr-6 items-center h-4 relative cursor-pointer w-unset"}>
+					<Slider.Track className={cx(
+							"block absolute h-[2px] rounded-sm",
+							type === "level"
+								? "bg-gradient-to-r from-yellow to-yellow-light"
+								: "bg-gradient-to-r from-blue to-blue-light"
+						)}>
+					<Slider.Indicator className={"block absolute w-[calc(100%+1.5rem)] h-1 bg-neutral-500"} />
+					<Slider.Thumb className={`h-2 w-6 p-3 box-content absolute grid my-0 mx-[-12px] rounded-xl outline-offset-[-12px]
+							after:rounded-sm after:bg-neutral-200
+							hover:outline hover:outline-[12px] hover:outline-neutral-50/[0.05]
+							[&.Mui-active]:outline [&.Mui-active]:outline-[12px] [&.Mui-active]:outline-neutral-50/[0.1]
+							[html[data-focus-source=key]_&.Mui-focusVisible]:outline
+							[html[data-focus-source=key]_&.Mui-focusVisible]:outline-3
+							[html[data-focus-source=key]_&.Mui-focusVisible]:outline-blue
+							`} />
+					</Slider.Track> */}
+				{/* </Slider.Control> */}
+			</Slider.Root>
+			{/* <Slider<"input">
 				aria-label={`${label} slider`}
 				slotProps={{
 					root: {
@@ -121,7 +160,7 @@ const SliderWithInput: React.FC<SliderWithInputProps> = (props) => {
 				max={max}
 				value={value}
 				className={sliderClasses}
-			/>
+			/> */}
 			<div className="flex flex-shrink-0 items-center gap-x-2">
 				<span
 					className={`text-neutral-200 ${type === "skill" ? "hidden sm:inline" : ""}`}
