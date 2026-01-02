@@ -5,6 +5,8 @@ import tailwindcss from "@tailwindcss/vite";
 import vercel from "@astrojs/vercel";
 import { defineConfig } from "astro/config";
 
+import remarkToc from 'remark-toc';
+
 import { defaultLang } from "./src/i18n/languages";
 
 // https://astro.build/config
@@ -44,6 +46,9 @@ export default defineConfig({
 		react(),
 	],
 	adapter: vercel(),
+	markdown: {
+		remarkPlugins: [],
+	},
 	vite: {
 		build: {
 			rollupOptions: {

@@ -1,0 +1,23 @@
+---
+import {getCollection, render} from 'astro:content';
+import Layout from "../../../layouts/Layout.astro";
+import {getPathByLocale, getRelativeLocaleUrl} from "astro:i18n";
+import {localeStore} from "../_store";
+import TableOfContents from "../../../components/guides/TableOfContents.astro";
+
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
+localeStore.set(locale);
+
+const guides = await getCollection('guides');
+---
+<Layout title="Guides">
+    <h1>My posts</h1>
+    <ul>
+      {guides.map(guide => (
+        <li><a href={`${guide.id}`}>{guide.data.title}</a></li>
+      ))}
+    </ul>
+</Layout>
+<script slot="head" define:vars={{locale}}>
+    window.locale = locale;
+</script>

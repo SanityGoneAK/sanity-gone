@@ -1,0 +1,85 @@
+---
+import {getCollection, render} from 'astro:content';
+import Layout from "../../../layouts/Layout.astro";
+import {getPathByLocale, getRelativeLocaleUrl} from "astro:i18n";
+import {localeStore} from "../_store";
+import TableOfContents from "../../../components/guides/TableOfContents.tsx";
+import AuthorBio from "../../../components/guides/AuthorBio.tsx";
+import {slugify} from "../../../utils/strings";
+
+import enOperatorsJson from "data/en_US/operators.json";
+import type * as OutputTypes from "../../../types/output-types";
+
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
+localeStore.set(locale);
+
+export async function getStaticPaths() {
+    const guides = await getCollection('guides');
+    const authors = await getCollection('authors');
+
+    const getOperators = (operatorIds) => {
+        const operators = Object.entries(enOperatorsJson).filter(([charId,]) => operatorIds.includes(charId));
+        return Object.fromEntries(operators);
+    }
+
+    return guides.map(guide => ({
+        params: {
+            locale: 'en',
+            id: guide.id
+        },
+        props: {
+            guide,
+            operators: getOperators(guide.data.operators),
+            author: authors.find(author => author.data.username === guide.data.author),
+        },
+    }));
+}
+
+
+// 2. For your template, you can get the entry directly from the prop
+const {guide, operators, author} = Astro.props as { guide: CollectionEntry<"guides">, operators: Record<string, OutputTypes.Operator>, author: CollectionEntry<"author"> };
+const {title, description, date, bannerImage} = guide.data;
+const {Content} = await render(guide);
+---
+<Layout title={title}>
+    <section class="mx-auto py-5 px-10 sm:py-auto max-w-[1000px]">
+        <div class="p-0 m-0 flex items-center gap-3 flex-none flex-wrap mb-6">
+            <ul class="flex items-center gap-3">
+                <li class="text-base font-normal leading-normal">
+                    <a href={getRelativeLocaleUrl(locale, "/guides")} class="text-blue hover:underline">Guides</a>
+                </li>
+                /
+                <li class="text-base font-bold leading-normal flex-none">
+                    {title}
+                </li>
+            </ul>
+        </div>
+        <div class="bg-neutral-600/[.66] rounded-md overflow-hidden">
+            <img class="mb-3" alt="" src={bannerImage}>
+            <div class="py-4 px-5 space-y-2">
+                <h1 class="text-4xl font-black">{title}</h1>
+                <p>{description}</p>
+                <div class="flex items-center justify-between mt-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-neutral-200">by</span>
+                        <img class="size-8 rounded-full" src={`/member-avatars/${slugify(author.data.username)}.png`} alt="">
+                        <span>{author.data.username}</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <time datetime={date}>{Intl.DateTimeFormat(locale, {dateStyle: "full"}).format(date)}</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <TableOfContents headings={guide.rendered.metadata.headings} client:load></TableOfContents>
+        <div class="prose-invert lg:prose-xl prose-hr:text-neutral-400 prose-a:text-blue-light prose-a:hover:text-blue mt-4">
+            <Content/>
+        </div>
+        <div class="mt-4">
+            <AuthorBio author={author.data} />
+        </div>
+    </section>
+</Layout>
+<script slot="head" define:vars={{locale}}>
+    window.locale = locale;
+</script>

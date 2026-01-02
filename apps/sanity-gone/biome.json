@@ -3,7 +3,9 @@
   "extends": "//",
   "files": {
     "ignoreUnknown": false,
-    "includes": ["!**"]
+    "includes": [
+      "!**"
+    ]
   },
   "linter": {
     "rules": {

@@ -1,0 +1,301 @@
+---
+title: Mastery Guide - Fantasy in the Mirage
+description: A guide to the best Masteries available in the Fantasy in the Mirage and IS#6 patches, as well as discussion of the units and other game related topics.
+author: TacticalBreakfast
+date: 08-12-2025
+bannerImage: /guides/banners/guide-leizibanner.jpg
+operators: [char_1043_leizi2,char_4196_reckpr,char_4195_radian]
+---
+
+## Introduction
+
+Hooray, IS on time and available for the holidays! It'll be a great way to pass some of that awkward family time where not much is happening. At any rate, the holidays are always my busiest time of year, then this year we also have the Endfield beta and my general guide update nearing completion. As I write this, it's mid-November and I'm rushing to get the general update and this update done before the crush of the holidays and the beta, so I'm going to be briefer than usual in some places (particularly Modules). Please forgive me, and we should be back to normal before Ato.
+
+As always, you can find the full Mastery guide [here](https://docs.google.com/spreadsheets/d/1iJF12O6QOba1dlUVmobwvc1eBZE7FRB6-tKxmZEcG1I/). New this update is the overhaul all Snipers and Supporters. Casters are well in progress too. The end is in sight!
+
+---
+
+## Guide Update
+
+Some great news this update, a bulk of the guide overhaul is now complete! I’ve pushed the Specialist update in early December (just before this article goes live) which is the last major segment. Phew, what an effort it’s been too. Over 87k words, and I’m not even totally done!
+
+You can find the full guide [here](https://docs.google.com/spreadsheets/d/1iJF12O6QOba1dlUVmobwvc1eBZE7FRB6-tKxmZEcG1I/edit?gid=1994011003#gid=1994011003) which includes all the new grades and write-ups. Casters, Medics, and Specialists are all updated since the last article. Let me know what you think!
+
+I still have a bunch more work to do. Most notable is the ungraded units which still need updated (not a small amount of words either, there’s 105 of them) but they’re a lot lower in priority and don’t require as much depth so it should be a bit easier to get through. There’s also a bunch of minor tweaks I still want to do, like a final grade pass for consistency and maybe some class discussions.
+
+The next big thing though is the format update. I’ve settled on a final format (I think… I hope) and am hard at work now getting all the images, data, and links sorted. Big thanks to Ivoryalas for helping me get through the images!
+
+I’m hopeful to get this pushed out before the Christmas break so it’s off my mind, but there’s a lot to do so we’ll see…
+
+---
+
+## Talos Pioneers!
+
+I’m taking a little spot here before we dive into Leizi2 to give a shout out to a very cool Endfield fan project. Talos Pioneers is a hub for blueprints in Endfield. If you’re unaware, Endfield now has a feature where you can share and use base setups, and Talos Pioneers is intended to be a central place for that. It’s designed and run by some cool people you’ve probably heard of already if you’re regulars in the community, so be sure to go check it out!
+
+https://talospioneers.com/en
+
+(FYI I am not directly involved with Talos Pioneers beyond occasionally shitposting in the dev channel, although I may write some content for it in the future.)
+
+## Should You Pull?
+
+Probably not, although it's totally reasonable to. Leizi the Thunderbringer is one of the trickier upcoming units for global. The power level of the next six months is extremely high. Leizi2 actually holds up well in that context, but she's also one of the most replaceable for *most* people in *most* content. She's also one of the few units that isn't a limited or shares their banner with one, so there's a FOMO aspect to account for as well. It all makes for a fairly complex answer, although the bottom line is that most people (i.e. the type that are reading this because they don't already know the answer) should probably skip her.
+
+To go a little deeper, Leizi2 has a lot in common with her fellow Liberator, Młynar. They both are cheap to deploy and do a ton of wide-range Physical damage. This is what makes Leizi2 a tough recommendation for pulling because Młynar is relatively common now. He's been out for 2.5 years now (oh god really? that can't be right). He's available on every selector and has been a high priority pick, and he's been in the Gold Cert shop. Even for those who don't have him, he should be in it again before long (see FAQ question below for more on this). Due to their similarity and with how strong the upcoming six months are, it just doesn't make sense to spend a lot of pulls on Leizi2 for your typical player. For most players, the best strategy is to skip here, save gold certs, and buy Młynar when able instead.
+
+She has her own strengths though of course, and there is a breed of player for whom Leizi2 will be essential. The most obvious difference is her hover which does the exact opposite of Młynar's global taunt. That can be good or bad depending on the context. The real difference though is her S1 and Talent 2. S1 is already her best general skill since she can do great consistent damage without losing her Trait boost, but the real kicker is her stall potential. Frighten is a powerful form of control, and while she's not the highest uptime, she can do it consistently enough to fill in the gaps from other forms of control like Tragodia. It's a strong use case, but a particularly Advanced one that isn't easy (or necessarily fun) to optimize so it shouldn't really be a general consideration if you aren't the type of player who was already aware of it.
+
+Further still, Młynar is still better than Leizi2 is in most casual cases. Leizi2 has her own strengths and is more valuable as an Advanced unit, but that difference in value is the sort most people won’t realize. Młynar does better straight damage, on more targets, and lasts better vs DEF, without requiring micromanagement.
+
+---
+
+## FAQ and Discussion
+
+### **Q:**  Anything more to say about Leizi2?
+
+**A:**  Nope. The important details are mostly covered elsewhere here. The rest would just be me rambling, and given my time crunch, it doesn't make sense to do that. This question is only here so you don't think I forgot it..
+
+
+
+### **Q:**  How do you know Młynar will be in the shop? I thought it was unpredictable outside of first appearances?
+
+**A:**  It is generally correct that the gold shop is unpredictable. Notice how I didn't make any sort of specific suggestion beyond "relatively soon". However, there is a weird quirk that limits the possibilities. When you start to eliminate unlikely units, you end up with not that many options. First there is the kernel pool, which removes a lot of them, and just expanded. Then there is of course all of the limited and collab units that can't appear (meaning we have fewer standard ops than we used to). Then you consider that the list only goes up to the next "first appearance". This list only has 16 units on it, running from Lee to Ho'olheyak. But then we can consider that a unit won't get their second appearance immediately after. We don't know exactly where this line falls, but it's safe(ish) to say no one after Penance will be run any time soon. Finally, we can eliminate anyone that's also appeared recently like Pozy and Fia. This leaves us with only around 5-8 possibilities, of which Młynar is one.
+
+Of course, this is very error prone. There are a lot of assumptions here, Yostar does some weird things at times, and 8 appearances is quite a bit of real time. I most definitely do not know with certainty when Młynar will be. However, the point here isn't to exactly predict his appearance date. Rather the question is, will he appear soon enough that it makes sense to wait instead of spending pulls on Leizi2 when we have two powerful limited and a powerful collab banner ahead of us? And to that, I fairly strongly believe the answer is yes.
+
+
+
+### **Q:**  Should I raise Record Keeper?
+
+**A:**  Probably not, but he's decent enough if he appeals to you and should be reasonably useful in niches. His Talent can be abused in places, although that's just a gimmick really (albeit a funny one). His S2 gives the Ulpianus effect to anyone which is great, but situational. In most cases, his HPS just isn't that special. That said, he might be useful enough on occasion to justify an E1 SL7 sort of promotion.
+
+
+
+### **Q:**  What’s the deal with Raidian? She has a write-up here but isn’t in the banner and hasn’t been previewed.
+
+**A:**  Raidian is the IS#6 Welfare unit which is why she’s not yet available. If you’re unfamiliar with how these things typically go, new IS iterations typically first start with a story related Vignette (this event) then actually launch a week later. So expect to see Raidian on Dec 18th when IS#6 will almost definitely launch.
+
+
+
+### **Q:**  Why does Raidian have no Mastery grades or Module blurb?
+
+**A:**  Raidian is totally unique in terms of how she is promoted. She costs no resources to promote. You do all of her promotions, including Masteries, via in-game challenges related to IS#6. In fact, you can’t even use resources if you *wanted* to! So the typical priority considerations don’t apply to her. You get all three skills at M3 for free!
+
+This would technically mean she doesn’t even need to be in the guide, however I’ve never really been that firm in the guide definitions (TacYap). A lot of people use the guide for general advice and skill selection too, so Raidian still gets a normal write-up, but there are no grades since they wouldn’t be relevant to anything (SomethingSomethingGuideIsNotASkillTierList).
+
+
+
+### **Q:**  Any tips for IS#6?
+
+**A:**  Nope! Aside from the general time crunch I mentioned above, I haven't paid a tremendous amount of attention to the IS#6 meta. I've never especially liked the Sui story so it doesn't really capture my attention in the same way previous iterations do.
+
+
+
+### **Q:**  Any schedule thoughts now that we know IS#6 is running in order? Will Ato still run in mid-Jan?
+
+**A:**  The schedule pace is quite interesting lately. I’m hesitant to make any definitive statements though. We are noticeably closer than we’ve been in the past, but the “speed up” isn’t really enough to change anything in the big picture. If there was to be a meaningful change in the overall pace, there’d need to be a lot more done. The way the CN schedule is run means it would be nearly impossible to “catch up” with just overlapping a few non-sanity events. Basically, I think the increased speed here is solely to make IS run on time (rather than the usual re-ordering) and I’d guess that the “new normal” is the current, slightly over 5 month gap.
+
+That said, it will be interesting to see how they place the CNY event. The five month gap would place it significantly ahead of the global half-anniversary. That’s probably easily solvable by moving around a rerun and some other non-sanity event, but it’s something I’ll be keeping my eyes on as we get closer. More immediately, I suspect the Inudi rerun will be reordered to be before Ato. I’ve seen people speculate Yostar will leave the dead time, but that’s a *lot* of deadtime (over 3 weeks), so I don’t think that will be the case.
+
+
+
+### **Q:**  Any Module thoughts for this patch?
+
+**A:**
+
+**EN - Fantasy in the Mirage**
+
+* **Leizi the Thunderbringer** - As with the other Liberators a few patches ago, Leizi2's Modules are extremely valuable. The base effect halves the Trait windup, which is especially great for Leizi2 given her immediately available S1 that doesn’t always reset it. Don't sleep on her upgrades either. While the raw numbers may look small, the way they scale with her kit (and how Liberators work in general) means it's a large DPS increase. They aren't *exactly* essential since they're just DPS, but they should be treated with a relatively high priority if you're raising her.
+
+* **Record Keeper** - The base effect is pretty nice, but the upgrades don't provide a lot for the cost. 7 ASPD isn't nothing, but will be barely noticeable most of the time, especially since it's conditional. It's a husbando-only upgrade, but even I, as a heavy 5★ niche player, will probably only be grabbing mod1.
+
+(For the 2nd Modules, these are a copy paste of my lookahead write-ups from a few months ago, they should still be accurate so there's no reason to stress myself out about them.)
+
+* **Typhon's 2nd** - Typhon got a pretty decent second Module here, but its value relative to her first depends on how and why you're using her. Her new one heavily favors her S2, so if you're still regularly using her for that comfy long-range AFK skill, it's a great new choice. However, her first still favors her S3 more. So it's probably a 50/50 split on usage between her mods. Given how expensive they are, the priority here simply depends on how you plan to use her. However, if you've already done her first, I probably wouldn't rush to get her second even if you favor her S2. It's a nice upgrade, but not a defining upgrade, so it's something you'll probably want to treat with a lower priority still.
+
+* **Goldenglow's 2nd** - Goldenglow's second is a bit of a funny one, because people have always slept on the additional damage from her first's upgrades. It's easy to write those explosions off over her main attacks, so a lot of people naturally would assume that increasing her RES talent is better. Not so much, it turns out. Lappland2 especially showed that drone casters don't really need RES shred the same way other Casters do either. They aren't usually used to DPS a specific target such as a boss. All this is to say, Goldenglow's first Module is better DPS in most cases. This isn't to say her new one is bad though, and it can situationally come out ahead. But her first will generally be the better choice, especially given how the 6★ drone casters tend to be used.
+
+* **Dorothy's 2nd** - Dorothy's 2nd Module isn't better or worse than her first, just different. If you're the kind of person who likes Dorothy clears, there's a good chance you'll want both (or just stick with her first, depending on your desire / budget). For general use, I'd probably stick with her first, but Dorothy is a pretty gimmicky unit these days and both Modules are RNG-heavy, so invest with caution if you don't already know the answer.
+
+* **Gavial the Invincible's 2nd** - Why did Gavial2 get her second Module in this patch instead of the next one where she'll be a spark option? The inner machinations of HG continue to perplex. Anyway, despite the new Physical Fragility, her first one comes out ahead on damage (CEN-X base effect is really good), so this is yet another offensive vs defensive Module setup. The offensive numbers aren't as drastic of a difference as some other examples, but her defensive boosts on the new one are also kinda mediocre. It's not an awful Module exactly, but her first seems to be pretty clearly better once you get through the numbers.
+
+**CN - Retracing Our Steps 1101**
+
+* **Arts Protector Base** - Pretty good effect here. At worst, it's some extra chip damage, but can result in some decent damage in the best cases. However, it's hardly a critical upgrade and in a lot of situations the damage will be paltry. So not must have, but not terrible either.
+
+* **Hoshiguma the Breacher** - Supposedly Hoshi2’s upgrades are good, or so I’ve been told. As I’ve said many times, she’s not a unit I feel like I’m in tune with, and given my general lack of time, that’s certainly not going to improve here trying to figure out how much damage conditional +15% ATK is. However, given her Talent, it’s fairly easy for her to maintain. Should be a good upgrade on a good unit, but hopefully I’ll have a more complete answer come the patch on global.
+
+* **Asbestos** - Her upgrades are a big whiff. Two extra RES and a very conditional SP gain is just not what she needed.
+
+* **Czerny** - Czerny's upgrades are decent if you use him. While reflect tanks aren't generally particularly valuable, they can be clutch now and then and the base effect plus upgrades both play into that and are reasonable boosts. It's definitely a niche thing rather than a general investment, but is one of the better upgrades of the group which is otherwise on the weak side.
+
+* **Shalem** - He’s not the most reliable RES-debuffer, but that’s a pretty rare niche still, and it reinforces his own damage which is decent. That damage is further boosted by the base effect too. It’s certainly not enough to make him generally viable, but it’s a good upgrade for those that are interested in him. The uptime improvement on mod3 is especially good.
+
+* **Dur-Nar** - The upgrades are just more stats. That's fine enough if you like using her, but 5% ATK/DEF certainly isn't going to make a difference in a vast majority of cases. Dur-Nar was already one of the least valuable 4★ Defenders and her Module doesn't really change that.
+
+* **Pramanix the Prerita** - Her Module is still a good upgrade. The reduced time on mod2 isn't much, but starting with Snow layers at mod3 is a big upgrade so it's a well worthwhile Module
+
+* **Astgenne the Lightchaser** - The base effect here is nice for her since her Slow uptime is pretty bad otherwise. The upgrades are rather expensive for what they are though. 7 ASPD and 12% ATK isn't much for the high 6★ Module costs.
+
+* **Snow Hunter** - Her Module doesn't make much of a difference. Since her S2 doesn't use her base ammo, she doesn't get much out of the extra from the base and her upgrades are just more damage. Her damage is good though so those upgrades will be worthwhile for those who want to use her, but overall it's a pretty weak Module.
+
+* **Executor the Ex Foederer's 2nd** - It's yet another trashy second Module. Not sure what they were thinking with this one. A conditional low-chance dodge is just... yikes. Stick with his first which is pretty essential to his cycle time.
+
+* **Ho'olheyak IS** - HG hates Casters I guess. First Dusk, and now Ho'olheyak joins her in the dubious group of terrible IS Modules. The main benefit encourages bad play which can just be avoided in the first place by someone stronger, and the combat benefits are negligible, meaning she’s still bad. There's no meta value in it.
+
+  Her Mastery write-up has actually already been updated to reflect it, even though it's six months out. It happened to come out while I was already working on the Caster write-ups, so it didn't make sense to delay it (unlike Gnosis who was already done). So she won't be getting another update, but her priority wouldn't change anyway.
+
+* **Gnosis IS** - For all the talk about SA2 and Pram2, Gnosis is the real winner of this patch. His IS Module is *amazing*. IS Supporters are pretty stacked right now between Angelina, Tragodia, and Raidian, but Gnosis more than competes now. He deals a ton of passive damage, while supercharging his Fragile effect. Even better, it plays strongly into the Karlan tribal buff which can result in wide-range powerful control. He's the first IS Module that may result in someone else getting an updated grade since SA1 S1 suddenly becomes a perma-Freeze!
+
+  It hasn't been updated yet (since I did the Supporters update before this patch) but Gnosis will be getting a significant upgrade when this Module comes to global. He'll be worth grabbing from the gold cert store too if you get the opportunity and like IS. That said, as mentioned, Supporters are currently stacked as hell in IS, and he's not quite as universal as the others, so a small bit of caution is warranted.
+
+
+
+## Masteries for Fantasy in the Mirage
+
+**Q:** What's going on with the IS grades? Why are many updated write-ups missing them?
+
+**A:** This is now old news, but if you missed it, please go check this  [this tab](https://docs.google.com/spreadsheets/d/1iJF12O6QOba1dlUVmobwvc1eBZE7FRB6-tKxmZEcG1I/edit?gid=2060861443#gid=2060861443) on the main guide.
+
+### Leizi the Thunderbringer
+
+![Leizi2](https://arknights.wiki.gg/images/thumb/Leizi_the_Thunderbringer_icon.png/120px-Leizi_the_Thunderbringer_icon.png) {.center}
+
+Skill | Mastery | Story | Advanced
+:---: | :---: | :---: | :---: | 
+[![Leizi2S1](https://arknights.wiki.gg/images/thumb/Skill-TheThunderbringer1.png/64px-Skill-TheThunderbringer1.png)](https://arknights.wiki.gg/wiki/Leizi_the_Thunderbringer) | S1M3 | S | S+
+[![Leizi2S2](https://arknights.wiki.gg/images/thumb/Skill-TheThunderbringer2.png/64px-Skill-TheThunderbringer2.png)](https://arknights.wiki.gg/wiki/Leizi_the_Thunderbringer) | S2M3 | S- | A
+[![Leizi2S3](https://arknights.wiki.gg/images/thumb/Skill-TheThunderbringer3.png/64px-Skill-TheThunderbringer3.png)](https://arknights.wiki.gg/wiki/Leizi_the_Thunderbringer) | S3M3 | B | B+
+
+Leizi the Thunderbringer is a powerful unit, featuring unique utility that means she can be placed very aggressively along with great DPS and some surprisingly strong control. She’s a really tricky unit when it comes to suggesting Masteries though. All three of her skills are legitimately good, and while there is a clear order in terms of meta, a significant chunk of the playerbase is going to find her best skill to be very unappealing. Further complicating matters, her other two skills are much more similar to the existing and common Liberator, Młynar, who usually does those better too. It ultimately means that there isn’t a one-size-fits-all answer with Leizi2, and she’s a unit where you’ll need to adjust based on your needs and playstyle.
+
+In any case, I would highly encourage you to treat her S1 as her main skill, but it’s also the one many people are going to find unappealing. It has by far her best use case. It has a much higher damage ceiling and works with her Talents far better. In a lot of ways, it’s surprising that it’s her S1 because the skill seems far more synergetic than the other two! There’s a few things to note with the skill. Enemies on Leizi2’s tile will take all 3 bolts of damage, so you get the most out of it with timing. It also works great with her Frighten Talent, which can feel like an after thought with her other skills. She can reliably and consistently control using her S1, but not so much with the other two. Then it works way better with her hovering, allowing her to pop in for (almost) free damage. S1 is really what opens up Leizi2’s potential while her other skills are “just” typical damage skills, which also have some flaws, which Młynar happens to do better most of the time.
+
+However, the play style her S1 involves won’t appeal to everyone. These sorts of low-cooldown Manual Activation skills are the polar opposite of what some people want, and Leizi2 further adds complexity by timing based on the enemies and keeping her Trait effect in mind. S1 is by far her best skill and her highest ceiling, but for some, that’s just not worth the trouble. At any rate, Mastery on it is very valuable. The damage increase is significant, but the real winner is the 2 SP cost reduction at S1M3. That’s a huge upgrade when you consider the charge-based nature of the skill and the Trait reset.
+
+Next is her S2. It’s the skill most commonly compared to Młynar’s S3, and is generally worse than it, but has its own unique value too. The odd thing about it is the range. She cannot swing over range tiles which is a significant drawback, but instead she can extend her range in unusual patterns (basically up to three low-ground tiles in any direction out from her tile). This can be both good and bad depending on the map, so it tends to be less reliable than Młynar’s as well as doing less damage on less targets. However, for those who find her S1 unappealing, it’s her second best general use, and even for those who don’t mind her S1, is still useful as a flex option since her S1 is not universally better in all cases. Mastery on it is again valuable. In addition to the solid damage gains, she gains an additional target at S2M3 which makes the Mastery near mandatory if you plan to actually use it.
+
+Last is her S3. It has a higher ceiling than her S2 by a significant amount, but is highly map dependent on if that’s actually true or not. It’s difficult to fully assess since there’s so many potential variables in how the lightning bounces, but if the map and her location has enough places for the lightning to bounce, the DPS is significantly higher than her S2. However, the range is relatively small, although it can at least swing over high tiles. The Mastery gains on it are pretty significant again, but mainly against lower RES since a lot of the damage is Arts from the lightning. Against harder enemies, the DPS difference is on the smaller side.
+
+So to summarize, S1 is her special value. Start there unless you absolutely refuse to use such skills. After that, if you have Młynar’s, prioritize him instead. If you don’t have Młynar (or don’t want to use him), likely go with her S2, although S3 is also an option. If you’re a heavy IS player, you’ll probably want all three since they all cover different use cases, although her S3 is the lowest value Mastery.
+
+### Record Keeper
+
+![RK](https://arknights.wiki.gg/images/thumb/Record_Keeper_icon.png/120px-Record_Keeper_icon.png) {.center}
+
+Skill | Mastery | Story | Advanced
+:---: | :---: | :---: | :---: | 
+[![RKS2](https://arknights.wiki.gg/images/thumb/Skill-RecordKeeper2.png/64px-Skill-RecordKeeper2.png)](https://arknights.wiki.gg/wiki/Record_Keeper) | S2M3 | C | C+
+[![RKS1](https://arknights.wiki.gg/images/thumb/Skill-RecordKeeper1.png/64px-Skill-RecordKeeper1.png)](https://arknights.wiki.gg/wiki/Record_Keeper) | S1M3 | None ||
+
+Record Keeper is one of those mildly forgettable types of units. He has a basic job that he does well enough, but not well enough to be special, and he has some utility that’s useful, but situational. So he’s nowhere near bad enough to tease, but not good enough to really recommend either. Pure healing Medics are one of the lowest value types of unit, so he’s not a unit you should probably spend the resources on Mastery, but there is some value here still.
+
+S2 is his main skill, which contains his unique value. It provides a “heal on hit” effect similar to Ulpianus’s Talent 1. That sort of thing can seem absolutely absurd in some cases, sustaining against consistent low-hit damage when other Medics can’t, but anemic otherwise. It also boosts his own healing, further enhanced by his Talent, so in total it can make him a pretty nice Medic that peaks to great in some circumstances. However, that is situational, and he also doesn’t really need Mastery to do it. Mastery only enhances the heal-on-hit effect by 30 HP along with a tiny cycle improvement, so places SL7 won’t work but S2M3 will, are even rarer.
+
+You could consider his S1 for Mastery as well if you particularly favor him. It doesn’t have the special value of his S2, but does make for a pretty decent, albeit expensive, regular Medic skill. His own S1 activations trigger his Talent SP gain (which doesn’t suffer from SP-lockout), so the uptime is better than it appears, plus gains more ASPD too. However, while it’s decent, it also can still have lowish-HPS if he’s only healing one target, especially compared to other 5★ Medics, so it ends up being mostly a husbando-tier of skill.
+
+### Raidian
+
+![Raidian](https://arknights.wiki.gg/images/thumb/Raidian_icon.png/120px-Raidian_icon.png) {.center}
+
+Skill | Mastery | Story | Advanced
+:---: | :---: | :---: | :---: |
+[![RaidianS3](https://arknights.wiki.gg/images/thumb/Skill-Raidian3.png/64px-Skill-Raidian3.png?)](https://arknights.wiki.gg/wiki/Raidian) | S3M3 | -- | --
+[![RaidianS2](https://arknights.wiki.gg/images/thumb/Skill-Raidian2.png/64px-Skill-Raidian2.png)](https://arknights.wiki.gg/wiki/Raidian) | S2M3 | -- | --
+[![RaidianS1](https://arknights.wiki.gg/images/thumb/Skill-Raidian1.png/64px-Skill-Raidian1.png)](https://arknights.wiki.gg/wiki/Raidian) | S1M3 | -- | --
+
+Radian is currently completely unique in that she is raised entirely via playing IS#6. In fact, you quite literally cannot raise her by traditional means even if you want to. This means Raidian does not have Mastery priority. There’s no value consideration here because you can M3 all of her skills doing nothing but playing the game. However, a write-up is still provided here for general guidance.
+
+She is an extremely powerful unit, both in and out of IS#6. Unlike the previous iteration Welfares, only her Module is specific to the mode. Her Module is a great boost too which makes her one of the top picks in the iteration, but it means she still has all of the rest of her kit in the remainder of the game. As a general unit, she is the most powerful Summoner (which is crazy to think about as an older player). Like Ling before her, she can solo much of the game herself if that’s your desire, making her a great newbie unit as well. Although it is worth noting that with the rising power ceiling, as with Ling, it’s still best to bring a normal team.
+
+In any case, Raidian’s “main” skill is a fairly even split between S2 and S3, with the difference being entirely dependent on the map needs. It’s a good thing her promotions are free because she’d be quite expensive otherwise! Both have strong DPS and range, so S2 is favored for Physical and Melee tiles and S3 is favored for Arts and Ranged tiles.
+
+Starting with her S2, the summons are Melee tile deployable and do Physical damage. They have a higher per-target DPS than S3, albeit with a relatively low DPH, and have a long range. This, along with some basic blocking (they have 2-block) makes it a great option where Raidian is largely doing support, holding basic lanes and handling the lower caliber enemies so you can set up the rest of the team against the harder ones.
+
+Next, her S3, the summons are Ranged tile deployable and do Arts damage. The unique thing here is that they can chain their attacks, meaning tile restrictions aren’t nearly as big of a problem, and allowing extremely high and focused ST damage, making it great for harder targets (especially since S2 has a lowish DPH). It is very costly to set up though and she has no blocking ability while using them, so can be somewhat more situational than S2.
+
+Last is her S1. It's much more situational than the other two, but still useful. It’s basically her defensive skill. While her summons are expensive DP-wise, they are shockingly bulky for summons, with more stats than many actual Defenders. The damage on it is quite bad though so it’s the skill that depends most on the rest of the team to be viable, but that flexibility is very nice for a skill that doesn’t cost anything to Master!
+
+## Pull Priority
+
+Dec 8 update: You know, I foolishly made the assumption this pull priority list would be easier with Exu2 and Tragodia behind, but it turns out, not so. It's actually harder because now there isn't an absolute clear winner in the same way! You can make pretty good arguments for everyone being higher or lower now, and the difference will largely come down to playstyle and needs. In the same vein, this list leans heavily into what I personally find valuable. So please, do not take this list as gospel. I get a lot of opinions from a lot of experienced players when it comes to the pull priority, and I’ve never had the diversity of opinion that I got with this update. It will be hard to make a wrong choice coming up!
+
+**Strong Pull:**  SilverAsh the Reignfrost (limited), Hoshiguma the Breacher (limited)
+
+**Lean Pull:**  Haruka, Togawa Sakiko (collab), Pramanix the Prerita
+
+**Lean Skip:**  Leizi the Thunderbringer, Mantra
+
+**Strong Skip:** Vina Victoria (rerun)
+
+Meta-value 4-5★s: None
+
+Niche-value 4-5★s: Matsukiri, Wakaba Mutsumi, Misumi Uika, Yahata Umiri (welfare, graded with Sakiko only)
+
+### Pull Priority Blurbs
+
+This is something new I'm trying, just a quick 1-2 sentences per OP to add some context for the pull priorities.
+
+SilverAsh the Reignfrost - He'll greatly raise the ceiling of any team he's on and is the sort who will be tough to powercreep. However, a lot of his value depends on the rest of your roster, so newer players may still want to favor direct DPS. He's not quite the same tier of slam dunk other recent "Strong Pulls" have been.
+
+Hoshiguma the Breacher - Incredible tank with strong damage and utility. A great unit for both comfy casual use and advanced play.
+
+Haruka - Sets the new bar for both AFK and burst healing along with some good control. However, healing is mostly a luxury compared to DPS.
+
+Togawa Sakiko - Incredible damage and range with a huge amount of DEF/RES ignore allowing her to do good damage to almost any target. Her damage is strong enough she could be considered above the others in her tier, however, she has no utility beyond damage so is the most replaceable.
+
+Pramanix the Prerita - She's the new queen of AFK gaming with plenty of ceiling too. Great damage and a huge Slow field, plus the Phalanx bulk. However, there's a lot of Casters now. She's probably the second best one (I still give the favor to Logos) so well worth pulling for, but may be a bit more redundant on some teams compared to SA2 and Hoshi2.
+
+Leizi the Thunderbringer - While she definitely has some very strong use of her own, Leizi the Thunderbringer is mostly a side grade or slight downgrade to Mlynar in *most* content. He should be in the gold shop soon if you don’t already have him, so Leizi is a bit of a redundant pull if you aren’t already an Advanced player.
+
+Mantra - Very powerful in some situations, less so in others. She’s a great unit overall, but compared to the other DPS units isn’t quite as versatile and her control is mostly redundant to Tragodia.
+
+Vina Victoria - Vina is relevant at times due to the strength of True Damage, but she’s much more clunky than the others. While still decently strong, she’s by far the most situational of the upcoming banners.
+
+## Lookaheads
+
+New this patch is the units from the SA2 patch so it's a sizable update.
+
+The lookaheads from last time can be found in their usual spot [here](https://docs.google.com/spreadsheets/d/1iJF12O6QOba1dlUVmobwvc1eBZE7FRB6-tKxmZEcG1I/edit?gid=667041423#gid=667041423).
+
+### SilverAsh the Reignfrost
+
+SA2 is the sort of powerful unit I like to see. He's strong, but not absurdly so, and does something new and creative that's a lot of fun to play around with. The downside for me personally though, at least as far as these lookaheads are concerned, is that it makes him a little hard to predict. His class prioritization has the potential to be very annoying in some cases and restricts teambuilding more than other options. In any case, SA2 is (in my opinion) the strongest unit ahead of us as of this writing. He's got a powerful and creative kit, but also has the sort of kit that will be unlikely to be powercrept for a long time.
+
+S2 is his main skill. It has the lowest SP cost and a great effective DP/second ratio. That alone would be great but he gives everyone abusable schwingschwings too. It's just an amazing top to bottom skill. S3 is his secondary. It's powerful too, but quite a bit more gimmicky. It has a super high SP cost after the first activation and the main benefit is very constrained by the team. His S1 is a pass since the effect just isn't as strong, although it might have some niche value now and then.
+
+tl;dr S2 S-tier > S3 B-ish-tier > S1 ungraded but maybe useful on occasion for maximalists.
+
+### Pramanix the Prerita
+
+Do you love AFK gaming? Well, I have great news for you because Pram2 sets the new bar for that. Her S2 is an absurd set-and-forget skill. Once wound up, she just does continuous high Arts damage, wide-spread control, and even gets a free blocker on an otherwise undeployable tile. In most cases, that would come at the expense of ceiling. That's soooooorta the case with Pram2, but also not really. Her potentially map-wide Slow field is a huge benefit and unlike a lot of similar skills, her damage is still incredible, then she can flex to a higher ceiling DPS skill with S3 if really needed. She's one of those units that's easy to use, flexible, but still incredibly strong.
+
+As for her skills, S2 is her bread and butter, AFK or not. S3 is her secondary skill (and is better than most primary skills). It has better range, faster wind-up, and a higher DPS ceiling, although it cycles somewhat poorly (relatively anyway). Last her S1 is probably a pass, but may appeal to more creative players since it allows some shift tech that's impossible otherwise. However, it is by far her most situational skill. 
+
+tl;dr S2 S-tier > S3 A-tier-ish > S1 C or None-tier.
+
+### Astgenne the Lightchaser
+
+I'm super glad Astgenne got an alter. I love when the less popular characters get some development! At any rate, as far as half-anniversary welfare's go, Astgenne is decent enough. She's certainly not great and won't be a general promotion consideration given how expensive 6★s are, but is usable if you like her or play in a niche. S3 is her primary skill and the Arts damage share is the highlight of her kit. It's certainly not as great as Suzuran's S3, but few Supporter skills are. S2 could be an option too, but it's quite a bit more gimmicky.
+
+tl;dr S3 (A or B-tier) > S2.
+
+### Snow Hunter
+
+By the standards of the 5★s, Snow Hunter is pretty great. She hits hard for solid DPS on a low-SP Manual Activation Charge-based skill which even gives a bit of good Freeze utility. However, that is only by the standards of the rarity. DPS is easy to replace and her control isn't that special either, so she's mostly a niche or desire unit, but still a quality one. S2 is what makes her good and is the only skill worth considering. S1 is a generic skill that I will loudly hate on come the full write-up. It works really badly on a Hunter too! If you really love Archetto IS runs it *could maybe* be useful, but she still can't Freeze using it and her S2 will give far better results in typical usage.
+
+tl;dr S2 only, likely B-tier. Pass on S1.
+
+### Akkord
+
+Akkord is fine for what she is, which is a 4★ AoE Arts Caster, a niche that the rarity has historically struggled with. However, she doesn't do anything special either and Blast Caster DPS isn't that good in the first place. She's only particularly useful in the 4★-only niche, but should be decent there at least. In such a case, both skills will have value. S2 has higher DPS, but a really long SP cycle, which gives room for her S1, depending on the needs of the stage.
+
+tl;dr S2 > S1, both C-tier or None, similar in value to Pudding.
+
+### Hadiya
+
+Hadiya is our first Mercenary which looks to be a pretty cool archetype. They have a low base DP cost and good stats, then they can spend DP for various effects. However, none of her effects are actually that special or new and the DP spend is pretty high. So while she's neat, she's mostly "just another 5★ Guard". Usable, but not special, and the 600 red cert cost is a daunting additional cost. S2 is her main skill which makes her a viable laneholder with good range. S1 can be an option too if you want to get the most out of her since it doesn't cost DP to activate, although the effects are generally not as strong.
+
+tl;dr S2 (likely C-tier) > S1 (None-tier).
+
+
