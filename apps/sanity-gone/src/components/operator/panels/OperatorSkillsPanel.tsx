@@ -17,6 +17,7 @@ import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
 import CharacterStats from "~/components/operator/CharacterStats.tsx";
+import OperatorSkillHeader from "~/components/operator/OperatorSkillHeader.tsx";
 
 const OperatorSkillsPanel: React.FC = () => {
 	const operator = useStore(operatorStore);
@@ -154,43 +155,7 @@ const OperatorSkillsPanel: React.FC = () => {
 				</div>
 			</div>
 			<div className="grid gap-y-4 rounded-br-lg">
-				<div className="grid grid-flow-col grid-cols-[48px_1fr] items-center gap-x-4 gap-y-2 [grid-template-areas:'icon_name''skilltype_skilltype'] sm:[grid-template-areas:'icon_name''icon_skilltype']">
-					<img
-						className="h-12 w-12 rounded [grid-area:icon]"
-						src={skillIcon(
-							activeSkillTableSkill.iconId,
-							activeSkillTableSkill.skillId
-						)}
-						alt={activeSkillLevel.name}
-					/>
-					<h2 className="font-serif text-lg font-semibold leading-6 [grid-area:name]">
-						{activeSkillLevel.name}
-					</h2>
-					<dl className="grid h-6 grid-flow-col items-center justify-start gap-x-2 [grid-area:skilltype] sm:col-span-1 sm:gap-x-3">
-						<span className="text-base leading-none text-neutral-50">
-							{typeTitle[activeSkillLevel.skillType]}
-						</span>
-
-						{/* TODO This is an InterpunctSpacer. Maybe consider making it a .tsx component so it can be used everywhere?*/}
-						<span
-							className={`inline-block h-1 w-1 rounded-full bg-neutral-400`}
-						></span>
-
-						<span
-							className={cx(
-								"text-base leading-none",
-								spRecoveryClassName[
-									activeSkillLevel.spData.spType
-								]
-							)}
-						>
-							{/* space here is only needed if it's in English */}
-							{spRecoveryTitle[activeSkillLevel.spData.spType] +
-								(locale === "en" ? " " : "")}
-							{t("operators.details.skills.recovery")}
-						</span>
-					</dl>
-				</div>
+				<OperatorSkillHeader activeSkillTableSkill={activeSkillTableSkill} activeSkillLevel={activeSkillLevel} locale={locale} />
 				<dl className="flex flex-col gap-x-6 gap-y-2 sm:flex-row">
 					<div className="relative flex w-full items-center justify-start gap-x-2 border-neutral-600">
 						<SpCostIcon />

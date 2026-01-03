@@ -3,12 +3,15 @@ import {getCollection, render} from 'astro:content';
 import Layout from "../../../layouts/Layout.astro";
 import {getPathByLocale, getRelativeLocaleUrl} from "astro:i18n";
 import {localeStore} from "../_store";
+import {operatorsStore} from "./_store";
 import TableOfContents from "../../../components/guides/TableOfContents.tsx";
 import AuthorBio from "../../../components/guides/AuthorBio.tsx";
+import MasteryRecommendation from "../../../components/guides/MasteryRecommendation.tsx";
 import {slugify} from "../../../utils/strings";
 
 import enOperatorsJson from "data/en_US/operators.json";
 import type * as OutputTypes from "../../../types/output-types";
+import SvgRarityGradientDefs from "../../../components/operator/SvgRarityGradientDefs";
 
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
 localeStore.set(locale);
@@ -35,11 +38,11 @@ export async function getStaticPaths() {
     }));
 }
 
-
-// 2. For your template, you can get the entry directly from the prop
 const {guide, operators, author} = Astro.props as { guide: CollectionEntry<"guides">, operators: Record<string, OutputTypes.Operator>, author: CollectionEntry<"author"> };
+operatorsStore.set(operators);
+
 const {title, description, date, bannerImage} = guide.data;
-const {Content} = await render(guide);
+const {Content, headings} = await render(guide);
 ---
 <Layout title={title}>
     <section class="mx-auto py-5 px-10 sm:py-auto max-w-[1000px]">
@@ -71,7 +74,8 @@ const {Content} = await render(guide);
                 </div>
             </div>
         </div>
-        <TableOfContents headings={guide.rendered.metadata.headings} client:load></TableOfContents>
+        <TableOfContents headings={headings} client:load></TableOfContents>
+
         <div class="prose-invert lg:prose-xl prose-hr:text-neutral-400 prose-a:text-blue-light prose-a:hover:text-blue mt-4">
             <Content/>
         </div>
@@ -79,7 +83,9 @@ const {Content} = await render(guide);
             <AuthorBio author={author.data} />
         </div>
     </section>
+    <SvgRarityGradientDefs/>
 </Layout>
-<script slot="head" define:vars={{locale}}>
+<script slot="head" define:vars={{locale, operators}}>
     window.locale = locale;
+    window.operators = operators
 </script>

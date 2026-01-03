@@ -224,7 +224,7 @@ export const SkillSpType = {
 /**
  * Represents a skill's information at a specific skill level.
  */
-interface SkillLevel {
+export interface SkillLevel {
 	name: string;
 	description: string | null;
 	// SkillLevelObject only has rangeId (of type string) in the game data,

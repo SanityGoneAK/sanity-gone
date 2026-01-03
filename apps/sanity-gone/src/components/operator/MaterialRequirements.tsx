@@ -90,7 +90,7 @@ const MaterialRequirements: React.FC<Props> = ({
 											3: "border-blue-light bg-blue-light/30",
 											2: "border-green-light bg-green-light/30",
 											1: "border-neutral-50 bg-neutral-50/30",
-										}[rarity]
+										}[rarity as 5|4|2|1]
 									)}
 									style={{
 										gridArea: "stack",

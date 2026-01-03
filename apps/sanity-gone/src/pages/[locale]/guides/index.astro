@@ -9,6 +9,8 @@ const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
 localeStore.set(locale);
 
 const guides = await getCollection('guides');
+
+export const prerender = false;
 ---
 <Layout title="Guides">
     <h1>My posts</h1>

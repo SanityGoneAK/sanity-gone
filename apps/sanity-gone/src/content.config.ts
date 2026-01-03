@@ -9,7 +9,7 @@ import { z } from 'astro/zod';
 
 // 4. Define your collection(s)
 const guides = defineCollection({
-    loader: glob({ pattern: "**/*.md", base: "./src/guides" }),
+    loader: glob({ pattern: "**/*.mdx", base: "./src/guides" }),
     schema: z.object({
         title: z.string(),
         description: z.string(),

@@ -10,9 +10,9 @@ import { localeStore } from "~/pages/[locale]/_store.ts";
 import { useTranslations } from "~/i18n/utils.ts";
 import type { ui } from "~/i18n/ui.ts";
 import { type Locale, localeToTag } from "~/i18n/languages.ts";
+import type * as OutputTypes from "~/types/output-types";
 
-const OperatorBranchAndTrait: React.FC = () => {
-	const operator = useStore(operatorStore);
+const OperatorBranchAndTrait: React.FC<{operator: OutputTypes.Operator}> = ({operator}) => {
 	const locale = useStore(localeStore) as Locale;
 	return (
 		<div className="grid grid-flow-col items-center gap-x-1 sm:gap-x-2">
