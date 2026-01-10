@@ -3,32 +3,23 @@ import {useStore} from "@nanostores/react";
 import {useMemo} from "react";
 import type * as OutputTypes from "~/types/output-types.ts";
 
-import { createContext, useContext } from "react";
 import OperatorHeader from "~/components/operator/OperatorHeader.tsx";
 import {localeStore} from "~/pages/[locale]/_store.ts";
 import type {Locale} from "~/i18n/languages.ts";
 import OperatorSkillHeader from "~/components/operator/OperatorSkillHeader.tsx";
 
-type MasteryContextValue = {
-    operator: OutputTypes.Operator;
-    locale: Locale
+type SkillConfig = {
+    index: number;
+    mastery: number;
+    story: string;
+    advanced: string;
 };
+interface MasteryRecommendation {
+    charId: string
+    skills: SkillConfig[];
+}
 
-const MasteryContext = createContext<MasteryContextValue | null>(null);
-
-const useMastery = () => {
-    const ctx = useContext(MasteryContext);
-    if (!ctx) {
-        throw new Error(
-            "MasteryRecommendation.Skill must be used inside MasteryRecommendation"
-        );
-    }
-    return ctx;
-};
-
-
-
-const MasteryRecommendation = ({charId, children}: { charId: string; children?: React.ReactNode; }) => {
+const MasteryRecommendation = ({charId, skills}: MasteryRecommendation) => {
     const operators = useStore(operatorsStore);
     const locale = useStore(localeStore);
 
@@ -39,20 +30,25 @@ const MasteryRecommendation = ({charId, children}: { charId: string; children?: 
     if (!operator) return null;
 
     return (
-        <MasteryContext value={{ operator, locale }}>
-            <div className="flex flex-col space-y-16 not-prose">
-                <div className="col-span-4">
-                    <OperatorHeader operator={operator} locale={locale} />
-                </div>
-                <div className="grid grid-cols-4">
-                    <p>Skill</p>
-                    <p>Mastery</p>
-                    <p>Story</p>
-                    <p>Advanced</p>
-                </div>
+        <div className="flex flex-col not-prose rounded overflow-hidden">
+            <div className="col-span-4">
+                <OperatorHeader operator={operator} locale={locale} />
             </div>
-            {children}
-        </MasteryContext>
+            <div className="pt-4 bg-neutral-600/[.66] space-y-3 pb-4">
+                <div className="px-1 lg:px-6 grid lg:grid-cols-[1fr_repeat(3,100px)]">
+                    <p className="hidden lg:inline text-neutral-200 text-lg">Skill</p>
+                    <p className="hidden lg:inline text-neutral-200 text-lg text-center">Mastery</p>
+                    <p className="hidden lg:inline text-neutral-200 text-lg text-center">Story</p>
+                    <p className="hidden lg:inline text-neutral-200 text-lg text-center">Advanced</p>
+                </div>
+                {skills.map((skill, idx) => (
+                    <>
+                        <Skill key={idx} operator={operator} locale={locale} {...skill} />
+                        {skills.length - 1 > idx && <span key={idx} className="inline-block bg-neutral-200/20 w-full h-0.5"></span>}
+                    </>
+                ))}
+            </div>
+        </div>
     );
 };
 
@@ -63,24 +59,40 @@ function skillLevelNumberToMasteryLevel(level: number): string {
     return `${level}`;
 }
 
-const Skill = ({ index, mastery, story, advanced }: { index: number, mastery: number, story: string, advanced: string }) => {
-    const { operator, locale } = useMastery();
+interface MasteryRecommendationSkillProps {
+    operator: OutputTypes.Operator
+    locale: Locale,
+    index: number,
+    mastery: number,
+    story: string,
+    advanced: string
+}
 
+const Skill = ({ operator, locale, index, mastery, story, advanced }: MasteryRecommendationSkillProps) => {
     const skill = operator.skillData?.[index];
     if (!skill) return null;
 
     const level = skill.levels?.[mastery];
     if (!level) return null;
 
-    const levelString = skillLevelNumberToMasteryLevel(mastery)
+    const levelString = skillLevelNumberToMasteryLevel(mastery+1)
 
     return (
-        <>
-            <OperatorSkillHeader locale={locale} activeSkillLevel={level} activeSkillTableSkill={skill}/>
-            <p>{levelString}</p>
-            <p>{story}</p>
-            <p>{advanced}</p>
-        </>
+        <div className="px-5 lg:px-6 lg:grid lg:grid-cols-[1fr_300px]">
+            <div className="mb-3">
+                <OperatorSkillHeader locale={locale} activeSkillLevel={level} activeSkillTableSkill={skill}/>
+            </div>
+            <div className="grid grid-cols-[repeat(3,1fr)] lg:hidden">
+                <p className="inline lg:hidden text-neutral-200 text-lg text-center">Mastery</p>
+                <p className="inline lg:hidden text-neutral-200 text-lg text-center">Story</p>
+                <p className="inline lg:hidden text-neutral-200 text-lg text-center">Advanced</p>
+            </div>
+            <div className="grid grid-cols-[repeat(3,1fr)] lg:grid-cols-[repeat(3,100px)]">
+                <p className="text-center text-xl place-content-center">S{index+1}{levelString}</p>
+                <p className="text-center text-xl place-content-center">{story}</p>
+                <p className="text-center text-xl place-content-center">{advanced}</p>
+            </div>
+        </div>
     );
 };
 
