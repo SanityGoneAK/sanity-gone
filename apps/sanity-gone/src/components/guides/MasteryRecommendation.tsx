@@ -42,12 +42,11 @@ const MasteryRecommendation = ({charId, skills}: MasteryRecommendation) => {
                     <p className="hidden lg:inline text-neutral-200 text-lg text-center">Story</p>
                     <p className="hidden lg:inline text-neutral-200 text-lg text-center">Advanced</p>
                 </div>
+                <div className="divide-y-2 space-y-4 divide-neutral-200/20">
                 {skills.map((skill, idx) => (
                     <Skill key={idx} operator={operator} locale={locale} {...skill} />
                 ))}
-                {skills.map((skill, idx) => (
-                    skills.length - 1 > idx && <span key={idx} className="inline-block bg-neutral-200/20 w-full h-0.5"></span>
-                ))}
+                </div>
             </div>
         </div>
     );
@@ -80,7 +79,7 @@ const Skill = ({ operator, locale, index, mastery, story, advanced, breakpoint =
     const levelString = skillLevelNumberToMasteryLevel(mastery+1)
 
     return (
-        <div className="px-5 lg:px-6 lg:grid lg:grid-cols-[1fr_300px]">
+        <div className="px-5 lg:px-6 lg:grid lg:grid-cols-[1fr_300px] pb-2">
             <div className="mb-3">
                 <OperatorSkillHeader locale={locale} activeSkillLevel={level} activeSkillTableSkill={skill}/>
             </div>

@@ -15,7 +15,7 @@ const authors = await getCollection('authors');
 guides = guides.map(guide => {
     guide.data.author = authors.find(author => author.data.username === guide.data.author);
     return guide;
-})
+}).sort((a, b) => b.data.date - a.data.date);
 
 
 export const prerender = false;
