@@ -15,7 +15,7 @@ const guides = defineCollection({
         description: z.string(),
         author: z.string(),
         date: z.coerce.date(),
-        bannerImage: z.string(),
+        bannerImage: z.string().optional(),
         operators: z.array(z.string()),
     })
 });

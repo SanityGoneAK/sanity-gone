@@ -20,15 +20,15 @@ const sidebarLinks: { href: string; name: string; icon: any }[] = [
 		icon: OperatorsNavIcon,
 	},
 	{
-		href: "https://old.sanitygone.help/operators",
-		name: t("nav.old_site"),
-		icon: SGNavIcon,
-	},
-	{
 		href: getRelativeLocaleUrl(locale, "/recruitment"),
 		name: t("nav.recruitment"),
 		icon: RecruitmentNavIcon,
 	},
+	{
+		href: getRelativeLocaleUrl(locale, "/guides"),
+		name: t('nav.guides'),
+		icon: SGNavIcon
+	}
 	// {
 	//   href: "/dps",
 	//   name: "DPS Calculator",
@@ -64,6 +64,7 @@ const sidebarLinks: { href: string; name: string; icon: any }[] = [
 			<TwitterLogo />
 		</div>
 		<hr class="text-neutral-400" />
+		<a class="hover:text-neutral-50 text-neutral-100 text-center" href="https://old.sanitygone.help/operators">{t("nav.old_site")}</a>
 		<p class="text-neutral-200">
 			{t("nav.description")}
 		</p>

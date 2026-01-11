@@ -7,6 +7,7 @@
       <excludeFolder url="file://$MODULE_DIR$/packages/sanity-pack/assets" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/sanity-gone/.turbo" />
       <excludeFolder url="file://$MODULE_DIR$/apps/sanity-gone/data" />
     </content>
     <orderEntry type="inheritedJdk" />

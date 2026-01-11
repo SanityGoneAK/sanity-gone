@@ -1,5 +1,6 @@
 import * as React from "react"
 import {Collapsible} from "@base-ui/react/collapsible"
+import ChevronIcon from "~/components/icons/ChevronIcon.tsx";
 
 type Heading = {
     depth: number
@@ -80,20 +81,6 @@ export function TableOfContents({headings, defaultOpen = true}: TableOfContentsP
                 </ul>
             </Collapsible.Panel>
         </Collapsible.Root>
-    )
-}
-
-function ChevronIcon(props: React.ComponentProps<"svg">) {
-    return (
-        <svg
-            viewBox="0 0 10 10"
-            fill="none"
-            stroke="currentColor"
-            aria-hidden
-            {...props}
-        >
-            <path d="M3.5 9L7.5 5L3.5 1"/>
-        </svg>
     )
 }
 

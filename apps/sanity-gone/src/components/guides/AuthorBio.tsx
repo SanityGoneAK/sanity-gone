@@ -17,15 +17,16 @@ type Author = {
 
 interface AuthorCardProps {
     author: Author
+    id: string
 }
 
-export function AuthorCard({author}: AuthorCardProps) {
+export function AuthorCard({author, id}: AuthorCardProps) {
     return (
         <div className="rounded-xl border border-neutral-800 bg-neutral-900 p-4">
             <div className="flex items-start gap-3">
                 <img
                     className="size-8 rounded-full bg-neutral-800"
-                    src={`/member-avatars/${slugify(author.username)}.png`}
+                    src={`/member-avatars/${slugify(id)}.png`}
                     alt={author.username}
                 />
 

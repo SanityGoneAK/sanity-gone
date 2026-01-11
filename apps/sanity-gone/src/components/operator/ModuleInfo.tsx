@@ -33,6 +33,7 @@ interface Props {
 	module: OutputTypes.Module;
 	stage: number; // 1, 2, 3
 	potential: number; // zero-indexed (0, 1, 2, 3, 4, 5)
+	withTitle: boolean;
 }
 
 const ModuleInfo: React.FC<Props> = ({
@@ -40,6 +41,7 @@ const ModuleInfo: React.FC<Props> = ({
 	module,
 	stage,
 	potential,
+	withTitle = true
 }) => {
 	const locale = useStore(localeStore);
 	const t = useTranslations(locale);
@@ -180,7 +182,7 @@ const ModuleInfo: React.FC<Props> = ({
 
 	return (
 		<div className="flex flex-col gap-4">
-			<div className="flex items-center gap-2">
+			{withTitle && <div className="flex items-center gap-2">
 				<img
 					className="h-6"
 					src={moduleTypeImage(module.moduleIcon.toLowerCase())}
@@ -192,7 +194,7 @@ const ModuleInfo: React.FC<Props> = ({
 				<p className="font-semibold text-neutral-200">
 					{module.moduleIcon}
 				</p>
-			</div>
+			</div>}
 
 			<dl
 				className={cx(

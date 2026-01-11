@@ -7,6 +7,7 @@ import OperatorHeader from "~/components/operator/OperatorHeader.tsx";
 import {localeStore} from "~/pages/[locale]/_store.ts";
 import type {Locale} from "~/i18n/languages.ts";
 import OperatorSkillHeader from "~/components/operator/OperatorSkillHeader.tsx";
+import {cx} from "~/utils/styles.ts";
 
 type SkillConfig = {
     index: number;
@@ -42,10 +43,10 @@ const MasteryRecommendation = ({charId, skills}: MasteryRecommendation) => {
                     <p className="hidden lg:inline text-neutral-200 text-lg text-center">Advanced</p>
                 </div>
                 {skills.map((skill, idx) => (
-                    <>
-                        <Skill key={idx} operator={operator} locale={locale} {...skill} />
-                        {skills.length - 1 > idx && <span key={idx} className="inline-block bg-neutral-200/20 w-full h-0.5"></span>}
-                    </>
+                    <Skill key={idx} operator={operator} locale={locale} {...skill} />
+                ))}
+                {skills.map((skill, idx) => (
+                    skills.length - 1 > idx && <span key={idx} className="inline-block bg-neutral-200/20 w-full h-0.5"></span>
                 ))}
             </div>
         </div>
@@ -66,9 +67,10 @@ interface MasteryRecommendationSkillProps {
     mastery: number,
     story: string,
     advanced: string
+    breakpoint?: boolean
 }
 
-const Skill = ({ operator, locale, index, mastery, story, advanced }: MasteryRecommendationSkillProps) => {
+const Skill = ({ operator, locale, index, mastery, story, advanced, breakpoint = false }: MasteryRecommendationSkillProps) => {
     const skill = operator.skillData?.[index];
     if (!skill) return null;
 
@@ -88,9 +90,10 @@ const Skill = ({ operator, locale, index, mastery, story, advanced }: MasteryRec
                 <p className="inline lg:hidden text-neutral-200 text-lg text-center">Advanced</p>
             </div>
             <div className="grid grid-cols-[repeat(3,1fr)] lg:grid-cols-[repeat(3,100px)]">
-                <p className="text-center text-xl place-content-center">S{index+1}{levelString}</p>
-                <p className="text-center text-xl place-content-center">{story}</p>
-                <p className="text-center text-xl place-content-center">{advanced}</p>
+                <p className={cx("row-span-2 text-center text-xl place-content-center")}>S{index+1}{levelString}</p>
+                {breakpoint && <p className="col-span-2 col-start-2 text-center text-xl place-content-center font-bold italic">Breakpoint</p>}
+                <p className={cx("col-start-2 text-center text-xl place-content-center", {"row-span-2": breakpoint == false})}>{story}</p>
+                <p className={cx("col-start-3 text-center text-xl place-content-center", {"row-span-2": breakpoint == false})}>{advanced}</p>
             </div>
         </div>
     );

@@ -58,14 +58,14 @@ const {Content, headings} = await render(guide);
             </ul>
         </div>
         <div class="bg-neutral-600/[.66] rounded-md overflow-hidden">
-            <img class="mb-3" alt="" src={bannerImage}>
+            <img class="mb-3" alt="" src={bannerImage} referrerpolicy="no-referrer">
             <div class="py-4 px-5 space-y-2">
                 <h1 class="text-4xl font-black">{title}</h1>
                 <p>{description}</p>
                 <div class="flex items-center justify-between mt-4">
                     <div class="flex items-center gap-3">
                         <span class="text-neutral-200">by</span>
-                        <img class="size-8 rounded-full" src={`/member-avatars/${slugify(author.data.username)}.png`} alt="">
+                        <img class="size-8 rounded-full" src={`/member-avatars/${slugify(author.id)}.png`} alt="">
                         <span>{author.data.username}</span>
                     </div>
                     <div class="flex items-center gap-3">
@@ -80,7 +80,7 @@ const {Content, headings} = await render(guide);
             <Content/>
         </div>
         <div class="mt-4">
-            <AuthorBio author={author.data} />
+            <AuthorBio author={author.data} id={author.id} />
         </div>
     </section>
     <SvgRarityGradientDefs/>
