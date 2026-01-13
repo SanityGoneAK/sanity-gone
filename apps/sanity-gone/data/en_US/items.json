@@ -2903,6 +2903,22 @@
     "usage": "用于提升天空盒的潜能。",
     "rarity": 5
   },
+  "p_char_1022_flwr2": {
+    "itemId": "p_char_1022_flwr2",
+    "name": "撷英调香师的信物",
+    "iconId": "p_char_1022_flwr2",
+    "description": "几颗不知名的种子，来自米诺斯。莱娜寄来的时候没有交代养护方式，但你知道它们会在疗养庭院里长得很好。",
+    "usage": "用于提升撷英调香师的潜能。",
+    "rarity": 5
+  },
+  "p_char_4166_varkis": {
+    "itemId": "p_char_4166_varkis",
+    "name": "摆渡人的信物",
+    "iconId": "p_char_4166_varkis",
+    "description": "一张航路图，上面做满了笔记。他知道纸上的河流已不复存在，但它还会在他心中一直流淌。",
+    "usage": "用于提升摆渡人的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "Exusiai's Token",
@@ -3877,6 +3893,14 @@
     "iconId": "p_char_4212_nasti",
     "description": "一支树枝造型的骨笔，可以辅助完成一些精密作业。娜斯提说不必因为它叫“骨笔”就有所顾虑，折断了她随时帮你换新的。",
     "usage": "用于提升娜斯提的潜能。",
+    "rarity": 6
+  },
+  "p_char_4056_titi": {
+    "itemId": "p_char_4056_titi",
+    "name": "缇缇的信物",
+    "iconId": "p_char_4056_titi",
+    "description": "一块正反面都没有任何痕迹的空白陶片。缇缇将它交给你保管，你可以在必要时拿给她看，让她保持谦卑和警醒。",
+    "usage": "用于提升缇缇的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {

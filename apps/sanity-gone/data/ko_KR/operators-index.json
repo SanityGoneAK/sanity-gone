@@ -1,4 +1,18 @@
 {
+  "char_4056_titi": {
+    "charId": "char_4056_titi",
+    "name": "Titi",
+    "slug": "titi",
+    "position": "RANGED",
+    "rarity": 6,
+    "profession": "MEDIC",
+    "subProfessionId": "incantationmedic",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 432,
+    "gender": "Female"
+  },
   "char_4212_nasti": {
     "charId": "char_4212_nasti",
     "name": "Nasti",
@@ -1720,6 +1734,34 @@
     "isLimited": false,
     "releaseOrder": 73,
     "gender": "Female"
+  },
+  "char_1022_flwr2": {
+    "charId": "char_1022_flwr2",
+    "name": "Perfumer the Distilled",
+    "slug": "perfumer-the-distilled",
+    "position": "RANGED",
+    "rarity": 5,
+    "profession": "SUPPORT",
+    "subProfessionId": "blessing",
+    "alterId": null,
+    "baseOperatorId": "char_181_flower",
+    "isLimited": false,
+    "releaseOrder": 431,
+    "gender": "Female"
+  },
+  "char_4166_varkis": {
+    "charId": "char_4166_varkis",
+    "name": "Varkáris",
+    "slug": "varkaris",
+    "position": "MELEE",
+    "rarity": 5,
+    "profession": "WARRIOR",
+    "subProfessionId": "centurion",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 430,
+    "gender": "Male"
   },
   "char_4214_cairn": {
     "charId": "char_4214_cairn",
@@ -4921,7 +4963,7 @@
     "rarity": 4,
     "profession": "MEDIC",
     "subProfessionId": "ringhealer",
-    "alterId": null,
+    "alterId": "char_1022_flwr2",
     "baseOperatorId": null,
     "isLimited": false,
     "releaseOrder": 38,

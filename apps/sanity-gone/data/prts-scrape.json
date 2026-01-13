@@ -1715,6 +1715,18 @@
     "娜斯提": {
       "isLimited": false,
       "releaseOrder": 429
+    },
+    "摆渡人": {
+      "isLimited": false,
+      "releaseOrder": 430
+    },
+    "撷英调香师": {
+      "isLimited": false,
+      "releaseOrder": 431
+    },
+    "缇缇": {
+      "isLimited": false,
+      "releaseOrder": 432
     }
   },
   "skinObtainSourceAndCosts": {
@@ -3623,6 +3635,20 @@
       "cost": null,
       "tokenType": null
     },
+    "char_4010_etlchi@winter#5": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_1040_blaze2@winter#5": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_340_shwaz@snow#1": {
       "obtainSources": [
         "Outfit Store"
@@ -4878,6 +4904,34 @@
       "tokenType": "Originium Prime"
     },
     "char_4140_lasher@sightseer#3": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4138_narant@breaker#1": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4147_mitm@breaker#1": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_1027_greyy2@breaker#1": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_141_nights@breaker#1": {
       "obtainSources": [
         "Outfit Store"
       ],
