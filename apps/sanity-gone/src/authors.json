@@ -1,0 +1,24 @@
+[
+  {
+    "id": "mal-io",
+    "username": "Mal.io",
+    "bio": "I write Arknights gameplay analysis articles, currently with a focus on Modules. Saria/Muelsyse fan.",
+    "social" : {
+      "youtube": "https://www.youtube.com/@Mal_arknights",
+      "bluesky": "https://bsky.app/profile/mal-io.bsky.social",
+      "reddit": "https://www.reddit.com/user/Mal_io_gp/"
+    }
+  },
+  {
+    "id": "tacticalbreakfast",
+    "username": "TacticalBreakfast",
+    "bio": "Writer for the now dead GamePress Arknights wiki, best known for his Mastery Priority Guide.",
+    "social" : {
+      "youtube": "https://www.youtube.com/@tacticalbreakfast2271",
+      "discord": "TacticalBreakfast",
+      "bluesky": "https://bsky.app/profile/tacticalbreakfast.bsky.social",
+      "x": "https://x.com/TacticalBreakf1",
+      "reddit": "https://www.reddit.com/user/TacticalBreakfast/"
+    }
+  }
+]

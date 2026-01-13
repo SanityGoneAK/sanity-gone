@@ -1,0 +1,20 @@
+---
+// cannot pre-render this page because it redirects depending on your locale
+export const prerender = false;
+
+import {
+	getAbsoluteLocaleUrl,
+	getPathByLocale,
+	getRelativeLocaleUrl,
+} from "astro:i18n";
+import { defaultLang } from "~/i18n/languages";
+
+const preferredLocale = Astro.preferredLocale ?? defaultLang;
+const localePath = getPathByLocale(preferredLocale);
+
+const redirectToPreferredLocale = getRelativeLocaleUrl(localePath, "/");
+if (redirectToPreferredLocale == "/") {
+	return Astro.redirect("/en/operators", 301);
+}
+return Astro.redirect(redirectToPreferredLocale + "operators/", 301);
+---

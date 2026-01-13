@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"jsxImportSource": "react",
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"noImplicitAny": true,
+		"target": "esnext",
+		"baseUrl": ".",
+		"strict": true,
+		"lib": ["esnext", "dom"]
+	},
+	"exclude": []
+}

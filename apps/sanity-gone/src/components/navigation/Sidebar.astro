@@ -1,0 +1,88 @@
+---
+/** This component is used for both the desktop sidebar as well as the toggleable mobile menu. */
+
+import DiscordLogo from "~/components/icons/DiscordLogo.astro";
+import TwitterLogo from "~/components/icons/TwitterLogo.astro";
+import NavigationLink from "~/components/navigation/NavigationLink.astro";
+import { getPathByLocale, getRelativeLocaleUrl } from "astro:i18n";
+import { stripLangFromUrl, useTranslations } from "~/i18n/utils";
+import type { Locale } from "~/i18n/languages";
+import OperatorsNavIcon from "~/components/icons/OperatorsNavIcon.astro";
+import SGNavIcon from "~/components/icons/SGNavIcon.astro";
+import RecruitmentNavIcon from "~/components/icons/RecruitmentNavIcon.astro";
+
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
+const t = useTranslations(locale);
+const sidebarLinks: { href: string; name: string; icon: any }[] = [
+	{
+		href: getRelativeLocaleUrl(locale, "/operators"),
+		name: t("nav.operators"),
+		icon: OperatorsNavIcon,
+	},
+	{
+		href: getRelativeLocaleUrl(locale, "/recruitment"),
+		name: t("nav.recruitment"),
+		icon: RecruitmentNavIcon,
+	},
+	{
+		href: getRelativeLocaleUrl(locale, "/guides"),
+		name: t('nav.guides'),
+		icon: SGNavIcon
+	}
+	// {
+	//   href: "/dps",
+	//   name: "DPS Calculator",
+	// },
+	// {
+	//   href: "/maps",
+	//   name: "Maps",
+	// },
+];
+---
+
+<div class="flex flex-col h-full">
+	<nav class="flex-grow">
+		{
+			sidebarLinks.map(({ href, name, icon }) => (
+				<NavigationLink
+					href={href}
+					name={name}
+					icon={icon}
+					active={
+						href.replace(`${locale}/`, "") === `/`
+							? Astro.url.pathname.replace(`${locale}/`, "") ===
+								`/`
+							: Astro.url.pathname.startsWith(href)
+					}
+				/>
+			))
+		}
+	</nav>
+	<div class="px-6 my-6 flex flex-col gap-6 text-sm">
+		<div class="flex gap-4 justify-center">
+			<DiscordLogo />
+			<TwitterLogo />
+		</div>
+		<hr class="text-neutral-400" />
+		<a class="hover:text-neutral-50 text-neutral-100 text-center" href="https://old.sanitygone.help/operators">{t("nav.old_site")}</a>
+		<p class="text-neutral-200">
+			{t("nav.description")}
+		</p>
+		<nav class="flex justify-between items-center text-neutral-100">
+			<a
+				class="hover:text-neutral-50"
+				href={getRelativeLocaleUrl(locale, "/disclaimer")}
+				>{t("nav.disclaimer")}</a
+			>
+			<a
+				class="hover:text-neutral-50"
+				href={getRelativeLocaleUrl(locale, "/about")}
+				>{t("nav.about")}</a
+			>
+			<a
+				class="hover:text-neutral-50"
+				href="mailto:sanitygone.dev@gmail.com">{t("nav.contact")}</a
+			>
+		</nav>
+	</div>
+</div>

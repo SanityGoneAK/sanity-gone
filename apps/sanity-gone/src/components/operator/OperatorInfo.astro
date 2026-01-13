@@ -1,0 +1,170 @@
+---
+import { Image } from "astro:assets";
+
+import InterpunctSpacer from "../ui/InterpunctSpacer.astro";
+import StarIcon from "../icons/StarIcon";
+import OperatorBranchAndTrait from "./OperatorBranchAndTrait.tsx";
+import OperatorBothTooltip from "~/components/operator/OperatorBothTooltip.tsx";
+import { operatorClassIcon } from "~/utils/images";
+import { professionToClass, classToProfession } from "~/utils/classes";
+import { getMeleeOrRangedOrBoth } from "~/utils/character-stats";
+import { cx } from "~/utils/styles";
+
+import type * as OutputTypes from "~/types/output-types";
+import { operatorAvatar } from "../../utils/images";
+
+import MeleeIcon from "~/components/icons/MeleeIcon.tsx";
+import RangedIcon from "~/components/icons/RangedIcon.tsx";
+import MeleeAndRangedIcon from "~/components/icons/MeleeAndRangedIcon.tsx";
+import { getPathByLocale } from "astro:i18n";
+import { defaultLang, type Locale } from "../../i18n/languages";
+import { localeStore } from "../../pages/[locale]/_store";
+import { useTranslations } from "../../i18n/utils";
+import type { ui } from "../../i18n/ui";
+import { toTitleCase } from "../../utils/strings";
+
+import Tooltip from "~/components/ui/Tooltip";
+
+interface Props {
+	operator: OutputTypes.Character;
+}
+
+const { operator } = Astro.props;
+const [baseName, alterName] = operator.name.split(/ the /i);
+const operatorClass = professionToClass(operator.profession);
+const rarity = operator.rarity as 1 | 2 | 3 | 4 | 5 | 6;
+
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
+const t = useTranslations(locale);
+
+const meleeOrRanged = getMeleeOrRangedOrBoth(
+	operator.position,
+	operator.description,
+);
+const meleeOrRangedString = t("operators.details.general." + meleeOrRanged);
+---
+
+<div
+	class="grid grid-rows-[auto_auto] gap-y-4 bg-neutral-600/[.66] sm:rounded-t"
+>
+	<div
+		class={cx("flex items-center w-full gap-1 px-5 h-6 sm:rounded-t",
+			{
+				6: "bg-orange/[.08]",
+				5: "bg-yellow/[.08]",
+				4: "bg-purple/[.08]",
+				3: "bg-blue/[.08]",
+				2: "bg-green/[.08]",
+				1: "bg-neutral-50/[.08]",
+			}[rarity])}
+	>
+		<span class="visually-hidden">{t("operators.index.filters.rarity")}: {rarity}</span>
+		<span class="grid grid-flow-col">
+			{
+				Array(rarity)
+					.fill(null)
+					.map(() =>
+						<StarIcon className="h-3" rarity={rarity} />)
+			}
+		</span>
+		{
+			operator.isLimited && (
+				<span
+					class={cx(
+						`relative inline-block leading-normal
+					font-black italic bg-clip-text text-transparent uppercase`,
+						{
+							6: "bg-orange ",
+							5: "bg-yellow ",
+							4: "bg-purple ",
+							3: "bg-blue ",
+							2: "bg-green ",
+							1: "bg-neutral-50",
+						}[rarity],
+					)}
+					style={
+						// tailwind doesn't appear to have this as a predefined class
+
+						"font-height: 10px; line-height: 12px;"
+					}
+				>
+					{t("operators.details.general.limited")}
+				</span>
+			)
+		}
+	</div>
+	<div class="px-5 grid [grid-template-areas:'icon_name''classes_classes'] sm:[grid-template-areas:'icon_name''icon_classes'] gap-x-4 gap-y-3 sm:gap-y-2 w-full items-center grid-cols-[72px_1fr]">
+		<div class="w-18 h-18 [grid-area:icon]">
+			<Image
+				class="rounded"
+				src={operatorAvatar(operator.charId, 0)}
+				alt={operator.name}
+				width="72"
+				height="72"
+			/>
+		</div>
+		<div class="[grid-area:name]">
+			<h1 class="font-serif text-[36px] leading-10 font-bold">
+				{baseName}
+				{
+					alterName && (
+						<span class="text-neutral-200 font-normal">
+						The {alterName}
+					</span>
+					)
+				}
+			</h1>
+		</div>
+		<div class="flex flex-row items-center gap-x-2 sm:gap-x-3 text-sm sm:text-base [grid-area:classes]">
+			<div class="grid grid-flow-col items-center gap-x-2">
+				<Image
+					width="20"
+					height="20"
+					class="object-contain"
+					src={operatorClassIcon(
+						classToProfession(operatorClass).toLowerCase(),
+					)}
+					alt=""
+				/>
+				<span>{t("operators." + operatorClass.toLowerCase())}</span>
+			</div>
+			<OperatorBranchAndTrait operator={operator} client:idle />
+			<div class="flex-grow"></div>
+			{/* spacer */}
+			<div class="flex flex-row items-center gap-2">
+				{
+					meleeOrRanged === "melee" && (
+						<MeleeIcon />
+					)
+				}
+				{
+					meleeOrRanged === "ranged" && (
+						<RangedIcon />
+					)
+				}
+				{
+					meleeOrRanged === "melee_and_ranged" && (
+						<MeleeAndRangedIcon />
+					)
+				}
+				<span class="text-neutral-200 hidden sm:inline">
+					{meleeOrRangedString}
+				</span>
+				{/* mobile: replace with BothTooltip if necessary */}
+				<span class="text-neutral-200 sm:hidden">
+					{meleeOrRanged === "melee_and_ranged" && locale === "en"
+					? (
+						<OperatorBothTooltip client:idle />
+						// couldn't figure out how to get this to work, so i just used a tsx component
+						/* <Tooltip client:idle>
+							<span slot="content">t("operators.details.general.melee_and_ranged")</span>
+							<span class="relative cursor-help after:absolute after:bottom-0 after:left-0 after:right-0
+							   after:border-b after:border-dashed after:opacity-[33%]">Both</span>
+						</Tooltip> */
+					)
+					: meleeOrRangedString}
+				</span>
+			</div>
+		</div>
+	</div>
+</div>

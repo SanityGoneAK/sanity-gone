@@ -1,0 +1,352 @@
+{
+  "pioneer": {
+    "branchName": "척후병",
+    "class": "Vanguard",
+    "trait": "적 2명 저지 가능, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
+  },
+  "charger": {
+    "branchName": "돌격수",
+    "class": "Vanguard",
+    "trait": "적 처치 시 배치 코스트 +1, 퇴각 시 초기 배치 코스트 반환"
+  },
+  "tactician": {
+    "branchName": "전술가",
+    "class": "Vanguard",
+    "trait": "공격 범위에 지원군 소환 가능, 지원군이 저지한 적 공격 시 자신의 공격력이 150%로 증가"
+  },
+  "bearer": {
+    "branchName": "기수",
+    "class": "Vanguard",
+    "trait": "스킬 지속 시간 동안 저지 가능 수가 0으로 변경"
+  },
+  "centurion": {
+    "branchName": "공격수",
+    "class": "Guard",
+    "trait": "저지하고 있는 <span class=\"keyword\">모든 적</span> 동시에 공격"
+  },
+  "fighter": {
+    "branchName": "파이터",
+    "class": "Guard",
+    "trait": "적 1명 저지 가능"
+  },
+  "artsfghter": {
+    "branchName": "아츠 파이터",
+    "class": "Guard",
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입힘"
+  },
+  "instructor": {
+    "branchName": "교관",
+    "class": "Guard",
+    "trait": "<span class=\"keyword\">비교적 먼 곳의 적</span> 공격 가능, 자신이 저지하지 않은 적 공격 시 공격력이 120%로 증가"
+  },
+  "lord": {
+    "branchName": "로드",
+    "class": "Guard",
+    "trait": "<span class=\"keyword\">원거리 공격</span> 가능, 원거리 공격 시 공격력이 80%로 감소"
+  },
+  "sword": {
+    "branchName": "소드마스터",
+    "class": "Guard",
+    "trait": "일반 공격 시 대미지를 <span class=\"keyword\">2회</span> 입힘"
+  },
+  "musha": {
+    "branchName": "솔로블레이드",
+    "class": "Guard",
+    "trait": "아군의 치료를 받을 수 없으며, 적을 공격할 때마다 HP <span class=\"keyword\">70</span> 회복"
+  },
+  "fearless": {
+    "branchName": "드레드노트",
+    "class": "Guard",
+    "trait": "적 1명 저지 가능, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
+  },
+  "reaper": {
+    "branchName": "리퍼",
+    "class": "Guard",
+    "trait": "아군의 치료를 받을 수 없으며, 공격 시 <span class=\"keyword\">광역 대미지</span>를 입힘, 적을 공격할 때마다 HP <span class=\"keyword\">50</span> 회복, 최대 적용 수는 저지 가능 수와 동일"
+  },
+  "librator": {
+    "branchName": "해방자",
+    "class": "Guard",
+    "trait": "저지 가능 수 0, 공격을 진행하지 않으며, <span class=\"keyword\">40</span>초간 공격력이 최대 <span class=\"keyword\">+200%</span>까지 증가, 스킬 종료 후 공격력 초기화"
+  },
+  "protector": {
+    "branchName": "프로텍터",
+    "class": "Defender",
+    "trait": "적 3명 저지 가능, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
+  },
+  "guardian": {
+    "branchName": "가디언",
+    "class": "Defender",
+    "trait": "스킬로 아군 유닛 HP 회복"
+  },
+  "unyield": {
+    "branchName": "저거너트",
+    "class": "Defender",
+    "trait": "아군의 치료를 받을 수 <span class=\"keyword\">없음</span>"
+  },
+  "artsprotector": {
+    "branchName": "아츠 프로텍터",
+    "class": "Defender",
+    "trait": "스킬 발동 시 일반 공격이 마법 대미지를 입힘"
+  },
+  "duelist": {
+    "branchName": "결전자",
+    "class": "Defender",
+    "trait": "적을 저지하고 있을 때에만 SP 회복"
+  },
+  "fortress": {
+    "branchName": "포트리스",
+    "class": "Defender",
+    "trait": "적을 저지하고 있지 않을 때 <span class=\"keyword\">원거리 광역</span> 물리 대미지를 입힘"
+  },
+  "fastshot": {
+    "branchName": "명사수",
+    "class": "Sniper",
+    "trait": "공중 유닛 우선 공격, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
+  },
+  "closerange": {
+    "branchName": "헤비슈터",
+    "class": "Sniper",
+    "trait": "고정밀 근거리 사격 가능"
+  },
+  "aoesniper": {
+    "branchName": "포격사수",
+    "class": "Sniper",
+    "trait": "공격 시 <span class=\"keyword\">광역 물리 대미지</span>를 입힘"
+  },
+  "longrange": {
+    "branchName": "저격수",
+    "class": "Sniper",
+    "trait": "공격 범위 내 <span class=\"keyword\">방어력이 가장 낮은</span> 적을 우선 공격"
+  },
+  "reaperrange": {
+    "branchName": "산탄사수",
+    "class": "Sniper",
+    "trait": "공격 범위 내 <span class=\"keyword\">모든 적</span> 공격, 전방 첫 줄의 적에 대한 공격력이 150%로 증가"
+  },
+  "siegesniper": {
+    "branchName": "공성사수",
+    "class": "Sniper",
+    "trait": "무게 등급이 가장 높은 적을 우선 공격"
+  },
+  "bombarder": {
+    "branchName": "투척수",
+    "class": "Sniper",
+    "trait": "작은 범위 내 <span class=\"keyword\">지상</span> 적에게 물리 대미지를 <span class=\"keyword\">2회</span> 입히며(2회차부터는 여진으로써 대미지가 공격력의 절반으로 감소), <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
+  },
+  "corecaster": {
+    "branchName": "코어 캐스터",
+    "class": "Caster",
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입힘"
+  },
+  "splashcaster": {
+    "branchName": "스플래시 캐스터",
+    "class": "Caster",
+    "trait": "공격 시 <span class=\"keyword\">광역 마법 대미지</span>를 입힘"
+  },
+  "funnel": {
+    "branchName": "메카 캐스터",
+    "class": "Caster",
+    "trait": "<span class=\"keyword\">공중 유닛</span>을 조종해 적에게 <span class=\"keyword\">마법 대미지</span>를 입힘<br>같은 적을 연속으로 공격 시 대미지 증가 (최대로 오퍼레이터 공격력의 110%에 해당하는 대미지)"
+  },
+  "phalanx": {
+    "branchName": "진법 캐스터",
+    "class": "Caster",
+    "trait": "<span class=\"keyword\">공격을 진행하지 않으며</span>, 방어력과 마법 저항이 대폭 <span class=\"keyword\">증가</span>, 스킬 발동 시 공격 범위 내 모든 적에게 <span class=\"keyword\">광역 마법 대미지</span>를 입힘"
+  },
+  "mystic": {
+    "branchName": "미스틱 캐스터",
+    "class": "Caster",
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, 목표가 없으면 공격 에너지를 <span class=\"keyword\">저장</span>해 일제히 발사 (최대 3개)"
+  },
+  "chain": {
+    "branchName": "체인 캐스터",
+    "class": "Caster",
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, 공격이 <span class=\"keyword\">3</span>명의 적 사이에서 튕기며, 튕길 때마다 대미지가 15% 감소, 적을 일정 시간 <span class=\"skill-tooltip\">정지</span>시킴"
+  },
+  "blastcaster": {
+    "branchName": "블래스트 캐스터",
+    "class": "Caster",
+    "trait": "공격 시 <span class=\"keyword\">초원거리 광역 마법 대미지</span>를 입힘"
+  },
+  "physician": {
+    "branchName": "메딕",
+    "class": "Medic",
+    "trait": "아군 유닛의 HP 회복, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
+  },
+  "ringhealer": {
+    "branchName": "멀티 타겟 메딕",
+    "class": "Medic",
+    "trait": "동시에 3명의 HP 회복 가능"
+  },
+  "healer": {
+    "branchName": "테라피스트",
+    "class": "Medic",
+    "trait": "넓은 치료 범위 보유, 멀리 있는 목표 치료 시 치유량이 <span class=\"keyword\">80%</span>로 변경"
+  },
+  "wandermedic": {
+    "branchName": "방랑 메딕",
+    "class": "Medic",
+    "trait": "아군 유닛의 HP 회복, 동시에 공격력의 50%에 해당하는 <span class=\"elemental-damage\">원소 손상</span> 회복 (부상이 없는 아군 유닛의 <span class=\"elemental-damage\">원소 손상</span>도 회복 가능)"
+  },
+  "slower": {
+    "branchName": "감속자",
+    "class": "Supporter",
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, 적에게 일시적인 <span class=\"skill-tooltip\">정지</span> 효과 부여"
+  },
+  "underminer": {
+    "branchName": "약화자",
+    "class": "Supporter",
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입힘"
+  },
+  "bard": {
+    "branchName": "음유시인",
+    "class": "Supporter",
+    "trait": "공격을 진행하지 않으며, 범위 내 모든 아군의 <span class=\"keyword\">HP</span>를 초당 자신 공격력의 10%만큼 회복, 자신은 <span class=\"skill-tooltip\">격려</span>의 영향을 받지 않음, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
+  },
+  "blessing": {
+    "branchName": "비호자",
+    "class": "Supporter",
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히며, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75%에 해당)"
+  },
+  "summoner": {
+    "branchName": "소환사",
+    "class": "Supporter",
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입힘<br><span class=\"keyword\">소환물</span> 사용 가능"
+  },
+  "craftsman": {
+    "branchName": "기능공",
+    "class": "Supporter",
+    "trait": "적 2명 저지 가능, &lt;지원 장치&gt;를 사용해 작전 지원"
+  },
+  "executor": {
+    "branchName": "처형자",
+    "class": "Specialist",
+    "trait": "공격을 진행하지 않으며, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
+  },
+  "pusher": {
+    "branchName": "푸쉬마스터",
+    "class": "Specialist",
+    "trait": "저지하고 있는 <span class=\"keyword\">모든 적</span> 동시에 공격<br>고지대 위치에 배치 가능"
+  },
+  "stalker": {
+    "branchName": "매복자",
+    "class": "Specialist",
+    "trait": "공격 범위 내 <span class=\"keyword\">모든 적</span> 동시 공격<br>50%의 물리 및 마법 회피 보유, <span class=\"keyword\">적의 공격</span>을 쉽게 받지 않음"
+  },
+  "hookmaster": {
+    "branchName": "후크마스터",
+    "class": "Specialist",
+    "trait": "스킬을 통해 적의 위치를 <span class=\"keyword\">강제 이동</span><br>고지대 위치에 배치 가능"
+  },
+  "geek": {
+    "branchName": "기인",
+    "class": "Specialist",
+    "trait": "자신의 HP가 지속해서 감소"
+  },
+  "merchant": {
+    "branchName": "상인",
+    "class": "Specialist",
+    "trait": "재배치 시간 <span class=\"keyword\">감소</span>, 퇴각 시 <span class=\"keyword\">배치 코스트</span>를 반환하지 않으며, 3초마다 배치 코스트 <span class=\"keyword\">3</span> 소모 (부족 시 자동 퇴각)"
+  },
+  "traper": {
+    "branchName": "함정술사",
+    "class": "Specialist",
+    "trait": "함정을 사용해 작전 지원, <span class=\"keyword\">적이 있는</span> 칸에 함정 배치 불가"
+  },
+  "dollkeeper": {
+    "branchName": "인형사",
+    "class": "Specialist",
+    "trait": "치명상을 입어도 퇴각하지 않고, [대역]을 교체 투입하며(저지 가능 수 0), 20초 후 다시 본체로 교체"
+  },
+  "incantationmedic": {
+    "branchName": "주술 메딕",
+    "class": "Medic",
+    "trait": "공격 시 마법 대미지를 입히며, 적을 공격할 때마다 공격 범위 내 아군 1명의 HP를 대미지의 50%만큼 회복"
+  },
+  "agent": {
+    "branchName": "에이전트",
+    "class": "Vanguard",
+    "trait": "재배치 시간 <span class=\"keyword\">감소</span>, 원거리 공격 가능"
+  },
+  "shotprotector": {
+    "branchName": "센트리 프로텍터",
+    "class": "Defender",
+    "trait": "적 3명 저지 가능, 원거리 공격 가능"
+  },
+  "chainhealer": {
+    "branchName": "체인 메딕",
+    "class": "Medic",
+    "trait": "아군 치료, 치료 효과가 <span class=\"keyword\">3</span>명의 아군 사이에서 튕기며, 튕길 때마다 치유량 25% 감소"
+  },
+  "crusher": {
+    "branchName": "대검사",
+    "class": "Guard",
+    "trait": "저지하고 있는 <span class=\"keyword\">모든 적</span> 동시에 공격"
+  },
+  "ritualist": {
+    "branchName": "의식술사",
+    "class": "Supporter",
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, <span class=\"keyword\">원소 손상</span>을 입힐 수 있으며, <span class=\"keyword\">배치 인원수</span> 제약을 받지 않지만, 재배치 시간이 매우 김"
+  },
+  "hunter": {
+    "branchName": "사냥꾼",
+    "class": "Sniper",
+    "trait": "공격 시 탄약을 소모하며 공격력이 <span class=\"keyword\">120%</span>까지 증가, 비공격 상태에서 서서히 탄약 장전 (최대 8발)"
+  },
+  "primcaster": {
+    "branchName": "프라이멀 캐스터",
+    "class": "Caster",
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히며, <span class=\"keyword\">원소 대미지</span>를 입힐 수 있음"
+  },
+  "loopshooter": {
+    "branchName": "루프슈터",
+    "class": "Sniper",
+    "trait": "<span class=\"keyword\">부메랑 투사체</span>를 보유한 경우에만 공격 가능 (투사체 회수 필요)"
+  },
+  "hammer": {
+    "branchName": "어스셰이커",
+    "class": "Guard",
+    "trait": "공격 시 목표 주변의 다른 적에게 공격력의 <span class=\"keyword\">50%</span>에 해당하는 <span class=\"keyword\">광역</span> 물리 대미지를 입힘"
+  },
+  "alchemist": {
+    "branchName": "연금술사",
+    "class": "Specialist",
+    "trait": "<span class=\"keyword\">연금 유닛</span>을 투척해 작전 지원"
+  },
+  "primprotector": {
+    "branchName": "프라이멀 프로텍터",
+    "class": "Defender",
+    "trait": "적 3명 저지 가능, 공격 시 원소 손상을 입힘"
+  },
+  "skywalker": {
+    "branchName": "스카이레인저",
+    "class": "Specialist",
+    "trait": "<span class=\"skill-tooltip\">이륙</span> 후 비행하는 적 2명 저지 가능"
+  },
+  "soulcaster": {
+    "branchName": "셰이퍼 캐스터",
+    "class": "Caster",
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히며, 적 처치 시 <span class=\"keyword\">소환물</span> 생성, <span class=\"keyword\">소환물</span>이 저지한 적 공격 가능"
+  },
+  "primguard": {
+    "branchName": "프라이멀 가드",
+    "class": "Guard",
+    "trait": "적 2명 저지 가능, 공격 시 <span class=\"keyword\">원소 대미지</span>를 입힘"
+  },
+  "counsellor": {
+    "branchName": "策士",
+    "class": "Vanguard",
+    "trait": "能够阻挡两个敌人，可以支援待部署区的我方单位"
+  },
+  "mercenary": {
+    "branchName": "佣兵",
+    "class": "Guard",
+    "trait": "可消耗部署费用来强化作战能力"
+  },
+  "skybreaker": {
+    "branchName": "裂空炮手",
+    "class": "Sniper",
+    "trait": "部署后<span class=\"skill-tooltip\">起飞</span>，<span class=\"skill-tooltip\">起飞</span>后只攻击空中敌人；技能开启时降落且攻击造成<span class=\"keyword\">群体物理伤害</span>"
+  }
+}

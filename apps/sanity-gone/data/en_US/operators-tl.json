@@ -1,0 +1,178 @@
+{
+  "char_4117_ray": {
+    "charId": "char_4117_ray",
+    "name": "Ray",
+    "itemUsage": "Sniper Laura, silently looks up at the window.",
+    "itemDesc": "She was pulled up from the mine, she walked a long way, and she is still in pursuit.",
+    "itemObtainApproach": "Recruitment Interview",
+    "description": "When attacking, you will consume bullets and your attack power increases by <@ba.kw>120%</>. When not attacking, you will slowly reload ammo (up to 8 bullets)"
+  },
+  "char_4116_blkkgt": {
+    "charId": "char_4116_blkkgt",
+    "name": "Degenbrecher",
+    "itemUsage": "Shield Operator, Lan, always stands behind you.",
+    "itemDesc": "She won't actively say or do anything, but you will know what to say and what to do.",
+    "itemObtainApproach": "Recruit Investigation",
+    "description": "Basic attack deals damage <@ba.kw>twice</>  assistant\n普通攻击在短时间内连续发动，导致敌人受到伤害，这是一种高效的战斗方式\n\nStandard attacks deal two instances of damage in a short period, causing the enemy to take damage efficiently. This is an efficient way to fight."
+  },
+  "char_245_cello": {
+    "charId": "char_245_cello",
+    "name": "Virtuosa",
+    "itemUsage": "Operator Zoyd visits Rodia and waits for the performance to begin.",
+    "itemDesc": "Whose song is it that sings, and whose heart's melody resounds?",
+    "itemObtainApproach": "Recruitment investigation",
+    "description": "Causes Magic Damage, can cause Elemental Damage"
+  },
+  "char_4098_vvana": {
+    "charId": "char_4098_vvana",
+    "name": "Viviana",
+    "itemUsage": "Vanguard operator Weiss, also known as \"Candle Knight\".",
+    "itemDesc": "Also a knight, also a poet.",
+    "itemObtainApproach": "Recruiting Investigation",
+    "description": "Deals <@ba.kw>Magic Damage</> with attack"
+  },
+  "char_4011_lessng": {
+    "charId": "char_4011_lessng",
+    "name": "Lessing",
+    "itemUsage": "Guard unit Zhixing stands silently, muzzled.",
+    "itemDesc": "He contained his words in the blade, he guards the value of the ordinary.",
+    "itemObtainApproach": "Activity rewards",
+    "description": "Can block an enemy\n"
+  },
+  "char_4088_hodrer": {
+    "charId": "char_4088_hodrer",
+    "name": "Hoederer",
+    "itemUsage": "Sakazaki Mercenary Heidrer walks towards you donning war.",
+    "itemDesc": "This is not his choice, Sazac has few choices.",
+    "itemObtainApproach": "Recruiting Investigation",
+    "description": "Simultaneously attacking all enemies behind barriers"
+  },
+  "char_1034_jesca2": {
+    "charId": "char_1034_jesca2",
+    "name": "Jessica the Liberated",
+    "itemUsage": "Jessica, the reloaded operator, is now serving as a peace officer in a small explorer's settlement.",
+    "itemDesc": "She returned from a battlefield filled with flames, stopping to rest by a campfire.",
+    "itemObtainApproach": "Recruitment survey",
+    "description": "Can block up to three enemies and can perform ranged attacks"
+  },
+  "char_2012_typhon": {
+    "charId": "char_2012_typhon",
+    "name": "Typhon",
+    "itemUsage": "From Sam's collaborator, Prosper, familiar with the rules of this frozen land.",
+    "itemDesc": "At least she demands to become a hunter rather than prey.",
+    "itemObtainApproach": "Recruitment investigation",
+    "description": "Attacks the heaviest enemy first"
+  },
+  "char_4081_warmy": {
+    "charId": "char_4081_warmy",
+    "name": "Warmy",
+    "itemUsage": "\"Six-star Chef\" Wenmi accompanies you to taste flavors of life.",
+    "itemDesc": "A small pot lid cannot block the warmth that drifts over, nor can gold buy a genuine smile from their child's heart.",
+    "itemObtainApproach": "Recruit Investigation",
+    "description": "Deals Magic Damage and can cause Elemental Damage"
+  },
+  "char_194_leto": {
+    "charId": "char_194_leto",
+    "name": "Лето",
+    "itemUsage": "\"Ura-!\"",
+    "itemDesc": "Excels at getting along with locals and may even \"get along\" directly.",
+    "itemObtainApproach": "Recruit Investigation",
+    "description": "Can perform <@ba.kw>ranged attack</>, but ATK is reduced to 80%"
+  },
+  "char_4114_harold": {
+    "charId": "char_4114_harold",
+    "name": "Harold",
+    "itemUsage": "Medic hero Harold, even on the battlefield doesn't have a good shape.",
+    "itemDesc": "If things require him to take command, then the situation must be dire.",
+    "itemObtainApproach": "Activity Gain",
+    "description": "Restores the HP of allied units and recovers <@ba.dt.element>Elemental Damage</> by 50% of ATK (can recover <@ba.dt.element>Elemental Damage</> of unhurt allied units)"
+  },
+  "char_4109_baslin": {
+    "charId": "char_4109_baslin",
+    "name": "Bassline",
+    "itemUsage": "Recharge Operator L'cie is here at the command of the Queen.",
+    "itemDesc": "Special envoy of the palace etiquette officer Mi Xia'er is stationed on Rod Island, considering her special identity, frequent comings and goings, urgent information, and the itinerary must be kept confidential.",
+    "itemObtainApproach": "Recruitment Visit",
+    "description": "The skill can restore HP of allied units"
+  },
+  "char_499_kaitou": {
+    "charId": "char_499_kaitou",
+    "name": "Diamante",
+    "itemUsage": "The Gem Appraiser Glint, doesn't have much interest in most things before him.",
+    "itemDesc": "If he likes something, he will tell you openly. The same goes for him liking your situation.",
+    "itemObtainApproach": "Bill of trading\n",
+    "description": "Deals magic damage that can cause elemental damage"
+  },
+  "char_494_vendla": {
+    "charId": "char_494_vendla",
+    "name": "Vendela",
+    "itemUsage": "In the war, surviving florist Petal stays trying to rebuild her own small greenhouse.",
+    "itemDesc": "If you happen to come across her napping in the brilliant afternoon, don't make a sound, why not close your eyes and feel the sunshine with her.",
+    "itemObtainApproach": "Recruit Investigation",
+    "description": "Causes magical damage, and heals the HP of one allied member by 50% of the damage when attacking enemies in the range."
+  },
+  "char_4110_delphn": {
+    "charId": "char_4110_delphn",
+    "name": "Delphine",
+    "itemUsage": "Victoria Deiyn, crossing the storm and thunderbolt.",
+    "itemDesc": "We keep forging ahead, facing challenges and going against the wind, just to leave behind the shadows of yesterday and explore a new future.",
+    "itemObtainApproach": "Activity rewards",
+    "description": "Causes <@ba.kw>Magic Damage</> with attacks, if there is no target found, the attack energy can be stored and fired all at once (up to 3)"
+  },
+  "char_4105_almond": {
+    "charId": "char_4105_almond",
+    "name": "Almond",
+    "itemUsage": "Iron engineer Xiangni is confident in her project.",
+    "itemDesc": "Given enough budget, I will be able to provide her with enough funding.",
+    "itemObtainApproach": "Recruiting Investigation",
+    "description": "The skill can make enemies experience displacement\\nCan be placed at a distant location"
+  },
+  "char_4104_coldst": {
+    "charId": "char_4104_coldst",
+    "name": "Coldshot",
+    "itemUsage": "From the wastelands, the drifter Cherunna, with a gentle smile hiding her lively personality.",
+    "itemDesc": "In her life, she has lost more than she has gained, but she hates less than she loves.",
+    "itemObtainApproach": "Activity rewards",
+    "description": "When attacking, ammo is consumed and attack power is increased to 120%, and when not attacking, ammo will be slowly reloaded (up to 8 rounds)"
+  },
+  "char_4102_threye": {
+    "charId": "char_4102_threye",
+    "name": "Valarqvin",
+    "itemUsage": "Sasquatch Cyclops glares, emerging from the frozen cave.",
+    "itemDesc": "She sees the end, she seeks the cause.",
+    "itemObtainApproach": "Obtain strategic integration",
+    "description": "Deals Magic Damage and can cause Elemental Damage"
+  },
+  "char_341_sntlla": {
+    "charId": "char_341_sntlla",
+    "name": "Santalla",
+    "itemUsage": "Born under the cold birch tree snow, Xianshu Sufan is trying to accept a new life.",
+    "itemDesc": "She only looks cold, and won't freeze your hands.",
+    "itemObtainApproach": "Recruitment Investigation",
+    "description": "Causes <@ba.kw>Area of Effect Magic Damage</>\n"
+  },
+  "char_4100_caper": {
+    "charId": "char_4100_caper",
+    "name": "Caper",
+    "itemUsage": "Sniping Operator Yuyu, bounces as she walks, jumping here and there.",
+    "itemDesc": "She is inviting you to join her game, promise her, you won't be disappointed.",
+    "itemObtainApproach": "Bill of exchange",
+    "description": "Holding <@ba.kw>Boomerang Projectile</> allows you to attack (projectiles need time to reload)"
+  },
+  "char_4107_vrdant": {
+    "charId": "char_4107_vrdant",
+    "name": "Verdant",
+    "itemUsage": "From Victoria's plant hunter, Viburnum, comes a cool exterior with a warm nature hidden inside.",
+    "itemDesc": "Do not touch his \"scarecrow\", it will really jump up and bite your finger.",
+    "itemObtainApproach": "Recruitment Interview",
+    "description": "When taking fatal damage, switch to a <Decoy> fighting mode (the number of decoys is 0), lasting for 20 seconds before replacing the <Decoy> again"
+  },
+  "char_4091_ulika": {
+    "charId": "char_4091_ulika",
+    "name": "U-Official",
+    "itemUsage": "\"The Ultimate Multitalented Female Idol\" U-Official, who recently completed a daring leap from host to broadcaster.",
+    "itemDesc": "Recently, I have a deep understanding of anti-tracking techniques, but I should not use them anymore...right?",
+    "itemObtainApproach": "Activity rewards",
+    "description": "Doesn't attack, continuously restores the HP of all allies in range (recovers 10% of ATK per second), is not affected by <$Inspire Inspiring>Inspiration</>, and is not restricted by <@deployCount>Deployment Number</>. However, deployment time is extremely long"
+  }
+}

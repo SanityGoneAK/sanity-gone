@@ -1,7 +1,0 @@
-{
-	"typescript.tsdk": "node_modules\\typescript\\lib",
-	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
-	"[astro]": {
-		"editor.defaultFormatter": "astro-build.astro-vscode"
-	}
-}

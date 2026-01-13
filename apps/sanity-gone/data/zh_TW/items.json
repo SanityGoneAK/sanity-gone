@@ -1,0 +1,5210 @@
+{
+  "2001": {
+    "itemId": "2001",
+    "name": "基礎作戰記錄",
+    "iconId": "sprite_exp_card_t1",
+    "description": "在惡劣環境下的每次行動都可能有人會丟掉性命。如果做好了充足的準備，或許也能多拯救一些生命。\n存儲了數場戰鬥的錄影。",
+    "usage": "記錄了作戰錄影的存儲裝置，可以小幅增加幹員的經驗值。",
+    "rarity": 2
+  },
+  "2002": {
+    "itemId": "2002",
+    "name": "初級作戰記錄",
+    "iconId": "sprite_exp_card_t2",
+    "description": "在惡劣環境下的每次行動都可能有人會丟掉性命。如果做好了充足的準備，或許也能多拯救一些生命。\n存儲了多場戰鬥的錄影與詳細資料分析資料。附送了三小時的花絮與訪談。",
+    "usage": "記錄了作戰錄影的存儲裝置，可以中幅增加幹員的經驗值。",
+    "rarity": 3
+  },
+  "2003": {
+    "itemId": "2003",
+    "name": "中級作戰記錄",
+    "iconId": "sprite_exp_card_t3",
+    "description": "在惡劣環境下的每次行動都可能有人會丟掉性命。如果做好了充足的準備，或許也能多拯救一些生命。\n存儲了多個錄影集錦，夾帶了一張錄影人的簽名版。",
+    "usage": "記錄了作戰錄影的存儲裝置，可以大幅增加幹員的經驗值。",
+    "rarity": 4
+  },
+  "2004": {
+    "itemId": "2004",
+    "name": "高級作戰記錄",
+    "iconId": "sprite_exp_card_t4",
+    "description": "在惡劣環境下的每次行動都可能有人會丟掉性命。如果做好了充足的準備，或許也能多拯救一些生命。\n追加了總集篇。附帶高清版、高清重製版、威力加強版、導演剪輯版、年度黃金版......",
+    "usage": "記錄了作戰錄影的存儲裝置，可以極大增加幹員的經驗值。",
+    "rarity": 5
+  },
+  "3211": {
+    "itemId": "3211",
+    "name": "先鋒晶片",
+    "iconId": "MTL_ASC_PIO1",
+    "description": "透過努力特訓得來的素材，似乎能對資歷尚淺的先鋒有特別的幫助。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片，有助於滿足先鋒幹員在晉升時的強化需要。",
+    "rarity": 3
+  },
+  "3212": {
+    "itemId": "3212",
+    "name": "先鋒晶片組",
+    "iconId": "MTL_ASC_PIO2",
+    "description": "透過努力特訓得來的素材，似乎能對日漸成熟的先鋒幹員有特別的指導。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片組，有助於滿足先鋒幹員在晉升時的強化需要。",
+    "rarity": 4
+  },
+  "3213": {
+    "itemId": "3213",
+    "name": "先鋒雙晶片",
+    "iconId": "MTL_ASC_PIO3",
+    "description": "透過努力特訓得來的素材，似乎能對資歷頗深的先鋒幹員有特別的提升。",
+    "usage": "透過記錄特殊訓練獲得的成對存儲晶片，有助於滿足先鋒幹員在晉升時的強化需要。",
+    "rarity": 5
+  },
+  "3221": {
+    "itemId": "3221",
+    "name": "近衛晶片",
+    "iconId": "MTL_ASC_GRD1",
+    "description": "透過努力特訓得來的素材，似乎能對資歷尚淺的近衛幹員有特別的幫助。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片，有助於滿足近衛幹員在晉升時的強化需要。",
+    "rarity": 3
+  },
+  "3222": {
+    "itemId": "3222",
+    "name": "近衛晶片組",
+    "iconId": "MTL_ASC_GRD2",
+    "description": "透過努力特訓得來的素材，似乎能對日漸成熟的近衛幹員有特別的指導。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片組，有助於滿足近衛幹員在晉升時的強化需要。",
+    "rarity": 4
+  },
+  "3223": {
+    "itemId": "3223",
+    "name": "近衛雙晶片",
+    "iconId": "MTL_ASC_GRD3",
+    "description": "透過努力特訓得來的素材，似乎能對資歷頗深的近衛幹員有特別的提升。",
+    "usage": "透過記錄特殊訓練獲得的成對存儲晶片，有助於滿足近衛幹員在晉升時的強化需要。",
+    "rarity": 5
+  },
+  "3231": {
+    "itemId": "3231",
+    "name": "重裝晶片",
+    "iconId": "MTL_ASC_TNK1",
+    "description": "透過努力特訓得來的素材，似乎能對資歷尚淺的重裝幹員有特別的幫助。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片，有助於滿足重裝幹員在晉升時的強化需要。",
+    "rarity": 3
+  },
+  "3232": {
+    "itemId": "3232",
+    "name": "重裝晶片組",
+    "iconId": "MTL_ASC_TNK2",
+    "description": "透過努力特訓得來的素材，似乎能對日漸成熟的重裝幹員有特別的指導。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片組，有助於滿足重裝幹員在晉升時的強化需要。",
+    "rarity": 4
+  },
+  "3233": {
+    "itemId": "3233",
+    "name": "重裝雙晶片",
+    "iconId": "MTL_ASC_TNK3",
+    "description": "透過努力特訓得來的素材，似乎能對資歷頗深的重裝幹員有特別的提升。",
+    "usage": "透過記錄特殊訓練獲得的成對存儲晶片，有助於滿足重裝幹員在晉升時的強化需要。",
+    "rarity": 5
+  },
+  "3241": {
+    "itemId": "3241",
+    "name": "狙擊晶片",
+    "iconId": "MTL_ASC_SNP1",
+    "description": "透過努力特訓得來的素材，似乎能對資歷尚淺的狙擊幹員有特別的幫助。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片，有助於滿足狙擊幹員在晉升時的強化需要。",
+    "rarity": 3
+  },
+  "3242": {
+    "itemId": "3242",
+    "name": "狙擊晶片組",
+    "iconId": "MTL_ASC_SNP2",
+    "description": "透過努力特訓得來的素材，似乎能對日漸成熟的狙擊幹員有特別的指導。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片組，有助於滿足狙擊幹員在晉升時的強化需要。",
+    "rarity": 4
+  },
+  "3243": {
+    "itemId": "3243",
+    "name": "狙擊雙晶片",
+    "iconId": "MTL_ASC_SNP3",
+    "description": "透過努力特訓得來的素材，似乎能對資歷頗深的狙擊幹員有特別的提升。",
+    "usage": "透過記錄特殊訓練獲得的成對存儲晶片，有助於滿足狙擊幹員在晉升時的強化需要。",
+    "rarity": 5
+  },
+  "3251": {
+    "itemId": "3251",
+    "name": "術師晶片",
+    "iconId": "MTL_ASC_CST1",
+    "description": "透過努力特訓得來的素材，似乎能對資歷尚淺的術師幹員有特別的幫助。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片，有助於滿足術師幹員在晉升時的強化需要。",
+    "rarity": 3
+  },
+  "3252": {
+    "itemId": "3252",
+    "name": "術師晶片組",
+    "iconId": "MTL_ASC_CST2",
+    "description": "透過努力特訓得來的素材，似乎能對日漸成熟的術師幹員有特別的指導。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片組，有助於滿足術師幹員在晉升時的強化需要。",
+    "rarity": 4
+  },
+  "3253": {
+    "itemId": "3253",
+    "name": "術師雙晶片",
+    "iconId": "MTL_ASC_CST3",
+    "description": "透過努力特訓得來的素材，似乎能對資歷頗深的術師幹員有特別的提升。",
+    "usage": "透過記錄特殊訓練獲得的成對存儲晶片，有助於滿足術師幹員在晉升時的強化需要。",
+    "rarity": 5
+  },
+  "3261": {
+    "itemId": "3261",
+    "name": "醫療晶片",
+    "iconId": "MTL_ASC_MED1",
+    "description": "透過努力特訓得來的素材，似乎能對資歷尚淺的醫療幹員有特別的幫助。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片，有助於滿足醫療幹員在晉升時的強化需要。",
+    "rarity": 3
+  },
+  "3262": {
+    "itemId": "3262",
+    "name": "醫療晶片組",
+    "iconId": "MTL_ASC_MED2",
+    "description": "透過努力特訓得來的素材，似乎能對日漸成熟的醫療幹員有特別的指導。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片組，有助於滿足醫療幹員在晉升時的強化需要。",
+    "rarity": 4
+  },
+  "3263": {
+    "itemId": "3263",
+    "name": "醫療雙晶片",
+    "iconId": "MTL_ASC_MED3",
+    "description": "透過努力特訓得來的素材，似乎能對資歷頗深的醫療幹員有特別的提升。",
+    "usage": "透過記錄特殊訓練獲得的成對存儲晶片，有助於滿足醫療幹員在晉升時的強化需要。",
+    "rarity": 5
+  },
+  "3271": {
+    "itemId": "3271",
+    "name": "輔助晶片",
+    "iconId": "MTL_ASC_SUP1",
+    "description": "透過努力特訓得來的素材，似乎能對資歷尚淺的輔助幹員有特別的幫助。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片，有助於滿足輔助幹員在晉升時的強化需要。",
+    "rarity": 3
+  },
+  "3272": {
+    "itemId": "3272",
+    "name": "輔助晶片組",
+    "iconId": "MTL_ASC_SUP2",
+    "description": "透過努力特訓得來的素材，似乎能對日漸成熟的輔助幹員有特別的指導。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片組，有助於滿足輔助幹員在晉升時的強化需要。",
+    "rarity": 4
+  },
+  "3273": {
+    "itemId": "3273",
+    "name": "輔助雙晶片",
+    "iconId": "MTL_ASC_SUP3",
+    "description": "透過努力特訓得來的素材，似乎能對資歷頗深的輔助幹員有特別的提升。",
+    "usage": "透過記錄特殊訓練獲得的成對存儲晶片，有助於滿足輔助幹員在晉升時的強化需要。",
+    "rarity": 5
+  },
+  "3281": {
+    "itemId": "3281",
+    "name": "特種晶片",
+    "iconId": "MTL_ASC_SPC1",
+    "description": "透過努力特訓得來的素材，似乎能對資歷尚淺的特種幹員有特別的幫助。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片，有助於滿足特種幹員在晉升時的強化需要。",
+    "rarity": 3
+  },
+  "3282": {
+    "itemId": "3282",
+    "name": "特種晶片組",
+    "iconId": "MTL_ASC_SPC2",
+    "description": "透過努力特訓得來的素材，似乎能對日漸成熟的特種幹員有特別的指導。",
+    "usage": "透過記錄特殊訓練獲得的存儲晶片組，有助於滿足特種幹員在晉升時的強化需要。",
+    "rarity": 4
+  },
+  "3283": {
+    "itemId": "3283",
+    "name": "特種雙晶片",
+    "iconId": "MTL_ASC_SPC3",
+    "description": "透過努力特訓得來的素材，似乎能對資歷頗深的特種幹員有特別的提升。",
+    "usage": "透過記錄特殊訓練獲得的成對存儲晶片，有助於滿足特種幹員在晉升時的強化需要。",
+    "rarity": 5
+  },
+  "3301": {
+    "itemId": "3301",
+    "name": "技巧概要·卷1",
+    "iconId": "MTL_SKILL1",
+    "description": "記錄著幹員們所需的入門技藝，普通人只要經過簡略學習就能完全掌握。",
+    "usage": "記載了入門技巧的書籍，用於升級幹員技能。",
+    "rarity": 2
+  },
+  "3302": {
+    "itemId": "3302",
+    "name": "技巧概要·卷2",
+    "iconId": "MTL_SKILL2",
+    "description": "記錄著幹員們所需的進階技藝，需要耗費一定時間研讀並付諸實踐才能扎實掌握。",
+    "usage": "記載了進階技巧的書籍，用於升級幹員技能。",
+    "rarity": 3
+  },
+  "3303": {
+    "itemId": "3303",
+    "name": "技巧概要·卷3",
+    "iconId": "MTL_SKILL3",
+    "description": "記錄著幹員們所需的專家級技藝，需要特定領域長久的經驗累積才能一窺其中的奧妙。",
+    "usage": "記載了專家技巧的書籍，用於升級幹員技能。",
+    "rarity": 4
+  },
+  "4001": {
+    "itemId": "4001",
+    "name": "龍門幣",
+    "iconId": "GOLD",
+    "description": "經濟危機發生後，經濟的衰退與政權之間的對立讓貿易參與者們舉步維艱。龍門幣的流通使商業復興成為可能。",
+    "usage": "由龍門發行的貨幣，用途廣泛。",
+    "rarity": 4
+  },
+  "30011": {
+    "itemId": "30011",
+    "name": "源岩",
+    "iconId": "MTL_SL_G1",
+    "description": "富含有機物，常見於源石揮發殆盡後的地區。相對源石來說是較為容易採集的材料。",
+    "usage": "從地表開採出的岩石，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 1
+  },
+  "30012": {
+    "itemId": "30012",
+    "name": "固源岩",
+    "iconId": "MTL_SL_G2",
+    "description": "內含有密集的微孔，常作為源石氣體分解物的吸附劑。多用於防護夾層。",
+    "usage": "從地表開採出的岩石固塊，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 2
+  },
+  "30013": {
+    "itemId": "30013",
+    "name": "固源岩組",
+    "iconId": "MTL_SL_G3",
+    "description": "固源岩的壓縮定型產物，可自然形成。易碎，隨著工業實力的提升，採集到更加完整的固源岩組已不成問題。只是在分類存放時容易和其它用途的石料搞混。",
+    "usage": "從地表開採出的岩石固塊組，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 3
+  },
+  "30014": {
+    "itemId": "30014",
+    "name": "提純源岩",
+    "iconId": "MTL_SL_G4",
+    "description": "高度提純後的源岩展現出了不同於原料的型態，其工藝消耗與提純成本也急劇上升。無論是誰，看著規則的切割面都會不禁發出感慨吧。這就是工業與自然結合的魅力。",
+    "usage": "從地表開採出的岩石固塊組提純出的物質，可用於多種強化場合，也常作為製作聚合劑的原料之一。",
+    "rarity": 4
+  },
+  "30021": {
+    "itemId": "30021",
+    "name": "代糖",
+    "iconId": "MTL_SL_STRG1",
+    "description": "有著微弱的甜味，也許可以吃。同時其溶液也常用於化工用途。",
+    "usage": "機械化製作的廉價天然糖替代產物，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 1
+  },
+  "30022": {
+    "itemId": "30022",
+    "name": "糖",
+    "iconId": "MTL_SL_STRG2",
+    "description": "使用自然原材製作的稍顯貴重的糖料。啊啊，這個味道......會帶來不錯的好心情。不是用來當零食吃的。",
+    "usage": "機械化製作的少量糖塊，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 2
+  },
+  "30023": {
+    "itemId": "30023",
+    "name": "糖組",
+    "iconId": "MTL_SL_STRG3",
+    "description": "飽含能量、廣受歡迎的糖塊組合包。在被加工成化工材料之前，份量就總是有所減少。流水線上的員工們似乎脫不了干係。",
+    "usage": "機械化製作的中等量糖塊，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 3
+  },
+  "30024": {
+    "itemId": "30024",
+    "name": "糖聚塊",
+    "iconId": "MTL_SL_STRG4",
+    "description": "充滿誘惑力的精加工糖塊堆，通常用於製備藥劑。嚴禁在加工前偷吃！這不是一般的食品，也不會作為食品售賣！不會！",
+    "usage": "機械化製作的大量糖塊，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 4
+  },
+  "30031": {
+    "itemId": "30031",
+    "name": "酯原料",
+    "iconId": "MTL_SL_RUSH1",
+    "description": "近代工業中至關重要的材料之一，許多現代產品的誕生都歸功於它的出現。當然了，這只是原料，幾乎派不上什麼大用場。",
+    "usage": "工業製造所需的酯原料，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 1
+  },
+  "30032": {
+    "itemId": "30032",
+    "name": "聚酸酯",
+    "iconId": "MTL_SL_RUSH2",
+    "description": "雖然強度上還略有不足，但已經可以用來製作我們所需要的部分基礎物件。同時是一些緩釋藥物中的常用成分。",
+    "usage": "工業製造所需的零散聚酸酯，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 2
+  },
+  "30033": {
+    "itemId": "30033",
+    "name": "聚酸酯組",
+    "iconId": "MTL_SL_RUSH3",
+    "description": "進一步加工後的材料，符合通用標準，能夠滿足市面上絕大多數的需求。可以用於加工一些特殊材料。",
+    "usage": "工業製造所需的一組聚酸酯，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 3
+  },
+  "30034": {
+    "itemId": "30034",
+    "name": "聚酸酯塊",
+    "iconId": "MTL_SL_RUSH4",
+    "description": "精煉提純後的材料。作為商品，主要面向的客戶是對原材料有極高要求的組織和科研機構。也許會成為新一代材料的試金石也說不定哦。",
+    "usage": "工業製造所需的成塊聚酸酯，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 4
+  },
+  "30041": {
+    "itemId": "30041",
+    "name": "異鐵碎片",
+    "iconId": "MTL_SL_IRON1",
+    "description": "大規模金屬原料加工的副產物，因其可塑性強、難以被氧化的特性，常被用於材料金屬熔煉與階段性再處理。",
+    "usage": "普普通通的工業材料。可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 1
+  },
+  "30042": {
+    "itemId": "30042",
+    "name": "異鐵",
+    "iconId": "MTL_SL_IRON2",
+    "description": "在少數惰化流程中，異鐵碎片偶爾會產生相變，聚合為異鐵。一般認為達到此量級的異鐵產物才是異鐵較為穩定的形態。",
+    "usage": "罕見的工業材料。可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 2
+  },
+  "30043": {
+    "itemId": "30043",
+    "name": "異鐵組",
+    "iconId": "MTL_SL_IRON3",
+    "description": "加工過程中，多塊異鐵在極少數非人為因素影響下，偶然產生的異鐵組合，硬度下降，純度進一步上升。",
+    "usage": "珍貴的工業材料。可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 3
+  },
+  "30044": {
+    "itemId": "30044",
+    "name": "異鐵塊",
+    "iconId": "MTL_SL_IRON4",
+    "description": "在極為苛刻的條件下，由多套異鐵組熔鑄成型的異鐵塊。已知異鐵材料中最為穩定也最為稀少的形式，作為原材料，足以打破現有製品運用領域的疆界。",
+    "usage": "價值高昂的工業材料。可用於多種強化場合，也常作為製作聚合劑的原料之一。",
+    "rarity": 4
+  },
+  "30051": {
+    "itemId": "30051",
+    "name": "雙酮",
+    "iconId": "MTL_SL_KETONE1",
+    "description": "極少量的非單酮製劑，透過再處理後，工程幹員將藉由其發生的化合反應轉變過程中的固化現象，來黏結其它穩定結構。",
+    "usage": "極少量的工業用有機化合物。可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 1
+  },
+  "30052": {
+    "itemId": "30052",
+    "name": "酮凝集",
+    "iconId": "MTL_SL_KETONE2",
+    "description": "經過特殊處理後產出的少量多態酮製劑，易於閉合的分子構造能將原本繁雜的處理工藝簡化為單純的化學反應，當然，也需要一定的技術支援。",
+    "usage": "少量的工業用有機化合物。可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 2
+  },
+  "30053": {
+    "itemId": "30053",
+    "name": "酮凝集組",
+    "iconId": "MTL_SL_KETONE3",
+    "description": "進一步脫烴處理後得到的中等量酮製劑。製劑接觸空氣後易與空氣中的一些非氧分子發生反應。所以在處理過程中，工程幹員理當精準操作，以免浪費材料。",
+    "usage": "中等量的工業用有機化合物。可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 3
+  },
+  "30054": {
+    "itemId": "30054",
+    "name": "酮陣列",
+    "iconId": "MTL_SL_KETONE4",
+    "description": "由工程幹員嚴格監控的大量不穩定實驗性酮製劑。是高級的工業材料之一，運用時也請多加小心。",
+    "usage": "大量的工業用有機化合物。可用於多種強化場合，也常作為製作聚合劑的原料之一。",
+    "rarity": 4
+  },
+  "30061": {
+    "itemId": "30061",
+    "name": "破損裝置",
+    "iconId": "MTL_SL_BOSS1",
+    "description": "一些殘破的裝置。這些裝置曾被拼裝在敵人的武器和防具上，經歷了激烈的戰鬥後已經損壞，不過其內部元件依舊具備一定的使用價值。",
+    "usage": "收繳來的破損機械裝置，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 1
+  },
+  "30062": {
+    "itemId": "30062",
+    "name": "裝置",
+    "iconId": "MTL_SL_BOSS2",
+    "description": "一套相對完整的裝置，含有大量密集的可用電子元件。為了迎合輕便實用的設計，主機板寸土寸金的空間被塞得滿滿當當。",
+    "usage": "收繳來的常規機械裝置，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 2
+  },
+  "30063": {
+    "itemId": "30063",
+    "name": "全新裝置",
+    "iconId": "MTL_SL_BOSS3",
+    "description": "一套全新裝配而成的裝置，透過重構同類型裝置的結構，主機板原本一直存在的空間緊張的問題得到了解決，當然啟動時的能耗要求也變高了。",
+    "usage": "收繳來的全新機械裝置，可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 3
+  },
+  "30064": {
+    "itemId": "30064",
+    "name": "改量裝置",
+    "iconId": "MTL_SL_BOSS4",
+    "description": "經過大量私自改造的裝置，是極大擴充了容量後的版本，大幅提升性能的同時犧牲了穩定性，從中能感受到製作者所投入的狂熱與執著......",
+    "usage": "收繳來的高等機械裝置，可用於多種強化場合，也常作為製作雙極納米片的原料之一。",
+    "rarity": 4
+  },
+  "30073": {
+    "itemId": "30073",
+    "name": "扭轉醇",
+    "iconId": "MTL_SL_ALCOHOL1",
+    "description": "優秀的化工仲介體，常在兩種形狀間轉換以儲存和放出傳導物質。液化後與酒精在某些性質上十分相似，時常導致整個工作間醉醺醺的。",
+    "usage": "片狀有機化合物。可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 3
+  },
+  "30074": {
+    "itemId": "30074",
+    "name": "白馬醇",
+    "iconId": "MTL_SL_ALCOHOL2",
+    "description": "扭轉醇精加工後的產物，名字來自發現其產出方式的廠家。實驗結果表明，擁有在非常態環境中向更高級結構轉化的趨勢。",
+    "usage": "片狀有機化合物。可用於多種強化場合，也常作為製作雙極納米片的原料之一。",
+    "rarity": 4
+  },
+  "30083": {
+    "itemId": "30083",
+    "name": "輕錳礦",
+    "iconId": "MTL_SL_MANGANESE1",
+    "description": "用以產出極為泛用的工業催化劑的金屬礦物。再加工過程十分複雜，因不規範操作而導致事故的例子比比皆是。",
+    "usage": "用於提煉冶煉用的金屬礦物。可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 3
+  },
+  "30084": {
+    "itemId": "30084",
+    "name": "三水錳礦",
+    "iconId": "MTL_SL_MANGANESE2",
+    "description": "少有廠家願意用於生產工業催化劑的珍貴金屬礦物。所製催化劑壽命極長，能夠多次反覆利用並汽提再生，然而複雜的加工工序令多數廠商望而卻步。",
+    "usage": "用於提煉冶煉用的金屬礦物。可用於多種強化場合，也常作為製作D32鋼的原料之一。",
+    "rarity": 4
+  },
+  "30093": {
+    "itemId": "30093",
+    "name": "研磨石",
+    "iconId": "MTL_SL_PG1",
+    "description": "不起爆、不粉化、不開裂，於零件加工工序中佔有重要地位的工具材料。自然屬性相當穩定。",
+    "usage": "用於加工武器零件的研磨石。可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 3
+  },
+  "30094": {
+    "itemId": "30094",
+    "name": "五水研磨石",
+    "iconId": "MTL_SL_PG2",
+    "description": "相較普通研磨石，物質結構更加穩定的工具材料。極難與其它物質發生化學反應。",
+    "usage": "用於精加工武器零件的高級研磨石。可用於多種強化場合，也常作為製作D32鋼的原料之一。",
+    "rarity": 4
+  },
+  "30103": {
+    "itemId": "30103",
+    "name": "RMA70-12",
+    "iconId": "MTL_SL_RMA7012",
+    "description": "自然態呈複雜多面體的礦物。在被發現其現代工業價值之前，就已經被發現了其在源石技藝施展中的價值。",
+    "usage": "一種敏感且有良好傳導效果的礦物。可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 3
+  },
+  "30104": {
+    "itemId": "30104",
+    "name": "RMA70-24",
+    "iconId": "MTL_SL_RMA7024",
+    "description": "自然態呈複雜多面體的礦物。於1024年被發現，在龐大的工業體系中，展現出了在源石技藝體系內其他礦物不曾具備的巨大價值。",
+    "usage": "一種十分敏感且有優秀傳導效果的礦物。可用於多種強化場合，也常作為製作D32鋼的原料之一。",
+    "rarity": 4
+  },
+  "30115": {
+    "itemId": "30115",
+    "name": "聚合劑",
+    "iconId": "MTL_SL_PP",
+    "description": "精密穿戴著裝中常用的材料。多作為隔絕塗層使用。強大的聚合黏接效果足以阻斷源石的揮發。",
+    "usage": "複雜的液態工業產物。用於高級強化場合。",
+    "rarity": 5
+  },
+  "30125": {
+    "itemId": "30125",
+    "name": "雙極納米片",
+    "iconId": "MTL_SL_BN",
+    "description": "對範圍內源石敏感的裝置。能有效提升源石附近範圍內作戰武器和設備對源石的敏感性，使源石技藝的存儲幾近可能。",
+    "usage": "現代工業的創造力結晶。用於高級強化場合。",
+    "rarity": 5
+  },
+  "30135": {
+    "itemId": "30135",
+    "name": "D32鋼",
+    "iconId": "MTL_SL_DS",
+    "description": "強度超群，無法擊穿，順暢傳導源石技藝，將重新訂立武器材料的標準。",
+    "usage": "自然界中不應存在的人造金屬材料，呈固態。用於高級強化場合。",
+    "rarity": 5
+  },
+  "30145": {
+    "itemId": "30145",
+    "name": "晶體電子單元",
+    "iconId": "MTL_SL_OEU",
+    "description": "泰拉源石科技的結晶，泰拉工業現代化的代表。源石施術單元與城際網路服務器的製造都離不開這種科技產品。",
+    "usage": "昂貴的源石工業產品，用於重要的強化場合。",
+    "rarity": 5
+  },
+  "30155": {
+    "itemId": "30155",
+    "name": "燒結核凝晶",
+    "iconId": "MTL_SL_SHJ",
+    "description": "特定高溫環境下具有分子識別能力的材料。作為助劑能選擇性地吸附源石，為精密加工源石材料、降低源石器件耗能提供新可能。",
+    "usage": "對工藝要求極高的現代科技產物。用於高級強化場合。",
+    "rarity": 5
+  },
+  "30165": {
+    "itemId": "30165",
+    "name": "重相位對映體",
+    "iconId": "MTL_SL_DYT",
+    "description": "仍處於試驗階段的新材料，不僅能夠承受高功率的能量輸出，甚至對源石技藝展現出了自動適應的特性。這或許預示了光學防護材料的發展方向。",
+    "usage": "光功能材料領域最尖端技術的產物。用於高級強化場合。",
+    "rarity": 5
+  },
+  "31013": {
+    "itemId": "31013",
+    "name": "凝膠",
+    "iconId": "MTL_SL_PGEL3",
+    "description": "於實驗室中意外誕生的人工材料。擁有優良的高低溫度耐性，強度高，重量輕，易加工，廣泛運用於高新項目。",
+    "usage": "一種高強度的可塑性材料。可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 3
+  },
+  "31014": {
+    "itemId": "31014",
+    "name": "聚合凝膠",
+    "iconId": "MTL_SL_PGEL4",
+    "description": "以凝膠為源材料，歷經大量實驗與反覆測試誕生的人工材料。即使是在高壓力環境中也能保持性質的穩定，在少數高新項目中有著重要地位。",
+    "usage": "一種具備極高強度的可塑性材料。可用於多種強化場合。",
+    "rarity": 4
+  },
+  "31023": {
+    "itemId": "31023",
+    "name": "熾合金",
+    "iconId": "MTL_SL_IAM3",
+    "description": "由數種稀有泰拉金屬熔煉成的合金材料。用於製造少數電子元件和電路板，是尖端電子工業中不可或缺的材料。",
+    "usage": "電子工業用特殊高熔點合金。可用於多種強化場合，也常作為製造站合成專案的原料。",
+    "rarity": 3
+  },
+  "31024": {
+    "itemId": "31024",
+    "name": "熾合金塊",
+    "iconId": "MTL_SL_IAM4",
+    "description": "由熾合金進一步加工得到的合金材料。歷經複雜的工業處理，保證了一定溫度下固液混合態的穩定，在尖端電子工業的產品研發中有著無可替代的作用。",
+    "usage": "產量稀少的電子工業用特殊高熔點合金。可用於多種強化場合。",
+    "rarity": 4
+  },
+  "31033": {
+    "itemId": "31033",
+    "name": "晶體元件",
+    "iconId": "MTL_SL_OC3",
+    "description": "用源石晶體外殼製作的工業原材料，是現代源石電子工業的基礎產品。",
+    "usage": "重要的源石工業材料，可用於多種強化場合，可以製作與合成更高級的源石電子元件。",
+    "rarity": 3
+  },
+  "31034": {
+    "itemId": "31034",
+    "name": "晶體電路",
+    "iconId": "MTL_SL_OC4",
+    "description": "現代源石電子產業的核心產品，常見於泰拉諸國使用的大量電子產品中，晶體電路的大量使用也是泰拉工業現代化的體現。",
+    "usage": "重要的源石工業材料，可用於多種強化場合，是製作源石晶體單元的基礎元件。",
+    "rarity": 4
+  },
+  "31043": {
+    "itemId": "31043",
+    "name": "半自然溶劑",
+    "iconId": "MTL_SL_SS",
+    "description": "在對一種傳統溶劑製品進行現代化加工後，該溶劑呈現出了令人驚喜的優良性質。",
+    "usage": "一種物理性能優異，耐酸鹼性良好的活性溶劑。可用於多種強化場合。",
+    "rarity": 3
+  },
+  "31044": {
+    "itemId": "31044",
+    "name": "精煉溶劑",
+    "iconId": "MTL_SL_RS",
+    "description": "由高分子聚合物支撐的塗料。除了基礎防護功能外，還兼有某些特性。耐高溫只是其中之一。",
+    "usage": "經特殊工藝製作而成特殊塗料。用於高級強化場合。",
+    "rarity": 4
+  },
+  "31053": {
+    "itemId": "31053",
+    "name": "化合切削液",
+    "iconId": "MTL_SL_CCF",
+    "description": "在加工過程中起到潤滑吸熱效用，可進一步提高金屬製品的成品合格率。",
+    "usage": "一種金屬加工時必備的工業試劑。可用於多種強化場合。",
+    "rarity": 3
+  },
+  "31054": {
+    "itemId": "31054",
+    "name": "切削原液",
+    "iconId": "MTL_SL_PLCF",
+    "description": "一種生物性穩定良好的原液。儲存時需要注意避免其他雜質的混入。",
+    "usage": "由多種活性溶劑配置而成的原液。用於高級強化場合。",
+    "rarity": 4
+  },
+  "31063": {
+    "itemId": "31063",
+    "name": "轉質鹽組",
+    "iconId": "MTL_SL_ZY",
+    "description": "可改變材料表面的性質，實現原本難以獲得的效果。注意為工業用鹽，絕對不可以食用。",
+    "usage": "經過粗煉處理的化合物結晶。可用於多種強化場合。",
+    "rarity": 3
+  },
+  "31064": {
+    "itemId": "31064",
+    "name": "轉質鹽聚塊",
+    "iconId": "MTL_SL_ZYK",
+    "description": "穩定的結晶體，混合飽和溶液並結晶而製成，可為材料提供多種功能。",
+    "usage": "經過精煉處理的化合物結晶塊。用於多種強化場合，也常作為製造站合成項目的原料。",
+    "rarity": 4
+  },
+  "31073": {
+    "itemId": "31073",
+    "name": "褐素纖維",
+    "iconId": "MTL_SL_XW",
+    "description": "源石工業的衍生產物，因其優異的效能在工業領域被廣泛應用。近年來又因獨特的外觀而被設計行業所關注。",
+    "usage": "具備高強度與高模量的特種纖維束。可用於多種強化場合。",
+    "rarity": 3
+  },
+  "31074": {
+    "itemId": "31074",
+    "name": "固化纖維板",
+    "iconId": "MTL_SL_XWB",
+    "description": "用特殊工藝製作的複合纖維板，物理與化學效能均相當優異，更具備少有的易加工特性，在許多工業流程中不可替代。",
+    "usage": "經過塑形固化處理的特種纖維板。可用於多種強化場合。",
+    "rarity": 4
+  },
+  "31083": {
+    "itemId": "31083",
+    "name": "環烴聚質",
+    "iconId": "MTL_SL_HT",
+    "description": "在實驗室內誕生的新型透明材料，具備高透光度和優秀的各項耐性，將成為許多傳統材料的優質替代品。",
+    "usage": "一種耐熱性、耐化學性俱優的工業材料。可用於多種強化場合。",
+    "rarity": 3
+  },
+  "31084": {
+    "itemId": "31084",
+    "name": "環烴預製體",
+    "iconId": "MTL_SL_HTT",
+    "description": "在合成流程中加入多種優良材料而得到的工業產品，保證透光度的同時大幅提升了強度與抗衝擊性，在防護領域具有廣闊應用前景。",
+    "usage": "由多種優良材料預加工而成的工業用材。可用於多種強化場合。",
+    "rarity": 4
+  },
+  "31093": {
+    "itemId": "31093",
+    "name": "類凝結核",
+    "iconId": "MTL_SL_JH",
+    "description": "能夠吸附多種物質的微粒，最初僅被當作廉價的吸附劑使用，後因其通用性和易於達成的凝結條件，轉而被應用於尖端領域。",
+    "usage": "在實驗室中人工合成的微粒，擁有良好的吸附性能。可用於多種強化場合。",
+    "rarity": 3
+  },
+  "31094": {
+    "itemId": "31094",
+    "name": "手性屈光體",
+    "iconId": "MTL_SL_QGT",
+    "description": "擁有良好的物理強度，且源石技藝耐受力相當驚人的光學材料，目前可用於光學防護領域，其他用途仍在測試當中。",
+    "usage": "具備良好光學性能和物理性能的特種光學材料。用於高級強化場合。",
+    "rarity": 4
+  },
+  "32001": {
+    "itemId": "32001",
+    "name": "晶片助劑",
+    "iconId": "MTL_ASC_DI",
+    "description": "價值高，產量小，讓工程幹員頭疼。",
+    "usage": "工業生產中，製造晶片時使用的催化劑。合成雙晶片的必備材料。",
+    "rarity": 4
+  },
+  "mod_unlock_token": {
+    "itemId": "mod_unlock_token",
+    "name": "模組數據塊",
+    "iconId": "mod_unlock_token",
+    "description": "數據塊中記錄了工程部幹員們為製作模組而奮鬥的每個日夜。",
+    "usage": "用以解鎖幹員的模組。",
+    "rarity": 5
+  },
+  "mod_update_token_2": {
+    "itemId": "mod_update_token_2",
+    "name": "數據增補儀",
+    "iconId": "mod_update_token_2",
+    "description": "經驗具象成資料，資料轉化為武裝。瞭解自己，瞭解戰場，是成為真正戰士的必修課。\n凝結了工程部同事的心血，再次升級後的模組將幫助幹員優化戰鬥方式，大幅提升作戰能力。",
+    "usage": "用於升級幹員的模組。",
+    "rarity": 5
+  },
+  "mod_update_token_1": {
+    "itemId": "mod_update_token_1",
+    "name": "數據增補條",
+    "iconId": "mod_update_token_1",
+    "description": "經驗具象成資料，資料轉化為武裝。瞭解自己，瞭解戰場，是成為真正戰士的必修課。\n凝結了工程部同事的心血，升級後的模組將有效提升幹員的作戰能力。",
+    "usage": "用於升級幹員的模組。",
+    "rarity": 4
+  },
+  "p_char_285_medic2": {
+    "itemId": "p_char_285_medic2",
+    "name": "Lancet-2的信物",
+    "iconId": "p_char_285_medic2",
+    "description": "外盒上標注著“一噴起效”的醫療噴霧套組。可以插入醫用器械，也可以直接使用。",
+    "usage": "用於提升Lancet-2的潛能。",
+    "rarity": 1
+  },
+  "p_char_286_cast3": {
+    "itemId": "p_char_286_cast3",
+    "name": "Castle-3的信物",
+    "iconId": "p_char_286_cast3",
+    "description": "一面堅固的便攜裝甲板。不含使用說明書。",
+    "usage": "用於提升Castle-3的潛能。",
+    "rarity": 1
+  },
+  "p_char_376_therex": {
+    "itemId": "p_char_376_therex",
+    "name": "THRM-EX的信物",
+    "iconId": "p_char_376_therex",
+    "description": "一根發光的儲熱芯，包裝上面用黑色的特別粗的印刷體字列印著 \"感受熱情！\"",
+    "usage": "用於提升THRM-EX的潛能。",
+    "rarity": 1
+  },
+  "p_char_4000_jnight": {
+    "itemId": "p_char_4000_jnight",
+    "name": "正義騎士號的信物",
+    "iconId": "p_char_4000_jnight",
+    "description": "“正義騎士號”的旗幟布。在定期更換清洗的時候，還請友善地幫她更換一下",
+    "usage": "用於提升正義騎士號的潛能。",
+    "rarity": 1
+  },
+  "p_char_4077_palico": {
+    "itemId": "p_char_4077_palico",
+    "name": "泰拉大陸調查團的信物",
+    "iconId": "p_char_4077_palico",
+    "description": "一張按有肉球印章的不可思議票券，上面記載著難以辨認的文字。艾露貓們將它贈送給你，好好收下吧！",
+    "usage": "用於提升泰拉大陸調查團的潛能。",
+    "rarity": 1
+  },
+  "p_char_4093_frston": {
+    "itemId": "p_char_4093_frston",
+    "name": "Friston-3的信物",
+    "iconId": "p_char_4093_frston",
+    "description": "一張拍立得照片。面對這片陌生的大地，他會拍下任何有研究價值的存在。",
+    "usage": "用於提升Friston-3的潛能。",
+    "rarity": 1
+  },
+  "p_char_4136_phonor": {
+    "itemId": "p_char_4136_phonor",
+    "name": "PhonoR-0的信物",
+    "iconId": "p_char_4136_phonor",
+    "description": "一枚微縮的女妖巫術單元，放在耳邊時能隱約聽見來自河谷深處的憂愁歌謠。",
+    "usage": "用於提升PhonoR-0的潛能。",
+    "rarity": 1
+  },
+  "p_char_4188_confes": {
+    "itemId": "p_char_4188_confes",
+    "name": "CONFESS-47的信物",
+    "iconId": "p_char_4188_confes",
+    "description": "一本方便攜帶的迷你經書。CONFESS-47提醒你，它沒有手，不能主動把禮物遞給你，你只能付費進車廂自取。",
+    "usage": "用於提升CONFESS-47的潛能。",
+    "rarity": 1
+  },
+  "p_char_502_nblade": {
+    "itemId": "p_char_502_nblade",
+    "name": "夜刀的信物",
+    "iconId": "p_char_502_nblade",
+    "description": "靜靜躺在漆盒中的泛黃殘卷。記載著刀術練習裡最晦澀的一類理論知識：平靜。",
+    "usage": "用於提升夜刀的潛能。",
+    "rarity": 2
+  },
+  "p_char_500_noirc": {
+    "itemId": "p_char_500_noirc",
+    "name": "黑角的信物",
+    "iconId": "p_char_500_noirc",
+    "description": "殘留著濃烈歲月痕跡的祭祀面具。空洞的眼眶見證了大地的黎明。",
+    "usage": "用於提升黑角的潛能。",
+    "rarity": 2
+  },
+  "p_char_503_rang": {
+    "itemId": "p_char_503_rang",
+    "name": "巡林者的信物",
+    "iconId": "p_char_503_rang",
+    "description": "兩塊用細繩纏掛的燧石。文明就是自這類微小的事物中誕生的。",
+    "usage": "用於提升巡林者的潛能。",
+    "rarity": 2
+  },
+  "p_char_501_durin": {
+    "itemId": "p_char_501_durin",
+    "name": "杜林的信物",
+    "iconId": "p_char_501_durin",
+    "description": "由杜林族研磨的小塊源石製品。緊緊握住一段時間後會突然感到精力充沛。",
+    "usage": "用於提升杜林的潛能。",
+    "rarity": 2
+  },
+  "p_char_009_12fce": {
+    "itemId": "p_char_009_12fce",
+    "name": "12F的信物",
+    "iconId": "p_char_009_12fce",
+    "description": "外包裝老舊的巧克力。背面潦草地寫著“聖誕快樂”。",
+    "usage": "用於提升12F的潛能。",
+    "rarity": 2
+  },
+  "p_char_123_fang": {
+    "itemId": "p_char_123_fang",
+    "name": "芬的信物",
+    "iconId": "p_char_123_fang",
+    "description": "一雙恰好合你尺寸的跑鞋。為了邀請你晨練，贈送者一定花了不少工夫。",
+    "usage": "用於提升芬的潛能。",
+    "rarity": 3
+  },
+  "p_char_240_wyvern": {
+    "itemId": "p_char_240_wyvern",
+    "name": "香草的信物",
+    "iconId": "p_char_240_wyvern",
+    "description": "瓦伊凡邊界草原的野生動物分佈圖。圖上的標記在移動城市的轟鳴中漸漸消失。",
+    "usage": "用於提升香草的潛能。",
+    "rarity": 3
+  },
+  "p_char_192_falco": {
+    "itemId": "p_char_192_falco",
+    "name": "翎羽的信物",
+    "iconId": "p_char_192_falco",
+    "description": "克制地裝飾著少量羽毛的禮帽。適合拉特蘭的各個節日。",
+    "usage": "用於提升翎羽的潛能。",
+    "rarity": 3
+  },
+  "p_char_208_melan": {
+    "itemId": "p_char_208_melan",
+    "name": "玫蘭莎的信物",
+    "iconId": "p_char_208_melan",
+    "description": "簡單包裝的香燭。別緻的香味讓人無法忘卻。",
+    "usage": "用於提升玫蘭莎的潛能。",
+    "rarity": 3
+  },
+  "p_char_209_ardign": {
+    "itemId": "p_char_209_ardign",
+    "name": "卡緹的信物",
+    "iconId": "p_char_209_ardign",
+    "description": "用質地堅實的木材打造的雪橇。突然開始期待下雪。",
+    "usage": "用於提升卡緹的潛能。",
+    "rarity": 3
+  },
+  "p_char_122_beagle": {
+    "itemId": "p_char_122_beagle",
+    "name": "米格魯的信物",
+    "iconId": "p_char_122_beagle",
+    "description": "整整齊齊地放在資料夾裡的績效考核單。所有考核項目的成績都是A等。",
+    "usage": "用於提升米格魯的潛能。",
+    "rarity": 3
+  },
+  "p_char_124_kroos": {
+    "itemId": "p_char_124_kroos",
+    "name": "克洛絲的信物",
+    "iconId": "p_char_124_kroos",
+    "description": "一套兒童射擊玩具。包含有一把塑膠弓，數支吸盤箭，以及替代箭靶的一個蘋果。",
+    "usage": "用於提升克洛絲的潛能。",
+    "rarity": 3
+  },
+  "p_char_211_adnach": {
+    "itemId": "p_char_211_adnach",
+    "name": "安德切爾的信物",
+    "iconId": "p_char_211_adnach",
+    "description": "毛絨絨的套頭帽。薩科塔人是戴不上的。",
+    "usage": "用於提升安德切爾的潛能。",
+    "rarity": 3
+  },
+  "p_char_121_lava": {
+    "itemId": "p_char_121_lava",
+    "name": "炎熔的信物",
+    "iconId": "p_char_121_lava",
+    "description": "特殊加工過的匕首套。外皮上佈滿了故作神秘的花紋。",
+    "usage": "用於提升炎熔的潛能。",
+    "rarity": 3
+  },
+  "p_char_120_hibisc": {
+    "itemId": "p_char_120_hibisc",
+    "name": "芙蓉的信物",
+    "iconId": "p_char_120_hibisc",
+    "description": "一張專門為你定制的健康生活日程規劃表。說實話，很難拒絕。",
+    "usage": "用於提升芙蓉的潛能。",
+    "rarity": 3
+  },
+  "p_char_212_ansel": {
+    "itemId": "p_char_212_ansel",
+    "name": "安賽爾的信物",
+    "iconId": "p_char_212_ansel",
+    "description": "一台便於攜帶的氣壓式血壓計。就算身邊沒有醫生,也希望你能善待自己的身體。",
+    "usage": "用於提升安賽爾的潛能。",
+    "rarity": 3
+  },
+  "p_char_210_stward": {
+    "itemId": "p_char_210_stward",
+    "name": "史都華德的信物",
+    "iconId": "p_char_210_stward",
+    "description": "時興的運動臂環。似乎是外觀較為樸素的單色版。",
+    "usage": "用於提升史都華德的潛能。",
+    "rarity": 3
+  },
+  "p_char_278_orchid": {
+    "itemId": "p_char_278_orchid",
+    "name": "梓蘭的信物",
+    "iconId": "p_char_278_orchid",
+    "description": "精心包裝好的高級鋼筆。用它批閱檔時，會產生一種身在寫字樓中的感覺。",
+    "usage": "用於提升梓蘭的潛能。",
+    "rarity": 3
+  },
+  "p_char_282_catap": {
+    "itemId": "p_char_282_catap",
+    "name": "空爆的信物",
+    "iconId": "p_char_282_catap",
+    "description": "一塊只有士兵才會佩戴的名牌。因為不再被束縛，所以將自己的榮譽交給你。",
+    "usage": "用於提升空爆的潛能。",
+    "rarity": 3
+  },
+  "p_char_283_midn": {
+    "itemId": "p_char_283_midn",
+    "name": "月見夜的信物",
+    "iconId": "p_char_283_midn",
+    "description": "精美的高腳酒杯。昏黃的燈光下，杯身散發出令人沉醉的色彩。",
+    "usage": "用於提升月見夜的潛能。",
+    "rarity": 3
+  },
+  "p_char_284_spot": {
+    "itemId": "p_char_284_spot",
+    "name": "斑點的信物",
+    "iconId": "p_char_284_spot",
+    "description": "一本俚語大全，記載了數個國家各種語言裡溫柔諷刺他人的句子。",
+    "usage": "用於提升斑點的潛能。",
+    "rarity": 3
+  },
+  "p_char_281_popka": {
+    "itemId": "p_char_281_popka",
+    "name": "泡普卡的信物",
+    "iconId": "p_char_281_popka",
+    "description": "實心金屬玩具。特別重，超級難損壞。",
+    "usage": "用於提升泡普卡的潛能。",
+    "rarity": 3
+  },
+  "p_char_141_nights": {
+    "itemId": "p_char_141_nights",
+    "name": "夜煙的信物",
+    "iconId": "p_char_141_nights",
+    "description": "一根湯勺。配套的鑿子藏在了一本書裡。",
+    "usage": "用於提升夜煙的潛能。",
+    "rarity": 4
+  },
+  "p_char_109_fmout": {
+    "itemId": "p_char_109_fmout",
+    "name": "遠山的信物",
+    "iconId": "p_char_109_fmout",
+    "description": "占卜套組中的一張卡片。雖然被告知了其中寓意，但未來由你自己決定。",
+    "usage": "用於提升遠山的潛能。",
+    "rarity": 4
+  },
+  "p_char_235_jesica": {
+    "itemId": "p_char_235_jesica",
+    "name": "潔西卡的信物",
+    "iconId": "p_char_235_jesica",
+    "description": "一張黑鋼入職紀念照。一段嶄新人生的開始。",
+    "usage": "用於提升潔西卡的潛能。",
+    "rarity": 4
+  },
+  "p_char_126_shotst": {
+    "itemId": "p_char_126_shotst",
+    "name": "流星的信物",
+    "iconId": "p_char_126_shotst",
+    "description": "由彷彿不會凋零的嫩枝編成的頭冠。卡西米爾的森林低聲地詢問，它們的守護者何日歸還。",
+    "usage": "用於提升流星的潛能。",
+    "rarity": 4
+  },
+  "p_char_118_yuki": {
+    "itemId": "p_char_118_yuki",
+    "name": "白雪的信物",
+    "iconId": "p_char_118_yuki",
+    "description": "墨蹟未乾的書法作品。贈予羅德島的祝福。",
+    "usage": "用於提升白雪的潛能。",
+    "rarity": 4
+  },
+  "p_char_198_blackd": {
+    "itemId": "p_char_198_blackd",
+    "name": "訊使的信物",
+    "iconId": "p_char_198_blackd",
+    "description": "一瓶自遙遠他鄉搜集來的麥芽飲品。陽光之下，金黃色的澄澈液體在玻璃瓶中閃閃發光。",
+    "usage": "用於提升訊使的潛能。",
+    "rarity": 4
+  },
+  "p_char_149_scave": {
+    "itemId": "p_char_149_scave",
+    "name": "清道夫的信物",
+    "iconId": "p_char_149_scave",
+    "description": "一枚銀幣。也許能用它決定一些更重要的事。",
+    "usage": "用於提升清道夫的潛能。",
+    "rarity": 4
+  },
+  "p_char_290_vigna": {
+    "itemId": "p_char_290_vigna",
+    "name": "紅豆的信物",
+    "iconId": "p_char_290_vigna",
+    "description": "練習用電吉他。帶著它前往戰場的提案被否決了。",
+    "usage": "用於提升紅豆的潛能。",
+    "rarity": 4
+  },
+  "p_char_130_doberm": {
+    "itemId": "p_char_130_doberm",
+    "name": "杜賓的信物",
+    "iconId": "p_char_130_doberm",
+    "description": "紅色封皮的小冊子。記錄了一場艱苦卓絕的戰鬥。",
+    "usage": "用於提升杜賓的潛能。",
+    "rarity": 4
+  },
+  "p_char_289_gyuki": {
+    "itemId": "p_char_289_gyuki",
+    "name": "纏丸的信物",
+    "iconId": "p_char_289_gyuki",
+    "description": "一副柔軟的眼罩。在睡覺的時候戴上也挺不錯的。",
+    "usage": "用於提升纏丸的潛能。",
+    "rarity": 4
+  },
+  "p_char_193_frostl": {
+    "itemId": "p_char_193_frostl",
+    "name": "霜葉的信物",
+    "iconId": "p_char_193_frostl",
+    "description": "翻得破破爛爛的識字本。每頁的空白處都認真地標注著許多圖畫般的符號。",
+    "usage": "用於提升霜葉的潛能。",
+    "rarity": 4
+  },
+  "p_char_127_estell": {
+    "itemId": "p_char_127_estell",
+    "name": "艾絲黛爾的信物",
+    "iconId": "p_char_127_estell",
+    "description": "一把石制的梳子。觸感十分涼爽，並且還散發著淡淡的花香。",
+    "usage": "用於提升艾絲黛爾的潛能。",
+    "rarity": 4
+  },
+  "p_char_185_frncat": {
+    "itemId": "p_char_185_frncat",
+    "name": "慕斯的信物",
+    "iconId": "p_char_185_frncat",
+    "description": "一本封皮裝點著金絲花紋的相冊。裡面的照片來自各隻與拍攝者親近的貓貓。貓貓！",
+    "usage": "用於提升慕斯的潛能。",
+    "rarity": 4
+  },
+  "p_char_237_gravel": {
+    "itemId": "p_char_237_gravel",
+    "name": "礫的信物",
+    "iconId": "p_char_237_gravel",
+    "description": "磨損嚴重的卡西米爾騎士徽章。無論過往如何，掌握當下才重要。",
+    "usage": "用於提升礫的潛能。",
+    "rarity": 4
+  },
+  "p_char_236_rope": {
+    "itemId": "p_char_236_rope",
+    "name": "暗索的信物",
+    "iconId": "p_char_236_rope",
+    "description": "一件連價格標識都沒撕掉的昂貴裝飾品。真的可以收下嗎......",
+    "usage": "用於提升暗索的潛能。",
+    "rarity": 4
+  },
+  "p_char_117_myrrh": {
+    "itemId": "p_char_117_myrrh",
+    "name": "末藥的信物",
+    "iconId": "p_char_117_myrrh",
+    "description": "以多種草藥混合製作的藥丸。生病的時候一定能派上用場，何況每顆藥丸都被細心地裹上了糖衣。",
+    "usage": "用於提升末藥的潛能。",
+    "rarity": 4
+  },
+  "p_char_187_ccheal": {
+    "itemId": "p_char_187_ccheal",
+    "name": "嘉維爾的信物",
+    "iconId": "p_char_187_ccheal",
+    "description": "一套按摩工具。可以用它緩解身體被奇怪的醫療法術折騰之後產生的疲勞感。",
+    "usage": "用於提升嘉維爾的潛能。",
+    "rarity": 4
+  },
+  "p_char_181_flower": {
+    "itemId": "p_char_181_flower",
+    "name": "調香師的信物",
+    "iconId": "p_char_181_flower",
+    "description": "富有米諾斯古典時代氣息的雙耳花瓶。需贈送者本人定期更換新鮮花卉。",
+    "usage": "用於提升調香師的潛能。",
+    "rarity": 4
+  },
+  "p_char_199_yak": {
+    "itemId": "p_char_199_yak",
+    "name": "角峰的信物",
+    "iconId": "p_char_199_yak",
+    "description": "略微有些粗糙的木雕人像。垂首低眉的姿態十分安詳。",
+    "usage": "用於提升角峰的潛能。",
+    "rarity": 4
+  },
+  "p_char_150_snakek": {
+    "itemId": "p_char_150_snakek",
+    "name": "蛇屠箱的信物",
+    "iconId": "p_char_150_snakek",
+    "description": "普通的棒球棍，棍身歪歪扭扭地寫著數位知名球手的簽名。雖然，也許，大概，即使簽名是模仿的，想要分享的心情卻是真實的。",
+    "usage": "用於提升蛇屠箱的潛能。",
+    "rarity": 4
+  },
+  "p_char_196_sunbr": {
+    "itemId": "p_char_196_sunbr",
+    "name": "古米的信物",
+    "iconId": "p_char_196_sunbr",
+    "description": "一張“古米早餐廚房”優惠卷。-100%是不是免費的意思......？",
+    "usage": "用於提升古米的潛能。",
+    "rarity": 4
+  },
+  "p_char_110_deepcl": {
+    "itemId": "p_char_110_deepcl",
+    "name": "深海色的信物",
+    "iconId": "p_char_110_deepcl",
+    "description": "手繪的童話故事書。在生命與死亡間跋涉的主人公，最終踏入了河流的盡頭。",
+    "usage": "用於提升深海色的潛能。",
+    "rarity": 4
+  },
+  "p_char_183_skgoat": {
+    "itemId": "p_char_183_skgoat",
+    "name": "地靈的信物",
+    "iconId": "p_char_183_skgoat",
+    "description": "形狀古怪的小塊礦石。放在耳邊時，似乎能聽見液體流動的細微聲響。",
+    "usage": "用於提升地靈的潛能。",
+    "rarity": 4
+  },
+  "p_char_277_sqrrel": {
+    "itemId": "p_char_277_sqrrel",
+    "name": "阿消的信物",
+    "iconId": "p_char_277_sqrrel",
+    "description": "一本郵票紀念冊。以前，它的擁有者根本不會允許他人觸碰自己寶貴的收集。",
+    "usage": "用於提升阿消的潛能。",
+    "rarity": 4
+  },
+  "p_char_137_brownb": {
+    "itemId": "p_char_137_brownb",
+    "name": "獵蜂的信物",
+    "iconId": "p_char_137_brownb",
+    "description": "一座拳賽獎盃。底座上刻下的名字也已模糊，但杯身彷彿依然散發著自豪的光輝。",
+    "usage": "用於提升獵蜂的潛能。",
+    "rarity": 4
+  },
+  "p_char_253_greyy": {
+    "itemId": "p_char_253_greyy",
+    "name": "格雷伊的信物",
+    "iconId": "p_char_253_greyy",
+    "description": "一盞設計精巧的LED提燈。只要嵌入一粒源石碎片就能長明不滅，就用它驅散縈繞黑夜的不安感吧。",
+    "usage": "用於提升格雷伊的潛能。",
+    "rarity": 4
+  },
+  "p_char_151_myrtle": {
+    "itemId": "p_char_151_myrtle",
+    "name": "桃金娘的信物",
+    "iconId": "p_char_151_myrtle",
+    "description": "一根和她手中棍子別無二致的長條，是她親自挑選的。雖然沒有什麼特別的用處，不過她似乎對這份禮物十分滿意。",
+    "usage": "用於提升桃金娘的潛能。",
+    "rarity": 4
+  },
+  "p_char_298_susuro": {
+    "itemId": "p_char_298_susuro",
+    "name": "蘇蘇洛的信物",
+    "iconId": "p_char_298_susuro",
+    "description": "一本紙質柔和的日記本。無論過去還是未來的記憶，只要得以記錄，就永遠不會再消失了吧？",
+    "usage": "用於提升蘇蘇洛的潛能。",
+    "rarity": 4
+  },
+  "p_char_260_durnar": {
+    "itemId": "p_char_260_durnar",
+    "name": "堅雷的信物",
+    "iconId": "p_char_260_durnar",
+    "description": "一把已經棄用的電刃。懂得捨棄，才明白珍惜的意義。",
+    "usage": "用於提升堅雷的潛能。",
+    "rarity": 4
+  },
+  "p_char_355_ethan": {
+    "itemId": "p_char_355_ethan",
+    "name": "伊桑的信物",
+    "iconId": "p_char_355_ethan",
+    "description": "一枚金屬質地的悠悠球。用來炫技時千萬不要砸到圍觀者。",
+    "usage": "用於提升伊桑的潛能。",
+    "rarity": 4
+  },
+  "p_char_190_clour": {
+    "itemId": "p_char_190_clour",
+    "name": "紅雲的信物",
+    "iconId": "p_char_190_clour",
+    "description": "一串潔白的獸牙雕飾，其中一枚取自奪去她左臂的那隻野獸。",
+    "usage": "用於提升紅雲的潛能。",
+    "rarity": 4
+  },
+  "p_char_133_mm": {
+    "itemId": "p_char_133_mm",
+    "name": "梅的信物",
+    "iconId": "p_char_133_mm",
+    "description": "一把來路不明的泰瑟槍。正好可以與梅常用的武器配成一對。",
+    "usage": "用於提升梅的潛能。",
+    "rarity": 4
+  },
+  "p_char_302_glaze": {
+    "itemId": "p_char_302_glaze",
+    "name": "安比爾的信物",
+    "iconId": "p_char_302_glaze",
+    "description": "一枚做工精巧的化妝鏡。攜帶非常方便，可以在戰鬥中隨時檢查髮型是否凌亂。",
+    "usage": "用於提升安比爾的潛能。",
+    "rarity": 4
+  },
+  "p_char_385_finlpp": {
+    "itemId": "p_char_385_finlpp",
+    "name": "清流的信物",
+    "iconId": "p_char_385_finlpp",
+    "description": "一小瓶家鄉的清泉，可以作為裝飾佩戴。將它帶在身上，清流很樂意與你分享她的故鄉。",
+    "usage": "用於提升清流的潛能。",
+    "rarity": 4
+  },
+  "p_char_337_utage": {
+    "itemId": "p_char_337_utage",
+    "name": "宴的信物",
+    "iconId": "p_char_337_utage",
+    "description": "一個漆黑的盒子。裡面是漆黑的盒子，漆黑的盒子，以及......美甲套裝？！",
+    "usage": "用於提升宴的潛能。",
+    "rarity": 4
+  },
+  "p_char_301_cutter": {
+    "itemId": "p_char_301_cutter",
+    "name": "刻刀的信物",
+    "iconId": "p_char_301_cutter",
+    "description": "一枚手工雕刻的護身符，因製作者在雕制時總是用力過猛而充滿傷痕。",
+    "usage": "用於提升刻刀的潛能。",
+    "rarity": 4
+  },
+  "p_char_258_podego": {
+    "itemId": "p_char_258_podego",
+    "name": "波登可的信物",
+    "iconId": "p_char_258_podego",
+    "description": "一包花種，能夠讓博士的辦公室變為花田。只要不過敏，哪裡都是庭院。",
+    "usage": "用於提升波登可的潛能。",
+    "rarity": 4
+  },
+  "p_char_328_cammou": {
+    "itemId": "p_char_328_cammou",
+    "name": "卡達的信物",
+    "iconId": "p_char_328_cammou",
+    "description": "一張塞滿內容的光碟，裡面全是卡達近年來製作的高人氣影片。包含了花絮和未刪減部分，某些場景一刀未剪。",
+    "usage": "用於提升卡達的潛能。",
+    "rarity": 4
+  },
+  "p_char_272_strong": {
+    "itemId": "p_char_272_strong",
+    "name": "孑的信物",
+    "iconId": "p_char_272_strong",
+    "description": "一把菜刀。精鋼打造，大概花了不少錢。",
+    "usage": "用於提升孑的潛能。",
+    "rarity": 4
+  },
+  "p_char_366_acdrop": {
+    "itemId": "p_char_366_acdrop",
+    "name": "酸糖的信物",
+    "iconId": "p_char_366_acdrop",
+    "description": "一塊嶄新的滑板，她送給你的，附贈了創口貼和消毒水。",
+    "usage": "用於提升酸糖的潛能。",
+    "rarity": 4
+  },
+  "p_char_271_spikes": {
+    "itemId": "p_char_271_spikes",
+    "name": "芳汀的信物",
+    "iconId": "p_char_271_spikes",
+    "description": "一顆橡膠玩具子彈。薩科塔的孩子們都有自己的玩具槍，並且總用這種橡膠子彈填滿所有口袋。",
+    "usage": "用於提升芳汀的潛能。",
+    "rarity": 4
+  },
+  "p_char_381_bubble": {
+    "itemId": "p_char_381_bubble",
+    "name": "泡泡的信物",
+    "iconId": "p_char_381_bubble",
+    "description": "一個從野外挖來的樹墩。她也不知道這東西有什麼用，只是覺得好玩就挖來送你了。",
+    "usage": "用於提升泡泡的潛能。",
+    "rarity": 4
+  },
+  "p_char_347_jaksel": {
+    "itemId": "p_char_347_jaksel",
+    "name": "傑克的信物",
+    "iconId": "p_char_347_jaksel",
+    "description": "一雙嶄新的運動鞋。她對於和你一同鍛煉身體十分期待。",
+    "usage": "用於提升傑克的潛能。",
+    "rarity": 4
+  },
+  "p_char_440_pinecn": {
+    "itemId": "p_char_440_pinecn",
+    "name": "松果的信物",
+    "iconId": "p_char_440_pinecn",
+    "description": "一個很重的工具包，內含一把備用釘槍，很多備用零件，還有她忘在裡面的小小玩偶。",
+    "usage": "用於提升松果的潛能。",
+    "rarity": 4
+  },
+  "p_char_452_bstalk": {
+    "itemId": "p_char_452_bstalk",
+    "name": "豆苗的信物",
+    "iconId": "p_char_452_bstalk",
+    "description": "寵物磐蟹幼崽兌換券。經飼養人承諾並蓋章，憑此券可在豆苗培育公司正式創建後，兌換領養一隻磐蟹寶寶。",
+    "usage": "用於提升豆苗的潛能。",
+    "rarity": 4
+  },
+  "p_char_469_indigo": {
+    "itemId": "p_char_469_indigo",
+    "name": "深靛的信物",
+    "iconId": "p_char_469_indigo",
+    "description": "一隻美麗的水螢蟲。它微弱的光能照亮一個夜晚。到了第二天，你可以放它自由。",
+    "usage": "用於提升深靛的潛能。",
+    "rarity": 4
+  },
+  "p_char_484_robrta": {
+    "itemId": "p_char_484_robrta",
+    "name": "羅比菈塔的信物",
+    "iconId": "p_char_484_robrta",
+    "description": "一支化妝刷，做工粗糙，看起來有些年頭了，但每一根褐色刷毛都乾乾淨淨，還很柔軟。",
+    "usage": "用於提升羅比菈塔的潛能。",
+    "rarity": 4
+  },
+  "p_char_4004_pudd": {
+    "itemId": "p_char_4004_pudd",
+    "name": "布丁的信物",
+    "iconId": "p_char_4004_pudd",
+    "description": "名為“小抱枕”的玩偶。對布丁來說是重要的朋友，清理和維護的頻率遠超普通玩偶的水準。",
+    "usage": "用於提升布丁的潛能。",
+    "rarity": 4
+  },
+  "p_char_4041_chnut": {
+    "itemId": "p_char_4041_chnut",
+    "name": "褐果的信物",
+    "iconId": "p_char_4041_chnut",
+    "description": "由於種植不易，只是很小的一叢地底螢光蘑菇，但它代表著家鄉。",
+    "usage": "用於提升褐果的潛能。",
+    "rarity": 4
+  },
+  "p_char_4062_totter": {
+    "itemId": "p_char_4062_totter",
+    "name": "鉛踝的信物",
+    "iconId": "p_char_4062_totter",
+    "description": "一段被凍得硬邦邦的木柴，被丟進爐子燃燒前還需簡單烘烤以去除水分。",
+    "usage": "用於提升鉛踝的潛能。",
+    "rarity": 4
+  },
+  "p_char_4063_quartz": {
+    "itemId": "p_char_4063_quartz",
+    "name": "石英的信物",
+    "iconId": "p_char_4063_quartz",
+    "description": "來自父親的懷錶。即便早已停止，卻依舊能在無人的時候，聽見“滴答滴答”催促的聲音。",
+    "usage": "用於提升石英的潛能。",
+    "rarity": 4
+  },
+  "p_char_491_humus": {
+    "itemId": "p_char_491_humus",
+    "name": "休謨斯的信物",
+    "iconId": "p_char_491_humus",
+    "description": "一把汙跡斑斑的自製衝擊鑽。可以用來打孔、擰螺絲，偶爾也不得不對著人。",
+    "usage": "用於提升休謨斯的潛能。",
+    "rarity": 4
+  },
+  "p_char_4107_vrdant": {
+    "itemId": "p_char_4107_vrdant",
+    "name": "維荻的信物",
+    "iconId": "p_char_4107_vrdant",
+    "description": "一株看似雜草的小草，對他有特殊的意義。小草的葉片被割出鋒利的切口，不用害怕，這不是為了傷害你。",
+    "usage": "用於提升維荻的潛能。",
+    "rarity": 4
+  },
+  "p_char_4100_caper": {
+    "itemId": "p_char_4100_caper",
+    "name": "躍躍的信物",
+    "iconId": "p_char_4100_caper",
+    "description": "一個圓滾滾、軟綿綿的白色絨球，她執意要送給你這份禮物。她的偷笑讓你有了不好的預感，但至少現在什麼都沒發生。",
+    "usage": "用於提升躍躍的潛能。",
+    "rarity": 4
+  },
+  "p_char_4130_luton": {
+    "itemId": "p_char_4130_luton",
+    "name": "露托的信物",
+    "iconId": "p_char_4130_luton",
+    "description": "一條褪色的淺黃色絲巾，然而其中的回憶不會褪色。她想像著人們如何將絲巾繫在她的墓碑上，一如分別那天，母親將絲巾繫在她的胸前。",
+    "usage": "用於提升露托的潛能。",
+    "rarity": 4
+  },
+  "p_char_4165_ctrail": {
+    "itemId": "p_char_4165_ctrail",
+    "name": "雲跡的信物",
+    "iconId": "p_char_4165_ctrail",
+    "description": "一個小小的白色吊飾，用來紀念你陪伴她一起完成的飛行實驗。她有點在意你會不會隨時帶在身上。",
+    "usage": "用於提升雲跡的潛能。",
+    "rarity": 4
+  },
+  "p_char_445_wscoot": {
+    "itemId": "p_char_445_wscoot",
+    "name": "騁風的信物",
+    "iconId": "p_char_445_wscoot",
+    "description": "一枚刻著“出入平安”的桃木吊飾，他說，桃木可以辟邪，點綴的玉石能帶來好運，總之——木牌上的四個字是最重要的。",
+    "usage": "用於提升騁風的潛能。",
+    "rarity": 4
+  },
+  "p_char_4208_wintim": {
+    "itemId": "p_char_4208_wintim",
+    "name": "冬时的信物",
+    "iconId": "p_char_4208_wintim",
+    "description": "一份令人费解的实验数据。冬时尝试向你解释，这份数据或许可以拯救数以万计的人，并将它递给了你。",
+    "usage": "用于提升冬时的潜能。",
+    "rarity": 4
+  },
+  "p_char_4051_akkord": {
+    "itemId": "p_char_4051_akkord",
+    "name": "协律的信物",
+    "iconId": "p_char_4051_akkord",
+    "description": "一盆被刻印了音乐术式的蓝色夜光植物，和它说话能够听到它的嗡鸣。协律说，这样心情就会变好，睡觉也能更香。也不知道真的假的。",
+    "usage": "用于提升协律的潜能。",
+    "rarity": 4
+  },
+  "p_char_128_plosis": {
+    "itemId": "p_char_128_plosis",
+    "name": "白面鴞的信物",
+    "iconId": "p_char_128_plosis",
+    "description": "論證源石技藝如何識別與執行的工具書。大部分幹員都讀不懂。",
+    "usage": "用於提升白面鴞的潛能。",
+    "rarity": 5
+  },
+  "p_char_115_headbr": {
+    "itemId": "p_char_115_headbr",
+    "name": "凜冬的信物",
+    "iconId": "p_char_115_headbr",
+    "description": "從紅色的旗幟上撕下的布條。不知為何，將它繫在臂膀上時，會不自主地感到悲傷。",
+    "usage": "用於提升凜冬的潛能。",
+    "rarity": 5
+  },
+  "p_char_102_texas": {
+    "itemId": "p_char_102_texas",
+    "name": "德克薩斯的信物",
+    "iconId": "p_char_102_texas",
+    "description": "一枚德克薩斯家族的標牌。其上的劃痕塵封了一段往事。",
+    "usage": "用於提升德克薩斯的潛能。",
+    "rarity": 5
+  },
+  "p_char_106_franka": {
+    "itemId": "p_char_106_franka",
+    "name": "芙蘭卡的信物",
+    "iconId": "p_char_106_franka",
+    "description": "一張旅行計劃書。因為規劃的目的地太多而導致相當難以實現。",
+    "usage": "用於提升芙蘭卡的潛能。",
+    "rarity": 5
+  },
+  "p_char_155_tiger": {
+    "itemId": "p_char_155_tiger",
+    "name": "因陀羅的信物",
+    "iconId": "p_char_155_tiger",
+    "description": "能夠保存很久的罐裝鹹甘草糖。讓人難以親近的外表下是讓人更加難以親近的味道。",
+    "usage": "用於提升因陀羅的潛能。",
+    "rarity": 5
+  },
+  "p_char_140_whitew": {
+    "itemId": "p_char_140_whitew",
+    "name": "拉普蘭德的信物",
+    "iconId": "p_char_140_whitew",
+    "description": "數個印著名字的染血標牌。來自各個幫派的家長。",
+    "usage": "用於提升拉普蘭德的潛能。",
+    "rarity": 5
+  },
+  "p_char_143_ghost": {
+    "itemId": "p_char_143_ghost",
+    "name": "幽靈鯊的信物",
+    "iconId": "p_char_143_ghost",
+    "description": "一幅難以描述的繪畫。斑駁的留白令人茫然若失。",
+    "usage": "用於提升幽靈鯊的潛能。",
+    "rarity": 5
+  },
+  "p_char_129_bluep": {
+    "itemId": "p_char_129_bluep",
+    "name": "藍毒的信物",
+    "iconId": "p_char_129_bluep",
+    "description": "一張高級服裝店的購物卡。拋開千篇一律的制服，盡情搭配吧。",
+    "usage": "用於提升藍毒的潛能。",
+    "rarity": 5
+  },
+  "p_char_204_platnm": {
+    "itemId": "p_char_204_platnm",
+    "name": "白金的信物",
+    "iconId": "p_char_204_platnm",
+    "description": "兩張遊樂園的門票。這個週末一起去吧。",
+    "usage": "用於提升白金的潛能。",
+    "rarity": 5
+  },
+  "p_char_219_meteo": {
+    "itemId": "p_char_219_meteo",
+    "name": "隕星的信物",
+    "iconId": "p_char_219_meteo",
+    "description": "從營救過的薩卡茲孩子那裡收到的信。亂七八糟地寫著對羅德島的感謝。",
+    "usage": "用於提升隕星的潛能。",
+    "rarity": 5
+  },
+  "p_char_002_amiya": {
+    "itemId": "p_char_002_amiya",
+    "name": "阿米婭的信物",
+    "iconId": "p_char_002_amiya",
+    "description": "“總有一天你會理解我的選擇......原諒我。”",
+    "usage": "用於提升阿米婭的潛能。",
+    "rarity": 5
+  },
+  "p_char_166_skfire": {
+    "itemId": "p_char_166_skfire",
+    "name": "天火的信物",
+    "iconId": "p_char_166_skfire",
+    "description": "一顆觸感冰涼的玻璃珠，內裡的顏色正在翻騰燃燒。",
+    "usage": "用於提升天火的潛能。",
+    "rarity": 5
+  },
+  "p_char_242_otter": {
+    "itemId": "p_char_242_otter",
+    "name": "梅爾的信物",
+    "iconId": "p_char_242_otter",
+    "description": "小號的咪波模型。腹部有一個紅色的圓形按鈕。唔......",
+    "usage": "用於提升梅爾的潛能。",
+    "rarity": 5
+  },
+  "p_char_108_silent": {
+    "itemId": "p_char_108_silent",
+    "name": "赫默的信物",
+    "iconId": "p_char_108_silent",
+    "description": "一枚斑紋羽毛飾品。不善言辭的黎博利科研人員透過贈送自己的羽毛來託付情感。",
+    "usage": "用於提升赫默的潛能。",
+    "rarity": 5
+  },
+  "p_char_171_bldsk": {
+    "itemId": "p_char_171_bldsk",
+    "name": "華法琳的信物",
+    "iconId": "p_char_171_bldsk",
+    "description": "被封存在透明小瓶的神秘液體。黏稠而富有光澤的紅色在你的晃動之下，於瓶中緩緩地改變著形態。",
+    "usage": "用於提升華法琳的潛能。",
+    "rarity": 5
+  },
+  "p_char_148_nearl": {
+    "itemId": "p_char_148_nearl",
+    "name": "臨光的信物",
+    "iconId": "p_char_148_nearl",
+    "description": "古舊褪色的卡西米爾騎士紋章。烏銀雕飾的天馬振翅欲飛。",
+    "usage": "用於提升臨光的潛能。",
+    "rarity": 5
+  },
+  "p_char_144_red": {
+    "itemId": "p_char_144_red",
+    "name": "紅的信物",
+    "iconId": "p_char_144_red",
+    "description": "一顆尖尖的乳牙。希望你能幫她收好。",
+    "usage": "用於提升紅的潛能。",
+    "rarity": 5
+  },
+  "p_char_107_liskam": {
+    "itemId": "p_char_107_liskam",
+    "name": "雷蛇的信物",
+    "iconId": "p_char_107_liskam",
+    "description": "特製的防電手環。終於，安全握手。",
+    "usage": "用於提升雷蛇的潛能。",
+    "rarity": 5
+  },
+  "p_char_201_moeshd": {
+    "itemId": "p_char_201_moeshd",
+    "name": "可頌的信物",
+    "iconId": "p_char_201_moeshd",
+    "description": "一張設計得十分少女的名片。比起尋常名片多出了一個收款碼和“請多惠顧~”的字樣。",
+    "usage": "用於提升可頌的潛能。",
+    "rarity": 5
+  },
+  "p_char_163_hpsts": {
+    "itemId": "p_char_163_hpsts",
+    "name": "火神的信物",
+    "iconId": "p_char_163_hpsts",
+    "description": "花紋優美的鋼胚。無論是何等品質的原料，都必須經過錘煉打磨才能夠成型。",
+    "usage": "用於提升火神的潛能。",
+    "rarity": 5
+  },
+  "p_char_145_prove": {
+    "itemId": "p_char_145_prove",
+    "name": "普羅旺斯的信物",
+    "iconId": "p_char_145_prove",
+    "description": "一台多功能吸塵器。更多時候用於清理從幹員們尾巴上掉落的毛。",
+    "usage": "用於提升普羅旺斯的潛能。",
+    "rarity": 5
+  },
+  "p_char_158_milu": {
+    "itemId": "p_char_158_milu",
+    "name": "守林人的信物",
+    "iconId": "p_char_158_milu",
+    "description": "造型簡單的口琴。悠揚樂聲響起的瞬間，落葉如雨。",
+    "usage": "用於提升守林人的潛能。",
+    "rarity": 5
+  },
+  "p_char_173_slchan": {
+    "itemId": "p_char_173_slchan",
+    "name": "崖心的信物",
+    "iconId": "p_char_173_slchan",
+    "description": "手工編織的繩環。三股長繩緊緊纏繞在一起，不分彼此。",
+    "usage": "用於提升崖心的潛能。",
+    "rarity": 5
+  },
+  "p_char_174_slbell": {
+    "itemId": "p_char_174_slbell",
+    "name": "初雪的信物",
+    "iconId": "p_char_174_slbell",
+    "description": "小小的銀色鈴鐺。微風吹拂之下，幽遠的鈴聲沁人心脾。",
+    "usage": "用於提升初雪的潛能。",
+    "rarity": 5
+  },
+  "p_char_195_glassb": {
+    "itemId": "p_char_195_glassb",
+    "name": "真理的信物",
+    "iconId": "p_char_195_glassb",
+    "description": "一本講述烏薩斯戰爭史的著作。據說作者現正流亡於萊塔尼亞。",
+    "usage": "用於提升真理的潛能。",
+    "rarity": 5
+  },
+  "p_char_101_sora": {
+    "itemId": "p_char_101_sora",
+    "name": "空的信物",
+    "iconId": "p_char_101_sora",
+    "description": "空作為偶像出道時發售的單曲CD。雖然是一首兒童向的卡通歌曲，但依然能感受到空她想要努力唱好的心境。",
+    "usage": "用於提升空的潛能。",
+    "rarity": 5
+  },
+  "p_char_215_mantic": {
+    "itemId": "p_char_215_mantic",
+    "name": "獅蠍的信物",
+    "iconId": "p_char_215_mantic",
+    "description": "用牽牛花貼紙封口的淡紫色信封。拆開信封，折疊過的信紙上清秀地寫著“請和我做朋友”幾個字。",
+    "usage": "用於提升獅蠍的潛能。",
+    "rarity": 5
+  },
+  "p_char_241_panda": {
+    "itemId": "p_char_241_panda",
+    "name": "食鐵獸的信物",
+    "iconId": "p_char_241_panda",
+    "description": "一張武打電影海報。主角的長相有些面熟。",
+    "usage": "用於提升食鐵獸的潛能。",
+    "rarity": 5
+  },
+  "p_char_220_grani": {
+    "itemId": "p_char_220_grani",
+    "name": "格拉尼的信物",
+    "iconId": "p_char_220_grani",
+    "description": "一支紅色的警哨。吹響時能感到一股正義感從肺腑之中飄然而出。",
+    "usage": "用於提升格拉尼的潛能。",
+    "rarity": 5
+  },
+  "p_char_164_nightm": {
+    "itemId": "p_char_164_nightm",
+    "name": "夜魔的信物",
+    "iconId": "p_char_164_nightm",
+    "description": "商店中隨處可見的可愛布偶。如果放在沒有光的地方，便會顯現出另外一番樣貌。",
+    "usage": "用於提升夜魔的潛能。",
+    "rarity": 5
+  },
+  "p_char_308_swire": {
+    "itemId": "p_char_308_swire",
+    "name": "詩懷雅的信物",
+    "iconId": "p_char_308_swire",
+    "description": "一枚傷痕累累的警徽。無名的警員在某次重大案件中失落了警徽，也沒有人能夠認領，只是，總得有人起身對抗罪惡。",
+    "usage": "用於提升詩懷雅的潛能。",
+    "rarity": 5
+  },
+  "p_char_274_astesi": {
+    "itemId": "p_char_274_astesi",
+    "name": "星極的信物",
+    "iconId": "p_char_274_astesi",
+    "description": "一支灌注了特殊墨水的鋼筆。筆尖劃過紙張，銀河為之閃爍。",
+    "usage": "用於提升星極的潛能。",
+    "rarity": 5
+  },
+  "p_char_348_ceylon": {
+    "itemId": "p_char_348_ceylon",
+    "name": "錫蘭的信物",
+    "iconId": "p_char_348_ceylon",
+    "description": "一本已經沒有地方下筆的筆記本。上面記載著目前為止，有關源石研究的一切相關知識點。內容詳細到可以重新排版後出一本書，叫做《源石研究，從入門到精通》。",
+    "usage": "用於提升錫蘭的潛能。",
+    "rarity": 5
+  },
+  "p_char_326_glacus": {
+    "itemId": "p_char_326_glacus",
+    "name": "格勞克斯的信物",
+    "iconId": "p_char_326_glacus",
+    "description": "一節沒電的電池，無用之物最後的用處就是收藏。",
+    "usage": "用於提升格勞克斯的潛能。",
+    "rarity": 5
+  },
+  "p_char_275_breeze": {
+    "itemId": "p_char_275_breeze",
+    "name": "微風的信物",
+    "iconId": "p_char_275_breeze",
+    "description": "反覆擦拭以至於磨損了圖案的家族徽章，依舊閃亮如初。",
+    "usage": "用於提升微風的潛能。",
+    "rarity": 5
+  },
+  "p_char_131_flameb": {
+    "itemId": "p_char_131_flameb",
+    "name": "炎客的信物",
+    "iconId": "p_char_131_flameb",
+    "description": "一件染血的舊外套。有些燒焦了，完全分辨不出是誰的血液。",
+    "usage": "用於提升炎客的潛能。",
+    "rarity": 5
+  },
+  "p_char_279_excu": {
+    "itemId": "p_char_279_excu",
+    "name": "送葬人的信物",
+    "iconId": "p_char_279_excu",
+    "description": "一本《泰拉城邦防身手冊》。鉅細靡遺地描述了在各個知名城邦辦公時需要注意的種種事項，大多與人身安全有緊密關係，且和一般人的生活基本沒有關係。",
+    "usage": "用於提升送葬人的潛能。",
+    "rarity": 5
+  },
+  "p_char_261_sddrag": {
+    "itemId": "p_char_261_sddrag",
+    "name": "葦草的信物",
+    "iconId": "p_char_261_sddrag",
+    "description": "一首寫在日記紙上的短詩。筆跡娟美細碎，用詞令人疼痛難忍。",
+    "usage": "用於提升葦草的潛能。",
+    "rarity": 5
+  },
+  "p_char_356_broca": {
+    "itemId": "p_char_356_broca",
+    "name": "布洛卡的信物",
+    "iconId": "p_char_356_broca",
+    "description": "一座精緻的敘拉古某城微縮景觀模型。被悄悄地放在你的辦公室裡，直到你第二天上班的時候才發現。",
+    "usage": "用於提升布洛卡的潛能。",
+    "rarity": 5
+  },
+  "p_char_243_waaifu": {
+    "itemId": "p_char_243_waaifu",
+    "name": "槐琥的信物",
+    "iconId": "p_char_243_waaifu",
+    "description": "一本以古怪字體寫就的秘傳拳譜。作為工具書，或許有參考的價值......吧？",
+    "usage": "用於提升槐琥的潛能。",
+    "rarity": 5
+  },
+  "p_char_325_bison": {
+    "itemId": "p_char_325_bison",
+    "name": "拜松的信物",
+    "iconId": "p_char_325_bison",
+    "description": "一張老舊的地圖。翻越千山萬水的痕跡昭然若揭，新計畫和舊標記交叉在一起，這就是信使。",
+    "usage": "用於提升拜松的潛能。",
+    "rarity": 5
+  },
+  "p_char_367_swllow": {
+    "itemId": "p_char_367_swllow",
+    "name": "灰喉的信物",
+    "iconId": "p_char_367_swllow",
+    "description": "一節斷裂的手術刀，父親的遺物，難以想像向感染者施以援手的醫生竟然會經受這樣的折磨。",
+    "usage": "用於提升灰喉的潛能。",
+    "rarity": 5
+  },
+  "p_char_226_hmau": {
+    "itemId": "p_char_226_hmau",
+    "name": "吽的信物",
+    "iconId": "p_char_226_hmau",
+    "description": "一本吽親自整理和撰寫的，各季節家常推薦食譜，上面的菜都好做又好吃。",
+    "usage": "用於提升吽的潛能。",
+    "rarity": 5
+  },
+  "p_char_383_snsant": {
+    "itemId": "p_char_383_snsant",
+    "name": "雪雉的信物",
+    "iconId": "p_char_383_snsant",
+    "description": "親手縫製的零錢包，裝著一些已經停止流通了的小額硬幣。",
+    "usage": "用於提升雪雉的潛能。",
+    "rarity": 5
+  },
+  "p_char_306_leizi": {
+    "itemId": "p_char_306_leizi",
+    "name": "驚蟄的信物",
+    "iconId": "p_char_306_leizi",
+    "description": "一把造型老舊的橡木尺子。沒有規矩，不成方圓。",
+    "usage": "用於提升驚蟄的潛能。",
+    "rarity": 5
+  },
+  "p_char_379_sesa": {
+    "itemId": "p_char_379_sesa",
+    "name": "懾砂的信物",
+    "iconId": "p_char_379_sesa",
+    "description": "一個刻著符文的掛墜，浮誇的裝飾下飽含對過去的執念。",
+    "usage": "用於提升懾砂的潛能。",
+    "rarity": 5
+  },
+  "p_char_252_bibeak": {
+    "itemId": "p_char_252_bibeak",
+    "name": "柏喙的信物",
+    "iconId": "p_char_252_bibeak",
+    "description": "做工粗糙的襯衣，柏喙初學縫紉時的作品。穿起來未必舒服，但飽含心意。",
+    "usage": "用於提升柏喙的潛能。",
+    "rarity": 5
+  },
+  "p_char_230_savage": {
+    "itemId": "p_char_230_savage",
+    "name": "暴行的信物",
+    "iconId": "p_char_230_savage",
+    "description": "一串蛋白石項鍊。希望你能把它交付給正確的人。",
+    "usage": "用於提升暴行的潛能。",
+    "rarity": 5
+  },
+  "p_char_254_vodfox": {
+    "itemId": "p_char_254_vodfox",
+    "name": "巫戀的信物",
+    "iconId": "p_char_254_vodfox",
+    "description": "咬過一口的蘋果，小小的牙印清晰可見。",
+    "usage": "用於提升巫戀的潛能。",
+    "rarity": 5
+  },
+  "p_char_333_sidero": {
+    "itemId": "p_char_333_sidero",
+    "name": "鑄鐵的信物",
+    "iconId": "p_char_333_sidero",
+    "description": "熠熠生輝的小人像，似乎對米諾斯人意義非凡。旅人的神明，保護鑄鐵的神明，或許正在保護你。",
+    "usage": "用於提升鑄鐵的潛能。",
+    "rarity": 5
+  },
+  "p_char_401_elysm": {
+    "itemId": "p_char_401_elysm",
+    "name": "極境的信物",
+    "iconId": "p_char_401_elysm",
+    "description": "一張複雜詳盡的手繪地形線路圖。如果看不懂，極境本人也很樂意親自領路。",
+    "usage": "用於提升極境的潛能。",
+    "rarity": 5
+  },
+  "p_char_378_asbest": {
+    "itemId": "p_char_378_asbest",
+    "name": "石棉的信物",
+    "iconId": "p_char_378_asbest",
+    "description": "一個探險套裝。她的意思似乎是，如果你有空的話，可以跟她一起出去走走。",
+    "usage": "用於提升石棉的潛能。",
+    "rarity": 5
+  },
+  "p_char_343_tknogi": {
+    "itemId": "p_char_343_tknogi",
+    "name": "月禾的信物",
+    "iconId": "p_char_343_tknogi",
+    "description": "由月禾本人製作與祈福的御守。聽說帶上能讓人心平氣和，還可以撫平對黑夜的恐懼。",
+    "usage": "用於提升月禾的潛能。",
+    "rarity": 5
+  },
+  "p_char_405_absin": {
+    "itemId": "p_char_405_absin",
+    "name": "苦艾的信物",
+    "iconId": "p_char_405_absin",
+    "description": "一件大尺寸的烏薩斯制式防擊打背心。前一任主人穿起來不太合身，但她很少將其脫下。",
+    "usage": "用於提升苦艾的潛能。",
+    "rarity": 5
+  },
+  "p_char_373_lionhd": {
+    "itemId": "p_char_373_lionhd",
+    "name": "萊恩哈特的信物",
+    "iconId": "p_char_373_lionhd",
+    "description": "一雙新潮的限定款運動鞋。似乎為維多利亞風靡的球類運動做了特別的輔助設計，技術支援源自雷姆必拓。",
+    "usage": "用於提升萊恩哈特的潛能。",
+    "rarity": 5
+  },
+  "p_char_294_ayer": {
+    "itemId": "p_char_294_ayer",
+    "name": "斷崖的信物",
+    "iconId": "p_char_294_ayer",
+    "description": "一本自製偵察與反偵察指南。“你最好能在任何情況下保護好自己”，他是這樣想的。",
+    "usage": "用於提升斷崖的潛能。",
+    "rarity": 5
+  },
+  "p_char_345_folnic": {
+    "itemId": "p_char_345_folnic",
+    "name": "亞葉的信物",
+    "iconId": "p_char_345_folnic",
+    "description": "一張科學海報。詳細闡述了各種不適情況及治療方法，不知為何背面附上了大量駭人聽聞的真實案例。",
+    "usage": "用於提升亞葉的潛能。",
+    "rarity": 5
+  },
+  "p_char_344_beewax": {
+    "itemId": "p_char_344_beewax",
+    "name": "蜜蠟的信物",
+    "iconId": "p_char_344_beewax",
+    "description": "包含精油、軟刷、磨砂條在內的全套角護理器具，沙漠部族內定制，重金難求。只要不嫌貴，也可以只用它來修修指甲。",
+    "usage": "用於提升蜜蠟的潛能。",
+    "rarity": 5
+  },
+  "p_char_349_chiave": {
+    "itemId": "p_char_349_chiave",
+    "name": "賈維的信物",
+    "iconId": "p_char_349_chiave",
+    "description": "一枚由他親手打造的代表“賈維集團”的標牌。上面還刻上了你的名字。",
+    "usage": "用於提升賈維的潛能。",
+    "rarity": 5
+  },
+  "p_char_336_folivo": {
+    "itemId": "p_char_336_folivo",
+    "name": "稀音的信物",
+    "iconId": "p_char_336_folivo",
+    "description": "一個新款照相機。真正的景色，需要由自己來拍攝。",
+    "usage": "用於提升稀音的潛能。",
+    "rarity": 5
+  },
+  "p_char_218_cuttle": {
+    "itemId": "p_char_218_cuttle",
+    "name": "安哲拉的信物",
+    "iconId": "p_char_218_cuttle",
+    "description": "一把模型銃。她親手做的，做工很精緻。",
+    "usage": "用於提升安哲拉的潛能。",
+    "rarity": 5
+  },
+  "p_char_411_tomimi": {
+    "itemId": "p_char_411_tomimi",
+    "name": "特米米的信物",
+    "iconId": "p_char_411_tomimi",
+    "description": "一張幹員親手製作的捕夢網，散發著令人舒適的清香。睡得安穩，才有力氣做事，這是特米米的獨家秘訣。",
+    "usage": "用於提升特米米的潛能。",
+    "rarity": 5
+  },
+  "p_char_415_flint": {
+    "itemId": "p_char_415_flint",
+    "name": "燧石的信物",
+    "iconId": "p_char_415_flint",
+    "description": "一把鋒利的石製匕首。由燧石親手鍛製，原主人一般拿它來切割烤肉，適用於多種野外環境，但要小心不要劃傷自己！",
+    "usage": "用於提升燧石的潛能。",
+    "rarity": 5
+  },
+  "p_char_365_aprl": {
+    "itemId": "p_char_365_aprl",
+    "name": "四月的信物",
+    "iconId": "p_char_365_aprl",
+    "description": "一張全新包裝的收錄了《四月》這首歌的專輯，上面用緞帶綁了一個蝴蝶結。",
+    "usage": "用於提升四月的潛能。",
+    "rarity": 5
+  },
+  "p_char_388_mint": {
+    "itemId": "p_char_388_mint",
+    "name": "薄綠的信物",
+    "iconId": "p_char_388_mint",
+    "description": "一本陳舊的硬皮書。在真正被咬之前，沒人知道這本書會不會咬人。",
+    "usage": "用於提升薄綠的潛能。",
+    "rarity": 5
+  },
+  "p_char_346_aosta": {
+    "itemId": "p_char_346_aosta",
+    "name": "奧斯塔的信物",
+    "iconId": "p_char_346_aosta",
+    "description": "一頂由他親手製作的敘拉古風格寬簷帽，用的布料非常好，能夠感受到製作者的用心。",
+    "usage": "用於提升奧斯塔的潛能。",
+    "rarity": 5
+  },
+  "p_char_265_sophia": {
+    "itemId": "p_char_265_sophia",
+    "name": "鞭刃的信物",
+    "iconId": "p_char_265_sophia",
+    "description": "卡西米爾金棕銀行發行的貴賓信用卡附屬卡，額度非常高，在卡西米爾各大城市中均可使用。",
+    "usage": "用於提升鞭刃的潛能。",
+    "rarity": 5
+  },
+  "p_char_436_whispr": {
+    "itemId": "p_char_436_whispr",
+    "name": "絮雨的信物",
+    "iconId": "p_char_436_whispr",
+    "description": "老舊的電影票根。一份回憶的證明，票面上的油墨脫落，老舊泛黃，模糊不清。",
+    "usage": "用於提升絮雨的潛能。",
+    "rarity": 5
+  },
+  "p_char_214_kafka": {
+    "itemId": "p_char_214_kafka",
+    "name": "卡夫卡的信物",
+    "iconId": "p_char_214_kafka",
+    "description": "一盆精心打理過的盆栽，附贈一張卡片，上面寫著：“土裡埋了一把匕首，必要的時候可以拿來削蘋果哦。”",
+    "usage": "用於提升卡夫卡的潛能。",
+    "rarity": 5
+  },
+  "p_char_451_robin": {
+    "itemId": "p_char_451_robin",
+    "name": "羅賓的信物",
+    "iconId": "p_char_451_robin",
+    "description": "一把沒有開封的匕首，設計很精緻，柄上還有刻字。似乎是某部電影的限量版周邊。",
+    "usage": "用於提升羅賓的潛能。",
+    "rarity": 5
+  },
+  "p_char_338_iris": {
+    "itemId": "p_char_338_iris",
+    "name": "愛麗絲的信物",
+    "iconId": "p_char_338_iris",
+    "description": "手工製作的童話書。從未在市面上發行的童話故事集，每一幅插圖都由製作者親手繪製。",
+    "usage": "用於提升愛麗絲的潛能。",
+    "rarity": 5
+  },
+  "p_char_402_tuye": {
+    "itemId": "p_char_402_tuye",
+    "name": "圖耶的信物",
+    "iconId": "p_char_402_tuye",
+    "description": "一小瓶營養液。優秀醫療幹員圖耶手工調製，氣味特殊，喝不喝、什麼時候喝請謹慎判斷。",
+    "usage": "用於提升圖耶的潛能。",
+    "rarity": 5
+  },
+  "p_char_455_nothin": {
+    "itemId": "p_char_455_nothin",
+    "name": "烏有的信物",
+    "iconId": "p_char_455_nothin",
+    "description": "一把紙扇，扇骨使用了特殊的材質，扇面則寫著“子虛烏有”。",
+    "usage": "用於提升烏有的潛能。",
+    "rarity": 5
+  },
+  "p_char_1011_lava2": {
+    "itemId": "p_char_1011_lava2",
+    "name": "炎獄炎熔的信物",
+    "iconId": "p_char_1011_lava2",
+    "description": "佈滿傷痕的匕首套。曾經親自雕琢的特色花紋，在使用過程中已被磨損得看不見紋路。",
+    "usage": "用於提升炎獄炎熔的潛能。",
+    "rarity": 5
+  },
+  "p_char_457_blitz": {
+    "itemId": "p_char_457_blitz",
+    "name": "BLITZ的信物",
+    "iconId": "p_char_457_blitz",
+    "description": "一整套語言學書籍與整理完善的筆記，似乎是用來標示不同語種的名詞比對。",
+    "usage": "用於提升BLITZ的潛能。",
+    "rarity": 5
+  },
+  "p_char_458_rfrost": {
+    "itemId": "p_char_458_rfrost",
+    "name": "FROST的信物",
+    "iconId": "p_char_458_rfrost",
+    "description": "一套手工製作的野外求生工具。生存需要技巧而非蠻力，這就是她想要告訴你的。",
+    "usage": "用於提升FROST的潛能。",
+    "rarity": 5
+  },
+  "p_char_459_tachak": {
+    "itemId": "p_char_459_tachak",
+    "name": "TACHANKA的信物",
+    "iconId": "p_char_459_tachak",
+    "description": "一套用木頭與源石蟲外殼製作的玩偶，可以一個套一個，全部套在最大的玩偶裡。",
+    "usage": "用於提升TACHANKA的潛能。",
+    "rarity": 5
+  },
+  "p_char_363_toddi": {
+    "itemId": "p_char_363_toddi",
+    "name": "熔泉的信物",
+    "iconId": "p_char_363_toddi",
+    "description": "精工切割的二十面寶石晶體。按照她的說法，隨手丟給別人的不能算是禮物。",
+    "usage": "用於提升熔泉的潛能。",
+    "rarity": 5
+  },
+  "p_char_304_zebra": {
+    "itemId": "p_char_304_zebra",
+    "name": "暴雨的信物",
+    "iconId": "p_char_304_zebra",
+    "description": "一面小型盾牌，似乎是她在火神的指導下親手打造的。很輕便，但是很堅固。",
+    "usage": "用於提升暴雨的潛能。",
+    "rarity": 5
+  },
+  "p_char_475_akafyu": {
+    "itemId": "p_char_475_akafyu",
+    "name": "赤冬的信物",
+    "iconId": "p_char_475_akafyu",
+    "description": "一盤生拌獸肉。能一起大笑著吃光光的才是好兄弟。",
+    "usage": "用於提升赤冬的潛能。",
+    "rarity": 5
+  },
+  "p_char_478_kirara": {
+    "itemId": "p_char_478_kirara",
+    "name": "綺良的信物",
+    "iconId": "p_char_478_kirara",
+    "description": "《機械忍者2》典藏版。東國經典遊戲的初期典藏版，她迫不及待將喜歡的都與你分享。",
+    "usage": "用於提升綺良的潛能。",
+    "rarity": 5
+  },
+  "p_char_369_bena": {
+    "itemId": "p_char_369_bena",
+    "name": "貝娜的信物",
+    "iconId": "p_char_369_bena",
+    "description": "一件精美的袖珍衣服。人沒法穿，但可以撐起來放在桌上當擺件。",
+    "usage": "用於提升貝娜的潛能。",
+    "rarity": 5
+  },
+  "p_char_421_crow": {
+    "itemId": "p_char_421_crow",
+    "name": "羽毛筆的信物",
+    "iconId": "p_char_421_crow",
+    "description": "一本《多索雷斯調酒指南》，上面不少配方旁邊都有她的筆記，看來這些都是她擅長的，閒暇之餘可以找她點一杯。",
+    "usage": "用於提升羽毛筆的潛能。",
+    "rarity": 5
+  },
+  "p_char_486_takila": {
+    "itemId": "p_char_486_takila",
+    "name": "龍舌蘭的信物",
+    "iconId": "p_char_486_takila",
+    "description": "刻有姓名和日期的銘牌。從拿到它的那一天起，龍舌蘭就一直隨身攜帶。現在是時候該放下它了。",
+    "usage": "用於提升龍舌蘭的潛能。",
+    "rarity": 5
+  },
+  "p_char_473_mberry": {
+    "itemId": "p_char_473_mberry",
+    "name": "桑葚的信物",
+    "iconId": "p_char_473_mberry",
+    "description": "掛著炎國特色裝飾的紅色平安符。桑葚特地為你請回的護身符，上面寫著難懂的炎國文字，香火的氣息若有若無。",
+    "usage": "用於提升桑葚的潛能。",
+    "rarity": 5
+  },
+  "p_char_431_ashlok": {
+    "itemId": "p_char_431_ashlok",
+    "name": "灰毫的信物",
+    "iconId": "p_char_431_ashlok",
+    "description": "一枚擊發後留下的彈殼，上面有著灰毫的簽名。 這一發炮彈曾經為她帶來了勝利，現在，它是你的了。",
+    "usage": "用於提升灰毫的潛能。",
+    "rarity": 5
+  },
+  "p_char_449_glider": {
+    "itemId": "p_char_449_glider",
+    "name": "蜜莓的信物",
+    "iconId": "p_char_449_glider",
+    "description": "一盆蜜莓親手栽培的莓果植株。形態美觀，果實酸甜可口，全株可以入藥，是此前未被發現過的新品種。",
+    "usage": "用於提升蜜莓的潛能。",
+    "rarity": 5
+  },
+  "p_char_496_wildmn": {
+    "itemId": "p_char_496_wildmn",
+    "name": "野鬃的信物",
+    "iconId": "p_char_496_wildmn",
+    "description": "破損的母槍外殼碎片，被野鬃珍貴地保留下來。每一場戰鬥都伴隨著代價，凡事需要再三思考，野鬃這樣提醒著自己。",
+    "usage": "用於提升野鬃的潛能。",
+    "rarity": 5
+  },
+  "p_char_489_serum": {
+    "itemId": "p_char_489_serum",
+    "name": "蝕清的信物",
+    "iconId": "p_char_489_serum",
+    "description": "一個個貼著密密麻麻標籤的試劑瓶。《反腐蝕覆膜試劑》《反反腐蝕覆膜試劑》《反反......反反腐蝕覆膜試劑》，字有點小。呃，認真的？",
+    "usage": "用於提升蝕清的潛能。",
+    "rarity": 5
+  },
+  "p_char_422_aurora": {
+    "itemId": "p_char_422_aurora",
+    "name": "極光的信物",
+    "iconId": "p_char_422_aurora",
+    "description": "一把密碼鎖。能打開她隨身攜帶的工具箱，裡面的東西任你取用。",
+    "usage": "用於提升極光的潛能。",
+    "rarity": 5
+  },
+  "p_char_4013_kjera": {
+    "itemId": "p_char_4013_kjera",
+    "name": "耶拉的信物",
+    "iconId": "p_char_4013_kjera",
+    "description": "一條手織圍脖，用料很足，在謝拉格圍上都會覺得熱。沒有任何特殊之處，但光是編出這樣一條精緻圍脖的手藝已經足以令人發出讚歎。",
+    "usage": "用於提升耶拉的潛能。",
+    "rarity": 5
+  },
+  "p_char_4025_aprot2": {
+    "itemId": "p_char_4025_aprot2",
+    "name": "暮落的信物",
+    "iconId": "p_char_4025_aprot2",
+    "description": "一枚碎裂的徽章，上面刻著猩紅劇團的紋案。暮落保存著這段過去，似乎早已料到會有將之交出的一天。",
+    "usage": "用於提升暮落的潛能。",
+    "rarity": 5
+  },
+  "p_char_476_blkngt": {
+    "itemId": "p_char_476_blkngt",
+    "name": "夜半的信物",
+    "iconId": "p_char_476_blkngt",
+    "description": "一頂針織睡帽。製作手法粗糙，但觸感很柔軟。",
+    "usage": "用於提升夜半的潛能。",
+    "rarity": 5
+  },
+  "p_char_492_quercu": {
+    "itemId": "p_char_492_quercu",
+    "name": "夏櫟的信物",
+    "iconId": "p_char_492_quercu",
+    "description": "一個只有土的空花盆。那是她從家鄉帶來的泥土，有閒心的時候可以去找她要幾粒種子。",
+    "usage": "用於提升夏櫟的潛能。",
+    "rarity": 5
+  },
+  "p_char_1021_kroos2": {
+    "itemId": "p_char_1021_kroos2",
+    "name": "寒芒克洛絲的信物",
+    "iconId": "p_char_1021_kroos2",
+    "description": "一支吸盤箭，箭羽上繫著個鈴鐺。\n有了這支箭，你可以報個名字，只要羅德島上有且可以射擊的，她都能把箭釘在目標上。",
+    "usage": "用於提升寒芒克洛絲的潛能。",
+    "rarity": 5
+  },
+  "p_char_4016_kazema": {
+    "itemId": "p_char_4016_kazema",
+    "name": "風丸的信物",
+    "iconId": "p_char_4016_kazema",
+    "description": "一串顏色鮮亮、悉索作響的小掛飾，風丸親手製作。",
+    "usage": "用於提升風丸的潛能。",
+    "rarity": 5
+  },
+  "p_char_4036_forcer": {
+    "itemId": "p_char_4036_forcer",
+    "name": "見行者的信物",
+    "iconId": "p_char_4036_forcer",
+    "description": "一罐無糖咖啡，方便攜帶，開罐即飲。\n是沒辦法煮咖啡卻又急需提神時的最佳選擇，如果你能忍受苦味的話。",
+    "usage": "用於提升見行者的潛能。",
+    "rarity": 5
+  },
+  "p_char_4040_rockr": {
+    "itemId": "p_char_4040_rockr",
+    "name": "洛洛的信物",
+    "iconId": "p_char_4040_rockr",
+    "description": "一把製作簡陋的小剪刀，罕有用途。剪刀用於剪斷牽絆，她守在過去，想要目送你走向未來。",
+    "usage": "用於提升洛洛的潛能。",
+    "rarity": 5
+  },
+  "p_char_4045_heidi": {
+    "itemId": "p_char_4045_heidi",
+    "name": "海蒂的信物",
+    "iconId": "p_char_4045_heidi",
+    "description": "一本手寫的故事集，字跡稚拙，紙頁泛黃。她還是經常夢見自己坐在多倫郡的寫字台前，窗外的櫟樹林被大雪覆蓋。",
+    "usage": "用於提升海蒂的潛能。",
+    "rarity": 5
+  },
+  "p_char_433_windft": {
+    "itemId": "p_char_433_windft",
+    "name": "掠風的信物",
+    "iconId": "p_char_433_windft",
+    "description": "一盒耐磨創可貼，掠風隨身攜帶的物品。用到被磨破為止，多一個厚繭，少一塊創可貼。",
+    "usage": "用於提升掠風的潛能。",
+    "rarity": 5
+  },
+  "p_char_4043_erato": {
+    "itemId": "p_char_4043_erato",
+    "name": "埃拉托的信物",
+    "iconId": "p_char_4043_erato",
+    "description": "一本筆記，寫滿了神話傳說和吟遊詩。辭藻不算華麗，但讀得出滿滿的真誠與熱情。",
+    "usage": "用於提升埃拉托的潛能。",
+    "rarity": 5
+  },
+  "p_char_1024_hbisc2": {
+    "itemId": "p_char_1024_hbisc2",
+    "name": "濯塵芙蓉的信物",
+    "iconId": "p_char_1024_hbisc2",
+    "description": "一朵用紙折成的小花。在每一位即將出院的病人的床邊留下這樣一個小小的紀念品，已經成了芙蓉的習慣。",
+    "usage": "用於提升濯塵芙蓉的潛能。",
+    "rarity": 5
+  },
+  "p_char_4047_pianst": {
+    "itemId": "p_char_4047_pianst",
+    "name": "車爾尼的信物",
+    "iconId": "p_char_4047_pianst",
+    "description": "一個模樣老舊的節拍器，陪伴年幼的車爾尼度過了那段短暫卻幸福的啟蒙時期。",
+    "usage": "用於提升車爾尼的潛能。",
+    "rarity": 5
+  },
+  "p_char_1027_greyy2": {
+    "itemId": "p_char_1027_greyy2",
+    "name": "承曦格雷伊的信物",
+    "iconId": "p_char_1027_greyy2",
+    "description": "一篇答辯論文。寥寥數張紙，描繪著年輕的佩洛這幾年的心路。",
+    "usage": "用於提升承曦格雷伊的潛能。",
+    "rarity": 5
+  },
+  "p_char_135_halo": {
+    "itemId": "p_char_135_halo",
+    "name": "星源的信物",
+    "iconId": "p_char_135_halo",
+    "description": "一個自製彗星模型。過去的就讓它過去吧，未來，在自己手中。",
+    "usage": "用於提升星源的潛能。",
+    "rarity": 5
+  },
+  "p_char_497_ctable": {
+    "itemId": "p_char_497_ctable",
+    "name": "曉歌的信物",
+    "iconId": "p_char_497_ctable",
+    "description": "一把剔除了武器的小豎琴。隨意撥動也能傳出動人的樂聲，安定你在混亂中紛雜的心緒。",
+    "usage": "用於提升曉歌的潛能。",
+    "rarity": 5
+  },
+  "p_char_4054_malist": {
+    "itemId": "p_char_4054_malist",
+    "name": "至簡的信物",
+    "iconId": "p_char_4054_malist",
+    "description": "一個磨損到不能再使用的鉛筆頭。在被消耗完之前，它畫出了令人稱奇的設計。",
+    "usage": "用於提升至簡的潛能。",
+    "rarity": 5
+  },
+  "p_char_4032_provs": {
+    "itemId": "p_char_4032_provs",
+    "name": "但書的信物",
+    "iconId": "p_char_4032_provs",
+    "description": "一本寫滿了筆記的卡西米爾案例分析書。無數條底線標出重點，越多越無用。",
+    "usage": "用於提升但書的潛能。",
+    "rarity": 5
+  },
+  "p_char_4066_highmo": {
+    "itemId": "p_char_4066_highmo",
+    "name": "海沫的信物",
+    "iconId": "p_char_4066_highmo",
+    "description": "一隻潔白的貝螺。在寂靜的夜晚將它捧起，靠在耳邊，似乎能聽到悠遠的離歌。",
+    "usage": "用於提升海沫的潛能。",
+    "rarity": 5
+  },
+  "p_char_4071_peper": {
+    "itemId": "p_char_4071_peper",
+    "name": "明椒的信物",
+    "iconId": "p_char_4071_peper",
+    "description": "毛絨絨護耳罩。集美觀、保暖、防護於一身的毛線耳罩，由女孩親手編織而成。",
+    "usage": "用於提升明椒的潛能。",
+    "rarity": 5
+  },
+  "p_char_157_dagda": {
+    "itemId": "p_char_157_dagda",
+    "name": "達格達的信物",
+    "iconId": "p_char_157_dagda",
+    "description": "《塔樓騎士之書》中的一頁。寫有伊莎貝爾·“達格達”·孟塔古的姓名，下方仍有大段空白，正在等待書寫。",
+    "usage": "用於提升達格達的潛能。",
+    "rarity": 5
+  },
+  "p_char_466_qanik": {
+    "itemId": "p_char_466_qanik",
+    "name": "雪絨的信物",
+    "iconId": "p_char_466_qanik",
+    "description": "一束美麗的乾花，採自北方冷冽的荒野。花瓣上殘餘的香味，總能讓雪絨想起故鄉。",
+    "usage": "用於提升雪絨的潛能。",
+    "rarity": 5
+  },
+  "p_char_4014_lunacu": {
+    "itemId": "p_char_4014_lunacu",
+    "name": "子月的信物",
+    "iconId": "p_char_4014_lunacu",
+    "description": "一枚骨製箭頭，看樣子是子月親手打磨的。當被問及骨頭的來源時，子月表示是在外面撿到的。",
+    "usage": "用於提升子月的潛能。",
+    "rarity": 5
+  },
+  "p_char_297_hamoni": {
+    "itemId": "p_char_297_hamoni",
+    "name": "和弦的信物",
+    "iconId": "p_char_297_hamoni",
+    "description": "一張某位大貴族的舞會邀請函。附帶一份詳盡的受邀者名單與介紹，當然，你不在其列。",
+    "usage": "用於提升和弦的潛能。",
+    "rarity": 5
+  },
+  "p_char_4017_puzzle": {
+    "itemId": "p_char_4017_puzzle",
+    "name": "謎圖的信物",
+    "iconId": "p_char_4017_puzzle",
+    "description": "一幅純白的拼圖。追問他是誰或許沒有意義，問問他追尋的秩序是什麼吧。",
+    "usage": "用於提升謎圖的潛能。",
+    "rarity": 5
+  },
+  "p_char_4078_bdhkgt": {
+    "itemId": "p_char_4078_bdhkgt",
+    "name": "截雲的信物",
+    "iconId": "p_char_4078_bdhkgt",
+    "description": "一壇味道辛辣的濁酒。夜晚的沙漠溫度驟降，喝下它能夠驅走些許寒意。",
+    "usage": "用於提升截雲的潛能。",
+    "rarity": 5
+  },
+  "p_char_493_firwhl": {
+    "itemId": "p_char_493_firwhl",
+    "name": "火哨的信物",
+    "iconId": "p_char_493_firwhl",
+    "description": "一台看起來平平無奇的打火機。你從未想過一束火苗居然能在別人手裡玩出數十種花樣。",
+    "usage": "用於提升火哨的潛能。",
+    "rarity": 5
+  },
+  "p_char_4083_chimes": {
+    "itemId": "p_char_4083_chimes",
+    "name": "鐸鈴的信物",
+    "iconId": "p_char_4083_chimes",
+    "description": "一枚銅製的鈴鐺，經過一點加工，要稍微用力才能搖響。她怕不解人意的風激起鈴聲，聒碎遠行之人的鄉心。",
+    "usage": "用於提升鐸鈴的潛能。",
+    "rarity": 5
+  },
+  "p_char_1030_noirc2": {
+    "itemId": "p_char_1030_noirc2",
+    "name": "火龍S黑角的信物",
+    "iconId": "p_char_1030_noirc2",
+    "description": "一套隨身烤肉組合，可以隨時從任何大小的口袋中掏出來。黑角花了很久才找到烤肉的訣竅，認為這項技能會在關鍵時刻派上用場。",
+    "usage": "用於提升火龍S黑角的潛能。",
+    "rarity": 5
+  },
+  "p_char_154_morgan": {
+    "itemId": "p_char_154_morgan",
+    "name": "摩根的信物",
+    "iconId": "p_char_154_morgan",
+    "description": "一張書寫工整的活頁。上面羅列的格拉斯哥幫相處準則一目了然，但摩根也清楚要同伴們全部遵守有點異想天開。",
+    "usage": "用於提升摩根的潛能。",
+    "rarity": 5
+  },
+  "p_char_464_cement": {
+    "itemId": "p_char_464_cement",
+    "name": "洋灰的信物",
+    "iconId": "p_char_464_cement",
+    "description": "一頂痕跡斑駁的安全帽。不好好佩戴的話，洋灰不會允許你隨她進入礦場。",
+    "usage": "用於提升洋灰的潛能。",
+    "rarity": 5
+  },
+  "p_char_4006_melnte": {
+    "itemId": "p_char_4006_melnte",
+    "name": "玫拉的信物",
+    "iconId": "p_char_4006_melnte",
+    "description": "大桶裝巧克力味營養沖劑，一般用奶沖著喝當夜宵。十幾年前全哥倫比亞的雜貨店都賣這個，如今已經不常見了。",
+    "usage": "用於提升玫拉的潛能。",
+    "rarity": 5
+  },
+  "p_char_498_inside": {
+    "itemId": "p_char_498_inside",
+    "name": "隱現的信物",
+    "iconId": "p_char_498_inside",
+    "description": "一份手寫甜品食譜。根據隱現自己的口味改良過的食譜，糖分絕對超標！提高警惕！",
+    "usage": "用於提升隱現的潛能。",
+    "rarity": 5
+  },
+  "p_char_4015_spuria": {
+    "itemId": "p_char_4015_spuria",
+    "name": "空構的信物",
+    "iconId": "p_char_4015_spuria",
+    "description": "一本精密機械的使用說明書，裡面卻只寫著一串特殊的電話號碼，她認為親口告訴你怎麼做更簡單。但有的時候，她也會看心情教你一些錯誤的使用方法。",
+    "usage": "用於提升空構的潛能。",
+    "rarity": 5
+  },
+  "p_char_341_sntlla": {
+    "itemId": "p_char_341_sntlla",
+    "name": "寒檀的信物",
+    "iconId": "p_char_341_sntlla",
+    "description": "一塊雕刻著奇異符號的木塊。你記得寒檀告訴過你，符號的意義是“溫暖”。",
+    "usage": "用於提升寒檀的潛能。",
+    "rarity": 5
+  },
+  "p_char_4102_threye": {
+    "itemId": "p_char_4102_threye",
+    "name": "凜視的信物",
+    "iconId": "p_char_4102_threye",
+    "description": "一盞長明燈，發光元件與她的法杖材質相同。她自己能在黑暗中視物，但她對你放心不下。",
+    "usage": "用於提升凜視的潛能。",
+    "rarity": 5
+  },
+  "p_char_4106_bryota": {
+    "itemId": "p_char_4106_bryota",
+    "name": "蒼苔的信物",
+    "iconId": "p_char_4106_bryota",
+    "description": "一塊拇指大小的衝浪板，印有“純白火山”的標誌，這是他用來裝飾雞尾酒的擺件。希望能讓你懷想起在汐斯塔沙灘度過的難忘假日。",
+    "usage": "用於提升蒼苔的潛能。",
+    "rarity": 5
+  },
+  "p_char_488_buildr": {
+    "itemId": "p_char_488_buildr",
+    "name": "青枳的信物",
+    "iconId": "p_char_488_buildr",
+    "description": "一顆小小的、青綠色的果子，果皮無法完全包裹住它的酸澀與清香。她說可以種在花盆裡，幸運的話會結出飽滿甜蜜的果實——大概吧。",
+    "usage": "用於提升青枳的潛能。",
+    "rarity": 5
+  },
+  "p_char_4105_almond": {
+    "itemId": "p_char_4105_almond",
+    "name": "杏仁的信物",
+    "iconId": "p_char_4105_almond",
+    "description": "一枚金屬製的哨子，用力吹動會發出響亮的哨音，相當提神。“呦呵——開工啦！”",
+    "usage": "用於提升杏仁的潛能。",
+    "rarity": 5
+  },
+  "p_char_4104_coldst": {
+    "itemId": "p_char_4104_coldst",
+    "name": "冰釀的信物",
+    "iconId": "p_char_4104_coldst",
+    "description": "一顆被切割成圓球的冰塊，放進杯子裡大小剛好。如果想嚐嚐她的自釀酒，建議加冰稀釋，更建議不要嘗試。",
+    "usage": "用於提升冰釀的潛能。",
+    "rarity": 5
+  },
+  "p_char_4110_delphn": {
+    "itemId": "p_char_4110_delphn",
+    "name": "戴菲恩的信物",
+    "iconId": "p_char_4110_delphn",
+    "description": "一枚精緻的袖扣。溫德米爾出身的軍人向來軍容整潔，一絲不苟，現在她主動將這枚小信物摘下送給你。",
+    "usage": "用於提升戴菲恩的潛能。",
+    "rarity": 5
+  },
+  "p_char_494_vendla": {
+    "itemId": "p_char_494_vendla",
+    "name": "刺玫的信物",
+    "iconId": "p_char_494_vendla",
+    "description": "一枝枯萎的白玫瑰，米黃色花瓣上浸染了無法抹去的暗紅痕跡，記錄著她過去生活的某段回憶。過往已逝，她能攥住的並不多。",
+    "usage": "用於提升刺玫的潛能。",
+    "rarity": 5
+  },
+  "p_char_499_kaitou": {
+    "itemId": "p_char_499_kaitou",
+    "name": "折光的信物",
+    "iconId": "p_char_499_kaitou",
+    "description": "一個樸素的寶石放大鏡，似乎已經用了許多年。請尋找偽造痕跡，請鑑定我的本質。",
+    "usage": "用於提升折光的潛能。",
+    "rarity": 5
+  },
+  "p_char_4109_baslin": {
+    "itemId": "p_char_4109_baslin",
+    "name": "深律的信物",
+    "iconId": "p_char_4109_baslin",
+    "description": "一支低音號的喇叭。深律已經將其擦拭乾淨，恢復了它往日的光澤。",
+    "usage": "用於提升深律的潛能。",
+    "rarity": 5
+  },
+  "p_char_194_leto": {
+    "itemId": "p_char_194_leto",
+    "name": "烈夏的信物",
+    "iconId": "p_char_194_leto",
+    "description": "一瓶代表家鄉味道的蜂蜜飲料。烈夏將它遞給你之後，立刻就要與你“乾瓶”。",
+    "usage": "用於提升烈夏的潛能。",
+    "rarity": 5
+  },
+  "p_char_4114_harold": {
+    "itemId": "p_char_4114_harold",
+    "name": "哈洛德的信物",
+    "iconId": "p_char_4114_harold",
+    "description": "一瓶精挑細選的香水。從成分到如何使用，哈洛德為你進行了全面的說明，詳盡到令人有些厭煩。",
+    "usage": "用於提升哈洛德的潛能。",
+    "rarity": 5
+  },
+  "p_char_4081_warmy": {
+    "itemId": "p_char_4081_warmy",
+    "name": "溫米的信物",
+    "iconId": "p_char_4081_warmy",
+    "description": "一輛用糖紙疊成的小小運載車。你在旅途中給了溫米幾顆雷姆必拓奶糖，她變了個樣子回贈與你。",
+    "usage": "用於提升溫米的潛能。",
+    "rarity": 5
+  },
+  "p_char_4119_wanqin": {
+    "itemId": "p_char_4119_wanqin",
+    "name": "萬頃的信物",
+    "iconId": "p_char_4119_wanqin",
+    "description": "一個精緻的天師儀模型，據說是天師府限量販售，在炎國孩子間人氣很高。“想要拿到真的就要好好唸書學習。”在炎國，每個孩子都聽過這樣的話。",
+    "usage": "用於提升萬頃的潛能。",
+    "rarity": 5
+  },
+  "p_char_4122_grabds": {
+    "itemId": "p_char_4122_grabds",
+    "name": "小滿的信物",
+    "iconId": "p_char_4122_grabds",
+    "description": "一支手工製作的竹笛，聲音清亮，但音準稍稍有些問題。",
+    "usage": "用於提升小滿的潛能。",
+    "rarity": 5
+  },
+  "p_char_4023_rfalcn": {
+    "itemId": "p_char_4023_rfalcn",
+    "name": "紅隼的信物",
+    "iconId": "p_char_4023_rfalcn",
+    "description": "一柄古樸的彎刀。來自薩爾貢的部落戰士把你視作戰友，將它贈予了你。",
+    "usage": "用於提升紅隼的潛能。",
+    "rarity": 5
+  },
+  "p_char_4124_iana": {
+    "itemId": "p_char_4124_iana",
+    "name": "IANA的信物",
+    "iconId": "p_char_4124_iana",
+    "description": "一副僅供日常使用的隱形眼鏡。戴上它並不能讓你使用雙子分身，但你覺得眼前的景物似乎變得更清晰了。",
+    "usage": "用於提升IANA的潛能。",
+    "rarity": 5
+  },
+  "p_char_4125_rdoc": {
+    "itemId": "p_char_4125_rdoc",
+    "name": "DOC的信物",
+    "iconId": "p_char_4125_rdoc",
+    "description": "一枚霰彈彈殼。他為如此解決衝突感到遺憾，但為了拯救更多的生命，他沒有猶豫。",
+    "usage": "用於提升DOC的潛能。",
+    "rarity": 5
+  },
+  "p_char_4126_fuze": {
+    "itemId": "p_char_4126_fuze",
+    "name": "FUZE的信物",
+    "iconId": "p_char_4126_fuze",
+    "description": "一頂形狀獨特的頭盔。你時常好奇頭盔後面的那張臉上究竟是什麼表情。",
+    "usage": "用於提升FUZE的潛能。",
+    "rarity": 5
+  },
+  "p_char_446_aroma": {
+    "itemId": "p_char_446_aroma",
+    "name": "阿羅瑪的信物",
+    "iconId": "p_char_446_aroma",
+    "description": "一張清潔服務預約單，其中羅列了不同香型的清潔劑所適用的情境。有需要就呼叫她，她知道哪一種香味最能讓你舒心。",
+    "usage": "用於提升阿羅瑪的潛能。",
+    "rarity": 5
+  },
+  "p_char_4131_odda": {
+    "itemId": "p_char_4131_odda",
+    "name": "奧達的信物",
+    "iconId": "p_char_4131_odda",
+    "description": "一顆在落葉堆中烤熟的番薯。很燙，捧起它的時候請小心。",
+    "usage": "用於提升奧達的潛能。",
+    "rarity": 5
+  },
+  "p_char_1036_fang2": {
+    "itemId": "p_char_1036_fang2",
+    "name": "歷陣銳槍芬的信物",
+    "iconId": "p_char_1036_fang2",
+    "description": "一件寬大的風衣。在野外活動的時候，可要注意防風保暖呀。",
+    "usage": "用於提升歷陣銳槍芬的潛能。",
+    "rarity": 5
+  },
+  "p_char_4079_haini": {
+    "itemId": "p_char_4079_haini",
+    "name": "海霓的信物",
+    "iconId": "p_char_4079_haini",
+    "description": "一張自製的兌換券。她點子太多了，實在無法決定該送什麼。你去兌換的時候，她會憑當下的心情隨機做上一件。",
+    "usage": "用於提升海霓的潛能。",
+    "rarity": 5
+  },
+  "p_char_4137_udflow": {
+    "itemId": "p_char_4137_udflow",
+    "name": "深巡的信物",
+    "iconId": "p_char_4137_udflow",
+    "description": "一個簡約的金屬文件夾，可以根據使用者偏好的規則自動整理文件。深巡似乎希望你用它來收納她提交的報告。",
+    "usage": "用於提升深巡的潛能。",
+    "rarity": 5
+  },
+  "p_char_4147_mitm": {
+    "itemId": "p_char_4147_mitm",
+    "name": "渡橋的信物",
+    "iconId": "p_char_4147_mitm",
+    "description": "一張第二份半價的甜品券。渡橋將它送給你時反覆叮囑，用掉這張券時一定要帶上他。",
+    "usage": "用於提升渡橋的潛能。",
+    "rarity": 5
+  },
+  "p_char_4151_tinman": {
+    "itemId": "p_char_4151_tinman",
+    "name": "錫人的信物",
+    "iconId": "p_char_4151_tinman",
+    "description": "一枚平平無奇的螺帽。你反覆把它和錫人比較，試圖搞清楚它是從哪個部位掉下來的。",
+    "usage": "用於提升錫人的潛能。",
+    "rarity": 5
+  },
+  "p_char_4140_lasher": {
+    "itemId": "p_char_4140_lasher",
+    "name": "衡沙的信物",
+    "iconId": "p_char_4140_lasher",
+    "description": "一隻特製的發條羽獸，會撿拾你身邊亮閃閃的東西。發條羽獸和它的製作者一樣眼光獨到，而你的辦公室絲毫沒有變得整潔。",
+    "usage": "用於提升衡沙的潛能。",
+    "rarity": 5
+  },
+  "p_char_4139_papyrs": {
+    "itemId": "p_char_4139_papyrs",
+    "name": "莎草的信物",
+    "iconId": "p_char_4139_papyrs",
+    "description": "一本貼上了照片的《遊歷初步規劃（第三版）》。她的旅程因和羅德島的相逢而開始，祝她一路順風。",
+    "usage": "用於提升莎草的潛能。",
+    "rarity": 5
+  },
+  "p_char_4142_laios": {
+    "itemId": "p_char_4142_laios",
+    "name": "萊歐斯的信物",
+    "iconId": "p_char_4142_laios",
+    "description": "一幅奇怪的畫，畫的好像是一種混合了各種泰拉生物外形特徵的融合物。萊歐斯興奮地跟你講解這幅畫的時候千萬別理他。",
+    "usage": "用於提升萊歐斯的潛能。",
+    "rarity": 5
+  },
+  "p_char_4143_sensi": {
+    "itemId": "p_char_4143_sensi",
+    "name": "先西的信物",
+    "iconId": "p_char_4143_sensi",
+    "description": "一瓶先西隨身攜帶的調味料，是來自那座遙遠迷宮的獨特口味。",
+    "usage": "用於提升先西的潛能。",
+    "rarity": 5
+  },
+  "p_char_4144_chilc": {
+    "itemId": "p_char_4144_chilc",
+    "name": "奇爾查克的信物",
+    "iconId": "p_char_4144_chilc",
+    "description": "一個小巧的腰包，可以裝各種隨身物品，外出探險時使用非常方便。",
+    "usage": "用於提升奇爾查克的潛能。",
+    "rarity": 5
+  },
+  "p_char_487_bobb": {
+    "itemId": "p_char_487_bobb",
+    "name": "波卜的信物",
+    "iconId": "p_char_487_bobb",
+    "description": "一個等身高的巨大毛絨玩具，內芯柔軟，抱緊後再鬆開會緩慢回彈。既然生活總有些壓力，那就只好尋找自我調節的手段。",
+    "usage": "用於提升波卜的潛能。",
+    "rarity": 5
+  },
+  "p_char_4162_cathy": {
+    "itemId": "p_char_4162_cathy",
+    "name": "凱瑟琳的信物",
+    "iconId": "p_char_4162_cathy",
+    "description": "用生產剩料製作的發條小鬧鐘，海布里區的兒童玩具兼爆炸物定時器——現在它是你的了。",
+    "usage": "用於提升凱瑟琳的潛能。",
+    "rarity": 5
+  },
+  "p_char_4148_philae": {
+    "itemId": "p_char_4148_philae",
+    "name": "菲萊的信物",
+    "iconId": "p_char_4148_philae",
+    "description": "一種靜坐冥想時使用的薰香，據說它的原料在生長時會竭盡沙土中的水分。如今它竭盡自己，只為助你思若泉流。",
+    "usage": "用於提升菲萊的潛能。",
+    "rarity": 5
+  },
+  "p_char_4155_talr": {
+    "itemId": "p_char_4155_talr",
+    "name": "裁度的信物",
+    "iconId": "p_char_4155_talr",
+    "description": "一枚坑坑窪窪的銀色戒指，似乎曾屬於某位家族成員，被當作頂針用了很久。",
+    "usage": "用於提升裁度的潛能。",
+    "rarity": 5
+  },
+  "p_char_4163_rosesa": {
+    "itemId": "p_char_4163_rosesa",
+    "name": "瑰鹽的信物",
+    "iconId": "p_char_4163_rosesa",
+    "description": "一個具有奇異芬芳的藥草捲，據說點燃後的香氣可以凝神靜氣，但在交給醫療部分析之前最好不要擅自使用！",
+    "usage": "用於提升瑰鹽的潛能。",
+    "rarity": 5
+  },
+  "p_char_4164_tecno": {
+    "itemId": "p_char_4164_tecno",
+    "name": "特克諾的信物",
+    "iconId": "p_char_4164_tecno",
+    "description": "一個臉頰燒焦的小木偶，圓溜溜的眼睛讓你想起特克諾撒嬌時的樣子。",
+    "usage": "用於提升特克諾的潛能。",
+    "rarity": 5
+  },
+  "p_char_4052_surfer": {
+    "itemId": "p_char_4052_surfer",
+    "name": "尋瀾的信物",
+    "iconId": "p_char_4052_surfer",
+    "description": "一張圈出了哥倫比亞某幾處地點的地圖，還附上那些美麗風光的照片，或許下一次她就會帶著你一同前往。",
+    "usage": "用於提升尋瀾的潛能。",
+    "rarity": 5
+  },
+  "p_char_4172_xingzh": {
+    "itemId": "p_char_4172_xingzh",
+    "name": "行箸的信物",
+    "iconId": "p_char_4172_xingzh",
+    "description": "一枚玉雕止箸。行箸以尋百味，止箸以品其味。",
+    "usage": "用於提升行箸的潛能。",
+    "rarity": 5
+  },
+  "p_char_4173_nowell": {
+    "itemId": "p_char_4173_nowell",
+    "name": "諾威爾的信物",
+    "iconId": "p_char_4173_nowell",
+    "description": "一副可折疊的平光眼鏡，鏡架採用黃銅打造。這個款式曾經流行一時，如今卻已被配鏡師們淘汰。",
+    "usage": "用於提升諾威爾的潛能。",
+    "rarity": 5
+  },
+  "p_char_4171_wulfen": {
+    "itemId": "p_char_4171_wulfen",
+    "name": "鉬鉛的信物",
+    "iconId": "p_char_4171_wulfen",
+    "description": "一塊美麗的礦石，根據鉬鉛的說法，這塊礦石的顏色會發生變化。工作之餘不妨看一眼，或許會有驚喜。",
+    "usage": "用於提升鉬鉛的潛能。",
+    "rarity": 5
+  },
+  "p_char_4177_brigid": {
+    "itemId": "p_char_4177_brigid",
+    "name": "水燈心的信物",
+    "iconId": "p_char_4177_brigid",
+    "description": "一枚環環相扣的草編繩結，其中寓意無法在任何現存書籍上找到。在草繩上塗抹獸油是罕見的舉動，但或許她只是不想讓你被草梗割傷。",
+    "usage": "用於提升水燈心的潛能。",
+    "rarity": 5
+  },
+  "p_char_4178_alanna": {
+    "itemId": "p_char_4178_alanna",
+    "name": "阿蘭娜的信物",
+    "iconId": "p_char_4178_alanna",
+    "description": "一把多功能扳手，這是阿蘭娜獨自操作數控工具機製作出的第一件作品。她把這份獨一無二的紀念品送給了你，並提醒你末端的小錘子可以用來敲開堅果。",
+    "usage": "用於提升阿蘭娜的潛能。",
+    "rarity": 5
+  },
+  "p_char_4187_graceb": {
+    "itemId": "p_char_4187_graceb",
+    "name": "聆音的信物",
+    "iconId": "p_char_4187_graceb",
+    "description": "一盆清新的百合花，從幹員聆音的花圃中移植而來。她總是很擅長照料新生的花朵。",
+    "usage": "用於提升聆音的潛能。",
+    "rarity": 5
+  },
+  "p_char_4191_tippi": {
+    "itemId": "p_char_4191_tippi",
+    "name": "蒂比的信物",
+    "iconId": "p_char_4191_tippi",
+    "description": "一個噴漆罐，嗞——可以拿這個在牆上噴畫出你喜歡的圖案，但不要隨便亂塗亂畫哦。",
+    "usage": "用於提升蒂比的潛能。",
+    "rarity": 5
+  },
+  "p_char_4198_christ": {
+    "itemId": "p_char_4198_christ",
+    "name": "Miss.Christine的信物",
+    "iconId": "p_char_4198_christ",
+    "description": "一張印著爪印的工作證。你把它掛在Miss.Christine的脖子上，但第二天它就出現在你的桌面上了。",
+    "usage": "用於提升Miss.Christine的潛能。",
+    "rarity": 5
+  },
+  "p_char_4196_reckpr": {
+    "itemId": "p_char_4196_reckpr",
+    "name": "录武官的信物",
+    "iconId": "p_char_4196_reckpr",
+    "description": "一瓶药效够劲的跌打损伤药，涂抹后的疼痛比受伤时更甚。好在，他上药的动作熟练，安慰人的技巧更是纯熟。",
+    "usage": "用于提升录武官的潜能。",
+    "rarity": 5
+  },
+  "p_char_4203_kichi": {
+    "itemId": "p_char_4203_kichi",
+    "name": "吉星的信物",
+    "iconId": "p_char_4203_kichi",
+    "description": "几张图案新潮的贴纸。吉星在拉面店消费获得的系列贴纸，其中有一张是手绘的，她说自己终究还是缺一张，但想让你集满。",
+    "usage": "用于提升吉星的潜能。",
+    "rarity": 5
+  },
+  "p_char_4199_makiri": {
+    "itemId": "p_char_4199_makiri",
+    "name": "松桐的信物",
+    "iconId": "p_char_4199_makiri",
+    "description": "一张精心设计的名片，留着它，你总会知道去哪里能找到他——或者让他找到你。",
+    "usage": "用于提升松桐的潜能。",
+    "rarity": 5
+  },
+  "p_char_4183_mortis": {
+    "itemId": "p_char_4183_mortis",
+    "name": "若叶睦的信物",
+    "iconId": "p_char_4183_mortis",
+    "description": "一根普通而新鲜的黄瓜，饱含着种植人的心意，以至于让人犹豫该不该吃掉它。",
+    "usage": "用于提升若叶睦的潜能。",
+    "rarity": 5
+  },
+  "p_char_4184_dolris": {
+    "itemId": "p_char_4184_dolris",
+    "name": "三角初华的信物",
+    "iconId": "p_char_4184_dolris",
+    "description": "一份星图，在繁星点点的夜晚，初华总会提着灯悉心研究。",
+    "usage": "用于提升三角初华的潜能。",
+    "rarity": 5
+  },
+  "p_char_4185_amoris": {
+    "itemId": "p_char_4185_amoris",
+    "name": "祐天寺若麦的信物",
+    "iconId": "p_char_4185_amoris",
+    "description": "一盒若麦喜欢的化妆品套装。她希望尽自己所能，和身边的伙伴一起变得更有魅力。",
+    "usage": "用于提升祐天寺若麦的潜能。",
+    "rarity": 5
+  },
+  "p_char_4186_tmoris": {
+    "itemId": "p_char_4186_tmoris",
+    "name": "八幡海铃的信物",
+    "iconId": "p_char_4186_tmoris",
+    "description": "一盒蛋白粉饮料。对于罗德岛的干员来说，它只是补充蛋白质的优秀饮品，而海铃会为了身材管理，把它当作正餐。",
+    "usage": "用于提升八幡海铃的潜能。",
+    "rarity": 5
+  },
+  "p_char_4207_branch": {
+    "itemId": "p_char_4207_branch",
+    "name": "折桠的信物",
+    "iconId": "p_char_4207_branch",
+    "description": "一面手工制作的“小铜钟”，表面被打磨光滑，边缘被锉至平整，肖似曾在矿井边、冰面上陪伴她的旧物。现在，她把它送给你。",
+    "usage": "用于提升折桠的潜能。",
+    "rarity": 5
+  },
+  "p_char_4211_snhunt": {
+    "itemId": "p_char_4211_snhunt",
+    "name": "雪猎的信物",
+    "iconId": "p_char_4211_snhunt",
+    "description": "一小团裂云兽的绒毛。她说，如果在雪山中迷了路，裂云兽和她就能凭着这团绒毛的气味找到你，将你带出这漫天的风雪，她相信自己能够做到。",
+    "usage": "用于提升雪猎的潜能。",
+    "rarity": 5
+  },
+  "p_char_394_hadiya": {
+    "itemId": "p_char_394_hadiya",
+    "name": "哈蒂娅的信物",
+    "iconId": "p_char_394_hadiya",
+    "description": "一片从她的战杖上更换下来的形状特别的刃片。哈蒂娅向你承诺，未来这片刀刃将会成为沙漠里人人认可的通行证。",
+    "usage": "用于提升哈蒂娅的潜能。",
+    "rarity": 5
+  },
+  "p_char_4214_cairn": {
+    "itemId": "p_char_4214_cairn",
+    "name": "响石的信物",
+    "iconId": "p_char_4214_cairn",
+    "description": "一枚“天空氧气瓶”的瓶盖。初见时，这是你聘用她的定金，现在，这是你加入她的旅行社的证章。",
+    "usage": "用于提升响石的潜能。",
+    "rarity": 5
+  },
+  "p_char_4213_skybx": {
+    "itemId": "p_char_4213_skybx",
+    "name": "天空盒的信物",
+    "iconId": "p_char_4213_skybx",
+    "description": "一架大炮般粗重的高倍单筒望远镜。他说，他总有一天要带着所有哥伦比亚人征服天空，可别错过了。",
+    "usage": "用于提升天空盒的潜能。",
+    "rarity": 5
+  },
+  "p_char_103_angel": {
+    "itemId": "p_char_103_angel",
+    "name": "能天使的信物",
+    "iconId": "p_char_103_angel",
+    "description": "最佳老闆獎章。集滿五顆可以兌換一枚超強老闆獎章。",
+    "usage": "用於提升能天使的潛能。",
+    "rarity": 6
+  },
+  "p_char_112_siege": {
+    "itemId": "p_char_112_siege",
+    "name": "推進之王的信物",
+    "iconId": "p_char_112_siege",
+    "description": "堅硬的大顆鉚釘。由倫蒂尼姆的工人打造，最終也將回到它的故土。",
+    "usage": "用於提升推進之王的潛能。",
+    "rarity": 6
+  },
+  "p_char_134_ifrit": {
+    "itemId": "p_char_134_ifrit",
+    "name": "伊芙利特的信物",
+    "iconId": "p_char_134_ifrit",
+    "description": "有著嚴重燒灼痕跡的長篇傳奇故事書。勉強還可以讀。",
+    "usage": "用於提升伊芙利特的潛能。",
+    "rarity": 6
+  },
+  "p_char_180_amgoat": {
+    "itemId": "p_char_180_amgoat",
+    "name": "艾雅法拉的信物",
+    "iconId": "p_char_180_amgoat",
+    "description": "小巧的理髮剪。柄的位置細心地纏繞著隔熱的布料。",
+    "usage": "用於提升艾雅法拉的潛能。",
+    "rarity": 6
+  },
+  "p_char_291_aglina": {
+    "itemId": "p_char_291_aglina",
+    "name": "安潔莉娜的信物",
+    "iconId": "p_char_291_aglina",
+    "description": "酸橙味的保濕唇膏。曠野中的風與夜晚的城市一樣乾燥。",
+    "usage": "用於提升安潔莉娜的潛能。",
+    "rarity": 6
+  },
+  "p_char_147_shining": {
+    "itemId": "p_char_147_shining",
+    "name": "閃靈的信物",
+    "iconId": "p_char_147_shining",
+    "description": "一條外觀普通的白色吊墜。無法被塵埃所沾染。",
+    "usage": "用於提升閃靈的潛能。",
+    "rarity": 6
+  },
+  "p_char_179_cgbird": {
+    "itemId": "p_char_179_cgbird",
+    "name": "夜鶯的信物",
+    "iconId": "p_char_179_cgbird",
+    "description": "一整盒雜亂的拼圖碎片。讓人更頭疼的地方在於，其中有不少塊都是空白的。",
+    "usage": "用於提升夜鶯的潛能。",
+    "rarity": 6
+  },
+  "p_char_136_hsguma": {
+    "itemId": "p_char_136_hsguma",
+    "name": "星熊的信物",
+    "iconId": "p_char_136_hsguma",
+    "description": "過時的流行漫畫。講述了名不見經傳的鬼怪在各色同伴的陪伴下成長為英雄的故事。",
+    "usage": "用於提升星熊的潛能。",
+    "rarity": 6
+  },
+  "p_char_202_demkni": {
+    "itemId": "p_char_202_demkni",
+    "name": "塞雷婭的信物",
+    "iconId": "p_char_202_demkni",
+    "description": "數張保安協防合約。其中幾份已經蓋上了灰色的鈣質印章。",
+    "usage": "用於提升塞雷婭的潛能。",
+    "rarity": 6
+  },
+  "p_char_172_svrash": {
+    "itemId": "p_char_172_svrash",
+    "name": "銀灰的信物",
+    "iconId": "p_char_172_svrash",
+    "description": "世上僅有數塊，象徵摯誠的源石冰晶。永遠不會融化。",
+    "usage": "用於提升銀灰的潛能。",
+    "rarity": 6
+  },
+  "p_char_263_skadi": {
+    "itemId": "p_char_263_skadi",
+    "name": "斯卡蒂的信物",
+    "iconId": "p_char_263_skadi",
+    "description": "用家鄉語言寫下的歌譜。雖然完全沒法理解這種文字，但她確實是打算教你這首歌的。",
+    "usage": "用於提升斯卡蒂的潛能。",
+    "rarity": 6
+  },
+  "p_char_010_chen": {
+    "itemId": "p_char_010_chen",
+    "name": "陳的信物",
+    "iconId": "p_char_010_chen",
+    "description": "在漫長時光中塵封許久的物件。她並非是將之忘記，而僅僅是不忍再次撫摸它銹蝕的棱角；興許在某一天，它會重新煥發出過往的熾熱吧。",
+    "usage": "用於提升陳的潛能。",
+    "rarity": 6
+  },
+  "p_char_340_shwaz": {
+    "itemId": "p_char_340_shwaz",
+    "name": "黑的信物",
+    "iconId": "p_char_340_shwaz",
+    "description": "一把弩。保養得很好，使用起來也十分便捷。但從上面的各種武器劃痕和細小缺口中，可以窺見它曾經歷過怎樣的廝殺。",
+    "usage": "用於提升黑的潛能。",
+    "rarity": 6
+  },
+  "p_char_188_helage": {
+    "itemId": "p_char_188_helage",
+    "name": "赫拉格的信物",
+    "iconId": "p_char_188_helage",
+    "description": "一本絕不允許他人借閱的厚重線裝書。烏薩斯數十年的戰爭始末躍然紙上，漫長苦難自乾涸墨跡裡汩汩流出。",
+    "usage": "用於提升赫拉格的潛能。",
+    "rarity": 6
+  },
+  "p_char_248_mgllan": {
+    "itemId": "p_char_248_mgllan",
+    "name": "麥哲倫的信物",
+    "iconId": "p_char_248_mgllan",
+    "description": "一根冰雪覆蓋的樹枝化石。曾經根植於大地的蒼天巨樹，如今只剩下這短短一枝，細細訴說著往昔的故事。",
+    "usage": "用於提升麥哲倫的潛能。",
+    "rarity": 6
+  },
+  "p_char_213_mostma": {
+    "itemId": "p_char_213_mostma",
+    "name": "莫斯提馬的信物",
+    "iconId": "p_char_213_mostma",
+    "description": "她的銃。她不需要了。",
+    "usage": "用於提升莫斯提馬的潛能。",
+    "rarity": 6
+  },
+  "p_char_225_haak": {
+    "itemId": "p_char_225_haak",
+    "name": "阿的信物",
+    "iconId": "p_char_225_haak",
+    "description": "一個藥瓶，裡面裝了六顆不同顏色的藥丸。但是沒有給說明書。",
+    "usage": "用於提升阿的潛能。",
+    "rarity": 6
+  },
+  "p_char_2014_nian": {
+    "itemId": "p_char_2014_nian",
+    "name": "年的信物",
+    "iconId": "p_char_2014_nian",
+    "description": "一把設計古樸的匕首。據說只要用來從事謀殺之類的事業，匕首的鋒刃就會消失。",
+    "usage": "用於提升年的潛能。",
+    "rarity": 6
+  },
+  "p_char_017_huang": {
+    "itemId": "p_char_017_huang",
+    "name": "煌的信物",
+    "iconId": "p_char_017_huang",
+    "description": "一個看不清內裡構造的玻璃瓶。只要搖晃兩三下，瓶身就會變得溫暖起來，很適合冬天抱在手裡。",
+    "usage": "用於提升煌的潛能。",
+    "rarity": 6
+  },
+  "p_char_2013_cerber": {
+    "itemId": "p_char_2013_cerber",
+    "name": "刻俄柏的信物",
+    "iconId": "p_char_2013_cerber",
+    "description": "花了好長時間才疊出來的短刀紙模。歪歪扭扭，滿是折痕，不怎麼精緻。收到的人會喜歡嗎？",
+    "usage": "用於提升刻俄柏的潛能。",
+    "rarity": 6
+  },
+  "p_char_222_bpipe": {
+    "itemId": "p_char_222_bpipe",
+    "name": "風笛的信物",
+    "iconId": "p_char_222_bpipe",
+    "description": "一把紅麥。大地孕育生命，生命反哺大地。",
+    "usage": "用於提升風笛的潛能。",
+    "rarity": 6
+  },
+  "p_char_250_phatom": {
+    "itemId": "p_char_250_phatom",
+    "name": "傀影的信物",
+    "iconId": "p_char_250_phatom",
+    "description": "一張老舊的樂譜。音符與字跡都已在歲月中模糊不清。",
+    "usage": "用於提升傀影的潛能。",
+    "rarity": 6
+  },
+  "p_char_400_weedy": {
+    "itemId": "p_char_400_weedy",
+    "name": "溫蒂的信物",
+    "iconId": "p_char_400_weedy",
+    "description": "一疊仿生海龍設計圖。上面有大量她本人寫的一些註解，寫著“即使循獸也可以照著做一隻新的”，大概吧。",
+    "usage": "用於提升溫蒂的潛能。",
+    "rarity": 6
+  },
+  "p_char_113_cqbw": {
+    "itemId": "p_char_113_cqbw",
+    "name": "W的信物",
+    "iconId": "p_char_113_cqbw",
+    "description": "一張W比著“V”手勢的自拍照片。照片的一角是另一名白髮的薩卡茲女性，她似乎正站在不遠處與其他人交談。",
+    "usage": "用於提升W的潛能。",
+    "rarity": 6
+  },
+  "p_char_197_poca": {
+    "itemId": "p_char_197_poca",
+    "name": "早露的信物",
+    "iconId": "p_char_197_poca",
+    "description": "一把裁紙刀。她鄭重其事地交給你，但你不知緣由。",
+    "usage": "用於提升早露的潛能。",
+    "rarity": 6
+  },
+  "p_char_358_lisa": {
+    "itemId": "p_char_358_lisa",
+    "name": "鈴蘭的信物",
+    "iconId": "p_char_358_lisa",
+    "description": "一捧鈴蘭花。當問及小麗薩的幹員代號有什麼自己的想法時，她正好抱著這盆鈴蘭。",
+    "usage": "用於提升鈴蘭的潛能。",
+    "rarity": 6
+  },
+  "p_char_293_thorns": {
+    "itemId": "p_char_293_thorns",
+    "name": "棘刺的信物",
+    "iconId": "p_char_293_thorns",
+    "description": "裝有藥液的小瓶子。初學時的紀念作，危險，謹慎使用。",
+    "usage": "用於提升棘刺的潛能。",
+    "rarity": 6
+  },
+  "p_char_416_zumama": {
+    "itemId": "p_char_416_zumama",
+    "name": "森蚺的信物",
+    "iconId": "p_char_416_zumama",
+    "description": "一把看起來用了很長時間的扳手，用來造機器或者防身都不錯。",
+    "usage": "用於提升森蚺的潛能。",
+    "rarity": 6
+  },
+  "p_char_350_surtr": {
+    "itemId": "p_char_350_surtr",
+    "name": "史爾特爾的信物",
+    "iconId": "p_char_350_surtr",
+    "description": "一份填滿地名的複印文檔，其中小部分已被紅筆劃去。要是有空，你可以幫忙探查這些地點。",
+    "usage": "用於提升史爾特爾的潛能。",
+    "rarity": 6
+  },
+  "p_char_423_blemsh": {
+    "itemId": "p_char_423_blemsh",
+    "name": "瑕光的信物",
+    "iconId": "p_char_423_blemsh",
+    "description": "一本騎士小說，荒誕的傳奇，傳奇的荒誕。",
+    "usage": "用於提升瑕光的潛能",
+    "rarity": 6
+  },
+  "p_char_391_rosmon": {
+    "itemId": "p_char_391_rosmon",
+    "name": "迷迭香的信物",
+    "iconId": "p_char_391_rosmon",
+    "description": "一件精心製作但水準依然還很業餘的植物標本。她真心希望你能幫她記住這些。",
+    "usage": "用於提升迷迭香的潛能。",
+    "rarity": 6
+  },
+  "p_char_311_mudrok": {
+    "itemId": "p_char_311_mudrok",
+    "name": "泥岩的信物",
+    "iconId": "p_char_311_mudrok",
+    "description": "一個小小的岩石雕像，似乎在用好奇的“目光”看著你。",
+    "usage": "用於提升泥岩的潛能。",
+    "rarity": 6
+  },
+  "p_char_264_f12yin": {
+    "itemId": "p_char_264_f12yin",
+    "name": "山的信物",
+    "iconId": "p_char_264_f12yin",
+    "description": "一支包裝精美的葡萄酒。產地似乎是一家在哥倫比亞十分有名的酒莊，不知道是他透過什麼管道獲得的。",
+    "usage": "用於提升山的潛能。",
+    "rarity": 6
+  },
+  "p_char_332_archet": {
+    "itemId": "p_char_332_archet",
+    "name": "空弦的信物",
+    "iconId": "p_char_332_archet",
+    "description": "一枚修道院限定紀念徽章，本來是要花錢買的，不過這一次就當友情贈送啦！",
+    "usage": "用於提升空弦的潛能。",
+    "rarity": 6
+  },
+  "p_char_2015_dusk": {
+    "itemId": "p_char_2015_dusk",
+    "name": "夕的信物",
+    "iconId": "p_char_2015_dusk",
+    "description": "一支看似無奇的毛筆。夕的筆，可生萬物，也可生筆，用的時候要留神一點。",
+    "usage": "用於提升夕的潛能。",
+    "rarity": 6
+  },
+  "p_char_362_saga": {
+    "itemId": "p_char_362_saga",
+    "name": "嵯峨的信物",
+    "iconId": "p_char_362_saga",
+    "description": "一顆她親手雕刻的木魚。煩躁的時候，就與她一起誦經吧。",
+    "usage": "用於提升嵯峨的潛能。",
+    "rarity": 6
+  },
+  "p_char_456_ash": {
+    "itemId": "p_char_456_ash",
+    "name": "ASH的信物",
+    "iconId": "p_char_456_ash",
+    "description": "一張明信片，上面用你從未見過的文字寫成諺語，意思是“能等來的只有衰老”。",
+    "usage": "用於提升ASH的潛能。",
+    "rarity": 6
+  },
+  "p_char_472_pasngr": {
+    "itemId": "p_char_472_pasngr",
+    "name": "異客的信物",
+    "iconId": "p_char_472_pasngr",
+    "description": "一枚古老的薩爾貢金幣。經由漫長的命運之手反覆擺弄，現在歸你了。",
+    "usage": "用於提升異客的潛能。",
+    "rarity": 6
+  },
+  "p_char_1012_skadi2": {
+    "itemId": "p_char_1012_skadi2",
+    "name": "濁心斯卡蒂的信物",
+    "iconId": "p_char_1012_skadi2",
+    "description": "一根軟骨形成的彎曲尖刺。隨著淡藍色的液體自刺尖滴滴墜落，實驗生物的生理結構劇烈地轉化了。",
+    "usage": "用於提升濁心斯卡蒂的潛能。",
+    "rarity": 6
+  },
+  "p_char_003_kalts": {
+    "itemId": "p_char_003_kalts",
+    "name": "凱爾希的信物",
+    "iconId": "p_char_003_kalts",
+    "description": "一個奇特的懷錶，從未在諸國見過的制式，上面刻有四個年份日期，以及歪歪扭扭的幾個字母。",
+    "usage": "用於提升凱爾希的潛能。",
+    "rarity": 6
+  },
+  "p_char_474_glady": {
+    "itemId": "p_char_474_glady",
+    "name": "歌蕾蒂婭的信物",
+    "iconId": "p_char_474_glady",
+    "description": "一個看不懂結構的黑色小裝置。裝置上的三個按鈕似乎分別是刀，骷髏和某種生物的圖案，讓人不太敢按下去。",
+    "usage": "用於提升歌蕾蒂婭的潛能。",
+    "rarity": 6
+  },
+  "p_char_426_billro": {
+    "itemId": "p_char_426_billro",
+    "name": "卡涅利安的信物",
+    "iconId": "p_char_426_billro",
+    "description": "旅行家收藏的小紀念品。她曾指著紀念品說，買下這個的地方風光很好，下次帶你一起去看。",
+    "usage": "用於提升卡涅利安的潛能。",
+    "rarity": 6
+  },
+  "p_char_485_pallas": {
+    "itemId": "p_char_485_pallas",
+    "name": "帕拉斯的信物",
+    "iconId": "p_char_485_pallas",
+    "description": "一部米諾斯英雄史詩。“英雄自人民中來，又回到人民當中。”這句寫在卷首的話被圈了出來。",
+    "usage": "用於提升帕拉斯的潛能。",
+    "rarity": 6
+  },
+  "p_char_1013_chen2": {
+    "itemId": "p_char_1013_chen2",
+    "name": "假日威龍陳的信物",
+    "iconId": "p_char_1013_chen2",
+    "description": "一本筆記本，上面密密麻麻記載了陳在多索雷斯的調查記錄，還有她的一些想法。她看起來有徵求你意見的意思，當然，她沒有明說。",
+    "usage": "用於提升假日威龍陳的潛能。",
+    "rarity": 6
+  },
+  "p_char_437_mizuki": {
+    "itemId": "p_char_437_mizuki",
+    "name": "水月的信物",
+    "iconId": "p_char_437_mizuki",
+    "description": "某經典電子遊戲四十周年時發行的紀念章中的一枚。套章中的每個角色都有著各不相同的表情，可愛到讓人想要把它給一口——",
+    "usage": "用於提升水月的潛能。",
+    "rarity": 6
+  },
+  "p_char_430_fartth": {
+    "itemId": "p_char_430_fartth",
+    "name": "遠牙的信物",
+    "iconId": "p_char_430_fartth",
+    "description": "粗糙的木製短笛。由遠牙親手削制，能夠吹出簡單的音節。做工簡單，所有扎手的木刺都被細心地磨平。",
+    "usage": "用於提升遠牙的潛能。",
+    "rarity": 6
+  },
+  "p_char_479_sleach": {
+    "itemId": "p_char_479_sleach",
+    "name": "琴柳的信物",
+    "iconId": "p_char_479_sleach",
+    "description": "一小截風乾了的柳枝。每一粒嫩芽都很完好，彷彿只要沾了水，就還能蓬勃生長。",
+    "usage": "用於提升琴柳的潛能。",
+    "rarity": 6
+  },
+  "p_char_1014_nearl2": {
+    "itemId": "p_char_1014_nearl2",
+    "name": "耀騎士臨光的信物",
+    "iconId": "p_char_1014_nearl2",
+    "description": "恢復光彩的卡西米爾騎士紋章。被精心擦拭過，天馬的金羽射出凜然輝光。",
+    "usage": "用於提升耀騎士臨光的潛能。",
+    "rarity": 6
+  },
+  "p_char_420_flamtl": {
+    "itemId": "p_char_420_flamtl",
+    "name": "焰尾的信物",
+    "iconId": "p_char_420_flamtl",
+    "description": "一枚看似無奇的卡西米爾金幣，這是索娜第一次在地下競技場獲勝時，所獲得的唯一一枚報酬。",
+    "usage": "用於提升焰尾的潛能。",
+    "rarity": 6
+  },
+  "p_char_206_gnosis": {
+    "itemId": "p_char_206_gnosis",
+    "name": "靈知的信物",
+    "iconId": "p_char_206_gnosis",
+    "description": "一柄在他來到羅德島後親手打造的護身短劍。你在很久以後才偶然得知，這是埃德懷斯家表示友情的一種方式。",
+    "usage": "用於提升靈知的潛能。",
+    "rarity": 6
+  },
+  "p_char_322_lmlee": {
+    "itemId": "p_char_322_lmlee",
+    "name": "老鯉的信物",
+    "iconId": "p_char_322_lmlee",
+    "description": "一塊外形古樸的環形玉佩，你無法判斷它的價值。",
+    "usage": "用於提升老鯉的潛能。",
+    "rarity": 6
+  },
+  "p_char_377_gdglow": {
+    "itemId": "p_char_377_gdglow",
+    "name": "澄閃的信物",
+    "iconId": "p_char_377_gdglow",
+    "description": "一瓶特製潤膚露，聽說塗抹之後能有效減少靜電的發生。\n就算不行，至少對皮膚有好處。",
+    "usage": "用於提升澄閃的潛能。",
+    "rarity": 6
+  },
+  "p_char_2023_ling": {
+    "itemId": "p_char_2023_ling",
+    "name": "令的信物",
+    "iconId": "p_char_2023_ling",
+    "description": "一盞燈。你十分確定你曾在某個夜晚夢見過這個場景，燈挑夜，箭如雨，大漠飛火。",
+    "usage": "用於提升令的潛能。",
+    "rarity": 6
+  },
+  "p_char_300_phenxi": {
+    "itemId": "p_char_300_phenxi",
+    "name": "菲亞梅塔的信物",
+    "iconId": "p_char_300_phenxi",
+    "description": " 一枚子彈形的榛果棒，拉特蘭公證所非官方補給。\n聽說是教宗閣下的最愛，雖然拉特蘭所有甜點都是這麼宣稱的。",
+    "usage": "用於提升菲亞梅塔的潛能。",
+    "rarity": 6
+  },
+  "p_char_4039_horn": {
+    "itemId": "p_char_4039_horn",
+    "name": "號角的信物",
+    "iconId": "p_char_4039_horn",
+    "description": "一本備忘錄。第一頁上工整地寫著許多樂器的名字。她分享給你的是情報，也是回憶。",
+    "usage": "用於提升號角的潛能。",
+    "rarity": 6
+  },
+  "p_char_1023_ghost2": {
+    "itemId": "p_char_1023_ghost2",
+    "name": "歸溟幽靈鯊的信物",
+    "iconId": "p_char_1023_ghost2",
+    "description": "一塊細節豐富的雕刻作品。藝術作品留在懂得欣賞的人手中才擁有意義。",
+    "usage": "用於提升歸溟幽靈鯊的潛能。",
+    "rarity": 6
+  },
+  "p_char_4009_irene": {
+    "itemId": "p_char_4009_irene",
+    "name": "艾麗妮的信物",
+    "iconId": "p_char_4009_irene",
+    "description": "一小塊赭色礁石，在被交給你之前，它已經在伊比利亞的海岸線上經歷了上百年的洗禮。",
+    "usage": "用於提升艾麗妮的潛能。",
+    "rarity": 6
+  },
+  "p_char_4042_lumen": {
+    "itemId": "p_char_4042_lumen",
+    "name": "流明的信物",
+    "iconId": "p_char_4042_lumen",
+    "description": "一個簡易的發光單元，其中運用到了一些奇妙的技術。流明業餘時間的小小作品，聽說其原理來自他父母留下的燈塔研究筆記。",
+    "usage": "用於提升流明的潛能。",
+    "rarity": 6
+  },
+  "p_char_4046_ebnhlz": {
+    "itemId": "p_char_4046_ebnhlz",
+    "name": "黑鍵的信物",
+    "iconId": "p_char_4046_ebnhlz",
+    "description": "一枚鑽了孔的萊塔尼亞硬幣，打孔的工藝還十分粗糙。只有他知道自己為那個熟練工手到擒來的孔流了多少汗水。",
+    "usage": "用於提升黑鍵的潛能。",
+    "rarity": 6
+  },
+  "p_char_4048_doroth": {
+    "itemId": "p_char_4048_doroth",
+    "name": "多蘿西的信物",
+    "iconId": "p_char_4048_doroth",
+    "description": "一管不明試劑。和流淌在她體內的東西相同。永遠別用它。",
+    "usage": "用於提升多蘿西的潛能。",
+    "rarity": 6
+  },
+  "p_char_1026_gvial2": {
+    "itemId": "p_char_1026_gvial2",
+    "name": "百煉嘉維爾的信物",
+    "iconId": "p_char_1026_gvial2",
+    "description": "一個密度超高的合金啞鈴，看起來非常便攜。嘉維爾把它送給你時忘了告訴你啞鈴的重量，不得不額外花半個小時處理你閃到的腰。",
+    "usage": "用於提升百煉嘉維爾的潛能。",
+    "rarity": 6
+  },
+  "p_char_4055_bgsnow": {
+    "itemId": "p_char_4055_bgsnow",
+    "name": "鴻雪的信物",
+    "iconId": "p_char_4055_bgsnow",
+    "description": "一沓稿紙。她的懦弱與堅強全都寫在裡面，毫無隱瞞。",
+    "usage": "用於提升鴻雪的潛能。",
+    "rarity": 6
+  },
+  "p_char_4064_mlynar": {
+    "itemId": "p_char_4064_mlynar",
+    "name": "瑪恩納的信物",
+    "iconId": "p_char_4064_mlynar",
+    "description": "一把造型古典的拆信刀，曾開啟許多悲歡離合。很長一段時間裡，這也是他手中最鋒利的東西。",
+    "usage": "用於提升瑪恩納的潛能。",
+    "rarity": 6
+  },
+  "p_char_4072_ironmn": {
+    "itemId": "p_char_4072_ironmn",
+    "name": "白鐵的信物",
+    "iconId": "p_char_4072_ironmn",
+    "description": "嶄新的滑索裝置。與人體接觸的部分比一般的量產滑索更柔軟，以防止高速運動過程中的摩擦傷。",
+    "usage": "用於提升白鐵的潛能。",
+    "rarity": 6
+  },
+  "p_char_1028_texas2": {
+    "itemId": "p_char_1028_texas2",
+    "name": "緘默德克薩斯的信物",
+    "iconId": "p_char_1028_texas2",
+    "description": "一串頗有敘拉古風情的項鍊。根據德克薩斯的介紹，這是西西里夫人的信物，有了它，就可以見到西西里夫人。但願不會有用到它的一天。",
+    "usage": "用於提升緘默德克薩斯的潛能。",
+    "rarity": 6
+  },
+  "p_char_4065_judge": {
+    "itemId": "p_char_4065_judge",
+    "name": "斥罪的信物",
+    "iconId": "p_char_4065_judge",
+    "description": "一柄實心木製法槌。越能感受到拿起它時之輕，越能感受到敲下它時之重。",
+    "usage": "用於提升斥罪的潛能。",
+    "rarity": 6
+  },
+  "p_char_1020_reed2": {
+    "itemId": "p_char_1020_reed2",
+    "name": "焰影葦草的信物",
+    "iconId": "p_char_1020_reed2",
+    "description": "一本用陌生語言抄下的詩歌集。她不求所有人都讀懂，只希望想讀這些詩歌的人有可以棲身的一隅。",
+    "usage": "用於提升焰影葦草的潛能。",
+    "rarity": 6
+  },
+  "p_char_4080_lin": {
+    "itemId": "p_char_4080_lin",
+    "name": "林的信物",
+    "iconId": "p_char_4080_lin",
+    "description": "一個精緻小巧的沙漏，玻璃晶瑩，流沙細膩。時間在翻覆顛倒中流逝，有些事物卻從未改變。",
+    "usage": "用於提升林的潛能。",
+    "rarity": 6
+  },
+  "p_char_2024_chyue": {
+    "itemId": "p_char_2024_chyue",
+    "name": "重岳的信物",
+    "iconId": "p_char_2024_chyue",
+    "description": "一封拜帖。那是他頭一回知道戰鬥對於人類而言如此具有儀式感，他已經忘了那一戰的輸贏。",
+    "usage": "用於提升重岳的潛能。",
+    "rarity": 6
+  },
+  "p_char_4082_qiubai": {
+    "itemId": "p_char_4082_qiubai",
+    "name": "仇白的信物",
+    "iconId": "p_char_4082_qiubai",
+    "description": "一塊普通的磨刀石。山腳下、大江邊，隨處可見的石頭，因磨礪劍鋒而變得光滑。",
+    "usage": "用於提升仇白的潛能。",
+    "rarity": 6
+  },
+  "p_char_1029_yato2": {
+    "itemId": "p_char_1029_yato2",
+    "name": "麒麟R夜刀的信物",
+    "iconId": "p_char_1029_yato2",
+    "description": "一塊從未見過的磨刀石。從不知多久以前你們相識起，夜刀幹員對自己的磨煉就從未停止。",
+    "usage": "用於提升麒麟R夜刀的潛能。",
+    "rarity": 6
+  },
+  "p_char_4087_ines": {
+    "itemId": "p_char_4087_ines",
+    "name": "伊內絲的信物",
+    "iconId": "p_char_4087_ines",
+    "description": "一枚內斂鋒芒的繡針。伊內絲不需要顯眼的物件來彰顯她的身份，這枚藏匿了光芒的鋒銳之物就是對她最恰當的闡述。",
+    "usage": "用於提升伊內絲的潛能。",
+    "rarity": 6
+  },
+  "p_char_249_mlyss": {
+    "itemId": "p_char_249_mlyss",
+    "name": "繆爾賽思的信物",
+    "iconId": "p_char_249_mlyss",
+    "description": "一個水滴凝成的小人，是繆爾賽思自己的模樣。只要你們之間的感應仍在，它便不會消散。",
+    "usage": "用於提升繆爾賽思的潛能。",
+    "rarity": 6
+  },
+  "p_char_4027_heyak": {
+    "itemId": "p_char_4027_heyak",
+    "name": "霍爾海雅的信物",
+    "iconId": "p_char_4027_heyak",
+    "description": "一本裝幀精美的歷史書，每一頁都密密麻麻寫滿了她的筆記。瞭解歷史，就是在靠近她。",
+    "usage": "用於提升霍爾海雅的潛能。",
+    "rarity": 6
+  },
+  "p_char_1031_slent2": {
+    "itemId": "p_char_1031_slent2",
+    "name": "淬羽赫默的信物",
+    "iconId": "p_char_1031_slent2",
+    "description": "一副稍顯古舊的圓眼鏡。有人說戴上眼鏡的她會少幾分銳氣，她於是將眼鏡交給你來保管。在羅德島上，她希望自己還是過去的自己。",
+    "usage": "用於提升淬羽赫默的潛能。",
+    "rarity": 6
+  },
+  "p_char_1032_excu2": {
+    "itemId": "p_char_1032_excu2",
+    "name": "聖約送葬人的信物",
+    "iconId": "p_char_1032_excu2",
+    "description": "一枚無線耳麥。教皇廳最新技術產物，與送葬人本人正在使用的是同一款型，他將這個交給你，或許是隨時保持聯絡的意思？",
+    "usage": "用於提升聖約送葬人的潛能。",
+    "rarity": 6
+  },
+  "p_char_2012_typhon": {
+    "itemId": "p_char_2012_typhon",
+    "name": "提豐的信物",
+    "iconId": "p_char_2012_typhon",
+    "description": "一瓶散發著濃郁氣味的植物提取液。掩蓋文明的氣味，融入荒野，成為獵人，成為她的同伴。",
+    "usage": "用於提升提豐的潛能。",
+    "rarity": 6
+  },
+  "p_char_1033_swire2": {
+    "itemId": "p_char_1033_swire2",
+    "name": "琳瑯詩懷雅的信物",
+    "iconId": "p_char_1033_swire2",
+    "description": "一枚金光閃閃的金幣。沉重，光澤逼人，成色極好，放在手中欣賞，還會從中掉出......閃著寒光的暗器！是她送予你防身的禮物。",
+    "usage": "用於提升琳瑯詩懷雅的潛能。",
+    "rarity": 6
+  },
+  "p_char_1016_agoat2": {
+    "itemId": "p_char_1016_agoat2",
+    "name": "純燼艾雅法拉的信物",
+    "iconId": "p_char_1016_agoat2",
+    "description": "一塊又小又輕的火山石，投入水中後會上下翻滾，嗞嗞的氣泡聲輕響不絕。這即是生命之歌。",
+    "usage": "用於提升純燼艾雅法拉的潛能。",
+    "rarity": 6
+  },
+  "p_char_1034_jesca2": {
+    "itemId": "p_char_1034_jesca2",
+    "name": "滌火潔西卡的信物",
+    "iconId": "p_char_1034_jesca2",
+    "description": "一副定製雷射瞄準鏡，適用於夜間精確觀瞄。她一直緊盯著前方，從未將視線移開。",
+    "usage": "用於提升滌火潔西卡的潛能。",
+    "rarity": 6
+  },
+  "p_char_4088_hodrer": {
+    "itemId": "p_char_4088_hodrer",
+    "name": "赫德雷的信物",
+    "iconId": "p_char_4088_hodrer",
+    "description": "一本頁角被燎焦的筆記。所記錄的不僅有行動的結果，還有從灰燼中抖落的，薩卡茲們的生活。",
+    "usage": "用於提升赫德雷的潛能。",
+    "rarity": 6
+  },
+  "p_char_4098_vvana": {
+    "itemId": "p_char_4098_vvana",
+    "name": "薇薇安娜的信物",
+    "iconId": "p_char_4098_vvana",
+    "description": "一枚風乾的金盞花書籤。與書同行的旅程漫長而遙遠，在離席暫別前，讓它成為駐足於此的信標吧。",
+    "usage": "用於提升薇薇安娜的潛能。",
+    "rarity": 6
+  },
+  "p_char_245_cello": {
+    "itemId": "p_char_245_cello",
+    "name": "塑心的信物",
+    "iconId": "p_char_245_cello",
+    "description": "一副質地考究的黑色手套。既能安撫琴弦，也能安撫繁雜的心聲。",
+    "usage": "用於提升塑心的潛能。",
+    "rarity": 6
+  },
+  "p_char_4116_blkkgt": {
+    "itemId": "p_char_4116_blkkgt",
+    "name": "鐧的信物",
+    "iconId": "p_char_4116_blkkgt",
+    "description": "一個只能撥通她的號碼的通訊終端。和普通的通訊終端在外表上明明沒什麼差別，卻能給人無上的安心感。",
+    "usage": "用於提升鐧的潛能。",
+    "rarity": 6
+  },
+  "p_char_4117_ray": {
+    "itemId": "p_char_4117_ray",
+    "name": "萊伊的信物",
+    "iconId": "p_char_4117_ray",
+    "description": "一本看不出製作者意圖的剪貼冊。裡面的“奇異生物照片”似乎也是拼貼合成的影像，要不要告訴她呢？",
+    "usage": "用於提升萊伊的潛能。",
+    "rarity": 6
+  },
+  "p_char_2025_shu": {
+    "itemId": "p_char_2025_shu",
+    "name": "黍的信物",
+    "iconId": "p_char_2025_shu",
+    "description": "一張古老的圖畫，體現了千年前人們對四季輪迴原理的想像。時光流轉，惟斯不變。",
+    "usage": "用於提升黍的潛能。",
+    "rarity": 6
+  },
+  "p_char_4121_zuole": {
+    "itemId": "p_char_4121_zuole",
+    "name": "左樂的信物",
+    "iconId": "p_char_4121_zuole",
+    "description": "一隻有炎國特色的手工風箏，上面還沾染著些許林間樹葉的氣息。它常常因執線的手笨拙的動作而掉落，也總是會重新乘風而起。",
+    "usage": "用於提升左樂的潛能。",
+    "rarity": 6
+  },
+  "p_char_4123_ela": {
+    "itemId": "p_char_4123_ela",
+    "name": "ELA的信物",
+    "iconId": "p_char_4123_ela",
+    "description": "一套護目鏡和隔音耳機。她一度有些不確定你是否需要那副護目鏡。",
+    "usage": "用於提升ELA的潛能。",
+    "rarity": 6
+  },
+  "p_char_4132_ascln": {
+    "itemId": "p_char_4132_ascln",
+    "name": "阿斯卡綸的信物",
+    "iconId": "p_char_4132_ascln",
+    "description": "裝著煙霧的細小玻璃瓶。遇到危險便捏碎它，阿斯卡綸會立刻趕到你的身邊。",
+    "usage": "用於提升阿斯卡綸的潛能。",
+    "rarity": 6
+  },
+  "p_char_1035_wisdel": {
+    "itemId": "p_char_1035_wisdel",
+    "name": "維什戴爾的信物",
+    "iconId": "p_char_1035_wisdel",
+    "description": "一顆畫著笑臉的手榴彈。你並不清楚它是什麼時候到你手上的。往好處想，你或許只是收到了一場尚未綻放的煙火。",
+    "usage": "用於提升維什戴爾的潛能。",
+    "rarity": 6
+  },
+  "p_char_4133_logos": {
+    "itemId": "p_char_4133_logos",
+    "name": "邏各斯的信物",
+    "iconId": "p_char_4133_logos",
+    "description": "一支一比一複製的骨筆模型，無法用於書寫咒文，但可以用來謄錄本艦的咒文受害者名單。",
+    "usage": "用於提升邏各斯的潛能。",
+    "rarity": 6
+  },
+  "p_char_4134_cetsyr": {
+    "itemId": "p_char_4134_cetsyr",
+    "name": "魔王的信物",
+    "iconId": "p_char_4134_cetsyr",
+    "description": "一份與羅德島繼續同行的承諾，這是現在的她唯一能給予你的東西。你知道她一定會踐行諾言。",
+    "usage": "用於提升魔王的潛能。",
+    "rarity": 6
+  },
+  "p_char_4145_ulpia": {
+    "itemId": "p_char_4145_ulpia",
+    "name": "烏爾比安的信物",
+    "iconId": "p_char_4145_ulpia",
+    "description": "一塊礁石，被磨成了船錨的形狀。仔細看，上面的紋路似乎是某種音符。",
+    "usage": "用於提升烏爾比安的潛能。",
+    "rarity": 6
+  },
+  "p_char_4146_nymph": {
+    "itemId": "p_char_4146_nymph",
+    "name": "妮芙的信物",
+    "iconId": "p_char_4146_nymph",
+    "description": "一對做成心形的印章，能夠印出複雜的花紋。按照妮芙說的，這個禮物叫做“心心相”印。",
+    "usage": "用於提升妮芙的潛能。",
+    "rarity": 6
+  },
+  "p_char_4138_narant": {
+    "itemId": "p_char_4138_narant",
+    "name": "娜仁圖亞的信物",
+    "iconId": "p_char_4138_narant",
+    "description": "一管自製的安眠藥水，源自複雜的雨林植被和沙盜豐富的野外生存經驗。她真心希望你能一直在她身邊做她的好夥伴，還希望你不會因她而惡夢連連。",
+    "usage": "用於提升娜仁圖亞的潛能。",
+    "rarity": 6
+  },
+  "p_char_4058_pepe": {
+    "itemId": "p_char_4058_pepe",
+    "name": "佩佩的信物",
+    "iconId": "p_char_4058_pepe",
+    "description": "一枚價值不菲的蓮花胸針，請不要嘗試賣掉它，它象徵的意義比它的價值更加珍貴。",
+    "usage": "用於提升佩佩的潛能。",
+    "rarity": 6
+  },
+  "p_char_4141_marcil": {
+    "itemId": "p_char_4141_marcil",
+    "name": "瑪露希爾的信物",
+    "iconId": "p_char_4141_marcil",
+    "description": "一本魔法書，裡面記錄著不少源石技藝和魔法融合的想法，似乎都能產生意想不到的效用。",
+    "usage": "用於提升瑪露希爾的潛能。",
+    "rarity": 6
+  },
+  "p_char_1019_siege2": {
+    "itemId": "p_char_1019_siege2",
+    "name": "維娜·維多利亞的信物",
+    "iconId": "p_char_1019_siege2",
+    "description": "一塊紀念羅德島的銘牌，你好像在倫蒂尼姆重建後的街角見過，上面的鉚釘也似曾相識。她說，鉚釘一旦固定，就再也卸不下來了。",
+    "usage": "用於提升維娜·維多利亞的潛能。",
+    "rarity": 6
+  },
+  "p_char_1038_whitw2": {
+    "itemId": "p_char_1038_whitw2",
+    "name": "荒蕪拉普蘭德的信物",
+    "iconId": "p_char_1038_whitw2",
+    "description": "一封異常精美的紫色邀請函，角落潦草畫著一隻白狼和一串葡萄。她邀請你參加一場狂歡，但無人知曉主題是什麼。",
+    "usage": "用於提升荒蕪拉普蘭德的潛能。",
+    "rarity": 6
+  },
+  "p_char_1502_crosly": {
+    "itemId": "p_char_1502_crosly",
+    "name": "弒君者的信物",
+    "iconId": "p_char_1502_crosly",
+    "description": "一副密閉性良好的黑色戰術口罩。“我的面目隱匿，我的憤怒昭顯。”",
+    "usage": "用於提升弒君者的潛能。",
+    "rarity": 6
+  },
+  "p_char_4026_vulpis": {
+    "itemId": "p_char_4026_vulpis",
+    "name": "忍冬的信物",
+    "iconId": "p_char_4026_vulpis",
+    "description": "一串手工製作的流蘇掛飾，不知道是敘拉古還是東國的習俗，總之忍冬將它交給你以表尊敬和謝意。",
+    "usage": "用於提升忍冬的潛能。",
+    "rarity": 6
+  },
+  "p_char_4011_lessng": {
+    "itemId": "p_char_4011_lessng",
+    "name": "止頌的信物",
+    "iconId": "p_char_4011_lessng",
+    "description": "一個布帶繫成的、造型特殊的繩結。連接信任的兩端，連接過去與未來。",
+    "usage": "用於提升止頌的潛能。",
+    "rarity": 6
+  },
+  "p_char_1039_thorn2": {
+    "itemId": "p_char_1039_thorn2",
+    "name": "引星棘刺的信物",
+    "iconId": "p_char_1039_thorn2",
+    "description": "一縷纖細的心相原質，悄然沁入你的體內。待棘刺將它收回時，他便能清晰地知曉你身體狀況的變化。",
+    "usage": "用於提升引星棘刺的潛能。",
+    "rarity": 6
+  },
+  "p_char_2026_yu": {
+    "itemId": "p_char_2026_yu",
+    "name": "餘的信物",
+    "iconId": "p_char_2026_yu",
+    "description": "一份空白的菜單，憑此單可直接向餘點餐。看著它，有些人就已經饞到流口水了。",
+    "usage": "用於提升餘的潛能。",
+    "rarity": 6
+  },
+  "p_char_1040_blaze2": {
+    "itemId": "p_char_1040_blaze2",
+    "name": "燭煌的信物",
+    "iconId": "p_char_1040_blaze2",
+    "description": "一個隨時能夠點火煮食物的攜帶式小爐子。一起徹夜加班的時候，她會把煮好的泡麵分你一半。",
+    "usage": "用於提升燭煌的潛能。",
+    "rarity": 6
+  },
+  "p_char_4010_etlchi": {
+    "itemId": "p_char_4010_etlchi",
+    "name": "隱德來希的信物",
+    "iconId": "p_char_4010_etlchi",
+    "description": "一條銀鏈，上面什麼也沒有掛。你與她最親近的時刻尚未到來，等到那時，她會將那份記憶凝成血晶，再正式贈予你。",
+    "usage": "用於提升隱德來希的潛能。",
+    "rarity": 6
+  },
+  "p_char_450_necras": {
+    "itemId": "p_char_450_necras",
+    "name": "死芒的信物",
+    "iconId": "p_char_450_necras",
+    "description": "一本從未出版過的故事集，裡頭沒有一個故事有結局。細細看去，每個未完結的故事都指向一個尚在人世的人，你自己也在其中。",
+    "usage": "用於提升死芒的潛能。",
+    "rarity": 6
+  },
+  "p_char_4179_monstr": {
+    "itemId": "p_char_4179_monstr",
+    "name": "Mon3tr的信物",
+    "iconId": "p_char_4179_monstr",
+    "description": "一塊可以改變形態的金屬構造體，原本懸浮於Mon3tr的身側。它能幫助你應對許多危機，並提供必要的提醒。",
+    "usage": "用於提升Mon3tr的潛能。",
+    "rarity": 6
+  },
+  "p_char_1041_angel2": {
+    "itemId": "p_char_1041_angel2",
+    "name": "新約能天使的信物",
+    "iconId": "p_char_1041_angel2",
+    "description": "無敵絕世老闆獎章。集滿五枚最佳老闆獎章可以兌換一枚超強老闆獎章，集滿一百枚超強老闆獎章可以兌換一枚無敵絕世老闆獎章。當有人詢問能天使關於獎章是否還會繼續更新時，她微笑不語。",
+    "usage": "用於提升新約能天使的潛能。",
+    "rarity": 6
+  },
+  "p_char_4193_lemuen": {
+    "itemId": "p_char_4193_lemuen",
+    "name": "蕾繆安的信物",
+    "iconId": "p_char_4193_lemuen",
+    "description": "一顆蘋果，一盆土。吃掉它，種下它，等到它開花的時候，她希望你摘下花朵送還給她。",
+    "usage": "用於提升蕾繆安的潛能。",
+    "rarity": 6
+  },
+  "p_char_4194_rmixer": {
+    "itemId": "p_char_4194_rmixer",
+    "name": "信仰攪拌機的信物",
+    "iconId": "p_char_4194_rmixer",
+    "description": "一枚閃著光的徽章，見證了他對拉特蘭多年的守護，也見證了聖城對他無盡的信任。",
+    "usage": "用於提升信仰攪拌機的潛能。",
+    "rarity": 6
+  },
+  "p_char_1042_phatm2": {
+    "itemId": "p_char_1042_phatm2",
+    "name": "酒神的信物",
+    "iconId": "p_char_1042_phatm2",
+    "description": "一片金葉，細膩的葉脈紋理栩栩如生。你認出它是來自傀影耳邊的華美裝飾，時常沐浴在聚光燈下——對他而言，戲劇亦如自然。",
+    "usage": "用於提升酒神的潛能。",
+    "rarity": 6
+  },
+  "p_char_1043_leizi2": {
+    "itemId": "p_char_1043_leizi2",
+    "name": "司霆惊蛰的信物",
+    "iconId": "p_char_1043_leizi2",
+    "description": "一张五雷镇宅符。好歹不是某种训诫，而是她对你的祝福。",
+    "usage": "用于提升司霆惊蛰的潜能。",
+    "rarity": 6
+  },
+  "p_char_4195_radian": {
+    "itemId": "p_char_4195_radian",
+    "name": "电弧的信物",
+    "iconId": "p_char_4195_radian",
+    "description": "一枚不知名的金属元件，似乎是“小轴”核心结构的一部分，她说这是机械进行精密度升级时留下的残余，如同孩子落下的乳齿。",
+    "usage": "用于提升电弧的潜能。",
+    "rarity": 6
+  },
+  "p_char_4202_haruka": {
+    "itemId": "p_char_4202_haruka",
+    "name": "遥的信物",
+    "iconId": "p_char_4202_haruka",
+    "description": "一沓鳞兽形状的便利贴。她说自己会用这个记录接下来的日程，作为一种提醒。说完，她饶有兴趣地看着你，想知道你会在上面写些什么。",
+    "usage": "用于提升遥的潜能。",
+    "rarity": 6
+  },
+  "p_char_1044_hsgma2": {
+    "itemId": "p_char_1044_hsgma2",
+    "name": "斩业星熊的信物",
+    "iconId": "p_char_1044_hsgma2",
+    "description": "一个用旧了的龙门近卫局督察证外壳。这些外壳她都留着，但送给别人还是第一次。",
+    "usage": "用于提升斩业星熊的潜能。",
+    "rarity": 6
+  },
+  "p_char_4182_oblvns": {
+    "itemId": "p_char_4182_oblvns",
+    "name": "丰川祥子的信物",
+    "iconId": "p_char_4182_oblvns",
+    "description": "一个玩偶，通常被放在祥子的钢琴上。它静静地坐在那，一直陪伴着祥子。",
+    "usage": "用于提升丰川祥子的潜能。",
+    "rarity": 6
+  },
+  "p_char_4204_mantra": {
+    "itemId": "p_char_4204_mantra",
+    "name": "真言的信物",
+    "iconId": "p_char_4204_mantra",
+    "description": "一枚升级过的信号接收器，能帮助她更轻松地与人“交流”。将它别在身上吧，如果你希望她时不时回应你的脑中所想。",
+    "usage": "用于提升真言的潜能。",
+    "rarity": 6
+  },
+  "p_char_1045_svash2": {
+    "itemId": "p_char_1045_svash2",
+    "name": "凛御银灰的信物",
+    "iconId": "p_char_1045_svash2",
+    "description": "与他的佩剑配套的剑鞘。用源石冰晶制成，永远不会损毁。",
+    "usage": "用于提升凛御银灰的潜能。",
+    "rarity": 6
+  },
+  "p_char_1046_sbell2": {
+    "itemId": "p_char_1046_sbell2",
+    "name": "圣聆初雪的信物",
+    "iconId": "p_char_1046_sbell2",
+    "description": "一只存放着香料的小木匣，带有蔓珠院熏香的气味。她依照谢拉格礼待密友的习俗将它交给你。",
+    "usage": "用于提升圣聆初雪的潜能。",
+    "rarity": 6
+  },
+  "p_char_1047_halo2": {
+    "itemId": "p_char_1047_halo2",
+    "name": "溯光星源的信物",
+    "iconId": "p_char_1047_halo2",
+    "description": "一份未被命名的手稿，也是一扇通往新领域的窄门。她在一个清晨把它放在你的办公桌上。",
+    "usage": "用于提升溯光星源的潜能。",
+    "rarity": 6
+  },
+  "p_char_4212_nasti": {
+    "itemId": "p_char_4212_nasti",
+    "name": "娜斯提的信物",
+    "iconId": "p_char_4212_nasti",
+    "description": "一支树枝造型的骨笔，可以辅助完成一些精密作业。娜斯提说不必因为它叫“骨笔”就有所顾虑，折断了她随时帮你换新的。",
+    "usage": "用于提升娜斯提的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_123_fang": {
+    "itemId": "class_p_char_123_fang",
+    "name": "芬的中堅信物",
+    "iconId": "class_p_char_123_fang",
+    "description": "一雙恰好合你尺寸的跑鞋。為了邀請你晨練，贈送者一定花了不少工夫。",
+    "usage": "用於提升芬的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_240_wyvern": {
+    "itemId": "class_p_char_240_wyvern",
+    "name": "香草的中堅信物",
+    "iconId": "class_p_char_240_wyvern",
+    "description": "瓦伊凡邊界草原的野生動物分佈圖。圖上的標記在移動城市的轟鳴中漸漸消失。",
+    "usage": "用於提升香草的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_192_falco": {
+    "itemId": "class_p_char_192_falco",
+    "name": "翎羽的中堅信物",
+    "iconId": "class_p_char_192_falco",
+    "description": "克制地裝飾著少量羽毛的禮帽。適合拉特蘭的各個節日。",
+    "usage": "用於提升翎羽的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_208_melan": {
+    "itemId": "class_p_char_208_melan",
+    "name": "玫蘭莎的中堅信物",
+    "iconId": "class_p_char_208_melan",
+    "description": "簡單包裝的香燭。別緻的香味讓人無法忘卻。",
+    "usage": "用於提升玫蘭莎的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_209_ardign": {
+    "itemId": "class_p_char_209_ardign",
+    "name": "卡緹的中堅信物",
+    "iconId": "class_p_char_209_ardign",
+    "description": "用質地堅實的木材打造的雪橇。突然開始期待下雪。",
+    "usage": "用於提升卡緹的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_122_beagle": {
+    "itemId": "class_p_char_122_beagle",
+    "name": "米格魯的中堅信物",
+    "iconId": "class_p_char_122_beagle",
+    "description": "整整齊齊地放在資料夾裡的績效考核單。所有考核項目的成績都是A等。",
+    "usage": "用於提升米格魯的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_124_kroos": {
+    "itemId": "class_p_char_124_kroos",
+    "name": "克洛絲的中堅信物",
+    "iconId": "class_p_char_124_kroos",
+    "description": "一套兒童射擊玩具。包含有一把塑膠弓，數支吸盤箭，以及替代箭靶的一個蘋果。",
+    "usage": "用於提升克洛絲的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_121_lava": {
+    "itemId": "class_p_char_121_lava",
+    "name": "炎熔的中堅信物",
+    "iconId": "class_p_char_121_lava",
+    "description": "特殊加工過的匕首套。外皮上佈滿了故作神秘的花紋。",
+    "usage": "用於提升炎熔的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_120_hibisc": {
+    "itemId": "class_p_char_120_hibisc",
+    "name": "芙蓉的中堅信物",
+    "iconId": "class_p_char_120_hibisc",
+    "description": "一張專門為你定制的健康生活日程規劃表。說實話，很難拒絕。",
+    "usage": "用於提升芙蓉的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_212_ansel": {
+    "itemId": "class_p_char_212_ansel",
+    "name": "安賽爾的中堅信物",
+    "iconId": "class_p_char_212_ansel",
+    "description": "一台便於攜帶的氣壓式血壓計。就算身邊沒有醫生,也希望你能善待自己的身體。",
+    "usage": "用於提升安賽爾的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_210_stward": {
+    "itemId": "class_p_char_210_stward",
+    "name": "史都華德的中堅信物",
+    "iconId": "class_p_char_210_stward",
+    "description": "時興的運動臂環。似乎是外觀較為樸素的單色版。",
+    "usage": "用於提升史都華德的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_278_orchid": {
+    "itemId": "class_p_char_278_orchid",
+    "name": "梓蘭的中堅信物",
+    "iconId": "class_p_char_278_orchid",
+    "description": "精心包裝好的高級鋼筆。用它批閱檔時，會產生一種身在寫字樓中的感覺。",
+    "usage": "用於提升梓蘭的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_282_catap": {
+    "itemId": "class_p_char_282_catap",
+    "name": "空爆的中堅信物",
+    "iconId": "class_p_char_282_catap",
+    "description": "一塊只有士兵才會佩戴的名牌。因為不再被束縛，所以將自己的榮譽交給你。",
+    "usage": "用於提升空爆的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_283_midn": {
+    "itemId": "class_p_char_283_midn",
+    "name": "月見夜的中堅信物",
+    "iconId": "class_p_char_283_midn",
+    "description": "精美的高腳酒杯。昏黃的燈光下，杯身散發出令人沉醉的色彩。",
+    "usage": "用於提升月見夜的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_284_spot": {
+    "itemId": "class_p_char_284_spot",
+    "name": "斑點的中堅信物",
+    "iconId": "class_p_char_284_spot",
+    "description": "一本俚語大全，記載了數個國家各種語言裡溫柔諷刺他人的句子。",
+    "usage": "用於提升斑點的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_281_popka": {
+    "itemId": "class_p_char_281_popka",
+    "name": "泡普卡的中堅信物",
+    "iconId": "class_p_char_281_popka",
+    "description": "實心金屬玩具。特別重，超級難損壞。",
+    "usage": "用於提升泡普卡的潛能。",
+    "rarity": 3
+  },
+  "class_p_char_141_nights": {
+    "itemId": "class_p_char_141_nights",
+    "name": "夜煙的中堅信物",
+    "iconId": "class_p_char_141_nights",
+    "description": "一根湯勺。配套的鑿子藏在了一本書裡。",
+    "usage": "用於提升夜煙的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_109_fmout": {
+    "itemId": "class_p_char_109_fmout",
+    "name": "遠山的中堅信物",
+    "iconId": "class_p_char_109_fmout",
+    "description": "占卜套組中的一張卡片。雖然被告知了其中寓意，但未來由你自己決定。",
+    "usage": "用於提升遠山的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_235_jesica": {
+    "itemId": "class_p_char_235_jesica",
+    "name": "潔西卡的中堅信物",
+    "iconId": "class_p_char_235_jesica",
+    "description": "一張黑鋼入職紀念照。一段嶄新人生的開始。",
+    "usage": "用於提升潔西卡的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_126_shotst": {
+    "itemId": "class_p_char_126_shotst",
+    "name": "流星的中堅信物",
+    "iconId": "class_p_char_126_shotst",
+    "description": "由彷彿不會凋零的嫩枝編成的頭冠。卡西米爾的森林低聲地詢問，它們的守護者何日歸還。",
+    "usage": "用於提升流星的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_118_yuki": {
+    "itemId": "class_p_char_118_yuki",
+    "name": "白雪的中堅信物",
+    "iconId": "class_p_char_118_yuki",
+    "description": "墨蹟未乾的書法作品。贈予羅德島的祝福。",
+    "usage": "用於提升白雪的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_149_scave": {
+    "itemId": "class_p_char_149_scave",
+    "name": "清道夫的中堅信物",
+    "iconId": "class_p_char_149_scave",
+    "description": "一枚銀幣。也許能用它決定一些更重要的事。",
+    "usage": "用於提升清道夫的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_290_vigna": {
+    "itemId": "class_p_char_290_vigna",
+    "name": "紅豆的中堅信物",
+    "iconId": "class_p_char_290_vigna",
+    "description": "練習用電吉他。帶著它前往戰場的提案被否決了。",
+    "usage": "用於提升紅豆的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_130_doberm": {
+    "itemId": "class_p_char_130_doberm",
+    "name": "杜賓的中堅信物",
+    "iconId": "class_p_char_130_doberm",
+    "description": "紅色封皮的小冊子。記錄了一場艱苦卓絕的戰鬥。",
+    "usage": "用於提升杜賓的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_289_gyuki": {
+    "itemId": "class_p_char_289_gyuki",
+    "name": "纏丸的中堅信物",
+    "iconId": "class_p_char_289_gyuki",
+    "description": "一副柔軟的眼罩。在睡覺的時候戴上也挺不錯的。",
+    "usage": "用於提升纏丸的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_193_frostl": {
+    "itemId": "class_p_char_193_frostl",
+    "name": "霜葉的中堅信物",
+    "iconId": "class_p_char_193_frostl",
+    "description": "翻得破破爛爛的識字本。每頁的空白處都認真地標注著許多圖畫般的符號。",
+    "usage": "用於提升霜葉的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_185_frncat": {
+    "itemId": "class_p_char_185_frncat",
+    "name": "慕斯的中堅信物",
+    "iconId": "class_p_char_185_frncat",
+    "description": "一本封皮裝點著金絲花紋的相冊。裡面的照片來自各隻與拍攝者親近的貓貓。貓貓！",
+    "usage": "用於提升慕斯的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_237_gravel": {
+    "itemId": "class_p_char_237_gravel",
+    "name": "礫的中堅信物",
+    "iconId": "class_p_char_237_gravel",
+    "description": "磨損嚴重的卡西米爾騎士徽章。無論過往如何，掌握當下才重要。",
+    "usage": "用於提升礫的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_236_rope": {
+    "itemId": "class_p_char_236_rope",
+    "name": "暗索的中堅信物",
+    "iconId": "class_p_char_236_rope",
+    "description": "一件連價格標識都沒撕掉的昂貴裝飾品。真的可以收下嗎......",
+    "usage": "用於提升暗索的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_117_myrrh": {
+    "itemId": "class_p_char_117_myrrh",
+    "name": "末藥的中堅信物",
+    "iconId": "class_p_char_117_myrrh",
+    "description": "以多種草藥混合製作的藥丸。生病的時候一定能派上用場，何況每顆藥丸都被細心地裹上了糖衣。",
+    "usage": "用於提升末藥的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_181_flower": {
+    "itemId": "class_p_char_181_flower",
+    "name": "調香師的中堅信物",
+    "iconId": "class_p_char_181_flower",
+    "description": "富有米諾斯古典時代氣息的雙耳花瓶。需贈送者本人定期更換新鮮花卉。",
+    "usage": "用於提升調香師的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_199_yak": {
+    "itemId": "class_p_char_199_yak",
+    "name": "角峰的中堅信物",
+    "iconId": "class_p_char_199_yak",
+    "description": "略微有些粗糙的木雕人像。垂首低眉的姿態十分安詳。",
+    "usage": "用於提升角峰的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_150_snakek": {
+    "itemId": "class_p_char_150_snakek",
+    "name": "蛇屠箱的中堅信物",
+    "iconId": "class_p_char_150_snakek",
+    "description": "普通的棒球棍，棍身歪歪扭扭地寫著數位知名球手的簽名。雖然，也許，大概，即使簽名是模仿的，想要分享的心情卻是真實的。",
+    "usage": "用於提升蛇屠箱的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_196_sunbr": {
+    "itemId": "class_p_char_196_sunbr",
+    "name": "古米的中堅信物",
+    "iconId": "class_p_char_196_sunbr",
+    "description": "一張“古米早餐廚房”優惠卷。-100%是不是免費的意思......？",
+    "usage": "用於提升古米的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_110_deepcl": {
+    "itemId": "class_p_char_110_deepcl",
+    "name": "深海色的中堅信物",
+    "iconId": "class_p_char_110_deepcl",
+    "description": "手繪的童話故事書。在生命與死亡間跋涉的主人公，最終踏入了河流的盡頭。",
+    "usage": "用於提升深海色的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_183_skgoat": {
+    "itemId": "class_p_char_183_skgoat",
+    "name": "地靈的中堅信物",
+    "iconId": "class_p_char_183_skgoat",
+    "description": "形狀古怪的小塊礦石。放在耳邊時，似乎能聽見液體流動的細微聲響。",
+    "usage": "用於提升地靈的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_277_sqrrel": {
+    "itemId": "class_p_char_277_sqrrel",
+    "name": "阿消的中堅信物",
+    "iconId": "class_p_char_277_sqrrel",
+    "description": "一本郵票紀念冊。以前，它的擁有者根本不會允許他人觸碰自己寶貴的收集。",
+    "usage": "用於提升阿消的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_137_brownb": {
+    "itemId": "class_p_char_137_brownb",
+    "name": "獵蜂的中堅信物",
+    "iconId": "class_p_char_137_brownb",
+    "description": "一座拳賽獎盃。底座上刻下的名字也已模糊，但杯身彷彿依然散發著自豪的光輝。",
+    "usage": "用於提升獵蜂的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_253_greyy": {
+    "itemId": "class_p_char_253_greyy",
+    "name": "格雷伊的中堅信物",
+    "iconId": "class_p_char_253_greyy",
+    "description": "一盞設計精巧的LED提燈。只要嵌入一粒源石碎片就能長明不滅，就用它驅散縈繞黑夜的不安感吧。",
+    "usage": "用於提升格雷伊的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_298_susuro": {
+    "itemId": "class_p_char_298_susuro",
+    "name": "蘇蘇洛的中堅信物",
+    "iconId": "class_p_char_298_susuro",
+    "description": "一本紙質柔和的日記本。無論過去還是未來的記憶，只要得以記錄，就永遠不會再消失了吧？",
+    "usage": "用於提升蘇蘇洛的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_151_myrtle": {
+    "itemId": "class_p_char_151_myrtle",
+    "name": "桃金娘的中堅信物",
+    "iconId": "class_p_char_151_myrtle",
+    "description": "一根和她手中棍子別無二致的長條，是她親自挑選的。雖然沒有什麼特別的用處，不過她似乎對這份禮物十分滿意。",
+    "usage": "用於提升桃金娘的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_190_clour": {
+    "itemId": "class_p_char_190_clour",
+    "name": "紅雲的中堅信物",
+    "iconId": "class_p_char_190_clour",
+    "description": "一串潔白的獸牙雕飾，其中一枚取自奪去她左臂的那隻野獸。",
+    "usage": "用於提升紅雲的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_133_mm": {
+    "itemId": "class_p_char_133_mm",
+    "name": "梅的中堅信物",
+    "iconId": "class_p_char_133_mm",
+    "description": "一把來路不明的泰瑟槍。正好可以與梅常用的武器配成一對。",
+    "usage": "用於提升梅的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_302_glaze": {
+    "itemId": "class_p_char_302_glaze",
+    "name": "安比爾的中堅信物",
+    "iconId": "class_p_char_302_glaze",
+    "description": "一枚做工精巧的化妝鏡。攜帶非常方便，可以在戰鬥中隨時檢查髮型是否凌亂。",
+    "usage": "用於提升安比爾的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_337_utage": {
+    "itemId": "class_p_char_337_utage",
+    "name": "宴的中堅信物",
+    "iconId": "class_p_char_337_utage",
+    "description": "一個漆黑的盒子。裡面是漆黑的盒子，漆黑的盒子，以及......美甲套裝？！",
+    "usage": "用於提升宴的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_301_cutter": {
+    "itemId": "class_p_char_301_cutter",
+    "name": "刻刀的中堅信物",
+    "iconId": "class_p_char_301_cutter",
+    "description": "一枚手工雕刻的護身符，因製作者在雕制時總是用力過猛而充滿傷痕。",
+    "usage": "用於提升刻刀的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_258_podego": {
+    "itemId": "class_p_char_258_podego",
+    "name": "波登可的中堅信物",
+    "iconId": "class_p_char_258_podego",
+    "description": "一包花種，能夠讓博士的辦公室變為花田。只要不過敏，哪裡都是庭院。",
+    "usage": "用於提升波登可的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_328_cammou": {
+    "itemId": "class_p_char_328_cammou",
+    "name": "卡達的中堅信物",
+    "iconId": "class_p_char_328_cammou",
+    "description": "一張塞滿內容的光碟，裡面全是卡達近年來製作的高人氣影片。包含了花絮和未刪減部分，某些場景一刀未剪。",
+    "usage": "用於提升卡達的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_272_strong": {
+    "itemId": "class_p_char_272_strong",
+    "name": "孑的中堅信物",
+    "iconId": "class_p_char_272_strong",
+    "description": "一把菜刀。精鋼打造，大概花了不少錢。",
+    "usage": "用於提升孑的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_366_acdrop": {
+    "itemId": "class_p_char_366_acdrop",
+    "name": "酸糖的中堅信物",
+    "iconId": "class_p_char_366_acdrop",
+    "description": "一塊嶄新的滑板，她送給你的，附贈了創口貼和消毒水。",
+    "usage": "用於提升酸糖的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_271_spikes": {
+    "itemId": "class_p_char_271_spikes",
+    "name": "芳汀的中堅信物",
+    "iconId": "class_p_char_271_spikes",
+    "description": "一顆橡膠玩具子彈。薩科塔的孩子們都有自己的玩具槍，並且總用這種橡膠子彈填滿所有口袋。",
+    "usage": "用於提升芳汀的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_381_bubble": {
+    "itemId": "class_p_char_381_bubble",
+    "name": "泡泡的中堅信物",
+    "iconId": "class_p_char_381_bubble",
+    "description": "一個從野外挖來的樹墩。她也不知道這東西有什麼用，只是覺得好玩就挖來送你了。",
+    "usage": "用於提升泡泡的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_347_jaksel": {
+    "itemId": "class_p_char_347_jaksel",
+    "name": "傑克的中堅信物",
+    "iconId": "class_p_char_347_jaksel",
+    "description": "一雙嶄新的運動鞋。她對於和你一同鍛煉身體十分期待。",
+    "usage": "用於提升傑克的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_440_pinecn": {
+    "itemId": "class_p_char_440_pinecn",
+    "name": "松果的中堅信物",
+    "iconId": "class_p_char_440_pinecn",
+    "description": "一個很重的工具包，內含一把備用釘槍，很多備用零件，還有她忘在裡面的小小玩偶。",
+    "usage": "用於提升松果的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_452_bstalk": {
+    "itemId": "class_p_char_452_bstalk",
+    "name": "豆苗的中堅信物",
+    "iconId": "class_p_char_452_bstalk",
+    "description": "寵物磐蟹幼崽兌換券。經飼養人承諾並蓋章，憑此券可在豆苗培育公司正式創建後，兌換領養一隻磐蟹寶寶。",
+    "usage": "用於提升豆苗的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_469_indigo": {
+    "itemId": "class_p_char_469_indigo",
+    "name": "深靛的中堅信物",
+    "iconId": "class_p_char_469_indigo",
+    "description": "一隻美麗的水螢蟲。它微弱的光能照亮一個夜晚。到了第二天，你可以放它自由。",
+    "usage": "用於提升深靛的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_484_robrta": {
+    "itemId": "class_p_char_484_robrta",
+    "name": "羅比菈塔的中堅信物",
+    "iconId": "class_p_char_484_robrta",
+    "description": "一支化妝刷，做工粗糙，看起來有些年頭了，但每一根褐色刷毛都乾乾淨淨，還很柔軟。",
+    "usage": "用於提升羅比菈塔的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_4041_chnut": {
+    "itemId": "class_p_char_4041_chnut",
+    "name": "褐果的中堅信物",
+    "iconId": "class_p_char_4041_chnut",
+    "description": "由於種植不易，只是很小的一叢地底螢光蘑菇，但它代表著家鄉。",
+    "usage": "用於提升褐果的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_4062_totter": {
+    "itemId": "class_p_char_4062_totter",
+    "name": "鉛踝的中堅信物",
+    "iconId": "class_p_char_4062_totter",
+    "description": "一段被凍得硬邦邦的木柴，被丟進爐子燃燒前還需簡單烘烤以去除水分。",
+    "usage": "用於提升鉛踝的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_491_humus": {
+    "itemId": "class_p_char_491_humus",
+    "name": "休謨斯的中堅信物",
+    "iconId": "class_p_char_491_humus",
+    "description": "一把汙跡斑斑的自製衝擊鑽。可以用來打孔、擰螺絲，偶爾也不得不對著人。",
+    "usage": "用於提升休謨斯的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_4107_vrdant": {
+    "itemId": "class_p_char_4107_vrdant",
+    "name": "維荻的中堅信物",
+    "iconId": "class_p_char_4107_vrdant",
+    "description": "一株看似雜草的小草，對他有特殊的意義。小草的葉片被割出鋒利的切口，不用害怕，這不是為了傷害你。",
+    "usage": "用於提升維荻的潛能。",
+    "rarity": 4
+  },
+  "class_p_char_128_plosis": {
+    "itemId": "class_p_char_128_plosis",
+    "name": "白面鴞的中堅信物",
+    "iconId": "class_p_char_128_plosis",
+    "description": "論證源石技藝如何識別與執行的工具書。大部分幹員都讀不懂。",
+    "usage": "用於提升白面鴞的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_115_headbr": {
+    "itemId": "class_p_char_115_headbr",
+    "name": "凜冬的中堅信物",
+    "iconId": "class_p_char_115_headbr",
+    "description": "從紅色的旗幟上撕下的布條。不知為何，將它繫在臂膀上時，會不自主地感到悲傷。",
+    "usage": "用於提升凜冬的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_102_texas": {
+    "itemId": "class_p_char_102_texas",
+    "name": "德克薩斯的中堅信物",
+    "iconId": "class_p_char_102_texas",
+    "description": "一枚德克薩斯家族的標牌。其上的劃痕塵封了一段往事。",
+    "usage": "用於提升德克薩斯的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_106_franka": {
+    "itemId": "class_p_char_106_franka",
+    "name": "芙蘭卡的中堅信物",
+    "iconId": "class_p_char_106_franka",
+    "description": "一張旅行計劃書。因為規劃的目的地太多而導致相當難以實現。",
+    "usage": "用於提升芙蘭卡的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_140_whitew": {
+    "itemId": "class_p_char_140_whitew",
+    "name": "拉普蘭德的中堅信物",
+    "iconId": "class_p_char_140_whitew",
+    "description": "數個印著名字的染血標牌。來自各個幫派的家長。",
+    "usage": "用於提升拉普蘭德的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_143_ghost": {
+    "itemId": "class_p_char_143_ghost",
+    "name": "幽靈鯊的中堅信物",
+    "iconId": "class_p_char_143_ghost",
+    "description": "一幅難以描述的繪畫。斑駁的留白令人茫然若失。",
+    "usage": "用於提升幽靈鯊的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_129_bluep": {
+    "itemId": "class_p_char_129_bluep",
+    "name": "藍毒的中堅信物",
+    "iconId": "class_p_char_129_bluep",
+    "description": "一張高級服裝店的購物卡。拋開千篇一律的制服，盡情搭配吧。",
+    "usage": "用於提升藍毒的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_204_platnm": {
+    "itemId": "class_p_char_204_platnm",
+    "name": "白金的中堅信物",
+    "iconId": "class_p_char_204_platnm",
+    "description": "兩張遊樂園的門票。這個週末一起去吧。",
+    "usage": "用於提升白金的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_219_meteo": {
+    "itemId": "class_p_char_219_meteo",
+    "name": "隕星的中堅信物",
+    "iconId": "class_p_char_219_meteo",
+    "description": "從營救過的薩卡茲孩子那裡收到的信。亂七八糟地寫著對羅德島的感謝。",
+    "usage": "用於提升隕星的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_166_skfire": {
+    "itemId": "class_p_char_166_skfire",
+    "name": "天火的中堅信物",
+    "iconId": "class_p_char_166_skfire",
+    "description": "一顆觸感冰涼的玻璃珠，內裡的顏色正在翻騰燃燒。",
+    "usage": "用於提升天火的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_242_otter": {
+    "itemId": "class_p_char_242_otter",
+    "name": "梅爾的中堅信物",
+    "iconId": "class_p_char_242_otter",
+    "description": "小號的咪波模型。腹部有一個紅色的圓形按鈕。唔......",
+    "usage": "用於提升梅爾的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_108_silent": {
+    "itemId": "class_p_char_108_silent",
+    "name": "赫默的中堅信物",
+    "iconId": "class_p_char_108_silent",
+    "description": "一枚斑紋羽毛飾品。不善言辭的黎博利科研人員透過贈送自己的羽毛來託付情感。",
+    "usage": "用於提升赫默的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_171_bldsk": {
+    "itemId": "class_p_char_171_bldsk",
+    "name": "華法琳的中堅信物",
+    "iconId": "class_p_char_171_bldsk",
+    "description": "被封存在透明小瓶的神秘液體。黏稠而富有光澤的紅色在你的晃動之下，於瓶中緩緩地改變著形態。",
+    "usage": "用於提升華法琳的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_148_nearl": {
+    "itemId": "class_p_char_148_nearl",
+    "name": "臨光的中堅信物",
+    "iconId": "class_p_char_148_nearl",
+    "description": "古舊褪色的卡西米爾騎士紋章。烏銀雕飾的天馬振翅欲飛。",
+    "usage": "用於提升臨光的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_144_red": {
+    "itemId": "class_p_char_144_red",
+    "name": "紅的中堅信物",
+    "iconId": "class_p_char_144_red",
+    "description": "一顆尖尖的乳牙。希望你能幫她收好。",
+    "usage": "用於提升紅的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_107_liskam": {
+    "itemId": "class_p_char_107_liskam",
+    "name": "雷蛇的中堅信物",
+    "iconId": "class_p_char_107_liskam",
+    "description": "特製的防電手環。終於，安全握手。",
+    "usage": "用於提升雷蛇的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_201_moeshd": {
+    "itemId": "class_p_char_201_moeshd",
+    "name": "可頌的中堅信物",
+    "iconId": "class_p_char_201_moeshd",
+    "description": "一張設計得十分少女的名片。比起尋常名片多出了一個收款碼和“請多惠顧~”的字樣。",
+    "usage": "用於提升可頌的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_145_prove": {
+    "itemId": "class_p_char_145_prove",
+    "name": "普羅旺斯的中堅信物",
+    "iconId": "class_p_char_145_prove",
+    "description": "一台多功能吸塵器。更多時候用於清理從幹員們尾巴上掉落的毛。",
+    "usage": "用於提升普羅旺斯的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_158_milu": {
+    "itemId": "class_p_char_158_milu",
+    "name": "守林人的中堅信物",
+    "iconId": "class_p_char_158_milu",
+    "description": "造型簡單的口琴。悠揚樂聲響起的瞬間，落葉如雨。",
+    "usage": "用於提升守林人的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_173_slchan": {
+    "itemId": "class_p_char_173_slchan",
+    "name": "崖心的中堅信物",
+    "iconId": "class_p_char_173_slchan",
+    "description": "手工編織的繩環。三股長繩緊緊纏繞在一起，不分彼此。",
+    "usage": "用於提升崖心的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_174_slbell": {
+    "itemId": "class_p_char_174_slbell",
+    "name": "初雪的中堅信物",
+    "iconId": "class_p_char_174_slbell",
+    "description": "小小的銀色鈴鐺。微風吹拂之下，幽遠的鈴聲沁人心脾。",
+    "usage": "用於提升初雪的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_195_glassb": {
+    "itemId": "class_p_char_195_glassb",
+    "name": "真理的中堅信物",
+    "iconId": "class_p_char_195_glassb",
+    "description": "一本講述烏薩斯戰爭史的著作。據說作者現正流亡於萊塔尼亞。",
+    "usage": "用於提升真理的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_101_sora": {
+    "itemId": "class_p_char_101_sora",
+    "name": "空的中堅信物",
+    "iconId": "class_p_char_101_sora",
+    "description": "空作為偶像出道時發售的單曲CD。雖然是一首兒童向的卡通歌曲，但依然能感受到空她想要努力唱好的心境。",
+    "usage": "用於提升空的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_215_mantic": {
+    "itemId": "class_p_char_215_mantic",
+    "name": "獅蠍的中堅信物",
+    "iconId": "class_p_char_215_mantic",
+    "description": "用牽牛花貼紙封口的淡紫色信封。拆開信封，折疊過的信紙上清秀地寫著“請和我做朋友”幾個字。",
+    "usage": "用於提升獅蠍的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_241_panda": {
+    "itemId": "class_p_char_241_panda",
+    "name": "食鐵獸的中堅信物",
+    "iconId": "class_p_char_241_panda",
+    "description": "一張武打電影海報。主角的長相有些面熟。",
+    "usage": "用於提升食鐵獸的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_164_nightm": {
+    "itemId": "class_p_char_164_nightm",
+    "name": "夜魔的中堅信物",
+    "iconId": "class_p_char_164_nightm",
+    "description": "商店中隨處可見的可愛布偶。如果放在沒有光的地方，便會顯現出另外一番樣貌。",
+    "usage": "用於提升夜魔的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_308_swire": {
+    "itemId": "class_p_char_308_swire",
+    "name": "詩懷雅的中堅信物",
+    "iconId": "class_p_char_308_swire",
+    "description": "一枚傷痕累累的警徽。無名的警員在某次重大案件中失落了警徽，也沒有人能夠認領，只是，總得有人起身對抗罪惡。",
+    "usage": "用於提升詩懷雅的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_326_glacus": {
+    "itemId": "class_p_char_326_glacus",
+    "name": "格勞克斯的中堅信物",
+    "iconId": "class_p_char_326_glacus",
+    "description": "一節沒電的電池，無用之物最後的用處就是收藏。",
+    "usage": "用於提升格勞克斯的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_274_astesi": {
+    "itemId": "class_p_char_274_astesi",
+    "name": "星極的中堅信物",
+    "iconId": "class_p_char_274_astesi",
+    "description": "一支灌注了特殊墨水的鋼筆。筆尖劃過紙張，銀河為之閃爍。",
+    "usage": "用於提升星極的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_279_excu": {
+    "itemId": "class_p_char_279_excu",
+    "name": "送葬人的中堅信物",
+    "iconId": "class_p_char_279_excu",
+    "description": "一本《泰拉城邦防身手冊》。鉅細靡遺地描述了在各個知名城邦辦公時需要注意的種種事項，大多與人身安全有緊密關係，且和一般人的生活基本沒有關係。",
+    "usage": "用於提升送葬人的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_243_waaifu": {
+    "itemId": "class_p_char_243_waaifu",
+    "name": "槐琥的中堅信物",
+    "iconId": "class_p_char_243_waaifu",
+    "description": "一本以古怪字體寫就的秘傳拳譜。作為工具書，或許有參考的價值......吧？",
+    "usage": "用於提升槐琥的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_261_sddrag": {
+    "itemId": "class_p_char_261_sddrag",
+    "name": "葦草的中堅信物",
+    "iconId": "class_p_char_261_sddrag",
+    "description": "一首寫在日記紙上的短詩。筆跡娟美細碎，用詞令人疼痛難忍。",
+    "usage": "用於提升葦草的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_356_broca": {
+    "itemId": "class_p_char_356_broca",
+    "name": "布洛卡的中堅信物",
+    "iconId": "class_p_char_356_broca",
+    "description": "一座精緻的敘拉古某城微縮景觀模型。被悄悄地放在你的辦公室裡，直到你第二天上班的時候才發現。",
+    "usage": "用於提升布洛卡的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_367_swllow": {
+    "itemId": "class_p_char_367_swllow",
+    "name": "灰喉的中堅信物",
+    "iconId": "class_p_char_367_swllow",
+    "description": "一節斷裂的手術刀，父親的遺物，難以想像向感染者施以援手的醫生竟然會經受這樣的折磨。",
+    "usage": "用於提升灰喉的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_226_hmau": {
+    "itemId": "class_p_char_226_hmau",
+    "name": "吽的中堅信物",
+    "iconId": "class_p_char_226_hmau",
+    "description": "一本吽親自整理和撰寫的，各季節家常推薦食譜，上面的菜都好做又好吃。",
+    "usage": "用於提升吽的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_306_leizi": {
+    "itemId": "class_p_char_306_leizi",
+    "name": "驚蟄的中堅信物",
+    "iconId": "class_p_char_306_leizi",
+    "description": "一把造型老舊的橡木尺子。沒有規矩，不成方圓。",
+    "usage": "用於提升驚蟄的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_379_sesa": {
+    "itemId": "class_p_char_379_sesa",
+    "name": "懾砂的中堅信物",
+    "iconId": "class_p_char_379_sesa",
+    "description": "一個刻著符文的掛墜，浮誇的裝飾下飽含對過去的執念。",
+    "usage": "用於提升懾砂的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_254_vodfox": {
+    "itemId": "class_p_char_254_vodfox",
+    "name": "巫戀的中堅信物",
+    "iconId": "class_p_char_254_vodfox",
+    "description": "咬過一口的蘋果，小小的牙印清晰可見。",
+    "usage": "用於提升巫戀的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_401_elysm": {
+    "itemId": "class_p_char_401_elysm",
+    "name": "極境的中堅信物",
+    "iconId": "class_p_char_401_elysm",
+    "description": "一張複雜詳盡的手繪地形線路圖。如果看不懂，極境本人也很樂意親自領路。",
+    "usage": "用於提升極境的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_378_asbest": {
+    "itemId": "class_p_char_378_asbest",
+    "name": "石棉的中堅信物",
+    "iconId": "class_p_char_378_asbest",
+    "description": "一個探險套裝。她的意思似乎是，如果你有空的話，可以跟她一起出去走走。",
+    "usage": "用於提升石棉的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_343_tknogi": {
+    "itemId": "class_p_char_343_tknogi",
+    "name": "月禾的中堅信物",
+    "iconId": "class_p_char_343_tknogi",
+    "description": "由月禾本人製作與祈福的御守。聽說帶上能讓人心平氣和，還可以撫平對黑夜的恐懼。",
+    "usage": "用於提升月禾的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_373_lionhd": {
+    "itemId": "class_p_char_373_lionhd",
+    "name": "萊恩哈特的中堅信物",
+    "iconId": "class_p_char_373_lionhd",
+    "description": "一雙新潮的限定款運動鞋。似乎為維多利亞風靡的球類運動做了特別的輔助設計，技術支援源自雷姆必拓。",
+    "usage": "用於提升萊恩哈特的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_294_ayer": {
+    "itemId": "class_p_char_294_ayer",
+    "name": "斷崖的中堅信物",
+    "iconId": "class_p_char_294_ayer",
+    "description": "一本自製偵察與反偵察指南。“你最好能在任何情況下保護好自己”，他是這樣想的。",
+    "usage": "用於提升斷崖的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_344_beewax": {
+    "itemId": "class_p_char_344_beewax",
+    "name": "蜜蠟的中堅信物",
+    "iconId": "class_p_char_344_beewax",
+    "description": "包含精油、軟刷、磨砂條在內的全套角護理器具，沙漠部族內定制，重金難求。只要不嫌貴，也可以只用它來修修指甲。",
+    "usage": "用於提升蜜蠟的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_349_chiave": {
+    "itemId": "class_p_char_349_chiave",
+    "name": "賈維的中堅信物",
+    "iconId": "class_p_char_349_chiave",
+    "description": "一枚由他親手打造的代表“賈維集團”的標牌。上面還刻上了你的名字。",
+    "usage": "用於提升賈維的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_218_cuttle": {
+    "itemId": "class_p_char_218_cuttle",
+    "name": "安哲拉的中堅信物",
+    "iconId": "class_p_char_218_cuttle",
+    "description": "一把模型銃。她親手做的，做工很精緻。",
+    "usage": "用於提升安哲拉的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_415_flint": {
+    "itemId": "class_p_char_415_flint",
+    "name": "燧石的中堅信物",
+    "iconId": "class_p_char_415_flint",
+    "description": "一把鋒利的石製匕首。由燧石親手鍛製，原主人一般拿它來切割烤肉，適用於多種野外環境，但要小心不要劃傷自己！",
+    "usage": "用於提升燧石的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_365_aprl": {
+    "itemId": "class_p_char_365_aprl",
+    "name": "四月的中堅信物",
+    "iconId": "class_p_char_365_aprl",
+    "description": "一張全新包裝的收錄了《四月》這首歌的專輯，上面用緞帶綁了一個蝴蝶結。",
+    "usage": "用於提升四月的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_346_aosta": {
+    "itemId": "class_p_char_346_aosta",
+    "name": "奥斯塔的中堅信物",
+    "iconId": "class_p_char_346_aosta",
+    "description": "一頂由他親手製作的敘拉古風格寬簷帽，用的布料非常好，能夠感受到製作者的用心。",
+    "usage": "用於提升奧斯塔的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_436_whispr": {
+    "itemId": "class_p_char_436_whispr",
+    "name": "絮雨的中堅信物",
+    "iconId": "class_p_char_436_whispr",
+    "description": "老舊的電影票根。一份回憶的證明，票面上的油墨脫落，老舊泛黃，模糊不清。",
+    "usage": "用於提升絮雨的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_214_kafka": {
+    "itemId": "class_p_char_214_kafka",
+    "name": "卡夫卡的中堅信物",
+    "iconId": "class_p_char_214_kafka",
+    "description": "一盆精心打理過的盆栽，附贈一張卡片，上面寫著：“土裡埋了一把匕首，必要的時候可以拿來削蘋果哦。”",
+    "usage": "用於提升卡夫卡的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_338_iris": {
+    "itemId": "class_p_char_338_iris",
+    "name": "愛麗絲的中堅信物",
+    "iconId": "class_p_char_338_iris",
+    "description": "手工製作的童話書。從未在市面上發行的童話故事集，每一幅插圖都由製作者親手繪製。",
+    "usage": "用於提升愛麗絲的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_455_nothin": {
+    "itemId": "class_p_char_455_nothin",
+    "name": "烏有的中堅信物",
+    "iconId": "class_p_char_455_nothin",
+    "description": "一把紙扇，扇骨使用了特殊的材質，扇面則寫著“子虛烏有”。",
+    "usage": "用於提升烏有的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_363_toddi": {
+    "itemId": "class_p_char_363_toddi",
+    "name": "熔泉的中堅信物",
+    "iconId": "class_p_char_363_toddi",
+    "description": "精工切割的二十面寶石晶體。按照她的說法，隨手丟給別人的不能算是禮物。",
+    "usage": "用於提升熔泉的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_475_akafyu": {
+    "itemId": "class_p_char_475_akafyu",
+    "name": "赤冬的中堅信物",
+    "iconId": "class_p_char_475_akafyu",
+    "description": "一盤生拌獸肉。能一起大笑著吃光光的才是好兄弟。",
+    "usage": "用於提升赤冬的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_478_kirara": {
+    "itemId": "class_p_char_478_kirara",
+    "name": "綺良的中堅信物",
+    "iconId": "class_p_char_478_kirara",
+    "description": "《機械忍者2》典藏版。東國經典遊戲的初期典藏版，她迫不及待將喜歡的都與你分享。",
+    "usage": "用於提升綺良的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_421_crow": {
+    "itemId": "class_p_char_421_crow",
+    "name": "羽毛筆的中堅信物",
+    "iconId": "class_p_char_421_crow",
+    "description": "一本《多索雷斯調酒指南》，上面不少配方旁邊都有她的筆記，看來這些都是她擅長的，閒暇之餘可以找她點一杯。",
+    "usage": "用於提升羽毛筆的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_473_mberry": {
+    "itemId": "class_p_char_473_mberry",
+    "name": "桑葚的中堅信物",
+    "iconId": "class_p_char_473_mberry",
+    "description": "掛著炎國特色裝飾的紅色平安符。桑葚特地為你請回的護身符，上面寫著難懂的炎國文字，香火的氣息若有若無。",
+    "usage": "用於提升桑葚的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_431_ashlok": {
+    "itemId": "class_p_char_431_ashlok",
+    "name": "灰毫的中堅信物",
+    "iconId": "class_p_char_431_ashlok",
+    "description": "一枚擊發後留下的彈殼，上面有著灰毫的簽名。 這一發炮彈曾經為她帶來了勝利，現在，它是你的了。",
+    "usage": "用於提升灰毫的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_489_serum": {
+    "itemId": "class_p_char_489_serum",
+    "name": "蝕清的中堅信物",
+    "iconId": "class_p_char_489_serum",
+    "description": "一個個貼著密密麻麻標籤的試劑瓶。《反腐蝕覆膜試劑》《反反腐蝕覆膜試劑》《反反......反反腐蝕覆膜試劑》，字有點小。呃，認真的？",
+    "usage": "用於提升蝕清的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_422_aurora": {
+    "itemId": "class_p_char_422_aurora",
+    "name": "極光的中堅信物",
+    "iconId": "class_p_char_422_aurora",
+    "description": "一把密碼鎖。能打開她隨身攜帶的工具箱，裡面的東西任你取用。",
+    "usage": "用於提升極光的潛能。",
+    "rarity": 5
+  },
+  "class_p_char_103_angel": {
+    "itemId": "class_p_char_103_angel",
+    "name": "能天使的中堅信物",
+    "iconId": "class_p_char_103_angel",
+    "description": "最佳老闆獎章。集滿五顆可以兌換一枚超強老闆獎章。",
+    "usage": "用於提升能天使的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_112_siege": {
+    "itemId": "class_p_char_112_siege",
+    "name": "推進之王的中堅信物",
+    "iconId": "class_p_char_112_siege",
+    "description": "堅硬的大顆鉚釘。由倫蒂尼姆的工人打造，最終也將回到它的故土。",
+    "usage": "用於提升推進之王的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_134_ifrit": {
+    "itemId": "class_p_char_134_ifrit",
+    "name": "伊芙利特的中堅信物",
+    "iconId": "class_p_char_134_ifrit",
+    "description": "有著嚴重燒灼痕跡的長篇傳奇故事書。勉強還可以讀。",
+    "usage": "用於提升伊芙利特的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_180_amgoat": {
+    "itemId": "class_p_char_180_amgoat",
+    "name": "艾雅法拉的中堅信物",
+    "iconId": "class_p_char_180_amgoat",
+    "description": "小巧的理髮剪。柄的位置細心地纏繞著隔熱的布料。",
+    "usage": "用於提升艾雅法拉的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_291_aglina": {
+    "itemId": "class_p_char_291_aglina",
+    "name": "安潔莉娜的中堅信物",
+    "iconId": "class_p_char_291_aglina",
+    "description": "酸橙味的保濕唇膏。曠野中的風與夜晚的城市一樣乾燥。",
+    "usage": "用於提升安潔莉娜的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_147_shining": {
+    "itemId": "class_p_char_147_shining",
+    "name": "閃靈的中堅信物",
+    "iconId": "class_p_char_147_shining",
+    "description": "一條外觀普通的白色吊墜。無法被塵埃所沾染。",
+    "usage": "用於提升閃靈的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_179_cgbird": {
+    "itemId": "class_p_char_179_cgbird",
+    "name": "夜鶯的中堅信物",
+    "iconId": "class_p_char_179_cgbird",
+    "description": "一整盒雜亂的拼圖碎片。讓人更頭疼的地方在於，其中有不少塊都是空白的。",
+    "usage": "用於提升夜鶯的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_136_hsguma": {
+    "itemId": "class_p_char_136_hsguma",
+    "name": "星熊的中堅信物",
+    "iconId": "class_p_char_136_hsguma",
+    "description": "過時的流行漫畫。講述了名不見經傳的鬼怪在各色同伴的陪伴下成長為英雄的故事。",
+    "usage": "用於提升星熊的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_202_demkni": {
+    "itemId": "class_p_char_202_demkni",
+    "name": "塞雷婭的中堅信物",
+    "iconId": "class_p_char_202_demkni",
+    "description": "數張保安協防合約。其中幾份已經蓋上了灰色的鈣質印章。",
+    "usage": "用於提升塞雷婭的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_172_svrash": {
+    "itemId": "class_p_char_172_svrash",
+    "name": "銀灰的中堅信物",
+    "iconId": "class_p_char_172_svrash",
+    "description": "世上僅有數塊，象徵摯誠的源石冰晶。永遠不會融化。",
+    "usage": "用於提升銀灰的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_263_skadi": {
+    "itemId": "class_p_char_263_skadi",
+    "name": "斯卡蒂的中堅信物",
+    "iconId": "class_p_char_263_skadi",
+    "description": "用家鄉語言寫下的歌譜。雖然完全沒法理解這種文字，但她確實是打算教你這首歌的。",
+    "usage": "用於提升斯卡蒂的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_010_chen": {
+    "itemId": "class_p_char_010_chen",
+    "name": "陳的中堅信物",
+    "iconId": "class_p_char_010_chen",
+    "description": "在漫長時光中塵封許久的物件。她並非是將之忘記，而僅僅是不忍再次撫摸它銹蝕的棱角；興許在某一天，它會重新煥發出過往的熾熱吧。",
+    "usage": "用於提升陳的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_340_shwaz": {
+    "itemId": "class_p_char_340_shwaz",
+    "name": "黑的中堅信物",
+    "iconId": "class_p_char_340_shwaz",
+    "description": "一把弩。保養得很好，使用起來也十分便捷。但從上面的各種武器劃痕和細小缺口中，可以窺見它曾經歷過怎樣的廝殺。",
+    "usage": "用於提升黑的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_188_helage": {
+    "itemId": "class_p_char_188_helage",
+    "name": "赫拉格的中堅信物",
+    "iconId": "class_p_char_188_helage",
+    "description": "一本絕不允許他人借閱的厚重線裝書。烏薩斯數十年的戰爭始末躍然紙上，漫長苦難自乾涸墨跡裡汩汩流出。",
+    "usage": "用於提升赫拉格的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_248_mgllan": {
+    "itemId": "class_p_char_248_mgllan",
+    "name": "麥哲倫的中堅信物",
+    "iconId": "class_p_char_248_mgllan",
+    "description": "一根冰雪覆蓋的樹枝化石。曾經根植於大地的蒼天巨樹，如今只剩下這短短一枝，細細訴說著往昔的故事。",
+    "usage": "用於提升麥哲倫的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_213_mostma": {
+    "itemId": "class_p_char_213_mostma",
+    "name": "莫斯提馬的中堅信物",
+    "iconId": "class_p_char_213_mostma",
+    "description": "她的銃。她不需要了。",
+    "usage": "用於提升莫斯提馬的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_017_huang": {
+    "itemId": "class_p_char_017_huang",
+    "name": "煌的中堅信物",
+    "iconId": "class_p_char_017_huang",
+    "description": "一個看不清內裡構造的玻璃瓶。只要搖晃兩三下，瓶身就會變得溫暖起來，很適合冬天抱在手裡。",
+    "usage": "用於提升煌的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_225_haak": {
+    "itemId": "class_p_char_225_haak",
+    "name": "阿的中堅信物",
+    "iconId": "class_p_char_225_haak",
+    "description": "一個藥瓶，裡面裝了六顆不同顏色的藥丸。但是沒有給說明書。",
+    "usage": "用於提升阿的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_2013_cerber": {
+    "itemId": "class_p_char_2013_cerber",
+    "name": "刻俄柏的中堅信物",
+    "iconId": "class_p_char_2013_cerber",
+    "description": "花了好長時間才疊出來的短刀紙模。歪歪扭扭，滿是折痕，不怎麼精緻。收到的人會喜歡嗎？",
+    "usage": "用於提升刻俄柏的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_222_bpipe": {
+    "itemId": "class_p_char_222_bpipe",
+    "name": "風笛的中堅信物",
+    "iconId": "class_p_char_222_bpipe",
+    "description": "一把紅麥。大地孕育生命，生命反哺大地。",
+    "usage": "用於提升風笛的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_250_phatom": {
+    "itemId": "class_p_char_250_phatom",
+    "name": "傀影的中堅信物",
+    "iconId": "class_p_char_250_phatom",
+    "description": "一張老舊的樂譜。音符與字跡都已在歲月中模糊不清。",
+    "usage": "用於提升傀影的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_400_weedy": {
+    "itemId": "class_p_char_400_weedy",
+    "name": "溫蒂的中堅信物",
+    "iconId": "class_p_char_400_weedy",
+    "description": "一疊仿生海龍設計圖。上面有大量她本人寫的一些註解，寫著“即使循獸也可以照著做一隻新的”，大概吧。",
+    "usage": "用於提升溫蒂的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_197_poca": {
+    "itemId": "class_p_char_197_poca",
+    "name": "早露的中堅信物",
+    "iconId": "class_p_char_197_poca",
+    "description": "一把裁紙刀。她鄭重其事地交給你，但你不知緣由。",
+    "usage": "用於提升早露的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_358_lisa": {
+    "itemId": "class_p_char_358_lisa",
+    "name": "鈴蘭的中堅信物",
+    "iconId": "class_p_char_358_lisa",
+    "description": "一捧鈴蘭花。當問及小麗薩的幹員代號有什麼自己的想法時，她正好抱著這盆鈴蘭。",
+    "usage": "用於提升鈴蘭的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_293_thorns": {
+    "itemId": "class_p_char_293_thorns",
+    "name": "棘刺的中堅信物",
+    "iconId": "class_p_char_293_thorns",
+    "description": "裝有藥液的小瓶子。初學時的紀念作，危險，謹慎使用。",
+    "usage": "用於提升棘刺的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_416_zumama": {
+    "itemId": "class_p_char_416_zumama",
+    "name": "森蚺的中堅信物",
+    "iconId": "class_p_char_416_zumama",
+    "description": "一把看起來用了很長時間的扳手，用來造機器或者防身都不錯。",
+    "usage": "用於提升森蚺的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_350_surtr": {
+    "itemId": "class_p_char_350_surtr",
+    "name": "史爾特爾的中堅信物",
+    "iconId": "class_p_char_350_surtr",
+    "description": "一份填滿地名的複印文檔，其中小部分已被紅筆劃去。要是有空，你可以幫忙探查這些地點。",
+    "usage": "用於提升史爾特爾的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_423_blemsh": {
+    "itemId": "class_p_char_423_blemsh",
+    "name": "瑕光的中堅信物",
+    "iconId": "class_p_char_423_blemsh",
+    "description": "一本騎士小說，荒誕的傳奇，傳奇的荒誕。",
+    "usage": "用於提升瑕光的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_311_mudrok": {
+    "itemId": "class_p_char_311_mudrok",
+    "name": "泥岩的中堅信物",
+    "iconId": "class_p_char_311_mudrok",
+    "description": "一個小小的岩石雕像，似乎在用好奇的“目光”看著你。",
+    "usage": "用於提升泥岩的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_264_f12yin": {
+    "itemId": "class_p_char_264_f12yin",
+    "name": "山的中堅信物",
+    "iconId": "class_p_char_264_f12yin",
+    "description": "一支包裝精美的葡萄酒。產地似乎是一家在哥倫比亞十分有名的酒莊，不知道是他透過什麼管道獲得的。",
+    "usage": "用於提升山的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_332_archet": {
+    "itemId": "class_p_char_332_archet",
+    "name": "空弦的中堅信物",
+    "iconId": "class_p_char_332_archet",
+    "description": "一枚修道院限定紀念徽章，本來是要花錢買的，不過這一次就當友情贈送啦！",
+    "usage": "用於提升空弦的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_362_saga": {
+    "itemId": "class_p_char_362_saga",
+    "name": "嵯峨的中堅信物",
+    "iconId": "class_p_char_362_saga",
+    "description": "一顆她親手雕刻的木魚。煩躁的時候，就與她一起誦經吧。",
+    "usage": "用於提升嵯峨的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_472_pasngr": {
+    "itemId": "class_p_char_472_pasngr",
+    "name": "異客的中堅信物",
+    "iconId": "class_p_char_472_pasngr",
+    "description": "一枚古老的薩爾貢金幣。經由漫長的命運之手反覆擺弄，現在歸你了。",
+    "usage": "用於提升異客的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_003_kalts": {
+    "itemId": "class_p_char_003_kalts",
+    "name": "凱爾希的中堅信物",
+    "iconId": "class_p_char_003_kalts",
+    "description": "一個奇特的懷錶，從未在諸國見過的制式，上面刻有四個年份日期，以及歪歪扭扭的幾個字母。",
+    "usage": "用於提升凱爾希的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_426_billro": {
+    "itemId": "class_p_char_426_billro",
+    "name": "卡涅利安的中堅信物",
+    "iconId": "class_p_char_426_billro",
+    "description": "旅行家收藏的小紀念品。她曾指著紀念品說，買下這個的地方風光很好，下次帶你一起去看。",
+    "usage": "用於提升卡涅利安的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_485_pallas": {
+    "itemId": "class_p_char_485_pallas",
+    "name": "帕拉斯的中堅信物",
+    "iconId": "class_p_char_485_pallas",
+    "description": "一部米諾斯英雄史詩。“英雄自人民中來，又回到人民當中。”這句寫在卷首的話被圈了出來。",
+    "usage": "用於提升帕拉斯的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_437_mizuki": {
+    "itemId": "class_p_char_437_mizuki",
+    "name": "水月的中堅信物",
+    "iconId": "class_p_char_437_mizuki",
+    "description": "某經典電子遊戲四十周年時發行的紀念章中的一枚。套章中的每個角色都有著各不相同的表情，可愛到讓人想要把它給一口——",
+    "usage": "用於提升水月的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_479_sleach": {
+    "itemId": "class_p_char_479_sleach",
+    "name": "琴柳的中堅信物",
+    "iconId": "class_p_char_479_sleach",
+    "description": "一小截風乾了的柳枝。每一粒嫩芽都很完好，彷彿只要沾了水，就還能蓬勃生長。",
+    "usage": "用於提升琴柳的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_430_fartth": {
+    "itemId": "class_p_char_430_fartth",
+    "name": "遠牙的中堅信物",
+    "iconId": "class_p_char_430_fartth",
+    "description": "粗糙的木製短笛。由遠牙親手削制，能夠吹出簡單的音節。做工簡單，所有扎手的木刺都被細心地磨平。",
+    "usage": "用於提升遠牙的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_420_flamtl": {
+    "itemId": "class_p_char_420_flamtl",
+    "name": "焰尾的中堅信物",
+    "iconId": "class_p_char_420_flamtl",
+    "description": "一枚看似無奇的卡西米爾金幣，這是索娜第一次在地下競技場獲勝時，所獲得的唯一一枚報酬。",
+    "usage": "用於提升焰尾的潛能。",
+    "rarity": 6
+  },
+  "class_p_char_206_gnosis": {
+    "itemId": "class_p_char_206_gnosis",
+    "name": "靈知的中堅信物",
+    "iconId": "class_p_char_206_gnosis",
+    "description": "一柄在他來到羅德島後親手打造的護身短劍。你在很久以後才偶然得知，這是埃德懷斯家表示友情的一種方式。",
+    "usage": "用於提升靈知的潛能。",
+    "rarity": 6
+  },
+  "voucher_vigil": {
+    "itemId": "voucher_vigil",
+    "name": "伺夜的資料夾",
+    "iconId": "voucher_vigil",
+    "description": "隨身手記記錄著新沃爾西尼建設的相關思路，能看出書寫者的用心和急迫。不過最後還夾雜著幾張敘拉古的傳統食譜。",
+    "usage": "存放著隨身手記的資料夾，首次獲得道具時獲得伺夜，非首次獲得後可提升伺夜的潛能。",
+    "rarity": 6
+  },
+  "voucher_ulika": {
+    "itemId": "voucher_ulika",
+    "name": "U-Official的資料夾",
+    "iconId": "voucher_ulika",
+    "description": "紙上用可愛的字跡記錄著主播的種種心得，翻過來會發現這其實是移動城市地圖，上面詳細標注了討債人的出現頻率。",
+    "usage": "存放著隨身手記的資料夾，首次獲得道具時獲得U-Official，非首次獲得後可提升U-Official的潛能。",
+    "rarity": 1
+  },
+  "voucher_lessng": {
+    "itemId": "voucher_lessng",
+    "name": "止頌的文件夾",
+    "iconId": "voucher_lessng",
+    "description": "紙上用印刷一般的字跡記下了數條警醒自己的箴言，有幾筆筆畫刺破了紙面。其中還夾雜著幾張潦草記下的待辦事務。",
+    "usage": "存放著隨身手記的文件夾，首次獲得道具時獲得止頌，非首次獲得後可提升止頌的潛能。",
+    "rarity": 6
+  }
+}

@@ -6,7 +6,7 @@ on:
     - cron: "0 0,6,12,18 * * *"
 
 jobs:
-  main:
+  download_and_update_data:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,35 +22,45 @@ jobs:
           envkey_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           envkey_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
 
-      - name: Set Node.js 18.x
+      - name: Set Node.js 22.x
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 22.x
 
-      - name: Install Yarn
-        run: npm install --global yarn
+      - name: Install PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.18.2
+
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
       - name: Install Dependencies
-        run: yarn install
+        run: pnpm install
+
+      - name: Install Turbo Global
+        run: pnpm add turbo --global
 
       - name: Run Update Data
-        run: yarn update-game-data
+        run: turbo update-game-data
 
-      - name: Commit updates
-        run: |
-          git config --global user.name "Sanity;Gone"
-          git config --global user.email "actions@users.noreply.github.com"
-          git pull --all
-          git add data
-          git add scripts/ArknightsGameData
-          git add scripts/ArknightsGameData_YoStar
-          git diff-index --quiet HEAD || git commit -m "Update game data" && git push
+      - uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "update(game-data): update game data"
+          commit_author: "Sanity;Gone <actions@users.noreply.github.com>"
+          commit_user_name: "Sanity;Gone 0"
+          commit_author_email: "actions@users.noreply.github.com"
+  
   build_and_deploy:
     runs-on: ubuntu-latest
+    needs: download_and_update_data
     steps:
       - uses: actions/checkout@v4
       - uses: amondnet/vercel-action@v20
         with:
+          working-directory: ./apps/sanity-gone
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           vercel-args: '--prod'

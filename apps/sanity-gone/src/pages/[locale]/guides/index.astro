@@ -1,0 +1,53 @@
+---
+import {getCollection, render} from 'astro:content';
+import Layout from "../../../layouts/Layout.astro";
+import {getPathByLocale, getRelativeLocaleUrl} from "astro:i18n";
+import {localeStore} from "../_store";
+import TableOfContents from "../../../components/guides/TableOfContents.astro";
+import {slugify} from "../../../utils/strings";
+
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
+localeStore.set(locale);
+
+let guides = await getCollection('guides');
+const authors = await getCollection('authors');
+
+guides = guides.map(guide => {
+    guide.data.author = authors.find(author => author.data.username === guide.data.author);
+    return guide;
+}).sort((a, b) => b.data.date - a.data.date);
+
+
+export const prerender = false;
+---
+<Layout title="Guides">
+    <section class="mx-auto py-5 px-10 sm:py-auto max-w-[1000px]">
+        <h1 class="text-4xl font-black mb-4">Guides</h1>
+        <ul class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+            {guides.map(guide => (
+                <li class="h-[350px] bg-neutral-600 hover:bg-neutral-500 transition-colors rounded-md overflow-hidden">
+                    <a class="flex flex-col h-full" href={`${guide.id}`}>
+                        <img class="mb-3" alt="" src={guide.data.bannerImage} referrerpolicy="no-referrer">
+                        <div class="mt-auto px-4 py-1 pb-4 space-y-1.5">
+                            <h2 class="text-xl font-bold">{guide.data.title}</h2>
+                            <p>{guide.data.description}</p>
+                            <div class="flex items-center justify-between mt-6">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-neutral-200">by</span>
+                                    <img class="size-8 rounded-full" src={`/member-avatars/${slugify(guide.data.author.id)}.png`} alt="">
+                                    <span>{guide.data.author.data.username}</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <time datetime={guide.data.date}>{Intl.DateTimeFormat(locale, {dateStyle: "full"}).format(guide.data.date)}</time>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            ))}
+        </ul>
+    </section>
+</Layout>
+<script slot="head" define:vars={{locale}}>
+    window.locale = locale;
+</script>

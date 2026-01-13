@@ -1,0 +1,237 @@
+---
+import { slugify } from "~/utils/strings";
+import enOperatorsJson from "data/en_US/operators.json";
+import krOperatorsJson from "data/ko_KR/operators.json";
+import jpOperatorsJson from "data/ja_JP/operators.json";
+import cnOperatorsJson from "data/zh_CN/operators.json";
+import Layout from "~/layouts/Layout.astro";
+import { operatorStore } from "./_slugstore";
+import CharacterSplash from "~/components/operator/CharacterSplash";
+import SvgRarityGradientDefs from "~/components/operator/SvgRarityGradientDefs";
+import OperatorTabs from "~/components/operator/OperatorTabs";
+
+import { getRelatedCharacter } from "~/utils/related-character";
+
+import type * as OutputTypes from "~/types/output-types";
+import { operatorAvatar } from "~/utils/images";
+import OperatorInfo from "~/components/operator/OperatorInfo.astro";
+import { getPathByLocale, getRelativeLocaleUrl } from "astro:i18n";
+import { allLanguages, defaultLang } from "~/i18n/languages";
+import { operatorSplash } from "~/utils/images.ts";
+
+import OperatorInfoIcon from "~/components/icons/OperatorInfoIcon.tsx";
+import GuideIcon from "~/components/icons/GuideIcon.tsx";
+import { localeStore } from "../_store";
+import { useTranslations } from "../../../i18n/utils";
+import type { Locale } from "~/i18n/languages";
+import type { ui } from "../../../i18n/ui";
+
+const { slug } = Astro.params;
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
+localeStore.set(locale);
+const t = useTranslations(locale);
+const operatorsMap: Record<Locale, any> = {
+	en: enOperatorsJson,
+	ko: krOperatorsJson,
+	ja: jpOperatorsJson,
+	"zh-cn": cnOperatorsJson,
+};
+
+export function getStaticPaths() {
+	return Object.keys(allLanguages).flatMap((lang) => {
+		return Object.entries(enOperatorsJson).map(
+			([operatorId, operator]: [string, OutputTypes.Operator]) => {
+				return {
+					params: {
+						locale: lang,
+						slug: slugify(operator.name),
+					},
+					props: { operatorId },
+				};
+			}
+		);
+	});
+}
+const operatorsJson = operatorsMap[locale as keyof typeof operatorsMap];
+
+const idLookup = Object.fromEntries(
+	Object.entries(enOperatorsJson).map(
+		([operatorId, operator]: [string, OutputTypes.Operator]) => {
+			return [slugify(operator.name), operatorId];
+		}
+	)
+);
+
+const operatorId = idLookup[slug ?? ""];
+const operator = operatorsJson[
+	operatorId as keyof typeof operatorsJson
+] as OutputTypes.Operator;
+
+operatorStore.set(operator);
+
+const relatedOperators = getRelatedCharacter(operator, locale);
+const operatorBgSkin =
+	operator.skins.find((skin) => skin.type === "elite-one-or-two") ||
+	operator.skins.find((skin) => skin.type === "elite-zero");
+---
+
+<Layout title={operator.name}>
+	{
+		/* OpenGraphProtocol and meta stuff (used for Discord embeds, SEO, and whatnot) */
+	}
+	<meta slot="head" name="description" content={operator.itemUsage} />
+	<meta slot="head" property="og:description" content={operator.itemUsage} />
+	<meta
+		slot="head"
+		property="og:image"
+		content={operatorAvatar(operator.charId, 1)}
+	/>
+	<meta slot="head" property="og:title" content={operator.name} />
+	<meta slot="head" property="og:type" content="website" />
+
+	<div
+		class="w-full h-full relative mx-auto flex xl:flex-row flex-col gap-4 sm:p-5 overflow-y-auto"
+	>
+		<div
+			class="absolute opacity-[0.075] top-0 left-0 right-0 bottom-0 h-full bg-[center_35%] before:absolute before:w-full before:h-full before:bg-[linear-gradient(180deg,_rgba(20,_20,_27,_0)_35%,_rgba(20,_20,_27,_0.75)_55%,_#14141B_100%)] -z-10"
+			style={`background-image: url(${operatorSplash(operatorBgSkin?.portraitId, operatorBgSkin?.type)});`}
+		>
+		</div>
+		<div class="flex flex-grow flex-col gap-4 p-4 pb-0 sm:p-0 sm:p-auto">
+			<ul
+				class="p-0 m-0 flex items-center list-none gap-3 flex-none flex-wrap"
+			>
+				<ul class="flex items-center gap-3">
+					<li class="text-base font-normal leading-normal">
+						<a
+							href={getRelativeLocaleUrl(locale, "/operators")}
+							class="text-blue hover:underline"
+							>{t("nav.operators")}</a
+						>
+					</li>
+					/
+					<li class="text-base font-bold leading-normal flex-none">
+						{operator.name}
+					</li>
+				</ul>
+
+				<li class="flex-grow"></li>
+
+				<ul class="flex flex-row gap-3">
+					{
+						relatedOperators.length > 0 &&
+							relatedOperators.map((relatedOperator) => {
+								return (
+									<li class="flex-none">
+										<a
+											class="flex items-center text-yellow relative mr-3"
+											href={getRelativeLocaleUrl(
+												locale,
+												`/operators/${slugify(
+													enOperatorsJson[
+														relatedOperator.charId
+													].name
+												)}`
+											)}
+										>
+											<img
+												class="w-8 h-8 border border-solid border-neutral-200 rounded-[4.5rem] mr-2"
+												src={operatorAvatar(
+													relatedOperator.charId,
+													1
+												)}
+												alt=""
+											/>
+											<span class="border-dashed border-b-[1px] border-neutral-200">
+												{relatedOperator.name}
+											</span>
+										</a>
+									</li>
+								);
+							})
+					}
+				</ul>
+			</ul>
+			<section class="flex-1 min-h-[30rem]">
+				<CharacterSplash client:load />
+			</section>
+			{/* below lies the remains of our old Operator Guide component */}
+			<!--&lt;!&ndash; TODO: Make this a component? &ndash;&gt;-->
+			<!--<a-->
+			<!--	class="flex justify-center py-2 px-3 items-center gap-2 relative bg-gray rounded-[20px] border-2 border-transparent border-solid"-->
+			<!--	style="background: linear-gradient(180deg, #14141B 0%, #191920 100%) padding-box, linear-gradient(180deg, #FED874 0%, #FFC397 100%) border-box;"-->
+			<!--	href="#"-->
+			<!--	><span-->
+			<!--		class="leading-tight text-base text-transparent font-semibold bg-gradient-to-b from-[#FED874] to-orange-light bg-clip-text"-->
+			<!--		>Operator Guide</span-->
+			<!--	>-->
+			<!--	<svg-->
+			<!--		width="16"-->
+			<!--		height="16"-->
+			<!--		viewBox="0 0 16 16"-->
+			<!--		fill="none"-->
+			<!--		xmlns="http://www.w3.org/2000/svg"-->
+			<!--	>-->
+			<!--		<path-->
+			<!--			d="M8 0C8 4.41828 4.41828 8 0 8C4.41828 8 8 11.5817 8 16C8 11.5817 11.5817 8 16 8C11.5817 8 8 4.41828 8 0Z"-->
+			<!--			fill="url(#paint0_linear_4270_17189)"></path>-->
+			<!--		<defs>-->
+			<!--			<linearGradient-->
+			<!--				id="paint0_linear_4270_17189"-->
+			<!--				x1="8"-->
+			<!--				y1="0"-->
+			<!--				x2="8"-->
+			<!--				y2="16"-->
+			<!--				gradientUnits="userSpaceOnUse"-->
+			<!--			>-->
+			<!--				<stop stop-color="#FED874"></stop>-->
+			<!--				<stop offset="1" stop-color="#FFC397"></stop>-->
+			<!--			</linearGradient>-->
+			<!--		</defs>-->
+			<!--	</svg>-->
+			<!--</a>-->
+		</div>
+		<div class="rounded flex-none w-full xl:w-[590px] xl:overflow-y-auto">
+			<section
+				class="flex-1 bg-gradient-to-b from-neutral-800 to-neutral-700 rounded-lg h-max"
+			>
+				<OperatorInfo operator={operator} />
+				{/* switch to the guide here */}
+				{
+					/* I don't know how we want to handle switching between the two
+				  so they're just styled buttons for now that don't do anything. We might
+				  want to change to Tabs or something later */
+				}
+				<div class="p-2 px-5 bg-neutral-600/[.66]">
+					<div
+						class="hidden items-center bg-neutral-700 border-neutral-500 border rounded-md h-8"
+					>
+						<button
+							class="flex-1 flex items-center justify-center gap-2 h-8 bg-neutral-500 rounded font-semibold"
+						>
+							<OperatorInfoIcon />
+							<span
+								>{
+									t("operators.details.general.operator_info")
+								}</span
+							>
+						</button>
+						<button
+							class="flex-1 flex items-center justify-center gap-2 cursor-not-allowed"
+							disabled
+						>
+							<GuideIcon />
+							<span>{t("operators.details.general.guide")}</span>
+						</button>
+					</div>
+				</div>
+				<OperatorTabs client:load />
+			</section>
+		</div>
+	</div>
+	<SvgRarityGradientDefs />
+</Layout>
+<script slot="head" define:vars={{ operator, locale }}>
+	window.operator = operator;
+	window.locale = locale;
+</script>

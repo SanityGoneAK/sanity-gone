@@ -1,0 +1,1222 @@
+{
+  "pioneer": {
+    "branchName": {
+      "zh_CN": "尖兵",
+      "en_US": "Pioneer",
+      "ja_JP": "先駆兵",
+      "ko_KR": "척후병"
+    },
+    "class": {
+      "zh_CN": "Vanguard",
+      "en_US": "Vanguard",
+      "ja_JP": "Vanguard",
+      "ko_KR": "Vanguard"
+    },
+    "trait": {
+      "zh_CN": "能够阻挡两个敌人",
+      "en_US": "Blocks 2 enemies",
+      "ja_JP": "敵を2体までブロック",
+      "ko_KR": "적 2명 저지 가능"
+    }
+  },
+  "charger": {
+    "branchName": {
+      "zh_CN": "冲锋手",
+      "en_US": "Charger",
+      "ja_JP": "突撃兵",
+      "ko_KR": "돌격수"
+    },
+    "class": {
+      "zh_CN": "Vanguard",
+      "en_US": "Vanguard",
+      "ja_JP": "Vanguard",
+      "ko_KR": "Vanguard"
+    },
+    "trait": {
+      "zh_CN": "击杀敌人后获得1点部署费用，撤退时返还初始部署费用",
+      "en_US": "Obtain 1 DP after this unit defeats an enemy; Refunds the original DP Cost when retreated",
+      "ja_JP": "敵を倒す度所持コスト+1<br>撤退時に初期配置時のコストを返却",
+      "ko_KR": "적 처치 시 배치 코스트 +1, 퇴각 시 초기 배치 코스트 반환"
+    }
+  },
+  "tactician": {
+    "branchName": {
+      "zh_CN": "战术家",
+      "en_US": "Tactician",
+      "ja_JP": "戦術家",
+      "ko_KR": "전술가"
+    },
+    "class": {
+      "zh_CN": "Vanguard",
+      "en_US": "Vanguard",
+      "ja_JP": "Vanguard",
+      "ko_KR": "Vanguard"
+    },
+    "trait": {
+      "zh_CN": "可以在攻击范围内选择一次<span class=\"keyword\">战术点</span>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%",
+      "en_US": "This unit can designate one <span class=\"keyword\">Tactical Point</span> within attack range to call Reinforcements; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
+      "ja_JP": "攻撃範囲内で<span class=\"keyword\">戦術召集点</span>を指定し援軍を召喚できる<br>援軍がブロック中の敵を自身が攻撃する時、攻撃力が150％まで上昇",
+      "ko_KR": "공격 범위 내 <span class=\"keyword\">전술 포인트</span>를 1회 선택해 지원군 소환 가능, 지원군이 저지하는 적을 공격할 때 본인 공격력이 150%까지 상승"
+    }
+  },
+  "bearer": {
+    "branchName": {
+      "zh_CN": "执旗手",
+      "en_US": "Standard Bearer",
+      "ja_JP": "旗手",
+      "ko_KR": "기수"
+    },
+    "class": {
+      "zh_CN": "Vanguard",
+      "en_US": "Vanguard",
+      "ja_JP": "Vanguard",
+      "ko_KR": "Vanguard"
+    },
+    "trait": {
+      "zh_CN": "技能发动期间阻挡数变为0",
+      "en_US": "Cannot block enemies during the skill duration",
+      "ja_JP": "スキル発動中、ブロック数が0になる",
+      "ko_KR": "스킬 지속 시간 동안 저지 가능 수가 0으로 변경"
+    }
+  },
+  "centurion": {
+    "branchName": {
+      "zh_CN": "强攻手",
+      "en_US": "Centurion",
+      "ja_JP": "強襲者",
+      "ko_KR": "공격수"
+    },
+    "class": {
+      "zh_CN": "Guard",
+      "en_US": "Guard",
+      "ja_JP": "Guard",
+      "ko_KR": "Guard"
+    },
+    "trait": {
+      "zh_CN": "同时攻击阻挡的<span class=\"keyword\">所有敌人</span>",
+      "en_US": "Attacks <span class=\"keyword\">all blocked enemies</span>",
+      "ja_JP": "ブロック中の<span class=\"keyword\">敵全員</span>を同時に攻撃",
+      "ko_KR": "저지 중인 <span class=\"keyword\">모든 적</span> 동시 공격"
+    }
+  },
+  "fighter": {
+    "branchName": {
+      "zh_CN": "斗士",
+      "en_US": "Fighter",
+      "ja_JP": "闘士",
+      "ko_KR": "파이터"
+    },
+    "class": {
+      "zh_CN": "Guard",
+      "en_US": "Guard",
+      "ja_JP": "Guard",
+      "ko_KR": "Guard"
+    },
+    "trait": {
+      "zh_CN": "能够阻挡一个敌人",
+      "en_US": "Blocks 1 enemy",
+      "ja_JP": "敵を1体までブロック",
+      "ko_KR": "적 1명 저지 가능"
+    }
+  },
+  "artsfghter": {
+    "branchName": {
+      "zh_CN": "术战者",
+      "en_US": "Arts Fighter",
+      "ja_JP": "術戦士",
+      "ko_KR": "아츠 파이터"
+    },
+    "class": {
+      "zh_CN": "Guard",
+      "en_US": "Guard",
+      "ja_JP": "Guard",
+      "ko_KR": "Guard"
+    },
+    "trait": {
+      "zh_CN": "攻击造成<span class=\"keyword\">法术伤害</span>",
+      "en_US": "Deals <span class=\"keyword\">Arts damage</span>",
+      "ja_JP": "敵に<span class=\"keyword\">術ダメージ</span>を与える",
+      "ko_KR": "일반 공격으로 적에게 <span class=\"keyword\">마법 대미지</span>"
+    }
+  },
+  "instructor": {
+    "branchName": {
+      "zh_CN": "教官",
+      "en_US": "Instructor",
+      "ja_JP": "教官",
+      "ko_KR": "교관"
+    },
+    "class": {
+      "zh_CN": "Guard",
+      "en_US": "Guard",
+      "ja_JP": "Guard",
+      "ko_KR": "Guard"
+    },
+    "trait": {
+      "zh_CN": "可以攻击到<span class=\"keyword\">较远敌人</span>，攻击自身未阻挡的敌人时攻击力提升至120%",
+      "en_US": "Can attack enemies <span class=\"keyword\">from range</span>; When attacking enemies not blocked by self, increase ATK to 120%",
+      "ja_JP": "攻撃距離が<span class=\"keyword\">やや長い</span>、自身がブロックしていない敵を攻撃時、攻撃力が120％まで上昇",
+      "ko_KR": "<span class=\"keyword\">비교적 먼 곳의 적</span>도 공격 가능, 저지하지 않은 적 공격 시 공격력이 120%까지 상승"
+    }
+  },
+  "lord": {
+    "branchName": {
+      "zh_CN": "领主",
+      "en_US": "Lord",
+      "ja_JP": "領主",
+      "ko_KR": "로드"
+    },
+    "class": {
+      "zh_CN": "Guard",
+      "en_US": "Guard",
+      "ja_JP": "Guard",
+      "ko_KR": "Guard"
+    },
+    "trait": {
+      "zh_CN": "可以进行<span class=\"keyword\">远程攻击</span>，但此时攻击力降低至80%",
+      "en_US": "Can launch <span class=\"keyword\">Ranged Attacks</span> that deal 80% of normal ATK",
+      "ja_JP": "80％の攻撃力で<span class=\"keyword\">遠距離攻撃</span>も行える",
+      "ko_KR": "공격력의 80%로 <span class=\"keyword\">원거리 공격</span> 가능"
+    }
+  },
+  "sword": {
+    "branchName": {
+      "zh_CN": "剑豪",
+      "en_US": "Swordmaster",
+      "ja_JP": "剣豪",
+      "ko_KR": "소드마스터"
+    },
+    "class": {
+      "zh_CN": "Guard",
+      "en_US": "Guard",
+      "ja_JP": "Guard",
+      "ko_KR": "Guard"
+    },
+    "trait": {
+      "zh_CN": "普通攻击连续造成<span class=\"keyword\">两次</span>伤害",
+      "en_US": "Normal attacks deal damage <span class=\"keyword\">twice</span>",
+      "ja_JP": "通常攻撃時、1回の攻撃で<span class=\"keyword\">2回</span>ダメージを与える",
+      "ko_KR": "일반 공격이 <span class=\"keyword\">2회</span> 연속 공격"
+    }
+  },
+  "musha": {
+    "branchName": {
+      "zh_CN": "武者",
+      "en_US": "Musha",
+      "ja_JP": "武者",
+      "ko_KR": "무사"
+    },
+    "class": {
+      "zh_CN": "Guard",
+      "en_US": "Guard",
+      "ja_JP": "Guard",
+      "ko_KR": "Guard"
+    },
+    "trait": {
+      "zh_CN": "不成为其他角色的治疗目标，每次攻击到敌人后回复自身<span class=\"keyword\">70</span>生命",
+      "en_US": "Can't be healed by other units. Recovers <span class=\"keyword\">30/50/70</span> (scales with elite promotion) self HP every time this operator attacks an enemy",
+      "ja_JP": "味方の治療対象にならない<br>敵を攻撃する度自身のHPを<span class=\"keyword\">70</span>回復",
+      "ko_KR": "치료 대상으로 판정되지 않으며, 매 회 공격을 통해 자신의 HP를 <span class=\"keyword\">70</span> 회복한다"
+    }
+  },
+  "fearless": {
+    "branchName": {
+      "zh_CN": "无畏者",
+      "en_US": "Dreadnought",
+      "ja_JP": "勇士",
+      "ko_KR": "드레드노트"
+    },
+    "class": {
+      "zh_CN": "Guard",
+      "en_US": "Guard",
+      "ja_JP": "Guard",
+      "ko_KR": "Guard"
+    },
+    "trait": {
+      "zh_CN": "能够阻挡一个敌人，且不受<span class=\"keyword\">部署数量</span>限制，但再部署时间极长",
+      "en_US": "Blocks 1 enemy and ignores the <span class=\"keyword\">Deployment Limit</span>, but has a long Redeployment Time",
+      "ja_JP": "敵を1体までブロック<br><span class=\"keyword\">配置可能数</span>にカウントされない<br>再配置までの時間が極めて長い",
+      "ko_KR": "적 1명 저지 가능. <span class=\"keyword\">배치 인원 수</span> 제약을 받지 않으나, 재배치 시간이 매우 길다"
+    }
+  },
+  "reaper": {
+    "branchName": {
+      "zh_CN": "收割者",
+      "en_US": "Reaper",
+      "ja_JP": "鎌撃士",
+      "ko_KR": "리퍼"
+    },
+    "class": {
+      "zh_CN": "Guard",
+      "en_US": "Guard",
+      "ja_JP": "Guard",
+      "ko_KR": "Guard"
+    },
+    "trait": {
+      "zh_CN": "无法被友方角色治疗，攻击造成<span class=\"keyword\">群体伤害</span>，每攻击到一个敌人回复自身<span class=\"keyword\">50</span>生命，最大生效数等于阻挡数",
+      "en_US": "Cannot be healed by allies; Attacks deal <span class=\"keyword\">AOE Damage</span>; Recovers <span class=\"keyword\">50</span> HP for every enemy hit during attacks, up to Block count",
+      "ja_JP": "味方の治療対象にならない<br>攻撃は<span class=\"keyword\">範囲物理ダメージ</span>を与え、敵を1体攻撃する度自身のHPを<span class=\"keyword\">50</span>回復（攻撃毎の最大回復回数はブロック数と同じ）",
+      "ko_KR": "아군의 치료를 받을 수 없으며, 공격 시 <span class=\"keyword\">광역 대미지</span>를 입히고, 적 1명 적중할 때마다 자신의 HP가 <span class=\"keyword\">50</span> 회복, 최대 적용 수는 저지 가능 수와 동일"
+    }
+  },
+  "librator": {
+    "branchName": {
+      "zh_CN": "解放者",
+      "en_US": "Liberator",
+      "ja_JP": "解放者",
+      "ko_KR": "해방자"
+    },
+    "class": {
+      "zh_CN": "Guard",
+      "en_US": "Guard",
+      "ja_JP": "Guard",
+      "ko_KR": "Guard"
+    },
+    "trait": {
+      "zh_CN": "通常不攻击且阻挡数为0，技能未开启时<span class=\"keyword\">40</span>秒内攻击力逐渐提升至<span class=\"keyword\">+200%</span>，技能结束时重置攻击力",
+      "en_US": "Normally does not attack and has 0 Block; When skill is inactive, ATK gradually increases up to <span class=\"keyword\">+200%</span> over <span class=\"keyword\">40</span> seconds. ATK is reset when the skill ends",
+      "ja_JP": "通常時は攻撃せずブロック数が０となり、攻撃力が<span class=\"keyword\">+200%</span>まで徐々に上昇していく（最大値になるまでの時間は<span class=\"keyword\">40</span>秒）<br>スキル終了時、特性による攻撃力上昇効果をリセットする",
+      "ko_KR": "평소에는 공격하지 않고 저지 가능 수가 0이며, 스킬 미발동 상태에서 <span class=\"keyword\">40</span>초간 공격력이 <span class=\"keyword\">+200%</span>까지 점진적으로 상승, 스킬 종료 후 공격력 리셋"
+    }
+  },
+  "protector": {
+    "branchName": {
+      "zh_CN": "铁卫",
+      "en_US": "Protector",
+      "ja_JP": "重盾衛士",
+      "ko_KR": "프로텍터"
+    },
+    "class": {
+      "zh_CN": "Defender",
+      "en_US": "Defender",
+      "ja_JP": "Defender",
+      "ko_KR": "Defender"
+    },
+    "trait": {
+      "zh_CN": "能够阻挡三个敌人，且不受<span class=\"keyword\">部署数量</span>限制，但再部署时间极长",
+      "en_US": "Blocks 3 enemies and ignores <span class=\"keyword\">Deployment Limit</span>, but has a long Redeployment Time",
+      "ja_JP": "敵を3体までブロック<br><span class=\"keyword\">配置可能数</span>にカウントされない<br>再配置までの時間が極めて長い",
+      "ko_KR": "적 3명 저지 가능, <span class=\"keyword\">배치 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 길다"
+    }
+  },
+  "guardian": {
+    "branchName": {
+      "zh_CN": "守护者",
+      "en_US": "Guardian",
+      "ja_JP": "庇護衛士",
+      "ko_KR": "가디언"
+    },
+    "class": {
+      "zh_CN": "Defender",
+      "en_US": "Defender",
+      "ja_JP": "Defender",
+      "ko_KR": "Defender"
+    },
+    "trait": {
+      "zh_CN": "技能可以治疗友方单位",
+      "en_US": "Can heal allies by using skill(s)",
+      "ja_JP": "HP回復スキルを所持",
+      "ko_KR": "스킬로 아군 유닛 HP 회복"
+    }
+  },
+  "unyield": {
+    "branchName": {
+      "zh_CN": "不屈者",
+      "en_US": "Juggernaut",
+      "ja_JP": "破壊者",
+      "ko_KR": "저거너트"
+    },
+    "class": {
+      "zh_CN": "Defender",
+      "en_US": "Defender",
+      "ja_JP": "Defender",
+      "ko_KR": "Defender"
+    },
+    "trait": {
+      "zh_CN": "<span class=\"keyword\">无法</span>被友方角色治疗",
+      "en_US": "<span class=\"keyword\">Cannot</span> be healed by allies",
+      "ja_JP": "味方からの治療効果を<span class=\"keyword\">受けない</span>",
+      "ko_KR": "아군의 치료를 <span class=\"keyword\">받지 못한다</span>"
+    }
+  },
+  "artsprotector": {
+    "branchName": {
+      "zh_CN": "驭法铁卫",
+      "en_US": "Arts Protector",
+      "ja_JP": "術技衛士",
+      "ko_KR": "아츠 프로텍터"
+    },
+    "class": {
+      "zh_CN": "Defender",
+      "en_US": "Defender",
+      "ja_JP": "Defender",
+      "ko_KR": "Defender"
+    },
+    "trait": {
+      "zh_CN": "技能开启时普通攻击会造成法术伤害",
+      "en_US": "Normal attacks deal Arts damage while the skill is active",
+      "ja_JP": "スキル発動中、敵に術ダメージを与える",
+      "ko_KR": "스킬 발동 시 일반공격이 마법 피해를 준다"
+    }
+  },
+  "duelist": {
+    "branchName": {
+      "zh_CN": "决战者",
+      "en_US": "Duelist",
+      "ja_JP": "決闘者",
+      "ko_KR": "결전자"
+    },
+    "class": {
+      "zh_CN": "Defender",
+      "en_US": "Defender",
+      "ja_JP": "Defender",
+      "ko_KR": "Defender"
+    },
+    "trait": {
+      "zh_CN": "只有阻挡敌人时才能够回复技力",
+      "en_US": "Only restores SP when blocking enemies",
+      "ja_JP": "敵をブロックしていない時、SPが回復しない",
+      "ko_KR": "적을 저지할 때만 SP 회복 가능"
+    }
+  },
+  "fortress": {
+    "branchName": {
+      "zh_CN": "要塞",
+      "en_US": "Fortress",
+      "ja_JP": "堅城砲手",
+      "ko_KR": "포트리스"
+    },
+    "class": {
+      "zh_CN": "Defender",
+      "en_US": "Defender",
+      "ja_JP": "Defender",
+      "ko_KR": "Defender"
+    },
+    "trait": {
+      "zh_CN": "不阻挡敌人时优先<span class=\"keyword\">远程群体</span>物理攻击",
+      "en_US": "Prioritize <span class=\"keyword\">Long range splash attack</span> (splash radius of <span class=\"keyword\">1.0</span> tiles) when not blocking",
+      "ja_JP": "敵をブロックしていない時<span class=\"keyword\">遠距離範囲</span>物理攻撃を行う",
+      "ko_KR": "적을 저지하지 않을 때, 원거리 광역 물리 공격 시전"
+    }
+  },
+  "fastshot": {
+    "branchName": {
+      "zh_CN": "速射手",
+      "en_US": "Marksman",
+      "ja_JP": "速射手",
+      "ko_KR": "명사수"
+    },
+    "class": {
+      "zh_CN": "Sniper",
+      "en_US": "Sniper",
+      "ja_JP": "Sniper",
+      "ko_KR": "Sniper"
+    },
+    "trait": {
+      "zh_CN": "优先攻击空中单位，且不受<span class=\"keyword\">部署数量</span>限制，但再部署时间极长",
+      "en_US": "Attacks aerial enemies first and ignores <span class=\"keyword\">Deployment Limit</span>, but has a long Redeployment Time",
+      "ja_JP": "飛行ユニットを優先して攻撃<br><span class=\"keyword\">配置可能数</span>にカウントされない<br>再配置までの時間が極めて長い",
+      "ko_KR": "공중 목표 우선 공격, <span class=\"keyword\">배치 인원수</span> 제한을 받지 않지만 재배치 시간이 매우 길다"
+    }
+  },
+  "closerange": {
+    "branchName": {
+      "zh_CN": "重射手",
+      "en_US": "Heavyshooter",
+      "ja_JP": "精密射手",
+      "ko_KR": "헤비슈터"
+    },
+    "class": {
+      "zh_CN": "Sniper",
+      "en_US": "Sniper",
+      "ja_JP": "Sniper",
+      "ko_KR": "Sniper"
+    },
+    "trait": {
+      "zh_CN": "高精度的近距离射击",
+      "en_US": "High accuracy point-blank shot",
+      "ja_JP": "高威力の中距離射撃",
+      "ko_KR": "고정밀 근거리 사격"
+    }
+  },
+  "aoesniper": {
+    "branchName": {
+      "zh_CN": "炮手",
+      "en_US": "Artilleryman",
+      "ja_JP": "榴弾射手",
+      "ko_KR": "포격사수"
+    },
+    "class": {
+      "zh_CN": "Sniper",
+      "en_US": "Sniper",
+      "ja_JP": "Sniper",
+      "ko_KR": "Sniper"
+    },
+    "trait": {
+      "zh_CN": "攻击造成<span class=\"keyword\">群体物理伤害</span>",
+      "en_US": "Deals <span class=\"keyword\">AOE Physical damage</span> with a splash radius of <span class=\"keyword\">1.0</span> tile",
+      "ja_JP": "敵に<span class=\"keyword\">範囲物理ダメージ</span>を与える",
+      "ko_KR": "적에게 <span class=\"keyword\">광역 물리 대미지</span>"
+    }
+  },
+  "longrange": {
+    "branchName": {
+      "zh_CN": "神射手",
+      "en_US": "Deadeye",
+      "ja_JP": "戦術射手",
+      "ko_KR": "저격수"
+    },
+    "class": {
+      "zh_CN": "Sniper",
+      "en_US": "Sniper",
+      "ja_JP": "Sniper",
+      "ko_KR": "Sniper"
+    },
+    "trait": {
+      "zh_CN": "优先攻击攻击范围内<span class=\"keyword\">防御力最低</span>的敌方单位",
+      "en_US": "Prioritizes attacking the enemy with <span class=\"keyword\">lowest DEF</span> within range first",
+      "ja_JP": "攻撃範囲内の<span class=\"keyword\">防御力が一番低い</span>敵を優先して攻撃",
+      "ko_KR": "공격 범위 안의 <span class=\"keyword\">가장 방어력이 낮은</span> 적을 우선적으로 공격"
+    }
+  },
+  "reaperrange": {
+    "branchName": {
+      "zh_CN": "散射手",
+      "en_US": "Spreadshooter",
+      "ja_JP": "散弾射手",
+      "ko_KR": "산탄사수"
+    },
+    "class": {
+      "zh_CN": "Sniper",
+      "en_US": "Sniper",
+      "ja_JP": "Sniper",
+      "ko_KR": "Sniper"
+    },
+    "trait": {
+      "zh_CN": "攻击范围内的<span class=\"keyword\">所有敌人</span>，对自己前方一横排的敌人攻击力提升至150%",
+      "en_US": "Attacks <span class=\"keyword\">all enemies</span> within range, and deals 150% damage to enemies in the row directly in front of this unit.",
+      "ja_JP": "攻撃範囲内の<span class=\"keyword\">敵全員</span>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が150%まで上昇",
+      "ko_KR": "공격 범위 내 <span class=\"keyword\">모든 적</span>을 공격<br>자신의 전방 첫 줄의 적에게 공격력이 150%까지 상승한다"
+    }
+  },
+  "siegesniper": {
+    "branchName": {
+      "zh_CN": "攻城手",
+      "en_US": "Besieger",
+      "ja_JP": "破城射手",
+      "ko_KR": "공성사수"
+    },
+    "class": {
+      "zh_CN": "Sniper",
+      "en_US": "Sniper",
+      "ja_JP": "Sniper",
+      "ko_KR": "Sniper"
+    },
+    "trait": {
+      "zh_CN": "优先攻击重量最重的敌人",
+      "en_US": "Attacks the heaviest enemy first",
+      "ja_JP": "重量が最も重い敵を優先して攻撃",
+      "ko_KR": "무게가 가장 무거운 적을 우선 공격"
+    }
+  },
+  "bombarder": {
+    "branchName": {
+      "zh_CN": "投掷手",
+      "en_US": "Flinger",
+      "ja_JP": "投擲手",
+      "ko_KR": "투척수"
+    },
+    "class": {
+      "zh_CN": "Sniper",
+      "en_US": "Sniper",
+      "ja_JP": "Sniper",
+      "ko_KR": "Sniper"
+    },
+    "trait": {
+      "zh_CN": "攻击对小范围的<span class=\"keyword\">地面</span>敌人造成<span class=\"keyword\">两次</span>物理伤害（第二次为余震，伤害降低至攻击力的一半），且不受<span class=\"keyword\">部署数量</span>限制，但再部署时间极长",
+      "en_US": "Attacks deal <span class=\"keyword\">two instances</span> of Physical damage to <span class=\"keyword\">ground</span> enemies in a <span class=\"keyword\">0.9</span> tile area (The second instance is a shockwave that has half the normal ATK)",
+      "ja_JP": "通常攻撃時<span class=\"keyword\">地上</span>にいる敵に範囲物理ダメージを<span class=\"keyword\">2回</span>与える（2回目は余震、与ダメージが攻撃力の50%になる）。<span class=\"keyword\">配置可能数</span>にカウントされず、再配置までの時間が極めて長い",
+      "ko_KR": "작은 범위 내 <span class=\"keyword\">지상</span> 적에게 물리 대미지를 <span class=\"keyword\">2회</span> 입히며(2회차부터는 여진으로써 대미지가 공격력의 절반으로 감소), <span class=\"keyword\">배치 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 길다"
+    }
+  },
+  "corecaster": {
+    "branchName": {
+      "zh_CN": "中坚术师",
+      "en_US": "Core Caster",
+      "ja_JP": "中堅術師",
+      "ko_KR": "코어 캐스터"
+    },
+    "class": {
+      "zh_CN": "Caster",
+      "en_US": "Caster",
+      "ja_JP": "Caster",
+      "ko_KR": "Caster"
+    },
+    "trait": {
+      "zh_CN": "攻击造成<span class=\"keyword\">法术伤害</span>",
+      "en_US": "Deals <span class=\"keyword\">Arts damage</span>",
+      "ja_JP": "敵に<span class=\"keyword\">術ダメージ</span>を与える",
+      "ko_KR": "일반 공격으로 적에게 <span class=\"keyword\">마법 대미지</span>"
+    }
+  },
+  "splashcaster": {
+    "branchName": {
+      "zh_CN": "扩散术师",
+      "en_US": "Splash Caster",
+      "ja_JP": "拡散術師",
+      "ko_KR": "스플래시 캐스터"
+    },
+    "class": {
+      "zh_CN": "Caster",
+      "en_US": "Caster",
+      "ja_JP": "Caster",
+      "ko_KR": "Caster"
+    },
+    "trait": {
+      "zh_CN": "攻击造成<span class=\"keyword\">群体法术伤害</span>",
+      "en_US": "Deals <span class=\"keyword\">AOE Arts damage</span> with a splash radius of <span class=\"keyword\">1.1</span> tiles",
+      "ja_JP": "敵に<span class=\"keyword\">範囲術ダメージ</span>を与える",
+      "ko_KR": "일반 공격으로 적에게 <span class=\"keyword\">광역 마법 대미지</span>"
+    }
+  },
+  "funnel": {
+    "branchName": {
+      "zh_CN": "驭械术师",
+      "en_US": "Mech-accord Caster",
+      "ja_JP": "操機術師",
+      "ko_KR": "메카 캐스터"
+    },
+    "class": {
+      "zh_CN": "Caster",
+      "en_US": "Caster",
+      "ja_JP": "Caster",
+      "ko_KR": "Caster"
+    },
+    "trait": {
+      "zh_CN": "操作<span class=\"keyword\">浮游单元</span>对敌人造成<span class=\"keyword\">法术伤害</span>\\n浮游单元连续攻击同一敌人时伤害提升（最高造成干员110%攻击力的伤害）",
+      "en_US": "Controls a <span class=\"keyword\">Drone</span> that deals <span class=\"keyword\">Arts damage</span>; When the Drone continuously attacks the same enemy, its damage will increase (from 20% up to 110% of the operator's ATK, linearly)",
+      "ja_JP": "<span class=\"keyword\">ドローン</span>を操作して敵に<span class=\"keyword\">術ダメージ</span>を与える<br>ドローンが連続で同一目標を攻撃時、与ダメージが上昇（最大は攻撃力の110%まで）",
+      "ko_KR": "<span class=\"keyword\">공중 유닛</span>을 조작하여 적에게 <span class=\"keyword\">마법 대미지</span><br>공중 유닛은 연속으로 동일한 적을 공격할 시 대미지가 증가한다 (최고 오퍼레이터의 110% 공격력에 해당하는 대미지)"
+    }
+  },
+  "phalanx": {
+    "branchName": {
+      "zh_CN": "阵法术师",
+      "en_US": "Phalanx Caster",
+      "ja_JP": "法陣術師",
+      "ko_KR": "진법 캐스터"
+    },
+    "class": {
+      "zh_CN": "Caster",
+      "en_US": "Caster",
+      "ja_JP": "Caster",
+      "ko_KR": "Caster"
+    },
+    "trait": {
+      "zh_CN": "通常时<span class=\"keyword\">不攻击</span>且防御力和法术抗性大幅度<span class=\"keyword\">提升</span>，技能开启时攻击造成<span class=\"keyword\">群体法术伤害</span>",
+      "en_US": "Normally <span class=\"keyword\">does not attack</span>, but has <span class=\"keyword\">+200%</span> DEF and <span class=\"keyword\">+20</span> RES; When skill is active, attacks deal <span class=\"keyword\">AoE Arts damage</span>",
+      "ja_JP": "通常時<span class=\"keyword\">攻撃しない</span>、防御力と術耐性大幅<span class=\"keyword\">上昇</span><br>スキル発動中、通常攻撃が攻撃範囲内の敵全員に<span class=\"keyword\">範囲術ダメージ</span>を与える",
+      "ko_KR": "평소에 <span class=\"keyword\">공격하지 않으며</span> 방어력과 마법 저항이 대폭 <span class=\"keyword\">상승</span>, 스킬 발동 시 공격 범위 내 모든 적에게 <span class=\"keyword\">광역 마법 대미지</span>를 입힌다"
+    }
+  },
+  "mystic": {
+    "branchName": {
+      "zh_CN": "秘术师",
+      "en_US": "Mystic Caster",
+      "ja_JP": "秘術師",
+      "ko_KR": "미스틱 캐스터"
+    },
+    "class": {
+      "zh_CN": "Caster",
+      "en_US": "Caster",
+      "ja_JP": "Caster",
+      "ko_KR": "Caster"
+    },
+    "trait": {
+      "zh_CN": "攻击造成<span class=\"keyword\">法术伤害</span>，在找不到攻击目标时可以将攻击能量<span class=\"keyword\">储存</span>起来之后一齐发射（最多3个）",
+      "en_US": "Attacks deal <span class=\"keyword\">Arts damage</span>; When unable to find a target, attacks can be <span class=\"keyword\">stored up</span> and fired all at once (Up to 3 charges)",
+      "ja_JP": "敵に<span class=\"keyword\">術ダメージ</span>を与える<br>攻撃の対象がいない場合はエネルギーを<span class=\"keyword\">チャージ</span>して（最大3回）次の攻撃時に一斉発射する",
+      "ko_KR": "일반 공격으로 적에게 <span class=\"keyword\">마법 대미지</span>, 공격 목표를 못 찾으면 공격 에너지를 <span class=\"keyword\">저장</span>한 후 일제히 발사(최대 3개)"
+    }
+  },
+  "chain": {
+    "branchName": {
+      "zh_CN": "链术师",
+      "en_US": "Chain Caster",
+      "ja_JP": "連鎖術師",
+      "ko_KR": "체인 캐스터"
+    },
+    "class": {
+      "zh_CN": "Caster",
+      "en_US": "Caster",
+      "ja_JP": "Caster",
+      "ko_KR": "Caster"
+    },
+    "trait": {
+      "zh_CN": "攻击造成<span class=\"keyword\">法术伤害</span>，且会在<span class=\"keyword\">3</span>个敌人间跳跃，每次跳跃伤害降低15%并造成短暂<span class=\"skill-tooltip\">停顿</span>",
+      "en_US": "Attacks deal <span class=\"keyword\">Arts damage</span> and jump between <span class=\"keyword\">3</span> (<span class=\"keyword\">4</span> at Elite 2) enemies (jump range is <span class=\"keyword\">1.7</span> tiles). Each jump deals 15% less damage and inflicts an <span class=\"keyword\">80%</span> <span class=\"skill-tooltip\">Slow</span> for <span class=\"keyword\">0.5</span> seconds",
+      "ja_JP": "<span class=\"keyword\">3</span>体目まで跳躍していく<span class=\"keyword\">術ダメージ</span>を敵に与え、跳躍する度ダメージが15%減衰し、敵を一瞬<span class=\"skill-tooltip\">足止め</span>",
+      "ko_KR": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, 공격이 <span class=\"keyword\">3</span>명의 적에게 튕기며, 튕길 때마다 대미지가 15%씩 감소, 동시에 일시적인 <span class=\"skill-tooltip\">정지</span> 효과 부여"
+    }
+  },
+  "blastcaster": {
+    "branchName": {
+      "zh_CN": "轰击术师",
+      "en_US": "Blast Caster",
+      "ja_JP": "爆撃術師",
+      "ko_KR": "블래스트 캐스터"
+    },
+    "class": {
+      "zh_CN": "Caster",
+      "en_US": "Caster",
+      "ja_JP": "Caster",
+      "ko_KR": "Caster"
+    },
+    "trait": {
+      "zh_CN": "攻击造成<span class=\"keyword\">超远距离的群体法术伤害</span>",
+      "en_US": "Deals <span class=\"keyword\">AOE Arts damage in a long line</span>",
+      "ja_JP": "<span class=\"keyword\">直線上</span>の敵に<span class=\"keyword\">範囲術ダメージ</span>を与える",
+      "ko_KR": "공격이 <span class=\"keyword\">초원거리 범위 마법 대미지</span>를 준다"
+    }
+  },
+  "physician": {
+    "branchName": {
+      "zh_CN": "医师",
+      "en_US": "Single-target",
+      "ja_JP": "医師",
+      "ko_KR": "메딕"
+    },
+    "class": {
+      "zh_CN": "Medic",
+      "en_US": "Medic",
+      "ja_JP": "Medic",
+      "ko_KR": "Medic"
+    },
+    "trait": {
+      "zh_CN": "恢复友方单位生命，且不受<span class=\"keyword\">部署数量</span>限制，但再部署时间极长",
+      "en_US": "Restores the HP of allies and ignores the <span class=\"keyword\">Deployment Limit</span>, but has a long Redeployment Time",
+      "ja_JP": "味方のHPを回復<br><span class=\"keyword\">配置可能数</span>にカウントされない<br>再配置までの時間が極めて長い",
+      "ko_KR": "아군 HP를 회복할 수 있고, <span class=\"keyword\">배치 인원 수</span> 제약을 받지 않으나, 재배치 시간이 매우 길다"
+    }
+  },
+  "ringhealer": {
+    "branchName": {
+      "zh_CN": "群愈师",
+      "en_US": "Multi-target Medic",
+      "ja_JP": "群癒師",
+      "ko_KR": "멀티 타겟 메딕"
+    },
+    "class": {
+      "zh_CN": "Medic",
+      "en_US": "Medic",
+      "ja_JP": "Medic",
+      "ko_KR": "Medic"
+    },
+    "trait": {
+      "zh_CN": "同时恢复三个友方单位的生命",
+      "en_US": "Restores the HP of 3 allies simultaneously",
+      "ja_JP": "味方3人のHPを同時に回復",
+      "ko_KR": "아군 3명 HP 동시 회복"
+    }
+  },
+  "healer": {
+    "branchName": {
+      "zh_CN": "疗养师",
+      "en_US": "Therapist",
+      "ja_JP": "療養師",
+      "ko_KR": "테라피스트"
+    },
+    "class": {
+      "zh_CN": "Medic",
+      "en_US": "Medic",
+      "ja_JP": "Medic",
+      "ko_KR": "Medic"
+    },
+    "trait": {
+      "zh_CN": "拥有较大治疗范围，但在治疗较远目标时治疗量变为<span class=\"keyword\">80%</span>",
+      "en_US": "Has a large healing range, but the healing amount on farther targets is reduced to <span class=\"keyword\">80%</span>",
+      "ja_JP": "治療範囲が広く、遠く離れた味方を治療時、HP回復効果が<span class=\"keyword\">80%</span>になる",
+      "ko_KR": "치료 범위가 넓지만 치료 대상이 멀리 있을 시 치료 효과가 <span class=\"keyword\">80%</span>로 변한다"
+    }
+  },
+  "wandermedic": {
+    "branchName": {
+      "zh_CN": "行医",
+      "en_US": "Wandering Medic",
+      "ja_JP": "放浪医",
+      "ko_KR": "방랑 메딕"
+    },
+    "class": {
+      "zh_CN": "Medic",
+      "en_US": "Medic",
+      "ja_JP": "Medic",
+      "ko_KR": "Medic"
+    },
+    "trait": {
+      "zh_CN": "恢复友方单位生命，并回复相当于攻击力50%的<span class=\"elemental-damage\">元素损伤</span>（可以回复未受伤友方单位的<span class=\"elemental-damage\">元素损伤</span>）",
+      "en_US": "Restores the HP of allies<br>Recovers <span class=\"elemental-damage\">Elemental damage</span> equal to <span class=\"keyword\">50%</span> of Attack Power<br>(Can heal <span class=\"elemental-damage\">Elemental damage</span> of unhurt units)",
+      "ja_JP": "味方のHPを回復し、同時に対象に蓄積された<span class=\"elemental-damage\">元素損傷</span>を自身の攻撃力の50％の値分治療する（HP最大の味方も<span class=\"elemental-damage\">元素損傷</span>の治療対象となる）",
+      "ko_KR": "아군 유닛의 HP 회복, 동시에 공격력의 50%에 해당하는 <span class=\"elemental-damage\">원소 피해</span> 회복 (부상이 없는 아군 유닛의 <span class=\"elemental-damage\">원소 피해</span>도 회복 가능)"
+    }
+  },
+  "slower": {
+    "branchName": {
+      "zh_CN": "凝滞师",
+      "en_US": "Decel Binder",
+      "ja_JP": "緩速師",
+      "ko_KR": "감속자"
+    },
+    "class": {
+      "zh_CN": "Supporter",
+      "en_US": "Supporter",
+      "ja_JP": "Supporter",
+      "ko_KR": "Supporter"
+    },
+    "trait": {
+      "zh_CN": "攻击造成<span class=\"keyword\">法术伤害</span>，并对敌人造成短暂的<span class=\"skill-tooltip\">停顿</span>",
+      "en_US": "Deals <span class=\"keyword\">Arts damage</span> and <span class=\"skill-tooltip\">Slows</span> the target by <span class=\"keyword\">80%</span> for <span class=\"keyword\">0.8</span> seconds",
+      "ja_JP": "敵に<span class=\"keyword\">術ダメージ</span>を与える<br>攻撃時、敵を一瞬<span class=\"skill-tooltip\">足止め</span>",
+      "ko_KR": "적에게 <span class=\"keyword\">마법 대미지</span>를 입히고 잠시 <span class=\"skill-tooltip\">정지</span> 효과를 준다"
+    }
+  },
+  "underminer": {
+    "branchName": {
+      "zh_CN": "削弱者",
+      "en_US": "Hexer",
+      "ja_JP": "呪詛師",
+      "ko_KR": "약화자"
+    },
+    "class": {
+      "zh_CN": "Supporter",
+      "en_US": "Supporter",
+      "ja_JP": "Supporter",
+      "ko_KR": "Supporter"
+    },
+    "trait": {
+      "zh_CN": "攻击造成<span class=\"keyword\">法术伤害</span>",
+      "en_US": "Deals <span class=\"keyword\">Arts damage</span>",
+      "ja_JP": "敵に<span class=\"keyword\">術ダメージ</span>を与える",
+      "ko_KR": "일반 공격으로 적에게 <span class=\"keyword\">마법 대미지</span>"
+    }
+  },
+  "bard": {
+    "branchName": {
+      "zh_CN": "吟游者",
+      "en_US": "Bard",
+      "ja_JP": "吟遊者",
+      "ko_KR": "음유시인"
+    },
+    "class": {
+      "zh_CN": "Supporter",
+      "en_US": "Supporter",
+      "ja_JP": "Supporter",
+      "ko_KR": "Supporter"
+    },
+    "trait": {
+      "zh_CN": "不攻击，持续恢复范围内所有友军<span class=\"keyword\">生命</span>（每秒恢复相当于自身攻击力10%的生命），自身不受<span class=\"skill-tooltip\">鼓舞</span>影响，且不受<span class=\"keyword\">部署数量</span>限制，但再部署时间极长",
+      "en_US": "Does not attack but continuously restores the <span class=\"keyword\">HP</span> of all allies within range (the HP restored per second is equal to 10% of self ATK). Self is unaffected by <span class=\"skill-tooltip\">Inspiration</span>",
+      "ja_JP": "攻撃しない<br>攻撃範囲内の味方全員の<span class=\"keyword\">HP</span>を継続回復(1秒ごとに攻撃力の10%回復)<br>自身は<span class=\"skill-tooltip\">鼓舞</span>状態の効果を受けない",
+      "ko_KR": "공격을 진행하지 않고 공격 범위 내 모든 아군의 <span class=\"keyword\">HP</span>를 매초마다 자신의 공격력의 10% 만큼 회복, 자신은 <span class=\"skill-tooltip\">격려</span>의 영향을 받지 않는다."
+    }
+  },
+  "blessing": {
+    "branchName": {
+      "zh_CN": "护佑者",
+      "en_US": "Abjurer",
+      "ja_JP": "祈祷師",
+      "ko_KR": "비호자"
+    },
+    "class": {
+      "zh_CN": "Supporter",
+      "en_US": "Supporter",
+      "ja_JP": "Supporter",
+      "ko_KR": "Supporter"
+    },
+    "trait": {
+      "zh_CN": "攻击造成<span class=\"keyword\">法术伤害</span>，技能开启后改为治疗友方单位（治疗量相当于75%攻击力）",
+      "en_US": "Deals <span class=\"keyword\">Arts damage</span>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to 75% of ATK)",
+      "ja_JP": "敵に<span class=\"keyword\">術ダメージ</span>を与える<br>スキル発動中、通常攻撃が味方に対する治療行動になる（HP回復量は攻撃力の75％）",
+      "ko_KR": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75%에 해당)"
+    }
+  },
+  "summoner": {
+    "branchName": {
+      "zh_CN": "召唤师",
+      "en_US": "Summoner",
+      "ja_JP": "召喚師",
+      "ko_KR": "소환사"
+    },
+    "class": {
+      "zh_CN": "Supporter",
+      "en_US": "Supporter",
+      "ja_JP": "Supporter",
+      "ko_KR": "Supporter"
+    },
+    "trait": {
+      "zh_CN": "攻击造成<span class=\"keyword\">法术伤害</span>\\n可以使用<span class=\"keyword\">召唤物</span>协助作战",
+      "en_US": "Deals <span class=\"keyword\">Arts damage</span><br>Can use <span class=\"keyword\">Summons</span> in battles",
+      "ja_JP": "敵に<span class=\"keyword\">術ダメージ</span>を与える<br><span class=\"keyword\">召喚ユニット</span>を使用可能",
+      "ko_KR": "적에게 <span class=\"keyword\">마법 대미지</span><br><span class=\"keyword\">소환물</span> 사용 가능"
+    }
+  },
+  "craftsman": {
+    "branchName": {
+      "zh_CN": "工匠",
+      "en_US": "Artificer",
+      "ja_JP": "工匠",
+      "ko_KR": "기능공"
+    },
+    "class": {
+      "zh_CN": "Supporter",
+      "en_US": "Supporter",
+      "ja_JP": "Supporter",
+      "ko_KR": "Supporter"
+    },
+    "trait": {
+      "zh_CN": "能够阻挡两个敌人，使用&lt;支援装置&gt;协助作战",
+      "en_US": "Blocks 2 enemies; Can use &lt;Support Devices&gt; in battles",
+      "ja_JP": "敵を2体までブロック<br>&lt;支援装置&gt;を使用可能",
+      "ko_KR": "적 2명 저지 가능, &lt;지원 장치&gt;를 사용해 작전 지원"
+    }
+  },
+  "executor": {
+    "branchName": {
+      "zh_CN": "处决者",
+      "en_US": "Executor",
+      "ja_JP": "執行者",
+      "ko_KR": "처형자"
+    },
+    "class": {
+      "zh_CN": "Specialist",
+      "en_US": "Specialist",
+      "ja_JP": "Specialist",
+      "ko_KR": "Specialist"
+    },
+    "trait": {
+      "zh_CN": "不进行攻击，且不受<span class=\"keyword\">部署数量</span>限制，但再部署时间极长",
+      "en_US": "Does not attack and ignores the <span class=\"keyword\">Deployment Limit</span>, but has a long Redeployment Time",
+      "ja_JP": "攻撃しない<br><span class=\"keyword\">配属可能数</span>にカウントされない<br>再配置までの時間が極めて長い",
+      "ko_KR": "공격을 진행하지 않고,  <span class=\"keyword\">배치 인원 수</span> 제약을 받지 않으나,  재배치 시간이 매우 길다"
+    }
+  },
+  "pusher": {
+    "branchName": {
+      "zh_CN": "推击手",
+      "en_US": "Push Stroker",
+      "ja_JP": "推撃手",
+      "ko_KR": "추격자"
+    },
+    "class": {
+      "zh_CN": "Specialist",
+      "en_US": "Specialist",
+      "ja_JP": "Specialist",
+      "ko_KR": "Specialist"
+    },
+    "trait": {
+      "zh_CN": "同时攻击阻挡的<span class=\"keyword\">所有敌人</span>\\n可以放置于远程位",
+      "en_US": "Can attack <span class=\"keyword\">all blocked enemies</span><br>Can be deployed on Ranged Tiles",
+      "ja_JP": "ブロック中の<span class=\"keyword\">敵全員</span>を同時に攻撃<br>遠距離マスにも配置可能",
+      "ko_KR": "저지 중인 <span class=\"keyword\">모든 적</span> 동시 공격<br>원거리 유닛 칸에도 배치 가능"
+    }
+  },
+  "stalker": {
+    "branchName": {
+      "zh_CN": "伏击客",
+      "en_US": "Ambusher",
+      "ja_JP": "潜伏者",
+      "ko_KR": "매복자"
+    },
+    "class": {
+      "zh_CN": "Specialist",
+      "en_US": "Specialist",
+      "ja_JP": "Specialist",
+      "ko_KR": "Specialist"
+    },
+    "trait": {
+      "zh_CN": "对攻击范围内<span class=\"keyword\">所有敌人</span>造成伤害\\n拥有50%的物理和法术闪避且不容易成为敌人的<span class=\"keyword\">攻击目标</span>",
+      "en_US": "Deals Damage to <span class=\"keyword\">all targets</span> within range<br>50% chance to dodge Physical and Arts attacks and is less likely to be <span class=\"keyword\">targeted</span> by enemies",
+      "ja_JP": "攻撃範囲内の<span class=\"keyword\">敵全員</span>を同時に攻撃<br>物理回避、術回避が50％上昇<br>敵に<span class=\"keyword\">狙われにくい</span>",
+      "ko_KR": "공격 범위 내 <span class=\"keyword\">모든 적</span> 동시 공격<br>50%의 물리 및 마법 회피율 보유, 쉽게 <span class=\"keyword\">적의 목표</span>가 되지 않음"
+    }
+  },
+  "hookmaster": {
+    "branchName": {
+      "zh_CN": "钩索师",
+      "en_US": "Hookmaster",
+      "ja_JP": "鉤縄師",
+      "ko_KR": "후크마스터"
+    },
+    "class": {
+      "zh_CN": "Specialist",
+      "en_US": "Specialist",
+      "ja_JP": "Specialist",
+      "ko_KR": "Specialist"
+    },
+    "trait": {
+      "zh_CN": "技能可以使敌人产生<span class=\"keyword\">位移</span>\\n可以放置于远程位",
+      "en_US": "Can <span class=\"keyword\">Shift</span> enemies by using skills<br>Can be deployed on Ranged Tiles",
+      "ja_JP": "<span class=\"keyword\">強制移動</span>スキルを所持<br>遠距離マスにも配置可能",
+      "ko_KR": "스킬을 통해 적의 위치를 <span class=\"keyword\">강제 이동</span><br>원거리 유닛 칸에도 배치 가능"
+    }
+  },
+  "geek": {
+    "branchName": {
+      "zh_CN": "怪杰",
+      "en_US": "Geek",
+      "ja_JP": "鬼才",
+      "ko_KR": "기인"
+    },
+    "class": {
+      "zh_CN": "Specialist",
+      "en_US": "Specialist",
+      "ja_JP": "Specialist",
+      "ko_KR": "Specialist"
+    },
+    "trait": {
+      "zh_CN": "自身生命会不断流失",
+      "en_US": "Continually loses <span class=\"keyword\">3%</span> max HP per second",
+      "ja_JP": "HPが徐々に減少",
+      "ko_KR": "자신의 HP가 지속적으로 감소"
+    }
+  },
+  "merchant": {
+    "branchName": {
+      "zh_CN": "行商",
+      "en_US": "Merchant",
+      "ja_JP": "行商人",
+      "ko_KR": "상인"
+    },
+    "class": {
+      "zh_CN": "Specialist",
+      "en_US": "Specialist",
+      "ja_JP": "Specialist",
+      "ko_KR": "Specialist"
+    },
+    "trait": {
+      "zh_CN": "再部署时间<span class=\"keyword\">减少</span>，撤退时不返还<span class=\"keyword\">部署费用</span>，在场时每3秒<span class=\"keyword\">消耗</span>3点部署费用（不足时自动撤退）",
+      "en_US": "Has <span class=\"keyword\">reduced</span> Redeployment Time, but <span class=\"keyword\">DP Cost</span> is not refunded upon retreating; While deployed, <span class=\"keyword\">3 DP</span> are consumed every 3 seconds (automatically retreats without sufficient DP)",
+      "ja_JP": "再配置までの時間が<span class=\"keyword\">短い</span><br>撤退時に<span class=\"keyword\">コスト</span>を返却しない<br>配置中、3秒ごとにコストを3<span class=\"keyword\">消費</span>（コスト不足時自動に撤退）",
+      "ko_KR": "재배치 시간 <span class=\"keyword\">감소</span>, 퇴각 시 <span class=\"keyword\">배치 코스트</span>를 반환하지 않고, 전장에서 3초마다 배치 코스트를 3 <span class=\"keyword\">소모</span> (코스트 부족 시 자동 퇴각)"
+    }
+  },
+  "traper": {
+    "branchName": {
+      "zh_CN": "陷阱师",
+      "en_US": "Trapmaster",
+      "ja_JP": "罠師",
+      "ko_KR": "함정술사"
+    },
+    "class": {
+      "zh_CN": "Specialist",
+      "en_US": "Specialist",
+      "ja_JP": "Specialist",
+      "ko_KR": "Specialist"
+    },
+    "trait": {
+      "zh_CN": "可以使用陷阱来协助作战，但陷阱无法放置于<span class=\"keyword\">敌人已在</span>的格子中",
+      "en_US": "Can use traps to assist in combat, but traps cannot be placed <span class=\"keyword\">on tiles already occupied by an enemy</span>",
+      "ja_JP": "罠を使用可能、<span class=\"keyword\">敵のいるマス</span>に罠配置不可",
+      "ko_KR": "전투를 지원하는 함정 사용 가능, 단 <span class=\"keyword\">적이 있는</span> 칸에는 함정 설치 불가"
+    }
+  },
+  "dollkeeper": {
+    "branchName": {
+      "zh_CN": "傀儡师",
+      "en_US": "Dollkeeper",
+      "ja_JP": "傀儡師",
+      "ko_KR": "인형사"
+    },
+    "class": {
+      "zh_CN": "Specialist",
+      "en_US": "Specialist",
+      "ja_JP": "Specialist",
+      "ko_KR": "Specialist"
+    },
+    "trait": {
+      "zh_CN": "受到致命伤时不撤退，切换成&lt;替身&gt;作战（替身阻挡数为0），持续20秒后自身再次替换&lt;替身&gt;",
+      "en_US": "Does not retreat upon receiving lethal damage, instead swaps to a &lt;Substitute&gt; (Substitute has 0 Block). Swaps back to the original after 20 seconds",
+      "ja_JP": "致命的なダメージを受けても撤退せず、&lt;身替り&gt;と入れ替わり戦闘を続行する（身替りのブロック数は0）。20秒後&lt;身替り&gt;から再び自身に入れ替わる",
+      "ko_KR": "치명상을 입어도 퇴각하지 않고 [대역]을 교체 투입하며(저지 가능 수 0), 20초 후 다시 본체로 교체"
+    }
+  },
+  "incantationmedic": {
+    "branchName": {
+      "zh_CN": "咒愈师",
+      "en_US": "Incantation Medic",
+      "ja_JP": "呪癒師",
+      "ko_KR": "주술 메딕"
+    },
+    "class": {
+      "zh_CN": "Medic",
+      "en_US": "Medic",
+      "ja_JP": "Medic",
+      "ko_KR": "Medic"
+    },
+    "trait": {
+      "zh_CN": "攻击造成法术伤害，攻击敌人时为攻击范围内一名友方干员治疗相当于50%伤害的生命值",
+      "en_US": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 50% of the damage dealt",
+      "ja_JP": "術ダメージを与え、敵を攻撃する度攻撃範囲内の味方1人のHPを与ダメージの50%回復",
+      "ko_KR": "공격 시 마법 대미지 부여, 적을 공격할 때마다 공격 범위 내 아군 유닛 1명의 HP를 대미지의 50%만큼 회복"
+    }
+  },
+  "agent": {
+    "branchName": {
+      "zh_CN": "情报官",
+      "en_US": "Agent",
+      "ja_JP": "偵察兵",
+      "ko_KR": "에이전트"
+    },
+    "class": {
+      "zh_CN": "Vanguard",
+      "en_US": "Vanguard",
+      "ja_JP": "Vanguard",
+      "ko_KR": "Vanguard"
+    },
+    "trait": {
+      "zh_CN": "再部署时间<span class=\"keyword\">减少</span>，可使用远程攻击",
+      "en_US": "Has <span class=\"keyword\">reduced</span> Redeployment Time, can use ranged attacks",
+      "ja_JP": "再配置までの時間が<span class=\"keyword\">短い</span>、遠距離攻撃も行える",
+      "ko_KR": "재배치 시간이 <span class=\"keyword\">감소</span>, 원거리 공격 가능"
+    }
+  },
+  "shotprotector": {
+    "branchName": {
+      "zh_CN": "哨戒铁卫",
+      "en_US": "Sentinel Protector",
+      "ja_JP": "哨戒衛士",
+      "ko_KR": "센트리 프로텍터"
+    },
+    "class": {
+      "zh_CN": "Defender",
+      "en_US": "Defender",
+      "ja_JP": "Defender",
+      "ko_KR": "Defender"
+    },
+    "trait": {
+      "zh_CN": "能够阻挡三个敌人，可以进行远程攻击",
+      "en_US": "Blocks 3 enemies and attacks from long range.",
+      "ja_JP": "敵を3体までブロック、遠距離攻撃も行える",
+      "ko_KR": "적 3명 저지 가능, 원거리 공격 가능"
+    }
+  },
+  "chainhealer": {
+    "branchName": {
+      "zh_CN": "链愈师",
+      "en_US": "Chain Medic",
+      "ja_JP": "連鎖癒師",
+      "ko_KR": "체인 메딕"
+    },
+    "class": {
+      "zh_CN": "Medic",
+      "en_US": "Medic",
+      "ja_JP": "Medic",
+      "ko_KR": "Medic"
+    },
+    "trait": {
+      "zh_CN": "恢复友方单位生命，且会在<span class=\"keyword\">3</span>个友方单位间跳跃，每次跳跃治疗量降低25%",
+      "en_US": "Restores HP of allies, bouncing between <span class=\"keyword\">3</span> allies. Healing reduced by 25% per bounce.",
+      "ja_JP": "味方のHPを回復する際、<span class=\"keyword\">3</span>体目の味方まで回復が跳躍する（回復量は25%ずつ減衰）",
+      "ko_KR": "아군 치료, 치료 효과가 <span class=\"keyword\">3</span>명의 아군 사이에서 튕기며, 튕길 때마다 치유량 25% 감소"
+    }
+  },
+  "crusher": {
+    "branchName": {
+      "zh_CN": "重剑手",
+      "en_US": "Crusher",
+      "ja_JP": "重剣士",
+      "ko_KR": "대검사"
+    },
+    "class": {
+      "zh_CN": "Guard",
+      "en_US": "Guard",
+      "ja_JP": "Guard",
+      "ko_KR": "Guard"
+    },
+    "trait": {
+      "zh_CN": "同时攻击阻挡的<span class=\"keyword\">所有敌人</span>",
+      "en_US": "Attacks <span class=\"keyword\">all blocked enemies</span>",
+      "ja_JP": "ブロック中の<span class=\"keyword\">敵全員</span>を同時に攻撃",
+      "ko_KR": "저지 중인 <span class=\"keyword\">모든 적</span> 동시 공격"
+    }
+  },
+  "ritualist": {
+    "branchName": {
+      "zh_CN": "巫役",
+      "en_US": "Ritualist",
+      "ja_JP": "儀式師",
+      "ko_KR": "의식술사"
+    },
+    "class": {
+      "zh_CN": "Supporter",
+      "en_US": "Supporter",
+      "ja_JP": "Supporter",
+      "ko_KR": "Supporter"
+    },
+    "trait": {
+      "zh_CN": "攻击造成<span class=\"keyword\">法术伤害</span>，可以造成<span class=\"keyword\">元素损伤</span>",
+      "en_US": "Deal <span class=\"keyword\">arts damage</span>, can inflict <span class=\"keyword\">elemental damage</span>",
+      "ja_JP": "アーツダメージを与え、<span class=\"keyword\">元素ダメージ</span>を与えることができます",
+      "ko_KR": "아츠 피해를 입히며, <span class=\"keyword\">원소 피해</span>를 입힐 수 있습니다"
+    }
+  },
+  "hunter": {
+    "branchName": {
+      "zh_CN": "猎手",
+      "en_US": "Hunter",
+      "ja_JP": "ハンター",
+      "ko_KR": "사냥꾼"
+    },
+    "class": {
+      "zh_CN": "Sniper",
+      "en_US": "Sniper",
+      "ja_JP": "Sniper",
+      "ko_KR": "Sniper"
+    },
+    "trait": {
+      "zh_CN": "攻击时需要消耗子弹且攻击力提升至<span class=\"keyword\">120%</span>，不攻击时会缓慢地装填子弹（最多8发）",
+      "en_US": "Consumes bullets for attacks, increases attack power to <span class=\"keyword\">120%</span>. Slowly reloads bullets when not attacking (up to 8 bullets)",
+      "ja_JP": "攻撃には弾薬を消費し、攻撃力が<span class=\"keyword\">120%</span>に増加します。攻撃していないときに弾薬をゆっくりと補充します（最大8発）",
+      "ko_KR": "공격 시 총알을 소비하며, 공격력이 <span class=\"keyword\">120%</span>으로 증가합니다. 공격하지 않을 때 천천히 총알을 재충전합니다 (최대 8발)"
+    }
+  },
+  "primcaster": {
+    "branchName": {
+      "zh_CN": "本源术师",
+      "en_US": "Primcaster",
+      "ja_JP": "プリムキャスター",
+      "ko_KR": "프림캐스터"
+    },
+    "class": {
+      "zh_CN": "Caster",
+      "en_US": "Caster",
+      "ja_JP": "Caster",
+      "ko_KR": "Caster"
+    },
+    "trait": {
+      "zh_CN": "攻击造成<span class=\"keyword\">法术伤害</span>，可以造成<span class=\"keyword\">元素伤害</span>",
+      "en_US": "Deal <span class=\"keyword\">arts damage</span>, can inflict <span class=\"keyword\">elemental damage</span>",
+      "ja_JP": "アーツダメージを与え、<span class=\"keyword\">元素ダメージ</span>を与えることができます",
+      "ko_KR": "아츠 피해를 입히며, <span class=\"keyword\">원소 피해</span>를 입힐 수 있습니다"
+    }
+  },
+  "loopshooter": {
+    "branchName": {
+      "zh_CN": "回环射手",
+      "en_US": "Loopshooter",
+      "ja_JP": "ループシューター",
+      "ko_KR": "루프슈터"
+    },
+    "class": {
+      "zh_CN": "Sniper",
+      "en_US": "Sniper",
+      "ja_JP": "Sniper",
+      "ko_KR": "Sniper"
+    },
+    "trait": {
+      "zh_CN": "持有<span class=\"keyword\">回旋投射物</span>时才能够攻击（投射物需要时间回收）",
+      "en_US": "Can only attack when holding <span class=\"keyword\">boomerangs</span> (boomerangs take time to return)",
+      "ja_JP": "ブーメランを持っているときだけ攻撃できます（ブーメランは戻るのに時間がかかります）",
+      "ko_KR": "프리즈비를 들고 있을 때만 공격할 수 있습니다 (프리즈비는 돌아오는 데 시간이 걸립니다)"
+    }
+  }
+}

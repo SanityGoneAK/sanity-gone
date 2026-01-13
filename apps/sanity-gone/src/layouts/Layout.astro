@@ -1,0 +1,145 @@
+---
+import LanguageSwitcher from "../components/navigation/LanguageSwitcher";
+export interface Props {
+	title: string;
+	previousLocation?: string;
+	previousLocationLink?: string;
+}
+
+const { title, previousLocation, previousLocationLink } = Astro.props;
+
+import { getPathByLocale, getRelativeLocaleUrl } from "astro:i18n";
+import SearchBar from "../components/navigation/SearchBar";
+import SanityGoneLogo from "~/components/SanityGoneLogo";
+import Sidebar from "~/components/navigation/Sidebar.astro";
+import Settings from "~/components/navigation/Settings";
+import { allLanguages, defaultLang, type Locale } from "~/i18n/languages";
+
+import "swiper/css";
+import 'swiper/css/navigation';
+
+import "~/styles/base.css";
+import { stripLangFromUrl, useTranslations } from "../i18n/utils";
+import type { ui } from "../i18n/ui";
+
+const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
+const t = useTranslations(locale);
+const languages = Object.entries(allLanguages).map(([key, language]) => {
+	return [
+		key,
+		{
+			url: getRelativeLocaleUrl(key, stripLangFromUrl(Astro.url)),
+			label: language,
+		},
+	];
+});
+---
+<html lang={locale}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin=""
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>{title}</title>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MSDCFRCD');</script>
+		<!-- End Google Tag Manager -->
+		<slot name="head" />
+
+	</head>
+	<body class="bg-neutral-900 text-neutral-50 overflow-hidden">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSDCFRCD"
+						height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+		<div
+			id="site-wrapper"
+			class="h-full group/sitewrapper grid [grid-template-areas:'logo''search''main'] grid-layout-mobile md:grid-layout-desktop md:[grid-template-areas:'logo_topright''sidebar_main']"
+			data-menu-open="false"
+		>
+			<div
+				class="flex justify-between [grid-area:logo] px-3 border-b border-r border-solid border-neutral-600 bg-neutral-800 items-center"
+			>
+				<SanityGoneLogo locale={locale} />
+				<button
+					class="md:hidden mr-2"
+					id="mobile-menu-trigger"
+					aria-expanded="false"
+				>
+					<svg
+						width="17"
+						height="16"
+						viewBox="0 0 17 16"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M16.5446 2.73404C16.7723 2.73404 17 2.53457 17 2.25532V0.978723C17 0.739362 16.7723 0.5 16.5446 0.5H0.455357C0.189732 0.5 0 0.739362 0 0.978723V2.25532C0 2.53457 0.189732 2.73404 0.455357 2.73404H16.5446ZM16.5446 9.11702C16.7723 9.11702 17 8.91755 17 8.6383V7.3617C17 7.12234 16.7723 6.88298 16.5446 6.88298H0.455357C0.189732 6.88298 0 7.12234 0 7.3617V8.6383C0 8.91755 0.189732 9.11702 0.455357 9.11702H16.5446ZM16.5446 15.5C16.7723 15.5 17 15.3005 17 15.0213V13.7447C17 13.5053 16.7723 13.266 16.5446 13.266H0.455357C0.189732 13.266 0 13.5053 0 13.7447V15.0213C0 15.3005 0.189732 15.5 0.455357 15.5H16.5446Z"
+							fill="#E3E1EF"></path>
+					</svg>
+				</button>
+			</div>
+			<div
+				id="searchbar"
+				class="hidden [grid-area:search] md:[grid-area:topright] group-data-[menu-open=true]/sitewrapper:block md:block border-b border-solid border-neutral-600 md:bg-neutral-800"
+			>
+				<div class="flex h-full w-full items-center justify-between px-3 md:pl-6">
+					{ /* set to client:load because search bar should be immediately available upon opening sidebar */}
+					<SearchBar
+						placeholder={t('nav.search')}
+						locale={locale as Locale}
+						client:load
+					/>
+					<Settings client:load languages={Object.fromEntries(languages)} currentLanguage={locale}></Settings>
+				</div>
+			</div>
+			<div
+				id="sidebar"
+				class="hidden [grid-area:main] md:[grid-area:sidebar] group-data-[menu-open=true]/sitewrapper:block md:block border-neutral-600 border-r bg-neutral-800"
+			>
+				<Sidebar />
+			</div>
+			<main
+				class="[grid-area:main] group-data-[menu-open=true]/sitewrapper:hidden group-data-[menu-open=false]/sitewrapper:row-start-2 overflow-y-auto"
+			>
+				<slot />
+			</main>
+		</div>
+	</body>
+</html>
+<script>
+	import initializeFocusSource from "ally.js/src/style/focus-source";
+
+	document.addEventListener("DOMContentLoaded", () => {
+		const mobileMenuTrigger = document.getElementById(
+			"mobile-menu-trigger"
+		)!;
+		const siteWrapper = document.getElementById("site-wrapper")!;
+		mobileMenuTrigger.addEventListener("click", () => {
+			const open = siteWrapper.dataset.menuOpen === "true";
+			siteWrapper.dataset.menuOpen = `${!open}`;
+			mobileMenuTrigger.ariaExpanded = `${!open}`;
+		});
+		initializeFocusSource();
+	});
+</script>

@@ -1,8 +1,0 @@
-{
-	"extends": "../tsconfig.json",
-	"compilerOptions": {
-		"resolveJsonModule": false,
-		"allowJs": true
-	},
-	"include": ["*.ts", "gamedata-json.d.ts"]
-}
