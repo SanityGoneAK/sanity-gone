@@ -17,7 +17,8 @@ import { useTranslations } from "~/i18n/utils.ts";
 import ContingencyTokenIcon from "~/components/icons/ContingencyTokenIcon.tsx";
 
 const CharacterSplash: React.FC = () => {
-	const { skins } = useStore(operatorStore);
+	const operator = useStore(operatorStore);
+	const {skins} = operator;
 
 	let startIndex = 0;
 	skins.forEach((skin, i) => {
@@ -88,7 +89,7 @@ const CharacterSplash: React.FC = () => {
 							No more layout shift, just make sure there's also no layout shift on mobile */}
 							<img
 								className="mx-auto my-0 h-full w-[clamp(0px,auto,85vw)] object-contain md:w-[clamp(0px,100%,60rem)]"
-								src={operatorSplash(skin.portraitId, skin.type)}
+								src={operatorSplash(operator.charId, skin.portraitId, skin.type)}
 								alt={skin.name}
 							/>
 							<div className="absolute bottom-0 left-0 inline-flex h-16 items-center gap-4 rounded bg-neutral-700/[0.6] p-3">

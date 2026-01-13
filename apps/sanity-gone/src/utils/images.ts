@@ -1,7 +1,7 @@
 import itemsJson from "../../data/zh_CN/items.json";
 
 const baseURL =
-	"https://penguacestergonenemypresslabdbdareprts.sanitygone.help";
+	"https://penguacestergonenemypresslabdbdareprtsterradragonsheets.stinggy.com";
 
 export const operatorAvatar = (charId: string, elite?: number): string => {
 	const basePath = `${baseURL}/cn/arts/charavatars/${charId}`;
@@ -15,13 +15,14 @@ export const operatorAvatar = (charId: string, elite?: number): string => {
 	return `${basePath}.webp`;
 };
 export const operatorSplash = (
+	charId: string,
 	portraitId: string,
 	skinType: string
 ): string => {
 	if (skinType === "skin") {
-		return `${baseURL}/cn/skinpack/${encodeURIComponent(portraitId)}b.webp`;
+		return `${baseURL}/cn/arts/characters/${charId}/${encodeURIComponent(portraitId)}b.webp`;
 	}
-	return `${baseURL}/cn/chararts/${encodeURIComponent(portraitId)}.webp`;
+	return `${baseURL}/cn/arts/characters/${charId}/${encodeURIComponent(portraitId)}.webp`;
 };
 
 export const operatorSplashAvatar = (avatarId: string): string => {
