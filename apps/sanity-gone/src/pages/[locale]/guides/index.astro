@@ -25,7 +25,7 @@ export const prerender = false;
         <h1 class="text-4xl font-black mb-4">Guides</h1>
         <ul class="grid grid-cols-1 lg:grid-cols-2 gap-2">
             {guides.map(guide => (
-                <li class="h-[350px] bg-neutral-600 hover:bg-neutral-500 transition-colors rounded-md overflow-hidden">
+                <li class="min-h-[350px] bg-neutral-600 hover:bg-neutral-500 transition-colors rounded-md overflow-hidden">
                     <a class="flex flex-col h-full" href={`${guide.id}`}>
                         <img class="mb-3" alt="" src={guide.data.bannerImage} referrerpolicy="no-referrer">
                         <div class="mt-auto px-4 py-1 pb-4 space-y-1.5">

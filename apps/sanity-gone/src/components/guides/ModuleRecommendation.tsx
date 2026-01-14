@@ -19,12 +19,12 @@ import {moduleTypeImage} from "~/utils/images.ts";
 
 interface ModuleRecommendation {
     charId: string
-    moduleId: string;
+    moduleType: string;
     recommended: boolean;
     recommendedLevel?: number;
 }
 
-const ModuleRecommendation = ({charId, moduleId, recommended, recommendedLevel}: ModuleRecommendation) => {
+const ModuleRecommendation = ({charId, moduleType, recommended, recommendedLevel}: ModuleRecommendation) => {
     const operators = useStore(operatorsStore);
     const locale = useStore(localeStore);
 
@@ -35,7 +35,7 @@ const ModuleRecommendation = ({charId, moduleId, recommended, recommendedLevel}:
     if (!operator) return null;
 
     const module = operator.modules.find(
-        (mod) => mod.moduleIcon.toLowerCase() === moduleId.toLowerCase()
+        (mod) => mod.moduleIcon.split('-')[1].toLowerCase() === moduleType.toLowerCase()
     )
 
     if (!module) return null;
@@ -148,7 +148,7 @@ const ModuleRecommendation = ({charId, moduleId, recommended, recommendedLevel}:
                             <div className="ml-auto">
                                 <PotentialsDropdown
                                     potentialsToShow={
-                                        moduleId
+                                        module.moduleId
                                             ? potentialsInUse[
                                             stage - 1
                                                 ]
