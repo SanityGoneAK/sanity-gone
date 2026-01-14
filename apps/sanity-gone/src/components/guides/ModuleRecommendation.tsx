@@ -20,7 +20,7 @@ import {moduleTypeImage} from "~/utils/images.ts";
 interface ModuleRecommendation {
     charId: string
     moduleType: string;
-    recommended: boolean;
+    recommended: boolean|"maybe";
     recommendedLevel?: number;
 }
 
@@ -98,10 +98,17 @@ const ModuleRecommendation = ({charId, moduleType, recommended, recommendedLevel
                             {module.moduleIcon}
                         </p>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <h3 className="text-neutral-200 text-lg">Recommended Level</h3>
-                        {(recommended && recommendedLevel) && <p>Level {recommendedLevel}</p>}
-                        {!recommended && <p>Not Recommended</p>}
+                    <div className="flex flex-col md:flex-row md:items-center gap-2">
+                        <div className="flex items-center gap-2">
+                            <h3 className="text-neutral-200 text-lg">Recommended</h3>
+                            {recommended === true && <p className="text-lg font-semibold">Yes</p>}
+                            {recommended === 'maybe' && <p className="text-lg font-semibold">Maybe</p>}
+                            {!recommended && <p className="text-lg font-semibold">Not Recommended</p>}
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <h3 className="text-neutral-200 text-lg">Recommended Level</h3>
+                            {(recommended && recommendedLevel) && <p className="text-lg font-semibold">Level {recommendedLevel}</p>}
+                        </div>
                     </div>
                 </div>
 

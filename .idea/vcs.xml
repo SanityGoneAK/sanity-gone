@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/sanity-gone/scripts/data/arknights-gamedata" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/sanity-gone/scripts/data/arknights-gamedata/sanity-pack" vcs="Git" />
   </component>
 </project>
