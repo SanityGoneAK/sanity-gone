@@ -105,10 +105,10 @@ const ModuleRecommendation = ({charId, moduleType, recommended, recommendedLevel
                             {recommended === 'maybe' && <p className="text-lg font-semibold">Maybe</p>}
                             {!recommended && <p className="text-lg font-semibold">Not Recommended</p>}
                         </div>
-                        <div className="flex items-center gap-2">
+                        {(recommended && recommendedLevel) && <div className="flex items-center gap-2">
                             <h3 className="text-neutral-200 text-lg">Recommended Level</h3>
-                            {(recommended && recommendedLevel) && <p className="text-lg font-semibold">Level {recommendedLevel}</p>}
-                        </div>
+                            <p className="text-lg font-semibold">Level {recommendedLevel}</p>
+                        </div>}
                     </div>
                 </div>
 
