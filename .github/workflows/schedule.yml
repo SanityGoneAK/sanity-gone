@@ -15,6 +15,7 @@ jobs:
       - name: Make envfile
         uses: SpicyPizza/create-envfile@v2.0
         with:
+          directory: ./apps/sanity-gone
           envkey_MEILISEARCH_KEY: ${{ secrets.MEILISEARCH_KEY }}
           envkey_PUBLIC_MEILISEARCH_URL: ${{ secrets.PUBLIC_MEILISEARCH_URL }}
           envkey_PUBLIC_MEILISEARCH_INDEX: ${{ secrets.PUBLIC_MEILISEARCH_INDEX }}
