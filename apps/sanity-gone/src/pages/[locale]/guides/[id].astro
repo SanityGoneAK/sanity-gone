@@ -56,7 +56,7 @@ const {Content, headings} = await render(guide);
     <meta slot="head" property="og:title" content={title} />
     <meta slot="head" property="og:type" content="website" />
 
-    <section class="mx-auto py-5 px-10 sm:py-auto max-w-[1000px]">
+    <section class="mx-auto py-5 px-4 md:px-10 sm:py-auto max-w-[1000px]">
         <div class="p-0 m-0 flex items-center gap-3 flex-none flex-wrap mb-6">
             <ul class="flex items-center gap-3">
                 <li class="text-base font-normal leading-normal">
@@ -74,20 +74,20 @@ const {Content, headings} = await render(guide);
                 <h1 class="text-4xl font-black">{title}</h1>
                 <p>{description}</p>
                 <div class="flex items-center justify-between mt-4">
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-2">
                         <span class="text-neutral-200">by</span>
                         <img class="size-8 rounded-full" src={`/member-avatars/${slugify(author.id)}.png`} alt="">
                         <span>{author.data.username}</span>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <time datetime={date}>{Intl.DateTimeFormat(locale, {dateStyle: "full"}).format(date)}</time>
+                    <div class="flex items-center gap-2">
+                        <time datetime={date}>{Intl.DateTimeFormat(locale, {dateStyle: "medium"}).format(date)}</time>
                     </div>
                 </div>
             </div>
         </div>
         <TableOfContents headings={headings} client:load></TableOfContents>
 
-        <div class="prose max-w-none prose-invert lg:prose-xl prose-hr:text-neutral-400 prose-a:text-blue-light prose-a:hover:text-blue mt-4">
+        <div class="prose prose-sm max-w-none prose-invert md:prose-base prose-hr:text-neutral-400 prose-a:text-blue-light prose-a:hover:text-blue mt-4">
             <Content/>
         </div>
         <div class="mt-4">

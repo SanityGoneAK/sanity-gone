@@ -35,7 +35,7 @@ const MasteryRecommendation = ({charId, skills}: MasteryRecommendation) => {
             <div className="col-span-4">
                 <OperatorHeader operator={operator} locale={locale} />
             </div>
-            <div className="pt-4 bg-neutral-600/[.66] space-y-3 pb-4">
+            <div className="pt-4 bg-neutral-600/[.66] space-y-3">
                 <div className="px-1 lg:px-6 grid lg:grid-cols-[1fr_repeat(3,100px)]">
                     <p className="hidden lg:inline text-neutral-200 text-lg">Skill</p>
                     <p className="hidden lg:inline text-neutral-200 text-lg text-center">Mastery</p>

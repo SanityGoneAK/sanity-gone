@@ -8,7 +8,7 @@ dist/
 __pycache__
 
 # IDE
-idea/
+.idea/
 spine/
 
 # dependencies
@@ -34,8 +34,6 @@ packages/sanity-pack/assets
 packages/sanity-pack/.logs
 packages/sanity-pack/ArknightsStudioCLI/
 packages/sanity-pack/fbs/assets/
-
-.idea/workspace.xml
 
 packages/sanity-pack/flatc
 packages/sanity-pack/OpenArknightsFBS/

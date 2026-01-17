@@ -131,6 +131,10 @@ a:visited {
 	text-decoration: none;
 }
 
+@utility fadeout-gradient {
+    background: linear-gradient(180deg, rgba(16, 16, 20, 0) 40%, rgba(16, 16, 20, 0.75) 75%, #101014 100%);
+}
+
 .visually-hidden:not(:focus):not(:active) {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);

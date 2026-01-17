@@ -43,6 +43,7 @@ export function TableOfContents({headings, defaultOpen = true}: TableOfContentsP
                 className="
                   overflow-hidden
                   transition-all duration-150 ease-out
+                  h-(--collapsible-panel-height)
                   data-[starting-style]:h-0
                   data-[ending-style]:h-0
                 "
@@ -56,9 +57,10 @@ export function TableOfContents({headings, defaultOpen = true}: TableOfContentsP
                                 key={heading.slug}
                                 className={[
                                     "leading-snug",
-                                    level === 1 && "pl-4",
-                                    level === 2 && "pl-8",
-                                    level >= 3 && "pl-12",
+	                                level === 0 && "text-neutral-50",
+                                    level === 1 && "pl-4 text-neutral-100",
+                                    level === 2 && "pl-8 text-neutral-100",
+                                    level >= 3 && "pl-12 text-neutral-100",
                                 ]
                                     .filter(Boolean)
                                     .join(" ")}
@@ -67,7 +69,6 @@ export function TableOfContents({headings, defaultOpen = true}: TableOfContentsP
                                     href={`#${heading.slug}`}
                                     className="
                                         block rounded-md px-2 py-1
-                                        text-neutral-100
                                         hover:bg-neutral-600
                                         hover:text-neutral-50
                                         transition-colors

@@ -80,7 +80,7 @@ const ModuleRecommendation = ({charId, moduleType, recommended, recommendedLevel
     };
 
     return (
-        <div className="flex flex-col not-prose rounded overflow-hidden">
+        <div className="flex flex-col not-prose rounded overflow-hidden not-prose leading-[1.5]">
             <OperatorHeader operator={operator} locale={locale}/>
 
             <div className="pt-4 bg-neutral-600/[.66] space-y-3">
@@ -98,14 +98,14 @@ const ModuleRecommendation = ({charId, moduleType, recommended, recommendedLevel
                             {module.moduleIcon}
                         </p>
                     </div>
-                    <div className="flex flex-col md:flex-row md:items-center gap-2">
-                        <div className="flex items-center gap-2">
+                    <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-2 mt-2 md:mt-0">
+                        <div className="grid grid-cols-[1fr_auto] md:grid-cols-[auto_1fr] items-center gap-2">
                             <h3 className="text-neutral-200 text-lg">Rating</h3>
                             {recommended === true && <p className="text-lg font-semibold">Yes</p>}
                             {recommended === 'maybe' && <p className="text-lg font-semibold">Maybe</p>}
                             {!recommended && <p className="text-lg font-semibold">Not Recommended</p>}
                         </div>
-                        {(recommended && recommendedLevel) && <div className="flex items-center gap-2">
+                        {(recommended && recommendedLevel) && <div className="grid grid-cols-[1fr_auto] items-center gap-2 md:ml-3">
                             <h3 className="text-neutral-200 text-lg">Recommended Level</h3>
                             <p className="text-lg font-semibold">Level {recommendedLevel}</p>
                         </div>}
@@ -138,6 +138,7 @@ const ModuleRecommendation = ({charId, moduleType, recommended, recommendedLevel
                             px-6 pb-4 mt-3
                             overflow-hidden
                             transition-all duration-150 ease-out
+                            h-(--collapsible-panel-height)
                             data-[starting-style]:h-0
                             data-[ending-style]:h-0
                         "
@@ -166,7 +167,7 @@ const ModuleRecommendation = ({charId, moduleType, recommended, recommendedLevel
                                 />
                             </div>
                         </div>
-                        <ModuleInfo operator={operator} module={module} stage={stage} potential={potential} withTitle={false}/>
+                        <ModuleInfo operator={operator} module={module} stage={stage} potential={potential} withTitle={false} />
                     </Collapsible.Panel>
                 </Collapsible.Root>
             </div>
