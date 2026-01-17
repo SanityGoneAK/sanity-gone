@@ -99,7 +99,7 @@
   },
   "char_1044_hsgma2": {
     "charId": "char_1044_hsgma2",
-    "name": "Hoshiguma the Breacher",
+    "name": "斬業ホシグマ",
     "slug": "hoshiguma-the-breacher",
     "position": "MELEE",
     "rarity": 6,
@@ -113,7 +113,7 @@
   },
   "char_4202_haruka": {
     "charId": "char_4202_haruka",
-    "name": "Haruka",
+    "name": "ハルカ",
     "slug": "haruka",
     "position": "RANGED",
     "rarity": 6,
@@ -1891,7 +1891,7 @@
   },
   "char_4203_kichi": {
     "charId": "char_4203_kichi",
-    "name": "Kichisei",
+    "name": "キチセイ",
     "slug": "kichisei",
     "position": "RANGED",
     "rarity": 5,
@@ -1905,7 +1905,7 @@
   },
   "char_4199_makiri": {
     "charId": "char_4199_makiri",
-    "name": "Matsukiri",
+    "name": "マツキリ",
     "slug": "matsukiri",
     "position": "MELEE",
     "rarity": 5,

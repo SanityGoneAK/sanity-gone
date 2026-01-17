@@ -371,6 +371,17 @@
         ]
       },
       {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
+          14
+        ]
+      },
+      {
         "id": "char_235_jesica",
         "name": "Jessica",
         "rarity": 4,
@@ -2375,6 +2386,17 @@
         ]
       },
       {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
+          14
+        ]
+      },
+      {
         "id": "char_385_finlpp",
         "name": "Purestream",
         "rarity": 4,
@@ -3121,6 +3143,18 @@
           19,
           9,
           8,
+          11,
+          14
+        ]
+      },
+      {
+        "id": "char_472_pasngr",
+        "name": "Passenger",
+        "rarity": 6,
+        "tags": [
+          19,
+          10,
+          6,
           11,
           14
         ]
@@ -3882,6 +3916,17 @@
           19,
           9,
           7,
+          14
+        ]
+      },
+      {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
           14
         ]
       }
@@ -4711,6 +4756,17 @@
           19,
           9,
           7,
+          14
+        ]
+      },
+      {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
           14
         ]
       },
@@ -7149,6 +7205,17 @@
         ]
       },
       {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
+          14
+        ]
+      },
+      {
         "id": "char_235_jesica",
         "name": "Jessica",
         "rarity": 4,
@@ -7502,6 +7569,17 @@
           2,
           14
         ]
+      },
+      {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -7627,6 +7705,17 @@
       {
         "id": "char_365_aprl",
         "name": "April",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
+          14
+        ]
+      },
+      {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
         "rarity": 5,
         "tags": [
           19,
@@ -9789,6 +9878,18 @@
         "tags": [
           19,
           12,
+          10,
+          6,
+          11,
+          14
+        ]
+      },
+      {
+        "id": "char_472_pasngr",
+        "name": "Passenger",
+        "rarity": 6,
+        "tags": [
+          19,
           10,
           6,
           11,
@@ -13589,6 +13690,18 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_472_pasngr",
+        "name": "Passenger",
+        "rarity": 6,
+        "tags": [
+          19,
+          10,
+          6,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -13979,6 +14092,17 @@
           19,
           10,
           6,
+          14
+        ]
+      },
+      {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
           14
         ]
       }
@@ -14399,6 +14523,17 @@
           19,
           10,
           6,
+          14
+        ]
+      },
+      {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
           14
         ]
       },
@@ -15550,6 +15685,18 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_472_pasngr",
+        "name": "Passenger",
+        "rarity": 6,
+        "tags": [
+          19,
+          10,
+          6,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -16120,6 +16267,18 @@
           19,
           9,
           8,
+          11,
+          14
+        ]
+      },
+      {
+        "id": "char_472_pasngr",
+        "name": "Passenger",
+        "rarity": 6,
+        "tags": [
+          19,
+          10,
+          6,
           11,
           14
         ]
@@ -17332,6 +17491,17 @@
           19,
           9,
           7,
+          14
+        ]
+      },
+      {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
           14
         ]
       }
@@ -20770,6 +20940,17 @@
           2,
           14
         ]
+      },
+      {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -20898,6 +21079,17 @@
       {
         "id": "char_365_aprl",
         "name": "April",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
+          14
+        ]
+      },
+      {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
         "rarity": 5,
         "tags": [
           19,
@@ -21516,6 +21708,17 @@
       {
         "id": "char_365_aprl",
         "name": "April",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
+          14
+        ]
+      },
+      {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
         "rarity": 5,
         "tags": [
           19,
@@ -24673,6 +24876,18 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_472_pasngr",
+        "name": "Passenger",
+        "rarity": 6,
+        "tags": [
+          19,
+          10,
+          6,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -25162,6 +25377,18 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_472_pasngr",
+        "name": "Passenger",
+        "rarity": 6,
+        "tags": [
+          19,
+          10,
+          6,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -25208,6 +25435,18 @@
         "tags": [
           19,
           12,
+          10,
+          6,
+          11,
+          14
+        ]
+      },
+      {
+        "id": "char_472_pasngr",
+        "name": "Passenger",
+        "rarity": 6,
+        "tags": [
+          19,
           10,
           6,
           11,
@@ -30610,6 +30849,18 @@
           11,
           14
         ]
+      },
+      {
+        "id": "char_472_pasngr",
+        "name": "Passenger",
+        "rarity": 6,
+        "tags": [
+          19,
+          10,
+          6,
+          11,
+          14
+        ]
       }
     ],
     "guarantees": [
@@ -30853,6 +31104,18 @@
           19,
           10,
           2,
+          11,
+          14
+        ]
+      },
+      {
+        "id": "char_472_pasngr",
+        "name": "Passenger",
+        "rarity": 6,
+        "tags": [
+          19,
+          10,
+          6,
           11,
           14
         ]
@@ -31406,6 +31669,17 @@
           19,
           10,
           6,
+          14
+        ]
+      },
+      {
+        "id": "char_363_toddi",
+        "name": "Toddifons",
+        "rarity": 5,
+        "tags": [
+          19,
+          10,
+          2,
           14
         ]
       }
@@ -33027,6 +33301,18 @@
           19,
           9,
           8,
+          11,
+          14
+        ]
+      },
+      {
+        "id": "char_472_pasngr",
+        "name": "Passenger",
+        "rarity": 6,
+        "tags": [
+          19,
+          10,
+          6,
           11,
           14
         ]

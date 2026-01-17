@@ -4679,6 +4679,20 @@
       "cost": 0,
       "tokenType": "Originium Prime"
     },
+    "char_197_poca@rilakkuma#1": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_134_ifrit@rilakkuma#1": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_332_archet@shining#1": {
       "obtainSources": [
         "Outfit Store"

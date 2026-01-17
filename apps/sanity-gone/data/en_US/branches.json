@@ -335,9 +335,9 @@
     "trait": "Blocks 2 enemies, and can inflict <span class=\"keyword\">Elemental damage</span>"
   },
   "counsellor": {
-    "branchName": "策士",
+    "branchName": "Strategist",
     "class": "Vanguard",
-    "trait": "能够阻挡两个敌人，可以支援待部署区的我方单位"
+    "trait": "Blocks 2 enemies, and can support allies in the Deployment Waiting Zone"
   },
   "mercenary": {
     "branchName": "佣兵",

@@ -335,9 +335,9 @@
     "trait": "적 2명 저지 가능, 공격 시 <span class=\"keyword\">원소 대미지</span>를 입힘"
   },
   "counsellor": {
-    "branchName": "策士",
+    "branchName": "책사",
     "class": "Vanguard",
-    "trait": "能够阻挡两个敌人，可以支援待部署区的我方单位"
+    "trait": "적 2명 저지 가능, 배치 구역의 아군 유닛 지원 가능"
   },
   "mercenary": {
     "branchName": "佣兵",
