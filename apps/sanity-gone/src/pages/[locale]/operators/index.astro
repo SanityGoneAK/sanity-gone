@@ -14,17 +14,25 @@ import { useTranslations } from "~/i18n/utils";
 
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
 localeStore.set(locale);
-initializeFiltersFromUrl((new URL(Astro.request.url)).searchParams);
-const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams.entries());
-export const prerender = false;
+// const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams.entries());
+export const prerender = true;
 
+export function getStaticPaths() {
+	return Object.keys(allLanguages).flatMap((lang) => {
+		return {
+			params: {
+				locale: lang,
+			},
+		};
+	});
+}
 const t = useTranslations(locale);
 ---
 
 <Layout title="Operator List">
-	<script slot="head" define:vars={{ locale, queryParams }}>
+	<script slot="head" define: define:vars={{ locale }}>
 		window.locale = locale;
-		window.queryParams = queryParams;
+		initializeFiltersFromUrl();
 	</script>
 
 	<meta slot="head" name="description" content="Browse all the operators in the game, and view all their details." />

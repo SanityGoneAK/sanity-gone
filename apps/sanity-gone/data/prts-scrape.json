@@ -2571,6 +2571,13 @@
       "cost": null,
       "tokenType": null
     },
+    "char_4172_xingzh@epoque#51": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_120_hibisc@nian#1": {
       "obtainSources": [
         "Outfit Store"

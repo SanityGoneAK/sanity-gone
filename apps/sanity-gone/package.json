@@ -11,7 +11,8 @@
     "start": "astro dev",
     "check": "cross-env NODE_OPTIONS=--max_old_space_size=8192 astro check",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "NODE_OPTIONS='--max-old-space-size=8192' astro build && wrangler pages dev ./dist",
+    "deploy": "NODE_OPTIONS='--max-old-space-size=8192' astro build && wrangler pages deploy ./dist",
     "astro": "astro",
     "lint": "prettier --write .",
     "update-game-data": "git submodule update --init --recursive --remote && sucrase-node ./scripts/all.js",
@@ -24,7 +25,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/cloudflare": "^12.6.6",
+    "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/node": "^9.4.1",
     "@astrojs/react": "^4.4.2",
