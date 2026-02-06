@@ -20,23 +20,45 @@ jobs:
           version: latest
       - name: Run Biome
         run: biome ci .
-  build_and_deploy_preview:
-    needs: quality
+  build_and_deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      repository-projects: write
     steps:
-      - uses: actions/checkout@v2
-      - uses: amondnet/vercel-action@v20
-        id: vercel-deploy
+      - uses: actions/checkout@v5
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v2.0
         with:
-          working-directory: ./apps/sanity-gone
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          vercel-org-id: ${{ secrets.ORG_ID}}
-          vercel-project-id: ${{ secrets.PROJECT_ID}}
-      - name: preview-url
-        run: |
-          echo ${{ steps.vercel-deploy.outputs.preview-url }}
+          directory: ./apps/sanity-gone
+          envkey_MEILISEARCH_KEY: ${{ secrets.MEILISEARCH_KEY }}
+          envkey_PUBLIC_MEILISEARCH_URL: ${{ secrets.PUBLIC_MEILISEARCH_URL }}
+          envkey_PUBLIC_MEILISEARCH_INDEX: ${{ secrets.PUBLIC_MEILISEARCH_INDEX }}
+          envkey_PUBLIC_MEILISEARCH_KEY: ${{ secrets.PUBLIC_MEILISEARCH_KEY }}
+          envkey_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          envkey_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
+      - name: Set Node.js 22.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22.x
+  
+      - name: Install PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.18.2
+
+      - name: Install Dependencies
+        run: pnpm install  
+
+      - name: Install Dependencies
+        run: cd apps/sanity-gone && pnpm build  
+
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: ./apps/sanity-gone
+          command: pages deploy dist --project-name=sanity-gone-v3
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: print pages-deployment-alias-url
+        env:
+          DEPLOYMENT_ALIAS_URL: ${{ steps.deploy.outputs.pages-deployment-alias-url }}
+        run: echo $DEPLOYMENT_ALIAS_URL

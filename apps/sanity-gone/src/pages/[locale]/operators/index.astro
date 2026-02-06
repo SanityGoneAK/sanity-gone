@@ -30,9 +30,13 @@ const t = useTranslations(locale);
 ---
 
 <Layout title="Operator List">
-	<script slot="head" define: define:vars={{ locale }}>
+	<script slot="head" define:vars={{ locale }}>
 		window.locale = locale;
-		initializeFiltersFromUrl();
+	</script>
+	<script>
+		import { initializeFiltersFromUrl } from "./_store";
+
+		initializeFiltersFromUrl(null);
 	</script>
 
 	<meta slot="head" name="description" content="Browse all the operators in the game, and view all their details." />

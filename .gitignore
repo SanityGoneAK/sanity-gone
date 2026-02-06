@@ -39,3 +39,5 @@ packages/sanity-pack/flatc
 packages/sanity-pack/OpenArknightsFBS/
 
 packages/sanity-pack/gamedata/assets/
+
+apps/sanity-gone/.wrangler/

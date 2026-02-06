@@ -283,16 +283,13 @@ export const serializeFiltersToUrl = () => {
 export const initializeFiltersFromUrl = (
 	defaultSearchParams: URLSearchParams | null | undefined
 ) => {
-	console.log("initializeFiltersFromUrl", defaultSearchParams);
 	if (typeof window === "undefined" && !defaultSearchParams) {
 		return;
 	}
 
-	console.log("window.location.search", window.location.search);
 	const params = defaultSearchParams
 		? defaultSearchParams
 		: new URLSearchParams(window.location.search);
-	console.log(params);
 
 	const professions = params.get("professions");
 	$filterProfession.set(professions ? professions.split(",") : []);
