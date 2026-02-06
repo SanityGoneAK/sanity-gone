@@ -2,6 +2,8 @@ name: Code quality
 
 on:
   push:
+    branches-ignore:
+      - main
   pull_request:
 
 jobs:
@@ -34,6 +36,7 @@ jobs:
           envkey_PUBLIC_MEILISEARCH_KEY: ${{ secrets.PUBLIC_MEILISEARCH_KEY }}
           envkey_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           envkey_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
+          envkey_CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       - name: Set Node.js 22.x
         uses: actions/setup-node@v3
         with:
