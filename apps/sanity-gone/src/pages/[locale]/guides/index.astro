@@ -2,6 +2,7 @@
 import {getCollection, render} from 'astro:content';
 import Layout from "../../../layouts/Layout.astro";
 import {getPathByLocale, getRelativeLocaleUrl} from "astro:i18n";
+import { allLanguages, defaultLang } from "~/i18n/languages";
 import {localeStore} from "../_store";
 import TableOfContents from "../../../components/guides/TableOfContents.astro";
 import {slugify} from "../../../utils/strings";
