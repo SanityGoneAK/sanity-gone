@@ -17,8 +17,17 @@ guides = guides.map(guide => {
     return guide;
 }).sort((a, b) => b.data.date - a.data.date);
 
+export function getStaticPaths() {
+	return Object.keys(allLanguages).flatMap((lang) => {
+		return {
+			params: {
+				locale: lang,
+			},
+		};
+	});
+}
 
-export const prerender = false;
+export const prerender = true;
 ---
 <Layout title="Guides">
     <section class="mx-auto py-5 px-4 md:px-10 sm:py-auto max-w-[1000px]">

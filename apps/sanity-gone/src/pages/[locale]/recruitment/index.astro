@@ -16,7 +16,17 @@ import RecruitmentCalculator from "~/components/recruitment/RecruitmentCalculato
 const locale = getPathByLocale(Astro.currentLocale ?? defaultLang) as Locale;
 localeStore.set(locale);
 const queryParams = Object.fromEntries((new URL(Astro.request.url)).searchParams.entries());
-export const prerender = false;
+export function getStaticPaths() {
+	return Object.keys(allLanguages).flatMap((lang) => {
+		return {
+			params: {
+				locale: lang,
+			},
+		};
+	});
+}
+
+export const prerender = true;
 
 const t = useTranslations(locale);
 const languages = Object.entries(allLanguages).map(([key, language]) => {
