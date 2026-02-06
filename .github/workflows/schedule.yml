@@ -54,14 +54,15 @@ jobs:
           commit_author: "Sanity;Gone <actions@users.noreply.github.com>"
           commit_user_name: "Sanity;Gone 0"
           commit_author_email: "actions@users.noreply.github.com"
+
+      - name: Install Dependencies
+        run: cd apps/sanity-gone && pnpm build  
   
   build_and_deploy:
     runs-on: ubuntu-latest
     needs: download_and_update_data
     steps:
       - uses: actions/checkout@v4
-      - name: Install Dependencies
-        run: cd apps/sanity-gone && pnpm build  
 
       - uses: cloudflare/wrangler-action@v3
         with:
