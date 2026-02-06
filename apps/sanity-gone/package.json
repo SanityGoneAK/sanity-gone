@@ -10,8 +10,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "check": "cross-env NODE_OPTIONS=--max_old_space_size=8192 astro check",
-    "build": "astro build",
-    "preview": "NODE_OPTIONS='--max-old-space-size=8192' astro build && wrangler pages dev ./dist",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' astro build",
+    "preview": "NODE_OPTIONS='--max-old-space-size=8192' astro build && wrangler pages dev ./dist --live-reload",
     "deploy": "NODE_OPTIONS='--max-old-space-size=8192' astro build && wrangler pages deploy ./dist",
     "astro": "astro",
     "lint": "prettier --write .",
@@ -109,7 +109,8 @@
     "ts-node": "^10.9.2",
     "vite": "^7.3.1",
     "vite-tsconfig-paths": "^6.0.4",
-    "vitest": "^4.0.17"
+    "vitest": "^4.0.17",
+    "wrangler": "^4.50.0"
   },
   "packageManager": "pnpm@10.18.2"
 }
