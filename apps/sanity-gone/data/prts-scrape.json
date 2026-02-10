@@ -1727,6 +1727,22 @@
     "缇缇": {
       "isLimited": false,
       "releaseOrder": 432
+    },
+    "矩": {
+      "isLimited": false,
+      "releaseOrder": 433
+    },
+    "风絮": {
+      "isLimited": false,
+      "releaseOrder": 434
+    },
+    "赤刃明霄陈": {
+      "isLimited": false,
+      "releaseOrder": 435
+    },
+    "望": {
+      "isLimited": true,
+      "releaseOrder": 436
     }
   },
   "skinObtainSourceAndCosts": {
@@ -2775,6 +2791,41 @@
       "tokenType": "Originium Prime"
     },
     "char_4121_zuole@nian#11": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_2023_ling@nian#12": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_2015_dusk@nian#12": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_2026_yu@nian#12": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4052_surfer@nian#12": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4148_philae@nian#12": {
       "obtainSources": [
         "Outfit Store"
       ],
@@ -4895,6 +4946,20 @@
       ],
       "cost": null,
       "tokenType": null
+    },
+    "char_275_breeze@unveiling#4": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_452_bstalk@unveiling#4": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
     },
     "char_179_cgbird@sightseer#1": {
       "obtainSources": [

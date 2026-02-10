@@ -728,7 +728,7 @@
   "char_4182_oblvns": {
     "charId": "char_4182_oblvns",
     "name": "Togawa Sakiko",
-    "slug": "togawa-sakiko",
+    "slug": "sakiko-togawa",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -1818,7 +1818,7 @@
   "char_4184_dolris": {
     "charId": "char_4184_dolris",
     "name": "Misumi Uika",
-    "slug": "misumi-uika",
+    "slug": "uika-misumi",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -2530,7 +2530,7 @@
   "char_4183_mortis": {
     "charId": "char_4183_mortis",
     "name": "Wakaba Mutsumi",
-    "slug": "wakaba-mutsumi",
+    "slug": "mutsumi-wakaba",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2544,7 +2544,7 @@
   "char_4186_tmoris": {
     "charId": "char_4186_tmoris",
     "name": "Yahata Umiri",
-    "slug": "yahata-umiri",
+    "slug": "umiri-yahata",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2558,7 +2558,7 @@
   "char_4185_amoris": {
     "charId": "char_4185_amoris",
     "name": "Yūtenji Nyamu",
-    "slug": "yutenji-nyamu",
+    "slug": "nyamu-yutenji",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",

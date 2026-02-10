@@ -728,7 +728,7 @@
   "char_4182_oblvns": {
     "charId": "char_4182_oblvns",
     "name": "豊川祥子",
-    "slug": "togawa-sakiko",
+    "slug": "sakiko-togawa",
     "position": "MELEE",
     "rarity": 6,
     "profession": "WARRIOR",
@@ -1818,7 +1818,7 @@
   "char_4184_dolris": {
     "charId": "char_4184_dolris",
     "name": "三角初華",
-    "slug": "misumi-uika",
+    "slug": "uika-misumi",
     "position": "RANGED",
     "rarity": 5,
     "profession": "SUPPORT",
@@ -2530,7 +2530,7 @@
   "char_4183_mortis": {
     "charId": "char_4183_mortis",
     "name": "若葉睦",
-    "slug": "wakaba-mutsumi",
+    "slug": "mutsumi-wakaba",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2544,7 +2544,7 @@
   "char_4186_tmoris": {
     "charId": "char_4186_tmoris",
     "name": "八幡海鈴",
-    "slug": "yahata-umiri",
+    "slug": "umiri-yahata",
     "position": "MELEE",
     "rarity": 5,
     "profession": "SPECIAL",
@@ -2558,7 +2558,7 @@
   "char_4185_amoris": {
     "charId": "char_4185_amoris",
     "name": "祐天寺にゃむ",
-    "slug": "yutenji-nyamu",
+    "slug": "nyamu-yutenji",
     "position": "MELEE",
     "rarity": 5,
     "profession": "WARRIOR",
