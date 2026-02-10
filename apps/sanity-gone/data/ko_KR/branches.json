@@ -287,7 +287,7 @@
   "ritualist": {
     "branchName": "의식술사",
     "class": "Supporter",
-    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히고, <span class=\"keyword\">원소 손상</span>을 입힐 수 있으며, <span class=\"keyword\">배치 인원수</span> 제약을 받지 않지만, 재배치 시간이 매우 김"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히며, <span class=\"keyword\">원소 손상</span>을 입힐 수 있음, <span class=\"keyword\">배치 인원수</span> 제약을 받지 않지만, 재배치 시간이 매우 김"
   },
   "hunter": {
     "branchName": "사냥꾼",
@@ -317,7 +317,7 @@
   "primprotector": {
     "branchName": "프라이멀 프로텍터",
     "class": "Defender",
-    "trait": "적 3명 저지 가능, 공격 시 원소 손상을 입힘"
+    "trait": "적 3명 저지 가능, 공격 시 <span class=\"keyword\">원소 손상</span>을 입힐 수 있음"
   },
   "skywalker": {
     "branchName": "스카이레인저",
@@ -332,7 +332,7 @@
   "primguard": {
     "branchName": "프라이멀 가드",
     "class": "Guard",
-    "trait": "적 2명 저지 가능, 공격 시 <span class=\"keyword\">원소 대미지</span>를 입힘"
+    "trait": "적 2명 저지 가능, 공격 시 <span class=\"keyword\">원소 대미지</span>를 입힐 수 있음"
   },
   "counsellor": {
     "branchName": "책사",
@@ -348,5 +348,10 @@
     "branchName": "裂空炮手",
     "class": "Sniper",
     "trait": "部署后<span class=\"skill-tooltip\">起飞</span>，<span class=\"skill-tooltip\">起飞</span>后只攻击空中敌人；技能开启时降落且攻击造成<span class=\"keyword\">群体物理伤害</span>"
+  },
+  "watchman": {
+    "branchName": "守望者",
+    "class": "Medic",
+    "trait": "恢复友方单位生命，并且可以<span class=\"skill-tooltip\">起飞</span>"
   }
 }

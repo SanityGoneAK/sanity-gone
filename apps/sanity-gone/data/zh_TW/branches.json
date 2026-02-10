@@ -348,5 +348,10 @@
     "branchName": "裂空炮手",
     "class": "Sniper",
     "trait": "部署后<span class=\"skill-tooltip\">起飞</span>，<span class=\"skill-tooltip\">起飞</span>后只攻击空中敌人；技能开启时降落且攻击造成<span class=\"keyword\">群体物理伤害</span>"
+  },
+  "watchman": {
+    "branchName": "守望者",
+    "class": "Medic",
+    "trait": "恢复友方单位生命，并且可以<span class=\"skill-tooltip\">起飞</span>"
   }
 }

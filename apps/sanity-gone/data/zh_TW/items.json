@@ -2919,6 +2919,22 @@
     "usage": "用于提升摆渡人的潜能。",
     "rarity": 5
   },
+  "p_char_4221_ju": {
+    "itemId": "p_char_4221_ju",
+    "name": "矩的信物",
+    "iconId": "p_char_4221_ju",
+    "description": "一套尺规，矩总说没人比他更擅长画圆，他想让你也拥有这份并不起眼的能力，毕竟世事总会在不起眼当中展现真知，不是吗？",
+    "usage": "用于提升矩的潜能。",
+    "rarity": 5
+  },
+  "p_char_4222_taraxa": {
+    "itemId": "p_char_4222_taraxa",
+    "name": "风絮的信物",
+    "iconId": "p_char_4222_taraxa",
+    "description": "一朵未飘散的蒲公英，由风絮在前往罗德岛的途中采得。其下的纸条上备注着一行小字：不可入药。",
+    "usage": "用于提升风絮的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "能天使的信物",
@@ -3901,6 +3917,22 @@
     "iconId": "p_char_4056_titi",
     "description": "一块正反面都没有任何痕迹的空白陶片。缇缇将它交给你保管，你可以在必要时拿给她看，让她保持谦卑和警醒。",
     "usage": "用于提升缇缇的潜能。",
+    "rarity": 6
+  },
+  "p_char_2027_wang": {
+    "itemId": "p_char_2027_wang",
+    "name": "望的信物",
+    "iconId": "p_char_2027_wang",
+    "description": "一块乌黑发亮的小石头。你试着把它磨成棋子，突如其来的撕裂感让你停下了手上的动作。",
+    "usage": "用于提升望的潜能。",
+    "rarity": 6
+  },
+  "p_char_1050_chen3": {
+    "itemId": "p_char_1050_chen3",
+    "name": "赤刃明霄陈的信物",
+    "iconId": "p_char_1050_chen3",
+    "description": "一枚铜制剑格，朴实无华，为实战防护而铸。常见于炎国武侠故事中，承载着许多人年少时的憧憬。",
+    "usage": "用于提升赤刃明霄陈的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
