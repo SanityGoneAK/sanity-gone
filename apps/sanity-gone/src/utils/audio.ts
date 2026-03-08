@@ -1,7 +1,7 @@
 import type { Locale } from "~/i18n/languages";
 
 const baseURL =
-	"https://penguacestergonenemypresslabdbdareprts.sanitygone.help";
+	"https://penguacestergonenemypresslabdbdareprtsterradragonsheets.stinggy.com";
 
 export const operatorVoiceLine = (
 	locale: Locale | "custom",
