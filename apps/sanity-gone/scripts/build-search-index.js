@@ -49,14 +49,14 @@ export async function buildSearchIndex() {
 				type: "operator",
 				charId: op.charId,
 				name: Object.fromEntries(
-					["zh_CN", "en_US", "ja_JP", "ko_KR", "zh_TW"].map((locale) => [
+					["zh_CN", "en_US", "ja_JP", "ko_KR"].map((locale) => [
 						locale,
 						OPERATOR_LOCALES[locale][op.charId].name,
 					])
 				),
 				class: professionToClass(op.profession),
 				subclass: Object.fromEntries(
-					["zh_CN", "en_US", "ja_JP", "ko_KR", "zh_TW"].map((locale) => [
+					["zh_CN", "en_US", "ja_JP", "ko_KR"].map((locale) => [
 						locale,
 						subProfessionIdToBranch(op.subProfessionId, locale),
 					])
@@ -85,7 +85,7 @@ export async function buildSearchIndex() {
 			objectID: branchName,
 			type: "branch",
 			name: Object.fromEntries(
-				["zh_CN", "en_US", "ja_JP", "ko_KR", "zh_TW"].map((locale) => [
+				["zh_CN", "en_US", "ja_JP", "ko_KR"].map((locale) => [
 					locale,
 					BRANCH_LOCALES[locale][branchName].branchName,
 				])

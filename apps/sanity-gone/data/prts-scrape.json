@@ -1743,6 +1743,14 @@
     "望": {
       "isLimited": true,
       "releaseOrder": 436
+    },
+    "复奏": {
+      "isLimited": false,
+      "releaseOrder": 437
+    },
+    "贝洛内": {
+      "isLimited": false,
+      "releaseOrder": 438
     }
   },
   "skinObtainSourceAndCosts": {
@@ -2595,6 +2603,13 @@
       "tokenType": "Originium Prime"
     },
     "char_253_greyy@epoque#515": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
+    "char_4023_rfalcn@epoque#52": {
       "obtainSources": [
         "Event"
       ],
@@ -4871,6 +4886,27 @@
       "tokenType": "Originium Prime"
     },
     "char_4163_rosesa@game#7": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_1043_leizi2@game#8": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4195_radian@game#8": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4139_papyrs@game#8": {
       "obtainSources": [
         "Outfit Store"
       ],

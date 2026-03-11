@@ -2935,6 +2935,14 @@
     "usage": "用于提升风絮的潜能。",
     "rarity": 5
   },
+  "p_char_4031_liesel": {
+    "itemId": "p_char_4031_liesel",
+    "name": "复奏的信物",
+    "iconId": "p_char_4031_liesel",
+    "description": "一张手绘的乐团工作人员通行证。复奏郑重其事地将它交给你，并承诺你，凭借此证，你可以免费欣赏乐团的所有演出。",
+    "usage": "用于提升复奏的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "エクシアの印",
@@ -3933,6 +3941,14 @@
     "iconId": "p_char_1050_chen3",
     "description": "一枚铜制剑格，朴实无华，为实战防护而铸。常见于炎国武侠故事中，承载着许多人年少时的憧憬。",
     "usage": "用于提升赤刃明霄陈的潜能。",
+    "rarity": 6
+  },
+  "p_char_4037_demetr": {
+    "itemId": "p_char_4037_demetr",
+    "name": "贝洛内的信物",
+    "iconId": "p_char_4037_demetr",
+    "description": "一把锋利的匕首，它可以用来刺杀，可以用来斗殴，可以用来威吓，当然，也可以用来削苹果。",
+    "usage": "用于提升贝洛内的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
