@@ -616,7 +616,7 @@
       "isLimited": false,
       "releaseOrder": 154
     },
-    "预备干员-近战": {
+    "预备干员-术师": {
       "isLimited": false,
       "releaseOrder": 155
     },
@@ -624,7 +624,7 @@
       "isLimited": false,
       "releaseOrder": 156
     },
-    "预备干员-术师": {
+    "预备干员-近战": {
       "isLimited": false,
       "releaseOrder": 157
     },
@@ -1464,59 +1464,59 @@
       "isLimited": false,
       "releaseOrder": 366
     },
-    "预备干员-特种(卫戍协议)": {
+    "预备干员-术师(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 367
     },
-    "预备干员-辅助(卫戍协议)": {
+    "预备干员-特种(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 368
     },
-    "预备干员-近卫(卫戍协议)": {
+    "预备干员-狙击(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 369
     },
-    "预备干员-重装(卫戍协议)": {
+    "预备干员-辅助(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 370
     },
-    "预备干员-术师(卫戍协议)": {
+    "预备干员-近卫(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 371
     },
-    "预备干员-狙击(卫戍协议)": {
+    "预备干员-重装(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 372
     },
-    "Pith(卫戍协议)": {
+    "Mechanist(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 373
     },
-    "Stormeye(卫戍协议)": {
+    "Misery(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 374
     },
-    "Touch(卫戍协议)": {
+    "Pith(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 375
     },
-    "郁金香(卫戍协议)": {
+    "Sharp(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 376
     },
-    "Mechanist(卫戍协议)": {
+    "Raidian(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 377
     },
-    "Sharp(卫戍协议)": {
+    "Stormeye(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 378
     },
-    "Raidian(卫戍协议)": {
+    "Touch(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 379
     },
-    "Misery(卫戍协议)": {
+    "郁金香(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 380
     },
