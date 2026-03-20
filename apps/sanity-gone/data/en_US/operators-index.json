@@ -1905,7 +1905,7 @@
   },
   "char_4207_branch": {
     "charId": "char_4207_branch",
-    "name": "Веточки",
+    "name": "Vetochki",
     "slug": "vetochki",
     "position": "MELEE",
     "rarity": 5,
@@ -4453,7 +4453,7 @@
   },
   "char_4208_wintim": {
     "charId": "char_4208_wintim",
-    "name": "Снегурочка",
+    "name": "Snegurochka",
     "slug": "snegurochka",
     "position": "MELEE",
     "rarity": 4,

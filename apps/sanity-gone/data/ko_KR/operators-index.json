@@ -113,7 +113,7 @@
   },
   "char_4204_mantra": {
     "charId": "char_4204_mantra",
-    "name": "Mantra",
+    "name": "만트라",
     "slug": "mantra",
     "position": "RANGED",
     "rarity": 6,
@@ -1905,7 +1905,7 @@
   },
   "char_4207_branch": {
     "charId": "char_4207_branch",
-    "name": "Веточки",
+    "name": "베토치키",
     "slug": "vetochki",
     "position": "MELEE",
     "rarity": 5,
@@ -4453,7 +4453,7 @@
   },
   "char_4208_wintim": {
     "charId": "char_4208_wintim",
-    "name": "Снегурочка",
+    "name": "스네구로치카",
     "slug": "snegurochka",
     "position": "MELEE",
     "rarity": 4,

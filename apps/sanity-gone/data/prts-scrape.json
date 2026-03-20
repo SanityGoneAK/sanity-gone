@@ -3505,6 +3505,13 @@
       "cost": null,
       "tokenType": null
     },
+    "char_185_frncat@marthe#12": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
     "char_179_cgbird@witch#1": {
       "obtainSources": [
         "Outfit Store"
