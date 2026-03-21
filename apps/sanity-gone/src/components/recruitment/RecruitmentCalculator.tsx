@@ -155,7 +155,7 @@ const RecruitmentCalculator: React.FC<Props> = ({languages}) => {
       getTagCombinations(selectedTags.sort())
         .map((tags) => recruitmentData[`${tags}` as keyof typeof recruitmentData])
         .filter((result) => result != null),
-    [selectedTags]
+    [selectedTags, recruitmentData]
   );
 
   const handleSelectChange = (selectedOptions: any) => {

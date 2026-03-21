@@ -20,7 +20,7 @@ import {moduleTypeImage} from "~/utils/images.ts";
 interface ModuleRecommendation {
     charId: string
     moduleType: string;
-    recommended: boolean|"maybe";
+    recommended: boolean|"maybe"|"n/a";
     recommendedLevel?: number;
 }
 
@@ -103,6 +103,7 @@ const ModuleRecommendation = ({charId, moduleType, recommended, recommendedLevel
                             <h3 className="text-neutral-200 text-lg">Rating</h3>
                             {recommended === true && <p className="text-lg font-semibold">Yes</p>}
                             {recommended === 'maybe' && <p className="text-lg font-semibold">Maybe</p>}
+                            {recommended === 'n/a' && <p className="text-lg font-semibold">N/A</p>}
                             {!recommended && <p className="text-lg font-semibold">Not Recommended</p>}
                         </div>
                         {(recommended && recommendedLevel) && <div className="grid grid-cols-[1fr_auto] items-center gap-2 md:ml-3">
