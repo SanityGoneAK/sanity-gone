@@ -2616,6 +2616,13 @@
       "cost": null,
       "tokenType": null
     },
+    "char_4177_brigid@epoque#53": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_120_hibisc@nian#1": {
       "obtainSources": [
         "Outfit Store"
