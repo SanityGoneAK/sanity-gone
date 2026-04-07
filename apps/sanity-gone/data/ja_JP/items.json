@@ -2943,6 +2943,22 @@
     "usage": "用于提升复奏的潜能。",
     "rarity": 5
   },
+  "p_char_4224_turdus": {
+    "itemId": "p_char_4224_turdus",
+    "name": "乌啾的信物",
+    "iconId": "p_char_4224_turdus",
+    "description": "一颗乌黑发亮的玻璃球，不知道是怎么烧成的，沉甸甸，圆滚滚。乌啾说，这是她的珍藏，不准输给别人。",
+    "usage": "用于提升乌啾的潜能。",
+    "rarity": 5
+  },
+  "p_char_4223_botany": {
+    "itemId": "p_char_4223_botany",
+    "name": "伯塔尼的信物",
+    "iconId": "p_char_4223_botany",
+    "description": "一种可折叠的微型天线，又似乎是一个发夹？伯塔尼将它交给你时没做任何解释，只是偷偷笑了一下。",
+    "usage": "用于提升伯塔尼的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "エクシアの印",
@@ -3951,6 +3967,14 @@
     "usage": "用于提升贝洛内的潜能。",
     "rarity": 6
   },
+  "p_char_1051_headb2": {
+    "itemId": "p_char_1051_headb2",
+    "name": "怒潮凛冬的信物",
+    "iconId": "p_char_1051_headb2",
+    "description": "一块碎石，似乎曾是某座雕像的一部分。凛冬说，她在这块石头上押注了许多，她相信这会是一个时代的开端。",
+    "usage": "用于提升怒潮凛冬的潜能。",
+    "rarity": 6
+  },
   "class_p_char_123_fang": {
     "itemId": "class_p_char_123_fang",
     "name": "フェンの印（中堅）",
@@ -4437,6 +4461,14 @@
     "iconId": "class_p_char_4107_vrdant",
     "description": "雑草のような小さな植物だが、彼にとっては特別な意味を持つ。草の葉には鋭い切れ込みが入っているが、どうか怖がらないでほしい。それはあなたを傷つけるためのものではない。",
     "usage": "ヴァーダントの潜在能力強化に用いられる。",
+    "rarity": 4
+  },
+  "class_p_char_4130_luton": {
+    "itemId": "class_p_char_4130_luton",
+    "name": "露托的中坚信物",
+    "iconId": "class_p_char_4130_luton",
+    "description": "一条褪色的浅黄色丝巾，然而其中的回忆不会褪色。她想象着人们如何将丝巾系在她的墓碑上，一如分别那天，母亲将丝巾系在她的胸前。",
+    "usage": "用于提升露托的潜能。",
     "rarity": 4
   },
   "class_p_char_128_plosis": {
@@ -4927,6 +4959,62 @@
     "usage": "オーロラの潜在能力強化に用いられる。",
     "rarity": 5
   },
+  "class_p_char_476_blkngt": {
+    "itemId": "class_p_char_476_blkngt",
+    "name": "夜半的中坚信物",
+    "iconId": "class_p_char_476_blkngt",
+    "description": "一顶针织睡帽。制作手法粗糙，但触感很柔软。",
+    "usage": "用于提升夜半的潜能。",
+    "rarity": 5
+  },
+  "class_p_char_492_quercu": {
+    "itemId": "class_p_char_492_quercu",
+    "name": "夏栎的中坚信物",
+    "iconId": "class_p_char_492_quercu",
+    "description": "一个只有土的空花盆。那是她从家乡带来的泥土，有闲心的时候可以去找她要几粒种子。",
+    "usage": "用于提升夏栎的潜能。",
+    "rarity": 5
+  },
+  "class_p_char_4016_kazema": {
+    "itemId": "class_p_char_4016_kazema",
+    "name": "风丸的中坚信物",
+    "iconId": "class_p_char_4016_kazema",
+    "description": "一串颜色鲜亮、悉索作响的小挂饰，风丸亲手制作。",
+    "usage": "用于提升风丸的潜能。",
+    "rarity": 5
+  },
+  "class_p_char_4040_rockr": {
+    "itemId": "class_p_char_4040_rockr",
+    "name": "洛洛的中坚信物",
+    "iconId": "class_p_char_4040_rockr",
+    "description": "一把制作简陋的小剪刀，罕有用途。剪刀用于剪断牵绊，她守在过去，想要目送你走向未来。",
+    "usage": "用于提升洛洛的潜能。",
+    "rarity": 5
+  },
+  "class_p_char_433_windft": {
+    "itemId": "class_p_char_433_windft",
+    "name": "掠风的中坚信物",
+    "iconId": "class_p_char_433_windft",
+    "description": "一盒耐磨创可贴，掠风随身携带的物品。用到被磨破为止，多一个厚茧，少一块创可贴。",
+    "usage": "用于提升掠风的潜能。",
+    "rarity": 5
+  },
+  "class_p_char_1024_hbisc2": {
+    "itemId": "class_p_char_1024_hbisc2",
+    "name": "濯尘芙蓉的中坚信物",
+    "iconId": "class_p_char_1024_hbisc2",
+    "description": "一朵用纸折成的小花。在每一位即将出院的病人的床边留下这样一个小小的纪念品，已经成了芙蓉的习惯。",
+    "usage": "用于提升濯尘芙蓉的潜能。",
+    "rarity": 5
+  },
+  "class_p_char_1027_greyy2": {
+    "itemId": "class_p_char_1027_greyy2",
+    "name": "承曦格雷伊的中坚信物",
+    "iconId": "class_p_char_1027_greyy2",
+    "description": "一篇答辩论文。寥寥数张纸，描绘着年轻的佩洛这几年的心路。",
+    "usage": "用于提升承曦格雷伊的潜能。",
+    "rarity": 5
+  },
   "class_p_char_103_angel": {
     "itemId": "class_p_char_103_angel",
     "name": "エクシアの印（中堅）",
@@ -5253,6 +5341,62 @@
     "iconId": "class_p_char_206_gnosis",
     "description": "ロドスにやってきてから彼が手ずから鍛えた護身用の短剣。ずっと後に、これがエーデルワイス家の者が友情を示す方法であると知った。",
     "usage": "ノーシスの潜在能力強化に用いられる。",
+    "rarity": 6
+  },
+  "class_p_char_322_lmlee": {
+    "itemId": "class_p_char_322_lmlee",
+    "name": "老鲤的中坚信物",
+    "iconId": "class_p_char_322_lmlee",
+    "description": "一块外形古朴的环形玉佩，你无法判断它的价值。",
+    "usage": "用于提升老鲤的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_377_gdglow": {
+    "itemId": "class_p_char_377_gdglow",
+    "name": "澄闪的中坚信物",
+    "iconId": "class_p_char_377_gdglow",
+    "description": "一瓶特制润肤露，听说涂抹之后能有效减少静电的发生。\n就算不行，至少对皮肤有好处。",
+    "usage": "用于提升澄闪的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_300_phenxi": {
+    "itemId": "class_p_char_300_phenxi",
+    "name": "菲亚梅塔的中坚信物",
+    "iconId": "class_p_char_300_phenxi",
+    "description": "一枚子弹形的榛果棒，拉特兰公证所非官方补给。\n听说是教宗阁下的最爱，虽然拉特兰所有甜点都是这么宣称的。",
+    "usage": "用于提升菲亚梅塔的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_4039_horn": {
+    "itemId": "class_p_char_4039_horn",
+    "name": "号角的中坚信物",
+    "iconId": "class_p_char_4039_horn",
+    "description": "一本备忘录。第一页上工整地写着许多乐器的名字。她分享给你的是情报，也是回忆。",
+    "usage": "用于提升号角的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_4009_irene": {
+    "itemId": "class_p_char_4009_irene",
+    "name": "艾丽妮的中坚信物",
+    "iconId": "class_p_char_4009_irene",
+    "description": "一小块赭色礁石，在被交给你之前，它已经在伊比利亚的海岸线上经历了上百年的洗礼。  ",
+    "usage": "用于提升艾丽妮的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_4046_ebnhlz": {
+    "itemId": "class_p_char_4046_ebnhlz",
+    "name": "黑键的中坚信物",
+    "iconId": "class_p_char_4046_ebnhlz",
+    "description": "一枚钻了孔的莱塔尼亚硬币，打孔的工艺还十分粗糙。只有他知道自己为那个熟练工手到擒来的孔流了多少汗水。",
+    "usage": "用于提升黑键的潜能。",
+    "rarity": 6
+  },
+  "class_p_char_4048_doroth": {
+    "itemId": "class_p_char_4048_doroth",
+    "name": "多萝西的中坚信物",
+    "iconId": "class_p_char_4048_doroth",
+    "description": "一管不明试剂。和流淌在她体内的东西相同。永远别用它。",
+    "usage": "用于提升多萝西的潜能。",
     "rarity": 6
   },
   "voucher_vigil": {
