@@ -4532,6 +4532,20 @@
       "cost": 0,
       "tokenType": "Originium Prime"
     },
+    "char_350_surtr@ambienceSynesthesia#6": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4146_nymph@ambienceSynesthesia#6": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_103_angel@kfc#1": {
       "obtainSources": [
         "Real-world Promotion"
