@@ -2,7 +2,7 @@
   "pioneer": {
     "branchName": "先駆兵",
     "class": "Vanguard",
-    "trait": "敵を2体までブロック<br><span class=\"keyword\">配置可能数</span>にカウントされない、再配置までの時間が極めて長い"
+    "trait": "敵を2体までブロック<br><span class=\"keyword\">配置可能数</span>にカウントされない<br>再配置までの時間が極めて長い"
   },
   "charger": {
     "branchName": "突撃兵",
@@ -340,9 +340,9 @@
     "trait": "敵を2体までブロック<br>配置待機エリアの味方ユニットを強化可能"
   },
   "mercenary": {
-    "branchName": "佣兵",
+    "branchName": "傭兵",
     "class": "Guard",
-    "trait": "可消耗部署费用来强化作战能力"
+    "trait": "コストを消費して戦闘能力を強化できる"
   },
   "skybreaker": {
     "branchName": "裂空炮手",

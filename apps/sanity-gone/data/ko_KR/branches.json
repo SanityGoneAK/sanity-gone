@@ -340,9 +340,9 @@
     "trait": "적 2명 저지 가능, 배치 구역의 아군 유닛 지원 가능"
   },
   "mercenary": {
-    "branchName": "佣兵",
+    "branchName": "용병",
     "class": "Guard",
-    "trait": "可消耗部署费用来强化作战能力"
+    "trait": "배치 코스트를 소모해 작전 능력 강화"
   },
   "skybreaker": {
     "branchName": "裂空炮手",

@@ -85,7 +85,7 @@
   },
   "char_1045_svash2": {
     "charId": "char_1045_svash2",
-    "name": "SilverAsh the Reignfrost",
+    "name": "실버애쉬 더 레인프로스트",
     "slug": "silverash-the-reignfrost",
     "position": "MELEE",
     "rarity": 6,
@@ -99,7 +99,7 @@
   },
   "char_1046_sbell2": {
     "charId": "char_1046_sbell2",
-    "name": "Pramanix the Prerita",
+    "name": "프라마닉스 더 프레리타",
     "slug": "pramanix-the-prerita",
     "position": "RANGED",
     "rarity": 6,
@@ -113,7 +113,7 @@
   },
   "char_1047_halo2": {
     "charId": "char_1047_halo2",
-    "name": "Astgenne the Lightchaser",
+    "name": "아스트젠 더 라이트체이서",
     "slug": "astgenne-the-lightchaser",
     "position": "RANGED",
     "rarity": 6,
@@ -1919,7 +1919,7 @@
   },
   "char_4211_snhunt": {
     "charId": "char_4211_snhunt",
-    "name": "Snow Hunter",
+    "name": "스노우헌터",
     "slug": "snow-hunter",
     "position": "RANGED",
     "rarity": 5,
@@ -1933,7 +1933,7 @@
   },
   "char_394_hadiya": {
     "charId": "char_394_hadiya",
-    "name": "Hadiya",
+    "name": "하디야",
     "slug": "hadiya",
     "position": "MELEE",
     "rarity": 5,
@@ -4481,7 +4481,7 @@
   },
   "char_4051_akkord": {
     "charId": "char_4051_akkord",
-    "name": "Akkord",
+    "name": "아코르트",
     "slug": "akkord",
     "position": "RANGED",
     "rarity": 4,
