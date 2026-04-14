@@ -340,9 +340,9 @@
     "trait": "Blocks 2 enemies, and can support allies in the Deployment Waiting Zone"
   },
   "mercenary": {
-    "branchName": "佣兵",
+    "branchName": "Mercenary",
     "class": "Guard",
-    "trait": "可消耗部署费用来强化作战能力"
+    "trait": "Can spend DP to strengthen combat abilities"
   },
   "skybreaker": {
     "branchName": "裂空炮手",
