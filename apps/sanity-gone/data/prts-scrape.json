@@ -1942,6 +1942,13 @@
       "cost": 0,
       "tokenType": "Originium Prime"
     },
+    "char_230_savage@sale#17": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
     "char_208_melan@epoque#1": {
       "obtainSources": [
         "Event"
@@ -4540,6 +4547,27 @@
       "tokenType": "Originium Prime"
     },
     "char_4146_nymph@ambienceSynesthesia#6": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_202_demkni@ambienceSynesthesia#7": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4193_lemuen@ambienceSynesthesia#7": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_450_necras@ambienceSynesthesia#7": {
       "obtainSources": [
         "Outfit Store"
       ],
