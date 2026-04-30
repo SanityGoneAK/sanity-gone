@@ -137,7 +137,7 @@
   "corecaster": {
     "branchName": "中坚术师",
     "class": "Caster",
-    "trait": "攻击造成<span class=\"keyword\">法术伤害</span>"
+    "trait": "攻击造成<span class=\"keyword\">法术伤害</span>，且不受<span class=\"keyword\">部署数量</span>限制，但再部署时间极长"
   },
   "splashcaster": {
     "branchName": "扩散术师",
