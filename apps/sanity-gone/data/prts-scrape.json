@@ -1763,6 +1763,26 @@
     "怒潮凛冬": {
       "isLimited": false,
       "releaseOrder": 441
+    },
+    "GALLUS²": {
+      "isLimited": false,
+      "releaseOrder": 442
+    },
+    "裂响": {
+      "isLimited": false,
+      "releaseOrder": 443
+    },
+    "维伊": {
+      "isLimited": false,
+      "releaseOrder": 444
+    },
+    "可露希尔": {
+      "isLimited": false,
+      "releaseOrder": 445
+    },
+    "凯尔希·思衡托": {
+      "isLimited": true,
+      "releaseOrder": 446
     }
   },
   "skinObtainSourceAndCosts": {
