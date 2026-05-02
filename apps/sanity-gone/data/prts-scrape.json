@@ -2662,6 +2662,13 @@
       "cost": 0,
       "tokenType": "Originium Prime"
     },
+    "char_446_aroma@epoque#54": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
     "char_120_hibisc@nian#1": {
       "obtainSources": [
         "Outfit Store"
@@ -4356,6 +4363,20 @@
       "cost": null,
       "tokenType": null
     },
+    "char_4179_monstr@boc#11": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4187_graceb@boc#11": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_248_mgllan@kitchen#1": {
       "obtainSources": [
         "Outfit Store"
@@ -5044,6 +5065,27 @@
       "tokenType": "Originium Prime"
     },
     "char_1502_crosly@iteration#5": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_1041_angel2@iteration#6": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4202_haruka@iteration#6": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
+    "char_4173_nowell@iteration#6": {
       "obtainSources": [
         "Outfit Store"
       ],
