@@ -10,7 +10,7 @@
     "alterId": null,
     "baseOperatorId": "char_003_kalts",
     "isLimited": true,
-    "releaseOrder": 446,
+    "releaseOrder": 447,
     "gender": "Female"
   },
   "char_4228_closur": {
@@ -24,7 +24,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 445,
+    "releaseOrder": 446,
     "gender": "Female"
   },
   "char_4226_veen": {
@@ -38,7 +38,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 444,
+    "releaseOrder": 445,
     "gender": "Male"
   },
   "char_1051_headb2": {
@@ -52,7 +52,7 @@
     "alterId": null,
     "baseOperatorId": "char_115_headbr",
     "isLimited": false,
-    "releaseOrder": 441,
+    "releaseOrder": 442,
     "gender": "Female"
   },
   "char_4037_demetr": {
@@ -66,7 +66,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 438,
+    "releaseOrder": 439,
     "gender": "Male"
   },
   "char_2027_wang": {
@@ -80,7 +80,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
-    "releaseOrder": 436,
+    "releaseOrder": 437,
     "gender": "Male"
   },
   "char_1050_chen3": {
@@ -94,7 +94,7 @@
     "alterId": null,
     "baseOperatorId": "char_010_chen",
     "isLimited": false,
-    "releaseOrder": 435,
+    "releaseOrder": 436,
     "gender": "Female"
   },
   "char_4056_titi": {
@@ -108,7 +108,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 432,
+    "releaseOrder": 433,
     "gender": "Female"
   },
   "char_4212_nasti": {
@@ -122,7 +122,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 429,
+    "releaseOrder": 430,
     "gender": "Female"
   },
   "char_1045_svash2": {
@@ -136,7 +136,7 @@
     "alterId": null,
     "baseOperatorId": "char_172_svrash",
     "isLimited": true,
-    "releaseOrder": 424,
+    "releaseOrder": 425,
     "gender": "Male"
   },
   "char_1046_sbell2": {
@@ -150,7 +150,7 @@
     "alterId": null,
     "baseOperatorId": "char_174_slbell",
     "isLimited": false,
-    "releaseOrder": 423,
+    "releaseOrder": 424,
     "gender": "Female"
   },
   "char_1047_halo2": {
@@ -164,7 +164,7 @@
     "alterId": null,
     "baseOperatorId": "char_135_halo",
     "isLimited": false,
-    "releaseOrder": 422,
+    "releaseOrder": 423,
     "gender": "Female"
   },
   "char_4204_mantra": {
@@ -178,7 +178,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 418,
+    "releaseOrder": 419,
     "gender": "Female"
   },
   "char_4182_oblvns": {
@@ -192,7 +192,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 415,
+    "releaseOrder": 416,
     "gender": "Female"
   },
   "char_1044_hsgma2": {
@@ -206,7 +206,7 @@
     "alterId": null,
     "baseOperatorId": "char_136_hsguma",
     "isLimited": true,
-    "releaseOrder": 410,
+    "releaseOrder": 411,
     "gender": "Female"
   },
   "char_4202_haruka": {
@@ -220,7 +220,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 409,
+    "releaseOrder": 410,
     "gender": "Female"
   },
   "char_4195_radian": {
@@ -234,7 +234,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 406,
+    "releaseOrder": 407,
     "gender": "Female"
   },
   "char_1043_leizi2": {
@@ -248,7 +248,7 @@
     "alterId": null,
     "baseOperatorId": "char_306_leizi",
     "isLimited": false,
-    "releaseOrder": 405,
+    "releaseOrder": 406,
     "gender": "Female"
   },
   "char_1042_phatm2": {
@@ -262,7 +262,7 @@
     "alterId": null,
     "baseOperatorId": "char_250_phatom",
     "isLimited": false,
-    "releaseOrder": 403,
+    "releaseOrder": 404,
     "gender": "Male"
   },
   "char_1041_angel2": {
@@ -276,7 +276,7 @@
     "alterId": null,
     "baseOperatorId": "char_103_angel",
     "isLimited": true,
-    "releaseOrder": 400,
+    "releaseOrder": 401,
     "gender": "Female"
   },
   "char_4193_lemuen": {
@@ -290,7 +290,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 399,
+    "releaseOrder": 400,
     "gender": "Female"
   },
   "char_4194_rmixer": {
@@ -304,7 +304,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 398,
+    "releaseOrder": 399,
     "gender": "Male"
   },
   "char_4179_monstr": {
@@ -318,7 +318,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 395,
+    "releaseOrder": 396,
     "gender": "Female"
   },
   "char_450_necras": {
@@ -332,7 +332,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 392,
+    "releaseOrder": 393,
     "gender": "Female"
   },
   "char_4010_etlchi": {
@@ -346,7 +346,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 389,
+    "releaseOrder": 390,
     "gender": "Female"
   },
   "char_2026_yu": {
@@ -360,7 +360,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": true,
-    "releaseOrder": 387,
+    "releaseOrder": 388,
     "gender": "Male"
   },
   "char_1040_blaze2": {
@@ -374,7 +374,7 @@
     "alterId": null,
     "baseOperatorId": "char_017_huang",
     "isLimited": false,
-    "releaseOrder": 386,
+    "releaseOrder": 387,
     "gender": "Female"
   },
   "char_1039_thorn2": {
@@ -388,7 +388,7 @@
     "alterId": null,
     "baseOperatorId": "char_293_thorns",
     "isLimited": false,
-    "releaseOrder": 383,
+    "releaseOrder": 384,
     "gender": "Male"
   },
   "char_1038_whitw2": {
@@ -1844,7 +1844,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 443,
+    "releaseOrder": 444,
     "gender": "Female"
   },
   "char_4224_turdus": {
@@ -1858,7 +1858,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 440,
+    "releaseOrder": 441,
     "gender": "Female"
   },
   "char_4223_botany": {
@@ -1872,7 +1872,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 439,
+    "releaseOrder": 440,
     "gender": "Female"
   },
   "char_4031_liesel": {
@@ -1886,7 +1886,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 437,
+    "releaseOrder": 438,
     "gender": "Female"
   },
   "char_4222_taraxa": {
@@ -1900,7 +1900,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 434,
+    "releaseOrder": 435,
     "gender": "Male"
   },
   "char_4221_ju": {
@@ -1914,7 +1914,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 433,
+    "releaseOrder": 434,
     "gender": "Male"
   },
   "char_1022_flwr2": {
@@ -1928,7 +1928,7 @@
     "alterId": null,
     "baseOperatorId": "char_181_flower",
     "isLimited": false,
-    "releaseOrder": 431,
+    "releaseOrder": 432,
     "gender": "Female"
   },
   "char_4166_varkis": {
@@ -1942,7 +1942,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 430,
+    "releaseOrder": 431,
     "gender": "Male"
   },
   "char_4214_cairn": {
@@ -1956,7 +1956,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 428,
+    "releaseOrder": 429,
     "gender": "Female"
   },
   "char_4213_skybx": {
@@ -1970,7 +1970,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 427,
+    "releaseOrder": 428,
     "gender": "Male"
   },
   "char_4211_snhunt": {
@@ -1984,7 +1984,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 421,
+    "releaseOrder": 422,
     "gender": "Female"
   },
   "char_394_hadiya": {
@@ -1998,7 +1998,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 420,
+    "releaseOrder": 421,
     "gender": "Female"
   },
   "char_4207_branch": {
@@ -2012,7 +2012,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 417,
+    "releaseOrder": 418,
     "gender": "Female"
   },
   "char_4184_dolris": {
@@ -2026,7 +2026,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 414,
+    "releaseOrder": 415,
     "gender": "Female"
   },
   "char_4183_mortis": {
@@ -2040,7 +2040,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 413,
+    "releaseOrder": 414,
     "gender": "Female"
   },
   "char_4186_tmoris": {
@@ -2054,7 +2054,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 412,
+    "releaseOrder": 413,
     "gender": "Female"
   },
   "char_4185_amoris": {
@@ -2068,7 +2068,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 411,
+    "releaseOrder": 412,
     "gender": "Female"
   },
   "char_4203_kichi": {
@@ -2082,7 +2082,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 408,
+    "releaseOrder": 409,
     "gender": "Female"
   },
   "char_4199_makiri": {
@@ -2096,7 +2096,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 407,
+    "releaseOrder": 408,
     "gender": "Male"
   },
   "char_4196_reckpr": {
@@ -2110,7 +2110,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 404,
+    "releaseOrder": 405,
     "gender": "Male"
   },
   "char_4191_tippi": {
@@ -2124,7 +2124,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 402,
+    "releaseOrder": 403,
     "gender": "Female"
   },
   "char_4198_christ": {
@@ -2138,7 +2138,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 401,
+    "releaseOrder": 402,
     "gender": "Other"
   },
   "char_4187_graceb": {
@@ -2152,7 +2152,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 397,
+    "releaseOrder": 398,
     "gender": "Female"
   },
   "char_4178_alanna": {
@@ -2166,7 +2166,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 394,
+    "releaseOrder": 395,
     "gender": "Female"
   },
   "char_4171_wulfen": {
@@ -2180,7 +2180,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 391,
+    "releaseOrder": 392,
     "gender": "Female"
   },
   "char_4177_brigid": {
@@ -2194,7 +2194,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 390,
+    "releaseOrder": 391,
     "gender": "Female"
   },
   "char_4173_nowell": {
@@ -2208,7 +2208,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 388,
+    "releaseOrder": 389,
     "gender": "Male"
   },
   "char_4052_surfer": {
@@ -2222,7 +2222,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 385,
+    "releaseOrder": 386,
     "gender": "Female"
   },
   "char_4172_xingzh": {
@@ -2236,7 +2236,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 384,
+    "releaseOrder": 385,
     "gender": "Female"
   },
   "char_4164_tecno": {
@@ -2250,7 +2250,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 382,
+    "releaseOrder": 383,
     "gender": "Female"
   },
   "char_4163_rosesa": {
@@ -2264,7 +2264,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 381,
+    "releaseOrder": 382,
     "gender": "Female"
   },
   "char_4155_talr": {
@@ -4546,7 +4546,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 419,
+    "releaseOrder": 420,
     "gender": "Female"
   },
   "char_4208_wintim": {
@@ -4560,7 +4560,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 416,
+    "releaseOrder": 417,
     "gender": "Female"
   },
   "char_445_wscoot": {
@@ -4574,7 +4574,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 393,
+    "releaseOrder": 394,
     "gender": "Male"
   },
   "char_4165_ctrail": {
@@ -5708,7 +5708,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 442,
+    "releaseOrder": 443,
     "gender": "Other"
   },
   "char_4188_confes": {
@@ -5722,7 +5722,7 @@
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
-    "releaseOrder": 396,
+    "releaseOrder": 397,
     "gender": "Other"
   },
   "char_4136_phonor": {
