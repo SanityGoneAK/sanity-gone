@@ -113,7 +113,7 @@
   },
   "char_4212_nasti": {
     "charId": "char_4212_nasti",
-    "name": "Nasti",
+    "name": "내스티",
     "slug": "nasti",
     "position": "MELEE",
     "rarity": 6,
@@ -1947,7 +1947,7 @@
   },
   "char_4214_cairn": {
     "charId": "char_4214_cairn",
-    "name": "Cairn",
+    "name": "케언",
     "slug": "cairn",
     "position": "MELEE",
     "rarity": 5,
@@ -1961,7 +1961,7 @@
   },
   "char_4213_skybx": {
     "charId": "char_4213_skybx",
-    "name": "Skybox",
+    "name": "스카이박스",
     "slug": "skybox",
     "position": "RANGED",
     "rarity": 5,

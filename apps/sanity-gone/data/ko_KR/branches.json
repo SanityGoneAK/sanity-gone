@@ -345,9 +345,9 @@
     "trait": "배치 코스트를 소모해 작전 능력 강화"
   },
   "skybreaker": {
-    "branchName": "裂空炮手",
+    "branchName": "스카이브레이커",
     "class": "Sniper",
-    "trait": "部署后<span class=\"skill-tooltip\">起飞</span>，<span class=\"skill-tooltip\">起飞</span>后只攻击空中敌人；技能开启时降落且攻击造成<span class=\"keyword\">群体物理伤害</span>"
+    "trait": "배치 즉시 <span class=\"skill-tooltip\">이륙</span>, <span class=\"skill-tooltip\">이륙</span> 후 공중 적만 공격, 스킬 발동 시 착륙 및 <span class=\"keyword\">광역 물리 대미지</span>를 입힘"
   },
   "watchman": {
     "branchName": "守望者",
