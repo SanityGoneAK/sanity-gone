@@ -2929,18 +2929,18 @@
   },
   "p_char_4214_cairn": {
     "itemId": "p_char_4214_cairn",
-    "name": "响石的信物",
+    "name": "Cairn's Token",
     "iconId": "p_char_4214_cairn",
-    "description": "一枚“天空氧气瓶”的瓶盖。初见时，这是你聘用她的定金，现在，这是你加入她的旅行社的证章。",
-    "usage": "用于提升响石的潜能。",
+    "description": "A 'Dr Oxygen' bottle cap. It was your deposit when you first hired her, and now it's your membership badge for her travel agency.",
+    "usage": "Used to improve the Potential of Cairn.",
     "rarity": 5
   },
   "p_char_4213_skybx": {
     "itemId": "p_char_4213_skybx",
-    "name": "天空盒的信物",
+    "name": "Skybox's Token",
     "iconId": "p_char_4213_skybx",
-    "description": "一架大炮般粗重的高倍单筒望远镜。他说，他总有一天要带着所有哥伦比亚人征服天空，可别错过了。",
-    "usage": "用于提升天空盒的潜能。",
+    "description": "A bulky cannon-like high-magnification telescope. He says one day he'll lead all of Columbia to conquer the skies, and you better not miss it.",
+    "usage": "Used to improve the Potential of Skybox.",
     "rarity": 5
   },
   "p_char_1022_flwr2": {
@@ -3977,10 +3977,10 @@
   },
   "p_char_4212_nasti": {
     "itemId": "p_char_4212_nasti",
-    "name": "娜斯提的信物",
+    "name": "Nasti's Token",
     "iconId": "p_char_4212_nasti",
-    "description": "一支树枝造型的骨笔，可以辅助完成一些精密作业。娜斯提说不必因为它叫“骨笔”就有所顾虑，折断了她随时帮你换新的。",
-    "usage": "用于提升娜斯提的潜能。",
+    "description": "A bone pen shaped like a branch, useful for aiding delicate work. Nasti says not to worry too much just because of its unsettling name, and she can always get you a new one if it snaps.",
+    "usage": "Used to improve the Potential of Nasti.",
     "rarity": 6
   },
   "p_char_4056_titi": {
