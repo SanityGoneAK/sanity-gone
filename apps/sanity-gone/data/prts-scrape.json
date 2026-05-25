@@ -1460,15 +1460,15 @@
       "isLimited": false,
       "releaseOrder": 365
     },
-    "预备干员-医疗(卫戍协议)": {
+    "预备干员-重装(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 366
     },
-    "预备干员-术师(卫戍协议)": {
+    "预备干员-近卫(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 367
     },
-    "预备干员-特种(卫戍协议)": {
+    "预备干员-术师(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 368
     },
@@ -1476,313 +1476,313 @@
       "isLimited": false,
       "releaseOrder": 369
     },
+    "预备干员-医疗(卫戍协议)": {
+      "isLimited": false,
+      "releaseOrder": 370
+    },
     "预备干员-辅助(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 371
     },
-    "预备干员-近卫(卫戍协议)": {
+    "预备干员-特种(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 372
     },
-    "预备干员-重装(卫戍协议)": {
+    "郁金香(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 373
     },
-    "Mechanist(卫戍协议)": {
+    "Sharp(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 374
     },
-    "Misery(卫戍协议)": {
+    "Mechanist(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 375
     },
-    "Pith(卫戍协议)": {
+    "Stormeye(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 376
     },
-    "Raidian(卫戍协议)": {
+    "Pith(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 377
     },
-    "Stormeye(卫戍协议)": {
+    "Touch(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 378
     },
-    "郁金香(卫戍协议)": {
+    "Raidian(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 379
     },
-    "Sharp(卫戍协议)": {
+    "Misery(卫戍协议)": {
       "isLimited": false,
       "releaseOrder": 380
     },
-    "Touch(卫戍协议)": {
+    "瑰盐": {
       "isLimited": false,
       "releaseOrder": 381
     },
-    "瑰盐": {
+    "特克诺": {
       "isLimited": false,
       "releaseOrder": 382
     },
-    "特克诺": {
+    "引星棘刺": {
       "isLimited": false,
       "releaseOrder": 383
     },
-    "引星棘刺": {
+    "行箸": {
       "isLimited": false,
       "releaseOrder": 384
     },
-    "行箸": {
+    "寻澜": {
       "isLimited": false,
       "releaseOrder": 385
     },
-    "寻澜": {
+    "烛煌": {
       "isLimited": false,
       "releaseOrder": 386
     },
-    "烛煌": {
-      "isLimited": false,
-      "releaseOrder": 387
-    },
     "余": {
       "isLimited": true,
-      "releaseOrder": 388
+      "releaseOrder": 387
     },
     "诺威尔": {
       "isLimited": false,
-      "releaseOrder": 389
+      "releaseOrder": 388
     },
     "隐德来希": {
       "isLimited": false,
-      "releaseOrder": 390
+      "releaseOrder": 389
     },
     "水灯心": {
       "isLimited": false,
-      "releaseOrder": 391
+      "releaseOrder": 390
     },
     "钼铅": {
       "isLimited": false,
-      "releaseOrder": 392
+      "releaseOrder": 391
     },
     "死芒": {
       "isLimited": false,
-      "releaseOrder": 393
+      "releaseOrder": 392
     },
     "骋风": {
       "isLimited": false,
-      "releaseOrder": 394
+      "releaseOrder": 393
     },
     "阿兰娜": {
       "isLimited": false,
-      "releaseOrder": 395
+      "releaseOrder": 394
     },
     "Mon3tr": {
       "isLimited": false,
-      "releaseOrder": 396
+      "releaseOrder": 395
     },
     "CONFESS-47": {
       "isLimited": false,
-      "releaseOrder": 397
+      "releaseOrder": 396
     },
     "聆音": {
       "isLimited": false,
-      "releaseOrder": 398
+      "releaseOrder": 397
     },
     "信仰搅拌机": {
       "isLimited": false,
-      "releaseOrder": 399
+      "releaseOrder": 398
     },
     "蕾缪安": {
       "isLimited": false,
-      "releaseOrder": 400
+      "releaseOrder": 399
     },
     "新约能天使": {
       "isLimited": true,
-      "releaseOrder": 401
+      "releaseOrder": 400
     },
     "Miss.Christine": {
       "isLimited": false,
-      "releaseOrder": 402
+      "releaseOrder": 401
     },
     "蒂比": {
       "isLimited": false,
-      "releaseOrder": 403
+      "releaseOrder": 402
     },
     "酒神": {
       "isLimited": false,
-      "releaseOrder": 404
+      "releaseOrder": 403
     },
     "录武官": {
       "isLimited": false,
-      "releaseOrder": 405
+      "releaseOrder": 404
     },
     "司霆惊蛰": {
       "isLimited": false,
-      "releaseOrder": 406
+      "releaseOrder": 405
     },
     "电弧": {
       "isLimited": false,
-      "releaseOrder": 407
+      "releaseOrder": 406
     },
     "松桐": {
       "isLimited": false,
-      "releaseOrder": 408
+      "releaseOrder": 407
     },
     "吉星": {
       "isLimited": false,
-      "releaseOrder": 409
+      "releaseOrder": 408
     },
     "遥": {
       "isLimited": false,
-      "releaseOrder": 410
+      "releaseOrder": 409
     },
     "斩业星熊": {
       "isLimited": true,
-      "releaseOrder": 411
+      "releaseOrder": 410
     },
     "祐天寺若麦": {
       "isLimited": false,
-      "releaseOrder": 412
+      "releaseOrder": 411
     },
     "八幡海铃": {
       "isLimited": false,
-      "releaseOrder": 413
+      "releaseOrder": 412
     },
     "若叶睦": {
       "isLimited": false,
-      "releaseOrder": 414
+      "releaseOrder": 413
     },
     "三角初华": {
       "isLimited": false,
-      "releaseOrder": 415
+      "releaseOrder": 414
     },
     "丰川祥子": {
       "isLimited": false,
-      "releaseOrder": 416
+      "releaseOrder": 415
     },
     "冬时": {
       "isLimited": false,
-      "releaseOrder": 417
+      "releaseOrder": 416
     },
     "折桠": {
       "isLimited": false,
-      "releaseOrder": 418
+      "releaseOrder": 417
     },
     "真言": {
       "isLimited": false,
-      "releaseOrder": 419
+      "releaseOrder": 418
     },
     "协律": {
       "isLimited": false,
-      "releaseOrder": 420
+      "releaseOrder": 419
     },
     "哈蒂娅": {
       "isLimited": false,
-      "releaseOrder": 421
+      "releaseOrder": 420
     },
     "雪猎": {
       "isLimited": false,
-      "releaseOrder": 422
+      "releaseOrder": 421
     },
     "溯光星源": {
       "isLimited": false,
-      "releaseOrder": 423
+      "releaseOrder": 422
     },
     "圣聆初雪": {
       "isLimited": false,
-      "releaseOrder": 424
+      "releaseOrder": 423
     },
     "凛御银灰": {
       "isLimited": true,
-      "releaseOrder": 425
+      "releaseOrder": 424
     },
     "盟约·辅助干员": {
       "isLimited": false,
-      "releaseOrder": 426
+      "releaseOrder": 425
     },
     "领主·Sharp": {
       "isLimited": false,
-      "releaseOrder": 427
+      "releaseOrder": 426
     },
     "天空盒": {
       "isLimited": false,
-      "releaseOrder": 428
+      "releaseOrder": 427
     },
     "响石": {
       "isLimited": false,
-      "releaseOrder": 429
+      "releaseOrder": 428
     },
     "娜斯提": {
       "isLimited": false,
-      "releaseOrder": 430
+      "releaseOrder": 429
     },
     "摆渡人": {
       "isLimited": false,
-      "releaseOrder": 431
+      "releaseOrder": 430
     },
     "撷英调香师": {
       "isLimited": false,
-      "releaseOrder": 432
+      "releaseOrder": 431
     },
     "缇缇": {
       "isLimited": false,
-      "releaseOrder": 433
+      "releaseOrder": 432
     },
     "矩": {
       "isLimited": false,
-      "releaseOrder": 434
+      "releaseOrder": 433
     },
     "风絮": {
       "isLimited": false,
-      "releaseOrder": 435
+      "releaseOrder": 434
     },
     "赤刃明霄陈": {
       "isLimited": false,
-      "releaseOrder": 436
+      "releaseOrder": 435
     },
     "望": {
       "isLimited": true,
-      "releaseOrder": 437
+      "releaseOrder": 436
     },
     "复奏": {
       "isLimited": false,
-      "releaseOrder": 438
+      "releaseOrder": 437
     },
     "贝洛内": {
       "isLimited": false,
-      "releaseOrder": 439
+      "releaseOrder": 438
     },
     "伯塔尼": {
       "isLimited": false,
-      "releaseOrder": 440
+      "releaseOrder": 439
     },
     "乌啾": {
       "isLimited": false,
-      "releaseOrder": 441
+      "releaseOrder": 440
     },
     "怒潮凛冬": {
       "isLimited": false,
-      "releaseOrder": 442
+      "releaseOrder": 441
     },
     "GALLUS²": {
       "isLimited": false,
-      "releaseOrder": 443
+      "releaseOrder": 442
     },
     "裂响": {
       "isLimited": false,
-      "releaseOrder": 444
+      "releaseOrder": 443
     },
     "维伊": {
       "isLimited": false,
-      "releaseOrder": 445
+      "releaseOrder": 444
     },
     "可露希尔": {
       "isLimited": false,
-      "releaseOrder": 446
+      "releaseOrder": 445
     },
     "凯尔希·思衡托": {
       "isLimited": true,
-      "releaseOrder": 447
+      "releaseOrder": 446
     }
   },
   "skinObtainSourceAndCosts": {
