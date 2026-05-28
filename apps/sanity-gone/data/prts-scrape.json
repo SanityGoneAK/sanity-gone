@@ -4384,6 +4384,13 @@
       "cost": 0,
       "tokenType": "Originium Prime"
     },
+    "char_4194_rmixer@boc#12": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_248_mgllan@kitchen#1": {
       "obtainSources": [
         "Outfit Store"
