@@ -9,7 +9,7 @@
     "subProfessionId": "closerange",
     "alterId": null,
     "baseOperatorId": "char_278_orchid",
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 449,
     "gender": "Female"
   },
