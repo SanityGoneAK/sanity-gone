@@ -1783,6 +1783,18 @@
     "凯尔希·思衡托": {
       "isLimited": true,
       "releaseOrder": 446
+    },
+    "罗德岛隐秘队": {
+      "isLimited": false,
+      "releaseOrder": 447
+    },
+    "雷狼龙S空爆": {
+      "isLimited": true,
+      "releaseOrder": 448
+    },
+    "焰狐龙梓兰": {
+      "isLimited": true,
+      "releaseOrder": 449
     }
   },
   "skinObtainSourceAndCosts": {
@@ -1968,6 +1980,13 @@
       ],
       "cost": null,
       "tokenType": null
+    },
+    "char_281_popka@sale#18": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
     },
     "char_208_melan@epoque#1": {
       "obtainSources": [
@@ -2668,6 +2687,13 @@
       ],
       "cost": null,
       "tokenType": null
+    },
+    "char_4026_vulpis@epoque#55": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
     },
     "char_120_hibisc@nian#1": {
       "obtainSources": [
@@ -4896,6 +4922,13 @@
       "cost": 0,
       "tokenType": "Originium Prime"
     },
+    "char_4215_buddy@mh#2": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
+    },
     "char_332_archet@shining#1": {
       "obtainSources": [
         "Outfit Store"
@@ -5042,6 +5075,13 @@
       ],
       "cost": null,
       "tokenType": null
+    },
+    "char_494_vendla@game#10": {
+      "obtainSources": [
+        "Outfit Store"
+      ],
+      "cost": 0,
+      "tokenType": "Originium Prime"
     },
     "char_1028_texas2@iteration#1": {
       "obtainSources": [

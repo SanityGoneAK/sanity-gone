@@ -839,6 +839,14 @@
     "usage": "用于提升GALLUS²的潜能。",
     "rarity": 1
   },
+  "p_char_4215_buddy": {
+    "itemId": "p_char_4215_buddy",
+    "name": "罗德岛隐秘队的信物",
+    "iconId": "p_char_4215_buddy",
+    "description": "一张按有肉球印章的不可思议票券，以及一个带有涂鸦的木桶盖。是友情的标志喵！",
+    "usage": "用于提升罗德岛隐秘队的潜能。",
+    "rarity": 1
+  },
   "p_char_502_nblade": {
     "itemId": "p_char_502_nblade",
     "name": "ヤトウの印",
@@ -3007,6 +3015,14 @@
     "usage": "用于提升裂响的潜能。",
     "rarity": 5
   },
+  "p_char_1049_catap2": {
+    "itemId": "p_char_1049_catap2",
+    "name": "雷狼龙S空爆的信物",
+    "iconId": "p_char_1049_catap2",
+    "description": "一本和你共享的标本集。她告诉你，每到一个地方完成狩猎回来后，她就会往里面填充战利品。随着时间的推移，你发现这本册子已经成了她的旅游纪念册。",
+    "usage": "用于提升雷狼龙S空爆的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "エクシアの印",
@@ -4045,6 +4061,14 @@
     "iconId": "p_char_4228_closur",
     "description": "一张什么都没写的纸。你辨认出那是她印刷优惠券用的纸张，不禁跃跃欲试起来。",
     "usage": "用于提升可露希尔的潜能。",
+    "rarity": 6
+  },
+  "p_char_1048_orchd2": {
+    "itemId": "p_char_1048_orchd2",
+    "name": "焰狐龙梓兰的信物",
+    "iconId": "p_char_1048_orchd2",
+    "description": "一本素材本，上面贴满了梓兰平时从各种杂志上剪下来的时尚设计。她表示，你可以从中挑选喜欢的款式，她会免费帮你设计一套类似风格的衣服。",
+    "usage": "用于提升焰狐龙梓兰的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {

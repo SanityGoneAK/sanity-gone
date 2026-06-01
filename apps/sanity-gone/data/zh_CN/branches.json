@@ -12,7 +12,7 @@
   "tactician": {
     "branchName": "战术家",
     "class": "Vanguard",
-    "trait": "可以在攻击范围内选择一次<span class=\"keyword\">战术点</span>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%"
+    "trait": "可以在攻击范围内选择一次<span class=\"keyword\">战术点</span>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%；不受<span class=\"keyword\">部署数量</span>限制，但再部署时间极长"
   },
   "bearer": {
     "branchName": "执旗手",
