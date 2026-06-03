@@ -1857,7 +1857,7 @@
     "subProfessionId": "mercenary",
     "alterId": null,
     "baseOperatorId": "char_282_catap",
-    "isLimited": true,
+    "isLimited": false,
     "releaseOrder": 448,
     "gender": "Female"
   },
