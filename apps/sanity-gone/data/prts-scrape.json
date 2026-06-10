@@ -3598,6 +3598,13 @@
       "cost": null,
       "tokenType": null
     },
+    "char_4171_wulfen@marthe#14": {
+      "obtainSources": [
+        "Event"
+      ],
+      "cost": null,
+      "tokenType": null
+    },
     "char_179_cgbird@witch#1": {
       "obtainSources": [
         "Outfit Store"
