@@ -2953,18 +2953,18 @@
   },
   "p_char_1022_flwr2": {
     "itemId": "p_char_1022_flwr2",
-    "name": "撷英调香师的信物",
+    "name": "Perfumer the Distilled's Token",
     "iconId": "p_char_1022_flwr2",
-    "description": "几颗不知名的种子，来自米诺斯。莱娜寄来的时候没有交代养护方式，但你知道它们会在疗养庭院里长得很好。",
-    "usage": "用于提升撷英调香师的潜能。",
+    "description": "Several unidentified seeds from Minos. Lena's letter didn't mention how to grow them, but you are certain they will thrive in the Convalescent Garden.",
+    "usage": "Used to improve the Potential of Perfumer the Distilled.",
     "rarity": 5
   },
   "p_char_4166_varkis": {
     "itemId": "p_char_4166_varkis",
-    "name": "摆渡人的信物",
+    "name": "Varkáris's Token",
     "iconId": "p_char_4166_varkis",
-    "description": "一张航路图，上面做满了笔记。他知道纸上的河流已不复存在，但它还会在他心中一直流淌。",
-    "usage": "用于提升摆渡人的潜能。",
+    "description": "A navigational chart riddled with notes. He knows the rivers marked here no longer exist, though they still continue to flow within him.",
+    "usage": "Used to improve the Potential of Varkáris.",
     "rarity": 5
   },
   "p_char_4221_ju": {
@@ -4001,10 +4001,10 @@
   },
   "p_char_4056_titi": {
     "itemId": "p_char_4056_titi",
-    "name": "缇缇的信物",
+    "name": "Titi's Token",
     "iconId": "p_char_4056_titi",
-    "description": "一块正反面都没有任何痕迹的空白陶片。缇缇将它交给你保管，你可以在必要时拿给她看，让她保持谦卑和警醒。",
-    "usage": "用于提升缇缇的潜能。",
+    "description": "A blank ostracon with no marks on either side. Titi gave it to you for safekeeping—show it to her when necessary to keep her humble and alert.",
+    "usage": "Used to improve the Potential of Titi.",
     "rarity": 6
   },
   "p_char_2027_wang": {
