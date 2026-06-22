@@ -92,12 +92,12 @@
   "duelist": {
     "branchName": "決闘者",
     "class": "Defender",
-    "trait": "敵をブロックしていない時、SPが回復しない"
+    "trait": "未ブロック時、SPが自然回復しない"
   },
   "fortress": {
     "branchName": "堅城砲手",
     "class": "Defender",
-    "trait": "敵をブロックしていない時<span class=\"keyword\">遠距離範囲</span>物理攻撃を行う"
+    "trait": "未ブロック時、<span class=\"keyword\">遠距離範囲</span>物理攻撃を行う"
   },
   "fastshot": {
     "branchName": "速射手",

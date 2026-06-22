@@ -113,7 +113,7 @@
   },
   "char_4056_titi": {
     "charId": "char_4056_titi",
-    "name": "Titi",
+    "name": "ティティ",
     "slug": "titi",
     "position": "RANGED",
     "rarity": 6,
@@ -1947,7 +1947,7 @@
   },
   "char_1022_flwr2": {
     "charId": "char_1022_flwr2",
-    "name": "Perfumer the Distilled",
+    "name": "萃香パフューマー",
     "slug": "perfumer-the-distilled",
     "position": "RANGED",
     "rarity": 5,
@@ -1961,7 +1961,7 @@
   },
   "char_4166_varkis": {
     "charId": "char_4166_varkis",
-    "name": "Varkáris",
+    "name": "ヴァルカリス",
     "slug": "varkaris",
     "position": "MELEE",
     "rarity": 5,
