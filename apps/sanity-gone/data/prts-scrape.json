@@ -1795,6 +1795,14 @@
     "焰狐龙梓兰": {
       "isLimited": false,
       "releaseOrder": 449
+    },
+    "佩德洛": {
+      "isLimited": false,
+      "releaseOrder": 450
+    },
+    "谬因": {
+      "isLimited": false,
+      "releaseOrder": 451
     }
   },
   "skinObtainSourceAndCosts": {}
