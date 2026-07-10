@@ -353,5 +353,10 @@
     "branchName": "守望者",
     "class": "Medic",
     "trait": "恢复友方单位生命，并且可以<span class=\"skill-tooltip\">起飞</span>"
+  },
+  "supportiveranger": {
+    "branchName": "游击手",
+    "class": "Supporter",
+    "trait": "可以使用<span class=\"skill-tooltip\">触发型效果</span>协助作战"
   }
 }

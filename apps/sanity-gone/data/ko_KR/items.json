@@ -3023,6 +3023,14 @@
     "usage": "用于提升雷狼龙S空爆的潜能。",
     "rarity": 5
   },
+  "p_char_4234_pedro": {
+    "itemId": "p_char_4234_pedro",
+    "name": "佩德洛的信物",
+    "iconId": "p_char_4234_pedro",
+    "description": "一个款式看似基础的通讯器，他对其做了一些抗干扰的调试和改装。带上这个，或许你就不用担心找不到他，或者忘记他。",
+    "usage": "用于提升佩德洛的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "엑시아의 증표",
@@ -4069,6 +4077,14 @@
     "iconId": "p_char_1048_orchd2",
     "description": "一本素材本，上面贴满了梓兰平时从各种杂志上剪下来的时尚设计。她表示，你可以从中挑选喜欢的款式，她会免费帮你设计一套类似风格的衣服。",
     "usage": "用于提升焰狐龙梓兰的潜能。",
+    "rarity": 6
+  },
+  "p_char_4229_aphris": {
+    "itemId": "p_char_4229_aphris",
+    "name": "谬因的信物",
+    "iconId": "p_char_4229_aphris",
+    "description": "一块小巧圆润的琥珀，内嵌有一朵完整的愈创木花。虽非天然形成，但由她亲手制作。",
+    "usage": "用于提升谬因的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {

@@ -187,7 +187,7 @@
   "wandermedic": {
     "branchName": "行医",
     "class": "Medic",
-    "trait": "恢复友方单位生命，并回复相当于攻击力50%的<span class=\"elemental-damage\">元素损伤</span>（可以回复未受伤友方单位的<span class=\"elemental-damage\">元素损伤</span>）"
+    "trait": "恢复友方单位生命，并回复相当于攻击力50%的<span class=\"skill-tooltip\">元素损伤</span>（可以回复未受伤友方单位的<span class=\"skill-tooltip\">元素损伤</span>）"
   },
   "slower": {
     "branchName": "凝滞师",
@@ -353,5 +353,10 @@
     "branchName": "守望者",
     "class": "Medic",
     "trait": "恢复友方单位生命，并且可以<span class=\"skill-tooltip\">起飞</span>"
+  },
+  "supportiveranger": {
+    "branchName": "游击手",
+    "class": "Supporter",
+    "trait": "可以使用<span class=\"skill-tooltip\">触发型效果</span>协助作战"
   }
 }
