@@ -350,9 +350,9 @@
     "trait": "<span class=\"skill-tooltip\">Takes off</span> on deployment, and only attacks aerial enemies when <span class=\"skill-tooltip\">in mid-air</span>; on skill activation, descends and deals <span class=\"keyword\">AOE Physical damage</span>"
   },
   "watchman": {
-    "branchName": "守望者",
+    "branchName": "Watchman",
     "class": "Medic",
-    "trait": "恢复友方单位生命，并且可以<span class=\"skill-tooltip\">起飞</span>"
+    "trait": "Restores the HP of allies, and can <span class=\"skill-tooltip\">Take Off</span>"
   },
   "supportiveranger": {
     "branchName": "游击手",

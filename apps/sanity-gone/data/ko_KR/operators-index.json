@@ -1,4 +1,18 @@
 {
+  "char_4230_mcnist": {
+    "charId": "char_4230_mcnist",
+    "name": "Mechanist",
+    "slug": "mechanist",
+    "position": "MELEE",
+    "rarity": 6,
+    "profession": "TANK",
+    "subProfessionId": "shotprotector",
+    "alterId": null,
+    "baseOperatorId": null,
+    "isLimited": false,
+    "releaseOrder": 452,
+    "gender": "Male"
+  },
   "char_4229_aphris": {
     "charId": "char_4229_aphris",
     "name": "Aphrissa",
@@ -99,7 +113,7 @@
   },
   "char_2027_wang": {
     "charId": "char_2027_wang",
-    "name": "Wang",
+    "name": "왕",
     "slug": "wang",
     "position": "RANGED",
     "rarity": 6,
@@ -113,7 +127,7 @@
   },
   "char_1050_chen3": {
     "charId": "char_1050_chen3",
-    "name": "Ch'en the Dawnstreak",
+    "name": "첸 더 던스트릭",
     "slug": "chen-the-dawnstreak",
     "position": "MELEE",
     "rarity": 6,
@@ -1947,7 +1961,7 @@
   },
   "char_4222_taraxa": {
     "charId": "char_4222_taraxa",
-    "name": "Taraxacum",
+    "name": "타락사쿰",
     "slug": "taraxacum",
     "position": "RANGED",
     "rarity": 5,
@@ -1961,7 +1975,7 @@
   },
   "char_4221_ju": {
     "charId": "char_4221_ju",
-    "name": "Ju",
+    "name": "쥐",
     "slug": "ju",
     "position": "RANGED",
     "rarity": 5,

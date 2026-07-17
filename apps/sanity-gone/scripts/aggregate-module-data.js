@@ -341,7 +341,7 @@ export function aggregateModuleData(locale) {
 								BATTLE_EQUIP_LOCALES[locale][moduleId] ??
 								BATTLE_EQUIP_LOCALES["zh_CN"][moduleId];
 
-							const localizedCandidate =
+							let localizedCandidate =
 								moduleLocale.phases[i].parts[j]
 									.addOrOverrideTalentDataBundle.candidates[
 									k
@@ -361,6 +361,10 @@ export function aggregateModuleData(locale) {
 										? localizedCandidate.upgradeDescription
 										: localizedCandidate.upgradeDescription +
 											"</>";
+							}
+
+							if(localizedCandidate == null){
+								localizedCandidate = curTalentCandidate;
 							}
 
 							candidates[

@@ -2969,18 +2969,18 @@
   },
   "p_char_4221_ju": {
     "itemId": "p_char_4221_ju",
-    "name": "矩的信物",
+    "name": "Ju's Token",
     "iconId": "p_char_4221_ju",
-    "description": "一套尺规，矩总说没人比他更擅长画圆，他想让你也拥有这份并不起眼的能力，毕竟世事总会在不起眼当中展现真知，不是吗？",
-    "usage": "用于提升矩的潜能。",
+    "description": "A ruler and compass set. Ju always says no one can best him at drawing circles, and would like to share this unremarkable ability with you. After all, mortal affairs often transpire under unassuming eyes, do they not?",
+    "usage": "Used to improve the Potential of Ju.",
     "rarity": 5
   },
   "p_char_4222_taraxa": {
     "itemId": "p_char_4222_taraxa",
-    "name": "风絮的信物",
+    "name": "Taraxacum's Token",
     "iconId": "p_char_4222_taraxa",
-    "description": "一朵未飘散的蒲公英，由风絮在前往罗德岛的途中采得。其下的纸条上备注着一行小字：不可入药。",
-    "usage": "用于提升风絮的潜能。",
+    "description": "A dandelion flower head, picked up by Taraxacum on his way to Rhodes Island. A small handwritten note below reads: 'Not For Medicinal Use.'",
+    "usage": "Used to improve the Potential of Taraxacum.",
     "rarity": 5
   },
   "p_char_4031_liesel": {
@@ -4017,18 +4017,18 @@
   },
   "p_char_2027_wang": {
     "itemId": "p_char_2027_wang",
-    "name": "望的信物",
+    "name": "Wang's Token",
     "iconId": "p_char_2027_wang",
-    "description": "一块乌黑发亮的小石头。你试着把它磨成棋子，突如其来的撕裂感让你停下了手上的动作。",
-    "usage": "用于提升望的潜能。",
+    "description": "A small, shiny, and jet-black stone. You tried to sand it down into a weiqi piece, but the sudden sensation of being torn apart stopped you in your tracks.",
+    "usage": "Used to improve the Potential of Wang.",
     "rarity": 6
   },
   "p_char_1050_chen3": {
     "itemId": "p_char_1050_chen3",
-    "name": "赤刃明霄陈的信物",
+    "name": "Ch'en the Dawnstreak's Token",
     "iconId": "p_char_1050_chen3",
-    "description": "一枚铜制剑格，朴实无华，为实战防护而铸。常见于炎国武侠故事中，承载着许多人年少时的憧憬。",
-    "usage": "用于提升赤刃明霄陈的潜能。",
+    "description": "A plain copper guard for a sword, forged for protection in actual combat. A common sight in Yanese martial tales, and an embodiment of many a youth's aspirations.",
+    "usage": "Used to improve the Potential of Ch'en the Dawnstreak.",
     "rarity": 6
   },
   "p_char_4037_demetr": {
@@ -4085,6 +4085,14 @@
     "iconId": "p_char_4229_aphris",
     "description": "一块小巧圆润的琥珀，内嵌有一朵完整的愈创木花。虽非天然形成，但由她亲手制作。",
     "usage": "用于提升谬因的潜能。",
+    "rarity": 6
+  },
+  "p_char_4230_mcnist": {
+    "itemId": "p_char_4230_mcnist",
+    "name": "机械师的信物",
+    "iconId": "p_char_4230_mcnist",
+    "description": "一瓶酒。当然，酒不重要，重要的是他醉酒后要向你展示的技术奇观——那是他所有思考和感受的具象表现，用逻各斯的话说，“他的灵魂”。现在？先喝吧。",
+    "usage": "用于提升机械师的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {

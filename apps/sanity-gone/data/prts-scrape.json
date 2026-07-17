@@ -1803,6 +1803,10 @@
     "谬因": {
       "isLimited": false,
       "releaseOrder": 451
+    },
+    "机械师": {
+      "isLimited": false,
+      "releaseOrder": 452
     }
   },
   "skinObtainSourceAndCosts": {}

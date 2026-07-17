@@ -350,9 +350,9 @@
     "trait": "配置後<span class=\"skill-tooltip\">離陸</span>する<br><span class=\"skill-tooltip\">離陸</span>中は飛行ユニットのみを攻撃<br>スキル発動中は降下して<span class=\"keyword\">範囲物理攻撃</span>を行う"
   },
   "watchman": {
-    "branchName": "守望者",
+    "branchName": "空癒師",
     "class": "Medic",
-    "trait": "恢复友方单位生命，并且可以<span class=\"skill-tooltip\">起飞</span>"
+    "trait": "味方のHPを回復<br><span class=\"skill-tooltip\">離陸</span>できる"
   },
   "supportiveranger": {
     "branchName": "游击手",

@@ -4087,6 +4087,14 @@
     "usage": "用于提升谬因的潜能。",
     "rarity": 6
   },
+  "p_char_4230_mcnist": {
+    "itemId": "p_char_4230_mcnist",
+    "name": "机械师的信物",
+    "iconId": "p_char_4230_mcnist",
+    "description": "一瓶酒。当然，酒不重要，重要的是他醉酒后要向你展示的技术奇观——那是他所有思考和感受的具象表现，用逻各斯的话说，“他的灵魂”。现在？先喝吧。",
+    "usage": "用于提升机械师的潜能。",
+    "rarity": 6
+  },
   "class_p_char_123_fang": {
     "itemId": "class_p_char_123_fang",
     "name": "芬的中坚信物",

@@ -350,9 +350,9 @@
     "trait": "배치 즉시 <span class=\"skill-tooltip\">이륙</span>, <span class=\"skill-tooltip\">이륙</span> 후 공중 적만 공격, 스킬 발동 시 착륙 및 <span class=\"keyword\">광역 물리 대미지</span>를 입힘"
   },
   "watchman": {
-    "branchName": "守望者",
+    "branchName": "파수꾼",
     "class": "Medic",
-    "trait": "恢复友方单位生命，并且可以<span class=\"skill-tooltip\">起飞</span>"
+    "trait": "아군 유닛의 HP 회복, <span class=\"skill-tooltip\">이륙</span> 가능"
   },
   "supportiveranger": {
     "branchName": "游击手",
