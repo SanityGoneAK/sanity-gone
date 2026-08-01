@@ -12,7 +12,7 @@ import { createRecruitmentJson } from "./import-recruitment.js";
 // import { createEnemiesJson } from "./create-enemies-json.js";
 
 (async () => {
-	await createPrtsScrapeJson();
+	// await createPrtsScrapeJson();
 
 	for (const locale of ["zh_CN", "en_US", "ja_JP", "ko_KR"]) {
 		const dataDir = path.join(__dirname, "../data/", locale);

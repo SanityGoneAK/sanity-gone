@@ -1807,6 +1807,22 @@
     "机械师": {
       "isLimited": false,
       "releaseOrder": 452
+    },
+    "予愿安洁莉娜": {
+      "isLimited": false,
+      "releaseOrder": 453
+    },
+    "珊比": {
+      "isLimited": false,
+      "releaseOrder": 454
+    },
+    "隙": {
+      "isLimited": false,
+      "releaseOrder": 455
+    },
+    "嘉辛塔": {
+      "isLimited": false,
+      "releaseOrder": 456
     }
   },
   "skinObtainSourceAndCosts": {}
