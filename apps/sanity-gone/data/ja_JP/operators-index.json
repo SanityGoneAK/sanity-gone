@@ -127,7 +127,7 @@
   },
   "char_4037_demetr": {
     "charId": "char_4037_demetr",
-    "name": "Bellone",
+    "name": "ベッローネ",
     "slug": "bellone",
     "position": "MELEE",
     "rarity": 6,
@@ -1989,7 +1989,7 @@
   },
   "char_4031_liesel": {
     "charId": "char_4031_liesel",
-    "name": "Ripresa",
+    "name": "リプレーザ",
     "slug": "ripresa",
     "position": "RANGED",
     "rarity": 5,

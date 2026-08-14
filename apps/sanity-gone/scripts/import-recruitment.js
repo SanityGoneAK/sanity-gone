@@ -175,12 +175,11 @@ function getRecruitableOperators(locale) {
 
 	let recruitmentStrings = recruitDetail
 		.replace(/\\r\\n|\\n|\\r/g, "\n")
-		.split(/★+/)
+		.split(/\n★+/)
 		.slice(1);
 	if (locale === "ja_JP") {
 		recruitmentStrings = recruitmentStrings.slice(2);
 	}
-
 	return recruitmentStrings.map((line) =>
 		line
 			.replace(/\n|-{2,}/g, "")

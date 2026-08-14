@@ -177,7 +177,7 @@
   "ringhealer": {
     "branchName": "멀티 타겟 메딕",
     "class": "Medic",
-    "trait": "동시에 3명의 HP 회복 가능"
+    "trait": "동시에 아군 유닛 3명의 HP 회복 가능"
   },
   "healer": {
     "branchName": "테라피스트",
@@ -257,7 +257,7 @@
   "dollkeeper": {
     "branchName": "인형사",
     "class": "Specialist",
-    "trait": "치명상을 입어도 퇴각하지 않고, [대역]을 교체 투입하며(저지 가능 수 0), 20초 후 다시 본체로 교체"
+    "trait": "치명상을 입어도 퇴각하지 않고, &lt;대역&gt;을 교체 투입하며(저지 가능 수 0), 20초 후 다시 본체로 교체"
   },
   "incantationmedic": {
     "branchName": "주술 메딕",
