@@ -47,7 +47,7 @@
   "sword": {
     "branchName": "剑豪",
     "class": "Guard",
-    "trait": "普通攻击连续造成<span class=\"keyword\">两次</span>伤害"
+    "trait": "普通攻击连续造成<span class=\"keyword\">两次</span>伤害，且不受<span class=\"keyword\">部署数量</span>限制，但再部署时间极长"
   },
   "musha": {
     "branchName": "武者",
