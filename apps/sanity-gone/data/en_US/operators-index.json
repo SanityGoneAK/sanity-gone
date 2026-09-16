@@ -2003,7 +2003,7 @@
   },
   "char_4224_turdus": {
     "charId": "char_4224_turdus",
-    "name": "Укусик",
+    "name": "Ukusik",
     "slug": "ukusik",
     "position": "RANGED",
     "rarity": 5,
@@ -2017,7 +2017,7 @@
   },
   "char_4223_botany": {
     "charId": "char_4223_botany",
-    "name": "Ботани",
+    "name": "Botani",
     "slug": "botani",
     "position": "RANGED",
     "rarity": 5,
