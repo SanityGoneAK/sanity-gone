@@ -127,7 +127,7 @@
   },
   "char_1051_headb2": {
     "charId": "char_1051_headb2",
-    "name": "Zima the Raging Tide",
+    "name": "지마 더 레이징 타이드",
     "slug": "zima-the-raging-tide",
     "position": "MELEE",
     "rarity": 6,
@@ -2003,7 +2003,7 @@
   },
   "char_4224_turdus": {
     "charId": "char_4224_turdus",
-    "name": "Укусик",
+    "name": "우쿠시크",
     "slug": "ukusik",
     "position": "RANGED",
     "rarity": 5,
@@ -2017,7 +2017,7 @@
   },
   "char_4223_botany": {
     "charId": "char_4223_botany",
-    "name": "Ботани",
+    "name": "보타니",
     "slug": "botani",
     "position": "RANGED",
     "rarity": 5,
