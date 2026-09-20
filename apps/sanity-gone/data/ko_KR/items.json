@@ -847,6 +847,14 @@
     "usage": "用于提升罗德岛隐秘队的潜能。",
     "rarity": 1
   },
+  "p_char_4220_kormr": {
+    "itemId": "p_char_4220_kormr",
+    "name": "虎狼丸的信物",
+    "iconId": "p_char_4220_kormr",
+    "description": "一枚护身符。虎狼丸请阿米娅帮忙缝制而成，希望守护你的平安。",
+    "usage": "用于提升虎狼丸的潜能。",
+    "rarity": 1
+  },
   "p_char_502_nblade": {
     "itemId": "p_char_502_nblade",
     "name": "야토의 증표",
@@ -3047,6 +3055,22 @@
     "usage": "用于提升时隙的潜能。",
     "rarity": 5
   },
+  "p_char_4218_aigis": {
+    "itemId": "p_char_4218_aigis",
+    "name": "埃癸斯的信物",
+    "iconId": "p_char_4218_aigis",
+    "description": "一条红色的缎带，系成了蝴蝶结的样子。即使是战斗姿态，她也绝不会让这条缎带散落。这是身为机械的技艺吗？没有人知道答案。",
+    "usage": "用于提升埃癸斯的潜能。",
+    "rarity": 5
+  },
+  "p_char_4219_yukari": {
+    "itemId": "p_char_4219_yukari",
+    "name": "岳羽由加莉的信物",
+    "iconId": "p_char_4219_yukari",
+    "description": "一个手机挂绳玩偶，稍微有些旧了，但看得出一直被细心保存。如果有想要倾诉的话语，它一定会倾听。",
+    "usage": "用于提升岳羽由加莉的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "엑시아의 증표",
@@ -4125,6 +4149,14 @@
     "iconId": "p_char_4235_thumpy",
     "description": "一个装满了各项物品的背包。如果勇气涌上了心头，就立刻背上它出发吧！",
     "usage": "用于提升珊比的潜能。",
+    "rarity": 6
+  },
+  "p_char_4217_makoto": {
+    "itemId": "p_char_4217_makoto",
+    "name": "结城理的信物",
+    "iconId": "p_char_4217_makoto",
+    "description": "一条红色臂章，身为S.E.E.S.成员的证明。戴起来有些紧，像是血压计的软垫，柔软而又坚实地围绕着他的手臂。",
+    "usage": "用于提升结城理的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
