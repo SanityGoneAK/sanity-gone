@@ -3071,6 +3071,22 @@
     "usage": "用于提升岳羽由加莉的潜能。",
     "rarity": 5
   },
+  "p_char_393_toledo": {
+    "itemId": "p_char_393_toledo",
+    "name": "德·托莱多的信物",
+    "iconId": "p_char_393_toledo",
+    "description": "一枚纸板做的勋章，边缘处语法不通的文字被划去，只留下了舰船的图案。恭喜你自动成为德·托莱多大人的拥护者，加入重建伊比利亚海军舰队的队伍吧！",
+    "usage": "用于提升德·托莱多的潜能。",
+    "rarity": 5
+  },
+  "p_char_4232_hbound": {
+    "itemId": "p_char_4232_hbound",
+    "name": "旅骨的信物",
+    "iconId": "p_char_4232_hbound",
+    "description": "一个用手套改成的小杂物包。他说，自己只能用上一只，所以另一只就......快对他说声谢谢，不然他又要开始怀疑把自己用不上的东西给你是不是不礼貌了。",
+    "usage": "用于提升旅骨的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "エクシアの印",
@@ -4157,6 +4173,14 @@
     "iconId": "p_char_4217_makoto",
     "description": "一条红色臂章，身为S.E.E.S.成员的证明。戴起来有些紧，像是血压计的软垫，柔软而又坚实地围绕着他的手臂。",
     "usage": "用于提升结城理的潜能。",
+    "rarity": 6
+  },
+  "p_char_4231_clemnt": {
+    "itemId": "p_char_4231_clemnt",
+    "name": "克莱门莎的信物",
+    "iconId": "p_char_4231_clemnt",
+    "description": "印有克莱门莎指纹的指套。一份独属于她的信物，当然，也是她在阿戈尔所有权限的钥匙。你知道自己不得不万分小心地保管它了。",
+    "usage": "用于提升克莱门莎的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
