@@ -1839,6 +1839,18 @@
     "虎狼丸": {
       "isLimited": true,
       "releaseOrder": 460
+    },
+    "德·托莱多": {
+      "isLimited": false,
+      "releaseOrder": 461
+    },
+    "旅骨": {
+      "isLimited": false,
+      "releaseOrder": 462
+    },
+    "克莱门莎": {
+      "isLimited": false,
+      "releaseOrder": 463
     }
   },
   "skinObtainSourceAndCosts": {}
