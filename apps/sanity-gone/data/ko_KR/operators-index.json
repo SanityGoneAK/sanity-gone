@@ -99,7 +99,7 @@
   },
   "char_1052_kalts2": {
     "charId": "char_1052_kalts2",
-    "name": "Kal'tsit·Esperanta",
+    "name": "켈시 에스페란타",
     "slug": "kaltsit·esperanta",
     "position": "RANGED",
     "rarity": 6,
@@ -113,7 +113,7 @@
   },
   "char_4228_closur": {
     "charId": "char_4228_closur",
-    "name": "Closure",
+    "name": "클로저",
     "slug": "closure",
     "position": "RANGED",
     "rarity": 6,
@@ -127,7 +127,7 @@
   },
   "char_4226_veen": {
     "charId": "char_4226_veen",
-    "name": "Вий",
+    "name": "비이",
     "slug": "vij",
     "position": "RANGED",
     "rarity": 6,
@@ -2031,7 +2031,7 @@
   },
   "char_4225_tanya": {
     "charId": "char_4225_tanya",
-    "name": "Crackborne",
+    "name": "크랙본",
     "slug": "crackborne",
     "position": "MELEE",
     "rarity": 5,

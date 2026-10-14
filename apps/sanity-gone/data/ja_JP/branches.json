@@ -137,7 +137,7 @@
   "corecaster": {
     "branchName": "中堅術師",
     "class": "Caster",
-    "trait": "敵に<span class=\"keyword\">術ダメージ</span>を与える"
+    "trait": "敵に<span class=\"keyword\">術ダメージ</span>を与える<br><span class=\"keyword\">配置可能数</span>にカウントされない<br>再配置までの時間が極めて長い"
   },
   "splashcaster": {
     "branchName": "拡散術師",

@@ -137,7 +137,7 @@
   "corecaster": {
     "branchName": "코어 캐스터",
     "class": "Caster",
-    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입힘"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입힘, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
   },
   "splashcaster": {
     "branchName": "스플래시 캐스터",
@@ -287,7 +287,7 @@
   "ritualist": {
     "branchName": "의식술사",
     "class": "Supporter",
-    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히며, <span class=\"keyword\">원소 손상</span>을 입힐 수 있음, <span class=\"keyword\">배치 인원수</span> 제약을 받지 않지만, 재배치 시간이 매우 김"
+    "trait": "공격 시 <span class=\"keyword\">마법 대미지</span>를 입히며, <span class=\"keyword\">원소 손상</span>을 입힐 수 있음, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
   },
   "hunter": {
     "branchName": "사냥꾼",
