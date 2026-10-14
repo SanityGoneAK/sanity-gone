@@ -137,7 +137,7 @@
   "corecaster": {
     "branchName": "Core Caster",
     "class": "Caster",
-    "trait": "Deals <span class=\"keyword\">Arts damage</span>"
+    "trait": "Attacks deal <span class=\"keyword\">Arts damage</span> and ignores the <span class=\"keyword\">Deployment Limit</span>, but has a long Redeployment Time"
   },
   "splashcaster": {
     "branchName": "Splash Caster",

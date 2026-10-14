@@ -100,7 +100,7 @@
   "char_1052_kalts2": {
     "charId": "char_1052_kalts2",
     "name": "ケルシー・エスペランタ",
-    "slug": "kaltsit·esperanta",
+    "slug": "kaltsit-esperanta",
     "position": "RANGED",
     "rarity": 6,
     "profession": "MEDIC",
@@ -128,7 +128,7 @@
   "char_4226_veen": {
     "charId": "char_4226_veen",
     "name": "ヴィイ",
-    "slug": "vij",
+    "slug": "viy",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",

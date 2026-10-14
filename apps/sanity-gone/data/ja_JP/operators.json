@@ -36962,9 +36962,10 @@
       }
     ],
     "charId": "char_1052_kalts2",
-    "slug": "kaltsit·esperanta",
+    "slug": "kaltsit-esperanta",
     "serverLocales": [
       "zh_CN",
+      "en_US",
       "ja_JP",
       "ko_KR"
     ],
@@ -39665,9 +39666,10 @@
           }
         ],
         "charId": "token_10068_kalts2_mtship",
-        "slug": "tactical-anchor",
+        "slug": "tactical-anchor-point",
         "serverLocales": [
           "zh_CN",
+          "en_US",
           "ja_JP",
           "ko_KR"
         ],
@@ -44023,6 +44025,7 @@
     "slug": "closure",
     "serverLocales": [
       "zh_CN",
+      "en_US",
       "ja_JP",
       "ko_KR"
     ],
@@ -46423,6 +46426,7 @@
         "slug": "command-center",
         "serverLocales": [
           "zh_CN",
+          "en_US",
           "ja_JP",
           "ko_KR"
         ],
@@ -50632,9 +50636,10 @@
       }
     ],
     "charId": "char_4226_veen",
-    "slug": "vij",
+    "slug": "viy",
     "serverLocales": [
       "zh_CN",
+      "en_US",
       "ja_JP",
       "ko_KR"
     ],
@@ -954736,6 +954741,7 @@
     "slug": "crackborne",
     "serverLocales": [
       "zh_CN",
+      "en_US",
       "ja_JP",
       "ko_KR"
     ],
@@ -2227071,6 +2227077,7 @@
     "slug": "gallus²",
     "serverLocales": [
       "zh_CN",
+      "en_US",
       "ja_JP",
       "ko_KR"
     ],

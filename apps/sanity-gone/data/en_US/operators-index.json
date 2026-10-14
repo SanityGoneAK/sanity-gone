@@ -99,8 +99,8 @@
   },
   "char_1052_kalts2": {
     "charId": "char_1052_kalts2",
-    "name": "Kal'tsit·Esperanta",
-    "slug": "kaltsit·esperanta",
+    "name": "Kal'tsit Esperanta",
+    "slug": "kaltsit-esperanta",
     "position": "RANGED",
     "rarity": 6,
     "profession": "MEDIC",
@@ -127,8 +127,8 @@
   },
   "char_4226_veen": {
     "charId": "char_4226_veen",
-    "name": "Вий",
-    "slug": "vij",
+    "name": "Viy",
+    "slug": "viy",
     "position": "RANGED",
     "rarity": 6,
     "profession": "CASTER",
@@ -5623,7 +5623,7 @@
     "baseOperatorId": null,
     "isLimited": false,
     "releaseOrder": 90,
-    "gender": "Female"
+    "gender": "Other"
   },
   "char_283_midn": {
     "charId": "char_283_midn",
