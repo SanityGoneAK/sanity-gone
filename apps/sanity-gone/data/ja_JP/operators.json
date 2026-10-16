@@ -2,7 +2,7 @@
   "char_4231_clemnt": {
     "name": "Clementia",
     "description": "能够阻挡两个敌人，可以造成<@ba.kw>元素伤害</>",
-    "sortIndex": 563,
+    "sortIndex": 566,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2273,7 +2273,7 @@
               },
               {
                 "key": "projectile_life_time",
-                "value": 5,
+                "value": 3.5,
                 "valueStr": null
               },
               {
@@ -2364,7 +2364,7 @@
               },
               {
                 "key": "projectile_life_time",
-                "value": 5,
+                "value": 3.5,
                 "valueStr": null
               },
               {
@@ -2455,7 +2455,7 @@
               },
               {
                 "key": "projectile_life_time",
-                "value": 5,
+                "value": 3.5,
                 "valueStr": null
               },
               {
@@ -2546,7 +2546,7 @@
               },
               {
                 "key": "projectile_life_time",
-                "value": 5,
+                "value": 3.5,
                 "valueStr": null
               },
               {
@@ -2637,7 +2637,7 @@
               },
               {
                 "key": "projectile_life_time",
-                "value": 5,
+                "value": 3.5,
                 "valueStr": null
               },
               {
@@ -2728,7 +2728,7 @@
               },
               {
                 "key": "projectile_life_time",
-                "value": 5,
+                "value": 3.5,
                 "valueStr": null
               },
               {
@@ -2819,7 +2819,7 @@
               },
               {
                 "key": "projectile_life_time",
-                "value": 5,
+                "value": 3.5,
                 "valueStr": null
               },
               {
@@ -2910,7 +2910,7 @@
               },
               {
                 "key": "projectile_life_time",
-                "value": 5,
+                "value": 3.5,
                 "valueStr": null
               },
               {
@@ -3001,7 +3001,7 @@
               },
               {
                 "key": "projectile_life_time",
-                "value": 5,
+                "value": 3.5,
                 "valueStr": null
               },
               {
@@ -3092,7 +3092,7 @@
               },
               {
                 "key": "projectile_life_time",
-                "value": 5,
+                "value": 3.5,
                 "valueStr": null
               },
               {
@@ -4524,6 +4524,32 @@
     },
     "gender": "Female",
     "modules": [],
+    "riicSkills": [
+      {
+        "stages": [
+          {
+            "buffId": "meet_spd&cost[110]",
+            "minElite": "PHASE_0",
+            "minLevel": 1,
+            "name": "谈判技巧",
+            "description": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>，心情每小时消耗<@cc.vdown>+1</>",
+            "skillIcon": "bskill_meet_spd&cost_clms"
+          }
+        ]
+      },
+      {
+        "stages": [
+          {
+            "buffId": "meet_spd&cost_char[000]",
+            "minElite": "PHASE_2",
+            "minLevel": 1,
+            "name": "合作原则",
+            "description": "与其他干员进驻会客室一起工作时，线索搜集速度提升<@cc.vup>15%</>，心情每小时消耗<@cc.vdown>+1</>",
+            "skillIcon": "bskill_meet_spd&cost_char"
+          }
+        ]
+      }
+    ],
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
@@ -4532,7 +4558,7 @@
   "char_4217_makoto": {
     "name": "Makoto Yuki",
     "description": "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0），持续20秒后自身再次替换<替身>",
-    "sortIndex": 474,
+    "sortIndex": 476,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -10047,7 +10073,7 @@
   "char_4235_thumpy": {
     "name": "Thumpy",
     "description": "能够阻挡三个敌人，可以造成元素损伤",
-    "sortIndex": 841,
+    "sortIndex": 844,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -14443,7 +14469,7 @@
   "char_1015_aglna2": {
     "name": "Angelina the Mellow Wish",
     "description": "<$ba.liftoff>起飞</>后能够阻挡2个飞行敌人",
-    "sortIndex": 1278,
+    "sortIndex": 1283,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -19003,7 +19029,7 @@
       {
         "name": "\"See you soon!\"",
         "description": null,
-        "sortIndex": 1181,
+        "sortIndex": 1186,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -20925,7 +20951,7 @@
   "char_4230_mcnist": {
     "name": "Mechanist",
     "description": "能够阻挡三个敌人，可以进行远程攻击",
-    "sortIndex": 524,
+    "sortIndex": 527,
     "spTargetType": "ROGUE",
     "spTargetId": "rogue_6",
     "canUseGeneralPotentialItem": true,
@@ -23514,7 +23540,7 @@
       {
         "name": "Structural Principle",
         "description": "能够阻挡三个敌人",
-        "sortIndex": 475,
+        "sortIndex": 477,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -26121,7 +26147,7 @@
   "char_4229_aphris": {
     "name": "Aphrissa",
     "description": "攻击造成<@ba.kw>超远距离的群体法术伤害</>",
-    "sortIndex": 707,
+    "sortIndex": 710,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -28578,7 +28604,7 @@
       {
         "name": "Repeater",
         "description": "不会受到攻击，可部署在地面或高台位",
-        "sortIndex": 1346,
+        "sortIndex": 1351,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -30740,7 +30766,7 @@
   "char_1048_orchd2": {
     "name": "Violet Mizutsune Orchid",
     "description": "高精度的近距离射击",
-    "sortIndex": 1143,
+    "sortIndex": 1148,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -35443,7 +35469,7 @@
   "char_1052_kalts2": {
     "name": "ケルシー・エスペランタ",
     "description": "味方のHPを回復\n<$ba.liftoff>離陸</>できる",
-    "sortIndex": 545,
+    "sortIndex": 548,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -38938,7 +38964,7 @@
       {
         "name": "戦術アンカー",
         "description": "攻撃を受けず、ケルシー・エスペランタの攻撃範囲外の遠距離マスにのみ配置可能",
-        "sortIndex": 1304,
+        "sortIndex": 1309,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -42932,7 +42958,7 @@
   "char_4228_closur": {
     "name": "クロージャ",
     "description": "攻撃範囲内で<@ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍にブロックされている敵を攻撃する際、攻撃力が150%まで上昇",
-    "sortIndex": 565,
+    "sortIndex": 569,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -45988,7 +46014,7 @@
       {
         "name": "指揮センター",
         "description": "攻撃しない、敵を2体までブロック\n召喚者の攻撃範囲内にしか配置できない",
-        "sortIndex": 1330,
+        "sortIndex": 1335,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -49506,7 +49532,7 @@
   "char_4226_veen": {
     "name": "ヴィイ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n攻撃の対象がいない場合はエネルギーを<@ba.kw>チャージ</>して（最大3回）次の攻撃時に一斉発射する",
-    "sortIndex": 1022,
+    "sortIndex": 1027,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -54659,7 +54685,7 @@
   "char_1051_headb2": {
     "name": "怒潮ズィマー",
     "description": "攻撃対象の周囲にいる敵に攻撃力の<@ba.kw>50%</>の<@ba.kw>範囲</>物理ダメージを与える",
-    "sortIndex": 751,
+    "sortIndex": 754,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -63584,7 +63610,7 @@
       {
         "name": "絆",
         "description": "スキル終了時、ベッローネはこの位置に戻る。期間中、他のオペレーターは配置不可",
-        "sortIndex": 778,
+        "sortIndex": 781,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -67637,7 +67663,7 @@
   "char_2027_wang": {
     "name": "ウァン",
     "description": "罠を使用可能、<@ba.kw>敵のいるマス</>に罠配置不可",
-    "sortIndex": 1009,
+    "sortIndex": 1014,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -71212,7 +71238,7 @@
       {
         "name": "碁石",
         "description": null,
-        "sortIndex": 802,
+        "sortIndex": 805,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -76875,7 +76901,7 @@
   "char_1050_chen3": {
     "name": "赤刃明霄チェン",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 155,
+    "sortIndex": 157,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -83413,7 +83439,7 @@
   "char_4056_titi": {
     "name": "ティティ",
     "description": "術ダメージを与え、敵を攻撃するたび攻撃範囲内の味方1名のHPを与ダメージの50%回復",
-    "sortIndex": 991,
+    "sortIndex": 996,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -88742,7 +88768,7 @@
   "char_4212_nasti": {
     "name": "ナスティ",
     "description": "敵を2体までブロック\n<支援装置>を使用可能",
-    "sortIndex": 731,
+    "sortIndex": 734,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -90921,7 +90947,7 @@
       {
         "name": "「品質検査員」",
         "description": "攻撃を受けない。地面マスと高台マスに配置可能",
-        "sortIndex": 1332,
+        "sortIndex": 1337,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -92562,7 +92588,7 @@
       {
         "name": "「現場監督」",
         "description": "攻撃を受けない。地面マスと高台マスに配置可能",
-        "sortIndex": 435,
+        "sortIndex": 437,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -94698,7 +94724,7 @@
       {
         "name": "「緊急建設チーム」",
         "description": "装置にはエンジニア形態と高台形態の2形態が存在する。エンジニア形態では攻撃を受けず、地面マスと高台マスに配置可能",
-        "sortIndex": 1199,
+        "sortIndex": 1204,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -100738,7 +100764,7 @@
   "char_1045_svash2": {
     "name": "凛御シルバーアッシュ",
     "description": "敵を2体までブロック\n配置待機エリアの味方ユニットを強化可能",
-    "sortIndex": 633,
+    "sortIndex": 636,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -104905,7 +104931,7 @@
       {
         "name": "風雪の眼",
         "description": "凛御シルバーアッシュの配置中、配置待機エリアに追加。コストは凛御シルバーアッシュのスキルによって変化",
-        "sortIndex": 288,
+        "sortIndex": 289,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -106177,7 +106203,7 @@
       {
         "name": "風雪の眼",
         "description": "凛御シルバーアッシュの配置中、配置待機エリアに追加。コストは凛御シルバーアッシュのスキルによって変化",
-        "sortIndex": 287,
+        "sortIndex": 288,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -107449,7 +107475,7 @@
       {
         "name": "風雪の眼",
         "description": "凛御シルバーアッシュの配置中、配置待機エリアに追加。コストは凛御シルバーアッシュのスキルによって変化",
-        "sortIndex": 286,
+        "sortIndex": 290,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -111475,7 +111501,7 @@
   "char_1046_sbell2": {
     "name": "聖聆プラマニクス",
     "description": "通常時<@ba.kw>攻撃しない</>、防御力と術耐性大幅<@ba.kw>上昇</>\nスキル発動中、通常攻撃が攻撃範囲内の敵全員に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 861,
+    "sortIndex": 864,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -118540,7 +118566,7 @@
   "char_1047_halo2": {
     "name": "溯光アステジーニ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n攻撃時、敵を一瞬<$ba.sluggish>足止め</>",
-    "sortIndex": 945,
+    "sortIndex": 948,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -124664,7 +124690,7 @@
   "char_4204_mantra": {
     "name": "マントラ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>元素ダメージ</>を与える能力を持つ",
-    "sortIndex": 1326,
+    "sortIndex": 1331,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -130964,7 +130990,7 @@
   "char_4182_oblvns": {
     "name": "豊川祥子",
     "description": "80%の攻撃力で<@ba.kw>遠距離攻撃</>も行える",
-    "sortIndex": 277,
+    "sortIndex": 279,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -135501,7 +135527,7 @@
   "char_1044_hsgma2": {
     "name": "斬業ホシグマ",
     "description": "スキル発動中、敵に術ダメージを与える",
-    "sortIndex": 1308,
+    "sortIndex": 1313,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -142201,7 +142227,7 @@
   "char_4202_haruka": {
     "name": "ハルカ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（治療量は攻撃力の75%）",
-    "sortIndex": 1154,
+    "sortIndex": 1159,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -148597,7 +148623,7 @@
   "char_4195_radian": {
     "name": "レイディアン",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>召喚物</>を使用可能",
-    "sortIndex": 207,
+    "sortIndex": 209,
     "spTargetType": "ROGUE",
     "spTargetId": "rogue_5",
     "canUseGeneralPotentialItem": true,
@@ -150838,7 +150864,7 @@
       {
         "name": "ダイウ",
         "description": "敵を3体までブロック",
-        "sortIndex": 184,
+        "sortIndex": 186,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -151913,7 +151939,7 @@
       {
         "name": "サイガ",
         "description": "遠距離攻撃が一定距離まで飛ぶ弾による攻撃に変化し、攻撃範囲内に敵がいない場合でも攻撃し続ける。弾は初めて命中した地上の敵に物理ダメージを与える",
-        "sortIndex": 828,
+        "sortIndex": 831,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -153453,7 +153479,7 @@
       {
         "name": "サントラ",
         "description": "敵に術ダメージを与える",
-        "sortIndex": 833,
+        "sortIndex": 836,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -158503,7 +158529,7 @@
   "char_1043_leizi2": {
     "name": "司霆レイズ",
     "description": "通常時は攻撃せずブロック数が0となり、攻撃力が<@ba.kw>+{atk:0%}</>まで徐々に上昇していく（最大値になるまでの時間は<@ba.kw>{max_stack_cnt}</>秒）\nスキル終了時、特性による攻撃力上昇効果をリセット",
-    "sortIndex": 934,
+    "sortIndex": 937,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -164670,7 +164696,7 @@
   "char_1042_phatm2": {
     "name": "トラゴーディア",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>元素損傷</>を与える能力を持つ",
-    "sortIndex": 523,
+    "sortIndex": 526,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -171046,7 +171072,7 @@
       {
         "name": "彷徨の檻",
         "description": "生成時、または更新時にそのマスにいるすべての敵をブロックできる。ブロック可能な対象が存在しないか、ブロックした対象から3回攻撃を受けると消滅する\nトラゴーディアのスキル終了後も最大30秒間滞在可能",
-        "sortIndex": 693,
+        "sortIndex": 696,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -175662,7 +175688,7 @@
   "char_1041_angel2": {
     "name": "新約エクシア",
     "description": "HPが徐々に減少",
-    "sortIndex": 1098,
+    "sortIndex": 1103,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -178534,7 +178560,7 @@
       {
         "name": "配達先座標",
         "description": "攻撃されない",
-        "sortIndex": 996,
+        "sortIndex": 1001,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -185056,7 +185082,7 @@
   "char_4193_lemuen": {
     "name": "レミュアン",
     "description": "攻撃範囲内の<@ba.kw>防御力が一番低い</>敵を優先して攻撃",
-    "sortIndex": 600,
+    "sortIndex": 603,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -190735,7 +190761,7 @@
   "char_4194_rmixer": {
     "name": "サンクタ・ミキサー",
     "description": "敵を3体までブロック、遠距離攻撃も行える",
-    "sortIndex": 1097,
+    "sortIndex": 1102,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -196484,7 +196510,7 @@
   "char_4179_monstr": {
     "name": "Mon3tr",
     "description": "味方のHPを回復\n味方を治療する際、<@ba.kw>3</>体目の味方まで治療が跳躍していく（跳躍するたびに治療量は25%ずつ減衰）",
-    "sortIndex": 714,
+    "sortIndex": 717,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -200352,7 +200378,7 @@
       {
         "name": "再構成核",
         "description": "HPが徐々に減少",
-        "sortIndex": 1345,
+        "sortIndex": 1350,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -205444,7 +205470,7 @@
   "char_450_necras": {
     "name": "ネクラス",
     "description": "<@ba.kw>術攻撃</>を行う\n敵を倒すことで<@ba.kw>召喚物</>を召喚可能\n自身の<@ba.kw>召喚物</>にブロックされている敵を攻撃可能",
-    "sortIndex": 933,
+    "sortIndex": 936,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -212191,7 +212217,7 @@
   "char_4010_etlchi": {
     "name": "エンテレケイア",
     "description": "味方の治療対象にならない\n攻撃は<@ba.kw>範囲物理ダメージ</>を与え、敵を1体攻撃するたび自身のHPを<@ba.kw>50</>回復（攻撃毎の最大回復回数はブロック数と同じ）",
-    "sortIndex": 1187,
+    "sortIndex": 1192,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -217897,7 +217923,7 @@
   "char_2026_yu": {
     "name": "ユー",
     "description": "敵を3体までブロック\n元素損傷を与える能力を持つ",
-    "sortIndex": 1228,
+    "sortIndex": 1233,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -224343,7 +224369,7 @@
   "char_1040_blaze2": {
     "name": "熾炎ブレイズ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>元素ダメージ</>を与える能力を持つ",
-    "sortIndex": 1355,
+    "sortIndex": 1360,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -228603,6 +228629,21 @@
           ]
         },
         "voiceId": null
+      },
+      {
+        "type": "skin",
+        "name": "夜行烛火",
+        "skinId": "char_1040_blaze2@nlc#1",
+        "illustId": "illust_char_1040_blaze2_nlc#1",
+        "avatarId": "char_1040_blaze2_nlc#1",
+        "portraitId": "char_1040_blaze2_nlc#1",
+        "displaySkin": {
+          "modelName": "Blaze the Igniting Spark",
+          "drawerList": [
+            "Mag42"
+          ]
+        },
+        "voiceId": null
       }
     ],
     "summons": [],
@@ -231657,7 +231698,7 @@
   "char_1039_thorn2": {
     "name": "引星ソーンズ",
     "description": "<@ba.kw>錬金ユニット</>を投擲可能",
-    "sortIndex": 1214,
+    "sortIndex": 1219,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -239334,7 +239375,7 @@
   "char_1038_whitw2": {
     "name": "荒蕪ラップランド",
     "description": "<@ba.kw>ドローン</>を操作して敵に<@ba.kw>術ダメージ</>を与える\nドローンが連続で同一目標を攻撃時、与ダメージが上昇（最大は攻撃力の110%まで）",
-    "sortIndex": 402,
+    "sortIndex": 404,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -248591,7 +248632,7 @@
   "char_4026_vulpis": {
     "name": "ウルピスフォリア",
     "description": "敵を2体までブロック",
-    "sortIndex": 816,
+    "sortIndex": 819,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -255128,7 +255169,7 @@
   "char_1502_crosly": {
     "name": "クラウンスレイヤー",
     "description": "再配置までの時間が極めて<@ba.kw>短い</>",
-    "sortIndex": 891,
+    "sortIndex": 894,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -261877,7 +261918,7 @@
   "char_1019_siege2": {
     "name": "ヴィーナ・ヴィクトリア",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 1015,
+    "sortIndex": 1020,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -264563,7 +264604,7 @@
       {
         "name": "黄金の誓い",
         "description": "敵を1体までブロック\n攻撃が<@ba.kw>確定ダメージ</>を与える",
-        "sortIndex": 400,
+        "sortIndex": 402,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -268194,7 +268235,7 @@
   "char_4141_marcil": {
     "name": "マルシル",
     "description": "敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 670,
+    "sortIndex": 673,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -272230,7 +272271,7 @@
   "char_4058_pepe": {
     "name": "ペペ",
     "description": "攻撃対象の周囲にいる敵に攻撃力の<@ba.kw>50%</>の<@ba.kw>範囲</>物理ダメージを与える",
-    "sortIndex": 766,
+    "sortIndex": 770,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -277901,7 +277942,7 @@
   "char_4138_narant": {
     "name": "ナラントゥヤ",
     "description": "<@ba.kw>旋回投擲物</>を所持している場合のみ攻撃できる（投擲物は攻撃後一定速度で手元に戻る）",
-    "sortIndex": 730,
+    "sortIndex": 733,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -283525,7 +283566,7 @@
   "char_4146_nymph": {
     "name": "ニンフ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>元素ダメージ</>を与える能力を持つ",
-    "sortIndex": 743,
+    "sortIndex": 746,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -289534,7 +289575,7 @@
   "char_4145_ulpia": {
     "name": "ウルピアヌス",
     "description": "ブロック中の<@ba.kw>敵全員</>を同時に攻撃",
-    "sortIndex": 1031,
+    "sortIndex": 1036,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -292412,7 +292453,7 @@
       {
         "name": "混同せぬ方向",
         "description": "スキル終了時、ウルピアヌスはこの位置に戻る。期間中、他のオペレーターは配置不可",
-        "sortIndex": 170,
+        "sortIndex": 172,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -296000,7 +296041,7 @@
   "char_1035_wisdel": {
     "name": "ウィシャデル",
     "description": "通常攻撃は<@ba.kw>地面上</>の敵に<@ba.kw>2回</>の範囲物理ダメージを与える（2回目は余震、与ダメージが攻撃力の50%になる）",
-    "sortIndex": 1016,
+    "sortIndex": 1021,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -298567,7 +298608,7 @@
       {
         "name": "レヴァナントの影",
         "description": "ウィシャデルの攻撃範囲内にいる敵を攻撃可能",
-        "sortIndex": 414,
+        "sortIndex": 416,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -305582,7 +305623,7 @@
   "char_4133_logos": {
     "name": "ロゴス",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 654,
+    "sortIndex": 657,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -312361,7 +312402,7 @@
   "char_4134_cetsyr": {
     "name": "シヴィライト・エテルナ",
     "description": "攻撃しない\n攻撃範囲内の味方全員の<@ba.kw>HP</>を継続回復（1秒ごとに攻撃力の10%回復）\n自身は<$ba.inspire>鼓舞</>状態の効果を受けない",
-    "sortIndex": 716,
+    "sortIndex": 719,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -330381,7 +330422,7 @@
       {
         "name": "GRZMOTマイン",
         "description": "攻撃されない。<@ba.kw>敵のいるマス</>に配置不可",
-        "sortIndex": 599,
+        "sortIndex": 602,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -333362,7 +333403,7 @@
   "char_2025_shu": {
     "name": "シュウ",
     "description": "HP回復スキルを所持",
-    "sortIndex": 915,
+    "sortIndex": 918,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -337525,6 +337566,21 @@
           ]
         },
         "voiceId": null
+      },
+      {
+        "type": "skin",
+        "name": "源远流长",
+        "skinId": "char_2025_shu@nlc#1",
+        "illustId": "illust_char_2025_shu_nlc#1",
+        "avatarId": "char_2025_shu_nlc#1",
+        "portraitId": "char_2025_shu_nlc#1",
+        "displaySkin": {
+          "modelName": "Shu",
+          "drawerList": [
+            "IRIS_呓"
+          ]
+        },
+        "voiceId": null
       }
     ],
     "summons": [],
@@ -341206,7 +341262,7 @@
   "char_4121_zuole": {
     "name": "ズオ・ラウ",
     "description": "味方の治療対象にならない\n敵を攻撃するたび自身のHPを<@ba.kw>{value}</>回復",
-    "sortIndex": 1377,
+    "sortIndex": 1382,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -347650,7 +347706,7 @@
   "char_4117_ray": {
     "name": "レイ",
     "description": "弾が装填されている状態でのみ攻撃でき、攻撃力が<@ba.kw>120%</>に上昇する。攻撃をしていない時は弾の装填を行う（最大装弾数：8）",
-    "sortIndex": 587,
+    "sortIndex": 590,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -350984,7 +351040,7 @@
       {
         "name": "サンドビースト",
         "description": "攻撃を受けない\n召喚者の攻撃範囲内にしか配置できない",
-        "sortIndex": 839,
+        "sortIndex": 842,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -355013,7 +355069,7 @@
   "char_4116_blkkgt": {
     "name": "デーゲンブレヒャー",
     "description": "通常攻撃時、1回の攻撃で<@ba.kw>2回</>ダメージを与える",
-    "sortIndex": 427,
+    "sortIndex": 429,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -361840,7 +361896,7 @@
   "char_245_cello": {
     "name": "ヴィルトゥオーサ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>元素損傷</>を与える能力を持つ",
-    "sortIndex": 958,
+    "sortIndex": 961,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -370645,7 +370701,7 @@
   "char_4098_vvana": {
     "name": "ヴィヴィアナ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 1019,
+    "sortIndex": 1024,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -377019,7 +377075,7 @@
   "char_4011_lessng": {
     "name": "レッシング",
     "description": "敵を1体までブロック",
-    "sortIndex": 1344,
+    "sortIndex": 1349,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -382645,7 +382701,7 @@
   "char_4088_hodrer": {
     "name": "ヘドリー",
     "description": "ブロック中の<@ba.kw>敵全員</>を同時に攻撃",
-    "sortIndex": 367,
+    "sortIndex": 369,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -388032,7 +388088,7 @@
   "char_1034_jesca2": {
     "name": "滌火ジェシカ",
     "description": "敵を3体までブロック、遠距離攻撃も行える",
-    "sortIndex": 213,
+    "sortIndex": 215,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -390889,7 +390945,7 @@
       {
         "name": "機動防盾",
         "description": "敵に狙われやすい",
-        "sortIndex": 471,
+        "sortIndex": 473,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -394648,7 +394704,7 @@
   "char_1016_agoat2": {
     "name": "純燼エイヤフィヤトラ",
     "description": "味方のHPを回復し、同時に対象に蓄積された<@ba.dt.element>元素損傷</>を自身の攻撃力の50%の値分治療する（HP最大の味方も<@ba.dt.element>元素損傷</>の治療対象となる）",
-    "sortIndex": 163,
+    "sortIndex": 165,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -403620,7 +403676,7 @@
   "char_1033_swire2": {
     "name": "琳琅スワイヤー",
     "description": "再配置までの時間が<@ba.kw>短い</>\n撤退時に<@ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを3<@ba.kw>消費</>（所持コスト不足時自動的に撤退）",
-    "sortIndex": 627,
+    "sortIndex": 630,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -406319,13 +406375,28 @@
           ]
         },
         "voiceId": null
+      },
+      {
+        "type": "skin",
+        "name": "盛世之象",
+        "skinId": "char_1033_swire2@nlc#1",
+        "illustId": "illust_char_1033_swire2_nlc#1",
+        "avatarId": "char_1033_swire2_nlc#1",
+        "portraitId": "char_1033_swire2_nlc#1",
+        "displaySkin": {
+          "modelName": "Swire the Elegant Wit",
+          "drawerList": [
+            "下野宏铭"
+          ]
+        },
+        "voiceId": null
       }
     ],
     "summons": [
       {
         "name": "シャンパン爆弾",
         "description": null,
-        "sortIndex": 1054,
+        "sortIndex": 1059,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -407166,6 +407237,19 @@
             "skinId": "token_10031_swire2_gdtrap_ambienceSynesthesia#4",
             "illustId": null,
             "avatarId": "token_10031_swire2_gdtrap_ambienceSynesthesia#4",
+            "portraitId": null,
+            "displaySkin": {
+              "modelName": null,
+              "drawerList": null
+            },
+            "voiceId": null
+          },
+          {
+            "type": "elite-zero",
+            "name": "Elite 0",
+            "skinId": "token_10031_swire2_gdtrap_nlc#1",
+            "illustId": null,
+            "avatarId": "token_10031_swire2_gdtrap_nlc#1",
             "portraitId": null,
             "displaySkin": {
               "modelName": null,
@@ -411038,7 +411122,7 @@
   "char_2012_typhon": {
     "name": "ティフォン",
     "description": "重量が最も重い敵を優先して攻撃",
-    "sortIndex": 989,
+    "sortIndex": 994,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -416555,7 +416639,7 @@
   "char_1032_excu2": {
     "name": "聖約イグゼキュター",
     "description": "味方の治療対象にならない\n攻撃は<@ba.kw>範囲物理ダメージ</>を与え、敵を1体攻撃するたび自身のHPを<@ba.kw>50</>回復（攻撃毎の最大回復回数はブロック数と同じ）",
-    "sortIndex": 869,
+    "sortIndex": 872,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -425333,7 +425417,7 @@
   "char_249_mlyss": {
     "name": "ミュルジス",
     "description": "攻撃範囲内で<@ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍にブロックされている敵を攻撃する際、攻撃力が150%まで上昇",
-    "sortIndex": 706,
+    "sortIndex": 709,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -427812,7 +427896,7 @@
       {
         "name": "うつろう水影",
         "description": "攻撃で<@ba.kw>術ダメージ</>を与える（コピーにより変化）\n召喚者の攻撃範囲内にしか配置できない",
-        "sortIndex": 638,
+        "sortIndex": 640,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -434068,7 +434152,7 @@
   "char_4027_heyak": {
     "name": "ホルハイヤ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 417,
+    "sortIndex": 419,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -440196,7 +440280,7 @@
   "char_1031_slent2": {
     "name": "淬羽サイレンス",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（治療量は攻撃力の75%）",
-    "sortIndex": 174,
+    "sortIndex": 176,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -442410,7 +442494,7 @@
       {
         "name": "夜の灯火",
         "description": "攻撃されない",
-        "sortIndex": 1164,
+        "sortIndex": 1169,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -446455,7 +446539,7 @@
   "char_4087_ines": {
     "name": "イネス",
     "description": "再配置までの時間が<@ba.kw>短い</>、遠距離攻撃も行える",
-    "sortIndex": 1188,
+    "sortIndex": 1193,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -452025,7 +452109,7 @@
   "char_1029_yato2": {
     "name": "キリンRヤトウ",
     "description": "再配置までの時間が極めて<@ba.kw>短い</>",
-    "sortIndex": 783,
+    "sortIndex": 786,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -457225,7 +457309,7 @@
   "char_4082_qiubai": {
     "name": "チューバイ",
     "description": "80%の攻撃力で<@ba.kw>遠距離攻撃</>も行える",
-    "sortIndex": 796,
+    "sortIndex": 799,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -463274,7 +463358,7 @@
   "char_2024_chyue": {
     "name": "チョンユエ",
     "description": "敵を1体までブロック",
-    "sortIndex": 160,
+    "sortIndex": 162,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -471986,7 +472070,7 @@
   "char_4080_lin": {
     "name": "リン",
     "description": "通常時<@ba.kw>攻撃しない</>、防御力と術耐性大幅<@ba.kw>上昇</>\nスキル発動中、通常攻撃が攻撃範囲内の敵全員に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 615,
+    "sortIndex": 618,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -479048,7 +479132,7 @@
   "char_1020_reed2": {
     "name": "焔影リード",
     "description": "術ダメージを与え、敵を攻撃するたび攻撃範囲内の味方1名のHPを与ダメージの50%回復",
-    "sortIndex": 1151,
+    "sortIndex": 1156,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -484741,7 +484825,7 @@
   "char_1028_texas2": {
     "name": "血掟テキサス",
     "description": "再配置までの時間が極めて<@ba.kw>短い</>",
-    "sortIndex": 440,
+    "sortIndex": 442,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -491635,7 +491719,7 @@
   "char_4065_judge": {
     "name": "ペナンス",
     "description": "味方からの治療効果を<@ba.kw>受けない</>",
-    "sortIndex": 157,
+    "sortIndex": 159,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -498070,7 +498154,7 @@
   "char_427_vigil": {
     "name": "ヴィジェル",
     "description": "攻撃範囲内で<@ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍にブロックされている敵を攻撃する際、攻撃力が150%まで上昇",
-    "sortIndex": 935,
+    "sortIndex": 938,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -500324,7 +500408,7 @@
       {
         "name": "狼の群れ",
         "description": "召喚者の攻撃範囲内にしか配置できない",
-        "sortIndex": 591,
+        "sortIndex": 594,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -507081,7 +507165,7 @@
       {
         "name": "ステインレス™多機能プラットフォーム",
         "description": "攻撃されない",
-        "sortIndex": 40,
+        "sortIndex": 41,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -508469,7 +508553,7 @@
       {
         "name": "ステインレス™多機能プラットフォーム",
         "description": "攻撃されない",
-        "sortIndex": 41,
+        "sortIndex": 40,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -510032,7 +510116,7 @@
       {
         "name": "鉄鉗号･プロトタイプ",
         "description": "味方の攻撃対象となるが、攻撃によるダメージを受けない。味方【工匠】の攻撃を受けた場合、自身のHPが回復",
-        "sortIndex": 988,
+        "sortIndex": 993,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -516203,7 +516287,7 @@
   "char_4064_mlynar": {
     "name": "ムリナール",
     "description": "通常時は攻撃せずブロック数が0となり、攻撃力が<@ba.kw>+{atk:0%}</>まで徐々に上昇していく（最大値になるまでの時間は<@ba.kw>{max_stack_cnt}</>秒）\nスキル終了時、特性による攻撃力上昇効果をリセット",
-    "sortIndex": 663,
+    "sortIndex": 666,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -530828,7 +530912,7 @@
   "char_4055_bgsnow": {
     "name": "パゼオンカ",
     "description": "高威力の中距離射撃",
-    "sortIndex": 389,
+    "sortIndex": 391,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -533884,7 +533968,7 @@
       {
         "name": "「タイプライター」",
         "description": "攻撃されない",
-        "sortIndex": 203,
+        "sortIndex": 205,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -538885,7 +538969,7 @@
   "char_4048_doroth": {
     "name": "ドロシー",
     "description": "罠を使用可能、<@ba.kw>敵のいるマス</>に罠配置不可",
-    "sortIndex": 235,
+    "sortIndex": 237,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -541405,7 +541489,7 @@
       {
         "name": "共振装置",
         "description": "攻撃されない。<@ba.kw>敵のいるマス</>に配置不可",
-        "sortIndex": 336,
+        "sortIndex": 338,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -546749,7 +546833,7 @@
   "char_4046_ebnhlz": {
     "name": "エーベンホルツ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n攻撃の対象がいない場合はエネルギーを<@ba.kw>チャージ</>して（最大3回）次の攻撃時に一斉発射する",
-    "sortIndex": 370,
+    "sortIndex": 372,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -549185,7 +549269,7 @@
       {
         "name": "過去の残像",
         "description": null,
-        "sortIndex": 520,
+        "sortIndex": 523,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -553851,7 +553935,7 @@
   "char_1023_ghost2": {
     "name": "帰溟スペクター",
     "description": "致命的なダメージを受けても撤退せず、<身替り>と入れ替わり戦闘を続行する（身替りのブロック数は0）。20秒後<身替り>から再び自身に入れ替わる",
-    "sortIndex": 348,
+    "sortIndex": 350,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -566591,7 +566675,7 @@
   "char_4042_lumen": {
     "name": "ルーメン",
     "description": "治療範囲が広く、遠く離れた味方を治療時、治療量が<@ba.kw>{heal_scale:0%}</>になる",
-    "sortIndex": 634,
+    "sortIndex": 637,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -572577,7 +572661,7 @@
   "char_4039_horn": {
     "name": "ホルン",
     "description": "未ブロック時、<@ba.kw>遠距離範囲</>物理攻撃を行う",
-    "sortIndex": 364,
+    "sortIndex": 366,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -578131,7 +578215,7 @@
   "char_300_phenxi": {
     "name": "フィアメッタ",
     "description": "敵に<@ba.kw>範囲物理ダメージ</>を与える",
-    "sortIndex": 275,
+    "sortIndex": 277,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -589517,7 +589601,7 @@
   "char_2023_ling": {
     "name": "リィン",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>召喚物</>を使用可能",
-    "sortIndex": 618,
+    "sortIndex": 621,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -592046,7 +592130,7 @@
       {
         "name": "「清平」",
         "description": "敵を1体までブロック",
-        "sortIndex": 787,
+        "sortIndex": 790,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -593242,7 +593326,7 @@
       {
         "name": "「逍遥」",
         "description": "敵に<@ba.kw>術ダメージ</>を与える",
-        "sortIndex": 1071,
+        "sortIndex": 1076,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -594883,7 +594967,7 @@
       {
         "name": "「弦驚」",
         "description": "ブロック中の<@ba.kw>敵全員</>を同時に攻撃",
-        "sortIndex": 1061,
+        "sortIndex": 1066,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -603128,7 +603212,7 @@
   "char_322_lmlee": {
     "name": "リー",
     "description": "再配置までの時間が<@ba.kw>短い</>\n撤退時に<@ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを3<@ba.kw>消費</>（所持コスト不足時自動的に撤退）",
-    "sortIndex": 593,
+    "sortIndex": 596,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -609644,7 +609728,7 @@
   "char_206_gnosis": {
     "name": "ノーシス",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 625,
+    "sortIndex": 628,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -614993,7 +615077,7 @@
   "char_1014_nearl2": {
     "name": "耀騎士ニアール",
     "description": "敵を1体までブロック",
-    "sortIndex": 1157,
+    "sortIndex": 1162,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -617844,7 +617928,7 @@
       {
         "name": "「ブレイジング・サン」",
         "description": "敵を2体までブロック",
-        "sortIndex": 1158,
+        "sortIndex": 1163,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -621989,7 +622073,7 @@
   "char_420_flamtl": {
     "name": "フレイムテイル",
     "description": "敵を2体までブロック",
-    "sortIndex": 1149,
+    "sortIndex": 1154,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -627850,7 +627934,7 @@
   "char_430_fartth": {
     "name": "ファートゥース",
     "description": "攻撃範囲内の<@ba.kw>防御力が一番低い</>敵を優先して攻撃",
-    "sortIndex": 1246,
+    "sortIndex": 1251,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -633021,7 +633105,7 @@
   "char_479_sleach": {
     "name": "サイラッハ",
     "description": "スキル発動中、ブロック数が0になる",
-    "sortIndex": 792,
+    "sortIndex": 795,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -639360,7 +639444,7 @@
   "char_1013_chen2": {
     "name": "遊龍チェン",
     "description": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が150%まで上昇",
-    "sortIndex": 455,
+    "sortIndex": 457,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -645866,7 +645950,7 @@
   "char_437_mizuki": {
     "name": "ミヅキ",
     "description": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃\n物理回避、術回避が50%上昇\n敵に<@ba.kw>狙われにくい</>",
-    "sortIndex": 929,
+    "sortIndex": 932,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -652172,7 +652256,7 @@
   "char_485_pallas": {
     "name": "パラス",
     "description": "攻撃距離が<@ba.kw>やや長い</>、自身がブロックしていない敵を攻撃時、攻撃力が120%まで上昇",
-    "sortIndex": 756,
+    "sortIndex": 759,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -657432,7 +657516,7 @@
   "char_426_billro": {
     "name": "カーネリアン",
     "description": "通常時<@ba.kw>攻撃しない</>、防御力と術耐性大幅<@ba.kw>上昇</>\nスキル発動中、通常攻撃が攻撃範囲内の敵全員に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 550,
+    "sortIndex": 553,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -663577,7 +663661,7 @@
   "char_1012_skadi2": {
     "name": "濁心スカジ",
     "description": "攻撃しない\n攻撃範囲内の味方全員の<@ba.kw>HP</>を継続回復（1秒ごとに攻撃力の10%回復）\n自身は<$ba.inspire>鼓舞</>状態の効果を受けない",
-    "sortIndex": 1361,
+    "sortIndex": 1366,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -665840,7 +665924,7 @@
       {
         "name": "スカジのシーボーン",
         "description": "攻撃されない",
-        "sortIndex": 932,
+        "sortIndex": 935,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -673380,7 +673464,7 @@
   "char_003_kalts": {
     "name": "ケルシー",
     "description": "味方のHPを回復",
-    "sortIndex": 544,
+    "sortIndex": 547,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -675647,7 +675731,7 @@
       {
         "name": "Mon3tr",
         "description": "敵を3体までブロック",
-        "sortIndex": 713,
+        "sortIndex": 716,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -682023,7 +682107,7 @@
   "char_474_glady": {
     "name": "グレイディーア",
     "description": "<@ba.kw>強制移動</>スキルを所持\n遠距離マスにも配置可能",
-    "sortIndex": 327,
+    "sortIndex": 329,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -687894,7 +687978,7 @@
   "char_472_pasngr": {
     "name": "パッセンジャー",
     "description": "<@ba.kw>3</>体目まで跳躍していく<@ba.kw>術ダメージ</>を敵に与え、跳躍するたびダメージが15%減衰し、敵を一瞬<$ba.sluggish>足止め</>",
-    "sortIndex": 1184,
+    "sortIndex": 1188,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -697234,7 +697318,7 @@
   "char_456_ash": {
     "name": "Ash",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 410,
+    "sortIndex": 412,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -700785,7 +700869,7 @@
   "char_2015_dusk": {
     "name": "シー",
     "description": "敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 1044,
+    "sortIndex": 1049,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -704269,7 +704353,7 @@
       {
         "name": "「小自在」",
         "description": "敵に<@ba.kw>術ダメージ</>を与える",
-        "sortIndex": 1072,
+        "sortIndex": 1077,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -708999,7 +709083,7 @@
   "char_362_saga": {
     "name": "サガ",
     "description": "敵を2体までブロック",
-    "sortIndex": 175,
+    "sortIndex": 177,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -714686,7 +714770,7 @@
   "char_332_archet": {
     "name": "アルケット",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 574,
+    "sortIndex": 577,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -720159,7 +720243,7 @@
   "char_264_f12yin": {
     "name": "マウンテン",
     "description": "敵を1体までブロック",
-    "sortIndex": 840,
+    "sortIndex": 843,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -725843,7 +725927,7 @@
   "char_391_rosmon": {
     "name": "ロスモンティス",
     "description": "通常攻撃は<@ba.kw>地面上</>の敵に<@ba.kw>2回</>の範囲物理ダメージを与える（2回目は余震、与ダメージが攻撃力の50%になる）",
-    "sortIndex": 689,
+    "sortIndex": 692,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -728386,7 +728470,7 @@
       {
         "name": "ロスモンティスの戦術装備",
         "description": "敵を2体までブロック。このユニットにブロックされている敵の防御力が減少",
-        "sortIndex": 690,
+        "sortIndex": 693,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -732479,7 +732563,7 @@
   "char_311_mudrok": {
     "name": "マドロック",
     "description": "味方からの治療効果を<@ba.kw>受けない</>",
-    "sortIndex": 748,
+    "sortIndex": 751,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -741424,7 +741508,7 @@
   "char_423_blemsh": {
     "name": "ブレミシャイン",
     "description": "HP回復スキルを所持",
-    "sortIndex": 1047,
+    "sortIndex": 1052,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -748129,7 +748213,7 @@
   "char_350_surtr": {
     "name": "スルト",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 888,
+    "sortIndex": 891,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -753521,7 +753605,7 @@
   "char_416_zumama": {
     "name": "ユーネクテス",
     "description": "未ブロック時、SPが自然回復しない",
-    "sortIndex": 835,
+    "sortIndex": 839,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -758804,7 +758888,7 @@
   "char_293_thorns": {
     "name": "ソーンズ",
     "description": "80%の攻撃力で<@ba.kw>遠距離攻撃</>も行える",
-    "sortIndex": 465,
+    "sortIndex": 467,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -765840,7 +765924,7 @@
   "char_358_lisa": {
     "name": "スズラン",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n攻撃時、敵を一瞬<$ba.sluggish>足止め</>",
-    "sortIndex": 621,
+    "sortIndex": 624,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -771949,7 +772033,7 @@
   "char_197_poca": {
     "name": "ロサ",
     "description": "重量が最も重い敵を優先して攻撃",
-    "sortIndex": 1286,
+    "sortIndex": 1291,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -777724,7 +777808,7 @@
   "char_113_cqbw": {
     "name": "W",
     "description": "敵に<@ba.kw>範囲物理ダメージ</>を与える",
-    "sortIndex": 1006,
+    "sortIndex": 1011,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -779885,7 +779969,7 @@
       {
         "name": "サプライズ！",
         "description": null,
-        "sortIndex": 168,
+        "sortIndex": 170,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -786243,7 +786327,7 @@
   "char_400_weedy": {
     "name": "ウィーディ",
     "description": "ブロック中の<@ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能",
-    "sortIndex": 1025,
+    "sortIndex": 1030,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -788856,7 +788940,7 @@
       {
         "name": "工事用蓄水砲",
         "description": "攻撃されない",
-        "sortIndex": 331,
+        "sortIndex": 333,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -793977,7 +794061,7 @@
   "char_250_phatom": {
     "name": "ファントム",
     "description": "再配置までの時間が極めて<@ba.kw>短い</>",
-    "sortIndex": 581,
+    "sortIndex": 584,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -796544,7 +796628,7 @@
       {
         "name": "鏡映虚影",
         "description": "敵を1体までブロック",
-        "sortIndex": 510,
+        "sortIndex": 512,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -802430,7 +802514,7 @@
   "char_222_bpipe": {
     "name": "バグパイプ",
     "description": "敵を倒す度所持コスト+1\n撤退時に初期配置時のコストを返却",
-    "sortIndex": 278,
+    "sortIndex": 280,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -807622,7 +807706,7 @@
   "char_2013_cerber": {
     "name": "ケオベ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 561,
+    "sortIndex": 564,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -813259,7 +813343,7 @@
   "char_2014_nian": {
     "name": "ニェン",
     "description": "敵を3体までブロック",
-    "sortIndex": 739,
+    "sortIndex": 742,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -825951,7 +826035,7 @@
   "char_017_huang": {
     "name": "ブレイズ",
     "description": "ブロック中の<@ba.kw>敵全員</>を同時に攻撃",
-    "sortIndex": 397,
+    "sortIndex": 399,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -831289,7 +831373,7 @@
   "char_213_mostma": {
     "name": "モスティマ",
     "description": "敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 715,
+    "sortIndex": 718,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -837269,7 +837353,7 @@
   "char_248_mgllan": {
     "name": "マゼラン",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>召喚物</>を使用可能",
-    "sortIndex": 669,
+    "sortIndex": 672,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -839304,7 +839388,7 @@
       {
         "name": "DDF・F",
         "description": "敵をブロックできない",
-        "sortIndex": 645,
+        "sortIndex": 648,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -840680,7 +840764,7 @@
       {
         "name": "DDF・L",
         "description": "敵をブロックできない。攻撃が<@ba.kw>術ダメージ</>を与える",
-        "sortIndex": 646,
+        "sortIndex": 649,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -841960,7 +842044,7 @@
       {
         "name": "DDF・A",
         "description": "敵に<@ba.kw>範囲物理ダメージ</>を与える",
-        "sortIndex": 644,
+        "sortIndex": 647,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -846482,7 +846566,7 @@
   "char_188_helage": {
     "name": "ヘラグ",
     "description": "味方の治療対象にならない\n敵を攻撃するたび自身のHPを<@ba.kw>{value}</>回復",
-    "sortIndex": 373,
+    "sortIndex": 375,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -852172,7 +852256,7 @@
   "char_340_shwaz": {
     "name": "シュヴァルツ",
     "description": "高威力の中距離射撃",
-    "sortIndex": 369,
+    "sortIndex": 371,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -864197,7 +864281,7 @@
   "char_263_skadi": {
     "name": "スカジ",
     "description": "敵を1体までブロック",
-    "sortIndex": 931,
+    "sortIndex": 934,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -869239,7 +869323,7 @@
   "char_172_svrash": {
     "name": "シルバーアッシュ",
     "description": "80%の攻撃力で<@ba.kw>遠距離攻撃</>も行える",
-    "sortIndex": 1205,
+    "sortIndex": 1210,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -875083,7 +875167,7 @@
   "char_202_demkni": {
     "name": "サリア",
     "description": "HP回復スキルを所持",
-    "sortIndex": 829,
+    "sortIndex": 832,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -882560,7 +882644,7 @@
   "char_136_hsguma": {
     "name": "ホシグマ",
     "description": "敵を3体までブロック",
-    "sortIndex": 1091,
+    "sortIndex": 1096,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -888258,7 +888342,7 @@
   "char_179_cgbird": {
     "name": "ナイチンゲール",
     "description": "味方3人のHPを同時に回復",
-    "sortIndex": 1174,
+    "sortIndex": 1179,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -891309,7 +891393,7 @@
       {
         "name": "幻影",
         "description": "敵をブロックできない",
-        "sortIndex": 405,
+        "sortIndex": 407,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -895133,7 +895217,7 @@
   "char_147_shining": {
     "name": "シャイニング",
     "description": "味方のHPを回復",
-    "sortIndex": 848,
+    "sortIndex": 851,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -913013,7 +913097,7 @@
   "char_134_ifrit": {
     "name": "イフリータ",
     "description": "<@ba.kw>直線上</>の敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 1180,
+    "sortIndex": 1185,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -918412,7 +918496,7 @@
   "char_112_siege": {
     "name": "シージ",
     "description": "敵を2体までブロック",
-    "sortIndex": 999,
+    "sortIndex": 1004,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -923795,7 +923879,7 @@
   "char_103_angel": {
     "name": "エクシア",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 737,
+    "sortIndex": 740,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -929023,7 +929107,7 @@
   "char_4232_hbound": {
     "name": "Homebound",
     "description": "可以投掷<@ba.kw>炼金单元</>协助作战",
-    "sortIndex": 662,
+    "sortIndex": 665,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -932636,6 +932720,40 @@
         ]
       }
     ],
+    "riicSkills": [
+      {
+        "stages": [
+          {
+            "buffId": "recycle_spd&cost[000]",
+            "minElite": "PHASE_0",
+            "minLevel": 1,
+            "name": "拾荒者",
+            "description": "进驻回收站时，材料转化效率<@cc.vup>+20%</>",
+            "skillIcon": "bskill_recycle_spd&cost1"
+          },
+          {
+            "buffId": "recycle_spd&cost[010]",
+            "minElite": "PHASE_2",
+            "minLevel": 1,
+            "name": "捡海人",
+            "description": "进驻回收站时，材料转化效率<@cc.vup>+30%</>",
+            "skillIcon": "bskill_recycle_spd&cost2"
+          }
+        ]
+      },
+      {
+        "stages": [
+          {
+            "buffId": "workshop_formula_device[080]",
+            "minElite": "PHASE_2",
+            "minLevel": 1,
+            "name": "指尖的光",
+            "description": "进驻加工站加工<@cc.kw>手性屈光体</>或<@cc.kw>重相位对映体</>时，副产品的产出概率提升<@cc.vup>90%</>",
+            "skillIcon": "bskill_ws_Refractor"
+          }
+        ]
+      }
+    ],
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
@@ -932644,7 +932762,7 @@
   "char_393_toledo": {
     "name": "de Toledo",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 206,
+    "sortIndex": 208,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -934323,7 +934441,7 @@
       {
         "name": "Legend of the Conquerors",
         "description": "能够阻挡三个敌人",
-        "sortIndex": 1319,
+        "sortIndex": 1324,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -937116,6 +937234,40 @@
         ]
       }
     ],
+    "riicSkills": [
+      {
+        "stages": [
+          {
+            "buffId": "hire_spd_cost[113]",
+            "minElite": "PHASE_0",
+            "minLevel": 1,
+            "name": "拉拢听众",
+            "description": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+20%</>，心情每小时消耗<@cc.vup>-0.25</>",
+            "skillIcon": "bskill_hire_spd&cost4"
+          },
+          {
+            "buffId": "hire_spd_cost[122]",
+            "minElite": "PHASE_2",
+            "minLevel": 1,
+            "name": "聚众宣讲",
+            "description": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+30%</>，心情每小时消耗<@cc.vup>-0.25</>",
+            "skillIcon": "bskill_hire_spd&cost6"
+          }
+        ]
+      },
+      {
+        "stages": [
+          {
+            "buffId": "dorm_hireToRecAll[002]",
+            "minElite": "PHASE_2",
+            "minLevel": 1,
+            "name": "忠实拥趸",
+            "description": "进驻宿舍时，该宿舍内所有干员心情每小时恢复<@cc.vup>+0.1</>，同时每个招募位（不包含初始招募位）额外<@cc.vup>+0.05</>恢复效果（叠加后的最终值同种效果取最高）",
+            "skillIcon": "bskill_dorm_hireToRecAll2"
+          }
+        ]
+      }
+    ],
     "alterId": null,
     "baseOperatorId": null,
     "isLimited": false,
@@ -939851,7 +940003,7 @@
   "char_4219_yukari": {
     "name": "Yukari Takeba",
     "description": "可以使用<$ba.triggereffect>触发型效果</>协助作战",
-    "sortIndex": 1267,
+    "sortIndex": 1272,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -942507,7 +942659,7 @@
   "char_4237_jcinta": {
     "name": "Jacinta",
     "description": "技能发动期间阻挡数变为0",
-    "sortIndex": 460,
+    "sortIndex": 462,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -946648,7 +946800,7 @@
   "char_4234_pedro": {
     "name": "Pedro",
     "description": "可以使用<$ba.triggereffect>触发型效果</>协助作战",
-    "sortIndex": 765,
+    "sortIndex": 768,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -949896,7 +950048,7 @@
   "char_1049_catap2": {
     "name": "Zinogre S Catapult",
     "description": "可消耗部署费用来强化作战能力",
-    "sortIndex": 598,
+    "sortIndex": 601,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -953860,7 +954012,7 @@
   "char_4225_tanya": {
     "name": "クラックボーン",
     "description": "敵を3体までブロック\n元素損傷を与える能力を持つ",
-    "sortIndex": 613,
+    "sortIndex": 616,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -958750,7 +958902,7 @@
   "char_4224_turdus": {
     "name": "ウクシク",
     "description": "味方のHPを回復\n味方を治療する際、<@ba.kw>3</>体目の味方まで治療が跳躍していく（跳躍するたびに治療量は25%ずつ減衰）",
-    "sortIndex": 1032,
+    "sortIndex": 1037,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -969962,7 +970114,7 @@
   "char_4031_liesel": {
     "name": "リプレーザ",
     "description": "敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 302,
+    "sortIndex": 304,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -974511,7 +974663,7 @@
   "char_4222_taraxa": {
     "name": "タラクサカム",
     "description": "味方のHPを回復\n<$ba.liftoff>離陸</>できる",
-    "sortIndex": 285,
+    "sortIndex": 287,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -979321,7 +979473,7 @@
   "char_4221_ju": {
     "name": "ジュー",
     "description": "重量が最も重い敵を優先して攻撃",
-    "sortIndex": 531,
+    "sortIndex": 534,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -983809,7 +983961,7 @@
   "char_1022_flwr2": {
     "name": "萃香パフューマー",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（治療量は攻撃力の75%）",
-    "sortIndex": 1081,
+    "sortIndex": 1086,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -993032,7 +993184,7 @@
   "char_4214_cairn": {
     "name": "ケルン",
     "description": "敵を3体までブロック\n元素損傷を与える能力を持つ",
-    "sortIndex": 1057,
+    "sortIndex": 1062,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -997911,7 +998063,7 @@
   "char_4213_skybx": {
     "name": "スカイボックス",
     "description": "配置後<$ba.liftoff>離陸</>する\n<$ba.liftoff>離陸</>中は飛行ユニットのみを攻撃\nスキル発動中は降下して<@ba.kw>範囲物理攻撃</>を行う",
-    "sortIndex": 975,
+    "sortIndex": 980,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1002763,7 +1002915,7 @@
   "char_4211_snhunt": {
     "name": "スノーハンター",
     "description": "弾が装填されている状態でのみ攻撃でき、攻撃力が<@ba.kw>120%</>に上昇する。攻撃をしていない時は弾の装填を行う（最大装弾数：8）",
-    "sortIndex": 1112,
+    "sortIndex": 1117,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1007304,7 +1007456,7 @@
   "char_394_hadiya": {
     "name": "ハディヤ",
     "description": "コストを消費して戦闘能力を強化できる",
-    "sortIndex": 353,
+    "sortIndex": 355,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1011927,7 +1012079,7 @@
   "char_4207_branch": {
     "name": "ヴェトチキ",
     "description": "味方からの治療効果を<@ba.kw>受けない</>",
-    "sortIndex": 1327,
+    "sortIndex": 1332,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1017394,7 +1017546,7 @@
   "char_4184_dolris": {
     "name": "三角初華",
     "description": "攻撃しない\n攻撃範囲内の味方全員の<@ba.kw>HP</>を継続回復（1秒ごとに攻撃力の10%回復）\n自身は<$ba.inspire>鼓舞</>状態の効果を受けない",
-    "sortIndex": 834,
+    "sortIndex": 837,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1021219,7 +1021371,7 @@
   "char_4183_mortis": {
     "name": "若葉睦",
     "description": "致命的なダメージを受けても撤退せず、<身替り>と入れ替わり戦闘を続行する（身替りのブロック数は0）。20秒後<身替り>から再び自身に入れ替わる",
-    "sortIndex": 824,
+    "sortIndex": 827,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1027437,7 +1027589,7 @@
   "char_4185_amoris": {
     "name": "祐天寺にゃむ",
     "description": "攻撃対象の周囲にいる敵に攻撃力の<@ba.kw>50%</>の<@ba.kw>範囲</>物理ダメージを与える",
-    "sortIndex": 1222,
+    "sortIndex": 1227,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1030553,7 +1030705,7 @@
   "char_4203_kichi": {
     "name": "キチセイ",
     "description": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が150%まで上昇",
-    "sortIndex": 526,
+    "sortIndex": 529,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1035216,7 +1035368,7 @@
   "char_4199_makiri": {
     "name": "マツキリ",
     "description": "敵を2体までブロック\n配置待機エリアの味方ユニットを強化可能",
-    "sortIndex": 938,
+    "sortIndex": 941,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1040066,7 +1040218,7 @@
   "char_4196_reckpr": {
     "name": "レコードキーパー",
     "description": "味方のHPを回復",
-    "sortIndex": 660,
+    "sortIndex": 663,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1044745,7 +1044897,7 @@
   "char_4191_tippi": {
     "name": "ティッピ",
     "description": "<$ba.liftoff>離陸</>中、空中の敵を2体までブロックできる",
-    "sortIndex": 212,
+    "sortIndex": 214,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1049735,7 +1049887,7 @@
   "char_4198_christ": {
     "name": "ミス・クリスティーン",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>元素ダメージ</>を与える能力を持つ",
-    "sortIndex": 704,
+    "sortIndex": 707,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1053203,7 +1053355,7 @@
   "char_4187_graceb": {
     "name": "グレースベアラー",
     "description": "敵を2体までブロック\n<@ba.kw>元素ダメージ</>を与える能力を持つ",
-    "sortIndex": 623,
+    "sortIndex": 626,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1059625,7 +1059777,7 @@
       {
         "name": "ナットちゃん",
         "description": "攻撃されない",
-        "sortIndex": 1067,
+        "sortIndex": 1072,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1063076,7 +1063228,7 @@
   "char_4171_wulfen": {
     "name": "ウルフェナイト",
     "description": "罠を使用可能、<@ba.kw>敵のいるマス</>に罠配置不可",
-    "sortIndex": 727,
+    "sortIndex": 730,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1064933,7 +1065085,7 @@
       {
         "name": "鉱石「キラー」",
         "description": "攻撃されない。<@ba.kw>敵のいるマス</>に配置不可",
-        "sortIndex": 579,
+        "sortIndex": 582,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1069263,7 +1069415,7 @@
   "char_4177_brigid": {
     "name": "ブリギッド",
     "description": "<@ba.kw>旋回投擲物</>を所持している場合のみ攻撃できる（投擲物は攻撃後一定速度で手元に戻る）",
-    "sortIndex": 927,
+    "sortIndex": 930,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1074027,7 +1074179,7 @@
   "char_4173_nowell": {
     "name": "ノウエル",
     "description": "治療範囲が広く、遠く離れた味方を治療時、治療量が<@ba.kw>{heal_scale:0%}</>になる",
-    "sortIndex": 752,
+    "sortIndex": 755,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1078802,7 +1078954,7 @@
   "char_4052_surfer": {
     "name": "サーファー",
     "description": "再配置までの時間が<@ba.kw>短い</>、遠距離攻撃も行える",
-    "sortIndex": 1123,
+    "sortIndex": 1128,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1083351,7 +1083503,7 @@
   "char_4172_xingzh": {
     "name": "シィンズゥ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（治療量は攻撃力の76%）",
-    "sortIndex": 1094,
+    "sortIndex": 1099,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1087969,7 +1088121,7 @@
   "char_4164_tecno": {
     "name": "テクノ",
     "description": "<@ba.kw>術攻撃</>を行う\n敵を倒すことで<@ba.kw>召喚物</>を召喚可能\n自身の<@ba.kw>召喚物</>にブロックされている敵を攻撃可能",
-    "sortIndex": 964,
+    "sortIndex": 969,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1090496,7 +1090648,7 @@
       {
         "name": "パペットダンサー",
         "description": "敵を1体までブロックでき、術攻撃を行う",
-        "sortIndex": 726,
+        "sortIndex": 729,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1094030,7 +1094182,7 @@
   "char_4163_rosesa": {
     "name": "ローズソルト",
     "description": "味方3人のHPを同時に回復",
-    "sortIndex": 349,
+    "sortIndex": 351,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1105431,7 +1105583,7 @@
   "char_4148_philae": {
     "name": "フィラエ",
     "description": "敵を3体までブロック\n元素損傷を与える能力を持つ",
-    "sortIndex": 270,
+    "sortIndex": 272,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1114604,7 +1114756,7 @@
   "char_4162_cathy": {
     "name": "キャサリン",
     "description": "敵を2体までブロック\n<支援装置>を使用可能",
-    "sortIndex": 546,
+    "sortIndex": 549,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1116316,7 +1116468,7 @@
       {
         "name": "クローラー・防護ユニット",
         "description": "攻撃されない",
-        "sortIndex": 764,
+        "sortIndex": 767,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1119970,7 +1120122,7 @@
   "char_4142_laios": {
     "name": "ライオス",
     "description": "敵を1体までブロック",
-    "sortIndex": 586,
+    "sortIndex": 589,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1122351,7 +1122503,7 @@
   "char_4144_chilc": {
     "name": "チルチャック",
     "description": "再配置までの時間が<@ba.kw>短い</>、遠距離攻撃も行える",
-    "sortIndex": 781,
+    "sortIndex": 784,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1125236,7 +1125388,7 @@
   "char_4143_sensi": {
     "name": "センシ",
     "description": "HP回復スキルを所持",
-    "sortIndex": 837,
+    "sortIndex": 840,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1128665,7 +1128817,7 @@
   "char_4140_lasher": {
     "name": "サンドレコナー",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>召喚物</>を使用可能",
-    "sortIndex": 377,
+    "sortIndex": 379,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1130315,7 +1130467,7 @@
       {
         "name": "カラクリ羽獣",
         "description": "敵に<@ba.kw>術ダメージ</>を与える",
-        "sortIndex": 269,
+        "sortIndex": 271,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1134340,7 +1134492,7 @@
   "char_4139_papyrs": {
     "name": "パピルス",
     "description": "味方のHPを回復\n味方を治療する際、<@ba.kw>3</>体目の味方まで治療が跳躍していく（跳躍するたびに治療量は25%ずつ減衰）",
-    "sortIndex": 956,
+    "sortIndex": 959,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1138985,7 +1139137,7 @@
   "char_4151_tinman": {
     "name": "ブリキ",
     "description": "<@ba.kw>錬金ユニット</>を投擲可能",
-    "sortIndex": 1099,
+    "sortIndex": 1104,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1143692,7 +1143844,7 @@
   "char_4147_mitm": {
     "name": "ミトム",
     "description": "攻撃範囲内で<@ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍にブロックされている敵を攻撃する際、攻撃力が150%まで上昇",
-    "sortIndex": 236,
+    "sortIndex": 238,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1146017,7 +1146169,7 @@
       {
         "name": "チェリー3号",
         "description": "敵を1体までブロック。戦車状態の時、召喚者の攻撃範囲内にしか配置できない",
-        "sortIndex": 1202,
+        "sortIndex": 1207,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1149435,7 +1149587,7 @@
   "char_4079_haini": {
     "name": "ルシーラ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 357,
+    "sortIndex": 359,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1154123,7 +1154275,7 @@
   "char_4137_udflow": {
     "name": "アンダーフロー",
     "description": "敵を3体までブロック、遠距離攻撃も行える",
-    "sortIndex": 877,
+    "sortIndex": 880,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1158943,7 +1159095,7 @@
   "char_1036_fang2": {
     "name": "歴陣鋭槍フェン",
     "description": "敵を倒す度所持コスト+1\n撤退時に初期配置時のコストを返却",
-    "sortIndex": 640,
+    "sortIndex": 643,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1172453,7 +1172605,7 @@
   "char_4125_rdoc": {
     "name": "Doc",
     "description": "攻撃距離が<@ba.kw>やや長い</>、自身がブロックしていない敵を攻撃時、攻撃力が120%まで上昇",
-    "sortIndex": 1217,
+    "sortIndex": 1222,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1175438,7 +1175590,7 @@
   "char_4124_iana": {
     "name": "Iana",
     "description": "致命的なダメージを受けても撤退せず、<身替り>と入れ替わり戦闘を続行する（身替りのブロック数は0）。20秒後<身替り>から再び自身に入れ替わる",
-    "sortIndex": 921,
+    "sortIndex": 924,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1178575,7 +1178727,7 @@
   "char_4126_fuze": {
     "name": "Fuze",
     "description": "ブロック中の<@ba.kw>敵全員</>を同時に攻撃",
-    "sortIndex": 194,
+    "sortIndex": 196,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1181110,7 +1181262,7 @@
   "char_4023_rfalcn": {
     "name": "ケストレル",
     "description": "敵を2体までブロック",
-    "sortIndex": 387,
+    "sortIndex": 390,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1185788,7 +1185940,7 @@
   "char_4122_grabds": {
     "name": "グレインバッズ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n攻撃時、敵を一瞬<$ba.sluggish>足止め</>",
-    "sortIndex": 1068,
+    "sortIndex": 1073,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1190916,7 +1191068,7 @@
   "char_4119_wanqin": {
     "name": "ワンチィン",
     "description": "スキル発動中、ブロック数が0になる",
-    "sortIndex": 1010,
+    "sortIndex": 1015,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1196098,7 +1196250,7 @@
   "char_4081_warmy": {
     "name": "ウォーミー",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>元素ダメージ</>を与える能力を持つ",
-    "sortIndex": 1029,
+    "sortIndex": 1034,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1200686,7 +1200838,7 @@
   "char_194_leto": {
     "name": "リェータ",
     "description": "80%の攻撃力で<@ba.kw>遠距離攻撃</>も行える",
-    "sortIndex": 612,
+    "sortIndex": 615,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1205793,7 +1205945,7 @@
   "char_4114_harold": {
     "name": "ハロルド",
     "description": "味方のHPを回復し、同時に対象に蓄積された<@ba.dt.element>元素損傷</>を自身の攻撃力の50%の値分治療する（HP最大の味方も<@ba.dt.element>元素損傷</>の治療対象となる）",
-    "sortIndex": 358,
+    "sortIndex": 360,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1210324,7 +1210476,7 @@
   "char_4109_baslin": {
     "name": "ベースライン",
     "description": "HP回復スキルを所持",
-    "sortIndex": 875,
+    "sortIndex": 878,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1215519,7 +1215671,7 @@
   "char_499_kaitou": {
     "name": "ディアマンテ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>元素ダメージ</>を与える能力を持つ",
-    "sortIndex": 1314,
+    "sortIndex": 1319,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1220048,7 +1220200,7 @@
   "char_494_vendla": {
     "name": "ヴァンデラ",
     "description": "術ダメージを与え、敵を攻撃するたび攻撃範囲内の味方1名のHPを与ダメージの50%回復",
-    "sortIndex": 167,
+    "sortIndex": 169,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1224566,7 +1224718,7 @@
   "char_4110_delphn": {
     "name": "デルフィーン",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n攻撃の対象がいない場合はエネルギーを<@ba.kw>チャージ</>して（最大3回）次の攻撃時に一斉発射する",
-    "sortIndex": 181,
+    "sortIndex": 183,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1229501,7 +1229653,7 @@
   "char_4105_almond": {
     "name": "アーモンド",
     "description": "<@ba.kw>強制移動</>スキルを所持\n遠距離マスにも配置可能",
-    "sortIndex": 1088,
+    "sortIndex": 1093,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1238614,7 +1238766,7 @@
   "char_488_buildr": {
     "name": "ポンシラス",
     "description": "敵を2体までブロック",
-    "sortIndex": 791,
+    "sortIndex": 794,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1247814,7 +1247966,7 @@
   "char_4102_threye": {
     "name": "ヴァラルクビン",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>元素損傷</>を与える能力を持つ",
-    "sortIndex": 628,
+    "sortIndex": 631,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1252384,7 +1252536,7 @@
   "char_341_sntlla": {
     "name": "サンタラ",
     "description": "敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 362,
+    "sortIndex": 364,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1257493,7 +1257645,7 @@
   "char_4015_spuria": {
     "name": "スプリア",
     "description": "HPが徐々に減少",
-    "sortIndex": 571,
+    "sortIndex": 574,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1262053,7 +1262205,7 @@
   "char_498_inside": {
     "name": "インサイダー",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 1213,
+    "sortIndex": 1218,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1266563,7 +1266715,7 @@
   "char_4006_melnte": {
     "name": "メラナイト",
     "description": "高威力の中距離射撃",
-    "sortIndex": 676,
+    "sortIndex": 679,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1271276,7 +1271428,7 @@
   "char_464_cement": {
     "name": "セメント",
     "description": "未ブロック時、SPが自然回復しない",
-    "sortIndex": 1140,
+    "sortIndex": 1145,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1275753,7 +1275905,7 @@
   "char_154_morgan": {
     "name": "モーガン",
     "description": "敵を1体までブロック",
-    "sortIndex": 710,
+    "sortIndex": 713,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1280279,7 +1280431,7 @@
   "char_1030_noirc2": {
     "name": "レウスSノイルホーン",
     "description": "味方の治療対象にならない\n敵を攻撃するたび自身のHPを<@ba.kw>{value}</>回復",
-    "sortIndex": 418,
+    "sortIndex": 420,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1285201,7 +1285353,7 @@
   "char_4083_chimes": {
     "name": "ウィンドチャイム",
     "description": "ブロック中の<@ba.kw>敵全員</>を同時に攻撃",
-    "sortIndex": 234,
+    "sortIndex": 236,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1289707,7 +1289859,7 @@
   "char_493_firwhl": {
     "name": "ファイヤーホイッスル",
     "description": "未ブロック時、<@ba.kw>遠距離範囲</>物理攻撃を行う",
-    "sortIndex": 420,
+    "sortIndex": 422,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1294302,7 +1294454,7 @@
   "char_4078_bdhkgt": {
     "name": "ジエユン",
     "description": "敵に<@ba.kw>範囲物理ダメージ</>を与える",
-    "sortIndex": 482,
+    "sortIndex": 484,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1299054,7 +1299206,7 @@
   "char_297_hamoni": {
     "name": "ハーモニー",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n攻撃の対象がいない場合はエネルギーを<@ba.kw>チャージ</>して（最大3回）次の攻撃時に一斉発射する",
-    "sortIndex": 378,
+    "sortIndex": 380,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1303864,7 +1304016,7 @@
   "char_4017_puzzle": {
     "name": "パズル",
     "description": "再配置までの時間が<@ba.kw>短い</>、遠距離攻撃も行える",
-    "sortIndex": 705,
+    "sortIndex": 708,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1308519,7 +1308671,7 @@
   "char_4014_lunacu": {
     "name": "ルナカブ",
     "description": "攻撃範囲内の<@ba.kw>防御力が一番低い</>敵を優先して攻撃",
-    "sortIndex": 1369,
+    "sortIndex": 1374,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1313014,7 +1313166,7 @@
   "char_466_qanik": {
     "name": "カニパラート",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 1113,
+    "sortIndex": 1118,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1317643,7 +1317795,7 @@
   "char_4071_peper": {
     "name": "パプリカ",
     "description": "味方のHPを回復\n味方を治療する際、<@ba.kw>3</>体目の味方まで治療が跳躍していく（跳躍するたびに治療量は25%ずつ減衰）",
-    "sortIndex": 700,
+    "sortIndex": 703,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1322195,7 +1322347,7 @@
   "char_157_dagda": {
     "name": "ダグザ",
     "description": "敵を1体までブロック",
-    "sortIndex": 178,
+    "sortIndex": 180,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1326558,7 +1326710,7 @@
   "char_4066_highmo": {
     "name": "ハイモア",
     "description": "味方の治療対象にならない\n攻撃は<@ba.kw>範囲物理ダメージ</>を与え、敵を1体攻撃するたび自身のHPを<@ba.kw>50</>回復（攻撃毎の最大回復回数はブロック数と同じ）",
-    "sortIndex": 356,
+    "sortIndex": 358,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1331060,7 +1331212,7 @@
   "char_4032_provs": {
     "name": "プロヴァイゾ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n攻撃時、敵を一瞬<$ba.sluggish>足止め</>",
-    "sortIndex": 187,
+    "sortIndex": 189,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1336291,7 +1336443,7 @@
   "char_497_ctable": {
     "name": "カンタービレ",
     "description": "再配置までの時間が<@ba.kw>短い</>、遠距離攻撃も行える",
-    "sortIndex": 1065,
+    "sortIndex": 1070,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1340881,7 +1341033,7 @@
   "char_4054_malist": {
     "name": "ミニマリスト",
     "description": "<@ba.kw>ドローン</>を操作して敵に<@ba.kw>術ダメージ</>を与える\nドローンが連続で同一目標を攻撃時、与ダメージが上昇（最大は攻撃力の110%まで）",
-    "sortIndex": 1331,
+    "sortIndex": 1336,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1350199,7 +1350351,7 @@
   "char_135_halo": {
     "name": "アステジーニ",
     "description": "<@ba.kw>3</>体目まで跳躍していく<@ba.kw>術ダメージ</>を敵に与え、跳躍するたびダメージが15%減衰し、敵を一瞬<$ba.sluggish>足止め</>",
-    "sortIndex": 1092,
+    "sortIndex": 1097,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1355355,7 +1355507,7 @@
   "char_1024_hbisc2": {
     "name": "濯塵ハイビスカス",
     "description": "術ダメージを与え、敵を攻撃するたび攻撃範囲内の味方1名のHPを与ダメージの50%回復",
-    "sortIndex": 1358,
+    "sortIndex": 1363,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1369732,7 +1369884,7 @@
   "char_433_windft": {
     "name": "ウインドフリット",
     "description": "敵を2体までブロック\n<支援装置>を使用可能",
-    "sortIndex": 661,
+    "sortIndex": 664,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1371926,7 +1372078,7 @@
       {
         "name": "高信頼性バッテリー",
         "description": "攻撃されない",
-        "sortIndex": 562,
+        "sortIndex": 565,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1376224,7 +1376376,7 @@
   "char_4040_rockr": {
     "name": "ロックロック",
     "description": "<@ba.kw>ドローン</>を操作して敵に<@ba.kw>術ダメージ</>を与える\nドローンが連続で同一目標を攻撃時、与ダメージが上昇（最大は攻撃力の110%まで）",
-    "sortIndex": 655,
+    "sortIndex": 658,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1380853,7 +1381005,7 @@
   "char_4045_heidi": {
     "name": "ハイディ",
     "description": "攻撃しない\n攻撃範囲内の味方全員の<@ba.kw>HP</>を継続回復（1秒ごとに攻撃力の10%回復）\n自身は<$ba.inspire>鼓舞</>状態の効果を受けない",
-    "sortIndex": 354,
+    "sortIndex": 356,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1385605,7 +1385757,7 @@
   "char_4016_kazema": {
     "name": "カゼマル",
     "description": "致命的なダメージを受けても撤退せず、<身替り>と入れ替わり戦闘を続行する（身替りのブロック数は0）。20秒後<身替り>から再び自身に入れ替わる",
-    "sortIndex": 284,
+    "sortIndex": 286,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1387233,7 +1387385,7 @@
       {
         "name": "紙人形",
         "description": "敵をブロックできない",
-        "sortIndex": 1340,
+        "sortIndex": 1345,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1390832,7 +1390984,7 @@
   "char_4036_forcer": {
     "name": "エンフォーサー",
     "description": "ブロック中の<@ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能",
-    "sortIndex": 445,
+    "sortIndex": 447,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1395559,7 +1395711,7 @@
   "char_492_quercu": {
     "name": "クエルクス",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（治療量は攻撃力の75%）",
-    "sortIndex": 1048,
+    "sortIndex": 1053,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1400135,7 +1400287,7 @@
   "char_476_blkngt": {
     "name": "ブラックナイト",
     "description": "攻撃範囲内で<@ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍にブロックされている敵を攻撃する際、攻撃力が150%まで上昇",
-    "sortIndex": 1162,
+    "sortIndex": 1167,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1402025,7 +1402177,7 @@
       {
         "name": "眠獣",
         "description": "敵を1体までブロック\n召喚者の攻撃範囲内にしか配置できない",
-        "sortIndex": 686,
+        "sortIndex": 689,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1405458,7 +1405610,7 @@
   "char_1021_kroos2": {
     "name": "寒芒クルース",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 360,
+    "sortIndex": 362,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1409968,7 +1410120,7 @@
   "char_4019_ncdeer": {
     "name": "九色鹿",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（治療量は攻撃力の75%）",
-    "sortIndex": 522,
+    "sortIndex": 525,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1412486,7 +1412638,7 @@
   "char_4025_aprot2": {
     "name": "シャレム",
     "description": "スキル発動中、敵に術ダメージを与える",
-    "sortIndex": 725,
+    "sortIndex": 727,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1417301,7 +1417453,7 @@
   "char_422_aurora": {
     "name": "オーロラ",
     "description": "未ブロック時、SPが自然回復しない",
-    "sortIndex": 483,
+    "sortIndex": 485,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1421914,7 +1422066,7 @@
   "char_4013_kjera": {
     "name": "イェラ",
     "description": "<@ba.kw>ドローン</>を操作して敵に<@ba.kw>術ダメージ</>を与える\nドローンが連続で同一目標を攻撃時、与ダメージが上昇（最大は攻撃力の110%まで）",
-    "sortIndex": 1165,
+    "sortIndex": 1170,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1426533,7 +1426685,7 @@
   "char_489_serum": {
     "name": "コロセラム",
     "description": "<@ba.kw>直線上</>の敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 899,
+    "sortIndex": 902,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1430993,7 +1431145,7 @@
   "char_496_wildmn": {
     "name": "ワイルドメイン",
     "description": "敵を倒す度所持コスト+1\n撤退時に初期配置時のコストを返却",
-    "sortIndex": 1177,
+    "sortIndex": 1182,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1435471,7 +1435623,7 @@
   "char_449_glider": {
     "name": "ハニーベリー",
     "description": "味方のHPを回復し、同時に対象に蓄積された<@ba.dt.element>元素損傷</>を自身の攻撃力の50%の値分治療する（HP最大の味方も<@ba.dt.element>元素損傷</>の治療対象となる）",
-    "sortIndex": 697,
+    "sortIndex": 700,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1440119,7 +1440271,7 @@
   "char_431_ashlok": {
     "name": "アッシュロック",
     "description": "未ブロック時、<@ba.kw>遠距離範囲</>物理攻撃を行う",
-    "sortIndex": 408,
+    "sortIndex": 410,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1444548,7 +1444700,7 @@
   "char_473_mberry": {
     "name": "マルベリー",
     "description": "味方のHPを回復し、同時に対象に蓄積された<@ba.dt.element>元素損傷</>を自身の攻撃力の50%の値分治療する（HP最大の味方も<@ba.dt.element>元素損傷</>の治療対象となる）",
-    "sortIndex": 832,
+    "sortIndex": 835,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1449827,7 +1449979,7 @@
   "char_421_crow": {
     "name": "ラ・プルマ",
     "description": "味方の治療対象にならない\n攻撃は<@ba.kw>範囲物理ダメージ</>を与え、敵を1体攻撃するたび自身のHPを<@ba.kw>50</>回復（攻撃毎の最大回復回数はブロック数と同じ）",
-    "sortIndex": 1274,
+    "sortIndex": 1279,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1454290,7 +1454442,7 @@
   "char_486_takila": {
     "name": "テキーラ",
     "description": "通常時は攻撃せずブロック数が0となり、攻撃力が<@ba.kw>+{atk:0%}</>まで徐々に上昇していく（最大値になるまでの時間は<@ba.kw>{max_stack_cnt}</>秒）\nスキル終了時、特性による攻撃力上昇効果をリセット",
-    "sortIndex": 643,
+    "sortIndex": 646,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1459250,7 +1459402,7 @@
   "char_478_kirara": {
     "name": "キララ",
     "description": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃\n物理回避、術回避が50%上昇\n敵に<@ba.kw>狙われにくい</>",
-    "sortIndex": 782,
+    "sortIndex": 785,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1468557,7 +1468709,7 @@
   "char_475_akafyu": {
     "name": "アカフユ",
     "description": "味方の治療対象にならない\n敵を攻撃するたび自身のHPを<@ba.kw>{value}</>回復",
-    "sortIndex": 151,
+    "sortIndex": 153,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1472965,7 +1473117,7 @@
   "char_363_toddi": {
     "name": "トギフォンス",
     "description": "重量が最も重い敵を優先して攻撃",
-    "sortIndex": 819,
+    "sortIndex": 822,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1483012,7 +1483164,7 @@
   "char_458_rfrost": {
     "name": "Frost",
     "description": "罠を使用可能、<@ba.kw>敵のいるマス</>に罠配置不可",
-    "sortIndex": 916,
+    "sortIndex": 919,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1484898,7 +1485050,7 @@
       {
         "name": "ウェルカムマット",
         "description": "攻撃されない。<@ba.kw>敵のいるマス</>に配置不可",
-        "sortIndex": 1192,
+        "sortIndex": 1197,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1486954,7 +1487106,7 @@
   "char_457_blitz": {
     "name": "Blitz",
     "description": "敵を3体までブロック、遠距離攻撃も行える",
-    "sortIndex": 845,
+    "sortIndex": 849,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1489861,7 +1490013,7 @@
   "char_459_tachak": {
     "name": "Tachanka",
     "description": "通常攻撃時、1回の攻撃で<@ba.kw>2回</>ダメージを与える",
-    "sortIndex": 1294,
+    "sortIndex": 1299,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1492902,7 +1493054,7 @@
   "char_455_nothin": {
     "name": "ウユウ",
     "description": "再配置までの時間が<@ba.kw>短い</>\n撤退時に<@ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを3<@ba.kw>消費</>（所持コスト不足時自動的に撤退）",
-    "sortIndex": 1040,
+    "sortIndex": 1045,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1498286,7 +1498438,7 @@
   "char_1011_lava2": {
     "name": "炎獄ラヴァ",
     "description": "敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 1152,
+    "sortIndex": 1157,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1503065,7 +1503217,7 @@
   "char_402_tuye": {
     "name": "トゥイエ",
     "description": "味方のHPを回復",
-    "sortIndex": 1004,
+    "sortIndex": 1009,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1512478,7 +1512630,7 @@
   "char_214_kafka": {
     "name": "カフカ",
     "description": "再配置までの時間が極めて<@ba.kw>短い</>",
-    "sortIndex": 543,
+    "sortIndex": 546,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1517226,7 +1517378,7 @@
   "char_451_robin": {
     "name": "ロビン",
     "description": "罠を使用可能、<@ba.kw>敵のいるマス</>に罠配置不可",
-    "sortIndex": 649,
+    "sortIndex": 652,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1519027,7 +1519179,7 @@
       {
         "name": "「クリップ」",
         "description": "攻撃されない。<@ba.kw>敵のいるマス</>に配置不可",
-        "sortIndex": 461,
+        "sortIndex": 463,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1522989,7 +1523141,7 @@
   "char_436_whispr": {
     "name": "ウィスパーレイン",
     "description": "治療範囲が広く、遠く離れた味方を治療時、治療量が<@ba.kw>{heal_scale:0%}</>になる",
-    "sortIndex": 1129,
+    "sortIndex": 1134,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1536866,7 +1537018,7 @@
   "char_365_aprl": {
     "name": "エイプリル",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 936,
+    "sortIndex": 939,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1546821,7 +1546973,7 @@
   "char_415_flint": {
     "name": "フリント",
     "description": "敵を1体までブロック",
-    "sortIndex": 949,
+    "sortIndex": 951,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1551307,7 +1551459,7 @@
   "char_411_tomimi": {
     "name": "トミミ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 967,
+    "sortIndex": 972,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1560648,7 +1560800,7 @@
   "char_349_chiave": {
     "name": "キアーベ",
     "description": "敵を2体までブロック",
-    "sortIndex": 458,
+    "sortIndex": 460,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1565696,7 +1565848,7 @@
   "char_344_beewax": {
     "name": "ビーズワクス",
     "description": "通常時<@ba.kw>攻撃しない</>、防御力と術耐性大幅<@ba.kw>上昇</>\nスキル発動中、通常攻撃が攻撃範囲内の敵全員に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 694,
+    "sortIndex": 697,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1568214,7 +1568366,7 @@
       {
         "name": "砂の碑",
         "description": "敵を3体までブロック",
-        "sortIndex": 853,
+        "sortIndex": 856,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1572285,7 +1572437,7 @@
   "char_294_ayer": {
     "name": "エアースカーペ",
     "description": "80%の攻撃力で<@ba.kw>遠距離攻撃</>も行える",
-    "sortIndex": 225,
+    "sortIndex": 227,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1577424,7 +1577576,7 @@
   "char_345_folnic": {
     "name": "フォリニック",
     "description": "味方のHPを回復",
-    "sortIndex": 1161,
+    "sortIndex": 1166,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1581918,7 +1582070,7 @@
   "char_373_lionhd": {
     "name": "レオンハルト",
     "description": "敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 585,
+    "sortIndex": 588,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1587272,7 +1587424,7 @@
   "char_405_absin": {
     "name": "アブサント",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 578,
+    "sortIndex": 581,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1592352,7 +1592504,7 @@
   "char_343_tknogi": {
     "name": "ツキノギ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\nスキル発動中、通常攻撃が味方に対する治療行動になる（治療量は攻撃力の75%）",
-    "sortIndex": 1263,
+    "sortIndex": 1268,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1596946,7 +1597098,7 @@
   "char_378_asbest": {
     "name": "アスベストス",
     "description": "スキル発動中、敵に術ダメージを与える",
-    "sortIndex": 895,
+    "sortIndex": 898,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1601670,7 +1601822,7 @@
   "char_401_elysm": {
     "name": "エリジウム",
     "description": "スキル発動中、ブロック数が0になる",
-    "sortIndex": 488,
+    "sortIndex": 490,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1607870,7 +1608022,7 @@
   "char_254_vodfox": {
     "name": "シャマレ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 1034,
+    "sortIndex": 1039,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1609655,7 +1609807,7 @@
       {
         "name": "呪いの人形",
         "description": "攻撃されない",
-        "sortIndex": 1381,
+        "sortIndex": 1386,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1613320,7 +1613472,7 @@
   "char_333_sidero": {
     "name": "シデロカ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 1362,
+    "sortIndex": 1367,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1617725,7 +1617877,7 @@
   "char_379_sesa": {
     "name": "シェーシャ",
     "description": "敵に<@ba.kw>範囲物理ダメージ</>を与える",
-    "sortIndex": 878,
+    "sortIndex": 881,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1627076,7 +1627228,7 @@
   "char_306_leizi": {
     "name": "レイズ",
     "description": "<@ba.kw>3</>体目まで跳躍していく<@ba.kw>術ダメージ</>を敵に与え、跳躍するたびダメージが15%減衰し、敵を一瞬<$ba.sluggish>足止め</>",
-    "sortIndex": 509,
+    "sortIndex": 511,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1631501,7 +1631653,7 @@
   "char_383_snsant": {
     "name": "スノーズント",
     "description": "<@ba.kw>強制移動</>スキルを所持\n遠距離マスにも配置可能",
-    "sortIndex": 1115,
+    "sortIndex": 1120,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1636869,7 +1637021,7 @@
   "char_367_swllow": {
     "name": "グレースロート",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 409,
+    "sortIndex": 411,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1645981,7 +1646133,7 @@
   "char_261_sddrag": {
     "name": "リード",
     "description": "敵を倒す度所持コスト+1\n撤退時に初期配置時のコストを返却",
-    "sortIndex": 1011,
+    "sortIndex": 1016,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1650376,7 +1650528,7 @@
   "char_275_breeze": {
     "name": "ブリーズ",
     "description": "味方3人のHPを同時に回復",
-    "sortIndex": 1014,
+    "sortIndex": 1019,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1654877,7 +1655029,7 @@
   "char_279_excu": {
     "name": "イグゼキュター",
     "description": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が150%まで上昇",
-    "sortIndex": 939,
+    "sortIndex": 942,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1659236,7 +1659388,7 @@
   "char_131_flameb": {
     "name": "エンカク",
     "description": "敵を1体までブロック",
-    "sortIndex": 1144,
+    "sortIndex": 1149,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1663658,7 +1663810,7 @@
   "char_274_astesi": {
     "name": "アステシア",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 1087,
+    "sortIndex": 1092,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1668076,7 +1668228,7 @@
   "char_326_glacus": {
     "name": "グラウコス",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n攻撃時、敵を一瞬<$ba.sluggish>足止め</>",
-    "sortIndex": 326,
+    "sortIndex": 328,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1673753,7 +1673905,7 @@
   "char_308_swire": {
     "name": "スワイヤー",
     "description": "攻撃距離が<@ba.kw>やや長い</>、自身がブロックしていない敵を攻撃時、攻撃力が120%まで上昇",
-    "sortIndex": 890,
+    "sortIndex": 893,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1679746,7 +1679898,7 @@
   "char_220_grani": {
     "name": "グラニ",
     "description": "敵を倒す度所持コスト+1\n撤退時に初期配置時のコストを返却",
-    "sortIndex": 325,
+    "sortIndex": 327,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1684243,7 +1684395,7 @@
   "char_164_nightm": {
     "name": "ナイトメア",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 1167,
+    "sortIndex": 1172,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1693444,7 +1693596,7 @@
   "char_241_panda": {
     "name": "エフイーター",
     "description": "ブロック中の<@ba.kw>敵全員</>を同時に攻撃\n遠距離マスにも配置可能",
-    "sortIndex": 904,
+    "sortIndex": 907,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1698901,7 +1699053,7 @@
   "char_215_mantic": {
     "name": "マンティコア",
     "description": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃\n物理回避、術回避が50%上昇\n敵に<@ba.kw>狙われにくい</>",
-    "sortIndex": 906,
+    "sortIndex": 910,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1703493,7 +1703645,7 @@
   "char_101_sora": {
     "name": "ソラ",
     "description": "攻撃しない\n攻撃範囲内の味方全員の<@ba.kw>HP</>を継続回復（1秒ごとに攻撃力の10%回復）\n自身は<$ba.inspire>鼓舞</>状態の効果を受けない",
-    "sortIndex": 569,
+    "sortIndex": 572,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1708763,7 +1708915,7 @@
   "char_195_glassb": {
     "name": "イースチナ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n攻撃時、敵を一瞬<$ba.sluggish>足止め</>",
-    "sortIndex": 1324,
+    "sortIndex": 1329,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1714730,7 +1714882,7 @@
   "char_174_slbell": {
     "name": "プラマニクス",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 166,
+    "sortIndex": 168,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1719276,7 +1719428,7 @@
   "char_173_slchan": {
     "name": "クリフハート",
     "description": "<@ba.kw>強制移動</>スキルを所持\n遠距離マスにも配置可能",
-    "sortIndex": 1160,
+    "sortIndex": 1165,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1724275,7 +1724427,7 @@
   "char_158_milu": {
     "name": "ファイヤーウォッチ",
     "description": "攻撃範囲内の<@ba.kw>防御力が一番低い</>敵を優先して攻撃",
-    "sortIndex": 913,
+    "sortIndex": 916,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1728809,7 +1728961,7 @@
   "char_145_prove": {
     "name": "プロヴァンス",
     "description": "高威力の中距離射撃",
-    "sortIndex": 777,
+    "sortIndex": 780,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1733301,7 +1733453,7 @@
   "char_166_skfire": {
     "name": "スカイフレア",
     "description": "敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 974,
+    "sortIndex": 979,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1737789,7 +1737941,7 @@
   "char_002_amiya": {
     "name": "アーミヤ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 17,
+    "sortIndex": 16,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -1753863,7 +1754015,7 @@
   "char_219_meteo": {
     "name": "メテオリーテ",
     "description": "敵に<@ba.kw>範囲物理ダメージ</>を与える",
-    "sortIndex": 1276,
+    "sortIndex": 1281,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1763500,7 +1763652,7 @@
   "char_129_bluep": {
     "name": "アズリウス",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 589,
+    "sortIndex": 592,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1767983,7 +1768135,7 @@
   "char_143_ghost": {
     "name": "スペクター",
     "description": "ブロック中の<@ba.kw>敵全員</>を同時に攻撃",
-    "sortIndex": 1221,
+    "sortIndex": 1226,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1772300,7 +1772452,7 @@
   "char_140_whitew": {
     "name": "ラップランド",
     "description": "80%の攻撃力で<@ba.kw>遠距離攻撃</>も行える",
-    "sortIndex": 596,
+    "sortIndex": 599,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1777381,7 +1777533,7 @@
   "char_155_tiger": {
     "name": "インドラ",
     "description": "敵を1体までブロック",
-    "sortIndex": 1212,
+    "sortIndex": 1217,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1781788,7 +1781940,7 @@
   "char_106_franka": {
     "name": "フランカ",
     "description": "敵を1体までブロック",
-    "sortIndex": 299,
+    "sortIndex": 301,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1786123,7 +1786275,7 @@
   "char_102_texas": {
     "name": "テキサス",
     "description": "敵を2体までブロック",
-    "sortIndex": 205,
+    "sortIndex": 207,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1791679,7 +1791831,7 @@
   "char_115_headbr": {
     "name": "ズィマー",
     "description": "敵を2体までブロック",
-    "sortIndex": 617,
+    "sortIndex": 620,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1801914,7 +1802066,7 @@
   "char_4236_tmslot": {
     "name": "Timeslot",
     "description": "操作<@ba.kw>浮游单元</>对敌人造成<@ba.kw>法术伤害</>\\n浮游单元连续攻击同一敌人时伤害提升（最高造成干员110%攻击力的伤害）",
-    "sortIndex": 905,
+    "sortIndex": 908,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1805185,7 +1805337,7 @@
   "char_336_folivo": {
     "name": "シーン",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>召喚物</>を使用可能",
-    "sortIndex": 1105,
+    "sortIndex": 1110,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1806985,7 +1807137,7 @@
       {
         "name": "撮影ロボット",
         "description": "敵を1体までブロック",
-        "sortIndex": 1178,
+        "sortIndex": 1183,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1811744,7 +1811896,7 @@
   "char_226_hmau": {
     "name": "ウン",
     "description": "HP回復スキルを所持",
-    "sortIndex": 382,
+    "sortIndex": 384,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1817641,7 +1817793,7 @@
   "char_243_waaifu": {
     "name": "ワイフー",
     "description": "再配置までの時間が極めて<@ba.kw>短い</>",
-    "sortIndex": 395,
+    "sortIndex": 397,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1827732,7 +1827884,7 @@
   "char_348_ceylon": {
     "name": "セイロン",
     "description": "治療範囲が広く、遠く離れた味方を治療時、治療量が<@ba.kw>{heal_scale:0%}</>になる",
-    "sortIndex": 1083,
+    "sortIndex": 1088,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1832317,7 +1832469,7 @@
   "char_163_hpsts": {
     "name": "ヴァルカン",
     "description": "味方からの治療効果を<@ba.kw>受けない</>",
-    "sortIndex": 421,
+    "sortIndex": 423,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1836863,7 +1837015,7 @@
   "char_201_moeshd": {
     "name": "クロワッサン",
     "description": "敵を3体までブロック",
-    "sortIndex": 567,
+    "sortIndex": 570,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1841698,7 +1841850,7 @@
   "char_107_liskam": {
     "name": "リスカム",
     "description": "敵を3体までブロック、遠距離攻撃も行える",
-    "sortIndex": 601,
+    "sortIndex": 604,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1846276,7 +1846428,7 @@
   "char_144_red": {
     "name": "レッド",
     "description": "再配置までの時間が極めて<@ba.kw>短い</>",
-    "sortIndex": 381,
+    "sortIndex": 383,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1850920,7 +1851072,7 @@
   "char_148_nearl": {
     "name": "ニアール",
     "description": "HP回復スキルを所持",
-    "sortIndex": 622,
+    "sortIndex": 625,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1856127,7 +1856279,7 @@
   "char_171_bldsk": {
     "name": "ワルファリン",
     "description": "味方のHPを回復",
-    "sortIndex": 393,
+    "sortIndex": 395,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1860688,7 +1860840,7 @@
   "char_108_silent": {
     "name": "サイレンス",
     "description": "味方のHPを回復",
-    "sortIndex": 375,
+    "sortIndex": 377,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1862261,7 +1862413,7 @@
       {
         "name": "医療ドローン",
         "description": "攻撃の対象にならない。周囲の味方ユニットのHPを回復する",
-        "sortIndex": 1185,
+        "sortIndex": 1190,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1865621,7 +1865773,7 @@
   "char_242_otter": {
     "name": "メイヤー",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>召喚物</>を使用可能",
-    "sortIndex": 675,
+    "sortIndex": 678,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1867754,7 +1867906,7 @@
       {
         "name": "メカ・カワウソ",
         "description": "敵を1体までブロック",
-        "sortIndex": 525,
+        "sortIndex": 528,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1872198,7 +1872350,7 @@
   "char_4051_akkord": {
     "name": "アコルト",
     "description": "<@ba.kw>直線上</>の敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 1076,
+    "sortIndex": 1081,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1876633,7 +1876785,7 @@
   "char_4208_wintim": {
     "name": "スネグーラチカ",
     "description": "再配置までの時間が<@ba.kw>短い</>、遠距離攻撃も行える",
-    "sortIndex": 220,
+    "sortIndex": 222,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1886484,7 +1886636,7 @@
   "char_4165_ctrail": {
     "name": "コントレイル",
     "description": "<$ba.liftoff>離陸</>中、空中の敵を2体までブロックできる",
-    "sortIndex": 1275,
+    "sortIndex": 1280,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1891719,7 +1891871,7 @@
   "char_4130_luton": {
     "name": "ルトナダ",
     "description": "味方からの治療効果を<@ba.kw>受けない</>",
-    "sortIndex": 659,
+    "sortIndex": 662,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1896600,7 +1896752,7 @@
   "char_4100_caper": {
     "name": "ケイパー",
     "description": "<@ba.kw>旋回投擲物</>を所持している場合のみ攻撃できる（投擲物は攻撃後一定速度で手元に戻る）",
-    "sortIndex": 1266,
+    "sortIndex": 1271,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1901096,7 +1901248,7 @@
   "char_4107_vrdant": {
     "name": "ヴァーダント",
     "description": "致命的なダメージを受けても撤退せず、<身替り>と入れ替わり戦闘を続行する（身替りのブロック数は0）。20秒後<身替り>から再び自身に入れ替わる",
-    "sortIndex": 1012,
+    "sortIndex": 1017,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1905514,7 +1905666,7 @@
   "char_491_humus": {
     "name": "ヒューマス",
     "description": "味方の治療対象にならない\n攻撃は<@ba.kw>範囲物理ダメージ</>を与え、敵を1体攻撃するたび自身のHPを<@ba.kw>50</>回復（攻撃毎の最大回復回数はブロック数と同じ）",
-    "sortIndex": 1102,
+    "sortIndex": 1107,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1910142,7 +1910294,7 @@
   "char_4063_quartz": {
     "name": "クォーツ",
     "description": "ブロック中の<@ba.kw>敵全員</>を同時に攻撃",
-    "sortIndex": 910,
+    "sortIndex": 913,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1914694,7 +1914846,7 @@
   "char_4062_totter": {
     "name": "トター",
     "description": "重量が最も重い敵を優先して攻撃",
-    "sortIndex": 779,
+    "sortIndex": 782,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1919284,7 +1919436,7 @@
   "char_4067_lolxh": {
     "name": "羅小黒",
     "description": "80%の攻撃力で<@ba.kw>遠距離攻撃</>も行える",
-    "sortIndex": 657,
+    "sortIndex": 660,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1923563,7 +1923715,7 @@
   "char_4041_chnut": {
     "name": "チェストナット",
     "description": "味方のHPを回復し、同時に対象に蓄積された<@ba.dt.element>元素損傷</>を自身の攻撃力の50%の値分治療する（HP最大の味方も<@ba.dt.element>元素損傷</>の治療対象となる）",
-    "sortIndex": 368,
+    "sortIndex": 370,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1932745,7 +1932897,7 @@
   "char_484_robrta": {
     "name": "ロベルタ",
     "description": "敵を2体までブロック\n<支援装置>を使用可能",
-    "sortIndex": 648,
+    "sortIndex": 651,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1934394,7 +1934546,7 @@
       {
         "name": "メイクアップマシン",
         "description": "攻撃されない",
-        "sortIndex": 810,
+        "sortIndex": 813,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1937933,7 +1938085,7 @@
   "char_469_indigo": {
     "name": "インディゴ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n攻撃の対象がいない場合はエネルギーを<@ba.kw>チャージ</>して（最大3回）次の攻撃時に一斉発射する",
-    "sortIndex": 857,
+    "sortIndex": 860,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1942802,7 +1942954,7 @@
   "char_452_bstalk": {
     "name": "ビーンストーク",
     "description": "攻撃範囲内で<@ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍にブロックされている敵を攻撃する際、攻撃力が150%まで上昇",
-    "sortIndex": 221,
+    "sortIndex": 223,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1944587,7 +1944739,7 @@
       {
         "name": "ハガネガニ守備隊",
         "description": "敵を1体までブロック\n召喚者の攻撃範囲内にしか配置できない",
-        "sortIndex": 758,
+        "sortIndex": 761,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1947905,7 +1948057,7 @@
   "char_440_pinecn": {
     "name": "パインコーン",
     "description": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が150%まで上昇",
-    "sortIndex": 937,
+    "sortIndex": 940,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1952755,7 +1952907,7 @@
   "char_347_jaksel": {
     "name": "ジャッキー",
     "description": "敵を1体までブロック",
-    "sortIndex": 479,
+    "sortIndex": 481,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1957202,7 +1957354,7 @@
   "char_381_bubble": {
     "name": "バブル",
     "description": "敵を3体までブロック",
-    "sortIndex": 760,
+    "sortIndex": 763,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1961513,7 +1961665,7 @@
   "char_271_spikes": {
     "name": "アレーン",
     "description": "80%の攻撃力で<@ba.kw>遠距離攻撃</>も行える",
-    "sortIndex": 244,
+    "sortIndex": 246,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1966427,7 +1966579,7 @@
   "char_366_acdrop": {
     "name": "アシッドドロップ",
     "description": "高威力の中距離射撃",
-    "sortIndex": 943,
+    "sortIndex": 946,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1970756,7 +1970908,7 @@
   "char_272_strong": {
     "name": "ジェイ",
     "description": "再配置までの時間が<@ba.kw>短い</>\n撤退時に<@ba.kw>コスト</>を返却しない\n配置中、3秒ごとにコストを3<@ba.kw>消費</>（所持コスト不足時自動的に撤退）",
-    "sortIndex": 472,
+    "sortIndex": 474,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1975574,7 +1975726,7 @@
   "char_328_cammou": {
     "name": "カシャ",
     "description": "<@ba.kw>ドローン</>を操作して敵に<@ba.kw>術ダメージ</>を与える\nドローンが連続で同一目標を攻撃時、与ダメージが上昇（最大は攻撃力の110%まで）",
-    "sortIndex": 542,
+    "sortIndex": 545,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1985046,7 +1985198,7 @@
   "char_301_cutter": {
     "name": "カッター",
     "description": "通常攻撃時、1回の攻撃で<@ba.kw>2回</>ダメージを与える",
-    "sortIndex": 560,
+    "sortIndex": 563,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1990439,7 +1990591,7 @@
   "char_159_peacok": {
     "name": "コンビクション",
     "description": "敵を1体までブロック",
-    "sortIndex": 227,
+    "sortIndex": 228,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1995429,7 +1995581,7 @@
   "char_337_utage": {
     "name": "ウタゲ",
     "description": "味方の治療対象にならない\n敵を攻撃するたび自身のHPを<@ba.kw>{value}</>回復",
-    "sortIndex": 1137,
+    "sortIndex": 1142,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1999948,7 +2000100,7 @@
   "char_385_finlpp": {
     "name": "セイリュウ",
     "description": "治療範囲が広く、遠く離れた味方を治療時、治療量が<@ba.kw>{heal_scale:0%}</>になる",
-    "sortIndex": 786,
+    "sortIndex": 789,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2008937,7 +2009089,7 @@
   "char_133_mm": {
     "name": "メイ",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 674,
+    "sortIndex": 677,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2013602,7 +2013754,7 @@
   "char_355_ethan": {
     "name": "イーサン",
     "description": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃\n物理回避、術回避が50%上昇\n敵に<@ba.kw>狙われにくい</>",
-    "sortIndex": 1216,
+    "sortIndex": 1221,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2018042,7 +2018194,7 @@
   "char_190_clour": {
     "name": "ヴァーミル",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 390,
+    "sortIndex": 392,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2022417,7 +2022569,7 @@
   "char_260_durnar": {
     "name": "ジュナー",
     "description": "スキル発動中、敵に術ダメージを与える",
-    "sortIndex": 439,
+    "sortIndex": 441,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2026635,7 +2026787,7 @@
   "char_151_myrtle": {
     "name": "テンニンカ",
     "description": "スキル発動中、ブロック数が0になる",
-    "sortIndex": 962,
+    "sortIndex": 967,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2031506,7 +2031658,7 @@
   "char_298_susuro": {
     "name": "ススーロ",
     "description": "味方のHPを回復",
-    "sortIndex": 957,
+    "sortIndex": 960,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2036041,7 +2036193,7 @@
   "char_253_greyy": {
     "name": "グレイ",
     "description": "敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 328,
+    "sortIndex": 330,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2040411,7 +2040563,7 @@
   "char_137_brownb": {
     "name": "ビーハンター",
     "description": "敵を1体までブロック",
-    "sortIndex": 608,
+    "sortIndex": 611,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2049211,7 +2049363,7 @@
   "char_183_skgoat": {
     "name": "アーススピリット",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n攻撃時、敵を一瞬<$ba.sluggish>足止め</>",
-    "sortIndex": 214,
+    "sortIndex": 216,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2053649,7 +2053801,7 @@
   "char_110_deepcl": {
     "name": "ディピカ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>召喚物</>を使用可能",
-    "sortIndex": 872,
+    "sortIndex": 875,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2056048,7 +2056200,7 @@
       {
         "name": "触手",
         "description": "敵を1体までブロック",
-        "sortIndex": 165,
+        "sortIndex": 167,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -2059403,7 +2059555,7 @@
   "char_196_sunbr": {
     "name": "グム",
     "description": "HP回復スキルを所持",
-    "sortIndex": 350,
+    "sortIndex": 352,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2065364,7 +2065516,7 @@
   "char_150_snakek": {
     "name": "クオーラ",
     "description": "敵を3体までブロック",
-    "sortIndex": 880,
+    "sortIndex": 883,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2069680,7 +2069832,7 @@
   "char_199_yak": {
     "name": "マッターホルン",
     "description": "敵を3体までブロック",
-    "sortIndex": 453,
+    "sortIndex": 455,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2074046,7 +2074198,7 @@
   "char_181_flower": {
     "name": "パフューマー",
     "description": "味方3人のHPを同時に回復",
-    "sortIndex": 982,
+    "sortIndex": 987,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2078511,7 +2078663,7 @@
   "char_187_ccheal": {
     "name": "ガヴィル",
     "description": "味方のHPを回復",
-    "sortIndex": 459,
+    "sortIndex": 461,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2083400,7 +2083552,7 @@
   "char_117_myrrh": {
     "name": "ミルラ",
     "description": "味方のHPを回復",
-    "sortIndex": 717,
+    "sortIndex": 720,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2092617,7 +2092769,7 @@
   "char_237_gravel": {
     "name": "グラベル",
     "description": "再配置までの時間が極めて<@ba.kw>短い</>",
-    "sortIndex": 604,
+    "sortIndex": 607,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2096955,7 +2097107,7 @@
   "char_185_frncat": {
     "name": "ムース",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 729,
+    "sortIndex": 732,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2105901,7 +2106053,7 @@
   "char_193_frostl": {
     "name": "フロストリーフ",
     "description": "80%の攻撃力で<@ba.kw>遠距離攻撃</>も行える",
-    "sortIndex": 920,
+    "sortIndex": 923,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2114730,7 +2114882,7 @@
   "char_130_doberm": {
     "name": "ドーベルマン",
     "description": "攻撃距離が<@ba.kw>やや長い</>、自身がブロックしていない敵を攻撃時、攻撃力が120%まで上昇",
-    "sortIndex": 228,
+    "sortIndex": 230,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2119230,7 +2119382,7 @@
   "char_290_vigna": {
     "name": "ヴィグナ",
     "description": "敵を倒す度所持コスト+1\n撤退時に初期配置時のコストを返却",
-    "sortIndex": 384,
+    "sortIndex": 386,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2123638,7 +2123790,7 @@
   "char_149_scave": {
     "name": "スカベンジャー",
     "description": "敵を2体までブロック",
-    "sortIndex": 784,
+    "sortIndex": 787,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2127991,7 +2128143,7 @@
   "char_198_blackd": {
     "name": "クーリエ",
     "description": "敵を2体までブロック",
-    "sortIndex": 1125,
+    "sortIndex": 1130,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2136953,7 +2137105,7 @@
   "char_126_shotst": {
     "name": "メテオ",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 637,
+    "sortIndex": 641,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2141563,7 +2141715,7 @@
   "char_235_jesica": {
     "name": "ジェシカ",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 481,
+    "sortIndex": 483,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2145974,7 +2146126,7 @@
   "char_109_fmout": {
     "name": "ギターノ",
     "description": "敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 1230,
+    "sortIndex": 1235,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2151176,7 +2151328,7 @@
   "char_141_nights": {
     "name": "ヘイズ",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 1172,
+    "sortIndex": 1177,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2159273,7 +2159425,7 @@
   "char_281_popka": {
     "name": "ポプカル",
     "description": "ブロック中の<@ba.kw>敵全員</>を同時に攻撃",
-    "sortIndex": 761,
+    "sortIndex": 764,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2162456,7 +2162608,7 @@
   "char_283_midn": {
     "name": "ミッドナイト",
     "description": "80%の攻撃力で<@ba.kw>遠距離攻撃</>も行える",
-    "sortIndex": 1264,
+    "sortIndex": 1269,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2165687,7 +2165839,7 @@
   "char_282_catap": {
     "name": "カタパルト",
     "description": "敵に<@ba.kw>範囲物理ダメージ</>を与える",
-    "sortIndex": 570,
+    "sortIndex": 573,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2168872,7 +2169024,7 @@
   "char_278_orchid": {
     "name": "オーキッド",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n攻撃時、敵を一瞬<$ba.sluggish>足止め</>",
-    "sortIndex": 1364,
+    "sortIndex": 1369,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2172249,7 +2172401,7 @@
   "char_210_stward": {
     "name": "スチュワード",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 887,
+    "sortIndex": 890,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2178698,7 +2178850,7 @@
   "char_120_hibisc": {
     "name": "ハイビスカス",
     "description": "味方のHPを回復",
-    "sortIndex": 300,
+    "sortIndex": 302,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2181891,7 +2182043,7 @@
   "char_121_lava": {
     "name": "ラヴァ",
     "description": "敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 1145,
+    "sortIndex": 1150,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2188277,7 +2188429,7 @@
   "char_124_kroos": {
     "name": "クルース",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 564,
+    "sortIndex": 567,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2191626,7 +2191778,7 @@
   "char_122_beagle": {
     "name": "ビーグル",
     "description": "敵を3体までブロック",
-    "sortIndex": 691,
+    "sortIndex": 694,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2194740,7 +2194892,7 @@
   "char_209_ardign": {
     "name": "カーディ",
     "description": "敵を3体までブロック",
-    "sortIndex": 553,
+    "sortIndex": 556,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2197869,7 +2198021,7 @@
   "char_208_melan": {
     "name": "メランサ",
     "description": "敵を1体までブロック",
-    "sortIndex": 677,
+    "sortIndex": 680,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2200992,7 +2201144,7 @@
   "char_192_falco": {
     "name": "プリュム",
     "description": "敵を倒す度所持コスト+1\n撤退時に初期配置時のコストを返却",
-    "sortIndex": 624,
+    "sortIndex": 627,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2204283,7 +2204435,7 @@
   "char_240_wyvern": {
     "name": "バニラ",
     "description": "敵を2体までブロック",
-    "sortIndex": 1055,
+    "sortIndex": 1060,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2207553,7 +2207705,7 @@
   "char_123_fang": {
     "name": "フェン",
     "description": "敵を2体までブロック",
-    "sortIndex": 276,
+    "sortIndex": 278,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2210654,7 +2210806,7 @@
   "char_009_12fce": {
     "name": "12F",
     "description": "敵に<@ba.kw>範囲術ダメージ</>を与える",
-    "sortIndex": 240,
+    "sortIndex": 242,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2213296,7 +2213448,7 @@
   "char_501_durin": {
     "name": "ドゥリン",
     "description": "敵に<@ba.kw>術ダメージ</>を与える",
-    "sortIndex": 229,
+    "sortIndex": 231,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2215823,7 +2215975,7 @@
   "char_503_rang": {
     "name": "レンジャー",
     "description": "飛行ユニットを優先して攻撃",
-    "sortIndex": 1124,
+    "sortIndex": 1129,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2218356,7 +2218508,7 @@
   "char_500_noirc": {
     "name": "ノイルホーン",
     "description": "敵を3体までブロック",
-    "sortIndex": 371,
+    "sortIndex": 373,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2220864,7 +2221016,7 @@
   "char_502_nblade": {
     "name": "ヤトウ",
     "description": "敵を2体までブロック",
-    "sortIndex": 1163,
+    "sortIndex": 1168,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2223491,7 +2223643,7 @@
   "char_4220_kormr": {
     "name": "Koromaru",
     "description": "普通攻击连续造成<@ba.kw>两次</>伤害，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 413,
+    "sortIndex": 415,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2224920,7 +2225072,7 @@
   "char_4215_buddy": {
     "name": "Rhodes Island Recon",
     "description": "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%；不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 653,
+    "sortIndex": 656,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2225619,7 +2225771,7 @@
       {
         "name": " Palamute",
         "description": "能够阻挡一个敌人，只能部署在艾露猫的攻击范围内",
-        "sortIndex": 1130,
+        "sortIndex": 1135,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -2226626,7 +2226778,7 @@
   "char_4227_gallus": {
     "name": "GALLUS²",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>配置可能数</>にカウントされない\n再配置までの時間が極めて長い",
-    "sortIndex": 307,
+    "sortIndex": 309,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2229362,7 +2229514,7 @@
   "char_4188_confes": {
     "name": "CONFESS-47",
     "description": "敵を2体までブロック\n<@ba.kw>配置可能数</>にカウントされない\n再配置までの時間が極めて長い",
-    "sortIndex": 169,
+    "sortIndex": 171,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2232066,7 +2232218,7 @@
   "char_4136_phonor": {
     "name": "PhonoR-0",
     "description": "敵に<@ba.kw>術ダメージ</>を与える\n<@ba.kw>元素損傷</>を与える能力を持つ\n<@ba.kw>配置可能数</>にカウントされない\n再配置までの時間が極めて長い",
-    "sortIndex": 771,
+    "sortIndex": 774,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2234825,7 +2234977,7 @@
   "char_4093_frston": {
     "name": "Friston-3",
     "description": "敵を3体までブロック\n<@ba.kw>配置可能数</>にカウントされない\n再配置までの時間が極めて長い",
-    "sortIndex": 296,
+    "sortIndex": 298,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2237472,7 +2237624,7 @@
   "char_4091_ulika": {
     "name": "U-Official",
     "description": "攻撃しない\n攻撃範囲内の味方全員の<@ba.kw>HP</>を継続回復（1秒ごとに攻撃力の10%回復）\n自身は<$ba.inspire>鼓舞</>状態の効果を受けない\n<@ba.kw>配置可能数</>にカウントされない\n再配置までの時間が極めて長い",
-    "sortIndex": 1005,
+    "sortIndex": 1010,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2240204,7 +2240356,7 @@
   "char_4077_palico": {
     "name": "テラ大陸調査団",
     "description": "通常攻撃時<@ba.kw>地上</>にいる敵に範囲物理ダメージを<@ba.kw>2回</>与える（2回目は余震、与ダメージが攻撃力の50%になる）。<@ba.kw>配置可能数</>にカウントされず、再配置までの時間が極めて長い",
-    "sortIndex": 959,
+    "sortIndex": 962,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2241448,7 +2241600,7 @@
   "char_4000_jnight": {
     "name": "ジャスティスナイト",
     "description": "飛行ユニットを優先して攻撃\n<@ba.kw>配置可能数</>にカウントされない\n再配置までの時間が極めて長い",
-    "sortIndex": 1321,
+    "sortIndex": 1326,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2244199,7 +2244351,7 @@
   "char_376_therex": {
     "name": "THRM-EX",
     "description": "攻撃しない\n<@ba.kw>配置可能数</>にカウントされない\n再配置までの時間が極めて長い",
-    "sortIndex": 971,
+    "sortIndex": 976,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2249695,7 +2249847,7 @@
   "char_285_medic2": {
     "name": "Lancet-2",
     "description": "味方のHPを回復\n<@ba.kw>配置可能数</>にカウントされない\n再配置までの時間が極めて長い",
-    "sortIndex": 588,
+    "sortIndex": 591,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
