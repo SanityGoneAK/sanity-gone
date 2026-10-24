@@ -2,7 +2,7 @@
   "char_4231_clemnt": {
     "name": "Clementia",
     "description": "能够阻挡两个敌人，可以造成<@ba.kw>元素伤害</>",
-    "sortIndex": 566,
+    "sortIndex": 567,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -4558,7 +4558,7 @@
   "char_4217_makoto": {
     "name": "Makoto Yuki",
     "description": "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0），持续20秒后自身再次替换<替身>",
-    "sortIndex": 476,
+    "sortIndex": 477,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -10073,7 +10073,7 @@
   "char_4235_thumpy": {
     "name": "Thumpy",
     "description": "能够阻挡三个敌人，可以造成元素损伤",
-    "sortIndex": 844,
+    "sortIndex": 846,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -14469,7 +14469,7 @@
   "char_1015_aglna2": {
     "name": "Angelina the Mellow Wish",
     "description": "<$ba.liftoff>起飞</>后能够阻挡2个飞行敌人",
-    "sortIndex": 1283,
+    "sortIndex": 1287,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -19029,7 +19029,7 @@
       {
         "name": "\"See you soon!\"",
         "description": null,
-        "sortIndex": 1186,
+        "sortIndex": 1189,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -20951,7 +20951,7 @@
   "char_4230_mcnist": {
     "name": "Mechanist",
     "description": "能够阻挡三个敌人，可以进行远程攻击",
-    "sortIndex": 527,
+    "sortIndex": 528,
     "spTargetType": "ROGUE",
     "spTargetId": "rogue_6",
     "canUseGeneralPotentialItem": true,
@@ -23540,7 +23540,7 @@
       {
         "name": "Structural Principle",
         "description": "能够阻挡三个敌人",
-        "sortIndex": 477,
+        "sortIndex": 478,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -26147,7 +26147,7 @@
   "char_4229_aphris": {
     "name": "Aphrissa",
     "description": "攻击造成<@ba.kw>超远距离的群体法术伤害</>",
-    "sortIndex": 710,
+    "sortIndex": 712,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -28604,7 +28604,7 @@
       {
         "name": "Repeater",
         "description": "不会受到攻击，可部署在地面或高台位",
-        "sortIndex": 1351,
+        "sortIndex": 1355,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -30766,7 +30766,7 @@
   "char_1048_orchd2": {
     "name": "Violet Mizutsune Orchid",
     "description": "高精度的近距离射击",
-    "sortIndex": 1148,
+    "sortIndex": 1151,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -35469,7 +35469,7 @@
   "char_1052_kalts2": {
     "name": "Kal'tsit Esperanta",
     "description": "Restores the HP of allies, and can <$ba.liftoff>Take Off</>",
-    "sortIndex": 548,
+    "sortIndex": 549,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -38964,7 +38964,7 @@
       {
         "name": "Tactical Anchor Point",
         "description": "Cannot be attacked, can only be placed on a Ranged tile outside of Kal'tsit Esperanta's Attack Range",
-        "sortIndex": 1309,
+        "sortIndex": 1313,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -42958,7 +42958,7 @@
   "char_4228_closur": {
     "name": "Closure",
     "description": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
-    "sortIndex": 569,
+    "sortIndex": 570,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -46014,7 +46014,7 @@
       {
         "name": "Command Center",
         "description": "Does not attack; blocks 2 enemies; can only be deployed within the summoner's Attack Range",
-        "sortIndex": 1335,
+        "sortIndex": 1339,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -49532,7 +49532,7 @@
   "char_4226_veen": {
     "name": "Viy",
     "description": "Attacks deal <@ba.kw>Arts damage</>; When unable to find a target, attacks can be <@ba.kw>stored up</> and fired all at once (Up to 3 charges)",
-    "sortIndex": 1027,
+    "sortIndex": 1029,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -54685,7 +54685,7 @@
   "char_1051_headb2": {
     "name": "Zima the Raging Tide",
     "description": "Attacks deal <@ba.kw>50%</> ATK as <@ba.kw>AOE</> Physical damage to enemies around the target.",
-    "sortIndex": 754,
+    "sortIndex": 756,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -60866,7 +60866,7 @@
   "char_4037_demetr": {
     "name": "Bellone",
     "description": "Blocks 1 enemy",
-    "sortIndex": 61,
+    "sortIndex": 62,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -63610,7 +63610,7 @@
       {
         "name": "Bond",
         "description": "When skill ends, Bellone returns to this position and no other Operators may be deployed",
-        "sortIndex": 781,
+        "sortIndex": 783,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -67663,7 +67663,7 @@
   "char_2027_wang": {
     "name": "Wang",
     "description": "Can use traps to assist in combat, but traps cannot be placed <@ba.kw>on tiles already occupied by an enemy</>",
-    "sortIndex": 1014,
+    "sortIndex": 1016,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -71238,7 +71238,7 @@
       {
         "name": "Stone",
         "description": null,
-        "sortIndex": 805,
+        "sortIndex": 807,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -76901,7 +76901,7 @@
   "char_1050_chen3": {
     "name": "Ch'en the Dawnstreak",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 157,
+    "sortIndex": 158,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -83439,7 +83439,7 @@
   "char_4056_titi": {
     "name": "Titi",
     "description": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 50% of the damage dealt",
-    "sortIndex": 996,
+    "sortIndex": 998,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -88768,7 +88768,7 @@
   "char_4212_nasti": {
     "name": "Nasti",
     "description": "Blocks 2 enemies; Can use <Support Devices> in battles",
-    "sortIndex": 734,
+    "sortIndex": 736,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -90947,7 +90947,7 @@
       {
         "name": "'Quality Inspector'",
         "description": "Cannot be attacked, and can be deployed on both ground and high ground tiles",
-        "sortIndex": 1337,
+        "sortIndex": 1341,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -92588,7 +92588,7 @@
       {
         "name": "'Overseer'",
         "description": "Cannot be attacked, and can be deployed on both ground and high ground tiles",
-        "sortIndex": 437,
+        "sortIndex": 438,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -94724,7 +94724,7 @@
       {
         "name": "'Emergency Load-Bearing Squad'",
         "description": "Device has little engineer and high ground forms. In little engineer form, cannot be attacked, and can be deployed on both ground and high ground tiles",
-        "sortIndex": 1204,
+        "sortIndex": 1207,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -100764,7 +100764,7 @@
   "char_1045_svash2": {
     "name": "SilverAsh the Reignfrost",
     "description": "Blocks 2 enemies, and can support allies in the Deployment Waiting Zone",
-    "sortIndex": 636,
+    "sortIndex": 637,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -106203,7 +106203,7 @@
       {
         "name": "Eye of the Blizzard",
         "description": "Added to Deployment Waiting Zone when SilverAsh the Reignfrost is on the field. DP Cost changes according to SilverAsh the Reignfrost's skill",
-        "sortIndex": 288,
+        "sortIndex": 290,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -107475,7 +107475,7 @@
       {
         "name": "Eye of the Blizzard",
         "description": "Added to Deployment Waiting Zone when SilverAsh the Reignfrost is on the field. DP Cost changes according to SilverAsh the Reignfrost's skill",
-        "sortIndex": 290,
+        "sortIndex": 291,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -111501,7 +111501,7 @@
   "char_1046_sbell2": {
     "name": "Pramanix the Prerita",
     "description": "Normally <@ba.kw>does not attack</>, but has <@ba.kw>greatly increased</> DEF and RES; When skill is active, attacks deal <@ba.kw>AoE Arts damage</>",
-    "sortIndex": 864,
+    "sortIndex": 866,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -115150,7 +115150,7 @@
       {
         "name": "Protection Objective (Frozen)",
         "description": "Blocks 3 enemies",
-        "sortIndex": 48,
+        "sortIndex": 49,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -118566,7 +118566,7 @@
   "char_1047_halo2": {
     "name": "Astgenne the Lightchaser",
     "description": "Deals <@ba.kw>Arts damage</> and <$ba.sluggish>Slows</> the target for a short time",
-    "sortIndex": 948,
+    "sortIndex": 950,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -124690,7 +124690,7 @@
   "char_4204_mantra": {
     "name": "Mantra",
     "description": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Damage</>",
-    "sortIndex": 1331,
+    "sortIndex": 1335,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -130990,7 +130990,7 @@
   "char_4182_oblvns": {
     "name": "Sakiko Togawa",
     "description": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK",
-    "sortIndex": 279,
+    "sortIndex": 280,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -135527,7 +135527,7 @@
   "char_1044_hsgma2": {
     "name": "Hoshiguma the Breacher",
     "description": "Normal attacks deal Arts damage while the skill is active",
-    "sortIndex": 1313,
+    "sortIndex": 1317,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -142227,7 +142227,7 @@
   "char_4202_haruka": {
     "name": "Haruka",
     "description": "Deals <@ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to 75% of ATK)",
-    "sortIndex": 1159,
+    "sortIndex": 1162,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -148623,7 +148623,7 @@
   "char_4195_radian": {
     "name": "Raidian",
     "description": "Deals <@ba.kw>Arts damage</>\nCan use <@ba.kw>Summons</> in battles",
-    "sortIndex": 209,
+    "sortIndex": 210,
     "spTargetType": "ROGUE",
     "spTargetId": "rogue_5",
     "canUseGeneralPotentialItem": true,
@@ -150864,7 +150864,7 @@
       {
         "name": "Dive",
         "description": "Blocks 3 enemies",
-        "sortIndex": 186,
+        "sortIndex": 187,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -151939,7 +151939,7 @@
       {
         "name": "Cycle",
         "description": "Continuously fires bullets that fly a certain distance, dealing Physical damage to the first ground enemy unit they collide with",
-        "sortIndex": 831,
+        "sortIndex": 833,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -153479,7 +153479,7 @@
       {
         "name": "Center",
         "description": "Deals Arts damage",
-        "sortIndex": 836,
+        "sortIndex": 838,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -158529,7 +158529,7 @@
   "char_1043_leizi2": {
     "name": "Leizi the Thunderbringer",
     "description": "Normally does not attack and has 0 Block; When skill is inactive, ATK gradually increases up to <@ba.kw>+{atk:0%}</> over <@ba.kw>{max_stack_cnt}</> seconds. ATK is reset when the skill ends",
-    "sortIndex": 937,
+    "sortIndex": 939,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -164696,7 +164696,7 @@
   "char_1042_phatm2": {
     "name": "Tragodia",
     "description": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Injury</>",
-    "sortIndex": 526,
+    "sortIndex": 527,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -168525,7 +168525,7 @@
       {
         "name": "Blood's Whisper",
         "description": "Cannot be attacked, and can only be deployed on melee tiles",
-        "sortIndex": 69,
+        "sortIndex": 70,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -171072,7 +171072,7 @@
       {
         "name": "Cage of Chaos",
         "description": "Cage blocks all enemies on its tile when created/refreshed; disappears when not blocking a target or after receiving 3 attacks from a blocked target; persists an additional 30s after Tragodia's skill ends",
-        "sortIndex": 696,
+        "sortIndex": 698,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -175688,7 +175688,7 @@
   "char_1041_angel2": {
     "name": "Exusiai the New Covenant",
     "description": "Continually loses HP over time",
-    "sortIndex": 1103,
+    "sortIndex": 1106,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -178560,7 +178560,7 @@
       {
         "name": "Delivery Coordinates",
         "description": "Cannot be attacked",
-        "sortIndex": 1001,
+        "sortIndex": 1003,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -185082,7 +185082,7 @@
   "char_4193_lemuen": {
     "name": "Lemuen",
     "description": "Prioritizes attacking the enemy with <@ba.kw>lowest DEF</> within range first",
-    "sortIndex": 603,
+    "sortIndex": 604,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -190761,7 +190761,7 @@
   "char_4194_rmixer": {
     "name": "Sankta Miksaparato",
     "description": "Blocks 3 enemies and attacks from long range.",
-    "sortIndex": 1102,
+    "sortIndex": 1105,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -196510,7 +196510,7 @@
   "char_4179_monstr": {
     "name": "Mon3tr",
     "description": "Restores HP of allies, bouncing between <@ba.kw>3</> allies. Healing reduced by 25% per bounce.",
-    "sortIndex": 717,
+    "sortIndex": 718,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -200378,7 +200378,7 @@
       {
         "name": "Reconstruction",
         "description": "Continually loses HP over time",
-        "sortIndex": 1350,
+        "sortIndex": 1354,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -205470,7 +205470,7 @@
   "char_450_necras": {
     "name": "Necrass",
     "description": "Deals <@ba.kw>Arts damage</>; Can create <@ba.kw>Summons</> by defeating enemies, and can attack enemies blocked by these <@ba.kw>Summons</>",
-    "sortIndex": 936,
+    "sortIndex": 938,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -208813,7 +208813,7 @@
       {
         "name": "Servant of Lamentation",
         "description": "Blocks 1 enemy (Block count varies according to level), and attacks deal Arts damage",
-        "sortIndex": 64,
+        "sortIndex": 65,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -212217,7 +212217,7 @@
   "char_4010_etlchi": {
     "name": "Entelechia",
     "description": "Cannot be healed by allies; Attacks deal <@ba.kw>AOE Damage</>; Recovers <@ba.kw>50</> HP for every enemy hit during attacks, up to Block count",
-    "sortIndex": 1192,
+    "sortIndex": 1195,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -217923,7 +217923,7 @@
   "char_2026_yu": {
     "name": "Yu",
     "description": "Blocks 3 enemies, and can inflict Elemental Injury",
-    "sortIndex": 1233,
+    "sortIndex": 1236,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -224369,7 +224369,7 @@
   "char_1040_blaze2": {
     "name": "Blaze the Igniting Spark",
     "description": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Damage</>",
-    "sortIndex": 1360,
+    "sortIndex": 1364,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -231698,7 +231698,7 @@
   "char_1039_thorn2": {
     "name": "Thorns the Lodestar",
     "description": "Can throw <@ba.kw>Alchemical Units</> to assist in combat",
-    "sortIndex": 1219,
+    "sortIndex": 1222,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -239375,7 +239375,7 @@
   "char_1038_whitw2": {
     "name": "Lappland the Decadenza",
     "description": "Controls a <@ba.kw>Drone</> to deal <@ba.kw>Arts</> damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (up to 110% of the operator's ATK)",
-    "sortIndex": 404,
+    "sortIndex": 405,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -248632,7 +248632,7 @@
   "char_4026_vulpis": {
     "name": "Vulpisfoglia",
     "description": "Blocks 2 enemies",
-    "sortIndex": 819,
+    "sortIndex": 821,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -255169,7 +255169,7 @@
   "char_1502_crosly": {
     "name": "Crownslayer",
     "description": "Significantly <@ba.kw>reduced</> Redeployment Time",
-    "sortIndex": 894,
+    "sortIndex": 896,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -261918,7 +261918,7 @@
   "char_1019_siege2": {
     "name": "Vina Victoria",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 1020,
+    "sortIndex": 1022,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -264604,7 +264604,7 @@
       {
         "name": "Golden Vows",
         "description": "Blocks 1 enemy, and attacks deal <@ba.kw>True damage</>",
-        "sortIndex": 402,
+        "sortIndex": 403,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -268235,7 +268235,7 @@
   "char_4141_marcil": {
     "name": "Marcille",
     "description": "Deals <@ba.kw>AOE Arts damage</>",
-    "sortIndex": 673,
+    "sortIndex": 675,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -272271,7 +272271,7 @@
   "char_4058_pepe": {
     "name": "Pepe",
     "description": "Attacks deal <@ba.kw>50%</> ATK as <@ba.kw>AOE</> Physical damage to enemies around the target.",
-    "sortIndex": 770,
+    "sortIndex": 772,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -277942,7 +277942,7 @@
   "char_4138_narant": {
     "name": "Narantuya",
     "description": "Can only attack while holding a <@ba.kw>boomerang projectile</> (projectile takes time to return)",
-    "sortIndex": 733,
+    "sortIndex": 735,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -283566,7 +283566,7 @@
   "char_4146_nymph": {
     "name": "Nymph",
     "description": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Damage</>",
-    "sortIndex": 746,
+    "sortIndex": 748,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -289575,7 +289575,7 @@
   "char_4145_ulpia": {
     "name": "Ulpianus",
     "description": "Attacks <@ba.kw>all blocked enemies</>",
-    "sortIndex": 1036,
+    "sortIndex": 1039,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -292453,7 +292453,7 @@
       {
         "name": "Undeviating Course",
         "description": "When skill ends, Ulpianus returns to this position and no other Operators may be deployed",
-        "sortIndex": 172,
+        "sortIndex": 173,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -296041,7 +296041,7 @@
   "char_1035_wisdel": {
     "name": "Wiš'adel",
     "description": "Attacks deal <@ba.kw>two instances</> of Physical damage to <@ba.kw>ground</> enemies in a small area (The second instance is a shockwave that has half the normal ATK)",
-    "sortIndex": 1021,
+    "sortIndex": 1023,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -298608,7 +298608,7 @@
       {
         "name": "Revenant's Shadow",
         "description": "Can attack enemies in Wiš'adel's attack range.",
-        "sortIndex": 416,
+        "sortIndex": 417,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -305623,7 +305623,7 @@
   "char_4133_logos": {
     "name": "Logos",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 657,
+    "sortIndex": 659,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -312402,7 +312402,7 @@
   "char_4134_cetsyr": {
     "name": "Civilight Eterna",
     "description": "Does not attack but continuously restores the <@ba.kw>HP</> of all allies within range (the HP restored per second is equal to 10% of self ATK). Self is unaffected by <$ba.inspire>Inspiration</>",
-    "sortIndex": 719,
+    "sortIndex": 721,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -330422,7 +330422,7 @@
       {
         "name": "Grzmot Mine",
         "description": "Cannot be attacked; cannot be deployed on tiles where enemies are <@ba.kw>already present</>",
-        "sortIndex": 602,
+        "sortIndex": 603,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -333403,7 +333403,7 @@
   "char_2025_shu": {
     "name": "Shu",
     "description": "Can heal allies by using skill(s)",
-    "sortIndex": 918,
+    "sortIndex": 920,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -341262,7 +341262,7 @@
   "char_4121_zuole": {
     "name": "Zuo Le",
     "description": "Can't be healed by other units. Recovers <@ba.kw>{value}</> self HP every time this operator attacks an enemy",
-    "sortIndex": 1382,
+    "sortIndex": 1387,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -347706,7 +347706,7 @@
   "char_4117_ray": {
     "name": "Ray",
     "description": "Attacks consume Ammo to increase ATK to <@ba.kw>120%</>; While not attacking, Ammo will be slowly reloaded (max capacity 8).",
-    "sortIndex": 590,
+    "sortIndex": 591,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -351040,7 +351040,7 @@
       {
         "name": "Sandbeast",
         "description": "Cannot be attacked, can only be deployed within the summoner's Attack Range",
-        "sortIndex": 842,
+        "sortIndex": 844,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -355069,7 +355069,7 @@
   "char_4116_blkkgt": {
     "name": "Degenbrecher",
     "description": "Normal attacks deal damage <@ba.kw>twice</>",
-    "sortIndex": 429,
+    "sortIndex": 430,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -361896,7 +361896,7 @@
   "char_245_cello": {
     "name": "Virtuosa",
     "description": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Injury</>",
-    "sortIndex": 961,
+    "sortIndex": 963,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -370701,7 +370701,7 @@
   "char_4098_vvana": {
     "name": "Viviana",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 1024,
+    "sortIndex": 1026,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -377075,7 +377075,7 @@
   "char_4011_lessng": {
     "name": "Lessing",
     "description": "Blocks 1 enemy",
-    "sortIndex": 1349,
+    "sortIndex": 1353,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -382701,7 +382701,7 @@
   "char_4088_hodrer": {
     "name": "Hoederer",
     "description": "Attacks <@ba.kw>all blocked enemies</>",
-    "sortIndex": 369,
+    "sortIndex": 370,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -388088,7 +388088,7 @@
   "char_1034_jesca2": {
     "name": "Jessica the Liberated",
     "description": "Blocks 3 enemies and attacks from long range.",
-    "sortIndex": 215,
+    "sortIndex": 216,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -390945,7 +390945,7 @@
       {
         "name": "Mobile Riot Shield",
         "description": "More likely to be attacked.",
-        "sortIndex": 473,
+        "sortIndex": 474,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -394704,7 +394704,7 @@
   "char_1016_agoat2": {
     "name": "Eyjafjalla the Hvít Aska",
     "description": "Restores the HP of allied units and recovers <@ba.dt.element>Elemental Injury</> by 50% of ATK (can recover <@ba.dt.element>Elemental Injury</> of unhurt allied units)",
-    "sortIndex": 165,
+    "sortIndex": 166,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -403676,7 +403676,7 @@
   "char_1033_swire2": {
     "name": "Swire the Elegant Wit",
     "description": "Has <@ba.kw>reduced</> Redeployment Time, but <@ba.kw>DP Cost</> is not refunded upon retreating; While deployed, <@ba.kw>3 DP</> are consumed every 3 seconds (automatically retreats without sufficient DP)",
-    "sortIndex": 630,
+    "sortIndex": 631,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -406396,7 +406396,7 @@
       {
         "name": "Champagne Bomb",
         "description": null,
-        "sortIndex": 1059,
+        "sortIndex": 1062,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -411122,7 +411122,7 @@
   "char_2012_typhon": {
     "name": "Typhon",
     "description": "Attacks the heaviest enemy first",
-    "sortIndex": 994,
+    "sortIndex": 996,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -416639,7 +416639,7 @@
   "char_1032_excu2": {
     "name": "Executor the Ex Foedere",
     "description": "Cannot be healed by allies; Attacks deal <@ba.kw>AOE Damage</>; Recovers <@ba.kw>50</> HP for every enemy hit during attacks, up to Block count",
-    "sortIndex": 872,
+    "sortIndex": 874,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -425417,7 +425417,7 @@
   "char_249_mlyss": {
     "name": "Muelsyse",
     "description": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
-    "sortIndex": 709,
+    "sortIndex": 711,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -427896,7 +427896,7 @@
       {
         "name": "Flowing Shape",
         "description": "The initial attack deals <@ba.kw>Arts damage</>; can only be deployed within the summoner's Attack Range",
-        "sortIndex": 640,
+        "sortIndex": 642,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -434152,7 +434152,7 @@
   "char_4027_heyak": {
     "name": "Ho'olheyak",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 419,
+    "sortIndex": 420,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -440280,7 +440280,7 @@
   "char_1031_slent2": {
     "name": "Silence the Paradigmatic",
     "description": "Deals <@ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to 75% of ATK)",
-    "sortIndex": 176,
+    "sortIndex": 177,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -442494,7 +442494,7 @@
       {
         "name": "Night Banisher",
         "description": "Cannot be attacked",
-        "sortIndex": 1169,
+        "sortIndex": 1172,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -446539,7 +446539,7 @@
   "char_4087_ines": {
     "name": "Ines",
     "description": "Has <@ba.kw>reduced</> Redeployment Time, can use ranged attacks",
-    "sortIndex": 1193,
+    "sortIndex": 1196,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -452109,7 +452109,7 @@
   "char_1029_yato2": {
     "name": "Kirin R Yato",
     "description": "Significantly <@ba.kw>reduced</> Redeployment Time",
-    "sortIndex": 786,
+    "sortIndex": 788,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -457309,7 +457309,7 @@
   "char_4082_qiubai": {
     "name": "Qiubai",
     "description": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK",
-    "sortIndex": 799,
+    "sortIndex": 801,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -463358,7 +463358,7 @@
   "char_2024_chyue": {
     "name": "Chongyue",
     "description": "Blocks 1 enemy",
-    "sortIndex": 162,
+    "sortIndex": 163,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -472070,7 +472070,7 @@
   "char_4080_lin": {
     "name": "Lin",
     "description": "Normally <@ba.kw>does not attack</>, but has <@ba.kw>greatly increased</> DEF and RES; When skill is active, attacks deal <@ba.kw>AoE Arts damage</>",
-    "sortIndex": 618,
+    "sortIndex": 619,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -479132,7 +479132,7 @@
   "char_1020_reed2": {
     "name": "Reed the Flame Shadow",
     "description": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 50% of the damage dealt",
-    "sortIndex": 1156,
+    "sortIndex": 1159,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -484825,7 +484825,7 @@
   "char_1028_texas2": {
     "name": "Texas the Omertosa",
     "description": "Significantly <@ba.kw>reduced</> Redeployment Time",
-    "sortIndex": 442,
+    "sortIndex": 443,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -491719,7 +491719,7 @@
   "char_4065_judge": {
     "name": "Penance",
     "description": "<@ba.kw>Cannot</> be healed by allies",
-    "sortIndex": 159,
+    "sortIndex": 160,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -498154,7 +498154,7 @@
   "char_427_vigil": {
     "name": "Vigil",
     "description": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
-    "sortIndex": 938,
+    "sortIndex": 940,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -500408,7 +500408,7 @@
       {
         "name": "Wolfpack",
         "description": "Can only be deployed within the summoner's Attack Range",
-        "sortIndex": 594,
+        "sortIndex": 595,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -507165,7 +507165,7 @@
       {
         "name": "Stainless™ Multifunctional Platform",
         "description": "Cannot be attacked",
-        "sortIndex": 41,
+        "sortIndex": 40,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -508553,7 +508553,7 @@
       {
         "name": "Stainless™ Multifunctional Platform",
         "description": "Cannot be attacked",
-        "sortIndex": 40,
+        "sortIndex": 41,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -510116,7 +510116,7 @@
       {
         "name": "Prototype of Feist's Metal Crab",
         "description": "Can be attacked by Operators but does not take damage; recovers HP when attacked by Artificer Operators",
-        "sortIndex": 993,
+        "sortIndex": 995,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -516287,7 +516287,7 @@
   "char_4064_mlynar": {
     "name": "Młynar",
     "description": "Normally does not attack and has 0 Block; When skill is inactive, ATK gradually increases up to <@ba.kw>+{atk:0%}</> over <@ba.kw>{max_stack_cnt}</> seconds. ATK is reset when the skill ends",
-    "sortIndex": 666,
+    "sortIndex": 668,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -530912,7 +530912,7 @@
   "char_4055_bgsnow": {
     "name": "Pozёmka",
     "description": "High accuracy point-blank shot",
-    "sortIndex": 391,
+    "sortIndex": 392,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -533968,7 +533968,7 @@
       {
         "name": "'Typewriter'",
         "description": "Cannot be attacked",
-        "sortIndex": 205,
+        "sortIndex": 206,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -538969,7 +538969,7 @@
   "char_4048_doroth": {
     "name": "Dorothy",
     "description": "Can use traps to assist in combat, but traps cannot be placed <@ba.kw>on tiles already occupied by an enemy</>",
-    "sortIndex": 237,
+    "sortIndex": 238,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -541489,7 +541489,7 @@
       {
         "name": "Resonator",
         "description": "Cannot be attacked; cannot be deployed on tiles where enemies are <@ba.kw>already present</>",
-        "sortIndex": 338,
+        "sortIndex": 339,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -546833,7 +546833,7 @@
   "char_4046_ebnhlz": {
     "name": "Ebenholz",
     "description": "Attacks deal <@ba.kw>Arts damage</>; When unable to find a target, attacks can be <@ba.kw>stored up</> and fired all at once (Up to 3 charges)",
-    "sortIndex": 372,
+    "sortIndex": 373,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -549269,7 +549269,7 @@
       {
         "name": "Remnants of Days Past",
         "description": null,
-        "sortIndex": 523,
+        "sortIndex": 524,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -553935,7 +553935,7 @@
   "char_1023_ghost2": {
     "name": "Specter the Unchained",
     "description": "Does not retreat upon receiving lethal damage, instead swaps to a <Substitute> (Substitute has 0 Block). Swaps back to the original after 20 seconds",
-    "sortIndex": 350,
+    "sortIndex": 351,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -566675,7 +566675,7 @@
   "char_4042_lumen": {
     "name": "Lumen",
     "description": "Has a large healing range, but the healing amount on farther targets is reduced to <@ba.kw>{heal_scale:0%}</>",
-    "sortIndex": 637,
+    "sortIndex": 638,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -572661,7 +572661,7 @@
   "char_4039_horn": {
     "name": "Horn",
     "description": "When not blocking enemies, prioritizes dealing <@ba.kw>ranged AoE</> Physical damage",
-    "sortIndex": 366,
+    "sortIndex": 367,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -578215,7 +578215,7 @@
   "char_300_phenxi": {
     "name": "Fiammetta",
     "description": "Deals <@ba.kw>AOE Physical damage</>",
-    "sortIndex": 277,
+    "sortIndex": 278,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -583674,7 +583674,7 @@
   "char_377_gdglow": {
     "name": "Goldenglow",
     "description": "Controls a <@ba.kw>Drone</> to deal <@ba.kw>Arts</> damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (up to 110% of the operator's ATK)",
-    "sortIndex": 147,
+    "sortIndex": 148,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -589601,7 +589601,7 @@
   "char_2023_ling": {
     "name": "Ling",
     "description": "Deals <@ba.kw>Arts damage</>\nCan use <@ba.kw>Summons</> in battles",
-    "sortIndex": 621,
+    "sortIndex": 622,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -592130,7 +592130,7 @@
       {
         "name": "'Tranquility'",
         "description": "Blocks 1 enemy",
-        "sortIndex": 790,
+        "sortIndex": 792,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -593326,7 +593326,7 @@
       {
         "name": "'Peripateticism'",
         "description": "Deals <@ba.kw>Arts damage</>",
-        "sortIndex": 1076,
+        "sortIndex": 1079,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -594967,7 +594967,7 @@
       {
         "name": "'Thunderer'",
         "description": "Attacks <@ba.kw>all blocked enemies</>",
-        "sortIndex": 1066,
+        "sortIndex": 1069,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -603212,7 +603212,7 @@
   "char_322_lmlee": {
     "name": "Lee",
     "description": "Has <@ba.kw>reduced</> Redeployment Time, but <@ba.kw>DP Cost</> is not refunded upon retreating; While deployed, <@ba.kw>3 DP</> are consumed every 3 seconds (automatically retreats without sufficient DP)",
-    "sortIndex": 596,
+    "sortIndex": 597,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -609728,7 +609728,7 @@
   "char_206_gnosis": {
     "name": "Gnosis",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 628,
+    "sortIndex": 629,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -615077,7 +615077,7 @@
   "char_1014_nearl2": {
     "name": "Nearl the Radiant Knight",
     "description": "Blocks 1 enemy",
-    "sortIndex": 1162,
+    "sortIndex": 1165,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -617928,7 +617928,7 @@
       {
         "name": "'Blazing Sun'",
         "description": "Blocks 2 enemies",
-        "sortIndex": 1163,
+        "sortIndex": 1166,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -622073,7 +622073,7 @@
   "char_420_flamtl": {
     "name": "Flametail",
     "description": "Blocks 2 enemies",
-    "sortIndex": 1154,
+    "sortIndex": 1157,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -627934,7 +627934,7 @@
   "char_430_fartth": {
     "name": "Fartooth",
     "description": "Prioritizes attacking the enemy with <@ba.kw>lowest DEF</> within range first",
-    "sortIndex": 1251,
+    "sortIndex": 1255,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -633105,7 +633105,7 @@
   "char_479_sleach": {
     "name": "Saileach",
     "description": "Cannot block enemies during the skill duration",
-    "sortIndex": 795,
+    "sortIndex": 797,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -639444,7 +639444,7 @@
   "char_1013_chen2": {
     "name": "Ch'en the Holungday",
     "description": "Attacks <@ba.kw>all enemies</> within range, and deals 150% damage to enemies in the row directly in front of this unit.",
-    "sortIndex": 457,
+    "sortIndex": 458,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -645950,7 +645950,7 @@
   "char_437_mizuki": {
     "name": "Mizuki",
     "description": "Deals Damage to <@ba.kw>all targets</> within range\n50% chance to dodge Physical and Arts attacks and is less likely to be <@ba.kw>targeted</> by enemies",
-    "sortIndex": 932,
+    "sortIndex": 934,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -652256,7 +652256,7 @@
   "char_485_pallas": {
     "name": "Pallas",
     "description": "Has <@ba.kw>extended</> attack range; When attacking enemies not blocked by self, increase ATK to 120%",
-    "sortIndex": 759,
+    "sortIndex": 761,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -657516,7 +657516,7 @@
   "char_426_billro": {
     "name": "Carnelian",
     "description": "Normally <@ba.kw>does not attack</>, but has <@ba.kw>greatly increased</> DEF and RES; When skill is active, attacks deal <@ba.kw>AoE Arts damage</>",
-    "sortIndex": 553,
+    "sortIndex": 554,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -663661,7 +663661,7 @@
   "char_1012_skadi2": {
     "name": "Skadi the Corrupting Heart",
     "description": "Does not attack but continuously restores the <@ba.kw>HP</> of all allies within range (the HP restored per second is equal to 10% of self ATK). Self is unaffected by <$ba.inspire>Inspiration</>",
-    "sortIndex": 1366,
+    "sortIndex": 1370,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -665924,7 +665924,7 @@
       {
         "name": "Skadi's Seaborn",
         "description": "Cannot be attacked",
-        "sortIndex": 935,
+        "sortIndex": 937,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -673464,7 +673464,7 @@
   "char_003_kalts": {
     "name": "Kal'tsit",
     "description": "Restores the HP of allies",
-    "sortIndex": 547,
+    "sortIndex": 548,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -675731,7 +675731,7 @@
       {
         "name": "Mon3tr",
         "description": "Blocks 3 enemies",
-        "sortIndex": 716,
+        "sortIndex": 717,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -682107,7 +682107,7 @@
   "char_474_glady": {
     "name": "Gladiia",
     "description": "Can <@ba.kw>Shift</> enemies by using skills\nCan be deployed on Ranged Tiles",
-    "sortIndex": 329,
+    "sortIndex": 330,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -687978,7 +687978,7 @@
   "char_472_pasngr": {
     "name": "Passenger",
     "description": "Attacks deal <@ba.kw>Arts</> damage and jump between <@ba.kw>3</> enemies. Each jump deals 15% less damage and inflicts a brief <$ba.sluggish>Slow</>",
-    "sortIndex": 1188,
+    "sortIndex": 1191,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -697321,7 +697321,7 @@
   "char_456_ash": {
     "name": "Ash",
     "description": "Attacks aerial enemies first",
-    "sortIndex": 412,
+    "sortIndex": 413,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -700872,7 +700872,7 @@
   "char_2015_dusk": {
     "name": "Dusk",
     "description": "Deals <@ba.kw>AOE Arts damage</>",
-    "sortIndex": 1049,
+    "sortIndex": 1052,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -704356,7 +704356,7 @@
       {
         "name": "'Freeling'",
         "description": "Deals <@ba.kw>Arts damage</>",
-        "sortIndex": 1077,
+        "sortIndex": 1080,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -709086,7 +709086,7 @@
   "char_362_saga": {
     "name": "Saga",
     "description": "Blocks 2 enemies",
-    "sortIndex": 177,
+    "sortIndex": 178,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -714773,7 +714773,7 @@
   "char_332_archet": {
     "name": "Archetto",
     "description": "Attacks aerial enemies first",
-    "sortIndex": 577,
+    "sortIndex": 578,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -720246,7 +720246,7 @@
   "char_264_f12yin": {
     "name": "Mountain",
     "description": "Blocks 1 enemy",
-    "sortIndex": 843,
+    "sortIndex": 845,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -725930,7 +725930,7 @@
   "char_391_rosmon": {
     "name": "Rosmontis",
     "description": "Attacks deal <@ba.kw>two instances</> of Physical damage to <@ba.kw>ground</> enemies in a small area (The second instance is a shockwave that has half the normal ATK)",
-    "sortIndex": 692,
+    "sortIndex": 694,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -728473,7 +728473,7 @@
       {
         "name": "Rosmontis's Tactical Equipment",
         "description": "Blocks 2 enemies, and reduces the DEF of blocked units",
-        "sortIndex": 693,
+        "sortIndex": 695,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -732566,7 +732566,7 @@
   "char_311_mudrok": {
     "name": "Mudrock",
     "description": "<@ba.kw>Cannot</> be healed by allies",
-    "sortIndex": 751,
+    "sortIndex": 753,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -741511,7 +741511,7 @@
   "char_423_blemsh": {
     "name": "Blemishine",
     "description": "Can heal allies by using skill(s)",
-    "sortIndex": 1052,
+    "sortIndex": 1055,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -748216,7 +748216,7 @@
   "char_350_surtr": {
     "name": "Surtr",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 891,
+    "sortIndex": 893,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -753608,7 +753608,7 @@
   "char_416_zumama": {
     "name": "Eunectes",
     "description": "Only restores SP when blocking enemies",
-    "sortIndex": 839,
+    "sortIndex": 841,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -758891,7 +758891,7 @@
   "char_293_thorns": {
     "name": "Thorns",
     "description": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK",
-    "sortIndex": 467,
+    "sortIndex": 468,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -765927,7 +765927,7 @@
   "char_358_lisa": {
     "name": "Suzuran",
     "description": "Deals <@ba.kw>Arts damage</> and <$ba.sluggish>Slows</> the target for a short time",
-    "sortIndex": 624,
+    "sortIndex": 625,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -772036,7 +772036,7 @@
   "char_197_poca": {
     "name": "Rosa",
     "description": "Attacks the heaviest enemy first",
-    "sortIndex": 1291,
+    "sortIndex": 1295,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -777811,7 +777811,7 @@
   "char_113_cqbw": {
     "name": "W",
     "description": "Deals <@ba.kw>AOE Physical damage</>",
-    "sortIndex": 1011,
+    "sortIndex": 1013,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -779972,7 +779972,7 @@
       {
         "name": "Front Toward Enemy",
         "description": null,
-        "sortIndex": 170,
+        "sortIndex": 171,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -786330,7 +786330,7 @@
   "char_400_weedy": {
     "name": "Weedy",
     "description": "Can attack <@ba.kw>all blocked enemies</>\nCan be deployed on Ranged Tiles",
-    "sortIndex": 1030,
+    "sortIndex": 1032,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -788943,7 +788943,7 @@
       {
         "name": "Industrial Water Cannon",
         "description": "Cannot be attacked",
-        "sortIndex": 333,
+        "sortIndex": 334,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -794064,7 +794064,7 @@
   "char_250_phatom": {
     "name": "Phantom",
     "description": "Significantly <@ba.kw>reduced</> Redeployment Time",
-    "sortIndex": 584,
+    "sortIndex": 585,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -796631,7 +796631,7 @@
       {
         "name": "Phantom in the Mirror",
         "description": "Blocks 1 enemy",
-        "sortIndex": 512,
+        "sortIndex": 513,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -802517,7 +802517,7 @@
   "char_222_bpipe": {
     "name": "Bagpipe",
     "description": "Obtain 1 DP after this unit defeats an enemy; Refunds the original DP Cost when retreated",
-    "sortIndex": 280,
+    "sortIndex": 281,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -807709,7 +807709,7 @@
   "char_2013_cerber": {
     "name": "Ceobe",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 564,
+    "sortIndex": 565,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -813346,7 +813346,7 @@
   "char_2014_nian": {
     "name": "Nian",
     "description": "Blocks 3 enemies",
-    "sortIndex": 742,
+    "sortIndex": 744,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -826038,7 +826038,7 @@
   "char_017_huang": {
     "name": "Blaze",
     "description": "Attacks <@ba.kw>all blocked enemies</>",
-    "sortIndex": 399,
+    "sortIndex": 400,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -831376,7 +831376,7 @@
   "char_213_mostma": {
     "name": "Mostima",
     "description": "Deals <@ba.kw>AOE Arts damage</>",
-    "sortIndex": 718,
+    "sortIndex": 720,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -837356,7 +837356,7 @@
   "char_248_mgllan": {
     "name": "Magallan",
     "description": "Deals <@ba.kw>Arts damage</>\nCan use <@ba.kw>Summons</> in battles",
-    "sortIndex": 672,
+    "sortIndex": 674,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -839391,7 +839391,7 @@
       {
         "name": "Soaring Dragon F",
         "description": "Cannot block enemies",
-        "sortIndex": 648,
+        "sortIndex": 649,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -840767,7 +840767,7 @@
       {
         "name": "Soaring Dragon L",
         "description": "Cannot block enemies; attacks deal <@ba.kw>Arts damage</>",
-        "sortIndex": 649,
+        "sortIndex": 650,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -842047,7 +842047,7 @@
       {
         "name": "Soaring Dragon A",
         "description": "Deals <@ba.kw>AOE Physical damage</>",
-        "sortIndex": 647,
+        "sortIndex": 648,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -846569,7 +846569,7 @@
   "char_188_helage": {
     "name": "Hellagur",
     "description": "Can't be healed by other units. Recovers <@ba.kw>{value}</> self HP every time this operator attacks an enemy",
-    "sortIndex": 375,
+    "sortIndex": 376,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -852259,7 +852259,7 @@
   "char_340_shwaz": {
     "name": "Schwarz",
     "description": "High accuracy point-blank shot",
-    "sortIndex": 371,
+    "sortIndex": 372,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -857665,7 +857665,7 @@
   "char_010_chen": {
     "name": "Ch'en",
     "description": "Normal attacks deal damage <@ba.kw>twice</>",
-    "sortIndex": 138,
+    "sortIndex": 139,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -864284,7 +864284,7 @@
   "char_263_skadi": {
     "name": "Skadi",
     "description": "Blocks 1 enemy",
-    "sortIndex": 934,
+    "sortIndex": 936,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -869322,7 +869322,7 @@
   "char_172_svrash": {
     "name": "SilverAsh",
     "description": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK",
-    "sortIndex": 1210,
+    "sortIndex": 1213,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -875166,7 +875166,7 @@
   "char_202_demkni": {
     "name": "Saria",
     "description": "Can heal allies by using skill(s)",
-    "sortIndex": 832,
+    "sortIndex": 834,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -882643,7 +882643,7 @@
   "char_136_hsguma": {
     "name": "Hoshiguma",
     "description": "Blocks 3 enemies",
-    "sortIndex": 1096,
+    "sortIndex": 1099,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -888341,7 +888341,7 @@
   "char_179_cgbird": {
     "name": "Nightingale",
     "description": "Restores the HP of 3 allies simultaneously",
-    "sortIndex": 1179,
+    "sortIndex": 1182,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -891392,7 +891392,7 @@
       {
         "name": "Mirage",
         "description": "Cannot block enemies",
-        "sortIndex": 407,
+        "sortIndex": 408,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -895216,7 +895216,7 @@
   "char_147_shining": {
     "name": "Shining",
     "description": "Restores the HP of allies",
-    "sortIndex": 851,
+    "sortIndex": 853,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -913096,7 +913096,7 @@
   "char_134_ifrit": {
     "name": "Ifrit",
     "description": "Deals <@ba.kw>AOE Arts damage in a long line</>",
-    "sortIndex": 1185,
+    "sortIndex": 1188,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -918495,7 +918495,7 @@
   "char_112_siege": {
     "name": "Siege",
     "description": "Blocks 2 enemies",
-    "sortIndex": 1004,
+    "sortIndex": 1006,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -923878,7 +923878,7 @@
   "char_103_angel": {
     "name": "Exusiai",
     "description": "Attacks aerial enemies first",
-    "sortIndex": 740,
+    "sortIndex": 742,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -929106,7 +929106,7 @@
   "char_4232_hbound": {
     "name": "Homebound",
     "description": "可以投掷<@ba.kw>炼金单元</>协助作战",
-    "sortIndex": 665,
+    "sortIndex": 667,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -932761,7 +932761,7 @@
   "char_393_toledo": {
     "name": "de Toledo",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 208,
+    "sortIndex": 209,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -934440,7 +934440,7 @@
       {
         "name": "Legend of the Conquerors",
         "description": "能够阻挡三个敌人",
-        "sortIndex": 1324,
+        "sortIndex": 1328,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -940002,7 +940002,7 @@
   "char_4219_yukari": {
     "name": "Yukari Takeba",
     "description": "可以使用<$ba.triggereffect>触发型效果</>协助作战",
-    "sortIndex": 1272,
+    "sortIndex": 1276,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -942658,7 +942658,7 @@
   "char_4237_jcinta": {
     "name": "Jacinta",
     "description": "技能发动期间阻挡数变为0",
-    "sortIndex": 462,
+    "sortIndex": 463,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -946799,7 +946799,7 @@
   "char_4234_pedro": {
     "name": "Pedro",
     "description": "可以使用<$ba.triggereffect>触发型效果</>协助作战",
-    "sortIndex": 768,
+    "sortIndex": 770,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -950047,7 +950047,7 @@
   "char_1049_catap2": {
     "name": "Zinogre S Catapult",
     "description": "可消耗部署费用来强化作战能力",
-    "sortIndex": 601,
+    "sortIndex": 602,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -954011,7 +954011,7 @@
   "char_4225_tanya": {
     "name": "Crackborne",
     "description": "Blocks 3 enemies, and can inflict Elemental Injury",
-    "sortIndex": 616,
+    "sortIndex": 617,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -958901,7 +958901,7 @@
   "char_4224_turdus": {
     "name": "Ukusik",
     "description": "Restores HP of allies, bouncing between <@ba.kw>3</> allies. Healing reduced by 25% per bounce.",
-    "sortIndex": 1037,
+    "sortIndex": 1040,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -964120,7 +964120,7 @@
   "char_4223_botany": {
     "name": "Botani",
     "description": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Injury</>",
-    "sortIndex": 101,
+    "sortIndex": 102,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -970113,7 +970113,7 @@
   "char_4031_liesel": {
     "name": "Ripresa",
     "description": "Deals <@ba.kw>AOE Arts damage</>",
-    "sortIndex": 304,
+    "sortIndex": 305,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -974662,7 +974662,7 @@
   "char_4222_taraxa": {
     "name": "Taraxacum",
     "description": "Restores the HP of allies, and can <$ba.liftoff>Take Off</>",
-    "sortIndex": 287,
+    "sortIndex": 288,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -979472,7 +979472,7 @@
   "char_4221_ju": {
     "name": "Ju",
     "description": "Attacks the heaviest enemy first",
-    "sortIndex": 534,
+    "sortIndex": 535,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -983960,7 +983960,7 @@
   "char_1022_flwr2": {
     "name": "Perfumer the Distilled",
     "description": "Deals <@ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to 75% of ATK)",
-    "sortIndex": 1086,
+    "sortIndex": 1089,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -993183,7 +993183,7 @@
   "char_4214_cairn": {
     "name": "Cairn",
     "description": "Blocks 3 enemies, and can inflict Elemental Injury",
-    "sortIndex": 1062,
+    "sortIndex": 1065,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -998062,7 +998062,7 @@
   "char_4213_skybx": {
     "name": "Skybox",
     "description": "<$ba.liftoff>Takes off</> on deployment, and only attacks aerial enemies when <$ba.liftoff>in mid-air</>; on skill activation, descends and deals <@ba.kw>AOE Physical damage</>",
-    "sortIndex": 980,
+    "sortIndex": 982,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1002914,7 +1002914,7 @@
   "char_4211_snhunt": {
     "name": "Snow Hunter",
     "description": "Attacks consume Ammo to increase ATK to <@ba.kw>120%</>; While not attacking, Ammo will be slowly reloaded (max capacity 8).",
-    "sortIndex": 1117,
+    "sortIndex": 1120,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1007455,7 +1007455,7 @@
   "char_394_hadiya": {
     "name": "Hadiya",
     "description": "Can spend DP to strengthen combat abilities",
-    "sortIndex": 355,
+    "sortIndex": 356,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1012078,7 +1012078,7 @@
   "char_4207_branch": {
     "name": "Vetochki",
     "description": "<@ba.kw>Cannot</> be healed by allies",
-    "sortIndex": 1332,
+    "sortIndex": 1336,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1017545,7 +1017545,7 @@
   "char_4184_dolris": {
     "name": "Uika Misumi",
     "description": "Does not attack but continuously restores the <@ba.kw>HP</> of all allies within range (the HP restored per second is equal to 10% of self ATK). Self is unaffected by <$ba.inspire>Inspiration</>",
-    "sortIndex": 837,
+    "sortIndex": 839,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1021370,7 +1021370,7 @@
   "char_4183_mortis": {
     "name": "Mutsumi Wakaba",
     "description": "Does not retreat upon receiving lethal damage, instead swaps to a <Substitute> (Substitute has 0 Block). Swaps back to the original after 20 seconds",
-    "sortIndex": 827,
+    "sortIndex": 829,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1027588,7 +1027588,7 @@
   "char_4185_amoris": {
     "name": "Nyamu Yūtenji",
     "description": "Attacks deal <@ba.kw>50%</> ATK as <@ba.kw>AOE</> Physical damage to enemies around the target.",
-    "sortIndex": 1227,
+    "sortIndex": 1230,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1030704,7 +1030704,7 @@
   "char_4203_kichi": {
     "name": "Kichisei",
     "description": "Attacks <@ba.kw>all enemies</> within range, and deals 150% damage to enemies in the row directly in front of this unit.",
-    "sortIndex": 529,
+    "sortIndex": 530,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1035367,7 +1035367,7 @@
   "char_4199_makiri": {
     "name": "Matsukiri",
     "description": "Blocks 2 enemies, and can support allies in the Deployment Waiting Zone",
-    "sortIndex": 941,
+    "sortIndex": 943,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1040217,7 +1040217,7 @@
   "char_4196_reckpr": {
     "name": "Record Keeper",
     "description": "Restores the HP of allies",
-    "sortIndex": 663,
+    "sortIndex": 665,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1044896,7 +1044896,7 @@
   "char_4191_tippi": {
     "name": "Tippi",
     "description": "After <$ba.liftoff>Taking Off</>, can block 2 flying enemies",
-    "sortIndex": 214,
+    "sortIndex": 215,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1049886,7 +1049886,7 @@
   "char_4198_christ": {
     "name": "Miss.Christine",
     "description": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Damage</>",
-    "sortIndex": 707,
+    "sortIndex": 709,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1053354,7 +1053354,7 @@
   "char_4187_graceb": {
     "name": "Gracebearer",
     "description": "Blocks 2 enemies, and can inflict <@ba.kw>Elemental damage</>",
-    "sortIndex": 626,
+    "sortIndex": 627,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1059776,7 +1059776,7 @@
       {
         "name": "Nutty",
         "description": "Cannot be attacked",
-        "sortIndex": 1072,
+        "sortIndex": 1075,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1063227,7 +1063227,7 @@
   "char_4171_wulfen": {
     "name": "Wulfenite",
     "description": "Can use traps to assist in combat, but traps cannot be placed <@ba.kw>on tiles already occupied by an enemy</>",
-    "sortIndex": 730,
+    "sortIndex": 732,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1065084,7 +1065084,7 @@
       {
         "name": "Ore 'Killer'",
         "description": "Cannot be attacked; cannot be deployed on tiles where enemies are <@ba.kw>already present</>",
-        "sortIndex": 582,
+        "sortIndex": 583,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1069414,7 +1069414,7 @@
   "char_4177_brigid": {
     "name": "Brigid",
     "description": "Can only attack while holding a <@ba.kw>boomerang projectile</> (projectile takes time to return)",
-    "sortIndex": 930,
+    "sortIndex": 932,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1074178,7 +1074178,7 @@
   "char_4173_nowell": {
     "name": "Nowell",
     "description": "Has a large healing range, but the healing amount on farther targets is reduced to <@ba.kw>{heal_scale:0%}</>",
-    "sortIndex": 755,
+    "sortIndex": 757,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1078953,7 +1078953,7 @@
   "char_4052_surfer": {
     "name": "Surfer",
     "description": "Has <@ba.kw>reduced</> Redeployment Time, can use ranged attacks",
-    "sortIndex": 1128,
+    "sortIndex": 1131,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1083502,7 +1083502,7 @@
   "char_4172_xingzh": {
     "name": "Xingzhu",
     "description": "Deals <@ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to 76% of ATK)",
-    "sortIndex": 1099,
+    "sortIndex": 1102,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1088120,7 +1088120,7 @@
   "char_4164_tecno": {
     "name": "Tecno",
     "description": "Deals <@ba.kw>Arts damage</>; Can create <@ba.kw>Summons</> by defeating enemies, and can attack enemies blocked by these <@ba.kw>Summons</>",
-    "sortIndex": 969,
+    "sortIndex": 971,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1090647,7 +1090647,7 @@
       {
         "name": "Puppet Dancer",
         "description": "Blocks 1 enemy, and attacks deal Arts damage",
-        "sortIndex": 729,
+        "sortIndex": 731,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1094181,7 +1094181,7 @@
   "char_4163_rosesa": {
     "name": "Rose Salt",
     "description": "Restores the HP of 3 allies simultaneously",
-    "sortIndex": 351,
+    "sortIndex": 352,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1099819,7 +1099819,7 @@
   "char_4155_talr": {
     "name": "Figurino",
     "description": "Has <@ba.kw>reduced</> Redeployment Time, but <@ba.kw>DP Cost</> is not refunded upon retreating; While deployed, <@ba.kw>3 DP</> are consumed every 3 seconds (automatically retreats without sufficient DP)",
-    "sortIndex": 124,
+    "sortIndex": 125,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1105582,7 +1105582,7 @@
   "char_4148_philae": {
     "name": "Philae",
     "description": "Blocks 3 enemies, and can inflict Elemental Injury",
-    "sortIndex": 272,
+    "sortIndex": 273,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1110128,7 +1110128,7 @@
   "char_487_bobb": {
     "name": "Bobbing",
     "description": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Injury</>",
-    "sortIndex": 94,
+    "sortIndex": 95,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1114755,7 +1114755,7 @@
   "char_4162_cathy": {
     "name": "Catherine",
     "description": "Blocks 2 enemies; Can use <Support Devices> in battles",
-    "sortIndex": 549,
+    "sortIndex": 550,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1116467,7 +1116467,7 @@
       {
         "name": "Crawler Protection Unit",
         "description": "Cannot be attacked",
-        "sortIndex": 767,
+        "sortIndex": 769,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1120121,7 +1120121,7 @@
   "char_4142_laios": {
     "name": "Laios",
     "description": "Blocks 1 enemy",
-    "sortIndex": 589,
+    "sortIndex": 590,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1122502,7 +1122502,7 @@
   "char_4144_chilc": {
     "name": "Chilchuck",
     "description": "Has <@ba.kw>reduced</> Redeployment Time, can use ranged attacks",
-    "sortIndex": 784,
+    "sortIndex": 786,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1125387,7 +1125387,7 @@
   "char_4143_sensi": {
     "name": "Senshi",
     "description": "Can heal allies by using skill(s)",
-    "sortIndex": 840,
+    "sortIndex": 842,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1128816,7 +1128816,7 @@
   "char_4140_lasher": {
     "name": "Sand Reckoner",
     "description": "Deals <@ba.kw>Arts damage</>\nCan use <@ba.kw>Summons</> in battles",
-    "sortIndex": 379,
+    "sortIndex": 380,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1130466,7 +1130466,7 @@
       {
         "name": "Clockwork Fowlbeast",
         "description": "Deals <@ba.kw>Arts damage</>",
-        "sortIndex": 271,
+        "sortIndex": 272,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1134491,7 +1134491,7 @@
   "char_4139_papyrs": {
     "name": "Papyrus",
     "description": "Restores HP of allies, bouncing between <@ba.kw>3</> allies. Healing reduced by 25% per bounce.",
-    "sortIndex": 959,
+    "sortIndex": 961,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1139136,7 +1139136,7 @@
   "char_4151_tinman": {
     "name": "Tin Man",
     "description": "Can throw <@ba.kw>Alchemical Units</> to assist in combat",
-    "sortIndex": 1104,
+    "sortIndex": 1107,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1143843,7 +1143843,7 @@
   "char_4147_mitm": {
     "name": "Mitm",
     "description": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
-    "sortIndex": 238,
+    "sortIndex": 239,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1146168,7 +1146168,7 @@
       {
         "name": "Cherry-3",
         "description": "Blocks 1 enemy; when in Buggy form, can only be deployed within the summoner's Attack Range",
-        "sortIndex": 1207,
+        "sortIndex": 1210,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1149586,7 +1149586,7 @@
   "char_4079_haini": {
     "name": "Lucilla",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 359,
+    "sortIndex": 360,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1154274,7 +1154274,7 @@
   "char_4137_udflow": {
     "name": "Underflow",
     "description": "Blocks 3 enemies and attacks from long range.",
-    "sortIndex": 880,
+    "sortIndex": 882,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1159094,7 +1159094,7 @@
   "char_1036_fang2": {
     "name": "Fang the Fire-Sharpened",
     "description": "Obtain 1 DP after this unit defeats an enemy; Refunds the original DP Cost when retreated",
-    "sortIndex": 643,
+    "sortIndex": 644,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1172604,7 +1172604,7 @@
   "char_4125_rdoc": {
     "name": "Doc",
     "description": "Has <@ba.kw>extended</> attack range; When attacking enemies not blocked by self, increase ATK to 120%",
-    "sortIndex": 1222,
+    "sortIndex": 1225,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1175589,7 +1175589,7 @@
   "char_4124_iana": {
     "name": "Iana",
     "description": "Does not retreat upon receiving lethal damage, instead swaps to a <Substitute> (Substitute has 0 Block). Swaps back to the original after 20 seconds",
-    "sortIndex": 924,
+    "sortIndex": 926,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1178726,7 +1178726,7 @@
   "char_4126_fuze": {
     "name": "Fuze",
     "description": "Attacks <@ba.kw>all blocked enemies</>",
-    "sortIndex": 196,
+    "sortIndex": 197,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1185939,7 +1185939,7 @@
   "char_4122_grabds": {
     "name": "Grain Buds",
     "description": "Deals <@ba.kw>Arts damage</> and <$ba.sluggish>Slows</> the target for a short time",
-    "sortIndex": 1073,
+    "sortIndex": 1076,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1191067,7 +1191067,7 @@
   "char_4119_wanqin": {
     "name": "Wanqing",
     "description": "Cannot block enemies during the skill duration",
-    "sortIndex": 1015,
+    "sortIndex": 1017,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1196249,7 +1196249,7 @@
   "char_4081_warmy": {
     "name": "Warmy",
     "description": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Damage</>",
-    "sortIndex": 1034,
+    "sortIndex": 1036,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1200837,7 +1200837,7 @@
   "char_194_leto": {
     "name": "Leto",
     "description": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK",
-    "sortIndex": 615,
+    "sortIndex": 616,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1205944,7 +1205944,7 @@
   "char_4114_harold": {
     "name": "Harold",
     "description": "Restores the HP of allied units and recovers <@ba.dt.element>Elemental Injury</> by 50% of ATK (can recover <@ba.dt.element>Elemental Injury</> of unhurt allied units)",
-    "sortIndex": 360,
+    "sortIndex": 361,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1210475,7 +1210475,7 @@
   "char_4109_baslin": {
     "name": "Bassline",
     "description": "Can heal allies by using skill(s)",
-    "sortIndex": 878,
+    "sortIndex": 880,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1215670,7 +1215670,7 @@
   "char_499_kaitou": {
     "name": "Diamante",
     "description": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Damage</>",
-    "sortIndex": 1319,
+    "sortIndex": 1323,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1220199,7 +1220199,7 @@
   "char_494_vendla": {
     "name": "Vendela",
     "description": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 50% of the damage dealt",
-    "sortIndex": 169,
+    "sortIndex": 170,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1224717,7 +1224717,7 @@
   "char_4110_delphn": {
     "name": "Delphine",
     "description": "Attacks deal <@ba.kw>Arts damage</>; When unable to find a target, attacks can be <@ba.kw>stored up</> and fired all at once (Up to 3 charges)",
-    "sortIndex": 183,
+    "sortIndex": 184,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1229652,7 +1229652,7 @@
   "char_4105_almond": {
     "name": "Almond",
     "description": "Can <@ba.kw>Shift</> enemies by using skills\nCan be deployed on Ranged Tiles",
-    "sortIndex": 1093,
+    "sortIndex": 1096,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1234209,7 +1234209,7 @@
   "char_4104_coldst": {
     "name": "Coldshot",
     "description": "Attacks consume Ammo to increase ATK to <@ba.kw>120%</>; While not attacking, Ammo will be slowly reloaded (max capacity 8).",
-    "sortIndex": 89,
+    "sortIndex": 90,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1238765,7 +1238765,7 @@
   "char_488_buildr": {
     "name": "Poncirus",
     "description": "Blocks 2 enemies",
-    "sortIndex": 794,
+    "sortIndex": 796,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1243473,7 +1243473,7 @@
   "char_4106_bryota": {
     "name": "Bryophyta",
     "description": "Has <@ba.kw>extended</> attack range; When attacking enemies not blocked by self, increase ATK to 120%",
-    "sortIndex": 126,
+    "sortIndex": 127,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1247965,7 +1247965,7 @@
   "char_4102_threye": {
     "name": "Valarqvin",
     "description": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Injury</>",
-    "sortIndex": 631,
+    "sortIndex": 632,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1252535,7 +1252535,7 @@
   "char_341_sntlla": {
     "name": "Santalla",
     "description": "Deals <@ba.kw>AOE Arts damage</>",
-    "sortIndex": 364,
+    "sortIndex": 365,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1257644,7 +1257644,7 @@
   "char_4015_spuria": {
     "name": "Spuria",
     "description": "Continually loses HP over time",
-    "sortIndex": 574,
+    "sortIndex": 575,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1262204,7 +1262204,7 @@
   "char_498_inside": {
     "name": "Insider",
     "description": "Attacks aerial enemies first",
-    "sortIndex": 1218,
+    "sortIndex": 1221,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1266714,7 +1266714,7 @@
   "char_4006_melnte": {
     "name": "Melanite",
     "description": "High accuracy point-blank shot",
-    "sortIndex": 679,
+    "sortIndex": 681,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1271427,7 +1271427,7 @@
   "char_464_cement": {
     "name": "Cement",
     "description": "Only restores SP when blocking enemies",
-    "sortIndex": 1145,
+    "sortIndex": 1148,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1275904,7 +1275904,7 @@
   "char_154_morgan": {
     "name": "Morgan",
     "description": "Blocks 1 enemy",
-    "sortIndex": 713,
+    "sortIndex": 715,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1280430,7 +1280430,7 @@
   "char_1030_noirc2": {
     "name": "Rathalos S Noir Corne",
     "description": "Can't be healed by other units. Recovers <@ba.kw>{value}</> self HP every time this operator attacks an enemy",
-    "sortIndex": 420,
+    "sortIndex": 421,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1285352,7 +1285352,7 @@
   "char_4083_chimes": {
     "name": "Wind Chimes",
     "description": "Attacks <@ba.kw>all blocked enemies</>",
-    "sortIndex": 236,
+    "sortIndex": 237,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1289862,7 +1289862,7 @@
   "char_493_firwhl": {
     "name": "Firewhistle",
     "description": "When not blocking enemies, prioritizes dealing <@ba.kw>ranged AoE</> Physical damage",
-    "sortIndex": 422,
+    "sortIndex": 423,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1294457,7 +1294457,7 @@
   "char_4078_bdhkgt": {
     "name": "Jieyun",
     "description": "Deals <@ba.kw>AOE Physical damage</>",
-    "sortIndex": 484,
+    "sortIndex": 485,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1299209,7 +1299209,7 @@
   "char_297_hamoni": {
     "name": "Harmonie",
     "description": "Attacks deal <@ba.kw>Arts damage</>; When unable to find a target, attacks can be <@ba.kw>stored up</> and fired all at once (Up to 3 charges)",
-    "sortIndex": 380,
+    "sortIndex": 381,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1304019,7 +1304019,7 @@
   "char_4017_puzzle": {
     "name": "Puzzle",
     "description": "Has <@ba.kw>reduced</> Redeployment Time, can use ranged attacks",
-    "sortIndex": 708,
+    "sortIndex": 710,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1308674,7 +1308674,7 @@
   "char_4014_lunacu": {
     "name": "Lunacub",
     "description": "Prioritizes attacking the enemy with <@ba.kw>lowest DEF</> within range first",
-    "sortIndex": 1374,
+    "sortIndex": 1378,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1313169,7 +1313169,7 @@
   "char_466_qanik": {
     "name": "Qanipalaat",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 1118,
+    "sortIndex": 1121,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1317798,7 +1317798,7 @@
   "char_4071_peper": {
     "name": "Paprika",
     "description": "Restores HP of allies, bouncing between <@ba.kw>3</> allies. Healing reduced by 25% per bounce.",
-    "sortIndex": 703,
+    "sortIndex": 705,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1322350,7 +1322350,7 @@
   "char_157_dagda": {
     "name": "Dagda",
     "description": "Blocks 1 enemy",
-    "sortIndex": 180,
+    "sortIndex": 181,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1326713,7 +1326713,7 @@
   "char_4066_highmo": {
     "name": "Highmore",
     "description": "Cannot be healed by allies; Attacks deal <@ba.kw>AOE Damage</>; Recovers <@ba.kw>50</> HP for every enemy hit during attacks, up to Block count",
-    "sortIndex": 358,
+    "sortIndex": 359,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1331215,7 +1331215,7 @@
   "char_4032_provs": {
     "name": "Proviso",
     "description": "Deals <@ba.kw>Arts damage</> and <$ba.sluggish>Slows</> the target for a short time",
-    "sortIndex": 189,
+    "sortIndex": 190,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1336446,7 +1336446,7 @@
   "char_497_ctable": {
     "name": "Cantabile",
     "description": "Has <@ba.kw>reduced</> Redeployment Time, can use ranged attacks",
-    "sortIndex": 1070,
+    "sortIndex": 1073,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1341036,7 +1341036,7 @@
   "char_4054_malist": {
     "name": "Minimalist",
     "description": "Controls a <@ba.kw>Drone</> to deal <@ba.kw>Arts</> damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (up to 110% of the operator's ATK)",
-    "sortIndex": 1336,
+    "sortIndex": 1340,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1345578,7 +1345578,7 @@
   "char_1027_greyy2": {
     "name": "Greyy the Lightningbearer",
     "description": "Attacks deal <@ba.kw>two instances</> of Physical damage to <@ba.kw>ground</> enemies in a small area (The second instance is a shockwave that has half the normal ATK)",
-    "sortIndex": 150,
+    "sortIndex": 151,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1350354,7 +1350354,7 @@
   "char_135_halo": {
     "name": "Astgenne",
     "description": "Attacks deal <@ba.kw>Arts</> damage and jump between <@ba.kw>3</> enemies. Each jump deals 15% less damage and inflicts a brief <$ba.sluggish>Slow</>",
-    "sortIndex": 1097,
+    "sortIndex": 1100,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1355510,7 +1355510,7 @@
   "char_1024_hbisc2": {
     "name": "Hibiscus the Purifier",
     "description": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 50% of the damage dealt",
-    "sortIndex": 1363,
+    "sortIndex": 1367,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1360105,7 +1360105,7 @@
   "char_4047_pianst": {
     "name": "Czerny",
     "description": "Normal attacks deal Arts damage while the skill is active",
-    "sortIndex": 137,
+    "sortIndex": 138,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1369887,7 +1369887,7 @@
   "char_433_windft": {
     "name": "Windflit",
     "description": "Blocks 2 enemies; Can use <Support Devices> in battles",
-    "sortIndex": 664,
+    "sortIndex": 666,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1372081,7 +1372081,7 @@
       {
         "name": "Reliable Battery",
         "description": "Cannot be attacked",
-        "sortIndex": 565,
+        "sortIndex": 566,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1376379,7 +1376379,7 @@
   "char_4040_rockr": {
     "name": "Rockrock",
     "description": "Controls a <@ba.kw>Drone</> to deal <@ba.kw>Arts</> damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (up to 110% of the operator's ATK)",
-    "sortIndex": 658,
+    "sortIndex": 660,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1381008,7 +1381008,7 @@
   "char_4045_heidi": {
     "name": "Heidi",
     "description": "Does not attack but continuously restores the <@ba.kw>HP</> of all allies within range (the HP restored per second is equal to 10% of self ATK). Self is unaffected by <$ba.inspire>Inspiration</>",
-    "sortIndex": 356,
+    "sortIndex": 357,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1385760,7 +1385760,7 @@
   "char_4016_kazema": {
     "name": "Kazemaru",
     "description": "Does not retreat upon receiving lethal damage, instead swaps to a <Substitute> (Substitute has 0 Block). Swaps back to the original after 20 seconds",
-    "sortIndex": 286,
+    "sortIndex": 287,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1387388,7 +1387388,7 @@
       {
         "name": "Kaminingyo",
         "description": "Cannot block enemies",
-        "sortIndex": 1345,
+        "sortIndex": 1349,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1390987,7 +1390987,7 @@
   "char_4036_forcer": {
     "name": "Enforcer",
     "description": "Can attack <@ba.kw>all blocked enemies</>\nCan be deployed on Ranged Tiles",
-    "sortIndex": 447,
+    "sortIndex": 448,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1395714,7 +1395714,7 @@
   "char_492_quercu": {
     "name": "Quercus",
     "description": "Deals <@ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to 75% of ATK)",
-    "sortIndex": 1053,
+    "sortIndex": 1056,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1400290,7 +1400290,7 @@
   "char_476_blkngt": {
     "name": "Blacknight",
     "description": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
-    "sortIndex": 1167,
+    "sortIndex": 1170,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1402180,7 +1402180,7 @@
       {
         "name": "Slumberfoot",
         "description": "Blocks 1 enemy; can only be deployed within the summoner's Attack Range",
-        "sortIndex": 689,
+        "sortIndex": 691,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1405613,7 +1405613,7 @@
   "char_1021_kroos2": {
     "name": "Kroos the Keen Glint",
     "description": "Attacks aerial enemies first",
-    "sortIndex": 362,
+    "sortIndex": 363,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1410123,7 +1410123,7 @@
   "char_4019_ncdeer": {
     "name": "Nine-Colored Deer",
     "description": "Deals <@ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to 75% of ATK)",
-    "sortIndex": 525,
+    "sortIndex": 526,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1412641,7 +1412641,7 @@
   "char_4025_aprot2": {
     "name": "Shalem",
     "description": "Normal attacks deal Arts damage while the skill is active",
-    "sortIndex": 727,
+    "sortIndex": 730,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1417456,7 +1417456,7 @@
   "char_422_aurora": {
     "name": "Aurora",
     "description": "Only restores SP when blocking enemies",
-    "sortIndex": 485,
+    "sortIndex": 486,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1422069,7 +1422069,7 @@
   "char_4013_kjera": {
     "name": "Kjera",
     "description": "Controls a <@ba.kw>Drone</> to deal <@ba.kw>Arts</> damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (up to 110% of the operator's ATK)",
-    "sortIndex": 1170,
+    "sortIndex": 1173,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1426688,7 +1426688,7 @@
   "char_489_serum": {
     "name": "Corroserum",
     "description": "Deals <@ba.kw>AOE Arts damage in a long line</>",
-    "sortIndex": 902,
+    "sortIndex": 904,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1431148,7 +1431148,7 @@
   "char_496_wildmn": {
     "name": "Wild Mane",
     "description": "Obtain 1 DP after this unit defeats an enemy; Refunds the original DP Cost when retreated",
-    "sortIndex": 1182,
+    "sortIndex": 1185,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1435626,7 +1435626,7 @@
   "char_449_glider": {
     "name": "Honeyberry",
     "description": "Restores the HP of allied units and recovers <@ba.dt.element>Elemental Injury</> by 50% of ATK (can recover <@ba.dt.element>Elemental Injury</> of unhurt allied units)",
-    "sortIndex": 700,
+    "sortIndex": 702,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1440274,7 +1440274,7 @@
   "char_431_ashlok": {
     "name": "Ashlock",
     "description": "When not blocking enemies, prioritizes dealing <@ba.kw>ranged AoE</> Physical damage",
-    "sortIndex": 410,
+    "sortIndex": 411,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1444703,7 +1444703,7 @@
   "char_473_mberry": {
     "name": "Mulberry",
     "description": "Restores the HP of allied units and recovers <@ba.dt.element>Elemental Injury</> by 50% of ATK (can recover <@ba.dt.element>Elemental Injury</> of unhurt allied units)",
-    "sortIndex": 835,
+    "sortIndex": 837,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1449982,7 +1449982,7 @@
   "char_421_crow": {
     "name": "La Pluma",
     "description": "Cannot be healed by allies; Attacks deal <@ba.kw>AOE Damage</>; Recovers <@ba.kw>50</> HP for every enemy hit during attacks, up to Block count",
-    "sortIndex": 1279,
+    "sortIndex": 1283,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1454445,7 +1454445,7 @@
   "char_486_takila": {
     "name": "Tequila",
     "description": "Normally does not attack and has 0 Block; When skill is inactive, ATK gradually increases up to <@ba.kw>+{atk:0%}</> over <@ba.kw>{max_stack_cnt}</> seconds. ATK is reset when the skill ends",
-    "sortIndex": 646,
+    "sortIndex": 647,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1459405,7 +1459405,7 @@
   "char_478_kirara": {
     "name": "Kirara",
     "description": "Deals Damage to <@ba.kw>all targets</> within range\n50% chance to dodge Physical and Arts attacks and is less likely to be <@ba.kw>targeted</> by enemies",
-    "sortIndex": 785,
+    "sortIndex": 787,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1463943,7 +1463943,7 @@
   "char_369_bena": {
     "name": "Bena",
     "description": "Does not retreat upon receiving lethal damage, instead swaps to a <Substitute> (Substitute has 0 Block). Swaps back to the original after 20 seconds",
-    "sortIndex": 62,
+    "sortIndex": 63,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1468712,7 +1468712,7 @@
   "char_475_akafyu": {
     "name": "Akafuyu",
     "description": "Can't be healed by other units. Recovers <@ba.kw>{value}</> self HP every time this operator attacks an enemy",
-    "sortIndex": 153,
+    "sortIndex": 154,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1473120,7 +1473120,7 @@
   "char_363_toddi": {
     "name": "Toddifons",
     "description": "Attacks the heaviest enemy first",
-    "sortIndex": 822,
+    "sortIndex": 824,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1477808,7 +1477808,7 @@
   "char_304_zebra": {
     "name": "Heavyrain",
     "description": "Blocks 3 enemies",
-    "sortIndex": 60,
+    "sortIndex": 61,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1483127,7 +1483127,7 @@
   "char_458_rfrost": {
     "name": "Frost",
     "description": "Can use traps to assist in combat, but traps cannot be placed <@ba.kw>on tiles already occupied by an enemy</>",
-    "sortIndex": 919,
+    "sortIndex": 921,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1485013,7 +1485013,7 @@
       {
         "name": "Welcome Mat",
         "description": "Cannot be attacked; cannot be deployed on tiles where enemies are <@ba.kw>already present</>",
-        "sortIndex": 1197,
+        "sortIndex": 1200,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1487069,7 +1487069,7 @@
   "char_457_blitz": {
     "name": "Blitz",
     "description": "Blocks 3 enemies and attacks from long range.",
-    "sortIndex": 849,
+    "sortIndex": 851,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1489976,7 +1489976,7 @@
   "char_459_tachak": {
     "name": "Tachanka",
     "description": "Normal attacks deal damage <@ba.kw>twice</>",
-    "sortIndex": 1299,
+    "sortIndex": 1303,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1493017,7 +1493017,7 @@
   "char_455_nothin": {
     "name": "Mr. Nothing",
     "description": "Has <@ba.kw>reduced</> Redeployment Time, but <@ba.kw>DP Cost</> is not refunded upon retreating; While deployed, <@ba.kw>3 DP</> are consumed every 3 seconds (automatically retreats without sufficient DP)",
-    "sortIndex": 1045,
+    "sortIndex": 1048,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1498401,7 +1498401,7 @@
   "char_1011_lava2": {
     "name": "Lava the Purgatory",
     "description": "Deals <@ba.kw>AOE Arts damage</>",
-    "sortIndex": 1157,
+    "sortIndex": 1160,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1503180,7 +1503180,7 @@
   "char_402_tuye": {
     "name": "Tuye",
     "description": "Restores the HP of allies",
-    "sortIndex": 1009,
+    "sortIndex": 1010,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1512593,7 +1512593,7 @@
   "char_214_kafka": {
     "name": "Kafka",
     "description": "Significantly <@ba.kw>reduced</> Redeployment Time",
-    "sortIndex": 546,
+    "sortIndex": 547,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1517341,7 +1517341,7 @@
   "char_451_robin": {
     "name": "Robin",
     "description": "Can use traps to assist in combat, but traps cannot be placed <@ba.kw>on tiles already occupied by an enemy</>",
-    "sortIndex": 652,
+    "sortIndex": 654,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1519142,7 +1519142,7 @@
       {
         "name": "'Clip'",
         "description": "Cannot be attacked; cannot be deployed on tiles where enemies are <@ba.kw>already present</>",
-        "sortIndex": 463,
+        "sortIndex": 464,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1523104,7 +1523104,7 @@
   "char_436_whispr": {
     "name": "Whisperain",
     "description": "Has a large healing range, but the healing amount on farther targets is reduced to <@ba.kw>{heal_scale:0%}</>",
-    "sortIndex": 1134,
+    "sortIndex": 1137,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1532423,7 +1532423,7 @@
   "char_265_sophia": {
     "name": "Whislash",
     "description": "Has <@ba.kw>extended</> attack range; When attacking enemies not blocked by self, increase ATK to 120%",
-    "sortIndex": 74,
+    "sortIndex": 75,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1536981,7 +1536981,7 @@
   "char_365_aprl": {
     "name": "April",
     "description": "Attacks aerial enemies first",
-    "sortIndex": 939,
+    "sortIndex": 941,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1541329,7 +1541329,7 @@
   "char_388_mint": {
     "name": "Mint",
     "description": "Normally <@ba.kw>does not attack</>, but has <@ba.kw>greatly increased</> DEF and RES; When skill is active, attacks deal <@ba.kw>AoE Arts damage</>",
-    "sortIndex": 98,
+    "sortIndex": 99,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1546936,7 +1546936,7 @@
   "char_415_flint": {
     "name": "Flint",
     "description": "Blocks 1 enemy",
-    "sortIndex": 951,
+    "sortIndex": 953,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1551422,7 +1551422,7 @@
   "char_411_tomimi": {
     "name": "Tomimi",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 972,
+    "sortIndex": 974,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1560763,7 +1560763,7 @@
   "char_349_chiave": {
     "name": "Chiave",
     "description": "Blocks 2 enemies",
-    "sortIndex": 460,
+    "sortIndex": 461,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1565811,7 +1565811,7 @@
   "char_344_beewax": {
     "name": "Beeswax",
     "description": "Normally <@ba.kw>does not attack</>, but has <@ba.kw>greatly increased</> DEF and RES; When skill is active, attacks deal <@ba.kw>AoE Arts damage</>",
-    "sortIndex": 697,
+    "sortIndex": 699,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1568329,7 +1568329,7 @@
       {
         "name": "Sand Obelisk",
         "description": "Blocks 3 enemies",
-        "sortIndex": 856,
+        "sortIndex": 858,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1572400,7 +1572400,7 @@
   "char_294_ayer": {
     "name": "Ayerscarpe",
     "description": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK",
-    "sortIndex": 227,
+    "sortIndex": 228,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1577539,7 +1577539,7 @@
   "char_345_folnic": {
     "name": "Folinic",
     "description": "Restores the HP of allies",
-    "sortIndex": 1166,
+    "sortIndex": 1169,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1582033,7 +1582033,7 @@
   "char_373_lionhd": {
     "name": "Leonhardt",
     "description": "Deals <@ba.kw>AOE Arts damage</>",
-    "sortIndex": 588,
+    "sortIndex": 589,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1587387,7 +1587387,7 @@
   "char_405_absin": {
     "name": "Absinthe",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 581,
+    "sortIndex": 582,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1592467,7 +1592467,7 @@
   "char_343_tknogi": {
     "name": "Tsukinogi",
     "description": "Deals <@ba.kw>Arts damage</>; When skill is active, attacks instead restore the HP of allies (heal amount is equal to 75% of ATK)",
-    "sortIndex": 1268,
+    "sortIndex": 1272,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1597061,7 +1597061,7 @@
   "char_378_asbest": {
     "name": "Asbestos",
     "description": "Normal attacks deal Arts damage while the skill is active",
-    "sortIndex": 898,
+    "sortIndex": 900,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1601785,7 +1601785,7 @@
   "char_401_elysm": {
     "name": "Elysium",
     "description": "Cannot block enemies during the skill duration",
-    "sortIndex": 490,
+    "sortIndex": 491,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1607985,7 +1607985,7 @@
   "char_254_vodfox": {
     "name": "Shamare",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 1039,
+    "sortIndex": 1042,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1609770,7 +1609770,7 @@
       {
         "name": "Cursed Doll",
         "description": "Cannot be attacked",
-        "sortIndex": 1386,
+        "sortIndex": 1391,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1613435,7 +1613435,7 @@
   "char_333_sidero": {
     "name": "Sideroca",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 1367,
+    "sortIndex": 1371,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1617840,7 +1617840,7 @@
   "char_379_sesa": {
     "name": "Sesa",
     "description": "Deals <@ba.kw>AOE Physical damage</>",
-    "sortIndex": 881,
+    "sortIndex": 883,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1627191,7 +1627191,7 @@
   "char_306_leizi": {
     "name": "Leizi",
     "description": "Attacks deal <@ba.kw>Arts</> damage and jump between <@ba.kw>3</> enemies. Each jump deals 15% less damage and inflicts a brief <$ba.sluggish>Slow</>",
-    "sortIndex": 511,
+    "sortIndex": 512,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1631616,7 +1631616,7 @@
   "char_383_snsant": {
     "name": "Snowsant",
     "description": "Can <@ba.kw>Shift</> enemies by using skills\nCan be deployed on Ranged Tiles",
-    "sortIndex": 1120,
+    "sortIndex": 1123,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1636984,7 +1636984,7 @@
   "char_367_swllow": {
     "name": "GreyThroat",
     "description": "Attacks aerial enemies first",
-    "sortIndex": 411,
+    "sortIndex": 412,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1641384,7 +1641384,7 @@
   "char_356_broca": {
     "name": "Broca",
     "description": "Attacks <@ba.kw>all blocked enemies</>",
-    "sortIndex": 119,
+    "sortIndex": 120,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1646096,7 +1646096,7 @@
   "char_261_sddrag": {
     "name": "Reed",
     "description": "Obtain 1 DP after this unit defeats an enemy; Refunds the original DP Cost when retreated",
-    "sortIndex": 1016,
+    "sortIndex": 1018,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1650491,7 +1650491,7 @@
   "char_275_breeze": {
     "name": "Breeze",
     "description": "Restores the HP of 3 allies simultaneously",
-    "sortIndex": 1019,
+    "sortIndex": 1021,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1654992,7 +1654992,7 @@
   "char_279_excu": {
     "name": "Executor",
     "description": "Attacks <@ba.kw>all enemies</> within range, and deals 150% damage to enemies in the row directly in front of this unit.",
-    "sortIndex": 942,
+    "sortIndex": 944,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1659351,7 +1659351,7 @@
   "char_131_flameb": {
     "name": "Flamebringer",
     "description": "Blocks 1 enemy",
-    "sortIndex": 1149,
+    "sortIndex": 1152,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1663773,7 +1663773,7 @@
   "char_274_astesi": {
     "name": "Astesia",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 1092,
+    "sortIndex": 1095,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1668191,7 +1668191,7 @@
   "char_326_glacus": {
     "name": "Glaucus",
     "description": "Deals <@ba.kw>Arts damage</> and <$ba.sluggish>Slows</> the target for a short time",
-    "sortIndex": 328,
+    "sortIndex": 329,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1673868,7 +1673868,7 @@
   "char_308_swire": {
     "name": "Swire",
     "description": "Has <@ba.kw>extended</> attack range; When attacking enemies not blocked by self, increase ATK to 120%",
-    "sortIndex": 893,
+    "sortIndex": 895,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1679861,7 +1679861,7 @@
   "char_220_grani": {
     "name": "Grani",
     "description": "Obtain 1 DP after this unit defeats an enemy; Refunds the original DP Cost when retreated",
-    "sortIndex": 327,
+    "sortIndex": 328,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1684358,7 +1684358,7 @@
   "char_164_nightm": {
     "name": "Nightmare",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 1172,
+    "sortIndex": 1175,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1689024,7 +1689024,7 @@
   "char_230_savage": {
     "name": "Savage",
     "description": "Attacks <@ba.kw>all blocked enemies</>",
-    "sortIndex": 59,
+    "sortIndex": 60,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -1693559,7 +1693559,7 @@
   "char_241_panda": {
     "name": "FEater",
     "description": "Can attack <@ba.kw>all blocked enemies</>\nCan be deployed on Ranged Tiles",
-    "sortIndex": 907,
+    "sortIndex": 909,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1699016,7 +1699016,7 @@
   "char_215_mantic": {
     "name": "Manticore",
     "description": "Deals Damage to <@ba.kw>all targets</> within range\n50% chance to dodge Physical and Arts attacks and is less likely to be <@ba.kw>targeted</> by enemies",
-    "sortIndex": 910,
+    "sortIndex": 911,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1703608,7 +1703608,7 @@
   "char_101_sora": {
     "name": "Sora",
     "description": "Does not attack but continuously restores the <@ba.kw>HP</> of all allies within range (the HP restored per second is equal to 10% of self ATK). Self is unaffected by <$ba.inspire>Inspiration</>",
-    "sortIndex": 572,
+    "sortIndex": 573,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1708878,7 +1708878,7 @@
   "char_195_glassb": {
     "name": "Istina",
     "description": "Deals <@ba.kw>Arts damage</> and <$ba.sluggish>Slows</> the target for a short time",
-    "sortIndex": 1329,
+    "sortIndex": 1333,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1714845,7 +1714845,7 @@
   "char_174_slbell": {
     "name": "Pramanix",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 168,
+    "sortIndex": 169,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1719391,7 +1719391,7 @@
   "char_173_slchan": {
     "name": "Cliffheart",
     "description": "Can <@ba.kw>Shift</> enemies by using skills\nCan be deployed on Ranged Tiles",
-    "sortIndex": 1165,
+    "sortIndex": 1168,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1724390,7 +1724390,7 @@
   "char_158_milu": {
     "name": "Firewatch",
     "description": "Prioritizes attacking the enemy with <@ba.kw>lowest DEF</> within range first",
-    "sortIndex": 916,
+    "sortIndex": 918,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1728924,7 +1728924,7 @@
   "char_145_prove": {
     "name": "Provence",
     "description": "High accuracy point-blank shot",
-    "sortIndex": 780,
+    "sortIndex": 782,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1733416,7 +1733416,7 @@
   "char_166_skfire": {
     "name": "Skyfire",
     "description": "Deals <@ba.kw>AOE Arts damage</>",
-    "sortIndex": 979,
+    "sortIndex": 981,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1737904,7 +1737904,7 @@
   "char_002_amiya": {
     "name": "Amiya",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 16,
+    "sortIndex": 17,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -1753979,7 +1753979,7 @@
   "char_219_meteo": {
     "name": "Meteorite",
     "description": "Deals <@ba.kw>AOE Physical damage</>",
-    "sortIndex": 1281,
+    "sortIndex": 1285,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1763616,7 +1763616,7 @@
   "char_129_bluep": {
     "name": "Blue Poison",
     "description": "Attacks aerial enemies first",
-    "sortIndex": 592,
+    "sortIndex": 593,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1768099,7 +1768099,7 @@
   "char_143_ghost": {
     "name": "Specter",
     "description": "Attacks <@ba.kw>all blocked enemies</>",
-    "sortIndex": 1226,
+    "sortIndex": 1229,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1772416,7 +1772416,7 @@
   "char_140_whitew": {
     "name": "Lappland",
     "description": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK",
-    "sortIndex": 599,
+    "sortIndex": 600,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1777497,7 +1777497,7 @@
   "char_155_tiger": {
     "name": "Indra",
     "description": "Blocks 1 enemy",
-    "sortIndex": 1217,
+    "sortIndex": 1220,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1781904,7 +1781904,7 @@
   "char_106_franka": {
     "name": "Franka",
     "description": "Blocks 1 enemy",
-    "sortIndex": 301,
+    "sortIndex": 302,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1786239,7 +1786239,7 @@
   "char_102_texas": {
     "name": "Texas",
     "description": "Blocks 2 enemies",
-    "sortIndex": 207,
+    "sortIndex": 208,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1791795,7 +1791795,7 @@
   "char_115_headbr": {
     "name": "Zima",
     "description": "Blocks 2 enemies",
-    "sortIndex": 620,
+    "sortIndex": 621,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1802030,7 +1802030,7 @@
   "char_4236_tmslot": {
     "name": "Timeslot",
     "description": "操作<@ba.kw>浮游单元</>对敌人造成<@ba.kw>法术伤害</>\\n浮游单元连续攻击同一敌人时伤害提升（最高造成干员110%攻击力的伤害）",
-    "sortIndex": 908,
+    "sortIndex": 910,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1805301,7 +1805301,7 @@
   "char_336_folivo": {
     "name": "Scene",
     "description": "Deals <@ba.kw>Arts damage</>\nCan use <@ba.kw>Summons</> in battles",
-    "sortIndex": 1110,
+    "sortIndex": 1113,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1807101,7 +1807101,7 @@
       {
         "name": "Mobile Buggy Cam",
         "description": "Blocks 1 enemy",
-        "sortIndex": 1183,
+        "sortIndex": 1186,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1811860,7 +1811860,7 @@
   "char_226_hmau": {
     "name": "Hung",
     "description": "Can heal allies by using skill(s)",
-    "sortIndex": 384,
+    "sortIndex": 385,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1817757,7 +1817757,7 @@
   "char_243_waaifu": {
     "name": "Waai Fu",
     "description": "Significantly <@ba.kw>reduced</> Redeployment Time",
-    "sortIndex": 397,
+    "sortIndex": 398,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1827848,7 +1827848,7 @@
   "char_348_ceylon": {
     "name": "Ceylon",
     "description": "Has a large healing range, but the healing amount on farther targets is reduced to <@ba.kw>{heal_scale:0%}</>",
-    "sortIndex": 1088,
+    "sortIndex": 1091,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1832433,7 +1832433,7 @@
   "char_163_hpsts": {
     "name": "Vulcan",
     "description": "<@ba.kw>Cannot</> be healed by allies",
-    "sortIndex": 423,
+    "sortIndex": 424,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1836979,7 +1836979,7 @@
   "char_201_moeshd": {
     "name": "Croissant",
     "description": "Blocks 3 enemies",
-    "sortIndex": 570,
+    "sortIndex": 571,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1841814,7 +1841814,7 @@
   "char_107_liskam": {
     "name": "Liskarm",
     "description": "Blocks 3 enemies and attacks from long range.",
-    "sortIndex": 604,
+    "sortIndex": 605,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1846392,7 +1846392,7 @@
   "char_144_red": {
     "name": "Projekt Red",
     "description": "Significantly <@ba.kw>reduced</> Redeployment Time",
-    "sortIndex": 383,
+    "sortIndex": 384,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1851036,7 +1851036,7 @@
   "char_148_nearl": {
     "name": "Nearl",
     "description": "Can heal allies by using skill(s)",
-    "sortIndex": 625,
+    "sortIndex": 626,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1856243,7 +1856243,7 @@
   "char_171_bldsk": {
     "name": "Warfarin",
     "description": "Restores the HP of allies",
-    "sortIndex": 395,
+    "sortIndex": 396,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1860804,7 +1860804,7 @@
   "char_108_silent": {
     "name": "Silence",
     "description": "Restores the HP of allies",
-    "sortIndex": 377,
+    "sortIndex": 378,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1862377,7 +1862377,7 @@
       {
         "name": "Medic Drone",
         "description": "Cannot be attacked; restores the HP of nearby friendly units",
-        "sortIndex": 1190,
+        "sortIndex": 1193,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1865737,7 +1865737,7 @@
   "char_242_otter": {
     "name": "Mayer",
     "description": "Deals <@ba.kw>Arts damage</>\nCan use <@ba.kw>Summons</> in battles",
-    "sortIndex": 678,
+    "sortIndex": 680,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1867870,7 +1867870,7 @@
       {
         "name": "Robotter",
         "description": "Blocks 1 enemy",
-        "sortIndex": 528,
+        "sortIndex": 529,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1872314,7 +1872314,7 @@
   "char_4051_akkord": {
     "name": "Akkord",
     "description": "Deals <@ba.kw>AOE Arts damage in a long line</>",
-    "sortIndex": 1081,
+    "sortIndex": 1084,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1876749,7 +1876749,7 @@
   "char_4208_wintim": {
     "name": "Snegurochka",
     "description": "Has <@ba.kw>reduced</> Redeployment Time, can use ranged attacks",
-    "sortIndex": 222,
+    "sortIndex": 223,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1881809,7 +1881809,7 @@
   "char_445_wscoot": {
     "name": "Windscoot",
     "description": "Normally does not attack and has 0 Block; When skill is inactive, ATK gradually increases up to <@ba.kw>+{atk:0%}</> over <@ba.kw>{max_stack_cnt}</> seconds. ATK is reset when the skill ends",
-    "sortIndex": 142,
+    "sortIndex": 143,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1886600,7 +1886600,7 @@
   "char_4165_ctrail": {
     "name": "Contrail",
     "description": "After <$ba.liftoff>Taking Off</>, can block 2 flying enemies",
-    "sortIndex": 1280,
+    "sortIndex": 1284,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1891835,7 +1891835,7 @@
   "char_4130_luton": {
     "name": "Lutonada",
     "description": "<@ba.kw>Cannot</> be healed by allies",
-    "sortIndex": 662,
+    "sortIndex": 664,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1896716,7 +1896716,7 @@
   "char_4100_caper": {
     "name": "Caper",
     "description": "Can only attack while holding a <@ba.kw>boomerang projectile</> (projectile takes time to return)",
-    "sortIndex": 1271,
+    "sortIndex": 1275,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1901212,7 +1901212,7 @@
   "char_4107_vrdant": {
     "name": "Verdant",
     "description": "Does not retreat upon receiving lethal damage, instead swaps to a <Substitute> (Substitute has 0 Block). Swaps back to the original after 20 seconds",
-    "sortIndex": 1017,
+    "sortIndex": 1019,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1905630,7 +1905630,7 @@
   "char_491_humus": {
     "name": "Humus",
     "description": "Cannot be healed by allies; Attacks deal <@ba.kw>AOE Damage</>; Recovers <@ba.kw>50</> HP for every enemy hit during attacks, up to Block count",
-    "sortIndex": 1107,
+    "sortIndex": 1110,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1910258,7 +1910258,7 @@
   "char_4063_quartz": {
     "name": "Quartz",
     "description": "Attacks <@ba.kw>all blocked enemies</>",
-    "sortIndex": 913,
+    "sortIndex": 915,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1914810,7 +1914810,7 @@
   "char_4062_totter": {
     "name": "Totter",
     "description": "Attacks the heaviest enemy first",
-    "sortIndex": 782,
+    "sortIndex": 784,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1919400,7 +1919400,7 @@
   "char_4067_lolxh": {
     "name": "Luo Xiaohei",
     "description": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK",
-    "sortIndex": 660,
+    "sortIndex": 662,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1923681,7 +1923681,7 @@
   "char_4041_chnut": {
     "name": "Chestnut",
     "description": "Restores the HP of allied units and recovers <@ba.dt.element>Elemental Injury</> by 50% of ATK (can recover <@ba.dt.element>Elemental Injury</> of unhurt allied units)",
-    "sortIndex": 370,
+    "sortIndex": 371,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1928461,7 +1928461,7 @@
   "char_4004_pudd": {
     "name": "Pudding",
     "description": "Attacks deal <@ba.kw>Arts</> damage and jump between <@ba.kw>3</> enemies. Each jump deals 15% less damage and inflicts a brief <$ba.sluggish>Slow</>",
-    "sortIndex": 102,
+    "sortIndex": 103,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1932863,7 +1932863,7 @@
   "char_484_robrta": {
     "name": "Roberta",
     "description": "Blocks 2 enemies; Can use <Support Devices> in battles",
-    "sortIndex": 651,
+    "sortIndex": 653,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1934512,7 +1934512,7 @@
       {
         "name": "Full Auto Modeler",
         "description": "Cannot be attacked",
-        "sortIndex": 813,
+        "sortIndex": 815,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1938051,7 +1938051,7 @@
   "char_469_indigo": {
     "name": "Indigo",
     "description": "Attacks deal <@ba.kw>Arts damage</>; When unable to find a target, attacks can be <@ba.kw>stored up</> and fired all at once (Up to 3 charges)",
-    "sortIndex": 860,
+    "sortIndex": 862,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1942920,7 +1942920,7 @@
   "char_452_bstalk": {
     "name": "Beanstalk",
     "description": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
-    "sortIndex": 223,
+    "sortIndex": 224,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1944705,7 +1944705,7 @@
       {
         "name": "Metal Crab Guard Team",
         "description": "Blocks 1 enemy; can only be deployed within the summoner's Attack Range",
-        "sortIndex": 761,
+        "sortIndex": 763,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1948023,7 +1948023,7 @@
   "char_440_pinecn": {
     "name": "Pinecone",
     "description": "Attacks <@ba.kw>all enemies</> within range, and deals 150% damage to enemies in the row directly in front of this unit.",
-    "sortIndex": 940,
+    "sortIndex": 942,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1952873,7 +1952873,7 @@
   "char_347_jaksel": {
     "name": "Jackie",
     "description": "Blocks 1 enemy",
-    "sortIndex": 481,
+    "sortIndex": 482,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1957320,7 +1957320,7 @@
   "char_381_bubble": {
     "name": "Bubble",
     "description": "Blocks 3 enemies",
-    "sortIndex": 763,
+    "sortIndex": 765,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1961631,7 +1961631,7 @@
   "char_271_spikes": {
     "name": "Arene",
     "description": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK",
-    "sortIndex": 246,
+    "sortIndex": 247,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1966545,7 +1966545,7 @@
   "char_366_acdrop": {
     "name": "Aciddrop",
     "description": "High accuracy point-blank shot",
-    "sortIndex": 946,
+    "sortIndex": 948,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1970874,7 +1970874,7 @@
   "char_272_strong": {
     "name": "Jaye",
     "description": "Has <@ba.kw>reduced</> Redeployment Time, but <@ba.kw>DP Cost</> is not refunded upon retreating; While deployed, <@ba.kw>3 DP</> are consumed every 3 seconds (automatically retreats without sufficient DP)",
-    "sortIndex": 474,
+    "sortIndex": 475,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1975692,7 +1975692,7 @@
   "char_328_cammou": {
     "name": "Click",
     "description": "Controls a <@ba.kw>Drone</> to deal <@ba.kw>Arts</> damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (up to 110% of the operator's ATK)",
-    "sortIndex": 545,
+    "sortIndex": 546,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1980678,7 +1980678,7 @@
   "char_258_podego": {
     "name": "Podenco",
     "description": "Deals <@ba.kw>Arts damage</> and <$ba.sluggish>Slows</> the target for a short time",
-    "sortIndex": 96,
+    "sortIndex": 97,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1985164,7 +1985164,7 @@
   "char_301_cutter": {
     "name": "Cutter",
     "description": "Normal attacks deal damage <@ba.kw>twice</>",
-    "sortIndex": 563,
+    "sortIndex": 564,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1990557,7 +1990557,7 @@
   "char_159_peacok": {
     "name": "Conviction",
     "description": "Blocks 1 enemy",
-    "sortIndex": 228,
+    "sortIndex": 230,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1995547,7 +1995547,7 @@
   "char_337_utage": {
     "name": "Utage",
     "description": "Can't be healed by other units. Recovers <@ba.kw>{value}</> self HP every time this operator attacks an enemy",
-    "sortIndex": 1142,
+    "sortIndex": 1145,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2000066,7 +2000066,7 @@
   "char_385_finlpp": {
     "name": "Purestream",
     "description": "Has a large healing range, but the healing amount on farther targets is reduced to <@ba.kw>{heal_scale:0%}</>",
-    "sortIndex": 789,
+    "sortIndex": 791,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2009055,7 +2009055,7 @@
   "char_133_mm": {
     "name": "May",
     "description": "Attacks aerial enemies first",
-    "sortIndex": 677,
+    "sortIndex": 679,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2013720,7 +2013720,7 @@
   "char_355_ethan": {
     "name": "Ethan",
     "description": "Deals Damage to <@ba.kw>all targets</> within range\n50% chance to dodge Physical and Arts attacks and is less likely to be <@ba.kw>targeted</> by enemies",
-    "sortIndex": 1221,
+    "sortIndex": 1224,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2018160,7 +2018160,7 @@
   "char_190_clour": {
     "name": "Vermeil",
     "description": "Attacks aerial enemies first",
-    "sortIndex": 392,
+    "sortIndex": 393,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2022535,7 +2022535,7 @@
   "char_260_durnar": {
     "name": "Dur-nar",
     "description": "Normal attacks deal Arts damage while the skill is active",
-    "sortIndex": 441,
+    "sortIndex": 442,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2026753,7 +2026753,7 @@
   "char_151_myrtle": {
     "name": "Myrtle",
     "description": "Cannot block enemies during the skill duration",
-    "sortIndex": 967,
+    "sortIndex": 969,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2031624,7 +2031624,7 @@
   "char_298_susuro": {
     "name": "Sussurro",
     "description": "Restores the HP of allies",
-    "sortIndex": 960,
+    "sortIndex": 962,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2036159,7 +2036159,7 @@
   "char_253_greyy": {
     "name": "Greyy",
     "description": "Deals <@ba.kw>AOE Arts damage</>",
-    "sortIndex": 330,
+    "sortIndex": 331,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2040529,7 +2040529,7 @@
   "char_137_brownb": {
     "name": "Beehunter",
     "description": "Blocks 1 enemy",
-    "sortIndex": 611,
+    "sortIndex": 612,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2049329,7 +2049329,7 @@
   "char_183_skgoat": {
     "name": "Earthspirit",
     "description": "Deals <@ba.kw>Arts damage</> and <$ba.sluggish>Slows</> the target for a short time",
-    "sortIndex": 216,
+    "sortIndex": 217,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2053767,7 +2053767,7 @@
   "char_110_deepcl": {
     "name": "Deepcolor",
     "description": "Deals <@ba.kw>Arts damage</>\nCan use <@ba.kw>Summons</> in battles",
-    "sortIndex": 875,
+    "sortIndex": 877,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2056166,7 +2056166,7 @@
       {
         "name": "Tentacle",
         "description": "Blocks 1 enemy",
-        "sortIndex": 167,
+        "sortIndex": 168,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -2059521,7 +2059521,7 @@
   "char_196_sunbr": {
     "name": "Gummy",
     "description": "Can heal allies by using skill(s)",
-    "sortIndex": 352,
+    "sortIndex": 353,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2065482,7 +2065482,7 @@
   "char_150_snakek": {
     "name": "Cuora",
     "description": "Blocks 3 enemies",
-    "sortIndex": 883,
+    "sortIndex": 885,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2069798,7 +2069798,7 @@
   "char_199_yak": {
     "name": "Matterhorn",
     "description": "Blocks 3 enemies",
-    "sortIndex": 455,
+    "sortIndex": 456,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2074164,7 +2074164,7 @@
   "char_181_flower": {
     "name": "Perfumer",
     "description": "Restores the HP of 3 allies simultaneously",
-    "sortIndex": 987,
+    "sortIndex": 989,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2078629,7 +2078629,7 @@
   "char_187_ccheal": {
     "name": "Gavial",
     "description": "Restores the HP of allies",
-    "sortIndex": 461,
+    "sortIndex": 462,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2083518,7 +2083518,7 @@
   "char_117_myrrh": {
     "name": "Myrrh",
     "description": "Restores the HP of allies",
-    "sortIndex": 720,
+    "sortIndex": 722,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2092735,7 +2092735,7 @@
   "char_237_gravel": {
     "name": "Gravel",
     "description": "Significantly <@ba.kw>reduced</> Redeployment Time",
-    "sortIndex": 607,
+    "sortIndex": 608,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2097073,7 +2097073,7 @@
   "char_185_frncat": {
     "name": "Mousse",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 732,
+    "sortIndex": 734,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2106019,7 +2106019,7 @@
   "char_193_frostl": {
     "name": "Frostleaf",
     "description": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK",
-    "sortIndex": 923,
+    "sortIndex": 925,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2110597,7 +2110597,7 @@
   "char_289_gyuki": {
     "name": "Matoimaru",
     "description": "Blocks 1 enemy",
-    "sortIndex": 133,
+    "sortIndex": 134,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2114848,7 +2114848,7 @@
   "char_130_doberm": {
     "name": "Dobermann",
     "description": "Has <@ba.kw>extended</> attack range; When attacking enemies not blocked by self, increase ATK to 120%",
-    "sortIndex": 230,
+    "sortIndex": 231,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2119348,7 +2119348,7 @@
   "char_290_vigna": {
     "name": "Vigna",
     "description": "Obtain 1 DP after this unit defeats an enemy; Refunds the original DP Cost when retreated",
-    "sortIndex": 386,
+    "sortIndex": 387,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2123756,7 +2123756,7 @@
   "char_149_scave": {
     "name": "Scavenger",
     "description": "Blocks 2 enemies",
-    "sortIndex": 787,
+    "sortIndex": 789,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2128109,7 +2128109,7 @@
   "char_198_blackd": {
     "name": "Courier",
     "description": "Blocks 2 enemies",
-    "sortIndex": 1130,
+    "sortIndex": 1133,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2141681,7 +2141681,7 @@
   "char_235_jesica": {
     "name": "Jessica",
     "description": "Attacks aerial enemies first",
-    "sortIndex": 483,
+    "sortIndex": 484,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2146092,7 +2146092,7 @@
   "char_109_fmout": {
     "name": "Gitano",
     "description": "Deals <@ba.kw>AOE Arts damage</>",
-    "sortIndex": 1235,
+    "sortIndex": 1238,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2151294,7 +2151294,7 @@
   "char_141_nights": {
     "name": "Haze",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 1177,
+    "sortIndex": 1180,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2159391,7 +2159391,7 @@
   "char_281_popka": {
     "name": "Popukar",
     "description": "Attacks <@ba.kw>all blocked enemies</>",
-    "sortIndex": 764,
+    "sortIndex": 766,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2162570,7 +2162570,7 @@
   "char_283_midn": {
     "name": "Midnight",
     "description": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK",
-    "sortIndex": 1269,
+    "sortIndex": 1273,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2165801,7 +2165801,7 @@
   "char_282_catap": {
     "name": "Catapult",
     "description": "Deals <@ba.kw>AOE Physical damage</>",
-    "sortIndex": 573,
+    "sortIndex": 574,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2168986,7 +2168986,7 @@
   "char_278_orchid": {
     "name": "Orchid",
     "description": "Deals <@ba.kw>Arts damage</> and <$ba.sluggish>Slows</> the target for a short time",
-    "sortIndex": 1369,
+    "sortIndex": 1373,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2172363,7 +2172363,7 @@
   "char_210_stward": {
     "name": "Steward",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 890,
+    "sortIndex": 892,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2178812,7 +2178812,7 @@
   "char_120_hibisc": {
     "name": "Hibiscus",
     "description": "Restores the HP of allies",
-    "sortIndex": 302,
+    "sortIndex": 303,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2182005,7 +2182005,7 @@
   "char_121_lava": {
     "name": "Lava",
     "description": "Deals <@ba.kw>AOE Arts damage</>",
-    "sortIndex": 1150,
+    "sortIndex": 1153,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2188391,7 +2188391,7 @@
   "char_124_kroos": {
     "name": "Kroos",
     "description": "Attacks aerial enemies first",
-    "sortIndex": 567,
+    "sortIndex": 568,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2191740,7 +2191740,7 @@
   "char_122_beagle": {
     "name": "Beagle",
     "description": "Blocks 3 enemies",
-    "sortIndex": 694,
+    "sortIndex": 696,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2194854,7 +2194854,7 @@
   "char_209_ardign": {
     "name": "Cardigan",
     "description": "Blocks 3 enemies",
-    "sortIndex": 556,
+    "sortIndex": 557,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2197983,7 +2197983,7 @@
   "char_208_melan": {
     "name": "Melantha",
     "description": "Blocks 1 enemy",
-    "sortIndex": 680,
+    "sortIndex": 682,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2201106,7 +2201106,7 @@
   "char_192_falco": {
     "name": "Plume",
     "description": "Obtain 1 DP after this unit defeats an enemy; Refunds the original DP Cost when retreated",
-    "sortIndex": 627,
+    "sortIndex": 628,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2204397,7 +2204397,7 @@
   "char_240_wyvern": {
     "name": "Vanilla",
     "description": "Blocks 2 enemies",
-    "sortIndex": 1060,
+    "sortIndex": 1063,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2207667,7 +2207667,7 @@
   "char_123_fang": {
     "name": "Fang",
     "description": "Blocks 2 enemies",
-    "sortIndex": 278,
+    "sortIndex": 279,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2210768,7 +2210768,7 @@
   "char_009_12fce": {
     "name": "12F",
     "description": "Deals <@ba.kw>AOE Arts damage</>",
-    "sortIndex": 242,
+    "sortIndex": 243,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2213410,7 +2213410,7 @@
   "char_501_durin": {
     "name": "Durin",
     "description": "Deals <@ba.kw>Arts damage</>",
-    "sortIndex": 231,
+    "sortIndex": 232,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2215937,7 +2215937,7 @@
   "char_503_rang": {
     "name": "Rangers",
     "description": "Attacks aerial enemies first",
-    "sortIndex": 1129,
+    "sortIndex": 1132,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2218470,7 +2218470,7 @@
   "char_500_noirc": {
     "name": "Noir Corne",
     "description": "Blocks 3 enemies",
-    "sortIndex": 373,
+    "sortIndex": 374,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2220978,7 +2220978,7 @@
   "char_502_nblade": {
     "name": "Yato",
     "description": "Blocks 2 enemies",
-    "sortIndex": 1168,
+    "sortIndex": 1171,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2223605,7 +2223605,7 @@
   "char_4220_kormr": {
     "name": "Koromaru",
     "description": "普通攻击连续造成<@ba.kw>两次</>伤害，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 415,
+    "sortIndex": 416,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2225034,7 +2225034,7 @@
   "char_4215_buddy": {
     "name": "Rhodes Island Recon",
     "description": "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%；不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 656,
+    "sortIndex": 658,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2225733,7 +2225733,7 @@
       {
         "name": " Palamute",
         "description": "能够阻挡一个敌人，只能部署在艾露猫的攻击范围内",
-        "sortIndex": 1135,
+        "sortIndex": 1138,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -2226740,7 +2226740,7 @@
   "char_4227_gallus": {
     "name": "GALLUS²",
     "description": "Attacks deal <@ba.kw>Arts damage</> and ignores the <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
-    "sortIndex": 309,
+    "sortIndex": 310,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2229476,7 +2229476,7 @@
   "char_4188_confes": {
     "name": "CONFESS-47",
     "description": "Blocks 2 enemies and ignores <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
-    "sortIndex": 171,
+    "sortIndex": 172,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2232180,7 +2232180,7 @@
   "char_4136_phonor": {
     "name": "PhonoR-0",
     "description": "Attacks deal <@ba.kw>Arts damage</> and can inflict <@ba.kw>Elemental Injury</>. Not affected by <@ba.kw>Deployment Limit</>, but has a long Redeployment Time.",
-    "sortIndex": 774,
+    "sortIndex": 776,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2234939,7 +2234939,7 @@
   "char_4093_frston": {
     "name": "Friston-3",
     "description": "Blocks 3 enemies and ignores <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
-    "sortIndex": 298,
+    "sortIndex": 299,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2237586,7 +2237586,7 @@
   "char_4091_ulika": {
     "name": "U-Official",
     "description": "Does not attack but continuously restores the <@ba.kw>HP</> of all allies within range (the HP restored per second is equal to 10% of self ATK). This unit is unaffected by <$ba.inspire>Inspiration</>, and ignores the <@ba.kw>Deployment Limit</>, but has a long Redeployment Time.",
-    "sortIndex": 1010,
+    "sortIndex": 1012,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2240318,7 +2240318,7 @@
   "char_4077_palico": {
     "name": "Terra Research Commission",
     "description": "Attacks deal Physical Damage <@ba.kw>twice</> to <@ba.kw>ground</> enemies in a small radius (second time is an aftershock dealing half ATK in damage), and ignores the <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
-    "sortIndex": 962,
+    "sortIndex": 964,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2241562,7 +2241562,7 @@
   "char_4000_jnight": {
     "name": "'Justice Knight'",
     "description": "Attacks aerial enemies first and ignores <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
-    "sortIndex": 1326,
+    "sortIndex": 1330,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2244313,7 +2244313,7 @@
   "char_376_therex": {
     "name": "THRM-EX",
     "description": "Does not attack and ignores the <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
-    "sortIndex": 976,
+    "sortIndex": 978,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2247090,7 +2247090,7 @@
   "char_286_cast3": {
     "name": "Castle-3",
     "description": "Blocks 1 enemy and ignores the <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
-    "sortIndex": 129,
+    "sortIndex": 130,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2249809,7 +2249809,7 @@
   "char_285_medic2": {
     "name": "Lancet-2",
     "description": "Restores the HP of allies and ignores the <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
-    "sortIndex": 591,
+    "sortIndex": 592,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
