@@ -645980,7 +645980,7 @@
       "火力",
       "牽制"
     ],
-    "itemUsage": "これがあなたの選択か？彼は梃子でも動かず、あなたにずっとまとわりつくかもしれない。",
+    "itemUsage": "艦内留置観察対象・ミヅキ。現段階では潜在的な脅威は低いと考えられる。",
     "itemDesc": "これがあなたの選択か？彼は梃子でも動かず、あなたにずっとまとわりつくかもしれない。",
     "itemObtainApproach": "人材募集",
     "isNotObtainable": false,
@@ -722865,7 +722865,7 @@
       },
       {
         "type": "skin",
-        "name": "硬派速度",
+        "name": "ハードコアライダー",
         "skinId": "char_264_f12yin@marthe#13",
         "illustId": "illust_char_264_f12yin_marthe#13",
         "avatarId": "char_264_f12yin_marthe#13",
