@@ -358,5 +358,10 @@
     "branchName": "游击手",
     "class": "Supporter",
     "trait": "可以使用<span class=\"skill-tooltip\">触发型效果</span>协助作战"
+  },
+  "dispatcher": {
+    "branchName": "调度者",
+    "class": "Specialist",
+    "trait": "开启技能后可以造成超远距离的群体物理伤害"
   }
 }

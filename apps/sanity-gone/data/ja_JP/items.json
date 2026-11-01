@@ -1503,6 +1503,14 @@
     "usage": "アコルトの潜在能力強化に用いられる。",
     "rarity": 4
   },
+  "p_char_4170_hdbell": {
+    "itemId": "p_char_4170_hdbell",
+    "name": "行铃的信物",
+    "iconId": "p_char_4170_hdbell",
+    "description": "一只铃铛。当然，不是要你当驮兽，她只是想让你听听她最喜欢的声音——随着牧群的脚步，像流水般淌过的铃声。",
+    "usage": "用于提升行铃的潜能。",
+    "rarity": 4
+  },
   "p_char_128_plosis": {
     "itemId": "p_char_128_plosis",
     "name": "フィリオプシスの印",
@@ -3087,6 +3095,22 @@
     "usage": "用于提升旅骨的潜能。",
     "rarity": 5
   },
+  "p_char_4245_alga": {
+    "itemId": "p_char_4245_alga",
+    "name": "奥尔佳的信物",
+    "iconId": "p_char_4245_alga",
+    "description": "一本皮面册。你本以为里面是份规规矩矩的外交清单，翻开后，你却看到了一部学生剧本。没有署名，但你知道是谁写的。",
+    "usage": "用于提升奥尔佳的潜能。",
+    "rarity": 5
+  },
+  "p_char_4169_caledo": {
+    "itemId": "p_char_4169_caledo",
+    "name": "镜匠的信物",
+    "iconId": "p_char_4169_caledo",
+    "description": "一面长方形的小随身镜。无论是不是戴着兜帽，她都希望你看到这面镜子的时候能够对着自己微笑，仅此而已。",
+    "usage": "用于提升镜匠的潜能。",
+    "rarity": 5
+  },
   "p_char_103_angel": {
     "itemId": "p_char_103_angel",
     "name": "エクシアの印",
@@ -4181,6 +4205,30 @@
     "iconId": "p_char_4231_clemnt",
     "description": "印有克莱门莎指纹的指套。一份独属于她的信物，当然，也是她在阿戈尔所有权限的钥匙。你知道自己不得不万分小心地保管它了。",
     "usage": "用于提升克莱门莎的潜能。",
+    "rarity": 6
+  },
+  "p_char_4247_oxi": {
+    "itemId": "p_char_4247_oxi",
+    "name": "塔露拉的信物",
+    "iconId": "p_char_4247_oxi",
+    "description": "一本破损的行军日志，后半部分已经被烧毁，没有人知道故事的结局。塔露拉将它交给了你，她依然希望你能从中看到一位感染者斗士原本的模样。",
+    "usage": "用于提升塔露拉的潜能。",
+    "rarity": 6
+  },
+  "p_char_4244_tocka": {
+    "itemId": "p_char_4244_tocka",
+    "name": "冻河的信物",
+    "iconId": "p_char_4244_tocka",
+    "description": "一颗苹果树的种子。据说只要将它洗净后埋入冻土之下，来年发出新芽，长满果实……三十年后，冻土就会变成一片葱郁的林地。",
+    "usage": "用于提升冻河的潜能。",
+    "rarity": 6
+  },
+  "p_char_4246_dminon": {
+    "itemId": "p_char_4246_dminon",
+    "name": "国度的信物",
+    "iconId": "p_char_4246_dminon",
+    "description": "他所触碰的一切皆会被染污，他交不出一件纯净的礼物。所以，他说，如果你有什么东西需要弃置，就交给他。至少他有办法让那东西消失。",
+    "usage": "用于提升国度的潜能。",
     "rarity": 6
   },
   "class_p_char_123_fang": {
