@@ -1851,6 +1851,30 @@
     "克莱门莎": {
       "isLimited": false,
       "releaseOrder": 463
+    },
+    "冻河": {
+      "isLimited": false,
+      "releaseOrder": 464
+    },
+    "国度": {
+      "isLimited": false,
+      "releaseOrder": 465
+    },
+    "塔露拉": {
+      "isLimited": true,
+      "releaseOrder": 466
+    },
+    "奥尔佳": {
+      "isLimited": false,
+      "releaseOrder": 467
+    },
+    "镜匠": {
+      "isLimited": false,
+      "releaseOrder": 468
+    },
+    "行铃": {
+      "isLimited": false,
+      "releaseOrder": 468
     }
   },
   "skinObtainSourceAndCosts": {}
