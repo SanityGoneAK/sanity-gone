@@ -2,7 +2,7 @@
   "char_4247_oxi": {
     "name": "塔露拉",
     "description": "能够阻挡两个敌人，可以造成<@ba.kw>元素伤害</>",
-    "sortIndex": 973,
+    "sortIndex": 997,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2321,7 +2321,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2481,7 +2481,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2561,7 +2561,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2641,7 +2641,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2721,7 +2721,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2801,7 +2801,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2881,7 +2881,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2961,7 +2961,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -3041,7 +3041,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -5163,7 +5163,7 @@
   "char_4246_dminon": {
     "name": "国度",
     "description": "对攻击范围内<@ba.kw>所有敌人</>造成伤害\\n拥有50%的物理和法术闪避且不容易成为敌人的<@ba.kw>攻击目标</>",
-    "sortIndex": 360,
+    "sortIndex": 370,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -10878,7 +10878,7 @@
   "char_4244_tocka": {
     "name": "冻河",
     "description": "可以使用<$ba.triggereffect>触发型效果</>协助作战",
-    "sortIndex": 223,
+    "sortIndex": 229,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -15483,7 +15483,7 @@
   "char_4231_clemnt": {
     "name": "克莱门莎",
     "description": "能够阻挡两个敌人，可以造成<@ba.kw>元素伤害</>",
-    "sortIndex": 575,
+    "sortIndex": 591,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -20047,7 +20047,7 @@
   "char_4217_makoto": {
     "name": "结城理",
     "description": "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0），持续20秒后自身再次替换<替身>",
-    "sortIndex": 483,
+    "sortIndex": 494,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -25570,7 +25570,7 @@
   "char_4235_thumpy": {
     "name": "珊比",
     "description": "能够阻挡三个敌人，可以造成元素损伤",
-    "sortIndex": 854,
+    "sortIndex": 878,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -29974,7 +29974,7 @@
   "char_1015_aglna2": {
     "name": "予愿安洁莉娜",
     "description": "<$ba.liftoff>起飞</>后能够阻挡2个飞行敌人",
-    "sortIndex": 1297,
+    "sortIndex": 1330,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -34542,7 +34542,7 @@
       {
         "name": "“一会儿见！”",
         "description": null,
-        "sortIndex": 1199,
+        "sortIndex": 1231,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -36472,7 +36472,7 @@
   "char_4230_mcnist": {
     "name": "机械师",
     "description": "能够阻挡三个敌人，可以进行远程攻击",
-    "sortIndex": 536,
+    "sortIndex": 550,
     "spTargetType": "ROGUE",
     "spTargetId": "rogue_6",
     "canUseGeneralPotentialItem": true,
@@ -39069,7 +39069,7 @@
       {
         "name": "结构性原理",
         "description": "能够阻挡三个敌人",
-        "sortIndex": 484,
+        "sortIndex": 495,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -41684,7 +41684,7 @@
   "char_4229_aphris": {
     "name": "谬因",
     "description": "攻击造成<@ba.kw>超远距离的群体法术伤害</>",
-    "sortIndex": 720,
+    "sortIndex": 739,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -44149,7 +44149,7 @@
       {
         "name": "中继器",
         "description": "不会受到攻击，可部署在地面或高台位",
-        "sortIndex": 1365,
+        "sortIndex": 1398,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -46319,7 +46319,7 @@
   "char_1048_orchd2": {
     "name": "焰狐龙梓兰",
     "description": "高精度的近距离射击",
-    "sortIndex": 1161,
+    "sortIndex": 1191,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -51030,7 +51030,7 @@
   "char_1052_kalts2": {
     "name": "凯尔希·思衡托",
     "description": "恢复友方单位生命，并且可以<$ba.liftoff>起飞</>",
-    "sortIndex": 557,
+    "sortIndex": 572,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -54534,7 +54534,7 @@
       {
         "name": "战术锚点",
         "description": "不会受到攻击，仅可以部署在凯尔希·思衡托攻击范围外的远程位",
-        "sortIndex": 1323,
+        "sortIndex": 1356,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -58537,7 +58537,7 @@
   "char_4228_closur": {
     "name": "可露希尔",
     "description": "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%",
-    "sortIndex": 578,
+    "sortIndex": 594,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -61602,7 +61602,7 @@
       {
         "name": "指挥中心",
         "description": "不攻击，能够阻挡两个敌人，只能部署在召唤者攻击范围内",
-        "sortIndex": 1349,
+        "sortIndex": 1382,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -65129,7 +65129,7 @@
   "char_4226_veen": {
     "name": "维伊",
     "description": "攻击造成<@ba.kw>法术伤害</>，在找不到攻击目标时可以将攻击能量<@ba.kw>储存</>起来之后一齐发射（最多3个）",
-    "sortIndex": 1038,
+    "sortIndex": 1066,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -70922,7 +70922,7 @@
   "char_1051_headb2": {
     "name": "怒潮凛冬",
     "description": "攻击使目标周围的其他敌人受到相当于攻击力<@ba.kw>50%</>的<@ba.kw>群体</>物理伤害",
-    "sortIndex": 764,
+    "sortIndex": 783,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -77111,7 +77111,7 @@
   "char_4037_demetr": {
     "name": "贝洛内",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 63,
+    "sortIndex": 64,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -79863,7 +79863,7 @@
       {
         "name": "牵绊",
         "description": "贝洛内技能结束时返回该位置，并且其他干员不能部署",
-        "sortIndex": 791,
+        "sortIndex": 811,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -83924,7 +83924,7 @@
   "char_2027_wang": {
     "name": "望",
     "description": "可以使用陷阱来协助作战，但陷阱无法放置于<@ba.kw>敌人已在</>的格子中",
-    "sortIndex": 1025,
+    "sortIndex": 1052,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -87507,7 +87507,7 @@
       {
         "name": "棋子",
         "description": null,
-        "sortIndex": 815,
+        "sortIndex": 835,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -93176,7 +93176,7 @@
   "char_1050_chen3": {
     "name": "赤刃明霄陈",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 159,
+    "sortIndex": 163,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -99722,7 +99722,7 @@
   "char_4056_titi": {
     "name": "缇缇",
     "description": "攻击造成法术伤害，攻击敌人时为攻击范围内一名友方干员治疗相当于50%伤害的生命值",
-    "sortIndex": 1007,
+    "sortIndex": 1032,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -105059,7 +105059,7 @@
   "char_4212_nasti": {
     "name": "娜斯提",
     "description": "能够阻挡两个敌人，使用<支援装置>协助作战",
-    "sortIndex": 744,
+    "sortIndex": 763,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -107246,7 +107246,7 @@
       {
         "name": "“质检专员”",
         "description": "不会受到攻击，可部署在地面或高台位",
-        "sortIndex": 1351,
+        "sortIndex": 1384,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -108893,7 +108893,7 @@
       {
         "name": "“监工专员”",
         "description": "不会受到攻击，可部署在地面或高台位",
-        "sortIndex": 444,
+        "sortIndex": 455,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -111035,7 +111035,7 @@
       {
         "name": "“应急承重小组”",
         "description": "装置有小工程师和高台两种形态，小工程师形态下不会受到攻击，可部署在地面或高台位",
-        "sortIndex": 1217,
+        "sortIndex": 1249,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -117083,7 +117083,7 @@
   "char_1045_svash2": {
     "name": "凛御银灰",
     "description": "能够阻挡两个敌人，可以支援待部署区的我方单位",
-    "sortIndex": 645,
+    "sortIndex": 664,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -121273,7 +121273,7 @@
       {
         "name": "风雪之眼",
         "description": "凛御银灰在场时添加至待部署区。部署费用随凛御银灰的技能而变化",
-        "sortIndex": 295,
+        "sortIndex": 305,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -122564,7 +122564,7 @@
       {
         "name": "风雪之眼",
         "description": "凛御银灰在场时添加至待部署区。部署费用随凛御银灰的技能而变化",
-        "sortIndex": 294,
+        "sortIndex": 304,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -123855,7 +123855,7 @@
       {
         "name": "风雪之眼",
         "description": "凛御银灰在场时添加至待部署区。部署费用随凛御银灰的技能而变化",
-        "sortIndex": 296,
+        "sortIndex": 306,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -129328,7 +129328,7 @@
   "char_1046_sbell2": {
     "name": "圣聆初雪",
     "description": "通常时<@ba.kw>不攻击</>且防御力和法术抗性大幅度<@ba.kw>提升</>，技能开启时攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 874,
+    "sortIndex": 898,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -136409,7 +136409,7 @@
   "char_1047_halo2": {
     "name": "溯光星源",
     "description": "攻击造成<@ba.kw>法术伤害</>，并对敌人造成短暂的<$ba.sluggish>停顿</>",
-    "sortIndex": 958,
+    "sortIndex": 982,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -142771,7 +142771,7 @@
   "char_4204_mantra": {
     "name": "真言",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素伤害</>",
-    "sortIndex": 1345,
+    "sortIndex": 1378,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -149079,7 +149079,7 @@
   "char_4182_oblvns": {
     "name": "丰川祥子",
     "description": "可以进行<@ba.kw>远程攻击</>，但此时攻击力降低至80%",
-    "sortIndex": 285,
+    "sortIndex": 295,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -153624,7 +153624,7 @@
   "char_1044_hsgma2": {
     "name": "斩业星熊",
     "description": "技能开启时普通攻击会造成法术伤害",
-    "sortIndex": 1327,
+    "sortIndex": 1360,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -160332,7 +160332,7 @@
   "char_4202_haruka": {
     "name": "遥",
     "description": "攻击造成<@ba.kw>法术伤害</>，技能开启后改为治疗友方单位（治疗量相当于75%攻击力）",
-    "sortIndex": 1172,
+    "sortIndex": 1202,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -166736,7 +166736,7 @@
   "char_4195_radian": {
     "name": "电弧",
     "description": "攻击造成<@ba.kw>法术伤害</>\\n可以使用<@ba.kw>召唤物</>协助作战",
-    "sortIndex": 211,
+    "sortIndex": 215,
     "spTargetType": "ROGUE",
     "spTargetId": "rogue_5",
     "canUseGeneralPotentialItem": true,
@@ -168985,7 +168985,7 @@
       {
         "name": "戴乌",
         "description": "能够阻挡三个敌人",
-        "sortIndex": 188,
+        "sortIndex": 192,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -170066,7 +170066,7 @@
       {
         "name": "赛柯",
         "description": "持续攻击创造出飞行一段距离的子弹，子弹对碰撞到的首个地面敌方单位造成物理伤害。",
-        "sortIndex": 841,
+        "sortIndex": 865,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -171612,7 +171612,7 @@
       {
         "name": "桑特拉",
         "description": "攻击造成法术伤害",
-        "sortIndex": 846,
+        "sortIndex": 870,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -176668,7 +176668,7 @@
   "char_1043_leizi2": {
     "name": "司霆惊蛰",
     "description": "通常不攻击且阻挡数为0，技能未开启时<@ba.kw>{max_stack_cnt}</>秒内攻击力逐渐提升至<@ba.kw>+{atk:0%}</>，技能结束时重置攻击力",
-    "sortIndex": 947,
+    "sortIndex": 971,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -182843,7 +182843,7 @@
   "char_1042_phatm2": {
     "name": "酒神",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素损伤</>",
-    "sortIndex": 535,
+    "sortIndex": 549,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -186680,7 +186680,7 @@
       {
         "name": "本能的召唤",
         "description": "不会受到攻击，只能部署在近战位",
-        "sortIndex": 71,
+        "sortIndex": 72,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -189235,7 +189235,7 @@
       {
         "name": "迷狂牢笼",
         "description": "牢笼可以阻挡生成/刷新时本格所有敌人，没有阻挡目标或受到3次来自阻挡目标的攻击后消失，酒神技能结束后额外持续30秒",
-        "sortIndex": 706,
+        "sortIndex": 725,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -193859,7 +193859,7 @@
   "char_1041_angel2": {
     "name": "新约能天使",
     "description": "自身生命会不断流失",
-    "sortIndex": 1116,
+    "sortIndex": 1145,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -196739,7 +196739,7 @@
       {
         "name": "投递坐标",
         "description": "不会受到攻击",
-        "sortIndex": 1012,
+        "sortIndex": 1037,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -202007,7 +202007,7 @@
   "char_4193_lemuen": {
     "name": "蕾缪安",
     "description": "优先攻击攻击范围内<@ba.kw>防御力最低</>的敌方单位",
-    "sortIndex": 612,
+    "sortIndex": 630,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -207694,7 +207694,7 @@
   "char_4194_rmixer": {
     "name": "信仰搅拌机",
     "description": "能够阻挡三个敌人，可以进行远程攻击",
-    "sortIndex": 1115,
+    "sortIndex": 1144,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -213451,7 +213451,7 @@
   "char_4179_monstr": {
     "name": "Mon3tr",
     "description": "恢复友方单位生命，且会在<@ba.kw>3</>个友方单位间跳跃，每次跳跃治疗量降低25%",
-    "sortIndex": 727,
+    "sortIndex": 746,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -217327,7 +217327,7 @@
       {
         "name": "重构体",
         "description": "自身生命会不断流失",
-        "sortIndex": 1364,
+        "sortIndex": 1397,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -222427,7 +222427,7 @@
   "char_450_necras": {
     "name": "死芒",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以通过击倒敌人生成<@ba.kw>召唤物</>，可攻击到自身<@ba.kw>召唤物</>阻挡的敌人",
-    "sortIndex": 946,
+    "sortIndex": 970,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -225778,7 +225778,7 @@
       {
         "name": "悲叹的仆役",
         "description": "能够阻挡一个敌人（阻挡数会根据等级改变），攻击造成法术伤害",
-        "sortIndex": 66,
+        "sortIndex": 67,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -229190,7 +229190,7 @@
   "char_4010_etlchi": {
     "name": "隐德来希",
     "description": "无法被友方角色治疗，攻击造成<@ba.kw>群体伤害</>，每攻击到一个敌人回复自身<@ba.kw>50</>生命，最大生效数等于阻挡数",
-    "sortIndex": 1205,
+    "sortIndex": 1237,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -234904,7 +234904,7 @@
   "char_2026_yu": {
     "name": "余",
     "description": "能够阻挡三个敌人，可以造成元素损伤",
-    "sortIndex": 1246,
+    "sortIndex": 1279,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -241358,7 +241358,7 @@
   "char_1040_blaze2": {
     "name": "烛煌",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素伤害</>",
-    "sortIndex": 1374,
+    "sortIndex": 1408,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -248695,7 +248695,7 @@
   "char_1039_thorn2": {
     "name": "引星棘刺",
     "description": "可以投掷<@ba.kw>炼金单元</>协助作战",
-    "sortIndex": 1232,
+    "sortIndex": 1264,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -256380,7 +256380,7 @@
   "char_1038_whitw2": {
     "name": "荒芜拉普兰德",
     "description": "操作<@ba.kw>浮游单元</>对敌人造成<@ba.kw>法术伤害</>\\n浮游单元连续攻击同一敌人时伤害提升（最高造成干员110%攻击力的伤害）",
-    "sortIndex": 411,
+    "sortIndex": 422,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -265645,7 +265645,7 @@
   "char_4026_vulpis": {
     "name": "忍冬",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 829,
+    "sortIndex": 852,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -272190,7 +272190,7 @@
   "char_1502_crosly": {
     "name": "弑君者",
     "description": "再部署时间大幅度<@ba.kw>减少</>",
-    "sortIndex": 904,
+    "sortIndex": 928,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -278947,7 +278947,7 @@
   "char_1019_siege2": {
     "name": "维娜·维多利亚",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 1031,
+    "sortIndex": 1058,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -281641,7 +281641,7 @@
       {
         "name": "黄金盟誓",
         "description": "能够阻挡一个敌人，攻击造成<@ba.kw>真实伤害</>",
-        "sortIndex": 409,
+        "sortIndex": 420,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -285280,7 +285280,7 @@
   "char_4141_marcil": {
     "name": "玛露西尔",
     "description": "攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 683,
+    "sortIndex": 702,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -289324,7 +289324,7 @@
   "char_4058_pepe": {
     "name": "佩佩",
     "description": "攻击使目标周围的其他敌人受到相当于攻击力<@ba.kw>50%</>的<@ba.kw>群体</>物理伤害",
-    "sortIndex": 780,
+    "sortIndex": 799,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -295003,7 +295003,7 @@
   "char_4138_narant": {
     "name": "娜仁图亚",
     "description": "持有<@ba.kw>回旋投射物</>时才能够攻击（投射物需要时间回收）",
-    "sortIndex": 743,
+    "sortIndex": 762,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -300635,7 +300635,7 @@
   "char_4146_nymph": {
     "name": "妮芙",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素伤害</>",
-    "sortIndex": 756,
+    "sortIndex": 775,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -306652,7 +306652,7 @@
   "char_4145_ulpia": {
     "name": "乌尔比安",
     "description": "同时攻击阻挡的<@ba.kw>所有敌人</>",
-    "sortIndex": 1048,
+    "sortIndex": 1076,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -309538,7 +309538,7 @@
       {
         "name": "从不混淆的方向",
         "description": "乌尔比安技能结束时返回该位置，并且其他干员不能部署",
-        "sortIndex": 174,
+        "sortIndex": 178,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -313134,7 +313134,7 @@
   "char_1035_wisdel": {
     "name": "维什戴尔",
     "description": "攻击对小范围的<@ba.kw>地面</>敌人造成<@ba.kw>两次</>物理伤害（第二次为余震，伤害降低至攻击力的一半）",
-    "sortIndex": 1032,
+    "sortIndex": 1059,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -315709,7 +315709,7 @@
       {
         "name": "魂灵之影",
         "description": "可攻击维什戴尔攻击范围内的敌人",
-        "sortIndex": 423,
+        "sortIndex": 434,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -322732,7 +322732,7 @@
   "char_4133_logos": {
     "name": "逻各斯",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 667,
+    "sortIndex": 686,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -329519,7 +329519,7 @@
   "char_4134_cetsyr": {
     "name": "魔王",
     "description": "不攻击，持续恢复范围内所有友军<@ba.kw>生命</>（每秒恢复相当于自身攻击力10%的生命），自身不受<$ba.inspire>鼓舞</>影响",
-    "sortIndex": 729,
+    "sortIndex": 748,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -347563,7 +347563,7 @@
       {
         "name": "雷鸣地雷",
         "description": "不会受到攻击，无法放置于<@ba.kw>敌人已在</>的格子中",
-        "sortIndex": 611,
+        "sortIndex": 629,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -350550,7 +350550,7 @@
   "char_2025_shu": {
     "name": "黍",
     "description": "技能可以治疗友方单位",
-    "sortIndex": 928,
+    "sortIndex": 952,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -358417,7 +358417,7 @@
   "char_4121_zuole": {
     "name": "左乐",
     "description": "不成为其他角色的治疗目标，每次攻击到敌人后回复自身<@ba.kw>{value}</>生命",
-    "sortIndex": 1398,
+    "sortIndex": 1432,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -364869,7 +364869,7 @@
   "char_4117_ray": {
     "name": "莱伊",
     "description": "攻击时需要消耗子弹且攻击力提升至<@ba.kw>120%</>，不攻击时会缓慢地装填子弹（最多8发）",
-    "sortIndex": 599,
+    "sortIndex": 617,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -368211,7 +368211,7 @@
       {
         "name": "沙地兽",
         "description": "不会受到攻击，只能部署在召唤者攻击范围内",
-        "sortIndex": 852,
+        "sortIndex": 876,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -372248,7 +372248,7 @@
   "char_4116_blkkgt": {
     "name": "锏",
     "description": "普通攻击连续造成<@ba.kw>两次</>伤害",
-    "sortIndex": 436,
+    "sortIndex": 447,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -379083,7 +379083,7 @@
   "char_245_cello": {
     "name": "塑心",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素损伤</>",
-    "sortIndex": 971,
+    "sortIndex": 995,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -387896,7 +387896,7 @@
   "char_4098_vvana": {
     "name": "薇薇安娜",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 1035,
+    "sortIndex": 1063,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -394293,7 +394293,7 @@
   "char_4011_lessng": {
     "name": "止颂",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 1363,
+    "sortIndex": 1396,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -399927,7 +399927,7 @@
   "char_4088_hodrer": {
     "name": "赫德雷",
     "description": "同时攻击阻挡的<@ba.kw>所有敌人</>",
-    "sortIndex": 376,
+    "sortIndex": 386,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -405322,7 +405322,7 @@
   "char_1034_jesca2": {
     "name": "涤火杰西卡",
     "description": "能够阻挡三个敌人，可以进行远程攻击",
-    "sortIndex": 217,
+    "sortIndex": 222,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -408187,7 +408187,7 @@
       {
         "name": "机动盾牌",
         "description": "更容易受到攻击",
-        "sortIndex": 480,
+        "sortIndex": 491,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -411954,7 +411954,7 @@
   "char_1016_agoat2": {
     "name": "纯烬艾雅法拉",
     "description": "恢复友方单位生命，并回复相当于攻击力50%的<$ba.dt.element>元素损伤</>（可以回复未受伤友方单位的<$ba.dt.element>元素损伤</>）",
-    "sortIndex": 167,
+    "sortIndex": 171,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -420934,7 +420934,7 @@
   "char_1033_swire2": {
     "name": "琳琅诗怀雅",
     "description": "再部署时间<@ba.kw>减少</>，撤退时不返还<@ba.kw>部署费用</>，在场时每3秒<@ba.kw>消耗</>3点部署费用（不足时自动撤退）",
-    "sortIndex": 639,
+    "sortIndex": 658,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -423662,7 +423662,7 @@
       {
         "name": "香槟炸弹",
         "description": null,
-        "sortIndex": 1071,
+        "sortIndex": 1100,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -428394,7 +428394,7 @@
   "char_2012_typhon": {
     "name": "提丰",
     "description": "优先攻击重量最重的敌人",
-    "sortIndex": 1005,
+    "sortIndex": 1030,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -433919,7 +433919,7 @@
   "char_1032_excu2": {
     "name": "圣约送葬人",
     "description": "无法被友方角色治疗，攻击造成<@ba.kw>群体伤害</>，每攻击到一个敌人回复自身<@ba.kw>50</>生命，最大生效数等于阻挡数",
-    "sortIndex": 882,
+    "sortIndex": 906,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -442705,7 +442705,7 @@
   "char_249_mlyss": {
     "name": "缪尔赛思",
     "description": "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%",
-    "sortIndex": 719,
+    "sortIndex": 738,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -445192,7 +445192,7 @@
       {
         "name": "流形",
         "description": "初始攻击造成<@ba.kw>法术伤害</>，只能部署在召唤者攻击范围内",
-        "sortIndex": 649,
+        "sortIndex": 668,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -451617,7 +451617,7 @@
   "char_4027_heyak": {
     "name": "霍尔海雅",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 426,
+    "sortIndex": 437,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -457753,7 +457753,7 @@
   "char_1031_slent2": {
     "name": "淬羽赫默",
     "description": "攻击造成<@ba.kw>法术伤害</>，技能开启后改为治疗友方单位（治疗量相当于75%攻击力）",
-    "sortIndex": 178,
+    "sortIndex": 182,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -459975,7 +459975,7 @@
       {
         "name": "夜灯",
         "description": "不会受到攻击",
-        "sortIndex": 1182,
+        "sortIndex": 1212,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -464026,7 +464026,7 @@
   "char_4087_ines": {
     "name": "伊内丝",
     "description": "再部署时间<@ba.kw>减少</>，可使用远程攻击",
-    "sortIndex": 1206,
+    "sortIndex": 1238,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -469604,7 +469604,7 @@
   "char_1029_yato2": {
     "name": "麒麟R夜刀",
     "description": "再部署时间大幅度<@ba.kw>减少</>",
-    "sortIndex": 796,
+    "sortIndex": 816,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -474812,7 +474812,7 @@
   "char_4082_qiubai": {
     "name": "仇白",
     "description": "可以进行<@ba.kw>远程攻击</>，但此时攻击力降低至80%",
-    "sortIndex": 809,
+    "sortIndex": 829,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -480869,7 +480869,7 @@
   "char_2024_chyue": {
     "name": "重岳",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 164,
+    "sortIndex": 168,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -489589,7 +489589,7 @@
   "char_4080_lin": {
     "name": "林",
     "description": "通常时<@ba.kw>不攻击</>且防御力和法术抗性大幅度<@ba.kw>提升</>，技能开启时攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 627,
+    "sortIndex": 645,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -496659,7 +496659,7 @@
   "char_1020_reed2": {
     "name": "焰影苇草",
     "description": "攻击造成法术伤害，攻击敌人时为攻击范围内一名友方干员治疗相当于50%伤害的生命值",
-    "sortIndex": 1169,
+    "sortIndex": 1199,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -502360,7 +502360,7 @@
   "char_1028_texas2": {
     "name": "缄默德克萨斯",
     "description": "再部署时间大幅度<@ba.kw>减少</>",
-    "sortIndex": 449,
+    "sortIndex": 460,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -509262,7 +509262,7 @@
   "char_4065_judge": {
     "name": "斥罪",
     "description": "<@ba.kw>无法</>被友方角色治疗",
-    "sortIndex": 161,
+    "sortIndex": 165,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -515705,7 +515705,7 @@
   "char_427_vigil": {
     "name": "伺夜",
     "description": "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%",
-    "sortIndex": 948,
+    "sortIndex": 972,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -517967,7 +517967,7 @@
       {
         "name": "狼群",
         "description": "只能部署在召唤者攻击范围内",
-        "sortIndex": 603,
+        "sortIndex": 621,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -524740,7 +524740,7 @@
       {
         "name": "白铁™多功能平台",
         "description": "不会受到攻击",
-        "sortIndex": 41,
+        "sortIndex": 42,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -526134,7 +526134,7 @@
       {
         "name": "白铁™多功能平台",
         "description": "不会受到攻击",
-        "sortIndex": 42,
+        "sortIndex": 41,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -527703,7 +527703,7 @@
       {
         "name": "铁钳号·原型机",
         "description": "可被我方干员攻击但不受伤害，受到工匠干员攻击时回复生命",
-        "sortIndex": 1004,
+        "sortIndex": 1029,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -533880,7 +533880,7 @@
   "char_4064_mlynar": {
     "name": "玛恩纳",
     "description": "通常不攻击且阻挡数为0，技能未开启时<@ba.kw>{max_stack_cnt}</>秒内攻击力逐渐提升至<@ba.kw>+{atk:0%}</>，技能结束时重置攻击力",
-    "sortIndex": 676,
+    "sortIndex": 695,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -548521,7 +548521,7 @@
   "char_4055_bgsnow": {
     "name": "鸿雪",
     "description": "高精度的近距离射击",
-    "sortIndex": 398,
+    "sortIndex": 409,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -551585,7 +551585,7 @@
       {
         "name": "“打字机”",
         "description": "不会受到攻击",
-        "sortIndex": 207,
+        "sortIndex": 211,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -556594,7 +556594,7 @@
   "char_4048_doroth": {
     "name": "多萝西",
     "description": "可以使用陷阱来协助作战，但陷阱无法放置于<@ba.kw>敌人已在</>的格子中",
-    "sortIndex": 240,
+    "sortIndex": 250,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -559122,7 +559122,7 @@
       {
         "name": "共振装置",
         "description": "不会受到攻击，无法放置于<@ba.kw>敌人已在</>的格子中",
-        "sortIndex": 344,
+        "sortIndex": 354,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -564472,7 +564472,7 @@
   "char_4046_ebnhlz": {
     "name": "黑键",
     "description": "攻击造成<@ba.kw>法术伤害</>，在找不到攻击目标时可以将攻击能量<@ba.kw>储存</>起来之后一齐发射（最多3个）",
-    "sortIndex": 379,
+    "sortIndex": 389,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -566916,7 +566916,7 @@
       {
         "name": "旧日残影",
         "description": null,
-        "sortIndex": 532,
+        "sortIndex": 546,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -571588,7 +571588,7 @@
   "char_1023_ghost2": {
     "name": "归溟幽灵鲨",
     "description": "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0），持续20秒后自身再次替换<替身>",
-    "sortIndex": 356,
+    "sortIndex": 366,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -584344,7 +584344,7 @@
   "char_4042_lumen": {
     "name": "流明",
     "description": "拥有较大治疗范围，但在治疗较远目标时治疗量变为<@ba.kw>{heal_scale:0%}</>",
-    "sortIndex": 646,
+    "sortIndex": 665,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -590338,7 +590338,7 @@
   "char_4039_horn": {
     "name": "号角",
     "description": "不阻挡敌人时优先<@ba.kw>远程群体</>物理攻击",
-    "sortIndex": 373,
+    "sortIndex": 383,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -596094,7 +596094,7 @@
   "char_300_phenxi": {
     "name": "菲亚梅塔",
     "description": "攻击造成<@ba.kw>群体物理伤害</>",
-    "sortIndex": 283,
+    "sortIndex": 293,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -601561,7 +601561,7 @@
   "char_377_gdglow": {
     "name": "澄闪",
     "description": "操作<@ba.kw>浮游单元</>对敌人造成<@ba.kw>法术伤害</>\\n浮游单元连续攻击同一敌人时伤害提升（最高造成干员110%攻击力的伤害）",
-    "sortIndex": 149,
+    "sortIndex": 153,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -607496,7 +607496,7 @@
   "char_2023_ling": {
     "name": "令",
     "description": "攻击造成<@ba.kw>法术伤害</>\\n可以使用<@ba.kw>召唤物</>协助作战",
-    "sortIndex": 630,
+    "sortIndex": 648,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -610033,7 +610033,7 @@
       {
         "name": "“清平”",
         "description": "能够阻挡一个敌人",
-        "sortIndex": 800,
+        "sortIndex": 820,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -611235,7 +611235,7 @@
       {
         "name": "“逍遥”",
         "description": "攻击造成<@ba.kw>法术伤害</>",
-        "sortIndex": 1088,
+        "sortIndex": 1117,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -612882,7 +612882,7 @@
       {
         "name": "“弦惊”",
         "description": "攻击阻挡的<@ba.kw>所有敌人</>",
-        "sortIndex": 1078,
+        "sortIndex": 1107,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -621133,7 +621133,7 @@
   "char_322_lmlee": {
     "name": "老鲤",
     "description": "再部署时间<@ba.kw>减少</>，撤退时不返还<@ba.kw>部署费用</>，在场时每3秒<@ba.kw>消耗</>3点部署费用（不足时自动撤退）",
-    "sortIndex": 605,
+    "sortIndex": 623,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -627657,7 +627657,7 @@
   "char_206_gnosis": {
     "name": "灵知",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 637,
+    "sortIndex": 656,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -633014,7 +633014,7 @@
   "char_1014_nearl2": {
     "name": "耀骑士临光",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 1175,
+    "sortIndex": 1205,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -635873,7 +635873,7 @@
       {
         "name": "“耀阳”",
         "description": "能够阻挡两个敌人",
-        "sortIndex": 1176,
+        "sortIndex": 1206,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -640026,7 +640026,7 @@
   "char_420_flamtl": {
     "name": "焰尾",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 1167,
+    "sortIndex": 1197,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -645895,7 +645895,7 @@
   "char_430_fartth": {
     "name": "远牙",
     "description": "优先攻击攻击范围内<@ba.kw>防御力最低</>的敌方单位",
-    "sortIndex": 1265,
+    "sortIndex": 1298,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -651074,7 +651074,7 @@
   "char_479_sleach": {
     "name": "琴柳",
     "description": "技能发动期间阻挡数变为0",
-    "sortIndex": 805,
+    "sortIndex": 825,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -657421,7 +657421,7 @@
   "char_1013_chen2": {
     "name": "假日威龙陈",
     "description": "攻击范围内的<@ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至150%",
-    "sortIndex": 464,
+    "sortIndex": 475,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -663935,7 +663935,7 @@
   "char_437_mizuki": {
     "name": "水月",
     "description": "对攻击范围内<@ba.kw>所有敌人</>造成伤害\\n拥有50%的物理和法术闪避且不容易成为敌人的<@ba.kw>攻击目标</>",
-    "sortIndex": 942,
+    "sortIndex": 966,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -670249,7 +670249,7 @@
   "char_485_pallas": {
     "name": "帕拉斯",
     "description": "可以攻击到<@ba.kw>较远敌人</>，攻击自身未阻挡的敌人时攻击力提升至120%",
-    "sortIndex": 769,
+    "sortIndex": 788,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -675517,7 +675517,7 @@
   "char_426_billro": {
     "name": "卡涅利安",
     "description": "通常时<@ba.kw>不攻击</>且防御力和法术抗性大幅度<@ba.kw>提升</>，技能开启时攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 562,
+    "sortIndex": 577,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -681670,7 +681670,7 @@
   "char_1012_skadi2": {
     "name": "浊心斯卡蒂",
     "description": "不攻击，持续恢复范围内所有友军<@ba.kw>生命</>（每秒恢复相当于自身攻击力10%的生命），自身不受<$ba.inspire>鼓舞</>影响",
-    "sortIndex": 1380,
+    "sortIndex": 1414,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -683941,7 +683941,7 @@
       {
         "name": "斯卡蒂的海嗣",
         "description": "不会受到攻击",
-        "sortIndex": 945,
+        "sortIndex": 969,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -691489,7 +691489,7 @@
   "char_003_kalts": {
     "name": "凯尔希",
     "description": "恢复友方单位生命",
-    "sortIndex": 556,
+    "sortIndex": 571,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -693764,7 +693764,7 @@
       {
         "name": "Mon3tr",
         "description": "能够阻挡三个敌人",
-        "sortIndex": 725,
+        "sortIndex": 744,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -700148,7 +700148,7 @@
   "char_474_glady": {
     "name": "歌蕾蒂娅",
     "description": "技能可以使敌人产生<@ba.kw>位移</>\\n可以放置于远程位",
-    "sortIndex": 335,
+    "sortIndex": 345,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -706027,7 +706027,7 @@
   "char_472_pasngr": {
     "name": "异客",
     "description": "攻击造成<@ba.kw>法术伤害</>，且会在<@ba.kw>3</>个敌人间跳跃，每次跳跃伤害降低15%并造成短暂<$ba.sluggish>停顿</>",
-    "sortIndex": 1201,
+    "sortIndex": 1234,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -715378,7 +715378,7 @@
   "char_456_ash": {
     "name": "灰烬",
     "description": "优先攻击空中单位",
-    "sortIndex": 419,
+    "sortIndex": 430,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -718937,7 +718937,7 @@
   "char_2015_dusk": {
     "name": "夕",
     "description": "攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 1061,
+    "sortIndex": 1090,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -722429,7 +722429,7 @@
       {
         "name": "“小自在”",
         "description": "攻击造成<@ba.kw>法术伤害</>",
-        "sortIndex": 1089,
+        "sortIndex": 1118,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -727166,7 +727166,7 @@
   "char_362_saga": {
     "name": "嵯峨",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 179,
+    "sortIndex": 183,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -732861,7 +732861,7 @@
   "char_332_archet": {
     "name": "空弦",
     "description": "优先攻击空中单位",
-    "sortIndex": 586,
+    "sortIndex": 603,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -738342,7 +738342,7 @@
   "char_264_f12yin": {
     "name": "山",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 853,
+    "sortIndex": 877,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -744034,7 +744034,7 @@
   "char_391_rosmon": {
     "name": "迷迭香",
     "description": "攻击对小范围的<@ba.kw>地面</>敌人造成<@ba.kw>两次</>物理伤害（第二次为余震，伤害降低至攻击力的一半）",
-    "sortIndex": 702,
+    "sortIndex": 721,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -746585,7 +746585,7 @@
       {
         "name": "迷迭香的战术装备",
         "description": "能够阻挡两个敌人，降低被阻挡单位的防御力",
-        "sortIndex": 703,
+        "sortIndex": 722,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -750686,7 +750686,7 @@
   "char_311_mudrok": {
     "name": "泥岩",
     "description": "<@ba.kw>无法</>被友方角色治疗",
-    "sortIndex": 761,
+    "sortIndex": 780,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -759639,7 +759639,7 @@
   "char_423_blemsh": {
     "name": "瑕光",
     "description": "技能可以治疗友方单位",
-    "sortIndex": 1064,
+    "sortIndex": 1093,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -766352,7 +766352,7 @@
   "char_350_surtr": {
     "name": "史尔特尔",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 901,
+    "sortIndex": 925,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -771752,7 +771752,7 @@
   "char_416_zumama": {
     "name": "森蚺",
     "description": "只有阻挡敌人时才能够回复技力",
-    "sortIndex": 849,
+    "sortIndex": 873,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -777043,7 +777043,7 @@
   "char_293_thorns": {
     "name": "棘刺",
     "description": "可以进行<@ba.kw>远程攻击</>，但此时攻击力降低至80%",
-    "sortIndex": 474,
+    "sortIndex": 485,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -784087,7 +784087,7 @@
   "char_358_lisa": {
     "name": "铃兰",
     "description": "攻击造成<@ba.kw>法术伤害</>，并对敌人造成短暂的<$ba.sluggish>停顿</>",
-    "sortIndex": 633,
+    "sortIndex": 651,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -790204,7 +790204,7 @@
   "char_197_poca": {
     "name": "早露",
     "description": "优先攻击重量最重的敌人",
-    "sortIndex": 1305,
+    "sortIndex": 1338,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -795987,7 +795987,7 @@
   "char_113_cqbw": {
     "name": "W",
     "description": "攻击造成<@ba.kw>群体物理伤害</>",
-    "sortIndex": 1022,
+    "sortIndex": 1049,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -798156,7 +798156,7 @@
       {
         "name": "此面向敌",
         "description": null,
-        "sortIndex": 172,
+        "sortIndex": 176,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -804520,7 +804520,7 @@
   "char_400_weedy": {
     "name": "温蒂",
     "description": "同时攻击阻挡的<@ba.kw>所有敌人</>\\n可以放置于远程位",
-    "sortIndex": 1041,
+    "sortIndex": 1069,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -807141,7 +807141,7 @@
       {
         "name": "工程蓄水炮",
         "description": "不会受到攻击",
-        "sortIndex": 339,
+        "sortIndex": 349,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -812270,7 +812270,7 @@
   "char_250_phatom": {
     "name": "傀影",
     "description": "再部署时间大幅度<@ba.kw>减少</>",
-    "sortIndex": 593,
+    "sortIndex": 610,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -814845,7 +814845,7 @@
       {
         "name": "镜中虚影",
         "description": "能够阻挡一个敌人",
-        "sortIndex": 520,
+        "sortIndex": 531,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -820739,7 +820739,7 @@
   "char_222_bpipe": {
     "name": "风笛",
     "description": "击杀敌人后获得1点部署费用，撤退时返还初始部署费用",
-    "sortIndex": 286,
+    "sortIndex": 296,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -825939,7 +825939,7 @@
   "char_2013_cerber": {
     "name": "刻俄柏",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 573,
+    "sortIndex": 588,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -831584,7 +831584,7 @@
   "char_2014_nian": {
     "name": "年",
     "description": "能够阻挡三个敌人",
-    "sortIndex": 752,
+    "sortIndex": 771,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -844292,7 +844292,7 @@
   "char_017_huang": {
     "name": "煌",
     "description": "同时攻击阻挡的<@ba.kw>所有敌人</>",
-    "sortIndex": 406,
+    "sortIndex": 417,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -849638,7 +849638,7 @@
   "char_213_mostma": {
     "name": "莫斯提马",
     "description": "攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 728,
+    "sortIndex": 747,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -855626,7 +855626,7 @@
   "char_248_mgllan": {
     "name": "麦哲伦",
     "description": "攻击造成<@ba.kw>法术伤害</>\\n可以使用<@ba.kw>召唤物</>协助作战",
-    "sortIndex": 682,
+    "sortIndex": 701,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -857669,7 +857669,7 @@
       {
         "name": "龙腾.F",
         "description": "不阻挡敌人",
-        "sortIndex": 657,
+        "sortIndex": 676,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -859051,7 +859051,7 @@
       {
         "name": "龙腾.L",
         "description": "不阻挡敌人，攻击造成<@ba.kw>法术伤害</>",
-        "sortIndex": 658,
+        "sortIndex": 677,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -860337,7 +860337,7 @@
       {
         "name": "龙腾.A",
         "description": "攻击造成<@ba.kw>群体物理伤害</>",
-        "sortIndex": 656,
+        "sortIndex": 675,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -864865,7 +864865,7 @@
   "char_188_helage": {
     "name": "赫拉格",
     "description": "不成为其他角色的治疗目标，每次攻击到敌人后回复自身<@ba.kw>{value}</>生命",
-    "sortIndex": 382,
+    "sortIndex": 392,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -870563,7 +870563,7 @@
   "char_340_shwaz": {
     "name": "黑",
     "description": "高精度的近距离射击",
-    "sortIndex": 378,
+    "sortIndex": 388,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -875977,7 +875977,7 @@
   "char_010_chen": {
     "name": "陈",
     "description": "普通攻击连续造成<@ba.kw>两次</>伤害",
-    "sortIndex": 140,
+    "sortIndex": 144,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -882604,7 +882604,7 @@
   "char_263_skadi": {
     "name": "斯卡蒂",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 944,
+    "sortIndex": 968,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -887654,7 +887654,7 @@
   "char_172_svrash": {
     "name": "银灰",
     "description": "可以进行<@ba.kw>远程攻击</>，但此时攻击力降低至80%",
-    "sortIndex": 1223,
+    "sortIndex": 1255,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -893506,7 +893506,7 @@
   "char_202_demkni": {
     "name": "塞雷娅",
     "description": "技能可以治疗友方单位",
-    "sortIndex": 842,
+    "sortIndex": 866,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -900991,7 +900991,7 @@
   "char_136_hsguma": {
     "name": "星熊",
     "description": "能够阻挡三个敌人",
-    "sortIndex": 1109,
+    "sortIndex": 1138,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -906697,7 +906697,7 @@
   "char_179_cgbird": {
     "name": "夜莺",
     "description": "同时恢复三个友方单位的生命",
-    "sortIndex": 1192,
+    "sortIndex": 1222,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -909756,7 +909756,7 @@
       {
         "name": "幻影",
         "description": "不阻挡敌人",
-        "sortIndex": 414,
+        "sortIndex": 425,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -913586,7 +913586,7 @@
   "char_147_shining": {
     "name": "闪灵",
     "description": "恢复友方单位生命",
-    "sortIndex": 861,
+    "sortIndex": 885,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -931490,7 +931490,7 @@
   "char_134_ifrit": {
     "name": "伊芙利特",
     "description": "攻击造成<@ba.kw>超远距离的群体法术伤害</>",
-    "sortIndex": 1198,
+    "sortIndex": 1230,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -936812,7 +936812,7 @@
   "char_112_siege": {
     "name": "推进之王",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 1015,
+    "sortIndex": 1041,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -942203,7 +942203,7 @@
   "char_103_angel": {
     "name": "能天使",
     "description": "优先攻击空中单位",
-    "sortIndex": 750,
+    "sortIndex": 769,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -947439,7 +947439,7 @@
   "char_4169_caledo": {
     "name": "镜匠",
     "description": "能够阻挡三个敌人，可以造成元素损伤",
-    "sortIndex": 507,
+    "sortIndex": 518,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -955120,7 +955120,7 @@
   "char_4232_hbound": {
     "name": "旅骨",
     "description": "可以投掷<@ba.kw>炼金单元</>协助作战",
-    "sortIndex": 675,
+    "sortIndex": 694,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -958783,7 +958783,7 @@
   "char_393_toledo": {
     "name": "德·托莱多",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 210,
+    "sortIndex": 214,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -960470,7 +960470,7 @@
       {
         "name": "征服者传说",
         "description": "能够阻挡三个敌人",
-        "sortIndex": 1338,
+        "sortIndex": 1371,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -966048,7 +966048,7 @@
   "char_4219_yukari": {
     "name": "岳羽由加莉",
     "description": "可以使用<$ba.triggereffect>触发型效果</>协助作战",
-    "sortIndex": 1286,
+    "sortIndex": 1319,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -968712,7 +968712,7 @@
   "char_4237_jcinta": {
     "name": "嘉辛塔",
     "description": "技能发动期间阻挡数变为0",
-    "sortIndex": 469,
+    "sortIndex": 480,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -972861,7 +972861,7 @@
   "char_4234_pedro": {
     "name": "佩德洛",
     "description": "可以使用<$ba.triggereffect>触发型效果</>协助作战",
-    "sortIndex": 778,
+    "sortIndex": 797,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -976117,7 +976117,7 @@
   "char_1049_catap2": {
     "name": "雷狼龙S空爆",
     "description": "可消耗部署费用来强化作战能力",
-    "sortIndex": 610,
+    "sortIndex": 628,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -980089,7 +980089,7 @@
   "char_4225_tanya": {
     "name": "裂响",
     "description": "能够阻挡三个敌人，可以造成元素损伤",
-    "sortIndex": 625,
+    "sortIndex": 643,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -985619,7 +985619,7 @@
   "char_4224_turdus": {
     "name": "乌啾",
     "description": "恢复友方单位生命，且会在<@ba.kw>3</>个友方单位间跳跃，每次跳跃治疗量降低25%",
-    "sortIndex": 1049,
+    "sortIndex": 1077,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -990846,7 +990846,7 @@
   "char_4223_botany": {
     "name": "伯塔尼",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素损伤</>",
-    "sortIndex": 103,
+    "sortIndex": 104,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -996847,7 +996847,7 @@
   "char_4031_liesel": {
     "name": "复奏",
     "description": "攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 310,
+    "sortIndex": 320,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1001404,7 +1001404,7 @@
   "char_4222_taraxa": {
     "name": "风絮",
     "description": "恢复友方单位生命，并且可以<$ba.liftoff>起飞</>",
-    "sortIndex": 293,
+    "sortIndex": 303,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1006222,7 +1006222,7 @@
   "char_4221_ju": {
     "name": "矩",
     "description": "优先攻击重量最重的敌人",
-    "sortIndex": 543,
+    "sortIndex": 557,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1010718,7 +1010718,7 @@
   "char_1022_flwr2": {
     "name": "撷英调香师",
     "description": "攻击造成<@ba.kw>法术伤害</>，技能开启后改为治疗友方单位（治疗量相当于75%攻击力）",
-    "sortIndex": 1098,
+    "sortIndex": 1127,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1019957,7 +1019957,7 @@
   "char_4214_cairn": {
     "name": "响石",
     "description": "能够阻挡三个敌人，可以造成元素损伤",
-    "sortIndex": 1074,
+    "sortIndex": 1103,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1024844,7 +1024844,7 @@
   "char_4213_skybx": {
     "name": "天空盒",
     "description": "部署后<$ba.liftoff>起飞</>，<$ba.liftoff>起飞</>后只攻击空中敌人；技能开启时降落且攻击造成<@ba.kw>群体物理伤害</>",
-    "sortIndex": 991,
+    "sortIndex": 1015,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1029704,7 +1029704,7 @@
   "char_4211_snhunt": {
     "name": "雪猎",
     "description": "攻击时需要消耗子弹且攻击力提升至<@ba.kw>120%</>，不攻击时会缓慢地装填子弹（最多8发）",
-    "sortIndex": 1130,
+    "sortIndex": 1159,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1034253,7 +1034253,7 @@
   "char_394_hadiya": {
     "name": "哈蒂娅",
     "description": "可消耗部署费用来强化作战能力",
-    "sortIndex": 362,
+    "sortIndex": 372,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1038884,7 +1038884,7 @@
   "char_4207_branch": {
     "name": "折桠",
     "description": "<@ba.kw>无法</>被友方角色治疗",
-    "sortIndex": 1346,
+    "sortIndex": 1379,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1044359,7 +1044359,7 @@
   "char_4184_dolris": {
     "name": "三角初华",
     "description": "不攻击，持续恢复范围内所有友军<@ba.kw>生命</>（每秒恢复相当于自身攻击力10%的生命），自身不受<$ba.inspire>鼓舞</>影响",
-    "sortIndex": 847,
+    "sortIndex": 871,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1048192,7 +1048192,7 @@
   "char_4183_mortis": {
     "name": "若叶睦",
     "description": "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0），持续20秒后自身再次替换<替身>",
-    "sortIndex": 837,
+    "sortIndex": 861,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1054426,7 +1054426,7 @@
   "char_4185_amoris": {
     "name": "祐天寺若麦",
     "description": "攻击使目标周围的其他敌人受到相当于攻击力<@ba.kw>50%</>的<@ba.kw>群体</>物理伤害",
-    "sortIndex": 1240,
+    "sortIndex": 1273,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1057550,7 +1057550,7 @@
   "char_4203_kichi": {
     "name": "吉星",
     "description": "攻击范围内的<@ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至150%",
-    "sortIndex": 538,
+    "sortIndex": 552,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1062221,7 +1062221,7 @@
   "char_4199_makiri": {
     "name": "松桐",
     "description": "能够阻挡两个敌人，可以支援待部署区的我方单位",
-    "sortIndex": 951,
+    "sortIndex": 975,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1067285,7 +1067285,7 @@
   "char_4196_reckpr": {
     "name": "录武官",
     "description": "恢复友方单位生命",
-    "sortIndex": 673,
+    "sortIndex": 692,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1071972,7 +1071972,7 @@
   "char_4191_tippi": {
     "name": "蒂比",
     "description": "<$ba.liftoff>起飞</>后能够阻挡2个飞行敌人",
-    "sortIndex": 216,
+    "sortIndex": 221,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1076970,7 +1076970,7 @@
   "char_4198_christ": {
     "name": "Miss.Christine",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素伤害</>",
-    "sortIndex": 717,
+    "sortIndex": 736,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1080446,7 +1080446,7 @@
   "char_4187_graceb": {
     "name": "聆音",
     "description": "能够阻挡两个敌人，可以造成<@ba.kw>元素伤害</>",
-    "sortIndex": 635,
+    "sortIndex": 654,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1086899,7 +1086899,7 @@
       {
         "name": "小螺帽",
         "description": "不会受到攻击",
-        "sortIndex": 1084,
+        "sortIndex": 1113,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1090369,7 +1090369,7 @@
   "char_4171_wulfen": {
     "name": "钼铅",
     "description": "可以使用陷阱来协助作战，但陷阱无法放置于<@ba.kw>敌人已在</>的格子中",
-    "sortIndex": 740,
+    "sortIndex": 759,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1092234,7 +1092234,7 @@
       {
         "name": "矿石“杀手”",
         "description": "不会受到攻击，无法放置于<@ba.kw>敌人已在</>的格子中",
-        "sortIndex": 591,
+        "sortIndex": 608,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1096572,7 +1096572,7 @@
   "char_4177_brigid": {
     "name": "水灯心",
     "description": "持有<@ba.kw>回旋投射物</>时才能够攻击（投射物需要时间回收）",
-    "sortIndex": 940,
+    "sortIndex": 964,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1101344,7 +1101344,7 @@
   "char_4173_nowell": {
     "name": "诺威尔",
     "description": "拥有较大治疗范围，但在治疗较远目标时治疗量变为<@ba.kw>{heal_scale:0%}</>",
-    "sortIndex": 765,
+    "sortIndex": 784,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1106127,7 +1106127,7 @@
   "char_4052_surfer": {
     "name": "寻澜",
     "description": "再部署时间<@ba.kw>减少</>，可使用远程攻击",
-    "sortIndex": 1141,
+    "sortIndex": 1171,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1110684,7 +1110684,7 @@
   "char_4172_xingzh": {
     "name": "行箸",
     "description": "攻击造成<@ba.kw>法术伤害</>，技能开启后改为治疗友方单位（治疗量相当于75%攻击力）",
-    "sortIndex": 1112,
+    "sortIndex": 1141,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1115310,7 +1115310,7 @@
   "char_4164_tecno": {
     "name": "特克诺",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以通过击倒敌人生成<@ba.kw>召唤物</>，可攻击到自身<@ba.kw>召唤物</>阻挡的敌人",
-    "sortIndex": 980,
+    "sortIndex": 1004,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1117845,7 +1117845,7 @@
       {
         "name": "木偶舞者",
         "description": "能够阻挡一个敌人，攻击造成法术伤害",
-        "sortIndex": 739,
+        "sortIndex": 758,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1121387,7 +1121387,7 @@
   "char_4163_rosesa": {
     "name": "瑰盐",
     "description": "同时恢复三个友方单位的生命",
-    "sortIndex": 357,
+    "sortIndex": 367,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1127033,7 +1127033,7 @@
   "char_4155_talr": {
     "name": "裁度",
     "description": "再部署时间<@ba.kw>减少</>，撤退时不返还<@ba.kw>部署费用</>，在场时每3秒<@ba.kw>消耗</>3点部署费用（不足时自动撤退）",
-    "sortIndex": 126,
+    "sortIndex": 130,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1132804,7 +1132804,7 @@
   "char_4148_philae": {
     "name": "菲莱",
     "description": "能够阻挡三个敌人，可以造成元素损伤",
-    "sortIndex": 278,
+    "sortIndex": 288,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1137358,7 +1137358,7 @@
   "char_487_bobb": {
     "name": "波卜",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素损伤</>",
-    "sortIndex": 96,
+    "sortIndex": 97,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1141993,7 +1141993,7 @@
   "char_4162_cathy": {
     "name": "凯瑟琳",
     "description": "能够阻挡两个敌人，使用<支援装置>协助作战",
-    "sortIndex": 558,
+    "sortIndex": 573,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1143728,7 +1143728,7 @@
       {
         "name": "爬行号·防护单元",
         "description": "不会受到攻击",
-        "sortIndex": 777,
+        "sortIndex": 796,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1147401,7 +1147401,7 @@
   "char_4142_laios": {
     "name": "莱欧斯",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 598,
+    "sortIndex": 615,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1149790,7 +1149790,7 @@
   "char_4144_chilc": {
     "name": "齐尔查克",
     "description": "再部署时间<@ba.kw>减少</>，可使用远程攻击",
-    "sortIndex": 794,
+    "sortIndex": 814,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1152683,7 +1152683,7 @@
   "char_4143_sensi": {
     "name": "森西",
     "description": "技能可以治疗友方单位",
-    "sortIndex": 850,
+    "sortIndex": 874,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1156120,7 +1156120,7 @@
   "char_4140_lasher": {
     "name": "衡沙",
     "description": "攻击造成<@ba.kw>法术伤害</>\\n可以使用<@ba.kw>召唤物</>协助作战",
-    "sortIndex": 386,
+    "sortIndex": 396,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1157778,7 +1157778,7 @@
       {
         "name": "发条羽兽",
         "description": "攻击造成<@ba.kw>法术伤害</>",
-        "sortIndex": 277,
+        "sortIndex": 287,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1161811,7 +1161811,7 @@
   "char_4139_papyrs": {
     "name": "莎草",
     "description": "恢复友方单位生命，且会在<@ba.kw>3</>个友方单位间跳跃，每次跳跃治疗量降低25%",
-    "sortIndex": 969,
+    "sortIndex": 993,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1166464,7 +1166464,7 @@
   "char_4151_tinman": {
     "name": "锡人",
     "description": "可以投掷<@ba.kw>炼金单元</>协助作战",
-    "sortIndex": 1117,
+    "sortIndex": 1146,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1171179,7 +1171179,7 @@
   "char_4147_mitm": {
     "name": "渡桥",
     "description": "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%",
-    "sortIndex": 241,
+    "sortIndex": 251,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1173512,7 +1173512,7 @@
       {
         "name": "樱桃三号",
         "description": "能够阻挡一个敌人，作为小车形态存在时只能部署在召唤者攻击范围内",
-        "sortIndex": 1220,
+        "sortIndex": 1252,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1176938,7 +1176938,7 @@
   "char_4079_haini": {
     "name": "海霓",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 366,
+    "sortIndex": 376,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1181634,7 +1181634,7 @@
   "char_4137_udflow": {
     "name": "深巡",
     "description": "能够阻挡三个敌人，可以进行远程攻击",
-    "sortIndex": 890,
+    "sortIndex": 914,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1186462,7 +1186462,7 @@
   "char_1036_fang2": {
     "name": "历阵锐枪芬",
     "description": "击杀敌人后获得1点部署费用，撤退时返还初始部署费用",
-    "sortIndex": 652,
+    "sortIndex": 671,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1199996,7 +1199996,7 @@
   "char_4125_rdoc": {
     "name": "医生",
     "description": "可以攻击到<@ba.kw>较远敌人</>，攻击自身未阻挡的敌人时攻击力提升至120%",
-    "sortIndex": 1235,
+    "sortIndex": 1267,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1202989,7 +1202989,7 @@
   "char_4124_iana": {
     "name": "双月",
     "description": "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0），持续20秒后自身再次替换<替身>",
-    "sortIndex": 934,
+    "sortIndex": 958,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1206134,7 +1206134,7 @@
   "char_4126_fuze": {
     "name": "导火索",
     "description": "同时攻击阻挡的<@ba.kw>所有敌人</>",
-    "sortIndex": 198,
+    "sortIndex": 202,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1208677,7 +1208677,7 @@
   "char_4023_rfalcn": {
     "name": "红隼",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 396,
+    "sortIndex": 408,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1213363,7 +1213363,7 @@
   "char_4122_grabds": {
     "name": "小满",
     "description": "攻击造成<@ba.kw>法术伤害</>，并对敌人造成短暂的<$ba.sluggish>停顿</>",
-    "sortIndex": 1085,
+    "sortIndex": 1114,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1218499,7 +1218499,7 @@
   "char_4119_wanqin": {
     "name": "万顷",
     "description": "技能发动期间阻挡数变为0",
-    "sortIndex": 1026,
+    "sortIndex": 1053,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1223689,7 +1223689,7 @@
   "char_4081_warmy": {
     "name": "温米",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素伤害</>",
-    "sortIndex": 1045,
+    "sortIndex": 1073,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1228285,7 +1228285,7 @@
   "char_194_leto": {
     "name": "烈夏",
     "description": "可以进行<@ba.kw>远程攻击</>，但此时攻击力降低至80%",
-    "sortIndex": 624,
+    "sortIndex": 642,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1233400,7 +1233400,7 @@
   "char_4114_harold": {
     "name": "哈洛德",
     "description": "恢复友方单位生命，并回复相当于攻击力50%的<$ba.dt.element>元素损伤</>（可以回复未受伤友方单位的<$ba.dt.element>元素损伤</>）",
-    "sortIndex": 367,
+    "sortIndex": 377,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1237939,7 +1237939,7 @@
   "char_4109_baslin": {
     "name": "深律",
     "description": "技能可以治疗友方单位",
-    "sortIndex": 888,
+    "sortIndex": 912,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1243142,7 +1243142,7 @@
   "char_499_kaitou": {
     "name": "折光",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素伤害</>",
-    "sortIndex": 1333,
+    "sortIndex": 1366,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1247679,7 +1247679,7 @@
   "char_494_vendla": {
     "name": "刺玫",
     "description": "攻击造成法术伤害，攻击敌人时为攻击范围内一名友方干员治疗相当于50%伤害的生命值",
-    "sortIndex": 171,
+    "sortIndex": 175,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1252205,7 +1252205,7 @@
   "char_4110_delphn": {
     "name": "戴菲恩",
     "description": "攻击造成<@ba.kw>法术伤害</>，在找不到攻击目标时可以将攻击能量<@ba.kw>储存</>起来之后一齐发射（最多3个）",
-    "sortIndex": 185,
+    "sortIndex": 189,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1257148,7 +1257148,7 @@
   "char_4105_almond": {
     "name": "杏仁",
     "description": "技能可以使敌人产生<@ba.kw>位移</>\\n可以放置于远程位",
-    "sortIndex": 1106,
+    "sortIndex": 1135,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1261713,7 +1261713,7 @@
   "char_4104_coldst": {
     "name": "冰酿",
     "description": "攻击时需要消耗子弹且攻击力提升至<@ba.kw>120%</>，不攻击时会缓慢地装填子弹（最多8发）",
-    "sortIndex": 91,
+    "sortIndex": 92,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1266277,7 +1266277,7 @@
   "char_488_buildr": {
     "name": "青枳",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 804,
+    "sortIndex": 824,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1270993,7 +1270993,7 @@
   "char_4106_bryota": {
     "name": "苍苔",
     "description": "可以攻击到<@ba.kw>较远敌人</>，攻击自身未阻挡的敌人时攻击力提升至120%",
-    "sortIndex": 128,
+    "sortIndex": 132,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1275493,7 +1275493,7 @@
   "char_4102_threye": {
     "name": "凛视",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素损伤</>",
-    "sortIndex": 640,
+    "sortIndex": 659,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1280071,7 +1280071,7 @@
   "char_341_sntlla": {
     "name": "寒檀",
     "description": "攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 371,
+    "sortIndex": 381,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1285188,7 +1285188,7 @@
   "char_4015_spuria": {
     "name": "空构",
     "description": "自身生命会不断流失",
-    "sortIndex": 583,
+    "sortIndex": 600,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1289756,7 +1289756,7 @@
   "char_498_inside": {
     "name": "隐现",
     "description": "优先攻击空中单位",
-    "sortIndex": 1231,
+    "sortIndex": 1263,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1294274,7 +1294274,7 @@
   "char_4006_melnte": {
     "name": "玫拉",
     "description": "高精度的近距离射击",
-    "sortIndex": 689,
+    "sortIndex": 708,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1298995,7 +1298995,7 @@
   "char_464_cement": {
     "name": "洋灰",
     "description": "只有阻挡敌人时才能够回复技力",
-    "sortIndex": 1158,
+    "sortIndex": 1188,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1303480,7 +1303480,7 @@
   "char_154_morgan": {
     "name": "摩根",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 723,
+    "sortIndex": 742,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1308014,7 +1308014,7 @@
   "char_1030_noirc2": {
     "name": "火龙S黑角",
     "description": "不成为其他角色的治疗目标，每次攻击到敌人后回复自身<@ba.kw>{value}</>生命",
-    "sortIndex": 427,
+    "sortIndex": 438,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1312944,7 +1312944,7 @@
   "char_4083_chimes": {
     "name": "铎铃",
     "description": "同时攻击阻挡的<@ba.kw>所有敌人</>",
-    "sortIndex": 239,
+    "sortIndex": 249,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1317458,7 +1317458,7 @@
   "char_493_firwhl": {
     "name": "火哨",
     "description": "不阻挡敌人时优先<@ba.kw>远程群体</>物理攻击",
-    "sortIndex": 429,
+    "sortIndex": 440,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1322061,7 +1322061,7 @@
   "char_4078_bdhkgt": {
     "name": "截云",
     "description": "攻击造成<@ba.kw>群体物理伤害</>",
-    "sortIndex": 491,
+    "sortIndex": 502,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1326821,7 +1326821,7 @@
   "char_297_hamoni": {
     "name": "和弦",
     "description": "攻击造成<@ba.kw>法术伤害</>，在找不到攻击目标时可以将攻击能量<@ba.kw>储存</>起来之后一齐发射（最多3个）",
-    "sortIndex": 387,
+    "sortIndex": 397,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1331639,7 +1331639,7 @@
   "char_4017_puzzle": {
     "name": "谜图",
     "description": "再部署时间<@ba.kw>减少</>，可使用远程攻击",
-    "sortIndex": 718,
+    "sortIndex": 737,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1336302,7 +1336302,7 @@
   "char_4014_lunacu": {
     "name": "子月",
     "description": "优先攻击攻击范围内<@ba.kw>防御力最低</>的敌方单位",
-    "sortIndex": 1389,
+    "sortIndex": 1423,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1340805,7 +1340805,7 @@
   "char_466_qanik": {
     "name": "雪绒",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 1131,
+    "sortIndex": 1160,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1345442,7 +1345442,7 @@
   "char_4071_peper": {
     "name": "明椒",
     "description": "恢复友方单位生命，且会在<@ba.kw>3</>个友方单位间跳跃，每次跳跃治疗量降低25%",
-    "sortIndex": 713,
+    "sortIndex": 732,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1350002,7 +1350002,7 @@
   "char_157_dagda": {
     "name": "达格达",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 182,
+    "sortIndex": 186,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1354373,7 +1354373,7 @@
   "char_4066_highmo": {
     "name": "海沫",
     "description": "无法被友方角色治疗，攻击造成<@ba.kw>群体伤害</>，每攻击到一个敌人回复自身<@ba.kw>50</>生命，最大生效数等于阻挡数",
-    "sortIndex": 365,
+    "sortIndex": 375,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1358883,7 +1358883,7 @@
   "char_4032_provs": {
     "name": "但书",
     "description": "攻击造成<@ba.kw>法术伤害</>，并对敌人造成短暂的<$ba.sluggish>停顿</>",
-    "sortIndex": 191,
+    "sortIndex": 195,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1364122,7 +1364122,7 @@
   "char_497_ctable": {
     "name": "晓歌",
     "description": "再部署时间<@ba.kw>减少</>，可使用远程攻击",
-    "sortIndex": 1082,
+    "sortIndex": 1111,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1368720,7 +1368720,7 @@
   "char_4054_malist": {
     "name": "至简",
     "description": "操作<@ba.kw>浮游单元</>对敌人造成<@ba.kw>法术伤害</>\\n浮游单元连续攻击同一敌人时伤害提升（最高造成干员110%攻击力的伤害）",
-    "sortIndex": 1350,
+    "sortIndex": 1383,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1373270,7 +1373270,7 @@
   "char_1027_greyy2": {
     "name": "承曦格雷伊",
     "description": "攻击对小范围的<@ba.kw>地面</>敌人造成<@ba.kw>两次</>物理伤害（第二次为余震，伤害降低至攻击力的一半）",
-    "sortIndex": 152,
+    "sortIndex": 156,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1378054,7 +1378054,7 @@
   "char_135_halo": {
     "name": "星源",
     "description": "攻击造成<@ba.kw>法术伤害</>，且会在<@ba.kw>3</>个敌人间跳跃，每次跳跃伤害降低15%并造成短暂<$ba.sluggish>停顿</>",
-    "sortIndex": 1110,
+    "sortIndex": 1139,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1383218,7 +1383218,7 @@
   "char_1024_hbisc2": {
     "name": "濯尘芙蓉",
     "description": "攻击造成法术伤害，攻击敌人时为攻击范围内一名友方干员治疗相当于50%伤害的生命值",
-    "sortIndex": 1377,
+    "sortIndex": 1411,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1387821,7 +1387821,7 @@
   "char_4047_pianst": {
     "name": "车尔尼",
     "description": "技能开启时普通攻击会造成法术伤害",
-    "sortIndex": 139,
+    "sortIndex": 143,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1397619,7 +1397619,7 @@
   "char_433_windft": {
     "name": "掠风",
     "description": "能够阻挡两个敌人，使用<支援装置>协助作战",
-    "sortIndex": 674,
+    "sortIndex": 693,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1399821,7 +1399821,7 @@
       {
         "name": "可靠电池",
         "description": "不会受到攻击",
-        "sortIndex": 574,
+        "sortIndex": 589,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1404125,7 +1404125,7 @@
   "char_4040_rockr": {
     "name": "洛洛",
     "description": "操作<@ba.kw>浮游单元</>对敌人造成<@ba.kw>法术伤害</>\\n浮游单元连续攻击同一敌人时伤害提升（最高造成干员110%攻击力的伤害）",
-    "sortIndex": 668,
+    "sortIndex": 687,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1408762,7 +1408762,7 @@
   "char_4045_heidi": {
     "name": "海蒂",
     "description": "不攻击，持续恢复范围内所有友军<@ba.kw>生命</>（每秒恢复相当于自身攻击力10%的生命），自身不受<$ba.inspire>鼓舞</>影响",
-    "sortIndex": 363,
+    "sortIndex": 373,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1413522,7 +1413522,7 @@
   "char_4016_kazema": {
     "name": "风丸",
     "description": "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0），持续20秒后自身再次替换<替身>",
-    "sortIndex": 292,
+    "sortIndex": 302,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1415158,7 +1415158,7 @@
       {
         "name": "纸偶",
         "description": "不阻挡敌人",
-        "sortIndex": 1359,
+        "sortIndex": 1392,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1418765,7 +1418765,7 @@
   "char_4036_forcer": {
     "name": "见行者",
     "description": "同时攻击阻挡的<@ba.kw>所有敌人</>\\n可以放置于远程位",
-    "sortIndex": 454,
+    "sortIndex": 465,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1423500,7 +1423500,7 @@
   "char_492_quercu": {
     "name": "夏栎",
     "description": "攻击造成<@ba.kw>法术伤害</>，技能开启后改为治疗友方单位（治疗量相当于75%攻击力）",
-    "sortIndex": 1065,
+    "sortIndex": 1094,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1428084,7 +1428084,7 @@
   "char_476_blkngt": {
     "name": "夜半",
     "description": "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%",
-    "sortIndex": 1180,
+    "sortIndex": 1210,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1429982,7 +1429982,7 @@
       {
         "name": "眠兽",
         "description": "能够阻挡一个敌人，只能部署在召唤者攻击范围内",
-        "sortIndex": 699,
+        "sortIndex": 718,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1433423,7 +1433423,7 @@
   "char_1021_kroos2": {
     "name": "寒芒克洛丝",
     "description": "优先攻击空中单位",
-    "sortIndex": 369,
+    "sortIndex": 379,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1437941,7 +1437941,7 @@
   "char_4019_ncdeer": {
     "name": "九色鹿",
     "description": "攻击造成<@ba.kw>法术伤害</>，技能开启后改为治疗友方单位（治疗量相当于75%攻击力）",
-    "sortIndex": 534,
+    "sortIndex": 548,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1440467,7 +1440467,7 @@
   "char_4025_aprot2": {
     "name": "暮落",
     "description": "技能开启时普通攻击会造成法术伤害",
-    "sortIndex": 738,
+    "sortIndex": 756,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1445290,7 +1445290,7 @@
   "char_422_aurora": {
     "name": "极光",
     "description": "只有阻挡敌人时才能够回复技力",
-    "sortIndex": 492,
+    "sortIndex": 503,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1449911,7 +1449911,7 @@
   "char_4013_kjera": {
     "name": "耶拉",
     "description": "操作<@ba.kw>浮游单元</>对敌人造成<@ba.kw>法术伤害</>\\n浮游单元连续攻击同一敌人时伤害提升（最高造成干员110%攻击力的伤害）",
-    "sortIndex": 1183,
+    "sortIndex": 1213,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1454538,7 +1454538,7 @@
   "char_489_serum": {
     "name": "蚀清",
     "description": "攻击造成<@ba.kw>超远距离的群体法术伤害</>",
-    "sortIndex": 912,
+    "sortIndex": 936,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1459006,7 +1459006,7 @@
   "char_496_wildmn": {
     "name": "野鬃",
     "description": "击杀敌人后获得1点部署费用，撤退时返还初始部署费用",
-    "sortIndex": 1195,
+    "sortIndex": 1225,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1463492,7 +1463492,7 @@
   "char_449_glider": {
     "name": "蜜莓",
     "description": "恢复友方单位生命，并回复相当于攻击力50%的<$ba.dt.element>元素损伤</>（可以回复未受伤友方单位的<$ba.dt.element>元素损伤</>）",
-    "sortIndex": 710,
+    "sortIndex": 729,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1468148,7 +1468148,7 @@
   "char_431_ashlok": {
     "name": "灰毫",
     "description": "不阻挡敌人时优先<@ba.kw>远程群体</>物理攻击",
-    "sortIndex": 417,
+    "sortIndex": 428,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1472585,7 +1472585,7 @@
   "char_473_mberry": {
     "name": "桑葚",
     "description": "恢复友方单位生命，并回复相当于攻击力50%的<$ba.dt.element>元素损伤</>（可以回复未受伤友方单位的<$ba.dt.element>元素损伤</>）",
-    "sortIndex": 845,
+    "sortIndex": 869,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1477872,7 +1477872,7 @@
   "char_421_crow": {
     "name": "羽毛笔",
     "description": "无法被友方角色治疗，攻击造成<@ba.kw>群体伤害</>，每攻击到一个敌人回复自身<@ba.kw>50</>生命，最大生效数等于阻挡数",
-    "sortIndex": 1293,
+    "sortIndex": 1326,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1482343,7 +1482343,7 @@
   "char_486_takila": {
     "name": "龙舌兰",
     "description": "通常不攻击且阻挡数为0，技能未开启时<@ba.kw>{max_stack_cnt}</>秒内攻击力逐渐提升至<@ba.kw>+{atk:0%}</>，技能结束时重置攻击力",
-    "sortIndex": 655,
+    "sortIndex": 674,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1487311,7 +1487311,7 @@
   "char_478_kirara": {
     "name": "绮良",
     "description": "对攻击范围内<@ba.kw>所有敌人</>造成伤害\\n拥有50%的物理和法术闪避且不容易成为敌人的<@ba.kw>攻击目标</>",
-    "sortIndex": 795,
+    "sortIndex": 815,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1491857,7 +1491857,7 @@
   "char_369_bena": {
     "name": "贝娜",
     "description": "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0），持续20秒后自身再次替换<替身>",
-    "sortIndex": 64,
+    "sortIndex": 65,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1496634,7 +1496634,7 @@
   "char_475_akafyu": {
     "name": "赤冬",
     "description": "不成为其他角色的治疗目标，每次攻击到敌人后回复自身<@ba.kw>{value}</>生命",
-    "sortIndex": 155,
+    "sortIndex": 159,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1501050,7 +1501050,7 @@
   "char_363_toddi": {
     "name": "熔泉",
     "description": "优先攻击重量最重的敌人",
-    "sortIndex": 832,
+    "sortIndex": 856,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1511033,7 +1511033,7 @@
   "char_458_rfrost": {
     "name": "霜华",
     "description": "可以使用陷阱来协助作战，但陷阱无法放置于<@ba.kw>敌人已在</>的格子中",
-    "sortIndex": 929,
+    "sortIndex": 953,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1512927,7 +1512927,7 @@
       {
         "name": "迎宾踏垫",
         "description": "不会受到攻击，无法放置于<@ba.kw>敌人已在</>的格子中",
-        "sortIndex": 1210,
+        "sortIndex": 1242,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1514989,7 +1514989,7 @@
   "char_457_blitz": {
     "name": "闪击",
     "description": "能够阻挡三个敌人，可以进行远程攻击",
-    "sortIndex": 859,
+    "sortIndex": 882,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1517904,7 +1517904,7 @@
   "char_459_tachak": {
     "name": "战车",
     "description": "普通攻击连续造成<@ba.kw>两次</>伤害",
-    "sortIndex": 1313,
+    "sortIndex": 1346,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1520953,7 +1520953,7 @@
   "char_455_nothin": {
     "name": "乌有",
     "description": "再部署时间<@ba.kw>减少</>，撤退时不返还<@ba.kw>部署费用</>，在场时每3秒<@ba.kw>消耗</>3点部署费用（不足时自动撤退）",
-    "sortIndex": 1057,
+    "sortIndex": 1086,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1526345,7 +1526345,7 @@
   "char_1011_lava2": {
     "name": "炎狱炎熔",
     "description": "攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 1170,
+    "sortIndex": 1200,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1531132,7 +1531132,7 @@
   "char_402_tuye": {
     "name": "图耶",
     "description": "恢复友方单位生命",
-    "sortIndex": 1020,
+    "sortIndex": 1046,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1540561,7 +1540561,7 @@
   "char_214_kafka": {
     "name": "卡夫卡",
     "description": "再部署时间大幅度<@ba.kw>减少</>",
-    "sortIndex": 555,
+    "sortIndex": 570,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1545317,7 +1545317,7 @@
   "char_451_robin": {
     "name": "罗宾",
     "description": "可以使用陷阱来协助作战，但陷阱无法放置于<@ba.kw>敌人已在</>的格子中",
-    "sortIndex": 662,
+    "sortIndex": 681,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1547126,7 +1547126,7 @@
       {
         "name": "“夹子”",
         "description": "不会受到攻击，无法放置于<@ba.kw>敌人已在</>的格子中",
-        "sortIndex": 470,
+        "sortIndex": 481,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1551094,7 +1551094,7 @@
   "char_436_whispr": {
     "name": "絮雨",
     "description": "拥有较大治疗范围，但在治疗较远目标时治疗量变为<@ba.kw>{heal_scale:0%}</>",
-    "sortIndex": 1147,
+    "sortIndex": 1177,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1560429,7 +1560429,7 @@
   "char_265_sophia": {
     "name": "鞭刃",
     "description": "可以攻击到<@ba.kw>较远敌人</>，攻击自身未阻挡的敌人时攻击力提升至120%",
-    "sortIndex": 76,
+    "sortIndex": 77,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1564995,7 +1564995,7 @@
   "char_365_aprl": {
     "name": "四月",
     "description": "优先攻击空中单位",
-    "sortIndex": 949,
+    "sortIndex": 973,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1569351,7 +1569351,7 @@
   "char_388_mint": {
     "name": "薄绿",
     "description": "通常时<@ba.kw>不攻击</>且防御力和法术抗性大幅度<@ba.kw>提升</>，技能开启时攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 100,
+    "sortIndex": 101,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1574966,7 +1574966,7 @@
   "char_415_flint": {
     "name": "燧石",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 962,
+    "sortIndex": 985,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1579460,7 +1579460,7 @@
   "char_411_tomimi": {
     "name": "特米米",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 983,
+    "sortIndex": 1007,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1588817,7 +1588817,7 @@
   "char_349_chiave": {
     "name": "贾维",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 467,
+    "sortIndex": 478,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1593873,7 +1593873,7 @@
   "char_344_beewax": {
     "name": "蜜蜡",
     "description": "通常时<@ba.kw>不攻击</>且防御力和法术抗性大幅度<@ba.kw>提升</>，技能开启时攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 707,
+    "sortIndex": 726,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1596399,7 +1596399,7 @@
       {
         "name": "沙之碑",
         "description": "能够阻挡三个敌人",
-        "sortIndex": 866,
+        "sortIndex": 890,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1600478,7 +1600478,7 @@
   "char_336_folivo": {
     "name": "稀音",
     "description": "攻击造成<@ba.kw>法术伤害</>\\n可以使用<@ba.kw>召唤物</>协助作战",
-    "sortIndex": 1123,
+    "sortIndex": 1152,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1602286,7 +1602286,7 @@
       {
         "name": "移动摄影器",
         "description": "能够阻挡一个敌人",
-        "sortIndex": 1196,
+        "sortIndex": 1228,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1607053,7 +1607053,7 @@
   "char_294_ayer": {
     "name": "断崖",
     "description": "可以进行<@ba.kw>远程攻击</>，但此时攻击力降低至80%",
-    "sortIndex": 230,
+    "sortIndex": 239,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1612200,7 +1612200,7 @@
   "char_345_folnic": {
     "name": "亚叶",
     "description": "恢复友方单位生命",
-    "sortIndex": 1179,
+    "sortIndex": 1209,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1616702,7 +1616702,7 @@
   "char_373_lionhd": {
     "name": "莱恩哈特",
     "description": "攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 597,
+    "sortIndex": 614,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1622064,7 +1622064,7 @@
   "char_405_absin": {
     "name": "苦艾",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 590,
+    "sortIndex": 607,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1627152,7 +1627152,7 @@
   "char_343_tknogi": {
     "name": "月禾",
     "description": "攻击造成<@ba.kw>法术伤害</>，技能开启后改为治疗友方单位（治疗量相当于75%攻击力）",
-    "sortIndex": 1282,
+    "sortIndex": 1315,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1631754,7 +1631754,7 @@
   "char_378_asbest": {
     "name": "石棉",
     "description": "技能开启时普通攻击会造成法术伤害",
-    "sortIndex": 908,
+    "sortIndex": 932,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1636486,7 +1636486,7 @@
   "char_401_elysm": {
     "name": "极境",
     "description": "技能发动期间阻挡数变为0",
-    "sortIndex": 497,
+    "sortIndex": 508,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1642694,7 +1642694,7 @@
   "char_254_vodfox": {
     "name": "巫恋",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 1051,
+    "sortIndex": 1079,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1644487,7 +1644487,7 @@
       {
         "name": "诅咒娃娃",
         "description": "不会受到攻击",
-        "sortIndex": 1402,
+        "sortIndex": 1436,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1648158,7 +1648158,7 @@
   "char_333_sidero": {
     "name": "铸铁",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 1381,
+    "sortIndex": 1415,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1652571,7 +1652571,7 @@
   "char_379_sesa": {
     "name": "慑砂",
     "description": "攻击造成<@ba.kw>群体物理伤害</>",
-    "sortIndex": 891,
+    "sortIndex": 915,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1661938,7 +1661938,7 @@
   "char_306_leizi": {
     "name": "惊蛰",
     "description": "攻击造成<@ba.kw>法术伤害</>，且会在<@ba.kw>3</>个敌人间跳跃，每次跳跃伤害降低15%并造成短暂<$ba.sluggish>停顿</>",
-    "sortIndex": 519,
+    "sortIndex": 530,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1666371,7 +1666371,7 @@
   "char_226_hmau": {
     "name": "吽",
     "description": "技能可以治疗友方单位",
-    "sortIndex": 390,
+    "sortIndex": 401,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1672276,7 +1672276,7 @@
   "char_383_snsant": {
     "name": "雪雉",
     "description": "技能可以使敌人产生<@ba.kw>位移</>\\n可以放置于远程位",
-    "sortIndex": 1133,
+    "sortIndex": 1163,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1677652,7 +1677652,7 @@
   "char_367_swllow": {
     "name": "灰喉",
     "description": "优先攻击空中单位",
-    "sortIndex": 418,
+    "sortIndex": 429,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1682060,7 +1682060,7 @@
   "char_356_broca": {
     "name": "布洛卡",
     "description": "同时攻击阻挡的<@ba.kw>所有敌人</>",
-    "sortIndex": 121,
+    "sortIndex": 122,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1686780,7 +1686780,7 @@
   "char_261_sddrag": {
     "name": "苇草",
     "description": "击杀敌人后获得1点部署费用，撤退时返还初始部署费用",
-    "sortIndex": 1027,
+    "sortIndex": 1054,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1691183,7 +1691183,7 @@
   "char_243_waaifu": {
     "name": "槐琥",
     "description": "再部署时间大幅度<@ba.kw>减少</>",
-    "sortIndex": 404,
+    "sortIndex": 415,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1701290,7 +1701290,7 @@
   "char_275_breeze": {
     "name": "微风",
     "description": "同时恢复三个友方单位的生命",
-    "sortIndex": 1030,
+    "sortIndex": 1057,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1705799,7 +1705799,7 @@
   "char_279_excu": {
     "name": "送葬人",
     "description": "攻击范围内的<@ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至150%",
-    "sortIndex": 952,
+    "sortIndex": 976,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1710166,7 +1710166,7 @@
   "char_131_flameb": {
     "name": "炎客",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 1162,
+    "sortIndex": 1192,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1714596,7 +1714596,7 @@
   "char_274_astesi": {
     "name": "星极",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 1104,
+    "sortIndex": 1133,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1719022,7 +1719022,7 @@
   "char_326_glacus": {
     "name": "格劳克斯",
     "description": "攻击造成<@ba.kw>法术伤害</>，并对敌人造成短暂的<$ba.sluggish>停顿</>",
-    "sortIndex": 334,
+    "sortIndex": 344,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1724707,7 +1724707,7 @@
   "char_348_ceylon": {
     "name": "锡兰",
     "description": "拥有较大治疗范围，但在治疗较远目标时治疗量变为<@ba.kw>{heal_scale:0%}</>",
-    "sortIndex": 1100,
+    "sortIndex": 1129,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1729300,7 +1729300,7 @@
   "char_308_swire": {
     "name": "诗怀雅",
     "description": "可以攻击到<@ba.kw>较远敌人</>，攻击自身未阻挡的敌人时攻击力提升至120%",
-    "sortIndex": 903,
+    "sortIndex": 927,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1735301,7 +1735301,7 @@
   "char_220_grani": {
     "name": "格拉尼",
     "description": "击杀敌人后获得1点部署费用，撤退时返还初始部署费用",
-    "sortIndex": 333,
+    "sortIndex": 343,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1739806,7 +1739806,7 @@
   "char_164_nightm": {
     "name": "夜魔",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 1185,
+    "sortIndex": 1215,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1749023,7 +1749023,7 @@
   "char_241_panda": {
     "name": "食铁兽",
     "description": "同时攻击阻挡的<@ba.kw>所有敌人</>\\n可以放置于远程位",
-    "sortIndex": 917,
+    "sortIndex": 941,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1754488,7 +1754488,7 @@
   "char_215_mantic": {
     "name": "狮蝎",
     "description": "对攻击范围内<@ba.kw>所有敌人</>造成伤害\\n拥有50%的物理和法术闪避且不容易成为敌人的<@ba.kw>攻击目标</>",
-    "sortIndex": 919,
+    "sortIndex": 943,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1759088,7 +1759088,7 @@
   "char_101_sora": {
     "name": "空",
     "description": "不攻击，持续恢复范围内所有友军<@ba.kw>生命</>（每秒恢复相当于自身攻击力10%的生命），自身不受<$ba.inspire>鼓舞</>影响",
-    "sortIndex": 581,
+    "sortIndex": 598,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1764366,7 +1764366,7 @@
   "char_195_glassb": {
     "name": "真理",
     "description": "攻击造成<@ba.kw>法术伤害</>，并对敌人造成短暂的<$ba.sluggish>停顿</>",
-    "sortIndex": 1343,
+    "sortIndex": 1376,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1770341,7 +1770341,7 @@
   "char_174_slbell": {
     "name": "初雪",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 170,
+    "sortIndex": 174,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1774895,7 +1774895,7 @@
   "char_173_slchan": {
     "name": "崖心",
     "description": "技能可以使敌人产生<@ba.kw>位移</>\\n可以放置于远程位",
-    "sortIndex": 1178,
+    "sortIndex": 1208,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1779902,7 +1779902,7 @@
   "char_158_milu": {
     "name": "守林人",
     "description": "优先攻击攻击范围内<@ba.kw>防御力最低</>的敌方单位",
-    "sortIndex": 926,
+    "sortIndex": 950,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1784444,7 +1784444,7 @@
   "char_145_prove": {
     "name": "普罗旺斯",
     "description": "高精度的近距离射击",
-    "sortIndex": 790,
+    "sortIndex": 810,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1788944,7 +1788944,7 @@
   "char_163_hpsts": {
     "name": "火神",
     "description": "<@ba.kw>无法</>被友方角色治疗",
-    "sortIndex": 430,
+    "sortIndex": 441,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1793498,7 +1793498,7 @@
   "char_201_moeshd": {
     "name": "可颂",
     "description": "能够阻挡三个敌人",
-    "sortIndex": 579,
+    "sortIndex": 596,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1798341,7 +1798341,7 @@
   "char_107_liskam": {
     "name": "雷蛇",
     "description": "能够阻挡三个敌人，可以进行远程攻击",
-    "sortIndex": 613,
+    "sortIndex": 631,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1802927,7 +1802927,7 @@
   "char_144_red": {
     "name": "红",
     "description": "再部署时间大幅度<@ba.kw>减少</>",
-    "sortIndex": 391,
+    "sortIndex": 400,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1807579,7 +1807579,7 @@
   "char_148_nearl": {
     "name": "临光",
     "description": "技能可以治疗友方单位",
-    "sortIndex": 634,
+    "sortIndex": 653,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1812794,7 +1812794,7 @@
   "char_171_bldsk": {
     "name": "华法琳",
     "description": "恢复友方单位生命",
-    "sortIndex": 402,
+    "sortIndex": 413,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1817363,7 +1817363,7 @@
   "char_108_silent": {
     "name": "赫默",
     "description": "恢复友方单位生命",
-    "sortIndex": 384,
+    "sortIndex": 394,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1818944,7 +1818944,7 @@
       {
         "name": "医疗探机",
         "description": "不会受到攻击，恢复周围友方单位的生命",
-        "sortIndex": 1203,
+        "sortIndex": 1235,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1822310,7 +1822310,7 @@
   "char_242_otter": {
     "name": "梅尔",
     "description": "攻击造成<@ba.kw>法术伤害</>\\n可以使用<@ba.kw>召唤物</>协助作战",
-    "sortIndex": 688,
+    "sortIndex": 707,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1824451,7 +1824451,7 @@
       {
         "name": "机械水獭",
         "description": "能够阻挡一个敌人",
-        "sortIndex": 537,
+        "sortIndex": 551,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1828901,7 +1828901,7 @@
   "char_166_skfire": {
     "name": "天火",
     "description": "攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 990,
+    "sortIndex": 1014,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1849512,7 +1849512,7 @@
   "char_219_meteo": {
     "name": "陨星",
     "description": "攻击造成<@ba.kw>群体物理伤害</>",
-    "sortIndex": 1295,
+    "sortIndex": 1328,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1859165,7 +1859165,7 @@
   "char_129_bluep": {
     "name": "蓝毒",
     "description": "优先攻击空中单位",
-    "sortIndex": 601,
+    "sortIndex": 619,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1863656,7 +1863656,7 @@
   "char_143_ghost": {
     "name": "幽灵鲨",
     "description": "同时攻击阻挡的<@ba.kw>所有敌人</>",
-    "sortIndex": 1239,
+    "sortIndex": 1272,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1867981,7 +1867981,7 @@
   "char_140_whitew": {
     "name": "拉普兰德",
     "description": "可以进行<@ba.kw>远程攻击</>，但此时攻击力降低至80%",
-    "sortIndex": 608,
+    "sortIndex": 626,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1873070,7 +1873070,7 @@
   "char_155_tiger": {
     "name": "因陀罗",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 1230,
+    "sortIndex": 1262,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1877485,7 +1877485,7 @@
   "char_106_franka": {
     "name": "芙兰卡",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 307,
+    "sortIndex": 317,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1881828,7 +1881828,7 @@
   "char_102_texas": {
     "name": "德克萨斯",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 209,
+    "sortIndex": 213,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1887392,7 +1887392,7 @@
   "char_115_headbr": {
     "name": "凛冬",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 629,
+    "sortIndex": 647,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1897643,7 +1897643,7 @@
   "char_4236_tmslot": {
     "name": "时隙",
     "description": "操作<@ba.kw>浮游单元</>对敌人造成<@ba.kw>法术伤害</>\\n浮游单元连续攻击同一敌人时伤害提升（最高造成干员110%攻击力的伤害）",
-    "sortIndex": 918,
+    "sortIndex": 942,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1900922,7 +1900922,7 @@
   "char_4170_hdbell": {
     "name": "行铃",
     "description": "开启技能后可以造成超远距离的群体物理伤害",
-    "sortIndex": 1105,
+    "sortIndex": 1134,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1904619,7 +1904619,7 @@
   "char_4051_akkord": {
     "name": "协律",
     "description": "攻击造成<@ba.kw>超远距离的群体法术伤害</>",
-    "sortIndex": 1093,
+    "sortIndex": 1122,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1909062,7 +1909062,7 @@
   "char_4208_wintim": {
     "name": "冬时",
     "description": "再部署时间<@ba.kw>减少</>，可使用远程攻击",
-    "sortIndex": 225,
+    "sortIndex": 234,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1914130,7 +1914130,7 @@
   "char_445_wscoot": {
     "name": "骋风",
     "description": "通常不攻击且阻挡数为0，技能未开启时<@ba.kw>{max_stack_cnt}</>秒内攻击力逐渐提升至<@ba.kw>+{atk:0%}</>，技能结束时重置攻击力",
-    "sortIndex": 144,
+    "sortIndex": 148,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1918929,7 +1918929,7 @@
   "char_4165_ctrail": {
     "name": "云迹",
     "description": "<$ba.liftoff>起飞</>后能够阻挡2个飞行敌人",
-    "sortIndex": 1294,
+    "sortIndex": 1327,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1924172,7 +1924172,7 @@
   "char_4130_luton": {
     "name": "露托",
     "description": "<@ba.kw>无法</>被友方角色治疗",
-    "sortIndex": 672,
+    "sortIndex": 691,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1929061,7 +1929061,7 @@
   "char_4100_caper": {
     "name": "跃跃",
     "description": "持有<@ba.kw>回旋投射物</>时才能够攻击（投射物需要时间回收）",
-    "sortIndex": 1285,
+    "sortIndex": 1318,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1933565,7 +1933565,7 @@
   "char_4107_vrdant": {
     "name": "维荻",
     "description": "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0），持续20秒后自身再次替换<替身>",
-    "sortIndex": 1028,
+    "sortIndex": 1055,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1937991,7 +1937991,7 @@
   "char_491_humus": {
     "name": "休谟斯",
     "description": "无法被友方角色治疗，攻击造成<@ba.kw>群体伤害</>，每攻击到一个敌人回复自身<@ba.kw>50</>生命，最大生效数等于阻挡数",
-    "sortIndex": 1120,
+    "sortIndex": 1149,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1942627,7 +1942627,7 @@
   "char_4063_quartz": {
     "name": "石英",
     "description": "同时攻击阻挡的<@ba.kw>所有敌人</>",
-    "sortIndex": 923,
+    "sortIndex": 947,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1947187,7 +1947187,7 @@
   "char_4062_totter": {
     "name": "铅踝",
     "description": "优先攻击重量最重的敌人",
-    "sortIndex": 792,
+    "sortIndex": 812,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1951785,7 +1951785,7 @@
   "char_4067_lolxh": {
     "name": "罗小黑",
     "description": "可以进行<@ba.kw>远程攻击</>，但此时攻击力降低至80%",
-    "sortIndex": 670,
+    "sortIndex": 689,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1956074,7 +1956074,7 @@
   "char_4041_chnut": {
     "name": "褐果",
     "description": "恢复友方单位生命，并回复相当于攻击力50%的<$ba.dt.element>元素损伤</>（可以回复未受伤友方单位的<$ba.dt.element>元素损伤</>）",
-    "sortIndex": 377,
+    "sortIndex": 387,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1960862,7 +1960862,7 @@
   "char_4004_pudd": {
     "name": "布丁",
     "description": "攻击造成<@ba.kw>法术伤害</>，且会在<@ba.kw>3</>个敌人间跳跃，每次跳跃伤害降低15%并造成短暂<$ba.sluggish>停顿</>",
-    "sortIndex": 104,
+    "sortIndex": 105,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1965272,7 +1965272,7 @@
   "char_484_robrta": {
     "name": "罗比菈塔",
     "description": "能够阻挡两个敌人，使用<支援装置>协助作战",
-    "sortIndex": 661,
+    "sortIndex": 680,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1966929,7 +1966929,7 @@
       {
         "name": "全自动造型仪",
         "description": "不会受到攻击",
-        "sortIndex": 823,
+        "sortIndex": 843,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1970474,7 +1970474,7 @@
   "char_469_indigo": {
     "name": "深靛",
     "description": "攻击造成<@ba.kw>法术伤害</>，在找不到攻击目标时可以将攻击能量<@ba.kw>储存</>起来之后一齐发射（最多3个）",
-    "sortIndex": 870,
+    "sortIndex": 894,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1975351,7 +1975351,7 @@
   "char_452_bstalk": {
     "name": "豆苗",
     "description": "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%",
-    "sortIndex": 226,
+    "sortIndex": 235,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1977144,7 +1977144,7 @@
       {
         "name": "磐蟹护卫队",
         "description": "能够阻挡一个敌人，只能部署在召唤者攻击范围内",
-        "sortIndex": 771,
+        "sortIndex": 790,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1980470,7 +1980470,7 @@
   "char_440_pinecn": {
     "name": "松果",
     "description": "攻击范围内的<@ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至150%",
-    "sortIndex": 950,
+    "sortIndex": 974,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1985328,7 +1985328,7 @@
   "char_347_jaksel": {
     "name": "杰克",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 488,
+    "sortIndex": 499,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1989783,7 +1989783,7 @@
   "char_381_bubble": {
     "name": "泡泡",
     "description": "能够阻挡三个敌人",
-    "sortIndex": 773,
+    "sortIndex": 792,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1994102,7 +1994102,7 @@
   "char_271_spikes": {
     "name": "芳汀",
     "description": "可以进行<@ba.kw>远程攻击</>，但此时攻击力降低至80%",
-    "sortIndex": 252,
+    "sortIndex": 262,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1999024,7 +1999024,7 @@
   "char_366_acdrop": {
     "name": "酸糖",
     "description": "高精度的近距离射击",
-    "sortIndex": 956,
+    "sortIndex": 980,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2003361,7 +2003361,7 @@
   "char_272_strong": {
     "name": "孑",
     "description": "再部署时间<@ba.kw>减少</>，撤退时不返还<@ba.kw>部署费用</>，在场时每3秒<@ba.kw>消耗</>3点部署费用（不足时自动撤退）",
-    "sortIndex": 481,
+    "sortIndex": 492,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2008187,7 +2008187,7 @@
   "char_328_cammou": {
     "name": "卡达",
     "description": "操作<@ba.kw>浮游单元</>对敌人造成<@ba.kw>法术伤害</>\\n浮游单元连续攻击同一敌人时伤害提升（最高造成干员110%攻击力的伤害）",
-    "sortIndex": 554,
+    "sortIndex": 569,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2013181,7 +2013181,7 @@
   "char_258_podego": {
     "name": "波登可",
     "description": "攻击造成<@ba.kw>法术伤害</>，并对敌人造成短暂的<$ba.sluggish>停顿</>",
-    "sortIndex": 98,
+    "sortIndex": 99,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2017675,7 +2017675,7 @@
   "char_301_cutter": {
     "name": "刻刀",
     "description": "普通攻击连续造成<@ba.kw>两次</>伤害",
-    "sortIndex": 572,
+    "sortIndex": 587,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2023076,7 +2023076,7 @@
   "char_159_peacok": {
     "name": "断罪者",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 232,
+    "sortIndex": 241,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2028074,7 +2028074,7 @@
   "char_337_utage": {
     "name": "宴",
     "description": "不成为其他角色的治疗目标，每次攻击到敌人后回复自身<@ba.kw>{value}</>生命",
-    "sortIndex": 1155,
+    "sortIndex": 1185,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2032601,7 +2032601,7 @@
   "char_385_finlpp": {
     "name": "清流",
     "description": "拥有较大治疗范围，但在治疗较远目标时治疗量变为<@ba.kw>{heal_scale:0%}</>",
-    "sortIndex": 799,
+    "sortIndex": 819,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2041606,7 +2041606,7 @@
   "char_133_mm": {
     "name": "梅",
     "description": "优先攻击空中单位",
-    "sortIndex": 687,
+    "sortIndex": 706,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2046279,7 +2046279,7 @@
   "char_355_ethan": {
     "name": "伊桑",
     "description": "对攻击范围内<@ba.kw>所有敌人</>造成伤害\\n拥有50%的物理和法术闪避且不容易成为敌人的<@ba.kw>攻击目标</>",
-    "sortIndex": 1234,
+    "sortIndex": 1266,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2050727,7 +2050727,7 @@
   "char_190_clour": {
     "name": "红云",
     "description": "优先攻击空中单位",
-    "sortIndex": 399,
+    "sortIndex": 410,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2055110,7 +2055110,7 @@
   "char_260_durnar": {
     "name": "坚雷",
     "description": "技能开启时普通攻击会造成法术伤害",
-    "sortIndex": 448,
+    "sortIndex": 459,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2059336,7 +2059336,7 @@
   "char_151_myrtle": {
     "name": "桃金娘",
     "description": "技能发动期间阻挡数变为0",
-    "sortIndex": 978,
+    "sortIndex": 1002,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2064215,7 +2064215,7 @@
   "char_298_susuro": {
     "name": "苏苏洛",
     "description": "恢复友方单位生命",
-    "sortIndex": 970,
+    "sortIndex": 994,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2068758,7 +2068758,7 @@
   "char_253_greyy": {
     "name": "格雷伊",
     "description": "攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 336,
+    "sortIndex": 346,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2073136,7 +2073136,7 @@
   "char_137_brownb": {
     "name": "猎蜂",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 620,
+    "sortIndex": 638,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2081952,7 +2081952,7 @@
   "char_183_skgoat": {
     "name": "地灵",
     "description": "攻击造成<@ba.kw>法术伤害</>，并对敌人造成短暂的<$ba.sluggish>停顿</>",
-    "sortIndex": 218,
+    "sortIndex": 223,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2086398,7 +2086398,7 @@
   "char_110_deepcl": {
     "name": "深海色",
     "description": "攻击造成<@ba.kw>法术伤害</>\\n可以使用<@ba.kw>召唤物</>协助作战",
-    "sortIndex": 885,
+    "sortIndex": 909,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2088805,7 +2088805,7 @@
       {
         "name": "触手",
         "description": "能够阻挡一个敌人",
-        "sortIndex": 169,
+        "sortIndex": 173,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -2092166,7 +2092166,7 @@
   "char_196_sunbr": {
     "name": "古米",
     "description": "技能可以治疗友方单位",
-    "sortIndex": 358,
+    "sortIndex": 368,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2098135,7 +2098135,7 @@
   "char_150_snakek": {
     "name": "蛇屠箱",
     "description": "能够阻挡三个敌人",
-    "sortIndex": 893,
+    "sortIndex": 917,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2102459,7 +2102459,7 @@
   "char_199_yak": {
     "name": "角峰",
     "description": "能够阻挡三个敌人",
-    "sortIndex": 462,
+    "sortIndex": 473,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2106833,7 +2106833,7 @@
   "char_181_flower": {
     "name": "调香师",
     "description": "同时恢复三个友方单位的生命",
-    "sortIndex": 998,
+    "sortIndex": 1023,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2111306,7 +2111306,7 @@
   "char_187_ccheal": {
     "name": "嘉维尔",
     "description": "恢复友方单位生命",
-    "sortIndex": 468,
+    "sortIndex": 479,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2116203,7 +2116203,7 @@
   "char_117_myrrh": {
     "name": "末药",
     "description": "恢复友方单位生命",
-    "sortIndex": 730,
+    "sortIndex": 749,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2125436,7 +2125436,7 @@
   "char_237_gravel": {
     "name": "砾",
     "description": "再部署时间大幅度<@ba.kw>减少</>",
-    "sortIndex": 616,
+    "sortIndex": 634,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2129782,7 +2129782,7 @@
   "char_185_frncat": {
     "name": "慕斯",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 742,
+    "sortIndex": 761,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2138744,7 +2138744,7 @@
   "char_193_frostl": {
     "name": "霜叶",
     "description": "可以进行<@ba.kw>远程攻击</>，但此时攻击力降低至80%",
-    "sortIndex": 933,
+    "sortIndex": 957,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2143330,7 +2143330,7 @@
   "char_289_gyuki": {
     "name": "缠丸",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 135,
+    "sortIndex": 139,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2147589,7 +2147589,7 @@
   "char_130_doberm": {
     "name": "杜宾",
     "description": "可以攻击到<@ba.kw>较远敌人</>，攻击自身未阻挡的敌人时攻击力提升至120%",
-    "sortIndex": 233,
+    "sortIndex": 242,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2152097,7 +2152097,7 @@
   "char_290_vigna": {
     "name": "红豆",
     "description": "击杀敌人后获得1点部署费用，撤退时返还初始部署费用",
-    "sortIndex": 393,
+    "sortIndex": 404,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2156513,7 +2156513,7 @@
   "char_149_scave": {
     "name": "清道夫",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 797,
+    "sortIndex": 817,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2160874,7 +2160874,7 @@
   "char_198_blackd": {
     "name": "讯使",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 1143,
+    "sortIndex": 1173,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2169852,7 +2169852,7 @@
   "char_126_shotst": {
     "name": "流星",
     "description": "优先攻击空中单位",
-    "sortIndex": 650,
+    "sortIndex": 669,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2174470,7 +2174470,7 @@
   "char_235_jesica": {
     "name": "杰西卡",
     "description": "优先攻击空中单位",
-    "sortIndex": 490,
+    "sortIndex": 501,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2178889,7 +2178889,7 @@
   "char_109_fmout": {
     "name": "远山",
     "description": "攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 1248,
+    "sortIndex": 1281,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2184099,7 +2184099,7 @@
   "char_141_nights": {
     "name": "夜烟",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 1190,
+    "sortIndex": 1220,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2192210,7 +2192210,7 @@
   "char_281_popka": {
     "name": "泡普卡",
     "description": "同时攻击阻挡的<@ba.kw>所有敌人</>",
-    "sortIndex": 774,
+    "sortIndex": 793,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2195399,7 +2195399,7 @@
   "char_283_midn": {
     "name": "月见夜",
     "description": "可以进行<@ba.kw>远程攻击</>，但此时攻击力降低至80%",
-    "sortIndex": 1283,
+    "sortIndex": 1316,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2198636,7 +2198636,7 @@
   "char_282_catap": {
     "name": "空爆",
     "description": "攻击造成<@ba.kw>群体物理伤害</>",
-    "sortIndex": 582,
+    "sortIndex": 599,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2201827,7 +2201827,7 @@
   "char_278_orchid": {
     "name": "梓兰",
     "description": "攻击造成<@ba.kw>法术伤害</>，并对敌人造成短暂的<$ba.sluggish>停顿</>",
-    "sortIndex": 1384,
+    "sortIndex": 1418,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2205210,7 +2205210,7 @@
   "char_210_stward": {
     "name": "史都华德",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 900,
+    "sortIndex": 924,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2211671,7 +2211671,7 @@
   "char_120_hibisc": {
     "name": "芙蓉",
     "description": "恢复友方单位生命",
-    "sortIndex": 308,
+    "sortIndex": 318,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2214870,7 +2214870,7 @@
   "char_121_lava": {
     "name": "炎熔",
     "description": "攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 1163,
+    "sortIndex": 1193,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2221268,7 +2221268,7 @@
   "char_124_kroos": {
     "name": "克洛丝",
     "description": "优先攻击空中单位",
-    "sortIndex": 576,
+    "sortIndex": 592,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2224623,7 +2224623,7 @@
   "char_122_beagle": {
     "name": "米格鲁",
     "description": "能够阻挡三个敌人",
-    "sortIndex": 704,
+    "sortIndex": 723,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2227743,7 +2227743,7 @@
   "char_209_ardign": {
     "name": "卡缇",
     "description": "能够阻挡三个敌人",
-    "sortIndex": 565,
+    "sortIndex": 580,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2230878,7 +2230878,7 @@
   "char_208_melan": {
     "name": "玫兰莎",
     "description": "能够阻挡一个敌人",
-    "sortIndex": 690,
+    "sortIndex": 709,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2234007,7 +2234007,7 @@
   "char_192_falco": {
     "name": "翎羽",
     "description": "击杀敌人后获得1点部署费用，撤退时返还初始部署费用",
-    "sortIndex": 636,
+    "sortIndex": 655,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2237304,7 +2237304,7 @@
   "char_240_wyvern": {
     "name": "香草",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 1072,
+    "sortIndex": 1101,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2240580,7 +2240580,7 @@
   "char_123_fang": {
     "name": "芬",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 284,
+    "sortIndex": 294,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2243687,7 +2243687,7 @@
   "char_009_12fce": {
     "name": "12F",
     "description": "攻击造成<@ba.kw>群体法术伤害</>",
-    "sortIndex": 245,
+    "sortIndex": 255,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2246333,7 +2246333,7 @@
   "char_501_durin": {
     "name": "杜林",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 234,
+    "sortIndex": 243,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2248864,7 +2248864,7 @@
   "char_503_rang": {
     "name": "巡林者",
     "description": "优先攻击空中单位",
-    "sortIndex": 1142,
+    "sortIndex": 1172,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2251401,7 +2251401,7 @@
   "char_500_noirc": {
     "name": "黑角",
     "description": "能够阻挡三个敌人",
-    "sortIndex": 380,
+    "sortIndex": 390,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2253913,7 +2253913,7 @@
   "char_502_nblade": {
     "name": "夜刀",
     "description": "能够阻挡两个敌人",
-    "sortIndex": 1181,
+    "sortIndex": 1211,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2256544,7 +2256544,7 @@
   "char_4220_kormr": {
     "name": "虎狼丸",
     "description": "普通攻击连续造成<@ba.kw>两次</>伤害，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 422,
+    "sortIndex": 433,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2257977,7 +2257977,7 @@
   "char_4215_buddy": {
     "name": "罗德岛隐秘队",
     "description": "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%；不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 666,
+    "sortIndex": 685,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2258680,7 +2258680,7 @@
       {
         "name": "牙猎犬",
         "description": "能够阻挡一个敌人，只能部署在艾露猫的攻击范围内",
-        "sortIndex": 1148,
+        "sortIndex": 1178,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -2259691,7 +2259691,7 @@
   "char_4227_gallus": {
     "name": "GALLUS²",
     "description": "攻击造成<@ba.kw>法术伤害</>，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 315,
+    "sortIndex": 325,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2262432,7 +2262432,7 @@
   "char_4188_confes": {
     "name": "CONFESS-47",
     "description": "能够阻挡两个敌人，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 173,
+    "sortIndex": 177,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2265140,7 +2265140,7 @@
   "char_4136_phonor": {
     "name": "PhonoR-0",
     "description": "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素损伤</>，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 784,
+    "sortIndex": 803,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2267903,7 +2267903,7 @@
   "char_4093_frston": {
     "name": "Friston-3",
     "description": "能够阻挡三个敌人，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 304,
+    "sortIndex": 314,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2270554,7 +2270554,7 @@
   "char_4091_ulika": {
     "name": "U-Official",
     "description": "不攻击，持续恢复范围内所有友军<@ba.kw>生命</>（每秒恢复相当于自身攻击力10%的生命），自身不受<$ba.inspire>鼓舞</>影响，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 1021,
+    "sortIndex": 1048,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2273290,7 +2273290,7 @@
   "char_4077_palico": {
     "name": "泰拉大陆调查团",
     "description": "攻击对小范围的<@ba.kw>地面</>敌人造成<@ba.kw>两次</>物理伤害（第二次为余震，伤害降低至攻击力的一半），且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 972,
+    "sortIndex": 996,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2274538,7 +2274538,7 @@
   "char_4000_jnight": {
     "name": "正义骑士号",
     "description": "优先攻击空中单位，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 1340,
+    "sortIndex": 1373,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2277293,7 +2277293,7 @@
   "char_376_therex": {
     "name": "THRM-EX",
     "description": "不进行攻击，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 987,
+    "sortIndex": 1011,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2280074,7 +2280074,7 @@
   "char_286_cast3": {
     "name": "Castle-3",
     "description": "能够阻挡一个敌人，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 131,
+    "sortIndex": 135,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2282797,7 +2282797,7 @@
   "char_285_medic2": {
     "name": "Lancet-2",
     "description": "恢复友方单位生命，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 600,
+    "sortIndex": 618,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,

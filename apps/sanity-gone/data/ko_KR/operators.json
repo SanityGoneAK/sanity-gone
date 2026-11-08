@@ -2,7 +2,7 @@
   "char_4247_oxi": {
     "name": "Talulah",
     "description": "能够阻挡两个敌人，可以造成<@ba.kw>元素伤害</>",
-    "sortIndex": 973,
+    "sortIndex": 997,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2321,7 +2321,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2481,7 +2481,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2561,7 +2561,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2641,7 +2641,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2721,7 +2721,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2801,7 +2801,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2881,7 +2881,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -2961,7 +2961,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -3041,7 +3041,7 @@
           {
             "name": "日冕重烈",
             "rangeId": null,
-            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0.0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
+            "description": "攻击力<@ba.vup>+{atk:0%}</>；停止攻击以持续引导场地进入以下状态：每<@ba.vup>{normal_interval:0.00}</>秒在5行范围内，朝部署方向召唤“簇火”，“簇火”碰到敌人时爆炸造成攻击力<@ba.vup>{heatwave_atk_scale:0%}</>的范围法术伤害；若目标处于<$ba.dt.burning2>灼燃损伤</>爆发期间则改为造成元素伤害\\n<$ba.overdrive>过载</>：“簇火”生成间隔缩短至<@ba.vup>{overload_interval:0}</>秒，范围扩展最多13行\\n被同波次的多个“簇火”命中时，后续“簇火”造成的伤害降低至<@ba.vup>{same_wave_repeat_damage_scale:0%}</>\\n<@ba.rem>该技能可随时主动关闭</>",
             "skillType": "MANUAL",
             "durationType": "NONE",
             "spData": {
@@ -5163,7 +5163,7 @@
   "char_4246_dminon": {
     "name": "Территория",
     "description": "对攻击范围内<@ba.kw>所有敌人</>造成伤害\\n拥有50%的物理和法术闪避且不容易成为敌人的<@ba.kw>攻击目标</>",
-    "sortIndex": 360,
+    "sortIndex": 370,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -10878,7 +10878,7 @@
   "char_4244_tocka": {
     "name": "Тоска",
     "description": "可以使用<$ba.triggereffect>触发型效果</>协助作战",
-    "sortIndex": 223,
+    "sortIndex": 229,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -15483,7 +15483,7 @@
   "char_4231_clemnt": {
     "name": "Clementia",
     "description": "能够阻挡两个敌人，可以造成<@ba.kw>元素伤害</>",
-    "sortIndex": 575,
+    "sortIndex": 591,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -20047,7 +20047,7 @@
   "char_4217_makoto": {
     "name": "Makoto Yuki",
     "description": "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0），持续20秒后自身再次替换<替身>",
-    "sortIndex": 483,
+    "sortIndex": 494,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -25570,7 +25570,7 @@
   "char_4235_thumpy": {
     "name": "Thumpy",
     "description": "能够阻挡三个敌人，可以造成元素损伤",
-    "sortIndex": 854,
+    "sortIndex": 878,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -29974,7 +29974,7 @@
   "char_1015_aglna2": {
     "name": "Angelina the Mellow Wish",
     "description": "<$ba.liftoff>起飞</>后能够阻挡2个飞行敌人",
-    "sortIndex": 1297,
+    "sortIndex": 1330,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -34542,7 +34542,7 @@
       {
         "name": "\"See you soon!\"",
         "description": null,
-        "sortIndex": 1199,
+        "sortIndex": 1231,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -36472,7 +36472,7 @@
   "char_4230_mcnist": {
     "name": "Mechanist",
     "description": "能够阻挡三个敌人，可以进行远程攻击",
-    "sortIndex": 536,
+    "sortIndex": 550,
     "spTargetType": "ROGUE",
     "spTargetId": "rogue_6",
     "canUseGeneralPotentialItem": true,
@@ -39069,7 +39069,7 @@
       {
         "name": "Structural Principle",
         "description": "能够阻挡三个敌人",
-        "sortIndex": 484,
+        "sortIndex": 495,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -41684,7 +41684,7 @@
   "char_4229_aphris": {
     "name": "Aphrissa",
     "description": "攻击造成<@ba.kw>超远距离的群体法术伤害</>",
-    "sortIndex": 720,
+    "sortIndex": 739,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -44149,7 +44149,7 @@
       {
         "name": "Repeater",
         "description": "不会受到攻击，可部署在地面或高台位",
-        "sortIndex": 1365,
+        "sortIndex": 1398,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -46319,7 +46319,7 @@
   "char_1048_orchd2": {
     "name": "Violet Mizutsune Orchid",
     "description": "高精度的近距离射击",
-    "sortIndex": 1161,
+    "sortIndex": 1191,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -51030,7 +51030,7 @@
   "char_1052_kalts2": {
     "name": "켈시 에스페란타",
     "description": "아군 유닛의 HP 회복, <$ba.liftoff>이륙</> 가능",
-    "sortIndex": 557,
+    "sortIndex": 572,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -54534,7 +54534,7 @@
       {
         "name": "전술 앵커",
         "description": "공격받지 않음, 켈시 에스페란타 공격 범위 밖의 고지대에만 배치 가능",
-        "sortIndex": 1323,
+        "sortIndex": 1356,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -58537,7 +58537,7 @@
   "char_4228_closur": {
     "name": "클로저",
     "description": "공격 범위에 지원군 소환 가능, 지원군이 저지한 적 공격 시 자신의 공격력이 150%로 증가",
-    "sortIndex": 578,
+    "sortIndex": 594,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -61602,7 +61602,7 @@
       {
         "name": "지휘 센터",
         "description": "공격하지 않음, 적 2명 저지 가능, 소환자의 공격 범위 내에만 배치 가능",
-        "sortIndex": 1349,
+        "sortIndex": 1382,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -65129,7 +65129,7 @@
   "char_4226_veen": {
     "name": "비이",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 목표가 없으면 공격 에너지를 <@ba.kw>저장</>해 일제히 발사 (최대 3개)",
-    "sortIndex": 1038,
+    "sortIndex": 1066,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -70922,7 +70922,7 @@
   "char_1051_headb2": {
     "name": "지마 더 레이징 타이드",
     "description": "공격 시 목표 주변의 다른 적에게 공격력의 <@ba.kw>50%</>에 해당하는 <@ba.kw>광역</> 물리 대미지를 입힘",
-    "sortIndex": 764,
+    "sortIndex": 783,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -77111,7 +77111,7 @@
   "char_4037_demetr": {
     "name": "벨로네",
     "description": "적 1명 저지 가능",
-    "sortIndex": 63,
+    "sortIndex": 64,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -79863,7 +79863,7 @@
       {
         "name": "결속",
         "description": "벨로네가 스킬 종료 후 해당 위치로 복귀, 기타 오퍼레이터 배치 불가",
-        "sortIndex": 791,
+        "sortIndex": 811,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -83924,7 +83924,7 @@
   "char_2027_wang": {
     "name": "왕",
     "description": "함정을 사용해 작전 지원, <@ba.kw>적이 있는</> 칸에 함정 배치 불가",
-    "sortIndex": 1025,
+    "sortIndex": 1052,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -87507,7 +87507,7 @@
       {
         "name": "바둑돌",
         "description": null,
-        "sortIndex": 815,
+        "sortIndex": 835,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -93176,7 +93176,7 @@
   "char_1050_chen3": {
     "name": "첸 더 던스트릭",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 159,
+    "sortIndex": 163,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -99722,7 +99722,7 @@
   "char_4056_titi": {
     "name": "티티",
     "description": "공격 시 마법 대미지를 입히며, 적을 공격할 때마다 공격 범위 내 아군 1명의 HP를 대미지의 50%만큼 회복",
-    "sortIndex": 1007,
+    "sortIndex": 1032,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -105059,7 +105059,7 @@
   "char_4212_nasti": {
     "name": "내스티",
     "description": "적 2명 저지 가능, <지원 장치>를 사용해 작전 지원",
-    "sortIndex": 744,
+    "sortIndex": 763,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -107246,7 +107246,7 @@
       {
         "name": "'품질검사 담당'",
         "description": "공격받지 않음, 지상 및 고지대에 배치 가능",
-        "sortIndex": 1351,
+        "sortIndex": 1384,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -108893,7 +108893,7 @@
       {
         "name": "'공사감독 담당'",
         "description": "공격받지 않음, 지상 및 고지대에 배치 가능",
-        "sortIndex": 444,
+        "sortIndex": 455,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -111035,7 +111035,7 @@
       {
         "name": "'응급하중팀'",
         "description": "장치는 엔지니어, 고지대 2가지 형태가 존재, 엔지니어 형태에서 공격받지 않음, 지상 및 고지대에 배치 가능",
-        "sortIndex": 1217,
+        "sortIndex": 1249,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -117083,7 +117083,7 @@
   "char_1045_svash2": {
     "name": "실버애쉬 더 레인프로스트",
     "description": "적 2명 저지 가능, 배치 구역의 아군 유닛 지원 가능",
-    "sortIndex": 645,
+    "sortIndex": 664,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -121273,7 +121273,7 @@
       {
         "name": "눈보라의 눈",
         "description": "실버애쉬 더 레인프로스트가 배치되어 있을 때 배치 구역에 추가, 배치 코스트는 실버애쉬 더 레인프로스트의 스킬에 따라 변경",
-        "sortIndex": 295,
+        "sortIndex": 305,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -122564,7 +122564,7 @@
       {
         "name": "눈보라의 눈",
         "description": "실버애쉬 더 레인프로스트가 배치되어 있을 때 배치 구역에 추가, 배치 코스트는 실버애쉬 더 레인프로스트의 스킬에 따라 변경",
-        "sortIndex": 294,
+        "sortIndex": 304,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -123855,7 +123855,7 @@
       {
         "name": "눈보라의 눈",
         "description": "실버애쉬 더 레인프로스트가 배치되어 있을 때 배치 구역에 추가, 배치 코스트는 실버애쉬 더 레인프로스트의 스킬에 따라 변경",
-        "sortIndex": 296,
+        "sortIndex": 306,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -129328,7 +129328,7 @@
   "char_1046_sbell2": {
     "name": "프라마닉스 더 프레리타",
     "description": "<@ba.kw>공격을 진행하지 않으며</>, 방어력과 마법 저항이 대폭 <@ba.kw>증가</>, 스킬 발동 시 공격 범위 내 모든 적에게 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 874,
+    "sortIndex": 898,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -136409,7 +136409,7 @@
   "char_1047_halo2": {
     "name": "아스트젠 더 라이트체이서",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 적에게 일시적인 <$ba.sluggish>정지</> 효과 부여",
-    "sortIndex": 958,
+    "sortIndex": 982,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -142771,7 +142771,7 @@
   "char_4204_mantra": {
     "name": "만트라",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, <@ba.kw>원소 대미지</>를 입힐 수 있음",
-    "sortIndex": 1345,
+    "sortIndex": 1378,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -149079,7 +149079,7 @@
   "char_4182_oblvns": {
     "name": "토가와 사키코",
     "description": "<@ba.kw>원거리 공격</> 가능, 원거리 공격 시 공격력이 80%로 감소",
-    "sortIndex": 285,
+    "sortIndex": 295,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -153624,7 +153624,7 @@
   "char_1044_hsgma2": {
     "name": "호시구마 더 브리처",
     "description": "스킬 발동 시 일반 공격이 마법 대미지를 입힘",
-    "sortIndex": 1327,
+    "sortIndex": 1360,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -160332,7 +160332,7 @@
   "char_4202_haruka": {
     "name": "하루카",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75%에 해당)",
-    "sortIndex": 1172,
+    "sortIndex": 1202,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -166736,7 +166736,7 @@
   "char_4195_radian": {
     "name": "라이디언",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘\n<@ba.kw>소환물</> 사용 가능",
-    "sortIndex": 211,
+    "sortIndex": 215,
     "spTargetType": "ROGUE",
     "spTargetId": "rogue_5",
     "canUseGeneralPotentialItem": true,
@@ -168985,7 +168985,7 @@
       {
         "name": "다이브",
         "description": "적 3명 저지 가능",
-        "sortIndex": 188,
+        "sortIndex": 192,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -170066,7 +170066,7 @@
       {
         "name": "사이클",
         "description": "일정 거리를 비행하는 탄환을 계속 발사, 명중한 첫 번째 지상 적에게 물리 대미지를 입힘",
-        "sortIndex": 841,
+        "sortIndex": 865,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -171612,7 +171612,7 @@
       {
         "name": "센터",
         "description": "공격 시 마법 대미지를 입힘",
-        "sortIndex": 846,
+        "sortIndex": 870,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -176668,7 +176668,7 @@
   "char_1043_leizi2": {
     "name": "레이즈 더 썬더브링어",
     "description": "저지 가능 수 0, 공격을 진행하지 않으며, <@ba.kw>{max_stack_cnt}</>초간 공격력이 최대 <@ba.kw>+{atk:0%}</>까지 증가, 스킬 종료 후 공격력 초기화",
-    "sortIndex": 947,
+    "sortIndex": 971,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -182843,7 +182843,7 @@
   "char_1042_phatm2": {
     "name": "트라고디아",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, <@ba.kw>원소 손상</>을 입힐 수 있음",
-    "sortIndex": 535,
+    "sortIndex": 549,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -186680,7 +186680,7 @@
       {
         "name": "본능의 부름",
         "description": "피격되지 않음, 지상에만 배치 가능",
-        "sortIndex": 71,
+        "sortIndex": 72,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -189235,7 +189235,7 @@
       {
         "name": "광란의 감옥",
         "description": "생성/갱신된 감옥은 해당 위치의 모든 적 저지, 저지할 목표가 없거나 저지당한 목표가 3회 공격 시 소멸, 트라고디아의 스킬 종료 후 추가로 30초 유지",
-        "sortIndex": 706,
+        "sortIndex": 725,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -193859,7 +193859,7 @@
   "char_1041_angel2": {
     "name": "엑시아 더 뉴 커버넌트",
     "description": "자신의 HP가 지속해서 감소",
-    "sortIndex": 1116,
+    "sortIndex": 1145,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -196739,7 +196739,7 @@
       {
         "name": "배달 좌표",
         "description": "공격을 받지 않음",
-        "sortIndex": 1012,
+        "sortIndex": 1037,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -203269,7 +203269,7 @@
   "char_4193_lemuen": {
     "name": "르무엔",
     "description": "공격 범위 내 <@ba.kw>방어력이 가장 낮은</> 적을 우선 공격",
-    "sortIndex": 612,
+    "sortIndex": 630,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -208956,7 +208956,7 @@
   "char_4194_rmixer": {
     "name": "산크타 믹사파라토",
     "description": "적 3명 저지 가능, 원거리 공격 가능",
-    "sortIndex": 1115,
+    "sortIndex": 1144,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -214713,7 +214713,7 @@
   "char_4179_monstr": {
     "name": "Mon3tr",
     "description": "아군 치료, 치료 효과가 <@ba.kw>3</>명의 아군 사이에서 튕기며, 튕길 때마다 치유량 25% 감소",
-    "sortIndex": 727,
+    "sortIndex": 746,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -218589,7 +218589,7 @@
       {
         "name": "재구성체",
         "description": "자신의 HP가 지속해서 감소",
-        "sortIndex": 1364,
+        "sortIndex": 1397,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -223689,7 +223689,7 @@
   "char_450_necras": {
     "name": "네크라스",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, 적 처치 시 <@ba.kw>소환물</> 생성, <@ba.kw>소환물</>이 저지한 적 공격 가능",
-    "sortIndex": 946,
+    "sortIndex": 970,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -227040,7 +227040,7 @@
       {
         "name": "비탄의 하인",
         "description": "적 1명 저지 가능(저지 가능 수는 레벨에 따라 변경), 공격 시 마법 대미지를 입힘",
-        "sortIndex": 66,
+        "sortIndex": 67,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -230452,7 +230452,7 @@
   "char_4010_etlchi": {
     "name": "엔텔레키아",
     "description": "아군의 치료를 받을 수 없으며, 공격 시 <@ba.kw>광역 대미지</>를 입힘, 적을 공격할 때마다 HP <@ba.kw>50</> 회복, 최대 적용 수는 저지 가능 수와 동일",
-    "sortIndex": 1205,
+    "sortIndex": 1237,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -236166,7 +236166,7 @@
   "char_2026_yu": {
     "name": "위",
     "description": "적 3명 저지 가능, 공격 시 <@ba.kw>원소 손상</>을 입힐 수 있음",
-    "sortIndex": 1246,
+    "sortIndex": 1279,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -242620,7 +242620,7 @@
   "char_1040_blaze2": {
     "name": "블레이즈 디 이그나이팅 스파크",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, <@ba.kw>원소 대미지</>를 입힐 수 있음",
-    "sortIndex": 1374,
+    "sortIndex": 1408,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -249957,7 +249957,7 @@
   "char_1039_thorn2": {
     "name": "쏜즈 더 로드스타",
     "description": "<@ba.kw>연금 유닛</>을 투척해 작전 지원",
-    "sortIndex": 1232,
+    "sortIndex": 1264,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -257642,7 +257642,7 @@
   "char_1038_whitw2": {
     "name": "라플란드 더 데카덴차",
     "description": "<@ba.kw>공중 유닛</>을 조종해 적에게 <@ba.kw>마법 대미지</>를 입힘\n같은 적을 연속으로 공격 시 대미지 증가 (최대로 오퍼레이터 공격력의 110%에 해당하는 대미지)",
-    "sortIndex": 411,
+    "sortIndex": 422,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -266907,7 +266907,7 @@
   "char_4026_vulpis": {
     "name": "불피스폴리아",
     "description": "적 2명 저지 가능",
-    "sortIndex": 829,
+    "sortIndex": 852,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -273452,7 +273452,7 @@
   "char_1502_crosly": {
     "name": "크라운슬레이어",
     "description": "재배치 시간 대폭 <@ba.kw>감소</>",
-    "sortIndex": 904,
+    "sortIndex": 928,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -280209,7 +280209,7 @@
   "char_1019_siege2": {
     "name": "비나 빅토리아",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 1031,
+    "sortIndex": 1058,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -282903,7 +282903,7 @@
       {
         "name": "황금의 맹세",
         "description": "적 1명 저지 가능, 공격 시 <@ba.kw>트루 대미지</>를 입힘",
-        "sortIndex": 409,
+        "sortIndex": 420,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -286542,7 +286542,7 @@
   "char_4141_marcil": {
     "name": "마르실",
     "description": "공격 시 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 683,
+    "sortIndex": 702,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -290586,7 +290586,7 @@
   "char_4058_pepe": {
     "name": "페페",
     "description": "공격 시 목표 주변의 다른 적에게 공격력의 <@ba.kw>50%</>에 해당하는 <@ba.kw>광역</> 물리 대미지를 입힘",
-    "sortIndex": 780,
+    "sortIndex": 799,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -296265,7 +296265,7 @@
   "char_4138_narant": {
     "name": "나란투야",
     "description": "<@ba.kw>부메랑 투사체</>를 보유한 경우에만 공격 가능 (투사체 회수 필요)",
-    "sortIndex": 743,
+    "sortIndex": 762,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -301897,7 +301897,7 @@
   "char_4146_nymph": {
     "name": "님프",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, <@ba.kw>원소 대미지</>를 입힐 수 있음",
-    "sortIndex": 756,
+    "sortIndex": 775,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -307914,7 +307914,7 @@
   "char_4145_ulpia": {
     "name": "울피아누스",
     "description": "저지하고 있는 <@ba.kw>모든 적</> 동시에 공격",
-    "sortIndex": 1048,
+    "sortIndex": 1076,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -310800,7 +310800,7 @@
       {
         "name": "헷갈리지 않는 방향",
         "description": "울피아누스가 스킬 종료 후 해당 위치에 복귀, 기타 오퍼레이터 배치 불가",
-        "sortIndex": 174,
+        "sortIndex": 178,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -314396,7 +314396,7 @@
   "char_1035_wisdel": {
     "name": "위셔델",
     "description": "작은 범위 내 <@ba.kw>지상</> 적에게 물리 대미지를 <@ba.kw>2회</> 입힘 (2회차부터는 여진으로써 대미지가 공격력의 절반으로 감소)",
-    "sortIndex": 1032,
+    "sortIndex": 1059,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -316971,7 +316971,7 @@
       {
         "name": "레버넌트의 그림자",
         "description": "위셔델 공격 범위 내 적 공격 가능",
-        "sortIndex": 423,
+        "sortIndex": 434,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -323994,7 +323994,7 @@
   "char_4133_logos": {
     "name": "로고스",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 667,
+    "sortIndex": 686,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -330781,7 +330781,7 @@
   "char_4134_cetsyr": {
     "name": "시빌라이트 에테르나",
     "description": "공격을 진행하지 않으며, 범위 내 모든 아군의 <@ba.kw>HP</>를 초당 자신 공격력의 10%만큼 회복, 자신은 <$ba.inspire>격려</>의 영향을 받지 않음",
-    "sortIndex": 729,
+    "sortIndex": 748,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -348825,7 +348825,7 @@
       {
         "name": "GRZMOT 지뢰",
         "description": "공격을 받지 않으며, <@ba.kw>적이 있는</> 칸에 배치 불가",
-        "sortIndex": 611,
+        "sortIndex": 629,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -351812,7 +351812,7 @@
   "char_2025_shu": {
     "name": "슈",
     "description": "스킬로 아군 유닛 HP 회복",
-    "sortIndex": 928,
+    "sortIndex": 952,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -359679,7 +359679,7 @@
   "char_4121_zuole": {
     "name": "좌락",
     "description": "아군의 치료를 받을 수 없으며, 적을 공격할 때마다 HP <@ba.kw>{value}</> 회복",
-    "sortIndex": 1398,
+    "sortIndex": 1432,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -366131,7 +366131,7 @@
   "char_4117_ray": {
     "name": "레이",
     "description": "공격 시 탄약을 소모하며 공격력이 <@ba.kw>120%</>까지 증가, 비공격 상태에서 서서히 탄약 장전 (최대 8발)",
-    "sortIndex": 599,
+    "sortIndex": 617,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -369473,7 +369473,7 @@
       {
         "name": "샌드비스트",
         "description": "공격을 받지 않으며, 소환자의 공격 범위에만 배치 가능",
-        "sortIndex": 852,
+        "sortIndex": 876,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -373510,7 +373510,7 @@
   "char_4116_blkkgt": {
     "name": "데겐블레허",
     "description": "일반 공격 시 대미지를 <@ba.kw>2회</> 입힘",
-    "sortIndex": 436,
+    "sortIndex": 447,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -380345,7 +380345,7 @@
   "char_245_cello": {
     "name": "비르투오사",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, <@ba.kw>원소 손상</>을 입힐 수 있음",
-    "sortIndex": 971,
+    "sortIndex": 995,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -389158,7 +389158,7 @@
   "char_4098_vvana": {
     "name": "비비아나",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 1035,
+    "sortIndex": 1063,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -395555,7 +395555,7 @@
   "char_4011_lessng": {
     "name": "레싱",
     "description": "적 1명 저지 가능",
-    "sortIndex": 1363,
+    "sortIndex": 1396,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -401189,7 +401189,7 @@
   "char_4088_hodrer": {
     "name": "외드레르",
     "description": "저지하고 있는 <@ba.kw>모든 적</> 동시에 공격",
-    "sortIndex": 376,
+    "sortIndex": 386,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -406584,7 +406584,7 @@
   "char_1034_jesca2": {
     "name": "제시카 더 리버레이티드",
     "description": "적 3명 저지 가능, 원거리 공격 가능",
-    "sortIndex": 217,
+    "sortIndex": 222,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -409449,7 +409449,7 @@
       {
         "name": "기동 방패",
         "description": "더 쉽게 피격됨",
-        "sortIndex": 480,
+        "sortIndex": 491,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -413216,7 +413216,7 @@
   "char_1016_agoat2": {
     "name": "에이야퍄들라 더 크비트 아스카",
     "description": "아군 유닛의 HP 회복, 동시에 공격력의 50%에 해당하는 <@ba.dt.element>원소 손상</> 회복 (부상이 없는 아군 유닛의 <@ba.dt.element>원소 손상</>도 회복 가능)",
-    "sortIndex": 167,
+    "sortIndex": 171,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -422196,7 +422196,7 @@
   "char_1033_swire2": {
     "name": "스와이어 디 엘리건트 위트",
     "description": "재배치 시간 <@ba.kw>감소</>, 퇴각 시 <@ba.kw>배치 코스트</>를 반환하지 않으며, 3초마다 배치 코스트 <@ba.kw>3</> 소모 (부족 시 자동 퇴각)",
-    "sortIndex": 639,
+    "sortIndex": 658,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -424924,7 +424924,7 @@
       {
         "name": "샴페인 폭탄",
         "description": null,
-        "sortIndex": 1071,
+        "sortIndex": 1100,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -429656,7 +429656,7 @@
   "char_2012_typhon": {
     "name": "티폰",
     "description": "무게 등급이 가장 높은 적을 우선 공격",
-    "sortIndex": 1005,
+    "sortIndex": 1030,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -435181,7 +435181,7 @@
   "char_1032_excu2": {
     "name": "이그제큐터 디 엑스 포에데레",
     "description": "아군의 치료를 받을 수 없으며, 공격 시 <@ba.kw>광역 대미지</>를 입힘, 적을 공격할 때마다 HP <@ba.kw>50</> 회복, 최대 적용 수는 저지 가능 수와 동일",
-    "sortIndex": 882,
+    "sortIndex": 906,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -443967,7 +443967,7 @@
   "char_249_mlyss": {
     "name": "뮤엘시스",
     "description": "공격 범위에 지원군 소환 가능, 지원군이 저지한 적 공격 시 자신의 공격력이 150%로 증가",
-    "sortIndex": 719,
+    "sortIndex": 738,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -446454,7 +446454,7 @@
       {
         "name": "유동체",
         "description": "초기 공격 시 <@ba.kw>마법 대미지</>를 입히며, 소환자의 공격 범위에만 배치 가능",
-        "sortIndex": 649,
+        "sortIndex": 668,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -452879,7 +452879,7 @@
   "char_4027_heyak": {
     "name": "오올헤약",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 426,
+    "sortIndex": 437,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -459015,7 +459015,7 @@
   "char_1031_slent2": {
     "name": "사일런스 더 패러디그매틱",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75%에 해당)",
-    "sortIndex": 178,
+    "sortIndex": 182,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -461237,7 +461237,7 @@
       {
         "name": "밤의 등불",
         "description": "공격을 받지 않음",
-        "sortIndex": 1182,
+        "sortIndex": 1212,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -465288,7 +465288,7 @@
   "char_4087_ines": {
     "name": "이네스",
     "description": "재배치 시간 <@ba.kw>감소</>, 원거리 공격 가능",
-    "sortIndex": 1206,
+    "sortIndex": 1238,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -470866,7 +470866,7 @@
   "char_1029_yato2": {
     "name": "키린R 야토",
     "description": "재배치 시간 대폭 <@ba.kw>감소</>",
-    "sortIndex": 796,
+    "sortIndex": 816,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -476074,7 +476074,7 @@
   "char_4082_qiubai": {
     "name": "치우바이",
     "description": "<@ba.kw>원거리 공격</> 가능, 원거리 공격 시 공격력이 80%로 감소",
-    "sortIndex": 809,
+    "sortIndex": 829,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -482131,7 +482131,7 @@
   "char_2024_chyue": {
     "name": "총웨",
     "description": "적 1명 저지 가능",
-    "sortIndex": 164,
+    "sortIndex": 168,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -490851,7 +490851,7 @@
   "char_4080_lin": {
     "name": "린",
     "description": "<@ba.kw>공격을 진행하지 않으며</>, 방어력과 마법 저항이 대폭 <@ba.kw>증가</>, 스킬 발동 시 공격 범위 내 모든 적에게 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 627,
+    "sortIndex": 645,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -497921,7 +497921,7 @@
   "char_1020_reed2": {
     "name": "리드 더 플레임 섀도우",
     "description": "공격 시 마법 대미지를 입히며, 적을 공격할 때마다 공격 범위 내 아군 1명의 HP를 대미지의 50%만큼 회복",
-    "sortIndex": 1169,
+    "sortIndex": 1199,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -503622,7 +503622,7 @@
   "char_1028_texas2": {
     "name": "텍사스 디 오메르토사",
     "description": "재배치 시간 대폭 <@ba.kw>감소</>",
-    "sortIndex": 449,
+    "sortIndex": 460,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -510524,7 +510524,7 @@
   "char_4065_judge": {
     "name": "페넌스",
     "description": "아군의 치료를 받을 수 <@ba.kw>없음</>",
-    "sortIndex": 161,
+    "sortIndex": 165,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -516967,7 +516967,7 @@
   "char_427_vigil": {
     "name": "비질",
     "description": "공격 범위에 지원군 소환 가능, 지원군이 저지한 적 공격 시 자신의 공격력이 150%로 증가",
-    "sortIndex": 948,
+    "sortIndex": 972,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -519229,7 +519229,7 @@
       {
         "name": "늑대 무리",
         "description": "소환자의 공격 범위에만 배치 가능",
-        "sortIndex": 603,
+        "sortIndex": 621,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -526002,7 +526002,7 @@
       {
         "name": "스테인리스™ 멀티 플랫폼",
         "description": "공격을 받지 않음",
-        "sortIndex": 41,
+        "sortIndex": 42,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -527396,7 +527396,7 @@
       {
         "name": "스테인리스™ 멀티 플랫폼",
         "description": "공격을 받지 않음",
-        "sortIndex": 42,
+        "sortIndex": 41,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -528965,7 +528965,7 @@
       {
         "name": "글룸핀서호 - 프로토타입",
         "description": "아군의 공격을 받지만 대미지는 입지 않으며, 기능공 오퍼레이터의 공격을 받을 때 HP 회복",
-        "sortIndex": 1004,
+        "sortIndex": 1029,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -535142,7 +535142,7 @@
   "char_4064_mlynar": {
     "name": "무에나",
     "description": "저지 가능 수 0, 공격을 진행하지 않으며, <@ba.kw>{max_stack_cnt}</>초간 공격력이 최대 <@ba.kw>+{atk:0%}</>까지 증가, 스킬 종료 후 공격력 초기화",
-    "sortIndex": 676,
+    "sortIndex": 695,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -549783,7 +549783,7 @@
   "char_4055_bgsnow": {
     "name": "파죰카",
     "description": "고정밀 근거리 사격 가능",
-    "sortIndex": 398,
+    "sortIndex": 409,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -552847,7 +552847,7 @@
       {
         "name": "'타자기'",
         "description": "공격을 받지 않음",
-        "sortIndex": 207,
+        "sortIndex": 211,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -557856,7 +557856,7 @@
   "char_4048_doroth": {
     "name": "도로시",
     "description": "함정을 사용해 작전 지원, <@ba.kw>적이 있는</> 칸에 함정 배치 불가",
-    "sortIndex": 240,
+    "sortIndex": 250,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -560384,7 +560384,7 @@
       {
         "name": "공진 장치",
         "description": "공격을 받지 않으며, <@ba.kw>적이 있는</> 칸에 배치 불가",
-        "sortIndex": 344,
+        "sortIndex": 354,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -565734,7 +565734,7 @@
   "char_4046_ebnhlz": {
     "name": "에벤홀츠",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 목표가 없으면 공격 에너지를 <@ba.kw>저장</>해 일제히 발사 (최대 3개)",
-    "sortIndex": 379,
+    "sortIndex": 389,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -568178,7 +568178,7 @@
       {
         "name": "지난날의 잔상",
         "description": null,
-        "sortIndex": 532,
+        "sortIndex": 546,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -572850,7 +572850,7 @@
   "char_1023_ghost2": {
     "name": "스펙터 디 언체인드",
     "description": "치명상을 입어도 퇴각하지 않고, <대역>을 교체 투입하며(저지 가능 수 0), 20초 후 다시 본체로 교체",
-    "sortIndex": 356,
+    "sortIndex": 366,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -585606,7 +585606,7 @@
   "char_4042_lumen": {
     "name": "루멘",
     "description": "넓은 치료 범위 보유, 멀리 있는 목표 치료 시 치유량이 <@ba.kw>{heal_scale:0%}</>로 변경",
-    "sortIndex": 646,
+    "sortIndex": 665,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -591600,7 +591600,7 @@
   "char_4039_horn": {
     "name": "혼",
     "description": "적을 저지하고 있지 않을 때 <@ba.kw>원거리 광역</> 물리 대미지를 입힘",
-    "sortIndex": 373,
+    "sortIndex": 383,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -597356,7 +597356,7 @@
   "char_300_phenxi": {
     "name": "피아메타",
     "description": "공격 시 <@ba.kw>광역 물리 대미지</>를 입힘",
-    "sortIndex": 283,
+    "sortIndex": 293,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -602823,7 +602823,7 @@
   "char_377_gdglow": {
     "name": "골든글로우",
     "description": "<@ba.kw>공중 유닛</>을 조종해 적에게 <@ba.kw>마법 대미지</>를 입힘\n같은 적을 연속으로 공격 시 대미지 증가 (최대로 오퍼레이터 공격력의 110%에 해당하는 대미지)",
-    "sortIndex": 149,
+    "sortIndex": 153,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -608758,7 +608758,7 @@
   "char_2023_ling": {
     "name": "링",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘\n<@ba.kw>소환물</> 사용 가능",
-    "sortIndex": 630,
+    "sortIndex": 648,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -611295,7 +611295,7 @@
       {
         "name": "'칭핑'",
         "description": "적 1명 저지 가능",
-        "sortIndex": 800,
+        "sortIndex": 820,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -612497,7 +612497,7 @@
       {
         "name": "'샤오야오'",
         "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-        "sortIndex": 1088,
+        "sortIndex": 1117,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -614144,7 +614144,7 @@
       {
         "name": "'시엔징'",
         "description": "저지하고 있는 <@ba.kw>모든 적</> 동시 공격",
-        "sortIndex": 1078,
+        "sortIndex": 1107,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -622395,7 +622395,7 @@
   "char_322_lmlee": {
     "name": "리",
     "description": "재배치 시간 <@ba.kw>감소</>, 퇴각 시 <@ba.kw>배치 코스트</>를 반환하지 않으며, 3초마다 배치 코스트 <@ba.kw>3</> 소모 (부족 시 자동 퇴각)",
-    "sortIndex": 605,
+    "sortIndex": 623,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -628919,7 +628919,7 @@
   "char_206_gnosis": {
     "name": "노시스",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 637,
+    "sortIndex": 656,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -634276,7 +634276,7 @@
   "char_1014_nearl2": {
     "name": "니어 더 래디언트 나이트",
     "description": "적 1명 저지 가능",
-    "sortIndex": 1175,
+    "sortIndex": 1205,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -637135,7 +637135,7 @@
       {
         "name": "'눈 부신 태양'",
         "description": "적 2명 저지 가능",
-        "sortIndex": 1176,
+        "sortIndex": 1206,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -641288,7 +641288,7 @@
   "char_420_flamtl": {
     "name": "플레임테일",
     "description": "적 2명 저지 가능",
-    "sortIndex": 1167,
+    "sortIndex": 1197,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -647157,7 +647157,7 @@
   "char_430_fartth": {
     "name": "파투스",
     "description": "공격 범위 내 <@ba.kw>방어력이 가장 낮은</> 적을 우선 공격",
-    "sortIndex": 1265,
+    "sortIndex": 1298,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -652336,7 +652336,7 @@
   "char_479_sleach": {
     "name": "사일라흐",
     "description": "스킬 지속 시간 동안 저지 가능 수가 0으로 변경",
-    "sortIndex": 805,
+    "sortIndex": 825,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -658683,7 +658683,7 @@
   "char_1013_chen2": {
     "name": "첸 더 홀룽데이",
     "description": "공격 범위 내 <@ba.kw>모든 적</> 공격, 전방 첫 줄의 적에 대한 공격력이 150%로 증가",
-    "sortIndex": 464,
+    "sortIndex": 475,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -665197,7 +665197,7 @@
   "char_437_mizuki": {
     "name": "미즈키",
     "description": "공격 범위 내 <@ba.kw>모든 적</> 동시 공격\n50%의 물리 및 마법 회피 보유, <@ba.kw>적의 공격</>을 쉽게 받지 않음",
-    "sortIndex": 942,
+    "sortIndex": 966,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -671511,7 +671511,7 @@
   "char_485_pallas": {
     "name": "팔라스",
     "description": "<@ba.kw>비교적 먼 곳의 적</> 공격 가능, 자신이 저지하지 않은 적 공격 시 공격력이 120%로 증가",
-    "sortIndex": 769,
+    "sortIndex": 788,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -676779,7 +676779,7 @@
   "char_426_billro": {
     "name": "카넬리안",
     "description": "<@ba.kw>공격을 진행하지 않으며</>, 방어력과 마법 저항이 대폭 <@ba.kw>증가</>, 스킬 발동 시 공격 범위 내 모든 적에게 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 562,
+    "sortIndex": 577,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -682932,7 +682932,7 @@
   "char_1012_skadi2": {
     "name": "스카디 더 커럽팅 하트",
     "description": "공격을 진행하지 않으며, 범위 내 모든 아군의 <@ba.kw>HP</>를 초당 자신 공격력의 10%만큼 회복, 자신은 <$ba.inspire>격려</>의 영향을 받지 않음",
-    "sortIndex": 1380,
+    "sortIndex": 1414,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -685203,7 +685203,7 @@
       {
         "name": "스카디의 시본",
         "description": "공격을 받지 않음",
-        "sortIndex": 945,
+        "sortIndex": 969,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -692751,7 +692751,7 @@
   "char_003_kalts": {
     "name": "켈시",
     "description": "아군 HP 회복",
-    "sortIndex": 556,
+    "sortIndex": 571,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -695026,7 +695026,7 @@
       {
         "name": "Mon3tr",
         "description": "적 3명 저지 가능",
-        "sortIndex": 725,
+        "sortIndex": 744,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -701410,7 +701410,7 @@
   "char_474_glady": {
     "name": "글래디아",
     "description": "스킬을 통해 적의 위치를 <@ba.kw>강제 이동</>\n고지대 위치에 배치 가능",
-    "sortIndex": 335,
+    "sortIndex": 345,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -707289,7 +707289,7 @@
   "char_472_pasngr": {
     "name": "패신저",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 공격이 <@ba.kw>3</>명의 적 사이에서 튕기며, 튕길 때마다 대미지가 15% 감소, 적을 일정 시간 <$ba.sluggish>정지</>시킴",
-    "sortIndex": 1201,
+    "sortIndex": 1234,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -716637,7 +716637,7 @@
   "char_456_ash": {
     "name": "Ash",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 419,
+    "sortIndex": 430,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -720196,7 +720196,7 @@
   "char_2015_dusk": {
     "name": "시",
     "description": "공격 시 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 1061,
+    "sortIndex": 1090,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -723688,7 +723688,7 @@
       {
         "name": "'작은 즈자이'",
         "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-        "sortIndex": 1089,
+        "sortIndex": 1118,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -728425,7 +728425,7 @@
   "char_362_saga": {
     "name": "사가",
     "description": "적 2명 저지 가능",
-    "sortIndex": 179,
+    "sortIndex": 183,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -734120,7 +734120,7 @@
   "char_332_archet": {
     "name": "아르케토",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 586,
+    "sortIndex": 603,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -739601,7 +739601,7 @@
   "char_264_f12yin": {
     "name": "마운틴",
     "description": "적 1명 저지 가능",
-    "sortIndex": 853,
+    "sortIndex": 877,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -745293,7 +745293,7 @@
   "char_391_rosmon": {
     "name": "로즈몬티스",
     "description": "작은 범위 내 <@ba.kw>지상</> 적에게 물리 대미지를 <@ba.kw>2회</> 입힘 (2회차부터는 여진으로써 대미지가 공격력의 절반으로 감소)",
-    "sortIndex": 702,
+    "sortIndex": 721,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -747844,7 +747844,7 @@
       {
         "name": "로즈몬티스의 전술 장비",
         "description": "적 2명 저지 가능, 저지당한 적의 방어력 감소",
-        "sortIndex": 703,
+        "sortIndex": 722,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -751945,7 +751945,7 @@
   "char_311_mudrok": {
     "name": "머드락",
     "description": "아군의 치료를 받을 수 <@ba.kw>없음</>",
-    "sortIndex": 761,
+    "sortIndex": 780,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -760898,7 +760898,7 @@
   "char_423_blemsh": {
     "name": "블레미샤인",
     "description": "스킬로 아군 유닛 HP 회복",
-    "sortIndex": 1064,
+    "sortIndex": 1093,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -767611,7 +767611,7 @@
   "char_350_surtr": {
     "name": "수르트",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 901,
+    "sortIndex": 925,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -773011,7 +773011,7 @@
   "char_416_zumama": {
     "name": "유넥티스",
     "description": "적을 저지하고 있을 때에만 SP 회복",
-    "sortIndex": 849,
+    "sortIndex": 873,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -778302,7 +778302,7 @@
   "char_293_thorns": {
     "name": "쏜즈",
     "description": "<@ba.kw>원거리 공격</> 가능, 원거리 공격 시 공격력이 80%로 감소",
-    "sortIndex": 474,
+    "sortIndex": 485,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -785346,7 +785346,7 @@
   "char_358_lisa": {
     "name": "스즈란",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 적에게 일시적인 <$ba.sluggish>정지</> 효과 부여",
-    "sortIndex": 633,
+    "sortIndex": 651,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -791463,7 +791463,7 @@
   "char_197_poca": {
     "name": "로사",
     "description": "무게 등급이 가장 높은 적을 우선 공격",
-    "sortIndex": 1305,
+    "sortIndex": 1338,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -797246,7 +797246,7 @@
   "char_113_cqbw": {
     "name": "W",
     "description": "공격 시 <@ba.kw>광역 물리 대미지</>를 입힘",
-    "sortIndex": 1022,
+    "sortIndex": 1049,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -799415,7 +799415,7 @@
       {
         "name": "적 방향",
         "description": null,
-        "sortIndex": 172,
+        "sortIndex": 176,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -805779,7 +805779,7 @@
   "char_400_weedy": {
     "name": "위디",
     "description": "저지하고 있는 <@ba.kw>모든 적</> 동시에 공격\n고지대 위치에 배치 가능",
-    "sortIndex": 1041,
+    "sortIndex": 1069,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -808400,7 +808400,7 @@
       {
         "name": "공학용 저수포",
         "description": "공격을 받지 않음",
-        "sortIndex": 339,
+        "sortIndex": 349,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -813529,7 +813529,7 @@
   "char_250_phatom": {
     "name": "팬텀",
     "description": "재배치 시간 대폭 <@ba.kw>감소</>",
-    "sortIndex": 593,
+    "sortIndex": 610,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -816104,7 +816104,7 @@
       {
         "name": "거울 속의 환영",
         "description": "적 1명 저지 가능",
-        "sortIndex": 520,
+        "sortIndex": 531,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -821998,7 +821998,7 @@
   "char_222_bpipe": {
     "name": "백파이프",
     "description": "적 처치 시 배치 코스트 +1, 퇴각 시 초기 배치 코스트 반환",
-    "sortIndex": 286,
+    "sortIndex": 296,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -827198,7 +827198,7 @@
   "char_2013_cerber": {
     "name": "케오베",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 573,
+    "sortIndex": 588,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -832843,7 +832843,7 @@
   "char_2014_nian": {
     "name": "니엔",
     "description": "적 3명 저지 가능",
-    "sortIndex": 752,
+    "sortIndex": 771,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -845551,7 +845551,7 @@
   "char_017_huang": {
     "name": "블레이즈",
     "description": "저지하고 있는 <@ba.kw>모든 적</> 동시에 공격",
-    "sortIndex": 406,
+    "sortIndex": 417,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -850897,7 +850897,7 @@
   "char_213_mostma": {
     "name": "모스티마",
     "description": "공격 시 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 728,
+    "sortIndex": 747,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -856885,7 +856885,7 @@
   "char_248_mgllan": {
     "name": "마젤란",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘\n<@ba.kw>소환물</> 사용 가능",
-    "sortIndex": 682,
+    "sortIndex": 701,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -858928,7 +858928,7 @@
       {
         "name": "드래곤플라이.F",
         "description": "적을 저지하지 않음",
-        "sortIndex": 657,
+        "sortIndex": 676,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -860310,7 +860310,7 @@
       {
         "name": "드래곤플라이.L",
         "description": "적을 저지하지 않으며, 공격 시 <@ba.kw>마법 대미지</>를 입힘",
-        "sortIndex": 658,
+        "sortIndex": 677,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -861596,7 +861596,7 @@
       {
         "name": "드래곤플라이.A",
         "description": "공격 시 <@ba.kw>광역 물리 대미지</>를 입힘",
-        "sortIndex": 656,
+        "sortIndex": 675,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -866124,7 +866124,7 @@
   "char_188_helage": {
     "name": "헬라그",
     "description": "아군의 치료를 받을 수 없으며, 적을 공격할 때마다 HP <@ba.kw>{value}</> 회복",
-    "sortIndex": 382,
+    "sortIndex": 392,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -871822,7 +871822,7 @@
   "char_340_shwaz": {
     "name": "슈바르츠",
     "description": "고정밀 근거리 사격 가능",
-    "sortIndex": 378,
+    "sortIndex": 388,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -877236,7 +877236,7 @@
   "char_010_chen": {
     "name": "첸",
     "description": "일반 공격 시 대미지를 <@ba.kw>2회</> 입힘",
-    "sortIndex": 140,
+    "sortIndex": 144,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -883863,7 +883863,7 @@
   "char_263_skadi": {
     "name": "스카디",
     "description": "적 1명 저지 가능",
-    "sortIndex": 944,
+    "sortIndex": 968,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -888913,7 +888913,7 @@
   "char_172_svrash": {
     "name": "실버애쉬",
     "description": "<@ba.kw>원거리 공격</> 가능, 원거리 공격 시 공격력이 80%로 감소",
-    "sortIndex": 1223,
+    "sortIndex": 1255,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -894765,7 +894765,7 @@
   "char_202_demkni": {
     "name": "사리아",
     "description": "스킬로 아군 유닛 HP 회복",
-    "sortIndex": 842,
+    "sortIndex": 866,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -902250,7 +902250,7 @@
   "char_136_hsguma": {
     "name": "호시구마",
     "description": "적 3명 저지 가능",
-    "sortIndex": 1109,
+    "sortIndex": 1138,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -907956,7 +907956,7 @@
   "char_179_cgbird": {
     "name": "나이팅게일",
     "description": "동시에 아군 유닛 3명의 HP 회복 가능",
-    "sortIndex": 1192,
+    "sortIndex": 1222,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -911015,7 +911015,7 @@
       {
         "name": "환영",
         "description": "적을 저지하지 않음",
-        "sortIndex": 414,
+        "sortIndex": 425,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -914845,7 +914845,7 @@
   "char_147_shining": {
     "name": "샤이닝",
     "description": "아군 HP 회복",
-    "sortIndex": 861,
+    "sortIndex": 885,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -932749,7 +932749,7 @@
   "char_134_ifrit": {
     "name": "이프리트",
     "description": "공격 시 <@ba.kw>초원거리 광역 마법 대미지</>를 입힘",
-    "sortIndex": 1198,
+    "sortIndex": 1230,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -938156,7 +938156,7 @@
   "char_112_siege": {
     "name": "시즈",
     "description": "적 2명 저지 가능",
-    "sortIndex": 1015,
+    "sortIndex": 1041,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -943547,7 +943547,7 @@
   "char_103_angel": {
     "name": "엑시아",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 750,
+    "sortIndex": 769,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -948783,7 +948783,7 @@
   "char_4169_caledo": {
     "name": "Caleido",
     "description": "能够阻挡三个敌人，可以造成元素损伤",
-    "sortIndex": 507,
+    "sortIndex": 518,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -956464,7 +956464,7 @@
   "char_4232_hbound": {
     "name": "Homebound",
     "description": "可以投掷<@ba.kw>炼金单元</>协助作战",
-    "sortIndex": 675,
+    "sortIndex": 694,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -960127,7 +960127,7 @@
   "char_393_toledo": {
     "name": "de Toledo",
     "description": "攻击造成<@ba.kw>法术伤害</>",
-    "sortIndex": 210,
+    "sortIndex": 214,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -961814,7 +961814,7 @@
       {
         "name": "Legend of the Conquerors",
         "description": "能够阻挡三个敌人",
-        "sortIndex": 1338,
+        "sortIndex": 1371,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -967392,7 +967392,7 @@
   "char_4219_yukari": {
     "name": "Yukari Takeba",
     "description": "可以使用<$ba.triggereffect>触发型效果</>协助作战",
-    "sortIndex": 1286,
+    "sortIndex": 1319,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -970056,7 +970056,7 @@
   "char_4237_jcinta": {
     "name": "Jacinta",
     "description": "技能发动期间阻挡数变为0",
-    "sortIndex": 469,
+    "sortIndex": 480,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -974205,7 +974205,7 @@
   "char_4234_pedro": {
     "name": "Pedro",
     "description": "可以使用<$ba.triggereffect>触发型效果</>协助作战",
-    "sortIndex": 778,
+    "sortIndex": 797,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -977461,7 +977461,7 @@
   "char_1049_catap2": {
     "name": "Zinogre S Catapult",
     "description": "可消耗部署费用来强化作战能力",
-    "sortIndex": 610,
+    "sortIndex": 628,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -981433,7 +981433,7 @@
   "char_4225_tanya": {
     "name": "크랙본",
     "description": "적 3명 저지 가능, 공격 시 <@ba.kw>원소 손상</>을 입힐 수 있음",
-    "sortIndex": 625,
+    "sortIndex": 643,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -986963,7 +986963,7 @@
   "char_4224_turdus": {
     "name": "우쿠시크",
     "description": "아군 치료, 치료 효과가 <@ba.kw>3</>명의 아군 사이에서 튕기며, 튕길 때마다 치유량 25% 감소",
-    "sortIndex": 1049,
+    "sortIndex": 1077,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -992190,7 +992190,7 @@
   "char_4223_botany": {
     "name": "보타니",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, <@ba.kw>원소 손상</>을 입힐 수 있음",
-    "sortIndex": 103,
+    "sortIndex": 104,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -998191,7 +998191,7 @@
   "char_4031_liesel": {
     "name": "리프레사",
     "description": "공격 시 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 310,
+    "sortIndex": 320,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1002748,7 +1002748,7 @@
   "char_4222_taraxa": {
     "name": "타락사쿰",
     "description": "아군 유닛의 HP 회복, <$ba.liftoff>이륙</> 가능",
-    "sortIndex": 293,
+    "sortIndex": 303,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1007566,7 +1007566,7 @@
   "char_4221_ju": {
     "name": "쥐",
     "description": "무게 등급이 가장 높은 적을 우선 공격",
-    "sortIndex": 543,
+    "sortIndex": 557,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1012062,7 +1012062,7 @@
   "char_1022_flwr2": {
     "name": "퍼퓨머 더 디스틸트",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75%에 해당)",
-    "sortIndex": 1098,
+    "sortIndex": 1127,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1021301,7 +1021301,7 @@
   "char_4214_cairn": {
     "name": "케언",
     "description": "적 3명 저지 가능, 공격 시 <@ba.kw>원소 손상</>을 입힐 수 있음",
-    "sortIndex": 1074,
+    "sortIndex": 1103,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1026188,7 +1026188,7 @@
   "char_4213_skybx": {
     "name": "스카이박스",
     "description": "배치 즉시 <$ba.liftoff>이륙</>, <$ba.liftoff>이륙</> 후 공중 적만 공격, 스킬 발동 시 착륙 및 <@ba.kw>광역 물리 대미지</>를 입힘",
-    "sortIndex": 991,
+    "sortIndex": 1015,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1031048,7 +1031048,7 @@
   "char_4211_snhunt": {
     "name": "스노우헌터",
     "description": "공격 시 탄약을 소모하며 공격력이 <@ba.kw>120%</>까지 증가, 비공격 상태에서 서서히 탄약 장전 (최대 8발)",
-    "sortIndex": 1130,
+    "sortIndex": 1159,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1035597,7 +1035597,7 @@
   "char_394_hadiya": {
     "name": "하디야",
     "description": "배치 코스트를 소모해 작전 능력 강화",
-    "sortIndex": 362,
+    "sortIndex": 372,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1040228,7 +1040228,7 @@
   "char_4207_branch": {
     "name": "베토치키",
     "description": "아군의 치료를 받을 수 <@ba.kw>없음</>",
-    "sortIndex": 1346,
+    "sortIndex": 1379,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1045703,7 +1045703,7 @@
   "char_4184_dolris": {
     "name": "미스미 우이카",
     "description": "공격을 진행하지 않으며, 범위 내 모든 아군의 <@ba.kw>HP</>를 초당 자신 공격력의 10%만큼 회복, 자신은 <$ba.inspire>격려</>의 영향을 받지 않음",
-    "sortIndex": 847,
+    "sortIndex": 871,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1049536,7 +1049536,7 @@
   "char_4183_mortis": {
     "name": "와카바 무츠미",
     "description": "치명상을 입어도 퇴각하지 않고, <대역>을 교체 투입하며(저지 가능 수 0), 20초 후 다시 본체로 교체",
-    "sortIndex": 837,
+    "sortIndex": 861,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1055770,7 +1055770,7 @@
   "char_4185_amoris": {
     "name": "유텐지 냐무",
     "description": "공격 시 목표 주변의 다른 적에게 공격력의 <@ba.kw>50%</>에 해당하는 <@ba.kw>광역</> 물리 대미지를 입힘",
-    "sortIndex": 1240,
+    "sortIndex": 1273,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1058894,7 +1058894,7 @@
   "char_4203_kichi": {
     "name": "키치세이",
     "description": "공격 범위 내 <@ba.kw>모든 적</> 공격, 전방 첫 줄의 적에 대한 공격력이 150%로 증가",
-    "sortIndex": 538,
+    "sortIndex": 552,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1063565,7 +1063565,7 @@
   "char_4199_makiri": {
     "name": "마츠키리",
     "description": "적 2명 저지 가능, 배치 구역의 아군 유닛 지원 가능",
-    "sortIndex": 951,
+    "sortIndex": 975,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1068629,7 +1068629,7 @@
   "char_4196_reckpr": {
     "name": "레코드키퍼",
     "description": "아군 HP 회복",
-    "sortIndex": 673,
+    "sortIndex": 692,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1073316,7 +1073316,7 @@
   "char_4191_tippi": {
     "name": "티피",
     "description": "<$ba.liftoff>이륙</> 후 비행하는 적 2명 저지 가능",
-    "sortIndex": 216,
+    "sortIndex": 221,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1078314,7 +1078314,7 @@
   "char_4198_christ": {
     "name": "미스 크리스틴",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, <@ba.kw>원소 대미지</>를 입힐 수 있음",
-    "sortIndex": 717,
+    "sortIndex": 736,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1081790,7 +1081790,7 @@
   "char_4187_graceb": {
     "name": "그레이스베어러",
     "description": "적 2명 저지 가능, 공격 시 <@ba.kw>원소 대미지</>를 입힐 수 있음",
-    "sortIndex": 635,
+    "sortIndex": 654,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1088243,7 +1088243,7 @@
       {
         "name": "너티",
         "description": "공격을 받지 않음",
-        "sortIndex": 1084,
+        "sortIndex": 1113,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1091713,7 +1091713,7 @@
   "char_4171_wulfen": {
     "name": "울페나이트",
     "description": "함정을 사용해 작전 지원, <@ba.kw>적이 있는</> 칸에 함정 배치 불가",
-    "sortIndex": 740,
+    "sortIndex": 759,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1093578,7 +1093578,7 @@
       {
         "name": "광석 '킬러'",
         "description": "공격을 받지 않으며, <@ba.kw>적이 있는</> 칸에 배치 불가",
-        "sortIndex": 591,
+        "sortIndex": 608,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1097916,7 +1097916,7 @@
   "char_4177_brigid": {
     "name": "브리지드",
     "description": "<@ba.kw>부메랑 투사체</>를 보유한 경우에만 공격 가능 (투사체 회수 필요)",
-    "sortIndex": 940,
+    "sortIndex": 964,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1102688,7 +1102688,7 @@
   "char_4173_nowell": {
     "name": "노웰",
     "description": "넓은 치료 범위 보유, 멀리 있는 목표 치료 시 치유량이 <@ba.kw>{heal_scale:0%}</>로 변경",
-    "sortIndex": 765,
+    "sortIndex": 784,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1107471,7 +1107471,7 @@
   "char_4052_surfer": {
     "name": "서퍼",
     "description": "재배치 시간 <@ba.kw>감소</>, 원거리 공격 가능",
-    "sortIndex": 1141,
+    "sortIndex": 1171,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1112028,7 +1112028,7 @@
   "char_4172_xingzh": {
     "name": "싱주",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 76%에 해당)",
-    "sortIndex": 1112,
+    "sortIndex": 1141,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1116654,7 +1116654,7 @@
   "char_4164_tecno": {
     "name": "테크노",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, 적 처치 시 <@ba.kw>소환물</> 생성, <@ba.kw>소환물</>이 저지한 적 공격 가능",
-    "sortIndex": 980,
+    "sortIndex": 1004,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1119189,7 +1119189,7 @@
       {
         "name": "인형 댄서",
         "description": "적 1명 저지 가능, 공격 시 마법 대미지를 입힘",
-        "sortIndex": 739,
+        "sortIndex": 758,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1122731,7 +1122731,7 @@
   "char_4163_rosesa": {
     "name": "로즈솔트",
     "description": "동시에 아군 유닛 3명의 HP 회복 가능",
-    "sortIndex": 357,
+    "sortIndex": 367,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1128377,7 +1128377,7 @@
   "char_4155_talr": {
     "name": "피구리노",
     "description": "재배치 시간 <@ba.kw>감소</>, 퇴각 시 <@ba.kw>배치 코스트</>를 반환하지 않으며, 3초마다 배치 코스트 <@ba.kw>3</> 소모 (부족 시 자동 퇴각)",
-    "sortIndex": 126,
+    "sortIndex": 130,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1134148,7 +1134148,7 @@
   "char_4148_philae": {
     "name": "필라에",
     "description": "적 3명 저지 가능, 공격 시 <@ba.kw>원소 손상</>을 입힐 수 있음",
-    "sortIndex": 278,
+    "sortIndex": 288,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1138702,7 +1138702,7 @@
   "char_487_bobb": {
     "name": "보빙",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, <@ba.kw>원소 손상</>을 입힐 수 있음",
-    "sortIndex": 96,
+    "sortIndex": 97,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1143337,7 +1143337,7 @@
   "char_4162_cathy": {
     "name": "캐서린",
     "description": "적 2명 저지 가능, <지원 장치>를 사용해 작전 지원",
-    "sortIndex": 558,
+    "sortIndex": 573,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1145072,7 +1145072,7 @@
       {
         "name": "크롤러호 - 방호 유닛",
         "description": "공격을 받지 않음",
-        "sortIndex": 777,
+        "sortIndex": 796,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1148745,7 +1148745,7 @@
   "char_4142_laios": {
     "name": "라이오스",
     "description": "적 1명 저지 가능",
-    "sortIndex": 598,
+    "sortIndex": 615,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1151134,7 +1151134,7 @@
   "char_4144_chilc": {
     "name": "칠책",
     "description": "재배치 시간 <@ba.kw>감소</>, 원거리 공격 가능",
-    "sortIndex": 794,
+    "sortIndex": 814,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1154027,7 +1154027,7 @@
   "char_4143_sensi": {
     "name": "센시",
     "description": "스킬로 아군 유닛 HP 회복",
-    "sortIndex": 850,
+    "sortIndex": 874,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1157464,7 +1157464,7 @@
   "char_4140_lasher": {
     "name": "샌드레코너",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘\n<@ba.kw>소환물</> 사용 가능",
-    "sortIndex": 386,
+    "sortIndex": 396,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1159122,7 +1159122,7 @@
       {
         "name": "태엽 파울비스트",
         "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-        "sortIndex": 277,
+        "sortIndex": 287,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1163155,7 +1163155,7 @@
   "char_4139_papyrs": {
     "name": "파피루스",
     "description": "아군 치료, 치료 효과가 <@ba.kw>3</>명의 아군 사이에서 튕기며, 튕길 때마다 치유량 25% 감소",
-    "sortIndex": 969,
+    "sortIndex": 993,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1167808,7 +1167808,7 @@
   "char_4151_tinman": {
     "name": "틴맨",
     "description": "<@ba.kw>연금 유닛</>을 투척해 작전 지원",
-    "sortIndex": 1117,
+    "sortIndex": 1146,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1172523,7 +1172523,7 @@
   "char_4147_mitm": {
     "name": "미틈",
     "description": "공격 범위에 지원군 소환 가능, 지원군이 저지한 적 공격 시 자신의 공격력이 150%로 증가",
-    "sortIndex": 241,
+    "sortIndex": 251,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1174856,7 +1174856,7 @@
       {
         "name": "체리 3호",
         "description": "적 1명 저지 가능, 전차 형태로 존재 시 소환자의 공격 범위 내에만 배치 가능",
-        "sortIndex": 1220,
+        "sortIndex": 1252,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1178282,7 +1178282,7 @@
   "char_4079_haini": {
     "name": "루실라",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 366,
+    "sortIndex": 376,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1182978,7 +1182978,7 @@
   "char_4137_udflow": {
     "name": "언더플로우",
     "description": "적 3명 저지 가능, 원거리 공격 가능",
-    "sortIndex": 890,
+    "sortIndex": 914,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1187806,7 +1187806,7 @@
   "char_1036_fang2": {
     "name": "팽 더 파이어 샤픈드",
     "description": "적 처치 시 배치 코스트 +1, 퇴각 시 초기 배치 코스트 반환",
-    "sortIndex": 652,
+    "sortIndex": 671,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1201340,7 +1201340,7 @@
   "char_4125_rdoc": {
     "name": "Doc",
     "description": "<@ba.kw>비교적 먼 곳의 적</> 공격 가능, 자신이 저지하지 않은 적 공격 시 공격력이 120%로 증가",
-    "sortIndex": 1235,
+    "sortIndex": 1267,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1204333,7 +1204333,7 @@
   "char_4124_iana": {
     "name": "Iana",
     "description": "치명상을 입어도 퇴각하지 않고, <대역>을 교체 투입하며(저지 가능 수 0), 20초 후 다시 본체로 교체",
-    "sortIndex": 934,
+    "sortIndex": 958,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1207478,7 +1207478,7 @@
   "char_4126_fuze": {
     "name": "Fuze",
     "description": "저지하고 있는 <@ba.kw>모든 적</> 동시에 공격",
-    "sortIndex": 198,
+    "sortIndex": 202,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1210021,7 +1210021,7 @@
   "char_4023_rfalcn": {
     "name": "케스트럴",
     "description": "적 2명 저지 가능",
-    "sortIndex": 396,
+    "sortIndex": 408,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1214707,7 +1214707,7 @@
   "char_4122_grabds": {
     "name": "그레인버즈",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 적에게 일시적인 <$ba.sluggish>정지</> 효과 부여",
-    "sortIndex": 1085,
+    "sortIndex": 1114,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1219843,7 +1219843,7 @@
   "char_4119_wanqin": {
     "name": "완칭",
     "description": "스킬 지속 시간 동안 저지 가능 수가 0으로 변경",
-    "sortIndex": 1026,
+    "sortIndex": 1053,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1225033,7 +1225033,7 @@
   "char_4081_warmy": {
     "name": "워미",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, <@ba.kw>원소 대미지</>를 입힐 수 있음",
-    "sortIndex": 1045,
+    "sortIndex": 1073,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1229629,7 +1229629,7 @@
   "char_194_leto": {
     "name": "레토",
     "description": "<@ba.kw>원거리 공격</> 가능, 원거리 공격 시 공격력이 80%로 감소",
-    "sortIndex": 624,
+    "sortIndex": 642,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1234744,7 +1234744,7 @@
   "char_4114_harold": {
     "name": "해럴드",
     "description": "아군 유닛의 HP 회복, 동시에 공격력의 50%에 해당하는 <@ba.dt.element>원소 손상</> 회복 (부상이 없는 아군 유닛의 <@ba.dt.element>원소 손상</>도 회복 가능)",
-    "sortIndex": 367,
+    "sortIndex": 377,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1239283,7 +1239283,7 @@
   "char_4109_baslin": {
     "name": "베이스라인",
     "description": "스킬로 아군 유닛 HP 회복",
-    "sortIndex": 888,
+    "sortIndex": 912,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1244486,7 +1244486,7 @@
   "char_499_kaitou": {
     "name": "디아만테",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, <@ba.kw>원소 대미지</>를 입힐 수 있음",
-    "sortIndex": 1333,
+    "sortIndex": 1366,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1249023,7 +1249023,7 @@
   "char_494_vendla": {
     "name": "벤델라",
     "description": "공격 시 마법 대미지를 입히며, 적을 공격할 때마다 공격 범위 내 아군 1명의 HP를 대미지의 50%만큼 회복",
-    "sortIndex": 171,
+    "sortIndex": 175,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1253549,7 +1253549,7 @@
   "char_4110_delphn": {
     "name": "델핀",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 목표가 없으면 공격 에너지를 <@ba.kw>저장</>해 일제히 발사 (최대 3개)",
-    "sortIndex": 185,
+    "sortIndex": 189,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1258492,7 +1258492,7 @@
   "char_4105_almond": {
     "name": "아몬드",
     "description": "스킬을 통해 적의 위치를 <@ba.kw>강제 이동</>\n고지대 위치에 배치 가능",
-    "sortIndex": 1106,
+    "sortIndex": 1135,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1263057,7 +1263057,7 @@
   "char_4104_coldst": {
     "name": "콜드샷",
     "description": "공격 시 탄약을 소모하며 공격력이 <@ba.kw>120%</>까지 증가, 비공격 상태에서 서서히 탄약 장전 (최대 8발)",
-    "sortIndex": 91,
+    "sortIndex": 92,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1267621,7 +1267621,7 @@
   "char_488_buildr": {
     "name": "폰사이러스",
     "description": "적 2명 저지 가능",
-    "sortIndex": 804,
+    "sortIndex": 824,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1272337,7 +1272337,7 @@
   "char_4106_bryota": {
     "name": "브라이오피타",
     "description": "<@ba.kw>비교적 먼 곳의 적</> 공격 가능, 자신이 저지하지 않은 적 공격 시 공격력이 120%로 증가",
-    "sortIndex": 128,
+    "sortIndex": 132,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1276837,7 +1276837,7 @@
   "char_4102_threye": {
     "name": "발라크빈",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, <@ba.kw>원소 손상</>을 입힐 수 있음",
-    "sortIndex": 640,
+    "sortIndex": 659,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1281415,7 +1281415,7 @@
   "char_341_sntlla": {
     "name": "산탈라",
     "description": "공격 시 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 371,
+    "sortIndex": 381,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1286532,7 +1286532,7 @@
   "char_4015_spuria": {
     "name": "스푸리아",
     "description": "자신의 HP가 지속해서 감소",
-    "sortIndex": 583,
+    "sortIndex": 600,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1291100,7 +1291100,7 @@
   "char_498_inside": {
     "name": "인사이더",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 1231,
+    "sortIndex": 1263,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1295618,7 +1295618,7 @@
   "char_4006_melnte": {
     "name": "멜라나이트",
     "description": "고정밀 근거리 사격 가능",
-    "sortIndex": 689,
+    "sortIndex": 708,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1300339,7 +1300339,7 @@
   "char_464_cement": {
     "name": "시멘트",
     "description": "적을 저지하고 있을 때에만 SP 회복",
-    "sortIndex": 1158,
+    "sortIndex": 1188,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1304824,7 +1304824,7 @@
   "char_154_morgan": {
     "name": "모건",
     "description": "적 1명 저지 가능",
-    "sortIndex": 723,
+    "sortIndex": 742,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1309358,7 +1309358,7 @@
   "char_1030_noirc2": {
     "name": "레우스S 느와르 코르네",
     "description": "아군의 치료를 받을 수 없으며, 적을 공격할 때마다 HP <@ba.kw>{value}</> 회복",
-    "sortIndex": 427,
+    "sortIndex": 438,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1314288,7 +1314288,7 @@
   "char_4083_chimes": {
     "name": "윈드차임스",
     "description": "저지하고 있는 <@ba.kw>모든 적</> 동시에 공격",
-    "sortIndex": 239,
+    "sortIndex": 249,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1318802,7 +1318802,7 @@
   "char_493_firwhl": {
     "name": "파이어휘슬",
     "description": "적을 저지하고 있지 않을 때 <@ba.kw>원거리 광역</> 물리 대미지를 입힘",
-    "sortIndex": 429,
+    "sortIndex": 440,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1323405,7 +1323405,7 @@
   "char_4078_bdhkgt": {
     "name": "지에윈",
     "description": "공격 시 <@ba.kw>광역 물리 대미지</>를 입힘",
-    "sortIndex": 491,
+    "sortIndex": 502,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1328165,7 +1328165,7 @@
   "char_297_hamoni": {
     "name": "아르모니",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 목표가 없으면 공격 에너지를 <@ba.kw>저장</>해 일제히 발사 (최대 3개)",
-    "sortIndex": 387,
+    "sortIndex": 397,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1332983,7 +1332983,7 @@
   "char_4017_puzzle": {
     "name": "퍼즐",
     "description": "재배치 시간 <@ba.kw>감소</>, 원거리 공격 가능",
-    "sortIndex": 718,
+    "sortIndex": 737,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1337646,7 +1337646,7 @@
   "char_4014_lunacu": {
     "name": "루나컵",
     "description": "공격 범위 내 <@ba.kw>방어력이 가장 낮은</> 적을 우선 공격",
-    "sortIndex": 1389,
+    "sortIndex": 1423,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1342149,7 +1342149,7 @@
   "char_466_qanik": {
     "name": "카니팔라트",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 1131,
+    "sortIndex": 1160,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1346786,7 +1346786,7 @@
   "char_4071_peper": {
     "name": "파프리카",
     "description": "아군 치료, 치료 효과가 <@ba.kw>3</>명의 아군 사이에서 튕기며, 튕길 때마다 치유량 25% 감소",
-    "sortIndex": 713,
+    "sortIndex": 732,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1351346,7 +1351346,7 @@
   "char_157_dagda": {
     "name": "다그다",
     "description": "적 1명 저지 가능",
-    "sortIndex": 182,
+    "sortIndex": 186,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1355717,7 +1355717,7 @@
   "char_4066_highmo": {
     "name": "하이모어",
     "description": "아군의 치료를 받을 수 없으며, 공격 시 <@ba.kw>광역 대미지</>를 입힘, 적을 공격할 때마다 HP <@ba.kw>50</> 회복, 최대 적용 수는 저지 가능 수와 동일",
-    "sortIndex": 365,
+    "sortIndex": 375,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1360227,7 +1360227,7 @@
   "char_4032_provs": {
     "name": "프로바이조",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 적에게 일시적인 <$ba.sluggish>정지</> 효과 부여",
-    "sortIndex": 191,
+    "sortIndex": 195,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1365466,7 +1365466,7 @@
   "char_497_ctable": {
     "name": "칸타빌레",
     "description": "재배치 시간 <@ba.kw>감소</>, 원거리 공격 가능",
-    "sortIndex": 1082,
+    "sortIndex": 1111,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1370064,7 +1370064,7 @@
   "char_4054_malist": {
     "name": "미니멀리스트",
     "description": "<@ba.kw>공중 유닛</>을 조종해 적에게 <@ba.kw>마법 대미지</>를 입힘\n같은 적을 연속으로 공격 시 대미지 증가 (최대로 오퍼레이터 공격력의 110%에 해당하는 대미지)",
-    "sortIndex": 1350,
+    "sortIndex": 1383,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1374614,7 +1374614,7 @@
   "char_1027_greyy2": {
     "name": "그레이 더 라이트닝베어러",
     "description": "작은 범위 내 <@ba.kw>지상</> 적에게 물리 대미지를 <@ba.kw>2회</> 입힘 (2회차부터는 여진으로써 대미지가 공격력의 절반으로 감소)",
-    "sortIndex": 152,
+    "sortIndex": 156,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1379398,7 +1379398,7 @@
   "char_135_halo": {
     "name": "아스트젠",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 공격이 <@ba.kw>3</>명의 적 사이에서 튕기며, 튕길 때마다 대미지가 15% 감소, 적을 일정 시간 <$ba.sluggish>정지</>시킴",
-    "sortIndex": 1110,
+    "sortIndex": 1139,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1384562,7 +1384562,7 @@
   "char_1024_hbisc2": {
     "name": "히비스커스 더 퓨리파이어",
     "description": "공격 시 마법 대미지를 입히며, 적을 공격할 때마다 공격 범위 내 아군 1명의 HP를 대미지의 50%만큼 회복",
-    "sortIndex": 1377,
+    "sortIndex": 1411,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1389165,7 +1389165,7 @@
   "char_4047_pianst": {
     "name": "체르니",
     "description": "스킬 발동 시 일반 공격이 마법 대미지를 입힘",
-    "sortIndex": 139,
+    "sortIndex": 143,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1398963,7 +1398963,7 @@
   "char_433_windft": {
     "name": "윈드플릿",
     "description": "적 2명 저지 가능, <지원 장치>를 사용해 작전 지원",
-    "sortIndex": 674,
+    "sortIndex": 693,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1401165,7 +1401165,7 @@
       {
         "name": "안정적인 배터리",
         "description": "공격을 받지 않음",
-        "sortIndex": 574,
+        "sortIndex": 589,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1405469,7 +1405469,7 @@
   "char_4040_rockr": {
     "name": "락락",
     "description": "<@ba.kw>공중 유닛</>을 조종해 적에게 <@ba.kw>마법 대미지</>를 입힘\n같은 적을 연속으로 공격 시 대미지 증가 (최대로 오퍼레이터 공격력의 110%에 해당하는 대미지)",
-    "sortIndex": 668,
+    "sortIndex": 687,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1410106,7 +1410106,7 @@
   "char_4045_heidi": {
     "name": "하이디",
     "description": "공격을 진행하지 않으며, 범위 내 모든 아군의 <@ba.kw>HP</>를 초당 자신 공격력의 10%만큼 회복, 자신은 <$ba.inspire>격려</>의 영향을 받지 않음",
-    "sortIndex": 363,
+    "sortIndex": 373,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1414866,7 +1414866,7 @@
   "char_4016_kazema": {
     "name": "카제마루",
     "description": "치명상을 입어도 퇴각하지 않고, <대역>을 교체 투입하며(저지 가능 수 0), 20초 후 다시 본체로 교체",
-    "sortIndex": 292,
+    "sortIndex": 302,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1416502,7 +1416502,7 @@
       {
         "name": "종이 인형",
         "description": "적을 저지하지 않음",
-        "sortIndex": 1359,
+        "sortIndex": 1392,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1420109,7 +1420109,7 @@
   "char_4036_forcer": {
     "name": "인포서",
     "description": "저지하고 있는 <@ba.kw>모든 적</> 동시에 공격\n고지대 위치에 배치 가능",
-    "sortIndex": 454,
+    "sortIndex": 465,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1424844,7 +1424844,7 @@
   "char_492_quercu": {
     "name": "퀘르쿠스",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75%에 해당)",
-    "sortIndex": 1065,
+    "sortIndex": 1094,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1429428,7 +1429428,7 @@
   "char_476_blkngt": {
     "name": "블랙나이트",
     "description": "공격 범위에 지원군 소환 가능, 지원군이 저지한 적 공격 시 자신의 공격력이 150%로 증가",
-    "sortIndex": 1180,
+    "sortIndex": 1210,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1431326,7 +1431326,7 @@
       {
         "name": "슬럼버풋",
         "description": "적 1명 저지 가능, 소환자의 공격 범위에만 배치 가능",
-        "sortIndex": 699,
+        "sortIndex": 718,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1434767,7 +1434767,7 @@
   "char_1021_kroos2": {
     "name": "크루스 더 킨 글린트",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 369,
+    "sortIndex": 379,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1439285,7 +1439285,7 @@
   "char_4019_ncdeer": {
     "name": "나인컬러드 디어",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75%에 해당)",
-    "sortIndex": 534,
+    "sortIndex": 548,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1441811,7 +1441811,7 @@
   "char_4025_aprot2": {
     "name": "샬렘",
     "description": "스킬 발동 시 일반 공격이 마법 대미지를 입힘",
-    "sortIndex": 738,
+    "sortIndex": 756,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1446634,7 +1446634,7 @@
   "char_422_aurora": {
     "name": "오로라",
     "description": "적을 저지하고 있을 때에만 SP 회복",
-    "sortIndex": 492,
+    "sortIndex": 503,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1451255,7 +1451255,7 @@
   "char_4013_kjera": {
     "name": "쉐라",
     "description": "<@ba.kw>공중 유닛</>을 조종해 적에게 <@ba.kw>마법 대미지</>를 입힘\n같은 적을 연속으로 공격 시 대미지 증가 (최대로 오퍼레이터 공격력의 110%에 해당하는 대미지)",
-    "sortIndex": 1183,
+    "sortIndex": 1213,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1455882,7 +1455882,7 @@
   "char_489_serum": {
     "name": "코로세럼",
     "description": "공격 시 <@ba.kw>초원거리 광역 마법 대미지</>를 입힘",
-    "sortIndex": 912,
+    "sortIndex": 936,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1460350,7 +1460350,7 @@
   "char_496_wildmn": {
     "name": "와일드메인",
     "description": "적 처치 시 배치 코스트 +1, 퇴각 시 초기 배치 코스트 반환",
-    "sortIndex": 1195,
+    "sortIndex": 1225,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1464836,7 +1464836,7 @@
   "char_449_glider": {
     "name": "허니베리",
     "description": "아군 유닛의 HP 회복, 동시에 공격력의 50%에 해당하는 <@ba.dt.element>원소 손상</> 회복 (부상이 없는 아군 유닛의 <@ba.dt.element>원소 손상</>도 회복 가능)",
-    "sortIndex": 710,
+    "sortIndex": 729,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1469492,7 +1469492,7 @@
   "char_431_ashlok": {
     "name": "애쉬락",
     "description": "적을 저지하고 있지 않을 때 <@ba.kw>원거리 광역</> 물리 대미지를 입힘",
-    "sortIndex": 417,
+    "sortIndex": 428,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1473929,7 +1473929,7 @@
   "char_473_mberry": {
     "name": "멀베리",
     "description": "아군 유닛의 HP 회복, 동시에 공격력의 50%에 해당하는 <@ba.dt.element>원소 손상</> 회복 (부상이 없는 아군 유닛의 <@ba.dt.element>원소 손상</>도 회복 가능)",
-    "sortIndex": 845,
+    "sortIndex": 869,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1479216,7 +1479216,7 @@
   "char_421_crow": {
     "name": "라 플루마",
     "description": "아군의 치료를 받을 수 없으며, 공격 시 <@ba.kw>광역 대미지</>를 입힘, 적을 공격할 때마다 HP <@ba.kw>50</> 회복, 최대 적용 수는 저지 가능 수와 동일",
-    "sortIndex": 1293,
+    "sortIndex": 1326,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1483687,7 +1483687,7 @@
   "char_486_takila": {
     "name": "테킬라",
     "description": "저지 가능 수 0, 공격을 진행하지 않으며, <@ba.kw>{max_stack_cnt}</>초간 공격력이 최대 <@ba.kw>+{atk:0%}</>까지 증가, 스킬 종료 후 공격력 초기화",
-    "sortIndex": 655,
+    "sortIndex": 674,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1488655,7 +1488655,7 @@
   "char_478_kirara": {
     "name": "키라라",
     "description": "공격 범위 내 <@ba.kw>모든 적</> 동시 공격\n50%의 물리 및 마법 회피 보유, <@ba.kw>적의 공격</>을 쉽게 받지 않음",
-    "sortIndex": 795,
+    "sortIndex": 815,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1493201,7 +1493201,7 @@
   "char_369_bena": {
     "name": "베나",
     "description": "치명상을 입어도 퇴각하지 않고, <대역>을 교체 투입하며(저지 가능 수 0), 20초 후 다시 본체로 교체",
-    "sortIndex": 64,
+    "sortIndex": 65,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1497978,7 +1497978,7 @@
   "char_475_akafyu": {
     "name": "아카후유",
     "description": "아군의 치료를 받을 수 없으며, 적을 공격할 때마다 HP <@ba.kw>{value}</> 회복",
-    "sortIndex": 155,
+    "sortIndex": 159,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1502394,7 +1502394,7 @@
   "char_363_toddi": {
     "name": "토디폰스",
     "description": "무게 등급이 가장 높은 적을 우선 공격",
-    "sortIndex": 832,
+    "sortIndex": 856,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1512497,7 +1512497,7 @@
   "char_458_rfrost": {
     "name": "Frost",
     "description": "함정을 사용해 작전 지원, <@ba.kw>적이 있는</> 칸에 함정 배치 불가",
-    "sortIndex": 929,
+    "sortIndex": 953,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1514391,7 +1514391,7 @@
       {
         "name": "전술 함정",
         "description": "공격을 받지 않으며, <@ba.kw>적이 있는</> 칸에 배치 불가",
-        "sortIndex": 1210,
+        "sortIndex": 1242,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1516453,7 +1516453,7 @@
   "char_457_blitz": {
     "name": "Blitz",
     "description": "적 3명 저지 가능, 원거리 공격 가능",
-    "sortIndex": 859,
+    "sortIndex": 882,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1519368,7 +1519368,7 @@
   "char_459_tachak": {
     "name": "Tachanka",
     "description": "일반 공격 시 대미지를 <@ba.kw>2회</> 입힘",
-    "sortIndex": 1313,
+    "sortIndex": 1346,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1522417,7 +1522417,7 @@
   "char_455_nothin": {
     "name": "우요우",
     "description": "재배치 시간 <@ba.kw>감소</>, 퇴각 시 <@ba.kw>배치 코스트</>를 반환하지 않으며, 3초마다 배치 코스트 <@ba.kw>3</> 소모 (부족 시 자동 퇴각)",
-    "sortIndex": 1057,
+    "sortIndex": 1086,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1527809,7 +1527809,7 @@
   "char_1011_lava2": {
     "name": "라바 더 퍼거토리",
     "description": "공격 시 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 1170,
+    "sortIndex": 1200,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1532596,7 +1532596,7 @@
   "char_402_tuye": {
     "name": "투예",
     "description": "아군 HP 회복",
-    "sortIndex": 1020,
+    "sortIndex": 1046,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1542025,7 +1542025,7 @@
   "char_214_kafka": {
     "name": "카프카",
     "description": "재배치 시간 대폭 <@ba.kw>감소</>",
-    "sortIndex": 555,
+    "sortIndex": 570,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1546781,7 +1546781,7 @@
   "char_451_robin": {
     "name": "로빈",
     "description": "함정을 사용해 작전 지원, <@ba.kw>적이 있는</> 칸에 함정 배치 불가",
-    "sortIndex": 662,
+    "sortIndex": 681,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1548590,7 +1548590,7 @@
       {
         "name": "'클립'",
         "description": "공격을 받지 않으며, <@ba.kw>적이 있는</> 칸에 배치 불가",
-        "sortIndex": 470,
+        "sortIndex": 481,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1552558,7 +1552558,7 @@
   "char_436_whispr": {
     "name": "위스퍼레인",
     "description": "넓은 치료 범위 보유, 멀리 있는 목표 치료 시 치유량이 <@ba.kw>{heal_scale:0%}</>로 변경",
-    "sortIndex": 1147,
+    "sortIndex": 1177,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1561893,7 +1561893,7 @@
   "char_265_sophia": {
     "name": "위슬래시",
     "description": "<@ba.kw>비교적 먼 곳의 적</> 공격 가능, 자신이 저지하지 않은 적 공격 시 공격력이 120%로 증가",
-    "sortIndex": 76,
+    "sortIndex": 77,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1566459,7 +1566459,7 @@
   "char_365_aprl": {
     "name": "에이프릴",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 949,
+    "sortIndex": 973,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1570815,7 +1570815,7 @@
   "char_388_mint": {
     "name": "민트",
     "description": "<@ba.kw>공격을 진행하지 않으며</>, 방어력과 마법 저항이 대폭 <@ba.kw>증가</>, 스킬 발동 시 공격 범위 내 모든 적에게 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 100,
+    "sortIndex": 101,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1576430,7 +1576430,7 @@
   "char_415_flint": {
     "name": "플린트",
     "description": "적 1명 저지 가능",
-    "sortIndex": 962,
+    "sortIndex": 985,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1580924,7 +1580924,7 @@
   "char_411_tomimi": {
     "name": "토미미",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 983,
+    "sortIndex": 1007,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1590281,7 +1590281,7 @@
   "char_349_chiave": {
     "name": "키아베",
     "description": "적 2명 저지 가능",
-    "sortIndex": 467,
+    "sortIndex": 478,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1595337,7 +1595337,7 @@
   "char_344_beewax": {
     "name": "비즈왁스",
     "description": "<@ba.kw>공격을 진행하지 않으며</>, 방어력과 마법 저항이 대폭 <@ba.kw>증가</>, 스킬 발동 시 공격 범위 내 모든 적에게 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 707,
+    "sortIndex": 726,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1597863,7 +1597863,7 @@
       {
         "name": "사막의 오벨리스크",
         "description": "적 3명 저지 가능",
-        "sortIndex": 866,
+        "sortIndex": 890,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1601942,7 +1601942,7 @@
   "char_336_folivo": {
     "name": "씬",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘\n<@ba.kw>소환물</> 사용 가능",
-    "sortIndex": 1123,
+    "sortIndex": 1152,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1603750,7 +1603750,7 @@
       {
         "name": "이동촬영기",
         "description": "적 1명 저지 가능",
-        "sortIndex": 1196,
+        "sortIndex": 1228,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1608517,7 +1608517,7 @@
   "char_294_ayer": {
     "name": "에이어스카르페",
     "description": "<@ba.kw>원거리 공격</> 가능, 원거리 공격 시 공격력이 80%로 감소",
-    "sortIndex": 230,
+    "sortIndex": 239,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1613664,7 +1613664,7 @@
   "char_345_folnic": {
     "name": "폴리닉",
     "description": "아군 HP 회복",
-    "sortIndex": 1179,
+    "sortIndex": 1209,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1618166,7 +1618166,7 @@
   "char_373_lionhd": {
     "name": "레온하르트",
     "description": "공격 시 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 597,
+    "sortIndex": 614,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1623528,7 +1623528,7 @@
   "char_405_absin": {
     "name": "압생트",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 590,
+    "sortIndex": 607,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1628616,7 +1628616,7 @@
   "char_343_tknogi": {
     "name": "츠키노기",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75%에 해당)",
-    "sortIndex": 1282,
+    "sortIndex": 1315,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1633218,7 +1633218,7 @@
   "char_378_asbest": {
     "name": "아스베스토스",
     "description": "스킬 발동 시 일반 공격이 마법 대미지를 입힘",
-    "sortIndex": 908,
+    "sortIndex": 932,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1637950,7 +1637950,7 @@
   "char_401_elysm": {
     "name": "엘리시움",
     "description": "스킬 지속 시간 동안 저지 가능 수가 0으로 변경",
-    "sortIndex": 497,
+    "sortIndex": 508,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1644158,7 +1644158,7 @@
   "char_254_vodfox": {
     "name": "샤마르",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 1051,
+    "sortIndex": 1079,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1645951,7 +1645951,7 @@
       {
         "name": "저주인형",
         "description": "공격을 받지 않음",
-        "sortIndex": 1402,
+        "sortIndex": 1436,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1649622,7 +1649622,7 @@
   "char_333_sidero": {
     "name": "시데로카",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 1381,
+    "sortIndex": 1415,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1654035,7 +1654035,7 @@
   "char_379_sesa": {
     "name": "세사",
     "description": "공격 시 <@ba.kw>광역 물리 대미지</>를 입힘",
-    "sortIndex": 891,
+    "sortIndex": 915,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1663402,7 +1663402,7 @@
   "char_306_leizi": {
     "name": "레이즈",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 공격이 <@ba.kw>3</>명의 적 사이에서 튕기며, 튕길 때마다 대미지가 15% 감소, 적을 일정 시간 <$ba.sluggish>정지</>시킴",
-    "sortIndex": 519,
+    "sortIndex": 530,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1667835,7 +1667835,7 @@
   "char_226_hmau": {
     "name": "훔",
     "description": "스킬로 아군 유닛 HP 회복",
-    "sortIndex": 390,
+    "sortIndex": 401,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1673740,7 +1673740,7 @@
   "char_383_snsant": {
     "name": "스노우상트",
     "description": "스킬을 통해 적의 위치를 <@ba.kw>강제 이동</>\n고지대 위치에 배치 가능",
-    "sortIndex": 1133,
+    "sortIndex": 1163,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1679116,7 +1679116,7 @@
   "char_367_swllow": {
     "name": "그레이스롯",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 418,
+    "sortIndex": 429,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1683524,7 +1683524,7 @@
   "char_356_broca": {
     "name": "브로카",
     "description": "저지하고 있는 <@ba.kw>모든 적</> 동시에 공격",
-    "sortIndex": 121,
+    "sortIndex": 122,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1688244,7 +1688244,7 @@
   "char_261_sddrag": {
     "name": "리드",
     "description": "적 처치 시 배치 코스트 +1, 퇴각 시 초기 배치 코스트 반환",
-    "sortIndex": 1027,
+    "sortIndex": 1054,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1692647,7 +1692647,7 @@
   "char_243_waaifu": {
     "name": "와이후",
     "description": "재배치 시간 대폭 <@ba.kw>감소</>",
-    "sortIndex": 404,
+    "sortIndex": 415,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1702754,7 +1702754,7 @@
   "char_275_breeze": {
     "name": "브리즈",
     "description": "동시에 아군 유닛 3명의 HP 회복 가능",
-    "sortIndex": 1030,
+    "sortIndex": 1057,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1707263,7 +1707263,7 @@
   "char_279_excu": {
     "name": "이그제큐터",
     "description": "공격 범위 내 <@ba.kw>모든 적</> 공격, 전방 첫 줄의 적에 대한 공격력이 150%로 증가",
-    "sortIndex": 952,
+    "sortIndex": 976,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1711630,7 +1711630,7 @@
   "char_131_flameb": {
     "name": "플레임브링어",
     "description": "적 1명 저지 가능",
-    "sortIndex": 1162,
+    "sortIndex": 1192,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1716060,7 +1716060,7 @@
   "char_274_astesi": {
     "name": "아스테시아",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 1104,
+    "sortIndex": 1133,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1720486,7 +1720486,7 @@
   "char_326_glacus": {
     "name": "글라우쿠스",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 적에게 일시적인 <$ba.sluggish>정지</> 효과 부여",
-    "sortIndex": 334,
+    "sortIndex": 344,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1726171,7 +1726171,7 @@
   "char_348_ceylon": {
     "name": "실론",
     "description": "넓은 치료 범위 보유, 멀리 있는 목표 치료 시 치유량이 <@ba.kw>{heal_scale:0%}</>로 변경",
-    "sortIndex": 1100,
+    "sortIndex": 1129,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1730764,7 +1730764,7 @@
   "char_308_swire": {
     "name": "스와이어",
     "description": "<@ba.kw>비교적 먼 곳의 적</> 공격 가능, 자신이 저지하지 않은 적 공격 시 공격력이 120%로 증가",
-    "sortIndex": 903,
+    "sortIndex": 927,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1736765,7 +1736765,7 @@
   "char_220_grani": {
     "name": "그라니",
     "description": "적 처치 시 배치 코스트 +1, 퇴각 시 초기 배치 코스트 반환",
-    "sortIndex": 333,
+    "sortIndex": 343,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1741270,7 +1741270,7 @@
   "char_164_nightm": {
     "name": "나이트메어",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 1185,
+    "sortIndex": 1215,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1750487,7 +1750487,7 @@
   "char_241_panda": {
     "name": "에프이터",
     "description": "저지하고 있는 <@ba.kw>모든 적</> 동시에 공격\n고지대 위치에 배치 가능",
-    "sortIndex": 917,
+    "sortIndex": 941,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1755952,7 +1755952,7 @@
   "char_215_mantic": {
     "name": "맨티코어",
     "description": "공격 범위 내 <@ba.kw>모든 적</> 동시 공격\n50%의 물리 및 마법 회피 보유, <@ba.kw>적의 공격</>을 쉽게 받지 않음",
-    "sortIndex": 919,
+    "sortIndex": 943,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1760552,7 +1760552,7 @@
   "char_101_sora": {
     "name": "소라",
     "description": "공격을 진행하지 않으며, 범위 내 모든 아군의 <@ba.kw>HP</>를 초당 자신 공격력의 10%만큼 회복, 자신은 <$ba.inspire>격려</>의 영향을 받지 않음",
-    "sortIndex": 581,
+    "sortIndex": 598,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1765830,7 +1765830,7 @@
   "char_195_glassb": {
     "name": "이스티나",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 적에게 일시적인 <$ba.sluggish>정지</> 효과 부여",
-    "sortIndex": 1343,
+    "sortIndex": 1376,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1771805,7 +1771805,7 @@
   "char_174_slbell": {
     "name": "프라마닉스",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 170,
+    "sortIndex": 174,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1776359,7 +1776359,7 @@
   "char_173_slchan": {
     "name": "클리프하트",
     "description": "스킬을 통해 적의 위치를 <@ba.kw>강제 이동</>\n고지대 위치에 배치 가능",
-    "sortIndex": 1178,
+    "sortIndex": 1208,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1781366,7 +1781366,7 @@
   "char_158_milu": {
     "name": "파이어워치",
     "description": "공격 범위 내 <@ba.kw>방어력이 가장 낮은</> 적을 우선 공격",
-    "sortIndex": 926,
+    "sortIndex": 950,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1785908,7 +1785908,7 @@
   "char_145_prove": {
     "name": "프로방스",
     "description": "고정밀 근거리 사격 가능",
-    "sortIndex": 790,
+    "sortIndex": 810,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1790408,7 +1790408,7 @@
   "char_163_hpsts": {
     "name": "벌컨",
     "description": "아군의 치료를 받을 수 <@ba.kw>없음</>",
-    "sortIndex": 430,
+    "sortIndex": 441,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1794962,7 +1794962,7 @@
   "char_201_moeshd": {
     "name": "크루아상",
     "description": "적 3명 저지 가능",
-    "sortIndex": 579,
+    "sortIndex": 596,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1799805,7 +1799805,7 @@
   "char_107_liskam": {
     "name": "리스캄",
     "description": "적 3명 저지 가능, 원거리 공격 가능",
-    "sortIndex": 613,
+    "sortIndex": 631,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1804391,7 +1804391,7 @@
   "char_144_red": {
     "name": "레드",
     "description": "재배치 시간 대폭 <@ba.kw>감소</>",
-    "sortIndex": 391,
+    "sortIndex": 400,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1809043,7 +1809043,7 @@
   "char_148_nearl": {
     "name": "니어",
     "description": "스킬로 아군 유닛 HP 회복",
-    "sortIndex": 634,
+    "sortIndex": 653,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1814258,7 +1814258,7 @@
   "char_171_bldsk": {
     "name": "와파린",
     "description": "아군 HP 회복",
-    "sortIndex": 402,
+    "sortIndex": 413,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1818827,7 +1818827,7 @@
   "char_108_silent": {
     "name": "사일런스",
     "description": "아군 HP 회복",
-    "sortIndex": 384,
+    "sortIndex": 394,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1820408,7 +1820408,7 @@
       {
         "name": "메딕프로브",
         "description": "공격을 받지 않으며, 주변 아군 유닛의 HP 회복",
-        "sortIndex": 1203,
+        "sortIndex": 1235,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1823774,7 +1823774,7 @@
   "char_242_otter": {
     "name": "메이어",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘\n<@ba.kw>소환물</> 사용 가능",
-    "sortIndex": 688,
+    "sortIndex": 707,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1825915,7 +1825915,7 @@
       {
         "name": "기계수달",
         "description": "적 1명 저지 가능",
-        "sortIndex": 537,
+        "sortIndex": 551,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1830365,7 +1830365,7 @@
   "char_166_skfire": {
     "name": "스카이파이어",
     "description": "공격 시 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 990,
+    "sortIndex": 1014,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1850976,7 +1850976,7 @@
   "char_219_meteo": {
     "name": "메테오라이트",
     "description": "공격 시 <@ba.kw>광역 물리 대미지</>를 입힘",
-    "sortIndex": 1295,
+    "sortIndex": 1328,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1860629,7 +1860629,7 @@
   "char_129_bluep": {
     "name": "블루포이즌",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 601,
+    "sortIndex": 619,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1865120,7 +1865120,7 @@
   "char_143_ghost": {
     "name": "스펙터",
     "description": "저지하고 있는 <@ba.kw>모든 적</> 동시에 공격",
-    "sortIndex": 1239,
+    "sortIndex": 1272,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1869445,7 +1869445,7 @@
   "char_140_whitew": {
     "name": "라플란드",
     "description": "<@ba.kw>원거리 공격</> 가능, 원거리 공격 시 공격력이 80%로 감소",
-    "sortIndex": 608,
+    "sortIndex": 626,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1874534,7 +1874534,7 @@
   "char_155_tiger": {
     "name": "인드라",
     "description": "적 1명 저지 가능",
-    "sortIndex": 1230,
+    "sortIndex": 1262,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1878949,7 +1878949,7 @@
   "char_106_franka": {
     "name": "프란카",
     "description": "적 1명 저지 가능",
-    "sortIndex": 307,
+    "sortIndex": 317,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1883292,7 +1883292,7 @@
   "char_102_texas": {
     "name": "텍사스",
     "description": "적 2명 저지 가능",
-    "sortIndex": 209,
+    "sortIndex": 213,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1888856,7 +1888856,7 @@
   "char_115_headbr": {
     "name": "지마",
     "description": "적 2명 저지 가능",
-    "sortIndex": 629,
+    "sortIndex": 647,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1899107,7 +1899107,7 @@
   "char_4236_tmslot": {
     "name": "Timeslot",
     "description": "操作<@ba.kw>浮游单元</>对敌人造成<@ba.kw>法术伤害</>\\n浮游单元连续攻击同一敌人时伤害提升（最高造成干员110%攻击力的伤害）",
-    "sortIndex": 918,
+    "sortIndex": 942,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1902386,7 +1902386,7 @@
   "char_4170_hdbell": {
     "name": "Herdbells",
     "description": "开启技能后可以造成超远距离的群体物理伤害",
-    "sortIndex": 1105,
+    "sortIndex": 1134,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1906083,7 +1906083,7 @@
   "char_4051_akkord": {
     "name": "아코르트",
     "description": "공격 시 <@ba.kw>초원거리 광역 마법 대미지</>를 입힘",
-    "sortIndex": 1093,
+    "sortIndex": 1122,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1910526,7 +1910526,7 @@
   "char_4208_wintim": {
     "name": "스네구로치카",
     "description": "재배치 시간 <@ba.kw>감소</>, 원거리 공격 가능",
-    "sortIndex": 225,
+    "sortIndex": 234,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1915594,7 +1915594,7 @@
   "char_445_wscoot": {
     "name": "윈드스쿠트",
     "description": "저지 가능 수 0, 공격을 진행하지 않으며, <@ba.kw>{max_stack_cnt}</>초간 공격력이 최대 <@ba.kw>+{atk:0%}</>까지 증가, 스킬 종료 후 공격력 초기화",
-    "sortIndex": 144,
+    "sortIndex": 148,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1920393,7 +1920393,7 @@
   "char_4165_ctrail": {
     "name": "콘트레일",
     "description": "<$ba.liftoff>이륙</> 후 비행하는 적 2명 저지 가능",
-    "sortIndex": 1294,
+    "sortIndex": 1327,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1925636,7 +1925636,7 @@
   "char_4130_luton": {
     "name": "루토나다",
     "description": "아군의 치료를 받을 수 <@ba.kw>없음</>",
-    "sortIndex": 672,
+    "sortIndex": 691,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1930525,7 +1930525,7 @@
   "char_4100_caper": {
     "name": "케이퍼",
     "description": "<@ba.kw>부메랑 투사체</>를 보유한 경우에만 공격 가능 (투사체 회수 필요)",
-    "sortIndex": 1285,
+    "sortIndex": 1318,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1935029,7 +1935029,7 @@
   "char_4107_vrdant": {
     "name": "버던트",
     "description": "치명상을 입어도 퇴각하지 않고, <대역>을 교체 투입하며(저지 가능 수 0), 20초 후 다시 본체로 교체",
-    "sortIndex": 1028,
+    "sortIndex": 1055,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1939455,7 +1939455,7 @@
   "char_491_humus": {
     "name": "휴머스",
     "description": "아군의 치료를 받을 수 없으며, 공격 시 <@ba.kw>광역 대미지</>를 입힘, 적을 공격할 때마다 HP <@ba.kw>50</> 회복, 최대 적용 수는 저지 가능 수와 동일",
-    "sortIndex": 1120,
+    "sortIndex": 1149,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1944091,7 +1944091,7 @@
   "char_4063_quartz": {
     "name": "쿼츠",
     "description": "저지하고 있는 <@ba.kw>모든 적</> 동시에 공격",
-    "sortIndex": 923,
+    "sortIndex": 947,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1948651,7 +1948651,7 @@
   "char_4062_totter": {
     "name": "토터",
     "description": "무게 등급이 가장 높은 적을 우선 공격",
-    "sortIndex": 792,
+    "sortIndex": 812,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1953249,7 +1953249,7 @@
   "char_4067_lolxh": {
     "name": "나소흑",
     "description": "<@ba.kw>원거리 공격</> 가능, 원거리 공격 시 공격력이 80%로 감소",
-    "sortIndex": 670,
+    "sortIndex": 689,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1957536,7 +1957536,7 @@
   "char_4041_chnut": {
     "name": "체스트넛",
     "description": "아군 유닛의 HP 회복, 동시에 공격력의 50%에 해당하는 <@ba.dt.element>원소 손상</> 회복 (부상이 없는 아군 유닛의 <@ba.dt.element>원소 손상</>도 회복 가능)",
-    "sortIndex": 377,
+    "sortIndex": 387,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1962324,7 +1962324,7 @@
   "char_4004_pudd": {
     "name": "푸딩",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 공격이 <@ba.kw>3</>명의 적 사이에서 튕기며, 튕길 때마다 대미지가 15% 감소, 적을 일정 시간 <$ba.sluggish>정지</>시킴",
-    "sortIndex": 104,
+    "sortIndex": 105,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1966734,7 +1966734,7 @@
   "char_484_robrta": {
     "name": "로베르타",
     "description": "적 2명 저지 가능, <지원 장치>를 사용해 작전 지원",
-    "sortIndex": 661,
+    "sortIndex": 680,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1968391,7 +1968391,7 @@
       {
         "name": "전자동 스타일러",
         "description": "공격을 받지 않음",
-        "sortIndex": 823,
+        "sortIndex": 843,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1971936,7 +1971936,7 @@
   "char_469_indigo": {
     "name": "인디고",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 목표가 없으면 공격 에너지를 <@ba.kw>저장</>해 일제히 발사 (최대 3개)",
-    "sortIndex": 870,
+    "sortIndex": 894,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1976813,7 +1976813,7 @@
   "char_452_bstalk": {
     "name": "빈스토크",
     "description": "공격 범위에 지원군 소환 가능, 지원군이 저지한 적 공격 시 자신의 공격력이 150%로 증가",
-    "sortIndex": 226,
+    "sortIndex": 235,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1978606,7 +1978606,7 @@
       {
         "name": "메탈 크랩 호위대",
         "description": "적 1명 저지 가능, 소환자의 공격 범위에만 배치 가능",
-        "sortIndex": 771,
+        "sortIndex": 790,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -1981932,7 +1981932,7 @@
   "char_440_pinecn": {
     "name": "파인콘",
     "description": "공격 범위 내 <@ba.kw>모든 적</> 공격, 전방 첫 줄의 적에 대한 공격력이 150%로 증가",
-    "sortIndex": 950,
+    "sortIndex": 974,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1986790,7 +1986790,7 @@
   "char_347_jaksel": {
     "name": "재키",
     "description": "적 1명 저지 가능",
-    "sortIndex": 488,
+    "sortIndex": 499,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1991245,7 +1991245,7 @@
   "char_381_bubble": {
     "name": "버블",
     "description": "적 3명 저지 가능",
-    "sortIndex": 773,
+    "sortIndex": 792,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -1995564,7 +1995564,7 @@
   "char_271_spikes": {
     "name": "아렌",
     "description": "<@ba.kw>원거리 공격</> 가능, 원거리 공격 시 공격력이 80%로 감소",
-    "sortIndex": 252,
+    "sortIndex": 262,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2000486,7 +2000486,7 @@
   "char_366_acdrop": {
     "name": "애시드드롭",
     "description": "고정밀 근거리 사격 가능",
-    "sortIndex": 956,
+    "sortIndex": 980,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2004823,7 +2004823,7 @@
   "char_272_strong": {
     "name": "제이",
     "description": "재배치 시간 <@ba.kw>감소</>, 퇴각 시 <@ba.kw>배치 코스트</>를 반환하지 않으며, 3초마다 배치 코스트 <@ba.kw>3</> 소모 (부족 시 자동 퇴각)",
-    "sortIndex": 481,
+    "sortIndex": 492,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2009649,7 +2009649,7 @@
   "char_328_cammou": {
     "name": "클릭",
     "description": "<@ba.kw>공중 유닛</>을 조종해 적에게 <@ba.kw>마법 대미지</>를 입힘\n같은 적을 연속으로 공격 시 대미지 증가 (최대로 오퍼레이터 공격력의 110%에 해당하는 대미지)",
-    "sortIndex": 554,
+    "sortIndex": 569,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2014643,7 +2014643,7 @@
   "char_258_podego": {
     "name": "포덴코",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 적에게 일시적인 <$ba.sluggish>정지</> 효과 부여",
-    "sortIndex": 98,
+    "sortIndex": 99,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2019137,7 +2019137,7 @@
   "char_301_cutter": {
     "name": "커터",
     "description": "일반 공격 시 대미지를 <@ba.kw>2회</> 입힘",
-    "sortIndex": 572,
+    "sortIndex": 587,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2024538,7 +2024538,7 @@
   "char_159_peacok": {
     "name": "컨빅션",
     "description": "적 1명 저지 가능",
-    "sortIndex": 232,
+    "sortIndex": 241,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2029536,7 +2029536,7 @@
   "char_337_utage": {
     "name": "우타게",
     "description": "아군의 치료를 받을 수 없으며, 적을 공격할 때마다 HP <@ba.kw>{value}</> 회복",
-    "sortIndex": 1155,
+    "sortIndex": 1185,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2034063,7 +2034063,7 @@
   "char_385_finlpp": {
     "name": "퓨어스트림",
     "description": "넓은 치료 범위 보유, 멀리 있는 목표 치료 시 치유량이 <@ba.kw>{heal_scale:0%}</>로 변경",
-    "sortIndex": 799,
+    "sortIndex": 819,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2043068,7 +2043068,7 @@
   "char_133_mm": {
     "name": "메이",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 687,
+    "sortIndex": 706,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2047741,7 +2047741,7 @@
   "char_355_ethan": {
     "name": "에단",
     "description": "공격 범위 내 <@ba.kw>모든 적</> 동시 공격\n50%의 물리 및 마법 회피 보유, <@ba.kw>적의 공격</>을 쉽게 받지 않음",
-    "sortIndex": 1234,
+    "sortIndex": 1266,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2052189,7 +2052189,7 @@
   "char_190_clour": {
     "name": "버메일",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 399,
+    "sortIndex": 410,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2056572,7 +2056572,7 @@
   "char_260_durnar": {
     "name": "듀나",
     "description": "스킬 발동 시 일반 공격이 마법 대미지를 입힘",
-    "sortIndex": 448,
+    "sortIndex": 459,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2060798,7 +2060798,7 @@
   "char_151_myrtle": {
     "name": "머틀",
     "description": "스킬 지속 시간 동안 저지 가능 수가 0으로 변경",
-    "sortIndex": 978,
+    "sortIndex": 1002,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2065677,7 +2065677,7 @@
   "char_298_susuro": {
     "name": "수수로",
     "description": "아군 HP 회복",
-    "sortIndex": 970,
+    "sortIndex": 994,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2070220,7 +2070220,7 @@
   "char_253_greyy": {
     "name": "그레이",
     "description": "공격 시 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 336,
+    "sortIndex": 346,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2074598,7 +2074598,7 @@
   "char_137_brownb": {
     "name": "비헌터",
     "description": "적 1명 저지 가능",
-    "sortIndex": 620,
+    "sortIndex": 638,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2083414,7 +2083414,7 @@
   "char_183_skgoat": {
     "name": "어스스피릿",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 적에게 일시적인 <$ba.sluggish>정지</> 효과 부여",
-    "sortIndex": 218,
+    "sortIndex": 223,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2087860,7 +2087860,7 @@
   "char_110_deepcl": {
     "name": "딥컬러",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘\n<@ba.kw>소환물</> 사용 가능",
-    "sortIndex": 885,
+    "sortIndex": 909,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2090267,7 +2090267,7 @@
       {
         "name": "촉수",
         "description": "적 1명 저지 가능",
-        "sortIndex": 169,
+        "sortIndex": 173,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -2093628,7 +2093628,7 @@
   "char_196_sunbr": {
     "name": "굼",
     "description": "스킬로 아군 유닛 HP 회복",
-    "sortIndex": 358,
+    "sortIndex": 368,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2099597,7 +2099597,7 @@
   "char_150_snakek": {
     "name": "쿠오라",
     "description": "적 3명 저지 가능",
-    "sortIndex": 893,
+    "sortIndex": 917,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2103921,7 +2103921,7 @@
   "char_199_yak": {
     "name": "마터호른",
     "description": "적 3명 저지 가능",
-    "sortIndex": 462,
+    "sortIndex": 473,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2108295,7 +2108295,7 @@
   "char_181_flower": {
     "name": "퍼퓨머",
     "description": "동시에 아군 유닛 3명의 HP 회복 가능",
-    "sortIndex": 998,
+    "sortIndex": 1023,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2112768,7 +2112768,7 @@
   "char_187_ccheal": {
     "name": "가비알",
     "description": "아군 HP 회복",
-    "sortIndex": 468,
+    "sortIndex": 479,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2117665,7 +2117665,7 @@
   "char_117_myrrh": {
     "name": "미르",
     "description": "아군 HP 회복",
-    "sortIndex": 730,
+    "sortIndex": 749,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2126898,7 +2126898,7 @@
   "char_237_gravel": {
     "name": "그라벨",
     "description": "재배치 시간 대폭 <@ba.kw>감소</>",
-    "sortIndex": 616,
+    "sortIndex": 634,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2131244,7 +2131244,7 @@
   "char_185_frncat": {
     "name": "무스",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 742,
+    "sortIndex": 761,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2140206,7 +2140206,7 @@
   "char_193_frostl": {
     "name": "프로스트리프",
     "description": "<@ba.kw>원거리 공격</> 가능, 원거리 공격 시 공격력이 80%로 감소",
-    "sortIndex": 933,
+    "sortIndex": 957,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2144792,7 +2144792,7 @@
   "char_289_gyuki": {
     "name": "마토이마루",
     "description": "적 1명 저지 가능",
-    "sortIndex": 135,
+    "sortIndex": 139,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2149051,7 +2149051,7 @@
   "char_130_doberm": {
     "name": "도베르만",
     "description": "<@ba.kw>비교적 먼 곳의 적</> 공격 가능, 자신이 저지하지 않은 적 공격 시 공격력이 120%로 증가",
-    "sortIndex": 233,
+    "sortIndex": 242,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2153559,7 +2153559,7 @@
   "char_290_vigna": {
     "name": "비그나",
     "description": "적 처치 시 배치 코스트 +1, 퇴각 시 초기 배치 코스트 반환",
-    "sortIndex": 393,
+    "sortIndex": 404,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2157975,7 +2157975,7 @@
   "char_149_scave": {
     "name": "스캐빈저",
     "description": "적 2명 저지 가능",
-    "sortIndex": 797,
+    "sortIndex": 817,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2162336,7 +2162336,7 @@
   "char_198_blackd": {
     "name": "쿠리어",
     "description": "적 2명 저지 가능",
-    "sortIndex": 1143,
+    "sortIndex": 1173,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2171314,7 +2171314,7 @@
   "char_126_shotst": {
     "name": "메테오",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 650,
+    "sortIndex": 669,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2175932,7 +2175932,7 @@
   "char_235_jesica": {
     "name": "제시카",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 490,
+    "sortIndex": 501,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2180351,7 +2180351,7 @@
   "char_109_fmout": {
     "name": "기타노",
     "description": "공격 시 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 1248,
+    "sortIndex": 1281,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2185561,7 +2185561,7 @@
   "char_141_nights": {
     "name": "헤이즈",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 1190,
+    "sortIndex": 1220,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2193672,7 +2193672,7 @@
   "char_281_popka": {
     "name": "포푸카",
     "description": "저지하고 있는 <@ba.kw>모든 적</> 동시에 공격",
-    "sortIndex": 774,
+    "sortIndex": 793,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2196861,7 +2196861,7 @@
   "char_283_midn": {
     "name": "미드나이트",
     "description": "<@ba.kw>원거리 공격</> 가능, 원거리 공격 시 공격력이 80%로 감소",
-    "sortIndex": 1283,
+    "sortIndex": 1316,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2200098,7 +2200098,7 @@
   "char_282_catap": {
     "name": "캐터펄트",
     "description": "공격 시 <@ba.kw>광역 물리 대미지</>를 입힘",
-    "sortIndex": 582,
+    "sortIndex": 599,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2203289,7 +2203289,7 @@
   "char_278_orchid": {
     "name": "오키드",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히고, 적에게 일시적인 <$ba.sluggish>정지</> 효과 부여",
-    "sortIndex": 1384,
+    "sortIndex": 1418,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2206672,7 +2206672,7 @@
   "char_210_stward": {
     "name": "스튜어드",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 900,
+    "sortIndex": 924,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2213133,7 +2213133,7 @@
   "char_120_hibisc": {
     "name": "히비스커스",
     "description": "아군 HP 회복",
-    "sortIndex": 308,
+    "sortIndex": 318,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2216332,7 +2216332,7 @@
   "char_121_lava": {
     "name": "라바",
     "description": "공격 시 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 1163,
+    "sortIndex": 1193,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2222730,7 +2222730,7 @@
   "char_124_kroos": {
     "name": "크루스",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 576,
+    "sortIndex": 592,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2226085,7 +2226085,7 @@
   "char_122_beagle": {
     "name": "비글",
     "description": "적 3명 저지 가능",
-    "sortIndex": 704,
+    "sortIndex": 723,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2229205,7 +2229205,7 @@
   "char_209_ardign": {
     "name": "카디건",
     "description": "적 3명 저지 가능",
-    "sortIndex": 565,
+    "sortIndex": 580,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2232340,7 +2232340,7 @@
   "char_208_melan": {
     "name": "멜란사",
     "description": "적 1명 저지 가능",
-    "sortIndex": 690,
+    "sortIndex": 709,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2235469,7 +2235469,7 @@
   "char_192_falco": {
     "name": "플룸",
     "description": "적 처치 시 배치 코스트 +1, 퇴각 시 초기 배치 코스트 반환",
-    "sortIndex": 636,
+    "sortIndex": 655,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2238766,7 +2238766,7 @@
   "char_240_wyvern": {
     "name": "바닐라",
     "description": "적 2명 저지 가능",
-    "sortIndex": 1072,
+    "sortIndex": 1101,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2242042,7 +2242042,7 @@
   "char_123_fang": {
     "name": "팽",
     "description": "적 2명 저지 가능",
-    "sortIndex": 284,
+    "sortIndex": 294,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2245149,7 +2245149,7 @@
   "char_009_12fce": {
     "name": "12F",
     "description": "공격 시 <@ba.kw>광역 마법 대미지</>를 입힘",
-    "sortIndex": 245,
+    "sortIndex": 255,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2247795,7 +2247795,7 @@
   "char_501_durin": {
     "name": "두린",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘",
-    "sortIndex": 234,
+    "sortIndex": 243,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2250326,7 +2250326,7 @@
   "char_503_rang": {
     "name": "레인저",
     "description": "공중 유닛 우선 공격",
-    "sortIndex": 1142,
+    "sortIndex": 1172,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2252863,7 +2252863,7 @@
   "char_500_noirc": {
     "name": "느와르 코르네",
     "description": "적 3명 저지 가능",
-    "sortIndex": 380,
+    "sortIndex": 390,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2255375,7 +2255375,7 @@
   "char_502_nblade": {
     "name": "야토",
     "description": "적 2명 저지 가능",
-    "sortIndex": 1181,
+    "sortIndex": 1211,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": true,
@@ -2258006,7 +2258006,7 @@
   "char_4220_kormr": {
     "name": "Koromaru",
     "description": "普通攻击连续造成<@ba.kw>两次</>伤害，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 422,
+    "sortIndex": 433,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2259439,7 +2259439,7 @@
   "char_4215_buddy": {
     "name": "Rhodes Island Recon",
     "description": "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%；不受<@ba.kw>部署数量</>限制，但再部署时间极长",
-    "sortIndex": 666,
+    "sortIndex": 685,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2260142,7 +2260142,7 @@
       {
         "name": " Palamute",
         "description": "能够阻挡一个敌人，只能部署在艾露猫的攻击范围内",
-        "sortIndex": 1148,
+        "sortIndex": 1178,
         "spTargetType": "NONE",
         "spTargetId": null,
         "canUseGeneralPotentialItem": true,
@@ -2261153,7 +2261153,7 @@
   "char_4227_gallus": {
     "name": "GALLUS²",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입힘, <@ba.kw>배치 가능 인원수</> 제약을 받지 않으나, 재배치 시간이 매우 김",
-    "sortIndex": 315,
+    "sortIndex": 325,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2263894,7 +2263894,7 @@
   "char_4188_confes": {
     "name": "CONFESS-47",
     "description": "적 2명 저지 가능, <@ba.kw>배치 가능 인원수</> 제약을 받지 않으나, 재배치 시간이 매우 김",
-    "sortIndex": 173,
+    "sortIndex": 177,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2266602,7 +2266602,7 @@
   "char_4136_phonor": {
     "name": "PhonoR-0",
     "description": "공격 시 <@ba.kw>마법 대미지</>를 입히며, <@ba.kw>원소 손상</>을 입힐 수 있음, <@ba.kw>배치 가능 인원수</> 제약을 받지 않으나, 재배치 시간이 매우 김",
-    "sortIndex": 784,
+    "sortIndex": 803,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2269365,7 +2269365,7 @@
   "char_4093_frston": {
     "name": "Friston-3",
     "description": "적 3명 저지 가능, <@ba.kw>배치 가능 인원수</> 제약을 받지 않으나, 재배치 시간이 매우 김",
-    "sortIndex": 304,
+    "sortIndex": 314,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2272016,7 +2272016,7 @@
   "char_4091_ulika": {
     "name": "U-Official",
     "description": "공격을 진행하지 않으며, 범위 내 모든 아군의 <@ba.kw>HP</>를 초당 자신 공격력의 10%만큼 회복, 자신은 <$ba.inspire>격려</>의 영향을 받지 않음, <@ba.kw>배치 가능 인원수</> 제약을 받지 않으나, 재배치 시간이 매우 김",
-    "sortIndex": 1021,
+    "sortIndex": 1048,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2274752,7 +2274752,7 @@
   "char_4077_palico": {
     "name": "테라 대륙 조사단",
     "description": "작은 범위 내 <@ba.kw>지상</> 적에게 물리 대미지를 <@ba.kw>2회</> 입히며(2회차부터는 여진으로써 대미지가 공격력의 절반으로 감소), <@ba.kw>배치 가능 인원수</> 제약을 받지 않으나, 재배치 시간이 매우 김",
-    "sortIndex": 972,
+    "sortIndex": 996,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2276000,7 +2276000,7 @@
   "char_4000_jnight": {
     "name": "저스티스 나이트",
     "description": "공중 유닛 우선 공격, <@ba.kw>배치 가능 인원수</> 제약을 받지 않으나, 재배치 시간이 매우 김",
-    "sortIndex": 1340,
+    "sortIndex": 1373,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2278755,7 +2278755,7 @@
   "char_376_therex": {
     "name": "THRM-EX",
     "description": "공격을 진행하지 않으며, <@ba.kw>배치 가능 인원수</> 제약을 받지 않으나, 재배치 시간이 매우 김",
-    "sortIndex": 987,
+    "sortIndex": 1011,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2281536,7 +2281536,7 @@
   "char_286_cast3": {
     "name": "Castle-3",
     "description": "적 1명 저지 가능, <@ba.kw>배치 가능 인원수</> 제약을 받지 않으나, 재배치 시간이 매우 김",
-    "sortIndex": 131,
+    "sortIndex": 135,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
@@ -2284259,7 +2284259,7 @@
   "char_285_medic2": {
     "name": "Lancet-2",
     "description": "아군 유닛의 HP 회복, <@ba.kw>배치 가능 인원수</> 제약을 받지 않으나, 재배치 시간이 매우 김",
-    "sortIndex": 600,
+    "sortIndex": 618,
     "spTargetType": "NONE",
     "spTargetId": null,
     "canUseGeneralPotentialItem": false,
