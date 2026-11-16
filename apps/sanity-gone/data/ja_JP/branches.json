@@ -12,7 +12,7 @@
   "tactician": {
     "branchName": "戦術家",
     "class": "Vanguard",
-    "trait": "攻撃範囲内で<span class=\"keyword\">戦術召集点</span>を指定し援軍を召喚できる<br>自身が援軍にブロックされている敵を攻撃する際、攻撃力が150%まで上昇"
+    "trait": "攻撃範囲内で<span class=\"keyword\">戦術召集点</span>を指定し援軍を召喚できる<br>自身が援軍にブロックされている敵を攻撃する際、攻撃力が150%まで上昇<br><span class=\"keyword\">配置可能数</span>にカウントされない<br>再配置までの時間が極めて長い"
   },
   "bearer": {
     "branchName": "旗手",

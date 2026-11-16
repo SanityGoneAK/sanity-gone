@@ -127,7 +127,7 @@
   },
   "char_1048_orchd2": {
     "charId": "char_1048_orchd2",
-    "name": "Violet Mizutsune Orchid",
+    "name": "염호룡 오키드",
     "slug": "violet-mizutsune-orchid",
     "position": "RANGED",
     "rarity": 6,
@@ -2087,7 +2087,7 @@
   },
   "char_1049_catap2": {
     "charId": "char_1049_catap2",
-    "name": "Zinogre S Catapult",
+    "name": "진오우S 캐터펄트",
     "slug": "zinogre-s-catapult",
     "position": "MELEE",
     "rarity": 5,
@@ -6005,7 +6005,7 @@
   },
   "char_4215_buddy": {
     "charId": "char_4215_buddy",
-    "name": "Rhodes Island Recon",
+    "name": "로도스 아일랜드 그림자 부대",
     "slug": "rhodes-island-recon",
     "position": "RANGED",
     "rarity": 1,

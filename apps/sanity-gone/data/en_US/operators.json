@@ -47607,7 +47607,9 @@
     "charId": "char_1048_orchd2",
     "slug": "violet-mizutsune-orchid",
     "serverLocales": [
-      "zh_CN"
+      "zh_CN",
+      "ja_JP",
+      "ko_KR"
     ],
     "skillData": [
       {
@@ -139729,6 +139731,21 @@
         "illustId": "illust_char_1047_halo2_2",
         "avatarId": "char_1047_halo2_2",
         "portraitId": "char_1047_halo2_2",
+        "displaySkin": {
+          "modelName": "Astgenne the Lightchaser",
+          "drawerList": [
+            "YUJI"
+          ]
+        },
+        "voiceId": null
+      },
+      {
+        "type": "skin",
+        "name": "暗能质子",
+        "skinId": "char_1047_halo2@striker#4",
+        "illustId": "illust_char_1047_halo2_striker#4",
+        "avatarId": "char_1047_halo2_striker#4",
+        "portraitId": "char_1047_halo2_striker#4",
         "displaySkin": {
           "modelName": "Astgenne the Lightchaser",
           "drawerList": [
@@ -858913,6 +858930,21 @@
       },
       {
         "type": "skin",
+        "name": "绿影之下",
+        "skinId": "char_248_mgllan@epoque#60",
+        "illustId": "illust_char_248_mgllan_epoque#60",
+        "avatarId": "char_248_mgllan_epoque#60",
+        "portraitId": "char_248_mgllan_epoque#60",
+        "displaySkin": {
+          "modelName": "Magallan",
+          "drawerList": [
+            "水滴鱼"
+          ]
+        },
+        "voiceId": null
+      },
+      {
+        "type": "skin",
         "name": "Shaved-Ice Memories",
         "skinId": "char_248_mgllan@kitchen#1",
         "illustId": "illust_char_248_mgllan_kitchen#1",
@@ -860297,6 +860329,19 @@
           {
             "type": "elite-zero",
             "name": "Elite 0",
+            "skinId": "token_10005_mgllan_drone1_epoque#60",
+            "illustId": null,
+            "avatarId": "token_10005_mgllan_drone1_epoque#60",
+            "portraitId": null,
+            "displaySkin": {
+              "modelName": null,
+              "drawerList": null
+            },
+            "voiceId": null
+          },
+          {
+            "type": "elite-zero",
+            "name": "Elite 0",
             "skinId": "token_10005_mgllan_drone1_kitchen#1",
             "illustId": null,
             "avatarId": "token_10005_mgllan_drone1_kitchen#1",
@@ -861574,6 +861619,19 @@
             "illustId": "illust_token_10005_mgllan_drone2_1",
             "avatarId": "token_10005_mgllan_drone2",
             "portraitId": "token_10005_mgllan_drone2_1",
+            "displaySkin": {
+              "modelName": null,
+              "drawerList": null
+            },
+            "voiceId": null
+          },
+          {
+            "type": "elite-zero",
+            "name": "Elite 0",
+            "skinId": "token_10005_mgllan_drone2_epoque#60",
+            "illustId": null,
+            "avatarId": "token_10005_mgllan_drone2_epoque#60",
+            "portraitId": null,
             "displaySkin": {
               "modelName": null,
               "drawerList": null
@@ -862956,6 +863014,19 @@
             "illustId": "illust_token_10005_mgllan_drone3_1",
             "avatarId": "token_10005_mgllan_drone3",
             "portraitId": "token_10005_mgllan_drone3_1",
+            "displaySkin": {
+              "modelName": null,
+              "drawerList": null
+            },
+            "voiceId": null
+          },
+          {
+            "type": "elite-zero",
+            "name": "Elite 0",
+            "skinId": "token_10005_mgllan_drone3_epoque#60",
+            "illustId": null,
+            "avatarId": "token_10005_mgllan_drone3_epoque#60",
+            "portraitId": null,
             "displaySkin": {
               "modelName": null,
               "drawerList": null
@@ -978449,7 +978520,9 @@
     "charId": "char_1049_catap2",
     "slug": "zinogre-s-catapult",
     "serverLocales": [
-      "zh_CN"
+      "zh_CN",
+      "ja_JP",
+      "ko_KR"
     ],
     "skillData": [
       {
@@ -2260024,7 +2260097,9 @@
     "charId": "char_4215_buddy",
     "slug": "rhodes-island-recon",
     "serverLocales": [
-      "zh_CN"
+      "zh_CN",
+      "ja_JP",
+      "ko_KR"
     ],
     "skillData": [],
     "skins": [
@@ -2260392,7 +2260467,9 @@
         "charId": "token_10063_buddy_bddg",
         "slug": "palamute",
         "serverLocales": [
-          "zh_CN"
+          "zh_CN",
+          "ja_JP",
+          "ko_KR"
         ],
         "skillData": [],
         "skins": [

@@ -12,7 +12,7 @@
   "tactician": {
     "branchName": "전술가",
     "class": "Vanguard",
-    "trait": "공격 범위에 지원군 소환 가능, 지원군이 저지한 적 공격 시 자신의 공격력이 150%로 증가"
+    "trait": "공격 범위 내의 <span class=\"keyword\">전술 포인트</span>에 지원군 소환 가능, 지원군이 저지한 적 공격 시 공격력이 150%로 증가, <span class=\"keyword\">배치 가능 인원수</span> 제약을 받지 않으나, 재배치 시간이 매우 김"
   },
   "bearer": {
     "branchName": "기수",
