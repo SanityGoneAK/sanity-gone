@@ -12,7 +12,7 @@
   "tactician": {
     "branchName": "Tactician",
     "class": "Vanguard",
-    "trait": "This unit can designate one <span class=\"keyword\">Tactical Point</span> within attack range to call Reinforcements; ATK is increased to 150% when attacking enemies blocked by Reinforcements"
+    "trait": "This unit can designate one <span class=\"keyword\">Tactical Point</span> within attack range to call Reinforcements; ATK is increased to 150% when attacking enemies blocked by Reinforcements; ignores the <span class=\"keyword\">Deployment Limit</span>, but has a long Redeployment Time"
   },
   "bearer": {
     "branchName": "Standard Bearer",

@@ -47608,6 +47608,7 @@
     "slug": "violet-mizutsune-orchid",
     "serverLocales": [
       "zh_CN",
+      "en_US",
       "ja_JP",
       "ko_KR"
     ],
@@ -979784,6 +979785,7 @@
     "slug": "zinogre-s-catapult",
     "serverLocales": [
       "zh_CN",
+      "en_US",
       "ja_JP",
       "ko_KR"
     ],
@@ -2262701,6 +2262703,7 @@
     "slug": "rhodes-island-recon",
     "serverLocales": [
       "zh_CN",
+      "en_US",
       "ja_JP",
       "ko_KR"
     ],
@@ -2263068,9 +2263071,10 @@
         ],
         "allSkillLvlup": [],
         "charId": "token_10063_buddy_bddg",
-        "slug": "palamute",
+        "slug": "canyne",
         "serverLocales": [
           "zh_CN",
+          "en_US",
           "ja_JP",
           "ko_KR"
         ],
